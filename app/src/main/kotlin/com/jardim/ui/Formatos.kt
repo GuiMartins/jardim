@@ -55,14 +55,41 @@ fun atraso(dias: Int): String = when (dias) {
     else -> "Atrasada há $dias dias"
 }
 
-fun resumo(planta: Planta): String {
-    val dificuldade = when (planta.dificuldade) {
+fun resumo(planta: Planta): String = resumo(planta.dificuldade, planta.duracaoCicloDias)
+
+/** "Fácil · ciclo de 105 dias", ou "Média · perene" */
+fun resumo(dificuldade: Dificuldade, duracaoCicloDias: Int?): String {
+    val nivel = when (dificuldade) {
         Dificuldade.FACIL -> "Fácil"
         Dificuldade.MEDIA -> "Média"
         Dificuldade.DIFICIL -> "Difícil"
     }
-    val ciclo = planta.duracaoCicloDias?.let { "ciclo de $it dias" } ?: "perene"
-    return "$dificuldade · $ciclo"
+    val ciclo = duracaoCicloDias?.let { "ciclo de $it dias" } ?: "perene"
+    return "$nivel · $ciclo"
+}
+
+/**
+ * Categoria do levantamento de plantas populares. É texto livre vindo de outra
+ * frente do projeto: categoria nova aparece como veio, sem quebrar nada.
+ */
+fun categoria(codigo: String): String = when (codigo) {
+    "HORTALICA" -> "Hortaliça"
+    "ERVA_AROMATICA" -> "Erva aromática"
+    "MEDICINAL" -> "Medicinal"
+    "FRUTIFERA" -> "Frutífera"
+    "FLOR" -> "Flor"
+    "FOLHAGEM" -> "Folhagem"
+    "SUCULENTA" -> "Suculenta"
+    "ORQUIDEA" -> "Orquídea"
+    "BROMELIA" -> "Bromélia"
+    "SAMAMBAIA" -> "Samambaia"
+    "PALMEIRA" -> "Palmeira"
+    "ARBUSTO" -> "Arbusto"
+    "ARVORE" -> "Árvore"
+    "TREPADEIRA" -> "Trepadeira"
+    "FORRACAO" -> "Forração"
+    "AQUATICA" -> "Aquática"
+    else -> codigo.lowercase().replace('_', ' ').replaceFirstChar { it.uppercase() }
 }
 
 fun luminosidade(l: Luminosidade): String = when (l) {

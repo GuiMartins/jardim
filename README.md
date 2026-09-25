@@ -68,9 +68,12 @@ simula o ciclo inteiro para garantir isso.
 - **Hoje**: um cartão por planta, com o dia do ciclo e a fase ("Dia 15 ·
   Plântula") e as pendências de hoje e as atrasadas, críticas primeiro. Toque
   numa pendência para ver as instruções; "Feito" tem desfazer na snackbar.
-- **Nova planta**: o catálogo, com dificuldade, duração do ciclo e se é boa
-  época; depois apelido, data do dia 1 e o que preparar antes (vaso, luz,
-  substrato, drenagem).
+- **Nova planta**: busca com autocomplete, que filtra a cada letra, sem ligar
+  para acento, pelo começo de qualquer palavra do nome, pelos outros nomes
+  ("língua de sogra") e pelo científico, tolerando um erro de digitação
+  ("girasol"). Com a busca vazia, as mais populares vêm primeiro. Depois:
+  apelido, data do dia 1 e o que preparar antes (vaso, luz, substrato,
+  drenagem).
 - **Planta** (toque no nome dela na tela Hoje): a linha do tempo, com "Dia 16
   de 105", barra de progresso e a fase atual; o que vem nos próximos 7 dias;
   as fases com datas; problemas comuns (sintomas e tratamento) e o histórico
@@ -93,6 +96,24 @@ simula o ciclo inteiro para garantir isso.
   em Bateria, senão o sistema pode pôr o app para dormir depois de alguns dias
   sem uso.
 
+## Catálogo e busca
+
+O app foi feito para aguentar o catálogo das 1000 plantas mais populares do
+Brasil sem ficar lento:
+
+- A lista e a busca leem só um **índice** (`catalogo/indice.json`), gerado no
+  build a partir dos JSONs de espécie. O JSON inteiro de uma planta só é lido
+  quando você a escolhe.
+- Se existir `dados/plantas-populares.json` (o levantamento das populares), o
+  índice ganha os **outros nomes**, a **categoria** e o **ranking de
+  popularidade** de cada planta.
+- Medido com 1000 plantas: o índice tem 253 KB (37 KB comprimido no APK) e
+  cada letra digitada custa ~1,3 ms na JVM. O catálogo inteiro soma uns
+  5 MB ao APK.
+
+Para testar volume sem pôr nada no repositório:
+`./gradlew assembleDebug -PcatalogoExtra=<pasta com catalogo/*.json>`.
+
 ## Estrutura
 
 ```
@@ -108,7 +129,14 @@ roda em testes na JVM, em segundos, sem emulador.
 1. No Claude Code: `/planta-cultivo-json Manjericão`
 2. Salve a resposta em `app/src/main/assets/catalogo/manjericao.json`
 3. Rode `./gradlew :motor:test`: o teste do catálogo recusa qualquer JSON fora
-   do formato.
+   do formato. O índice da busca se refaz sozinho no próximo build.
+
+Para escolher a próxima, [`dados/plantas-populares.json`](dados/plantas-populares.json)
+lista as 1000 plantas cultivadas mais populares do Brasil, com nome, categoria e
+o nome de arquivo sugerido (`no_catalogo` marca as que o app já tem). A nota
+mistura observações de exemplares cultivados no iNaturalist com visitas ao
+artigo na Wikipedia em português. Para refazer: `python dados/levantamento.py`;
+nomes, categorias e exclusões ficam em `dados/curadoria.csv`.
 
 ## Rodando
 

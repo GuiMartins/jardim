@@ -37,6 +37,7 @@ import androidx.compose.material3.rememberDatePickerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
@@ -45,6 +46,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.jardim.dados.Especie
 import com.jardim.motor.agenda.foraDeEpoca
 import com.jardim.motor.modelo.FormaInicio
 import com.jardim.motor.modelo.RequisitosIniciais
@@ -64,7 +66,19 @@ fun PlantarTela(
     aoPlantar: () -> Unit,
     viewModel: NovaPlantaViewModel = viewModel(factory = NovaPlantaViewModel.Factory),
 ) {
-    val especie = remember(arquivo) { viewModel.especie(arquivo) } ?: return
+    // O JSON inteiro da espécie só é lido agora, fora da main thread.
+    val especie by produceState<Especie?>(null, arquivo) { value = viewModel.carregar(arquivo) }
+    especie?.let { PlantarConteudo(it, aoVoltar, aoPlantar, viewModel) }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun PlantarConteudo(
+    especie: Especie,
+    aoVoltar: () -> Unit,
+    aoPlantar: () -> Unit,
+    viewModel: NovaPlantaViewModel,
+) {
     val planta = especie.cultivo.planta
     val deSemente = planta.formaInicio == FormaInicio.SEMENTE
 

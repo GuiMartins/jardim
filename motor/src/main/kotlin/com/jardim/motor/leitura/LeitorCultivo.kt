@@ -10,19 +10,20 @@ sealed interface ResultadoLeitura {
     data class Invalido(val problemas: List<String>) : ResultadoLeitura
 }
 
+/** O JSON do projeto: snake_case, como a skill escreve, e campo desconhecido é erro. */
+@OptIn(ExperimentalSerializationApi::class)
+internal val jsonJardim = Json {
+    namingStrategy = JsonNamingStrategy.SnakeCase
+    // Já é o padrão, mas fica explícito porque é o que faz "campo fora do
+    // esquema" virar erro em vez de ser ignorado em silêncio.
+    ignoreUnknownKeys = false
+}
+
 /**
  * Porta de entrada do JSON da planta: lê, confere a estrutura e as regras da
  * linha do tempo. Nada chega no Cronograma sem passar por aqui.
  */
 object LeitorCultivo {
-
-    @OptIn(ExperimentalSerializationApi::class)
-    private val json = Json {
-        namingStrategy = JsonNamingStrategy.SnakeCase
-        // Já é o padrão, mas fica explícito porque é o que faz "campo fora do
-        // esquema" virar erro em vez de ser ignorado em silêncio.
-        ignoreUnknownKeys = false
-    }
 
     // A skill responde com o JSON dentro de um bloco ```json; colar a resposta
     // inteira tem que funcionar.
@@ -32,7 +33,7 @@ object LeitorCultivo {
         val limpo = texto.removePrefix("﻿").trim()
         val corpo = cerca.matchEntire(limpo)?.groupValues?.get(1) ?: limpo
         val cultivo = try {
-            json.decodeFromString<PlantaCultivo>(corpo)
+            jsonJardim.decodeFromString<PlantaCultivo>(corpo)
         } catch (e: IllegalArgumentException) {
             // SerializationException é filha de IllegalArgumentException: pega
             // JSON malformado, campo ausente/sobrando e enum fora da lista.

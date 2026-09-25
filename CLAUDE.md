@@ -6,6 +6,7 @@ App Android **pessoal** (APK instalado direto, sem Play Store) de acompanhamento
 
 - `motor/`: Kotlin puro (JVM), sem Android. Leitura e validação do JSON da planta (`leitura/`), modelo (`modelo/`) e cálculo da agenda (`agenda/`). Toda regra de "o que fazer hoje" mora aqui, com teste.
 - `app/`: Android, Compose. `dados/` (Room, catálogo, repositório), `avisos/` (notificações e agendamento), `ui/` (telas e ViewModels), catálogo de espécies em `app/src/main/assets/catalogo/*.json`. Injeção de dependência manual em `JardimApp`.
+- `dados/`: fora do build. `levantamento.py` (Python, só biblioteca padrão) gera `plantas-populares.json`, as 1000 plantas cultivadas mais populares do Brasil, que é a fila de espécies para o catálogo. Correções à mão vão em `curadoria.csv`, nunca no JSON gerado. As respostas das APIs ficam em `dados/cache/` (fora do git). Sem contato no User-Agent, a Wikipedia limita a 10 requisições por minuto: rodar do zero leva cerca de 1 hora; com o cache, segundos.
 
 ## JSON da planta
 
@@ -37,6 +38,13 @@ Etapa 5 (2026-09-25):
 - Tela da planta com cinco seções: Agora (dia, progresso, fase atual), Próximos 7 dias, Fases (linha do tempo com datas), Problemas comuns (`pragas_comuns`) e Histórico. Sem diário de fotos por enquanto.
 - A previsão (`Cronograma.proximosDias`) supõe que o pendente de hoje é feito hoje e o resto no dia em que vence. Ela roda o próprio `pendenciasEm` com um histórico imaginário, para nunca divergir da agenda real.
 - O histórico mostra também o que foi feito antes de um "Ressemeei"; `Cronograma.identificar` traduz a chave (`tarefa:…`, `alerta:N`, `sazonal:N:AAAA-MM`) de volta para o título.
+
+## Catálogo e busca (2026-09-25)
+
+- O catálogo vai chegar a ~1000 espécies, geradas por outra frente do projeto (`dados/`: levantamento das plantas populares e `gerar_catalogo.py`), que grava direto em `app/src/main/assets/catalogo/`. **Não ponha arquivos temporários nessa pasta nem commite `dados/`**: essa frente é de outra sessão. Para testar volume, use `-PcatalogoExtra=<pasta fora do repo>`.
+- A task `gerarIndiceCatalogo` (em `app/build.gradle.kts`) gera `catalogo/indice.json` (lido como `ItemCatalogo`) nos assets gerados do build. Se `dados/plantas-populares.json` existir, junta `outros_nomes`, `categoria` e `posicao`, casando por `arquivo_catalogo`. O índice não vai para o git.
+- `Catalogo.busca` lê só o índice, pré-carregado em segundo plano ao abrir o app. `Catalogo.especie(arquivo)` lê o JSON inteiro sob demanda (fora da main thread).
+- `BuscaCatalogo` (motor) faz o autocomplete: normalização que mantém o tamanho do texto (a faixa destacada vale no nome original), começo de palavra em qualquer ordem, e níveis igual > nome começa > primeira palavra > palavra do meio > outro nome > científico > no meio da palavra > erro de digitação (só quando nada exato casou). Empates vão para a mais popular. As regras estão em `BuscaCatalogoTest`, com casos tirados dos nomes reais ("pitanga" → Pitangueira antes de Pitangatuba).
 
 ## Notificações e agendamento
 

@@ -29,5 +29,8 @@ class JardimApp : Application() {
         // Toda abertura confere o agendamento: se a corrente de avisos quebrou
         // (app forçado a parar, erro no worker), ela volta aqui.
         escopo.launch { agendador.garantirAgendado() }
+        // Deixa o índice do catálogo pronto antes de alguém tocar em "Nova planta":
+        // com 1000 plantas ele leva uma fração de segundo, e a busca abre na hora.
+        escopo.launch(Dispatchers.IO) { catalogo.busca }
     }
 }

@@ -9,17 +9,51 @@ import com.jardim.JardimApp
 import com.jardim.dados.Catalogo
 import com.jardim.dados.Especie
 import com.jardim.dados.JardimRepositorio
+import com.jardim.motor.catalogo.ResultadoBusca
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.flow.mapLatest
+import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.time.LocalDate
+
+sealed interface EstadoBusca {
+    data object Carregando : EstadoBusca
+
+    data class Pronto(val total: Int, val consulta: String, val resultados: List<ResultadoBusca>) : EstadoBusca
+}
 
 class NovaPlantaViewModel(
     private val catalogo: Catalogo,
     private val repositorio: JardimRepositorio,
 ) : ViewModel() {
 
-    val especies: List<Especie> get() = catalogo.especies
+    private val consulta = MutableStateFlow("")
 
-    fun especie(arquivo: String): Especie? = catalogo.especie(arquivo)
+    /**
+     * Cada letra digitada refaz a busca fora da main thread; mapLatest descarta
+     * a busca anterior se ainda estiver rodando quando chega a próxima letra.
+     */
+    @OptIn(ExperimentalCoroutinesApi::class)
+    val estado: StateFlow<EstadoBusca> =
+        flow { emit(catalogo.busca) } // lê o índice na primeira vez (Dispatchers.IO, abaixo)
+            .flowOn(Dispatchers.IO)
+            .flatMapLatest { busca -> consulta.mapLatest { q -> EstadoBusca.Pronto(busca.total, q, busca.buscar(q)) } }
+            .flowOn(Dispatchers.Default)
+            .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), EstadoBusca.Carregando)
+
+    fun buscar(texto: String) {
+        consulta.value = texto
+    }
+
+    suspend fun carregar(arquivo: String): Especie? = withContext(Dispatchers.IO) { catalogo.especie(arquivo) }
 
     /** Grava no viewModelScope: sair da tela no meio não cancela o plantio. */
     fun plantar(especie: Especie, apelido: String, dataPlantio: LocalDate, depois: () -> Unit) {
