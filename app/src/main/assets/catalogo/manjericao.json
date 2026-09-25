@@ -1,0 +1,217 @@
+{
+  "planta": {
+    "nome_comum": "Manjericão",
+    "nome_cientifico": "Ocimum basilicum 'Genovese'",
+    "descricao": "Erva aromática indispensável na cozinha, de crescimento rápido e colheita contínua de folhas. Na natureza é perene de vida curta, mas em vaso é cultivado como anual: depois de uns seis meses fica lenhoso, floresce com insistência e as folhas perdem sabor, e o melhor é semear de novo. A variedade escolhida é a Genovese, de folha larga, a mais vendida em sementes no Brasil.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 180,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso com pelo menos 20 cm de diâmetro e 20 cm de profundidade, ou jardineira com 20 cm entre plantas, com furos no fundo",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; solto, rico em matéria orgânica e que não encharque",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Semeie 3 a 4 sementes por vaso a 0,5 cm de profundidade, cobertas com uma camada fina de substrato peneirado. Com o substrato acima de 20 °C, as plântulas surgem entre o 5º e o 10º dia. No frio a germinação atrasa ou falha."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 11,
+      "dia_fim": 30,
+      "descricao": "Os cotilédones arredondados dão lugar aos primeiros pares de folhas verdadeiras, com cheiro de manjericão ao esfregar. A fase termina quando a muda tem 3 a 4 pares de folhas e uns 8 cm de altura."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 50,
+      "descricao": "A planta estica rápido. O desponte da ponta faz brotarem dois ramos laterais em cada corte, formando uma moita cheia em vez de uma haste fina. Muda de fase quando os ramos laterais passam de 10 cm."
+    },
+    {
+      "fase_id": "colheita_producao",
+      "nome": "Colheita e Produção",
+      "dia_inicio": 51,
+      "dia_fim": 180,
+      "descricao": "Fase de colher toda semana. O manjericão tenta florescer o tempo todo: espigas de botões brancos nas pontas indicam que é hora de cortar. Se deixar florir, as folhas ficam menores e amargas. Perto do fim, o caule engrossa e fica lenhoso na base, e a produção cai."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. As sementes são miúdas e ficam rasas: um jato forte as desenterra, e um dia seco mata a plântula que acabou de sair.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o manjericão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue na base, sem molhar as folhas, até escorrer pelos furos. Acima de 30 °C ou em vaso pequeno, confira todo dia. Se ainda estiver úmido, espere: raiz encharcada apodrece.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o manjericão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 170,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de bokashi por vaso de 5 L, sem encostar no caule, e regue em seguida. Colher toda semana esgota o substrato; folhas de baixo amareladas pedem adubo.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Vire as folhas e procure pulgões, mosquinhas brancas que voam ao tocar, teias finas, manchas amarelas com mofo cinza no verso e folhas roídas de noite (lesmas).",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher e tirar as flores",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 51,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Corte as pontas dos ramos logo acima de um par de folhas, levando no máximo um terço da planta. Corte também toda espiga floral que aparecer. Colha de cima para baixo, nunca só as folhas grandes da base.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 18,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Várias mudas no mesmo vaso competem por luz e ficam finas e compridas.",
+      "acao_requerida": "Deixar só a muda mais vigorosa no vaso de 5 L, cortando as outras rente ao substrato com tesoura, ou transplantá-las com torrão para outros vasos"
+    },
+    {
+      "dia_disparo": 35,
+      "titulo": "Primeiro desponte",
+      "mensagem": "Com 3 a 4 pares de folhas, cortar a ponta faz a planta ramificar e dobra a produção de folhas.",
+      "acao_requerida": "Cortar a haste principal logo acima do 3º par de folhas, contando de baixo, e usar as folhas cortadas na cozinha"
+    },
+    {
+      "dia_disparo": 51,
+      "titulo": "Colheita liberada",
+      "mensagem": "O manjericão já tem ramos laterais suficientes para colher toda semana sem enfraquecer.",
+      "acao_requerida": "Começar as colheitas semanais pelas pontas dos ramos"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Hora de semear de novo",
+      "mensagem": "A planta está ficando lenhosa e as folhas, menores. Uma nova semeadura agora fica pronta para colher quando esta parar de produzir.",
+      "acao_requerida": "Semear um novo vaso de manjericão, se a época permitir"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, base do caule escura e mole, raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm e nunca deixar água parada no pratinho. Planta com caule escuro raramente se recupera: descarte e troque o substrato"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem de repente com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, sem encharcar na germinação, com o vaso em local ventilado. Retire as plântulas afetadas"
+    },
+    {
+      "nome": "Míldio do manjericão (Peronospora belbahrii)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando entre as nervuras, com mofo cinza-arroxeado no verso, principalmente em tempo úmido",
+      "prevencao_tratamento": "Regar na base e de manhã, espaçar os vasos para ventilar e retirar e descartar no lixo as folhas afetadas. Com infestação forte, descarte a planta"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas e no verso das folhas; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água nas folhas; se persistir, água com sabão neutro (1 colher de chá por litro) no fim da tarde a cada 3 dias. Lave bem as folhas antes de comer"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; folhas amareladas com melado",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias; espere 7 dias depois do neem para colher"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas no verso, comuns em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias quentes e secos; se persistir, calda de enxofre ou óleo de neem"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas com bordas irregulares durante a noite e rastro brilhante no vaso",
+      "prevencao_tratamento": "Catar à noite com lanterna e manter o vaso suspenso ou longe de outros vasos úmidos no chão"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas pretas ou folhas escurecidas e murchas depois de noites abaixo de 10 °C",
+      "prevencao_tratamento": "Levar o vaso para dentro ou para perto de uma parede nas noites frias; corte as partes queimadas quando o tempo esquentar"
+    },
+    {
+      "nome": "Falta de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas de baixo amarelando por inteiro, folhas novas pequenas e crescimento lento",
+      "prevencao_tratamento": "Adubar com húmus ou bokashi e, se o vaso for pequeno, transplantar para um de pelo menos 5 L"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: vaso seca rápido",
+      "mensagem": "No verão o vaso pode secar em um dia e o manjericão murcha e floresce mais depressa.",
+      "acao_requerida": "Conferir o substrato todo dia e, se as folhas murcharem à tarde, levar o vaso para um local com sombra depois das 14h"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O manjericão para de crescer abaixo de 15 °C e queima abaixo de 10 °C.",
+      "acao_requerida": "Nas noites frias, levar o vaso para dentro ou para junto de uma parede protegida, e espaçar as regas porque o substrato demora mais a secar"
+    }
+  ]
+}

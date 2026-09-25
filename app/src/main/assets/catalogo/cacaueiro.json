@@ -1,0 +1,221 @@
+{
+  "planta": {
+    "nome_comum": "Cacaueiro",
+    "nome_cientifico": "Theobroma cacao",
+    "descricao": "Árvore tropical de sub-bosque, de onde vem o chocolate. Dá flores e frutos direto no tronco e nos galhos grossos. Em vaso grande, meia-sombra e sem frio, vira uma planta ornamental de folhas novas avermelhadas e pode frutificar a partir do terceiro ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo. Plástico grosso ou fibra retêm mais umidade que barro, o que o cacaueiro prefere",
+    "volume_minimo_litros": 60,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco ou casca de pinus fina, 10% perlita ou areia grossa; pH entre 6 e 6,5, com 3 a 5 cm de folhas secas por cima para manter a umidade",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda no vaso definitivo sem enterrar o colo e mantenha-a só na luz clara, sem sol direto. Algumas folhas velhas podem amarelar e cair. A fase termina quando surge o primeiro lançamento de folhas novas, moles e avermelhadas."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 31,
+      "dia_fim": 540,
+      "descricao": "Caule único que cresce em surtos: vários pares de folhas avermelhadas de uma vez, depois uma pausa de semanas enquanto elas ficam verde-escuras. Vá acostumando a planta ao sol da manhã, 1 hora a mais por semana, até 3 ou 4 horas. Com 1 a 1,5 m de altura, o caule para de subir e abre de 3 a 5 galhos num mesmo ponto: essa é a jorquete."
+    },
+    {
+      "fase_id": "formacao_copa",
+      "nome": "Formação da Copa",
+      "dia_inicio": 541,
+      "dia_fim": 1095,
+      "descricao": "Os galhos da jorquete se espalham e formam a copa. O tronco engrossa e começa a lançar brotos verticais (chupões), que devem ser tirados para não roubar força da copa. O fim da fase é marcado pelas primeiras florzinhas brancas e rosadas grudadas no tronco."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Floresce em ondas na primavera e no verão, com centenas de flores minúsculas no tronco. Quem poliniza são mosquitinhos (Forcipomyia), então só uma fração mínima vinga; para ajudar, passe um pincel fino de flor em flor pela manhã. O fruto leva de 5 a 6 meses até ficar amarelo ou alaranjado e soar oco ao toque: aí corte o pedúnculo com tesoura, sem arrancar, porque a almofada floral do tronco floresce de novo. No inverno do Centro-Sul, cresce pouco e pede proteção do frio."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o cacaueiro recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda não pode secar nem ficar encharcado. Esvazie o pratinho 30 minutos depois.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cacaueiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos. Acima de 30 °C, confira a cada 2 dias. No inverno, abaixo de 18 °C, espere a camada de cima secar bem e regue a cada 5 a 7 dias. Folhas murchas ao meio-dia que não se recuperam à tarde indicam falta de água.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o cacaueiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de bokashi por vaso de 60 L, sem encostar no tronco, e regue em seguida. A partir do segundo ano, alterne com 1 colher de sopa de NPK 10-10-10 dissolvida em 5 L de água. Pule a adubação de junho a agosto, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "remocao_chupoes",
+      "titulo": "Tirar os chupões do tronco",
+      "tipo": "PODA",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 540,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente, com tesoura limpa, os brotos verticais que nascem no tronco abaixo da jorquete e na base da planta. Tire também galhos secos e os que cruzam o centro da copa. Não corte as almofadas (calombos) do tronco, porque é delas que saem as flores.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos prateados ou pretos (tripes), algodão branco nas axilas e no tronco (cochonilha) e teias finas (ácaro). Confira se há manchas escuras e moles na base do tronco.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Em setembro ou outubro, tire a planta do vaso, raspe cerca de 5 cm de raízes da lateral e do fundo do torrão e replante com substrato novo, num vaso do mesmo tamanho ou maior. Deixe a planta 2 semanas sem sol direto e sem adubo depois da troca.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 31,
+      "titulo": "Hora de apresentar o sol",
+      "mensagem": "A muda já pegou. O cacaueiro jovem queima com sol forte, mas sem nenhum sol direto fica estiolado e não floresce.",
+      "acao_requerida": "Deixar 1 hora de sol da manhã por dia e aumentar 1 hora por semana até 3 ou 4 horas, sempre protegido do sol da tarde"
+    },
+    {
+      "dia_disparo": 450,
+      "titulo": "Fique de olho na jorquete",
+      "mensagem": "Entre 1 e 1,5 m de altura, o caule para de subir e abre vários galhos num ponto só. É a forma natural do cacaueiro.",
+      "acao_requerida": "Não cortar a ponta nem os galhos da jorquete. Se nascerem mais de 5, deixar os 3 ou 4 mais fortes e bem espaçados"
+    },
+    {
+      "dia_disparo": 1000,
+      "titulo": "Primeiras flores podem aparecer",
+      "mensagem": "Flores minúsculas, brancas e rosadas, nascem grudadas no tronco e nos galhos grossos. A maioria cai sem vingar, e isso é normal.",
+      "acao_requerida": "Polinizar à mão pela manhã, passando um pincel fino de flor em flor, e manter folhas em decomposição no substrato, onde vivem os mosquitinhos polinizadores"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham com o substrato úmido, amarelam e caem; base do tronco escura e mole; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e reduzir a rega no frio. Com sintomas, tirar do vaso, cortar as raízes escuras e replantar em substrato novo e arejado"
+    },
+    {
+      "nome": "Podridão-parda (Phytophthora palmivora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons e firmes nos frutos, que se espalham até cobrir o fruto inteiro, às vezes com mofo branco",
+      "prevencao_tratamento": "Retirar e descartar os frutos atacados, sem compostar; não molhar a copa na rega e manter a copa arejada com a poda dos chupões"
+    },
+    {
+      "nome": "Vassoura-de-bruxa (Moniliophthora perniciosa)",
+      "tipo": "DOENCA",
+      "sintomas": "Brotos inchados e ramificados como uma vassoura, que secam e ficam marrons; frutos com manchas escuras e duras",
+      "prevencao_tratamento": "Rara fora das regiões produtoras, mas grave. Cortar as vassouras 15 cm abaixo da parte afetada, queimar ou descartar em saco fechado e desinfetar a tesoura com álcool"
+    },
+    {
+      "nome": "Tripes do cacau (Selenothrips rubrocinctus)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com aspecto prateado ou bronzeado, pontinhos pretos de excremento no verso e frutos com a casca ferrugenta",
+      "prevencao_tratamento": "Aumentar a umidade do ar e lavar o verso das folhas com jato de água; se persistir, óleo de neem a 0,5% no fim da tarde, a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão ou escamas marrons no tronco, nas axilas das folhas e nos pedúnculos dos frutos; folhas pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, calda de sabão neutro (1 colher de sopa por litro) mais óleo de neem, repetindo em 7 dias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas grandes, secas e esbranquiçadas ou marrons nas folhas mais expostas, surgidas depois de dias de sol forte",
+      "prevencao_tratamento": "Proteger do sol da tarde e aclimatar aos poucos. Folhas queimadas não se recuperam; deixe-as até brotarem folhas novas"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam com aspecto de cozidas e caem depois de noites abaixo de 10 °C; brotos novos secam",
+      "prevencao_tratamento": "Levar o vaso para dentro ou para perto de uma parede abrigada quando a previsão for abaixo de 12 °C e reduzir a rega no inverno. Espere a primavera para cortar as partes secas"
+    },
+    {
+      "nome": "Pontas secas por ar seco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas e pontas das folhas marrons e secas, principalmente nas folhas novas, em dias de umidade abaixo de 50%",
+      "prevencao_tratamento": "Agrupar com outras plantas, manter cobertura de folhas secas no substrato e colocar o vaso sobre um prato largo com pedrisco e água, sem a água tocar o fundo do vaso"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger o cacaueiro do frio",
+      "mensagem": "O cacaueiro para de crescer abaixo de 18 °C e sofre dano abaixo de 10 °C. No frio, ele também bebe muito menos e a raiz apodrece com facilidade.",
+      "acao_requerida": "Levar o vaso para um local abrigado do vento ou para dentro de casa perto de uma janela clara nas noites abaixo de 12 °C, espaçar as regas e suspender a adubação"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Ar seco: aumentar a umidade",
+      "mensagem": "No fim do inverno, a umidade do ar cai muito no Centro-Sul, e o cacaueiro, planta de mata úmida, seca as pontas das folhas e atrai tripes e ácaros.",
+      "acao_requerida": "Borrifar água nas folhas pela manhã em dias de umidade abaixo de 40%, renovar a cobertura de folhas secas e manter o prato com pedrisco úmido"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomada da primavera",
+      "mensagem": "Com o calor voltando, o cacaueiro solta um novo lançamento de folhas e se prepara para florescer.",
+      "acao_requerida": "Cortar os galhos secos pelo frio, retomar a adubação e voltar a rega ao ritmo de verão, conferindo o substrato a cada 3 dias"
+    }
+  ]
+}

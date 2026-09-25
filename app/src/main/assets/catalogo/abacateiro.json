@@ -1,0 +1,215 @@
+{
+  "planta": {
+    "nome_comum": "Abacateiro",
+    "nome_cientifico": "Persea americana",
+    "descricao": "Árvore frutífera tropical que em vaso grande vira uma arvoreta de 2 a 3 m, com folhagem bonita e, com sorte, alguns frutos. Parte-se de muda enxertada, que frutifica em 3 a 4 anos. A planta nascida do caroço cresce bem como ornamental, mas pode levar mais de 8 anos para dar fruto e raramente frutifica em vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo de pelo menos 50 cm de diâmetro e 50 cm de profundidade (plástico grosso, cerâmica ou tambor cortado), com vários furos grandes no fundo e pés que o afastem do chão",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% substrato de casca de pinus ou fibra de coco, 20% areia grossa lavada ou perlita, 10% húmus de minhoca. Precisa drenar muito rápido: a raiz do abacateiro apodrece em poucos dias de encharcamento",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo e ao sol. É normal perder algumas folhas velhas ou ficar com as bordas queimadas se vinha da sombra do viveiro. A fase termina quando surge a primeira brotação nova, avermelhada ou verde-clara, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e a planta cresce em fluxos: um ramo inteiro de folhas novas sai de uma vez, endurece e para por algumas semanas. Brotos que saírem abaixo do enxerto (o calombo no caule, a uns 15 a 25 cm do substrato) são do porta-enxerto e devem ser cortados rente assim que aparecerem."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A copa ramifica e engrossa. Podem aparecer as primeiras flores no fim do inverno; nessa idade a planta costuma derrubar quase todos os frutinhos, o que é normal. O tronco deve ficar firme o bastante para dispensar tutor."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: floração farta entre julho e setembro, grande queda natural de frutinhos em outubro e novembro, fluxos de folhas novas no verão e frutos maduros entre o outono e o inverno, conforme a variedade. Em vaso, uma safra de 5 a 30 frutos já é boa; é comum alternar ano de muita e ano de pouca produção."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de abacateiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do torrão da muda; se estiver seco, regue devagar até a água escorrer pelos furos. Se estiver úmido, não regue. Nunca deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o abacateiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer bem pelos furos (cerca de 5 a 8 L num vaso de 60 L). No verão acima de 30 °C, confira a cada 2 dias; no inverno, os 5 cm costumam levar 5 a 7 dias para secar. Folhas murchas com o substrato úmido indicam raiz apodrecendo, não sede.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_regular",
+      "titulo": "Adubar o abacateiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na borda do vaso, longe do tronco, 1 punhado (cerca de 300 g) de húmus de minhoca ou esterco curtido mais 1 colher de sopa de NPK 10-10-10, e regue em seguida. A partir do 3º ano, troque o NPK por 04-14-08 antes da floração (julho). Em junho e julho, com a planta parada, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire folhas novas e velhas e procure pontos brancos ou marrons presos (cochonilha), teia fina e pontinhos amarelados (ácaro) ou manchas escuras e afundadas. Confira também a base do tronco: casca escura e úmida ou com goma indica podridão. Corte rente qualquer broto que saia abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera (setembro ou outubro), tire a planta do vaso, corte 3 a 5 cm das raízes que circulam a borda e o fundo e replante com substrato novo, no mesmo vaso ou num 20% maior. Mantenha o colo do tronco na mesma altura de antes, sem enterrar. Regue bem e deixe em meia sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio sem enterrar o enxerto",
+      "mensagem": "Enterrar o colo ou o calombo do enxerto favorece a podridão do tronco, a doença que mais mata abacateiro.",
+      "acao_requerida": "Conferir se a superfície do torrão ficou no nível do substrato novo e se o enxerto está bem acima dele; cobrir com 3 cm de casca de pinus sem encostar no tronco"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de formação",
+      "mensagem": "Sem poda, o abacateiro sobe numa haste única e fica alto demais para o vaso.",
+      "acao_requerida": "Se a muda passou de 60 cm, cortar a ponta do ramo principal logo acima de uma folha, para forçar 3 ou 4 ramos laterais"
+    },
+    {
+      "dia_disparo": 400,
+      "titulo": "Flores cedo demais",
+      "mensagem": "No 1º e no 2º ano, frutos tiram a energia que a planta precisa para formar raiz e copa.",
+      "acao_requerida": "Se aparecerem cachos de flores, retirar a maior parte deles com a mão, deixando no máximo 2 ou 3"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Planta pronta para produzir",
+      "mensagem": "Com 3 anos, a muda enxertada já pode segurar os primeiros frutos.",
+      "acao_requerida": "Deixar a floração seguir sem retirar flores e manter a rega regular a partir de julho"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora cinnamomi)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas pequenas, amareladas e murchas mesmo com o substrato úmido; queda de folhas; raízes finas escuras e moles, que se desmancham; a planta seca de cima para baixo",
+      "prevencao_tratamento": "Substrato bem drenado, vaso com furos grandes e sem pratinho com água; regar só com os 5 cm de cima secos. Se aparecer, suspenda a rega até secar, retire raízes podres e replante em substrato novo; fosfito de potássio na rega, conforme o rótulo, ajuda na recuperação"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas em folhas novas, flores e frutos; frutos maduros com pontos pretos que viram podridão",
+      "prevencao_tratamento": "Não molhar a copa ao regar, podar para arejar o miolo e retirar folhas e frutos manchados. Em tempo chuvoso, calda bordalesa a 1% a cada 15 dias nas folhas novas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos, cinza ou marrons presos nos ramos e no verso das folhas; folhas pegajosas e com fumagina preta; formigas subindo o tronco",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia com álcool 70%; em infestação maior, óleo mineral ou óleo de neem a 0,5% com detergente neutro no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Ácaro e tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos ou prateados, verso bronzeado, teia fina; frutos com casca áspera e manchada",
+      "prevencao_tratamento": "Mais comuns em tempo seco e quente. Borrife água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Queima da ponta das folhas por sal",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas velhas marrons e secas, com limite nítido entre a parte seca e a verde",
+      "prevencao_tratamento": "O abacateiro é muito sensível a sal. Não exagere no adubo químico e, a cada 2 meses, regue com o dobro do volume normal para lavar os sais do vaso"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas pardas e secas nas folhas do lado mais exposto ou no tronco, logo depois de mudar a planta de lugar ou de uma poda forte",
+      "prevencao_tratamento": "Levar a muda do viveiro ao sol pleno aos poucos, ao longo de 2 semanas; depois de podar, pintar o tronco exposto com cal diluída em água"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteção contra o frio",
+      "mensagem": "Geada queima as folhas novas e mata abacateiros jovens; em vaso, a raiz também sente o frio.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, encostar o vaso numa parede voltada para o norte ou cobrir a copa com manta TNT, retirando pela manhã; regar menos"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Floração do abacateiro",
+      "mensagem": "Os cachos de flores estão abrindo; secar o substrato agora faz a planta derrubar flores e frutinhos.",
+      "acao_requerida": "Não deixar o substrato secar além dos 5 cm de cima e não podar nem aplicar inseticida na copa florida, para não afastar as abelhas"
+    },
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Queda natural de frutinhos",
+      "mensagem": "É normal o abacateiro derrubar a maioria dos frutinhos do tamanho de uma ervilha ou azeitona: ele segura só o que consegue nutrir.",
+      "acao_requerida": "Recolher os frutinhos caídos e manter rega e adubação regulares; aproveitar para podar os ramos que passaram da altura desejada"
+    },
+    {
+      "meses": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Época de colher abacates",
+      "mensagem": "Conforme a variedade, os frutos atingem o ponto entre o outono e o inverno. O abacate não amadurece no pé: ele fica pronto no pé e amolece depois de colhido.",
+      "acao_requerida": "Colher 1 fruto grande, com a casca menos brilhante e o cabinho amarelado, e deixar 4 a 7 dias em temperatura ambiente; se amolecer sem murchar, colha os outros aos poucos"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "planta": {
+    "nome_comum": "Coqueiro",
+    "nome_cientifico": "Cocos nucifera (coqueiro-anão verde)",
+    "descricao": "Palmeira tropical vendida como muda com o coco ainda preso à base. Escolhemos o coqueiro-anão verde, o mais vendido em viveiros e o que menos cresce. Em vaso ele é uma palmeira ornamental de sol pleno: quase nunca dá coco, porque para frutificar precisa de chão e de muitos anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado (cimento, cerâmica ou plástico grosso) com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo. Com os anos, passe para um de 100 L ou mais",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% fibra de coco; solto e bem drenado, sem argila compactada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso e ao sol. Pode perder a ponta de uma folha velha, o que é normal. A fase termina quando surge uma folha nova, ainda fechada como uma lança, no centro da planta."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 540,
+      "descricao": "As raízes tomam o vaso e o coco da base vai sendo consumido até secar e rachar, o que é esperado. Sai uma folha nova a cada 1 ou 2 meses no calor. As primeiras folhas são inteiras, com a ponta partida em duas. Termina quando aparecem folhas divididas em folíolos, como as de um coqueiro adulto."
+    },
+    {
+      "fase_id": "palmeira_jovem",
+      "nome": "Palmeira Jovem",
+      "dia_inicio": 541,
+      "dia_fim": null,
+      "descricao": "Folhas recortadas e a base do tronco engrossando. No calor, de setembro a março, cresce rápido e produz uma folha nova por mês. No inverno quase para. As folhas de baixo secam aos poucos: corte só as que estiverem totalmente marrons, rente ao tronco, sem arrancar. Em vaso é raro florescer e dar coco."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o coqueiro recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos (cerca de 5 L num vaso de 60 L). Não deixe água parada no prato. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o coqueiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. No verão, em sol pleno, pode precisar a cada 2 dias. No inverno, a cada 5 a 7 dias. Pontas de folha marrons e secas indicam falta de água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o coqueiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10, ou de adubo para palmeiras rico em potássio, na borda do vaso, longe do caule, e regue em seguida. A cada 3 meses, acrescente 1 punhado de húmus. Não coloque sal grosso: no vaso ele se acumula e queima as raízes. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e olho",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as bainhas procurando carocinhos brancos ou marrons (cochonilha) e teias finas com pontinhos amarelos (ácaro). Aperte de leve a base da folha central: ela deve estar firme e sem cheiro de podre.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o coqueiro de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, passe o coqueiro para um vaso 10 a 15 cm mais largo, com substrato novo, mantendo a mesma altura do colo. Mexa o mínimo nas raízes, porque palmeira sofre com raiz quebrada. Se ele já está no maior vaso possível, troque os 10 cm de cima do substrato por uma mistura nova.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante sem enterrar o coco",
+      "mensagem": "O coco preso à muda é a reserva de alimento dela durante o primeiro ano. Enterrado inteiro, ele apodrece.",
+      "acao_requerida": "Plantar deixando pelo menos metade do coco acima do substrato e não arrancá-lo em hipótese nenhuma"
+    },
+    {
+      "dia_disparo": 240,
+      "titulo": "O coco da base está secando?",
+      "mensagem": "É normal que o coco escureça, rache ou fique leve nesta época: a palmeira já absorveu as reservas e agora se sustenta pelas raízes.",
+      "acao_requerida": "Deixar o coco onde está até ele se soltar sozinho; retire só se estiver mole e com mofo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes e do olho (Phytophthora palmivora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folha central amarela e murcha que sai com um puxão leve, base mole e escura com cheiro de podre, substrato sempre encharcado",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato nem molhar o olho da planta. No início, pare de regar, deixe o substrato secar e aplique fungicida cúprico na base. Com o olho já podre, a planta não se recupera"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, algodoados ou marrons presos ao verso das folhas e às bainhas; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remover com escova de dente e água com sabão neutro; em infestação maior, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto desbotado e teias finas no verso, principalmente em tempo seco ou em local abafado",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos e aplicar óleo de neem a 0,5% a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Lixa-do-coqueiro (Phyllachora torrendiella)",
+      "tipo": "DOENCA",
+      "sintomas": "Pontos pretos, duros e ásperos ao toque sobre os folíolos, que depois secam a partir das bordas",
+      "prevencao_tratamento": "Cortar e descartar as folhas muito atacadas, manter boa ventilação e adubação com potássio em dia; em caso grave, fungicida cúprico"
+    },
+    {
+      "nome": "Deficiência de potássio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelo-alaranjadas e pontas secas nas folhas mais velhas, enquanto as novas continuam verdes",
+      "prevencao_tratamento": "Manter a adubação mensal com adubo rico em potássio na época quente; as folhas já manchadas não se recuperam, mas as novas saem normais"
+    },
+    {
+      "nome": "Queimadura por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com manchas marrom-acinzentadas ou transparentes depois de noites abaixo de 10 °C, ou de geada",
+      "prevencao_tratamento": "Nas noites frias, levar o vaso para perto de uma parede ou para dentro de casa, perto de uma janela clara; cortar as folhas mortas só na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteger do frio",
+      "mensagem": "O coqueiro é tropical: abaixo de 10 °C as folhas queimam, e o substrato frio e molhado apodrece as raízes. Ele praticamente para de crescer.",
+      "acao_requerida": "Espaçar a rega para a cada 5 a 7 dias, suspender o adubo e, nas noites abaixo de 10 °C, abrigar o vaso junto a uma parede ou dentro de casa"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o ritmo",
+      "mensagem": "Com o calor voltando, o coqueiro volta a soltar folhas novas e a pedir mais água e nutrientes.",
+      "acao_requerida": "Voltar à rega a cada 2 a 3 dias, retomar a adubação mensal e cortar rente as folhas que o frio matou"
+    }
+  ]
+}

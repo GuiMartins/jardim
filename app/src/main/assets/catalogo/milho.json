@@ -1,0 +1,225 @@
+{
+  "planta": {
+    "nome_comum": "Milho-verde",
+    "nome_cientifico": "Zea mays (milho-verde, variedades doces ou de milho comum colhidas verdes)",
+    "descricao": "Gramínea anual de crescimento rápido, cultivada em casa para colher espigas de milho-verde macias e doces em cerca de 3 meses. O milho é polinizado pelo vento, então plante pelo menos 4 vasos juntos, em bloco, em vez de um só: planta isolada forma espigas falhadas.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 95,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou balde com pelo menos 35 cm de profundidade e 30 cm de diâmetro, com furos no fundo; uma planta por vaso, agrupando no mínimo 4 vasos lado a lado",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita, com 1 colher de sopa de farinha de ossos e 1 de calcário dolomítico por vaso de 20 L misturadas antes do plantio",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 8,
+      "descricao": "Semeie 3 sementes no centro do vaso, a 3 a 4 cm de profundidade. Com o substrato acima de 18 °C, a ponta verde e enrolada rompe a superfície entre o 5º e o 8º dia."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 9,
+      "dia_fim": 45,
+      "descricao": "A planta ganha uma folha nova a cada 3 ou 4 dias e forma o cartucho (o funil de folhas no topo). Por volta do dia 30 aparecem raízes de escora saindo dos nós da base. A fase termina quando a ponta do pendão começa a surgir dentro do cartucho."
+    },
+    {
+      "fase_id": "pendoamento_florescimento",
+      "nome": "Pendoamento e Florescimento",
+      "dia_inicio": 46,
+      "dia_fim": 65,
+      "descricao": "O pendão (flor masculina) se abre no topo e solta pólen amarelo pelas manhãs; uns 3 a 5 dias depois, os cabelos (estilo-estigmas) saem da ponta da espiga. Cada fio de cabelo que recebe pólen vira um grão. Falta de água ou calor acima de 35 °C nesta fase deixa espigas falhadas."
+    },
+    {
+      "fase_id": "enchimento_graos",
+      "nome": "Enchimento dos Grãos",
+      "dia_inicio": 66,
+      "dia_fim": 84,
+      "descricao": "Os cabelos escurecem e secam na ponta enquanto os grãos incham, passando de aguados a leitosos. A espiga fica firme ao apertar pela palha."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 85,
+      "dia_fim": 95,
+      "descricao": "Ponto de milho-verde: cabelo marrom e seco, palha ainda verde, e o grão apertado com a unha solta um líquido branco leitoso. Líquido transparente é cedo; massa pastosa é tarde, porque o açúcar já virou amido."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar a semeadura",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 8,
+      "instrucoes": "Regue devagar pela manhã até umedecer os primeiros 5 cm do substrato. Ele deve ficar úmido como pano torcido, nunca encharcado, porque a semente apodrece em substrato frio e alagado.",
+      "critica": true
+    },
+    {
+      "id": "rega_vegetativa",
+      "titulo": "Regar o milho",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos do fundo. Acima de 30 °C ou com a planta passando de 1 m, confira todo dia. Folhas enroladas como canudo ao meio-dia indicam falta de água.",
+      "critica": false
+    },
+    {
+      "id": "rega_florescimento",
+      "titulo": "Regar na floração e no enchimento",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": 84,
+      "instrucoes": "Regue todo dia pela manhã até escorrer pelos furos; em dias acima de 32 °C, confira de novo no fim da tarde. Um único dia de murcha na saída dos cabelos já deixa a espiga com falhas que não se recuperam.",
+      "critica": true
+    },
+    {
+      "id": "rega_colheita",
+      "titulo": "Regar até a colheita",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 85,
+      "dia_fim_ciclo": 95,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Mantenha a umidade até colher a última espiga para os grãos não murcharem.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubação de cobertura",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 65,
+      "instrucoes": "Espalhe 1 colher de sopa rasa de NPK 20-05-20 (ou 1 xícara de húmus de minhoca mais 1 colher de chá de ureia) em volta do caule, a 5 cm dele, e regue em seguida. O milho consome muito nitrogênio: folhas velhas amarelando em V a partir da ponta indicam que falta.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o cartucho e as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 95,
+      "instrucoes": "Olhe dentro do cartucho procurando serragem úmida e folhas raspadas ou furadas (lagarta-do-cartucho). Vire as folhas e procure pulgões, pontos alaranjados de ferrugem e cigarrinhas pequenas e claras. Na floração, abra a ponta da palha para ver se há lagarta comendo os cabelos.",
+      "critica": false
+    },
+    {
+      "id": "colheita_espigas",
+      "titulo": "Colher espigas no ponto",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 85,
+      "dia_fim_ciclo": 95,
+      "instrucoes": "Nas espigas com cabelo marrom e seco, abra um pouco a palha na ponta e aperte um grão com a unha: se soltar líquido leitoso, torça a espiga para baixo e puxe. Cozinhe ou refrigere no mesmo dia, porque o açúcar vira amido em poucas horas depois da colheita.",
+      "critica": true
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "Três plantas no mesmo vaso disputam água e adubo e nenhuma forma espiga boa.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa do vaso, cortando as outras rente ao substrato com tesoura, sem arrancar"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Firmar a base do milho",
+      "mensagem": "A planta está alta e começa a soltar raízes de escora na base; em vaso, o vento pode tombá-la.",
+      "acao_requerida": "Cobrir a base do caule com 3 a 5 cm de substrato novo misturado com húmus e, em local com vento, amarrar o caule a uma estaca de 1,5 m com fita macia"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Pendão à vista: ajude a polinização",
+      "mensagem": "Com poucos vasos, o vento sozinho não leva pólen suficiente até os cabelos das espigas.",
+      "acao_requerida": "Durante uma semana, entre 8h e 10h, sacudir de leve os pendões sobre os cabelos das espigas ou colher pólen num saco de papel e polvilhar nos cabelos"
+    },
+    {
+      "dia_disparo": 85,
+      "titulo": "Primeiras espigas perto do ponto",
+      "mensagem": "Cerca de 20 dias depois da saída dos cabelos, o milho-verde fica pronto e passa do ponto em poucos dias.",
+      "acao_requerida": "Testar uma espiga com a unha e começar a colheita quando o líquido do grão estiver leitoso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Lagarta-do-cartucho (Spodoptera frugiperda)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas raspadas ou com furos grandes, serragem úmida (fezes) dentro do cartucho, lagarta com um Y claro na cabeça",
+      "prevencao_tratamento": "Abrir o cartucho e catar as lagartas; se forem muitas, aplicar Bacillus thuringiensis (Bt) direto no cartucho no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Lagarta-da-espiga (Helicoverpa zea)",
+      "tipo": "PRAGA",
+      "sintomas": "Cabelos cortados e ponta da espiga com grãos comidos e fezes",
+      "prevencao_tratamento": "Pingar 3 a 5 gotas de óleo mineral ou de neem na ponta de cada espiga quando os cabelos começarem a murchar; catar lagartas ao abrir a palha"
+    },
+    {
+      "nome": "Cigarrinha-do-milho (Dalbulus maidis)",
+      "tipo": "PRAGA",
+      "sintomas": "Insetos pequenos, amarelo-claros, que saltam do cartucho; depois, folhas avermelhadas ou com listras, planta raquítica e espigas miúdas (enfezamento transmitido por ela)",
+      "prevencao_tratamento": "Não semear perto de milho velho ou abandonado; óleo de neem a 0,5% no cartucho a cada 5 dias nas primeiras 5 semanas; plantas com enfezamento não se recuperam e devem ser descartadas"
+    },
+    {
+      "nome": "Pulgão-do-milho (Rhopalosiphum maidis)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verde-azulados no cartucho e no pendão; pendão melado e pegajoso que solta pouco pólen",
+      "prevencao_tratamento": "Jato de água forte; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas que não emergem ou tombam; planta maior murcha mesmo com substrato úmido, base do caule escura e mole",
+      "prevencao_tratamento": "Não regar com o substrato ainda úmido a 3 cm, manter os furos do vaso livres e não deixar água parada no pratinho; retirar plantas com o colo apodrecido"
+    },
+    {
+      "nome": "Ferrugem (Puccinia polysora, Puccinia sorghi)",
+      "tipo": "DOENCA",
+      "sintomas": "Pequenas pústulas alaranjadas ou marrons nas folhas que soltam pó ao passar o dedo",
+      "prevencao_tratamento": "Regar só o substrato, sem molhar as folhas, e deixar espaço entre os vasos para o ar circular; retirar as folhas muito atacadas; calda bordalesa a 1% se avançar antes da floração"
+    },
+    {
+      "nome": "Espiga falhada (polinização deficiente)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Espigas com fileiras incompletas, grãos espalhados e trechos vazios no sabugo",
+      "prevencao_tratamento": "Cultivar pelo menos 4 plantas agrupadas, fazer a polinização manual pela manhã e não deixar faltar água na saída dos cabelos"
+    },
+    {
+      "nome": "Deficiência de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas de baixo amarelando em forma de V da ponta para a nervura central; planta fina e verde-clara",
+      "prevencao_tratamento": "Manter a adubação de cobertura a cada 15 dias; ao notar o sintoma, antecipar a próxima adubação"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte e vaso seco",
+      "mensagem": "No auge do verão, um vaso de 20 L com milho grande pode secar em um único dia, e o calor acima de 35 °C reduz o pólen.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia no fim da tarde, cobrir o substrato com 3 cm de palha seca e, na floração, regar logo cedo"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "planta": {
+    "nome_comum": "Pinheira",
+    "nome_cientifico": "Annona squamosa",
+    "descricao": "Árvore frutífera pequena e semicaducifólia, também chamada de fruta-do-conde ou ata. Dá frutos doces de polpa branca em gomos. Cultivada em vaso grande, uma muda enxertada começa a produzir entre o 2º e o 3º ano e fica com 2 a 3 m de altura se for podada todo ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cimento ou fibra com pelo menos 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo e apoiado sobre pés ou rodízios para a água sair",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 15% areia grossa, 10% casca de arroz carbonizada ou perlita, mais 200 g de farinha de ossos por vaso; precisa drenar bem, porque a raiz apodrece se ficar encharcada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda enxertada com o ponto do enxerto (a cicatriz no caule) 5 cm acima do substrato. Nos primeiros dias algumas folhas podem amarelar e cair. A adaptação terminou quando surgirem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento de ramos e raízes. Arranque com a mão qualquer broto que nascer abaixo do enxerto, porque é do porta-enxerto e rouba força da copa. Se aparecerem flores no primeiro ano, retire-as: a muda ainda não aguenta fruto."
+    },
+    {
+      "fase_id": "formacao_copa",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "A copa ganha 3 a 4 ramos principais abertos. As primeiras flores aparecem na primavera. Deixe no máximo 3 a 5 frutos nesta fase e retire o resto logo que se formarem."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: no inverno perde parte das folhas e quase para de crescer. Leva a poda em agosto, brota e floresce de setembro a novembro nos ramos novos. Os frutos crescem no verão e amadurecem de fevereiro a abril. Um vaso de 60 L sustenta 10 a 15 frutos por safra."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a pinheira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar em volta do caule até escorrer pelos furos (uns 4 a 5 L). O torrão da muda ainda é pequeno e seca antes do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pinheira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos (6 a 8 L num vaso de 60 L). Com frutos crescendo no verão, confira a cada 2 dias: se o vaso secar, os frutos caem ou racham. No inverno, com a planta sem folhas, regue só a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a pinheira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou esterco curtido e 1 colher de sopa de NPK 10-10-10 pela borda do vaso, longe do caule, e regue logo depois. A partir do 3º ano, de setembro a fevereiro, troque o NPK por 4-14-8 para favorecer flor e fruto. Em junho e julho não adube.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure placas brancas de algodão ou escamas nos ramos (cochonilhas). Olhe também os frutos: furos pequenos com serragem escura na casca são sinal de broca, e manchas pretas afundadas são antracnose.",
+      "critica": false
+    },
+    {
+      "id": "renovacao_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça isso no fim do inverno, antes da brotação. Tire a planta do vaso, corte 3 a 5 cm das raízes que dão volta no torrão e troque um terço do substrato por mistura nova com composto. Volte para o mesmo vaso ou para um até 20 L maior e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Cheque os brotos do porta-enxerto",
+      "mensagem": "Brotos que nascem abaixo do enxerto são do porta-enxerto: crescem rápido e não dão a fruta que você comprou.",
+      "acao_requerida": "Localizar a cicatriz do enxerto no caule e arrancar com a mão todos os brotos que nasceram abaixo dela"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Poda de formação",
+      "mensagem": "Se a muda passou de 70 cm com um caule só, ela precisa ramificar para formar uma copa baixa e produtiva no vaso.",
+      "acao_requerida": "Cortar a ponta do caule principal a 50 a 60 cm do substrato, logo acima de uma gema, e depois deixar crescer 3 a 4 ramos laterais bem distribuídos"
+    },
+    {
+      "dia_disparo": 730,
+      "titulo": "A pinheira entra em produção",
+      "mensagem": "A partir de agora a planta aguenta uma safra de verdade. A pinheira depende de besouros pequenos para polinizar e, em vaso, costuma segurar poucos frutos sem ajuda.",
+      "acao_requerida": "Na próxima floração (setembro a novembro), fazer a polinização manual e ensacar os frutos, como explicam os avisos da estação"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e amarelam mesmo com o substrato úmido, a base do caule escurece e as raízes ficam marrons, moles e com mau cheiro",
+      "prevencao_tratamento": "Não regar com o substrato ainda úmido a 5 cm de profundidade, principalmente no inverno, e manter o vaso fora do prato com água. Planta afetada: suspender a rega, retirar as raízes podres e replantar em substrato novo bem drenado"
+    },
+    {
+      "nome": "Broca-do-fruto (Cerconota anonella)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos pequenos com manchas escuras e furos por onde sai uma serragem escura; a polpa apodrece e o fruto cai ou seca preso ao ramo",
+      "prevencao_tratamento": "Ensacar os frutos com saco de papel ou TNT quando tiverem 3 a 4 cm. Recolher e destruir, sem jogar na compostagem, todo fruto furado ou caído"
+    },
+    {
+      "nome": "Broca-da-semente (Bephratelloides pomorum)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos de 1 a 2 mm na casca de frutos já crescidos, por onde saem vespinhas; a polpa em volta escurece e endurece",
+      "prevencao_tratamento": "Ensacar os frutos cedo, antes de 4 cm, e destruir os frutos atacados para quebrar o ciclo da praga"
+    },
+    {
+      "nome": "Cochonilhas (farinhenta e de escama)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos cerosos ou escamas marrons nos ramos, no pedúnculo e entre os gomos do fruto; fumagina preta sobre as folhas; formigas subindo pelo caule",
+      "prevencao_tratamento": "Remover com escova macia ou cotonete com álcool 70%. Em infestação maior, pulverizar óleo mineral ou óleo de neem a 1% no fim da tarde a cada 7 dias, 3 vezes, e barrar as formigas no caule"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nos frutos e nas flores, que ficam pretos e mumificados; manchas marrons irregulares nas folhas em época chuvosa",
+      "prevencao_tratamento": "Podar para deixar a copa arejada, não molhar folhas e flores na rega e retirar os frutos mumificados. Em verão muito chuvoso, pulverizar calda bordalesa a 1% na floração e no início da frutificação"
+    },
+    {
+      "nome": "Queda de flores e frutinhos por falta de polinização",
+      "tipo": "DISTURBIO",
+      "sintomas": "A planta floresce bastante mas quase nenhum fruto vinga, ou os frutos crescem tortos e com gomos murchos de um lado",
+      "prevencao_tratamento": "A flor fica receptiva de manhã e só solta o pólen à tarde, e o ar seco piora isso. Faça a polinização manual com pincel na florada e mantenha o substrato úmido, sem encharcar, durante a floração"
+    },
+    {
+      "nome": "Rachadura dos frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos quase maduros racham entre os gomos e apodrecem ou atraem moscas",
+      "prevencao_tratamento": "Acontece quando o vaso seca e depois recebe muita água de uma vez, ou numa chuva forte depois de estiagem. Mantenha a rega regular na frutificação e colha os frutos logo que os gomos começarem a se afastar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: pinheira em repouso",
+      "mensagem": "No frio a pinheira perde parte das folhas e quase para. Nessa época, regar e adubar demais apodrece a raiz, e geada queima os ramos.",
+      "acao_requerida": "Espaçar a rega para quando os 5 cm de cima do substrato estiverem secos (a cada 7 a 10 dias), não adubar e, em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou cobrir a copa com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda de frutificação",
+      "mensagem": "A pinheira floresce nos ramos novos que brotam depois da poda. Podar no fim do inverno garante brotação e flores na primavera e mantém a planta num tamanho que o vaso aguenta.",
+      "acao_requerida": "Cortar os ramos da safra passada deixando 3 a 4 gemas a partir da base, eliminar ramos secos, cruzados ou voltados para dentro e arrancar as folhas velhas que sobraram para estimular a brotação"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Floração: polinize à mão",
+      "mensagem": "Se a pinheira já está florindo, ajude a polinizar: em vaso, sem os besouros polinizadores, poucos frutos vingam.",
+      "acao_requerida": "No fim da tarde, colher com pincel o pólen das flores bem abertas e guardar num potinho fechado na geladeira. Na manhã seguinte, passar o pólen no centro das flores que estão só entreabertas"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Raleie e ensaque os frutos",
+      "mensagem": "Os frutos novos já estão com 3 a 4 cm. Deixar frutos demais gera frutos pequenos, e sem proteção as brocas atacam cedo.",
+      "acao_requerida": "Deixar no máximo um fruto por ramo (10 a 15 por vaso de 60 L), retirar os tortos e ensacar os que ficarem com saco de papel ou TNT preso no pedúnculo"
+    },
+    {
+      "meses": [
+        2,
+        3,
+        4
+      ],
+      "titulo": "Época de colher fruta-do-conde",
+      "mensagem": "Os frutos amadurecem neste período. Colhidos maduros demais, racham e apodrecem no pé.",
+      "acao_requerida": "Colher os frutos em que os gomos começaram a se afastar e o espaço entre eles ficou creme-amarelado; deixar 2 a 4 dias em temperatura ambiente até ficarem macios"
+    }
+  ]
+}

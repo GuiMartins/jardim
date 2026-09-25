@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Cattleya",
+    "nome_cientifico": "Cattleya spp. (espécies e híbridos)",
+    "descricao": "Orquídea epífita brasileira, conhecida como a rainha das orquídeas pelas flores grandes e perfumadas. Guarda água nos pseudobulbos, então aguenta melhor um esquecimento do que o excesso de rega. Como o gênero é muito variado, o cuidado descrito aqui é o das Cattleya e híbridos comuns em floriculturas, que florescem uma vez por ano a partir de cada broto novo.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro com furos laterais e no fundo, ou cachepô de madeira, com 12 a 15 cm de diâmetro e 10 a 12 cm de altura; justo para a raiz e sem pratinho acumulando água",
+    "volume_minimo_litros": 1,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "60% casca de pinus média (2 a 3 cm), 20% carvão vegetal em pedaços, 20% cubos de fibra de coco lavada; nunca terra, que encharca e apodrece a raiz",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa e se ajusta à luz e à umidade da casa. É normal cair uma flor ou botão ou uma folha velha amarelar. Não troque de vaso nem adube agora. A adaptação acabou quando as folhas deixam de amarelar e ficam firmes e verde-claras."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Nasce um broto novo na base do último pseudobulbo e, em seguida, raízes brancas com a ponta verde. A cor das folhas indica se a luz está certa: verde-claro com leve tom amarelado está bom, verde-escuro significa pouca luz (a planta não floresce) e manchas brancas ou marrons indicam queimadura de sol. A fase termina quando o broto novo forma um pseudobulbo gordo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Todo ano cada pseudobulbo novo amadurece e solta uma bainha no topo, e os botões saem de dentro dela. A época de florescer depende da espécie ou do híbrido (a labiata floresce no outono, a walkeriana no inverno, muitos híbridos na primavera). Uma bainha seca e amarelada não quer dizer que a planta falhou: às vezes a flor ainda sai dali. Pseudobulbos velhos e sem folha continuam guardando reserva e não devem ser cortados."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cattleya",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm entre as cascas ou levante o vaso. Se estiver leve e a casca seca, regue pela manhã até escorrer pelos furos, molhando todo o substrato. Não deixe água parada dentro do broto novo nem no pratinho. Se ainda estiver úmido, espere mais um dia. No inverno, espace a rega para 6 a 7 dias; com calor acima de 30 °C, confira a cada 2 ou 3 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_quinzenal",
+      "titulo": "Adubar a orquídea",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g (meia colher de café) de adubo para orquídea NPK 20-20-20 em 1 L de água e regue ou borrife raízes, substrato e verso das folhas, sempre com o substrato já úmido para não queimar a raiz. Uma vez por mês, troque pelo NPK 10-30-20 quando houver bainha ou botão. Nos meses de inverno, adube só uma vez por mês.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas, a base dos pseudobulbos e as bainhas secas, procurando escamas marrons ou algodão branco (cochonilha). Veja também se há manchas pretas e moles no broto novo (podridão) e pontas de raiz roídas ou rastro brilhante (lesma).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "A casca se decompõe em uns 2 anos e retém água demais. Replante quando o broto novo começar a soltar raízes, nunca com botão ou flor aberta. Tire toda a casca velha, corte com tesoura esterilizada as raízes pretas ou ocas e firme a planta num vaso 2 a 3 cm maior, com o pseudobulbo mais velho encostado na borda e o broto voltado para o centro. Fique 5 dias sem regar para as raízes cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Sua cattleya chegou!",
+      "mensagem": "Ela vem de estufa com luz filtrada. Sol forte de repente queima as folhas, e trocar de vaso agora estressa a planta em dobro.",
+      "acao_requerida": "Colocar em local muito claro com sol direto só até as 10h, com ventilação e longe de outras orquídeas por 2 semanas; manter no vaso original"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "A planta já se ajustou ao lugar novo. Agora a cor das folhas mostra se a luz está certa para ela florescer.",
+      "acao_requerida": "Comparar a cor das folhas: se estiverem verde-escuras, aproximar da janela ou da luz da manhã; se tiverem manchas claras, recuar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Raízes marrons, moles e ocas que soltam a capa ao apertar; pseudobulbos enrugados mesmo com o substrato úmido; planta bamba no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco e nunca deixar água no pratinho. Se aparecer, tire a planta do vaso, corte as raízes podres com tesoura esterilizada, passe canela em pó nos cortes e replante em casca nova, esperando 5 dias para regar"
+    },
+    {
+      "nome": "Podridão-negra (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Mancha preta e mole que começa no broto novo ou na base do pseudobulbo e sobe rápido, com cheiro ruim",
+      "prevencao_tratamento": "Não deixar água parada no broto e manter o lugar ventilado, principalmente no verão chuvoso. Corte o tecido afetado com margem de 1 cm de parte sadia, passe canela ou pasta de fungicida cúprico e deixe a planta mais seca até cicatrizar"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons grudadas ou tufos brancos de algodão no verso das folhas e sob as bainhas secas; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em álcool 70% misturado a algumas gotas de detergente. Tire as bainhas secas que servem de esconderijo. Repita a cada 7 dias ou aplique óleo mineral a 1% no fim da tarde"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Pontas de raiz e botões roídos, rastro prateado no vaso",
+      "prevencao_tratamento": "Procure à noite com lanterna e retire à mão; deixe o vaso suspenso ou longe do chão e sem folhas mortas por perto"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou amareladas que depois ficam marrons e secas no meio da folha virada para o sol",
+      "prevencao_tratamento": "A mancha não some. Afaste a planta do sol da tarde ou use tela de sombreamento de 50%; mude de lugar aos poucos, nunca de uma vez"
+    },
+    {
+      "nome": "Falta de floração por pouca luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas verde-escuras e moles, pseudobulbos finos e compridos, nenhuma bainha ou bainhas que secam sem botão",
+      "prevencao_tratamento": "Aumente a luz aos poucos até as folhas ficarem verde-claras, com 2 a 3 horas de sol da manhã. Use adubo rico em fósforo (10-30-20) quando o pseudobulbo novo estiver formado"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem frio",
+      "mensagem": "No frio a cattleya cresce devagar e o substrato demora a secar. Com a raiz úmida e fria, ela apodrece fácil.",
+      "acao_requerida": "Espaçar a rega para 6 a 7 dias, regar só pela manhã, adubar uma vez por mês e recolher a planta para dentro nas noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Primavera: época de brotar",
+      "mensagem": "Com o calor voltando, surgem brotos e raízes novas. É a melhor época para replantar, se o substrato estiver velho.",
+      "acao_requerida": "Voltar à rega a cada 3 ou 4 dias e à adubação quinzenal; se a casca estiver esfarelando, replantar quando as raízes novas tiverem 1 cm"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e chuva",
+      "mensagem": "Calor com umidade favorece a podridão-negra, e o sol forte do verão queima as folhas com mais facilidade.",
+      "acao_requerida": "Proteger da chuva direta e do sol depois das 10h, manter o lugar ventilado e conferir o substrato a cada 2 ou 3 dias"
+    }
+  ]
+}

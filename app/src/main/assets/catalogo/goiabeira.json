@@ -1,0 +1,228 @@
+{
+  "planta": {
+    "nome_comum": "Goiabeira",
+    "nome_cientifico": "Psidium guajava",
+    "descricao": "Frutífera nativa da América tropical, rústica e muito produtiva, que se adapta bem a vasos grandes quando mantida baixa com poda. Uma muda enxertada, como a das cultivares Paluma e Pedro Sato, começa a dar frutos entre o 1º e o 2º ano. Por isso o cultivo em vaso aqui parte da muda enxertada, não da semente.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cerâmica ou fibra, com pelo menos 50 cm de diâmetro e 45 cm de profundidade e vários furos no fundo. Comece direto no vaso definitivo ou num intermediário de 30 L",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 15% areia grossa, 10% vermiculita ou casca de arroz carbonizada; acrescente 200 g de calcário dolomítico e 150 g de farinha de ossos por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação ao Vaso",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode murchar um pouco nos primeiros dias e perder algumas folhas velhas. A fase terminou quando aparecem brotos novos, avermelhados, na ponta dos ramos. Mantenha a planta a meia-sombra na primeira semana e depois leve ao sol pleno aos poucos."
+    },
+    {
+      "fase_id": "formacao_copa",
+      "nome": "Formação da Copa",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento vegetativo forte, com brotações a cada 30 a 45 dias no calor. O objetivo é formar uma copa baixa, com 3 ou 4 ramos principais abertos. Tire sempre os brotos que nascem abaixo do ponto de enxertia (a 'cicatriz' no caule), porque eles são do porta-enxerto e não dão a fruta da variedade. Se aparecerem flores no primeiro ano, arranque-as para a planta investir em raiz e copa."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta Produtiva",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "A goiabeira dá flor nos ramos novos que surgem depois da poda: a flor aparece cerca de 60 dias após a poda, e o fruto amadurece de 100 a 150 dias depois da flor. No Centro-Sul, o ano típico é poda em julho ou agosto, floração em setembro e outubro, ensacamento dos frutos na primavera e colheita de janeiro a março. Em vaso, mantenha a planta entre 1,5 e 2 m de altura."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de goiabeira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até a água escorrer pelos furos (cerca de 4 a 6 L num vaso de 60 L). Acima de 30 °C ou com vento, confira todo dia. A raiz ainda é pequena e não alcança a umidade do fundo.",
+      "critica": true
+    },
+    {
+      "id": "rega_regular",
+      "titulo": "Regar a goiabeira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue até escorrer pelos furos se estiver seco nessa profundidade. No verão e com frutos se formando, confira a cada 2 dias: falta de água derruba flores e frutinhos. No inverno, a cada 5 ou 6 dias costuma bastar. Não deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_formacao",
+      "titulo": "Adubar a goiabeira jovem",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 365,
+      "instrucoes": "Espalhe 1 xícara (cerca de 300 g) de húmus de minhoca e 1 colher de sopa (15 g) de NPK 10-10-10 sobre o substrato, a 10 cm do caule, e regue em seguida. Nos meses de junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_producao",
+      "titulo": "Adubar a goiabeira adulta",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 366,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras (cerca de 600 g) de composto ou húmus e 2 colheres de sopa (30 g) de NPK 04-14-08 perto da borda do vaso, afofe 2 cm do substrato com um garfo e regue. Nos meses de junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure bordas de folhas novas enroladas para dentro (psilídeo), pó amarelo-alaranjado em brotos e frutinhos (ferrugem), escamas brancas ou marrons nos ramos (cochonilha) e brotos saindo abaixo do enxerto. Arranque esses brotos com a mão, rente ao caule.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, logo após a poda, tire a planta do vaso. Corte 3 a 5 cm das raízes em volta do torrão e raspe o substrato velho das laterais. Volte a planta ao vaso (ou a um vaso 20% maior) com substrato novo e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Hora de ir para o sol pleno",
+      "mensagem": "Depois de uma semana de adaptação, a muda já aguenta mais luz. Sem sol direto, a goiabeira estica e não frutifica.",
+      "acao_requerida": "Mover o vaso para um lugar com pelo menos 6 horas de sol direto, aumentando a exposição ao longo de 3 ou 4 dias"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Poda de formação",
+      "mensagem": "Uma goiabeira de vaso precisa de copa baixa e aberta. Cortar a ponta agora faz a planta soltar ramos laterais.",
+      "acao_requerida": "Cortar o ramo principal a 50 ou 60 cm do substrato, logo acima de uma gema, e depois deixar crescer 3 ou 4 ramos laterais bem distribuídos"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Soltar o fitilho do enxerto",
+      "mensagem": "A fita plástica do enxerto, se ainda estiver lá, estrangula o caule conforme ele engrossa.",
+      "acao_requerida": "Cortar com cuidado e retirar qualquer fita ou fitilho que ainda envolva o ponto de enxertia"
+    },
+    {
+      "dia_disparo": 366,
+      "titulo": "A goiabeira pode começar a produzir",
+      "mensagem": "Com um ano de vaso, a planta já tem estrutura para segurar frutos. Os primeiros vêm nos ramos que brotarem depois da próxima poda.",
+      "acao_requerida": "Deixar as flores se desenvolverem e manter no máximo 15 a 20 frutos na planta nesta primeira safra"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por encharcamento (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; a planta murcha nas horas quentes; as raízes ficam escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Só regue quando os 5 cm de cima do substrato estiverem secos, deixe os furos sempre livres e nunca deixe água no pratinho. Se aparecer, suspenda a rega até secar, corte as raízes podres e troque o substrato"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp., Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com pequenos furos de postura, manchas moles e larvas brancas na polpa; os frutos caem antes de amadurecer",
+      "prevencao_tratamento": "Ensacar os frutos com 2 a 3 cm em saquinhos de papel manteiga ou TNT. Recolher e descartar em saco fechado todo fruto caído. Armadilha de garrafa PET com suco de fruta fermentado perto do vaso"
+    },
+    {
+      "nome": "Gorgulho-da-goiaba (Conotrachelus psidii)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos pequenos endurecidos, deformados e com pontos escuros; a larva come as sementes e a polpa fica empedrada",
+      "prevencao_tratamento": "Ensacar os frutos ainda pequenos. Recolher e destruir os frutos caídos, porque a larva completa o ciclo no solo"
+    },
+    {
+      "nome": "Psilídeo-da-goiabeira (Triozoida limbata)",
+      "tipo": "PRAGA",
+      "sintomas": "Bordas das folhas novas enroladas para dentro, com uma dobra amarelada ou avermelhada; pequenos insetos e cera branca dentro da dobra",
+      "prevencao_tratamento": "Cortar e descartar os brotos muito atacados. Aplicar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, nas brotações novas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou flocos brancos presos aos ramos e ao verso das folhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%. Em infestação maior, óleo mineral a 1% ou óleo de neem, repetido após 10 dias"
+    },
+    {
+      "nome": "Ferrugem (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado em brotos, folhas novas, flores e frutinhos, que depois secam, escurecem e caem",
+      "prevencao_tratamento": "Mantenha a copa arejada com poda e regue o substrato, não as folhas. Corte as partes atacadas e descarte. Em época quente e úmida, pulverize calda bordalesa a 1% nas brotações"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras, fundas e arredondadas nos frutos, que apodrecem; manchas secas nas folhas",
+      "prevencao_tratamento": "Ensacar os frutos, retirar frutos doentes e ramos secos, e manter a copa aberta. Calda bordalesa preventiva após chuvas prolongadas"
+    },
+    {
+      "nome": "Queda de flores e frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores e frutos recém-formados caem em grande quantidade, sem sinal de praga",
+      "prevencao_tratamento": "Costuma vir de falta de água ou de calor forte com substrato seco. Mantenha a rega regular na floração, cubra o substrato com palha e não adube com excesso de nitrogênio nessa fase"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Menos água no frio",
+      "mensagem": "No inverno a goiabeira cresce devagar e bebe menos. Substrato encharcado no frio é o caminho mais curto para a podridão de raiz.",
+      "acao_requerida": "Espaçar as regas para a cada 5 ou 6 dias, sempre conferindo com o dedo, e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        7,
+        8
+      ],
+      "titulo": "Poda de frutificação",
+      "mensagem": "A goiabeira só dá flor nos ramos novos. A poda de inverno programa a safra do verão e mantém a planta no tamanho do vaso.",
+      "acao_requerida": "Encurtar todos os ramos do ano anterior deixando 2 ou 3 pares de folhas, tirar ramos secos, cruzados ou voltados para dentro e manter a planta abaixo de 2 m"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Ensacar as goiabas",
+      "mensagem": "Frutos pequenos sem proteção são o alvo da mosca-das-frutas e do gorgulho. Em vaso, dá para proteger todos.",
+      "acao_requerida": "Deixar 1 ou 2 frutos por ramo, arrancando os excedentes, e ensacar em papel manteiga ou TNT os que tiverem 2 a 3 cm"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de colher goiabas",
+      "mensagem": "Os frutos da poda de inverno amadurecem agora. A goiaba passa do ponto em poucos dias no pé e atrai moscas.",
+      "acao_requerida": "A cada 2 ou 3 dias, abra os sacos e colha as goiabas que mudaram de verde-escuro para verde-claro ou amarelado e cedem levemente ao apertar"
+    }
+  ]
+}

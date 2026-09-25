@@ -1,0 +1,176 @@
+{
+  "planta": {
+    "nome_comum": "Espirradeira",
+    "nome_cientifico": "Nerium oleander",
+    "descricao": "Arbusto mediterrâneo muito resistente a sol, calor, vento e seca. Floresce da primavera ao outono em cachos rosa, brancos ou vermelhos. Todas as partes da planta são altamente tóxicas se ingeridas, para pessoas e animais, então mantenha longe de crianças e pets e use luvas ao podar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica, cimento ou plástico grosso, com pelo menos 40 cm de diâmetro e 40 cm de profundidade e furos no fundo; o peso evita que o arbusto tombe com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso novo e ao local. Algumas folhas de baixo podem amarelar e cair; é normal. A fase termina quando aparecem brotos novos, verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e os ramos crescem com vigor. Com 5 horas ou mais de sol, surgem os primeiros cachos de botões nas pontas dos ramos novos. Se só cresce folha e não floresce, falta sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto formado. Floresce da primavera ao outono nos ramos do ano, desacelera no inverno e brota forte no fim do inverno. A poda anual em agosto mantém o tamanho e aumenta a floração; a cada 2 anos o substrato precisa ser renovado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a espirradeira nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. As raízes ainda não exploraram o vaso e o torrão da muda seca rápido. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a espirradeira",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e esvazie o pratinho. No verão quente, confira a cada 2 ou 3 dias; no inverno, a cada 7 dias. Tolera secar um pouco, mas não encharcar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a espirradeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 1 xícara de húmus de minhoca) por vaso de 40 L, longe do caule, e regue em seguida. Adubo rico em nitrogênio faz folha e não flor. Pule a adubação de junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar pragas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as pontas dos ramos e os botões à procura de pulgões amarelos, e o verso das folhas e os caules à procura de cochonilhas (escamas ou algodãozinho branco). Folha preta e pegajosa indica fumagina causada por esses insetos.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Trocar o vaso e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e setembro, com luvas: tire a planta, raspe 3 a 5 cm do torrão pelas laterais e pelo fundo, corte raízes enroladas e replante com substrato novo no mesmo vaso ou num 10 cm maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Planta tóxica: escolha bem o lugar",
+      "mensagem": "Folhas, flores, seiva e caule da espirradeira são venenosos se ingeridos, mesmo em pequena quantidade. A fumaça de ramos queimados também é tóxica.",
+      "acao_requerida": "Deixar o vaso fora do alcance de crianças, cães e gatos, usar luvas ao mexer na planta e nunca queimar os restos de poda"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "Se já há brotos novos, a raiz pegou e a rega pode ficar mais espaçada. Se as folhas continuam caindo, o substrato pode estar encharcado.",
+      "acao_requerida": "Conferir se há brotos novos nas pontas e se o vaso drena bem depois da rega"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-amarelo-da-espirradeira (Aphis nerii)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de pulgões amarelo-alaranjados nas pontas dos ramos e nos botões; brotos retorcidos e melado pegajoso",
+      "prevencao_tratamento": "Jato forte de água nos ramos; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias, sempre com luvas"
+    },
+    {
+      "nome": "Cochonilhas (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos de algodão nos caules e no verso das folhas; folhas amareladas e melado",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; em infestação forte, óleo mineral ou de neem a 1% a cada 7 dias, três aplicações"
+    },
+    {
+      "nome": "Fumagina (Capnodium)",
+      "tipo": "DOENCA",
+      "sintomas": "Camada preta como fuligem sobre as folhas, que sai ao esfregar",
+      "prevencao_tratamento": "Controlar o pulgão e a cochonilha que produzem o melado; lavar as folhas com água e sabão neutro"
+    },
+    {
+      "nome": "Câncer bacteriano (Pseudomonas savastanoi pv. nerii)",
+      "tipo": "DOENCA",
+      "sintomas": "Nódulos rugosos e verrugas nos ramos, folhas e vagens; ramos deformados",
+      "prevencao_tratamento": "Cortar os ramos afetados 10 cm abaixo dos nódulos, desinfetando a tesoura com álcool entre cortes; evitar molhar a folhagem"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de baixo para cima e caindo com o substrato úmido; base do caule escura e mole; cheiro ruim no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho; se avançou, replantar em substrato novo cortando as raízes podres"
+    },
+    {
+      "nome": "Pouca ou nenhuma floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta verde e vigorosa, mas sem botões na primavera e no verão",
+      "prevencao_tratamento": "Levar para onde bata pelo menos 5 horas de sol direto, trocar adubo nitrogenado por um rico em fósforo e não podar depois de setembro, porque isso tira os ramos que dariam flor"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual da espirradeira",
+      "mensagem": "No fim do inverno a planta está quase parada e logo vai brotar. As flores saem nos ramos novos, então podar agora aumenta a floração da primavera.",
+      "acao_requerida": "Com luvas, cortar ramos secos e fracos e encurtar os demais em até um terço, logo acima de um nó; descartar os restos no lixo, sem queimar"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com frio e dias curtos a espirradeira cresce pouco e o substrato demora a secar. Abaixo de 0 °C os ramos podem queimar.",
+      "acao_requerida": "Espaçar a rega para cerca de 7 dias, conferindo com o dedo, suspender a adubação e, em noite de geada, cobrir a planta com TNT ou levá-la para perto de uma parede"
+    }
+  ]
+}

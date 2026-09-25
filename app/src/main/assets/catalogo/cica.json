@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Cica",
+    "nome_cientifico": "Cycas revoluta",
+    "descricao": "Cicadácea de crescimento muito lento, com coroa de folhas rígidas e brilhantes. Parece uma palmeira, mas não é. Resistente à seca e fácil de manter em vaso por décadas, costuma soltar só uma coroa de folhas novas por ano. Toda a planta é muito tóxica para cães, gatos e crianças, principalmente as sementes.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico pesado com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com vários furos no fundo. Deve ser só 5 cm mais largo que o torrão, porque vaso grande demais retém água e apodrece a raiz",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 30% casca de pinus fina ou perlita, mais 1 colher de sopa de farinha de ossos a cada 10 L. Tem que drenar em segundos, sem empoçar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A cica acabou de chegar ou de ir para o vaso novo. É normal uma ou duas folhas velhas da base amarelarem. Deixe o caule (cáudice) acima do nível do substrato, nunca enterrado, e não adube. A fase termina quando as folhas continuam firmes e verdes, sem amarelar mais."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o substrato novo. Não se vê quase nada acontecendo: a cica pode passar meses sem soltar folha. Se ela soltar uma coroa nova, as folhas saem enroladas como samambaia e moles. Não toque nelas nem mude o vaso de lugar até endurecerem, ou elas crescem tortas para sempre."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: uma coroa de folhas novas entre a primavera e o verão, depois as folhas endurecem e a planta fica meses parada. No inverno ela quase para de beber água. As folhas mais velhas da base amarelam aos poucos e podem ser cortadas quando secarem por completo. Plantas com mais de 10 anos podem formar um cone masculino ou uma cabeça feminina no topo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a cica na adaptação",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar em volta do caule, sem molhar o centro da coroa, até escorrer pelos furos. Se ainda estiver úmido, não regue. Esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cica",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Regue só se estiver seco nessa profundidade, até escorrer pelos furos, e nunca deixe água no pratinho. Acima de 30 °C, confira a cada 4 dias. De maio a agosto, regue no máximo a cada 15 dias, mesmo que a superfície pareça seca.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_cochonilha",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire 3 ou 4 folhas e olhe o verso dos folíolos e a base das folhas junto ao caule. Procure pontinhos brancos ou marrons presos que parecem pó ou escama, formigas subindo pelo caule e manchas amarelas salpicadas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato da cica",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e março. Se o lembrete chegar no inverno, espere setembro. Tire a planta com luvas, solte 1/3 do substrato velho, corte raízes podres (moles e escuras) e replante num vaso só 5 cm mais largo, com substrato novo e o caule acima da superfície. Espere 7 dias para regar de novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cica é tóxica",
+      "mensagem": "Todas as partes da cica são venenosas se mastigadas, principalmente as sementes, e a intoxicação costuma ser fatal para cães e gatos. As pontas dos folíolos também furam.",
+      "acao_requerida": "Deixar o vaso fora do alcance de pets e crianças e usar luvas ao mexer na planta"
+    },
+    {
+      "dia_disparo": 3,
+      "titulo": "Confira o nível do caule",
+      "mensagem": "Caule enterrado fica úmido e apodrece por baixo, sem sinal por fora até ser tarde.",
+      "acao_requerida": "Afastar o substrato até a base do caule ficar descoberta, acima da superfície"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Fim da adaptação",
+      "mensagem": "A cica já se acostumou ao lugar. A partir de agora ela bebe bem menos água e a rega passa a ser semanal.",
+      "acao_requerida": "Mudar para sol pleno aos poucos, 1 hora a mais por semana, se ela veio de viveiro sombreado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha-da-cica (Aulacaspis yasumatsui) e outras cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Crosta branca ou marrom como pó ou escama no verso dos folíolos e na base das folhas. As folhas amarelam salpicadas e depois secam. Às vezes aparecem formigas e fumagina (pó preto)",
+      "prevencao_tratamento": "Remova as escamas com escova de dente macia e água com sabão neutro. Depois aplique óleo mineral a 1% ou óleo de neem a 0,5% com detergente, no fim da tarde, cobrindo o verso das folhas, 3 vezes com 7 dias de intervalo. Corte as folhas muito tomadas"
+    },
+    {
+      "nome": "Podridão do caule e da raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Caule mole ao apertar na base, cheiro azedo no substrato, folhas novas saindo fracas ou amarelando todas de uma vez",
+      "prevencao_tratamento": "Regue só com o substrato seco a 5 cm, use substrato arenoso, nunca enterre o caule nem deixe água no pratinho. Se começou, tire do vaso, corte o tecido podre até o sadio, deixe cicatrizar 1 semana à sombra e replante em substrato seco"
+    },
+    {
+      "nome": "Deficiência de manganês (frizzle top)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas saem amarelas, retorcidas e com folíolos encarquilhados como se estivessem queimados",
+      "prevencao_tratamento": "Aplique sulfato de manganês (1 colher de chá dissolvida em 2 L de água) no substrato na primavera. Use adubo para palmeiras que contenha manganês. As folhas deformadas não se recuperam; as próximas saem normais"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrom-palha no meio das folhas voltadas para o sol, logo depois de mudar a planta de lugar",
+      "prevencao_tratamento": "Aclimate aos poucos ao sol pleno, aumentando 1 hora por semana. As partes queimadas não voltam: corte a folha só quando mais da metade estiver seca"
+    },
+    {
+      "nome": "Mancha foliar (Pestalotiopsis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas cinza ou marrons com borda escura nos folíolos, geralmente em folhas já feridas ou em lugar abafado",
+      "prevencao_tratamento": "Não molhe as folhas ao regar, deixe o vaso em lugar ventilado e corte e descarte as folhas muito manchadas. Se espalhar, use fungicida cúprico a cada 10 dias"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        12,
+        2
+      ],
+      "titulo": "Adubar a cica",
+      "mensagem": "Na primavera e no verão a cica prepara e solta a coroa nova. Sem nutrientes, especialmente manganês e magnésio, as folhas saem amarelas.",
+      "acao_requerida": "Espalhar 1 colher de sopa de adubo de liberação lenta para palmeiras (ou NPK 10-10-10 com micronutrientes) por vaso de 20 L, longe do caule, e regar em seguida"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Época da coroa nova",
+      "mensagem": "Entre outubro e janeiro a cica costuma soltar de uma vez um tufo de folhas novas enroladas e moles. É nesse momento que elas se deformam fácil.",
+      "acao_requerida": "Não girar nem mudar o vaso de lugar e não tocar nas folhas novas até endurecerem, cerca de 6 semanas depois de abrirem"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Limpeza das folhas velhas",
+      "mensagem": "Depois do verão, as folhas mais velhas da base que já secaram só gastam espaço e escondem cochonilha.",
+      "acao_requerida": "Com luvas e tesoura limpa, cortar rente ao caule só as folhas totalmente secas ou marrons. As amareladas ainda alimentam a planta e devem ficar"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: pouca água e cuidado com geada",
+      "mensagem": "No frio a cica quase para. Com substrato úmido e frio, a raiz apodrece, e geada queima as folhas.",
+      "acao_requerida": "Espaçar a rega para a cada 15 a 20 dias e, em noites com previsão abaixo de 2 °C, levar o vaso para perto da parede ou cobrir a coroa com TNT"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Aceroleira",
+    "nome_cientifico": "Malpighia emarginata",
+    "descricao": "Arbusto frutífero tropical muito rústico que produz a acerola, uma das frutas mais ricas em vitamina C. Aceita bem o vaso grande e, a partir de muda enxertada, dá várias floradas por ano entre a primavera e o outono.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cerâmica ou fibra com pelo menos 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo e apoiado sobre pés ou rodízios para não acumular água",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa e 10% casca de arroz carbonizada; misture 100 g de farinha de ossos e 50 g de calcário dolomítico para cada 40 L (pH 5,5 a 6,5)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está enraizando no vaso novo. É normal perder algumas folhas velhas na primeira semana; a fase termina quando surgem brotos novos, verde-claros ou avermelhados, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 240,
+      "descricao": "Crescimento vegetativo rápido e formação da copa. Mudas enxertadas podem dar as primeiras flores rosadas já nesta fase; deixe poucos frutos até a planta passar de 60 cm, para ela gastar energia em raiz e galhos. A fase termina quando a copa tem 3 ou 4 ramos principais firmes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 241,
+      "dia_fim": null,
+      "descricao": "No vaso a aceroleira fica com 1,2 a 2 m. Floresce em ondas de setembro a maio, logo depois de cada rega farta após um período mais seco; cada florada vira fruto maduro em cerca de 22 dias. No inverno cresce pouco e pode perder parte das folhas se fizer frio. Poda de formação e limpeza no fim do inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com raiz ainda curta, o torrão da muda seca antes do resto do vaso: molhe bem em volta do caule. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a aceroleira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 4 a 6 L num vaso de 40 L). Com flores e frutos, não deixe o vaso secar por completo, senão eles caem. No inverno, espace para a cada 5 a 7 dias e só regue com o substrato seco.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica_mineral",
+      "titulo": "Adubar a aceroleira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 litro de húmus de minhoca ou composto sobre o substrato, sem encostar no caule, mais 1 colher de sopa (15 g) de NPK 10-10-10 por vaso de 40 L; afofe a superfície e regue em seguida. Com a planta adulta em florada, troque o NPK por 4-14-8. De junho a agosto, pule a dose de NPK e use só o húmus.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas dos brotos novos e procure pulgões, escamas brancas ou marrons presas nos ramos (cochonilha) e manchas escuras afundadas nos frutos e folhas. Recolha frutos caídos ou furados do chão do vaso.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de preferência em agosto ou setembro. Tire a planta do vaso, raspe 5 cm de raiz em volta e no fundo do torrão com faca limpa, troque um terço do substrato por mistura nova e devolva ao mesmo vaso (ou a um de 60 L). Pode um terço da copa para equilibrar e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Olho nos brotos do porta-enxerto",
+      "mensagem": "Mudas enxertadas soltam brotos abaixo do enxerto, que roubam força da parte que dá fruto bom.",
+      "acao_requerida": "Localizar a cicatriz do enxerto no caule e cortar rente qualquer broto que saia abaixo dela; repetir sempre que aparecer"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Poda de formação",
+      "mensagem": "Uma aceroleira com 3 ou 4 galhos bem distribuídos produz mais e cabe melhor no vaso do que uma de haste única.",
+      "acao_requerida": "Se a muda tiver mais de 50 cm, cortar a ponta a 40–50 cm do substrato e, quando brotarem, deixar os 3 ou 4 ramos mais fortes voltados para lados diferentes"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Liberar a frutificação",
+      "mensagem": "A planta já deve ter raiz e copa formadas para sustentar frutos.",
+      "acao_requerida": "Parar de tirar as flores e deixar as floradas virarem fruto; se a copa ainda estiver abaixo de 60 cm, deixar só metade dos cachos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por encharcamento (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com substrato úmido, murcha nas horas quentes, cheiro azedo no vaso e raízes escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter os furos livres; se ocorrer, suspender a rega, cortar as raízes podres e replantar em substrato novo"
+    },
+    {
+      "nome": "Cochonilha (Pinnaspis, Orthezia)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodoadas grudadas nos ramos e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Retirar com escova de dente e água com sabão neutro; em infestação, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e botões novos, que ficam enrugados e deformados",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha, Ceratitis)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos, amolecidos por dentro e com larvas brancas; caem antes de maduros",
+      "prevencao_tratamento": "Colher a cada 2 dias na safra, recolher e descartar em saco fechado os frutos caídos e usar armadilha de garrafa com suco de fruta fermentado perto do vaso"
+    },
+    {
+      "nome": "Nematoide-das-galhas (Meloidogyne)",
+      "tipo": "PRAGA",
+      "sintomas": "Planta raquítica e amarelada que murcha fácil; raízes com caroços e engrossamentos",
+      "prevencao_tratamento": "Comprar muda enxertada em porta-enxerto tolerante e usar substrato novo, nunca terra de quintal; plantas muito atacadas devem ser descartadas com o substrato"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas em frutos, folhas novas e flores, mais comuns em períodos chuvosos e quentes",
+      "prevencao_tratamento": "Não molhar a copa na rega, podar para arejar o centro da planta e retirar frutos e folhas afetados; em ataque forte, calda bordalesa a 1% fora da florada"
+    },
+    {
+      "nome": "Queda de flores e frutos por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores e frutinhos verdes caem em massa poucos dias depois de o substrato secar por completo",
+      "prevencao_tratamento": "Manter o substrato levemente úmido durante florada e frutificação e cobrir a superfície com 3 cm de palha ou casca de pinus para reduzir a evaporação"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas e secas nas pontas dos ramos após noites abaixo de 5 °C; geada queima os brotos",
+      "prevencao_tratamento": "Nas noites frias, encostar o vaso numa parede ou colocá-lo sob beiral e cobrir a copa com manta de TNT; podar os ramos queimados só no fim do inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: proteja do frio",
+      "mensagem": "A aceroleira é tropical e sofre abaixo de 5 °C. Nesta época ela quase para de crescer e precisa de menos água.",
+      "acao_requerida": "Espaçar a rega para quando o substrato secar a 5 cm e, em noites com previsão de frio forte, levar o vaso para perto de uma parede ou sob beiral"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de fim de inverno",
+      "mensagem": "Podar antes da primeira florada estimula ramos novos, que são os que dão flor.",
+      "acao_requerida": "Tirar galhos secos, cruzados e os que crescem para dentro da copa, e encurtar em um terço os ramos mais longos para manter a planta com até 1,5 m"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "titulo": "Safra de acerola",
+      "mensagem": "As floradas se sucedem e cada uma amadurece em cerca de 22 dias. A acerola madura cai e fermenta em 2 a 3 dias no pé.",
+      "acao_requerida": "Passar pela planta a cada 2 dias colhendo os frutos vermelhos com a mão (para mais vitamina C, colha vermelho-alaranjados) e congelar o que não for consumido no dia"
+    }
+  ]
+}

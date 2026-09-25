@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Samambaia",
+    "nome_cientifico": "Nephrolepis exaltata",
+    "descricao": "Samambaia de folhas longas e arqueadas. É a mais comum em vaso suspenso nas varandas brasileiras e cresce bem com luz clara, sem sol forte. Gosta de umidade constante e dura muitos anos quando é dividida de tempos em tempos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso suspenso de plástico ou cuia de fibra de coco com 25 a 30 cm de diâmetro e 20 cm de profundidade, com furos no fundo. Não use xaxim: a extração é proibida.",
+    "volume_minimo_litros": 8,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% terra vegetal, 30% fibra de coco, 20% húmus de minhoca e 10% perlita ou casca de pinus fina. Deve reter umidade sem virar lama.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta estranha a mudança de luz e umidade. Algumas folhinhas amarelam e caem, principalmente no miolo, e isso é normal. A adaptação terminou quando aparecem brotos novos enrolados, os báculos, no centro da touceira."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "As folhas novas se desenrolam verdes e firmes e a touceira fica mais cheia. Surgem estolões, uns fios finos sem folha que pendem do vaso e podem ser cortados para dar nova planta. Se as folhas novas saírem curtas e pálidas, falta luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão cresce rápido e bebe muita água. No inverno quase para e pede menos rega e nenhum adubo. Os pontinhos marrons em fileira no verso das folhas são os esporos, não uma praga. A cada 2 anos a touceira toma o vaso e precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a samambaia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. Outro teste: o vaso suspenso leve é sinal de seco. No verão, acima de 30 °C, confira todo dia. No inverno o intervalo cai para 3 a 4 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a samambaia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva NPK 10-10-10 na metade da dose do rótulo (cerca de 1 g por litro de água) e regue com a solução sobre o substrato já úmido, sem molhar as folhas. Outra opção é espalhar 2 colheres de sopa de húmus ou bokashi. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Tirar folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao substrato, com tesoura limpa, as folhas inteiras que estiverem marrons ou amarelas. Sacuda a touceira de leve para soltar os folíolos secos presos no miolo, que abafam e apodrecem.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e miolo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire algumas folhas e procure escamas marrons soltas ao longo da nervura central, que saem com a unha. Os esporos, ao contrário, ficam em fileiras regulares na borda dos folíolos. Procure também teias finas com pontinhos que se movem e miolo escuro ou mole.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro. Tire a planta do vaso, corte o torrão em 2 a 4 partes com faca limpa, deixando folhas e raízes em cada uma, e replante cada parte em substrato novo. Mantenha à sombra e úmido por 2 semanas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, samambaia!",
+      "mensagem": "Na loja ela vivia em estufa úmida. Os primeiros dias definem se a adaptação vai ser tranquila.",
+      "acao_requerida": "Tirar o saco plástico e o vaso de papelão, conferir se o vaso tem furos e pendurar num lugar claro, protegido do vento e sem sol depois das 10h"
+    },
+    {
+      "dia_disparo": 10,
+      "titulo": "Folhinhas caindo?",
+      "mensagem": "Um pouco de queda de folíolos no começo é adaptação. Queda forte com substrato seco indica rega curta; com substrato encharcado, raiz sufocando.",
+      "acao_requerida": "Conferir a umidade do substrato e ajustar a rega conforme o caso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes e do miolo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Miolo escuro e mole, folhas murchando mesmo com o substrato úmido, cheiro de mofo e raízes marrons que se desmancham",
+      "prevencao_tratamento": "Nunca deixe água parada no pratinho nem regue substrato que ainda está úmido. Corte as partes podres, replante a parte sadia em substrato novo e espace as regas"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou brancas coladas ao longo das nervuras e dos talos, folhas amarelando e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70% e depois aplique óleo de neem a 0,5% no fim da tarde a cada 7 dias, 3 vezes. Corte as folhas muito infestadas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo e depois acinzentadas, com teia fina no verso, mais comum em ar seco e quente",
+      "prevencao_tratamento": "Lave a planta com jato suave de água, aumente a umidade ao redor e aplique óleo de neem a 0,5% a cada 5 dias se persistir"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos novos roídos e rastro prateado no vaso, mais comum quando a planta fica no chão",
+      "prevencao_tratamento": "Mantenha o vaso suspenso e cate os bichos à noite com lanterna"
+    },
+    {
+      "nome": "Pontas secas e queda de folíolos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e crocantes e folíolos caindo aos montes",
+      "prevencao_tratamento": "Causas: ar seco, sol forte ou rega irregular. Tire do sol da tarde, afaste de ar-condicionado e vento, e agrupe com outras plantas ou deixe perto de uma bacia de água"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com frio, a samambaia quase para de crescer. Substrato úmido e gelado apodrece as raízes, e abaixo de 5 °C as folhas queimam.",
+      "acao_requerida": "Espaçar as regas para quando os 2 cm de cima estiverem secos, suspender o adubo e recolher para perto da parede ou para dentro nas noites abaixo de 8 °C"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Ar seco do fim do inverno",
+      "mensagem": "Em agosto e setembro a umidade do ar costuma cair muito no Sudeste e no Centro-Oeste, e é quando as pontas secam e o ácaro aparece.",
+      "acao_requerida": "Conferir o substrato todo dia e aproximar a samambaia de outras plantas ou de uma bacia com água para aumentar a umidade ao redor"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o crescimento",
+      "mensagem": "Com o calor voltando, a planta solta brotos novos e volta a precisar de nutrientes.",
+      "acao_requerida": "Tirar todas as folhas secas acumuladas no inverno e voltar à adubação mensal"
+    }
+  ]
+}

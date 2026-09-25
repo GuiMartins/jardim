@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Mandioca (aipim, macaxeira)",
+    "nome_cientifico": "Manihot esculenta (variedade mansa, de mesa)",
+    "descricao": "Arbusto de raiz tuberosa rica em amido, rústico, que aguenta calor e alguma seca. É perene na natureza, mas em vaso é cultivado como anual: cresce de uma maniva e é arrancado inteiro na colheita, entre 8 e 11 meses depois. Use só manivas de mandioca mansa (aipim/macaxeira). A mandioca brava tem muito ácido cianídrico e não serve para consumo caseiro, e as folhas cruas das duas são tóxicas para pets.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": 330,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande ou saco de cultivo com pelo menos 45 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo; a raiz cresce para baixo e para os lados",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra de jardim peneirada, 30% areia grossa, 20% composto orgânico ou húmus; solto e arenoso para a raiz engrossar sem deformar. Nada de esterco fresco",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "brotacao_enraizamento",
+      "nome": "Brotação e Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Enterre uma maniva de 15 a 20 cm, com 5 a 7 gemas, na horizontal a 5 a 10 cm de profundidade ou inclinada com dois terços enterrados e as gemas para cima. Os brotos aparecem entre o 8º e o 15º dia. Se no dia 25 nenhuma gema brotou e a casca está enrugada ou mole, a maniva morreu e é preciso replantar."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "As hastes crescem rápido e soltam folhas palmadas de 5 a 7 lóbulos. A planta passa de 1 m. As raízes finas começam a se diferenciar em raízes de reserva a partir do 2º ou 3º mês."
+    },
+    {
+      "fase_id": "engrossamento_raizes",
+      "nome": "Engrossamento das Raízes",
+      "dia_inicio": 121,
+      "dia_fim": 240,
+      "descricao": "As raízes de reserva acumulam amido e engrossam. A planta pode rachar a superfície do substrato. No outono e no inverno ela perde parte das folhas de baixo, o que é normal. Se aparecer raiz exposta, cubra com substrato para ela não esverdear."
+    },
+    {
+      "fase_id": "maturacao_colheita",
+      "nome": "Maturação e Colheita",
+      "dia_inicio": 241,
+      "dia_fim": 330,
+      "descricao": "As raízes atingem o tamanho de mesa. Para saber se estão prontas, cave com a mão ao lado do caule e veja se as raízes têm 4 cm de diâmetro ou mais e soltam casca fácil. Depois de uns 12 meses elas ficam fibrosas e demoram a cozinhar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a maniva",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos. A maniva sem raiz desidrata rápido e não brota mais, mas encharcado apodrece: não deixe água no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a mandioca",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 330,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Se ainda estiver úmido, deixe para a próxima. No verão acima de 32 °C confira a cada 2 dias; no inverno o intervalo passa de 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a mandioca",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": 225,
+      "instrucoes": "Espalhe 2 punhados de composto ou húmus e 1 colher de sopa de cinza de madeira (potássio) na borda do vaso de 40 L, misture de leve na superfície e regue. Evite adubo rico em nitrogênio, que faz rama e não raiz.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e hastes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 330,
+      "instrucoes": "Procure lagartas grandes verdes ou marrons (mandarová) e folhas roídas até a nervura. Vire as folhas e veja se há pontos amarelados, teias finas ou insetos brancos no verso. Nas hastes, procure massas brancas de cochonilha.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Escolher as hastes",
+      "mensagem": "A maniva brotou em várias gemas. Muitas hastes dividem a energia e deixam as raízes finas.",
+      "acao_requerida": "Deixar as 2 hastes mais vigorosas e quebrar ou cortar as outras rente à maniva"
+    },
+    {
+      "dia_disparo": 240,
+      "titulo": "Conferir as raízes",
+      "mensagem": "Com 8 meses, a mandioca de mesa costuma estar pronta.",
+      "acao_requerida": "Cavar com a mão ao lado do caule, medir o diâmetro de uma raiz e cobrir de novo se ainda estiver fina"
+    },
+    {
+      "dia_disparo": 300,
+      "titulo": "Hora de colher a mandioca",
+      "mensagem": "Daqui a um mês as raízes começam a ficar fibrosas e duras de cozinhar.",
+      "acao_requerida": "Cortar a rama a 30 cm do chão, virar o vaso e soltar as raízes; guarde 2 manivas do terço médio da haste para replantar. As raízes duram só 2 a 3 dias fora da terra: descasque e congele o que não for usar logo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mandarová (Erinnyis ello)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas grandes, de até 10 cm, verdes, marrons ou pretas, que comem folhas inteiras e deixam só as nervuras em poucos dias",
+      "prevencao_tratamento": "Catar as lagartas à mão e procurar os ovos esverdeados no verso das folhas. Em ataque forte, Bacillus thuringiensis (Bt) pulverizado no fim da tarde"
+    },
+    {
+      "nome": "Ácaros (ácaro-verde e rajado)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto bronzeado e teias finas no verso; pioram em tempo seco e quente",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água nos dias secos; se persistir, óleo de neem a 0,5% ou calda de enxofre a cada 7 dias"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos ao balançar a planta; folhas amareladas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Massas brancas algodoadas nas hastes e nos brotos; ponteiros encarquilhados e internódios curtos",
+      "prevencao_tratamento": "Remover com cotonete e álcool 70%; óleo mineral ou de neem a 1% nas hastes. Não use maniva de planta infestada para replantar"
+    },
+    {
+      "nome": "Podridão radicular (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas caem, raízes moles e malcheirosas com o miolo escurecido",
+      "prevencao_tratamento": "Substrato arenoso, furos desobstruídos, nada de pratinho com água e rega só com o substrato seco a 5 cm. Descarte a planta e o substrato afetados"
+    },
+    {
+      "nome": "Bacteriose (Xanthomonas axonopodis pv. manihotis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas angulares encharcadas nas folhas, murcha dos ponteiros e goma nas hastes; a secagem desce pela haste",
+      "prevencao_tratamento": "Plantar manivas sadias; cortar as partes doentes 20 cm abaixo da lesão com tesoura desinfetada e não molhar as folhas na rega"
+    },
+    {
+      "nome": "Raízes finas e muita rama",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta alta e muito folhosa, mas raízes de reserva finas como dedos na colheita",
+      "prevencao_tratamento": "Evitar adubo nitrogenado e esterco fresco, garantir 6 horas ou mais de sol direto e usar vaso de 40 L ou mais"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e ponteiros escurecidos e secos depois de uma noite fria",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou sob beiral nas noites abaixo de 5 °C. Se queimar, espere a primavera e corte só a parte seca: a planta rebrota das gemas de baixo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger a mandioca do frio",
+      "mensagem": "A mandioca é tropical e perde as folhas abaixo de 10 °C. A geada queima a rama inteira.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para um lugar abrigado ou cobrir a planta com TNT até de manhã"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Regar menos no inverno",
+      "mensagem": "Com frio e menos folhas, a planta quase para e o substrato demora a secar. Excesso de água agora apodrece as raízes.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 5 cm de profundidade, o que no inverno costuma levar mais de 7 dias"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "planta": {
+    "nome_comum": "Palmeira-ráfis",
+    "nome_cientifico": "Rhapis excelsa",
+    "descricao": "Palmeira de touceira do sul da China, com vários caules finos cobertos de fibra marrom e folhas em leque, que chega a 1,5–2 m em vaso. É uma das palmeiras que melhor aguentam ambiente interno com pouca luz, cresce devagar e vive décadas no mesmo lugar. Em casa quase sempre se começa com uma touceira já formada, comprada em vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou cachepô com vaso interno, de 30 a 40 cm de diâmetro e pelo menos 30 cm de profundidade, com furos no fundo; só 5 cm mais largo que o torrão atual, porque vaso grande demais retém água e apodrece a raiz",
+    "volume_minimo_litros": 20,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "40% terra vegetal, 30% substrato para plantas com fibra de coco, 20% casca de pinus fina ou perlita, 10% húmus de minhoca; deve drenar rápido e continuar levemente úmido",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A palmeira sai da luz forte do viveiro e sente a mudança: é normal amarelar uma ou duas folhas velhas e surgirem pontas marrons. Coloque-a a até 2 m de uma janela clara, sem sol forte da tarde, e não troque de vaso nem adube agora. A fase termina quando uma folha nova começa a despontar do centro da touceira."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes se acomodam ao novo ambiente e as folhas novas abrem com cor verde-escura e brilho. O crescimento é lento: uma a três folhas novas por caule por ano é o normal. Se as folhas novas vierem pálidas e estreitas, falta luz; aproxime da janela."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão a touceira lança folhas e novos caules da base, pede rega mais frequente e adubo mensal. No outono e inverno quase para: rega espaçada e sem adubo. Folhas velhas secam de baixo para cima; corte-as rente ao caule com tesoura limpa quando estiverem mais de metade marrons. A cada dois anos, troque o substrato ou divida a touceira."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a palmeira-ráfis",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho após 30 minutos; se ainda estiver úmido, não regue. Use água filtrada ou da chuva, porque o flúor e o cloro da torneira queimam as pontas das folhas. No inverno, o intervalo real costuma dobrar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a palmeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dilua adubo líquido para folhagens (NPK equilibrado, como 10-10-10) na metade da dose do rótulo e aplique com o substrato já úmido. De abril a agosto, pule a adubação: a planta está quase parada e o sal acumula no vaso.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_inspecao",
+      "titulo": "Limpar e inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Passe um pano úmido nas duas faces das folhas para tirar a poeira. Procure escamas marrons ou bolinhas brancas nos caules e no verso das folhas, e teia fina ou pontinhos amarelados que indicam ácaro. Olhe também a base dos caules: fibra mole e escura é sinal de excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "lavagem_substrato",
+      "titulo": "Lavar o substrato",
+      "tipo": "REGA",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No lugar de uma rega comum, leve o vaso ao tanque ou ao box e passe água em quantidade de três vezes o volume do vaso (cerca de 60 L num vaso de 20 L), devagar, deixando escorrer tudo pelos furos. Isso tira o sal do adubo e da água, principal causa de pontas marrons. Deixe escorrer bem antes de voltar ao cachepô.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato ou dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro. Tire a touceira do vaso, remova com os dedos o substrato velho e corte raízes pretas e moles. Replante no mesmo vaso com substrato novo ou num vaso 5 cm maior, se as raízes enrolavam no fundo. Para dividir, separe grupos de 3 a 5 caules com raiz própria usando uma faca limpa. Mantenha à sombra e sem adubo por 30 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar definitivo",
+      "mensagem": "A ráfis gosta de luz clara, mas o sol da tarde queima as folhas em poucas horas. Ela também sofre com mudanças frequentes de lugar.",
+      "acao_requerida": "Colocar a palmeira perto de uma janela clara, com no máximo sol fraco da manhã, longe de ar-condicionado e aquecedor, e só trocar de vaso se as raízes já estiverem saindo pelos furos"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Amarelou uma folha? É normal",
+      "mensagem": "Na adaptação é comum a palmeira perder uma ou duas folhas velhas da base. O problema é quando as folhas novas do centro amarelam ou os caules ficam moles.",
+      "acao_requerida": "Cortar rente ao caule as folhas totalmente secas e, se folhas novas estiverem amarelando, espaçar as regas e conferir se o pratinho está acumulando água"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Adaptação concluída",
+      "mensagem": "A palmeira já se acostumou ao novo ambiente. A partir de agora a adubação mensal da primavera e do verão começa a valer.",
+      "acao_requerida": "Fazer a primeira adubação diluída se for entre setembro e março; caso contrário, esperar setembro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e murchando mesmo com o substrato úmido, base dos caules escura e mole, cheiro azedo no vaso, raízes pretas que se desfazem ao toque",
+      "prevencao_tratamento": "Regar só com os 3 cm de cima secos e nunca deixar água parada no pratinho ou no cachepô. Se acontecer, tirar do vaso, cortar raízes e caules podres, polvilhar canela em pó nos cortes e replantar em substrato novo e mais drenante, regando pouco por 3 semanas"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou esbranquiçadas presas no verso das folhas e nos caules; folhas com pontos amarelos e melado pegajoso, às vezes com fumagina preta",
+      "prevencao_tratamento": "Remover as escamas com cotonete ou escova macia embebidos em álcool 70%. Em infestação maior, pulverizar óleo mineral ou óleo de neem a 1% com gotas de detergente neutro, no fim da tarde, a cada 7 dias por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão entre os caules, na base das folhas e na fibra do tronco",
+      "prevencao_tratamento": "Retirar com cotonete e álcool 70% e lavar a touceira com jato de água. Repetir a inspeção por 3 semanas, porque os ovos escondidos na fibra eclodem depois"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto empoeirado, teia fina no verso e entre os folíolos; comum em ar seco e ambiente com ar-condicionado",
+      "prevencao_tratamento": "Aumentar a umidade do ar e lavar as folhas no chuveiro, sobretudo o verso. Se persistir, óleo de neem a 0,5% a cada 5 dias, 3 vezes"
+    },
+    {
+      "nome": "Mancha foliar (Pestalotiopsis, Helminthosporium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas arredondadas com halo amarelo nas folhas, que crescem e se juntam",
+      "prevencao_tratamento": "Não molhar as folhas no fim do dia e manter o ambiente ventilado. Cortar as folhas muito atacadas e, se espalhar, aplicar fungicida à base de cobre na dose do rótulo"
+    },
+    {
+      "nome": "Pontas marrons",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas dos folíolos secas e marrons, avançando aos poucos, sem manchas no meio da folha",
+      "prevencao_tratamento": "É acúmulo de sal ou flúor, ar muito seco ou rega irregular. Usar água filtrada ou da chuva, lavar o substrato a cada 3 meses e não deixar secar por completo. Aparar as pontas com tesoura, seguindo o formato da folha e deixando uma faixa fina de marrom"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com áreas desbotadas, amarelo-palha ou brancas, que secam, no lado virado para a janela",
+      "prevencao_tratamento": "Afastar do sol direto da tarde ou filtrar com cortina. As folhas queimadas não se recuperam; corte-as quando secarem mais de metade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Começou a estação de crescimento",
+      "mensagem": "Com a primavera a palmeira volta a lançar folhas e brotos da base, e passa a pedir mais água e adubo.",
+      "acao_requerida": "Retomar a adubação mensal diluída, voltar ao intervalo de rega de verão e, se o substrato estiver com mais de 2 anos, planejar a troca para este mês ou o próximo"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor e ar seco: atenção aos ácaros",
+      "mensagem": "Nos meses quentes, com o ar-condicionado ligado, o ar seca e os ácaros se multiplicam rápido, além de o vaso secar mais depressa.",
+      "acao_requerida": "Conferir a umidade do substrato a cada 2 ou 3 dias, dar um banho de chuveiro nas folhas uma vez no mês e manter a planta longe da saída do ar-condicionado"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Suspender o adubo até setembro",
+      "mensagem": "Com o outono a palmeira desacelera e quase para no inverno. Adubo nessa época só acumula sal e queima as pontas das folhas.",
+      "acao_requerida": "Parar a adubação até setembro e espaçar as regas, sempre conferindo com o dedo antes de regar"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A ráfis aguenta frio moderado, mas vento gelado e temperaturas abaixo de 5 °C manchazem e secam as folhas, sobretudo com o substrato encharcado.",
+      "acao_requerida": "Nas noites abaixo de 8 °C, trazer para dentro ou afastar de janelas e portas com corrente de ar, e regar só pela manhã"
+    }
+  ]
+}

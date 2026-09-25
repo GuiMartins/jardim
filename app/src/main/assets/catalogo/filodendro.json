@@ -1,0 +1,211 @@
+{
+  "planta": {
+    "nome_comum": "Filodendro",
+    "nome_cientifico": "Philodendron hederaceum (syn. P. scandens, vendido como P. cordatum), incluindo a variedade 'Brasil'",
+    "descricao": "Trepadeira tropical de folhas em coração. É o filodendro mais vendido no Brasil para cultivo dentro de casa, por isso foi o escolhido para o nome genérico. Aguenta pouca luz e algum esquecimento na rega, cresce rápido e pode pender de um vaso suspenso ou subir por um tutor. A seiva tem oxalato de cálcio e irrita a boca e a pele: mantenha longe de crianças e de animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com furos no fundo, com 15 a 20 cm de diâmetro e de profundidade e só 2 a 4 cm mais largo que o torrão da muda. Vaso grande demais retém água e apodrece a raiz",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "50% substrato para plantas, 20% casca de pinus fina, 20% perlita ou vermiculita, 10% húmus de minhoca. Fica arejado, escorre rápido e ainda segura alguma umidade",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Depois do plantio, a muda pode amarelar uma ou duas folhas velhas e parar de crescer enquanto as raízes ocupam o substrato novo. A fase termina quando surge a primeira folha nova, que nasce enrolada e mais clara."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Os ramos se alongam e cada nó novo traz uma folha, às vezes também uma raiz aérea. Se as folhas novas saem cada vez menores e com muito espaço entre os nós, falta luz: chegue o vaso mais perto da janela, mas longe do sol forte do meio-dia."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Os ramos chegam a 1 ou 2 m, pendentes ou presos a um tutor de fibra de coco ou de musgo, onde as folhas crescem maiores. Cresce forte de setembro a março e quase para no inverno, quando é preciso regar e adubar menos. Dentro de casa não floresce. A planta se renova com podas de condução e com a troca de substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o filodendro recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água do pratinho depois de 15 minutos. As raízes ainda não ocuparam o vaso novo, então o torrão da muda não pode secar por inteiro nem ficar encharcado.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o filodendro",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato, cerca de um terço da altura do vaso. Regue só se estiver seco, até escorrer pelos furos, e esvazie o pratinho. No verão, acima de 30 °C, confira a cada 3 ou 4 dias; no inverno, a cada 8 a 10 dias. Folhas caídas e moles com o substrato seco pedem água; com o substrato úmido, é excesso de rega.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o filodendro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato úmido, regue com adubo líquido equilibrado (NPK 10-10-10 ou adubo para folhagens) na metade da dose do rótulo, ou espalhe 2 colheres de sopa de húmus na superfície de um vaso de 2 a 3 L. De maio a agosto, use um quarto da dose.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e nós",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, as axilas e a base de cada folha. Procure tufos de algodão branco, carapaças marrons, teias finas ou pontinhos prateados. Aproveite para passar um pano úmido nas folhas: poeira acumulada tira luz da planta.",
+      "critica": false
+    },
+    {
+      "id": "poda_conducao",
+      "titulo": "Podar e conduzir os ramos",
+      "tipo": "PODA",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte logo acima de um nó os ramos longos e pelados (com muito espaço entre os nós e poucas folhas) e tire as folhas amarelas. Amarre ao tutor os ramos novos ou enrole-os sobre o vaso. As pontas cortadas com 2 ou 3 nós enraízam num copo de água em 2 a 4 semanas e podem voltar ao vaso para deixá-lo mais cheio.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e março. Tire a planta do vaso, solte as raízes que dão voltas no fundo, corte as escuras e moles e replante com substrato novo num vaso 3 a 5 cm mais largo. Regue bem e deixe longe do sol direto por duas semanas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante a muda no vaso definitivo",
+      "mensagem": "Muda de floricultura vem em substrato pobre e vaso apertado. Plantar do jeito certo evita podridão nas primeiras semanas.",
+      "acao_requerida": "Plantar na mesma altura do torrão, sem enterrar o caule, completar com o substrato recomendado, regar até escorrer e deixar num lugar claro, sem sol direto"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "Se já apareceu uma folha nova, as raízes pegaram e a planta aguenta regas mais espaçadas.",
+      "acao_requerida": "Ver se nasceu folha nova. Se não nasceu, levar o vaso para um lugar mais claro e continuar regando pelo teste do dedo"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Hora de decidir a forma",
+      "mensagem": "Os ramos já passam de 50 cm. Com tutor, o filodendro sobe e dá folhas maiores; sem tutor, fica pendente.",
+      "acao_requerida": "Cravar um tutor de fibra de coco ou de musgo junto ao caule e amarrar os ramos com fita macia, ou pendurar o vaso e deixar os ramos caírem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de baixo para cima e murchas mesmo com o substrato úmido, base do caule escura e mole, cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só quando o substrato estiver seco a 3 cm e nunca deixar água no pratinho. Se a podridão aparecer, tirar a planta do vaso, cortar as raízes pretas e moles, replantar em substrato novo e seco e só voltar a regar depois de 5 dias"
+    },
+    {
+      "nome": "Excesso de rega",
+      "tipo": "DISTURBIO",
+      "sintomas": "Várias folhas amarelas ao mesmo tempo, às vezes com gotas na ponta, substrato sempre molhado e mosquinhas pretas voando em volta do vaso",
+      "prevencao_tratamento": "Regar com mais espaço entre uma rega e outra, usar vaso só um pouco maior que o torrão e substrato com casca de pinus e perlita. Deixar a camada de cima secar acaba com as mosquinhas"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos de algodão branco nas axilas, nos nós e no verso das folhas; folhas amarelas e grudentas",
+      "prevencao_tratamento": "Remover com cotonete molhado em álcool 70%. Depois, pulverizar óleo de neem a 0,5% com uma gota de detergente, no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelados nas folhas, aspecto empoeirado e teias finas no verso. Piora em ambiente seco e com ar-condicionado",
+      "prevencao_tratamento": "Lavar as folhas com jato de água no chuveiro, deixar o ar em volta mais úmido e aplicar óleo de neem a 0,5% uma vez por semana até sumir"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Manchas prateadas, como se a folha tivesse sido raspada, com pontinhos pretos; folhas novas deformadas",
+      "prevencao_tratamento": "Separar a planta das outras, limpar as folhas com pano e sabão neutro e aplicar óleo de neem a 0,5% a cada 5 dias por 3 semanas"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas, Erwinia)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas e translúcidas, com borda amarela, que escurecem e crescem rápido; podem cheirar mal",
+      "prevencao_tratamento": "Regar direto no substrato, sem molhar as folhas, e deixar o lugar ventilado. Cortar as folhas atingidas com tesoura limpa com álcool e jogar no lixo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelo-esbranquiçadas ou marrons e secas nas folhas viradas para a janela",
+      "prevencao_tratamento": "Tirar do sol direto das 10h às 16h. Só sol fraco da manhã ou luz filtrada por cortina"
+    },
+    {
+      "nome": "Pontas marrons por ar seco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas secas e marrons, principalmente no inverno ou perto do ar-condicionado",
+      "prevencao_tratamento": "Afastar de ar-condicionado e aquecedor, juntar com outras plantas ou apoiar o vaso num prato com pedrinhas e água, sem a água encostar no fundo do vaso"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Filodendro entrando no ritmo de inverno",
+      "mensagem": "Com dias curtos e frios, o crescimento quase para e o substrato demora mais para secar. Continuar regando como no verão é a causa mais comum de podridão.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 4 cm, mais ou menos a cada 8 a 10 dias, e usar um quarto da dose de adubo até agosto"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja o filodendro do frio",
+      "mensagem": "Abaixo de 12 °C as folhas escurecem e a planta pode perder ramos inteiros. Vento frio e vidro gelado à noite também queimam as folhas.",
+      "acao_requerida": "Tirar o vaso da varanda ou de perto da janela nas noites frias e evitar corrente de ar"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Na primavera o filodendro volta a crescer e aproveita bem água e adubo. É a melhor época para podas fortes e para fazer mudas.",
+      "acao_requerida": "Voltar à dose normal de adubo e à rega a cada 5 dias pelo teste do dedo. Se a planta estiver rala, podar os ramos pelados e replantar as pontas no mesmo vaso"
+    }
+  ]
+}

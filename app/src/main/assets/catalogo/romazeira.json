@@ -1,0 +1,225 @@
+{
+  "planta": {
+    "nome_comum": "Romãzeira",
+    "nome_cientifico": "Punica granatum",
+    "descricao": "Arbusto frutífero de origem mediterrânea, rústico e tolerante à seca, com flores vermelho-alaranjadas vistosas na primavera e romãs que amadurecem no fim do verão. Em vaso grande forma uma arvoreta de 1,5 a 2 m. A muda enxertada ou de estaca começa a produzir no segundo ou terceiro ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; comece com um de 20 a 30 L e passe para um de 40 a 60 L na troca de vaso",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou casca de arroz carbonizada; acrescente 1 colher de sopa de calcário dolomítico por 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante. É normal perder algumas folhas nos primeiros dias. A fase termina quando aparecem brotos novos, avermelhados, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Copa",
+      "dia_inicio": 31,
+      "dia_fim": 730,
+      "descricao": "Os ramos crescem e a planta ganha estrutura. Escolha de 3 a 4 ramos principais bem distribuídos e corte os brotos que nascem da base do tronco. Ela pode florescer já no primeiro ano, mas os frutos devem ser retirados ainda pequenos para a planta investir na raiz e na copa."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: repouso parcial no inverno, com queda de parte das folhas (junho a agosto), brotação e floração da primavera ao começo do verão (setembro a dezembro), frutos engordando no verão e colheita de fevereiro a abril. Uma planta de 40 a 60 L produz de 5 a 20 romãs por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de romã",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda não saiu do torrão da muda e seca rápido; acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a romãzeira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No inverno, espace para a cada 6 ou 7 dias. Com frutos na planta, mantenha a umidade regular: alternar seca forte com rega pesada racha as romãs.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a romãzeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de bokashi por vaso de 40 L, na borda e longe do tronco, e regue em seguida. Da floração à colheita (setembro a março), acrescente 1 colher de sopa de NPK 4-14-8 por vaso. Não adube em junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos e o verso das folhas procurando pulgões e cochonilhas. Nos frutos, procure furinhos com serragem escura ou manchas pretas afundadas na casca.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, antes da brotação. Tire o torrão, corte com tesoura limpa as raízes que dão voltas por fora e passe para um vaso 10 a 20 L maior, ou devolva ao mesmo vaso com um terço de substrato novo. Regue bem e deixe à meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A muda deve ficar na mesma altura em que estava no saquinho. Se for enxertada, o ponto do enxerto precisa ficar fora do substrato.",
+      "acao_requerida": "Plantar sem enterrar o colo nem o enxerto, firmar o substrato com as mãos, regar até escorrer e deixar 3 dias à meia-sombra antes de ir para o sol pleno"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Escolher os ramos principais",
+      "mensagem": "A romãzeira tende a virar uma moita cheia de brotos na base. Definir a estrutura agora dá uma copa arejada e mais produtiva.",
+      "acao_requerida": "Escolher 3 ou 4 ramos fortes e bem distribuídos e cortar rente os outros brotos que saem da base do tronco"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Sem frutos no primeiro ano",
+      "mensagem": "Frutos numa planta jovem roubam a energia de que ela precisa para formar raiz e copa.",
+      "acao_requerida": "Tirar os frutinhos que se formarem até o fim do primeiro ano; as flores podem ficar"
+    },
+    {
+      "dia_disparo": 731,
+      "titulo": "Planta pronta para produzir",
+      "mensagem": "A partir desta primavera a romãzeira já pode segurar frutos.",
+      "acao_requerida": "Deixar os frutos se desenvolverem e seguir o raleio indicado na primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora do inverno, ramos secam das pontas e o substrato fica úmido e com cheiro azedo; raízes escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter a camada de drenagem. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Broca-dos-frutos (lagartas de mariposa)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos na casca ou na coroa da romã com serragem escura saindo; fruto apodrece por dentro",
+      "prevencao_tratamento": "Ensacar os frutos com saco de TNT ou papel quando tiverem o tamanho de uma noz; recolher e descartar frutos furados e caídos"
+    },
+    {
+      "nome": "Mosca-das-frutas (Ceratitis capitata, Anastrepha)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos maduros com picadas e partes moles, larvas brancas na polpa",
+      "prevencao_tratamento": "Ensacar os frutos, colher no ponto e não deixar frutos caídos no vaso; armadilha com suco de fruta fermentado perto da planta"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e botões florais, folhas novas enroladas e pegajosas, formigas subindo pelo tronco",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, sem aplicar sobre flores abertas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos (algodão) ou marrons (escama) nos ramos e na axila das folhas, fumagina preta nas folhas",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em infestação, óleo mineral a 1% com o tempo fresco"
+    },
+    {
+      "nome": "Mancha-dos-frutos (Colletotrichum, Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras, arredondadas e afundadas na casca e manchas marrons nas folhas, piores em verão chuvoso",
+      "prevencao_tratamento": "Manter a copa arejada com a poda de inverno, molhar só o substrato, retirar folhas e frutos manchados; em ataque forte, calda bordalesa a 1% fora da floração"
+    },
+    {
+      "nome": "Rachadura dos frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Romãs abrem na planta perto da maturação, expondo os grãos, que depois mofam",
+      "prevencao_tratamento": "Manter a rega regular do verão até a colheita, sem deixar o vaso secar de vez e depois encharcar; colher assim que o fruto estiver no ponto"
+    },
+    {
+      "nome": "Queda de flores e frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Muitas flores caem sem formar fruto, ou os frutinhos caem ainda pequenos",
+      "prevencao_tratamento": "Garantir pelo menos 6 horas de sol direto, rega regular na floração e adubo com mais fósforo e potássio que nitrogênio. Parte da queda é normal: as flores sem a base inchada (masculinas) caem sempre"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "Com o frio a romãzeira desacelera e pode perder parte das folhas. O substrato demora mais para secar e a raiz apodrece com facilidade.",
+      "acao_requerida": "Espaçar a rega para a cada 6 ou 7 dias, sempre conferindo com o dedo, e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        7,
+        8
+      ],
+      "titulo": "Poda de inverno",
+      "mensagem": "A romã floresce nos ramos novos que brotam na primavera. Podar com a planta parada estimula brotação forte e mais flores.",
+      "acao_requerida": "Cortar ramos secos, cruzados e voltados para dentro da copa, os brotos da base do tronco e encurtar em um terço os ramos longos, cortando logo acima de uma gema"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Brotação e floração chegando",
+      "mensagem": "A planta está saindo do repouso e vai precisar de mais água e nutrientes para florescer.",
+      "acao_requerida": "Voltar à rega a cada 3 dias e fazer a primeira adubação da temporada com húmus e NPK 4-14-8"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Ralear e ensacar os frutos",
+      "mensagem": "Em vaso, a planta não sustenta todos os frutos que segura. Frutos demais saem pequenos, e sem proteção a broca e a mosca estragam boa parte deles.",
+      "acao_requerida": "Deixar 1 fruto por ramo, no máximo 1 a cada 15 cm, tirando os deformados e os menores; quando os restantes tiverem o tamanho de uma noz, ensacá-los com TNT ou papel"
+    },
+    {
+      "meses": [
+        2,
+        3,
+        4
+      ],
+      "titulo": "Época de colher romãs",
+      "mensagem": "Os frutos que vingaram na primavera estão amadurecendo. A romã não amadurece depois de colhida e racha se ficar muito tempo na planta.",
+      "acao_requerida": "Colher com tesoura as romãs de casca brilhante, cor firme e som metálico ao bater com o dedo, deixando um pedaço do cabinho; conferir a planta a cada 3 ou 4 dias até acabar"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Alecrim",
+    "nome_cientifico": "Salvia rosmarinus (sin. Rosmarinus officinalis)",
+    "descricao": "Arbusto aromático mediterrâneo, perene e lenhoso, muito usado como tempero e chá. Gosta de sol forte e de substrato seco. O que mais mata alecrim em vaso é regar demais, muito mais do que a falta de água.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, com pelo menos 30 cm de diâmetro e 30 cm de profundidade e vários furos no fundo. Não use prato com água parada embaixo",
+    "volume_minimo_litros": 12,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, mais 1 colher de sopa de calcário dolomítico para cada 10 L. A mistura deve ser solta e escorrer a água rapidamente",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda se ajusta ao vaso novo e ao sol. Algumas folhas de baixo podem amarelar e cair, o que é normal. A fase termina quando surgem pontas novas, verde-claras e macias, no alto dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "As raízes ocupam o vaso e os ramos crescem com vigor. A base começa a lenhificar e fica marrom e dura. Quando os ramos passarem de 20 cm, a planta aguenta as primeiras colheitas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Arbusto lenhoso que dá ramos para colher o ano todo. Cresce mais na primavera e no outono e floresce em azul-claro no inverno e no começo da primavera. No verão chuvoso, o risco é a raiz apodrecer. Depois da floração vem a poda de renovação. Em vaso, costuma durar de 5 a 10 anos até ficar lenhoso demais."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de alecrim",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar na base até escorrer pelos furos. Se estiver úmido, não regue. Nas primeiras três semanas a raiz ainda é curta e não alcança a umidade do fundo.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o alecrim",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato e só regue se estiver seco nessa profundidade. Aí regue bem, até escorrer pelos furos, e jogue fora a água que ficar no prato. No inverno e em semana chuvosa, espace para cada 7 a 10 dias. Acima de 32 °C, confira a cada 2 ou 3 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_leve",
+      "titulo": "Adubar o alecrim",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de farinha de ossos na superfície de um vaso de 12 L, longe do caule, e regue em seguida. Adubo nitrogenado demais deixa a planta mole e com menos aroma. Pule a adubação de junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "colheita_ramos",
+      "titulo": "Colher raminhos de alecrim",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa as pontas de 8 a 10 cm dos ramos mais altos, logo acima de um par de folhas. Assim a planta ramifica e fica compacta. Nunca tire mais de 1/3 da folhagem de uma vez e não corte na parte lenhosa sem folhas, porque ela não rebrota. Sobras podem secar à sombra.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o alecrim",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos e olhe o miolo da planta e o verso das folhas. Procure bolinhas brancas algodonosas, teias finas, pó branco nas folhas ou ramos secando de baixo para cima. Cheire a base: cheiro de mofo indica excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o alecrim de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no outono, tire a planta do vaso e corte 2 a 3 cm das raízes enoveladas nas laterais. Replante com substrato novo no mesmo vaso ou num 5 cm maior. Deixe 2 dias à meia-sombra antes de voltar ao sol.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Passe a muda para o vaso definitivo",
+      "mensagem": "O saquinho ou copinho da loja segura água demais e aperta a raiz. Com o transplante logo no primeiro dia, a muda pega mais rápido.",
+      "acao_requerida": "Transplantar a muda para o vaso de 12 L com substrato arenoso, sem enterrar o caule além do nível original, e regar uma vez até escorrer"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Os ramos já estão firmes. Uma poda leve agora faz o alecrim ramificar em vez de crescer em poucas hastes compridas.",
+      "acao_requerida": "Cortar 5 cm da ponta de cada ramo principal, acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas ficam cinza-amarronzadas e secam mesmo com o substrato úmido. A base do caule escurece e a raiz fica marrom e mole, com cheiro de mofo",
+      "prevencao_tratamento": "Substrato arenoso, vaso de barro e rega só com o substrato seco a 4 cm. Nunca deixe água no prato. Se aparecer, pare de regar, tire a planta, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas e as pontas dos ramos, que depois amarelam e secam",
+      "prevencao_tratamento": "Sol pleno e boa ventilação, e não molhar a folhagem na rega. Remova os ramos afetados e pulverize leite diluído a 10% em água ou bicarbonato de sódio (1 colher de chá por litro, com 1 gota de detergente) a cada 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodonosas ou escamas marrons grudadas nos ramos e na base das folhas. A planta fica pegajosa e pode surgir fumagina preta",
+      "prevencao_tratamento": "Retire à mão com cotonete embebido em álcool 70%. Se a infestação for grande, pulverize óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto empoeirado, e teias finas entre os ramos, sobretudo no calor seco",
+      "prevencao_tratamento": "Lave a folhagem com jato de água pela manhã. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos, compridos e moles, com folhas espaçadas, pálidas e pouco perfumadas",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 6 h de sol direto e podar os ramos estiolados até um par de folhas firmes"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão chuvoso: cuidado com o encharcamento",
+      "mensagem": "O calor úmido e as chuvas seguidas são a época em que o alecrim em vaso mais morre de podridão de raiz.",
+      "acao_requerida": "Tirar o vaso da chuva direta em semanas muito chuvosas, esvaziar o prato e só regar com o substrato seco a 4 cm"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: espace a rega",
+      "mensagem": "No frio o alecrim cresce devagar e bebe pouco. É também a época em que ele floresce.",
+      "acao_requerida": "Regar a cada 7 a 10 dias, só com o substrato seco, e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Com o fim da floração, a poda anual mantém o alecrim compacto e evita que a base fique lenhosa e pelada.",
+      "acao_requerida": "Cortar até 1/3 do comprimento de todos os ramos, sempre acima de folhas verdes, e retirar os ramos secos ou cruzados"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "planta": {
+    "nome_comum": "Jabuticabeira",
+    "nome_cientifico": "Plinia cauliflora (sin. Myrciaria cauliflora)",
+    "descricao": "Árvore frutífera nativa da Mata Atlântica. As flores e os frutos nascem grudados no tronco e nos galhos grossos. A muda enxertada vai bem em vaso grande e costuma frutificar em 2 a 4 anos, contra 8 a 15 anos da muda de semente.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo. Prefira vaso de cor clara ou de barro, que esquenta menos a raiz",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de pinus fina ou fibra de coco. O substrato deve ser levemente ácido (pH 5,5 a 6,5), então não use calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está se recuperando do transplante. Pode perder algumas folhas nas primeiras semanas. A fase termina quando surgem brotos novos, avermelhados ou cor de vinho, nas pontas dos galhos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Raízes novas ocupam o vaso e a planta solta fluxos de brotação a cada 1 ou 2 meses. As folhas novas nascem avermelhadas e ficam verde-escuras em cerca de 3 semanas. Brotos que saem abaixo do enxerto (a cicatriz no caule) devem ser arrancados assim que aparecem."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 181,
+      "dia_fim": 730,
+      "descricao": "A copa ganha forma e o tronco engrossa. Uma muda enxertada pode dar as primeiras flores já nesta fase. Se a planta tiver menos de 1 m, retire a maior parte das flores para que ela invista no crescimento."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Em vaso bem cuidado, floresce principalmente entre agosto e outubro. Com rega farta e constante, pode florir de novo no verão. Os frutos amadurecem cerca de 40 dias depois da flor. No inverno o crescimento desacelera e a planta pede menos água. O substrato é renovado a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a jabuticabeira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. De junho a agosto, espere secar 4 a 5 cm antes de regar. Na floração e com frutos, não deixe secar de jeito nenhum. Nunca deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a jabuticabeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de bokashi por vaso de 50 L, na borda e longe do tronco. Cubra levemente com substrato e regue. Em junho, pule esta adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure pó alaranjado (ferrugem), pontinhos que se mexem ou folhas enroladas. Passe o dedo no tronco e nos galhos à procura de carocinhos brancos ou marrons (cochonilha). Arranque qualquer broto que tenha saído abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça isso de preferência entre agosto e setembro, antes da floração. Tire a planta do vaso e passe para um vaso 20 a 30% maior. Se já estiver no tamanho máximo, corte 3 a 4 cm das raízes das laterais e do fundo com uma faca limpa, troque um terço do substrato por mistura nova e devolva ao mesmo vaso. Regue bem e deixe 1 semana na meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A muda sente a mudança de lugar. Uma adaptação gradual ao sol evita queimar as folhas.",
+      "acao_requerida": "Plantar sem enterrar o colo nem o enxerto. Regar até escorrer e deixar a planta na meia-sombra ou com sol só de manhã nas duas primeiras semanas"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "A muda já teve tempo de se firmar. Sem pelo menos 4 horas de sol direto, a jabuticabeira cresce fina e não floresce.",
+      "acao_requerida": "Levar o vaso para o local definitivo, com 6 horas de sol direto ou mais"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Poda de formação",
+      "mensagem": "Uma copa baixa e com vários galhos rende mais flores no tronco e cabe melhor na varanda.",
+      "acao_requerida": "Se a muda tiver uma haste única acima de 60 cm, cortar a ponta logo acima de uma folha para forçar a ramificação. Remover galhos que cruzam o centro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por encharcamento",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, ramos secam da ponta para trás e as raízes ficam escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Garanta furos livres e camada de drenagem, esvazie o pratinho e regue só depois de conferir com o dedo. Se acontecer, suspenda a rega até secar 5 cm e troque o substrato, cortando as raízes podres"
+    },
+    {
+      "nome": "Ferrugem (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nas brotações novas, nas flores e nos frutos pequenos, que depois secam e ficam deformados",
+      "prevencao_tratamento": "Mantenha a copa arejada, regue no substrato e não nas folhas. Remova e descarte as brotações atacadas. Nos casos persistentes, pulverize calda bordalesa a 1% nas brotações a cada 15 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nos frutos, que racham e apodrecem no pé; manchas marrons nas folhas em época úmida",
+      "prevencao_tratamento": "Colha os frutos maduros sem demora, recolha os caídos e pode os galhos internos para ventilar. Em anos chuvosos, pulverize calda bordalesa na fase de frutos pequenos"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, cerosos ou marrons grudados no tronco, nos galhos e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remova com escova macia ou algodão com álcool 70%. Depois, pulverize óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas prateadas, retorcidas e com pontinhos pretos; flores caem antes de abrir",
+      "prevencao_tratamento": "Óleo de neem a 0,5% nas brotações a cada 7 dias até sumir. Evite adubação nitrogenada em excesso, que estimula brotação mole"
+    },
+    {
+      "nome": "Queda de flores e frutinhos por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores ou frutos do tamanho de ervilha caem em massa poucos dias depois de o substrato secar",
+      "prevencao_tratamento": "Da floração à colheita, mantenha o substrato sempre úmido. Cobertura de casca de pinus ou palha na superfície ajuda a segurar a umidade"
+    },
+    {
+      "nome": "Clorose por substrato alcalino",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes",
+      "prevencao_tratamento": "Não use calcário nem água com cal. Aplique quelato de ferro conforme o rótulo e, na renovação, use composto orgânico com casca de pinus para acidificar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: rega mais espaçada",
+      "mensagem": "No frio a jabuticabeira cresce pouco e usa menos água. O substrato úmido e frio favorece a podridão da raiz. A planta adulta aguenta geada leve, mas as mudas novas sofrem.",
+      "acao_requerida": "Regar só quando os primeiros 4 a 5 cm estiverem secos e, em noite com previsão abaixo de 2 °C, cobrir a planta jovem com TNT ou levá-la para perto da parede"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Preparar para a floração",
+      "mensagem": "A floração principal vem entre agosto e outubro. A planta precisa de reserva de potássio e fósforo para segurar as flores.",
+      "acao_requerida": "Aplicar 1 colher de sopa de farinha de ossos e 1 colher de sopa de cinza de madeira peneirada por vaso de 50 L, misturar na superfície e regar bem"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Floração: não deixe secar",
+      "mensagem": "Botões brancos surgem no tronco e nos galhos. Basta um dia de substrato seco para as flores caírem todas.",
+      "acao_requerida": "Conferir o substrato todo dia e regar sempre que o primeiro centímetro estiver seco, sem molhar as flores"
+    },
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Colheita das jabuticabas",
+      "mensagem": "Cerca de 40 dias depois da flor, os frutos ficam pretos e brilhantes. Maduros, fermentam no pé em 2 a 3 dias e atraem mosca-das-frutas.",
+      "acao_requerida": "Colher todo dia os frutos pretos e macios, torcendo-os com cuidado, e recolher os que caíram no vaso"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Poda de limpeza pós-colheita",
+      "mensagem": "Com a colheita encerrada, uma poda leve areja a copa e reduz ferrugem e antracnose na próxima safra.",
+      "acao_requerida": "Cortar galhos secos, doentes e os que crescem para dentro da copa. Não cortar galhos grossos: é neles que nascem as flores"
+    }
+  ]
+}

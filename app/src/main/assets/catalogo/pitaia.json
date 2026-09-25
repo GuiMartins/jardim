@@ -1,0 +1,243 @@
+{
+  "planta": {
+    "nome_comum": "Pitaia",
+    "nome_cientifico": "Selenicereus undatus (sin. Hylocereus undatus)",
+    "descricao": "Cacto trepador de origem mexicana e centro-americana, com casca vermelha e polpa branca. Dá flores enormes que abrem uma única noite e frutos doces no verão. Em vaso grande com um poste de apoio, produz em um quintal ou terraço ensolarado a partir do segundo ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cimento, barro ou plástico grosso com pelo menos 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo. No centro vai um poste de madeira tratada, eucalipto ou concreto de 10 × 10 cm e 1,5 m acima do substrato, com um aro (pneu de moto, roda de bicicleta ou cruzeta de madeira) no topo para os ramos caírem em forma de guarda-chuva.",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca, 10% casca de pinus média; mais 1 xícara de farinha de ossos por vaso. Tem de drenar em segundos após a rega.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda fica encostada ao poste e cria raízes novas no vaso. Pode ficar um pouco amarelada nos primeiros dias. A fase acaba quando aparece uma brotação verde nova, mole, na ponta ou na lateral do ramo."
+    },
+    {
+      "fase_id": "subida_no_tutor",
+      "nome": "Subida no Tutor",
+      "dia_inicio": 31,
+      "dia_fim": 240,
+      "descricao": "Um ramo principal sobe pelo poste, grudado por raízes aéreas, e cresce até 10 cm por semana no calor. Mantenha só esse ramo e tire os brotos laterais para a energia ir para cima. A fase acaba quando o ramo passa do topo do poste."
+    },
+    {
+      "fase_id": "formacao_copa",
+      "nome": "Formação da Copa",
+      "dia_inicio": 241,
+      "dia_fim": 540,
+      "descricao": "Ao despontar o ramo acima do topo, nascem de 3 a 6 ramos que se apoiam no aro e caem para os lados. São os ramos pendentes que florescem. Quando a copa cobre o aro e os ramos passam a pender 30 a 50 cm, a planta está pronta para produzir."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 541,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota forte na primavera (setembro e outubro), solta ondas de flores noturnas de novembro a março e amadurece os frutos 30 a 50 dias depois de cada flor, com colheita de janeiro a maio. No inverno quase para de crescer e pede pouca água. Poda leve depois da última colheita. Um vaso de 60 L produz de 5 a 20 frutos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de pitaia",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto da muda; se estiver seco, regue devagar em volta dela com uns 2 L. Se ainda estiver úmido, espere. Substrato encharcado apodrece a base da muda antes que ela crie raiz.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pitaia",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (uns 5 a 8 L num vaso de 60 L) e esvazie o pratinho. Acima de 32 °C ou com frutos crescendo, confira a cada 3 dias: ficar seco nessa hora derruba flores e racha os frutos. De junho a agosto, espace para 10 a 15 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a pitaia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a abril, espalhe 2 xícaras de húmus de minhoca ou composto mais 1 colher de sopa de NPK 4-14-8 na borda do vaso, longe do caule, e regue em seguida. De maio a agosto, ponha só 1 xícara de húmus. Evite adubo rico em nitrogênio (ureia, NPK 20-5-20): ele faz ramo mole e poucas flores.",
+      "critica": false
+    },
+    {
+      "id": "conduzir_ramo",
+      "titulo": "Conduzir a pitaia no poste",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": 540,
+      "instrucoes": "Amarre o trecho novo do ramo principal ao poste com fita de borracha ou tira de pano, a cada 20 cm, sem apertar. Até o ramo passar do topo, corte rente os brotos laterais que saíram desde a última vez. Depois disso, espalhe os ramos novos sobre o aro para que pendam para fora.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e flores",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Examine os ramos por inteiro, principalmente as reentrâncias entre as costelas e a base. Procure escamas brancas ou algodão (cochonilha), manchas marrons afundadas ou alaranjadas, partes moles que cheiram mal e formigas subindo pelo poste.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre setembro e outubro, retire com uma pá de mão os 15 cm de cima do substrato, podando as raízes que aparecerem, e complete com a mistura nova da receita. Se as raízes saírem pelos furos ou a água não infiltrar mais, passe a planta com poste e tudo para um vaso 20 L maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Encoste a muda no poste",
+      "mensagem": "A pitaia precisa de algo para escalar desde o primeiro dia. Plantada solta, ela deita e cria ramos tortos que não sobem.",
+      "acao_requerida": "Plantar a muda a 5 cm do poste, na mesma altura em que estava, e amarrar o ramo ao poste com fita de borracha sem apertar. Não regue no primeiro dia se a muda veio de estaca recém-cortada."
+    },
+    {
+      "dia_disparo": 240,
+      "titulo": "Hora de despontar o ramo principal",
+      "mensagem": "Por volta de agora o ramo deve estar passando do topo do poste. Cortar a ponta faz a planta ramificar e formar a copa que vai florescer.",
+      "acao_requerida": "Quando o ramo passar 10 cm acima do aro, cortar a ponta com tesoura limpa e deixar o corte secar ao sol. Se ainda não chegou ao topo, cortar quando chegar."
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "A pitaia pode dar a primeira safra",
+      "mensagem": "Com a copa formada, a planta já pode florescer no próximo verão. As flores abrem uma única noite, e muitas variedades só firmam o fruto com polinização à mão.",
+      "acao_requerida": "Na primeira época de flores, observar ao entardecer os botões grandes (15 a 20 cm) e fazer a polinização manual na noite em que abrirem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da base e das raízes (Fusarium, Pectobacterium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do ramo amarela, depois mole, aquosa e escura, com cheiro ruim; o ramo tomba. É a principal causa de morte da pitaia em vaso e vem de substrato encharcado ou pratinho com água parada.",
+      "prevencao_tratamento": "Substrato arenoso, furos desentupidos, pratinho sempre vazio e rega só com o substrato seco. Se aparecer, corte a parte podre até o tecido verde e firme, polvilhe canela ou calda bordalesa no corte e suspenda a rega por 10 dias. Se a base estiver toda podre, enraíze um ramo sadio e recomece."
+    },
+    {
+      "nome": "Cancro do caule (Neoscytalidium dimidiatum)",
+      "tipo": "DOENCA",
+      "sintomas": "Pontinhos brancos que viram manchas alaranjadas e depois marrons, afundadas, com pó preto no centro; os ramos e os frutos ficam furados.",
+      "prevencao_tratamento": "Corte e jogue no lixo (nunca na compostagem) os ramos afetados, com a tesoura desinfetada em álcool. Molhe só o substrato, nunca os ramos. Com muitas manchas, aplique calda bordalesa a 1% a cada 15 dias."
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-avermelhadas com halo amarelo nos ramos e manchas escuras afundadas nos frutos, mais comuns em verão chuvoso e abafado.",
+      "prevencao_tratamento": "Deixe a copa arejada com a poda anual, retire ramos e frutos manchados e aplique calda bordalesa a 1% no começo das chuvas se o problema aparecer todo ano."
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas ou pardas, ou tufos de algodão, entre as costelas e na base dos frutos; os ramos amarelam em volta. Formigas subindo pelo poste costumam indicar cochonilha.",
+      "prevencao_tratamento": "Remova com escova de dentes ou cotonete com álcool 70%. Em infestação maior, pulverize óleo mineral a 1% ou óleo de neem a 0,5% com algumas gotas de detergente, no fim da tarde, a cada 7 dias por 3 semanas."
+    },
+    {
+      "nome": "Abelha arapuá (Trigona spinipes) e formigas",
+      "tipo": "PRAGA",
+      "sintomas": "Botões e flores roídos, pétalas rasgadas e base do fruto novo raspada; os frutos caem ou crescem deformados.",
+      "prevencao_tratamento": "Passe uma faixa de graxa ou fita adesiva dupla-face em volta do poste para as formigas. Contra a arapuá, faça a polinização manual à noite e cubra a flor polinizada com saquinho de tule até ela murchar."
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos esbranquiçados ou amarelo-palha no lado virado para o sol da tarde, às vezes com placas secas marrons. Comum em muda que veio da sombra e em ondas de calor acima de 38 °C.",
+      "prevencao_tratamento": "Muda recém-chegada vai para o sol pleno aos poucos, ao longo de 2 semanas. Em calor extremo, coloque tela de sombreamento de 30% nas horas mais quentes. Os ramos marcados não se recuperam, mas a planta segue produzindo."
+    },
+    {
+      "nome": "Ramos finos e sem flor (falta de sol ou excesso de nitrogênio)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos compridos, finos, verde-claros e moles, que não florescem mesmo na planta adulta",
+      "prevencao_tratamento": "Leve o vaso para um lugar com pelo menos 6 horas de sol direto, troque o adubo por um rico em fósforo e potássio (4-14-8 e farinha de ossos) e pode os ramos finos no inverno"
+    },
+    {
+      "nome": "Dano por frio e geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos com manchas translúcidas, depois moles e amarelas, poucos dias após noites abaixo de 4 °C",
+      "prevencao_tratamento": "Em noites com previsão abaixo de 5 °C, encoste o vaso numa parede ou leve para baixo de um beiral e cubra a copa com TNT. Corte as partes danificadas só depois que elas secarem."
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Adubação de arranque da primavera",
+      "mensagem": "A pitaia está saindo do repouso de inverno e vai formar os botões do verão. Um reforço de fósforo agora aumenta a quantidade de flores.",
+      "acao_requerida": "Raspar os 3 cm de cima do substrato e repor com composto orgânico misturado a 1 xícara de farinha de ossos. Voltar a regar a cada 5 dias."
+    },
+    {
+      "meses": [
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de flores: polinize à noite",
+      "mensagem": "Os botões crescem por cerca de 15 dias e cada flor abre uma única noite, do anoitecer até a manhã. Sem polinização, muitas flores caem sem virar fruto.",
+      "acao_requerida": "Na noite em que a flor abrir, entre 20h e 5h, passar um pincel macio nas anteras (os fios amarelos) e depois no estigma (o centro verde-creme em forma de estrela). Usar pólen de outra flor ou de outra planta, se houver."
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "titulo": "Época de colheita da pitaia",
+      "mensagem": "Os frutos amadurecem de 30 a 50 dias depois da flor e não amadurecem mais depois de colhidos. Deixados no pé, racham com chuva forte.",
+      "acao_requerida": "Toda semana, colher os frutos com a casca toda vermelha e as brácteas (as orelhas) começando a secar nas pontas. Girar o fruto até soltar ou cortar o talo com tesoura."
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Poda anual depois da colheita",
+      "mensagem": "Com a safra encerrada, a poda areja a copa, reduz fungos e estimula ramos novos, que são os que florescem no próximo verão.",
+      "acao_requerida": "Com a tesoura desinfetada, cortar os ramos secos, doentes, cruzados ou que já encostam no substrato. Tirar também os brotos que nascem do poste para dentro, deixando de 8 a 15 ramos pendentes em volta do aro."
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "No frio a pitaia quase para de crescer, e o substrato demora muito para secar. Excesso de água agora é o caminho mais curto para a podridão.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 5 cm de profundidade, em geral a cada 10 a 15 dias. Em noites abaixo de 5 °C, abrigar o vaso junto a uma parede e cobrir a copa com TNT."
+    }
+  ]
+}

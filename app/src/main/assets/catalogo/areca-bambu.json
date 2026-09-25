@@ -1,0 +1,170 @@
+{
+  "planta": {
+    "nome_comum": "Areca-bambu",
+    "nome_cientifico": "Dypsis lutescens",
+    "descricao": "Palmeira de Madagascar que forma touceiras de caules finos e amarelados com frondes arqueadas, uma das plantas de interior mais vendidas no Brasil. Aguenta luz indireta forte e dá volume tropical a salas e varandas. Em vaso cresce devagar e pode passar anos com 1,5 a 2 m de altura.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, barro ou plástico grosso com no mínimo 35 cm de diâmetro e 30 cm de profundidade, com furos no fundo e sem prato com água parada",
+    "volume_minimo_litros": 25,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% terra vegetal, 30% fibra de coco ou substrato comercial para plantas, 20% casca de pinus fina, 10% areia grossa ou perlita; mais 1 colher de sopa de farinha de ossos por litro de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa, com luz e umidade altas, e vai para um ambiente mais seco. É normal que 1 ou 2 frondes velhas amarelem ou fiquem com as pontas marrons. Deixe-a perto de uma janela clara, sem sol forte da tarde, e não troque de vaso nem adube agora. A fase termina quando surge uma fronde nova, ainda fechada como uma lança no centro da touceira."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Com a planta adaptada, as raízes voltam a crescer e aparecem frondes novas a cada 1 ou 2 meses no calor. Se já foi para o vaso definitivo, espere firmeza nos caules e frondes de verde uniforme. Frondes novas menores e pálidas indicam pouca luz ou falta de adubo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Touceira estabelecida. Da primavera ao fim do verão cresce e lança frondes novas, pedindo rega e adubo regulares; no inverno quase para e bebe bem menos. As frondes de baixo secam naturalmente com o tempo e devem ser cortadas. A cada dois anos o substrato se decompõe e a touceira ocupa o vaso, pedindo troca."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a areca",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água do prato após 15 minutos. Se ainda estiver úmido, não regue. No inverno o substrato leva 5 a 7 dias para secar; em dias acima de 30 °C, confira a cada 2 dias. Prefira água filtrada ou da chuva, porque o cloro e o flúor queimam as pontas das folhas.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a areca",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato úmido, dilua adubo NPK 10-10-10 ou adubo para palmeiras na metade da dose do rótulo (cerca de 1 g por litro de água) e regue com 1 litro por vaso de 25 L. Alternativa orgânica: 2 colheres de sopa de húmus de minhoca espalhadas na superfície. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_frondes",
+      "titulo": "Cortar frondes secas",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao caule, com tesoura limpa, as frondes que estiverem mais da metade amarelas ou marrons. Pontas marrons em frondes verdes: apare só a parte seca, seguindo o formato da folha e deixando 1 mm de marrom para não ferir o tecido vivo. Aproveite para passar um pano úmido nas frondes empoeiradas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire algumas frondes e procure pontinhos amarelados, teias finas no verso (ácaro) ou carocinhos brancos ou marrons grudados nos caules e na base das folhas (cochonilha). Passe um lenço branco no verso: manchas vermelhas ou marrons indicam ácaro.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, tire a touceira do vaso, solte o substrato velho das bordas sem cortar raízes grossas e replante num vaso 5 a 10 cm maior de diâmetro com substrato novo, na mesma altura em que estava. Se não quiser uma planta maior, divida a touceira em 2 ou 3 partes com raízes próprias. Regue bem e deixe na sombra clara por 2 semanas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Confira o lugar da areca",
+      "mensagem": "Nos primeiros dias dá para ver se o ponto escolhido serve. Sol forte da tarde queima as frondes em manchas pálidas, e canto escuro deixa as folhas novas finas e compridas.",
+      "acao_requerida": "Deixar a planta a até 1,5 m de uma janela clara, no máximo com sol da manhã, e longe do vento direto do ar-condicionado"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "Areca de loja costuma vir num vaso plástico apertado, com várias mudas juntas e raízes saindo pelos furos. Adaptada, ela já aguenta a troca.",
+      "acao_requerida": "Se as raízes saem pelos furos ou o vaso tem menos de 25 L, passar a planta para o vaso definitivo com substrato novo, sem enterrar os caules mais fundo do que estavam"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Frondes amarelam e murcham mesmo com o substrato úmido; base dos caules escura e mole; cheiro azedo no vaso; raízes marrons que se desfazem ao toque",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no prato. Se aparecer, tire a planta do vaso, corte as raízes podres e os caules moles, e replante em substrato novo e seco num vaso lavado; regue de novo só depois de 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que viram um aspecto desbotado, acinzentado; teias finas no verso e entre as frondes, principalmente em ar seco",
+      "prevencao_tratamento": "Aumentar a umidade do ar e lavar as frondes com jato de água no chuveiro a cada 15 dias. Infestado: óleo de neem a 0,5% com algumas gotas de detergente neutro no verso das folhas, no fim da tarde, a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou tufos brancos parecidos com algodão nos caules, na base das frondes e no verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova de dente macia embebidos em álcool 70%; depois aplicar óleo mineral ou óleo de neem a 1% a cada 7 dias por 3 semanas. Isolar a planta durante o tratamento"
+    },
+    {
+      "nome": "Pontas marrons",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas secas e marrons, com o resto da fronde verde",
+      "prevencao_tratamento": "Causado por ar seco, falta de água ou acúmulo de sais do adubo e da água da torneira. Usar água filtrada ou de chuva, regar até escorrer bem pelos furos para lavar o excesso de sais e afastar a planta do ar-condicionado. Pontas já secas não voltam; apare com tesoura"
+    },
+    {
+      "nome": "Amarelecimento por falta de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frondes mais velhas amarelas nas bordas ou com manchas alaranjadas e translúcidas, enquanto o centro da folha segue verde",
+      "prevencao_tratamento": "Usar adubo para palmeiras, com potássio e magnésio, na estação de crescimento. Para corrigir, dissolver 1 colher de chá de sulfato de magnésio (sal amargo) em 1 litro de água e regar uma vez por mês de setembro a março. Frondes amareladas não se recuperam, mas as novas saem verdes"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, nada de adubo",
+      "mensagem": "No frio a areca quase para de crescer, e o substrato demora muito mais a secar. Rega no mesmo ritmo do verão apodrece as raízes, e abaixo de 10 °C as frondes se queimam.",
+      "acao_requerida": "Regar só com o substrato seco a 3 cm, suspender a adubação e tirar a planta de varanda aberta ou perto de vidro gelado nas noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: volta do crescimento",
+      "mensagem": "Os dias mais longos e quentes despertam a areca, mas setembro costuma ter o ar mais seco do ano, o que favorece ácaro e pontas marrons.",
+      "acao_requerida": "Retomar a adubação mensal e lavar as frondes com jato de água no chuveiro para tirar a poeira e os ácaros"
+    }
+  ]
+}

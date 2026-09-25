@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Jasmim-manga",
+    "nome_cientifico": "Plumeria rubra",
+    "descricao": "Arbusto ou pequena árvore de galhos grossos e suculentos, com flores muito perfumadas em branco, amarelo, rosa ou vermelho da primavera ao fim do verão. Aguenta bem a seca e o sol forte, vai bem em vaso grande e perde parte das folhas no inverno do Centro-Sul, o que é normal.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico pesado com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; base larga para a planta não tombar com o vento",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% perlita ou casca de pinus fina, 10% húmus de minhoca; precisa escorrer a água em segundos",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo e ao sol. Algumas folhas velhas podem amarelar e cair, o que é normal. A adaptação terminou quando aparece um tufo de folhas novas na ponta dos galhos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e os galhos engrossam. Mudas de estaca costumam dar a primeira florada entre o 1º e o 3º ano. A inflorescência sai da ponta do galho, e depois dela o galho se ramifica em dois ou três."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota em setembro, floresce de outubro a março, as folhas amarelam e caem em parte entre maio e agosto, e a planta fica quase parada no inverno. Galho que floresceu se ramifica, deixando a copa mais cheia a cada ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Com as raízes ainda curtas, a muda desidrata rápido no sol forte; se estiver úmido, espere mais um dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jasmim-manga",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e nunca deixe água no pratinho. No verão acima de 32 °C, confira a cada 3 dias. De maio a agosto, com a planta sem folhas ou quase parada, regue no máximo a cada 15 dias, só para o substrato não secar por completo.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de farinha de osso) por vaso de 30 L, na borda e longe do caule, e regue em seguida. Evite adubo rico em nitrogênio, que faz folha e não flor. De maio a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e galhos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pó alaranjado no verso (ferrugem), teias finas, pontos brancos algodoados nas axilas e lagartas grandes listradas de preto e amarelo. Aperte a base do caule: se estiver mole ou enrugada, a raiz pode estar apodrecendo.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato ou o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e outubro. Tire a planta, solte um terço do torrão, corte raízes escuras ou moles e replante no mesmo nível, em vaso 5 a 10 cm maior ou no mesmo vaso com substrato novo. Espere 5 dias para a primeira rega.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar sem afogar o caule",
+      "mensagem": "Caule de jasmim-manga enterrado mais fundo que antes apodrece com facilidade.",
+      "acao_requerida": "Plantar a muda no mesmo nível em que estava, firmar com a mão e, se a planta balançar, prender a um tutor por 2 a 3 meses"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora de pôr no sol pleno",
+      "mensagem": "Se a muda veio de loja à sombra e ficou em meia-sombra na adaptação, ela já aguenta sol o dia todo. Sem sol direto, ela não floresce.",
+      "acao_requerida": "Mudar o vaso para o lugar mais ensolarado, com pelo menos 6 horas de sol direto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole, enrugada ou escura; galhos murcham e ficam moles mesmo com o substrato úmido; cheiro azedo na terra",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e quase nada no inverno; substrato arenoso e sem pratinho com água. Se afetar, corte a parte podre até o tecido branco e firme, deixe cicatrizar 1 semana e replante em substrato seco"
+    },
+    {
+      "nome": "Ferrugem da plumeria (Coleosporium plumeriae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó alaranjado no verso das folhas e manchas amarelas na face de cima; folhas caem antes da hora",
+      "prevencao_tratamento": "Retirar e descartar as folhas afetadas e as caídas no vaso, sem compostar; evitar molhar as folhas. Em ataque forte, fungicida à base de enxofre ou oxicloreto de cobre no verso das folhas a cada 10 dias"
+    },
+    {
+      "nome": "Mandarová-da-plumeria (Pseudosphinx tetrio)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas grandes, pretas com faixas amarelas e cabeça alaranjada; folhas comidas até a nervura em poucos dias",
+      "prevencao_tratamento": "Catar à mão com luva, porque o látex dos galhos irrita a pele; em infestação, Bacillus thuringiensis borrifado nas folhas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodoados ou carapaças marrons nas axilas das folhas e na ponta dos galhos; folhas pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; se persistir, óleo de neem a 0,5% com detergente neutro a cada 7 dias no fim da tarde"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos e aspecto empoeirado, teias finas no verso; piora no calor seco",
+      "prevencao_tratamento": "Jato de água no verso das folhas; óleo de neem a 0,5% a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Botões caem sem abrir",
+      "tipo": "DISTURBIO",
+      "sintomas": "A inflorescência se forma, mas os botões secam e caem antes de abrir",
+      "prevencao_tratamento": "Garantir pelo menos 6 horas de sol direto, não mudar o vaso de lugar durante a florada e evitar que o substrato seque por completo nessa época"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Chegando o repouso de inverno",
+      "mensagem": "As folhas vão amarelar e parte delas vai cair até agosto. É o ritmo natural da planta, não doença.",
+      "acao_requerida": "Espaçar a rega para no máximo a cada 15 dias, parar a adubação e recolher as folhas caídas do vaso"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio e do encharcamento",
+      "mensagem": "Abaixo de 5 °C, os galhos podem queimar, e frio com substrato úmido apodrece a raiz.",
+      "acao_requerida": "Nas noites frias, levar o vaso para perto de uma parede ou sob cobertura; regar só se o substrato estiver seco a 10 cm"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação, se precisar",
+      "mensagem": "No fim do inverno, antes de brotar, é a melhor época para encurtar galhos longos demais ou tortos.",
+      "acao_requerida": "Cortar acima de uma cicatriz de folha com tesoura limpa, usando luvas por causa do látex; deixar o corte secar ao ar, sem regar a planta por 1 semana"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar rega e adubação",
+      "mensagem": "As pontas dos galhos começam a brotar, e a planta volta a precisar de água e nutrientes para florir.",
+      "acao_requerida": "Voltar à rega normal quando aparecerem as folhas novas e fazer a primeira adubação rica em fósforo"
+    }
+  ]
+}

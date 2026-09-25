@@ -1,0 +1,216 @@
+{
+  "planta": {
+    "nome_comum": "Coleus",
+    "nome_cientifico": "Coleus scutellarioides (sin. Plectranthus scutellarioides, Solenostemon scutellarioides)",
+    "descricao": "Planta de folhagem colorida, com folhas em tons de vinho, verde, amarelo e rosa. Cresce rápido, enraíza fácil por estaca e é perene, mas perde o viço depois de um ou dois anos: o costume é renová-la por estacas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 20 cm de diâmetro e 18 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 4,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% fibra de coco ou casca de pinus fina; fofo e que segure umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "A muda pode murchar nas horas quentes nos primeiros dias depois do transplante. A adaptação terminou quando as folhas ficam firmes o dia todo e surge um par de folhas novas na ponta."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 60,
+      "descricao": "Crescimento rápido. Com as pontas beliscadas, a planta ramifica e forma uma touceira cheia. Folha desbotada e caule comprido e fino indicam pouca luz. Manchas marrons e secas indicam sol forte demais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Touceira de 30 a 60 cm. Na primavera e no verão, crescimento vigoroso e cores intensas. No outono, os dias curtos fazem surgir espigas de flores azul-lilás, que enfraquecem a folhagem. No inverno, o crescimento para e a planta sofre abaixo de 10 °C. Depois de 1 a 2 anos, o caule fica lenhoso e pelado na base, e é hora de renovar por estacas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de coleus",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Mantenha úmido, mas sem água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o coleus",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Acima de 30 °C, confira todo dia. No inverno, espere os 3 cm de cima secarem e regue a cada 4 ou 5 dias.",
+      "critica": true
+    },
+    {
+      "id": "poda_pontas",
+      "titulo": "Beliscar pontas e espigas de flor",
+      "tipo": "PODA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 35,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com os dedos ou uma tesoura limpa, corte a ponta dos ramos mais compridos logo acima de um par de folhas e tire toda espiga de flor que aparecer. Isso deixa a planta cheia e mantém as cores. As pontas cortadas enraízam num copo com água em 1 a 2 semanas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o coleus",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca na superfície de um vaso de 4 L, sem encostar no caule, e regue em seguida. Outra opção é adubo NPK 10-10-10 diluído a 1 g por litro na rega. Suspenda de junho a agosto, quando a planta para de crescer.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as axilas (onde a folha encontra o caule). Procure tufos brancos de algodão (cochonilha), mosquinhas brancas que voam ao balançar a planta, teias finas e pontinhos claros (ácaro).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, passe a planta para um vaso 5 cm maior ou troque metade do substrato por substrato novo com húmus. Pode 1/3 dos ramos na mesma hora para compensar a raiz mexida. Se a base estiver lenhosa e pelada, prefira fazer estacas e começar uma planta nova.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "A muda já pegou. Beliscar a ponta agora faz brotar dois ramos no lugar de um, e a planta fica cheia em vez de alta e rala.",
+      "acao_requerida": "Cortar a ponta do ramo principal logo acima do segundo ou terceiro par de folhas"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Faça estacas de reserva",
+      "mensagem": "O coleus enraíza com facilidade, e ter mudas de reserva protege a variedade contra o frio, as pragas e o envelhecimento da planta.",
+      "acao_requerida": "Cortar 2 ou 3 pontas de 10 cm, tirar as folhas de baixo e deixar num copo com água em luz clara até soltarem raízes de 2 cm; depois plantar em vasinho"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido, a base do caule fica escura e mole e as folhas caem",
+      "prevencao_tratamento": "Regar só com o substrato seco em cima e nunca deixar água no pratinho. Planta atingida: aproveitar as pontas sadias como estacas e descartar o resto com o substrato"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e no caule, folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Em infestação maior, aplicar óleo de neem a 0,5% com algumas gotas de detergente neutro a cada 7 dias, no fim da tarde"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao balançar a planta, ovos e ninfas no verso das folhas, que ficam amareladas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos claros nas folhas, teias finas no verso e nas pontas, folhas opacas e secas. Piora em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos e lavar a planta com jato fraco. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas nas bordas durante a noite e rastro brilhante no vaso",
+      "prevencao_tratamento": "Catar à noite com lanterna e espalhar casca de ovo triturada na superfície do substrato"
+    },
+    {
+      "nome": "Míldio do coleus (Peronospora sp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas retorcidas com manchas marrons ou desbotadas e uma penugem acinzentada no verso, em tempo úmido e fresco",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e deixar espaço para o ar circular. Retirar e descartar as folhas atingidas. Com a planta tomada, descartar sem aproveitar estacas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrons secas ou desbotadas nas folhas voltadas para o sol, bordas torradas",
+      "prevencao_tratamento": "Dar só o sol da manhã e proteger do sol entre 11 h e 16 h. Variedades de folha clara queimam mais rápido"
+    },
+    {
+      "nome": "Estiolamento e perda de cor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules compridos e finos, folhas espaçadas, pequenas e com cores apagadas ou esverdeadas",
+      "prevencao_tratamento": "Levar para um lugar mais claro, com 2 a 4 horas de sol da manhã, e podar as pontas estioladas para forçar brotação compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3,
+        4,
+        5
+      ],
+      "titulo": "Época das espigas de flor",
+      "mensagem": "Com os dias mais curtos, o coleus solta espigas de flor que gastam energia e deixam a folhagem rala e desbotada.",
+      "acao_requerida": "Cortar toda espiga de flor logo que aparecer, junto com o par de folhas de baixo"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Guardar estacas antes do frio",
+      "mensagem": "O coleus sofre abaixo de 10 °C e pode morrer numa geada. Estacas enraizadas dentro de casa garantem a planta na primavera.",
+      "acao_requerida": "Enraizar 2 ou 3 pontas num copo com água e deixar perto de uma janela clara dentro de casa"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "No inverno, o coleus para de crescer, precisa de menos água e perde folhas com frio ou vento.",
+      "acao_requerida": "Nas noites abaixo de 10 °C, levar o vaso para dentro de casa ou para um canto protegido do vento. Regar só com os 3 cm de cima secos e suspender o adubo"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Renovar o coleus",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento. É a melhor hora de recuperar a planta cansada do inverno.",
+      "acao_requerida": "Podar os ramos pela metade, acima de um par de folhas, e voltar a adubar. Se a base estiver lenhosa e pelada, plantar as estacas enraizadas no lugar da planta velha"
+    }
+  ]
+}

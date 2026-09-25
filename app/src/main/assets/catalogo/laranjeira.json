@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Laranjeira",
+    "nome_cientifico": "Citrus × sinensis (muda enxertada, ex.: 'Pera', 'Lima', 'Bahia')",
+    "descricao": "Árvore frutífera perene que, enxertada e em vaso grande, fica com 1,5 a 2,5 m e dá laranjas a partir do segundo ou terceiro ano. Floresce na primavera com flores muito perfumadas e fica bem em varanda ou quintal com sol pleno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      2,
+      3,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro, fibra ou plástico grosso com no mínimo 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; comece com 40 L e passe para 60 a 100 L conforme a árvore cresce",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina ou perlita; acrescente 1 xícara de calcário dolomítico por 40 L para manter o pH entre 5,5 e 6,5",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o ponto do enxerto (a cicatriz torta no caule) pelo menos 5 cm acima do substrato. É normal cair algumas folhas nas primeiras semanas. A fase acabou quando surgem brotos novos, verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 730,
+      "descricao": "A muda forma raízes e copa em fluxos de brotação, principalmente na primavera e no verão. Arranque os frutinhos que aparecerem no primeiro ano para a energia ir para a copa; no segundo ano deixe no máximo 5 a 10 frutos. Arranque também qualquer broto que nasça abaixo do enxerto, pois ele é do porta-enxerto e rouba força da planta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: floração perfumada de agosto a outubro, queda natural de parte dos frutinhos em novembro e dezembro, crescimento dos frutos no verão e colheita no outono e inverno, conforme a variedade (a 'Pera' vai até o fim do ano). A poda de limpeza é no fim do inverno. Em vaso, uma árvore bem cuidada dá de 20 a 60 laranjas por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_laranjeira",
+      "titulo": "Regar a laranjeira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue devagar até escorrer bastante pelos furos (cerca de 5 L num vaso de 40 L). No verão acima de 30 °C, confira a cada 1 ou 2 dias; no inverno, a cada 5 ou 7. Folhas enroladas ao meio-dia pedem água; folhas amarelas com substrato úmido indicam excesso.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_laranjeira",
+      "titulo": "Adubar a laranjeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na borda do vaso, longe do caule, 2 colheres de sopa de NPK 20-05-20 (ou 10-10-10) mais 1 xícara de húmus para um vaso de 40 L, e regue em seguida. A cada duas adubações, borrife nas folhas um adubo foliar com zinco, manganês e boro. De junho a julho, pule esta adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as brotações novas procurando pulgões, cochonilhas (bolinhas brancas ou marrons presas no caule) e galerias prateadas da larva-minadora. Confira também a base do caule em busca de casca rachada com goma escura e arranque os brotos que nasceram abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, corte 3 a 5 cm das raízes que circulam o torrão e passe para um vaso 10 a 20 L maior, ou devolva ao mesmo vaso com substrato novo. Mantenha o enxerto acima do nível do substrato e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Confira o enxerto",
+      "mensagem": "Se o ponto do enxerto ficar enterrado, a planta fica muito mais sujeita à gomose, que apodrece o caule.",
+      "acao_requerida": "Afastar o substrato até o enxerto ficar pelo menos 5 cm acima da superfície e deixar o colo do caule sempre seco"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Nada de frutos por enquanto",
+      "mensagem": "Frutos no primeiro ano esgotam a muda e atrasam a formação da copa.",
+      "acao_requerida": "Arrancar as flores e os frutinhos que aparecerem até a planta completar um ano"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano completo",
+      "mensagem": "A laranjeira já tem raiz formada e pode segurar alguns frutos a partir da próxima floração.",
+      "acao_requerida": "Deixar no máximo 5 a 10 frutinhos bem distribuídos na próxima floração e retirar o resto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Gomose (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Casca rachada na base do caule escorrendo goma âmbar ou escura; folhas amarelando e caindo; raízes apodrecidas",
+      "prevencao_tratamento": "Enxerto sempre acima do substrato, sem encharcar e sem prato com água parada. No início, raspe a casca podre até o tecido verde e pincele pasta bordalesa; se o caule estiver tomado em volta, a planta não se recupera"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e caindo mesmo com o substrato úmido, cheiro azedo no vaso, raízes escuras e moles",
+      "prevencao_tratamento": "Regue só quando os 4 cm de cima estiverem secos e garanta furos livres; em caso grave, tire do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças marrons ou algodão branco grudados no caule e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete com álcool; em infestação maior, pulverize óleo mineral ou óleo de neem a 1% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nas brotações novas, que ficam enroladas e deformadas",
+      "prevencao_tratamento": "Jato de água; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Larva-minadora-dos-citros (Phyllocnistis citrella)",
+      "tipo": "PRAGA",
+      "sintomas": "Galerias prateadas e sinuosas nas folhas novas, que ficam retorcidas",
+      "prevencao_tratamento": "Pulverize óleo de neem a 0,5% nas brotações novas a cada 7 dias durante o fluxo de brotação; a folha madura não é atacada"
+    },
+    {
+      "nome": "Ácaro-da-falsa-ferrugem",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com casca bronzeada ou prateada e áspera; folhas foscas",
+      "prevencao_tratamento": "Enxofre molhável na dose da embalagem, fora das horas de sol forte e nunca junto com óleo"
+    },
+    {
+      "nome": "Clorose por falta de micronutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com nervuras verdes (ferro, zinco, manganês) ou folhas velhas com mancha amarela em V invertido (magnésio)",
+      "prevencao_tratamento": "Adubo foliar com micronutrientes a cada 90 dias e calcário dolomítico na renovação do substrato; não deixe o pH passar de 7"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "No fim do inverno, antes da florada, a laranjeira aceita bem a poda e rebrota com força.",
+      "acao_requerida": "Cortar ramos secos, doentes, cruzados e os que crescem para dentro da copa, além dos brotos abaixo do enxerto; não tirar mais de 20% da copa"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Floração: não deixe secar",
+      "mensagem": "A laranjeira está em flor ou formando frutinhos. Falta de água agora faz cair flores e frutos.",
+      "acao_requerida": "Voltar à rega frequente e retomar a adubação; não pulverizar óleo nas flores abertas"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Queda natural de frutinhos",
+      "mensagem": "É normal a árvore soltar boa parte dos frutinhos nesta época. Ela ajusta a carga ao que consegue sustentar.",
+      "acao_requerida": "Recolher os frutinhos caídos e manter a rega regular, sem exagerar no adubo"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Época de colher laranjas",
+      "mensagem": "Na maioria das variedades, os frutos amadurecem no outono e inverno; a 'Pera' pode ir até dezembro.",
+      "acao_requerida": "Colher com tesoura, deixando um toco curto de cabinho, quando a casca mudar de cor e o fruto ceder levemente ao apertar; prove um antes de colher todos"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "Com frio a planta quase para de crescer e o substrato demora a secar.",
+      "acao_requerida": "Espaçar a rega conforme o teste do dedo, suspender a adubação e proteger de geada com manta se a temperatura cair abaixo de 0 °C"
+    }
+  ]
+}

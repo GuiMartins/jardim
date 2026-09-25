@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Estrelícia",
+    "nome_cientifico": "Strelitzia reginae",
+    "descricao": "Planta sul-africana de folhas grandes e rígidas, famosa pela flor laranja e azul em forma de cabeça de ave (ave-do-paraíso). Aguenta bem o vaso e um pouco de seca, mas só floresce com bastante sol direto e quando já tem muitos leques de folhas, o que costuma levar 2 a 3 anos a partir de uma muda comprada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e estável (cerâmica ou cimento) com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com furos no fundo; as raízes são grossas e carnosas e a planta adulta tomba em vaso leve",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; fértil, mas que escorra a água em poucos segundos",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda na mesma altura em que estava, sem enterrar a base dos leques, e firme o substrato ao redor. Nas primeiras semanas ela quase não cresce e uma folha velha pode secar. A fase termina quando surge uma folha nova saindo do centro de um leque."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 730,
+      "descricao": "Crescimento lento: espere de 4 a 8 folhas novas por ano e o surgimento de novos leques (brotos laterais) na base. As folhas rasgam com o vento, o que é normal. A planta está pronta para florescer quando tiver uns 8 a 10 leques e o vaso começar a ficar tomado de raízes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Com bastante sol, a planta adulta solta hastes florais o ano todo, com pico do outono à primavera. Cada flor dura de 2 a 3 semanas e, dentro da mesma bráctea, abrem várias flores em sequência. Vaso um pouco apertado estimula a floração; excesso de adubo com nitrogênio ou pouco sol produz só folhas. No inverno, cresce pouco e pede menos água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a estrelícia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe água parada no prato. Nesta fase as raízes ainda não exploram o vaso novo e secam rápido na parte de cima.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a estrelícia",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão, com sol forte, pode precisar a cada 3 dias. De junho a agosto, espace para a cada 7 a 10 dias. As raízes carnosas guardam água, e o excesso de rega é o que mais mata a estrelícia em vaso.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a estrelícia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de sopa de farinha de ossos mais 1 xícara de húmus) por vaso de 40 L, longe da base dos leques, e regue em seguida. Pule a adubação de junho a agosto. Evite adubo rico em nitrogênio, que produz folha e segura a floração.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas_flores",
+      "titulo": "Limpar folhas secas e flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente à base, com tesoura limpa, as folhas secas ou amarelas por inteiro e as hastes florais cujas flores já murcharam. Não corte folhas só rasgadas pelo vento: ainda fazem fotossíntese.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base dos leques",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas, a nervura central e o encaixe dos pecíolos na base. Procure escamas marrons ou tufos brancos de algodão (cochonilha), teias finas e pontilhado claro (ácaro) e base mole ou escura.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o vaso ou dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e março. Se as raízes estiverem rachando o vaso ou saindo pelos furos, passe para um vaso 10 cm maior de diâmetro ou divida a touceira com faca afiada em partes de pelo menos 3 leques cada. Troque todo o substrato velho. Espere 1 ano de floração mais fraca depois da divisão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Hora de pegar mais sol",
+      "mensagem": "Mudas de viveiro costumam vir de meia sombra. Levar direto para o sol pleno queima as folhas; ficar na sombra para sempre impede a floração.",
+      "acao_requerida": "Mudar o vaso para um lugar com pelo menos 4 horas de sol direto, começando pelo sol da manhã e passando para o local definitivo depois de uma semana"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de estrelícia",
+      "mensagem": "Ela já deve ter formado folhas novas e talvez leques laterais. Se as folhas novas saem pequenas e amareladas, falta sol ou adubo.",
+      "acao_requerida": "Contar os leques e conferir se o local tem pelo menos 4 horas de sol direto; se não tiver, mudar o vaso de lugar"
+    },
+    {
+      "dia_disparo": 730,
+      "titulo": "Idade de florescer",
+      "mensagem": "Com 8 a 10 leques, a estrelícia já pode soltar a primeira haste floral. Se ainda não floresceu, quase sempre é falta de sol, vaso grande demais ou adubo com muito nitrogênio.",
+      "acao_requerida": "Conferir as horas de sol direto e trocar o adubo por um rico em fósforo (NPK 4-14-8) se estiver usando outro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e de colo (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e murchando mesmo com o substrato úmido; base dos leques mole, escura e com cheiro ruim; leques que se soltam com facilidade",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e usar substrato que drene. Se aparecer, tirar a planta do vaso, cortar raízes e leques podres com faca limpa, deixar secar 1 dia e replantar em substrato novo"
+    },
+    {
+      "nome": "Cochonilha (de carapaça e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos na nervura, no verso das folhas e na base dos pecíolos; folhas pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%; em infestação maior, pulverizar óleo mineral a 1% ou óleo de neem a 0,5% com detergente neutro no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontilhado amarelo-claro nas folhas, que ficam foscas e acinzentadas; teias finas no verso em tempo seco e quente",
+      "prevencao_tratamento": "Lavar as folhas com jato de água, dos dois lados, a cada poucos dias no calor seco; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mancha foliar (Helminthosporium, Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas com halo amarelado que crescem e se juntam, mais em tempo úmido",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas à noite; cortar as folhas muito atacadas e manter o vaso arejado; em caso grave, fungicida cúprico"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta verde e saudável, com muitas folhas, que não solta hastes florais",
+      "prevencao_tratamento": "Garantir pelo menos 4 a 6 horas de sol direto, não trocar para vaso muito maior do que o necessário, adubar com fósforo e evitar nitrogênio em excesso; planta dividida ou nova pode levar mais 1 a 2 anos"
+    },
+    {
+      "nome": "Queimadura de sol e de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas bege ou esbranquiçadas e secas no meio das folhas após mudança brusca para o sol; folhas escurecidas e murchas depois de geada",
+      "prevencao_tratamento": "Aclimatar ao sol aos poucos e proteger do frio abaixo de 5 °C; cortar só as folhas totalmente perdidas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A estrelícia aguenta frio leve, mas geada e noites abaixo de 5 °C queimam as folhas e as hastes florais. No inverno ela quase para de crescer e bebe pouca água.",
+      "acao_requerida": "Encostar o vaso numa parede protegida ou cobri-lo com manta em noites de previsão de geada, e espaçar a rega para a cada 7 a 10 dias"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomada da primavera",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento. É a melhor época para limpar a touceira e voltar a adubar.",
+      "acao_requerida": "Cortar folhas secas e hastes florais murchas, voltar à adubação mensal com adubo rico em fósforo e retornar à rega a cada 3 a 4 dias"
+    }
+  ]
+}

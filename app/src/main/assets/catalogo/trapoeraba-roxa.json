@@ -1,0 +1,181 @@
+{
+  "planta": {
+    "nome_comum": "Trapoeraba-roxa",
+    "nome_cientifico": "Tradescantia pallida 'Purpurea'",
+    "descricao": "Planta pendente e rasteira de folhas roxas e suculentas, com pequenas flores rosadas no verão. É muito rústica, pega fácil de estaca e fica ótima em vaso suspenso ou jardineira ensolarada. A seiva pode irritar a pele sensível: use luvas ao podar e mantenha longe de pets que mastigam plantas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso, cuia suspensa ou jardineira com pelo menos 15 cm de profundidade e 20 cm de diâmetro, com furos no fundo; plante 4 a 6 estacas juntas para a touceira ficar cheia",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; solto e que não retenha água parada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Estacas de 10 a 15 cm, sem as folhas de baixo, enterradas 3 a 4 cm no substrato úmido. As raízes surgem em 7 a 14 dias; a estaca está enraizada quando resiste a um puxão leve e solta folhas novas na ponta."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Os ramos crescem e começam a tombar pela borda do vaso. A cor roxa fica mais intensa quanto mais sol a planta recebe; se estiver esverdeada e com espaço grande entre as folhas, precisa de mais luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Touceira cheia e pendente, que floresce da primavera ao outono com flores rosadas que duram um dia. Cresce rápido no calor e quase para no inverno. Com o tempo os ramos ficam compridos e pelados na base: a poda de primavera e o replantio de estacas a cada dois anos mantêm a planta compacta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar as estacas",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Toque a superfície do substrato: se o primeiro centímetro estiver seco, regue devagar até escorrer pelos furos. As estacas ainda não têm raiz e murcham se o vaso secar por inteiro; sem encharcar, para a base não apodrecer.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a trapoeraba-roxa",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Vaso suspenso ao sol no verão pode pedir rega a cada 2 dias; no inverno, a cada 7 a 10 dias. Folhas murchas e moles com substrato úmido indicam excesso, não falta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a trapoeraba-roxa",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca na superfície de um vaso de 3 L, ou use NPK 10-10-10 (1 colher de chá dissolvida em 1 L de água), e regue em seguida. De junho a agosto, pule a adubação: a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "desponte",
+      "titulo": "Despontar os ramos",
+      "tipo": "PODA",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa e luvas, corte 3 a 5 cm da ponta dos ramos mais compridos, logo acima de um nó, e retire folhas secas e flores murchas. Isso faz a planta ramificar e ficar cheia. As pontas cortadas enraízam: replante no próprio vaso onde estiver ralo.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos e olhe as axilas das folhas e a base dos caules: procure tufos brancos de algodão, teias finas, pontinhos claros nas folhas e caules escuros e moles rente ao substrato.",
+      "critica": false
+    },
+    {
+      "id": "renovacao_vaso",
+      "titulo": "Renovar a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Depois de dois anos o substrato se esgota e a base fica pelada. Tire a planta do vaso, troque todo o substrato e replante só as partes vigorosas ou estacas novas de 10 a 15 cm, 4 a 6 por vaso.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Estacas enraizadas",
+      "mensagem": "Depois de três semanas as estacas já devem ter raízes e folhas novas na ponta.",
+      "acao_requerida": "Puxar de leve cada estaca: as que saírem soltas ou com a base preta devem ser trocadas por estacas novas"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Planta formada",
+      "mensagem": "A touceira já está estabelecida e aguenta mais sol e regas mais espaçadas.",
+      "acao_requerida": "Se o vaso estava na meia-sombra, levar aos poucos para um lugar com pelo menos 5 horas de sol direto para intensificar o roxo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do caule e da raiz (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Caules escuros, moles e translúcidos rente ao substrato; ramos que tombam e se soltam da base; cheiro de mofo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, esvaziar o pratinho e usar substrato com areia. Corte as partes sadias, descarte as podres e replante as estacas em substrato novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodoado nas axilas das folhas e nos nós; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos claros nas folhas, que ficam opacas e acinzentadas; teias finas entre os ramos, comum em tempo seco e quente",
+      "prevencao_tratamento": "Lavar a planta com jato de água, inclusive o verso das folhas; repetir a cada 3 dias e aplicar óleo de neem se persistir"
+    },
+    {
+      "nome": "Perda da cor roxa (falta de luz)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas esverdeadas, ramos finos e compridos com grande espaço entre as folhas, sem flores",
+      "prevencao_tratamento": "Levar para local com 5 horas ou mais de sol direto; podar os ramos estiolados para que brotem compactos"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e ramos encharcados, escuros e moles depois de uma noite muito fria",
+      "prevencao_tratamento": "Em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou abrigo; cortar as partes queimadas quando o frio passar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a trapoeraba cresce pouco e o substrato demora a secar, então o risco de podridão aumenta. Nas regiões com geada, as folhas podem queimar.",
+      "acao_requerida": "Espaçar a rega para a cada 7 a 10 dias, suspender a adubação e proteger o vaso nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Com a volta do calor a planta rebrota com força. Uma poda forte agora corrige os ramos compridos e pelados do ano anterior.",
+      "acao_requerida": "Cortar os ramos pela metade, acima de um nó, retirar partes secas ou queimadas e replantar as pontas cortadas nos espaços vazios do vaso"
+    }
+  ]
+}

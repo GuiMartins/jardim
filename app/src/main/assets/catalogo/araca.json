@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Araçá",
+    "nome_cientifico": "Psidium cattleyanum",
+    "descricao": "Arbusto nativo da Mata Atlântica, parente da goiabeira, que dá frutinhos vermelhos ou amarelos (araçá-amarelo) doce-ácidos e muito perfumados. É rústico, aguenta frio e geada leve e frutifica bem em vaso grande, geralmente a partir do segundo ano da muda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cerâmica ou fibra com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; comece com um de 30 L e passe para 60 L ou mais quando a raiz tomar o vaso",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou casca de arroz carbonizada; levemente ácido (pH 5,5 a 6,5), com 200 g de farinha de ossos misturados por vaso de 50 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante. Algumas folhas velhas podem amarelar e cair; brotos novos avermelhados na ponta dos ramos mostram que a raiz pegou e a fase terminou."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 31,
+      "dia_fim": 720,
+      "descricao": "A planta ganha altura e ramos, com fluxos de brotação avermelhada na primavera e no verão. É a fase de formar a copa com podas de ponta. Algumas mudas já dão flores brancas no segundo ano; a fase termina quando a planta passa a florescer todo ano."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 721,
+      "dia_fim": null,
+      "descricao": "Ano típico: floração branca e perfumada de setembro a novembro, frutos amadurecendo de dezembro a março (às vezes uma segunda carga menor no outono) e crescimento lento no inverno. A casca do tronco descama em placas, o que é normal. Mantida a 1,5 a 2 m com poda, produz bem por muitos anos no vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de araçá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda está só no torrão da muda, então não deixe secar nem deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o araçá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão, com flores ou frutos, confira a cada 2 dias; no inverno, espace para 5 a 7 dias. Falta de água na floração e na frutificação derruba flores e frutinhos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o araçá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a abril, espalhe 2 punhados de húmus de minhoca ou 1 de esterco curtido de galinha mais 1 colher de sopa de NPK 10-10-10 pela borda do vaso, longe do tronco, e regue em seguida. Na floração, prefira fórmula com mais potássio (4-14-8). De maio a agosto pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas novas e os ramos: procure pó amarelo-alaranjado (ferrugem), escamas brancas ou marrons (cochonilha) e folhas enroladas na borda (psilídeo). Nos frutos, procure furinhos ou manchas moles.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas no fundo e nas laterais e replante com substrato novo, no mesmo vaso ou num 10 a 20 L maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Plantada na altura certa, a muda não apodrece o colo e pega mais rápido.",
+      "acao_requerida": "Plantar a muda com o colo no mesmo nível em que estava no saquinho, sem enterrar o caule, firmar o substrato e regar até escorrer"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Poda de formação",
+      "mensagem": "Cortar a ponta do ramo principal faz a muda soltar ramos laterais e formar uma copa baixa, mais fácil de colher no vaso.",
+      "acao_requerida": "Se a muda passou de 60 cm, cortar a ponta do ramo principal a uns 50 cm do substrato e deixar crescer 3 ou 4 ramos laterais bem distribuídos"
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "Primeiras flores podem aparecer",
+      "mensagem": "A muda já pode florir. Numa planta ainda pequena, frutos em excesso atrasam o crescimento.",
+      "acao_requerida": "Se a planta tiver menos de 1 m, deixar só alguns frutos por ramo e tirar o resto ainda verde"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos secam da ponta para a base e as raízes ficam escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter furos desobstruídos; em caso avançado, replantar em substrato novo cortando as raízes podres"
+    },
+    {
+      "nome": "Ferrugem-das-mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nas folhas e brotos novos, que depois se deformam e secam; também ataca flores e frutos pequenos",
+      "prevencao_tratamento": "Deixar a copa arejada, regar sem molhar as folhas e retirar os brotos atacados; se persistir, calda bordalesa a 0,5% na brotação a cada 10 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos, manchas moles e larvas brancas dentro; caem antes de amadurecer",
+      "prevencao_tratamento": "Ensacar os frutos ainda verdes com saquinhos de TNT ou papel, recolher e descartar os frutos caídos e usar armadilha caseira com suco de fruta fermentado perto do vaso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodonosas nos ramos e no verso das folhas; folhas meladas e fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia com água e sabão neutro; em infestação maior, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Psilídeo (Triozoida limbata)",
+      "tipo": "PRAGA",
+      "sintomas": "Bordas das folhas novas enroladas para dentro, amareladas e depois necrosadas, com insetos pequenos e ninfas dentro do enrolamento",
+      "prevencao_tratamento": "Cortar e descartar os brotos atacados; óleo de neem a 0,5% nas brotações novas a cada 7 dias enquanto houver sintomas"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nos frutos, que apodrecem, e manchas marrons nas folhas em períodos quentes e chuvosos",
+      "prevencao_tratamento": "Colher os frutos logo que amadurecem, retirar os doentes e evitar molhar a copa; calda bordalesa preventiva na floração em anos muito chuvosos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Floração do araçá",
+      "mensagem": "Os botões e flores brancas estão se formando. Falta de água ou de potássio agora derruba as flores.",
+      "acao_requerida": "Manter o substrato úmido sem encharcar e fazer a adubação com fórmula rica em potássio (4-14-8)"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Proteger os frutos da mosca",
+      "mensagem": "Os frutinhos verdes começam a crescer e ficam vulneráveis à mosca-das-frutas.",
+      "acao_requerida": "Ensacar os frutos com o tamanho de uma ervilha com saquinhos de TNT e instalar uma armadilha caseira perto do vaso"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "Os araçás estão amadurecendo e amolecem e caem em poucos dias.",
+      "acao_requerida": "Passar pela planta a cada 2 dias e colher os frutos totalmente vermelhos (ou amarelos, no araçá-amarelo) e macios ao toque; recolher os caídos"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Cuidados no inverno",
+      "mensagem": "A planta adulta aguenta geada leve, mas cresce pouco e gasta menos água; mudas jovens sofrem com geada forte.",
+      "acao_requerida": "Espaçar as regas para 5 a 7 dias, suspender a adubação e, em noite de geada, cobrir mudas do primeiro ano com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "Antes da brotação da primavera é a melhor hora de arejar a copa, o que reduz a ferrugem e melhora a frutificação.",
+      "acao_requerida": "Cortar ramos secos, doentes, cruzados e voltados para dentro da copa, e encurtar os que passaram da altura desejada (1,5 a 2 m)"
+    }
+  ]
+}

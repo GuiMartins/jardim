@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Resedá",
+    "nome_cientifico": "Lagerstroemia indica",
+    "descricao": "Arbusto ou arvoreta de origem asiática, muito plantado em calçadas no Brasil, que no verão se cobre de cachos de flores crespas rosa, lilás, vermelhas ou brancas. Em vaso grande fica com 1,5 a 2,5 m, perde as folhas no inverno e floresce nos ramos novos, por isso a poda anual é o que garante a florada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; vaso pesado evita que a planta tombe com o vento",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou casca de pinus fina; acrescente 2 colheres de sopa de farinha de ossos por 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no substrato novo. É normal perder algumas folhas mais velhas na primeira semana. A fase termina quando surgem brotos novos avermelhados nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento de ramos e raízes; defina aqui a forma da planta: arbusto com vários caules ou arvoreta com um a três troncos. A primeira florada costuma ser pequena. Folhas miúdas e ramos finos e compridos indicam pouco sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota em setembro, forma botões em novembro e floresce de dezembro a março. No outono as folhas ficam alaranjadas e caem entre maio e junho; a planta passa o inverno sem folhas e é podada em julho. A casca descama em placas, o que é normal."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de resedá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos. A raiz ainda não saiu do torrão da muda e seca antes do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o resedá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão com a planta florida, a rega costuma ser necessária a cada 2 ou 3 dias. No inverno, sem folhas, regue só quando os 5 cm estiverem secos, o que leva cerca de uma semana.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure pó branco nas folhas e botões (oídio), pulgões nas pontas novas, cochonilhas nos ramos e manchas pretas pegajosas (fumagina). Vire algumas folhas para ver o verso.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, com a planta sem folhas. Tire a planta do vaso, raspe 3 a 5 cm do torrão pelas laterais e pelo fundo, corte raízes enroladas e replante com substrato novo no mesmo vaso ou num 10 cm maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "A muda já deve ter raízes firmes no vaso. Sem sol pleno, o resedá cresce fino e não floresce.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo, com pelo menos 6 horas de sol direto por dia"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora de definir a forma",
+      "mensagem": "Os brotos que nascem da base decidem se o resedá vira arbusto cheio ou arvoreta de tronco limpo.",
+      "acao_requerida": "Escolher entre arbusto (manter 3 a 5 caules) ou arvoreta (manter 1 a 3 troncos) e cortar rente os brotos da base que sobram"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Oídio (Erysiphe lagerstroemiae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre folhas novas e botões; folhas enrugadas e botões que não abrem, principalmente em tempo seco com noites frescas e úmidas",
+      "prevencao_tratamento": "Manter em sol pleno e com ventilação, sem molhar as folhas na rega; retirar as partes muito atacadas e pulverizar bicarbonato de sódio (1 colher de chá por litro com algumas gotas de detergente neutro) ou enxofre molhável a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos nas pontas e botões; folhas encarquilhadas e melada pegajosa",
+      "prevencao_tratamento": "Jato de água forte nas colônias; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças ou flocos brancos presos aos ramos e ao verso das folhas; ramos enfraquecidos",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool; em infestação grande, óleo mineral ou de neem a 1% a cada 7 dias, de preferência no inverno com a planta sem folhas"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada preta como fuligem sobre as folhas, sempre junto de pulgão ou cochonilha",
+      "prevencao_tratamento": "Controlar os insetos que produzem a melada; lavar as folhas com água e sabão neutro"
+    },
+    {
+      "nome": "Podridão de raízes (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e murchas mesmo com o substrato úmido, ramos secando das pontas e cheiro de mofo no vaso",
+      "prevencao_tratamento": "Nunca deixar água no pratinho e regar só com o substrato seco a 5 cm, principalmente no inverno; se ocorrer, tirar a planta do vaso, cortar raízes escuras e moles e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta verde e saudável que forma poucos ou nenhum cacho de flores no verão",
+      "prevencao_tratamento": "Garantir 6 horas ou mais de sol direto, fazer a poda de inverno (as flores nascem nos ramos do ano) e evitar adubo rico em nitrogênio"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Queda das folhas",
+      "mensagem": "O resedá está entrando em dormência: folhas alaranjadas caindo agora são normais, não é doença.",
+      "acao_requerida": "Recolher as folhas caídas do vaso e espaçar a rega, regando só quando o substrato estiver seco a 5 cm"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda anual do resedá",
+      "mensagem": "Sem folhas, a planta está parada. As flores do verão nascem nos ramos que brotarem depois desta poda.",
+      "acao_requerida": "Cortar os ramos do ano anterior deixando 2 a 3 gemas, retirar ramos secos, cruzados e brotos da base; não corte os troncos principais"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Adubação do mês",
+      "mensagem": "Na estação de crescimento e florada, o resedá em vaso esgota o substrato rápido.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de NPK 4-14-8 ou 1 xícara de húmus de minhoca pela superfície de um vaso de 50 L, longe do tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        1
+      ],
+      "titulo": "Estimular a segunda florada",
+      "mensagem": "Cachos que já secaram gastam energia formando sementes.",
+      "acao_requerida": "Cortar os cachos secos logo abaixo da base do cacho para a planta lançar uma nova florada até março"
+    }
+  ]
+}

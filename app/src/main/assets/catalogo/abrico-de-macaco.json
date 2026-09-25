@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Abricó-de-macaco",
+    "nome_cientifico": "Couroupita guianensis",
+    "descricao": "Árvore amazônica de 20 a 30 m, famosa pelas flores rosadas e perfumadas que nascem direto no tronco e pelos frutos redondos e pesados como bolas de canhão. Em vaso ela vive como árvore jovem ornamental por alguns anos, mas raramente floresce antes dos 8 a 10 anos e só chega a isso plantada no chão. O vaso serve para formar a muda até ela ir para o terreno definitivo.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo; a raiz é pivotante e a árvore fica alta, então o vaso precisa ser fundo e estável contra o vento",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada; mais 1 punhado de farinha de ossos a cada 20 L de substrato",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante. É normal perder 1 ou 2 folhas velhas na primeira semana. Se ela veio de viveiro com sombrite, deixe-a em meia-sombra por 7 a 10 dias antes do sol pleno. A fase termina quando surgem folhas novas, verde-claras e brilhantes, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e a muda passa a crescer em fluxos, soltando vários pares de folhas grandes de uma vez na primavera e no verão. Espere de 30 a 60 cm de altura no primeiro ano. Folhas grandes e verde-escuras indicam que a planta firmou; folhas pequenas e amareladas indicam falta de sol ou de adubo."
+    },
+    {
+      "fase_id": "arvore_jovem",
+      "nome": "Árvore Jovem em Vaso",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "O ano típico em vaso: cresce forte de setembro a março, desacelera no outono, fica quase parada no frio e pode trocar boa parte das folhas no fim do inverno, rebrotando em poucas semanas. O tronco engrossa e a copa se forma, mas a floração no tronco quase nunca acontece em vaso. Depois de 3 a 5 anos ela pede o plantio no chão, longe de casas, carros e calçadas, porque os frutos adultos pesam de 1 a 3 kg e caem."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos. Com a raiz ainda confinada no torrão da muda, o substrato não pode secar por completo. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_regular",
+      "titulo": "Regar o abricó-de-macaco",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 50 L). É árvore de mata úmida e gosta de substrato sempre levemente úmido, nunca encharcado: esvazie o pratinho depois de 30 minutos. De junho a agosto, espace para a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o abricó-de-macaco",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca e 2 colheres de sopa de NPK 10-10-10 por vaso de 50 L, em volta da borda e longe do tronco, afofe a superfície e regue em seguida. Se a data cair entre junho e agosto, use só o húmus, porque a planta está parada e o adubo químico acumula sal.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure escamas marrons ou brancas grudadas nas nervuras e nos ramos novos, formigas subindo pelo tronco, folhas roídas e manchas escuras de borda amarela.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso ou renovar substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Em setembro ou outubro, tire a planta do vaso. Se as raízes estiverem enroladas no fundo, passe para um vaso 30% maior com substrato novo. Se já estiver no maior vaso possível, apare 3 a 5 cm das raízes em volta do torrão e reponha um terço do substrato. Regue bem e deixe 7 dias em meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Firme a muda com um tutor",
+      "mensagem": "A muda de abricó costuma vir alta e fina, e as folhas grandes funcionam como vela no vento. Um tombo agora quebra a gema da ponta e entorta o tronco.",
+      "acao_requerida": "Cravar uma estaca de bambu a 5 cm do tronco sem ferir o torrão e amarrar com fita de tecido ou borracha em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Hora de soltar o tutor",
+      "mensagem": "Com a raiz firme, o tronco precisa balançar um pouco para engrossar. Amarração esquecida estrangula a casca.",
+      "acao_requerida": "Afrouxar ou retirar a amarração; se a planta ainda tombar sozinha, amarrar de novo mais frouxo e mais alto"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Planeje o lugar definitivo no chão",
+      "mensagem": "Com 3 anos, o abricó-de-macaco já sente o limite do vaso. Ele só floresce e frutifica depois de anos no chão, vira uma árvore de mais de 20 m, e os frutos de até 3 kg caem sozinhos e soltam cheiro forte ao apodrecer.",
+      "acao_requerida": "Escolher um local ensolarado a pelo menos 8 m de casas, muros, redes elétricas, calçadas e vagas de carro e plantar na primavera seguinte"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem; raízes escuras, moles e com cheiro ruim; base do tronco pode escurecer",
+      "prevencao_tratamento": "Vaso com furos desobstruídos, nunca deixar água parada no pratinho e reduzir a rega no frio. Se aparecer, tire do vaso, corte as raízes podres com tesoura limpa e replante em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou brancas grudadas nos ramos e nas nervuras; folhas pegajosas com fumagina preta; formigas subindo pelo tronco",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%; em infestação grande, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou com grandes buracos, fezes escuras sobre as folhas de baixo",
+      "prevencao_tratamento": "Catar as lagartas à mão, com luva; em ataque forte, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Mancha foliar fúngica (Colletotrichum, Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas, arredondadas e com halo amarelo, que crescem e secam a folha, principalmente no verão chuvoso",
+      "prevencao_tratamento": "Regar no substrato e não nas folhas, deixar o vaso em local ventilado e retirar as folhas atacadas; em caso persistente, fungicida à base de cobre conforme o rótulo"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com áreas escuras e aspecto encharcado que depois secam e ficam pardas, ponta dos ramos novos morta após noites abaixo de 5 °C",
+      "prevencao_tratamento": "Nas noites frias, encostar o vaso numa parede voltada para o norte ou levar para área coberta; não podar o dano até setembro, quando a rebrota mostra o que está vivo"
+    },
+    {
+      "nome": "Clorose por falta de nutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas pequenas e verde-claras ou amareladas com nervuras verdes; crescimento lento no verão",
+      "prevencao_tratamento": "Manter a adubação trimestral e renovar o substrato a cada 2 anos; se as nervuras ficarem verdes e o resto amarelo, aplicar quelato de ferro conforme o rótulo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "É árvore tropical e sofre abaixo de 5 °C; geada queima as folhas e pode matar a muda jovem. No frio ela quase não cresce e bebe bem menos água.",
+      "acao_requerida": "Deixar o vaso em local protegido do vento frio e da geada, espaçar a rega para a cada 5 a 7 dias e cobrir com manta de TNT nas noites de previsão de geada"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Troca de folhas e limpeza",
+      "mensagem": "No fim do inverno o abricó-de-macaco pode derrubar muitas folhas de uma vez e rebrotar em poucas semanas. Isso é normal e não é sinal de rega errada.",
+      "acao_requerida": "Recolher as folhas caídas do vaso e cortar só os galhos secos rente ao ramo vivo, sem raspar nem ferir o tronco, que é de onde saem as flores na árvore adulta"
+    }
+  ]
+}

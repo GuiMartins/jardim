@@ -1,0 +1,194 @@
+{
+  "planta": {
+    "nome_comum": "Bico-de-papagaio",
+    "nome_cientifico": "Euphorbia pulcherrima",
+    "descricao": "Arbusto mexicano famoso pelas brácteas vermelhas, que parecem pétalas e cercam as flores verdadeiras, pequenas e amarelas. A floração depende de noites longas. Por isso a planta comprada florida no Natal, que teve a floração forçada no viveiro, passa a colorir em casa no inverno, de maio a agosto no Centro-Sul. O látex branco irrita pele e olhos: use luvas na poda e deixe o vaso longe de pets e crianças.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com vários furos no fundo; sem cachepô fechado que acumule água",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% perlita ou areia grossa; leve e bem drenado, pH levemente ácido (5,8 a 6,5)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa do viveiro para a casa e sente a mudança de luz e de umidade. É comum cair algumas folhas verdes de baixo e as brácteas durarem menos. Ela se adaptou quando para de perder folhas e aparecem brotos novos nas pontas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Já no vaso definitivo, as raízes ocupam o substrato novo e os ramos crescem com folhas grandes e verde-escuras. Brácteas velhas que desbotaram ou ficaram verdes podem ser cortadas. A fase termina quando a planta dobra de volume e brota ramos novos com vigor."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "O ano típico: poda forte em setembro, quando as brácteas caem; crescimento vigoroso e despontes na primavera e no verão; a partir de abril, as noites longas (mais de 12 horas de escuro total) induzem a floração, e as brácteas colorem de maio a agosto. Luz artificial à noite, de poste ou lâmpada acesa, impede a floração e deixa a planta só verde."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o bico-de-papagaio",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água do pratinho. Se ainda estiver úmido, espere mais um dia: encharcar apodrece a raiz. No verão, ao sol, confira todo dia; no inverno, o intervalo passa a ser de 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o bico-de-papagaio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato úmido, dissolva NPK 10-10-10 (1 colher de chá rasa em 1 L de água) e regue o vaso com essa solução, ou espalhe 2 colheres de sopa de húmus longe do caule. De junho a agosto, com a planta florida e o frio, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brácteas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Balance os ramos e veja se sobe uma nuvem de mosquinhas brancas. Vire as folhas e procure ovos, cochonilhas algodonosas nas axilas, teias finas ou pontos amarelados. Confira também se a base do caule está firme e sem escurecimento.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça logo depois da poda de setembro. Tire a planta do vaso, desmanche um terço do torrão por fora, corte as raízes enroladas ou escuras e replante em substrato novo, num vaso 5 cm maior se as raízes estiverem circulando. Regue bem e deixe 1 semana na meia sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Tire a embalagem decorativa",
+      "mensagem": "O papel alumínio, o celofane ou o cachepô de presente seguram água no fundo e apodrecem as raízes em poucos dias.",
+      "acao_requerida": "Retirar a embalagem, colocar o vaso num lugar claro, longe de corrente de ar e do ar-condicionado, e regar só quando os primeiros 3 cm do substrato estiverem secos"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "O vaso de viveiro é pequeno e o substrato dele é feito para durar só a floração. Sem espaço, a planta não cresce para florir no próximo inverno.",
+      "acao_requerida": "Transplantar para um vaso de pelo menos 20 L com substrato novo, sem enterrar o caule mais fundo do que estava, e cortar as brácteas já desbotadas"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Leve para o sol",
+      "mensagem": "Adaptada e no vaso novo, a planta precisa de sol direto para formar ramos firmes e florir bem.",
+      "acao_requerida": "Mudar o vaso aos poucos, ao longo de uma semana, para um local com pelo menos 4 a 6 horas de sol direto, de preferência pela manhã"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta; ovos e ninfas no verso das folhas; folhas amareladas e pegajosas, com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; lavar o verso das folhas com jato de água; óleo de neem a 0,5% com algumas gotas de detergente neutro no fim da tarde, a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e na base dos ramos; planta fraca e pegajosa",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação grande, óleo de neem ou calda de sabão neutro semanal até sumir"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto opaco e teias finas no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; enxofre ou óleo de neem a cada 5 dias; isolar a planta"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelas caindo de baixo para cima, base do caule escura e mole, raízes marrons que se soltam",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho ou no cachepô; nas plantas afetadas, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons encharcadas nas brácteas e folhas, cobertas por um pó cinzento, em tempo frio e úmido",
+      "prevencao_tratamento": "Não molhar as brácteas ao regar, manter ventilação e retirar as partes atacadas e as folhas caídas sobre o substrato"
+    },
+    {
+      "nome": "Queda de folhas por estresse",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas verdes ou amarelas caem de repente, logo depois de mudar a planta de lugar, de uma corrente de ar, de frio abaixo de 10 °C ou de o substrato secar demais",
+      "prevencao_tratamento": "Evitar mudanças bruscas de lugar, ar-condicionado e vento frio; manter a rega regular; a planta rebrota se a raiz estiver sadia"
+    },
+    {
+      "nome": "Ausência de cor nas brácteas",
+      "tipo": "DISTURBIO",
+      "sintomas": "No inverno a planta continua só verde e não forma brácteas coloridas",
+      "prevencao_tratamento": "De abril a julho, garantir noites totalmente escuras: nenhum poste, lâmpada ou janela iluminada sobre a planta depois do pôr do sol"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda depois da floração",
+      "mensagem": "As brácteas já caíram ou esverdearam. Podar agora renova a planta e gera muitos ramos, e cada ponta de ramo vira uma flor no próximo inverno.",
+      "acao_requerida": "De luvas, cortar os ramos deixando 3 ou 4 gemas a partir da base, lavar o látex que escorrer com água e voltar a adubar todo mês"
+    },
+    {
+      "meses": [
+        11,
+        1
+      ],
+      "titulo": "Despontar os ramos",
+      "mensagem": "Desponte agora para a planta ficar cheia e compacta. Depois de fevereiro, pare de despontar, senão os ramos não amadurecem para florir.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo que passou de 15 cm, logo acima de uma folha, usando luvas"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Noites escuras para florir",
+      "mensagem": "Com as noites mais longas, a planta começa a formar os botões. Qualquer luz à noite interrompe o processo e as brácteas não colorem.",
+      "acao_requerida": "Deixar o vaso num lugar sem luz artificial do pôr do sol ao amanhecer até as brácteas colorirem; se não houver, cobrir com caixa de papelão das 18h às 8h por 8 semanas"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 10 °C o bico-de-papagaio perde folhas e as brácteas queimam, e geada mata os ramos.",
+      "acao_requerida": "Em noites frias, levar o vaso para perto de uma parede ou para dentro, longe do aquecedor, e espaçar a rega para quando o substrato secar a 3 cm"
+    }
+  ]
+}

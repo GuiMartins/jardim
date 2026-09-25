@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Dendróbio",
+    "nome_cientifico": "Dendrobium nobile (e híbridos)",
+    "descricao": "Orquídea de pseudobulbos em forma de cana, a espécie de Dendrobium mais cultivada em casa no Brasil (o gênero tem mais de mil espécies; o JSON segue o D. nobile e seus híbridos). Floresce no fim do inverno e na primavera com dezenas de flores ao longo das canas, desde que passe o inverno no frio e quase sem rega.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pequeno de barro ou plástico com furos no fundo e nas laterais, 12 a 15 cm de diâmetro; o dendróbio gosta de raiz apertada, então o vaso deve ter só 2 a 3 cm de folga em volta da touceira",
+    "volume_minimo_litros": 1,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "60% casca de pinus média (1 a 2 cm), 20% carvão vegetal em pedaços, 20% chips de coco; nada de terra, que encharca e apodrece as raízes",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se acostuma à luz e à umidade da casa. É normal cair um ou outro botão ou amarelar uma folha velha. Não troque de vaso nem adube; se estiver florida, deixe-a num lugar claro sem sol forte até as flores caírem."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Surgem brotos novos na base das canas, com raízes brancas de ponta verde. Esses brotos viram as canas que vão florir no próximo inverno, por isso precisam de rega e adubo regulares na estação quente. A fase termina quando o broto do ano forma a folha terminal (a última folha, menor, no topo da cana)."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: de novembro a março crescem as canas novas com rega e adubo; em abril a cana fecha com a folha terminal; de maio a julho a planta descansa no frio e no seco, e é esse repouso que induz as flores; em agosto aparecem as gemas florais ao longo das canas e entre agosto e outubro vem a floração. Canas velhas sem folha continuam úteis: guardam reserva e podem florir de novo, então não corte enquanto estiverem firmes e verdes."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o dendróbio",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm entre as cascas: se estiverem secas, regue de manhã na pia até escorrer bastante pelos furos e deixe escorrer bem antes de devolver ao lugar. Não deixe água no pratinho nem entre as folhas. No verão acima de 30 °C, confira a cada 2 dias; de maio a julho siga o aviso de repouso (quase sem rega).",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o dendróbio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g (uma colher de café rasa) de adubo para orquídea NPK 20-20-20 em 1 L de água e regue com essa solução o substrato já úmido. De março em diante troque por uma fórmula com menos nitrogênio (10-30-20). De maio a julho não aplique adubo nenhum.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar canas e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as bainhas secas que envolvem as canas: procure carocinhos brancos ou marrons (cochonilha), teia fina e folhas prateadas (ácaro) e brotos roídos (lesma). Aperte a base das canas: devem estar firmes, não moles nem escuras.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça logo depois da floração, quando os brotos novos estiverem com raízes de 1 a 2 cm. Tire toda a casca velha, corte com tesoura flambada as raízes ocas ou podres, divida touceiras com mais de 8 canas em partes de 3 a 4 canas e replante em casca nova, com o broto voltado para o centro do vaso. Espere 7 dias para regar de novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, orquídea!",
+      "mensagem": "A planta chegou de um ambiente diferente e precisa de algumas semanas para se adaptar. Se vier em musgo apertado ou substrato encharcado, as raízes podem estar apodrecendo.",
+      "acao_requerida": "Colocar num lugar com sol só da manhã, tirar do cachepô sem furo e enfiar o dedo no substrato: se estiver encharcado e com cheiro azedo, trocar por casca de pinus agora; se não, esperar a próxima troca"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Hora de começar a adubar",
+      "mensagem": "A adaptação passou. Os brotos novos que surgirem agora são as canas que vão florir no próximo inverno.",
+      "acao_requerida": "Conferir se há brotos novos na base e iniciar a adubação quinzenal com adubo para orquídea"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e de cana (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Raízes marrons, moles e ocas; base das canas escura e mole; folhas amarelando de baixo para cima",
+      "prevencao_tratamento": "Regar só com as cascas secas, nunca deixar água no pratinho e trocar o substrato a cada 2 anos. Se aparecer, tirar do vaso, cortar tudo o que estiver mole com tesoura flambada, passar canela em pó nos cortes e replantar em casca nova, sem regar por 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodonosos ou escamas marrons sob as bainhas das canas e no verso das folhas; folhas com pontos amarelos e grudentas",
+      "prevencao_tratamento": "Remover com cotonete ou escova de dente molhada em álcool 70%, levantando as bainhas secas. Repetir a cada 7 dias por 3 semanas; em infestação grande, óleo de neem a 0,5% com uma gota de detergente"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos prateados ou amarelados, aspecto opaco e teia fina no verso; piora em lugar quente e seco",
+      "prevencao_tratamento": "Lavar o verso das folhas com água corrente e aumentar a umidade em volta. Se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Lesma e caracol",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos novos, pontas de raiz e botões roídos, com rastro brilhante",
+      "prevencao_tratamento": "Procurar à noite com lanterna, sob o vaso e entre as cascas, e catar; manter o vaso suspenso ou longe do chão úmido"
+    },
+    {
+      "nome": "Keikis em vez de flores",
+      "tipo": "DISTURBIO",
+      "sintomas": "Nos nós das canas nascem mudinhas com folhas e raízes (keikis) no lugar das hastes florais",
+      "prevencao_tratamento": "Sinal de que o repouso de inverno falhou: rega ou adubo nitrogenado entre maio e julho, ou noites quentes demais. No próximo inverno, cortar o adubo, reduzir a rega e deixar a planta em lugar com noites frescas. Os keikis com raízes de 3 cm podem ser destacados e plantados"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelas ou brancas que secam e ficam pretas na face das folhas voltada para o sol",
+      "prevencao_tratamento": "Evitar sol direto depois das 10 h; ao mudar para um lugar mais claro, fazer aos poucos ao longo de 2 semanas. As folhas queimadas não se recuperam, mas não precisam ser tiradas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Preparar o repouso de inverno",
+      "mensagem": "As canas do ano estão terminando de crescer. Para florir, o dendróbio precisa de um inverno frio e seco.",
+      "acao_requerida": "Conferir se as canas novas já formaram a folha terminal, suspender o adubo com nitrogênio e espaçar a rega para quando as cascas estiverem secas há 2 ou 3 dias"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Repouso frio e seco",
+      "mensagem": "Este é o mês que decide a floração: com rega e adubo agora, a planta faz keikis em vez de flores.",
+      "acao_requerida": "Não adubar, regar só a cada 10 a 14 dias (ou apenas borrifar se as canas começarem a enrugar muito) e manter a planta em lugar claro com noites entre 8 e 15 °C, protegida de geada"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Gemas florais aparecendo",
+      "mensagem": "Nos nós das canas surgem as gemas das flores: arredondadas e achatadas, diferentes dos keikis, que são pontudos e soltam folhas.",
+      "acao_requerida": "Quando as gemas estiverem visíveis, voltar a regar aos poucos com as cascas secas e não mudar mais a planta de lugar até o fim da floração, para os botões não caírem"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "A floração acabou e os brotos novos estão enraizando: é a melhor época para trocar de vaso, se o substrato estiver esfarelando.",
+      "acao_requerida": "Retomar a rega normal e a adubação quinzenal com NPK 20-20-20; se a casca estiver virando pó ou a touceira transbordando do vaso, fazer a troca agora"
+    }
+  ]
+}

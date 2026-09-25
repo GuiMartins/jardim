@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Abacaxizeiro",
+    "nome_cientifico": "Ananas comosus",
+    "descricao": "Bromélia frutífera que se planta em casa a partir da coroa (o topo de folhas) de um abacaxi comprado. Em vaso grande e sol pleno dá um fruto por planta entre 18 e 24 meses; depois a planta-mãe declina e os filhotes da base continuam a touceira, por isso é tratada como perene.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Para enraizar, vaso de 2 a 3 L com furos; depois, vaso definitivo largo de pelo menos 35 cm de diâmetro e 30 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa, 20% casca de pinus fina, 10% húmus de minhoca; solo leve, bem drenado e ácido (pH 4,5 a 5,5), sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento_coroa",
+      "nome": "Enraizamento da Coroa",
+      "dia_inicio": 1,
+      "dia_fim": 60,
+      "descricao": "Antes do plantio, tire as folhas de baixo da coroa e deixe secar por 2 a 3 dias. Depois enterre só a base, a 3 ou 4 cm. As folhas do centro param de amarelar e voltam a crescer entre a 3ª e a 6ª semana. A coroa enraizou quando um puxão leve encontra resistência."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 61,
+      "dia_fim": 365,
+      "descricao": "Já no vaso definitivo, a roseta cresce e as folhas novas saem mais longas e largas que as da coroa. Folhas verdes e firmes indicam sol e adubo suficientes. Folhas avermelhadas indicam frio ou falta de nitrogênio."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Com 30 a 40 folhas e cerca de 80 cm de diâmetro, a planta pode florescer, geralmente depois de um inverno: dias curtos e noites frias induzem a floração. O centro fica avermelhado, surge a inflorescência roxa e o fruto amadurece 5 a 6 meses depois. Está pronto quando a casca amarela da base até a metade e solta perfume doce. Depois da colheita, a planta-mãe não dá outro fruto grande: crescem filhotes na base e no pedúnculo, que formam as próximas plantas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a coroa em enraizamento",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos. Sem raízes, a coroa depende dessa umidade, mas substrato encharcado apodrece a base. Deixe o vaso em luz forte e, na primeira semana, longe do sol do meio-dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o abacaxizeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e jogue um pouco de água no centro da roseta. Com mais de 30 °C, confira a cada 3 dias. No inverno, regue a cada 8 a 10 dias e não molhe o centro.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o abacaxizeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g de NPK 20-10-20 (meia colher de chá rasa) em 1 L de água e regue o substrato, molhando também as axilas das folhas de baixo. Pule a adubação de junho a agosto e pare quando o fruto começar a amarelar.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_cochonilha",
+      "titulo": "Procurar cochonilhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas da base e olhe as axilas e o colo da planta. Procure bolinhas brancas que parecem algodão e formigas subindo. Se houver fruto, olhe também entre os frutilhos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 790,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a touceira do vaso, descarte a planta-mãe que já frutificou e replante o filhote mais vigoroso em substrato novo. Filhotes extras com 20 cm ou mais podem ir para outros vasos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 45,
+      "titulo": "A coroa enraizou?",
+      "mensagem": "Entre a 4ª e a 7ª semana, a coroa costuma firmar raízes. Base mole ou escura indica podridão.",
+      "acao_requerida": "Puxar a coroa de leve. Se resistir, está enraizada. Se sair com a base mole, cortar a parte podre, deixar secar 3 dias e replantar"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "Com raízes, a planta precisa de espaço para formar a roseta grande que sustenta o fruto.",
+      "acao_requerida": "Passar o torrão inteiro para o vaso de 20 L ou mais, sem enterrar o centro da roseta, e deixar em sol pleno"
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "Sem flor ainda? Dá para induzir",
+      "mensagem": "Com 18 meses e roseta grande, a planta já pode florescer. Se o centro ainda não ficou avermelhado, dá para estimular a floração com o etileno de uma maçã madura.",
+      "acao_requerida": "Cobrir a planta com um saco plástico transparente junto com 2 maçãs maduras por 4 a 5 dias, fora do sol forte. A flor aparece em 6 a 10 semanas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha-do-abacaxi (Dysmicoccus brevipes)",
+      "tipo": "PRAGA",
+      "sintomas": "Massas brancas que parecem algodão nas axilas das folhas e na base; formigas circulando; folhas avermelhadas que murcham e secam da ponta para a base (murcha associada a vírus)",
+      "prevencao_tratamento": "Controlar as formigas, que protegem a cochonilha. Limpar com cotonete e álcool 70% e aplicar óleo de neem a 0,5% com detergente neutro a cada 7 dias, três vezes. Não plantar coroas de frutos com cochonilha"
+    },
+    {
+      "nome": "Podridão do olho e das raízes (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas do centro se soltam com um puxão leve, com a base mole, escura e com mau cheiro; a planta amarela e murcha mesmo com o substrato úmido",
+      "prevencao_tratamento": "Usar substrato bem drenado, regar só quando a camada de cima estiver seca e não deixar água parada no centro no frio. Planta com o olho podre não se recupera: aproveite os filhotes sadios e descarte o substrato"
+    },
+    {
+      "nome": "Fusariose (Fusarium guttiforme)",
+      "tipo": "DOENCA",
+      "sintomas": "Goma translúcida escorrendo do fruto ou da base das folhas; roseta torta e frutilhos escurecidos por dentro",
+      "prevencao_tratamento": "Plantar só coroas de frutos sadios, sem manchas nem goma. Remover e descartar as partes afetadas e não reaproveitar filhotes da planta doente"
+    },
+    {
+      "nome": "Broca-do-fruto (Strymon megarus)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos com resina cristalizada nos frutilhos jovens e galerias dentro do fruto",
+      "prevencao_tratamento": "Durante a floração, cobrir a inflorescência com saco de TNT ou tecido fino até as flores secarem. Retirar os frutilhos furados"
+    },
+    {
+      "nome": "Queimadura de sol no fruto",
+      "tipo": "DISTURBIO",
+      "sintomas": "O lado do fruto voltado para o sol da tarde fica amarelado, depois marrom e seco, com a polpa cozida por baixo",
+      "prevencao_tratamento": "No verão, com o fruto já formado, cobrir o lado exposto com jornal ou amarrar as folhas por cima dele"
+    },
+    {
+      "nome": "Folhas avermelhadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas inteiras vermelho-arroxeadas e crescimento parado, sem sinal de insetos na base",
+      "prevencao_tratamento": "No inverno é reação ao frio e passa sozinha na primavera. Fora do frio, indica falta de nitrogênio: retome a adubação mensal"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "No frio, o abacaxizeiro quase para de crescer e apodrece fácil com água parada no centro. A geada queima as folhas.",
+      "acao_requerida": "Regar só a cada 8 a 10 dias, sem molhar o centro da roseta, e suspender o adubo até setembro. Em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou cobrir com tecido"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Verão: rega mais frequente",
+      "mensagem": "Com calor forte, o vaso seca rápido, e é nesta época que a planta adulta cresce e engorda o fruto.",
+      "acao_requerida": "Conferir o substrato a cada 3 dias e, se houver fruto, proteger o lado exposto ao sol da tarde"
+    }
+  ]
+}

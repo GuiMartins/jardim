@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Flamboyant",
+    "nome_cientifico": "Delonix regia",
+    "descricao": "Árvore de Madagascar com copa em guarda-chuva e floração vermelho-alaranjada na primavera e no verão. No chão passa de 10 m de altura. Em vaso, com poda, fica entre 2 e 3 m e é muito usada como bonsai, mas raramente floresce antes dos 5 a 8 anos e floresce menos que no chão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica ou cimento), com pelo menos 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo. A copa pega vento, então o vaso precisa ser pesado para não tombar",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, mais 1 colher de sopa de farinha de osso por 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode amarelar ou soltar alguns folíolos na primeira semana. A adaptação terminou quando surgem folhas novas, verde-claras e bem recortadas, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido na primavera e no verão: o tronco engrossa e os ramos se alongam dezenas de centímetros por estação. As raízes ocupam o vaso. Se elas começarem a sair pelos furos antes de 1 ano, o vaso ficou pequeno."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota com força de setembro a novembro. Cresce e, quando já tem idade, floresce entre outubro e janeiro, depois forma vagens longas e escuras que duram meses na árvore. No inverno seco (maio a agosto), perde boa parte das folhas e quase para de crescer. Isso é normal e não indica doença. A poda de formação é feita no fim do inverno, antes da brotação."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda não explorou o vaso: não deixe o torrão da muda secar, mas também não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o flamboyant",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue só se estiver seco nessa profundidade, até escorrer pelos furos. No verão, acima de 30 °C, confira a cada 2 dias. De maio a agosto, com a planta sem folhas, espace para uma rega a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure crostas brancas ou marrons nos ramos novos e nas axilas das folhas (cochonilha), folíolos roídos ou fezes escuras no chão (lagartas) e serragem na base do tronco (broca).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno (agosto). Tire a planta do vaso, raspe 1/4 do torrão pelas laterais e pelo fundo, corte as raízes enoveladas e replante com substrato novo no mesmo vaso ou num 10 a 20 cm mais largo. Regue bem e deixe à meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira adubação",
+      "mensagem": "A muda já se adaptou e as raízes novas conseguem aproveitar o adubo sem queimar.",
+      "acao_requerida": "Espalhar 1 colher de sopa de NPK 10-10-10 e 1 xícara de húmus na borda do vaso, longe do tronco, e regar em seguida"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de flamboyant",
+      "mensagem": "Ele cresce rápido e pode ter esgotado o vaso. Raiz saindo pelos furos ou água que escorre direto sem molhar o torrão indicam vaso pequeno.",
+      "acao_requerida": "Conferir os furos do vaso. Se houver raízes para fora, passar para um vaso de 80 a 100 L no próximo fim de inverno"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora do inverno, ramos murcham mesmo com substrato úmido, base do tronco escura e mole, cheiro de azedo no substrato",
+      "prevencao_tratamento": "Só regar com os 5 cm de cima secos, esvaziar o pratinho e manter a camada de drenagem. Se aparecer, tire do vaso, corte as raízes escuras e moles e replante em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Crostas brancas, algodonosas ou marrons coladas nos ramos novos; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remova com escova macia e água com sabão neutro. Se a infestação for grande, aplique óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos roídos ou ramos inteiros sem folha em poucos dias, com bolinhas escuras de fezes no substrato",
+      "prevencao_tratamento": "Cate as lagartas à mão. Em infestação grande, pulverize Bacillus thuringiensis (Bt) conforme o rótulo, no fim da tarde"
+    },
+    {
+      "nome": "Broca do tronco",
+      "tipo": "PRAGA",
+      "sintomas": "Furos pequenos no tronco com serragem saindo e ramo acima do furo secando",
+      "prevencao_tratamento": "Corte e descarte o ramo atacado abaixo do furo. No tronco principal, injete óleo de neem no orifício com seringa e vede com cera ou massa de enxertia"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Entre maio e agosto as folhas amarelam e caem, às vezes quase todas, e os ramos continuam verdes e flexíveis por dentro",
+      "prevencao_tratamento": "É o comportamento natural da espécie na estação seca. Reduza a rega e não aduba. Confira se o ramo está vivo raspando de leve a casca com a unha: por baixo deve estar verde"
+    },
+    {
+      "nome": "Raízes enoveladas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Crescimento para, folhas pequenas, substrato seca em 1 dia e raízes circulando pelas bordas do torrão",
+      "prevencao_tratamento": "Troque o substrato e pode as raízes a cada 2 anos, ou passe para um vaso maior no fim do inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        11,
+        1,
+        3
+      ],
+      "titulo": "Adubar o flamboyant",
+      "mensagem": "Na estação de crescimento ele consome muito nutriente, e o substrato do vaso se esgota rápido.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de NPK 10-10-10 e 1 L de húmus na borda de um vaso de 60 L, longe do tronco, e regar em seguida. Na adubação de setembro, trocar o NPK por 4-14-8 se a planta já tiver 5 anos, para estimular a floração"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Começo da estação seca",
+      "mensagem": "O flamboyant vai perder folhas nas próximas semanas e quase parar de crescer. Rega de verão agora apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para uma vez a cada 7 a 10 dias, sempre conferindo 5 cm de substrato seco, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Risco de geada",
+      "mensagem": "Geada queima os ramos jovens e pode matar plantas com menos de 2 anos. Em vaso, a raiz também sofre com o frio.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para perto de uma parede ou sob uma cobertura, ou cobrir a copa com manta de TNT até o dia seguinte"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno a planta está parada e sem folhas: dá para ver a estrutura e a brotação da primavera fecha os cortes rápido.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que crescem para dentro da copa. Encurtar em até 1/3 os ramos longos, logo acima de uma gema voltada para fora, para manter a copa baixa e larga"
+    }
+  ]
+}

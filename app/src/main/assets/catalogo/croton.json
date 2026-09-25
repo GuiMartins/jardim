@@ -1,0 +1,172 @@
+{
+  "planta": {
+    "nome_comum": "Cróton",
+    "nome_cientifico": "Codiaeum variegatum",
+    "descricao": "Arbusto tropical de folhas coriáceas em amarelo, laranja, vermelho e verde, muito usado em vasos de varanda e jardins no Brasil. As cores só ficam intensas com sol direto; na sombra as folhas voltam a ser verdes. O látex branco é tóxico e irritante, então mantenha longe de crianças e pets e use luvas na poda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo e sem prato acumulando água",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% casca de pinus fina ou perlita; rico em matéria orgânica, mas que drene sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "O cróton é sensível a mudanças de luz e temperatura, e é normal perder algumas folhas de baixo nas primeiras semanas. Não troque de lugar toda hora nem aduba nesta fase. A adaptação terminou quando a queda de folhas para e aparecem brotos novos na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso novo e a planta emite folhas novas a cada poucas semanas. As folhas nascem verdes e ganham cor com o sol ao longo de semanas; se as novas continuarem só verdes, falta luz direta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce e colore bem da primavera ao outono, quando precisa de rega e adubação regulares. No inverno quase para: rega menos, não aduba e pode perder folhas com frio abaixo de 10 °C. Poda de formação no começo da primavera e troca de substrato a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cróton",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e descarte a água do prato. No verão com sol pleno pode precisar a cada 2 dias; no inverno, a cada 5 a 7 dias. Folhas murchas e caídas pedem água na hora.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o cróton",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 3 colheres de sopa de húmus ou bokashi) ao redor da planta, sem encostar no caule, e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas: procure teias finas e pontinhos claros (ácaro), bolinhas brancas algodonosas ou escamas marrons (cochonilha) e prateado com pontos pretos (tripes). Passe um pano úmido nas folhas para tirar a poeira.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, tire a planta do vaso, solte com cuidado 1/3 do torrão velho e replante com substrato novo, num vaso 5 cm maior se as raízes estiverem enoveladas. Regue bem e deixe 1 semana na meia-sombra antes de voltar ao sol.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vindo, cróton!",
+      "mensagem": "O cróton estranha mudanças de ambiente e pode derrubar folhas nas primeiras semanas. Isso passa se o lugar for estável.",
+      "acao_requerida": "Escolher um lugar definitivo com pelo menos 3 horas de sol direto, protegido de vento forte, e não mudar a planta de lugar no primeiro mês"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Hora de passar para o vaso definitivo",
+      "mensagem": "Plantas de viveiro vêm em vasos pequenos com raiz apertada. Adaptada ao lugar, ela aguenta bem a troca agora.",
+      "acao_requerida": "Se o vaso tiver menos de 15 L ou houver raízes saindo pelos furos, transplantar para o vaso definitivo com substrato novo, sem enterrar o caule mais fundo do que estava"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado ou bronzeado e teias finas no verso e entre os ramos, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Lavar o verso das folhas com jato de água a cada 3 dias por 2 semanas; se persistir, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha (farinha e de escama)",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodonosas ou escamas marrons nas axilas e nervuras; folhas pegajosas, com fumagina preta e amarelecimento",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; depois, óleo mineral ou de neem a 1% a cada 7 dias até sumirem"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Manchas prateadas com pontinhos pretos nas folhas novas, que nascem deformadas",
+      "prevencao_tratamento": "Cortar as folhas muito atacadas e aplicar óleo de neem a 0,5% a cada 5 dias; armadilha adesiva azul perto do vaso ajuda a monitorar"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, base do caule escurecida e mole, raízes marrons e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no prato; se atacada, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons a pretas, de borda definida, nas pontas e margens das folhas, que crescem com umidade e chuva",
+      "prevencao_tratamento": "Retirar e descartar as folhas manchadas, regar no substrato sem molhar as folhas e manter o vaso ventilado; em casos fortes, fungicida à base de cobre"
+    },
+    {
+      "nome": "Queda de folhas por choque",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas de baixo caem de repente, sem manchas, após mudança de lugar, corrente de ar frio, frio abaixo de 10 °C ou seca forte",
+      "prevencao_tratamento": "Manter a planta num lugar fixo, abrigada de vento frio e ar-condicionado; regar com regularidade. Os ramos rebrotam com o calor"
+    },
+    {
+      "nome": "Folhas sem cor por pouca luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas ficam só verdes, ramos compridos e finos, planta aberta e sem as cores amarelas e vermelhas",
+      "prevencao_tratamento": "Levar aos poucos, ao longo de 2 semanas, para um lugar com 4 a 6 horas de sol direto; as folhas que nascerem depois disso já vêm coloridas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Com o calor voltando, o cróton rebrota rápido e fica mais cheio se for podado agora.",
+      "acao_requerida": "De luvas, cortar os ramos compridos ou sem folhas logo acima de um nó e limpar o látex com papel úmido; retirar ramos secos e folhas danificadas pelo inverno"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 10 °C o cróton perde folhas e o substrato demora a secar, o que favorece a podridão das raízes.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm, suspender a adubação e, em noites frias ou com vento, levar o vaso para perto de uma parede ou para dentro"
+    }
+  ]
+}

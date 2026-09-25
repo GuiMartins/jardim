@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Açaizeiro",
+    "nome_cientifico": "Euterpe oleracea",
+    "descricao": "Palmeira amazônica de touceira, que forma vários estipes finos e folhas plumosas. É bonita e fácil de manter em vaso grande. Em vaso, a frutificação é rara e demorada, porque o cacho só costuma sair depois de 4 a 5 anos, com muito sol e muita água. Cultive o açaizeiro pela folhagem e trate os frutos como bônus.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso plástico ou de fibra com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; evite barro, que seca rápido demais",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco, 10% areia grossa; mistura que segura umidade sem virar lama",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai da sombra do viveiro e se acostuma ao vaso. É normal a ponta de uma folha velha secar. O sinal de que a adaptação terminou é uma folha nova (a 'flecha') se abrindo verde e firme no centro."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e sai uma folha nova a cada 1 ou 2 meses. A planta aceita cada vez mais sol direto. Quando os primeiros perfilhos (brotos laterais) aparecem na base, ela está pronta para a próxima fase."
+    },
+    {
+      "fase_id": "formacao_touceira",
+      "nome": "Formação da Touceira",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A base lança vários perfilhos e a touceira engrossa. Folhas maiores e mais divididas mostram que a planta está bem nutrida. Aqui ela começa a exigir mais água e adubo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Touceira formada, com 3 a 5 estipes principais. Cresce com força na primavera e no verão e quase para no inverno do Centro-Sul. Em vaso grande e com sol pleno, pode soltar cachos de flores entre a primavera e o verão, e os frutos roxos amadurecem uns 6 meses depois."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de açaí",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Regue devagar até escorrer pelos furos. O substrato deve ficar sempre úmido como uma esponja torcida, nunca seco. Em dia nublado e frio, pule a rega se o substrato ainda estiver molhado a 2 cm de profundidade.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o açaizeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver apenas levemente úmido ou seco, regue até escorrer pelos furos. O açaí vem da várzea e não tolera o torrão seco. Acima de 30 °C, confira todo dia. No inverno, basta a cada 3 ou 4 dias, e só se o dedo sair seco.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o açaizeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 xícara de húmus com 1 colher de sopa de farinha de ossos) na borda do vaso, longe da base, e regue em seguida. Uma vez por trimestre, acrescente 1 colher de chá de sulfato de magnésio diluída em 1 L de água. De maio a agosto, reduza à metade da dose.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire os folíolos e procure pontinhos brancos ou marrons grudados (cochonilha), teias finas e pontilhado amarelo (ácaro) e colônias pretas na base dos perfilhos e na flecha (pulgão-preto). Veja também se há manchas marrons com borda amarela.",
+      "critica": false
+    },
+    {
+      "id": "manejo_touceira",
+      "titulo": "Limpar e manejar a touceira",
+      "tipo": "DESBASTE",
+      "frequencia_dias": 180,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao estipe as folhas totalmente secas, com tesoura limpa. Na base, deixe no máximo 4 ou 5 perfilhos, os mais vigorosos, e corte os mais finos rente ao substrato. Touceira cheia demais divide água e adubo e nenhum estipe engrossa.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, retire a touceira e desembarace as raízes que circulam o fundo. Passe para um vaso 10 a 15 cm maior de diâmetro ou, se já estiver no limite, tire 1/3 do substrato velho e complete com mistura nova. Regue bem e deixe em meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso definitivo",
+      "mensagem": "A muda de viveiro vem em saquinho pequeno e precisa de espaço logo para não enovelar as raízes.",
+      "acao_requerida": "Plantar no vaso de 60 L na mesma altura do torrão, sem enterrar o colo, regar até escorrer e deixar a planta em meia-sombra ou com sol só pela manhã"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Aumentar o sol aos poucos",
+      "mensagem": "Com a adaptação feita, o açaizeiro precisa de mais sol para engrossar, mas a folha criada na sombra queima com a mudança brusca.",
+      "acao_requerida": "Aproximar o vaso do sol pleno em etapas de 1 hora a mais de sol por semana, até chegar a 6 horas"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiros perfilhos na base",
+      "mensagem": "Com um ano, a touceira começa a lançar brotos laterais. A partir de agora a limpeza semestral mantém os estipes mais fortes.",
+      "acao_requerida": "Conferir quantos perfilhos surgiram e já cortar os mais fracos se houver mais de 5"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam de baixo para cima e a flecha murcha ou se solta ao puxar. As raízes ficam moles e escuras e o substrato cheira a azedo",
+      "prevencao_tratamento": "O açaí gosta de umidade, mas não de água parada: mantenha os furos livres e nunca deixe prato cheio por mais de 1 hora. Se aparecer, retire as raízes podres, replante em substrato novo e espace as regas até a planta reagir"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons irregulares com halo amarelo nos folíolos, que se juntam e secam a folha a partir das pontas",
+      "prevencao_tratamento": "Regue no substrato, não nas folhas, e mantenha boa ventilação. Corte as folhas muito atacadas e, se avançar, pulverize fungicida cúprico (calda bordalesa) a cada 10 dias, fora do sol forte"
+    },
+    {
+      "nome": "Pulgão-preto-do-coqueiro (Cerataphis brasiliensis)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos e achatados, com franja branca, na flecha, na base dos perfilhos e no verso das folhas novas. Aparecem formigas e fumagina (pó preto)",
+      "prevencao_tratamento": "Limpe com pano úmido ou jato de água. Se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias e controle das formigas no vaso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons grudadas no verso dos folíolos e na bainha; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70% ou escova macia com água e sabão neutro. Em infestação grande, óleo mineral a 1% com neem, repetido após 7 dias"
+    },
+    {
+      "nome": "Ácaro-vermelho",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontilhado amarelo ou bronzeado e teias finas no verso, principalmente em tempo seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos. Se instalado, calda de enxofre ou óleo de neem a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Queimadura por sol ou frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas grandes esbranquiçadas ou marrons e secas no meio dos folíolos (sol brusco) ou folhas inteiras escurecidas depois de noite fria",
+      "prevencao_tratamento": "Aumente o sol aos poucos e proteja do vento frio e de temperaturas abaixo de 10 °C. As folhas queimadas não se recuperam: corte-as só depois que surgir folha nova sadia"
+    },
+    {
+      "nome": "Deficiência de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas mais velhas com folíolos amarelo-alaranjados nas bordas e pontas necrosadas, enquanto o centro da folha segue verde",
+      "prevencao_tratamento": "Mantenha a adubação mensal e o sulfato de magnésio trimestral. Em vaso, os nutrientes lavam com a rega frequente, então não pule adubações na primavera e no verão"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger o açaí do frio",
+      "mensagem": "O açaizeiro é tropical: abaixo de 10 °C as folhas queimam, e a geada pode matar a planta. No inverno ele quase para de crescer e bebe menos água.",
+      "acao_requerida": "Levar o vaso para um local abrigado do vento e perto da parede nas noites frias, espaçar a rega para a cada 3 ou 4 dias e usar meia dose de adubo"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Ar seco: umedecer as folhas",
+      "mensagem": "O fim do inverno no Centro-Sul tem umidade do ar muito baixa, o que seca as pontas dos folíolos e favorece o ácaro-vermelho.",
+      "acao_requerida": "Borrifar água nas duas faces das folhas no fim da tarde, em dias com umidade abaixo de 40%, e conferir o verso em busca de ácaros"
+    }
+  ]
+}

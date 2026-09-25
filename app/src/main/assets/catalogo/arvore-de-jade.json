@@ -1,0 +1,175 @@
+{
+  "planta": {
+    "nome_comum": "Árvore-de-jade",
+    "nome_cientifico": "Crassula ovata",
+    "descricao": "Suculenta arbustiva da África do Sul, de folhas carnudas verde-brilhantes e tronco que engrossa com os anos até parecer uma árvore em miniatura. Vive décadas em vaso, tolera esquecimento na rega e, com sol e um inverno seco e fresco, dá flores brancas ou rosadas em estrela.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, de 15 a 20 cm de diâmetro e profundidade igual ou pouco maior, com furo largo no fundo; base pesada, porque a planta adulta fica pesada no topo e tomba vaso leve",
+    "volume_minimo_litros": 2,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% substrato para cactos e suculentas, 30% areia grossa lavada, 20% perlita ou casca de pinus miúda; nada de terra de jardim pura, que compacta e retém água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda cicatriza as raízes feridas no transplante. Folhas levemente murchas ou algumas quedas de folhas velhas são normais. A fase termina quando as folhas voltam a ficar firmes e surgem folhinhas novas nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 180,
+      "descricao": "As raízes colonizam o vaso e os ramos alongam devagar, cerca de 2 a 5 cm por estação. Com sol suficiente as bordas das folhas ganham um tom avermelhado; ramos longos, finos e com folhas espaçadas indicam falta de luz. A planta está estabelecida quando fica firme no vaso ao ser balançada de leve."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão, quando recebe rega e adubo, e quase para no inverno. Com dias curtos, noites de 10 a 15 °C e rega reduzida em junho e julho, pode florescer no fim do inverno. O tronco engrossa a cada ano, e a poda no começo da primavera forma a copa. Troque o substrato a cada 3 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a árvore-de-jade",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de madeira até o fundo do vaso. Se sair seco e limpo, regue devagar até escorrer pelo furo e esvazie o pratinho depois de 15 minutos. Se sair úmido, não regue e confira de novo em 3 dias. Folhas enrugadas pedem água; folhas moles e translúcidas indicam excesso. No inverno regue a cada 20 a 30 dias, e acima de 32 °C confira a cada 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a árvore-de-jade",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dissolva adubo para cactos e suculentas (ou NPK 10-10-10) em metade da dose do rótulo e aplique no lugar de uma rega, com o substrato já levemente úmido. De abril a agosto, pule a adubação: a planta está parada e o adubo acumula sais nas raízes.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as axilas das folhas, o verso delas e a base do tronco. Procure tufos brancos de algodão (cochonilha), escamas marrons grudadas e manchas pretas moles no caule. Aperte a base do tronco: ela deve estar firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato seco, tire a planta do vaso, solte a terra velha das raízes e corte as raízes escuras ou moles. Replante no mesmo vaso com substrato novo, ou num vaso 3 a 5 cm maior se as raízes tomaram todo o torrão. Espere 7 dias para a primeira rega.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Não regue ainda",
+      "mensagem": "As raízes feridas no plantio apodrecem fácil em substrato molhado. Uma semana sem água não faz mal a uma suculenta.",
+      "acao_requerida": "Plantar em substrato seco, deixar a muda em luz clara sem sol forte e só regar no 8º dia"
+    },
+    {
+      "dia_disparo": 10,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A muda de loja costuma vir de estufa sombreada. Sol pleno de uma vez queima as folhas e deixa manchas marrons permanentes.",
+      "acao_requerida": "Deixar 2 horas de sol da manhã por dia e aumentar 1 hora a cada 3 ou 4 dias até chegar a 6 horas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e moles que caem com um toque; base do tronco escura, mole e com cheiro ruim; a planta tomba no vaso",
+      "prevencao_tratamento": "Regue só com o substrato seco até o fundo e nunca deixe água no pratinho. Se aparecer, corte todo o tecido mole até achar o miolo verde e firme, deixe o corte secar 5 dias à sombra e replante em substrato novo e seco. Ramos sadios podem ser enraizados como estaca"
+    },
+    {
+      "nome": "Cochonilha-farinhenta (Pseudococcidae)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodonoso nas axilas das folhas e nas raízes; folhas pegajosas, com fumagina preta e crescimento travado",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%. Em infestação maior, aplique óleo de neem a 0,5% no fim da tarde a cada 7 dias, 3 vezes. Isole a planta das outras suculentas"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou cinzentas grudadas no caule e nas folhas, que saem ao raspar com a unha; folhas amareladas",
+      "prevencao_tratamento": "Raspe com escova de dentes macia molhada em água e sabão neutro. Repita semanalmente e aplique óleo mineral ou neem a 0,5% se voltar"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrons ou esbranquiçadas, secas e ásperas, na face das folhas voltada para o sol, logo depois de uma mudança de lugar",
+      "prevencao_tratamento": "Aclimate ao sol aos poucos (1 hora a mais a cada 3 ou 4 dias). As folhas marcadas não se recuperam, mas a planta segue sadia e as troca com o tempo"
+    },
+    {
+      "nome": "Estiolamento por falta de luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos, finos e tortos na direção da janela, folhas pequenas, espaçadas e verde-claras",
+      "prevencao_tratamento": "Leve para um lugar com pelo menos 4 horas de sol direto e gire o vaso a cada rega. Pode os ramos estiolados na primavera; eles não voltam a encurtar"
+    },
+    {
+      "nome": "Edema (excesso de água)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bolhas ou verrugas corticentas marrons nas folhas; folhas inchadas que racham",
+      "prevencao_tratamento": "Espace as regas e só regue com o substrato seco até o fundo, principalmente em dias frios e nublados, quando a planta quase não transpira"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: rega mínima e botões de flor",
+      "mensagem": "Com dias curtos e noites frescas a árvore-de-jade para de crescer. É o descanso seco que induz a floração no fim do inverno. Abaixo de 5 °C, as folhas cheias de água podem congelar.",
+      "acao_requerida": "Regar só a cada 20 a 30 dias, suspender o adubo e, nas noites com previsão abaixo de 5 °C, levar o vaso para dentro ou para baixo de uma cobertura"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "O começo da primavera é quando a planta volta a crescer e cicatriza rápido. Podar agora engrossa o tronco e deixa a copa mais cheia e equilibrada.",
+      "acao_requerida": "Cortar com tesoura limpa os ramos longos ou finos logo acima de um par de folhas, deixar os cortes secarem sem regar por 3 dias e, se quiser mais mudas, enraizar as pontas cortadas em substrato seco"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão chuvoso: cuidado com a água",
+      "mensagem": "Chuva contínua sobre o vaso encharca o substrato e é a principal causa de podridão na árvore-de-jade.",
+      "acao_requerida": "Tirar o vaso do alcance da chuva direta ou esvaziar o pratinho depois de cada chuva, e conferir a firmeza da base do tronco"
+    }
+  ]
+}

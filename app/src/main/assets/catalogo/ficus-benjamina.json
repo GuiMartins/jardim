@@ -1,0 +1,185 @@
+{
+  "planta": {
+    "nome_comum": "Fícus-benjamina",
+    "nome_cientifico": "Ficus benjamina",
+    "descricao": "Árvore asiática de folhas pequenas e brilhantes, muito cultivada em vaso como planta de interior ou de varanda iluminada. É vigorosa e aceita bem a poda, mas não gosta de mudanças: troca de lugar, corrente de ar ou rega irregular fazem as folhas caírem em massa. O látex branco da seiva irrita a pele e é tóxico para cães e gatos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo e prato sem água parada; só 3 a 5 cm mais largo que o torrão da muda",
+    "volume_minimo_litros": 20,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% terra vegetal, 25% substrato para plantas com fibra de coco, 15% húmus de minhoca, 10% perlita ou areia grossa; deve drenar em poucos segundos após a rega",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "É normal cair de 10% a 30% das folhas nas primeiras semanas: a planta está se ajustando à luz nova. Não troque de lugar, não adube e não mude de vaso agora. A fase termina quando a queda para e surgem brotos verde-claros nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Com a planta firme no lugar, começam as brotações novas e a adubação. Gire o vaso um quarto de volta a cada rega para a copa crescer por igual. Se as raízes saírem pelos furos do fundo, o vaso ficou pequeno: troque na próxima primavera."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce forte da primavera ao fim do verão e quase para de maio a agosto, quando a rega fica mais espaçada. Uma poda de formação no fim do inverno mantém a copa densa. Queda leve de folhas velhas no outono é natural; queda em massa indica mudança de lugar, frio, corrente de ar ou erro de rega."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o fícus",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. Se ainda estiver úmido, espere mais 2 dias. De maio a agosto o intervalo costuma dobrar; no calor acima de 30 °C, confira a cada 3 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o fícus",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a abril: dissolva adubo NPK 10-10-10 (1 colher de chá por litro de água) ou espalhe 2 colheres de sopa de húmus sem encostar no tronco, sempre com o substrato já úmido. De maio a agosto a planta está parada: pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire folhas de vários pontos da copa e olhe o verso e a junção com o ramo: procure bolinhas brancas algodonosas ou cascas marrons (cochonilha), teia fina e pontinhos amarelos (ácaro) e folhas enroladas como charuto com bichinhos pretos dentro (tripes). Aproveite para passar um pano úmido nas folhas empoeiradas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e novembro; se cair fora dessa época, adie até lá. Tire a planta, desmanche um terço do torrão por fora, corte raízes enoveladas ou escuras e replante num vaso 5 cm mais largo com substrato novo. Se quiser manter o tamanho, use o mesmo vaso e apare 20% das raízes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar definitivo",
+      "mensagem": "O fícus-benjamina derruba folhas toda vez que muda de lugar. Acertar o ponto agora evita semanas de queda.",
+      "acao_requerida": "Colocar a planta perto de uma janela bem iluminada, com no máximo 2 a 3 horas de sol da manhã, longe de ar-condicionado, aquecedor e porta com corrente de ar, e não mover mais"
+    },
+    {
+      "dia_disparo": 10,
+      "titulo": "Folhas caindo? Calma",
+      "mensagem": "A queda de folhas nas primeiras semanas é reação à mudança de ambiente, não doença. Regar mais para compensar é o erro que mata o fícus.",
+      "acao_requerida": "Manter a rega pelo teste do dedo, varrer as folhas caídas e não trocar a planta de lugar"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Adaptação concluída",
+      "mensagem": "A planta já se acostumou ao lugar e pode começar a receber adubo nos meses de crescimento.",
+      "acao_requerida": "Conferir se há brotos novos nas pontas e fazer a primeira adubação, se estiver entre setembro e abril"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão radicular (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, cheiro azedo no vaso, raízes marrons e moles ao puxar",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no prato. Se aparecer, tire a planta do vaso, corte as raízes podres, replante em substrato novo e seco e só regue de novo quando secar"
+    },
+    {
+      "nome": "Cochonilha (farinhenta e de carapaça)",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodonosas ou escamas marrons nos ramos e no verso das folhas; folhas meladas e fumagina preta por cima",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Tripes-do-fícus (Gynaikothrips uzeli)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas enroladas ao meio como charuto, com manchas roxas e pequenos insetos pretos e alongados dentro",
+      "prevencao_tratamento": "Cortar e jogar no lixo fechado as folhas enroladas; pulverizar óleo de neem a 0,5% nas brotações a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas entre folha e ramo, pior em ambiente seco com ar-condicionado",
+      "prevencao_tratamento": "Dar um banho de chuveiro morno na copa, afastar do ar-condicionado e aplicar óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Queda de folhas por estresse",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas verdes ou amareladas caem em grande quantidade em poucos dias, sem sinal de praga",
+      "prevencao_tratamento": "Evitar mudar a planta de lugar, correntes de ar frio, frio abaixo de 12 °C e alternância entre encharcar e secar demais; mantida a rotina, a planta rebrota em 4 a 6 semanas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas pardas e secas no meio das folhas mais expostas, depois de sol forte da tarde ou atrás de vidro",
+      "prevencao_tratamento": "Limitar o sol direto às horas da manhã e fazer qualquer aumento de luz aos poucos, ao longo de 2 semanas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Fícus em repouso de inverno",
+      "mensagem": "Com frio e dias curtos a planta quase para de crescer e bebe bem menos água. Correntes de ar frio derrubam folhas.",
+      "acao_requerida": "Espaçar a rega pelo teste do dedo (geralmente a cada 7 a 10 dias), suspender a adubação e afastar o vaso de janelas e portas por onde entra vento frio"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Hora da poda de formação",
+      "mensagem": "No fim do inverno, antes da brotação forte, a poda deixa a copa mais densa e controla a altura.",
+      "acao_requerida": "Com tesoura limpa, encurtar em até um terço os ramos compridos logo acima de uma folha, retirar galhos secos ou cruzados e limpar o látex com pano úmido, usando luvas"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor e ar seco",
+      "mensagem": "No verão o vaso seca mais rápido, e o ar-condicionado resseca as folhas e favorece o ácaro.",
+      "acao_requerida": "Conferir o substrato a cada 3 dias, manter a planta fora do jato do ar-condicionado e borrifar água nas folhas nos dias mais secos"
+    }
+  ]
+}

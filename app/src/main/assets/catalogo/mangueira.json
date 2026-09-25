@@ -1,0 +1,229 @@
+{
+  "planta": {
+    "nome_comum": "Mangueira",
+    "nome_cientifico": "Mangifera indica (variedades anãs enxertadas, como 'Palmer' e 'Tommy Atkins')",
+    "descricao": "Árvore frutífera tropical que, em vaso, se mantém com 1,5 a 2,5 m quando é uma muda enxertada e recebe poda de contenção. As mudas enxertadas começam a produzir mangas entre o 2º e o 3º ano, bem antes das de caroço, que levam de 5 a 8 anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 60 a 70 cm de diâmetro e pelo menos 50 cm de profundidade, com vários furos no fundo e pés ou calços que o afastem do chão. Comece num vaso de 40 L e passe para o definitivo depois de 2 anos",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 20% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% perlita ou casca de pinus fina, mais 200 g de farinha de ossos e 100 g de calcário dolomítico por vaso de 60 L. O pH deve ficar entre 5,5 e 7",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho e vai para o vaso. Nas primeiras semanas pode perder algumas folhas velhas ou amarelar um pouco: é normal. A fase termina quando aparecem os primeiros brotos novos, avermelhados ou cor de bronze, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A muda cresce em fluxos: um lote de folhas novas avermelhadas surge de uma vez, amadurece até ficar verde-escuro e depois vem uma pausa de algumas semanas. Folha nova mole e caída é normal nos primeiros dias do fluxo. Se aparecer flor, retire: a planta ainda não tem reserva para segurar fruto."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Planta Jovem",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "Aqui se forma a copa. Faça a poda de formação para ter 3 ou 4 ramos principais abertos. Muitas mudas enxertadas florescem neste ano; se a planta tiver menos de 1,2 m, corte as panículas para ela gastar a energia no crescimento."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico da planta adulta: menos rega de maio a julho, o que induz a floração; floração de julho a setembro; frutinhos se formam de setembro a novembro (a queda de boa parte deles é normal); colheita de novembro a fevereiro; poda de contenção logo depois da colheita. Em vaso, espere de 10 a 30 mangas por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de mangueira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda não saiu do torrão da muda, então regue principalmente perto do caule. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a mangueira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos (cerca de 8 a 10 L num vaso de 60 L) e esvazie o prato depois de 30 minutos. No verão com calor forte, confira a cada 2 dias. De maio a julho, espere o substrato secar até 10 cm de profundidade antes de regar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_periodica",
+      "titulo": "Adubar a mangueira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 L de húmus de minhoca ou composto e 30 g de NPK 10-10-10 (1 colher de sopa cheia) ao redor do caule, a 10 cm dele, e regue em seguida. A partir do 2º ano, troque o NPK por 4-14-8 nas adubações de agosto a outubro, que favorecem flor e fruto. Pule a adubação de maio a julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure manchas escuras, pó branco e cochonilhas grudadas nos ramos. Olhe também o caule abaixo da cicatriz do enxerto: arranque com os dedos qualquer broto que nasça ali, porque ele é do cavalo e rouba força da copa.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato da mangueira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas na lateral e no fundo do torrão e troque um terço do substrato por mistura nova. Passe para um vaso maior se ainda não estiver no de 60 L ou mais. Faça isso de setembro a novembro; em outra época, espere a primavera.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A cicatriz do enxerto (o calombo no caule) não pode ficar enterrada, senão o caule apodrece e o cavalo pode brotar por cima.",
+      "acao_requerida": "Plantar com o torrão no mesmo nível em que estava no saquinho, deixando o enxerto pelo menos 5 cm acima do substrato, e regar até encharcar uma vez"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Se a muda tem uma haste única com mais de 70 cm, esta é a hora de forçar a brotação lateral para formar uma copa baixa.",
+      "acao_requerida": "Cortar a ponta da haste principal a uns 50 a 60 cm do substrato, logo acima de um anel de gemas. Se a muda for menor, esperar até ela passar de 70 cm"
+    },
+    {
+      "dia_disparo": 400,
+      "titulo": "Escolher os ramos da copa",
+      "mensagem": "Depois da poda de formação saíram vários ramos. Os que ficarem agora serão a estrutura da árvore para sempre.",
+      "acao_requerida": "Deixar 3 ou 4 ramos bem distribuídos ao redor do caule, com ângulo aberto, e cortar rente os demais e os que crescem para dentro"
+    },
+    {
+      "dia_disparo": 731,
+      "titulo": "Já pode deixar frutificar",
+      "mensagem": "Com 2 anos no vaso e a copa formada, a mangueira aguenta segurar frutos.",
+      "acao_requerida": "Na próxima floração, manter as panículas e deixar no máximo 1 ou 2 frutos por panícula depois que eles passarem do tamanho de uma azeitona"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem sem motivo aparente, substrato continua úmido dias depois da rega e a base do caule escurece; as raízes ficam marrons e moles",
+      "prevencao_tratamento": "Nunca deixar água parada no prato e só regar com o substrato seco a 5 cm de profundidade. Se já aconteceu, tirar do vaso, cortar as raízes podres e replantar em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pretas e irregulares nas folhas novas, flores que secam e escurecem, frutos com manchas escuras afundadas que crescem depois da colheita",
+      "prevencao_tratamento": "Não molhar a copa na rega, manter a copa arejada com poda e recolher folhas e frutos doentes. Na floração, pulverizar calda bordalesa a 1% ou um fungicida cúprico a cada 15 dias"
+    },
+    {
+      "nome": "Oídio (Oidium mangiferae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco nas flores, nos frutinhos e no verso das folhas novas; as flores caem sem formar fruto",
+      "prevencao_tratamento": "Aparece em tempo seco com noites frescas, bem na floração. Pulverizar enxofre molhável (2 g/L) no fim da tarde, fora dos dias acima de 30 °C, ou bicarbonato de sódio (5 g/L com 2 gotas de detergente) a cada 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, marrons ou algodoadas grudadas nos ramos e no verso das folhas; folhas pegajosas e fumagina (pó preto) por cima",
+      "prevencao_tratamento": "Remover com escova de dente e água com sabão neutro. Em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo depois de 10 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Ceratitis capitata, Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos na casca da manga madura, polpa amolecida e com larvas brancas",
+      "prevencao_tratamento": "Colher assim que a manga começar a mudar de cor e amadurecer dentro de casa. Pendurar armadilha de garrafa PET com suco de fruta fermentado e ensacar os frutos com saco de papel quando estiverem do tamanho de um ovo"
+    },
+    {
+      "nome": "Queda de frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Muitos frutinhos amarelam e caem entre o pegamento e o tamanho de uma noz",
+      "prevencao_tratamento": "Parte da queda é natural: a árvore descarta o excesso. Ela piora com falta de água, então não deixe o substrato secar por completo de setembro a dezembro e mantenha a adubação com potássio"
+    },
+    {
+      "nome": "Queima da ponta das folhas por sais",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas velhas secam e ficam marrons, com crosta branca na superfície do substrato ou na borda do vaso",
+      "prevencao_tratamento": "Excesso de adubo acumulado no vaso. A cada 2 meses, regue com o dobro do volume normal para lavar os sais pelos furos e nunca adube com o substrato seco"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Menos água para induzir a floração",
+      "mensagem": "A mangueira forma flores depois de um período mais seco e fresco. Rega farta até o inverno faz a planta soltar folha em vez de flor.",
+      "acao_requerida": "De maio a julho, regar só quando o substrato estiver seco a 10 cm de profundidade e parar de adubar até agosto"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 2 °C, as folhas e os brotos novos da mangueira queimam, e a planta jovem pode morrer.",
+      "acao_requerida": "Em noites com previsão de geada ou abaixo de 5 °C, levar o vaso para junto de uma parede ou para baixo de um beiral e cobrir a copa com manta TNT"
+    },
+    {
+      "meses": [
+        7,
+        8,
+        9
+      ],
+      "titulo": "Floração da mangueira",
+      "mensagem": "As panículas estão surgindo. É a época de maior risco de antracnose e oídio, que secam as flores antes de formarem fruto.",
+      "acao_requerida": "Voltar a regar normalmente quando as panículas aparecerem, pulverizar calda bordalesa ou enxofre a cada 15 dias até o pegamento dos frutos e, em planta com menos de 2 anos no vaso, cortar as panículas"
+    },
+    {
+      "meses": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Época de colher mangas",
+      "mensagem": "Os frutos amadurecem de novembro a fevereiro, conforme a variedade. Manga que cai sozinha costuma chegar machucada ou com larva.",
+      "acao_requerida": "Passar pela planta a cada 2 ou 3 dias e colher com a tesoura, deixando 2 cm de cabinho, as mangas cuja casca começou a amarelar ou avermelhar perto do cabo e que cedem levemente ao apertar"
+    },
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Poda de contenção pós-colheita",
+      "mensagem": "Logo depois da colheita, a poda mantém a mangueira no tamanho do vaso e prepara ramos novos, que vão florescer no próximo inverno. Podar mais tarde tira as flores do ano seguinte.",
+      "acao_requerida": "Encurtar em um terço os ramos que produziram e os que passaram da altura desejada, retirar ramos secos, cruzados ou voltados para dentro e passar pasta cúprica nos cortes com mais de 2 cm"
+    }
+  ]
+}

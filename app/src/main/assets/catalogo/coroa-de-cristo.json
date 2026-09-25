@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Coroa-de-cristo",
+    "nome_cientifico": "Euphorbia milii",
+    "descricao": "Arbusto suculento e espinhoso de Madagascar, que floresce quase o ano todo com brácteas vermelhas, rosa, amarelas ou brancas. Aguenta sol forte, seca e esquecimento, por isso vai bem em varanda e janela ensolarada. O látex branco do caule é tóxico e irrita pele e olhos, então mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro (cerâmica sem esmalte) com 15 a 20 cm de diâmetro e de profundidade e furos grandes no fundo. O barro ajuda o substrato a secar entre as regas. Prefira um vaso só um pouco maior que o torrão da muda.",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 40% areia grossa lavada, 20% perlita ou casca de pinus fina. Deve drenar rápido e nunca ficar empapado. Substrato pronto para cactos e suculentas também serve.",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a mudança de lugar e pode perder algumas folhas e flores nas primeiras semanas. Isso é normal. Se veio de viveiro com sombra, leve para o sol aos poucos para não queimar. A fase terminou quando aparecem folhas novas na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "As raízes tomam o vaso e os ramos se alongam, com folhas novas firmes e verdes. Os botões florais surgem nas pontas dos ramos que recebem sol direto. Ramos finos, compridos e com poucas folhas indicam falta de luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "A planta floresce quase o ano todo, com mais força na primavera e no verão. No outono e no inverno o crescimento desacelera, ela bebe menos água e pode perder parte das folhas com o frio. Retome a rega e o adubo em setembro. Faça a poda de formação no início da primavera e troque o substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água do pratinho. Se ainda estiver úmido, espere mais um dia. A muda ainda tem poucas raízes e o vaso pequeno seca rápido no calor, mas encharcar apodrece o colo.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a coroa-de-cristo",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e só regue se estiver seco nessa profundidade. Regue até escorrer pelos furos e nunca deixe água parada no pratinho. De maio a agosto, espace as regas para cada 15 a 20 dias. Abaixo de 12 °C, quase não regue.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá rasa de NPK 4-14-8 (ou adubo para cactos e suculentas) em 1 L de água e regue com a solução o substrato já úmido. Não adube de maio a agosto. Excesso de nitrogênio dá muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure tufos brancos de algodão entre os espinhos e na base das folhas (cochonilha), manchas escuras encharcadas nas folhas e a base do caule mole ou escura. Use luvas: o látex irrita a pele.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas e óculos, envolva a planta em jornal dobrado para segurar os espinhos e tire-a do vaso. Remova o substrato velho e corte as raízes escuras ou moles. Replante em substrato novo, num vaso 2 a 4 cm maior. Espere 5 dias antes da primeira rega para as raízes cortadas cicatrizarem. Se possível, faça isso entre setembro e março.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado com o látex",
+      "mensagem": "Qualquer ramo ou folha quebrada solta um látex branco tóxico, que irrita pele e olhos e é venenoso se ingerido.",
+      "acao_requerida": "Manusear a planta sempre com luvas, lavar as mãos depois e deixar o vaso fora do alcance de crianças e animais"
+    },
+    {
+      "dia_disparo": 1,
+      "titulo": "Leve ao sol aos poucos",
+      "mensagem": "Mudas de viveiro costumam vir da meia-sombra. Pôr direto no sol forte queima as folhas.",
+      "acao_requerida": "Na primeira semana, deixar o vaso só com sol da manhã. Na segunda, aumentar até 4 horas. A partir do dia 15, pode ficar em sol pleno"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "A muda já se acostumou à luz. Com pelo menos 6 horas de sol direto, ela floresce muito mais.",
+      "acao_requerida": "Mudar o vaso para o lugar mais ensolarado da casa, protegido de chuva constante"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "A base do caule fica escura e mole, as folhas amarelam e caem em massa e a planta tomba mesmo com o substrato úmido",
+      "prevencao_tratamento": "É a principal causa de morte em vaso. Regue só com o substrato seco, sem água no pratinho, em substrato arenoso e vaso de barro. Se aparecer, corte com luvas os ramos ainda firmes, deixe o corte secar 3 dias e replante como estaca em substrato seco novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão entre os espinhos, na base das folhas e nas raízes; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%. Se houver muitas, pulverize óleo de neem a 0,5% com algumas gotas de detergente neutro no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas angulares escuras e encharcadas nas folhas, às vezes com halo amarelo, e queda das folhas atingidas",
+      "prevencao_tratamento": "Evite molhar as folhas ao regar e deixe o vaso em local ventilado. Retire e descarte as folhas manchadas. Em época de chuva constante, abrigue o vaso"
+    },
+    {
+      "nome": "Queda de folhas por frio ou falta de luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem, os ramos ficam pelados com folhas só na ponta e a planta para de florescer",
+      "prevencao_tratamento": "Dê pelo menos 4 horas de sol direto e proteja a planta abaixo de 10 °C. No frio, reduza a rega. As folhas voltam na primavera se o caule continuar firme"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas nas folhas do lado virado para o sol, logo depois de uma mudança de lugar",
+      "prevencao_tratamento": "Acostume a planta ao sol pleno ao longo de duas semanas. As folhas queimadas não se recuperam, mas as novas nascem adaptadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Outono: menos água, sem adubo",
+      "mensagem": "Com os dias mais curtos e frios, a coroa-de-cristo cresce devagar e o substrato demora a secar. A rega de verão agora apodrece a raiz.",
+      "acao_requerida": "Espaçar as regas para cada 15 a 20 dias e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja do frio",
+      "mensagem": "Abaixo de 10 °C a planta perde folhas, e em geada o caule congela e apodrece.",
+      "acao_requerida": "Nas noites abaixo de 10 °C, levar o vaso para perto de uma parede ou para dentro, perto da janela, e regar só quando o substrato estiver seco em toda a profundidade"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: poda e volta do adubo",
+      "mensagem": "A planta retoma o crescimento. Podar agora gera ramos novos, que carregam as flores.",
+      "acao_requerida": "Com luvas, cortar os ramos compridos e pelados logo acima de um nó e estancar o látex com água fria. Voltar à rega semanal e à adubação mensal"
+    }
+  ]
+}

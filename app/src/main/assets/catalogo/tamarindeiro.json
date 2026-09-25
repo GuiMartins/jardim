@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Tamarindeiro",
+    "nome_cientifico": "Tamarindus indica",
+    "descricao": "Árvore tropical de crescimento lento e folhagem miúda e delicada, que produz vagens de polpa agridoce usada em sucos, doces e molhos. Em vaso grande ela vira uma árvore compacta, que aceita bem a poda. Considera-se aqui uma muda enxertada, que frutifica em 3 a 5 anos (a de semente leva de 7 a 10).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, fibra ou cimento com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo. Comece com 40 a 60 L e passe para 100 L ou mais depois que a planta estiver adulta",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, mais 1 colher de sopa de calcário dolomítico e 2 colheres de sopa de farinha de ossos a cada 10 L; precisa drenar bem",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante para o vaso. Pode perder algumas folhas nas primeiras duas semanas. A fase terminou quando surgem brotos novos, de verde-claro a avermelhado, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta solta brotações em ondas durante os meses quentes, parando quase por completo no inverno. Arranque qualquer broto que nasça abaixo da marca do enxerto: ele é do porta-enxerto e rouba força da copa."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "O tronco engrossa e a copa se forma. Vale conduzir a planta com um tronco único de 40 a 60 cm e três ou quatro ramos principais. As primeiras flores, pequenas, amarelas com listras vermelhas, podem aparecer no fim do terceiro ano."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "O ano típico: brota e floresce na primavera e no verão (outubro a janeiro), as vagens crescem durante o outono e amadurecem no fim do inverno e começo da primavera, quando a casca fica marrom e quebradiça. No inverno o crescimento para e a rega diminui. Em vaso, cada planta produz de algumas dezenas a poucas centenas de vagens por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de tamarindeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até a água escorrer pelos furos. O torrão da muda ainda tem pouca raiz e seca rápido, mas não pode ficar encharcado: esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o tamarindeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue só se estiver seco nessa profundidade, até escorrer pelos furos. No verão acima de 32 °C, confira a cada 2 ou 3 dias. De junho a agosto, espace para cada 7 a 10 dias: a planta tolera secura, mas não raiz molhada no frio.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o tamarindeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de esterco bovino curtido por vaso de 50 L, mais 1 colher de sopa de NPK 10-10-10, na borda do vaso e longe do tronco. Regue em seguida. De junho a agosto, pule esta adubação. Na planta adulta, na adubação de setembro, troque o NPK por 4-14-8 para favorecer a florada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e as brotações novas procurando insetos agrupados, carapaças brancas ou marrons coladas nos ramos, pó branco ou folhas pegajosas. Confira também se nasceu algum broto abaixo do enxerto e arranque-o.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro, tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas por fora do torrão e replante num vaso um número acima (ou no mesmo, se já tiver 100 L), com substrato novo na mesma receita. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Muda recém-plantada",
+      "mensagem": "Logo depois do transplante as raízes ainda não absorvem bem, e o sol forte ou adubo concentrado podem queimar a muda.",
+      "acao_requerida": "Deixar o vaso à meia-sombra por 7 dias antes de levá-lo ao sol pleno, e não adubar no primeiro mês"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Hora de definir o tronco",
+      "mensagem": "Com um ano, a muda já aguenta a poda de condução, que vai decidir o formato da árvore no vaso.",
+      "acao_requerida": "Escolher um tronco único e retirar os ramos laterais abaixo de 40 cm de altura; se o ramo central passar de 80 cm, cortar a ponta para forçar a ramificação"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, a base do tronco escurece e o substrato cheira a mofo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter os furos desobstruídos. Se aparecer, tirar a planta do vaso, cortar as raízes moles e escuras e replantar em substrato novo e arenoso"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças marrons ou tufos brancos colados nos ramos e na nervura das folhas, melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e algodão com álcool 70%. Em infestação maior, pulverizar óleo mineral a 1% ou óleo de neem a 0,5% com detergente neutro, no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos ou verdes nas brotações novas, folíolos enrolados e deformados, formigas subindo pelo tronco",
+      "prevencao_tratamento": "Jato de água forte nas brotações. Se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Caruncho das vagens (Caryedon serratus e outros)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos na casca das vagens, pó e larvas dentro da polpa ou das sementes",
+      "prevencao_tratamento": "Colher as vagens assim que a casca ficar marrom e quebradiça, retirar as caídas no chão e guardar a polpa sem casca em pote fechado na geladeira"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado nos folíolos e nas brotações, que depois secam e caem",
+      "prevencao_tratamento": "Deixar o vaso em local ventilado e ensolarado e não molhar a folhagem à noite. Tratar com bicarbonato de sódio (1 colher de chá por litro, com gotas de detergente) ou enxofre molhável, a cada 7 dias"
+    },
+    {
+      "nome": "Dano por frio e geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folíolos escurecem, ficam secos e caem de uma vez depois de uma noite fria; em muda jovem, as pontas dos ramos secam",
+      "prevencao_tratamento": "Nas noites abaixo de 5 °C, levar o vaso para perto de uma parede ou sob cobertura, ou cobrir com TNT. Não podar os ramos secos antes do fim do inverno, porque protegem os de baixo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "No frio o tamarindeiro para de crescer e bebe pouco. Substrato úmido com temperatura baixa apodrece as raízes, e as geadas queimam a folhagem, principalmente da planta jovem.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender a adubação e proteger o vaso nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza e formação",
+      "mensagem": "No fim do inverno a planta está parada, e a poda agora estimula brotação forte na primavera, que é quando se formam as flores.",
+      "acao_requerida": "Cortar ramos secos, cruzados ou voltados para dentro da copa, e encurtar em até um terço os que passarem do tamanho desejado, com corte logo acima de uma gema"
+    },
+    {
+      "meses": [
+        8,
+        9,
+        10
+      ],
+      "titulo": "Vagens maduras de tamarindo",
+      "mensagem": "Se a planta já frutifica, as vagens amadurecem nesta época. Maduras, têm a casca marrom e quebradiça e soam ocas quando você bate nelas.",
+      "acao_requerida": "Colher as vagens maduras torcendo o cabinho, a cada 1 ou 2 semanas, antes que o caruncho entre; descascar e guardar a polpa em pote fechado na geladeira"
+    }
+  ]
+}

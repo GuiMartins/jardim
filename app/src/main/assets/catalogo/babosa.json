@@ -1,0 +1,168 @@
+{
+  "planta": {
+    "nome_comum": "Babosa",
+    "nome_cientifico": "Aloe vera (sin. Aloe barbadensis)",
+    "descricao": "Suculenta perene de folhas grossas cheias de gel, usada em queimaduras leves e cuidados com a pele e o cabelo. É muito resistente e o que mais a mata em vaso é o excesso de água. A seiva amarela sob a casca (aloína) é tóxica para cães e gatos, então mantenha o vaso fora do alcance deles.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro (terracota), mais largo que fundo, com pelo menos 20 cm de diâmetro, 18 cm de profundidade e furo grande no fundo; sem prato acumulando água",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 40% areia grossa lavada, 20% perlita ou casca de pinus fina; ou substrato pronto para cactos e suculentas. Sem húmus em excesso, que retém água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação e Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o substrato seco e não regue nos primeiros 6 dias: as raízes quebradas no transplante cicatrizam e não apodrecem. Deixe em luz clara sem sol forte nas 2 primeiras semanas. A fase termina quando a muda resiste firme a um puxão leve pela base, sinal de raiz nova."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A roseta abre folhas novas pelo centro, grossas e verde-acinzentadas. Folhas finas, compridas e caídas indicam pouca luz. Folhas avermelhadas ou alaranjadas indicam sol forte demais ou frio, e voltam ao verde quando a condição melhora. Os primeiros filhotes podem brotar na base."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Com 10 a 12 folhas grossas já dá para colher: corte rente ao caule uma folha externa de cada vez, deixe a seiva amarela escorrer por 10 minutos antes de usar o gel e nunca tire mais de um terço das folhas no ano. Cresce e solta filhotes na primavera e no verão, desacelera no inverno e às vezes lança uma haste de flores amarelas entre junho e agosto. Troque o substrato a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a babosa",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato. Só regue se estiver totalmente seco: molhe devagar até escorrer pelo furo e jogue fora a água que ficar no prato. Se ainda estiver úmido, espere mais 3 dias. Não molhe o centro da roseta. De junho a agosto, espace para cada 20 a 30 dias.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas e olhe a base da roseta e as axilas: procure algodãozinho branco, escamas marrons coladas e manchas moles ou escuras. Aperte de leve a base da planta: se estiver mole ou cheirar mal, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_filhotes",
+      "titulo": "Tirar folhas secas e filhotes",
+      "tipo": "PODA",
+      "frequencia_dias": 120,
+      "dia_inicio_ciclo": 120,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Puxe ou corte rente as folhas de baixo que estiverem secas ou murchas. Solte com uma faca limpa os filhotes com mais de 10 cm e raiz própria, deixe o corte secar por 2 dias à sombra e plante cada um num vaso pequeno com substrato seco. Filhote deixado no vaso disputa espaço e água com a planta-mãe.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, com o substrato seco, tire a planta do vaso, solte a terra velha, corte raízes pretas ou moles e replante em substrato novo, num vaso 3 a 5 cm maior se as raízes tiverem tomado o torrão. Espere 6 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A muda já teve tempo de se adaptar. Mudar de uma vez da sombra para o sol forte queima as folhas.",
+      "acao_requerida": "Colocar no sol da manhã por 1 semana e só depois passar para o local definitivo com 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A babosa enraizou?",
+      "mensagem": "Com um mês, a muda já deve estar presa no substrato.",
+      "acao_requerida": "Puxar a muda de leve pela base: se resistir, está enraizada; se sair solta ou a base estiver mole, replantar em substrato seco e novo, cortando a parte podre"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e da base (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas de baixo moles, translúcidas ou amareladas; base da roseta escura, mole e com cheiro ruim; planta tomba no vaso",
+      "prevencao_tratamento": "Regar só com o substrato totalmente seco, vaso de barro com furo e sem prato com água. Se aparecer, tirar do vaso, cortar tudo que estiver mole até o tecido firme, deixar secar 3 dias à sombra e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão na base das folhas e nas raízes; folhas amareladas e planta sem crescer",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com algumas gotas de detergente no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou esbranquiçadas coladas nas folhas, que saem ao raspar com a unha; manchas amarelas em volta",
+      "prevencao_tratamento": "Raspar com escova de dente macia molhada em água com sabão neutro; repetir o óleo de neem a 0,5% semanalmente até sumirem"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas marrom-avermelhadas ou com manchas secas esbranquiçadas no lado virado para o sol, logo após mudar de lugar",
+      "prevencao_tratamento": "Aumentar o sol aos poucos, começando pelo da manhã. A cor avermelhada leve é defesa e volta ao verde; as manchas secas não somem, mas a planta segue saudável"
+    },
+    {
+      "nome": "Estiolamento por falta de luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas finas, compridas, verde-claras e caídas para os lados; roseta aberta e mole",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 horas de sol direto, aumentando aos poucos. As folhas deformadas não se recuperam, mas as novas nascem firmes"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Babosa entrando no inverno",
+      "mensagem": "No frio a babosa quase para de crescer e a água demora muito para secar do vaso: é quando a raiz mais apodrece. Geada queima as folhas.",
+      "acao_requerida": "Espaçar a rega para cada 20 a 30 dias até setembro e, em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou para baixo de uma cobertura"
+    },
+    {
+      "meses": [
+        9,
+        11,
+        1
+      ],
+      "titulo": "Adubação da babosa",
+      "mensagem": "Na primavera e no verão a babosa cresce e solta filhotes, e um pouco de adubo ajuda. Adubo demais deixa as folhas moles.",
+      "acao_requerida": "Com o substrato úmido, regar com adubo líquido para cactos e suculentas diluído pela metade da dose do rótulo, ou espalhar 1 colher de chá de farinha de ossos na superfície"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar a rega normal",
+      "mensagem": "Os dias esquentaram e a babosa volta a crescer.",
+      "acao_requerida": "Voltar a regar a cada 10 dias, sempre conferindo com o dedo se o substrato está seco antes"
+    }
+  ]
+}

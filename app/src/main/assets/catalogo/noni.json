@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Noni",
+    "nome_cientifico": "Morinda citrifolia",
+    "descricao": "Arbusto tropical perene de folhas grandes e brilhantes, originário do Sudeste Asiático e da Polinésia, cultivado pelo fruto de cheiro forte usado em sucos. Em vaso fica com 1,5 a 2,5 m e produz o ano todo depois do primeiro ano, mas não tolera geada nem frio abaixo de 10 °C.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; começar com 30 L e passar para 50 a 60 L na planta adulta",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 30% areia grossa ou perlita, mais 1 colher de sopa de calcário dolomítico por 10 L; precisa drenar bem porque a raiz apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso novo. Pode perder uma ou duas folhas de baixo nos primeiros dias; se as folhas do topo continuarem firmes e surgir um par novo no ápice, ela pegou. Nas duas primeiras semanas, deixe em meia sombra e passe ao sol pleno aos poucos."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 270,
+      "descricao": "Crescimento rápido no calor, com um par de folhas grandes a cada 1 ou 2 semanas e ramos laterais surgindo depois da poda de formação. No frio o crescimento quase para, e isso é normal."
+    },
+    {
+      "fase_id": "primeira_frutificacao",
+      "nome": "Primeira Frutificação",
+      "dia_inicio": 271,
+      "dia_fim": 540,
+      "descricao": "Aparecem nas axilas das folhas as primeiras cabeças florais verdes, com florzinhas brancas tubulares que abrem aos poucos. Cada cabeça vira um fruto verde e irregular, que leva de 3 a 5 meses para amadurecer. Os primeiros frutos costumam ser pequenos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 541,
+      "dia_fim": null,
+      "descricao": "Floresce e frutifica o ano todo, com pico na primavera e no verão, e tem sempre frutos em estágios diferentes. Cresce pouco no inverno do Centro-Sul, quando pede proteção contra o frio e menos rega. Uma poda de manutenção por ano, no fim do inverno, mantém a altura que cabe no vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de noni",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Com a raiz ainda pequena, o torrão seca rápido e a muda murcha sem se recuperar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o noni",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão acima de 30 °C, confira a cada 2 dias; entre maio e agosto, espace para 6 a 7 dias. Folhas caídas ao meio-dia que se recuperam no fim da tarde são normais; se amanhecerem murchas, falta água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o noni",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus ou bokashi por vaso de 30 L sobre o substrato, sem encostar no caule, e regue em seguida. A partir da primeira florada, acrescente 1 colher de sopa de NPK 4-14-8 na mesma aplicação. Entre junho e agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire 5 ou 6 folhas e olhe as nervuras e as axilas dos ramos. Procure placas brancas ou marrons presas (cochonilha), pontinhos amarelados com teia fina no verso (ácaro), manchas pretas nas folhas ou nos frutos e formigas subindo pelo caule.",
+      "critica": false
+    },
+    {
+      "id": "colheita_frutos",
+      "titulo": "Colher frutos maduros",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Colha os frutos que passaram de verde para amarelo-claro ou branco-amarelado e ainda estão firmes, torcendo com cuidado ou cortando o pedúnculo com tesoura. Eles terminam de amadurecer em 2 a 5 dias fora do pé, ficando translúcidos e moles. Recolha também os que caírem, porque atraem moscas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre setembro e novembro, passe para um vaso 10 a 15 cm maior de diâmetro (até cerca de 60 L). Depois disso, mantenha o vaso: retire o torrão, corte 3 a 4 cm das raízes em volta e no fundo e reponha substrato novo. Se esse lembrete chegar no inverno, adie para a primavera.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Depois de duas semanas, a muda já tem raiz suficiente para aguentar sol direto, e é o sol que faz o noni frutificar.",
+      "acao_requerida": "Levar o vaso para um lugar com pelo menos 6 horas de sol direto, de preferência pela manhã"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Poda de formação",
+      "mensagem": "Sem poda, o noni cresce numa haste só, alta e pouco ramificada. Cortar a ponta agora faz a planta abrir em vários ramos, e cada ramo dá flores.",
+      "acao_requerida": "Cortar a ponta da haste principal a cerca de 60 cm do substrato, logo acima de um par de folhas, com tesoura limpa"
+    },
+    {
+      "dia_disparo": 270,
+      "titulo": "Fique de olho nas primeiras flores",
+      "mensagem": "O noni começa a florescer entre o 9º e o 12º mês. As flores surgem em cabeças verdes arredondadas nas axilas das folhas.",
+      "acao_requerida": "Incluir a adubação com NPK 4-14-8 a partir da próxima aplicação e não podar os ramos que já têm botões"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiros frutos chegando",
+      "mensagem": "Os primeiros frutos devem estar perto do ponto. Colhidos verdes demais, não amadurecem direito.",
+      "acao_requerida": "Esperar o fruto clarear para amarelo-claro ou branco antes de colher"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; base do caule escura e mole; raízes marrons que se desfazem ao toque",
+      "prevencao_tratamento": "Regar só quando os 5 cm de cima estiverem secos, nunca deixar água no pratinho e usar substrato com areia ou perlita. Com a planta já atacada, tire do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Nematoide-das-galhas (Meloidogyne spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Planta fica raquítica e amarelada, murcha nas horas quentes; raízes com caroços e engrossamentos",
+      "prevencao_tratamento": "Comprar muda de viveiro com substrato limpo e não usar terra de horta sem tratamento. Na troca de vaso, corte as raízes com galhas e renove todo o substrato; composto orgânico bem curtido ajuda a controlar"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Placas brancas, algodoadas ou marrons presas ao caule, às nervuras e aos frutos; folhas pegajosas com fumagina preta e formigas por perto",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde, 3 aplicações com intervalo de 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam bronzeadas; teia fina no verso em tempo seco e quente",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 3 dias no tempo seco; se persistir, óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Antracnose e mancha-preta (Colletotrichum, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e irregulares nas folhas, que podem secar no centro; frutos com manchas pretas que apodrecem ainda no pé",
+      "prevencao_tratamento": "Regar no substrato sem molhar as folhas, podar para arejar a copa e retirar folhas e frutos manchados. Em época de chuva frequente, calda bordalesa a 1% a cada 15 dias"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam com aspecto de queimadas e caem depois de noites abaixo de 10 °C; ponteiros secam com geada",
+      "prevencao_tratamento": "Levar o vaso para perto de parede ou para dentro de casa, junto a uma janela clara, nas noites frias. Espere a primavera para podar as partes secas, porque elas protegem a planta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger o noni do frio",
+      "mensagem": "O noni é tropical: abaixo de 10 °C perde folhas, e geada mata os ramos. No inverno ele quase para de crescer e bebe menos água.",
+      "acao_requerida": "Nas noites abaixo de 10 °C, levar o vaso para um lugar abrigado ou para dentro de casa perto de uma janela, espaçar a rega para uma vez por semana e não adubar até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de manutenção e retomada",
+      "mensagem": "Com o calor voltando, o noni brota forte. É a hora de limpar a copa e controlar a altura antes da florada principal.",
+      "acao_requerida": "Cortar ramos secos, doentes ou cruzados e encurtar os mais altos para manter a planta em até 2 m, sempre acima de um par de folhas; depois retomar a adubação e a rega normal"
+    }
+  ]
+}

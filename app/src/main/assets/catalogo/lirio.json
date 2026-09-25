@@ -1,0 +1,220 @@
+{
+  "planta": {
+    "nome_comum": "Lírio",
+    "nome_cientifico": "Lilium spp. (híbridos asiáticos)",
+    "descricao": "Planta de bulbo com flores grandes em forma de trombeta aberta. Aqui foram escolhidos os híbridos asiáticos, os mais vendidos em vaso e em bulbo no Brasil, que florescem uns 80 dias depois do plantio. É perene por natureza, mas em vaso no Brasil cada plantio vira um ciclo que termina quando a folhagem seca: o bulbo pode ser guardado na geladeira e replantado. Todas as partes, inclusive o pólen, são muito tóxicas para gatos.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso com pelo menos 25 cm de profundidade e 20 cm de diâmetro para 1 a 2 bulbos (30 cm de diâmetro para 3), com furos no fundo. O lírio solta raízes também no caule enterrado, por isso o bulbo vai fundo: 10 a 15 cm de substrato por cima dele",
+    "volume_minimo_litros": 4,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% fibra de coco ou substrato comercial para flores, 20% areia grossa ou perlita, 10% húmus de minhoca; solto, levemente ácido e sem esterco fresco, que apodrece o bulbo",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_enraizamento",
+      "nome": "Plantio e Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 20,
+      "descricao": "Plante o bulbo com a ponta para cima e cubra com 10 a 15 cm de substrato. Nas primeiras semanas ele forma raízes sem mostrar nada na superfície; a fase termina quando a ponta verde do broto rompe o substrato, entre o 12º e o 25º dia."
+    },
+    {
+      "fase_id": "crescimento_haste",
+      "nome": "Crescimento da Haste",
+      "dia_inicio": 21,
+      "dia_fim": 50,
+      "descricao": "A haste sobe rápido, coberta de folhas estreitas em espiral. Variedades de vaso param em 30 a 50 cm; as de jardim passam de 80 cm e precisam de tutor. A fase muda quando aparece um cacho de botões verdes no topo."
+    },
+    {
+      "fase_id": "formacao_botoes",
+      "nome": "Formação dos Botões",
+      "dia_inicio": 51,
+      "dia_fim": 75,
+      "descricao": "Os botões engordam e, perto do fim, ganham a cor da flor. É a fase mais sensível: substrato seco, calor forte ou falta de luz fazem os botões secarem e caírem antes de abrir."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 76,
+      "dia_fim": 100,
+      "descricao": "As flores abrem de baixo para cima, cada uma durando 5 a 10 dias; a haste inteira fica florida por 2 a 3 semanas. Local fresco e sem sol da tarde prolonga a floração. A fase termina quando a última flor murcha."
+    },
+    {
+      "fase_id": "recuperacao_bulbo",
+      "nome": "Recuperação do Bulbo",
+      "dia_inicio": 101,
+      "dia_fim": 150,
+      "descricao": "Sem flores, as folhas continuam trabalhando para recarregar o bulbo para o próximo plantio: não corte a haste verde. As folhas vão amarelando de baixo para cima; quando a haste inteira estiver amarela ou seca, o ciclo terminou."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar o lírio com moderação",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 20,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos. Sem folhas, o bulbo gasta pouca água e apodrece em substrato encharcado.",
+      "critica": false
+    },
+    {
+      "id": "rega_crescimento_floracao",
+      "titulo": "Regar o lírio",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos, molhando o substrato e não as folhas e flores. Acima de 28 °C, confira todo dia: um dia de vaso seco com botões faz eles caírem.",
+      "critica": true
+    },
+    {
+      "id": "rega_recuperacao",
+      "titulo": "Regar o lírio",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 101,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e regue só se estiver seco. Conforme as folhas amarelam, espace mais a rega; com a haste quase toda amarela, só umedeça.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o lírio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 70,
+      "instrucoes": "Dissolva 1 g (uma colher rasa de café) de adubo NPK 4-14-8 ou 10-10-10 em 1 L de água e regue com isso o substrato já úmido. Evite excesso de nitrogênio, que faz haste mole e poucas flores.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_bulbo",
+      "titulo": "Adubar para recarregar o bulbo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 101,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Regue com 1 g de NPK 4-14-8 por litro de água, ou espalhe 1 colher de sopa de cinza de madeira peneirada no substrato e regue. O potássio ajuda o bulbo a engordar para o próximo plantio.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_flores",
+      "titulo": "Tirar anteras e flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 76,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Nas flores que abriram, puxe com um lenço as anteras (as pontas com pólen laranja): o pólen mancha roupa e é tóxico para gatos, e a flor dura mais. Corte com tesoura as flores murchas logo abaixo delas, sem tirar folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Olhe o topo da haste, os botões e o verso das folhas: procure pulgões agrupados, manchas marrons com mofo cinza e folhas roídas com rastro brilhante de lesma.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 28,
+      "titulo": "O broto já apareceu?",
+      "mensagem": "A essa altura o broto do lírio normalmente já saiu do substrato. Se nada apareceu, o bulbo pode ter apodrecido.",
+      "acao_requerida": "Se não houver broto, afastar o substrato com cuidado e apertar o bulbo: firme, cubra e espere mais duas semanas; mole ou com cheiro ruim, descarte"
+    },
+    {
+      "dia_disparo": 35,
+      "titulo": "Tutor para variedades altas",
+      "mensagem": "Hastes acima de 60 cm tombam com o peso das flores e com o vento.",
+      "acao_requerida": "Nas variedades altas, enfiar um tutor a 5 cm da haste, pela borda do vaso para não furar o bulbo, e amarrar a haste com fita macia em oito frouxo"
+    },
+    {
+      "dia_disparo": 70,
+      "titulo": "Botões quase abrindo",
+      "mensagem": "Os botões ganharam cor. Sol forte da tarde e calor encurtam muito a vida das flores.",
+      "acao_requerida": "Levar o vaso para um lugar com sol só de manhã ou luz clara, longe de gatos e de corrente de ar quente"
+    },
+    {
+      "dia_disparo": 102,
+      "titulo": "Floração encerrada",
+      "mensagem": "Deixar os ovários virarem cápsulas de sementes tira energia do bulbo, e as folhas ainda precisam trabalhar.",
+      "acao_requerida": "Cortar só o topo da haste, logo abaixo da última flor, mantendo o caule e todas as folhas verdes"
+    },
+    {
+      "dia_disparo": 148,
+      "titulo": "Hora de guardar o bulbo",
+      "mensagem": "Com a haste amarela ou seca, o bulbo entrou em repouso. No calor brasileiro ele precisa de frio para florir de novo.",
+      "acao_requerida": "Cortar a haste rente, tirar o bulbo, limpar a terra, guardar num saco com fibra de coco levemente úmida na gaveta de legumes da geladeira (longe de frutas) por 8 semanas e então replantar, marcando 'Replantei' no app"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do bulbo (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Broto que não aparece, folhas de baixo amarelando e haste que tomba; o bulbo fica mole, marrom e com cheiro ruim",
+      "prevencao_tratamento": "Substrato bem drenado, rega só com o substrato seco a 3 cm e nada de prato com água parada. Bulbo mole não se recupera: descarte com o substrato"
+    },
+    {
+      "nome": "Mofo cinzento (Botrytis elliptica)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas ovais marrom-claras nas folhas e botões, que se cobrem de pó cinza em tempo úmido; botões apodrecem",
+      "prevencao_tratamento": "Regar o substrato sem molhar as folhas, deixar o vaso em local ventilado e cortar as partes manchadas; se espalhar, calda bordalesa a 1% a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas no topo da haste e nos botões; botões deformados e folhas pegajosas. Também transmite vírus",
+      "prevencao_tratamento": "Jato de água ou esmagar com o dedo; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, sem aplicar nas flores abertas"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Broto novo roído ou cortado rente ao substrato, folhas com bordas comidas e rastro brilhante",
+      "prevencao_tratamento": "Catar à noite com lanterna, espalhar casca de ovo moída ou areia grossa na superfície e não deixar o vaso encostado em muro úmido"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões ainda verdes amarelam, secam e caem sem abrir",
+      "prevencao_tratamento": "Não deixar o substrato secar na fase de botões, garantir pelo menos 4 horas de sol direto e proteger do calor acima de 30 °C; não tem conserto nos botões perdidos"
+    },
+    {
+      "nome": "Queima das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrons secas nas folhas viradas para o sol da tarde, pontas das folhas novas queimadas",
+      "prevencao_tratamento": "Dar sol só pela manhã, sombrear o vaso para a raiz não esquentar e não exagerar no adubo, que acumula sal no substrato"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte para o lírio",
+      "mensagem": "O lírio gosta de cabeça ao sol e pé fresco. No verão o vaso esquenta, o substrato seca em horas e as flores duram pouco.",
+      "acao_requerida": "Deixar o vaso só com sol da manhã, cobrir o substrato com 2 cm de casca de pinus e conferir a umidade todo dia"
+    }
+  ]
+}

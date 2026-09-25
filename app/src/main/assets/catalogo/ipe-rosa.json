@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Ipê-rosa",
+    "nome_cientifico": "Tabebuia rosea",
+    "descricao": "Árvore de origem centro-americana, muito plantada em ruas do Brasil, que fica sem parte das folhas no fim do inverno e se cobre de flores rosadas em forma de trombeta. Num vaso grande ela fica com 2 a 4 m de altura e costuma florescer a partir do 3º ou 4º ano depois do plantio da muda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande, pesado e estável (cerâmica, cimento ou plástico grosso), com pelo menos 45 cm de diâmetro e 45 cm de profundidade, vários furos no fundo e pés para não ficar apoiado direto no chão",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina ou perlita; misture 200 g de farinha de ossos por vaso de 50 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas mais velhas na primeira semana. A adaptação terminou quando aparecem folhas novas, de verde-claro e brilhante, na ponta do caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o caule engrossa. A muda cresce em surtos: fica parada algumas semanas e depois solta de uma vez um novo lance de folhas compostas de 5 folíolos. No primeiro inverno ela pode perder boa parte das folhas, e isso é normal."
+    },
+    {
+      "fase_id": "arvore_jovem",
+      "nome": "Árvore Jovem",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "Fase de formar o tronco e a copa. O caule principal lignifica e fica acinzentado, e os galhos laterais se firmam. Ainda é raro florescer; quando floresce, são poucos cachos no fim do inverno."
+    },
+    {
+      "fase_id": "arvore_adulta",
+      "nome": "Árvore Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "O ano típico em vaso: cresce e enche de folhas de novembro a abril, desacelera no outono, perde parte das folhas entre junho e agosto e floresce de agosto a outubro, muitas vezes com os galhos quase sem folha. Depois da floração vêm a poda leve e uma nova brotação. A altura fica entre 2 e 4 m, limitada pelo vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de ipê",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do caule; se estiver seco, regue devagar até a água escorrer pelos furos. A raiz ainda está só no torrão da muda e seca muito antes do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o ipê-rosa",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o prato depois de 30 minutos. No verão quente isso costuma acontecer a cada 2 ou 3 dias. De junho a agosto, com a árvore sem folhas, o intervalo passa para 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o ipê",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus de minhoca e 1 colher de sopa de NPK 4-14-8 por vaso de 50 L, na borda do vaso e sem encostar no tronco, e regue em seguida. Pule a aplicação de maio a julho, quando a árvore está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e galhos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure pó branco, folíolos enrolados e grudados com fio de seda (lagarta), carocinhos presos nos galhos (cochonilha) e trilha de formigas subindo no tronco.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar o substrato ou trocar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro, depois da floração: tire o torrão, corte com tesoura limpa as raízes que dão voltas no fundo e raspe 3 a 4 cm das laterais. Volte para o mesmo vaso com substrato novo, ou passe para um 10 a 15 cm mais largo se quiser que a árvore cresça. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Colocar o tutor",
+      "mensagem": "A muda de ipê tem o caule fino e comprido, e o vento a tomba ou quebra no vaso antes de as raízes firmarem.",
+      "acao_requerida": "Cravar uma estaca de bambu ou madeira a 5 cm do caule até o fundo do vaso e amarrar o caule em 2 pontos com fita de borracha ou tira de pano, formando um 8 frouxo"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Fim da adaptação",
+      "mensagem": "Com folhas novas brotando, a muda já pode receber adubo e ir para o sol pleno.",
+      "acao_requerida": "Se a muda ficou à meia-sombra na chegada, mudar o vaso para um lugar com pelo menos 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Afrouxar ou retirar o tutor",
+      "mensagem": "Amarra apertada estrangula o tronco que engrossou, e um tronco que balança um pouco com o vento fica mais forte.",
+      "acao_requerida": "Conferir as amarras; se o tronco já se sustenta sozinho, retirar o tutor, e se ainda tomba, afrouxar e subir as amarras"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora da época, mesmo com o substrato úmido; base do tronco escurecida e mole; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e manter os furos desobstruídos. Se aparecer, tire a árvore do vaso, corte as raízes escuras e moles e replante em substrato novo bem drenado"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco como farinha nas folhas novas, que depois se deformam, secam e caem; mais comum no outono, com dias quentes e noites frescas",
+      "prevencao_tratamento": "Deixar o vaso em local ventilado e ensolarado e não molhar as folhas no fim da tarde. Tratar com bicarbonato de sódio (1 colher de chá por litro de água com 1 gota de detergente) ou calda sulfocálcica, a cada 7 dias, até parar de aparecer"
+    },
+    {
+      "nome": "Lagarta-enroladeira (Eulepte spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos enrolados ou grudados uns nos outros com fios de seda, com uma lagarta verde dentro; folhas roídas e com furos",
+      "prevencao_tratamento": "Abrir as folhas enroladas e retirar as lagartas à mão. Em ataque grande, pulverizar Bacillus thuringiensis no fim da tarde e repetir após 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou brancos presos nos galhos e na nervura das folhas; folhas pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Raspar com escova de dente macia e água com sabão neutro; se persistir, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 10 dias"
+    },
+    {
+      "nome": "Formiga-cortadeira",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua e árvore desfolhada de uma noite para outra; trilha de formigas no tronco ou no vaso",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e aplicar isca formicida granulada ao lado da trilha. Uma faixa de graxa ou fita adesiva dupla-face no tronco impede a subida"
+    },
+    {
+      "nome": "Raiz enovelada no vaso",
+      "tipo": "DISTURBIO",
+      "sintomas": "A árvore para de crescer, as folhas ficam pequenas e amareladas mesmo com adubo, a água escorre direto pelos furos e raízes saem pelo fundo",
+      "prevencao_tratamento": "Fazer a renovação do substrato com poda das raízes a cada 2 anos e não deixar o vaso muito tempo em cima de terra, onde as raízes escapam pelos furos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Ipê entrando em repouso",
+      "mensagem": "No frio o ipê desacelera e pode perder boa parte das folhas até agosto. Isso é normal e prepara a floração. O perigo é continuar regando como no verão e apodrecer a raiz.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (em geral a cada 7 a 10 dias) e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Época de floração do ipê",
+      "mensagem": "Entre agosto e outubro os botões se abrem, muitas vezes nos galhos sem folhas. Falta de água nessa fase faz os botões caírem antes de abrir.",
+      "acao_requerida": "Voltar a regar sempre que o substrato secar a 3 cm e não trocar o vaso de lugar enquanto estiver florido"
+    },
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Poda leve depois da floração",
+      "mensagem": "Com as flores já caídas e a brotação nova começando, é a hora de corrigir a copa sem sacrificar a floração do ano seguinte, que se forma nos ramos deste ano.",
+      "acao_requerida": "Cortar com tesoura limpa os galhos secos, os cruzados e os que brotam no tronco abaixo da copa, e encurtar no máximo 1/3 dos ramos longos logo acima de um par de folhas"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: o vaso seca rápido",
+      "mensagem": "Com a árvore cheia de folhas e o sol forte, um vaso de 50 L pode secar em 2 dias. Murcha repetida queima as pontas das folhas.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e regar de manhã cedo; se a árvore murchar à tarde, cobrir o substrato com 3 cm de casca de pinus para segurar a umidade"
+    }
+  ]
+}

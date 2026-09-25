@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Manacá-da-serra",
+    "nome_cientifico": "Pleroma mutabile (sin. Tibouchina mutabilis)",
+    "descricao": "Arbusto ou arvoreta nativa da Mata Atlântica, com flores que abrem brancas e passam a rosa e roxo, as três cores ao mesmo tempo no pé. Em vaso grande fica com 2 a 3 m e floresce muito no fim da primavera e no verão. Para varanda, prefira o manacá-da-serra-anão, que tem o mesmo cultivo e fica com cerca de 1,5 m.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de cerâmica, cimento ou plástico grosso, com pelo menos 45 cm de diâmetro e 45 cm de profundidade e vários furos no fundo. Para o manacá-anão, 35 cm de diâmetro bastam",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina ou turfa, 10% perlita ou areia grossa; ligeiramente ácido (pH 5,5 a 6,5), sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Logo depois do plantio, a muda pode perder algumas folhas de baixo e murchar um pouco nas horas mais quentes. Mantenha o torrão úmido. A fase termina quando surgem brotos novos, de folhas aveludadas e verde-claras, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta ganha altura e ramos. Se ela crescer com uma haste só, fina e inclinada, amarre-a num tutor de bambu com fita larga. Pode florescer pouco já no primeiro verão. A primeira florada cheia costuma vir no segundo ano."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação forte na primavera, floração intensa de novembro a fevereiro (às vezes volta a florir no outono), poda leve de formação em março e crescimento lento no inverno, quando a rega diminui e a planta precisa de proteção contra geada. Folhas velhas avermelhadas antes de cair são normais. Folhas novas amarelas com nervuras verdes indicam substrato alcalino."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de manacá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do caule; se estiver seco, regue devagar até escorrer pelos furos do fundo. O torrão da muda não pode secar por inteiro. Acima de 30 °C ou com vento, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o manacá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco nessa profundidade, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Na floração e em dias acima de 30 °C, confira a cada 2 dias. De junho a agosto, espace para 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar o manacá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 por vaso de 40 L e 2 punhados de húmus de minhoca na borda do vaso, sem encostar no caule, e regue em seguida. Não adube de junho a agosto nem com o substrato seco.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e os brotos das pontas. Procure bolinhas brancas ou marrons presas aos ramos (cochonilha), teia fina com pontinhos (ácaro), manchas escuras de bordas amareladas ou pó branco nas folhas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre setembro e outubro, tire a planta do vaso, raspe 3 a 5 cm de raiz das laterais e do fundo e replante com substrato novo, no mesmo vaso ou num 10 cm mais largo. Se a data cair no inverno ou em plena floração, espere a próxima primavera. Regue bem e mantenha à meia-sombra por 7 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Confira a firmeza da muda",
+      "mensagem": "Com o vento, a muda recém-plantada balança e rompe as raízes novas.",
+      "acao_requerida": "Se o caule balançar com o vento, finque um tutor de bambu a 5 cm dele e amarre com fita larga em forma de oito"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora do desponte",
+      "mensagem": "Com a planta firme, cortar as pontas faz o manacá ramificar e ficar mais cheio de flores.",
+      "acao_requerida": "Com tesoura limpa, cortar 2 a 3 cm da ponta de cada ramo principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de manacá",
+      "mensagem": "A planta já está estabelecida e as raízes devem ocupar o vaso inteiro.",
+      "acao_requerida": "Olhar os furos do fundo: se houver raízes saindo por eles, programar a troca para um vaso maior na próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelando e caindo de baixo para cima, raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e garantir furos e drenagem. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodoadas ou marrons presas aos ramos e ao verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; depois aplicar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teias finas no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora e outros fungos)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou arroxeadas arredondadas nas folhas, com halo amarelo, que acabam caindo",
+      "prevencao_tratamento": "Regar o substrato e não as folhas, deixar o vaso em lugar ventilado e recolher as folhas caídas. Em ataque forte, fungicida à base de cobre"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras bem verdes; crescimento fraco",
+      "prevencao_tratamento": "Sinal de substrato alcalino. Não use calcário nem cinza. Aplique quelato de ferro conforme o rótulo e acrescente casca de pinus ou turfa na próxima troca de substrato"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e pontas dos ramos escurecem e secam de um dia para o outro depois de uma noite muito fria",
+      "prevencao_tratamento": "Nas noites abaixo de 3 °C, cobrir a planta com TNT ou levar o vaso para perto de uma parede ou sob cobertura. Só corte as partes queimadas depois que o frio passar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com a geada",
+      "mensagem": "No frio o manacá quase para de crescer e o substrato demora mais para secar. Geada queima folhas e ramos.",
+      "acao_requerida": "Espaçar a rega para 5 a 7 dias conferindo com o dedo, suspender a adubação e cobrir a planta com TNT nas noites com previsão abaixo de 3 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o crescimento",
+      "mensagem": "A brotação recomeça e a planta prepara os botões da florada de verão.",
+      "acao_requerida": "Voltar a regar a cada 3 dias, retomar a adubação com NPK 4-14-8 e cortar os ramos secos ou queimados pelo frio"
+    },
+    {
+      "meses": [
+        11,
+        12,
+        1
+      ],
+      "titulo": "Floração: não deixar faltar água",
+      "mensagem": "Com o calor e centenas de flores abertas, o vaso seca bem mais rápido. Um dia de murcha derruba botões e flores.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, regar pela manhã e varrer as pétalas caídas do substrato para não criar fungo"
+    },
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Poda de formação pós-floração",
+      "mensagem": "Terminada a florada principal, a poda leve deixa a copa mais compacta e com mais ramos para florir no próximo verão.",
+      "acao_requerida": "Cortar até um terço do comprimento dos ramos que floresceram, logo acima de um par de folhas, e retirar ramos secos, cruzados ou voltados para dentro"
+    }
+  ]
+}

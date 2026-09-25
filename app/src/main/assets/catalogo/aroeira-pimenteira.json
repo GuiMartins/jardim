@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Aroeira-pimenteira",
+    "nome_cientifico": "Schinus terebinthifolia",
+    "descricao": "Árvore nativa do Brasil que produz os cachos de frutinhos vermelhos vendidos como pimenta-rosa. É rústica e cresce rápido. Em vaso grande, fica como arvoreta de 2 a 3 m. A espécie tem plantas macho e fêmea, e só a fêmea dá frutos: compre muda enxertada ou de estaca de planta fêmea. A seiva e as folhas podem irritar a pele de pessoas sensíveis.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de diâmetro e 45 cm de profundidade, vários furos no fundo e base firme para não tombar com o vento",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa; misture 1 xícara de farinha de ossos ou calcário dolomítico por vaso de 50 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Recém-plantada no vaso, a muda pode perder algumas folhas mais velhas nos primeiros dias. A fase termina quando surgem brotos novos, avermelhados, na ponta dos ramos. Esse é o sinal de que a raiz pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 540,
+      "descricao": "Crescimento rápido, de até 1 m por ano no calor. As raízes ocupam o vaso e os ramos laterais se formam. Algumas mudas de estaca ou enxerto já florescem na primeira primavera. A fase acaba quando a planta passa de 1,5 m e engrossa o tronco."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 541,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação forte na primavera e flores miúdas brancas em cachos de setembro a janeiro, que atraem abelhas. Na fêmea, os frutos engrossam no verão e ficam vermelhos entre abril e julho. No inverno o crescimento desacelera e a planta pede menos água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a aroeira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos (cerca de 4 a 5 L num vaso de 50 L). Com sol forte e mais de 30 °C, confira todo dia: a raiz da muda ainda não alcança a umidade do fundo.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a aroeira",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco nessa profundidade, regue até escorrer pelos furos. Se ainda estiver úmido, espere mais um ou dois dias. No verão quente pode precisar a cada 2 ou 3 dias. De junho a agosto, espace para 6 a 8 dias. Não deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a aroeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca e 1 colher de sopa de NPK 10-10-10 pela borda do vaso de 50 L, longe do tronco, e regue em seguida. Na planta adulta, de setembro a dezembro, troque o NPK por 1 colher de sopa de farinha de ossos para favorecer flores e frutos. Não adube em junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure no verso dos folíolos, nos brotos e nas axilas dos ramos: carocinhos brancos ou marrons (cochonilha), película preta (fumagina), verrugas ou calombos nas folhas (galhas de psilídeo). Confira também se o substrato cheira mal ou fica encharcado.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno ou no começo da primavera, tire a planta do vaso, corte 3 a 5 cm das raízes enoveladas em volta do torrão e remova um terço do substrato velho. Volte ao mesmo vaso com substrato novo ou passe para um vaso 10 cm mais largo. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 5,
+      "titulo": "Firmar a muda",
+      "mensagem": "Muda alta balança com o vento e rompe as raízes novas antes que elas se fixem.",
+      "acao_requerida": "Cravar uma estaca de bambu ao lado do tronco, sem ferir o torrão, e amarrar com fita macia em forma de 8"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Desponte para ramificar",
+      "mensagem": "Se a muda cresceu num galho só, cortar a ponta agora força a brotação lateral e forma uma copa mais cheia, com mais pontos de floração.",
+      "acao_requerida": "Com tesoura limpa, cortar 5 a 10 cm da ponta do ramo principal logo acima de uma folha, quando ele passar de 60 cm de altura"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Soltar o tutor",
+      "mensagem": "O tronco já deve se sustentar sozinho. Amarração esquecida estrangula a casca à medida que ele engrossa.",
+      "acao_requerida": "Remover a fita e a estaca; se a planta ainda tombar, amarrar de novo mais frouxo e conferir daqui a dois meses"
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "Descobrir se a aroeira é fêmea",
+      "mensagem": "Plantas macho florescem mas nunca dão pimenta-rosa. Na próxima floração dá para saber o sexo pelas flores.",
+      "acao_requerida": "Na floração, olhar as flores com lupa: a fêmea tem um pequeno ovário verde no centro; o macho tem só estames amarelados. Se for macho e você quer frutos, planeje uma muda fêmea enxertada"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, ramos secam da ponta para a base, raízes escuras e moles com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, garantir furos desobstruídos e nunca deixar água no pratinho. Na planta atacada, retirar do vaso, cortar as raízes podres e replantar em substrato novo e arenoso"
+    },
+    {
+      "nome": "Cochonilha (escamas e cochonilha-farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, marrons ou algodonosos nos ramos e no verso das folhas; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia embebida em álcool 70%; em infestação maior, borrifar óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Psilídeo-da-aroeira (Calophya terebinthifolii)",
+      "tipo": "PRAGA",
+      "sintomas": "Calombos ou verrugas (galhas) na face das folhas, folíolos deformados e brotos novos enrugados",
+      "prevencao_tratamento": "Cortar e descartar no lixo os folíolos com galhas; borrifar óleo de neem a 0,5% nos brotos novos a cada 7 dias durante a brotação da primavera"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada preta fuliginosa sobre folhas e ramos, que sai ao esfregar",
+      "prevencao_tratamento": "É um fungo que cresce sobre o melado de cochonilhas e pulgões: controle os insetos e lave as folhas com água e sabão neutro (1 colher de sopa por litro)"
+    },
+    {
+      "nome": "Raízes enoveladas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Crescimento para, folhas pequenas e pálidas, água escorre direto pelos furos sem molhar o torrão, raízes saindo pelo fundo",
+      "prevencao_tratamento": "Renovar o substrato e podar as raízes a cada 2 anos, ou passar para um vaso maior"
+    },
+    {
+      "nome": "Queda de folhas por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e finos, folhas espaçadas caindo por dentro da copa, pouca ou nenhuma floração",
+      "prevencao_tratamento": "Mudar o vaso para um lugar com pelo menos 4 a 6 horas de sol direto; a aroeira não se desenvolve em varanda sombreada"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza e formação",
+      "mensagem": "No fim do inverno a aroeira está quase parada e ainda não formou os botões florais; podar agora estimula brotação forte na primavera sem perder a floração.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que crescem para dentro da copa; encurtar em até um terço os ramos longos demais para manter a altura compatível com o vaso. Use luvas: a seiva pode irritar a pele"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Adubação de floração",
+      "mensagem": "A brotação da primavera e as flores que vêm a seguir consomem muito fósforo e potássio.",
+      "acao_requerida": "Aplicar 1 colher de sopa de farinha de ossos e 1 xícara de cinza de madeira peneirada na borda do vaso de 50 L e regar em seguida"
+    },
+    {
+      "meses": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "titulo": "Colheita da pimenta-rosa",
+      "mensagem": "Nas plantas fêmeas, os cachos amadurecem nesta época. Colhidos no ponto, rendem pimenta-rosa aromática.",
+      "acao_requerida": "Cortar com tesoura os cachos com os frutos vermelhos vivos e firmes, antes que sequem e caiam; secar à sombra em local ventilado por 5 a 7 dias e guardar em pote fechado"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com frio e dias curtos a planta cresce pouco, e o substrato encharcado apodrece a raiz. A aroeira aguenta geada leve, mas muda nova pode queimar.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender a adubação e, em noite com previsão de geada, levar o vaso para perto de uma parede ou sob uma cobertura se a planta tiver menos de 1 ano"
+    }
+  ]
+}

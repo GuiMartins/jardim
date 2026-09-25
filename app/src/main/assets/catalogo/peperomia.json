@@ -1,0 +1,178 @@
+{
+  "planta": {
+    "nome_comum": "Peperômia",
+    "nome_cientifico": "Peperomia obtusifolia",
+    "descricao": "Entre as peperômias, escolhi a Peperomia obtusifolia (peperômia-verde ou variegada), a mais vendida em vaso no Brasil. É uma planta compacta de folhas grossas e brilhantes, que guardam água como as suculentas, por isso aguenta esquecimento e fica bem em ambiente interno com luz clara. Morre bem mais por excesso de rega do que por falta.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 12 a 15 cm de diâmetro e 12 cm de profundidade, com furos no fundo; barro ou cerâmica sem esmalte ajudam a secar. A raiz é pequena e gosta de vaso justo: vaso grande demais acumula água e apodrece a raiz",
+    "volume_minimo_litros": 1,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "40% substrato para plantas de interior, 30% casca de pinus fina, 20% perlita ou areia grossa lavada, 10% húmus de minhoca; arejado e que seque em poucos dias",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa e se ajusta à luz e à umidade da casa. É normal cair uma ou duas folhas de baixo. Deixe perto de uma janela clara, sem sol forte do meio-dia, e não troque de vaso nem adube agora. A fase termina quando surgem folhas novas na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "Os ramos voltam a crescer e as folhas novas saem firmes e do mesmo tamanho das antigas. Folhas novas pequenas e ramos compridos com espaço grande entre as folhas indicam falta de luz: aproxime da janela. Se os ramos ficarem compridos demais, belisque a ponta acima de uma folha para a planta ramificar; a ponta cortada enraíza em água ou substrato úmido e vira muda."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Da primavera ao fim do verão ela cresce e solta espigas finas e esverdeadas, que são as flores (sem valor ornamental; pode cortar rente se preferir). No inverno o crescimento quase para e ela bebe bem menos água. A cada dois anos o substrato se decompõe e precisa ser trocado. Ramos que caem ou se abrem podem ser encurtados na primavera para manter a forma compacta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a peperômia",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato: só regue se estiver seco nessa profundidade. Regue devagar até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. Folhas murchas e enrugadas pedem água; folhas moles e escuras com substrato úmido são excesso. De maio a agosto espere 10 a 14 dias entre regas.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a peperômia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dilua adubo líquido NPK 10-10-10 (ou para folhagens) na metade da dose do rótulo e aplique com o substrato já úmido, nunca seco. De abril a agosto pule a adubação: a planta está quase parada e o adubo queima a raiz.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, as axilas das folhas e a base dos caules: procure bolinhas brancas algodoadas (cochonilha), manchas escuras moles ou caule preto rente ao substrato. Veja também se há mosquinhas pretas voando sobre o vaso.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, solte com os dedos o substrato velho e corte raízes pretas ou moles. Replante com substrato novo em vaso no máximo 2 a 3 cm mais largo que o torrão. Espere 5 dias para regar de novo, para as raízes feridas cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Não troque de vaso ainda",
+      "mensagem": "A peperômia acabou de mudar de ambiente. Trocar de vaso agora soma dois estresses e costuma derrubar folhas.",
+      "acao_requerida": "Manter no vaso de origem por pelo menos um mês; só conferir se ele tem furo no fundo e retirar o cachepô se acumular água"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se já apareceram folhas novas, a planta se acostumou com a casa e pode começar a receber adubo na época de crescimento.",
+      "acao_requerida": "Conferir se há brotação nova e se as raízes saem pelos furos; se saírem muito, passar para um vaso 2 a 3 cm maior"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas moles, amareladas ou escuras que caem ao toque; base do caule preta e mole; substrato sempre úmido e com cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no pratinho. Se aparecer, tirar do vaso, cortar tudo que estiver mole e escuro, replantar em substrato novo e seco e esperar 5 dias para regar. Ramos sadios cortados podem ser enraizados como garantia"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados nas axilas das folhas, no verso e na base do caule; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70% e isolar a planta. Se voltar, pulverizar óleo de neem a 0,5% com uma gota de detergente a cada 7 dias, três vezes, no fim da tarde"
+    },
+    {
+      "nome": "Mosquinha-do-fungo (Bradysia)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas moscas pretas voando sobre o vaso; larvas brancas finas na superfície do substrato",
+      "prevencao_tratamento": "Sinal de substrato úmido demais: espaçar as regas até a superfície secar bem. Armadilha adesiva amarela pega os adultos; uma camada de 1 cm de areia grossa na superfície impede a postura"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas arredondadas marrons ou pretas com borda amarelada, primeiro nas folhas de baixo",
+      "prevencao_tratamento": "Regar direto no substrato sem molhar as folhas e manter o ambiente ventilado. Retirar as folhas manchadas; em ataque forte, fungicida à base de cobre na dose do rótulo"
+    },
+    {
+      "nome": "Edema",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bolhas ou verrugas corticentas no verso das folhas",
+      "prevencao_tratamento": "A raiz absorve mais água do que a folha consegue transpirar, típico de rega em excesso com tempo frio e nublado. Espaçar as regas e dar mais luz; as folhas afetadas não se recuperam, mas as novas saem normais"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas desbotadas, amarelas ou marrons e secas no centro das folhas mais expostas à janela",
+      "prevencao_tratamento": "Evitar sol direto depois das 10h; cortina fina ou recuar o vaso meio metro da janela. Só o sol fraco da manhã é bem tolerado"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Menos água a partir de agora",
+      "mensagem": "Com o frio, a peperômia quase para de crescer e o substrato demora muito mais para secar. Rega no ritmo do verão é a principal causa de podridão no inverno.",
+      "acao_requerida": "Espaçar as regas para 10 a 14 dias, sempre conferindo com o dedo, e suspender o adubo até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 10 °C as folhas escurecem e amolecem. Janela aberta em noite fria e corrente de ar gelado fazem o mesmo estrago.",
+      "acao_requerida": "Afastar o vaso de vidraças e janelas abertas nas noites frias; se estiver na varanda, levar para dentro de casa"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Início da estação de crescimento",
+      "mensagem": "Com os dias mais longos e quentes, a peperômia volta a brotar. É a melhor época para dar forma à planta e fazer mudas.",
+      "acao_requerida": "Encurtar ramos compridos ou caídos acima de uma folha, retomar a adubação mensal e voltar a regar a cada 7 dias conforme o teste do dedo"
+    }
+  ]
+}

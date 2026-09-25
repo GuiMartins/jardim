@@ -1,0 +1,248 @@
+{
+  "planta": {
+    "nome_comum": "Nespereira",
+    "nome_cientifico": "Eriobotrya japonica",
+    "descricao": "Árvore frutífera perene de folhas grandes e coriáceas, que floresce no outono e dá cachos de nêsperas doces e ácidas no fim do inverno, quando quase nenhuma outra fruta está madura. Em vaso fica compacta (2 a 2,5 m) e, a partir de muda enxertada, começa a produzir em 2 a 3 anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cerâmica ou fibra, com pelo menos 50 cm de diâmetro e 45 cm de profundidade, vários furos no fundo e pés ou rodízios para não apoiar direto no chão",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina ou perlita; acrescente 200 g de farinha de ossos e 1 xícara de calcário dolomítico por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas velhas. Mantenha-a em sol da manhã nos primeiros 7 dias e depois passe para o sol pleno. A fase termina quando surgem brotos novos, de cor bronze e aveludados, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta emite dois ou três surtos de folhas por ano. Se aparecerem flores nesse primeiro ano, corte os cachos: a planta ainda não tem folhas suficientes para segurar os frutos e perde vigor. Confira se o ponto do enxerto (o calombo perto da base) continua acima do substrato."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "O tronco engrossa e a copa se ramifica. Pode florescer e segurar alguns frutos; deixe no máximo 2 ou 3 cachos na planta toda. Brotos que nascem abaixo do enxerto devem ser arrancados assim que aparecem."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: surtos de folhas na primavera e no verão, botões florais no fim do verão, floração perfumada de abril a junho, frutos crescendo no inverno e colheita de agosto a outubro. Depois da colheita vem a poda leve, e o ciclo recomeça. A planta vive décadas se o substrato for renovado a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a nespereira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do torrão da muda; se estiver seco, regue devagar até escorrer pelos furos (cerca de 5 L). Se estiver úmido, não regue: o torrão encharcado apodrece as raízes novas. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a nespereira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (8 a 10 L num vaso de 60 L) e esvazie o pratinho depois de 30 minutos. No verão e com frutos crescendo, confira a cada 1 ou 2 dias; no outono sem flores, a cada 4 ou 5 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a nespereira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 litro de húmus de minhoca ou 300 g de esterco de galinha curtido na superfície, a 10 cm do tronco, e regue em seguida. De março a setembro (floração e frutos), acrescente 1 colher de sopa de cinza de madeira ou 30 g de NPK 4-14-8 para reforçar fósforo e potássio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure manchas pequenas vermelho-arroxeadas, escamas brancas ou marrons coladas nos ramos e formigas subindo pelo tronco. Com frutos na planta, procure furinhos com manchas moles ao redor, sinal de mosca-das-frutas.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Logo depois da colheita ou no início da primavera, tire a planta do vaso, corte 3 a 5 cm das raízes que envolvem o torrão e raspe um terço do substrato velho. Volte ao mesmo vaso com substrato novo, ou passe para um vaso 20 a 30% maior se o de agora tiver menos de 80 L. Regue bem e deixe 5 dias em meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Confira a firmeza da muda",
+      "mensagem": "Folhas grandes pegam vento e balançam a muda, o que rompe as raízes novas antes que se fixem.",
+      "acao_requerida": "Cravar um tutor de bambu a 5 cm do tronco e amarrá-lo com fita macia em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de formação",
+      "mensagem": "A muda já pegou. Cortar a ponta do ramo principal faz a planta ramificar baixo e formar uma copa compacta, própria para vaso.",
+      "acao_requerida": "Se o ramo principal passar de 80 cm, cortá-lo a 60–70 cm do substrato, logo acima de uma folha; retirar também brotos abaixo do enxerto"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Hora de tirar o tutor",
+      "mensagem": "Com as raízes firmes, o tronco engrossa mais rápido quando pode balançar um pouco.",
+      "acao_requerida": "Soltar a amarração e retirar o tutor; se a muda tombar com o vento, amarrar de novo por mais 2 meses"
+    },
+    {
+      "dia_disparo": 731,
+      "titulo": "Nespereira pronta para produzir",
+      "mensagem": "A partir de agora a planta tem folhas suficientes para segurar a frutificação completa.",
+      "acao_requerida": "Deixar florescer à vontade a partir de abril e seguir os avisos de raleio, ensacamento e colheita"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mosca-das-frutas (Anastrepha fraterculus, Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos na casca com mancha escura e mole ao redor; polpa amolecida com larvas brancas; frutos caindo antes de amadurecer",
+      "prevencao_tratamento": "Ensacar os cachos com saco de papel ou TNT quando os frutos estiverem do tamanho de uma azeitona; recolher e jogar no lixo fechado os frutos caídos; armadilha de garrafa PET com suco de uva a 25% pendurada na copa"
+    },
+    {
+      "nome": "Cochonilha (Pinnaspis, Coccus)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas ou marrons coladas nos ramos e no verso das folhas; folhas amareladas e pegajosas, com fumagina (pó preto)",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; em infestação forte, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos nos brotos novos e nos cachos de flores; brotos enrugados e formigas subindo pelo tronco",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% a cada 5 dias, evitando as horas de abelhas nas flores"
+    },
+    {
+      "nome": "Entomosporiose (Entomosporium mespili)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pequenas e redondas, vermelho-arroxeadas, com centro acinzentado nas folhas novas e às vezes nos frutos; queda de folhas em época úmida",
+      "prevencao_tratamento": "Regar só no substrato, sem molhar as folhas; retirar e jogar fora as folhas manchadas e as caídas no vaso; em época chuvosa, calda bordalesa a 1% nos brotos novos a cada 15 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas mesmo com substrato úmido, amarelecimento geral, casca escura e mole na base do tronco, cheiro de mofo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos livres e o pratinho vazio; não enterrar o colo da planta. Se aparecer, suspender a rega, trocar o substrato e cortar as raízes escuras e moles"
+    },
+    {
+      "nome": "Mancha púrpura dos frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas arroxeadas e deprimidas na casca de frutos já amarelos, sem podridão; mais comuns no lado exposto ao sol",
+      "prevencao_tratamento": "Ensacar os frutos, manter a rega regular na fase de maturação e colocar 1 colher de sopa de calcário ou gesso agrícola no vaso no início do inverno"
+    },
+    {
+      "nome": "Rachadura dos frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos maduros ou quase maduros racham perto da ponta, depois de um período seco seguido de rega forte ou chuva",
+      "prevencao_tratamento": "Manter a umidade constante do substrato enquanto os frutos crescem, sem deixar secar por completo e sem encharcar de uma vez"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4,
+        5,
+        6
+      ],
+      "titulo": "Nespereira em flor",
+      "mensagem": "Os cachos de flores brancas e perfumadas atraem abelhas, que fazem a polinização. Podar agora cortaria a safra.",
+      "acao_requerida": "Não podar; manter a rega regular e deixar o vaso onde as abelhas cheguem, sem aplicar inseticida sobre as flores"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "A árvore aguenta frio forte, mas flores e frutinhos novos queimam abaixo de -2 °C.",
+      "acao_requerida": "Em noites com previsão de geada, levar o vaso para perto de uma parede ou sob uma cobertura, ou cobrir a copa com TNT até o sol da manhã"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Ralear os cachos de frutos",
+      "mensagem": "Um cacho pode segurar 20 frutinhos, mas em vaso sai tudo pequeno e ácido. Menos frutos por cacho dão nêsperas grandes e doces.",
+      "acao_requerida": "Com os frutos do tamanho de uma ervilha, deixar 4 a 6 por cacho, cortando os menores com tesoura, e retirar cachos a mais para ficar um por ramo"
+    },
+    {
+      "meses": [
+        7,
+        8
+      ],
+      "titulo": "Ensacar as nêsperas",
+      "mensagem": "A mosca-das-frutas ataca assim que os frutos começam a mudar de cor.",
+      "acao_requerida": "Envolver cada cacho, com os frutos do tamanho de uma azeitona, em saco de papel ou TNT, fechando no cabo com arame encapado"
+    },
+    {
+      "meses": [
+        8,
+        9,
+        10
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "A nêspera não amadurece depois de colhida, e madura demais cai ou racha em poucos dias.",
+      "acao_requerida": "A cada 2 ou 3 dias, colher os frutos amarelo-alaranjados, perfumados e que cedem de leve ao toque, cortando o cabinho com tesoura"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Poda de limpeza pós-colheita",
+      "mensagem": "Os botões da próxima floração se formam na ponta dos ramos que crescerem agora no verão. Podar depois de dezembro corta as flores do ano que vem.",
+      "acao_requerida": "Cortar os cabos dos cachos colhidos, ramos secos, cruzados ou voltados para dentro da copa, e encurtar os que passarem da altura desejada"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: confira a rega com mais frequência",
+      "mensagem": "No verão o vaso grande ao sol perde água rápido, e a falta de água agora prejudica a formação dos botões florais.",
+      "acao_requerida": "Conferir o substrato todo dia e regar sempre que estiver seco a 5 cm; cobrir a superfície com 3 cm de casca de pinus ou palha para reter umidade"
+    }
+  ]
+}

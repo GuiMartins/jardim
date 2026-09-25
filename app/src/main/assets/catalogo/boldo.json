@@ -1,0 +1,199 @@
+{
+  "planta": {
+    "nome_comum": "Boldo",
+    "nome_cientifico": "Coleus barbatus (syn. Plectranthus barbatus)",
+    "descricao": "Arbusto aromático de folhas grossas e aveludadas, o boldo-brasileiro (ou falso-boldo) dos quintais, usado em chá amargo para má digestão. Cresce rápido, enraíza fácil por estaca e vive muitos anos em vaso se receber poda de colheita regular.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo; para enraizar, copo ou vaso pequeno de 10 cm com furos",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; bem drenado, porque o caule suculento apodrece em solo encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Estaca",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Use uma ponta de ramo de 10 a 15 cm, tire as folhas da metade de baixo e enterre 5 cm no substrato úmido, em meia-sombra. As folhas de cima podem murchar nos primeiros dias. A estaca enraizou quando surgem folhas novas no topo e ela resiste a um puxão leve."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "A planta forma raiz no vaso definitivo e lança ramos novos. Leve-a aos poucos para o sol direto. Folhas novas grandes e firmes indicam que está estabelecida; ramos compridos e finos com folhas pequenas indicam falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Arbusto de 60 cm a 1,2 m em vaso. Cresce forte da primavera ao outono, quando se colhem folhas a cada duas semanas. No inverno solta espigas de flores azul-arroxeadas e desacelera; depois da floração, uma poda renova os ramos. Geada queima as folhas e pode matar a parte aérea."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca do boldo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Toque a superfície do substrato: deve estar úmida como pano torcido. Se estiver seca, regue devagar até escorrer pelos furos. Sem raiz, a estaca não recupera água perdida; acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o boldo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos só se estiver seco. Não deixe água no pratinho. No inverno, o intervalo cai para 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o boldo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa cheias de húmus de minhoca ou 1 colher de sopa de torta de mamona na borda de um vaso de 20 L, sem encostar no caule, e regue em seguida. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de boldo",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte as pontas dos ramos mais altos logo acima de um par de folhas, tirando no máximo 1/3 da folhagem. A colheita funciona como poda e deixa a planta mais cheia. Use as folhas frescas ou seque à sombra.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas dos ramos: procure algodãozinho branco (cochonilha), insetos verdes agrupados (pulgão), pontinhos claros com teia fina (ácaro) e mosquinhas brancas que voam ao sacudir.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, corte 1/4 das raízes externas e replante com substrato novo, no mesmo vaso ou num 5 cm maior. Pode os ramos em 1/3 para compensar a raiz cortada e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 22,
+      "titulo": "Estaca enraizada",
+      "mensagem": "Se já surgiram folhas novas, a estaca tem raiz e pode ir para o vaso definitivo e para mais sol.",
+      "acao_requerida": "Transplantar para o vaso de 20 L sem desmanchar o torrão e aumentar o sol direto aos poucos ao longo de uma semana"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora de despontar",
+      "mensagem": "Tirar a ponta do ramo principal faz o boldo ramificar e virar um arbusto cheio em vez de uma haste só.",
+      "acao_requerida": "Cortar os 3 cm de cima de cada ramo principal, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, base do caule escura e mole, folhas de baixo amarelando e caindo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e esvaziar o pratinho. Se o caule apodreceu, tire estacas das pontas sadias e recomece com substrato novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas dos ramos e no verso das folhas; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos verdes ou pretos nas pontas novas, que ficam enrugadas",
+      "prevencao_tratamento": "Jato de água forte; se persistir, óleo de neem a 0,5% a cada 5 dias. Evite excesso de adubo nitrogenado"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teia fina no verso, principalmente em tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas em dias secos e aplicar óleo de neem a 0,5% a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; folhas amareladas com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, moles e translúcidas depois de uma noite fria; ramos murchos de cima para baixo",
+      "prevencao_tratamento": "Recolher o vaso para perto de parede ou sob cobertura em noites abaixo de 5 °C. Não pode o dano antes do fim do frio; depois, corte até o tecido verde"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos, finos e tombados, folhas pequenas e espaçadas",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 horas de sol direto e podar os ramos compridos para rebrotar compacto"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Prepare o boldo para o frio",
+      "mensagem": "O boldo é tropical e sofre com geada e vento frio. Com o inverno chegando, ele também passa a beber menos água.",
+      "acao_requerida": "Escolher um lugar protegido para o vaso nas noites frias e espaçar a rega para quando o substrato estiver seco a 3 cm"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "Noites abaixo de 5 °C podem queimar as folhas ou matar a planta.",
+      "acao_requerida": "Nas noites frias, recolher o vaso para perto de uma parede ou cobrir com tecido leve, e regar só quando o substrato estiver seco"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Depois da floração de inverno, os ramos ficam lenhosos e com poucas folhas. Com o calor voltando, a poda estimula brotação nova e farta.",
+      "acao_requerida": "Cortar as espigas de flor secas e encurtar os ramos em até metade, logo acima de um par de folhas; retomar a adubação"
+    }
+  ]
+}

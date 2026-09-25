@@ -1,0 +1,232 @@
+{
+  "planta": {
+    "nome_comum": "Tomate",
+    "nome_cientifico": "Solanum lycopersicum (tipo salada, crescimento indeterminado)",
+    "descricao": "Hortaliça de fruto mais cultivada em hortas caseiras, com sabor muito superior ao do tomate de mercado quando colhido maduro no pé. É perene na natureza, mas em vaso é cultivado como anual; os valores valem para o tomate salada indeterminado, e o tomate cereja segue o mesmo manejo com colheita um pouco mais cedo e mais fácil em vaso.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      2,
+      3,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou balde com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; uma planta por vaso",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% casca de arroz carbonizada ou areia grossa; misture 1 colher de sopa de calcário dolomítico e 2 colheres de sopa de farinha de ossos a cada 10 L de substrato",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_pegamento",
+      "nome": "Plantio e Pegamento",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Enterre a muda até as primeiras folhas: o caule enterrado solta raízes e a planta fica mais firme. Nos primeiros dias as folhas podem murchar no sol forte; a fase termina quando a muda para de murchar à tarde e o ponteiro volta a crescer."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 15,
+      "dia_fim": 28,
+      "descricao": "A planta cresce de 10 a 20 cm por semana e começa a soltar brotos laterais (ladrões) nas axilas das folhas. Conduza em uma haste só, presa ao tutor. A fase termina quando aparece o primeiro cacho de botões florais."
+    },
+    {
+      "fase_id": "floracao_frutificacao",
+      "nome": "Floração e Frutificação",
+      "dia_inicio": 29,
+      "dia_fim": 70,
+      "descricao": "Os cachos de flores amarelas surgem a cada 3 folhas e os frutos verdes pegam logo abaixo das flores. Em manhãs de sol, dê leves batidinhas nos cachos floridos para soltar o pólen. Flores que caem sem formar fruto indicam calor acima de 32 °C ou frio abaixo de 13 °C. A fase termina quando o primeiro tomate muda de cor."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 71,
+      "dia_fim": 150,
+      "descricao": "Os frutos amadurecem de baixo para cima, cacho a cacho, por dois a três meses. Colha quando estiverem vermelhos e ainda firmes. A planta ainda floresce, mas depois da capação só amadurecem os frutos já formados. Terminada a colheita, descarte a planta e renove o substrato antes de plantar tomate de novo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_pegamento",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Regue pela manhã, devagar e junto à base, até escorrer pelos furos. O substrato deve ficar úmido, mas sem poça. Se a muda murchar no fim da tarde, faça uma rega extra leve e proteja do sol forte da tarde nos primeiros 5 dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o tomateiro",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue no pé, sem molhar as folhas, até escorrer pelos furos. Com a planta grande e acima de 28 °C, pode ser preciso regar de manhã e no fim da tarde. Rega irregular, com o vaso secando e encharcando, causa podridão apical e racha os frutos.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o tomateiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 135,
+      "instrucoes": "Espalhe 1 xícara (cerca de 200 g) de húmus de minhoca e 1 colher de sopa de farinha de ossos em volta do caule, a 5 cm dele, afaste a palha, misture levemente na superfície e regue. A partir das primeiras flores, acrescente 1 colher de sopa de cinzas de madeira ou 1 colher de chá de sulfato de potássio, que ajudam a encher e adoçar os frutos.",
+      "critica": false
+    },
+    {
+      "id": "desbrota",
+      "titulo": "Tirar os ladrões",
+      "tipo": "PODA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 135,
+      "instrucoes": "Procure os brotos que nascem na axila entre o caule e cada folha e quebre-os com os dedos enquanto têm menos de 5 cm. Não confunda com o cacho de flores, que nasce direto do caule, fora da axila. Retire também as folhas amareladas e as que encostam no substrato.",
+      "critica": false
+    },
+    {
+      "id": "amarrar_haste",
+      "titulo": "Amarrar a haste no tutor",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Prenda a parte nova da haste ao tutor a cada 20 a 25 cm, com fita de tecido ou barbante em laço de oito, sem apertar o caule. Amarre abaixo de um cacho carregado para ele não quebrar com o peso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Vire as folhas e procure mosquinhas brancas, pulgões e teias finas no verso; olhe manchas escuras nas folhas de baixo, galerias transparentes nas folhas e furinhos nos frutos. Retire e jogue no lixo, não no composto, as folhas manchadas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_tomate",
+      "titulo": "Colher tomates maduros",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 71,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Colha os frutos inteiramente vermelhos e ainda firmes, torcendo levemente ou cortando o pedúnculo com tesoura. Em época de chuva ou de passarinho, colha quando estiverem meio coloridos e termine de amadurecer dentro de casa, fora da geladeira.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Coloque o tutor agora",
+      "mensagem": "Fincar o tutor depois que as raízes crescem machuca a planta. O tomate salada passa de 1,5 m e precisa de apoio desde o início.",
+      "acao_requerida": "Fincar uma estaca de 1,8 m a 5 cm do caule, até o fundo do vaso"
+    },
+    {
+      "dia_disparo": 14,
+      "titulo": "Cubra o substrato com palha",
+      "mensagem": "A muda pegou. Uma camada de palha segura a umidade, evita que respingos de terra levem doenças às folhas e reduz a podridão apical.",
+      "acao_requerida": "Espalhar 3 a 5 cm de palha seca ou folhas secas sobre o substrato, deixando 3 cm livres em volta do caule"
+    },
+    {
+      "dia_disparo": 28,
+      "titulo": "Primeiras flores a caminho",
+      "mensagem": "O primeiro cacho de flores deve aparecer nos próximos dias. Na varanda, sem vento nem abelhas, a planta precisa de ajuda para polinizar.",
+      "acao_requerida": "Nas manhãs de sol, dar batidinhas leves nos cachos floridos ou no tutor para soltar o pólen"
+    },
+    {
+      "dia_disparo": 71,
+      "titulo": "Primeiros tomates maduros",
+      "mensagem": "Os frutos do primeiro cacho devem estar mudando de cor.",
+      "acao_requerida": "Conferir os frutos do cacho de baixo e começar a colheita"
+    },
+    {
+      "dia_disparo": 110,
+      "titulo": "Hora de capar o tomateiro",
+      "mensagem": "Flores que abrem agora não têm tempo de virar fruto maduro até o fim do ciclo. Cortar o ponteiro manda a energia para os frutos que já existem.",
+      "acao_requerida": "Cortar a ponta da haste deixando 2 folhas acima do último cacho com frutos formados"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão apical",
+      "tipo": "DISTURBIO",
+      "sintomas": "Mancha escura, seca e afundada na ponta do fruto, oposta ao cabinho, que cresce e fica como couro",
+      "prevencao_tratamento": "Falta de cálcio no fruto causada por rega irregular: mantenha o substrato sempre úmido, use palha e calcário no preparo do substrato. Retire os frutos afetados; os próximos saem normais quando a rega se acerta"
+    },
+    {
+      "nome": "Rachadura dos frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Fendas circulares em volta do cabinho ou rachaduras verticais nos frutos maduros ou quase maduros",
+      "prevencao_tratamento": "Evite deixar o vaso secar e depois encharcar, principalmente após chuvas; colha os frutos no início da mudança de cor em épocas chuvosas"
+    },
+    {
+      "nome": "Requeima (Phytophthora infestans)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas grandes, escuras e de aspecto encharcado nas folhas e hastes, com mofo esbranquiçado no verso em tempo úmido; a planta pode secar em poucos dias",
+      "prevencao_tratamento": "Não molhe as folhas, proteja da chuva e deixe o vaso em local ventilado. Retire imediatamente as partes afetadas; em tempo frio e úmido, pulverize calda bordalesa a 1% a cada 7 dias como prevenção"
+    },
+    {
+      "nome": "Pinta-preta (Alternaria solani)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons com anéis concêntricos, como um alvo, começando nas folhas de baixo, que amarelam e caem",
+      "prevencao_tratamento": "Retire as folhas de baixo manchadas e as que tocam o substrato, use palha para evitar respingos e regue só no pé; calda bordalesa a 1% se avançar"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de rega (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato molhado, folhas de baixo amarelas e base do caule escurecida",
+      "prevencao_tratamento": "Vaso com furos livres, sem prato cheio d'água, e rega só quando os 3 cm de cima secarem. Planta com o caule escurecido não se recupera: descarte com o substrato"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta; folhas pegajosas, amareladas ou com mosaico e encarquilhadas pelos vírus que ela transmite",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas, no fim da tarde, a cada 5 dias. Arranque plantas com folhas encarquilhadas por vírus, que não têm cura"
+    },
+    {
+      "nome": "Traça-do-tomateiro (Tuta absoluta)",
+      "tipo": "PRAGA",
+      "sintomas": "Galerias transparentes dentro das folhas, ponteiros atacados e furinhos nos frutos, com pequenas lagartas esverdeadas dentro",
+      "prevencao_tratamento": "Retire e destrua folhas e frutos com galerias; pulverize Bacillus thuringiensis (Dipel) no fim da tarde a cada 7 dias enquanto houver ataque"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto bronzeado e teias finas no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Jato de água no verso das folhas a cada 2 dias e óleo de neem a 0,5% se persistir; evite deixar o vaso em canto abafado junto à parede"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuva e calor: proteja o tomateiro",
+      "mensagem": "Chuvas frequentes e calor úmido espalham requeima e pinta-preta e racham os frutos; acima de 32 °C as flores caem sem formar fruto.",
+      "acao_requerida": "Deixar o vaso sob cobertura ou beiral que proteja da chuva sem tirar o sol da manhã, colher os frutos no início da mudança de cor e sombrear na hora mais quente se as flores estiverem caindo"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 10 °C o tomateiro para de crescer e os frutos demoram a amadurecer; geada mata a planta.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, levar o vaso para junto da parede ou cobri-lo com tecido não tecido (TNT), e reduzir a rega conferindo o substrato com o dedo"
+    }
+  ]
+}

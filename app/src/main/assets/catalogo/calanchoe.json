@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Calanchoê",
+    "nome_cientifico": "Kalanchoe blossfeldiana",
+    "descricao": "Suculenta de Madagascar vendida florida o ano todo, com buquês de flores vermelhas, laranja, amarelas, rosa ou brancas que duram de 6 a 8 semanas. Perene e fácil em vaso: guarda água nas folhas grossas e volta a florir todo outono e inverno se tiver noites longas e escuras.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com 14 a 16 cm de diâmetro e 12 cm de profundidade, com furos no fundo e sem prato acumulando água. O barro seca mais rápido e ajuda a evitar podridão",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% substrato para suculentas ou terra vegetal, 30% areia grossa lavada, 20% perlita ou casca de pinus fina; deve escorrer a água em segundos",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao_florida",
+      "nome": "Adaptação (em flor)",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A planta chega florida, num vasinho de turfa que seca rápido. Deixe-a num lugar claro com sol só da manhã. É normal cair um ou outro botão na mudança de ambiente. A adaptação acabou quando as folhas continuam firmes e os botões novos abrem sem cair."
+    },
+    {
+      "fase_id": "fim_floracao_estabelecimento",
+      "nome": "Fim da Floração e Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "As flores secam aos poucos, e a planta passa a investir em folhas e ramos novos. É a hora de cortar as hastes secas, trocar para um vaso definitivo e dar mais sol. Ela está estabelecida quando solta brotos novos com folhas grandes, de cor verde-escura e brilhante."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão, cresce em folhas e ramos. A partir de março, as noites longas (mais de 12 horas de escuro contínuo) induzem os botões, que aparecem entre maio e julho e abrem até setembro. Luz artificial à noite impede a floração. Depois de 3 ou 4 anos, fica lenhosa e rala: renove com estacas de ponta de ramo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o calanchoê florido",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue na terra, sem molhar folhas e flores, até escorrer pelos furos, e esvazie o prato depois de 15 minutos. A turfa do vaso de loja, se secar de vez, repele a água e derruba os botões. Se a água escorrer direto sem molhar, mergulhe o vaso num balde por 10 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o calanchoê",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e só regue se estiver totalmente seco. Então molhe a terra até escorrer pelos furos e não deixe água no prato. Do outono ao inverno, e sempre abaixo de 18 °C, espace para cada 10 a 14 dias. Folha murcha e enrugada pede água; folha mole e translúcida é excesso.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o calanchoê",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo NPK 10-10-10 na metade da dose do rótulo (cerca de 1 g por litro) e regue com ele o substrato já úmido. De março a agosto, troque por um adubo para flores (NPK 4-14-8) na mesma meia dose. Pule a adubação se a planta estiver recém-transplantada há menos de 30 dias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as axilas das folhas e a base do caule atrás de algodãozinho branco (cochonilha) e confira os botões atrás de pulgões. Aperte a base do caule: se estiver mole ou escura, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Fora da floração, tire a planta do vaso, solte as raízes, corte as podres ou escuras e replante em substrato novo, num vaso 2 a 4 cm maior. Espere 5 dias para a primeira rega, para os cortes cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Tire a capa plástica do vaso",
+      "mensagem": "Calanchoês de loja costumam vir num cachepô plástico ou de papel que segura água no fundo e apodrece as raízes.",
+      "acao_requerida": "Tirar o vaso do cachepô ou furar o fundo dele, e deixar a planta num lugar claro com sol só da manhã"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora de trocar de vaso",
+      "mensagem": "A floração da loja está acabando, e o vasinho de turfa é pequeno demais para a planta continuar crescendo.",
+      "acao_requerida": "Cortar as hastes florais secas rente à primeira folha e replantar no vaso definitivo com substrato drenante; esperar 5 dias para regar"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Desponte para ramificar",
+      "mensagem": "Ramos que ficam compridos e sem folhas embaixo dão uma planta rala e com poucas flores.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo acima de um par de folhas. As pontas, depois de secar 3 dias à sombra, enraízam em areia úmida e viram mudas novas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do colo (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amolecem, amarelam e caem de baixo para cima; a base do caule fica escura, mole e cheirando a mofo",
+      "prevencao_tratamento": "Regar só com o substrato seco e nunca deixar água no prato. Se começar, cortar a parte sã dos ramos, secar os cortes por 3 dias e reenraizar em substrato novo; descartar a parte podre"
+    },
+    {
+      "nome": "Oídio (Podosphaera)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que depois ficam com manchas marrons e secas",
+      "prevencao_tratamento": "Manter em local ventilado e sem molhar as folhas; retirar as folhas atacadas e pulverizar bicarbonato de sódio (1 colher de chá por litro, com uma gota de detergente) a cada 7 dias"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores e botões escurecem e se cobrem de um mofo cinza felpudo, principalmente no inverno úmido",
+      "prevencao_tratamento": "Cortar as flores murchas toda semana, não molhar a planta por cima e deixar o vaso em lugar arejado"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas axilas das folhas e na base do caule; folhas amarelas e grudentas",
+      "prevencao_tratamento": "Remover com cotonete molhado em álcool 70%; se voltar, pulverizar óleo de neem a 0,5% no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos botões florais e brotos novos, que ficam deformados",
+      "prevencao_tratamento": "Esmagar com os dedos ou lavar com jato fraco de água; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e finos, folhas pequenas, espaçadas e verde-claras, planta pendendo para a janela",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 2 a 4 horas de sol direto da manhã e despontar os ramos esticados"
+    },
+    {
+      "nome": "Não volta a florir",
+      "tipo": "DISTURBIO",
+      "sintomas": "A planta cresce bem mas não forma botões no outono e inverno",
+      "prevencao_tratamento": "De março a junho, deixar em lugar sem nenhuma luz artificial à noite (14 horas de escuro contínuo por 6 semanas) e trocar o adubo por um rico em fósforo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas avermelhadas nas bordas ou com manchas brancas e secas no lado virado para o sol",
+      "prevencao_tratamento": "Evitar sol direto entre 11h e 16h no verão; avermelhado leve nas bordas é só estresse de luz e pode ficar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3,
+        4
+      ],
+      "titulo": "Noites escuras para florir",
+      "mensagem": "Com as noites mais longas do outono, o calanchoê forma os botões, mas só se ficar 14 horas no escuro total. Uma lâmpada acesa perto à noite basta para cancelar a floração.",
+      "acao_requerida": "Deixar o vaso onde não bata luz de lâmpada, poste ou TV das 18h às 8h, até aparecerem os botões"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja do frio",
+      "mensagem": "O calanchoê sofre abaixo de 10 °C, e o frio com substrato úmido apodrece as raízes. Geada mata a planta.",
+      "acao_requerida": "Nas noites com previsão abaixo de 10 °C, levar para dentro de casa ou para perto de uma parede abrigada e regar só a cada 14 dias"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Poda pós-floração",
+      "mensagem": "A floração terminou, e a planta vai crescer na primavera. Cortar agora deixa ela compacta e com mais ramos para florir no próximo inverno.",
+      "acao_requerida": "Cortar todas as hastes florais secas rente à primeira folha e encurtar em um terço os ramos mais compridos, logo acima de um par de folhas"
+    }
+  ]
+}

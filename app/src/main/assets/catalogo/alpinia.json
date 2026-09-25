@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Alpínia",
+    "nome_cientifico": "Alpinia purpurata",
+    "descricao": "Planta tropical rizomatosa da família do gengibre, com hastes de 1,5 a 2,5 m e inflorescências vermelhas vistosas que duram meses, na planta e no vaso. Em vaso grande, com calor, umidade e rega farta, floresce boa parte do ano e forma touceiras cada vez mais cheias.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo de plástico, cerâmica ou fibra, com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; o rizoma se espalha para os lados",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco, 10% areia grossa; rico em matéria orgânica, que segura umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o rizoma a 3 a 5 cm abaixo da superfície, sem enterrar a base das hastes. É normal algumas folhas amarelarem ou queimarem as pontas. A fase termina quando surge um broto novo saindo do substrato ao lado das hastes originais."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 270,
+      "descricao": "O rizoma se espalha e lança hastes novas a cada poucas semanas, cada uma mais alta que a anterior. Mudas já formadas costumam dar a primeira inflorescência vermelha na ponta de uma haste neste período; as vindas de rizoma pequeno podem levar mais de um ano. A touceira com 5 ou mais hastes marca a planta adulta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 271,
+      "dia_fim": null,
+      "descricao": "Touceira formada, com hastes de 1,5 a 2,5 m. Floresce principalmente da primavera ao outono e, em lugares quentes, quase o ano inteiro. Cada haste floresce uma vez só: a inflorescência dura meses e, quando a haste amarela, é cortada rente ao substrato. No inverno o crescimento para e as folhas podem manchar com o frio. A cada dois anos a touceira ocupa o vaso inteiro e precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a alpínia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. As raízes ainda não saíram do torrão, e ele não pode secar. Acima de 30 °C, confira todo dia. Borrife as folhas no fim da tarde se o ar estiver seco.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a alpínia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, a touceira adulta pode pedir água a cada 1 ou 2 dias; no inverno, só a cada 5 a 7 dias, sempre conferindo com o dedo.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a alpínia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de NPK 4-14-8 ou 1 xícara de húmus de minhoca pela superfície de um vaso de 30 L, longe das hastes, e regue em seguida. De junho a agosto, pule a adubação: a planta está parada e o adubo acumula no vaso.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_hastes",
+      "titulo": "Cortar hastes secas e florescidas",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao substrato, com tesoura limpa, as hastes amareladas ou secas e as que já têm a inflorescência escurecida. Retire também as folhas secas da base. Isso abre espaço e luz para as hastes novas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e inflorescências",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra as brácteas da inflorescência e vire as folhas: procure bolinhas brancas algodonosas (cochonilha), formigas subindo pelas hastes e pontinhos amarelados com teias finas no verso (ácaro). Aperte a base das hastes: mole e escura indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, tire a touceira do vaso, corte o rizoma com faca limpa em pedaços com 2 ou 3 hastes e raízes cada, e replante um deles no mesmo vaso com substrato novo. Regue bem e mantenha à meia-sombra por 2 semanas. Se o aviso chegar no inverno, espere até setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Proteja o substrato",
+      "mensagem": "A alpínia gosta de raiz sempre úmida e fresca. Uma cobertura sobre o substrato reduz a evaporação e evita que o vaso seque entre as regas.",
+      "acao_requerida": "Cobrir a superfície do vaso com 3 cm de casca de pinus ou palha, sem encostar nas hastes"
+    },
+    {
+      "dia_disparo": 240,
+      "titulo": "Mudinhas na inflorescência",
+      "mensagem": "Inflorescências antigas costumam formar mudinhas com folhas e raízes entre as brácteas vermelhas. Elas enraízam fácil e viram plantas novas.",
+      "acao_requerida": "Quando a mudinha tiver 3 ou 4 folhas, destacar com cuidado e plantar num vaso pequeno com substrato úmido, à meia-sombra"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes amarelam de baixo para cima e tombam; base mole, escura e com cheiro ruim; rizoma marrom e aguado ao cortar",
+      "prevencao_tratamento": "Vaso com furos livres, sem água parada no pratinho e rega menor no inverno. Retire as hastes afetadas, corte o rizoma podre até chegar à parte firme e branca, deixe secar ao ar por um dia e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos entre as brácteas da inflorescência e na base das folhas; formigas subindo pelas hastes; fumagina preta nas folhas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70% ou jato de água forte entre as brácteas. Se voltar, aplique óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam prateadas ou bronzeadas; teias finas no verso, principalmente em tempo seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos, que o ácaro detesta umidade. Infestação instalada: óleo de neem a 0,5% no verso das folhas a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Pontas e bordas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e margens das folhas marrons e secas, às vezes com folhas enroladas",
+      "prevencao_tratamento": "Causado por substrato que secou demais, ar seco ou sol forte da tarde. Regue antes de o vaso secar por inteiro, borrife as folhas nos dias secos e tire a planta do sol depois das 13h. As partes secas não se recuperam: apare com tesoura acompanhando o formato da folha"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com manchas escuras ou transparentes que depois secam, principalmente após noites abaixo de 10 °C",
+      "prevencao_tratamento": "Leve o vaso para perto de uma parede ou para um lugar coberto no inverno, longe de vento frio. Corte as hastes muito danificadas só em setembro, quando a brotação recomeça"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Prepare a alpínia para o frio",
+      "mensagem": "A alpínia é tropical: abaixo de 10 °C as folhas queimam, e substrato frio e encharcado apodrece o rizoma. Até agosto ela quase não cresce.",
+      "acao_requerida": "Levar o vaso para um lugar abrigado do vento e da geada, regar só quando o substrato estiver seco a 3 cm e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Recomeço da brotação",
+      "mensagem": "Com o calor voltando, o rizoma retoma o crescimento e lança hastes novas, que vão florescer no verão.",
+      "acao_requerida": "Cortar rente ao substrato as hastes danificadas pelo frio, voltar a adubar e aumentar a rega conforme o substrato secar mais rápido"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Calor forte: vaso seca rápido",
+      "mensagem": "No auge do verão, uma touceira adulta num vaso de 30 L pode secar num único dia quente, e as folhas queimam nas bordas.",
+      "acao_requerida": "Conferir o substrato todo dia até março e proteger a planta do sol da tarde"
+    }
+  ]
+}

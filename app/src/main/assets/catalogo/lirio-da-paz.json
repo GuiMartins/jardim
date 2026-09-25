@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Lírio-da-paz",
+    "nome_cientifico": "Spathiphyllum wallisii",
+    "descricao": "Folhagem tropical de sub-bosque, com folhas verde-escuras brilhantes e flores brancas em forma de vela (espatas) na primavera e no verão. É uma das plantas de interior mais fáceis, tolera pouca luz e avisa quando tem sede: as folhas caem e voltam a se erguer poucas horas depois da rega. É tóxica para cães, gatos e crianças se mastigada (oxalato de cálcio).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 18 a 20 cm de diâmetro e de altura, com furos no fundo e prato sem água parada",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "40% substrato para plantas ou terra vegetal, 30% fibra de coco, 20% húmus de minhoca e 10% casca de pinus fina ou perlita; retém umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A planta sai da estufa, onde a luz e a umidade eram altas. É normal amarelar uma ou duas folhas velhas e as flores da loja murcharem. Deixe-a em lugar de luz clara sem sol forte, longe de ar-condicionado e corrente de vento, e não troque de vaso ainda. A adaptação terminou quando surge uma folha nova enrolada saindo do centro."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "Sai uma folha nova a cada 2 a 4 semanas e a touceira começa a se adensar. Se as raízes saírem pelo furo ou o substrato secar em menos de 2 dias, o vaso ficou pequeno. Folhas firmes, eretas e sem pontas marrons mostram que a rega e a luz estão certas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "No ano típico, a planta cresce e floresce da primavera ao fim do verão, com flores que duram de 4 a 6 semanas e ficam esverdeadas antes de secar. No inverno o crescimento quase para e ela pede menos água e nenhum adubo. Sem flor por mais de um ano quase sempre é luz fraca demais: aproxime-a de uma janela clara. A cada dois anos o substrato se decompõe e a touceira pode ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o lírio-da-paz",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água do prato após 30 minutos. Use água filtrada ou deixada em repouso por 24 h, porque o cloro queima as pontas das folhas. No verão acima de 30 °C, confira a cada 2 dias; no inverno o substrato leva de 5 a 7 dias para secar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o lírio-da-paz",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido NPK 10-10-10 (ou específico para folhagens) na metade da dose do rótulo e aplique sobre o substrato já úmido. Na primavera, prefira uma fórmula com mais fósforo (como 4-14-8) para estimular flores. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Limpar folhas e tirar partes velhas",
+      "tipo": "PODA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Passe um pano úmido nos dois lados das folhas para tirar a poeira, que reduz a fotossíntese. Corte rente à base, com tesoura limpa, as folhas amarelas ou secas e as hastes de flores que já ficaram verdes ou marrons.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e a base dos pecíolos: procure pontinhos brancos algodonosos (cochonilha), teias finas e pontos amarelados (ácaro) e manchas escuras encharcadas. Cheire o substrato: cheiro de podre indica excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, solte as raízes e corte as escuras e moles. Replante em vaso 3 a 5 cm maior com substrato novo, na mesma altura de antes. Se a touceira estiver grande, divida em 2 ou 3 partes com raízes e folhas cada. Se cair entre maio e agosto, faça em setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar certo",
+      "mensagem": "O lírio-da-paz gosta de luz clara e indireta. Sol direto forte queima as folhas, e ar-condicionado ou corrente de vento resseca as pontas.",
+      "acao_requerida": "Colocar o vaso a até 2 m de uma janela clara, no máximo com sol fraco da manhã, longe do ar-condicionado e fora do alcance de pets"
+    },
+    {
+      "dia_disparo": 22,
+      "titulo": "Confira se o vaso ficou pequeno",
+      "mensagem": "Plantas de loja costumam vir em vasos apertados. Terminada a adaptação, é a hora segura para replantar, se precisar.",
+      "acao_requerida": "Ver se há raízes saindo pelo furo ou enroladas junto à parede do vaso; se houver, replantar em vaso 3 a 5 cm maior com o substrato recomendado"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Sem flores ainda?",
+      "mensagem": "Um lírio-da-paz saudável floresce na primavera e no verão. Se até agora não surgiu nenhuma flor, a causa mais comum é falta de luz.",
+      "acao_requerida": "Se não floresceu, mudar o vaso para um local mais claro, ainda sem sol forte do meio-dia"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato molhado, folhas amarelando a partir da base, raízes marrons e moles e cheiro de podre no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm e nunca deixar água no prato. Se aparecer, tirar do vaso, cortar as raízes podres, deixar secar 1 hora e replantar em substrato novo e vaso limpo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos na base das folhas e no verso; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; depois, pulverizar óleo de neem a 0,5% com algumas gotas de detergente neutro a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos e aspecto empoeirado, teias finas no verso; aparece com ar seco",
+      "prevencao_tratamento": "Lavar as folhas com jato de água no verso e aumentar a umidade ao redor; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Pontas marrons nas folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas secas e marrons, sem manchas no meio da folha",
+      "prevencao_tratamento": "Causado por ar seco, cloro ou excesso de adubo. Usar água filtrada ou descansada, adubar só na meia dose e, a cada 6 meses, regar em abundância para lavar o excesso de sais. Cortar a ponta seca acompanhando o formato da folha"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelo-claras ou esbranquiçadas que secam no meio das folhas voltadas para a janela",
+      "prevencao_tratamento": "Afastar da luz direta do meio-dia e da tarde; as folhas queimadas não se recuperam e podem ser cortadas"
+    },
+    {
+      "nome": "Folhas amarelas por excesso de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Várias folhas amarelando ao mesmo tempo, substrato sempre úmido",
+      "prevencao_tratamento": "Espaçar as regas, conferir se os furos do vaso não estão entupidos e esvaziar o prato; se as raízes estiverem moles, tratar como podridão de raiz"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e nada de adubo",
+      "mensagem": "No frio o lírio-da-paz quase para de crescer e o substrato demora mais para secar. Abaixo de 12 °C as folhas escurecem e murcham.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 2 cm, suspender o adubo até setembro e afastar o vaso de janelas frias à noite"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: hora de estimular as flores",
+      "mensagem": "A planta retoma o crescimento e começa a formar botões florais.",
+      "acao_requerida": "Retomar a adubação mensal com fórmula rica em fósforo e aproximar o vaso de um local mais claro, sem sol forte"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: o vaso seca mais rápido",
+      "mensagem": "Com calor, o substrato pode secar em 2 dias e a planta murcha de repente. Murchas repetidas queimam as bordas das folhas.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e borrifar água em volta da planta nos dias mais secos, sem encharcar as flores"
+    }
+  ]
+}

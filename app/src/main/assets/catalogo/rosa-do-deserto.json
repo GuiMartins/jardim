@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Rosa-do-deserto",
+    "nome_cientifico": "Adenium obesum",
+    "descricao": "Suculenta arbustiva de caule engrossado na base (cáudice), que acumula água e dá à planta um ar de bonsai natural. Floresce em rosa, vermelho ou branco da primavera ao outono quando recebe muito sol. A seiva branca é tóxica: use luvas ao podar e mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, mais largo que fundo (20 a 25 cm de diâmetro por 15 a 20 cm de altura), com furos grandes no fundo e sem prato acumulando água",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% areia grossa lavada, 30% terra vegetal, 20% perlita ou casca de arroz carbonizada, 10% húmus de minhoca; deve escorrer a água na hora e nunca empapar",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda cicatriza as raízes mexidas no plantio e se acostuma ao novo lugar. É normal perder algumas folhas ou botões. Se veio de viveiro sombreado, aumente o sol direto aos poucos (2 horas a mais por semana) para não queimar o cáudice. A fase termina quando surgem folhas novas na ponta dos galhos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e o cáudice começa a engrossar. Os galhos alongam e, com 6 horas de sol ou mais, aparecem os primeiros cachos de flores nas pontas. O cáudice deve ficar firme ao toque; mole ou enrugado indica problema de rega."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Da primavera ao outono a planta cresce, floresce em ondas e bebe mais. Com o frio (maio a agosto) ela desacelera, pode perder boa parte das folhas e entra em repouso: a rega cai muito e o adubo para. Na primavera, poda e retomada do crescimento. O cáudice engrossa ano após ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a rosa-do-deserto",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato: só regue se estiver totalmente seco. Molhe até escorrer pelos furos e descarte a água do prato. No calor (acima de 28 °C) pode ser a cada 3 dias; de maio a agosto, com frio, regue só a cada 10 a 15 dias e apenas se o cáudice estiver firme e o substrato seco. Na dúvida, não regue: excesso de água apodrece o cáudice.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar para florescer",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g (meia colher de café) de NPK 4-14-8 ou de adubo para flores em 1 L de água e regue o substrato já úmido, nunca seco. Suspenda de maio a agosto, quando a planta está em repouso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e cáudice",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as pontas dos galhos e os botões: procure algodãozinho branco, insetos agrupados, teias finas ou lagartas. Aperte o cáudice perto do substrato; ele deve estar duro, sem partes moles ou escuras.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e novembro. Com o substrato seco, tire a planta, remova a terra velha e corte raízes podres ou escuras. Replante num vaso 5 cm mais largo com substrato novo, subindo um pouco o cáudice se quiser expor mais a base. Só regue 5 a 7 dias depois.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Segure a água nesta primeira semana",
+      "mensagem": "As raízes machucadas no plantio precisam cicatrizar. Regar agora, com o substrato novo e úmido, é a causa mais comum de podridão em muda recém-plantada.",
+      "acao_requerida": "Não regar até o 7º dia e deixar o vaso em local claro, com sol só da manhã"
+    },
+    {
+      "dia_disparo": 7,
+      "titulo": "Primeira rega",
+      "mensagem": "As raízes já cicatrizaram e a muda pode receber água.",
+      "acao_requerida": "Regar devagar até escorrer pelos furos e descartar a água do prato"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de mais sol",
+      "mensagem": "A planta está se adaptando e já aguenta mais luz. Sem pelo menos 4 horas de sol direto ela estica os galhos e não floresce.",
+      "acao_requerida": "Mudar o vaso para o lugar definitivo, com 6 horas ou mais de sol direto, de preferência o da manhã e o começo da tarde"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do cáudice e das raízes (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Cáudice mole, enrugado ou escurecido na base, folhas amarelando e caindo em pouco tempo, cheiro de podre no substrato",
+      "prevencao_tratamento": "Substrato arenoso, vaso furado e rega só com a terra seca, sobretudo no frio. Se aparecer, tire a planta do vaso, corte todo o tecido mole até o tecido branco e firme, polvilhe canela em pó, deixe secar à sombra por 5 a 7 dias e replante em substrato seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas axilas das folhas, nas pontas dos galhos e no colo do cáudice; folhas pegajosas e deformadas",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; para infestações maiores, óleo de neem a 0,5% com algumas gotas de detergente neutro no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes, amarelos ou pretos nos brotos e botões; botões que secam e caem sem abrir",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Lave o verso das folhas com água; se continuar, aplique óleo de neem ou enxofre molhável no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Lagarta-da-espirradeira (Syntomeida epilais)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas até sobrar só a nervura, lagartas alaranjadas com tufos pretos nos galhos",
+      "prevencao_tratamento": "Catar as lagartas com luvas; em ataque grande, aplicar Bacillus thuringiensis (Dipel) conforme o rótulo"
+    },
+    {
+      "nome": "Queda de folhas no frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelando e caindo de maio a agosto, com o cáudice firme",
+      "prevencao_tratamento": "É o repouso natural da planta. Não aumente a rega para compensar; reduza a água e espere a brotação da primavera. Só preocupa se o cáudice amolecer"
+    },
+    {
+      "nome": "Queimadura de sol no cáudice",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas bege ou marrom-claras e secas no lado do cáudice virado para o sol, logo depois de mudar a planta de lugar",
+      "prevencao_tratamento": "Aumente o sol direto de forma gradual, ao longo de 2 a 3 semanas, ao trazer a planta da sombra. As manchas não somem, mas não se espalham"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Frio chegando: modo repouso",
+      "mensagem": "Com as noites abaixo de 15 °C a rosa-do-deserto desacelera e pode perder folhas. Água e adubo em excesso agora apodrecem o cáudice.",
+      "acao_requerida": "Espaçar a rega para a cada 10 a 15 dias, só com o substrato seco, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 10 °C, principalmente com substrato úmido, o cáudice pode sofrer danos e apodrecer.",
+      "acao_requerida": "Levar o vaso para perto de uma parede ensolarada ou para dentro, junto a uma janela clara, nas noites frias e nos dias de chuva fria"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: poda e retomada",
+      "mensagem": "A planta sai do repouso e começa a brotar. Podar agora deixa a copa mais cheia e com mais pontas de galho, que é onde nascem as flores.",
+      "acao_requerida": "Com luvas, encurtar os galhos compridos em um terço, logo acima de uma folha, e voltar à rega normal e à adubação mensal"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Temporada de chuvas",
+      "mensagem": "Semanas de chuva seguida mantêm o substrato encharcado, e é nessa época que mais aparece podridão no cáudice.",
+      "acao_requerida": "Tirar o vaso da chuva direta nos períodos de chuva contínua, esvaziar o prato e só regar com o substrato seco"
+    }
+  ]
+}

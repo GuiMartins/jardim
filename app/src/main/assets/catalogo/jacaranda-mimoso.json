@@ -1,0 +1,207 @@
+{
+  "planta": {
+    "nome_comum": "Jacarandá-mimoso",
+    "nome_cientifico": "Jacaranda mimosifolia",
+    "descricao": "Árvore sul-americana de folhas finas e rendadas, famosa pelos cachos de flores lilás na primavera. Em vaso grande ela fica como arvoreta de 2 a 3 m, com a copa decorativa o ano todo. Floresce com uns 5 a 7 anos a partir de muda de viveiro, e em vaso a floração costuma ser menor que no chão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e estável (cimento, barro ou plástico grosso) com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo; comece com 40 L e passe para 80 L ou mais conforme a planta cresce",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou pedrisco; acrescente 1 xícara de farinha de ossos a cada 20 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está enraizando no vaso novo. É normal cair algumas folhinhas nos primeiros dias. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido do tronco e dos ramos na estação quente. As raízes ocupam o vaso, e o caule vai engrossando e firmando. Mantenha o tutor até o tronco ficar em pé sozinho sem vento."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "O ano típico: no inverno (junho a agosto) ela perde boa parte das folhas e quase para de crescer. No fim do inverno e na primavera vêm as flores lilás, muitas vezes antes das folhas novas. No verão a copa fica cheia e pede mais água. As primeiras flores aparecem por volta do 5º a 7º ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Regue devagar até a água escorrer pelos furos do fundo. As raízes ainda estão só no torrão da muda, que seca antes do resto do vaso: enfie o dedo 3 cm perto do caule e regue se estiver seco. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jacarandá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. No verão, com a copa cheia, pode precisar de água a cada 2 dias. No inverno, sem folhas, espace para 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o jacarandá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus de minhoca e 1 colher de sopa de NPK 4-14-8 por vaso de 60 L, longe do tronco, e regue em seguida. O fósforo favorece a floração. Não use adubo rico em nitrogênio, que só faz folha. Em junho e julho, com a planta sem folhas, não adube.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e os brotos novos em busca de insetos verdes ou pretos agrupados, pontinhos brancos ou cascudos nos ramos e folhas cortadas em meia-lua (formiga). Confira também se há trilha de formigas subindo pelo vaso.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, corte 3 a 5 cm das raízes enoveladas nas laterais e no fundo e troque cerca de um terço do substrato por mistura nova. Se ainda couber, passe para um vaso uns 10 cm maior. Regue bem e deixe à meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Coloque um tutor na muda",
+      "mensagem": "O tronco jovem do jacarandá é fino e o vento entorta a muda ou solta as raízes que estão começando a se firmar.",
+      "acao_requerida": "Fincar uma estaca de bambu ou madeira a 5 cm do caule, sem ferir o torrão, e amarrar o tronco em 2 pontos com fita ou tira de pano em forma de 8"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Muda firme: hora de adubar",
+      "mensagem": "As raízes já saíram do torrão original e a planta aguenta adubo sem queimar.",
+      "acao_requerida": "Fazer a primeira adubação, como descrito na tarefa de adubação"
+    },
+    {
+      "dia_disparo": 240,
+      "titulo": "Confira se o vaso ainda comporta a planta",
+      "mensagem": "O jacarandá cresce rápido no primeiro ano. Raízes saindo pelos furos ou água que escorre direto sem molhar o substrato indicam vaso pequeno.",
+      "acao_requerida": "Olhar os furos do fundo; se houver raízes saindo, passar para um vaso maior no próximo fim de inverno ou início da primavera"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Avalie a retirada do tutor",
+      "mensagem": "Com um ano, o tronco costuma ter firmeza para ficar em pé sozinho. Amarração esquecida estrangula o caule quando ele engrossa.",
+      "acao_requerida": "Soltar as amarras; se o tronco ficar reto sem apoio, retirar o tutor, senão refazer as amarras com folga"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (excesso de água)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora do inverno, substrato sempre úmido e com cheiro azedo, base do tronco escurecida e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e garantir furos livres. Se acontecer, suspenda a rega, retire a planta, corte as raízes pretas e moles e replante em substrato novo bem drenado"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos cortados em meia-lua ou a planta desfolhada numa só noite; trilha de formigas carregando pedaços de folha",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e aplicar isca granulada específica ao lado do carreiro, em dia seco. Uma barreira de graxa ou fita adesiva dupla-face no pé do vaso impede a subida"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas carapaças marrons ou flocos brancos presos nos ramos e no verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool; em infestação maior, pulverizar óleo mineral a 1% com detergente neutro no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos novos, que ficam encarquilhados e pegajosos",
+      "prevencao_tratamento": "Jato forte de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontinhos claros, aparência empoeirada e teias finas no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Molhar a copa pelo verso das folhas em dias quentes e secos; se persistir, enxofre molhável ou óleo de neem, sempre no fim da tarde"
+    },
+    {
+      "nome": "Queda de folhas por estresse de transplante",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem nas primeiras semanas depois do plantio ou da troca de vaso, com os brotos das pontas ainda verdes",
+      "prevencao_tratamento": "É reação normal. Mantenha a rega regular sem encharcar, deixe a planta alguns dias protegida do sol forte da tarde e não adube até surgirem brotos novos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Jacarandá em repouso",
+      "mensagem": "No inverno o jacarandá perde boa parte das folhas e quase para de crescer. Isso é natural, não é doença. Com pouca folha, ele gasta muito menos água.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (cerca de 7 a 10 dias) e suspender o adubo até agosto"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza antes da brotação",
+      "mensagem": "No fim do inverno, antes da brotação, é o melhor momento para podar: a planta cicatriza rápido e não perde botões de flor.",
+      "acao_requerida": "Cortar ramos secos, quebrados ou cruzados e os brotos que nascem do pé do tronco; para manter a copa compacta, encurtar os ramos mais longos em até um terço, sempre acima de uma gema"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "Da primavera ao início do verão a planta adulta forma os cachos lilás. Falta de água agora faz os botões caírem antes de abrir.",
+      "acao_requerida": "Voltar à rega regular a cada 3 dias, retomar a adubação e não podar até a floração terminar"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: copa cheia bebe mais",
+      "mensagem": "No verão a copa está no máximo e o vaso seca muito rápido nos dias acima de 30 °C.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e, nos dias de calor intenso, regar no começo da manhã; ficar atento a trilhas de formiga-cortadeira, mais ativas nessa época"
+    }
+  ]
+}

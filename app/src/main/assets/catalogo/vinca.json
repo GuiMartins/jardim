@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Vinca",
+    "nome_cientifico": "Catharanthus roseus",
+    "descricao": "Planta de flores rosa, brancas ou lilás que floresce quase o ano todo no sol forte e aguenta calor e alguma seca melhor que a maioria das floríferas de vaso. É perene de vida curta: em vaso fica bonita por 2 a 3 anos e depois é melhor renovar por estaca ou muda nova. Toda a planta é tóxica se ingerida, então deixe longe de crianças e animais que mordiscam plantas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com 18 a 20 cm de diâmetro e profundidade, com furos no fundo; em jardineira, deixe 20 cm entre as mudas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa ou perlita, 20% húmus de minhoca; bem drenante, porque a raiz apodrece fácil em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "A muda sai do saquinho e se ajusta ao vaso novo. É normal perder algumas flores e uma ou duas folhas de baixo. Nos 3 primeiros dias, dê sol só pela manhã e depois passe para sol pleno. A adaptação acabou quando aparecem folhas novas e brilhantes nas pontas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 60,
+      "descricao": "As raízes ocupam o vaso e a planta ramifica. Os botões voltam a abrir sem parar. Quando as raízes começam a aparecer pelos furos do fundo e a planta forma uma touceira cheia, com vários ramos floridos, ela está estabelecida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Floresce direto da primavera ao outono. No inverno cresce menos, dá menos flores e pede pouca rega. Depois de 2 anos os ramos costumam ficar compridos e pelados na base. Aí é hora de fazer uma poda forte ou tirar estacas das pontas para começar uma planta nova. A vinca se limpa sozinha: as flores velhas caem sem precisar tirar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a vinca recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Nessa fase a raiz ainda está no torrão da muda e murcha rápido no sol forte. Se a planta estiver murcha no fim da tarde, regue na hora.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a vinca",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Regue só se estiver seco, até escorrer pelos furos, e nunca deixe água parada no pratinho. Acima de 30 °C confira a cada 2 dias. No inverno, espace para cada 5 a 7 dias. Folha amarelando com substrato úmido é sinal de água demais.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar a vinca",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de chá rasa de NPK 4-14-8 na borda do vaso de 3 L, longe do caule, e regue em seguida. Adubo com muito nitrogênio faz folha e pouca flor. Pule a adubação em junho, julho e agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure insetos brancos que voam ao mexer, pontinhos amarelados com teia fina, colônias de pulgão nas pontas e algodãozinho branco nas axilas. Observe também se há manchas escuras nas folhas ou ramos que murcham de repente com o substrato úmido.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato ou a planta",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, solte 1/3 do torrão velho e replante em substrato novo, num vaso 2 a 4 cm maior. Se a planta estiver lenhosa e pelada na base, é melhor tirar estacas de 8 a 10 cm das pontas e enraizar em areia úmida para começar uma nova.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 4,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "A muda já teve alguns dias para se acostumar. Com menos de 4 horas de sol direto, a vinca estica e para de florir.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo, com pelo menos 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Desponte para encher",
+      "mensagem": "Tirar a ponta dos ramos agora faz a planta soltar brotos laterais e formar uma touceira cheia, com muito mais flores.",
+      "acao_requerida": "Cortar com os dedos ou com tesoura limpa 1 a 2 cm da ponta de cada ramo, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do colo (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido, a base do caule fica escura e mole e as raízes ficam marrons e se desfazem",
+      "prevencao_tratamento": "Substrato bem drenante, regar só com o substrato seco e nunca deixar água no pratinho. Uma planta que já está com o colo podre dificilmente se recupera. Tire estacas das pontas sadias e jogue fora a planta e o substrato"
+    },
+    {
+      "nome": "Requeima da vinca (Phytophthora nicotianae)",
+      "tipo": "DOENCA",
+      "sintomas": "As pontas dos ramos ficam pretas e murcham de cima para baixo, principalmente em épocas de chuva e calor",
+      "prevencao_tratamento": "Regue no substrato, sem molhar as folhas, e deixe o vaso onde o ar circule. Corte os ramos afetados 3 cm abaixo da parte escura, limpando a tesoura com álcool entre um corte e outro"
+    },
+    {
+      "nome": "Mancha foliar (Alternaria)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons redondas com halo amarelo nas folhas, que depois amarelam e caem",
+      "prevencao_tratamento": "Retire as folhas manchadas, evite molhar a folhagem e aumente o espaço entre os vasos. Se piorar, aplique fungicida à base de cobre conforme o rótulo"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos pequenos quando você mexe na planta e ovos no verso das folhas, que ficam amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas, no fim da tarde, a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo e depois bronzeadas, com teia fina no verso, comum no calor seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos. Se persistir, aplique óleo de neem ou calda de sabão neutro (1 colher de sopa por litro) a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha e pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Algodãozinho branco nas axilas e no caule ou colônias verdes nas pontas novas, com as folhas enroladas",
+      "prevencao_tratamento": "Remova a cochonilha com cotonete embebido em álcool e o pulgão com jato de água. Em infestação maior, use óleo de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Folhas amarelas por frio e excesso de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas de baixo amarelam por inteiro e caem no inverno ou depois de dias nublados com o substrato sempre úmido",
+      "prevencao_tratamento": "Espaçar as regas e deixar o vaso no lugar mais ensolarado e protegido do vento frio. A planta se recupera sozinha quando esquenta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a vinca quase para de crescer e a raiz apodrece fácil em substrato úmido. Abaixo de 10 °C ela sofre.",
+      "acao_requerida": "Regar só quando os 3 primeiros centímetros estiverem secos, suspender a adubação até setembro e, nas noites abaixo de 10 °C, levar o vaso para perto de uma parede ou para dentro de casa"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Com a primavera a vinca volta a crescer. Uma poda agora tira os ramos compridos e feios do inverno e ela volta cheia de flores.",
+      "acao_requerida": "Cortar todos os ramos pela metade, acima de um par de folhas, retirar folhas secas e retomar a adubação mensal"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuva e calor: atenção à drenagem",
+      "mensagem": "Verão chuvoso é a época da requeima e da podridão de raiz na vinca.",
+      "acao_requerida": "Tirar o pratinho ou esvaziá-lo depois de cada chuva, conferir se os furos do vaso estão desentupidos e cortar na hora qualquer ponta de ramo que ficar preta"
+    }
+  ]
+}

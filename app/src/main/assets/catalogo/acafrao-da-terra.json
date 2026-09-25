@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Açafrão-da-terra",
+    "nome_cientifico": "Curcuma longa",
+    "descricao": "Planta da família do gengibre cujo rizoma alaranjado é a cúrcuma, usada como tempero e corante. É perene na natureza, mas em vaso é cultivada como anual: planta-se um pedaço de rizoma na primavera e colhe-se tudo quando as folhas secam no outono, guardando alguns pedaços para replantar.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": 300,
+    "meses_plantio": [
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo ou jardineira com pelo menos 30 cm de profundidade e 35 cm de diâmetro, com furos no fundo; o rizoma cresce para os lados, então largura vale mais que altura",
+    "volume_minimo_litros": 20,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% fibra de coco; solto, rico em matéria orgânica e sem torrões",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "brotacao",
+      "nome": "Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 45,
+      "descricao": "Enterre pedaços de rizoma com 5 cm e 2 a 3 gemas (os 'olhinhos'), com as gemas para cima, a 5 cm de profundidade. A brotação é lenta: os primeiros brotos cônicos aparecem entre a 3ª e a 6ª semana. Nada acima do substrato antes disso é normal."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 46,
+      "dia_fim": 150,
+      "descricao": "As folhas largas se abrem uma após a outra e a touceira pode chegar a 1 m de altura. É o período de maior consumo de água e adubo; folhas firmes e verde-escuras indicam que está tudo certo."
+    },
+    {
+      "fase_id": "formacao_rizomas",
+      "nome": "Formação dos Rizomas",
+      "dia_inicio": 151,
+      "dia_fim": 240,
+      "descricao": "Os rizomas engrossam e se ramificam sob o substrato. Pode surgir uma haste com flor branca e rosada no meio das folhas. Se pedaços de rizoma aparecerem na superfície, cubra com composto para não esverdearem."
+    },
+    {
+      "fase_id": "senescencia_colheita",
+      "nome": "Senescência e Colheita",
+      "dia_inicio": 241,
+      "dia_fim": 300,
+      "descricao": "Com o outono, as folhas amarelam de baixo para cima e secam: é o sinal de que o rizoma está maduro. Reduza a rega e colha quando a maior parte das folhas estiver seca."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar o rizoma plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos. Sem folhas, o rizoma gasta pouca água e apodrece se ficar encharcado.",
+      "critica": false
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar o açafrão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Acima de 30 °C ou com folhas caídas à tarde, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_senescencia",
+      "titulo": "Rega reduzida",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 241,
+      "dia_fim_ciclo": 290,
+      "instrucoes": "Regue só quando o substrato estiver seco a 5 cm de profundidade, com metade da água de antes. Excesso de água agora apodrece o rizoma maduro.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar e cobrir os rizomas",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Espalhe 2 a 3 colheres de sopa de húmus de minhoca ou composto por vaso de 20 L, formando uma camada de 1 a 2 cm que cubra rizomas expostos, e regue em seguida. Complemente com 1 colher de chá de farinha de ossos a cada dois meses.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Vire as folhas e procure pontos amarelados com teia fina (ácaro), manchas marrons com borda escura (fungo) ou carocinhos brancos na base dos talos (cochonilha). Aperte a base: talo mole e escuro indica podridão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 50,
+      "titulo": "Já brotou?",
+      "mensagem": "A maioria dos rizomas brota até a 6ª semana. Se nada apareceu, pode ter apodrecido ou estar enterrado fundo demais.",
+      "acao_requerida": "Cavar com cuidado ao lado de um rizoma: se estiver firme, recobrir e esperar mais 2 semanas; se estiver mole e com cheiro ruim, replantar um pedaço novo"
+    },
+    {
+      "dia_disparo": 241,
+      "titulo": "Hora de regar menos",
+      "mensagem": "As folhas começam a amarelar: o rizoma está terminando de amadurecer e passa a precisar de pouca água.",
+      "acao_requerida": "Espaçar a rega para uma vez por semana e parar de adubar"
+    },
+    {
+      "dia_disparo": 280,
+      "titulo": "Hora de colher a cúrcuma",
+      "mensagem": "Com a maior parte das folhas secas, o rizoma atingiu a cor e o sabor máximos.",
+      "acao_requerida": "Cortar as folhas secas rente, virar o vaso sobre uma lona, soltar os rizomas, lavar e separar 2 ou 3 pedaços com gemas para replantar na primavera, guardados em local seco e escuro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam a partir da base e murcham mesmo com substrato úmido; talo mole e escuro rente ao substrato; rizoma aguado com cheiro ruim",
+      "prevencao_tratamento": "Substrato bem drenado, sem pratinho com água parada e rega só com o substrato seco. Plante só rizomas firmes. Remova a touceira afetada e não reaproveite o substrato"
+    },
+    {
+      "nome": "Mancha foliar (Colletotrichum capsici)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas ovais marrons com centro claro e borda escura nas folhas, que se juntam e secam a folha",
+      "prevencao_tratamento": "Regue no substrato, não nas folhas, e deixe espaço para ventilar. Corte as folhas manchadas; se espalhar, pulverize calda bordalesa a 1% a cada 10 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos na folha, aspecto desbotado e teia fina no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos ou marrons na base dos talos e no verso das folhas, com substância pegajosa",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, óleo mineral ou de neem a 0,5% semanalmente"
+    },
+    {
+      "nome": "Queimadura das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com bordas e pontas secas e marrons ou áreas esbranquiçadas depois de dias quentes",
+      "prevencao_tratamento": "Proteja do sol forte da tarde no verão e não deixe o substrato secar por completo. Folhas queimadas não se recuperam; corte-as se secarem mais da metade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger do sol da tarde",
+      "mensagem": "No auge do verão, o sol forte da tarde queima as folhas largas do açafrão e o vaso seca em poucas horas.",
+      "acao_requerida": "Deixar o vaso onde receba só sol da manhã e conferir a umidade do substrato todo fim de tarde"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Cuidado com a geada",
+      "mensagem": "Geada queima a parte aérea e frio úmido apodrece o rizoma no substrato molhado.",
+      "acao_requerida": "Se ainda não colheu, levar o vaso para local coberto e suspender a rega até colher"
+    }
+  ]
+}

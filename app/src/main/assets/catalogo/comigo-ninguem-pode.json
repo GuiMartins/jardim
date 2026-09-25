@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Comigo-ninguém-pode",
+    "nome_cientifico": "Dieffenbachia seguine",
+    "descricao": "Folhagem tropical de sub-bosque, com folhas largas manchadas de branco e creme, muito resistente dentro de casa e à meia-sombra. Toda a planta é tóxica: a seiva tem cristais de oxalato de cálcio que queimam boca e olhos, então mantenha longe de crianças e pets e use luvas ao manusear.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 25 a 30 cm de diâmetro e 25 cm de profundidade, com furos no fundo; se usar cachepô, esvazie a água acumulada depois de cada rega",
+    "volume_minimo_litros": 10,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "40% terra vegetal, 30% fibra de coco ou substrato para folhagens, 20% húmus de minhoca, 10% perlita ou casca de pinus fina; fofo, rico em matéria orgânica e que não empape",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa e estranha a luz mais fraca de casa. É normal amarelar e cair 1 ou 2 folhas de baixo. Não troque de vaso nem adube agora. A fase terminou quando surge uma folha nova, enrolada no centro, que abre sem manchas marrons."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "A planta aceitou o lugar e solta uma folha nova a cada 2 a 4 semanas na estação quente. Folhas novas menores e mais pálidas que as antigas, ou caule espichado e inclinado, indicam pouca luz: aproxime de uma janela clara, sem sol da tarde."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Cresce bem de setembro a março e quase para no inverno. Com os anos o caule se alonga e perde as folhas de baixo; quando ficar desengonçada, corte o caule a 10 a 15 cm do substrato na primavera, e ela rebrota da base. Os pedaços cortados enraízam em água ou substrato úmido. A floração (espata verde-clara) é rara dentro de casa e não exige cuidado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a comigo-ninguém-pode",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato ou cachepô depois de 15 minutos. Se ainda estiver úmido, não regue. No inverno o substrato leva cerca de 7 dias para secar; acima de 30 °C, confira a cada 3 dias. Aproveite a rega para girar o vaso um quarto de volta, para a planta crescer reta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_folhagem",
+      "titulo": "Adubar a folhagem",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo NPK 10-10-10 (ou fertilizante líquido para folhagens) na metade da dose do rótulo e regue com a solução o substrato já úmido, nunca seco. De maio a agosto, pule a adubação: a planta está quase parada e o sal acumula e queima as pontas das folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_limpeza_folhas",
+      "titulo": "Inspecionar e limpar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas, vire as folhas e olhe o verso e as axilas em busca de algodãozinho branco (cochonilha), teias finas ou pontinhos amarelados (ácaro) e manchas encharcadas no caule. Passe um pano úmido nas duas faces para tirar a poeira, que rouba luz. Corte rente ao caule as folhas de baixo que estiverem totalmente amarelas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, com luvas, tire a planta do vaso, solte as raízes enoveladas e retire as podres (moles e escuras). Replante num vaso 5 cm maior de diâmetro com substrato novo, no mesmo nível do caule de antes, e regue bem. Espere 30 dias para voltar a adubar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda em casa!",
+      "mensagem": "A planta acabou de chegar e vai estranhar a mudança de luz. Trocar de vaso agora aumenta o estresse; o vaso da loja aguenta os primeiros meses se tiver furos.",
+      "acao_requerida": "Conferir se o vaso tem furos no fundo e colocar a planta perto de uma janela clara, sem sol direto da tarde e longe do alcance de crianças e pets"
+    },
+    {
+      "dia_disparo": 10,
+      "titulo": "O lugar está bom?",
+      "mensagem": "Dez dias bastam para a planta mostrar se gostou do lugar. Manchas marrons secas no meio da folha são queimadura de sol; folhas caídas com o substrato úmido indicam corrente de ar frio ou ar-condicionado.",
+      "acao_requerida": "Olhar as folhas e, se houver queimadura ou folhas caídas, mudar a planta para um ponto com luz clara indireta e sem vento direto"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Hora de avaliar o vaso",
+      "mensagem": "Depois de 4 meses a planta já se firmou. Raízes saindo pelos furos ou substrato que seca em 1 ou 2 dias mostram que o vaso da loja ficou pequeno.",
+      "acao_requerida": "Conferir os furos do vaso e, se houver raízes saindo, passar para um vaso 5 cm maior com substrato novo (em setembro a novembro, se possível)"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Pythium, Erwinia)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole, escura e com cheiro ruim; folhas amarelam e murcham mesmo com o substrato úmido",
+      "prevencao_tratamento": "Regar só com os 3 cm de cima secos e nunca deixar água parada no cachepô. Se aparecer, corte a parte sadia do caule acima da podridão e enraíze-a em água; descarte a parte doente e o substrato"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e no verso; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com uma gota de detergente a cada 7 dias, 3 vezes, longe do sol"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto empoeirado; teias finas no verso, mais comum no inverno seco e perto de ar-condicionado",
+      "prevencao_tratamento": "Limpar as duas faces das folhas com pano úmido e aumentar a umidade do ar em volta; se persistir, óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Mancha foliar bacteriana (Xanthomonas)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pequenas encharcadas, com halo amarelo, que crescem e ficam marrons",
+      "prevencao_tratamento": "Não molhar as folhas ao regar e deixar a planta em local ventilado; cortar as folhas afetadas com tesoura limpa com álcool"
+    },
+    {
+      "nome": "Pontas e bordas marrons",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas secas e marrons, com o resto da folha verde",
+      "prevencao_tratamento": "Causado por ar seco, rega irregular ou excesso de adubo. Regar de forma constante, afastar do ar-condicionado e, a cada 6 meses, lavar o substrato passando bastante água pelo vaso para tirar o sal acumulado"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas grandes esbranquiçadas ou marrons e secas no meio das folhas do lado virado para a janela",
+      "prevencao_tratamento": "Tirar do sol direto da tarde; aceita no máximo 1 a 2 horas de sol fraco da manhã. As folhas queimadas não se recuperam, mas as novas nascem normais"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "Com o frio a planta quase para de crescer, bebe menos e sofre abaixo de 12 °C, soltando as folhas. Substrato encharcado no frio é a principal causa de podridão.",
+      "acao_requerida": "Espaçar as regas até o substrato secar 3 cm, suspender a adubação e afastar o vaso de janelas frias e correntes de ar à noite"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: hora de renovar",
+      "mensagem": "A planta volta a crescer e aguenta bem podas e trocas de vaso agora.",
+      "acao_requerida": "Retomar a adubação mensal e, se o caule estiver alto e pelado, cortá-lo a 10 a 15 cm do substrato com luvas, enraizando os pedaços em água para fazer novas mudas"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com o sol e o calor",
+      "mensagem": "No verão o substrato seca mais rápido e o sol que entra pela janela fica mais forte e queima as folhas.",
+      "acao_requerida": "Conferir o substrato a cada 3 dias e afastar o vaso de qualquer ponto que receba sol direto depois das 10h"
+    }
+  ]
+}

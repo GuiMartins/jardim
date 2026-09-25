@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Olho-de-boneca",
+    "nome_cientifico": "Dendrobium nobile",
+    "descricao": "Orquídea epífita do Himalaia, de pseudobulbos em forma de cana, que no fim do inverno se cobre de flores brancas e lilases com o centro escuro, lembrando um olho. Aguenta bem o clima do Centro-Sul, mas só floresce se passar por um inverno fresco e seco. Com água e adubo no inverno, ela solta mudinhas (keikis) em vez de flores.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro pequeno, de 12 a 15 cm de diâmetro, com furos no fundo e nas laterais. Vaso grande demais segura água e apodrece a raiz. Também pode ser amarrada num tronco ou numa placa de fibra de coco",
+    "volume_minimo_litros": 1,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "70% casca de pinus média (2 a 3 cm), 20% carvão vegetal em pedaços, 10% fibra de coco em cubos. Nada de terra nem de musgo compactado",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se acostuma com a nova luz e a nova umidade. Algumas folhas velhas da base podem amarelar e cair, e se ela chegou florida pode perder alguns botões. Não troque de vaso nem adube. A fase termina quando as folhas voltam a ficar firmes e aparece ponta verde nas raízes aéreas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Brotos novos saem da base das canas velhas e soltam raízes brancas de ponta verde. Na luz certa, as folhas ficam verde-claro amareladas. Folha verde-escura indica pouca luz. A planta está estabelecida quando um broto novo passa da metade da altura das canas maduras."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: de outubro a março as canas novas crescem, com rega e adubo frequentes. Em março e abril a cana engrossa e fecha com uma folha terminal. De maio a julho vem o descanso fresco e seco, e as folhas mais velhas podem cair. De agosto a outubro, os botões nascem nos nós das canas do ano anterior. Não corte canas sem folha enquanto estiverem verdes: elas florescem de novo e guardam reserva."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_orquidea",
+      "titulo": "Regar o olho-de-boneca",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm entre as cascas ou levante o vaso. Se o substrato estiver seco e o vaso leve, molhe tudo até escorrer pelos furos, de preferência pela manhã, sem deixar água parada no prato. Se ainda estiver úmido, não regue. De maio a agosto, regue só a cada 10 a 14 dias, ou quando as canas começarem a enrugar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_quinzenal",
+      "titulo": "Adubar a orquídea",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Regue antes com água pura. Depois molhe o substrato com adubo para orquídeas diluído a 0,5 g por litro: NPK 20-20-20 de outubro a fevereiro, 10-30-20 em março e abril. De maio a agosto não adube (é o descanso que garante a floração). Nesse período, marque como feito sem adubar.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar canas e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas, as axilas entre folha e cana e os brotos novos. Procure escamas brancas ou marrons, pontinhos amarelados com teia fina, lesmas junto ao vaso e manchas moles ou escuras na base das canas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "A casca de pinus se decompõe em uns 2 anos e passa a segurar água demais. Faça a troca de setembro a novembro, depois da floração, quando os brotos novos soltarem raízes de 1 a 2 cm. Se o lembrete cair fora dessa época, espere até ela. Tire a casca velha, corte com tesoura esterilizada as raízes ocas ou podres e replante no mesmo tamanho de vaso, ou 2 cm maior, com as canas velhas encostadas na borda. Espere 5 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Chegou! Escolha bem o lugar",
+      "mensagem": "O olho-de-boneca precisa de muita luz clara e de ar circulando. Não troque de vaso agora, mesmo que pareça apertado: mexer na raiz logo na chegada atrasa a adaptação.",
+      "acao_requerida": "Colocar a planta em varanda ou janela com sol da manhã até as 10h e claridade no resto do dia, longe de vento forte e de ar-condicionado"
+    },
+    {
+      "dia_disparo": 7,
+      "titulo": "Confira o substrato de origem",
+      "mensagem": "Muitas orquídeas chegam da loja com musgo compactado em volta da raiz, que fica encharcado e apodrece tudo.",
+      "acao_requerida": "Olhar pelos furos ou pela borda do vaso. Se houver musgo escuro e sempre molhado, trocar para casca de pinus agora mesmo, tirando o musgo com cuidado"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Pode começar a adubar",
+      "mensagem": "Depois de um mês de adaptação, a planta já consegue aproveitar o adubo nos brotos novos.",
+      "acao_requerida": "Seguir a tarefa de adubação quinzenal, respeitando a pausa de maio a agosto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e de cana (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Raízes marrons, moles e ocas que soltam a capa quando apertadas; base das canas escura e mole; folhas amarelas caindo em massa fora do inverno",
+      "prevencao_tratamento": "Regar só com o substrato seco, usar vaso pequeno de barro e casca de pinus, e nunca deixar água no prato. Se aparecer, tirar a planta do vaso, cortar as partes podres com tesoura esterilizada, passar canela em pó nos cortes e replantar em substrato novo, esperando 5 dias para regar"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos de aspecto algodoado no verso das folhas, nas axilas e sob a bainha seca das canas; folhas amarelando em manchas",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhados em álcool 70%, abrindo as bainhas secas onde elas se escondem. Em seguida, pulverizar óleo mineral ou de neem a 0,5% com uma gota de detergente, no fim da tarde, 3 vezes com intervalo de 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas prateadas ou salpicadas de pontinhos claros, teia fina no verso; aparece em tempo quente e seco",
+      "prevencao_tratamento": "Aumentar a umidade ao redor (bandeja com pedrisco molhado) e lavar o verso das folhas com jato suave. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Pontas de raízes novas e botões florais roídos; rastro brilhante no vaso",
+      "prevencao_tratamento": "Catar à noite com lanterna, manter o vaso suspenso ou afastado do chão e deixar uma armadilha de cerveja em tampinha perto do vaso"
+    },
+    {
+      "nome": "Keikis em vez de flores",
+      "tipo": "DISTURBIO",
+      "sintomas": "No fim do inverno, os nós das canas soltam mudinhas com folhas e raízes em vez de botões florais",
+      "prevencao_tratamento": "Não adubar de maio a agosto, espaçar bem a rega nesse período e deixar a planta sentir noites de 10 a 15 °C ao ar livre. Os keikis com 3 raízes de 5 cm podem ser destacados e plantados em vaso próprio"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou pardas e secas no meio das folhas voltadas para o sol, surgindo de um dia para o outro",
+      "prevencao_tratamento": "Dar sol direto só até as 10h, ou filtrado por sombrite 50%. Ao mudar de lugar, aumentar a luz aos poucos ao longo de 2 semanas. Folha manchada não se recupera, mas não precisa ser cortada"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir",
+      "prevencao_tratamento": "Não mudar a planta de lugar depois que os botões aparecem, evitar variação brusca de temperatura e ar-condicionado, e não deixar o substrato secar por completo quando os botões estiverem inchando"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Hora de amadurecer as canas",
+      "mensagem": "As canas novas estão terminando de crescer. Menos nitrogênio agora faz a cana engrossar e prepara as gemas para dar flor em vez de broto.",
+      "acao_requerida": "Trocar o adubo para NPK 10-30-20 (ou outro de floração) na mesma diluição de 0,5 g por litro"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Começa o descanso de inverno",
+      "mensagem": "O olho-de-boneca só floresce depois de umas 6 a 8 semanas de frio e seca. Com água e adubo nessa época, ele solta keikis em vez de flores.",
+      "acao_requerida": "Parar de adubar até setembro, espaçar a rega para a cada 10 a 14 dias e deixar a planta ao ar livre, num lugar claro onde as noites fiquem entre 10 e 15 °C"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Cuidado com a geada",
+      "mensagem": "O frio moderado induz a floração, mas abaixo de 5 °C e com geada as folhas e canas queimam.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar a planta para baixo de uma cobertura ou para perto da parede da casa, e devolvê-la ao lugar de sempre de manhã"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Botões chegando",
+      "mensagem": "Nesta época surgem nos nós das canas do ano passado pequenos inchaços. Os de flor são arredondados e achatados; os de keiki são pontudos e logo soltam folhinha e raiz.",
+      "acao_requerida": "Quando os botões passarem de 1 cm, voltar a regar a cada 5 a 7 dias sem encharcar, e não mudar mais a planta de lugar até o fim da floração"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Terminada a floração, os brotos novos da base vão formar as canas que darão flores no ano que vem.",
+      "acao_requerida": "Voltar a rega para a cada 3 dias e reiniciar a adubação quinzenal com NPK 20-20-20. Cortar só as hastes secas das flores, mantendo as canas"
+    }
+  ]
+}

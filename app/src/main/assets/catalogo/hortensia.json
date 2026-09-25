@@ -1,0 +1,203 @@
+{
+  "planta": {
+    "nome_comum": "Hortênsia",
+    "nome_cientifico": "Hydrangea macrophylla",
+    "descricao": "Arbusto perene de folhas largas e grandes buquês de flores azuis, rosas ou brancas da primavera ao verão, muito cultivado no Sul e nas serras do Sudeste. A cor depende do pH do substrato: ácido deixa as flores azuis, neutro a levemente alcalino as deixa rosas. Em vaso, pede rega farta e sol só pela manhã.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; evite vaso preto ao sol, que esquenta a raiz",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina, 10% areia grossa. Para flores azuis, mantenha o pH entre 5 e 5,5 (sem calcário); para rosas, entre 6 e 6,5, com 1 colher de sopa de calcário dolomítico por 10 L de substrato",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso e à nova luz. É normal murchar um pouco nas horas quentes e se recuperar à noite; se continua murcha de manhã cedo com o substrato úmido, a raiz está sofrendo. A fase termina quando surgem folhas novas nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a planta lança ramos novos. Comece a adubar. Ramos grossos e folhas verde-escuras indicam que ela está pronta para florir na próxima primavera."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação em agosto e setembro, botões florais em outubro, floração de outubro a fevereiro, flores secando no fim do verão, crescimento lento no outono e quase parada no inverno, quando se faz a poda. Ela floresce nas gemas dos ramos do ano anterior, então poda forte fora de época tira as flores."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a hortênsia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão e na floração, confira todo dia; no inverno, a cada 3 ou 4 dias. Regue no substrato, sem molhar as flores.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a hortênsia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De agosto a fevereiro: espalhe 1 colher de sopa de NPK 10-10-10 (ou 4 colheres de sopa de húmus) por vaso de 30 L, longe do caule, e regue em seguida. Para flores azuis, prefira adubo com pouco fósforo (ex.: 12-4-12). De março a julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure teias finas, pontinhos amarelos, insetos agrupados nos brotos, pó branco ou manchas escuras arredondadas. Retire folhas manchadas caídas no vaso.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato ou vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no inverno, depois da poda: tire o torrão, corte as raízes que dão voltas no fundo, retire cerca de um terço do substrato velho e replante no mesmo vaso com substrato novo, ou num vaso 10 cm mais largo. Deixe à sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Passe para o vaso definitivo",
+      "mensagem": "Mudas de hortênsia vêm em saquinhos ou vasos pequenos que secam em poucas horas no calor.",
+      "acao_requerida": "Plantar no vaso de 30 L na mesma altura do torrão, sem enterrar o caule, e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Adaptação concluída",
+      "mensagem": "A muda já firmou as raízes e pode receber adubo.",
+      "acao_requerida": "Conferir se há folhas novas nas pontas e fazer a primeira adubação leve"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas amarelando de baixo para cima, raízes escuras e moles com cheiro ruim",
+      "prevencao_tratamento": "Furos livres, camada de drenagem e pratinho sempre vazio. Se aparecer, tire do vaso, corte as raízes podres e replante em substrato novo, regando só quando os 3 cm de cima secarem"
+    },
+    {
+      "nome": "Oídio (Erysiphe polygoni)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado nas folhas e brotos, que depois ficam retorcidos e arroxeados",
+      "prevencao_tratamento": "Boa ventilação e rega no substrato, não nas folhas. Retire as folhas afetadas e pulverize bicarbonato de sódio (1 colher de chá por litro de água com gotas de detergente neutro) a cada 7 dias"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora hydrangeae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pequenas manchas circulares marrons ou arroxeadas com centro claro, primeiro nas folhas de baixo; folhas caem no fim do verão",
+      "prevencao_tratamento": "Não molhar as folhas, recolher as folhas caídas e espaçar os vasos. Em casos fortes, fungicida cúprico a cada 10 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, três aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; folhas novas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% ou sabão neutro (1 colher de sopa por litro) a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou cascas marrons presas aos ramos e ao verso das folhas; fumagina preta",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; em infestação maior, óleo mineral a 1% com neem a cada 10 dias"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes",
+      "prevencao_tratamento": "Substrato alcalino demais bloqueia o ferro. Acidifique com sulfato de alumínio ou borra de café e aplique quelato de ferro conforme a embalagem; evite água com cal e calcário em excesso"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrons secas e bordas torradas nas folhas viradas para o sol da tarde; flores queimadas",
+      "prevencao_tratamento": "Mude o vaso para um lugar com sol só até as 11h ou use tela de sombreamento de 50% no verão"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No inverno a hortênsia está quase parada. A poda agora renova a planta, mas as flores saem das gemas gordas dos ramos do ano passado: cortar demais tira a floração.",
+      "acao_requerida": "Cortar os ramos que floresceram logo acima do segundo par de gemas gordas a partir da ponta, retirar ramos secos, finos ou cruzados, e deixar intactos os ramos que não floresceram"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Quer flores azuis? Acidifique agora",
+      "mensagem": "A cor da próxima floração se define antes dos botões aparecerem. Sem alumínio disponível no substrato ácido, as flores saem rosas.",
+      "acao_requerida": "Regar com 1 colher de sopa de sulfato de alumínio dissolvida em 4 L de água a cada 15 dias até os botões mostrarem cor, sem calcário no substrato (flores brancas não mudam de cor)"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Verão: sol só de manhã e rega diária",
+      "mensagem": "Folhas grandes perdem muita água no calor, e o sol da tarde queima folhas e flores.",
+      "acao_requerida": "Deixar o vaso com sol só até as 11h e conferir o substrato todos os dias, regando até escorrer quando os 3 cm de cima estiverem secos"
+    },
+    {
+      "meses": [
+        2,
+        3
+      ],
+      "titulo": "Remover as flores secas",
+      "mensagem": "Flores passadas gastam energia e acumulam fungos.",
+      "acao_requerida": "Cortar cada buquê seco logo abaixo da flor, acima do primeiro par de folhas, sem encurtar o ramo"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Inverno chegando: menos água e sem adubo",
+      "mensagem": "A planta desacelera e pode perder parte das folhas; substrato encharcado no frio apodrece a raiz.",
+      "acao_requerida": "Suspender a adubação até agosto, regar só quando os 3 cm de cima secarem e proteger o vaso de geada colocando-o sob cobertura nas noites abaixo de 3 °C"
+    }
+  ]
+}

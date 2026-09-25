@@ -1,0 +1,201 @@
+{
+  "planta": {
+    "nome_comum": "Urucum",
+    "nome_cientifico": "Bixa orellana",
+    "descricao": "Arbusto nativo da Amazônia cujas sementes, envoltas por uma polpa vermelha, dão o colorau e um corante natural. Em vaso grande e com poda anual fica entre 1,5 e 2 m, com flores rosadas e cachos de cápsulas espinhosas vermelhas que enfeitam a planta. A muda começa a produzir entre 18 e 24 meses depois de plantada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo; comece com um de 30 L e passe para o definitivo no segundo ano",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou casca de arroz carbonizada, mais 1 colher de sopa de calcário dolomítico a cada 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma a raiz no vaso novo. Uma ou duas folhas velhas podem amarelar e cair. A adaptação terminou quando surgem brotos novos de cor bronze na ponta dos ramos."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 540,
+      "descricao": "Crescimento rápido na primavera e no verão, com folhas grandes em formato de coração, e quase parado no inverno. É a fase de formar a copa com podas de ponta para a planta ramificar baixo. Pode florescer pouco no primeiro verão."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 541,
+      "dia_fim": null,
+      "descricao": "Todo ano floresce da primavera ao verão (outubro a fevereiro) em cachos de flores rosadas ou brancas, que viram cápsulas espinhosas vermelhas. As cápsulas secam e ficam marrons entre maio e julho, quando se colhe. Depois da colheita vem a poda de inverno, e a brotação recomeça em setembro."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de urucum",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda não explorou o vaso e a muda murcha rápido no sol forte. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o urucum",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 50 L). No verão com calor, confira a cada 2 dias. De junho a agosto, espace para a cada 5 a 7 dias. Folhas murchas no fim da tarde que se recuperam à noite são normais; murchas de manhã pedem água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o urucum",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou esterco curtido mais 1 colher de sopa de farinha de ossos na borda do vaso, sem encostar no caule, e regue em seguida. Na fase adulta, troque a farinha de ossos por 1 colher de sopa de NPK 4-14-8 a partir de setembro, para a floração. Em junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure pó branco (oídio), insetos agrupados, pontos brancos parados nos ramos (cochonilha) ou folhas prateadas e pontilhadas (tripes e ácaros). Olhe também os cachos de cápsulas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No começo da primavera, tire a planta do vaso, corte 3 a 5 cm das raízes que circulam o torrão e troque um terço do substrato por mistura nova. Se ainda estiver no vaso de 30 L, passe para o de 50 L ou maior. Regue bem e deixe 1 semana à meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "O urucum não gosta de raiz exposta nem de ficar enterrado mais fundo que no saquinho.",
+      "acao_requerida": "Plantar com o colo na mesma altura do saquinho, firmar o substrato em volta e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de formação",
+      "mensagem": "Sem poda, o urucum sobe numa haste só e fica alto demais para o vaso. Cortar a ponta agora faz a planta ramificar baixo.",
+      "acao_requerida": "Se a muda passou de 60 cm, cortar a ponta do ramo principal logo acima de uma folha, a uns 50 cm do substrato"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Segunda poda de formação",
+      "mensagem": "Os ramos laterais que surgiram da primeira poda já devem estar compridos. Cortar as pontas deles fecha a copa e multiplica os pontos de floração.",
+      "acao_requerida": "Deixar 3 a 4 ramos bem distribuídos, tirar os que crescem para dentro e cortar a ponta dos que passaram de 40 cm"
+    },
+    {
+      "dia_disparo": 541,
+      "titulo": "Planta pronta para produzir",
+      "mensagem": "O urucum chegou à idade adulta. Na próxima primavera e no próximo verão deve florescer e formar os primeiros cachos de cápsulas.",
+      "acao_requerida": "Garantir pelo menos 6 horas de sol direto e passar a usar NPK 4-14-8 na adubação a partir de setembro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; base do caule escura e raízes marrons e moles com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos livres e não deixar água no pratinho. Se aparecer, tire a planta, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Oídio (Oidium bixae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado nas folhas novas e nos brotos, que depois se enrugam, secam e caem",
+      "prevencao_tratamento": "Deixar a copa arejada com a poda e não molhar as folhas no fim do dia. Pulverizar leite diluído (1 parte para 9 de água) ou bicarbonato de sódio (1 colher de chá por litro, com algumas gotas de detergente) a cada 7 dias"
+    },
+    {
+      "nome": "Cercosporiose (Cercospora bixae)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pardas arredondadas com borda escura nas folhas, que amarelam e caem, principalmente no verão chuvoso",
+      "prevencao_tratamento": "Retirar e descartar as folhas manchadas e as caídas no vaso. Se espalhar, pulverizar calda bordalesa a 1% a cada 10 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos ou carapaças brancas e marrons presos aos ramos e ao verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%. Em infestação maior, óleo mineral ou óleo de neem a 1% com detergente a cada 7 dias, no fim da tarde"
+    },
+    {
+      "nome": "Pulgão e tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos e folhas novas enrugados, com insetos pequenos agrupados (pulgão) ou folhas prateadas com pontinhos pretos (tripes); flores caem antes de abrir",
+      "prevencao_tratamento": "Jato de água nos brotos. Se persistir, óleo de neem a 0,5% ou sabão neutro (1 colher de sopa por litro) a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, bronzeadas e com teias finas no verso, principalmente no tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos. Aplicar óleo de neem a 1% a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam com aspecto queimado e caem depois de noites abaixo de 5 °C; ponteiros secam",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou sob beiral nas noites frias. Esperar a brotação de setembro para cortar só o que secou de verdade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Colheita do urucum",
+      "mensagem": "As cápsulas que ficaram marrons e começam a abrir estão com as sementes secas e prontas. Deixar muito tempo na planta com chuva faz a semente embolorar e perder a cor.",
+      "acao_requerida": "Cortar os cachos com cápsulas marrons, secar à sombra por 1 semana, abrir e guardar as sementes em pote de vidro fechado"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O urucum é tropical e sofre abaixo de 10 °C. Geada queima a copa, e substrato úmido no frio apodrece a raiz.",
+      "acao_requerida": "Em noites previstas abaixo de 8 °C, levar o vaso para perto de uma parede ou sob beiral e regar só pela manhã"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual",
+      "mensagem": "A colheita terminou e a planta está quase parada. O urucum floresce nos ramos novos, então a poda de agora define a produção do próximo verão.",
+      "acao_requerida": "Cortar os ramos que produziram a um terço do comprimento, tirar os secos e os que cruzam para dentro, e manter a altura em até 2 m"
+    }
+  ]
+}

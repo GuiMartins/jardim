@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Antúrio",
+    "nome_cientifico": "Anthurium andraeanum",
+    "descricao": "Planta tropical de sub-bosque, com folhas em coração e espatas brilhantes (vermelhas, rosa ou brancas) que duram até dois meses e reaparecem várias vezes por ano. Em casa, é quase sempre comprada já adulta e florida. Toda a planta tem oxalato de cálcio e é tóxica se mastigada: mantenha longe de crianças e pets.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 15 a 20 cm de diâmetro e de profundidade, vários furos no fundo e prato sem água acumulada. Prefira um vaso só 2 a 4 cm mais largo que o torrão, porque vaso grande demais mantém o substrato encharcado.",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "40% casca de pinus média, 30% fibra de coco em chips, 20% substrato para plantas com húmus, 10% carvão vegetal em pedaços; deve ser leve, aerado e escoar a água em segundos",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa, que é quente e úmida, e chega a um ambiente mais seco. É normal que uma ou duas folhas velhas amarelem e que as flores da compra percam o brilho. Deixe no vaso original, perto de uma janela clara, sem sol direto do meio-dia. Ela está adaptada quando aparece uma folha nova, enrolada, saindo do centro."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "As raízes aéreas engrossam e a planta solta folhas novas a cada 3 a 5 semanas. Cada folha nova costuma trazer um botão floral na axila. Se as folhas vierem pequenas e sem flor, falta luz: aproxime o vaso da janela ou dê 1 hora de sol da manhã."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Floresce várias vezes por ano, com mais força da primavera ao fim do verão, e fica mais lenta no inverno. Corte rente à base as espatas que ficaram verdes ou secas e as folhas amareladas, com tesoura limpa. Quando o caule sobe e expõe muitas raízes aéreas, cubra-as com fibra de coco ou replante mais fundo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o antúrio",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. Se ainda estiver úmido, não regue. No verão, em vaso de 2 L, costuma pedir água a cada 2 ou 3 dias; no inverno, a cada 5 a 7.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar o antúrio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g (meia colher de café) de adubo NPK 10-30-20 ou de adubo para orquídeas/floração em 1 L de água e regue o substrato já úmido, nunca seco. Suspenda de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e flores",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, as nervuras e a base dos pecíolos. Procure pontinhos brancos algodonosos ou escamas marrons (cochonilha), teias finas ou folhas pontilhadas de amarelo (ácaro), estrias prateadas nas espatas (tripes) e manchas encharcadas com borda amarela (bactéria).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, remova o substrato velho que se desfaz, corte as raízes moles ou pretas e replante em substrato novo, num vaso só 2 a 4 cm mais largo. Aproveite para dividir touceiras com mais de uma coroa. Regue e deixe 2 semanas sem adubo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar do antúrio",
+      "mensagem": "O antúrio queima com o sol forte e não floresce na sombra escura. O ideal é luz clara o dia todo e, no máximo, sol fraco da manhã.",
+      "acao_requerida": "Colocar o vaso a até 1 m de uma janela clara, longe de ar-condicionado, aquecedor e correntes de vento, e não trocar de vaso no primeiro mês"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Conferir se precisa de vaso novo",
+      "mensagem": "O antúrio costuma vir da floricultura num vaso plástico apertado, com substrato de estufa que retém água demais.",
+      "acao_requerida": "Tirar a planta do vaso: se as raízes dão voltas no fundo ou o substrato está compacto, replantar no substrato aerado recomendado, num vaso 2 a 4 cm mais largo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de baixo para cima e murchas mesmo com o substrato úmido; raízes marrons, moles e com cheiro ruim; base do caule escurecida",
+      "prevencao_tratamento": "Regue só com o substrato seco a 2 cm e nunca deixe água no prato. Se aparecer, tire a planta do vaso, corte todas as raízes podres, polvilhe canela em pó nos cortes e replante em substrato novo e aerado, regando pouco por 2 semanas"
+    },
+    {
+      "nome": "Cochonilha (farinhenta e de escama)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos ou escamas marrons grudadas no verso das folhas e na base dos pecíolos; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%. Em infestação maior, pulverize óleo de neem a 0,5% com uma gota de detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso; aparece com ar seco e calor",
+      "prevencao_tratamento": "Aumente a umidade do ar (bandeja com pedrinhas e água sob o vaso, sem encostar no fundo) e lave o verso das folhas com água. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Estrias prateadas ou marrons e deformação nas espatas e folhas novas; insetos minúsculos e alongados que fogem ao toque",
+      "prevencao_tratamento": "Corte as flores muito atacadas e pulverize óleo de neem a 0,5% a cada 5 dias; uma armadilha adesiva azul perto do vaso ajuda a monitorar"
+    },
+    {
+      "nome": "Crestamento bacteriano (Xanthomonas axonopodis pv. dieffenbachiae)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas nas bordas das folhas, que ficam marrons com um halo amarelo e avançam pelas nervuras",
+      "prevencao_tratamento": "Não molhe as folhas ao regar e mantenha o ar circulando. Corte as folhas afetadas com tesoura desinfetada com álcool e isole a planta; não existe cura caseira eficaz para a bactéria já espalhada"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas na espádice (o 'pendão' da flor) e nas folhas, com anéis concêntricos",
+      "prevencao_tratamento": "Remova flores e folhas manchadas, evite borrifar à noite e melhore a ventilação. Se espalhar, use fungicida cúprico conforme o rótulo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelo-esbranquiçadas ou marrons e secas no meio das folhas voltadas para a janela; espatas desbotadas",
+      "prevencao_tratamento": "Afaste o vaso do sol direto depois das 9h ou filtre a luz com cortina clara. As folhas queimadas não se recuperam; corte-as quando passarem da metade"
+    },
+    {
+      "nome": "Pontas e bordas secas por ar seco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas marrons e quebradiças, sem halo amarelo; folhas novas que rasgam ao abrir",
+      "prevencao_tratamento": "Afaste do ar-condicionado e do aquecedor, agrupe com outras plantas e use bandeja com pedrinhas e água. Excesso de adubo causa o mesmo sintoma: dissolva bem e lave o substrato com água abundante a cada 3 meses"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e nada de adubo",
+      "mensagem": "Com frio a planta cresce pouco, o substrato demora a secar e a raiz apodrece fácil. Abaixo de 15 °C ela sofre, e abaixo de 10 °C as folhas escurecem.",
+      "acao_requerida": "Regar só com o substrato seco a 3 cm, suspender a adubação e afastar o vaso de janelas frias à noite"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o crescimento",
+      "mensagem": "Os dias mais longos e quentes fazem o antúrio voltar a soltar folhas e botões. É a melhor época para replantar ou dividir.",
+      "acao_requerida": "Retomar a adubação mensal e, se as raízes estiverem saindo pelos furos ou por cima do vaso, replantar em substrato novo"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e ar seco",
+      "mensagem": "No calor o vaso seca rápido e o sol da janela fica mais forte. Com o ar-condicionado ligado, as pontas das folhas secam.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, afastar o vaso de sol direto depois das 9h e manter uma bandeja com pedrinhas e água sob o vaso"
+    }
+  ]
+}
