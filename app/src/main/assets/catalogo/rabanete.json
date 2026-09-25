@@ -1,0 +1,44 @@
+{
+  "planta": {
+    "nome_comum": "Rabanete",
+    "nome_cientifico": "Raphanus sativus",
+    "descricao": "Hortaliça de raiz de ciclo muito curto, ideal para iniciantes. Forma raízes vermelhas e picantes em cerca de um mês.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 35,
+    "meses_plantio": [3, 4, 5, 6, 7, 8, 9]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade e furos no fundo",
+    "volume_minimo_litros": 8,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "60% terra vegetal, 30% húmus de minhoca, 10% areia grossa; solto e sem torrões para a raiz engrossar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    { "fase_id": "semeadura_germinacao", "nome": "Semeadura e Germinação", "dia_inicio": 1, "dia_fim": 5, "descricao": "Semeie a 1 cm de profundidade, 2 sementes por cova a cada 5 cm. As plântulas surgem entre o 3º e o 5º dia." },
+    { "fase_id": "folhas_iniciais", "nome": "Folhas Iniciais", "dia_inicio": 6, "dia_fim": 14, "descricao": "Surgem as primeiras folhas verdadeiras, ásperas e recortadas." },
+    { "fase_id": "formacao_raiz", "nome": "Formação da Raiz", "dia_inicio": 15, "dia_fim": 27, "descricao": "A base do caule engrossa e fica avermelhada. Rega irregular nesta fase racha a raiz e a deixa oca." },
+    { "fase_id": "colheita", "nome": "Colheita", "dia_inicio": 28, "dia_fim": 35, "descricao": "O ombro da raiz aparece na superfície com 2 a 3 cm. Passado do ponto, o rabanete fica esponjoso e ardido." }
+  ],
+  "tarefas_agendadas": [
+    { "id": "rega_germinacao", "titulo": "Borrifar as sementes", "tipo": "REGA", "frequencia_dias": 1, "dia_inicio_ciclo": 1, "dia_fim_ciclo": 5, "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode formar crosta seca nem encharcar.", "critica": true },
+    { "id": "rega_padrao", "titulo": "Regar o rabanete", "tipo": "REGA", "frequencia_dias": 2, "dia_inicio_ciclo": 6, "dia_fim_ciclo": 35, "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia.", "critica": true },
+    { "id": "adubacao_cobertura", "titulo": "Adubação leve", "tipo": "ADUBACAO", "frequencia_dias": 10, "dia_inicio_ciclo": 12, "dia_fim_ciclo": 22, "instrucoes": "Espalhe 1 colher de sopa de húmus por vaso de 8 L sem encostar nas plantas e regue em seguida. Evite adubo rico em nitrogênio, que faz folha e não raiz.", "critica": false },
+    { "id": "inspecao_pragas", "titulo": "Inspecionar folhas", "tipo": "PRAGA_CHECK", "frequencia_dias": 3, "dia_inicio_ciclo": 6, "dia_fim_ciclo": 35, "instrucoes": "Vire as folhas e procure furos, pontos pretos ou insetos agrupados no verso.", "critica": false },
+    { "id": "colheita_rabanete", "titulo": "Colher rabanetes prontos", "tipo": "COLHEITA", "frequencia_dias": 2, "dia_inicio_ciclo": 28, "dia_fim_ciclo": 35, "instrucoes": "Puxe pelas folhas os rabanetes com 2 a 3 cm de diâmetro visíveis na superfície; deixe os menores para a próxima passada.", "critica": true }
+  ],
+  "alertas_fase": [
+    { "dia_disparo": 8, "titulo": "Hora do desbaste!", "mensagem": "As mudas estão competindo por espaço. Sem desbaste, as raízes não engrossam.", "acao_requerida": "Deixar só a muda mais vigorosa de cada cova, cortando as outras rente ao substrato com tesoura" },
+    { "dia_disparo": 28, "titulo": "Primeiros rabanetes prontos", "mensagem": "Algumas raízes já devem mostrar o ombro vermelho na superfície.", "acao_requerida": "Conferir o diâmetro e começar a colheita" }
+  ],
+  "pragas_comuns": [
+    { "nome": "Pulgão", "tipo": "PRAGA", "sintomas": "Colônias de insetos verdes ou pretos no verso das folhas; folhas enrugadas e pegajosas", "prevencao_tratamento": "Jato de água nas folhas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias" },
+    { "nome": "Vaquinha (Diabrotica speciosa)", "tipo": "PRAGA", "sintomas": "Furos redondos espalhados pelas folhas", "prevencao_tratamento": "Catar os besouros de manhã cedo e manter o vaso longe de hortaliças infestadas" },
+    { "nome": "Tombamento (Pythium, Rhizoctonia)", "tipo": "DOENCA", "sintomas": "Plântulas murcham e caem com o caule escurecido e fino rente ao substrato", "prevencao_tratamento": "Substrato novo ou peneirado, sem encharcar na germinação; retire as plântulas afetadas" }
+  ],
+  "eventos_sazonais": []
+}
