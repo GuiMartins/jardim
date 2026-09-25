@@ -4,8 +4,6 @@ import com.jardim.motor.agenda.Cronograma
 import com.jardim.motor.agenda.Origem
 import com.jardim.motor.agenda.RegistroAcao
 import com.jardim.motor.agenda.StatusAcao
-import com.jardim.motor.leitura.LeitorCultivo
-import com.jardim.motor.leitura.ResultadoLeitura
 import com.jardim.motor.modelo.PlantaCultivo
 import com.jardim.motor.modelo.TipoTarefa
 import java.time.LocalDate
@@ -195,15 +193,50 @@ class CronogramaTest {
         assertEquals(listOf("tarefa:rega", "tarefa:inspecao", "tarefa:poda"), c.pendenciasEm(dia(10)).map { it.chave })
     }
 
-    // --- cenário real ---
+    // --- cenário real: o girassol, JSON de referência do projeto ---
+
+    private val plantioGirassol = LocalDate.of(2026, 10, 1)
 
     @Test
-    fun `rabanete no dia 8 sem nada feito - regar, inspecionar e desbastar`() {
-        val rabanete = (LeitorCultivo.ler(arquivoDoCatalogo("rabanete.json").readText()) as ResultadoLeitura.Ok).cultivo
-        val hoje = cronograma(rabanete).pendenciasEm(dia(8))
-        // A rega da germinação (dias 1 a 5) já saiu da janela; a rega padrão
-        // venceu no dia 6 e é crítica, então vem primeiro.
-        assertEquals(listOf("tarefa:rega_padrao", "tarefa:inspecao_pragas", "alerta:0"), hoje.map { it.chave })
-        assertEquals(listOf(2, 2, 0), hoje.map { it.diasDeAtraso })
+    fun `girassol esquecido desde o plantio, no dia 14`() {
+        val hoje = Cronograma(girassol(), plantioGirassol, emptyList()).pendenciasEm(plantioGirassol.plusDays(13))
+        // A rega da germinação (dias 1 a 8) já saiu da janela. A rega da
+        // plântula não é crítica, então a ordem é só pelo atraso.
+        assertEquals(
+            listOf("tarefa:rega_plantula", "tarefa:inspecao_pragas", "alerta:0", "alerta:1"),
+            hoje.map { it.chave },
+        )
+        assertEquals(listOf(5, 5, 4, 0), hoje.map { it.diasDeAtraso })
+    }
+
+    @Test
+    fun `girassol cuidado em dia, do plantio à colheita`() {
+        val girassol = girassol()
+        val registros = mutableListOf<RegistroAcao>()
+        val itensPorDia = (1..105).map { d ->
+            val hoje = plantioGirassol.plusDays(d - 1L)
+            val pendencias = Cronograma(girassol, plantioGirassol, registros).pendenciasEm(hoje)
+            assertTrue(pendencias.all { it.diasDeAtraso == 0 }, "dia $d: $pendencias")
+            pendencias.mapTo(registros) { feito(it.chave, hoje) }
+            pendencias.size
+        }
+
+        val porChave = registros.groupingBy { it.chave }.eachCount()
+        assertEquals(8, porChave["tarefa:rega_germinacao"])
+        assertEquals(11, porChave["tarefa:rega_plantula"]) // dias 9, 11, ..., 29
+        assertEquals(60, porChave["tarefa:rega_crescimento_floracao"])
+        assertEquals(5, porChave["tarefa:rega_maturacao"]) // dias 91, 94, ..., 103
+        assertEquals(3, porChave["tarefa:adubacao_cobertura"]) // dias 20, 35, 50
+        assertEquals(3, porChave["tarefa:amarrar_tutor"]) // dias 32, 42, 52
+        assertEquals(29, porChave["tarefa:inspecao_pragas"]) // dias 9, 12, ..., 93
+        assertEquals(7, porChave.keys.count { it.startsWith("alerta:") })
+        // Plantado em 1º de outubro, está vivo em 1º de dezembro (dia 62) e em
+        // 1º de janeiro (dia 93); o ciclo termina em 13 de janeiro.
+        assertEquals(setOf("sazonal:0:2026-12", "sazonal:0:2027-01"), porChave.keys.filter { it.startsWith("sazonal:") }.toSet())
+        assertEquals(128, registros.size)
+
+        // O resumo diário do girassol nunca passa de 3 itens.
+        assertEquals(3, itensPorDia.max())
+        assertTrue(Cronograma(girassol, plantioGirassol, registros).cicloEncerradoEm(plantioGirassol.plusDays(105)))
     }
 }

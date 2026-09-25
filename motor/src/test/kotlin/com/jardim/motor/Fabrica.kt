@@ -2,6 +2,8 @@ package com.jardim.motor
 
 import com.jardim.motor.agenda.RegistroAcao
 import com.jardim.motor.agenda.StatusAcao
+import com.jardim.motor.leitura.LeitorCultivo
+import com.jardim.motor.leitura.ResultadoLeitura
 import com.jardim.motor.modelo.Alerta
 import com.jardim.motor.modelo.Dificuldade
 import com.jardim.motor.modelo.EventoSazonal
@@ -85,6 +87,13 @@ fun feito(chave: String, em: LocalDate, status: StatusAcao = StatusAcao.CONCLUID
 
 /** Arquivo do catálogo que vai no APK (app/src/main/assets/catalogo). */
 fun arquivoDoCatalogo(nome: String): File = File(diretorioDoCatalogo(), nome)
+
+/** Espécie do catálogo já lida e validada. */
+fun doCatalogo(nome: String): PlantaCultivo =
+    (LeitorCultivo.ler(arquivoDoCatalogo(nome).readText()) as ResultadoLeitura.Ok).cultivo
+
+/** O JSON de referência do projeto: testes de cenário real usam ele. */
+fun girassol(): PlantaCultivo = doCatalogo("girassol.json")
 
 fun diretorioDoCatalogo(): File = File(
     checkNotNull(System.getProperty("catalogo.dir")) { "rode pelo Gradle: ele passa o catalogo.dir" },

@@ -11,13 +11,15 @@ App Android **pessoal** (APK instalado direto, sem Play Store) de acompanhamento
 
 O formato é o da skill `planta-cultivo-json` (`~/.claude/skills/planta-cultivo-json/SKILL.md`). `ValidadorCultivo` é o port do `scripts/validar.py` da skill, com as mesmas mensagens: mudou uma regra lá, muda aqui também. O teste `todo JSON do catálogo do app é válido` valida todo o catálogo a cada `:motor:test`.
 
+O **girassol** (`catalogo/girassol.json`) é o JSON de referência do projeto, fornecido pelo usuário: os testes de cenário real, os exemplos e as decisões de tela e notificação partem dele.
+
 ## Regras de produto (decididas na etapa 1, em 2026-09-24)
 
 - Agenda calculada sob demanda (`Cronograma`). O banco guarda só o histórico (`RegistroAcao`), nunca ocorrências futuras.
 - Tarefa recorrente atrasada não acumula: uma pendência só, com o atraso crescendo. A próxima vence `frequencia_dias` depois do dia em que foi feita de verdade (pular conta como feita). Se a janela fecha, ela some.
 - Alerta único fica pendente até ser feito. Evento sazonal vale pelo mês (só se a planta já existia no dia 1 do mês).
 - Notificação: um resumo diário num horário escolhido pelo usuário, mais um lembrete à noite para tarefas críticas atrasadas.
-- Com 7 dias de atraso, o app pergunta se a planta ainda está viva.
+- Com 7 dias de atraso numa tarefa REGA (crítica ou não), o app pergunta se a planta ainda está viva (`devePerguntarSeEstaViva`). Nenhum outro atraso conta.
 - Catálogo embutido em `assets/`. Importar JSON e baixar de servidor ficam para depois.
 
 ## Comandos

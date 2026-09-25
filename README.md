@@ -44,8 +44,17 @@ não são problema, e errar a data do plantio se corrige mudando um campo.
   com 7 dias de atraso, não quatro regas empilhadas.
 - **Tarefa crítica** (pular uma vez já causa dano) ganha um lembrete extra à
   noite.
-- Depois de **7 dias de atraso**, o app pergunta se a planta ainda está viva
-  em vez de continuar cobrando.
+- Depois de **7 dias sem uma rega** (crítica ou não), o app pergunta se a
+  planta ainda está viva em vez de continuar cobrando. Inspeção, alerta ou
+  evento atrasados não contam: indicam só um aviso não lido.
+
+## Planta de referência
+
+O [girassol](app/src/main/assets/catalogo/girassol.json) é o JSON que serve de
+referência para o projeto: anual de 105 dias, 6 fases, 7 tarefas (4 delas de
+rega), 7 alertas, 9 pragas e 2 eventos sazonais. Cuidado em dia do plantio à
+colheita, ele gera **128 ações, nunca mais de 3 no mesmo dia**. Um teste
+simula o ciclo inteiro para garantir isso.
 
 ## Estrutura
 
