@@ -185,6 +185,11 @@ def main():
         return 0
 
     claude = achar_claude()
+    if sys.platform == "win32":
+        # A rodada inteira leva horas: pede ao Windows para não suspender enquanto
+        # este processo viver (ES_CONTINUOUS | ES_SYSTEM_REQUIRED). Tela pode apagar.
+        import ctypes
+        ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000001)
     print(f"Gerando {len(lote)} planta(s) com {opcoes.modelo}, esforço {opcoes.esforco}, "
           f"{opcoes.paralelo} em paralelo ({claude})")
     inicio = time.monotonic()
