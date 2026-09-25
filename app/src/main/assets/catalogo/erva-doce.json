@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Erva-doce",
+    "nome_cientifico": "Foeniculum vulgare",
+    "descricao": "Aromática da família da cenoura, com folhas finas como fios e sementes adocicadas usadas em chás, pães e temperos. Na natureza é perene de vida curta, mas em vaso costuma perder o vigor depois de soltar as sementes, por isso aqui é cultivada como ANUAL, da semente até a colheita das sementes. Esta ficha é da erva-doce de folha e semente, não do funcho de bulbo (var. azoricum).",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 180,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo com pelo menos 30 cm de profundidade e 25 cm de diâmetro, com furos no fundo; a raiz é pivotante e não gosta de ser mudada, então semeie direto no vaso definitivo",
+    "volume_minimo_litros": 12,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa; solto e bem drenado, pois a raiz apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Semeie 3 a 4 sementes a 1 cm de profundidade no centro do vaso. As plântulas surgem entre o 7º e o 14º dia, com duas folhas compridas e estreitas, parecidas com capim."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "Aparecem as primeiras folhas verdadeiras, finas e plumosas, com o cheiro típico de anis ao esfregar. A fase termina quando a planta passa de 10 cm e forma um tufo."
+    },
+    {
+      "fase_id": "crescimento_folhagem",
+      "nome": "Crescimento da Folhagem",
+      "dia_inicio": 36,
+      "dia_fim": 110,
+      "descricao": "A planta forma uma touceira de folhas plumosas de 40 a 60 cm, e a base dos talos engrossa. A partir do dia 60 as folhas já podem ser colhidas. A fase termina quando surge um talo central grosso e oco que sobe acima das folhas."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 111,
+      "dia_fim": 145,
+      "descricao": "A haste floral pode passar de 1 m e abre umbelas amarelas que atraem abelhas e joaninhas. As folhas ficam mais escassas e duras. Com calor a floração vem antes; no outono e inverno, depois."
+    },
+    {
+      "fase_id": "formacao_sementes",
+      "nome": "Formação das Sementes",
+      "dia_inicio": 146,
+      "dia_fim": 180,
+      "descricao": "As flores dão lugar a sementes verdes e estriadas, que passam a verde-acinzentado e depois a marrom-claro. Depois de soltar as sementes, a planta em vaso costuma secar da base para cima: é o fim do ciclo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode secar nem formar crosta até as plântulas aparecerem, mas também não pode empoçar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a erva-doce",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. Se ainda estiver úmido, espere. No inverno a rega costuma cair para a cada 3 ou 4 dias; acima de 30 °C, confira todo dia.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a erva-doce",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca na superfície de um vaso de 12 L, sem encostar nos talos, e regue em seguida. Evite excesso de nitrogênio, que deixa as folhas moles e sem aroma.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e talos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Abra o tufo de folhas e olhe a base dos talos e as pontas novas. Procure colônias de pulgões, lagartas listradas de verde, preto e amarelo e pó branco nas folhas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de erva-doce",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Corte com tesoura os ramos externos rente à base, retirando no máximo um terço da folhagem por vez. Deixe o centro intacto para a planta continuar crescendo.",
+      "critica": false
+    },
+    {
+      "id": "colheita_sementes",
+      "titulo": "Colher as umbelas maduras",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 150,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Corte as umbelas cujas sementes estão verde-acinzentadas a marrom-claro e se soltam com um leve toque. Pendure-as de cabeça para baixo dentro de um saco de papel, em local seco e à sombra, por 1 a 2 semanas. Deixe as umbelas ainda verdes para a próxima passada.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Várias plântulas no mesmo vaso disputam espaço e não formam uma touceira forte.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa e cortar as outras rente ao substrato com tesoura, sem arrancar, para não mexer na raiz da que fica"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Folhas prontas para colher",
+      "mensagem": "A touceira já passou de 30 cm e aguenta os primeiros cortes.",
+      "acao_requerida": "Fazer a primeira colheita dos ramos externos, tirando no máximo um terço da folhagem"
+    },
+    {
+      "dia_disparo": 105,
+      "titulo": "Vem aí a haste floral",
+      "mensagem": "A haste da erva-doce passa de 1 m e, em vaso, tomba com vento ou com o peso das umbelas.",
+      "acao_requerida": "Enterrar um tutor de 1,2 m ao lado da base, a 5 cm do talo, e amarrar a haste em forma de 8 conforme ela crescer"
+    },
+    {
+      "dia_disparo": 145,
+      "titulo": "Sementes em formação",
+      "mensagem": "As umbelas estão formando sementes. Se passarem do ponto, secam e caem no chão.",
+      "acao_requerida": "Reduzir um pouco a rega e separar sacos de papel para a colheita das sementes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes, pretos ou acinzentados nas pontas novas, nos talos e nas umbelas; folhas retorcidas e pegajosas, às vezes com formigas em volta",
+      "prevencao_tratamento": "Jato de água forte nas colônias; se persistir, calda de sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias. Não aplique nas flores abertas, para poupar as abelhas"
+    },
+    {
+      "nome": "Lagarta de borboleta (Papilio spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas listradas de verde, preto e amarelo que devoram as folhas plumosas até sobrar só o talo; soltam antenas alaranjadas e cheiro forte quando tocadas",
+      "prevencao_tratamento": "Catar à mão e levar para uma planta da mesma família (salsa, cenoura) fora do vaso, ou eliminar se a infestação for grande. Bacillus thuringiensis (Bt) resolve casos maiores"
+    },
+    {
+      "nome": "Podridão da raiz e do colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido; a base do talo escurece e amolece, e a raiz fica marrom com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, usar vaso com furos e esvaziar o prato. Planta com o colo apodrecido raramente se recupera: descarte e troque o substrato antes de semear de novo"
+    },
+    {
+      "nome": "Oídio (Erysiphe heraclei)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado nas folhas e nos talos, que depois amarelam e secam; mais comum em tempo seco com noites úmidas",
+      "prevencao_tratamento": "Deixar o vaso em local arejado e regar o substrato, não as folhas. Retirar os ramos atacados e pulverizar leite diluído a 10% em água ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Pendoamento precoce",
+      "tipo": "DISTURBIO",
+      "sintomas": "A haste floral surge cedo, antes de a touceira se formar, e as folhas ficam poucas e duras",
+      "prevencao_tratamento": "É disparado por calor, falta de água ou raiz perturbada. Semeie direto no vaso definitivo, sem transplantar, e mantenha a rega regular. Se quiser prolongar a colheita de folhas, corte a haste floral assim que ela aparecer"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor adianta a floração",
+      "mensagem": "Com dias longos e quentes a erva-doce tende a florescer antes do previsto, e o vaso seca bem mais rápido.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia e, se quiser mais folhas do que sementes, cortar as hastes florais assim que surgirem"
+    }
+  ]
+}

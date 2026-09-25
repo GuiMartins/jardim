@@ -1,0 +1,194 @@
+{
+  "planta": {
+    "nome_comum": "Taioba",
+    "nome_cientifico": "Xanthosoma sagittifolium",
+    "descricao": "Hortaliça não convencional (PANC) de folhas grandes em forma de seta, muito nutritivas, que se comem refogadas como couve. Crua, a folha irrita a boca por causa do oxalato de cálcio, então precisa sempre ser cozida. A taioba verdadeira tem o pecíolo preso na borda da folha, no recorte em V, e uma nervura contínua contornando toda a margem; a taioba-brava e o tinhorão, que são tóxicos, têm o pecíolo preso no meio da folha ou nervuras diferentes.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e fundo, com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; uma planta por vaso",
+    "volume_minimo_litros": 35,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou esterco curtido, 20% húmus de minhoca, 10% areia grossa ou casca de arroz carbonizada; rico e úmido, mas sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "brotacao",
+      "nome": "Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Enterre o rizoma (ou o rebento com um pedaço de rizoma) a 5 a 8 cm de profundidade, com a gema voltada para cima. O primeiro broto, uma folha enrolada como um charuto, costuma surgir entre o 15º e o 30º dia. Sem folhas, a planta quase não gasta água: substrato encharcado nesta fase apodrece o rizoma."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 90,
+      "descricao": "Surgem folhas novas a cada 1 a 2 semanas, cada uma maior que a anterior. A fase termina quando a planta tem 5 ou mais folhas abertas, com limbo de pelo menos 25 cm. Não colha antes disso: as folhas é que alimentam o rizoma."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Touceira com folhas de 40 a 70 cm, que rende colheitas de folhas jovens da primavera ao outono. Com o tempo, o rizoma lança rebentos laterais, que podem virar mudas novas. No inverno, com frio abaixo de 12 °C, a planta desacelera e algumas folhas amarelam e secam; ela volta a brotar em setembro. Floresce pouco em vaso, com uma espata branca-creme que pode ser cortada para poupar energia."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar o rizoma plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até umedecer por igual, sem deixar água parada no pratinho. Enquanto não houver folha aberta, o substrato deve ficar só úmido, nunca encharcado.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a taioba",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, acima de 30 °C, confira todo dia; no inverno, espace para a cada 4 a 5 dias. Folhas grandes murchas no fim da tarde de calor são normais, mas murcha já de manhã indica falta de água.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a taioba",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus de minhoca ou 1 punhado de esterco de galinha curtido por vaso de 35 L, a 5 cm dos pecíolos, misture de leve na superfície e regue. Nos meses de junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teia fina no verso (ácaro), bolinhas brancas ou marrons presas nas nervuras (cochonilha) e trilhas brilhantes ou furos irregulares (lesma). Aperte a base dos pecíolos: se estiver mole e com cheiro ruim, é início de podridão.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de taioba",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com faca, rente à base do pecíolo, 1 ou 2 folhas jovens recém-abertas, de verde uniforme e ainda macias. Deixe sempre pelo menos 4 folhas adultas na planta e nunca tire mais de um terço delas. Cozinhe sempre antes de comer: crua, a folha irrita a boca e a garganta.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro ou outubro, tire a planta do vaso, separe com faca limpa os rebentos laterais que tenham rizoma próprio e ao menos 2 folhas, e replante a planta-mãe em substrato novo. Os rebentos viram mudas em outros vasos. Use luvas: a seiva irrita a pele.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 35,
+      "titulo": "O broto já apareceu?",
+      "mensagem": "A taioba costuma brotar entre 15 e 30 dias. Se nada saiu até agora, o rizoma pode ter apodrecido.",
+      "acao_requerida": "Afastar o substrato com cuidado e apertar o rizoma: se estiver firme, reduzir a rega e esperar mais 2 semanas; se estiver mole e escuro, descartar e plantar outro"
+    },
+    {
+      "dia_disparo": 91,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "Com 5 ou mais folhas abertas, a taioba já aguenta perder uma folha jovem sem se enfraquecer.",
+      "acao_requerida": "Confirmar que a planta tem pelo menos 5 folhas grandes e colher 1 folha jovem recém-aberta"
+    },
+    {
+      "dia_disparo": 240,
+      "titulo": "Rebentos laterais",
+      "mensagem": "Por volta dos 8 meses, o rizoma começa a lançar brotos ao redor da planta-mãe. Muitos rebentos no mesmo vaso disputam espaço e deixam as folhas menores.",
+      "acao_requerida": "Contar os brotos laterais; se houver mais de 2, cortar os excedentes rente ao substrato ou separá-los com um pedaço de rizoma para plantar em outro vaso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; base dos pecíolos e rizoma moles, escuros e com cheiro azedo",
+      "prevencao_tratamento": "Vaso com furos, camada de drenagem e pratinho sempre vazio; menos água no inverno e antes de brotar. Na planta afetada, retire o rizoma, corte a parte podre até o tecido branco e firme, deixe secar 1 dia à sombra e replante em substrato novo"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que viram manchas bronzeadas; teia fina no verso, sobretudo em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; se a infestação avançar, óleo de neem a 0,5% no fim da tarde a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodoadas ou marrons presas nas nervuras e nos pecíolos; folhas pegajosas e às vezes com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em água com sabão neutro; em ataques maiores, óleo de neem a 0,5% com 1 gota de detergente por litro, a cada 7 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Furos irregulares nas folhas novas e trilhas brilhantes de muco, com danos que aparecem de manhã",
+      "prevencao_tratamento": "Cate os bichos à noite com lanterna; faça um anel de casca de ovo moída ou borra de café em volta dos pecíolos e evite folhas e restos apodrecendo sobre o substrato"
+    },
+    {
+      "nome": "Queima das bordas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas secas, marrons e quebradiças, ou manchas esbranquiçadas no meio da folha",
+      "prevencao_tratamento": "É sol forte de meio-dia ou falta de água em dia quente. Mude o vaso para um lugar com sol só de manhã ou luz filtrada e não deixe o substrato secar por completo no verão"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: taioba em repouso",
+      "mensagem": "Com o frio, a taioba quase para de crescer, e algumas folhas amarelam e secam. É normal, mas a rega de verão agora apodrece o rizoma.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 4 cm de profundidade, suspender a adubação e, em noites abaixo de 8 °C, levar o vaso para perto de uma parede ou para dentro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomada da brotação",
+      "mensagem": "Com o calor voltando, a taioba começa a lançar folhas novas. É o melhor momento para limpar a planta e reforçar a nutrição.",
+      "acao_requerida": "Cortar rente à base as folhas secas do inverno, retomar a rega normal e fazer uma adubação com 300 g de húmus por vaso"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: mais água e menos sol",
+      "mensagem": "No calor, as folhas grandes perdem muita água e queimam com o sol forte da tarde.",
+      "acao_requerida": "Conferir o substrato todos os dias e manter o vaso protegido do sol entre 11h e 16h"
+    }
+  ]
+}

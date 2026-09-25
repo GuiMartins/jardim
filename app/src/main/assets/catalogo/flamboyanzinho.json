@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Flamboyanzinho",
+    "nome_cientifico": "Caesalpinia pulcherrima",
+    "descricao": "Arbusto tropical de folhas miúdas e cachos de flores vermelhas e amarelas (há formas só amarelas), que floresce da primavera ao outono e atrai beija-flores. Aguenta seca e calor, e em vaso grande forma um arbusto de 1,5 a 2 m. As sementes e as vagens são tóxicas se ingeridas, então vale cuidado com crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa lavada, 15% húmus de minhoca, 10% casca de pinus fina ou perlita; precisa drenar rápido, porque a raiz apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo e ao sol. É normal perder algumas folhinhas na primeira semana. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e os ramos crescem rápido. As primeiras flores podem surgir já nesta fase, se for primavera ou verão. Você sabe que ela se estabeleceu quando aguenta um dia quente sem murchar ao meio-dia."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota com força em setembro, floresce em cachos de outubro a abril e forma vagens achatadas que secam e ficam marrons. No inverno o crescimento para e, com frio abaixo de 10 °C, ela pode perder boa parte das folhas, o que é normal. A poda no fim do inverno mantém o arbusto compacto e cheio de flores."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o flamboyanzinho",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Com a raiz ainda restrita ao torrão da muda, secar por completo nesta fase mata a planta.",
+      "critica": true
+    },
+    {
+      "id": "rega_estabelecida",
+      "titulo": "Regar o flamboyanzinho",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão acima de 32 °C, confira a cada 2 ou 3 dias; de junho a agosto, espace para a cada 7 a 10 dias. Nunca deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o flamboyanzinho",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 xícara (200 g) de húmus de minhoca mais 1 colher de sopa de NPK 4-14-8 na superfície, longe do caule, e regue em seguida. O fósforo alto favorece as flores; evite adubo rico em nitrogênio, que faz muita folha e pouca flor. De junho a agosto, use metade da dose.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e as pontas dos brotos novos procurando cochonilhas brancas, pulgões agrupados ou folhas roídas por lagartas. Confira também se a base do caule está firme e sem manchas escuras.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro: tire a planta do vaso, raspe cerca de um terço do torrão velho, corte raízes enroladas ou escuras e replante com substrato novo, num vaso 10 cm maior se as raízes estiverem saindo pelos furos. Regue bem e deixe à meia-sombra por 5 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "Se a muda veio em saquinho ou vaso pequeno, a raiz precisa de espaço logo para crescer antes do inverno.",
+      "acao_requerida": "Transplantar a muda para o vaso de 40 L, deixando o colo do caule na mesma altura em que estava, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Levar ao sol pleno",
+      "mensagem": "Depois de duas semanas a muda já aguenta o sol forte o dia todo, e sem ele quase não floresce.",
+      "acao_requerida": "Mover o vaso para o ponto com mais horas de sol direto, de preferência voltado para norte"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Formar a copa",
+      "mensagem": "A planta já ramificou. Uma poda leve das pontas agora faz o arbusto engrossar em vez de crescer em uma vara só.",
+      "acao_requerida": "Cortar os 5 cm da ponta de cada ramo principal, logo acima de uma folha"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escura e mole; cheiro ruim no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, esvaziar o pratinho e usar substrato com areia. Se aparecer, tire do vaso, corte as raízes escuras e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha (farinhenta e de carapaça)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodonosos ou escamas marrons nos ramos e no verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e nos cachos de flores; brotos retorcidos",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos roídos ou ramos inteiros sem folhas de um dia para o outro; bolinhas de fezes escuras no substrato",
+      "prevencao_tratamento": "Catar as lagartas à mão; em ataque forte, aplicar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Queda de folhas por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "No inverno, folhas amarelam e caem em massa, mas os ramos continuam verdes por dentro ao raspar com a unha",
+      "prevencao_tratamento": "É normal abaixo de 10 °C. Reduza a rega e não adube até a brotação; em geada, cubra ou leve para perto de uma parede. Ramos que ficarem secos e marrons por dentro são podados em agosto"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "A planta está quase parada e pode perder folhas. Rega em excesso agora apodrece a raiz, e geada queima os ramos.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (a cada 7 a 10 dias) e, em noites com previsão abaixo de 5 °C, cobrir com tecido ou levar o vaso para junto de uma parede"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "Podar no fim do inverno, antes da brotação, estimula ramos novos, e é neles que as flores saem.",
+      "acao_requerida": "Cortar ramos secos e cruzados rente à base e encurtar os demais em um terço a metade, com tesoura limpa e corte logo acima de uma gema"
+    },
+    {
+      "meses": [
+        1,
+        3
+      ],
+      "titulo": "Tirar as vagens",
+      "mensagem": "Vagens em formação gastam energia que iria para novos cachos de flores. As sementes são tóxicas se engolidas.",
+      "acao_requerida": "Cortar os cachos que já perderam as flores e as vagens formadas, rente ao ramo, e descartá-las longe de crianças e animais"
+    }
+  ]
+}

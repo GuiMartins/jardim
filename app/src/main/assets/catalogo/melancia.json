@@ -1,0 +1,275 @@
+{
+  "planta": {
+    "nome_comum": "Melancia",
+    "nome_cientifico": "Citrullus lanatus (variedades mini, como 'Sugar Baby' ou 'Mini Lady')",
+    "descricao": "Trepadeira rasteira de verão que dá frutos doces e aguados. Em vaso só as variedades mini dão certo, com frutos de 1 a 4 kg, e é para elas que este cronograma foi montado. Precisa de muito sol, calor e polinização, que na varanda costuma ser feita à mão.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 95,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou caixa com pelo menos 40 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo, e uma treliça ou tela de 1,5 m ao lado para as ramas subirem",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% fibra de coco; adicione 1 xícara de farinha de ossos e 2 colheres de sopa de calcário por vaso de 40 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 8,
+      "descricao": "Semeie 3 sementes a 2 cm de profundidade no centro do vaso. Com o substrato acima de 25 °C, as plântulas surgem entre o 4º e o 8º dia. Abaixo de 18 °C a semente apodrece antes de germinar."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 9,
+      "dia_fim": 25,
+      "descricao": "Aparecem as folhas verdadeiras, recortadas em lóbulos. A fase termina quando a planta tem 5 a 6 folhas e começa a lançar a primeira rama."
+    },
+    {
+      "fase_id": "crescimento_ramas",
+      "nome": "Crescimento das Ramas",
+      "dia_inicio": 26,
+      "dia_fim": 40,
+      "descricao": "As ramas crescem vários centímetros por dia e soltam gavinhas. Conduza-as para a treliça. As primeiras flores que aparecem são masculinas, com haste fina, e caem sem dar fruto: é normal."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração e Polinização",
+      "dia_inicio": 41,
+      "dia_fim": 55,
+      "descricao": "Surgem as flores femininas, com um mini fruto listrado logo abaixo das pétalas. Cada uma abre só numa manhã. Se foi polinizada, o mini fruto engorda em 3 a 5 dias; se não foi, amarela e cai."
+    },
+    {
+      "fase_id": "frutificacao",
+      "nome": "Crescimento dos Frutos",
+      "dia_inicio": 56,
+      "dia_fim": 85,
+      "descricao": "Os frutos crescem depressa nas primeiras 3 semanas e depois param de aumentar e começam a acumular açúcar. Nesta fase a planta bebe muito: um dia de vaso seco no calor derruba os frutos novos ou racha os grandes."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Maturação e Colheita",
+      "dia_inicio": 86,
+      "dia_fim": 95,
+      "descricao": "O fruto está pronto quando a gavinha mais próxima dele seca por inteiro, a mancha de apoio passa de branca a amarelo-creme e a batida com o dedo soa oca. As ramas começam a amarelar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Manter as sementes úmidas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 8,
+      "instrucoes": "Regue de manhã com regador de bico fino até umedecer os primeiros 3 cm do substrato. A superfície não pode secar nem virar lama: encharcada, a semente apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar a melancia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 40,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar na base, sem molhar as folhas, até escorrer pelos furos. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_frutificacao",
+      "titulo": "Regar a melancia com frutos",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 41,
+      "dia_fim_ciclo": 85,
+      "instrucoes": "Pela manhã, enfie o dedo 3 cm no substrato; se estiver seco, regue na base até escorrer pelos furos (num vaso de 40 L, costuma ir de 4 a 6 L no verão). Mantenha a umidade constante: seca seguida de encharcamento racha os frutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Rega reduzida na maturação",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 86,
+      "dia_fim_ciclo": 95,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue só se estiver seco nessa profundidade, com metade do volume de antes. Menos água concentra o açúcar; só não deixe as folhas murcharem.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a melancia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Até o dia 40, espalhe 1 xícara de húmus de minhoca e 1 colher de sopa de torta de mamona em volta do caule, sem encostar nele. Depois, troque por 1 colher de sopa de cinza de madeira e 1 de farinha de ossos, que têm potássio e fósforo para os frutos. Regue em seguida.",
+      "critica": false
+    },
+    {
+      "id": "conducao_ramas",
+      "titulo": "Conduzir as ramas na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 26,
+      "dia_fim_ciclo": 80,
+      "instrucoes": "Passe as pontas novas das ramas pela treliça e prenda com barbante folgado, em oito, a cada 20 cm. Não force a rama a dobrar: ela quebra fácil.",
+      "critica": false
+    },
+    {
+      "id": "poda_brotacoes",
+      "titulo": "Retirar brotações em excesso",
+      "tipo": "PODA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Deixe a rama principal e no máximo 2 ramas laterais fortes; corte as outras brotações rente à rama com tesoura limpa. Depois que 2 a 3 frutos pegarem, corte a ponta das ramas duas folhas depois do último fruto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Vire as folhas e procure pulgões, mosca-branca ou teia fina com pontinhos (ácaro). Veja se há pó branco em cima das folhas (oídio), manchas angulosas amarelas (míldio) ou furos nos frutos (broca).",
+      "critica": false
+    },
+    {
+      "id": "colheita_melancia",
+      "titulo": "Conferir melancias maduras",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 86,
+      "dia_fim_ciclo": 95,
+      "instrucoes": "Colha o fruto em que a gavinha junto do cabinho secou, a mancha de apoio ficou amarelo-creme e a batida soa oca. Corte o cabinho com tesoura, deixando 3 cm. Os outros ficam para a próxima passada.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Num vaso de 40 L cabe uma única melancia. Mudas a mais dividem água e nutrientes e nenhuma produz bem.",
+      "acao_requerida": "Deixar só a muda mais vigorosa e cortar as outras rente ao substrato com tesoura, sem puxar"
+    },
+    {
+      "dia_disparo": 24,
+      "titulo": "Instalar a treliça",
+      "mensagem": "A primeira rama está para sair. Em vaso, subir na treliça economiza espaço e deixa os frutos mais limpos e sem podridão.",
+      "acao_requerida": "Firmar uma treliça ou tela de 1,5 m de altura junto do vaso, bem presa para aguentar o peso dos frutos"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Chegaram as flores femininas",
+      "mensagem": "Na varanda quase não há abelhas, e a flor feminina fica aberta só uma manhã. Sem polinização, o mini fruto amarela e cai.",
+      "acao_requerida": "Toda manhã, até as 10 h, colher uma flor masculina aberta, tirar as pétalas e encostar o pólen no centro de cada flor feminina aberta (a que tem o mini fruto embaixo)"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Apoiar e limitar os frutos",
+      "mensagem": "Os frutos já pesam e podem arrancar a rama da treliça. A planta num vaso só consegue encher 2 ou 3 frutos.",
+      "acao_requerida": "Deixar os 2 ou 3 frutos mais bem formados, retirando os outros, e apoiar cada um numa rede ou pano amarrado à treliça, como uma rede de dormir"
+    },
+    {
+      "dia_disparo": 85,
+      "titulo": "Frutos entrando no ponto",
+      "mensagem": "Melancia não amadurece depois de colhida: colher cedo dá fruto branco e sem açúcar.",
+      "acao_requerida": "Conferir a gavinha junto de cada fruto e a cor da mancha de apoio antes de colher"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e tombamento (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem com o caule escuro rente ao substrato; na planta adulta, murcha nas horas quentes que não passa à noite, com substrato úmido",
+      "prevencao_tratamento": "Substrato novo, vaso bem furado e nunca encharcar; regue só quando os 3 cm de cima estiverem secos. Planta adulta afetada raramente se recupera: descarte o substrato"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco em cima das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Não molhar as folhas e manter a planta arejada com a poda. Pulverizar leite diluído (1 parte para 9 de água) ou bicarbonato de sódio (1 colher de chá por litro, com gotas de detergente neutro) a cada 7 dias"
+    },
+    {
+      "nome": "Míldio (Pseudoperonospora cubensis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas angulosas na face de cima das folhas, com mofo acinzentado por baixo, em tempo úmido",
+      "prevencao_tratamento": "Regar só na base e de manhã; retirar as folhas atacadas. Em épocas de chuva seguida, calda bordalesa a cada 7 a 10 dias"
+    },
+    {
+      "nome": "Antracnose",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras nas folhas, que furam no centro, e lesões afundadas e escuras nos frutos",
+      "prevencao_tratamento": "Manter os frutos longe do substrato molhado, retirar as partes atacadas e aplicar calda bordalesa"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas das ramas e no verso das folhas, que ficam enroladas",
+      "prevencao_tratamento": "Jato de água; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias. O pulgão transmite viroses, então não deixe a colônia crescer"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto de poeira e teia fina no verso, em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; atacado, calda de enxofre ou óleo de neem a cada 5 dias"
+    },
+    {
+      "nome": "Broca-das-cucurbitáceas (Diaphania nitidalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos nos frutos novos e nas pontas das ramas, com serragem esverdeada saindo",
+      "prevencao_tratamento": "Retirar e destruir os frutos furados; nos ataques repetidos, aplicar Bacillus thuringiensis nas flores e frutos novos a cada 7 dias"
+    },
+    {
+      "nome": "Queda de frutos novos",
+      "tipo": "DISTURBIO",
+      "sintomas": "O mini fruto sob a flor feminina amarela, murcha e cai poucos dias depois de abrir",
+      "prevencao_tratamento": "É falta de polinização ou de água. Polinize à mão pela manhã e não deixe o vaso secar na floração"
+    },
+    {
+      "nome": "Rachadura do fruto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos rachados no sentido do comprimento, às vezes depois de uma chuva forte",
+      "prevencao_tratamento": "Manter a rega regular e reduzida na maturação; em vaso ao ar livre, proteger das chuvas fortes nas últimas semanas"
+    },
+    {
+      "nome": "Podridão apical",
+      "tipo": "DISTURBIO",
+      "sintomas": "Mancha escura e afundada na ponta do fruto, oposta ao cabinho",
+      "prevencao_tratamento": "É falta de cálcio causada por rega irregular: mantenha a umidade constante e ponha calcário no substrato no plantio"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e chuva",
+      "mensagem": "No pico do verão o vaso esquenta, a água evapora rápido e as chuvas seguidas favorecem oídio e míldio.",
+      "acao_requerida": "Cobrir o substrato com palha, proteger a lateral do vaso do sol da tarde e conferir se os furos estão escoando depois de cada chuva forte"
+    }
+  ]
+}

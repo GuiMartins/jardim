@@ -1,0 +1,181 @@
+{
+  "planta": {
+    "nome_comum": "Dendezeiro",
+    "nome_cientifico": "Elaeis guineensis",
+    "descricao": "Palmeira africana que produz o dendê, fruto do azeite usado na culinária baiana. Na natureza passa de 15 m e só frutifica em pleno solo depois de 3 a 4 anos. Em vaso, cultiva-se como palmeira jovem ornamental, de folhas grandes e arqueadas, sem expectativa de cachos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e fundo, com pelo menos 45 cm de diâmetro e 45 cm de profundidade e vários furos no fundo; prefira plástico grosso ou fibra, porque o vaso de barro seca rápido demais para essa palmeira",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de arroz carbonizada; acrescente 1 xícara de farinha de ossos por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda no vaso definitivo no mesmo nível em que estava no saquinho, sem enterrar o coleto. Nas duas primeiras semanas deixe em sol da manhã e passe ao sol pleno aos poucos. Folhas velhas podem amarelar nas pontas; a fase termina quando a folha-flecha do centro volta a crescer."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A palmeira abre uma folha nova a cada 3 a 5 semanas no calor e quase para no inverno. As folhas passam de inteiras para divididas em folíolos, sinal de que a raiz se firmou. Folhas mais baixas secando uma de cada vez é normal; várias amarelando juntas indica rega ou adubo errados."
+    },
+    {
+      "fase_id": "palmeira_jovem",
+      "nome": "Palmeira Jovem",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Cresce forte de setembro a abril e desacelera de maio a agosto. As bases das folhas têm espinhos: use luvas ao mexer. Quando uma folha baixa secar por completo, corte-a rente ao estipe com serrote ou tesoura de poda; não corte folhas ainda verdes, que alimentam a planta. Em vaso ela não chega a produzir cachos de dendê."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de dendê",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Regue devagar até escorrer pelos furos. A raiz ainda está restrita ao torrão da muda e seca em poucos dias; enfie o dedo 3 cm no substrato perto do caule e, acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o dendezeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 6 a 8 L num vaso de 60 L). Não deixe água parada no pratinho. De maio a agosto, espace para cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o dendezeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-20 e 1 colher de sopa de sulfato de magnésio (sal amargo) na borda do vaso, longe do estipe, e regue em seguida. Uma vez por ano, junte 1 colher de chá rasa de bórax dissolvida em 5 L de água. Pule a adubação de maio a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e olho da palmeira",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire folíolos das folhas do meio e procure pontinhos amarelados, teia fina ou placas brancas e marrons coladas na nervura. Aperte de leve a base da folha-flecha: ela deve estar firme e sem cheiro de podre.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, passe a palmeira para um vaso 10 a 15 cm maior de diâmetro com substrato novo, sem mexer no emaranhado de raízes nem enterrar o estipe. Se não houver vaso maior, raspe os 10 cm de cima e troque por composto novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Depois de duas semanas de sol da manhã, a muda já aguenta mais luz. Com pouco sol, as folhas ficam compridas, moles e claras.",
+      "acao_requerida": "Mudar o vaso para o local de sol direto por pelo menos 6 horas por dia"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Cuidado com os espinhos",
+      "mensagem": "As folhas novas já trazem espinhos rígidos na base do pecíolo, que ferem mãos e braços.",
+      "acao_requerida": "Afastar o vaso da passagem de crianças e animais e usar luvas grossas ao mexer na palmeira"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de dendezeiro",
+      "mensagem": "Palmeiras vigorosas enchem o vaso rápido; raiz saindo pelos furos ou água escorrendo direto sem molhar o substrato são sinais de vaso pequeno.",
+      "acao_requerida": "Olhar os furos do fundo e, se houver raízes saindo, antecipar a troca para um vaso maior"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do olho (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folha-flecha do centro amarela, solta ao puxar e cheira a podre; folhas murcham mesmo com o substrato úmido",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho nem molhar o olho da palmeira no inverno; com o olho podre, a palmeira não se recupera"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontinhos amarelados e aspecto empoeirado; teia fina no verso, comum em tempo seco ou perto de parede quente",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água duas vezes por semana; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Placas brancas ou marrons coladas nos folíolos e pecíolos; folhas amareladas e às vezes pegajosas",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%; em infestação maior, óleo mineral a 1% com detergente neutro, repetindo após 10 dias"
+    },
+    {
+      "nome": "Deficiência de magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas mais velhas com faixa alaranjada nas bordas e centro ainda verde, começando pelos folíolos expostos ao sol",
+      "prevencao_tratamento": "Manter o sulfato de magnésio na adubação; as folhas afetadas não voltam a ficar verdes, mas as novas saem normais"
+    },
+    {
+      "nome": "Deficiência de boro",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas saem enrugadas, curtas, com a ponta dobrada em gancho ou os folíolos grudados",
+      "prevencao_tratamento": "Aplicar bórax uma vez por ano na dose indicada; não repetir antes disso, porque boro em excesso queima as raízes"
+    },
+    {
+      "nome": "Queima por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folíolos com manchas marrons ou esbranquiçadas depois de noites abaixo de 10 °C; geada mata a folha-flecha",
+      "prevencao_tratamento": "Nas noites frias, levar o vaso para perto de parede ou para varanda coberta e reduzir a rega"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o dendezeiro do frio",
+      "mensagem": "O dendê é tropical: abaixo de 15 °C para de crescer, abaixo de 10 °C queima as folhas e geada pode matar o olho da palmeira.",
+      "acao_requerida": "Em noites previstas abaixo de 10 °C, levar o vaso para local abrigado ou cobrir com manta de TNT; regar só com o substrato seco a 4 cm"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Com o calor voltando, a palmeira retoma o crescimento e precisa de mais água e nutrientes.",
+      "acao_requerida": "Voltar à rega a cada 3 dias, retomar a adubação e cortar rente ao estipe as folhas que secaram no inverno"
+    }
+  ]
+}

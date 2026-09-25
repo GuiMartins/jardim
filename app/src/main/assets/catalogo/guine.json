@@ -1,0 +1,179 @@
+{
+  "planta": {
+    "nome_comum": "Guiné",
+    "nome_cientifico": "Petiveria alliacea",
+    "descricao": "Subarbusto perene nativo da América tropical, de folhas com cheiro forte de alho quando amassadas e hastes finas de flores brancas miúdas. É cultivado no Brasil como planta de proteção na tradição popular e nas religiões de matriz africana. É tóxico se ingerido por pessoas e animais: não é planta de uso culinário, e o vaso deve ficar longe de pets e crianças.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; solto e rico em matéria orgânica",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda recém-plantada pode murchar um pouco nas horas mais quentes e perder algumas folhas de baixo. Deixe o vaso na meia-sombra, protegido do sol da tarde. A fase termina quando surgem folhas novas no topo e a planta não murcha mais ao meio-dia."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 150,
+      "descricao": "As raízes ocupam o vaso e a planta ganha altura e novos ramos a partir da base. Nesta fase o guiné já aguenta mais sol da manhã. Ele está estabelecido quando forma uma touceira de vários ramos com 40 a 60 cm e as primeiras hastes florais aparecem."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Touceira de 60 cm a 1 m. Cresce e floresce principalmente da primavera ao outono, com hastes longas de flores brancas que viram sementes com ganchos que grudam em roupas e pelos. No inverno o crescimento desacelera, e a planta perde folhas ou até morre na parte aérea se pegar geada, mas costuma rebrotar da base na primavera."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de guiné",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda tem pouca raiz e seca rápido: não deixe o substrato secar por completo nem encharcar. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o guiné",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No inverno, espace para a cada 5 a 7 dias, porque substrato frio e encharcado apodrece a raiz. Esvazie o pratinho depois de 30 minutos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o guiné",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca ou 1 colher de sopa de farinha de ossos por vaso de 15 L, sem encostar no caule, e regue em seguida. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as axilas dos ramos: procure bolinhas brancas algodonosas ou carapaças marrons coladas no caule, insetos agrupados nos brotos e teias finas com pontinhos amarelados nas folhas. Confira também se a base do caule está firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência na primavera, tire a planta do vaso, desmanche um terço do torrão velho e corte raízes enroladas ou escuras. Replante com substrato novo num vaso 5 cm maior ou divida a touceira em duas mudas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora de encorpar o guiné",
+      "mensagem": "A muda já pegou. Cortar as pontas agora faz a planta ramificar da base em vez de subir num caule só.",
+      "acao_requerida": "Cortar com tesoura limpa os 3 a 5 cm finais de cada ramo principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Guiné estabelecido",
+      "mensagem": "A planta já deve ter formado touceira e começado a florir. As sementes têm ganchos e grudam em roupas e no pelo de animais, espalhando a planta.",
+      "acao_requerida": "Cortar as hastes florais que já perderam as flores brancas antes que as sementes amadureçam, se não quiser mudas espalhadas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelando de baixo para cima e base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, usar vaso com furos e esvaziar o pratinho. Se aparecer, tire a planta do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodonosas ou carapaças marrons nos caules e nas axilas das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia embebida em álcool 70%; em infestações maiores, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e nas hastes florais; folhas novas enroladas",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelados nas folhas, teias finas no verso e folhas com aspecto empoeirado, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; óleo de neem a 0,5% a cada 5 dias até sumirem as teias"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e pontas escurecidas, moles e depois secas logo após uma noite muito fria",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou para baixo de cobertura nas noites abaixo de 5 °C. Não pode as partes queimadas antes do fim do inverno: elas protegem a base, que costuma rebrotar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteger o guiné do frio",
+      "mensagem": "O guiné é tropical e sofre com geada. No frio ele também cresce pouco e gasta menos água, então substrato úmido demais apodrece a raiz.",
+      "acao_requerida": "Nas noites abaixo de 5 °C, abrigar o vaso sob cobertura ou junto a uma parede, e regar só quando o substrato estiver seco a 3 cm"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Com o fim do inverno, a planta volta a brotar. Uma poda agora limpa ramos secos e estimula uma touceira cheia na primavera.",
+      "acao_requerida": "Cortar ramos secos, queimados pelo frio ou muito compridos a um terço da altura, sempre logo acima de um par de folhas"
+    },
+    {
+      "meses": [
+        12,
+        2
+      ],
+      "titulo": "Cortar hastes com sementes",
+      "mensagem": "No auge da floração, as hastes velhas formam sementes com ganchos que grudam em roupas e pets e se espalham pelos vasos vizinhos.",
+      "acao_requerida": "Cortar rente à folhagem todas as hastes florais que já perderam as flores brancas"
+    }
+  ]
+}

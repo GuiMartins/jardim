@@ -1,0 +1,179 @@
+{
+  "planta": {
+    "nome_comum": "Erva-cidreira-de-arbusto",
+    "nome_cientifico": "Lippia alba (quimiotipo citral)",
+    "descricao": "Arbusto aromático nativo do Brasil, também chamado de falsa-melissa ou erva-cidreira-brasileira, cujas folhas dão o chá calmante tradicional. Existem quimiotipos com aromas diferentes (citral, carvona, linalol); para chá com cheiro de limão, prefira a muda de quimiotipo citral. Cresce rápido, aguenta calor e rebrota bem depois de cada corte.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou barro com pelo menos 35 cm de diâmetro e 30 cm de profundidade, com furos no fundo; os ramos se espalham e pendem, então deixe espaço ao redor",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda firma a raiz no vaso novo. Algumas folhas de baixo podem amarelar e cair nos primeiros dias; é normal. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "Crescimento rápido de ramos finos e flexíveis. Com o desponte e os primeiros cortes, a planta ramifica e fica cheia em vez de alta e rala. Ao fim da fase, a touceira cobre a boca do vaso e já aguenta colheitas regulares."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Arbusto de 60 cm a 1,2 m em vaso. Na primavera e no verão cresce forte e dá pequenas flores lilases em cachos; é a melhor época de colheita. No inverno cresce pouco e pode perder parte das folhas, sobretudo com frio abaixo de 10 °C. Os ramos velhos ficam lenhosos e pelados na base, por isso a poda de renovação no fim do inverno é o que mantém a planta produtiva por anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. O torrão da muda ainda não alcança o resto do vaso e seca antes dele.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a erva-cidreira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos só se estiver seco. No verão quente, confira a cada 2 dias; no inverno, a cada 5 a 7. Não deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar com húmus",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca (ou 1 de torta de mamona) por vaso de 20 L, longe do caule, afofe a superfície e regue. De junho a agosto, pule a adubação, porque a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "colheita_ramos",
+      "titulo": "Colher ramos para chá",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa as pontas dos ramos mais compridos, 15 a 20 cm, logo acima de um par de folhas. Nunca tire mais de 1/3 da folhagem de uma vez. Colha de manhã, depois que o orvalho secar. Use fresco ou seque à sombra, em maços pendurados. No inverno, colha só o necessário.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e do meio da touceira. Procure pontinhos amarelados com teia fina (ácaro), bolinhas brancas algodonosas nas axilas (cochonilha) e insetos agrupados nos brotos (pulgão).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro, logo após a poda de renovação: tire a planta do vaso, corte 1/4 das raízes de fora do torrão e replante no mesmo vaso ou num maior, com substrato novo. Regue bem e deixe 1 semana à meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desponte",
+      "mensagem": "A muda já pegou e está brotando. Cortar as pontas agora faz a planta soltar ramos laterais e virar uma touceira cheia.",
+      "acao_requerida": "Cortar 3 a 5 cm da ponta de cada ramo principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "A planta já tem folhagem suficiente para aguentar cortes regulares sem enfraquecer.",
+      "acao_requerida": "Colher as pontas dos ramos mais compridos, sem tirar mais de 1/3 da folhagem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelando de baixo para cima, base do caule escura e mole, cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, vaso com furos e sem água no pratinho. Se aparecer, tire do vaso, corte as raízes escuras, replante em substrato novo e seco e só regue depois de 2 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que depois ficam bronzeadas e secas; teia fina entre as folhas das pontas, pior em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos. Se persistir, lavar a folhagem com jato de água e aplicar óleo de neem a 0,5% no fim da tarde a cada 5 dias, 3 vezes; espere 7 dias após o neem para colher"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodonosas nas axilas das folhas e nos ramos; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%. Em infestação grande, cortar os ramos atacados e aplicar calda de sabão neutro (1 colher de sopa por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos novos; pontas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água nos brotos ou cortar as pontas atacadas na próxima colheita; se persistir, óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Ramos pelados e lenhosos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos, duros e sem folhas na base, com folhagem só nas pontas; planta alta e desengonçada",
+      "prevencao_tratamento": "Falta de poda ou de sol. Colher regularmente pelas pontas, garantir pelo menos 4 horas de sol direto e fazer a poda de renovação no fim do inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, cuidado com o frio",
+      "mensagem": "No frio a erva-cidreira cresce pouco e o substrato demora a secar; rega de verão agora apodrece a raiz. Geada queima a folhagem.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm, suspender o adubo e, em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou sob uma cobertura"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno a planta está com ramos velhos e pelados. Uma poda forte agora gera brotação nova e cheia na primavera.",
+      "acao_requerida": "Cortar todos os ramos a 20 a 30 cm do substrato, acima de um par de gemas, e retirar os galhos secos ou quebrados"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Helicônia-pendente",
+    "nome_cientifico": "Heliconia rostrata",
+    "descricao": "Planta tropical rizomatosa, nativa da Amazônia e dos Andes, famosa pelas inflorescências pendentes em zigue-zague, vermelhas com pontas amarelas e verdes, que duram semanas na planta. Em vaso grande forma uma touceira de 1,5 a 2 m e atrai beija-flores. Cada haste floresce uma vez só e depois é substituída por brotos novos do rizoma.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 50 cm de diâmetro e 45 cm de profundidade e vários furos no fundo; o rizoma cresce para os lados, então largura importa mais que altura",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina, 10% areia grossa; rico em matéria orgânica, levemente ácido (pH 5,5 a 6,5) e que não encharque",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante o rizoma na mesma altura em que vinha no saco da muda, sem enterrar a base das hastes. Nas primeiras semanas deixe o vaso em meia sombra e protegido do vento, que rasga as folhas novas. É normal uma ou duas folhas velhas secarem. A fase termina quando surge um broto novo na base, saindo do substrato."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 270,
+      "descricao": "O rizoma se espalha e lança hastes novas a cada poucas semanas no calor, cada uma maior que a anterior. Já pode ficar no sol da manhã ao menos até o começo da tarde. Folhas enroladas ao meio-dia indicam falta de água ou excesso de sol. A primeira floração costuma vir quando as hastes alcançam o porte adulto, geralmente no segundo verão."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 271,
+      "dia_fim": null,
+      "descricao": "Touceira formada, com várias hastes de 1,5 a 2 m. Floresce da primavera ao outono (outubro a abril no Centro-Sul); cada inflorescência dura de 3 a 6 semanas. A haste que floresceu não floresce de novo e deve ser cortada rente quando a flor secar. No inverno o crescimento para e algumas folhas amarelam; a planta retoma com o calor de setembro."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a helicônia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Sem raiz nova, a muda murcha rápido e as folhas grandes secam pelas bordas. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a helicônia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco nessa profundidade, regue até escorrer pelos furos (cerca de 8 a 10 L num vaso de 60 L). No verão acima de 30 °C, confira a cada 2 dias. De junho a agosto, espace para a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a helicônia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 ou meio quilo de húmus de minhoca na borda do vaso, longe das hastes, e regue em seguida. Pule a adubação de junho a agosto, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_hastes",
+      "titulo": "Cortar hastes floridas e folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 271,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao substrato, com tesoura de poda limpa, as hastes cuja inflorescência já secou e as folhas totalmente secas ou rasgadas. Isso abre espaço e luz para os brotos novos, que são os que vão florescer.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e bainhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e o encaixe das bainhas nas hastes: procure cochonilhas brancas ou marrons, teia fina com pontinhos (ácaro), lagartas ou folhas roídas e manchas escuras com halo amarelo.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e novembro. Tire a planta do vaso, corte o rizoma com faca limpa em pedaços com 2 ou 3 hastes e raízes cada, descarte partes podres e replante um pedaço no mesmo vaso com substrato novo. Os outros pedaços viram mudas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A muda já teve tempo de enraizar. Sem sol direto, a helicônia cresce mas quase não floresce.",
+      "acao_requerida": "Mudar o vaso para um lugar com pelo menos 4 horas de sol direto, de preferência da manhã, ainda protegido do vento forte"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Cobertura morta no vaso",
+      "mensagem": "O substrato exposto ao sol seca rápido e esquenta a raiz. Uma camada de cobertura segura a umidade entre as regas.",
+      "acao_requerida": "Cobrir o substrato com 3 a 5 cm de casca de pinus ou folhas secas picadas, sem encostar nas hastes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes amarelam e tombam a partir da base, que fica mole e escura com cheiro azedo; substrato sempre úmido",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e não enterrar a base das hastes; corte as partes podres do rizoma, deixe secar um dia e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas algodoadas ou escamas marrons nas bainhas e no verso das folhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia e água com sabão neutro; em infestação, óleo mineral ou de neem a 0,5% no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontilhado amarelado e aspecto empoeirado, teia fina no verso; comum em tempo seco e em varanda coberta",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Lagartas (Caligo, Opsiphanes)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou com grandes cortes; lagartas grandes, marrons ou verdes, escondidas no verso durante o dia",
+      "prevencao_tratamento": "Catar as lagartas à mão; em ataque forte, Bacillus thuringiensis no fim da tarde"
+    },
+    {
+      "nome": "Mancha foliar (Bipolaris, Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons alongadas com halo amarelo que se juntam e secam a folha",
+      "prevencao_tratamento": "Regar no substrato, não nas folhas; remover e descartar as folhas atingidas; manter boa ventilação entre as hastes"
+    },
+    {
+      "nome": "Queima por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas ficam pardas e com aspecto cozido depois de noites abaixo de 10 °C; em geada, as hastes morrem inteiras",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou sob cobertura nas noites frias; hastes queimadas devem ser cortadas rente, que o rizoma rebrota na primavera"
+    },
+    {
+      "nome": "Folhas rasgadas e bordas queimadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Limbo rasgado em tiras e bordas secas e marrons, sem manchas nem insetos",
+      "prevencao_tratamento": "Proteger do vento encanado e do sol da tarde em dias muito quentes e secos; manter a rega regular e a cobertura morta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteger do frio e regar menos",
+      "mensagem": "A helicônia para de crescer no frio e sofre abaixo de 10 °C. Substrato úmido e frio é o caminho para a podridão do rizoma.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender o adubo e, em noites abaixo de 10 °C, abrigar o vaso junto a uma parede ou sob cobertura"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomada da primavera",
+      "mensagem": "Com o calor voltando, o rizoma lança hastes novas, que serão as que florescem no verão.",
+      "acao_requerida": "Cortar rente as hastes e folhas danificadas pelo frio, retomar a adubação mensal e a rega normal"
+    }
+  ]
+}

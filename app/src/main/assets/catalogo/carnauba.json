@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Carnaúba",
+    "nome_cientifico": "Copernicia prunifera",
+    "descricao": "Palmeira nativa do Nordeste brasileiro, a 'árvore da vida' do sertão, de cujas folhas em leque se extrai a cera de carnaúba. Muito resistente a sol forte, calor e seca. Em vaso cresce devagar e fica anos como palmeira jovem, sem tronco, o que a torna uma planta ornamental rústica para varandas e quintais ensolarados.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de plástico grosso, cerâmica ou fibra, com pelo menos 40 cm de profundidade e 35 cm de diâmetro e vários furos no fundo. A raiz da palmeira desce reto e rende mais em vaso alto do que em vaso largo e raso",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca e 10% perlita ou casca de pinus fina. Precisa ser arenoso e drenar rápido",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está refazendo as raízes no vaso novo. É normal a folha mais velha amarelar ou secar nas pontas. O sinal de que a fase acabou é a folha central (a 'lança', ainda fechada) crescer alguns centímetros."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Crescimento lento: sai uma folha nova a cada 1 a 2 meses no calor e quase nenhuma no inverno. As primeiras folhas são estreitas e inteiras. Com o tempo aparecem as folhas em leque, recortadas e com espinhos no pecíolo. Manuseie com luvas."
+    },
+    {
+      "fase_id": "palmeira_jovem",
+      "nome": "Palmeira Jovem",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Fase em que a carnaúba passa toda a vida em vaso: uma roseta de folhas em leque, sem tronco aparente, com 4 a 8 folhas novas por ano, quase todas entre setembro e março. O tronco só se forma depois de muitos anos e a floração, em geral, só em plantas de solo. Folhas velhas secam naturalmente de baixo para cima e podem ser cortadas quando estiverem totalmente marrons."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Regue devagar até a água escorrer pelos furos, molhando todo o torrão. Se o substrato estiver úmido a 3 cm de profundidade, regue só a metade. Palmeira que perde raiz nova no transplante demora meses para se recuperar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a carnaúba",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. No verão acima de 32 °C, a cada 2 a 3 dias. De maio a agosto, de 7 em 7 a 10 em 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a carnaúba",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de adubo de liberação lenta para palmeiras (ou NPK 10-10-10 com magnésio) na borda do vaso, longe do caule, e regue logo depois. De abril a agosto use metade da dose. Nunca adube o substrato seco.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e olho",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Examine o verso das folhas e a base dos pecíolos atrás de escamas brancas ou marrons (cochonilha) e de pontinhos claros com teia fina (ácaro). Cheire e aperte a folha central: se estiver mole ou com cheiro ruim, é podridão. Aproveite para cortar rente ao caule as folhas já totalmente secas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso ou renovar substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro: tire a palmeira com o torrão inteiro, sem desmanchar nem cortar raízes, e passe para um vaso 10 cm mais largo e mais fundo, com substrato novo. Mantenha o coleto na mesma altura de antes. Se não houver vaso maior, raspe e troque os 5 cm de cima do substrato.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio na altura certa",
+      "mensagem": "Palmeira enterrada abaixo do coleto apodrece pela base, e o problema só aparece semanas depois.",
+      "acao_requerida": "Conferir se o ponto onde as folhas saem da base ficou no mesmo nível em que estava no saquinho. Se estiver enterrado, retirar substrato até expô-lo"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "As raízes já devem ter se firmado no vaso novo. Agora o risco maior é o excesso de água.",
+      "acao_requerida": "Passar a regar só quando os 5 primeiros centímetros do substrato estiverem secos e trocar o local para o ponto mais ensolarado da casa, se ainda não estiver"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por encharcamento (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de baixo para cima mesmo com o substrato úmido, base do caule escura e mole e cheiro de azedo no vaso",
+      "prevencao_tratamento": "Substrato arenoso, furos desobstruídos e prato sempre vazio. Ao primeiro sinal, suspenda a rega até secar bem. Se a base estiver mole, desenvase, corte as raízes pretas e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Podridão do olho (Phytophthora palmivora)",
+      "tipo": "DOENCA",
+      "sintomas": "A folha central (lança) murcha, escurece e sai com um puxão leve, com cheiro de podre na base",
+      "prevencao_tratamento": "Não molhe o olho da palmeira ao regar, principalmente no fim da tarde e no frio. No início, retire o tecido podre e aplique fungicida cúprico no olho. Se o ponto de crescimento morrer, a palmeira não rebrota"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos na base dos pecíolos e no verso das folhas, folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Retire com escova macia ou algodão com álcool 70%. Em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Ácaro-vermelho",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado ou bronzeado e teias finas no verso, mais comum em local abafado e seco",
+      "prevencao_tratamento": "Lave as folhas com jato de água a cada poucos dias e mantenha a planta ao ar livre. Se persistir, enxofre molhável ou óleo de neem a 0,5%"
+    },
+    {
+      "nome": "Mancha foliar (Pestalotiopsis, Bipolaris)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas com halo amarelo nas folhas, que se juntam e secam partes do leque",
+      "prevencao_tratamento": "Corte as folhas muito manchadas, não molhe as folhas na rega e aumente o sol e a ventilação. Em caso grave, fungicida cúprico"
+    },
+    {
+      "nome": "Deficiência de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas mais velhas com pontas secas e cor amarelo-alaranjada, enquanto o centro continua verde",
+      "prevencao_tratamento": "Use adubo próprio para palmeiras, com K e Mg. Não arranque as folhas amarelas, porque a planta ainda tira nutriente delas: corte só quando secarem por completo"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com manchas pardas ou esbranquiçadas e secagem rápida depois de noites abaixo de 5 °C ou de geada",
+      "prevencao_tratamento": "Recolha o vaso para perto de uma parede ou sob beiral nas noites frias e mantenha o substrato mais seco no inverno. Só corte as folhas danificadas depois que o frio passar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: proteger a carnaúba do frio",
+      "mensagem": "A carnaúba é do sertão quente e sofre abaixo de 5 °C. Substrato molhado no frio facilita a podridão.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para junto de uma parede ou sob cobertura. Espaçar as regas para cada 7 a 10 dias, sempre pelo teste do dedo"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor voltando, a carnaúba retoma a emissão de folhas e passa a pedir mais água e adubo.",
+      "acao_requerida": "Voltar a regar a cada 4 dias pelo teste do dedo, voltar à dose cheia de adubo e cortar as folhas que secaram no inverno"
+    }
+  ]
+}

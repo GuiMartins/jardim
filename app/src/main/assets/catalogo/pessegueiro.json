@@ -1,0 +1,242 @@
+{
+  "planta": {
+    "nome_comum": "Pessegueiro",
+    "nome_cientifico": "Prunus persica (cultivares de baixa exigência em frio, ex.: 'BRS Kampai', 'Aurora-1', 'Tropical')",
+    "descricao": "Árvore frutífera de clima temperado que dá flores rosadas no fim do inverno e pêssegos no fim da primavera. Em vaso, use muda enxertada de cultivar de pouco frio (menos de 300 horas abaixo de 7 °C), próprias para o Centro-Sul. Cultivares de clima frio brotam mal e não frutificam longe da serra.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cerâmica ou meia-bombona com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com 4 ou mais furos no fundo, apoiado sobre pés para a água escorrer livremente",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal peneirada, 25% composto orgânico ou húmus de minhoca, 15% areia grossa lavada, 10% casca de pinus fina; acrescentar 200 g de calcário dolomítico e 150 g de farinha de ossos a cada 60 L e misturar bem",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. Se veio de raiz nua no inverno, ainda está sem folhas e brota entre a 2ª e a 4ª semana. Gemas inchadas e esverdeadas mostram que pegou. Galhos que ficam secos e quebradiços ao arranhar com a unha morreram."
+    },
+    {
+      "fase_id": "formacao_copa",
+      "nome": "Formação da Copa",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A planta cresce ramos novos. O objetivo é formar um vaso aberto com 3 ou 4 ramos principais bem distribuídos. Se florescer ou pegar frutos neste primeiro ano, arranque-os ainda pequenos: fruto agora rouba a força que forma a copa e as raízes."
+    },
+    {
+      "fase_id": "planta_jovem",
+      "nome": "Planta Jovem",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "Primeira floração de verdade no fim do inverno. Deixe no máximo 10 a 15 frutos na planta toda, para não esgotar a árvore. A copa se completa e o tronco engrossa."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: as folhas caem entre maio e junho e a planta dorme. Em julho vem a poda, entre julho e agosto a floração, em setembro e outubro o raleio dos frutos, e de novembro a janeiro a colheita. Depois dela, uma poda verde leve. Num vaso de 60 L, uma árvore adulta rende de 3 a 8 kg por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Se ainda estiver úmido, espere mais um dia. Muda sem folhas bebe pouco, e encharcar agora apodrece a raiz.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o pessegueiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (8 a 12 L num vaso de 60 L). No verão com frutos, confira todo dia: falta de água nessa fase derruba e racha os pêssegos. Na dormência (maio a julho, sem folhas), regue só quando os 5 cm estiverem secos, em geral a cada 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o pessegueiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De agosto a fevereiro: espalhe 2 punhados de húmus de minhoca ou 1 de bokashi mais 1 colher de sopa de NPK 10-10-10 na borda do vaso, longe do tronco, e regue em seguida. De março a julho, pule a adubação: adubo fora de época faz a planta brotar na hora de dormir.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 14,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure pulgões nas pontas novas, folhas enrugadas e avermelhadas (crespeira), pó alaranjado no verso das folhas (ferrugem), crostas brancas nos ramos (cochonilha), pontas de ramo murchas (mariposa-oriental) e furinhos ou manchas marrons nos frutos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça com a planta dormente (junho ou julho); se o lembrete chegar em outra época, espere o inverno. Tire o torrão, corte 3 a 5 cm das raízes em volta e no fundo com serrote limpo, troque um terço do substrato por mistura nova e devolva a planta à mesma altura. Regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Poda de plantio",
+      "mensagem": "Muda de haste única precisa ser cortada para formar a copa baixa, própria para vaso.",
+      "acao_requerida": "Cortar a haste principal a 50–60 cm do substrato, logo acima de uma gema. Se a muda já tiver ramos, deixar 3 ou 4 bem distribuídos, encurtados a 3 gemas."
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Escolher os ramos da copa",
+      "mensagem": "As brotações novas já têm uns 20 cm. Agora é a hora de escolher a estrutura da árvore.",
+      "acao_requerida": "Deixar 3 ou 4 brotos virados para lados diferentes e arrancar os outros, inclusive qualquer broto que saia abaixo do enxerto (o calombo na base do tronco)"
+    },
+    {
+      "dia_disparo": 400,
+      "titulo": "Primeira safra: poucos frutos",
+      "mensagem": "A árvore ainda é jovem. Frutos demais agora ficam pequenos e enfraquecem a planta para os próximos anos.",
+      "acao_requerida": "Deixar no máximo 10 a 15 frutos na planta toda, arrancando os outros quando estiverem do tamanho de uma azeitona"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido, a casca da base do tronco escurece e a raiz fica marrom e mole",
+      "prevencao_tratamento": "Regar só com os 5 cm de cima secos, manter os furos livres e o vaso sobre pés, sem prato com água parada. Planta afetada: suspender a rega e trocar o substrato encharcado, cortando as raízes podres"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha fraterculus, Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos nos frutos que amolecem ao redor; larvas brancas dentro da polpa; frutos caem antes de amadurecer",
+      "prevencao_tratamento": "Ensacar os frutos com saco de papel ou TNT quando tiverem 2 a 3 cm; recolher e descartar frutos caídos no lixo fechado; armadilha de garrafa PET com suco de fruta a 10%"
+    },
+    {
+      "nome": "Mariposa-oriental (Grapholita molesta)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontas dos ramos novos murcham e secam com goma na base da folha; galerias nos frutos perto do pedúnculo",
+      "prevencao_tratamento": "Cortar e destruir as pontas murchas 5 cm abaixo do dano; ensacar os frutos; Bacillus thuringiensis nas brotações na primavera"
+    },
+    {
+      "nome": "Pulgão-verde (Myzus persicae)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes nas pontas novas, que ficam enroladas e pegajosas; formigas subindo o tronco",
+      "prevencao_tratamento": "Jato de água; óleo de neem a 0,5% no fim da tarde a cada 5 dias; evitar excesso de adubo nitrogenado"
+    },
+    {
+      "nome": "Cochonilha-branca (Pseudaulacaspis pentagona)",
+      "tipo": "PRAGA",
+      "sintomas": "Crostas brancas grudadas nos ramos e no tronco; ramos enfraquecem e secam",
+      "prevencao_tratamento": "Escovar os ramos com escova macia e água com sabão neutro; no inverno, óleo mineral a 1% com a planta sem folhas"
+    },
+    {
+      "nome": "Crespeira (Taphrina deformans)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas novas engrossadas, enrugadas e avermelhadas na brotação; caem em seguida",
+      "prevencao_tratamento": "Calda bordalesa a 1% na queda das folhas e outra vez com as gemas inchando, antes de abrir; remover e descartar as folhas atacadas"
+    },
+    {
+      "nome": "Ferrugem (Tranzschelia discolor)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas na face de cima das folhas e pó alaranjado a marrom no verso; queda precoce das folhas no verão",
+      "prevencao_tratamento": "Recolher as folhas caídas; calda bordalesa a 0,5% depois da colheita; boa ventilação na copa"
+    },
+    {
+      "nome": "Podridão-parda (Monilinia fructicola)",
+      "tipo": "DOENCA",
+      "sintomas": "Frutos com mancha marrom que se espalha rápido e fica coberta de pó acinzentado; flores secam grudadas no ramo",
+      "prevencao_tratamento": "Ralear para os frutos não se encostarem; retirar da planta os frutos podres e mumificados; ensacar; calda bordalesa na floração só com tempo chuvoso"
+    },
+    {
+      "nome": "Bacteriose (Xanthomonas arboricola pv. pruni)",
+      "tipo": "DOENCA",
+      "sintomas": "Pequenas manchas escuras nas folhas que caem e deixam furos (aspecto de tiro de chumbo); lesões rachadas nos frutos",
+      "prevencao_tratamento": "Proteger do vento e da chuva forte; cobre (calda bordalesa) na queda das folhas; não molhar a copa na rega"
+    },
+    {
+      "nome": "Brotação fraca por falta de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Depois do inverno, poucas gemas brotam e a floração fica espalhada e irregular; os ramos ficam pelados",
+      "prevencao_tratamento": "Escolher cultivar de baixa exigência em frio para a região; deixar o vaso ao ar livre no inverno, nunca dentro de casa. Não use cianamida: é tóxica para uso doméstico"
+    },
+    {
+      "nome": "Rachadura e queda de frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos racham perto do caroço ou caem verdes em grande número",
+      "prevencao_tratamento": "Manter a rega regular na frutificação, sem secar e depois encharcar; ralear o excesso de frutos cedo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Dormência chegando",
+      "mensagem": "As folhas amarelam e caem: é normal, o pessegueiro vai dormir. Ele precisa do frio para florescer depois.",
+      "acao_requerida": "Espaçar a rega (só com os 5 cm de cima secos), parar a adubação, recolher as folhas caídas e manter o vaso ao ar livre"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de inverno",
+      "mensagem": "Com a planta sem folhas, a poda define onde vão nascer as flores e os frutos. O pêssego nasce nos ramos do ano anterior.",
+      "acao_requerida": "Tirar os ramos secos, cruzados e os que crescem para dentro; encurtar pela metade os ramos avermelhados do último ano e manter o centro aberto. Passar calda bordalesa a 1% nos ramos depois da poda"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Ralear e ensacar os frutos",
+      "mensagem": "Os frutinhos já pegaram. Frutos demais ficam pequenos e sem sabor, e são a porta de entrada da mosca-das-frutas.",
+      "acao_requerida": "Quando estiverem do tamanho de uma azeitona, deixar um fruto a cada 15 cm de ramo e ensacar os que ficarem com papel ou TNT"
+    },
+    {
+      "meses": [
+        11,
+        12,
+        1
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "Conforme a cultivar, os pêssegos amadurecem entre novembro e janeiro. Maduro demais, ele cai e atrai moscas.",
+      "acao_requerida": "Colher quando o fundo da casca passar de verde para amarelo e o fruto ceder levemente ao toque; conferir a cada 2 dias nessa época"
+    },
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Poda verde pós-colheita",
+      "mensagem": "Depois da colheita, ramos ladrões muito vigorosos sombreiam a copa e enfraquecem os ramos que vão frutificar.",
+      "acao_requerida": "Arrancar os ramos que crescem retos para cima no centro da copa e os brotos abaixo do enxerto; recolher frutos caídos e folhas com ferrugem"
+    }
+  ]
+}

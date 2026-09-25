@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Tilândsia",
+    "nome_cientifico": "Tillandsia stricta",
+    "descricao": "Bromélia epífita nativa do Brasil que vive sem terra, fixada em troncos, e absorve água e nutrientes pelas escamas das folhas. Escolhemos a T. stricta, a tilândsia mais vendida e cultivada em casa no Brasil; os cuidados valem para as outras de folha verde (T. aeranthos, T. ionantha), e as de folha bem cinza e peluda toleram mais sol e menos água. Cada roseta floresce uma vez, solta filhotes pela base e aos poucos forma uma touceira.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Sem vaso de terra: fixada num pedaço de madeira, cortiça, casca de árvore ou pedra, ou apoiada num recipiente aberto de uns 10 cm de diâmetro, sem substrato e sem água parada no fundo. Nada de terrário fechado, que acumula umidade e apodrece a base",
+    "volume_minimo_litros": 0.2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "Nenhum substrato: a raiz só serve para se agarrar. Prenda a base com arame revestido, barbante de sisal ou cola quente morna (espere a cola esfriar um pouco para não queimar); nunca enterre em terra, musgo encharcado ou cobertura que fique úmida",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A planta sai da loja em geral desidratada e se ajusta à luz e à umidade da casa. As folhas devem ficar firmes e parar de se enrolar depois dos primeiros banhos. Se enrolarem mais, falta água; se o centro escurecer ou as folhas soltarem da base ao puxar de leve, sobra água."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "Surgem folhas novas no centro da roseta, e raízes finas começam a se agarrar ao suporte. A cor fica verde-acinzentada e uniforme. Crescimento lento é normal: uma folha nova por mês já indica que está bem."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "A roseta adulta floresce uma vez, em geral entre a primavera e o verão: as brácteas ficam rosadas e saem flores roxas pequenas que duram algumas semanas. Depois da floração, a planta-mãe solta de 1 a 4 filhotes pela base e decai devagar ao longo de meses. Deixe os filhotes presos à mãe para formar uma touceira, ou separe-os quando tiverem 1/3 do tamanho dela. No inverno o crescimento quase para e a planta pede menos água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "banho_imersao",
+      "titulo": "Banho de imersão na tilândsia",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Mergulhe a planta inteira por 20 a 30 minutos em água da chuva, filtrada ou de torneira que descansou 24 h em balde aberto. Depois sacuda de leve e deixe secar de cabeça para baixo, num lugar arejado, por 2 a 4 horas antes de devolver ao suporte. A base não pode ficar úmida à noite. Se estiver fixada em peça que não sai, borrife até escorrer em vez de mergulhar.",
+      "critica": true
+    },
+    {
+      "id": "borrifar",
+      "titulo": "Borrifar a tilândsia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Pela manhã, borrife as folhas dos dois lados até ficarem molhadas por inteiro, sem acumular água no centro da roseta. Em dias de chuva ou com umidade acima de 70%, pule; com ar seco (menos de 40%) ou ar-condicionado ligado, borrife também no dia seguinte.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_foliar",
+      "titulo": "Adubar no banho",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No banho de imersão, dilua adubo para bromélias ou orquídeas (NPK 20-20-20 ou parecido) em 1/4 da dose indicada no rótulo. Confira se o adubo não tem cobre nem boro em dose alta: cobre mata tilândsias. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_base",
+      "titulo": "Examinar base e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire a planta e olhe a base: deve estar firme e clara. Puxe de leve uma folha do centro; se ela sair com a base marrom e mole, é início de podridão. Procure também pontinhos brancos ou marrons parecidos com algodão ou escamas entre as folhas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Primeiro banho da tilândsia",
+      "mensagem": "Tilândsias costumam chegar desidratadas da loja. Um banho longo repõe a água, e o lugar escolhido hoje decide se ela vai prosperar.",
+      "acao_requerida": "Deixar a planta 1 hora de molho em água sem cloro, secar de cabeça para baixo por 4 horas e colocá-la perto de uma janela clara, com no máximo sol da manhã, longe de ar-condicionado"
+    },
+    {
+      "dia_disparo": 14,
+      "titulo": "Como ela reagiu?",
+      "mensagem": "Duas semanas bastam para ver se a rega está certa. Folhas enroladas e pontas secas pedem mais água; centro escuro e base mole pedem menos.",
+      "acao_requerida": "Conferir as folhas e ajustar: se enroladas, aumentar o banho para 45 minutos; se o centro escureceu, secar melhor depois do banho e passar a borrifar só a cada 4 ou 5 dias"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora de fixar no suporte definitivo",
+      "mensagem": "Adaptada, a tilândsia já pode ir para o lugar onde vai ficar. Fixada, ela cria raízes de apoio e forma a touceira.",
+      "acao_requerida": "Prender a base num pedaço de madeira ou cortiça com arame revestido ou cola quente morna, sem cobrir o centro da roseta; se preferir manter solta para os banhos, deixar num recipiente aberto e seco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da base (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base e centro da roseta ficam marrons ou pretos e moles; as folhas soltam ao puxar de leve e a planta desmancha",
+      "prevencao_tratamento": "Sempre secar de cabeça para baixo depois do banho, nunca deixar água no centro, não usar terrário fechado nem musgo úmido na base. Com a podridão avançada não tem volta: separe e salve os filhotes sadios"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos brancos parecidos com algodão ou escamas marrons entre as folhas e na base; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete molhado em álcool 70% e enxaguar; se persistir, banho de 10 minutos em água com 1 colher de chá de sabão neutro por litro, enxaguando bem depois"
+    },
+    {
+      "nome": "Desidratação",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas enroladas para dentro, mais finas e acinzentadas, pontas secas e marrons",
+      "prevencao_tratamento": "Aumentar o banho para 45 minutos e borrifar mais nos dias secos. Pontas já secas não voltam: corte-as em diagonal com tesoura limpa"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou bronzeadas nas folhas voltadas para a janela, que depois secam",
+      "prevencao_tratamento": "Tirar do sol direto depois das 10 h e de trás de vidro no sol da tarde; deixar só luz clara ou sol da manhã"
+    },
+    {
+      "nome": "Intoxicação por cobre ou cloro",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem e morrem rápido depois de adubar ou regar, sem sinal de podridão na base",
+      "prevencao_tratamento": "Não usar adubo nem fungicida com cobre, não prender com arame de cobre nu e deixar a água de torneira descansar 24 h antes do banho"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: tilândsia com sede",
+      "mensagem": "O calor seca as folhas em poucas horas, e sol forte atrás de vidro queima a planta.",
+      "acao_requerida": "Borrifar todo dia de manhã nos dias acima de 30 °C, manter o banho semanal e tirar a planta de qualquer sol direto depois das 10 h"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "No frio a tilândsia quase para de crescer e a água demora a secar, o que favorece a podridão da base.",
+      "acao_requerida": "Espaçar o banho para cada 10 a 14 dias, dar banho só em dia ensolarado e antes do meio-dia, suspender a adubação e afastar de janelas quando a noite ficar abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "Tilândsias adultas costumam florescer na primavera. As brácteas ficam rosadas antes das flores roxas aparecerem.",
+      "acao_requerida": "Retomar a adubação mensal e o banho semanal, borrifar sem molhar demais a inflorescência e, quando a flor secar, cortar a haste rente à roseta para a planta soltar os filhotes"
+    }
+  ]
+}

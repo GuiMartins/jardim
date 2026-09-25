@@ -1,0 +1,239 @@
+{
+  "planta": {
+    "nome_comum": "Berinjela",
+    "nome_cientifico": "Solanum melongena",
+    "descricao": "Hortaliça de fruto da família do tomate, que gosta de calor e produz por meses num vaso grande ao sol. Na natureza é perene de vida curta, mas em casa é cultivada como anual, começando por muda comprada ou feita em sementeira.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 200,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 35 cm de profundidade e 35 cm de diâmetro, com furos no fundo; uma muda por vaso",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto curtido, 20% areia grossa ou perlita, mais 1 colher de sopa de calcário dolomítico e 2 colheres de sopa de farinha de ossos por 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação da Muda",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Plante a muda com 4 a 6 folhas verdadeiras, na mesma altura em que estava no copinho. Nos primeiros dias ela pode murchar no sol forte da tarde e se recuperar à noite; quando surgirem folhas novas no topo, pegou."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 15,
+      "dia_fim": 45,
+      "descricao": "O caule engrossa e a planta abre a primeira bifurcação (forquilha) a uns 25 a 40 cm de altura. Folhas grandes, aveludadas e verde-escuras indicam boa nutrição; folhas pálidas pedem adubo."
+    },
+    {
+      "fase_id": "floracao_frutificacao",
+      "nome": "Floração e Pegamento",
+      "dia_inicio": 46,
+      "dia_fim": 70,
+      "descricao": "Surgem flores roxas, solitárias ou em cachos pequenos, perto das forquilhas. Flor com o pistilo (miolo central) mais comprido que os estames é a que vira fruto; pistilo curto indica falta de adubo, água ou sol. O fruto leva de 15 a 25 dias da flor ao ponto de colheita."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 71,
+      "dia_fim": 200,
+      "descricao": "A planta alterna floração e frutos maduros por vários meses. O ponto certo é a casca brilhante e firme, que afunda levemente com o dedo e volta. Casca fosca e sementes escuras por dentro indicam fruto passado, amargo e esponjoso. A produção cai no frio e quando a planta envelhece; o ciclo termina quando ela para de pegar frutos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de berinjela",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Regue pela manhã até escorrer pelos furos do vaso. O torrão da muda ainda é pequeno e seca rápido: enfie o dedo 2 cm no substrato perto do caule, ele deve estar úmido, nunca encharcado.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a berinjela",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 200,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos, molhando o substrato e não as folhas. Acima de 30 °C ou com a planta carregada de frutos, confira todo dia; no frio (abaixo de 18 °C), a cada 3 ou 4 dias. Falta de água na floração derruba as flores.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar para crescer",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca ou 2 colheres de sopa de bokashi em volta do caule, a 5 cm dele, misture de leve na superfície e regue em seguida.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_producao",
+      "titulo": "Adubar para frutificar",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": 185,
+      "instrucoes": "Espalhe 1 xícara de húmus mais 1 colher de sopa de cinza de madeira ou de adubo rico em potássio (como NPK 4-14-8) em volta do caule, sem encostar nele, e regue em seguida. Evite adubo rico em nitrogênio agora: ele faz folha e derruba flor.",
+      "critica": false
+    },
+    {
+      "id": "desbrota",
+      "titulo": "Tirar brotos da base",
+      "tipo": "PODA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 70,
+      "instrucoes": "Arranque com os dedos os brotos que nascem no caule abaixo da primeira forquilha e as folhas velhas encostadas no substrato. Deixe 2 a 3 hastes principais acima da forquilha; isso areja a planta e concentra energia nos frutos.",
+      "critica": false
+    },
+    {
+      "id": "amarrar_tutor",
+      "titulo": "Amarrar a berinjela no tutor",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 28,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Prenda o caule e as hastes que estão carregando frutos ao tutor com fita de tecido ou barbante em forma de 8, um amarrio a cada 20 cm de crescimento novo. Afrouxe amarrios antigos que estejam apertando o caule.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a berinjela",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 200,
+      "instrucoes": "Vire as folhas de baixo e do meio e procure pontinhos amarelados com teia fina (ácaro), mosquinhas brancas que voam ao sacudir (mosca-branca), colônias de pulgão nos brotos e furos redondos (vaquinha). Confira também manchas escuras nos frutos e no caule.",
+      "critica": false
+    },
+    {
+      "id": "colheita_berinjela",
+      "titulo": "Colher berinjelas no ponto",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 71,
+      "dia_fim_ciclo": 200,
+      "instrucoes": "Colha os frutos de casca brilhante que afundam levemente com o dedo e voltam, cortando com tesoura 2 a 3 cm acima do cálice (use luva: o cálice pode ter espinhos). Não espere a berinjela crescer mais: fruto fosco fica amargo e a planta reduz a produção.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Coloque o tutor agora",
+      "mensagem": "A berinjela carregada de frutos tomba e quebra as hastes. Fincar o tutor depois que as raízes crescem as machuca.",
+      "acao_requerida": "Fincar uma estaca de 1,2 m a 5 cm do caule, até o fundo do vaso, no dia do plantio"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeiras flores a caminho",
+      "mensagem": "A planta está entrando na floração. As flores precisam de água constante e sol para virar fruto.",
+      "acao_requerida": "Olhar as flores abertas: se o pistilo for mais curto que os estames, reforçar adubação com potássio e conferir se o vaso recebe pelo menos 5 horas de sol"
+    },
+    {
+      "dia_disparo": 70,
+      "titulo": "Primeiras berinjelas quase no ponto",
+      "mensagem": "Os primeiros frutos devem estar perto do tamanho de colheita. O ponto é pelo brilho da casca, não pelo tamanho.",
+      "acao_requerida": "Pressionar os maiores frutos com o dedo e colher os que estiverem brilhantes e afundarem de leve"
+    },
+    {
+      "dia_disparo": 130,
+      "titulo": "Poda de renovação",
+      "mensagem": "Depois da primeira safra a produção costuma cair. Uma poda leve estimula brotação nova e mais uma rodada de frutos.",
+      "acao_requerida": "Cortar as pontas das hastes que já produziram, deixando dois terços do comprimento, retirar folhas amarelas e adubar em seguida"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que depois ficam bronzeadas e secas; teia fina no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água em dias secos; se persistir, calda de enxofre ou óleo de neem a 0,5% no fim da tarde a cada 5 dias, retirando as folhas mais atacadas"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; folhas amareladas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias; retirar folhas muito infestadas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e no verso das folhas novas; folhas enrugadas e pegajosas",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Vaquinha e burrinho (Diabrotica speciosa, Epicauta spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos nas folhas ou folhas devoradas em poucos dias por besouros",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo com luva e jogá-los em água com sabão"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de rega (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas de baixo amarelando e base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, manter os furos livres e nunca deixar água no pratinho; planta com caule podre na base não se recupera"
+    },
+    {
+      "nome": "Podridão-de-fomopsis (Phomopsis vexans)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas circulares marrons com pontinhos pretos nas folhas e frutos com manchas afundadas que apodrecem",
+      "prevencao_tratamento": "Não molhar as folhas na rega, retirar e descartar no lixo folhas e frutos manchados; em ataque forte, calda bordalesa a cada 10 dias"
+    },
+    {
+      "nome": "Queda de flores",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores amarelam e caem sem formar fruto",
+      "prevencao_tratamento": "Acontece com calor acima de 35 °C, frio abaixo de 15 °C, falta de água, pouco sol ou excesso de nitrogênio; manter a rega regular, 5 horas de sol ou mais e adubo com potássio na floração"
+    },
+    {
+      "nome": "Fruto amargo e esponjoso",
+      "tipo": "DISTURBIO",
+      "sintomas": "Casca fosca, polpa com muitas sementes escuras e gosto amargo",
+      "prevencao_tratamento": "Colher mais cedo, com a casca ainda brilhante, e não deixar o substrato secar por completo entre regas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Frio reduz a berinjela",
+      "mensagem": "Abaixo de 15 °C a berinjela para de crescer, derruba flores e as folhas podem arroxear. Geada mata a planta.",
+      "acao_requerida": "Levar o vaso para o lugar mais ensolarado e protegido do vento, espaçar as regas e cobrir a planta com tecido nas noites com previsão abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte no vaso",
+      "mensagem": "No auge do verão o vaso seca em um dia e o calor acima de 35 °C derruba flores.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia, cobrir a superfície com 3 cm de palha seca e, se possível, dar sombra leve nas horas mais quentes da tarde"
+    }
+  ]
+}

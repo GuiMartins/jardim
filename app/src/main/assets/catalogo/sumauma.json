@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Sumaúma",
+    "nome_cientifico": "Ceiba pentandra",
+    "descricao": "Árvore gigante da Amazônia, que na natureza passa de 50 m e tem sapopemas enormes e tronco com acúleos quando jovem. Em vaso ela fica pequena com poda e com a raiz contida, e funciona como planta ornamental ou pré-bonsai, mas perde as folhas no inverno seco e não suporta geada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso ou cerâmica com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; evite vaso estreito e alto, porque a raiz pivotante tomba a planta",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa lavada, 25% húmus de minhoca, mais 1 xícara de farinha de ossos por vaso de 40 L; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda acabou de sair do saquinho e a raiz ainda não explorou o vaso. Pode amarelar ou soltar algumas folhas de baixo. A fase termina quando surgem folhas novas, compostas e em forma de mão, na ponta do caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido na primavera e no verão: o caule engrossa, fica verde-acinzentado e forma acúleos cônicos. Uma muda saudável ganha de 30 a 80 cm no primeiro ano em vaso. Raízes saindo pelos furos no fim desse período indicam que o vaso está no limite."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta em Vaso",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota com força de setembro a março, quando pede mais água e adubo; entre junho e agosto perde a maior parte das folhas e quase para de crescer. Em vaso raramente floresce, porque isso exige árvore com muitos anos. A altura é mantida pela poda de fim de inverno. A partir de 2 m, considere plantá-la no chão, longe pelo menos 15 m de casas, muros e canos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de sumaúma",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz nova ainda está só no torrão da muda e seca rápido. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a sumaúma",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão quente pode precisar de rega a cada 2 dias. Sem folhas, no inverno, regue só a cada 10 a 15 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a sumaúma",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 1 xícara de húmus de minhoca) por vaso de 40 L, na borda e longe do caule, e regue em seguida. Pule a adubação de junho a agosto, quando a árvore está sem folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teia fina (ácaro), carocinhos brancos ou marrons no caule e nas axilas (cochonilha), percevejos vermelhos e pretos agrupados e folhas roídas por lagartas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou podar a raiz",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro, tire a planta do vaso, corte com tesoura limpa até 1/3 das raízes mais grossas e enroladas e replante com substrato novo no mesmo vaso ou num 10 cm maior. Proteja as mãos dos acúleos do caule e regue bem depois.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Firmar a muda",
+      "mensagem": "A sumaúma cresce rápido e fica alta e fina em vaso; vento balançando o caule arrebenta as raízes novas.",
+      "acao_requerida": "Cravar um tutor de bambu ao lado do torrão, sem atravessá-lo, e amarrar o caule com fita macia em forma de oito"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Hora de formar a copa",
+      "mensagem": "Se o caule já passou de 60 a 80 cm sem galhos, a planta vai virar uma vara comprida no vaso.",
+      "acao_requerida": "Cortar a ponta do caule 1 cm acima de uma folha, na altura em que você quer a copa, para estimular brotos laterais"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de sumaúma",
+      "mensagem": "Essa árvore nasceu para ser gigante. Vale decidir agora se ela fica no vaso para sempre, com podas anuais, ou se vai para o chão.",
+      "acao_requerida": "Medir a altura e conferir os furos do vaso; se for plantar no chão, escolher um lugar a mais de 15 m de construções e canos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, a base do caule amolece e escurece, cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e reduzir muito a rega no inverno, quando a planta está sem folhas; se atacar, tirar do vaso, cortar as raízes escuras e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou escamas marrons no caule e nas axilas das folhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete com álcool; em infestação, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teia fina no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Percevejo-manchador (Dysdercus spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Percevejos vermelhos e pretos agrupados nos brotos e folhas novas, que ficam deformadas",
+      "prevencao_tratamento": "Catar e derrubar os insetos num balde com água e sabão; mantê-la longe de algodoeiro, hibisco e paineira infestados"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou reduzidas às nervuras, fezes escuras no substrato",
+      "prevencao_tratamento": "Catar as lagartas à mão; em ataque forte, Bacillus thuringiensis conforme o rótulo"
+    },
+    {
+      "nome": "Queimadura de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e pontas dos ramos escurecem e secam de repente depois de noite abaixo de 5 °C; ramos jovens morrem de cima para baixo",
+      "prevencao_tratamento": "Levar o vaso para perto de parede ou sob cobertura nas noites frias; esperar a brotação da primavera para cortar só a parte seca"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Sumaúma em repouso de inverno",
+      "mensagem": "É normal a sumaúma amarelar e perder quase todas as folhas agora. Sem folhas ela bebe pouco, e a rega de verão apodrece a raiz.",
+      "acao_requerida": "Regar só a cada 10 a 15 dias, quando o substrato estiver seco a 5 cm, suspender o adubo e proteger o vaso nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual da sumaúma",
+      "mensagem": "No fim do inverno a árvore ainda está sem folhas; podar agora controla o tamanho e a brotação da primavera fecha a copa.",
+      "acao_requerida": "Encurtar os galhos mais longos em até 1/3 e cortar a ponta do caule principal se passou da altura desejada, com tesoura limpa e luvas por causa dos acúleos"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta da brotação",
+      "mensagem": "Com o calor, a sumaúma solta folhas novas e volta a crescer rápido.",
+      "acao_requerida": "Voltar à rega normal conforme o substrato seca e retomar a adubação"
+    }
+  ]
+}

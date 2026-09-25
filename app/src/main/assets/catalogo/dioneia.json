@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Dioneia",
+    "nome_cientifico": "Dionaea muscipula",
+    "descricao": "Planta carnívora dos brejos arenosos da Carolina do Norte e do Sul (EUA). Ela captura insetos com armadilhas que se fecham quando dois pelos sensíveis são tocados em até 20 segundos. Vive muitos anos em vaso se receber três coisas: sol forte, água sem sais minerais e um inverno de repouso. Adubo e 'petiscos' de carne não entram nunca.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, não de barro (o barro solta sais), com pelo menos 12 cm de profundidade porque as raízes são longas, 10 a 12 cm de diâmetro e furos no fundo, apoiado num prato que fica com água",
+    "volume_minimo_litros": 1,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% turfa de sphagnum ou musgo sphagnum desidratado e 50% perlita ou areia de quartzo lavada sem calcário. Sem terra, húmus, adubo ou substrato comercial comum, porque os nutrientes queimam as raízes",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plantas de loja costumam vir de estufa sombreada, com armadilhas verdes e moles. Nas duas primeiras semanas, dê 2 a 3 horas de sol da manhã e aumente aos poucos até o sol pleno. Não dispare as armadilhas com o dedo: cada fechamento gasta energia, e a armadilha morre depois de 3 ou 4 fechamentos. Algumas armadilhas vão escurecer, o que é normal na mudança de ambiente. A fase termina quando surgem folhas novas mais curtas e firmes, com o interior começando a avermelhar."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Com sol pleno, as folhas novas crescem rentes ao substrato, em roseta, e o interior das armadilhas fica vermelho. Ao ar livre ela caça sozinha: não precisa alimentar. Dentro de casa, ofereça no máximo um inseto vivo ou recém-morto (mosca, formiga) a cada 2 semanas para uma ou duas armadilhas, com tamanho de até um terço da armadilha. Folhas longas, finas e verdes indicam pouca luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: cresce forte da primavera ao outono, com armadilhas grandes e vermelhas. Solta hastes florais na primavera (setembro a novembro) e entra em dormência de maio a agosto, quando as folhas ficam pequenas, baixas e algumas escurecem. A dormência é obrigatória: sem ela, a planta enfraquece e morre em 1 ou 2 anos. Com o tempo forma touceiras que podem ser divididas na troca de substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_bandeja",
+      "titulo": "Repor a água do prato da dioneia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Mantenha de 1 a 2 cm de água no prato embaixo do vaso e complete sempre que baixar. Use só água de chuva, destilada, desmineralizada ou de osmose reversa. Água de torneira, filtrada ou mineral mata a planta em poucos meses. No verão acima de 30 °C, confira todo dia. Na dormência (maio a agosto), deixe o prato secar entre as reposições e mantenha o substrato só úmido.",
+      "critica": true
+    },
+    {
+      "id": "limpeza_armadilhas",
+      "titulo": "Remover armadilhas mortas",
+      "tipo": "PODA",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura pequena, rente à base, as folhas e armadilhas totalmente pretas ou secas. Retire também restos de insetos que apodreceram dentro de armadilhas escuras. Material morto no vaso atrai o mofo cinzento. Não corte folhas que ainda tenham parte verde.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a dioneia",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o centro da roseta e as folhas novas. Procure pulgões agrupados, folhas novas deformadas ou pegajosas e mofo cinza e felpudo na base. Cheire o substrato: cheiro de podre indica rizoma apodrecendo.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato da dioneia",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "O sphagnum se decompõe e compacta em uns 2 anos. De preferência no fim do inverno (agosto a setembro), tire a planta do vaso, remova o substrato velho com água de chuva, apare raízes pretas e moles e replante em mistura nova de turfa e perlita, com o rizoma branco enterrado e as folhas acima da superfície. Touceiras podem ser separadas nessa hora. Fora dessa época, só troque se o substrato estiver fedendo ou com crosta branca.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Água certa desde o primeiro dia",
+      "mensagem": "A dioneia vive em brejo pobre em minerais. Os sais da água de torneira e de qualquer adubo se acumulam no substrato e queimam as raízes.",
+      "acao_requerida": "Colocar o vaso num prato com 1 a 2 cm de água de chuva, destilada ou de osmose reversa, num lugar com sol da manhã"
+    },
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Depois de duas semanas de adaptação, a planta aguenta sol direto. Sem pelo menos 4 horas de sol, ela estiola e para de avermelhar.",
+      "acao_requerida": "Mudar o vaso para o lugar mais ensolarado da casa, ao ar livre ou numa janela sem vidro filtrando, com 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Confira o substrato de loja",
+      "mensagem": "Algumas lojas vendem a dioneia em substrato comum com terra ou adubo, o que apodrece as raízes aos poucos.",
+      "acao_requerida": "Olhar o substrato: se tiver terra escura, grânulos de adubo ou casca de pinus, replantar em turfa de sphagnum com perlita e água de chuva"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Água com sais minerais",
+      "tipo": "DISTURBIO",
+      "sintomas": "Armadilhas novas escurecem logo depois de abrir, a planta encolhe a cada mês e surge crosta branca no substrato ou na borda do vaso",
+      "prevencao_tratamento": "Usar só água de chuva, destilada ou de osmose reversa. Lavar o substrato passando 1 L dessa água pelo vaso; se tiver crosta, trocar o substrato inteiro"
+    },
+    {
+      "nome": "Podridão do rizoma (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Centro da roseta preto e mole, folhas soltando da base com um puxão leve, cheiro de podre",
+      "prevencao_tratamento": "Não deixar água parada no prato durante a dormência nem no calor forte à sombra. Tirar a planta, cortar as partes moles até o tecido branco e firme e replantar em substrato novo"
+    },
+    {
+      "nome": "Mofo cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Mofo cinza e felpudo sobre folhas mortas e armadilhas com restos de insetos, espalhando-se para as folhas vivas",
+      "prevencao_tratamento": "Remover folhas mortas a cada 15 dias, manter o vaso ventilado e evitar alimentar a planta à sombra ou no inverno. Cortar as partes atacadas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Insetos pequenos verdes ou pretos no centro da roseta e nas hastes florais; folhas novas deformadas que não abrem direito",
+      "prevencao_tratamento": "Afogar a planta: mergulhar o vaso inteiro em água de chuva por 12 horas. Não usar óleo de neem nem sabão, que queimam a planta"
+    },
+    {
+      "nome": "Armadilha preta após alimentar",
+      "tipo": "DISTURBIO",
+      "sintomas": "Armadilha fecha sobre carne, queijo, inseto grande demais ou não fecha totalmente e depois apodrece e escurece",
+      "prevencao_tratamento": "Nunca oferecer carne ou comida humana. Usar só insetos até um terço do tamanho da armadilha e cortar a armadilha escurecida"
+    },
+    {
+      "nome": "Estiolamento por pouca luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas longas, finas e em pé, armadilhas pequenas, verdes e moles, que demoram a fechar",
+      "prevencao_tratamento": "Levar a planta aos poucos para um lugar com 6 horas de sol direto. Dentro de casa, só em janela com sol da manhã inteiro"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "A dormência está chegando",
+      "mensagem": "Com os dias mais curtos e frios, a dioneia desacelera e fica em repouso até agosto. Folhas escurecendo agora são normais, e ela precisa desse frio para sobreviver.",
+      "acao_requerida": "Manter o vaso ao ar livre no lugar mais frio e iluminado, sem levar para dentro de casa aquecida. Parar de alimentar e deixar o substrato só úmido, sem água parada no prato"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja da geada forte",
+      "mensagem": "A dioneia aguenta frio perto de 0 °C e geada leve, mas o vaso pequeno congela inteiro numa geada forte.",
+      "acao_requerida": "Em noites com previsão abaixo de -3 °C, levar o vaso para um lugar coberto e sem aquecimento, como varanda ou garagem, e devolver ao sol de manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento e hastes florais",
+      "mensagem": "A planta sai da dormência e pode soltar hastes florais altas. Florir consome muita energia e costuma enfraquecer a planta.",
+      "acao_requerida": "Voltar a manter 1 a 2 cm de água no prato, cortar as folhas mortas do inverno e cortar as hastes florais quando tiverem 5 cm, a menos que queira sementes"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte do verão",
+      "mensagem": "Acima de 35 °C, o vaso pequeno aquece e o prato seca em um dia.",
+      "acao_requerida": "Conferir o prato todo dia e, nas ondas de calor, dar sombra leve na tarde ou usar um vaso branco ou claro para não aquecer as raízes"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Paineira",
+    "nome_cientifico": "Ceiba speciosa",
+    "descricao": "Árvore nativa do Brasil, de tronco verde e bojudo coberto de acúleos, que guarda água e a torna tolerante à seca. Em vaso fica bem menor e raramente floresce antes dos 8 a 10 anos, mas vale pelo tronco escultural; é muito cultivada a partir das sementes tiradas da paina.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Comece em copo ou saquinho de 1 L com furos; a planta definitiva vai para vaso pesado (barro ou cimento) com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa, 20% composto orgânico ou húmus, 10% perlita ou casca de arroz carbonizada; precisa drenar rápido",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 15,
+      "descricao": "Tire a semente da paina, deixe de molho em água morna por 12 horas e enterre a 1 cm, 2 por recipiente. As plântulas surgem entre o 5º e o 15º dia, com duas folhas arredondadas."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 16,
+      "dia_fim": 120,
+      "descricao": "Aparecem as folhas verdadeiras, compostas de 5 a 7 folíolos em forma de mão. A base do caule começa a engrossar e fica verde; o sinal de que está na hora de mudar de vaso é raiz saindo pelos furos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 121,
+      "dia_fim": 730,
+      "descricao": "Cresce rápido na primavera e no verão, forma os primeiros acúleos no tronco e perde parte ou todas as folhas no inverno. A queda de folhas em junho e julho é normal; tronco firme e verde indica planta viva."
+    },
+    {
+      "fase_id": "arvore_jovem",
+      "nome": "Árvore Jovem em Vaso",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota com força de setembro a março, perde as folhas entre junho e agosto e fica em repouso. O tronco engrossa em forma de garrafa. Flores rosadas, de fevereiro a maio, só aparecem em plantas bem mais velhas e em vasos grandes."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Borrife a superfície até umedecer o primeiro centímetro. O substrato deve ficar úmido, sem poça nem crosta seca.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar a muda de paineira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e jogue fora a água do pratinho. Recipiente pequeno ao sol seca em um dia no calor.",
+      "critica": true
+    },
+    {
+      "id": "rega_planta",
+      "titulo": "Regar a paineira",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 121,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco, até escorrer pelos furos. De junho a agosto, sem folhas, regue a cada 15 a 20 dias. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a paineira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 por vaso de 10 L (3 colheres no vaso de 40 L) longe do tronco e regue em seguida. Não adube de maio a agosto, quando a planta está sem folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas procurando pontinhos amarelados e teias finas, e olhe o tronco e as axilas das folhas atrás de carocinhos brancos ou marrons. Aperte a base do tronco: mole é sinal de podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas grossas por causa dos acúleos, tire a planta do vaso, corte até um terço das raízes grossas enroladas e replante com substrato novo, num vaso do mesmo tamanho ou maior. Se o lembrete cair entre maio e agosto, espere setembro, quando a brotação recomeça.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Deixar uma muda só",
+      "mensagem": "Se as duas sementes germinaram, elas vão disputar espaço e raiz.",
+      "acao_requerida": "Cortar rente ao substrato a muda mais fraca de cada recipiente, com tesoura"
+    },
+    {
+      "dia_disparo": 100,
+      "titulo": "Hora de mudar de vaso",
+      "mensagem": "A muda cresce rápido e o recipiente de germinação já ficou pequeno.",
+      "acao_requerida": "Passar a muda com o torrão inteiro para um vaso de 10 a 15 L com o substrato recomendado, sem enterrar o tronco além do nível original"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Vaso definitivo",
+      "mensagem": "Com um ano, a paineira precisa de um vaso grande e pesado para não tombar com o vento.",
+      "acao_requerida": "Transplantar para o vaso de pelo menos 40 L, usando luvas grossas por causa dos acúleos do tronco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do tronco mole, escurecida ou enrugada; folhas amarelam e caem fora do inverno; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, principalmente no inverno sem folhas; substrato com muita areia e nada de água no pratinho. Com o tronco já mole, corte a parte podre, deixe secar e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas murcham e caem com o caule fino e escuro rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, sol direto já na germinação e sem encharcar; retire as plântulas afetadas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodonosos ou escamas marrons no tronco, ramos e verso das folhas; folhas pegajosas",
+      "prevencao_tratamento": "Remover com cotonete ou escova com álcool 70%; em infestação, óleo de neem a 0,5% com detergente neutro a cada 7 dias, no fim da tarde"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto empoeirado, teias finas no verso; comum no calor seco",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem entre maio e agosto, deixando a planta pelada",
+      "prevencao_tratamento": "É o repouso natural da espécie, não doença. Reduza a rega e suspenda o adubo; a planta rebrota em setembro. Só preocupa se o tronco estiver mole"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Paineira em repouso",
+      "mensagem": "No frio a paineira perde as folhas e quase para de beber água. Rega de verão agora apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para a cada 15 a 20 dias e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Sem folhas, dá para ver a estrutura dos galhos, e a poda agora brota forte na primavera.",
+      "acao_requerida": "Com luvas, cortar galhos secos, cruzados ou fora da copa desejada, logo acima de uma gema; encurtar a ponta principal se quiser a planta mais baixa e cheia"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta da brotação",
+      "mensagem": "Com o calor, a paineira rebrota e volta a precisar de água e adubo.",
+      "acao_requerida": "Retomar a rega a cada 5 dias conferindo o substrato e voltar a adubar"
+    }
+  ]
+}

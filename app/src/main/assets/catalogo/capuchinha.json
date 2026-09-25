@@ -1,0 +1,202 @@
+{
+  "planta": {
+    "nome_comum": "Capuchinha",
+    "nome_cientifico": "Tropaeolum majus",
+    "descricao": "Trepadeira ou pendente de folhas redondas e flores laranja, amarelas ou vermelhas, todas comestíveis, com sabor picante que lembra agrião. É perene em clima ameno, mas em vaso se cultiva como anual, porque depois de uns cinco meses a floração cai e a planta fica rala. Floresce melhor em substrato pobre e ainda atrai pulgões para longe das hortaliças vizinhas.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso, jardineira ou vaso suspenso com pelo menos 20 cm de profundidade e 25 cm de diâmetro, com furos no fundo; os suspensos deixam as ramas caírem",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa, 20% húmus de minhoca; sem esterco nem adubo rico em nitrogênio, que fazem muita folha e pouca flor",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 12,
+      "descricao": "Deixe as sementes de molho em água por 12 horas e semeie 2 ou 3 por cova, a 2 cm de profundidade. As plântulas surgem entre o 7º e o 12º dia, com duas folhas redondas já parecidas com as da planta adulta."
+    },
+    {
+      "fase_id": "mudas",
+      "nome": "Mudas",
+      "dia_inicio": 13,
+      "dia_fim": 30,
+      "descricao": "As folhas verdadeiras se abrem em forma de guarda-chuva e o caule se alonga. A fase acaba quando a muda tem 4 a 6 folhas e começa a soltar ramas."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 55,
+      "descricao": "As ramas crescem rápido e começam a pender ou a subir por um apoio. Folhas enormes e escuras indicam excesso de adubo ou pouca luz. Os primeiros botões aparecem nas axilas das folhas no fim da fase."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 56,
+      "dia_fim": 120,
+      "descricao": "Floração contínua. Quanto mais flores você colhe e mais flores murchas retira, mais a planta produz. Folhas, flores e botões podem ser colhidos para salada."
+    },
+    {
+      "fase_id": "declinio_sementes",
+      "nome": "Declínio e Sementes",
+      "dia_inicio": 121,
+      "dia_fim": 150,
+      "descricao": "Surgem menos flores, as folhas de baixo amarelam e as ramas ficam finas. As flores deixam trios de sementes verdes que secam e caem. No fim da fase, guarde sementes secas e comece um vaso novo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 12,
+      "instrucoes": "Toque a superfície: se o primeiro centímetro estiver seco, regue com regador de bico fino até umedecer, sem formar poça. Encharcar apodrece a semente, que é grande e cheia de reserva.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a capuchinha",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Acima de 30 °C ou em vaso suspenso, confira todo dia. Folhas murchas ao meio-dia que voltam à tarde são calor, não falta de água.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Espalhe 1 colher de sopa de farinha de ossos ou bokashi por vaso de 5 L na borda do vaso e regue em seguida. Não use ureia, esterco fresco nem NPK rico em nitrogênio: a planta vira só folha.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Vire as folhas e olhe as pontas das ramas. Procure pulgões pretos agrupados, lagartas verdes ou ovos amarelos em fileira no verso da folha e folhas roídas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_flores",
+      "titulo": "Colher flores e limpar a planta",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 56,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Pela manhã, colha as flores abertas e as folhas novas para consumo com o cabinho inteiro. Arranque as flores murchas e as folhas amarelas. Se uma rama passar de 60 cm ou invadir outro vaso, corte a ponta acima de uma folha.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Conferir a germinação",
+      "mensagem": "Até agora as plântulas já devem ter aparecido. Semente que não brotou em 15 dias provavelmente apodreceu.",
+      "acao_requerida": "Ressemear as covas vazias a 2 cm de profundidade, com sementes deixadas de molho por 12 horas"
+    },
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "Várias mudas no mesmo vaso disputam água e luz e florescem pouco.",
+      "acao_requerida": "Deixar só a muda mais vigorosa a cada 5 L de vaso, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 35,
+      "titulo": "Escolha: subir ou pender",
+      "mensagem": "As ramas começam a se alongar. Sem direção, elas tombam para um lado só e se enroscam em tudo.",
+      "acao_requerida": "Instalar uma treliça ou tela de 60 cm e enrolar as ramas nela, ou pendurar o vaso e deixar as ramas caírem pela borda"
+    },
+    {
+      "dia_disparo": 121,
+      "titulo": "Guarde as sementes",
+      "mensagem": "A floração vai diminuir. As sementes que secam na planta servem para o próximo plantio, e as verdes podem ser curtidas em vinagre como alcaparra.",
+      "acao_requerida": "Recolher as sementes secas, bege e enrugadas, e guardá-las em envelope de papel em local seco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-preto (Aphis fabae)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos nas pontas das ramas e no verso das folhas; folhas enroladas e pegajosas, com formigas subindo",
+      "prevencao_tratamento": "Jato de água forte nas colônias; se persistir, calda de sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias. Cortar as pontas muito infestadas"
+    },
+    {
+      "nome": "Lagarta-da-couve (Ascia monuste)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas até as nervuras; ovos amarelos em fileira no verso das folhas; lagartas verdes ou cinza com listras",
+      "prevencao_tratamento": "Catar lagartas e esmagar os ovos na inspeção; em infestação forte, Bacillus thuringiensis pulverizado no fim da tarde"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetinhos brancos que voam ao mexer na planta; folhas amareladas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato molhado; base do caule escura e mole; tombamento das mudas",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, usar vaso com furos e esvaziar o pratinho. Retirar plantas com caule mole"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre as folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Deixar o vaso em local arejado e molhar só o substrato. Remover as folhas atacadas e pulverizar leite diluído em água (1:9) ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Muita folha e nenhuma flor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas grandes, escuras e abundantes e poucos ou nenhum botão depois do 60º dia",
+      "prevencao_tratamento": "Suspender qualquer adubo nitrogenado, levar o vaso para um lugar com pelo menos 6 horas de sol e usar só farinha de ossos na adubação"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte do verão",
+      "mensagem": "Acima de 32 °C a capuchinha murcha ao meio-dia, derruba botões e floresce menos.",
+      "acao_requerida": "Levar o vaso para um lugar com sol só de manhã e sombra à tarde, e conferir a umidade do substrato todo dia"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "A capuchinha não tolera geada: uma noite abaixo de 2 °C queima ramas e folhas.",
+      "acao_requerida": "Em noites com previsão de frio intenso, levar o vaso para perto de uma parede ou para dentro, ou cobrir com TNT até de manhã"
+    }
+  ]
+}

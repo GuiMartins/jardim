@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Flor-de-cera",
+    "nome_cientifico": "Hoya carnosa",
+    "descricao": "Trepadeira epífita de folhas grossas e cerosas que dá cachos de flores estreladas, perfumadas à noite e com gotas de néctar. Aguenta esquecimento na rega e vive décadas em vaso, e as flores voltam todo ano nos mesmos esporões.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica de 14 a 18 cm de diâmetro e 12 a 15 cm de profundidade, com vários furos no fundo; a flor-de-cera floresce melhor com a raiz um pouco apertada, então não use vaso grande demais. Vaso suspenso ou com arco/treliça para os ramos",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "40% casca de pinus média, 30% substrato para plantas, 20% perlita ou carvão vegetal em pedaços, 10% fibra de coco; solto e arejado, que seca em poucos dias",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se acostuma à nova luz e pode perder um ou outro botão ou folha velha. Não troque de vaso nem adube agora. A fase termina quando surgem pontas novas de ramo ou folhas novas avermelhadas e firmes."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Surgem ramos longos e finos, às vezes quase sem folhas, que só se cobrem de folhas depois de achar apoio. Enrole esses ramos no arco ou na treliça no sentido em que eles já giram e não os corte: é neles que nascem os futuros esporões de flor."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce e brota de setembro a março, com floração principal da primavera ao verão em cachos que nascem de esporões curtos. Depois que as flores caem, o esporão fica e floresce de novo nos anos seguintes, então nunca o corte. No outono e no inverno o crescimento quase para e a planta pede menos água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a flor-de-cera",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato: só regue se estiver seco, molhando até escorrer pelos furos, e esvazie o pratinho depois de 15 minutos. O vaso leve e as folhas um pouco moles também indicam sede. Acima de 30 °C confira a cada 5 dias; de maio a agosto espace para cada 12 a 15 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a flor-de-cera",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dissolva 1 g de NPK 10-10-10 (ou adubo para orquídea) por litro de água e regue o substrato já úmido. Com botões à vista, troque por uma fórmula mais rica em fósforo, como 4-14-8. De abril a agosto pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a flor-de-cera",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as axilas das folhas, o verso delas, os esporões e os botões. Procure pontos brancos algodoados, escamas marrons presas ao caule, colônias de pulgão nos botões e folhas pegajosas ou com fumagina preta.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro ou outubro, fora da floração, tire a planta, retire o substrato velho e as raízes pretas ou moles e replante com substrato novo num vaso de no máximo 2 a 4 cm a mais de diâmetro. Espere 5 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, flor-de-cera!",
+      "mensagem": "Mudar de vaso e de luz ao mesmo tempo estressa a planta e derruba botões. Ela gosta de vaso apertado.",
+      "acao_requerida": "Mantê-la no vaso em que veio, perto de uma janela clara com no máximo sol da manhã, e não adubar no primeiro mês"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Hora de dar um apoio",
+      "mensagem": "Os ramos novos são trepadores e só se cobrem de folhas quando têm onde se enrolar.",
+      "acao_requerida": "Instalar um arco de arame, uma treliça ou um tutor de fibra no vaso e enrolar os ramos longos nele, sem cortá-los"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados nas axilas das folhas, nos esporões e nas raízes; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo de neem a 0,5% com detergente neutro a cada 7 dias, 3 vezes, longe do sol forte"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou brancas presas ao caule e ao verso das folhas; melado e fumagina preta",
+      "prevencao_tratamento": "Raspe com escova de dentes macia e álcool 70%; depois aplique óleo mineral ou de neem a 1% a cada 10 dias até sumirem"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos amarelos ou verdes nos botões e nas pontas novas; botões deformados que caem",
+      "prevencao_tratamento": "Jato de água fraco ou pano úmido nos botões; se voltar, sabão neutro a 1% ou neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas, moles e murchas mesmo com o substrato úmido; base do caule escura; raízes pretas e desmanchando",
+      "prevencao_tratamento": "Regar só com o substrato seco, usar substrato com casca de pinus e nunca deixar água no pratinho. Se aparecer, corte as raízes podres, replante em substrato novo e seco e recomece por estacas sadias se o caule estiver afetado"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir",
+      "prevencao_tratamento": "Não mude o vaso de lugar nem gire a planta enquanto houver botões, e evite rega irregular e corrente de ar frio"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelas a esbranquiçadas ou folhas avermelhadas e duras do lado virado para o sol da tarde",
+      "prevencao_tratamento": "Deixe só sol da manhã ou luz filtrada por cortina; folhas levemente avermelhadas são normais com luz forte, e manchas secas indicam excesso"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta saudável e com ramos, mas sem cachos de flor por mais de um ano",
+      "prevencao_tratamento": "Aumente a luz (1 a 3 horas de sol da manhã), não troque para vaso grande demais e não corte ramos longos nem esporões antigos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "A flor-de-cera volta a crescer",
+      "mensagem": "Com a primavera a planta retoma o crescimento e começa a formar botões nos esporões.",
+      "acao_requerida": "Retomar a adubação mensal, aproximar a rega do ritmo de verão e enrolar os ramos novos no suporte"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12,
+        1
+      ],
+      "titulo": "Época de flores: não mexa no vaso",
+      "mensagem": "Os cachos se formam nos mesmos esporões de anos anteriores. Mudar a planta de lugar derruba os botões.",
+      "acao_requerida": "Deixar o vaso no lugar e, quando as flores caírem, não cortar o talinho (esporão) que fica"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Reduzir a rega",
+      "mensagem": "Com o frio a planta quase para de crescer e o substrato demora mais a secar, o que favorece a podridão de raiz.",
+      "acao_requerida": "Espaçar a rega para cada 12 a 15 dias, sempre conferindo o substrato seco, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A flor-de-cera sofre abaixo de 10 °C e as folhas escurecem com geada ou vento frio.",
+      "acao_requerida": "Nas noites abaixo de 10 °C, levar o vaso para dentro de casa ou para um canto protegido do vento"
+    }
+  ]
+}

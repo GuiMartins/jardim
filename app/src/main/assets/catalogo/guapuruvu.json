@@ -1,0 +1,194 @@
+{
+  "planta": {
+    "nome_comum": "Guapuruvu",
+    "nome_cientifico": "Schizolobium parahyba",
+    "descricao": "Árvore nativa da Mata Atlântica e uma das que crescem mais rápido no Brasil. Tem folhas enormes e recortadas como samambaia e floresce em amarelo no fim do inverno. Chega a 20–30 m, então o vaso serve só para formar a muda nos primeiros anos, até o plantio definitivo num terreno amplo; em vaso ela não floresce.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Comece num saco de muda ou vaso de 3 a 5 L com furos. Quando a raiz tomar o recipiente, passe para um vaso de pelo menos 40 cm de diâmetro e 40 cm de profundidade (40 L). A raiz principal é pivotante e profunda, então prefira vasos mais fundos que largos",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; fértil e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 15,
+      "descricao": "A casca da semente é dura e não deixa a água entrar. Antes de semear, lixe a borda oposta ao ponto onde ela se prendia na vagem até aparecer a parte clara. Outro jeito é despejar água a 80 °C sobre as sementes e deixar de molho por 24 h: as que incharem estão prontas. Semeie deitada, a 2 cm de profundidade. Sementes preparadas assim germinam entre o 5º e o 15º dia."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 16,
+      "dia_fim": 60,
+      "descricao": "Surge o caule com as primeiras folhas compostas, que já parecem pequenas samambaias. O caule é tenro e verde e murcha rápido se o substrato secar."
+    },
+    {
+      "fase_id": "muda_crescimento",
+      "nome": "Muda em Crescimento",
+      "dia_inicio": 61,
+      "dia_fim": 365,
+      "descricao": "O crescimento acelera: com calor e água, a muda passa de 1 m no primeiro verão e as folhas chegam a 50 cm ou mais. Raízes saindo pelos furos são o sinal de que precisa de vaso maior. No inverno a muda pode perder parte das folhas e parar de crescer."
+    },
+    {
+      "fase_id": "arvore_jovem_vaso",
+      "nome": "Árvore Jovem em Vaso",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "O tronco fica reto e liso, marcado pelas cicatrizes das folhas que caíram. No ano típico, ela cresce forte de outubro a março, perde as folhas entre junho e agosto e rebrota em setembro. Em vaso não floresce. O ideal é plantá-la no chão até o 2º ou 3º ano, porque a raiz fica apertada e a copa pesada acaba tombando o vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Manter a semente úmida",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Regue a superfície devagar até umedecer os primeiros 3 cm. O substrato deve ficar úmido como uma esponja espremida, nunca encharcado: com a casca lixada, a semente apodrece fácil.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o guapuruvu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão, acima de 30 °C, confira todo dia. No inverno, se a planta estiver sem folhas, regue só quando os 5 cm de cima secarem.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o guapuruvu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de NPK 10-10-10 por vaso de 40 L, sem encostar no caule, e regue em seguida. Entre junho e agosto, pule a adubação se a planta estiver sem folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folíolos cortados em meia-lua, trilhas de formiga chegando ao vaso, carapaças brancas presas ao caule e ramos com um anel roído na casca.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Passar para vaso maior",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, passe a planta para um vaso 10 cm mais largo e mais fundo, com substrato novo, sem desmanchar o torrão. Se o vaso já tem 60 L ou mais, é hora de plantar no chão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Escolha a muda mais forte",
+      "mensagem": "Se você semeou mais de uma semente no vaso, as plântulas vão disputar espaço e as raízes principais se enroscam.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa e cortar as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Hora de sair do saquinho",
+      "mensagem": "A muda cresce rápido, e a raiz principal já deve ter chegado ao fundo do recipiente inicial.",
+      "acao_requerida": "Transplantar para o vaso de 40 L sem desmanchar o torrão e regar bem em seguida"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Planeje o lugar definitivo",
+      "mensagem": "O guapuruvu chega a 20–30 m, tem madeira leve e galhos que quebram com vento forte. Não serve para calçada nem para perto de casas.",
+      "acao_requerida": "Escolher um terreno amplo, a pelo menos 10 m de construções, fios e encanamentos, ou combinar a doação da muda para um reflorestamento"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; a base do caule fica escura e mole; o vaso tem cheiro azedo",
+      "prevencao_tratamento": "Regar só quando o substrato estiver seco a 3 cm de profundidade e manter os furos desentupidos. No inverno, com a planta sem folhas, espaçar bem as regas. Quando a base do caule já amoleceu, a muda raramente se recupera"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "A plântula murcha e tomba, com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Usar substrato novo, não encharcar durante a germinação e deixar o vaso no sol; retirar as plântulas afetadas"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos cortados em meia-lua ou a muda inteira desfolhada de uma noite para outra; trilha de formigas carregando pedaços verdes",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e pôr isca formicida granulada perto dele, longe de crianças e animais. Proteger o caule com um cone de plástico invertido ou uma fita com graxa"
+    },
+    {
+      "nome": "Serrador (Oncideres spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Galho ou ponteiro com um anel roído em volta da casca, que seca e cai inteiro",
+      "prevencao_tratamento": "Recolher e queimar ou jogar fora os galhos cortados, porque os ovos ficam neles; catar os besouros que aparecerem no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons presas ao caule e às nervuras; folhas pegajosas e cobertas por fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; se persistir, aplicar óleo mineral ou neem a 1% a cada 7 dias"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e ponteiro escurecem e secam de um dia para outro depois de uma noite muito fria",
+      "prevencao_tratamento": "Muda jovem não tolera geada: nas noites abaixo de 5 °C, leve o vaso para junto de uma parede ou para baixo de uma cobertura. Espere a rebrota da primavera antes de cortar as partes secas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja do frio",
+      "mensagem": "Muda jovem de guapuruvu queima com geada e sofre abaixo de 5 °C.",
+      "acao_requerida": "Nas noites frias, levar o vaso para junto de uma parede ou para baixo de uma cobertura; onde não gia, basta deixá-lo protegido do vento"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Queda de folhas no inverno",
+      "mensagem": "É normal o guapuruvu perder as folhas no inverno seco; ele rebrota na primavera. Com menos folhas, o substrato demora mais para secar.",
+      "acao_requerida": "Espaçar a rega, regando só quando os 5 cm de cima do substrato estiverem secos, e suspender a adubação até a rebrota"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Rebrota da primavera",
+      "mensagem": "Com a volta do calor, o guapuruvu solta brotos novos e volta a crescer rápido.",
+      "acao_requerida": "Voltar à rega normal, retomar a adubação mensal e cortar os ramos queimados pela geada até o ponto em que a casca estiver verde"
+    }
+  ]
+}

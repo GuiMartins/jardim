@@ -1,0 +1,214 @@
+{
+  "planta": {
+    "nome_comum": "Fruta-pão",
+    "nome_cientifico": "Artocarpus altilis",
+    "descricao": "Árvore tropical da família da jaca, de folhas grandes e recortadas, cujos frutos amiláceos são comidos cozidos, assados ou fritos. Em vaso grande e com poda anual fica entre 2 e 3 m e pode frutificar, mas é muito sensível ao frio: no Centro-Sul precisa de local quente, abrigado do vento e de proteção no inverno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico reforçado, fibra ou cerâmica, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, vários furos no fundo e sobre rodízios para poder abrigar no inverno",
+    "volume_minimo_litros": 100,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de pinus fina ou perlita; acrescente 2 colheres de sopa de calcário dolomítico e 200 g de farinha de ossos por 100 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda (geralmente de broto de raiz ou enxertada) sofre com a troca de vaso: algumas folhas grandes podem amarelar e cair. A fase termina quando surge a primeira folha nova totalmente aberta no ponteiro. Mantenha em meia-sombra luminosa nos primeiros 10 dias e passe ao sol pleno aos poucos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento no começo e acelerado no calor, com uma folha nova a cada uma ou duas semanas no verão. No inverno o crescimento para e pode haver queda de folhas. A planta está estabelecida quando as raízes aparecem nos furos do vaso e o caule firma sem precisar de tutor."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "Fase de formar a copa: a poda anual de setembro define 3 ou 4 ramos principais e segura a altura em 2 a 3 m. Ainda não se espera fruto. Folhas grandes, verde-escuras e brilhantes indicam boa nutrição; folhas pequenas e amareladas indicam falta de adubo ou vaso pequeno."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "A partir do 3º ao 6º ano a planta pode florescer na primavera e no verão: flores masculinas em forma de clava amarela e femininas redondas e verdes, que viram os frutos. O fruto amadurece de 2 a 3 meses depois, entre o fim do verão e o outono. No inverno a planta desacelera, pede menos água e precisa de abrigo do frio; em setembro recebe a poda e volta a ser adubada."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de fruta-pão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e descarte a água do prato. A raiz ainda está só no torrão da muda: substrato seco murcha as folhas grandes em horas, e encharcado apodrece a raiz. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a fruta-pão",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 10 L num vaso de 100 L) e esvazie o prato. No verão quente, confira a cada 2 dias; de junho a agosto, espace para 5 a 7 dias e regue só com o substrato seco a 5 cm.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a fruta-pão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de bokashi pela borda do vaso de 100 L, sem encostar no caule, e regue em seguida. A cada 3 meses, troque por 1 colher de sopa de NPK 10-10-10 dissolvida em 5 L de água. Não adube de junho a agosto, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as nervuras, os ponteiros e a base do caule. Procure cochonilhas brancas ou marrons, formigas subindo (sinal de cochonilha), manchas escuras nas folhas e escurecimento mole na base do caule.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso da fruta-pão",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, passe para um vaso 30 a 50% maior; se já estiver no maior vaso possível, tire a planta, corte 5 cm de raiz em volta e no fundo do torrão e devolva com substrato novo. Regue bem e deixe 1 semana em meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Hora de ir para o sol pleno",
+      "mensagem": "Depois de 10 dias em meia-sombra, a muda já pode começar a receber sol direto. Mudar de uma vez queima as folhas grandes.",
+      "acao_requerida": "Deixar a planta no sol da manhã por 3 a 4 dias e depois no local definitivo, com pelo menos 6 horas de sol"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Começa a adubação",
+      "mensagem": "A muda já passou pela adaptação e começa a formar raízes novas no substrato do vaso.",
+      "acao_requerida": "Fazer a primeira adubação leve com húmus pela borda do vaso"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de fruta-pão",
+      "mensagem": "A planta sai do estabelecimento. A partir de agora, a poda de setembro vai formar a copa e controlar a altura no vaso.",
+      "acao_requerida": "Conferir se as raízes já saem pelos furos; se sim, planejar a troca de vaso para a próxima primavera"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Idade de frutificar",
+      "mensagem": "Plantas de muda enxertada ou de broto de raiz costumam florescer entre o 3º e o 6º ano. As flores masculinas parecem clavas amarelas; as femininas são bolas verdes e ásperas.",
+      "acao_requerida": "Na primavera e no verão, procurar flores nos ponteiros e manter a adubação e a rega em dia para segurar os frutos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, excesso de água)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escura e mole; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e reduzir a rega no inverno. Com sintomas, suspenda a rega, tire a planta do vaso, corte as raízes escuras e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodonosas ou marrons nas nervuras, ponteiros e frutos; melado pegajoso, fumagina preta e formigas",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em infestação, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, 3 aplicações"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha, Ceratitis)",
+      "tipo": "PRAGA",
+      "sintomas": "Picadas escuras na casca do fruto, que amolece e apodrece por dentro com larvas",
+      "prevencao_tratamento": "Colher no ponto, sem deixar amadurecer demais no pé; recolher e descartar frutos caídos; ensacar os frutos em formação com saco de TNT"
+    },
+    {
+      "nome": "Podridão-mole dos frutos (Rhizopus artocarpi)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores e frutos novos escurecem, ficam moles e cobertos de mofo cinza-escuro, principalmente em tempo úmido",
+      "prevencao_tratamento": "Retirar e descartar frutos e flores atacados, arejar a copa com a poda e evitar molhar a copa na rega"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons a pretas, irregulares, nas folhas e nos frutos, que secam e caem",
+      "prevencao_tratamento": "Remover folhas atacadas, regar só no substrato e manter a copa arejada; em surto, calda bordalesa a 1% a cada 10 dias"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam com aspecto cozido e caem depois de noites abaixo de 10 °C; ponteiros secam",
+      "prevencao_tratamento": "Abrigar a planta junto a parede quente ou em local coberto quando a previsão marcar menos de 12 °C; não podar os ramos danificados antes de setembro, porque eles protegem o resto da copa"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Preparar a fruta-pão para o frio",
+      "mensagem": "A fruta-pão é tropical e sofre abaixo de 12 °C. O inverno do Centro-Sul chega em junho.",
+      "acao_requerida": "Escolher um local abrigado do vento, junto a parede que receba sol, e deixar o vaso sobre rodízios ou pronto para ser movido"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteger do frio e regar menos",
+      "mensagem": "A planta está parada e bebe pouco. Frio e substrato encharcado juntos são a combinação que mais mata a fruta-pão em vaso.",
+      "acao_requerida": "Abrigar a planta nas noites com previsão abaixo de 12 °C, regar só com o substrato seco a 5 cm e não adubar"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda anual e volta da adubação",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento. É a hora de formar a copa e controlar a altura no vaso.",
+      "acao_requerida": "Cortar os ramos secos ou queimados pelo frio, encurtar em um terço os ramos que passam de 2,5 m logo acima de uma folha e retomar a adubação mensal"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "titulo": "Época de frutos",
+      "mensagem": "Em plantas adultas, os frutos formados na primavera amadurecem agora. Para cozinhar, colha maduro mas ainda firme.",
+      "acao_requerida": "Colher os frutos quando a casca passar de verde-escura para verde-amarelada, os gomos da casca ficarem achatados e aparecerem gotas de látex seco entre eles"
+    }
+  ]
+}

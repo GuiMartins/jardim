@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Celósia",
+    "nome_cientifico": "Celosia argentea (grupos Plumosa e Cristata)",
+    "descricao": "Planta ornamental anual de inflorescências em pluma (grupo Plumosa, a mais vendida) ou em crista ondulada (Cristata, a 'crista-de-galo'), em vermelho, amarelo, laranja e rosa. As flores duram dois meses ou mais, aguentam calor e secam bem para arranjos.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 160,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso com pelo menos 15 cm de diâmetro e 15 cm de profundidade, com furos no fundo; em jardineira, deixe 20 cm entre plantas. As variedades altas de pluma (acima de 60 cm) pedem vaso de 20 cm",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; solto e sem torrões",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Espalhe 3 ou 4 sementes por vaso e cubra com uma camada fina de substrato, de uns 3 mm. Com o substrato entre 21 e 27 °C, as plântulas surgem entre o 5º e o 10º dia. Abaixo de 18 °C a germinação falha."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 11,
+      "dia_fim": 30,
+      "descricao": "Aparecem as primeiras folhas verdadeiras, alongadas e às vezes arroxeadas. É a fase mais sensível ao tombamento: o caule é fino e apodrece rente ao substrato se o vaso ficar encharcado."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 65,
+      "descricao": "A planta ganha altura e folhas rapidamente e, na Plumosa, solta ramos laterais. Perto do fim da fase surge no topo um botão compacto e colorido, que é o começo da inflorescência."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 66,
+      "dia_fim": 140,
+      "descricao": "A pluma ou crista principal se abre e vai ganhando cor. Depois vêm as inflorescências laterais. Cada uma fica bonita por 4 a 8 semanas. Quando a base da pluma escurece e fica marrom, aquela inflorescência está passando."
+    },
+    {
+      "fase_id": "sementes_fim_ciclo",
+      "nome": "Sementes e Fim do Ciclo",
+      "dia_inicio": 141,
+      "dia_fim": 160,
+      "descricao": "As inflorescências secam de baixo para cima e soltam sementes pretas e brilhantes. As folhas de baixo amarelam, e a planta não volta a florescer. Colha as sementes e descarte a planta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes da celósia",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. As sementes estão rasas e morrem se a superfície secar, mas não deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a celósia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 160,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue na base até escorrer pelos furos, sem molhar as flores. Se ainda estiver úmido, não regue: encharcar apodrece o colo. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a celósia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Espalhe 1 colher de chá de NPK 4-14-8 por vaso de 3 L, ou 2 colheres de sopa de húmus, longe do caule, e regue em seguida. Adubo com muito nitrogênio dá muita folha e pluma pequena.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e plumas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 160,
+      "instrucoes": "Vire as folhas e procure pulgões nos brotos, teias finas e pontinhos amarelos (ácaro) no verso, manchas marrons com borda escura e o colo do caule escurecido.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_inflorescencias",
+      "titulo": "Cortar as plumas passadas",
+      "tipo": "PODA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": 140,
+      "instrucoes": "Corte com tesoura limpa as inflorescências que escureceram, logo acima do primeiro par de folhas sadias abaixo delas. Isso estimula novas plumas laterais. Se quiser sementes, deixe 1 ou 2 plumas secarem na planta.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Várias mudas no mesmo vaso competem entre si, ficam raquíticas e florescem cedo e pequenas.",
+      "acao_requerida": "Deixar só a muda mais vigorosa do vaso, cortando as outras rente ao substrato com tesoura, sem arrancar"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Despontar para ramificar (só Plumosa)",
+      "mensagem": "Tirar a ponta agora faz a celósia de pluma soltar vários ramos laterais e dar mais plumas. Na Cristata, não desponte, porque ela forma uma crista só.",
+      "acao_requerida": "Na Plumosa com 15 a 20 cm e 4 pares de folhas, beliscar a ponta do caule logo acima do último par de folhas"
+    },
+    {
+      "dia_disparo": 66,
+      "titulo": "Primeiras plumas abrindo",
+      "mensagem": "A inflorescência principal deve estar ganhando cor e tamanho.",
+      "acao_requerida": "Mover o vaso para o lugar com mais sol da casa e, se a planta for alta, apoiá-la numa estaca junto ao caule"
+    },
+    {
+      "dia_disparo": 141,
+      "titulo": "Colher sementes",
+      "mensagem": "As plumas secas estão cheias de sementes pretas, que germinam bem na próxima primavera.",
+      "acao_requerida": "Cortar uma pluma seca, sacudi-la dentro de um saco de papel e guardar as sementes num pote fechado e seco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas tombam ou plantas adultas murcham mesmo com o substrato úmido; caule escuro, mole e afinado rente ao substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, usar substrato novo e vaso com furos e esvaziar o prato. Planta com o colo podre não se recupera: retire-a e troque o substrato"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e na base das plumas; folhas novas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água forte; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam bronzeadas; teias finas no verso, comuns no calor seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias quentes e secos; se persistir, óleo de neem a 0,5% a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas circulares marrons ou acinzentadas com borda escura, que começam nas folhas de baixo e fazem a folha cair",
+      "prevencao_tratamento": "Regar na base sem molhar as folhas e deixar espaço para o ar circular. Retire as folhas manchadas e jogue no lixo, não na composteira"
+    },
+    {
+      "nome": "Floração precoce e planta raquítica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta baixa e com poucas folhas que solta uma pluma minúscula antes do tempo e para de crescer",
+      "prevencao_tratamento": "É estresse na fase jovem: vaso pequeno, mudas amontoadas, falta de água ou frio. Faça o desbaste cedo e use vaso de pelo menos 3 L desde o início. Não tem conserto na mesma planta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: vaso seca rápido",
+      "mensagem": "Em dias acima de 30 °C, o vaso pequeno pode secar em um dia e a celósia murcha, principalmente com as plumas abertas.",
+      "acao_requerida": "Conferir o substrato todo dia no fim da tarde e, em vaso de barro, colocar um prato com pedriscos para não esquentar a raiz"
+    },
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Frio encerra a celósia",
+      "mensagem": "Abaixo de 10 °C a celósia para, as folhas escurecem e a geada mata a planta.",
+      "acao_requerida": "Nas noites frias, levar o vaso para perto de uma parede abrigada ou para dentro, e colher as sementes das plumas secas antes da primeira geada"
+    }
+  ]
+}

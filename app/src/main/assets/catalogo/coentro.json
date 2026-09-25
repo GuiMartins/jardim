@@ -1,0 +1,174 @@
+{
+  "planta": {
+    "nome_comum": "Coentro",
+    "nome_cientifico": "Coriandrum sativum",
+    "descricao": "Erva aromática de folhas usada no Norte e no Nordeste para temperar peixe, feijão e moqueca. O ciclo é rápido, mas no calor e na seca ela pendoa cedo: as folhas ficam finas e amargas e a planta passa a produzir flor e semente. Quem cultiva em casa costuma semear de novo a cada 3 ou 4 semanas para nunca ficar sem folha.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 70,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade e furos no fundo. Semeie direto no lugar definitivo, porque a raiz pivotante não aceita bem o transplante.",
+    "volume_minimo_litros": 2,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca e 20% areia grossa ou fibra de coco. Deve ficar solto e úmido sem encharcar.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Cada 'semente' é um fruto com duas sementes dentro. Esmague de leve com o fundo de um copo e deixe de molho por 12 horas. Semeie a 1 cm de profundidade, com 3 sementes por cova e 5 cm entre as covas. As plântulas aparecem entre o 7º e o 14º dia, com duas folhas compridas e estreitas."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "Surgem as folhas verdadeiras, arredondadas e recortadas, e a planta forma uma touceira baixa. A fase termina quando os tufos passam de 15 cm de altura."
+    },
+    {
+      "fase_id": "colheita_folhas",
+      "nome": "Colheita de Folhas",
+      "dia_inicio": 36,
+      "dia_fim": 60,
+      "descricao": "É a fase mais produtiva. Colha sempre as folhas externas e deixe o miolo brotar. Quando aparecer uma haste central alta e com folhas finas como as da cenoura, a planta começou a pendoar."
+    },
+    {
+      "fase_id": "pendoamento_sementes",
+      "nome": "Pendoamento e Sementes",
+      "dia_inicio": 61,
+      "dia_fim": 70,
+      "descricao": "A planta solta flores brancas em umbela e as folhas perdem sabor. Você pode colher as últimas folhas e arrancar a planta, ou deixar as sementes secarem na haste para usar como tempero ou semear de novo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes de coentro",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode formar crosta seca, porque a semente para de germinar se secar uma vez, e também não pode encharcar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o coentro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 70,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar junto à base até escorrer pelos furos. Acima de 28 °C, confira todo dia: um dia de murcha já faz o coentro pendoar antes da hora.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o coentro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 50,
+      "instrucoes": "Espalhe 1 colher de sopa de húmus de minhoca por litro de vaso ao redor das plantas, sem encostar nos caules, e regue em seguida. O nitrogênio do húmus sustenta a produção de folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas do coentro",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 70,
+      "instrucoes": "Afaste a touceira e olhe o verso das folhas e os brotos do miolo. Procure pulgões agrupados, manchas marrons com halo amarelo e folhas encharcadas perto do substrato.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de coentro",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": 65,
+      "instrucoes": "Corte com tesoura os talos externos rente à base e nunca tire mais de um terço da planta de uma vez. Colher com frequência atrasa o pendoamento. Se já houver haste floral, corte-a para ganhar mais alguns dias de folha.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 18,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Com várias mudas por cova, elas competem por água e pendoam mais cedo.",
+      "acao_requerida": "Deixar as 2 mudas mais vigorosas de cada cova e cortar as outras rente ao substrato com tesoura, sem puxar"
+    },
+    {
+      "dia_disparo": 36,
+      "titulo": "Coentro pronto para colher",
+      "mensagem": "Os tufos já devem passar de 15 cm, com folhas largas e perfumadas.",
+      "acao_requerida": "Fazer a primeira colheita das folhas externas e semear outro vaso para ter coentro sem interrupção"
+    },
+    {
+      "dia_disparo": 55,
+      "titulo": "O coentro vai pendoar em breve",
+      "mensagem": "A partir de agora a planta tende a soltar a haste floral, e as folhas perdem sabor.",
+      "acao_requerida": "Colher o que estiver bom e, se ainda não semeou outro vaso, semear hoje"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e no verso das folhas; folhas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas folhas. Se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, respeitando 7 dias de carência antes de colher."
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "As plântulas murcham e caem, com o caule fino e escuro rente ao substrato",
+      "prevencao_tratamento": "Use substrato novo, não encharque na germinação e não semeie denso demais. Retire as plântulas afetadas e deixe a superfície secar um pouco entre as regas."
+    },
+    {
+      "nome": "Queima-das-folhas (Alternaria)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons a pretas, com anéis e halo amarelo, que começam nas folhas mais velhas e as secam",
+      "prevencao_tratamento": "Regue no substrato, nunca por cima das folhas, e deixe o ar circular entre os vasos. Retire e jogue fora as folhas manchadas. Em tempo úmido, calda bordalesa a 0,5% com 7 dias de carência."
+    },
+    {
+      "nome": "Podridão da raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato molhado, a base do caule fica mole e escura e a raiz fica marrom com cheiro ruim",
+      "prevencao_tratamento": "Só regue depois do teste do dedo, mantenha os furos desobstruídos e não deixe água parada no pratinho."
+    },
+    {
+      "nome": "Pendoamento precoce",
+      "tipo": "DISTURBIO",
+      "sintomas": "Haste central alta com folhas finas e rendadas surgindo antes dos 40 dias; as folhas ficam amargas",
+      "prevencao_tratamento": "É causado por calor, dias longos, seca e raiz apertada. Mantenha o substrato sempre úmido, use vaso com 20 cm de profundidade, dê sombra à tarde no verão e prefira cultivares tolerantes, como o 'Verdão'."
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Calor de verão: proteja o coentro",
+      "mensagem": "Com calor forte e dias longos, o coentro pendoa em poucas semanas.",
+      "acao_requerida": "Levar o vaso para um lugar com sol só de manhã e sombra depois das 13h, e conferir a umidade do substrato todo dia"
+    }
+  ]
+}

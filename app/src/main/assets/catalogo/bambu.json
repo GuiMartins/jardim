@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Bambu",
+    "nome_cientifico": "Bambusa vulgaris",
+    "descricao": "Bambu entouceirado tropical, o mais comum no Brasil (inclui o bambu-imperial, forma 'Vittata', de colmos amarelos listrados de verde). Não se espalha por rizomas longos como o bambu-mossô, por isso é o que dá para manter em vaso grande: contido, fica com 3 a 5 m em vez dos 15 m do chão e forma uma cortina verde para varanda ou quintal.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira de boca larga e paredes retas, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, e vários furos no fundo. Evite vaso bojudo (de boca estreita): a touceira não sai dele na hora de dividir. Vaso plástico grosso ou fibra, pesado o bastante para não tombar com o vento",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou esterco curtido, 20% areia grossa, 10% casca de arroz carbonizada; fértil, mas que escorra a água rápido",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 45,
+      "descricao": "A muda (um pedaço da touceira com rizoma e 1 a 3 colmos) sente a mudança: é normal amarelar e perder parte das folhas nas duas primeiras semanas. Folhas enroladas como canudo ao meio-dia indicam falta de água. A fase termina quando surgem folhas novas nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 46,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e, na primavera e no verão, nascem os primeiros brotos (turiões) grossos rente ao substrato, que em poucas semanas viram colmos novos, cada geração mais alta que a anterior. No inverno o crescimento quase para."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Touceira formada, com colmos de 3 a 5 m no vaso. Todo ano: brotação de colmos novos entre outubro e fevereiro, com muita sede e fome; outono e inverno mais parados, com alguma queda de folhas; limpeza dos colmos velhos no fim do inverno. A cada dois anos a raiz enche o vaso e a touceira precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de bambu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos. A raiz ainda não alcança o fundo do vaso, e uma secagem completa agora mata os colmos da muda. Acima de 30 °C, confira todo dia. Nunca deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o bambu",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (num vaso de 60 L, uns 8 a 10 L). No verão, com a touceira grande, pode ser preciso regar a cada 1 ou 2 dias; no inverno, a cada 5 a 7. Folhas enroladas no meio do dia são o sinal de sede.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_nitrogenada",
+      "titulo": "Adubar o bambu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Bambu é um capim e gosta de nitrogênio. Espalhe 2 punhados (cerca de 300 g) de esterco curtido ou composto por cima do substrato, ou 1 colher de sopa de NPK 20-05-20 dissolvida em 5 L de água, e regue em seguida. De maio a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e colmos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire folhas de vários colmos e olhe os nós e as bainhas: procure escamas brancas ou marrons grudadas, pó preto (fumagina), pontinhos amarelados com teias finas no verso ou colônias de pulgões nas folhas novas.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Depois de dois anos a raiz enche o vaso, os colmos novos saem finos e o vaso pode até rachar. De preferência entre setembro e novembro, tire a touceira (com ajuda, porque pesa), corte o torrão em 2 ou 3 pedaços com serrote ou machadinha, cada um com pelo menos 2 colmos e rizomas, e replante um deles no vaso com substrato novo. Regue bem e mantenha em meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Primeira semana à meia-sombra",
+      "mensagem": "A muda perdeu parte das raízes na divisão e o sol forte agora queima as folhas antes que ela consiga repor água.",
+      "acao_requerida": "Deixar o vaso em meia-sombra por 7 dias e depois levar para o local definitivo, com pelo menos 4 horas de sol direto"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Firmar o vaso contra o vento",
+      "mensagem": "Os colmos crescem rápido e a copa pega vento como uma vela: um vaso alto de bambu tomba com facilidade numa ventania.",
+      "acao_requerida": "Encostar o vaso numa parede ou grade e amarrar os colmos mais altos a ela com fita larga, ou colocar pedras no fundo do vaso na próxima divisão"
+    },
+    {
+      "dia_disparo": 300,
+      "titulo": "Colmos novos já saíram?",
+      "mensagem": "Se passou a primavera e o verão sem nenhum broto novo rente ao substrato, falta sol, adubo ou a raiz está sofrendo com encharcamento.",
+      "acao_requerida": "Conferir se o vaso recebe pelo menos 4 horas de sol direto, se a água escorre pelos furos e se a adubação mensal está sendo feita"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, cinzas ou marrons grudadas nos colmos, nos nós e sob as bainhas; folhas amarelando e pegajosas",
+      "prevencao_tratamento": "Esfregar os colmos com escova macia ou algodão com álcool 70%; nas folhas, óleo de neem a 0,5% com uma gota de detergente no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Pulgão do bambu",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos amarelados ou esverdeados no verso das folhas novas; melada brilhante e formigas subindo pelos colmos",
+      "prevencao_tratamento": "Jato forte de água nas folhas; se voltar, óleo de neem a 0,5% a cada 5 dias. Evite exagerar no adubo nitrogenado, que deixa as folhas tenras e atrai pulgão"
+    },
+    {
+      "nome": "Ácaro",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados ou esbranquiçados, aspecto desbotado e teias finas no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água nas folhas nos dias secos; atacado, calda de enxofre ou óleo de neem no verso das folhas a cada 7 dias"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada de pó preto cobrindo folhas e colmos, que sai ao esfregar",
+      "prevencao_tratamento": "É fungo que cresce sobre a melada de cochonilhas e pulgões: controle esses insetos e limpe as folhas com pano úmido com água e sabão neutro"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de uma vez mesmo com substrato úmido, brotos novos apodrecendo na base, cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos desentupidos e nunca deixar água no pratinho. Se atacar, tire a touceira, corte raízes e rizomas escuros e moles e replante em substrato novo"
+    },
+    {
+      "nome": "Raiz enovelada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Água escorre direto sem molhar o torrão, colmos novos cada vez mais finos, folhas pequenas e amareladas, raízes saindo pelos furos ou vaso deformado",
+      "prevencao_tratamento": "Dividir a touceira a cada dois anos, em vaso de paredes retas"
+    },
+    {
+      "nome": "Folhas queimadas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas secas, palha ou marrons depois de noite fria; abaixo de 0 °C os colmos podem morrer",
+      "prevencao_tratamento": "Bambusa vulgaris é tropical: em noites abaixo de 3 °C, encoste o vaso numa parede e cubra a copa com manta de TNT; os colmos que secarem por inteiro devem ser cortados no fim do inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio e reduzir a rega",
+      "mensagem": "No inverno o bambu quase para de crescer e bebe menos. Geada e vento frio queimam as folhas desta espécie tropical.",
+      "acao_requerida": "Espaçar as regas para quando o substrato estiver seco a 5 cm, suspender o adubo e, em noites abaixo de 3 °C, levar o vaso para perto de uma parede ou cobrir a copa com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Limpeza anual dos colmos",
+      "mensagem": "Antes da brotação da primavera, tirar os colmos velhos abre espaço e luz para os novos e mantém a touceira bonita.",
+      "acao_requerida": "Cortar rente ao substrato, com serrote, os colmos secos, quebrados ou com mais de 3 anos (casca opaca e acinzentada), e retirar as folhas secas acumuladas no vaso"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Época dos brotos novos",
+      "mensagem": "Com o calor e as chuvas, os turiões nascem rente ao substrato e viram colmos em poucas semanas. É quando o bambu mais precisa de água e adubo.",
+      "acao_requerida": "Conferir o substrato todo dia nos dias quentes, manter a adubação mensal em dia e não pisar nem esbarrar nos brotos, que quebram fácil"
+    }
+  ]
+}

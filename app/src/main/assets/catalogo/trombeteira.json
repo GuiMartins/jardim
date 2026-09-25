@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Trombeteira",
+    "nome_cientifico": "Brugmansia suaveolens",
+    "descricao": "Arbusto perene de crescimento rápido, com flores pendentes em forma de trombeta, brancas ou creme, de 20 a 30 cm, perfumadas ao anoitecer. Floresce em ondas da primavera ao outono. Todas as partes da planta são muito tóxicas se ingeridas (alcaloides tropânicos): mantenha longe de crianças e animais e lave as mãos depois da poda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica ou plástico grosso) com pelo menos 45 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; a planta é alta e tomba com o vento em vaso leve",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina ou perlita; mais 1 xícara de farinha de ossos a cada 40 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode perder algumas folhas de baixo e murchar nas horas quentes nos primeiros dias depois do transplante. Nas duas primeiras semanas, deixe-a no sol da manhã e só depois leve para o sol pleno. A fase termina quando aparecem folhas novas no topo e a muda para de murchar à tarde."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "O caule único cresce depressa e engrossa até formar a primeira bifurcação em Y. As flores só nascem nos ramos acima desse Y, então não pode abaixo dele. Os primeiros botões costumam aparecer entre 3 e 6 meses."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto de 1,5 a 3 m em vaso, com floradas em ondas de setembro a maio, a cada 4 a 8 semanas. No inverno o crescimento para e a planta pode perder parte das folhas. Poda leve no fim do inverno e troca de substrato a cada dois anos mantêm a planta compacta e florindo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a trombeteira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer bem pelos furos. As folhas grandes perdem muita água: no verão, acima de 30 °C, confira todo dia. No inverno espace para cada 4 a 5 dias, e só regue com o substrato seco. Folhas murchas de manhã cedo querem dizer falta de água; se murcharem com o substrato úmido, o problema é excesso.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar a trombeteira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de sopa de NPK 4-14-8 (ou 10-10-10) em 5 L de água e regue com o substrato já úmido. A cada dois meses, espalhe também 2 xícaras de húmus na superfície. É uma planta que come muito: folhas amarelando entre as nervuras pedem adubo. De junho a agosto, suspenda.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso com atenção: pontinhos amarelos e teia fina indicam ácaro; insetos brancos que voam quando você mexe são moscas-brancas; folhas roídas e fezes pretas indicam lagarta. Confira também os botões e as pontas dos ramos novos, onde fica o pulgão.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de setembro a outubro. Tire a planta do vaso, raspe cerca de 5 cm de raiz das laterais e do fundo do torrão e replante com substrato novo no mesmo vaso ou em um 10 cm maior. Regue bem e deixe na meia-sombra por uma semana. Use luvas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A muda comprada em saquinho ou vaso pequeno fica sem espaço para a raiz e seca em poucas horas de sol.",
+      "acao_requerida": "Transplantar para o vaso de 40 L com o substrato preparado, sem enterrar o caule além do nível em que estava, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Colocar tutor",
+      "mensagem": "O caule único cresce rápido e fica pesado no topo antes de engrossar; vento forte pode quebrá-lo.",
+      "acao_requerida": "Cravar uma estaca de 1,2 m a 5 cm do caule, sem ferir as raízes, e amarrar em dois pontos com fita ou tira de pano em oito"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Procure o Y do caule",
+      "mensagem": "As flores só nascem acima da primeira bifurcação do caule. Brotos que saem abaixo dela roubam força e não dão flor.",
+      "acao_requerida": "Localizar a bifurcação em Y e cortar rente os brotos que nascerem no caule abaixo dela"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam bronzeadas e secas; teia fina no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 2 ou 3 dias no calor seco; se persistir, óleo de neem a 0,5% com detergente neutro no fim da tarde, 3 aplicações a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos ao mexer na planta; folhas amareladas, pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; óleo de neem a 0,5% no verso das folhas a cada 5 dias por 3 semanas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e botões; folhas novas enroladas e botões que caem antes de abrir",
+      "prevencao_tratamento": "Jato de água ou retirar com os dedos; se voltar, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem"
+    },
+    {
+      "nome": "Lagartas (mandarová e outras)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro, às vezes em uma noite; bolinhas pretas de fezes nas folhas de baixo",
+      "prevencao_tratamento": "Catar à mão, de luva, no fim da tarde; em infestação, Bacillus thuringiensis (Dipel) pulverizado nas folhas"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas amarelando de baixo para cima, base do caule escura e mole, cheiro azedo no substrato",
+      "prevencao_tratamento": "Não deixar água parada no pratinho e reduzir a rega no inverno; se aparecer, tirar do vaso, cortar as raízes escuras e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir",
+      "prevencao_tratamento": "Costuma ser rega irregular (secar demais entre regas), mudança de lugar ou frio repentino; manter a rega constante e não mudar o vaso de posição durante a florada"
+    },
+    {
+      "nome": "Clorose por falta de nutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas amarelas entre as nervuras (magnésio) ou amarelas por inteiro (nitrogênio); pouca flor",
+      "prevencao_tratamento": "Manter a adubação quinzenal na estação quente; para magnésio, 1 colher de sopa de sal amargo (sulfato de magnésio) em 5 L de água uma vez por mês"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: proteger do frio",
+      "mensagem": "Abaixo de 5 °C a trombeteira perde as folhas, e a geada mata os ramos. O crescimento para, e rega e adubo em excesso agora apodrecem a raiz.",
+      "acao_requerida": "Suspender o adubo até setembro, regar só com o substrato seco e, em noites com previsão abaixo de 5 °C, levar o vaso para perto da parede ou cobrir com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno a planta está quase parada; podar agora estimula ramos novos, e é nesses ramos que nascem as flores da primavera.",
+      "acao_requerida": "Encurtar em até um terço os ramos acima do Y, cortando logo acima de uma folha ou gema, e tirar ramos secos ou cruzados; nunca cortar abaixo da bifurcação. Usar luvas"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Verão: rega diária",
+      "mensagem": "Com calor forte, as folhas grandes esgotam o vaso em um dia, e a planta derruba botões se secar.",
+      "acao_requerida": "Conferir o substrato todo dia de manhã, regar até escorrer se estiver seco e, onde o sol da tarde é muito forte, levar o vaso para um lugar com sombra depois das 14h"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Portulaca",
+    "nome_cientifico": "Portulaca umbraticola",
+    "descricao": "Suculenta rasteira de folhas achatadas e flores de cores vivas que abrem com o sol forte, muito vendida como 'onze-horas' de folha larga. Aguenta calor e esquecimento de rega, ideal para jardineiras ensolaradas. É perene de vida curta: em vaso rende bem por 1 a 2 anos e se renova facilmente por estaca.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso raso e largo, com pelo menos 15 cm de profundidade e 20 cm de diâmetro, com furos no fundo; barro ou cerâmica ajudam a secar entre regas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% perlita ou casca de arroz carbonizada; precisa drenar rápido e nunca empapar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "A muda sai do vaso de venda e firma as raízes no substrato novo. Pode perder algumas flores e ficar com folhas um pouco murchas nos primeiros dias. A fase acabou quando surgem pontas novas e as folhas voltam a ficar firmes e carnudas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 45,
+      "descricao": "Os ramos se alongam e começam a cobrir a borda do vaso. Botões aparecem nas pontas e as flores abrem só com sol direto, fechando à tarde ou em dia nublado. Ramos longos e ralos, com espaço grande entre as folhas, indicam falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 46,
+      "dia_fim": null,
+      "descricao": "Tapete de ramos cobrindo o vaso e floração contínua da primavera ao outono, com pico no verão. No inverno cresce pouco e floresce menos. Depois de 1 a 2 anos a base fica lenhosa e pelada: é hora de renovar com estacas das pontas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. A raiz ainda não alcançou o substrato novo e a muda murcha rápido no sol forte. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a portulaca",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver totalmente seco, até escorrer pelos furos, e nunca deixe água no pratinho. No verão quente em vaso pequeno, pode precisar a cada 2 dias; no inverno, a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá rasa de NPK 4-14-8 em 1 litro de água e regue o substrato já úmido, sem molhar as folhas. Adubo rico em nitrogênio faz rama e pouca flor. Suspenda de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "poda_pontas",
+      "titulo": "Aparar ramos compridos",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa os ramos que passaram muito da borda do vaso ou ficaram pelados na base, deixando uns 5 cm. Retire flores e cápsulas secas. Guarde as pontas cortadas: enterradas 2 cm em substrato úmido, enraízam em 1 a 2 semanas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos e olhe a base dos caules e as axilas das folhas: procure algodãozinho branco (cochonilha), insetos agrupados nas pontas (pulgão) e caule mole ou escuro rente ao substrato.",
+      "critica": false
+    },
+    {
+      "id": "renovacao_estacas",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Plante 6 a 8 estacas de ponta (8 cm, sem as folhas de baixo) em substrato novo e descarte a planta velha de base lenhosa. Se ela ainda estiver cheia e florida, só troque os 5 cm de cima do substrato e deixe a renovação para o ano seguinte.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A portulaca não gosta de raiz enterrada fundo nem de substrato úmido demais nos primeiros dias.",
+      "acao_requerida": "Plantar na mesma altura em que estava no vaso de venda, regar uma vez até escorrer e colocar no lugar mais ensolarado da casa"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Faça mudas de reserva",
+      "mensagem": "A portulaca enraíza com muita facilidade e tem vida curta em vaso. Algumas estacas agora garantem plantas novas se a principal apodrecer.",
+      "acao_requerida": "Cortar 3 pontas de 8 cm e enterrar 2 cm num copinho com substrato úmido, deixando no sol da manhã"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Caules moles, translúcidos ou escurecidos rente ao substrato; a planta murcha mesmo com substrato molhado e os ramos se soltam da base",
+      "prevencao_tratamento": "Regar só com o substrato seco, nunca deixar água no pratinho e usar substrato com bastante areia. Retire as partes podres e replante as pontas sadias como estaca em substrato novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodoado nas axilas das folhas e na base dos ramos; folhas amareladas e crescimento parado",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas e botões; botões deformados que não abrem",
+      "prevencao_tratamento": "Jato de água ou retirar as pontas atacadas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ferrugem-branca (Albugo portulacae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas brancas no verso das folhas, que ficam deformadas e amarelas, em épocas úmidas",
+      "prevencao_tratamento": "Evitar molhar as folhas e manter o vaso arejado; corte e descarte os ramos afetados no lixo, não no substrato"
+    },
+    {
+      "nome": "Estiolamento e flores fechadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e finos com folhas espaçadas, poucas flores ou flores que não abrem",
+      "prevencao_tratamento": "Falta de sol direto: mude o vaso para um lugar com pelo menos 5 horas de sol e apare os ramos estiolados para brotarem compactos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a portulaca quase para de crescer e floresce pouco. Substrato úmido e frio é a principal causa de podridão nesta época.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco até o fundo, suspender a adubação e, em noite com risco de geada, levar o vaso para perto de uma parede ou para dentro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de primavera",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento. Uma poda agora renova os ramos e dá floração cheia no verão.",
+      "acao_requerida": "Cortar os ramos pela metade, retirar os secos, repor 2 cm de substrato com húmus e retomar a adubação mensal"
+    }
+  ]
+}

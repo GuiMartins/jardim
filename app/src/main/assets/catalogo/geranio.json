@@ -1,0 +1,213 @@
+{
+  "planta": {
+    "nome_comum": "Gerânio",
+    "nome_cientifico": "Pelargonium × hortorum",
+    "descricao": "Gerânio-zonal, o híbrido de folhas arredondadas com faixa escura e buquês de flores vermelhas, rosas ou brancas, o mais vendido em floriculturas no Brasil. Aguenta seca e floresce quase o ano todo em vaso no sol, e rega em excesso é o que mais mata.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com 18 a 20 cm de diâmetro e 15 cm de profundidade, com furos no fundo. Vaso de barro ajuda o substrato a secar entre as regas. Em jardineira, deixe 25 cm entre as plantas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% substrato comercial para flores ou húmus de minhoca, 20% areia grossa ou perlita. Deve ser solto e drenar rápido, sem reter água",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda sai do saquinho ou vaso da loja para o vaso definitivo. Pode perder algumas folhas de baixo, que amarelam e caem. A fase acaba quando surgem folhas novas no topo, sinal de que a raiz pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "A planta ramifica e forma touceira. Os primeiros botões aparecem em hastes longas acima das folhas. Com menos de 4 horas de sol, os caules ficam finos e compridos e a planta quase não floresce."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Touceira de 30 a 40 cm que floresce da primavera ao outono, com pico em setembro a novembro e de novo em março e abril. No inverno a planta desacelera e para de florescer se fizer frio. No fim do inverno pede uma poda de renovação. Depois de 3 ou 4 anos fica lenhosa e falhada, e aí vale refazer a planta a partir de estacas dos ponteiros."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de gerânio",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar na base, sem molhar folhas nem flores, até escorrer pelos furos. Esvazie o pratinho depois de 30 minutos. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o gerânio",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e só regue se estiver seco. Regue na base até escorrer pelos furos e não deixe água no pratinho. No inverno, espace para a cada 5 a 7 dias. Folha murcha com substrato úmido é excesso de água, não falta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá de NPK 4-14-8 (ou adubo líquido para flores na dose do rótulo) em 1 L de água e regue o substrato já úmido. Suspenda em junho e julho. Excesso de nitrogênio dá muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_flores",
+      "titulo": "Tirar flores e folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao caule as hastes de flores que já secaram (não só as pétalas) e retire as folhas amarelas ou secas da base. Isso estimula novas flores e evita mofo cinzento sobre o material morto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure mosquinhas brancas que voam ao sacudir, pontinhos amarelos ou teias finas no verso, pústulas marrons em círculo e botões furados por lagarta. Olhe também a base do caule: se estiver preta e mole, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em março, abril, agosto ou setembro, tire a planta do vaso, solte as raízes enoveladas e passe para um vaso 3 a 5 cm maior com substrato novo. Regue pouco na primeira semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Mudas de floricultura vêm em saquinho ou vaso pequeno com raízes apertadas. No vaso certo, com substrato que drena, o gerânio se estabelece em 3 semanas.",
+      "acao_requerida": "Transplantar a muda sem enterrar o caule mais fundo do que estava, firmar o substrato e regar até escorrer. Deixar 3 dias em meia sombra antes do sol pleno"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Beliscar as pontas",
+      "mensagem": "Quebrar a ponta dos ramos agora faz o gerânio ramificar e formar uma touceira cheia, com muito mais pontos de flor.",
+      "acao_requerida": "Cortar com os dedos ou tesoura os 2 cm finais de cada ramo principal, logo acima de uma folha"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do caule e da raiz (Pythium spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule preta, mole e brilhante (a 'perna preta'), folhas amareladas que murcham mesmo com o substrato úmido e cheiro de podre no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco, esvaziar o pratinho e usar substrato bem drenado. Planta com caule preto raramente se recupera: tire estacas dos ponteiros sadios e descarte o resto com o substrato"
+    },
+    {
+      "nome": "Mofo cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Pétalas e folhas com manchas marrons encharcadas cobertas por um pó cinza aveludado, comum em tempo úmido e fresco",
+      "prevencao_tratamento": "Retirar flores murchas toda semana, regar na base sem molhar a folhagem e deixar o vaso em local ventilado. Remover e descartar as partes atacadas"
+    },
+    {
+      "nome": "Ferrugem do gerânio (Puccinia pelargonii-zonalis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas na face de cima da folha e pústulas marrons em anel no verso, que soltam um pó cor de ferrugem",
+      "prevencao_tratamento": "Arrancar e descartar as folhas atacadas (não jogar no composto), não molhar as folhas e isolar a planta. Em ataque forte, fungicida à base de cobre na dose do rótulo"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci, Trialeurodes vaporariorum)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta, folhas pegajosas e amareladas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas, no fim da tarde, a cada 5 dias por 3 semanas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes nos brotos e botões, que ficam deformados e pegajosos",
+      "prevencao_tratamento": "Jato de água nos brotos. Se persistir, sabão neutro a 1% ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo, depois bronzeadas, com teias finas no verso. Aparece no calor seco e em varanda coberta",
+      "prevencao_tratamento": "Borrifar água no verso das folhas de manhã e aplicar óleo de neem a 0,5% ou enxofre molhável a cada 7 dias. Não aplicar enxofre acima de 30 °C"
+    },
+    {
+      "nome": "Lagarta-dos-botões (Helicoverpa spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Botões com furos redondos, flores que não abrem e fezes escuras entre as folhas",
+      "prevencao_tratamento": "Abrir os botões furados e catar as lagartas à mão, de preferência ao entardecer. Em infestação forte, Bacillus thuringiensis (Dipel) na dose do rótulo"
+    },
+    {
+      "nome": "Edema (excesso de água)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bolinhas verde-claras no verso das folhas que ficam marrons e corticosas, sem pó nem fungo. Surge com rega pesada em dias nublados e frescos",
+      "prevencao_tratamento": "Espaçar as regas, só regar com o substrato seco e melhorar a ventilação e a luz. As folhas marcadas não se recuperam, mas as novas saem normais"
+    },
+    {
+      "nome": "Folhas avermelhadas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas e folhas inteiras ficam vermelhas ou arroxeadas no inverno, com a planta parada",
+      "prevencao_tratamento": "É reação ao frio abaixo de uns 10 °C, não doença. Proteger das noites frias e não adubar até esquentar. Se ocorrer no calor, pode ser falta de fósforo: retomar a adubação"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o gerânio do frio",
+      "mensagem": "O gerânio para de crescer no frio e morre com geada. Substrato molhado no inverno apodrece a raiz.",
+      "acao_requerida": "Nas noites abaixo de 5 °C, levar o vaso para perto de uma parede ou para dentro da varanda coberta. Regar a cada 5 a 7 dias, só com o substrato seco, e suspender o adubo"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno, uma poda forte faz o gerânio brotar compacto e encher de flores na primavera, em vez de ficar comprido e pelado na base.",
+      "acao_requerida": "Cortar todos os ramos deixando um terço a metade do comprimento, logo acima de um nó. Retomar a adubação quando surgirem os brotos novos. As pontas cortadas enraízam como estaca em substrato arenoso"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuva e calor de verão",
+      "mensagem": "Temporais de verão encharcam o vaso e trazem podridão e mofo cinzento, e o sol da tarde acima de 32 °C queima as flores.",
+      "acao_requerida": "Tirar o vaso da chuva direta em semanas muito chuvosas, conferir se o pratinho não acumula água e, onde o sol da tarde for muito forte, preferir um lugar com sol da manhã"
+    }
+  ]
+}

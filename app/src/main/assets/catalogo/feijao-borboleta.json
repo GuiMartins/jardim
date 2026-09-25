@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Feijão-borboleta",
+    "nome_cientifico": "Clitoria ternatea",
+    "descricao": "Trepadeira leguminosa tropical de flores azul-intensas, usadas para fazer chá e colorir alimentos (o azul vira roxo com limão). Perene em clima sem geada, cresce rápido numa grade ou tela de varanda e floresce da primavera ao outono.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 30 cm de diâmetro e 30 cm de profundidade, furos no fundo, encostado numa treliça, tela ou grade de 1,5 a 2 m de altura",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; sem esterco fresco, porque a planta fixa o próprio nitrogênio",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Deixe as sementes de molho em água morna por 12 a 24 horas (as que incharem estão prontas) e semeie 2 por vaso a 2 cm de profundidade. As plântulas surgem entre o 5º e o 14º dia, com duas folhas redondas e grossas; abaixo de 20 °C a germinação atrasa ou falha."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "Aparecem as folhas verdadeiras, compostas de 5 a 7 folíolos ovais. A fase termina quando a ponta do caule começa a se alongar e girar procurando apoio."
+    },
+    {
+      "fase_id": "crescimento_trepador",
+      "nome": "Crescimento Trepador",
+      "dia_inicio": 36,
+      "dia_fim": 70,
+      "descricao": "O caule se enrola sozinho no suporte e cresce vários centímetros por dia no calor. Ramos soltos que caem para fora da treliça precisam ser guiados. Os primeiros botões costumam surgir nas axilas das folhas perto do fim da fase."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 71,
+      "dia_fim": null,
+      "descricao": "Floresce em ondas da primavera ao outono, com flores que duram um dia e vagens achatadas depois delas. No inverno do Centro-Sul o crescimento para, a floração cessa e parte das folhas amarela; com a poda de fim de inverno, rebrota forte em setembro. Vive de 3 a 5 anos em vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Toque a superfície: ela deve estar úmida como esponja espremida. Se o primeiro centímetro secou, regue com regador de bico fino até umedecer, sem formar poça; semente encharcada apodrece antes de brotar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o feijão-borboleta",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Acima de 30 °C confira a cada 2 dias; no inverno, só quando os 5 cm de cima estiverem secos.",
+      "critica": false
+    },
+    {
+      "id": "conduzir_ramos",
+      "titulo": "Guiar os ramos na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Procure pontas soltas balançando no ar ou caídas para fora do suporte e enrole-as com cuidado no sentido anti-horário em volta da tela, prendendo com fitilho frouxo se escaparem.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar para florescer",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 35,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de farinha de ossos e 2 colheres de sopa de húmus por vaso de 15 L, longe do caule, e regue. Evite adubo rico em nitrogênio (NPK 20-x-x, esterco fresco): gera muita folha e pouca flor. Pule de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "colheita_flores",
+      "titulo": "Colher flores para chá",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 70,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De manhã, destaque pela base as flores totalmente abertas e seque-as à sombra por 3 a 5 dias, até ficarem quebradiças. Deixe algumas murcharem na planta se quiser vagens para sementes. No inverno, sem flores, ignore o lembrete.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as pontas dos ramos e o verso das folhas: procure insetos agrupados, pontinhos amarelados com teia fina ou bolinhas brancas algodoadas nas axilas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, logo após a poda, tire a planta do vaso, corte 1/4 das raízes externas e replante em substrato novo, num vaso do mesmo tamanho ou um número maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do desbaste e do suporte",
+      "mensagem": "As mudas já têm folhas verdadeiras e logo vão procurar onde se enrolar.",
+      "acao_requerida": "Deixar só a muda mais vigorosa, cortando a outra rente ao substrato, e instalar a treliça ou tela junto ao vaso se ainda não estiver lá"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Primeiros botões a caminho",
+      "mensagem": "Com 6 horas de sol, os botões devem aparecer nas axilas das folhas nas próximas semanas.",
+      "acao_requerida": "Conferir se há botões; se a planta só faz folha, levá-la para um lugar com mais sol direto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato molhado, folhas amarelando de baixo para cima e base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, esvaziar o pratinho e usar vaso com furos; em planta afetada, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos ou verdes nas pontas dos ramos e nos botões; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água nas pontas; se persistir, óleo de neem a 0,5% com gotas de detergente neutro no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teia fina no verso, comum em varanda seca e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; óleo de neem a 0,5% a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodoadas nas axilas das folhas e nos caules, com folhas amareladas",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação grande, óleo mineral ou de neem a cada 7 dias"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco na face de cima das folhas, que depois secam",
+      "prevencao_tratamento": "Não molhar as folhas no fim do dia e manter a ramagem arejada; tirar as folhas atacadas e pulverizar leite diluído a 10% ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Amarelecimento pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelando e caindo em massa quando as noites ficam abaixo de 12 °C, sem pragas visíveis",
+      "prevencao_tratamento": "É normal no inverno: reduzir a rega, não adubar e proteger do vento frio; a planta rebrota na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: a trepadeira descansa",
+      "mensagem": "Com o frio, o feijão-borboleta para de crescer e florir e perde parte das folhas. Rega em excesso agora é o que mais mata a planta.",
+      "acao_requerida": "Regar só quando os 5 cm de cima estiverem secos, suspender o adubo e, em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou cobri-lo com manta"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de fim de inverno",
+      "mensagem": "Os ramos secos e ralos do inverno atrasam a rebrota; podar agora faz a planta voltar densa e florir mais cedo.",
+      "acao_requerida": "Cortar os ramos a 30–40 cm da base, logo acima de um nó, e retirar as partes secas da treliça"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar os cuidados da primavera",
+      "mensagem": "Com o calor voltando, a planta rebrota e precisa de nutrientes para a nova floração.",
+      "acao_requerida": "Voltar à rega normal e aplicar a primeira adubação do ano com farinha de ossos e húmus"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Lótus",
+    "nome_cientifico": "Nelumbo nucifera",
+    "descricao": "Planta aquática perene de rizoma, com folhas redondas que repelem a água e flores grandes, rosadas ou brancas, que se abrem por três manhãs seguidas no verão. Em casa cresce numa bacia sem furos com água sobre o barro. Perde as folhas no inverno e rebrota do rizoma na primavera.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Bacia, vaso ou tanque redondo e SEM furos, com 50 a 60 cm de diâmetro e 30 a 40 cm de profundidade. Precisa ser redondo porque a ponta do rizoma cresce rente à parede e quebra ao se prender nos cantos de um vaso quadrado. Variedades anãs (lótus de tigela) aceitam recipientes de 15 a 20 L.",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "100% terra argilosa pesada (barro de barranco ou subsolo, pobre em matéria orgânica), peneirada, ocupando metade da altura do recipiente; por cima, 2 cm de areia grossa lavada, sem cobrir a ponta do broto. Não use substrato comercial, turfa, casca nem húmus: eles flutuam, turvam e apodrecem a água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Deite o rizoma na horizontal sobre o barro molhado e afunde-o 2 a 3 cm, com a ponta do broto (a gema pontuda) virada para cima e para fora do barro, voltada para o centro do vaso. Se ele boiar, prenda-o com uma pedra sobre a parte velha, nunca sobre a ponta, que quebra à toa e sem ela o rizoma não brota. Cubra com 5 cm de água, que esquenta rápido ao sol e acelera a brotação. Entre 7 e 21 dias surgem brotos avermelhados que se desenrolam em direção à superfície."
+    },
+    {
+      "fase_id": "folhas_flutuantes",
+      "nome": "Folhas Flutuantes",
+      "dia_inicio": 22,
+      "dia_fim": 45,
+      "descricao": "As primeiras folhas, pequenas e redondas como moedas, ficam boiando na água. Perto do fim da fase nascem as primeiras folhas aéreas, que se erguem acima da água em talos firmes. Aparecer folha aérea é o sinal de que o rizoma pegou."
+    },
+    {
+      "fase_id": "crescimento",
+      "nome": "Crescimento",
+      "dia_inicio": 46,
+      "dia_fim": 90,
+      "descricao": "Folhas aéreas cada vez maiores e mais altas; novos rizomas se espalham pelo barro junto à parede do vaso. A planta passa a gastar muita água e nutriente. Folhas pequenas e amareladas nesta fase indicam falta de sol ou de adubo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota em setembro, forma folhas altas na primavera e floresce de dezembro a março. Cada flor abre de manhã e fecha à tarde por três dias e depois deixa a cápsula de sementes em forma de chuveiro. No primeiro ano, um rizoma pequeno pode dar só folhas. Com os dias frios de abril e maio as folhas amarelam, e o rizoma passa o inverno parado sob a água. Nas regiões quentes do Norte e Nordeste o repouso é curto ou nem acontece."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Completar a água do lótus",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Meça com o dedo: mantenha de 5 a 10 cm de água acima do barro. Se baixou, complete devagar pela borda, com água da chuva ou da torneira descansada por 24 h, sem jogar o jato sobre o rizoma para não levantar o barro. Nesta fase o rizoma e os brotos morrem se o barro ficar exposto e secar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Completar o nível da água",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Complete até o nível marcado (10 a 15 cm acima do barro). Com calor acima de 30 °C, a evaporação passa de 1 cm por dia: confira a cada 2 dias. No inverno, mesmo sem nenhuma folha, a água nunca pode baixar até o barro.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Tirar folhas e flores secas",
+      "tipo": "PODA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa as folhas amarelas ou rasgadas e as pétalas caídas, sempre ACIMA da linha da água. O talo é oco: cortado abaixo da água, ele enche e leva podridão até o rizoma. Tire da água as folhas que caíram, porque elas apodrecem e esverdeiam a água.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e água",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso e a base das folhas atrás de pulgões escuros e ovos gelatinosos de caramujo. Depois observe a superfície da água por 1 minuto: larvas de mosquito se mexem em zigue-zague e sobem para respirar. Se houver larvas, reponha os peixes ou o larvicida.",
+      "critica": false
+    },
+    {
+      "id": "divisao_rizoma",
+      "titulo": "Dividir e trocar o barro",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça no começo da primavera, quando os brotos novos aparecem (setembro a outubro). Se o lembrete cair fora dessa época, espere por ela. Esvazie o vaso, lave o barro dos rizomas, separe pedaços com 2 ou 3 gomos e uma ponta de broto intacta e replante um ou dois em barro novo. Os pedaços que sobrarem podem ir para outros vasos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 5,
+      "titulo": "Água parada: proteja contra o mosquito",
+      "mensagem": "Um vaso de água parada ao sol é criadouro de Aedes aegypti, o mosquito da dengue, em menos de uma semana.",
+      "acao_requerida": "Colocar 2 ou 3 peixinhos (lebiste ou platy), que comem as larvas, ou aplicar larvicida biológico com Bti (Bacillus thuringiensis israelensis) conforme o rótulo, que não faz mal à planta nem aos peixes"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Hora de subir o nível da água",
+      "mensagem": "Com folhas aéreas se erguendo, o lótus já aguenta e prefere água mais funda, que também oscila menos de temperatura.",
+      "acao_requerida": "Subir a água aos poucos até 10 a 15 cm acima do barro e marcar esse nível na parede do vaso para servir de referência"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-das-ninfeias (Rhopalosiphum nymphaeae)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos marrom-escuros no verso das folhas, nos talos e nos botões; folhas enrugadas e botões que secam sem abrir",
+      "prevencao_tratamento": "Afunde a folha atacada na água com a mão por alguns segundos para os peixes comerem os pulgões, ou derrube-os com jato de água. Não use inseticida nem óleo de neem, que contaminam a água e matam os peixes"
+    },
+    {
+      "nome": "Larvas de mosquito (Aedes aegypti, Culex)",
+      "tipo": "PRAGA",
+      "sintomas": "Larvas finas que se mexem em zigue-zague perto da superfície; mosquitos em volta do vaso",
+      "prevencao_tratamento": "Mantenha 2 ou 3 peixinhos (lebiste, platy) ou use larvicida com Bti a cada 2 a 4 semanas, conforme o rótulo; nunca deixe o vaso sem proteção"
+    },
+    {
+      "nome": "Caramujos aquáticos",
+      "tipo": "PRAGA",
+      "sintomas": "Furos e bordas roídas nas folhas flutuantes; massas de ovos gelatinosas ou rosadas na borda e nos talos",
+      "prevencao_tratamento": "Enxágue o rizoma e as plantas novas antes de pôr no vaso; cate os caramujos e raspe as posturas"
+    },
+    {
+      "nome": "Podridão do rizoma (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Rizoma mole, escuro e com cheiro ruim; brotos que param de crescer ou apodrecem; água turva e malcheirosa",
+      "prevencao_tratamento": "Não quebre a ponta do broto, não enterre o rizoma fundo, corte os talos acima da água e não deixe o adubo encostar no rizoma. Desenterre, corte a parte mole até o tecido firme e claro e replante em barro novo"
+    },
+    {
+      "nome": "Mancha foliar (Alternaria, Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons, circulares, com halo amarelo nas folhas aéreas, que secam a partir das manchas",
+      "prevencao_tratamento": "Tire as folhas manchadas cortando acima da água e jogue no lixo; não molhe as folhas por cima e deixe o vaso em lugar ventilado"
+    },
+    {
+      "nome": "Falta de flor e folhas miúdas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas pequenas, amareladas ou só flutuantes durante todo o verão, sem nenhum botão",
+      "prevencao_tratamento": "Garanta pelo menos 6 horas de sol direto, adube todo mês de outubro a fevereiro e divida o rizoma se ele já tomou todo o vaso"
+    },
+    {
+      "nome": "Queima por excesso de adubo",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas marrons e secas logo depois da adubação; água verde e turva de algas",
+      "prevencao_tratamento": "Enterre o adubo 10 cm dentro do barro e longe do rizoma, nunca solto na água. Se a água ficar verde, troque metade dela e pule a próxima adubação"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Adubar o lótus",
+      "mensagem": "Na primavera e no verão o lótus consome muito nutriente, e sem adubo ele não floresce.",
+      "acao_requerida": "Se já houver pelo menos 3 folhas aéreas, empurrar 2 pastilhas de adubo para plantas aquáticas (ou 1 colher de sopa de NPK 10-10-10 embrulhada em papel toalha) 10 cm dentro do barro, a pelo menos 10 cm do rizoma. Se ainda não houver, deixar para o mês que vem"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "O lótus vai entrar em repouso",
+      "mensagem": "Com o frio chegando, as folhas amarelam e secam. É normal: o rizoma continua vivo sob o barro.",
+      "acao_requerida": "Parar de adubar, cortar as folhas secas acima da linha da água e manter o rizoma sempre submerso durante todo o inverno"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o rizoma do frio",
+      "mensagem": "Onde há geada, a água rasa de um vaso pode congelar na superfície e gelar o rizoma.",
+      "acao_requerida": "Manter pelo menos 10 cm de água sobre o barro e, em noites de geada, levar o vaso para perto de uma parede ou sob uma cobertura"
+    }
+  ]
+}

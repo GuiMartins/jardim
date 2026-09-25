@@ -1,0 +1,196 @@
+{
+  "planta": {
+    "nome_comum": "Camarão-amarelo",
+    "nome_cientifico": "Pachystachys lutea",
+    "descricao": "Arbusto perene da família das acantáceas, de origem peruana, com espigas eretas de brácteas amarelas das quais saem pequenas flores brancas. Floresce quase o ano inteiro, atrai beija-flores e aguenta bem o cultivo em vaso na varanda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 20,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca e 20% areia grossa ou perlita; fértil, rico em matéria orgânica e que não empape",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda se acostuma ao vaso e à nova luz. É normal cair algumas folhas de baixo e as espigas antigas secarem. A fase termina quando surgem brotos novos nas pontas e nas axilas das folhas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "As raízes ocupam o vaso e a planta ramifica. As primeiras espigas amarelas novas aparecem nas pontas dos ramos. Folhas grandes, verde-escuras e brilhantes indicam que a luz e a adubação estão certas; folhas pálidas e ramos compridos e finos pedem mais sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Arbusto cheio, de 60 cm a 1 m em vaso, florindo da primavera ao outono e mais devagar no inverno. Todo ano: poda forte no fim do inverno, adubação mensal de setembro a abril, rega reduzida no frio e troca de substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. A raiz ainda está no torrão original e seca rápido.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o camarão-amarelo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão, acima de 30 °C, confira a cada 2 dias; no inverno, espace para 5 a 7 dias. Folhas murchas ao meio-dia com substrato úmido são calor, não sede: não regue de novo.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de sopa de farinha de ossos mais 1 xícara de húmus) na borda de um vaso de 20 L, longe do caule, e regue em seguida. Pule a adubação em junho e julho, quando a planta quase para de crescer.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_espigas",
+      "titulo": "Cortar espigas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte as espigas que perderam a cor ou ficaram marrons logo acima do primeiro par de folhas abaixo delas, com tesoura limpa. Dali saem dois ramos novos, cada um com uma espiga nova.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas dos ramos: procure bolinhas brancas algodoadas, carapaças marrons, insetos brancos que voam ao mexer na planta ou teias finas com pontinhos avermelhados.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e setembro, junto com a poda: tire a planta do vaso, corte 3 a 5 cm das raízes que circulam o torrão e replante com substrato novo, no mesmo vaso ou num 5 cm maior de diâmetro. Deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Passar a muda para o vaso definitivo",
+      "mensagem": "Muda de saquinho ou vaso pequeno seca em poucas horas e não ramifica.",
+      "acao_requerida": "Plantar no vaso de 20 L na mesma altura do torrão, sem enterrar o caule, regar bem e deixar em meia-sombra na primeira semana"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora de beliscar as pontas",
+      "mensagem": "Pinçar as pontas agora faz a planta ramificar e dar muito mais espigas, em vez de crescer em poucas hastes finas.",
+      "acao_requerida": "Cortar com os dedos ou tesoura os 2 a 3 cm da ponta de cada ramo sem espiga, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas amarelas caindo de baixo para cima, base do caule escura e mole, raízes marrons e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e garantir os furos do vaso. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha (algodão e carapaça)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados ou carapaças marrons nas axilas e no verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos pequenos ao mexer na planta; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas no verso, mais comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, calda de enxofre ou óleo de neem a cada 5 dias"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, arroxeadas ou caindo em massa depois de noites abaixo de 10 °C; pontas dos ramos secam",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou para dentro nas noites frias e reduzir a rega. Esperar a poda de agosto para cortar os ramos secos"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas no meio das folhas voltadas para o sol da tarde",
+      "prevencao_tratamento": "Deixar a planta no sol da manhã e na sombra depois das 13h; aclimatar aos poucos se for mudar de lugar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O camarão-amarelo é tropical e perde folhas abaixo de 10 °C. No frio ele quase para de crescer e consome pouca água.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender a adubação e abrigar o vaso nas noites mais frias"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno a planta está parada e costuma estar com ramos compridos e pelados na base. Uma poda forte agora faz ela voltar cheia e florida na primavera.",
+      "acao_requerida": "Cortar todos os ramos a 20 ou 30 cm do substrato, logo acima de um par de gemas, e retomar a adubação quando surgirem brotos novos"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: rega mais frequente",
+      "mensagem": "Em vaso, os dias acima de 30 °C secam o substrato em um ou dois dias, e a planta derruba as espigas quando passa sede.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e, se a planta pega sol da tarde, mudá-la para um lugar com sol só de manhã"
+    }
+  ]
+}

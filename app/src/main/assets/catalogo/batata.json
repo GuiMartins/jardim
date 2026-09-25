@@ -1,0 +1,203 @@
+{
+  "planta": {
+    "nome_comum": "Batata",
+    "nome_cientifico": "Solanum tuberosum",
+    "descricao": "Tubérculo mais consumido do mundo. Em vaso fundo ou saco de cultivo, um único tubérculo-semente rende de 1 a 2 kg de batatas novas, de casca fina. Na natureza a planta rebrota dos tubérculos que ficam na terra, mas em casa é cultivada como anual: colhe-se tudo quando a rama seca.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": 110,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso, balde ou saco de cultivo (tecido ou ráfia) com pelo menos 40 cm de profundidade e 35 cm de diâmetro, com furos no fundo. Plante com só 15 cm de substrato no fundo e vá completando nas amontoas.",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico curtido, 20% areia grossa ou casca de arroz carbonizada, 10% húmus de minhoca; levemente ácido (pH 5,5 a 6,0) e sem excesso de calcário, que favorece a sarna",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 20,
+      "descricao": "Use um tubérculo-semente já brotado (brotos curtos e firmes de 1 a 2 cm), enterrado a 10 cm com os brotos para cima. As hastes rompem a superfície entre o 12º e o 20º dia. Substrato encharcado nesta fase apodrece o tubérculo antes de brotar."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 21,
+      "dia_fim": 45,
+      "descricao": "As hastes crescem rápido e formam folhas compostas. É a fase das amontoas: cobrir a base das hastes com substrato novo faz surgir mais estolões, que são os ramos subterrâneos onde nascem as batatas."
+    },
+    {
+      "fase_id": "tuberizacao_floracao",
+      "nome": "Tuberização e Floração",
+      "dia_inicio": 46,
+      "dia_fim": 75,
+      "descricao": "Surgem botões e flores brancas ou lilases, sinal de que as pontas dos estolões começaram a inchar e formar batatas. Algumas cultivares não florescem, e isso não indica problema. Falta de água agora reduz o número de batatas."
+    },
+    {
+      "fase_id": "enchimento_tuberculos",
+      "nome": "Enchimento dos Tubérculos",
+      "dia_inicio": 76,
+      "dia_fim": 100,
+      "descricao": "As batatas engordam, e a planta chega ao tamanho máximo. Alternar substrato seco com encharcado nesta fase racha os tubérculos ou os deixa ocos por dentro. Ao final, as folhas de baixo começam a amarelar."
+    },
+    {
+      "fase_id": "maturacao_colheita",
+      "nome": "Maturação e Colheita",
+      "dia_inicio": 101,
+      "dia_fim": 110,
+      "descricao": "A rama amarela e seca. Com a rega suspensa, a casca das batatas firma e deixa de soltar ao ser esfregada com o polegar, o que indica o ponto de colher."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Conferir umidade do tubérculo",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 20,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, com pouca água, até umedecer sem escorrer muito pelos furos. Sem folhas, a planta quase não consome água, e o excesso apodrece o tubérculo.",
+      "critica": false
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar a batata",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 98,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue devagar na base, sem molhar as folhas, até escorrer pelos furos. Acima de 28 °C ou com a planta grande, confira todo dia. O substrato deve ficar sempre levemente úmido, sem oscilar entre seco e encharcado.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a batata",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 85,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca e 1 colher de sopa de cinza de madeira (fonte de potássio) por vaso de 30 L, sem encostar nas hastes, e regue em seguida. Evite adubo rico em nitrogênio, como esterco fresco e ureia: ele faz muita folha e pouca batata.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas da batata",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Vire as folhas e procure manchas marrons de bordas encharcadas (requeima), manchas escuras com anéis (pinta-preta), furos redondos (vaquinha) e insetos agrupados no verso (pulgão, mosca-branca). Retire e jogue no lixo as folhas manchadas, sem compostar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Primeira amontoa",
+      "mensagem": "As hastes já devem ter uns 20 cm. Cobrir a base com substrato faz nascer mais batatas e protege as que se formarem da luz.",
+      "acao_requerida": "Acrescentar substrato novo ao redor das hastes até deixar só os 5 a 8 cm de cima com folhas de fora"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Segunda amontoa",
+      "mensagem": "É a última chance de aumentar a camada de terra antes da tuberização. Batata exposta à luz fica verde e tóxica.",
+      "acao_requerida": "Completar o vaso com substrato até 3 cm da borda, deixando só a parte de cima das hastes para fora"
+    },
+    {
+      "dia_disparo": 95,
+      "titulo": "Rama começando a secar",
+      "mensagem": "Quando mais da metade das folhas estiver amarela, a planta terminou de encher as batatas. Continuar regando agora favorece podridão.",
+      "acao_requerida": "Suspender a rega quando a rama amarelar e deixar o substrato secar para a casca firmar"
+    },
+    {
+      "dia_disparo": 105,
+      "titulo": "Hora de colher as batatas",
+      "mensagem": "Com a rama seca há uma semana, a casca já deve estar firme.",
+      "acao_requerida": "Esfregar a casca de uma batata com o polegar; se não soltar, virar o vaso sobre uma lona, recolher todas as batatas e deixá-las secar à sombra por 1 dia antes de guardar em local escuro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Requeima (Phytophthora infestans)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras de aspecto encharcado nas folhas, com mofo branco no verso em dias úmidos; a rama inteira pode morrer em poucos dias",
+      "prevencao_tratamento": "Regar só na base, de manhã, e manter o vaso em local ventilado; em tempo frio e úmido, pulverizar calda bordalesa a 1% a cada 7 dias; retirar e descartar no lixo as folhas atacadas"
+    },
+    {
+      "nome": "Pinta-preta (Alternaria solani)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras com anéis concêntricos, começando pelas folhas mais velhas, que amarelam e caem",
+      "prevencao_tratamento": "Adubação equilibrada, sem deixar faltar potássio; retirar folhas manchadas; calda bordalesa preventiva em período chuvoso"
+    },
+    {
+      "nome": "Podridão-mole do tubérculo (Pectobacterium)",
+      "tipo": "DOENCA",
+      "sintomas": "Tubérculo-semente ou batatas moles, aguadas e com cheiro forte; hastes escurecidas e murchas na base",
+      "prevencao_tratamento": "Não encharcar o vaso, sobretudo antes da brotação; usar tubérculo-semente firme e sem feridas; descartar a planta afetada junto com o substrato"
+    },
+    {
+      "nome": "Traça-da-batata (Phthorimaea operculella)",
+      "tipo": "PRAGA",
+      "sintomas": "Galerias nas folhas e nas hastes; túneis com fezes escuras dentro das batatas, principalmente as mais rasas",
+      "prevencao_tratamento": "Fazer as amontoas para manter as batatas bem cobertas; colher logo que a rama secar e não deixar batatas expostas no vaso"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes no verso das folhas e nas pontas; folhas enroladas e pegajosas. Também transmite viroses",
+      "prevencao_tratamento": "Jato de água nas folhas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos nas folhas; as larvas no substrato perfuram as batatas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo; manter o vaso longe de hortas de feijão e milho infestadas"
+    },
+    {
+      "nome": "Esverdeamento dos tubérculos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Batatas com casca e polpa verdes nas partes que ficaram expostas à luz; o verde contém solanina, que é tóxica",
+      "prevencao_tratamento": "Fazer as amontoas e manter todas as batatas cobertas; guardar a colheita no escuro; cortar fora e descartar toda a parte verde antes de consumir"
+    },
+    {
+      "nome": "Rachadura e coração oco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Batatas com rachaduras na casca ou com uma cavidade escura no centro",
+      "prevencao_tratamento": "Rega regular durante o enchimento, sem deixar o substrato secar e depois encharcar; não exagerar no nitrogênio"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Risco de geada",
+      "mensagem": "A rama da batata morre com geada, e isso interrompe o enchimento dos tubérculos.",
+      "acao_requerida": "Em noites com previsão abaixo de 3 °C, levar o vaso para perto de uma parede ou sob uma cobertura, ou cobrir a planta com tecido TNT e retirar pela manhã"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Calor atrapalha a batata",
+      "mensagem": "Acima de 29 °C a planta para de formar batatas e o substrato do vaso esquenta demais.",
+      "acao_requerida": "Cobrir o substrato com 5 cm de palha, proteger o vaso do sol da tarde e conferir a umidade todos os dias"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Pleomele",
+    "nome_cientifico": "Dracaena reflexa",
+    "descricao": "Arbusto de folhas estreitas e brilhantes em espiral nos ramos. A forma variegada 'Song of India', com bordas amarelas, é a mais vendida no Brasil. É muito resistente, cresce devagar e em vaso fica bem tanto na varanda clara quanto dentro de casa perto da janela.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo e sem prato acumulando água",
+    "volume_minimo_litros": 20,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% terra vegetal, 30% substrato para plantas ou fibra de coco, 20% areia grossa ou perlita; mais 1 punhado de húmus de minhoca a cada 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se acostuma à nova luz e ao novo vaso. É normal perder de 2 a 5 folhas de baixo, que amarelam e secam. A fase termina quando surgem folhas novas, claras e brilhantes, no topo dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e os ramos voltam a crescer, de 1 a 3 cm por mês no calor. Folhas novas bem coloridas indicam luz suficiente; folhas pálidas e ramos esticados para a janela indicam falta de luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce da primavera ao fim do verão e quase para no inverno, quando pede menos água e nenhum adubo. Em vaso raramente floresce. A cada ano, os ramos engrossam e a base perde folhas: é o jeito natural da espécie, corrigido com poda na primavera."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a pleomele recém-chegada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato em 15 minutos. Com as raízes ainda presas ao torrão antigo, deixar o vaso secar por inteiro agora mata as pontas das raízes novas.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pleomele",
+      "tipo": "REGA",
+      "frequencia_dias": 6,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o prato. No inverno o intervalo passa para 10 a 14 dias. Prefira água filtrada ou da chuva: o flúor e o cloro da torneira queimam as pontas das folhas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a pleomele",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato úmido, espalhe 1 colher de sopa de NPK 10-10-10 (ou 2 colheres de sopa de húmus de minhoca) por vaso de 20 L, longe do caule, e regue em seguida. Pule de junho a agosto, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar e limpar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base das folhas, onde encostam no ramo, e o verso delas: procure algodãozinho branco, escamas marrons ou teias finas. Passe um pano úmido nas folhas para tirar a poeira, que reduz a luz aproveitada e abriga ácaros.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, solte as raízes enroladas e corte as escuras ou moles. Replante em substrato novo, num vaso 5 cm mais largo se as raízes tomaram o torrão todo, e mantenha à sombra clara por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Vaso definitivo",
+      "mensagem": "Pleomele costuma vir em vaso plástico apertado ou saco de muda, com substrato que encharca.",
+      "acao_requerida": "Se ainda estiver no recipiente da loja, passar para o vaso de 20 L com camada de drenagem e o substrato recomendado, sem enterrar o caule além do nível antigo"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Hora de começar a adubar",
+      "mensagem": "Passado o primeiro mês, as raízes novas já aproveitam o adubo sem risco de queimadura.",
+      "acao_requerida": "Fazer a primeira adubação leve e manter o ritmo de 45 dias fora do inverno"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão na junção das folhas com o ramo; folhas pegajosas e amarelando",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; se voltar, óleo de neem a 0,5% com detergente neutro a cada 7 dias, 3 aplicações, no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons e duras grudadas nos ramos e no verso das folhas",
+      "prevencao_tratamento": "Raspar com escova de dente macia e água com sabão neutro; depois, óleo mineral ou de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teias finas no verso, sobretudo em ar seco",
+      "prevencao_tratamento": "Lavar as folhas com jato de água no verso e borrifar água ao redor nos dias secos; em ataque forte, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando da base para cima ao mesmo tempo, substrato sempre úmido, base do ramo mole e escura com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm e nunca deixar água no prato; se aparecer, tirar do vaso, cortar raízes podres e replantar em substrato novo, ou enraizar as pontas sadias como estacas"
+    },
+    {
+      "nome": "Mancha foliar (Fusarium moniliforme)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-avermelhadas com halo amarelo nas folhas novas, perto da base",
+      "prevencao_tratamento": "Não molhar o miolo dos ramos na rega e garantir ventilação; retirar as folhas afetadas e, se espalhar, fungicida à base de cobre"
+    },
+    {
+      "nome": "Pontas queimadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e secas, com a borda amarela, sem sinal de inseto",
+      "prevencao_tratamento": "Regar com água filtrada ou de chuva, evitar excesso de adubo e, 2 vezes por ano, lavar o substrato regando em dobro até escorrer bastante; aparar as pontas secas com tesoura seguindo o formato da folha"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas no meio das folhas voltadas para o sol da tarde",
+      "prevencao_tratamento": "Limitar o sol direto à manhã; ao mudar de lugar, aumente a luz aos poucos, ao longo de 2 semanas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "A pleomele quase para de crescer e sofre abaixo de 10 °C. Substrato frio e úmido é o caminho mais curto para a podridão de raiz.",
+      "acao_requerida": "Espaçar a rega para 10 a 14 dias, suspender o adubo e, em noites abaixo de 10 °C, levar o vaso para dentro ou longe de vento e janela fria"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de primavera",
+      "mensagem": "Com a volta do calor, a planta rebrota rápido. É a melhor época para corrigir ramos longos e sem folhas na base.",
+      "acao_requerida": "Cortar os ramos compridos demais logo acima de uma cicatriz de folha, com tesoura limpa; as pontas cortadas, com 15 a 20 cm, enraízam em água ou areia úmida"
+    }
+  ]
+}

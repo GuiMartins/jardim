@@ -1,0 +1,171 @@
+{
+  "planta": {
+    "nome_comum": "Singônio",
+    "nome_cientifico": "Syngonium podophyllum",
+    "descricao": "Folhagem trepadeira da família das aráceas, com folhas em ponta de flecha verdes, rosadas ou variegadas, muito tolerante a interiores com luz indireta. Fácil de manter e de multiplicar por estacas. A seiva tem cristais de oxalato de cálcio e irrita a boca e a pele, por isso fica longe de crianças e pets.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 15 a 20 cm de diâmetro e de profundidade, com furos no fundo; cachepô só se for esvaziado depois da rega",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "50% substrato para plantas, 20% casca de pinus fina, 20% húmus de minhoca, 10% perlita ou areia grossa; aerado para a raiz não apodrecer",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai da estufa e estranha a luz e a umidade da casa: uma ou duas folhas velhas podem amarelar e cair. Não adube nem troque de lugar toda hora. A fase termina quando surge a primeira folha nova desenrolando no centro da planta."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Folhas novas a cada 2 a 3 semanas na primavera e no verão, e raízes começando a aparecer pelos furos do vaso. Se os caules se alongarem com folhas pequenas e espaçadas, falta luz: aproxime a planta de uma janela clara."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "A planta cresce rápido de setembro a março e quase para de junho a agosto. Com o tempo, as folhas adultas ficam mais recortadas e os ramos passam a pender ou a subir; ofereça um tutor de fibra de coco se quiser que ela escale. Troca de vaso a cada dois anos e poda de condução na primavera mantêm a planta cheia."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o singônio",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 a 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. Se ainda estiver úmido, espere. No inverno a secagem dobra de tempo; acima de 30 °C, confira a cada 2 dias. Folhas murchas e caídas com o substrato seco pedem rega na hora.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_folhagem",
+      "titulo": "Adubar o singônio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido NPK 10-10-10 (ou para folhagens) na metade da dose do rótulo e regue com ele o substrato já úmido. Alternativa: 2 colheres de sopa de húmus espalhadas na superfície. De junho a agosto, pule esta tarefa.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas: procure bolinhas brancas algodonosas (cochonilha), pontinhos amarelos com teias finas (ácaro) ou manchas escuras encharcadas. Aproveite para passar um pano úmido nas folhas empoeiradas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire o torrão, solte as raízes enoveladas, corte as escuras e moles e replante em vaso 3 a 5 cm maior em diâmetro com substrato novo. Regue e deixe uma semana longe de sol direto.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se já saiu folha nova, a planta se acostumou com a casa. Se a muda veio em vaso plástico apertado, com raiz saindo pelos furos, agora é a hora de passar para o vaso definitivo.",
+      "acao_requerida": "Conferir os furos do vaso e, se houver raízes saindo, transplantar para um vaso de 15 a 20 cm com o substrato recomendado"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Guiar os ramos",
+      "mensagem": "Os ramos já começam a se alongar. Sem direção, a planta abre para os lados e fica rala no centro.",
+      "acao_requerida": "Escolher entre deixar pender (vaso alto ou suspenso) ou cravar um tutor de fibra de coco e amarrar os ramos nele com fio macio"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e murchas mesmo com o substrato úmido; base do caule escura e mole; cheiro de mofo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm e nunca deixar água no pratinho. Se aparecer, tire do vaso, corte as raízes podres, deixe secar 1 hora e replante em substrato novo; se o caule estiver podre, salve estacas sadias"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos nas axilas das folhas e no verso; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; depois pulverize óleo de neem a 0,5% com detergente neutro a cada 7 dias, três aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos na folha, aspecto desbotado e teias finas no verso, principalmente em ar seco",
+      "prevencao_tratamento": "Lave o verso das folhas com jato de água e aumente a umidade em volta; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas de aspecto encharcado, depois marrons com halo amarelo, que se espalham depressa",
+      "prevencao_tratamento": "Regue o substrato, não as folhas; corte as folhas manchadas com tesoura desinfetada e melhore a ventilação"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas esbranquiçadas ou marrons no meio das folhas voltadas para a janela; variegadas perdem a cor",
+      "prevencao_tratamento": "Afastar do sol direto depois das 10h; só sol fraco da manhã. As folhas queimadas não se recuperam: corte-as quando incomodarem"
+    },
+    {
+      "nome": "Pontas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas marrons e secas",
+      "prevencao_tratamento": "Ar seco, ar-condicionado ou excesso de adubo. Afaste de ar-condicionado, agrupe com outras plantas e não passe da meia dose do adubo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com o frio a planta quase para de crescer e o substrato demora mais para secar, o que favorece a podridão de raiz. Abaixo de 12 °C as folhas escurecem.",
+      "acao_requerida": "Esperar o substrato secar a 3 cm antes de regar, suspender a adubação e afastar o vaso de janelas frias à noite"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de primavera",
+      "mensagem": "A planta volta a crescer rápido agora. Podar os ramos compridos faz brotar mais ramos a partir da base e deixa a planta cheia.",
+      "acao_requerida": "Cortar os ramos compridos logo acima de um nó, com luvas por causa da seiva, e enraizar as pontas cortadas num copo com água para fazer mudas"
+    }
+  ]
+}

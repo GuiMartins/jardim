@@ -1,0 +1,181 @@
+{
+  "planta": {
+    "nome_comum": "Clorofito",
+    "nome_cientifico": "Chlorophytum comosum 'Vittatum'",
+    "descricao": "Folhagem pendente de folhas finas listradas de verde e creme, também chamada gravatinha. Aguenta bem esquecimento de rega por guardar água nas raízes carnudas, e as hastes dão filhotes que viram mudas novas. Não é tóxica para cães e gatos, e por isso serve bem em casa com animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou cachepô suspenso com 15 a 20 cm de diâmetro e 15 cm de profundidade, com furos no fundo. Evite vaso muito maior que o torrão: o substrato sobrando fica úmido demais e apodrece as raízes",
+    "volume_minimo_litros": 2.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca e 20% areia grossa ou perlita; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda ou o filhote enraíza no vaso novo. Deixe em luz clara sem sol forte. Uma ou duas folhas velhas podem amarelar, e isso é normal. A fase termina quando surgem folhas novas no centro da roseta e a muda fica firme ao puxar de leve."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "A roseta engrossa e as raízes brancas e carnudas ocupam o vaso. Pode passar a tomar sol da manhã. Folhas novas firmes e bem listradas mostram que a luz está boa. Listras apagadas e folhas moles e compridas indicam falta de luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Da primavera ao outono solta hastes longas com florzinhas brancas e depois filhotes, que já podem virar mudas. No inverno cresce pouco e pede menos água. Corte rente as folhas secas quando aparecerem e apare as pontas marrons em diagonal, acompanhando o formato da folha. Raízes saindo pelo furo ou o vaso deformando mostram que ele ficou pequeno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de clorofito",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água que ficar no pratinho. A muda ainda não tem raiz para buscar água no fundo do vaso.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o clorofito",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e só regue se estiver seco, até escorrer pelos furos. Não deixe água parada no pratinho. No inverno espace para cada 7 a 10 dias. Se puder, use água filtrada ou de chuva, porque o cloro e o flúor queimam as pontas das folhas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o clorofito",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de húmus de minhoca na superfície de um vaso de 2,5 L, ou regue com NPK 10-10-10 na metade da dose da embalagem, sempre com o substrato já úmido. Não adube de junho a agosto: excesso de adubo queima as pontas das folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra a roseta e olhe a base das folhas e o verso delas. Procure bolinhas brancas de algodão (cochonilha), pontinhos amarelados com teias finas (ácaro) e base mole ou escura.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o clorofito de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência na primavera. Tire a planta do vaso: se as raízes carnudas estiverem enroladas e sem espaço para a terra, passe para um vaso 4 a 5 cm maior em diâmetro com substrato novo, ou divida a touceira em 2 ou 3 partes com raiz e replante cada uma.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Muda enraizada",
+      "mensagem": "Com folhas novas no centro, a muda já está firme no vaso e aguenta mais luz e regas mais espaçadas.",
+      "acao_requerida": "Aproximar o vaso de uma janela com sol da manhã e começar a regar só quando os 3 cm de cima estiverem secos"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Planta adulta: filhotes a caminho",
+      "mensagem": "A partir de agora a planta pode soltar hastes com florzinhas brancas e filhotes na ponta. Cada filhote com raízes de 1 a 2 cm já é uma muda nova.",
+      "acao_requerida": "Quando os filhotes tiverem raízes, apoiar cada um num copinho com substrato úmido ainda preso à haste e cortar a haste depois de 2 semanas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e moles a partir da base, roseta que se solta com facilidade, raízes marrons e moles com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco, esvaziar o pratinho e não usar vaso grande demais. Se aparecer, tire a planta, corte as raízes podres, deixe secar por 1 dia e replante em substrato novo"
+    },
+    {
+      "nome": "Pontas marrons (sais, flúor e cloro)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas secas e marrons, às vezes com uma crosta branca na superfície do substrato",
+      "prevencao_tratamento": "Usar água filtrada ou de chuva, não exagerar no adubo e a cada 3 meses regar bastante até escorrer muito, para lavar os sais. Apare as pontas secas em diagonal"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas pálidas ou marrons secas no meio das folhas e listras desbotadas depois de sol forte",
+      "prevencao_tratamento": "Dar só sol da manhã ou luz filtrada e tirar do sol direto entre 10h e 16h, principalmente no verão"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão na base das folhas e no centro da roseta; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%. Se persistir, óleo de neem a 0,5% com detergente neutro a cada 7 dias, no fim da tarde"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas no verso, comum em ambiente seco e quente",
+      "prevencao_tratamento": "Lavar as folhas com jato de água no verso e aumentar a umidade em volta. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "No frio o clorofito quase para de crescer, e o substrato úmido por muito tempo apodrece as raízes.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, sempre conferindo com o dedo, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: hora de renovar",
+      "mensagem": "A planta volta a crescer e é a melhor época para dividir touceiras e enraizar filhotes.",
+      "acao_requerida": "Voltar a adubar, conferir se as raízes estão apertadas no vaso e enraizar os filhotes que já tiverem raízes"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com o sol forte",
+      "mensagem": "Com calor, o substrato seca mais rápido e o sol da tarde queima as folhas.",
+      "acao_requerida": "Conferir o substrato a cada 3 dias e manter o vaso protegido do sol direto depois das 10h"
+    }
+  ]
+}

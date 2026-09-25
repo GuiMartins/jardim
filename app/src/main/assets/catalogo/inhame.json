@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Inhame",
+    "nome_cientifico": "Colocasia esculenta",
+    "descricao": "Tubérculo amiláceo de folhas grandes em forma de coração, chamado de inhame no Sudeste e de taro em outras regiões. Na natureza é perene, mas em vaso é cultivado como anual: planta-se o rizoma na primavera e colhe-se tudo cerca de 8 meses depois. O rizoma e as folhas cruas têm oxalato de cálcio e irritam a boca e a pele, então só se come cozido.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": 240,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso, balde ou saco de cultivo com pelo menos 40 cm de profundidade e 40 cm de diâmetro, com furos no fundo; deixe 10 cm livres na borda para acrescentar substrato durante o ciclo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou esterco curtido, 20% areia grossa ou casca de arroz carbonizada, mais 1 colher de sopa de farinha de ossos por 10 L; fofo e rico em matéria orgânica",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Enterre o rizoma-semente (50 a 100 g, sem partes moles) a 8 cm de profundidade, com a gema voltada para cima. A primeira folha enrolada aparece entre o 15º e o 30º dia; abaixo de 18 °C a brotação atrasa."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "A planta abre uma folha nova a cada 1 ou 2 semanas e os pecíolos chegam a 60 a 90 cm. É a fase de maior consumo de água e adubo: folhas murchas ao meio-dia com substrato úmido são normais no calor, mas murchas de manhã indicam falta de água."
+    },
+    {
+      "fase_id": "formacao_rizomas",
+      "nome": "Formação dos Rizomas",
+      "dia_inicio": 121,
+      "dia_fim": 210,
+      "descricao": "O rizoma central engorda e surgem os rizomas-filhos ao redor, às vezes empurrando o substrato para cima. Cubra os que ficarem expostos à luz, porque esverdeiam e ficam mais amargos."
+    },
+    {
+      "fase_id": "maturacao_colheita",
+      "nome": "Maturação e Colheita",
+      "dia_inicio": 211,
+      "dia_fim": 240,
+      "descricao": "As folhas velhas amarelam e secam e as novas saem menores. Quando a maioria das folhas estiver amarelada, os rizomas estão maduros: esvazie o vaso e separe o rizoma-mãe dos filhos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar o rizoma plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Antes de brotar, o rizoma apodrece se o substrato ficar encharcado, então nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar o inhame",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos (uns 3 a 5 L num vaso de 40 L). O inhame gosta de substrato sempre úmido. Acima de 30 °C, confira todo dia; em dias frios e nublados, a cada 3 ou 4 dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Regar pouco na maturação",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 211,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e só regue se estiver seco nessa profundidade, com metade da água de antes. Menos água agora firma os rizomas e melhora a conservação depois da colheita.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o inhame",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Espalhe 2 colheres de sopa de torta de mamona ou 1 xícara de esterco curtido por vaso de 40 L, afastado 5 cm do pé, e regue em seguida. A partir do dia 120, acrescente 1 colher de sopa de cinza de madeira peneirada, rica em potássio, que engorda os rizomas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e pé",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Vire as folhas e procure pulgões, teias finas de ácaro e lagartas. Olhe se há manchas marrons com borda amarela nas folhas e aperte o pé rente ao substrato: se estiver mole ou com cheiro azedo, é podridão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora da primeira amontoa",
+      "mensagem": "O rizoma cresce para cima e precisa ficar coberto para engordar e não esverdear.",
+      "acao_requerida": "Acrescentar 4 a 5 cm de substrato com composto ao redor do pé, sem cobrir o ponto de onde saem as folhas"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Segunda amontoa",
+      "mensagem": "Os rizomas-filhos estão se formando e costumam aparecer na superfície.",
+      "acao_requerida": "Completar o vaso com substrato até cobrir todos os rizomas expostos, deixando 2 cm livres na borda para a rega"
+    },
+    {
+      "dia_disparo": 210,
+      "titulo": "Rizomas amadurecendo",
+      "mensagem": "Folhas velhas amarelando agora são sinal de maturação, não de doença.",
+      "acao_requerida": "Reduzir a rega e parar de adubar; retirar só as folhas completamente secas"
+    },
+    {
+      "dia_disparo": 240,
+      "titulo": "Colher o inhame",
+      "mensagem": "Os rizomas estão maduros. Deixar mais tempo no vaso favorece rachaduras e podridão.",
+      "acao_requerida": "Virar o vaso, separar o rizoma-mãe dos filhos com as mãos (use luvas, a seiva irrita a pele) e deixar secar 2 dias à sombra antes de guardar; reservar 1 ou 2 filhos sadios para o próximo plantio"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium, Phytophthora, Pectobacterium)",
+      "tipo": "DOENCA",
+      "sintomas": "Pé mole e escurecido rente ao substrato, cheiro azedo, folhas murchando mesmo com substrato úmido; rizoma com polpa mole e marrom",
+      "prevencao_tratamento": "Plantar só rizomas firmes, não deixar água no pratinho e reduzir a rega no frio; descartar a planta afetada com o substrato, sem reaproveitar no próximo plantio"
+    },
+    {
+      "nome": "Requeima do taro (Phytophthora colocasiae)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas circulares marrom-arroxeadas com halo amarelo e gotas de líquido na borda, que crescem e derrubam a folha em poucos dias",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter o vaso arejado; cortar e descartar folhas manchadas e aplicar calda bordalesa a 1% a cada 10 dias em épocas chuvosas"
+    },
+    {
+      "nome": "Pulgão (Aphis gossypii)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos no verso das folhas e nas folhas novas enroladas; folhas pegajosas",
+      "prevencao_tratamento": "Jato de água no verso das folhas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos na folha, que fica bronzeada, e teias finas no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato fino em dias secos; em ataque forte, óleo de neem ou calda de sabão neutro a 1% a cada 5 dias"
+    },
+    {
+      "nome": "Lagarta (Spodoptera spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos grandes e irregulares nas folhas, às vezes só as nervuras restam; fezes escuras sobre as folhas",
+      "prevencao_tratamento": "Catar as lagartas no fim da tarde e esmagar as posturas no verso das folhas; em infestação, Bacillus thuringiensis conforme o rótulo"
+    },
+    {
+      "nome": "Queima das bordas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas secas e marrons, sem manchas no meio, depois de dias de calor forte ou substrato seco",
+      "prevencao_tratamento": "Não deixar o substrato secar na fase de crescimento; em regiões muito quentes, dar sombra nas horas de sol mais forte da tarde"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Frio chega ao inhame",
+      "mensagem": "Abaixo de 10 °C o inhame para de crescer e a geada queima as folhas. No frio, substrato molhado apodrece o rizoma.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 5 cm, levar o vaso para perto de uma parede ensolarada nas noites frias e, se as folhas queimarem, colher os rizomas logo"
+    }
+  ]
+}

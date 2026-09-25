@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Amoreira",
+    "nome_cientifico": "Morus nigra",
+    "descricao": "Árvore frutífera de amoras pretas, doces e ácidas, que em vaso vira um arbusto de 1,5 a 2 m com poda anual. Muda enxertada ou de estaca produz já no primeiro ou segundo ano e dá frutos principalmente na primavera.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cerâmica ou fibra, com pelo menos 45 cm de diâmetro e 45 cm de profundidade e vários furos no fundo",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "50% terra vegetal, 25% húmus de minhoca ou composto, 15% areia grossa, 10% casca de arroz carbonizada, mais 200 g de farinha de ossos por vaso de 50 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode perder algumas folhas nos primeiros dias por causa da troca de vaso. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento vigoroso de ramos e folhas grandes. É a época de formar a copa com 3 ou 4 ramos principais. Mudas enxertadas ou de estaca podem dar as primeiras amoras já neste ano; nesse caso, deixe poucos frutos para não enfraquecer a planta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: no inverno perde parte das folhas e quase para de crescer; em agosto e setembro rebrota e floresce junto com as folhas novas; de setembro a novembro vem a safra principal; depois da colheita recebe uma poda que mantém o tamanho adequado ao vaso. Em anos quentes pode dar uma segunda safra menor no verão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a amoreira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos do fundo. Com a raiz ainda restrita ao torrão da muda, deixar secar por completo agora faz a planta perder todas as folhas. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a amoreira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 L num vaso de 50 L). No verão e na safra, confira a cada 2 dias: falta de água durante a frutificação faz as amoras caírem verdes. No inverno, com a planta sem folhas, espace para a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a amoreira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de esterco de galinha curtido sobre o substrato, longe do tronco, e regue em seguida. De agosto a novembro, some 1 colher de sopa de NPK 4-14-8 por vaso para ajudar na floração e nos frutos. Em junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontos amarelados, teia fina ou manchas marrons com borda escura. Passe o olho nos ramos e no tronco atrás de crostas brancas ou marrons grudadas na casca (cochonilha).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no inverno, tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas na borda do torrão e devolva ao mesmo vaso com substrato novo, ou passe para um vaso 10 a 20 L maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Remover brotos do porta-enxerto",
+      "mensagem": "Brotos que nascem abaixo do enxerto ou do pé do tronco roubam força da copa e não produzem as mesmas amoras.",
+      "acao_requerida": "Cortar rente ao tronco, com tesoura limpa, todo broto que surgir abaixo do ponto de enxertia ou na base da planta"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Poda de formação",
+      "mensagem": "Em vaso, a amoreira precisa de uma copa baixa e aberta para ficar do tamanho certo e receber sol por dentro.",
+      "acao_requerida": "Cortar a ponta do ramo principal a cerca de 60 cm de altura e, depois que brotarem os ramos laterais, deixar só 3 ou 4 bem distribuídos"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Deixar poucas amoras no primeiro ano",
+      "mensagem": "Se a muda já estiver dando frutos, muitas amoras agora atrasam o crescimento das raízes e da copa.",
+      "acao_requerida": "Deixar no máximo 20 a 30 frutos na planta e tirar os cachos de flores excedentes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por encharcamento",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, ramos secam da ponta para a base, raízes escuras e moles com cheiro de podre",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e garantir furos desobstruídos. Se aparecer, tire do vaso, corte as raízes podres e replante em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Cochonilha-branca (Pseudaulacaspis pentagona)",
+      "tipo": "PRAGA",
+      "sintomas": "Crostas brancas ou acinzentadas grudadas nos ramos e no tronco, ramos que secam e perda de vigor",
+      "prevencao_tratamento": "Esfregar os ramos com escova macia e água com sabão neutro; em infestação forte, óleo mineral a 1% ou óleo de neem no inverno, sem folhas e fora do sol forte"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam bronzeadas, teia fina no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 2 dias no tempo seco; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mancha-foliar (Cercospora moricola)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas com borda escura nas folhas, que amarelam e caem antes do tempo",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, recolher as folhas caídas e podar para arejar a copa; em ataque forte, calda bordalesa fora da época de colheita"
+    },
+    {
+      "nome": "Mosca-das-frutas",
+      "tipo": "PRAGA",
+      "sintomas": "Amoras maduras moles, com furinhos e larvas brancas dentro",
+      "prevencao_tratamento": "Colher as amoras a cada 2 dias e não deixar fruto caído no vaso; armadilha de garrafa PET com suco de fruta fermentado perto da planta"
+    },
+    {
+      "nome": "Queda de frutos verdes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Amoras caem ainda verdes ou vermelhas, sem sinais de praga",
+      "prevencao_tratamento": "Causada por falta de água ou calor forte na frutificação: mantenha o substrato sempre levemente úmido na safra e cubra a superfície com palha para reter umidade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Amoreira em repouso",
+      "mensagem": "No inverno a amoreira perde parte ou todas as folhas e quase para de crescer. Isso é normal, e o vaso passa a secar bem mais devagar.",
+      "acao_requerida": "Espaçar a rega para a cada 5 a 7 dias, conferindo com o dedo, e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de limpeza de inverno",
+      "mensagem": "Sem folhas, fica fácil ver os ramos. As flores de setembro saem dos brotos novos, então uma poda leve agora estimula a brotação.",
+      "acao_requerida": "Retirar ramos secos, doentes e os que crescem para dentro da copa, e encurtar em 1/3 os ramos longos demais, com corte inclinado acima de uma gema"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Safra de amoras",
+      "mensagem": "É a época principal de frutos. As amoras amadurecem aos poucos e passam do ponto em 2 ou 3 dias, caindo e atraindo moscas.",
+      "acao_requerida": "Colher a cada 2 dias as amoras totalmente pretas e macias, que soltam com um toque, e proteger a planta com tela se os pássaros estiverem comendo"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Poda pós-colheita",
+      "mensagem": "Depois da safra, a amoreira cresce rápido e sai do tamanho do vaso. Podar agora ainda dá tempo de formar os ramos que vão produzir no ano seguinte.",
+      "acao_requerida": "Encurtar os ramos que produziram até 2 ou 3 gemas acima da estrutura principal, mantendo a copa com até 1,5 a 2 m de altura, e adubar em seguida"
+    }
+  ]
+}

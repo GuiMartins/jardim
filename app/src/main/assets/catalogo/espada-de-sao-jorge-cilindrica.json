@@ -1,0 +1,169 @@
+{
+  "planta": {
+    "nome_comum": "Espada-de-são-jorge-cilíndrica",
+    "nome_cientifico": "Dracaena angolensis (sin. Sansevieria cylindrica)",
+    "descricao": "Suculenta africana de folhas cilíndricas, duras e rajadas de verde-escuro, muitas vezes vendida com as pontas trançadas. Aguenta pouca luz, esquecimento e ar seco, o que faz dela uma das plantas de interior mais fáceis. O que costuma matá-la é o excesso de água.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro (terracota), mais largo que fundo e pesado para a planta não tombar, com 15 a 20 cm de diâmetro e furos no fundo. Não use cachepô sem furo nem deixe água parada no prato",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "40% substrato para cactos e suculentas, 30% areia grossa lavada, 30% perlita ou casca de pinus fina; precisa secar por completo em poucos dias",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se acostuma à luz e à umidade da casa. Deixe-a em luz clara sem sol forte do meio-dia. É normal ela passar semanas sem crescer. Folha mole ou enrugada nesta fase quase sempre é água demais, não de menos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso novo. O sinal de que ela pegou é uma folha nova, clara e macia na ponta, nascendo do centro ou de um rizoma que brota ao lado da touceira."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce devagar, de 3 a 6 folhas novas por ano, quase tudo entre setembro e março. Do outono ao inverno ela fica praticamente parada e precisa de pouquíssima água. Planta com vários anos pode soltar uma haste de flores brancas e perfumadas no fim do verão. Brotos laterais (filhotes) podem ser separados na troca de vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a espada-de-são-jorge",
+      "tipo": "REGA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de churrasco até o fundo do vaso. Só regue se ele sair seco e limpo. Molhe o substrato devagar até escorrer pelos furos, sem molhar o centro da roseta, e esvazie o prato depois de 15 minutos. De junho a agosto, ou abaixo de 15 °C, regue só a cada 30 dias. Se o palito sair úmido, pule esta rega.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a espada-de-são-jorge",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo NPK 10-10-10 ou adubo líquido para cactos na metade da dose do rótulo e aplique no lugar de uma rega, com o substrato já seco. Pule de abril a agosto, quando a planta está parada e o adubo só se acumula e queima a raiz.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base das folhas, onde elas saem do substrato, e procure algodãozinho branco ou escamas marrons. Aperte de leve a base de cada folha: se estiver mole ou escura, pode ser podridão. Passe um pano úmido nas folhas para tirar o pó.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e novembro. Tire a planta com o substrato seco, remova raízes moles ou escuras e separe os filhotes com raiz própria, se quiser. Use um vaso só 2 a 4 cm mais largo e substrato novo. Espere 7 dias antes da primeira rega para os cortes cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Chegou! Não regue ainda",
+      "mensagem": "Plantas de loja costumam vir em substrato encharcado e compactado, que apodrece a base. Esperar uma semana sem água não faz mal nenhum a ela.",
+      "acao_requerida": "Aperte o substrato. Se estiver encharcado, com cheiro azedo ou num vaso sem furo, passe para o vaso e o substrato recomendados, tirando as raízes moles. Deixe em luz clara sem sol do meio-dia e só regue daqui a 7 dias."
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora de mais luz",
+      "mensagem": "Adaptada à casa, ela cresce mais firme e com as rajas mais marcadas se receber um pouco de sol direto suave.",
+      "acao_requerida": "Aproxime o vaso de uma janela com sol da manhã (2 a 3 horas). Se as pontas amarelarem ou surgirem manchas claras e secas, recue um pouco."
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma e da base (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas moles, amareladas ou transparentes na base, que tombam ou se soltam com um puxão leve; substrato com cheiro azedo",
+      "prevencao_tratamento": "Só regue com o substrato seco até o fundo e nunca deixe água no prato. Se aparecer, tire a planta do vaso, corte todo tecido mole até chegar ao firme, deixe os cortes secando 2 a 3 dias à sombra e replante em substrato seco e novo. Se o rizoma inteiro estiver podre, enraíze pedaços sadios das folhas em areia."
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão na base das folhas e entre elas; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%. Se houver muitas, pulverize óleo de neem a 0,5% com algumas gotas de detergente neutro a cada 7 dias, 3 vezes, longe do sol."
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou brancas grudadas nas folhas, que saem raspando com a unha",
+      "prevencao_tratamento": "Raspe com uma escova de dentes macia molhada em água com sabão neutro e depois aplique óleo de neem a 0,5% semanalmente até sumirem."
+    },
+    {
+      "nome": "Mancha-vermelha das folhas (Fusarium moniliforme)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas avermelhadas a marrons, ovais e afundadas, com borda amarela, que crescem com a folha molhada",
+      "prevencao_tratamento": "Regue só o substrato e nunca borrife as folhas. Corte as folhas muito manchadas rente ao substrato e mantenha a planta ventilada."
+    },
+    {
+      "nome": "Estiolamento por falta de luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas finas, claras, compridas e tortas, que tombam para os lados em direção à janela",
+      "prevencao_tratamento": "Leve para um lugar mais claro, com um pouco de sol da manhã, de forma gradual. As folhas deformadas não se recuperam, mas as novas nascem firmes."
+    },
+    {
+      "nome": "Folhas enrugadas por sede prolongada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com sulcos no comprimento e murchas, mas firmes na base, com o substrato seco há muitas semanas",
+      "prevencao_tratamento": "Regue bem até escorrer pelos furos e a folha volta a encher em alguns dias. Se estiver enrugada e mole na base, é podridão, não sede: não regue."
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: quase sem água",
+      "mensagem": "Com frio a planta para de crescer e o substrato demora muito a secar. Abaixo de 10 °C, raiz molhada apodrece em poucos dias.",
+      "acao_requerida": "Regue no máximo uma vez por mês e só com o substrato seco até o fundo. Não adube. Afaste o vaso de janelas frias à noite e traga para dentro se a temperatura cair abaixo de 10 °C."
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor voltando, a espada-de-são-jorge retoma o crescimento e aceita mais água e adubo.",
+      "acao_requerida": "Volte à rega a cada 14 dias, conferindo sempre o substrato, e retome a adubação. Se o vaso estiver lotado de brotos ou rachando, esta é a melhor época para trocar."
+    }
+  ]
+}

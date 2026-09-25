@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Craibeira",
+    "nome_cientifico": "Tabebuia aurea",
+    "descricao": "Árvore nativa da Caatinga, do Cerrado e do Pantanal, conhecida também como ipê-amarelo-do-cerrado ou para-tudo. Perde as folhas na seca e se cobre de flores amarelo-ouro entre agosto e setembro. Em vaso grande fica como árvore jovem por alguns anos. Aguenta seca e sol forte, mas a longo prazo o lugar dela é o chão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cimento ou fibra, com pelo menos 50 cm de profundidade e 45 cm de diâmetro e vários furos no fundo; apoiar sobre pés para a água escoar",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra de barranco ou terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca; mais 100 g de farinha de ossos misturados ao substrato",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho e enraíza no vaso novo. É normal perder 1 ou 2 folhas mais velhas. A fase termina quando surgem folhas novas, compostas de 5 a 7 folíolos, na ponta do ramo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o caule começa a engrossar e a ficar com casca acinzentada e rugosa. O crescimento é em surtos na estação chuvosa, com pausa no inverno. Se ela chegar a 1 m de altura no fim do primeiro ano, está indo bem."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "Árvore jovem, com caule lenhoso e os primeiros galhos laterais. Todo ano perde as folhas no fim do inverno e rebrota com as chuvas. Pode dar as primeiras flores do terceiro ano em diante, sempre com a copa sem folhas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: de outubro a maio fica com a copa cheia e cresce; entre junho e agosto as folhas amarelam e caem; em agosto e setembro floresce sem folhas; em outubro as vagens abrem e soltam sementes aladas, e logo depois rebrota. No vaso, o porte fica limitado a 2 ou 3 m, e ela depende de poda e de trocar o substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a craibeira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Regue devagar até a água escorrer pelos furos. O torrão da muda ainda não alcança o resto do vaso e seca rápido. Acima de 32 °C, confira todo dia com o dedo a 3 cm de profundidade.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a craibeira",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No calor, a cada 3 a 4 dias. Sem folhas no inverno, basta uma rega a cada 10 a 15 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a craibeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus de minhoca (cerca de 500 g) mais 1 colher de sopa de NPK 10-10-10 na borda do vaso, longe do caule, e regue em seguida. Pule esta adubação se cair entre junho e setembro, quando a árvore está sem folhas ou em flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e as pontas dos ramos em busca de lagartas, folhas roídas ou carrapatinhos brancos grudados no caule. Confira também se há trilha de formigas subindo pelo vaso.",
+      "critica": false
+    },
+    {
+      "id": "renovar_vaso",
+      "titulo": "Trocar o substrato ou mudar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro, antes da rebrota. Tire a árvore do vaso, corte com tesoura limpa as raízes que dão voltas no fundo, retire um terço do substrato velho e replante com mistura nova. Se as raízes tomarem todo o torrão, passe para um vaso de 100 L ou mais, ou plante no chão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firmar a muda com um tutor",
+      "mensagem": "O caule da muda ainda é fino. Com vento, o torrão balança e as raízes novas se rompem.",
+      "acao_requerida": "Cravar uma estaca de bambu a 5 cm do caule e amarrá-lo com fita macia em forma de oito, sem apertar"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Afrouxar a amarração do tutor",
+      "mensagem": "O caule engrossou, e a fita pode estar estrangulando a casca.",
+      "acao_requerida": "Refazer a amarração mais folgada; se o caule já fica de pé sozinho com vento, retirar o tutor"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Decidir o destino da árvore",
+      "mensagem": "Com 3 anos, a craibeira já chegou perto do limite do vaso. No chão, ela pode passar de 10 m e viver décadas.",
+      "acao_requerida": "Escolher entre plantá-la em terreno com espaço (a 4 m de muros e canos) na próxima estação chuvosa ou mantê-la no vaso com poda anual de contenção"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e amarelam mesmo com o substrato úmido; base do caule escura e mole; cheiro azedo no substrato",
+      "prevencao_tratamento": "Não deixe água parada no pratinho e reduza a rega quando a árvore estiver sem folhas. Se aparecer, suspenda a rega até o substrato secar a 10 cm e troque a parte encharcada por substrato novo e arenoso"
+    },
+    {
+      "nome": "Lagarta desfolhadora",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos roídos pelas bordas ou reduzidos à nervura; bolinhas escuras de fezes no substrato",
+      "prevencao_tratamento": "Catar as lagartas à mão; se houver muitas, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde e repetir após 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons grudadas nos ramos novos e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Esfregar com escova macia e água com sabão neutro; em infestação forte, óleo mineral a 1% ou óleo de neem a 0,5%, a cada 7 dias, só com a planta com folhas"
+    },
+    {
+      "nome": "Formiga-cortadeira",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua e sumindo da noite para o dia; trilha de formigas no vaso",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca granulada própria longe da árvore; passar graxa ou fita dupla-face em volta do vaso para barrar a subida"
+    },
+    {
+      "nome": "Queda de folhas por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "A árvore perde as folhas de uma vez fora do inverno, depois de dias com o substrato completamente seco",
+      "prevencao_tratamento": "Retomar a rega normal; se os ramos continuarem verdes por dentro ao raspar a casca com a unha, ela rebrota em 2 a 4 semanas. Não adubar até as folhas voltarem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Craibeira entrando no repouso",
+      "mensagem": "Com a seca e o frio, as folhas amarelam e caem. É o ciclo natural dela, não é doença. Sem folhas, ela bebe muito pouco, e o excesso de água apodrece as raízes.",
+      "acao_requerida": "Espaçar a rega para a cada 10 a 15 dias, só com o substrato seco a 5 cm, e parar de adubar até a rebrota"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de formação e contenção",
+      "mensagem": "Sem folhas, dá para ver toda a estrutura dos galhos, e a poda cicatriza antes da rebrota. Não pode em agosto, para não cortar os botões das flores.",
+      "acao_requerida": "Tirar os galhos secos, cruzados e os que brotam do pé do caule; no vaso, encurtar em um terço os ramos mais longos, com corte logo acima de uma gema"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Rebrota: retomar os cuidados",
+      "mensagem": "Com as primeiras chuvas, as vagens se abrem e a árvore solta folhas novas. Começa a estação de crescimento.",
+      "acao_requerida": "Voltar a regar a cada 3 a 4 dias, aplicar a adubação e, se quiser mudas, colher as sementes aladas das vagens abertas e semear em até 30 dias, porque elas perdem a viabilidade rápido"
+    }
+  ]
+}

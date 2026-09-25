@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Tumbérgia-azul",
+    "nome_cientifico": "Thunbergia grandiflora",
+    "descricao": "Trepadeira perene e muito vigorosa, de origem indiana, com cachos pendentes de flores grandes azul-lavanda na maior parte do ano quente. Cobre pérgolas, grades e muros rapidamente; em vaso exige recipiente grande, suporte firme e poda regular para não virar um emaranhado.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira grande e pesado, com pelo menos 45 cm de diâmetro e 45 cm de profundidade, furos no fundo e uma treliça, grade ou pérgola de pelo menos 2 m ao lado",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; acrescente 1 xícara de farinha de ossos por vaso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. Pode perder algumas folhas nos primeiros dias; a fase termina quando surgem ramos novos de folhas verde-claras e a planta começa a se enrolar no suporte."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Crescimento rápido: no calor os ramos avançam vários centímetros por semana e precisam ser guiados no suporte. As primeiras flores costumam aparecer entre o 3º e o 6º mês, se houver sol suficiente."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cobre o suporte e floresce da primavera ao outono, com flores isoladas no inverno em regiões quentes. Cresce pouco de junho a agosto e sofre com geada. O ano gira em torno de podas de contenção no verão, poda forte no fim do inverno e troca do substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a tumbérgia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda não alcança o resto do vaso e seca antes dele. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a tumbérgia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, com a planta cobrindo o suporte, pode precisar de rega a cada 1 ou 2 dias; de junho a agosto, a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a tumbérgia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 xícaras de húmus) na borda do vaso, longe do caule, e regue em seguida. De junho a agosto, pule a adubação. Adubo rico em nitrogênio dá muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "conduzir_ramos",
+      "titulo": "Guiar os ramos no suporte",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Enrole no suporte, no sentido em que já giram, os ramos que ficaram soltos, e prenda os mais longos com barbante ou fita de amarrio sem apertar. Distribua os ramos para os lados, para não embolar tudo no topo.",
+      "critica": false
+    },
+    {
+      "id": "poda_contencao",
+      "titulo": "Poda de contenção",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte os ramos que passaram do suporte, invadiram calhas ou vizinhos ou ficaram secos e embolados, sempre logo acima de um par de folhas. Não pode mais que um terço da folhagem de uma vez. De junho a agosto, pule esta poda e espere a poda forte de agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas de ramos diferentes e procure pontinhos brancos que voam (mosca-branca), teias finas e folhas pontilhadas de amarelo (ácaro) e carocinhos brancos ou marrons presos nos ramos (cochonilha).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, logo após a poda forte: retire a planta do vaso, corte cerca de um quarto das raízes das laterais e do fundo, e volte a plantar no mesmo vaso com substrato novo, ou num vaso maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Suporte desde o primeiro dia",
+      "mensagem": "A tumbérgia cresce muito rápido e se enrola no que encontrar. Colocar o suporte depois quebra ramos e raízes.",
+      "acao_requerida": "Instalar treliça, grade ou fios firmes de pelo menos 2 m e encostar os ramos da muda neles"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Estimular ramificação",
+      "mensagem": "Se a muda subiu com um ou dois ramos compridos e pelados, ela vai cobrir só uma faixa estreita do suporte.",
+      "acao_requerida": "Cortar a ponta dos ramos principais (3 a 5 cm) acima de um par de folhas para forçar brotações laterais"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e murchas mesmo com o substrato úmido; raízes escuras, moles e com cheiro ruim; ramos secando a partir da base",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, não deixar água no pratinho e garantir furos desobstruídos. Em caso avançado, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos pequenos ao mexer nos ramos; folhas amareladas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto da planta; óleo de neem a 0,5% com detergente neutro no verso das folhas, no fim da tarde, a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontilhado amarelado ou bronzeado, teias finas nas axilas e no verso; comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas em dias secos; se persistir, óleo de neem ou enxofre molhável a cada 5 a 7 dias, fora do sol forte"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodonosos ou escamas marrons presos aos ramos e nervuras; planta enfraquecida e pegajosa",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia embebida em álcool 70%; em infestação, podar os ramos mais atacados e aplicar óleo mineral ou neem a cada 7 dias"
+    },
+    {
+      "nome": "Queimadura de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, murchas e com aspecto de cozidas depois de noite fria ou geada; ramos da ponta secam",
+      "prevencao_tratamento": "Em noites abaixo de 5 °C, levar o vaso para perto de uma parede abrigada ou cobrir com TNT. Não podar logo após a queima: esperar a poda de agosto para cortar o que secou"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "No frio a tumbérgia quase para de crescer e sofre com geada. Substrato encharcado no inverno apodrece a raiz.",
+      "acao_requerida": "Espaçar as regas para quando o substrato estiver seco a 4 cm, suspender o adubo e proteger o vaso nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda forte anual",
+      "mensagem": "No fim do inverno, antes da brotação, a poda renova a planta e concentra a floração da primavera em ramos novos.",
+      "acao_requerida": "Remover ramos secos, queimados de frio e embolados e encurtar os demais em até metade, deixando a estrutura principal presa ao suporte"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar os cuidados de crescimento",
+      "mensagem": "Com o calor voltando, a planta brota com força e precisa de nutrientes e água para florescer.",
+      "acao_requerida": "Voltar a adubar todo mês e a regar com a frequência normal, conferindo o substrato a cada 3 dias"
+    }
+  ]
+}

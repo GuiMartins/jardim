@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Batata-doce",
+    "nome_cientifico": "Ipomoea batatas",
+    "descricao": "Trepadeira rasteira de raízes tuberosas doces, rústica e muito produtiva mesmo em vaso grande, com ramas e folhas novas também comestíveis. É perene na natureza, mas em casa se cultiva como anual: planta-se a rama no calor e colhe-se tudo de uma vez uns quatro a cinco meses depois.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": 140,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso, balde ou saco de cultivo largo com pelo menos 40 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo; recipientes mais largos que fundos facilitam a colheita",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa, 20% composto orgânico bem curtido, 10% fibra de coco; solto e sem torrões, sem esterco fresco, que dá rama demais e batata fina",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento das Ramas",
+      "dia_inicio": 1,
+      "dia_fim": 20,
+      "descricao": "Enterre ramas de 25 a 30 cm deitadas ou inclinadas, deixando 2 ou 3 nós sob o substrato e as folhas da ponta para fora. As folhas velhas podem murchar e cair nos primeiros dias; a fase termina quando surgem folhas novas na ponta, sinal de que a rama enraizou."
+    },
+    {
+      "fase_id": "crescimento_ramas",
+      "nome": "Crescimento das Ramas",
+      "dia_inicio": 21,
+      "dia_fim": 50,
+      "descricao": "As ramas se alongam rápido e cobrem o vaso, caindo pelas bordas. É a fase de formar folhas; ainda não há batatas, só raízes finas."
+    },
+    {
+      "fase_id": "formacao_raizes",
+      "nome": "Formação das Batatas",
+      "dia_inicio": 51,
+      "dia_fim": 110,
+      "descricao": "Algumas raízes começam a engrossar e viram batatas. Rega regular é o que importa aqui: secar demais e depois encharcar racha as batatas. Batatas que aparecerem na superfície devem ser cobertas com substrato."
+    },
+    {
+      "fase_id": "engorda_colheita",
+      "nome": "Engorda e Colheita",
+      "dia_inicio": 111,
+      "dia_fim": 140,
+      "descricao": "As batatas ganham tamanho e açúcar; as folhas mais velhas começam a amarelar, sinal de maturação. Reduza a rega e colha entre o dia 130 e o 140, com tempo seco."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar as ramas novas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Regue pela manhã até o substrato ficar úmido nos primeiros 5 cm, sem encharcar. Sem raiz, a rama desidrata num único dia seco e não se recupera.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a batata-doce",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C ou com as folhas murchas no fim da tarde, confira a cada 2 dias. Mantenha a umidade constante: alternar secura e encharcamento racha as batatas.",
+      "critica": false
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Regar pouco na maturação",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 111,
+      "dia_fim_ciclo": 133,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue só se estiver seco nessa profundidade, com metade do volume de antes. Menos água agora deixa a batata mais doce e ajuda a conservar depois da colheita.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_potassio",
+      "titulo": "Adubar com potássio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": 105,
+      "instrucoes": "Espalhe 2 colheres de sopa de cinza de madeira peneirada (ou 1 colher de sopa de sulfato de potássio) por vaso de 40 L, afastado do caule, misture de leve na superfície e regue. Evite adubos ricos em nitrogênio, que fazem só rama.",
+      "critica": false
+    },
+    {
+      "id": "poda_ramas",
+      "titulo": "Controlar as ramas",
+      "tipo": "PODA",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 125,
+      "instrucoes": "Levante as ramas que caíram do vaso e arranque as raízes que saíram dos nós tocando o chão, porque elas desviam energia para batatas fora do vaso. Corte as pontas das ramas com mais de 1,5 m; os brotos cortados podem ir para a panela.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e colo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 133,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teia fina no verso (ácaro), furos redondos (vaquinha) e insetos agrupados nos brotos. Olhe a base das ramas rente ao substrato em busca de furos ou serragem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "As ramas pegaram?",
+      "mensagem": "Ramas vivas já mostram a ponta firme e verde; as que secaram inteiras não vão enraizar.",
+      "acao_requerida": "Puxar de leve as ramas secas e substituir por ramas novas de 25 a 30 cm enterrando 2 ou 3 nós"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Cobrir as batatas",
+      "mensagem": "As batatas começaram a se formar e algumas podem ficar expostas; batata no sol fica verde, dura e atrai a broca.",
+      "acao_requerida": "Completar o vaso com 3 a 5 cm de substrato solto sobre a base das ramas, sem enterrar as folhas"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Espiar as batatas",
+      "mensagem": "Folhas velhas amarelando indicam que as batatas estão perto do ponto.",
+      "acao_requerida": "Cavar com a mão na borda do vaso e conferir uma batata: com 4 a 5 cm de diâmetro e casca firme, já está boa"
+    },
+    {
+      "dia_disparo": 133,
+      "titulo": "Parar de regar",
+      "mensagem": "Substrato seco na colheita deixa a casca firme e as batatas conservam por mais tempo.",
+      "acao_requerida": "Suspender a rega até a colheita, daqui a cerca de uma semana"
+    },
+    {
+      "dia_disparo": 140,
+      "titulo": "Hora da colheita!",
+      "mensagem": "As batatas estão maduras. Deixar no vaso por muito mais tempo aumenta o ataque da broca e as rachaduras.",
+      "acao_requerida": "Cortar as ramas, virar o vaso sobre uma lona e soltar as batatas com a mão, sem ferir a casca; deixar curar 5 a 7 dias à sombra, em local arejado, antes de guardar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Broca-da-batata-doce (Euscepes postfasciatus)",
+      "tipo": "PRAGA",
+      "sintomas": "Galerias escuras e amargas dentro das batatas; furos na base das ramas com serragem",
+      "prevencao_tratamento": "Usar ramas sadias tiradas da ponta, manter as batatas cobertas de substrato e colher no ponto; descartar ramas e batatas atacadas longe do vaso"
+    },
+    {
+      "nome": "Larva-alfinete e vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Adultos fazem furos redondos nas folhas; as larvas abrem furinhos e trilhas finas na casca das batatas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo e usar substrato novo a cada plantio, sem reaproveitar terra de horta infestada"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, depois bronzeadas, com teia fina no verso; aparece em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas no fim da tarde; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Nematoide-das-galhas (Meloidogyne spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Batatas deformadas e rachadas, raízes finas com calombos; planta fraca e amarelada",
+      "prevencao_tratamento": "Usar substrato novo ou solarizado; não reaproveitar terra de vasos onde houve tomate, cenoura ou batata com o problema"
+    },
+    {
+      "nome": "Podridão por excesso de rega (Rhizopus, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base das ramas escura e mole, batatas com partes moles, úmidas e com cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, garantir furos livres no vaso e não deixar prato com água; retirar as partes podres"
+    },
+    {
+      "nome": "Rachadura das batatas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Batatas com rachaduras longitudinais, às vezes cicatrizadas",
+      "prevencao_tratamento": "Manter a umidade do substrato constante na formação das batatas; depois de um período seco, voltar a regar aos poucos"
+    },
+    {
+      "nome": "Muita rama e pouca batata",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramas vigorosas e folhas enormes, mas batatas finas como dedos na colheita",
+      "prevencao_tratamento": "Evitar esterco fresco e adubos nitrogenados, garantir pelo menos 5 horas de sol direto e adubar com potássio na formação das batatas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Frio chegando",
+      "mensagem": "Abaixo de 15 °C a batata-doce para de crescer, e uma geada queima as ramas em uma noite; batata que fica no substrato frio e úmido apodrece.",
+      "acao_requerida": "Se as batatas já tiverem 4 cm de diâmetro, colher antes da primeira noite de frio forte; senão, levar o vaso para perto de uma parede ensolarada e reduzir a rega"
+    }
+  ]
+}
