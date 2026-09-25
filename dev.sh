@@ -5,10 +5,12 @@
 # Comandos:
 #   emulator   abre o emulador em background
 #   test       roda os testes do motor
-#   build      builda o APK debug
-#   install    instala o APK debug no dispositivo/emulador conectado
-#   start      abre o app no dispositivo/emulador conectado
+#   build      builda o APK release (R8), o que vai para o celular
+#   install    instala o APK release no dispositivo conectado
+#   start      abre o app no dispositivo conectado
 #   run        build + install + start, tudo de uma vez (o mais usado)
+#   run-debug  o mesmo com o APK debug: dá para ler o banco com run-as e usar
+#              as ferramentas do Compose, mas é 3 a 4 vezes mais lento
 #   logs       segue o logcat do processo do app (precisa estar rodando)
 #   print X    salva um print da tela ligada em X.png (o Fold tem duas telas)
 set -euo pipefail
@@ -27,7 +29,8 @@ EMULATOR="$ANDROID_HOME/emulator/emulator.exe"
 AVD_NOME="${AVD_NOME:-money_hole_test}"
 PACOTE="com.jardim"
 ACTIVITY="$PACOTE/.MainActivity"
-APK="$SCRIPT_DIR/app/build/outputs/apk/debug/app-debug.apk"
+APK="$SCRIPT_DIR/app/build/outputs/apk/release/app-release.apk"
+APK_DEBUG="$SCRIPT_DIR/app/build/outputs/apk/debug/app-debug.apk"
 
 comando="${1:-run}"
 
@@ -41,7 +44,7 @@ case "$comando" in
         (cd "$SCRIPT_DIR" && ./gradlew :motor:test)
         ;;
     build)
-        (cd "$SCRIPT_DIR" && ./gradlew assembleDebug)
+        (cd "$SCRIPT_DIR" && ./gradlew assembleRelease)
         ;;
     install)
         "$ADB" install -r "$APK"
@@ -50,8 +53,13 @@ case "$comando" in
         "$ADB" shell am start -n "$ACTIVITY"
         ;;
     run)
-        (cd "$SCRIPT_DIR" && ./gradlew assembleDebug)
+        (cd "$SCRIPT_DIR" && ./gradlew assembleRelease)
         "$ADB" install -r "$APK"
+        "$ADB" shell am start -n "$ACTIVITY"
+        ;;
+    run-debug)
+        (cd "$SCRIPT_DIR" && ./gradlew assembleDebug)
+        "$ADB" install -r "$APK_DEBUG"
         "$ADB" shell am start -n "$ACTIVITY"
         ;;
     logs)
@@ -67,7 +75,7 @@ case "$comando" in
         echo "salvo em ${2:-print}.png"
         ;;
     *)
-        echo "Uso: ./dev.sh [emulator|test|build|install|start|run|logs|print]"
+        echo "Uso: ./dev.sh [emulator|test|build|install|start|run|run-debug|logs|print]"
         exit 1
         ;;
 esac

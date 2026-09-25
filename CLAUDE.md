@@ -39,6 +39,10 @@ Etapa 5 (2026-09-25):
 - A previsão (`Cronograma.proximosDias`) supõe que o pendente de hoje é feito hoje e o resto no dia em que vence. Ela roda o próprio `pendenciasEm` com um histórico imaginário, para nunca divergir da agenda real.
 - O histórico mostra também o que foi feito antes de um "Ressemeei"; `Cronograma.identificar` traduz a chave (`tarefa:…`, `alerta:N`, `sazonal:N:AAAA-MM`) de volta para o título.
 
+Depois da etapa 5 (2026-09-25):
+- O resumo das 8h fica no WorkManager, sem alarme exato: o usuário aceitou que ele chegue quando o celular sai do Doze (no primeiro dia real, 08:44). Alarme exato com `USE_EXACT_ALARM` seria permitido, porque o app é instalado direto e a regra da Play Store não vale, mas foi recusado.
+- O celular recebe o build **release** (R8 + shrink), assinado com a chave de debug desta máquina: instala por cima do debug sem perder o banco. Instalar de outra máquina exige desinstalar antes, e isso apaga o histórico.
+
 ## Catálogo e busca (2026-09-25)
 
 - O catálogo vai chegar a ~1000 espécies, geradas por outra frente do projeto (`dados/`: levantamento das plantas populares e `gerar_catalogo.py`), que grava direto em `app/src/main/assets/catalogo/`. **Não ponha arquivos temporários nessa pasta nem commite `dados/`**: essa frente é de outra sessão. Para testar volume, use `-PcatalogoExtra=<pasta fora do repo>`.
@@ -63,7 +67,8 @@ Etapa 5 (2026-09-25):
 
 - `./dev.sh test` (ou `./gradlew :motor:test`): testes do motor, em segundos e sem emulador. Rode depois de mexer no motor ou no catálogo.
 - `./gradlew :app:testDebugUnitTest`: testes JVM do app (formatação).
-- `./dev.sh run`: build, instala e abre no aparelho conectado.
+- `./dev.sh run`: build **release**, instala e abre no aparelho conectado. `./dev.sh run-debug` faz o mesmo em debug: é o único em que `run-as com.jardim` lê o banco, mas é 3 a 4 vezes mais lento. Não meça desempenho em debug.
+- Depois de mexer em serialização, Room, WorkManager ou nos receivers, confira os fluxos no release (Hoje, linha do tempo, "Testar agora"), porque o R8 só quebra essas coisas em tempo de execução.
 - `./dev.sh print nome`: print da tela ligada. O aparelho de teste é o celular do usuário, um **Galaxy Z Fold7 (SM-F966B, Android 16)** via USB. Ele tem duas telas, e `screencap` sem `-d` pode pegar a desligada.
 - No Git Bash, `adb shell` com caminho do aparelho precisa de `MSYS_NO_PATHCONV=1` (o `dev.sh` já exporta).
 - Para testar tocando na tela: `uiautomator dump` + `input tap` no centro do elemento pelo texto. A barra de notificações tem notificações pessoais de outros apps: não toque nem descreva nada lá, e peça ao usuário para tocar nos botões da notificação. Conceder permissão no aparelho também é com ele.

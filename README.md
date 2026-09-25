@@ -92,9 +92,11 @@ simula o ciclo inteiro para garantir isso.
   atualiza sozinha. Um botão de notificação velha não registra de novo o que
   já foi feito.
 - Agendado com WorkManager: sobrevive a reinícios e não precisa de permissão
-  de alarme exato. No Samsung, vale deixar o Jardim como **"Sem restrições"**
-  em Bateria, senão o sistema pode pôr o app para dormir depois de alguns dias
-  sem uso.
+  de alarme exato. O horário é aproximado: com o celular parado de madrugada
+  (Doze), o resumo das 8h sai quando o aparelho acorda. No primeiro dia real
+  chegou às 08:44, quando o celular foi pego. No Samsung, vale deixar o
+  Jardim como **"Sem restrições"** em Bateria, senão o sistema pode pôr o app
+  para dormir depois de alguns dias sem uso.
 
 ## Catálogo e busca
 
@@ -142,12 +144,23 @@ nomes, categorias e exclusões ficam em `dados/curadoria.csv`.
 
 ```bash
 ./dev.sh test       # testes do motor
-./dev.sh run        # build + instala + abre no celular ou emulador conectado
+./dev.sh run        # build release + instala + abre no celular conectado
+./dev.sh run-debug  # o mesmo em debug (inspecionar o banco, ferramentas do Compose)
 ./dev.sh print hoje # print da tela ligada do celular (funciona no dobrável)
 ```
 
 Precisa do JDK 17 e do Android SDK (`local.properties` com `sdk.dir`). O
 banco é Room, com o esquema de cada versão em `app/schemas/`.
+
+O celular recebe o build **release** (R8), assinado com a chave de
+desenvolvimento desta máquina. Medido no Galaxy Z Fold7, com 1000 plantas:
+
+| | debug | release |
+|---|---|---|
+| Abrir o app | 428 ms | 124 ms |
+| Carregar o índice do catálogo | 336 ms | 28 ms |
+| Quadro durante a busca (mediana) | 18 ms | 5–6 ms |
+| APK | 17,9 MB | 7,8 MB |
 
 ## Roteiro
 
