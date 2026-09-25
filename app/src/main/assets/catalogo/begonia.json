@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Begônia",
+    "nome_cientifico": "Begonia × semperflorens-cultorum (begônia-de-cera)",
+    "descricao": "Begonia spp. reúne centenas de espécies; aqui foi escolhida a begônia-de-cera, a mais cultivada em vasos e floreiras no Brasil. Tem folhas cerosas verdes ou bronze e floresce quase o ano todo em branco, rosa ou vermelho, tolerando bem a meia sombra das varandas. É perene, mas fica rala depois de uns dois anos e costuma ser renovada por estaca.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 15 a 18 cm de diâmetro e 15 cm de profundidade, com furos no fundo; em jardineira, uma muda a cada 15 cm",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% substrato comercial para flores, 30% húmus de minhoca, 20% perlita ou casca de arroz carbonizada; leve e arejado, porque a raiz fina apodrece em terra pesada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda pode perder algumas flores e folhas de baixo ao mudar de lugar. A fase acaba quando surgem folhas novas brilhantes no topo e botões novos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "As raízes ocupam o vaso e a planta engrossa, soltando ramos pela base. Beliscar as pontas nesta fase deixa a touceira cheia em vez de alta e rala."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Floresce da primavera ao outono e desacelera no inverno, quando pede menos água. Depois de uns dois anos os ramos ficam compridos e pelados na base: é hora de podar forte ou renovar a planta por estaca."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a begônia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, sem molhar folhas e flores. Esvazie o pratinho depois de 15 minutos. Acima de 30 °C, confira a cada 2 dias; no inverno, a cada 5 a 7.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar a begônia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo líquido para flores (NPK 10-10-10 ou 4-14-8) na metade da dose do rótulo e regue o substrato já úmido. Pule a adubação em junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_pontas",
+      "titulo": "Tirar flores secas e beliscar pontas",
+      "tipo": "PODA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Retire flores murchas e folhas amarelas ou manchadas, que acumulam fungo. Belisque com os dedos o último par de folhas dos ramos mais compridos para a planta ramificar.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pó branco, manchas marrons encharcadas, algodãozinho nas axilas ou teias finas. Aperte a base do caule: mole e escura é sinal de podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, solte um terço do torrão velho e replante em substrato novo, num vaso só 2 a 3 cm maior. Se a planta estiver pelada na base, aproveite para enraizar estacas de 8 cm em água ou substrato úmido e começar uma planta nova.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Trocar a muda de vaso",
+      "mensagem": "Mudas de begônia vêm em potinhos pequenos com substrato que seca em horas.",
+      "acao_requerida": "Passar a muda para o vaso definitivo com substrato leve, sem enterrar o caule mais fundo que estava"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "A planta já está firme no vaso. Cortar as pontas agora gera vários ramos novos e mais flores.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo, logo acima de um nó"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e da raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Caule mole e preto rente ao substrato, planta murcha mesmo com terra úmida, cheiro de mofo",
+      "prevencao_tratamento": "Regar só com o topo seco e nunca deixar água no pratinho; cortar partes sadias como estacas e descartar o resto com o substrato"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco farinhento sobre as folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Ventilação e rega sem molhar as folhas; remover folhas atacadas e pulverizar bicarbonato de sódio a 0,5% com gotas de detergente a cada 7 dias"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons encharcadas em flores e folhas, cobertas de mofo cinza em tempo úmido",
+      "prevencao_tratamento": "Retirar flores murchas com frequência, não molhar a folhagem e afastar as plantas para o ar circular"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de algodão nas axilas das folhas e na base dos caules; planta enfraquecida e pegajosa",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; se voltar, óleo de neem a 0,5% no fim da tarde a cada 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, aspecto bronzeado e teias finas no verso em tempo seco",
+      "prevencao_tratamento": "Aumentar a umidade ao redor do vaso (bandeja com pedrinhas e água) e lavar o verso das folhas; óleo de neem se persistir"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons secas nas folhas viradas para o sol da tarde",
+      "prevencao_tratamento": "Deixar só com sol da manhã ou luz filtrada; retirar as folhas muito danificadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem frio",
+      "mensagem": "A begônia cresce devagar no frio e o substrato demora a secar, o que favorece podridão. Abaixo de 10 °C as folhas escurecem.",
+      "acao_requerida": "Espaçar a rega até o topo secar bem e levar o vaso para perto da casa ou para dentro em noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Antes da brotação da primavera, uma poda forte transforma uma planta rala numa touceira cheia de flores.",
+      "acao_requerida": "Cortar os ramos compridos deixando 8 a 10 cm acima do substrato e retomar a adubação quando surgirem brotos"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: proteger do sol da tarde",
+      "mensagem": "Calor forte com sol direto queima as folhas e seca o vaso em um dia.",
+      "acao_requerida": "Mudar o vaso para um lugar com sol só de manhã e conferir a rega a cada 2 dias"
+    }
+  ]
+}

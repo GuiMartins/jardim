@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Araucária",
+    "nome_cientifico": "Araucaria angustifolia",
+    "descricao": "Pinheiro-do-paraná, conífera nativa do Sul e Sudeste do Brasil que dá o pinhão e está ameaçada de extinção. Em vaso ela vive bem a fase jovem, de crescimento lento e simétrico, por alguns anos; adulta passa de 20 m e precisa ir para o chão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de pelo menos 40 cm de diâmetro e 40 cm de profundidade, com furos no fundo; a raiz pivotante precisa de profundidade mais que de largura",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina ou areia grossa; levemente ácido (pH 5 a 6), sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso e ao lugar novo. Algumas acículas da base podem amarelar e cair; é normal. A fase acaba quando a gema da ponta volta a mostrar acículas novas, verde-claras."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e surge um novo andar de galhos em volta do tronco, em geral na primavera e no verão. O crescimento é lento: 10 a 30 cm no primeiro ano. Nunca corte nem deixe quebrar a ponta: sem a gema apical a araucária para de crescer para cima."
+    },
+    {
+      "fase_id": "juvenil_em_vaso",
+      "nome": "Jovem em Vaso",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Árvore jovem de formato cônico, que forma um andar de galhos por estação de crescimento (setembro a março) e quase para no inverno. Os galhos mais baixos secam e caem sozinhos com o tempo. Passando de 1,5 a 2 m, o vaso limita a planta: é hora de levá-la para o chão, a pelo menos 10 m de construções."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a araucária recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O substrato deve ficar úmido, nunca encharcado, e o prato não pode acumular água.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a araucária",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos. Acima de 30 °C, confira a cada 2 dias; no inverno, o vaso pode levar 5 a 7 dias para secar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a araucária",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto sobre o substrato de um vaso de 40 L, afastado 5 cm do tronco, e regue em seguida. De maio a agosto pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar galhos e acículas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base das acículas e o encontro dos galhos com o tronco procurando escamas brancas ou marrons, teias finas e acículas com pontos amarelados. Confira também se a gema da ponta está verde e inteira.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar para um vaso maior",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera, passe o torrão inteiro para um vaso 10 a 15 cm mais largo e mais fundo, com substrato novo, sem quebrar a raiz principal e mantendo o colo na mesma altura. Se a planta já passou de 1,5 m, prefira plantá-la no chão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, araucária!",
+      "mensagem": "A muda veio de viveiro e pode estranhar vento forte e mudança de luz nos primeiros dias.",
+      "acao_requerida": "Deixar o vaso num lugar com pelo menos 4 horas de sol direto e abrigado de vento forte, sem mudar de lugar nas próximas semanas"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de araucária",
+      "mensagem": "Ela pode viver alguns anos em vaso, mas é uma árvore de mais de 20 m e em algum momento vai precisar de chão.",
+      "acao_requerida": "Medir a altura e escolher um lugar definitivo no solo, a pelo menos 10 m de casas, muros e redes, para quando passar de 1,5 m"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Acículas amarelam e secam de baixo para cima com o substrato úmido; colo do tronco escurecido e raízes moles e marrons",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos livres e não deixar água no prato; se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodoadas na base das acículas e nos galhos; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Ácaro",
+      "tipo": "PRAGA",
+      "sintomas": "Acículas com pontinhos amarelados, aspecto opaco e teias finas entre elas, sobretudo em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água nas acículas em dias secos; se persistir, calda de enxofre ou óleo de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Queima de acículas (Cylindrocladium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons que avançam da ponta das acículas e galhos inteiros secando, em épocas úmidas e com a planta muito adensada",
+      "prevencao_tratamento": "Deixar o vaso em local ventilado, não molhar a copa ao regar e retirar os galhos atacados; em caso grave, fungicida cúprico"
+    },
+    {
+      "nome": "Clorose por pH alto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Acículas novas amareladas e crescimento parado, sem sinal de praga, em substrato com calcário ou regado com água muito calcária",
+      "prevencao_tratamento": "Não usar calcário; na troca de vaso, incluir casca de pinus ou turfa e adubar com composto orgânico, que acidifica o substrato"
+    },
+    {
+      "nome": "Perda da gema apical",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ponta quebrada ou seca e a árvore deixa de crescer para cima, formando uma copa torta",
+      "prevencao_tratamento": "Nunca podar a ponta e proteger de pancadas e animais; se perder, um galho lateral pode assumir: amarre-o na vertical num tutor por alguns meses"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Araucária entrando em repouso",
+      "mensagem": "Com o frio, ela quase para de crescer e o vaso demora mais para secar.",
+      "acao_requerida": "Suspender a adubação até agosto e regar só quando o substrato estiver seco a 5 cm"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Começa o crescimento da araucária",
+      "mensagem": "Na primavera surge o novo andar de galhos e a planta volta a beber e comer mais.",
+      "acao_requerida": "Retomar a adubação e voltar a conferir a rega a cada 3 dias"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor no vaso",
+      "mensagem": "O sol forte da tarde aquece o vaso e cozinha as raízes, que na natureza ficam em solo fresco.",
+      "acao_requerida": "Cobrir o substrato com 3 cm de casca de pinus e sombrear a lateral do vaso, sem tirar a copa do sol"
+    }
+  ]
+}

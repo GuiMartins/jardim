@@ -1,0 +1,214 @@
+{
+  "planta": {
+    "nome_comum": "Roseira",
+    "nome_cientifico": "Rosa × hybrida (híbridas de chá e floribundas)",
+    "descricao": "Arbusto perene de flores perfumadas que, bem conduzido, floresce da primavera ao outono por muitos anos. Entre as muitas espécies de Rosa, este cronograma segue a roseira de jardim híbrida (chá ou floribunda), a mais vendida em muda no Brasil e a que melhor se adapta a vasos grandes.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cerâmica ou cimento com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; a raiz da roseira é profunda e vaso raso seca em horas no verão",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% substrato comercial à base de fibra de coco, 10% areia grossa ou perlita; misture 2 colheres de sopa de farinha de ossos a cada 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho para o vaso definitivo e passa algumas semanas refazendo raízes. É normal amarelar e soltar algumas folhas de baixo e perder os botões que já vieram abertos. A fase termina quando surgem brotos novos avermelhados nas axilas das folhas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Os ramos novos crescem e dão os primeiros botões no próprio vaso. Corte os brotos que nascem abaixo do enxerto (o calo na base do caule): têm folhas menores, com 7 folíolos ou mais, e roubam a força da copa. A roseira está estabelecida quando as raízes aparecem nos furos do vaso e ela floresce em sequência."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: poda forte em julho, brotação vigorosa em agosto e setembro, grande florada de outubro a dezembro e novas floradas a cada 45 a 60 dias até maio, desde que as flores murchas sejam cortadas. No verão chuvoso a mancha-negra é o maior risco; em junho a planta desacelera e pode perder parte das folhas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a roseira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar junto à base até escorrer pelos furos (cerca de 3 L num vaso de 30 L). Não molhe as folhas. Acima de 30 °C, confira todo dia; se ainda estiver úmido, não regue, porque a raiz nova apodrece no encharcamento.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a roseira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue pela manhã, direto no substrato, até escorrer pelos furos (4 a 5 L num vaso de 30 L). No verão costuma ser a cada 1 ou 2 dias; de junho a agosto, a cada 3 ou 4. Folhas murchas ao entardecer com substrato úmido indicam excesso, não falta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a roseira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato úmido, espalhe 1 colher de sopa de NPK 4-14-8 a cada 10 L de vaso (3 colheres num vaso de 30 L), mais 1 xícara de bokashi ou húmus, a 5 cm do caule; misture de leve na superfície e regue. Em junho e julho pule esta adubação: a planta está parada e o adubo só queima raiz.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_flores",
+      "titulo": "Cortar flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte cada flor murcha junto com o ramo até a primeira folha com 5 folíolos voltada para fora, 5 mm acima dela, em bisel. Retire também folhas amarelas ou com manchas pretas, inclusive as caídas no vaso. Isso faz a roseira brotar e florir de novo em 6 a 8 semanas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos e botões (pulgão), o verso das folhas com lupa ou a câmera do celular (ácaro, pontinhos e teia fina) e as folhas de baixo (manchas pretas de bordas franjadas). Confira também caules com crostas brancas ou marrons (cochonilha).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência logo após a poda de inverno: tire a roseira do vaso, desmanche um terço do torrão e corte as raízes enroladas ou escuras. Volte ao mesmo vaso com substrato novo na proporção recomendada ou passe para um vaso 10 L maior. Regue bem e não adube por 30 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A muda de saquinho ou vaso pequeno precisa de espaço para as raízes; quanto antes for para o vaso grande, mais rápido se adapta.",
+      "acao_requerida": "Plantar no vaso de 30 L com o enxerto (o calo na base do caule) 3 a 5 cm acima do substrato, sem enterrar, e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 10,
+      "titulo": "Folhas caindo é normal agora",
+      "mensagem": "Nas primeiras semanas a roseira sacrifica folhas e botões enquanto refaz as raízes. Adubar agora queimaria as raízes novas.",
+      "acao_requerida": "Não adubar nem trocar a planta de lugar; manter só a rega e cortar os botões que murcharem"
+    },
+    {
+      "dia_disparo": 181,
+      "titulo": "Roseira estabelecida",
+      "mensagem": "Com seis meses no vaso, a roseira já aguenta a poda forte de inverno, que é o que garante a grande florada de primavera.",
+      "acao_requerida": "Na próxima poda de julho, fazer a poda completa em vez da poda leve"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mancha-negra (Diplocarpon rosae)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pretas arredondadas de borda franjada nas folhas, que amarelam em volta e caem, começando pelas folhas de baixo; em casos graves a roseira fica pelada no verão",
+      "prevencao_tratamento": "Regar só o substrato, de manhã, e manter o vaso ventilado; recolher e jogar no lixo todas as folhas manchadas, inclusive as caídas; pulverizar calda bordalesa ou fungicida à base de enxofre a cada 7 a 10 dias enquanto houver manchas novas"
+    },
+    {
+      "nome": "Oídio (Podosphaera pannosa)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre folhas novas, brotos e botões, que ficam retorcidos e não abrem",
+      "prevencao_tratamento": "Mais sol e ventilação; cortar as partes atingidas; pulverizar enxofre molhável (2 g/L) ou leite diluído a 10% a cada 7 dias, nunca em horas de sol forte"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido, ramos escurecem de cima para baixo, raízes marrons e moles com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, não deixar água no pratinho e manter os furos desobstruídos; se já houver raízes podres, cortá-las e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou rosados nos brotos e botões, que ficam deformados e pegajosos",
+      "prevencao_tratamento": "Jato de água forte ou esmagar com os dedos; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto de poeira e teia fina no verso; aparece no tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas pela manhã nos dias secos; óleo de neem a 0,5% ou acaricida a cada 5 dias por três aplicações"
+    },
+    {
+      "nome": "Cochonilha-branca-da-roseira (Aulacaspis rosae)",
+      "tipo": "PRAGA",
+      "sintomas": "Crostas brancas ou acinzentadas grudadas nos caules, que perdem vigor e secam",
+      "prevencao_tratamento": "Raspar com escova de dentes e água com sabão; cortar os ramos muito atacados na poda de inverno e aplicar óleo mineral a 1% logo depois"
+    },
+    {
+      "nome": "Clorose por falta de ferro e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com nervuras verdes (ferro) ou folhas velhas amarelas entre as nervuras (magnésio)",
+      "prevencao_tratamento": "Acontece em substrato velho ou calcário demais; renovar o substrato e aplicar adubo foliar com micronutrientes ou sulfato de magnésio (1 colher de chá por litro) no substrato"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Roseira entrando no repouso",
+      "mensagem": "Com o frio a roseira cresce devagar e pode perder folhas. Adubo agora não é aproveitado e rega em excesso apodrece a raiz.",
+      "acao_requerida": "Suspender a adubação até agosto e espaçar a rega para a cada 3 ou 4 dias, conferindo com o dedo"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No inverno a roseira está quase parada; podar agora estimula brotação forte e muitas flores na primavera. Se ela está no vaso há menos de 6 meses, faça só uma poda leve.",
+      "acao_requerida": "Retirar ramos secos, finos e cruzados, deixar 3 a 5 ramos fortes e cortá-los a 3 ou 4 gemas da base, em bisel acima de uma gema voltada para fora; tirar todas as folhas restantes e pulverizar calda sulfocálcica ou bordalesa nos ramos"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Retomar a adubação",
+      "mensagem": "Os brotos da poda estão surgindo e a roseira volta a precisar de nutrientes para a florada de primavera.",
+      "acao_requerida": "Aplicar a adubação completa (NPK 4-14-8 e bokashi) e voltar à rega a cada 2 dias, conferindo com o dedo"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e mancha-negra",
+      "mensagem": "Calor e chuvas frequentes secam o vaso em um dia e espalham a mancha-negra pelas folhas molhadas.",
+      "acao_requerida": "Conferir o substrato todo dia, regar de manhã só na base, afastar o vaso de paredes que abafam e retirar toda folha com mancha preta assim que aparecer"
+    }
+  ]
+}

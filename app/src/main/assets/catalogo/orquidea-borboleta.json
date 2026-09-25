@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Orquídea-borboleta",
+    "nome_cientifico": "Phalaenopsis spp. (híbridos)",
+    "descricao": "Orquídea epífita de folhas largas e hastes arqueadas com flores que duram de 2 a 3 meses; os híbridos comerciais vendidos floridos em supermercado e floricultura são a orquídea mais cultivada em casa no Brasil. Vive bem dentro de casa, com luz clara e sem sol forte, e refloresce todo ano depois do frio do outono.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico transparente ou de barro com muitos furos no fundo e nas laterais, 12 a 15 cm de diâmetro, só um pouco maior que o bolo de raízes; a raiz precisa de ar e não pode ficar em água parada no pratinho",
+    "volume_minimo_litros": 1,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "70% casca de pinus média (1 a 2 cm), 20% carvão vegetal em pedaços, 10% musgo esfagno picado; nunca terra nem substrato de vaso comum, que encharca e apodrece a raiz",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa para a casa e pode perder alguns botões ou flores nas primeiras semanas pela mudança de luz e umidade. Deixe-a perto de uma janela clara sem sol das 10h às 16h, longe de ar-condicionado e corrente de vento, e não troque de vaso enquanto estiver florida. A fase acaba quando as flores restantes param de cair e as folhas continuam firmes."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As flores terminam e a planta passa a investir em folhas e raízes. Raiz saudável é verde quando molhada e prateada quando seca, com ponta verde-clara crescendo; raiz marrom e mole está podre. Uma folha nova surgindo no centro indica que a planta pegou. Folha amarela só na base, uma de cada vez, é troca natural."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "No ano típico, a planta produz 1 a 3 folhas novas no verão, sente as noites frias do outono (abril e maio) e lança a haste floral no inverno, com flores do fim do inverno à primavera. Depois da florada vem a melhor época para trocar o substrato. Folhas duras e verde-médias indicam luz certa; verde-escuras e moles, pouca luz; amareladas com manchas queimadas, sol demais."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_orquidea",
+      "titulo": "Regar a orquídea",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Confira antes: em vaso transparente, raízes prateadas e sem gotas na parede pedem água; verdes ainda estão úmidas. Em vaso opaco, enfie um palito de madeira até o fundo por 10 minutos; se sair seco, regue. Regue na pia com água em temperatura ambiente até escorrer pelos furos por 1 minuto, sem deixar água parada no miolo das folhas, e esvazie o pratinho. No calor acima de 28 °C, confira a cada 4 ou 5 dias; no inverno, a cada 10 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_orquidea",
+      "titulo": "Adubar a orquídea",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo para orquídea NPK 20-20-20 (ou 10-10-10) na metade da dose do rótulo, cerca de 0,5 g por litro, e regue com ele o substrato já úmido de uma rega anterior, nunca seco. Uma vez por mês troque essa adubação por uma rega só com água pura, para lavar os sais. No inverno, passe a adubar a cada 30 dias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e raízes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas, a junção com o caule e a haste floral procurando algodãozinho branco, escamas marrons presas ou pontos pretos. Veja pelo vaso ou pelos furos se há raízes marrons e moles, e cheire o substrato: cheiro de mofo indica excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Se a planta estiver com haste floral ou flor, adie até a florada terminar. Tire a planta do vaso, remova toda a casca velha, corte com tesoura esterilizada no álcool as raízes marrons, ocas ou moles e mantenha as firmes. Replante em casca de pinus nova num vaso só 2 a 3 cm maior, com a base das folhas no nível da superfície, e espere 5 dias para a primeira rega.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Chegou a orquídea: não troque de vaso agora",
+      "mensagem": "A orquídea florida vem da estufa com o substrato certo para esta florada. Trocar de vaso agora faz cair os botões.",
+      "acao_requerida": "Tirar o cachepô ou o plástico decorativo que prende água no fundo e posicionar a planta perto de uma janela clara, sem sol do meio do dia"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Conferir as raízes",
+      "mensagem": "Muitas orquídeas vêm de loja com musgo compactado que segura água demais e apodrece as raízes em poucos meses.",
+      "acao_requerida": "Olhar as raízes pelo vaso ou tirar a planta com cuidado; se o miolo estiver encharcado, com musgo escuro e raízes moles, trocar logo para casca de pinus, mesmo fora de época"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Flores terminando: cortar a haste",
+      "mensagem": "Quando a última flor cai, a haste seca gasta energia da planta. Se ainda estiver verde, pode soltar um brotinho de flor lateral.",
+      "acao_requerida": "Se a haste estiver amarela ou marrom, cortar rente à base com tesoura esterilizada; se estiver verde, cortar 1 cm acima do segundo nó abaixo da última flor"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Raízes marrons, moles e ocas que soltam a casca ao apertar; folhas murchas e enrugadas mesmo com o substrato úmido; cheiro de mofo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco e nunca deixar água no pratinho. Tratar tirando a planta do vaso, cortando todas as raízes podres com tesoura esterilizada, polvilhando canela em pó nos cortes e replantando em casca de pinus nova, sem regar por 5 dias"
+    },
+    {
+      "nome": "Podridão do miolo (Erwinia, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Mancha aquosa, translúcida ou marrom na base das folhas centrais, que se espalha rápido e tem cheiro ruim; a folha nova solta ao puxar",
+      "prevencao_tratamento": "Não deixar água parada entre as folhas e secar o miolo com papel se molhar. Cortar o tecido afetado com margem de tecido sadio, aplicar canela em pó ou fungicida à base de cobre e manter a planta mais seca e ventilada"
+    },
+    {
+      "nome": "Cochonilha-farinhenta e de escama",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de algodão ou escamas marrons presas no verso das folhas, na base e na haste; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70% e repetir a cada 7 dias por 3 semanas; em infestação maior, pulverizar óleo de neem a 0,5% com algumas gotas de detergente no fim da tarde"
+    },
+    {
+      "nome": "Ácaro",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos prateados ou amarelados na face de cima das folhas, verso com aspecto empoeirado e teias finas em ar seco",
+      "prevencao_tratamento": "Aumentar a umidade do ambiente com bandeja de pedrisco e água, limpar as folhas com pano úmido dos dois lados e usar óleo de neem a 0,5% se persistir"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Mancha amarela ou branca que vira placa seca e marrom no meio da folha, do lado virado para a janela",
+      "prevencao_tratamento": "Afastar do sol direto entre 10h e 16h ou filtrar com cortina fina; a folha queimada não se recupera, mas não precisa ser cortada se o resto estiver verde"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta saudável, com folhas novas, que passa mais de um ano sem soltar haste floral; folhas verde-escuras e moles",
+      "prevencao_tratamento": "Levar para um lugar mais claro e garantir noites 8 a 10 °C mais frias que os dias durante o outono, por exemplo perto de uma janela ou numa varanda coberta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Outono: hora de induzir a florada",
+      "mensagem": "A Phalaenopsis lança a haste floral depois de algumas semanas de noites entre 15 e 18 °C, bem mais frias que o dia. Dentro de casa aquecida, ela pode passar o ano sem florir.",
+      "acao_requerida": "Deixar a orquídea à noite perto de uma janela ou numa varanda coberta, protegida de chuva e de vento, por 4 a 6 semanas"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteger do frio e regar menos",
+      "mensagem": "Abaixo de 12 °C a orquídea sofre e o substrato demora mais para secar, o que favorece podridão. É também quando as hastes florais crescem.",
+      "acao_requerida": "Recolher a planta para dentro nas noites abaixo de 12 °C, espaçar as regas para cerca de 10 dias e prender a haste que estiver crescendo num tutor com presilha frouxa, sem girar o vaso"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e ar seco",
+      "mensagem": "Com mais de 30 °C a casca seca rápido e a folha pode queimar mesmo com pouco sol pela janela fechada.",
+      "acao_requerida": "Conferir a rega a cada 4 ou 5 dias, manter a planta ventilada e longe de vidro que recebe sol da tarde, e colocar o vaso sobre uma bandeja com pedrisco e água sem que o fundo encoste na água"
+    }
+  ]
+}

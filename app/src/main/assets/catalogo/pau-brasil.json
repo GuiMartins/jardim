@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Pau-brasil",
+    "nome_cientifico": "Paubrasilia echinata",
+    "descricao": "Árvore nativa da Mata Atlântica que deu nome ao país, hoje ameaçada de extinção. Em vaso grande vira uma arvoreta de copa densa e ramos com espinhos, com flores amarelas perfumadas na primavera; também é muito usada como bonsai.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico pesado com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; comece num vaso de 20 a 30 L e suba de tamanho a cada troca",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou casca de pinus fina; solto e levemente ácido (pH 5,5 a 6,5)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhinhas. Deixe-a em meia-sombra nos primeiros 7 dias e depois leve ao sol pleno aos poucos. A fase termina quando surgem brotos novos, avermelhados, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o crescimento acelera na estação quente, com fluxos de folhas novas (compostas, de folíolos pequenos) a cada poucas semanas. No inverno o crescimento quase para, o que é normal. Mudas de até 1 m são sensíveis a geada."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arvoreta de 1,5 a 3 m em vaso, contida pela poda. No ano típico brota forte de setembro a março, floresce de setembro a novembro (em vaso, as flores costumam aparecer a partir do 3º ao 5º ano), forma vagens espinhosas de novembro a janeiro e desacelera no inverno. Cuidado com os espinhos ao manusear."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de pau-brasil",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda não se ligou ao substrato novo e seca antes dele. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o pau-brasil",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão acima de 30 °C, confira a cada 2 dias; no inverno o intervalo passa para 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o pau-brasil",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus de minhoca ou composto e 1 colher de sopa de farinha de ossos por vaso de 30 L, sem encostar no tronco, e regue em seguida. De maio a agosto, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Examine a base dos ramos, as axilas das folhas e o verso dos folíolos procurando cochonilhas (pontos brancos algodonosos ou escamas marrons), trilhas de formigas e folhas recortadas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso com luvas grossas, apare 2 a 3 cm das raízes que circulam o torrão e replante num vaso 10 a 20 L maior (ou no mesmo, se quiser conter o tamanho) com substrato novo. Regue bem e deixe 1 semana em meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A muda já passou a primeira semana protegida. O pau-brasil precisa de sol direto para ficar compacto e, um dia, florescer.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo com pelo menos 4 horas de sol direto, começando por sol da manhã por 3 a 4 dias"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Definir a forma da árvore",
+      "mensagem": "A muda já está firme no vaso. Escolher agora o ramo principal evita uma copa torta e cheia de galhos cruzados.",
+      "acao_requerida": "Escolher o ramo mais reto como tronco e prendê-lo a um tutor de bambu com fita macia, se estiver inclinado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do tronco escurecida e raízes marrons, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e garantir furos desobstruídos. Se aparecer, retire do vaso, corte as raízes podres e replante em substrato novo mais arenoso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodonosos ou escamas marrons nos ramos e nas axilas das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova de dente molhados em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro, no fim da tarde, a cada 7 dias por 3 aplicações"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos recortados em meia-lua ou ramos desfolhados de uma noite para outra; trilha de formigas carregando pedaços de folha",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida granulada perto dele, longe de crianças e pets; um anel de graxa ou fita adesiva dupla-face no vaso impede a subida"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado nas folhas novas, que ficam retorcidas e caem",
+      "prevencao_tratamento": "Mais sol e ventilação, rega no substrato sem molhar a copa; pulverizar leite diluído (1 parte para 9 de água) ou bicarbonato de sódio a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Queimadura de geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e ponteiros escurecidos e secos após uma noite muito fria, principalmente em mudas jovens",
+      "prevencao_tratamento": "Em noites abaixo de 3 °C, levar o vaso para perto de uma parede ou cobrir com TNT; espere a brotação da primavera para cortar as pontas mortas"
+    },
+    {
+      "nome": "Estiolamento e queda de folhas por pouca luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e finos, folhas espaçadas e amareladas caindo de dentro para fora da copa",
+      "prevencao_tratamento": "Mudar o vaso para um lugar com pelo menos 4 horas de sol direto; dentro de casa o pau-brasil não se mantém"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Chegando o inverno",
+      "mensagem": "Com o frio, o pau-brasil desacelera e gasta muito menos água. Substrato úmido no inverno é o caminho mais curto para a podridão de raiz.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (em geral a cada 5 a 7 dias) e suspender o adubo até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Risco de geada",
+      "mensagem": "Mudas e plantas jovens de pau-brasil queimam com geada.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, encostar o vaso numa parede protegida ou cobrir a copa com TNT, retirando pela manhã"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno, antes da brotação, a planta cicatriza rápido e rebrota mais compacta.",
+      "acao_requerida": "Com luvas, cortar ramos secos, cruzados e voltados para dentro, e encurtar em até um terço os ramos longos, logo acima de uma folha voltada para fora"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "A primavera traz brotação nova e, nas plantas mais velhas, os cachos de flores amarelas perfumadas.",
+      "acao_requerida": "Retomar a rega normal (substrato seco a 5 cm, a cada 2 a 3 dias no calor) e a adubação a cada 2 meses"
+    }
+  ]
+}

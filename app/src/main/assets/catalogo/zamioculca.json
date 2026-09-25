@@ -1,0 +1,169 @@
+{
+  "planta": {
+    "nome_comum": "Zamioculca",
+    "nome_cientifico": "Zamioculcas zamiifolia",
+    "descricao": "Folhagem africana de folhas verde-escuras e brilhantes que brotam de rizomas grossos, onde a planta guarda água. Aguenta pouca luz e esquecimento de rega, por isso é das melhores plantas para apartamento; o erro que a mata é o excesso de água. Toda a planta é tóxica se ingerida (oxalato de cálcio): mantenha longe de crianças e pets.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com furos no fundo, só 3 a 5 cm mais largo que o torrão (em geral 20 a 25 cm de diâmetro e de altura); vaso grande demais retém água e apodrece o rizoma. Sem cachepô acumulando água",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 0,
+    "substrato_recomendado": "50% substrato para folhagens, 25% casca de pinus fina ou fibra de coco em chips, 25% perlita ou areia grossa lavada; precisa secar por inteiro entre as regas",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa do viveiro para um ambiente com menos luz e pode ficar parada ou amarelar uma folha de baixo. Deixe no vaso em que veio, em local claro sem sol direto, e só regue quando o substrato estiver seco. A fase acaba quando as folhas seguem firmes e brilhantes e não há mais amarelamento."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Surgem hastes novas saindo do substrato, enroladas como um bastão e de verde mais claro, que levam algumas semanas para abrir. Crescimento lento é normal: 2 a 4 hastes novas por ano. Hastes finas e tortas, inclinadas para a janela, indicam luz fraca demais: aproxime-a de uma janela clara e gire o vaso a cada mês."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Brota da primavera ao fim do verão e fica quase parada de maio a agosto, quando a rega deve ser espaçada. Quando os rizomas empurram o vaso, deformam o plástico ou aparecem na superfície, é hora de trocar de vaso ou dividir a touceira, de preferência entre setembro e dezembro. Folha amarela isolada na base de uma haste velha é renovação normal; várias ao mesmo tempo indicam excesso de água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Conferir e regar a zamioculca",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo ou um palito de churrasco até metade da altura do vaso: se sair úmido ou com terra grudada, não regue. Se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água do pratinho em 30 minutos. De maio a agosto costuma bastar uma rega a cada 20 a 30 dias; em ambiente com ar-condicionado ou verão acima de 30 °C, pode secar em 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a zamioculca",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo NPK 10-10-10 ou adubo líquido para folhagens na metade da dose do rótulo e aplique no substrato já úmido. De maio a agosto pule a adubação: a planta está parada e o sal acumula e queima as raízes.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e as axilas das hastes procurando bolinhas brancas algodonosas ou escamas marrons. Aperte a base das hastes rente ao substrato: se estiver mole ou escura, suspenda a rega e verifique o rizoma. Aproveite para passar um pano úmido nas folhas se estiverem empoeiradas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, remova o substrato velho e corte rizomas moles ou escuros com tesoura limpa. Replante num vaso 3 a 5 cm mais largo, com substrato novo, na mesma altura de antes, e espere 5 a 7 dias para a primeira rega, para os cortes cicatrizarem. Se a touceira estiver grande, divida-a em partes com pelo menos 2 hastes e rizomas cada.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, zamioculca!",
+      "mensagem": "Plantas recém-chegadas estranham o ambiente. Trocar de vaso e regar muito agora é a causa mais comum de podridão.",
+      "acao_requerida": "Manter no vaso do viveiro, tirar do cachepô se ele acumular água e só regar quando o substrato estiver seco até a metade"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Confira o vaso do viveiro",
+      "mensagem": "Muitas zamioculcas vêm em vasos pequenos de plástico, já tomados pelos rizomas.",
+      "acao_requerida": "Se o vaso estiver deformado, com rizomas aparecendo na superfície ou raízes saindo pelos furos, trocar por um vaso 3 a 5 cm mais largo, sem regar por 5 dias depois; senão, deixar como está"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium, Fusarium, Erwinia)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes moles e escurecidas na base, que tombam; folhas amarelando em várias hastes ao mesmo tempo; rizoma mole, marrom e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco e nunca deixar água no pratinho. Se aparecer, tire do vaso, corte todo rizoma e haste podre até o tecido firme, deixe secar 1 a 2 dias à sombra e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta e cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodonosas ou escamas marrons fixas no verso dos folíolos e nas axilas das hastes; folhas pegajosas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, aplique óleo de neem a 0,5% com detergente neutro a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto opaco e teias finas no verso, comum em ar seco com ar-condicionado",
+      "prevencao_tratamento": "Limpe as folhas com pano úmido dos dois lados e mantenha longe do fluxo do ar-condicionado; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Amarelamento por excesso de rega",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folíolos amarelos em várias hastes, às vezes com hastes amolecendo; substrato sempre úmido",
+      "prevencao_tratamento": "Suspenda a rega até o substrato secar por inteiro e confira o rizoma; reduza o tamanho do vaso se ele for muito maior que o torrão"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelas ou marrom-claras e secas nas folhas voltadas para a janela, após sol direto do meio-dia ou da tarde",
+      "prevencao_tratamento": "Afaste da janela ou use cortina; ela aceita no máximo sol fraco do início da manhã. As folhas manchadas não se recuperam, mas a planta sim"
+    },
+    {
+      "nome": "Estiolamento por falta de luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Hastes novas finas, compridas, tortas e inclinadas para a luz, com folíolos espaçados",
+      "prevencao_tratamento": "Leve para perto de uma janela clara sem sol direto e gire o vaso a cada mês; hastes muito tortas podem ser tutoradas ou cortadas rente ao substrato"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Zamioculca entrando em repouso",
+      "mensagem": "Com o frio e os dias curtos, ela quase para de crescer e bebe bem menos. Até agosto, rega frequente é o caminho mais curto para apodrecer o rizoma.",
+      "acao_requerida": "Espaçar a rega para a cada 20 a 30 dias, sempre conferindo o substrato, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor voltando, a zamioculca retoma a brotação e passa a beber mais.",
+      "acao_requerida": "Voltar à conferência de rega a cada 10 dias, retomar a adubação e, se os rizomas estiverem apertados no vaso, trocar de vaso ou dividir até dezembro"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "planta": {
+    "nome_comum": "Espada-de-são-jorge",
+    "nome_cientifico": "Dracaena trifasciata (sin. Sansevieria trifasciata)",
+    "descricao": "Suculenta de folhas eretas e rígidas, que guarda água nas folhas e no rizoma e aguenta semanas sem rega, pouca luz e ar-condicionado. Das plantas mais difíceis de matar, exceto por excesso de água. É tóxica para cães e gatos se mastigada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de barro ou cerâmica, com furos no fundo, de 18 a 22 cm de diâmetro e profundidade parecida; largo e raso é melhor que fundo, porque o rizoma cresce para os lados. O barro ajuda a secar e o peso evita que a planta tombe",
+    "volume_minimo_litros": 4,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 30% perlita ou casca de pinus miúda; ou substrato pronto para cactos e suculentas. Sem húmus em excesso, que retém água demais",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa e estranha a nova luz. É normal não crescer nada neste mês. Não troque de vaso nem adube agora: só confira se o vaso tem furo e se o substrato não está encharcado. Se chegou num cachepô sem furo, tire de dentro dele."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Na primavera e no verão surgem pontas novas enroladas no centro da touceira ou brotos saindo do substrato ao lado, sinal de que a raiz pegou. Folhas firmes e em pé indicam rega e luz certas; folhas tombando ou moles na base indicam água demais ou luz de menos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce de setembro a março, lançando algumas folhas e brotos laterais por ano, e fica quase parada no inverno. Em luz forte pode dar hastes de flores brancas perfumadas à noite. Quando os brotos enchem o vaso ou o deformam, é hora de dividir a touceira."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_espada",
+      "titulo": "Regar a espada-de-são-jorge",
+      "tipo": "REGA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito até o fundo do vaso: se sair limpo e seco, regue devagar até escorrer pelos furos e jogue fora a água do pratinho; se sair úmido, espere mais uma semana. Não molhe o centro da roseta. De maio a agosto, regue só uma vez por mês.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_espada",
+      "titulo": "Adubar a espada-de-são-jorge",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido para cactos e suculentas (ou NPK 10-10-10) na metade da dose do rótulo e aplique com o substrato já úmido de uma rega. Entre maio e agosto, pule a adubação: a planta está parada e o sal acumula.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Aperte a base das folhas: devem estar firmes. Procure tufos brancos de algodão entre as folhas e manchas marrom-avermelhadas com borda amarela. Passe um pano úmido nas folhas para tirar a poeira, que atrapalha a fotossíntese.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Trocar o substrato e dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e março. Tire a planta do vaso, descarte o substrato velho e corte o rizoma com faca limpa em mudas de pelo menos 3 folhas cada. Deixe os cortes secarem 1 dia à sombra, replante em substrato novo e só regue depois de 5 a 7 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Confira o vaso que veio com a planta",
+      "mensagem": "Muitas espadas vêm em vaso sem furo ou dentro de cachepô, e água parada no fundo apodrece o rizoma em poucas semanas.",
+      "acao_requerida": "Verificar se o vaso tem furos e tirar a planta do cachepô; se o substrato estiver encharcado, deixar secar sem regar"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Depois de um mês, dá para ver se o lugar escolhido serve: folhas em pé e firmes indicam que sim.",
+      "acao_requerida": "Se as folhas estiverem tombando ou pálidas, mudar a planta para perto de uma janela mais clara, sem sol forte do meio-dia"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma e da base (Fusarium, Pythium, Erwinia)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas moles, amareladas e translúcidas na base, que tombam ou se soltam com um puxão; cheiro de podre no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo e nunca deixar água no pratinho. Se aparecer, tirar do vaso, cortar todo o rizoma mole até o tecido firme, deixar secar 2 dias e replantar em substrato novo e seco. Folhas sadias podem virar estacas"
+    },
+    {
+      "nome": "Mancha foliar (Fusarium moniliforme)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas ovais marrom-avermelhadas, afundadas, com halo amarelo, geralmente depois de água parada sobre a folha",
+      "prevencao_tratamento": "Não molhar as folhas nem o centro da roseta. Cortar as folhas muito atingidas rente à base e manter boa ventilação"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão entre as folhas e na base, folhas com pontos amarelos e grudentas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; se persistir, óleo de neem a 0,5% com detergente neutro a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas na face da folha voltada para o sol, logo após mudar de lugar",
+      "prevencao_tratamento": "Acostumar ao sol direto aos poucos, começando pelo sol da manhã. A marca não some; a folha continua viva"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com áreas escuras e encharcadas que depois amolecem, após noites abaixo de 10 °C com substrato úmido",
+      "prevencao_tratamento": "No inverno, manter longe de janela aberta e de varanda sem proteção e não regar em dias frios. Cortar as folhas danificadas quando secarem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Reduza a rega para o inverno",
+      "mensagem": "Com o frio, a espada-de-são-jorge praticamente para de crescer e o substrato demora muito mais para secar.",
+      "acao_requerida": "Regar só uma vez por mês até agosto, sempre com o substrato seco até o fundo, e suspender a adubação"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja do frio",
+      "mensagem": "Abaixo de 10 °C as folhas sofrem, principalmente com o substrato úmido.",
+      "acao_requerida": "Levar para dentro de casa ou longe de correntes de ar frio nas noites geladas e não regar na véspera de frente fria"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor, a planta retoma o crescimento e começa a lançar folhas e brotos novos.",
+      "acao_requerida": "Voltar a regar a cada 2 semanas conforme o palito, retomar a adubação e, se a touceira estiver apertada no vaso, dividir agora"
+    }
+  ]
+}

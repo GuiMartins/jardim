@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Pitangueira",
+    "nome_cientifico": "Eugenia uniflora",
+    "descricao": "Arbusto frutífero nativo da Mata Atlântica, rústico e muito ornamental, com folhas novas avermelhadas e flores brancas perfumadas. Em vaso grande fica com 1,5 a 2,5 m e dá pitangas doces e ácidas na primavera, a partir do 2º ou 3º ano depois do plantio da muda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cerâmica ou cimento com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; comece com um de 40 L e passe para 60 a 80 L quando a raiz tomar o vaso",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto curtido, 20% areia grossa ou casca de arroz carbonizada, mais 150 g de farinha de ossos e 200 g de calcário dolomítico por vaso de 40 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda acabou de ir para o vaso definitivo e está enraizando no substrato novo. Algumas folhas velhas podem amarelar e cair; isso é normal. A fase acaba quando surgem brotos novos avermelhados nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A planta cresce em surtos: os ramos brotam folhas cor de vinho que depois ficam verde-escuras e brilhantes. É a fase de formar a copa com a poda de formação. Flores que aparecerem neste primeiro ano podem ser retiradas para a planta investir em raiz e ramos."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Planta Jovem",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "A copa engrossa e a planta passa de 1 m. Muitas mudas florescem pela primeira vez na primavera deste período, com poucos frutos. Frutos que se formam e caem verdes indicam rega irregular ou planta ainda nova demais; é comum na primeira florada."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "O ano da pitangueira adulta em vaso: repouso relativo no inverno (junho e julho), florada de agosto a outubro, pitangas maduras de 3 a 5 semanas depois de cada florada (outubro a dezembro) e às vezes uma segunda florada menor no fim do verão. Depois da colheita, poda de limpeza e novo surto de brotos. A cada dois anos o substrato precisa ser renovado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de pitangueira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos (cerca de 3 a 4 L num vaso de 40 L). A raiz ainda está só no torrão da muda, então não deixe secar. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pitangueira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão e na florada/frutificação (agosto a dezembro), confira a cada 2 dias: seca nessa época derruba flores e frutos. No inverno, espace para a cada 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a pitangueira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de esterco de galinha curtido mais 1 colher de sopa de NPK 10-10-10 na borda do vaso, longe do tronco, afofe a superfície e regue. Na planta adulta, de agosto a dezembro, troque o NPK por 4-14-8 para favorecer flores e frutos. Pule a adubação em junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos e o verso das folhas: procure pontos amarelo-alaranjados em pó (ferrugem), carocinhos brancos ou marrons presos aos ramos (cochonilha), folhas coladas por teia ou furadas (lagartas). Na frutificação, procure frutos com furinhos ou moles antes da hora (mosca-das-frutas).",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Trocar o vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro, antes da florada forte, ou logo depois da colheita. Tire a planta do vaso, raspe 3 a 5 cm de raiz em volta do torrão, apare raízes enroladas no fundo e replante num vaso um pouco maior (ou no mesmo) com substrato novo. Se o vaso já tiver 80 L ou mais, basta trocar os 10 cm de cima por substrato novo com húmus.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Muda de pitangueira vem em saco plástico pequeno, que limita a raiz. Quanto antes ela for para o vaso grande, mais rápido firma.",
+      "acao_requerida": "Transplantar a muda para o vaso de 40 L no mesmo nível em que estava no saco, sem enterrar o colo, firmar o substrato com as mãos e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Hora da poda de formação",
+      "mensagem": "Uma pitangueira de vaso rende mais com copa baixa e aberta, com 3 ou 4 ramos principais, do que com uma haste única comprida.",
+      "acao_requerida": "Cortar a ponta do ramo principal a 50 ou 60 cm do substrato, logo acima de um par de folhas, e depois deixar crescer 3 ou 4 ramos laterais bem distribuídos, cortando os que nascem abaixo de 30 cm do tronco"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano completo",
+      "mensagem": "A planta já está estabelecida e a copa formada. Ramos que cresceram demais deixam a pitangueira alta e rala.",
+      "acao_requerida": "Encurtar em um terço os ramos que passaram do formato da copa e tirar os que crescem para dentro, cruzados ou brotando da base do tronco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e amarelam mesmo com o substrato úmido, caem em massa; raízes escuras, moles e com cheiro ruim; substrato sempre encharcado",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e garantir furos desentupidos. Se já apareceu, suspenda a rega até o substrato secar, tire a planta, corte as raízes podres e replante em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Ferrugem das mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nos brotos novos, folhas jovens e botões; os brotos encarquilham, escurecem e secam",
+      "prevencao_tratamento": "Deixar o vaso em lugar ensolarado e ventilado e não molhar a copa na rega. Cortar e jogar no lixo (não no composto) os brotos atacados e pulverizar calda bordalesa a 1% nos brotos novos a cada 10 dias enquanto houver sintomas"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha fraterculus, Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos e manchas moles, que amadurecem antes da hora e caem; larvas brancas dentro da polpa",
+      "prevencao_tratamento": "Colher os frutos assim que ficam vermelhos, recolher e destruir todos os caídos, ensacar pencas com saquinhos de TNT quando os frutos ainda estão verdes e pendurar armadilha de garrafa PET com suco de fruta ou proteína hidrolisada perto da planta a partir de setembro"
+    },
+    {
+      "nome": "Cochonilhas (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou tufos brancos presos aos ramos e ao verso das folhas; melado pegajoso e fumagina preta sobre as folhas",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia molhados em álcool e pulverizar óleo mineral a 1% ou óleo de neem a 0,5% com detergente neutro no fim da tarde, repetindo a cada 7 dias por três vezes"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou unidas por fios de seda com a lagarta escondida dentro, principalmente nos brotos novos",
+      "prevencao_tratamento": "Catar as lagartas e abrir as folhas enroladas; em ataque grande, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Queda de flores e frutos verdes",
+      "tipo": "DISTURBIO",
+      "sintomas": "A planta floresce bem, mas as flores ou os frutinhos verdes caem em poucos dias",
+      "prevencao_tratamento": "Quase sempre é substrato secando na florada ou falta de potássio. Manter a rega regular de agosto a dezembro, adubar com fórmula rica em potássio (4-14-8) antes da florada e evitar mudar o vaso de lugar nesse período"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        1
+      ],
+      "titulo": "Poda de limpeza pós-colheita",
+      "mensagem": "A colheita principal acabou. Podar agora estimula brotos novos, que são os que vão florescer na próxima primavera.",
+      "acao_requerida": "Cortar ramos secos, doentes, cruzados e os que crescem para dentro da copa, e encurtar em até um terço os que passaram da altura desejada"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "No frio a pitangueira quase para de crescer e o substrato demora mais para secar. Planta jovem sofre com geada.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, não adubar em junho e julho e, em noite com previsão de geada, levar o vaso para perto de uma parede ou sob cobertura"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Florada chegando",
+      "mensagem": "Os botões florais aparecem no fim do inverno. Falta de água ou de potássio agora derruba as flores.",
+      "acao_requerida": "Voltar à rega a cada 2 ou 3 dias, conferindo com o dedo, e fazer a adubação com NPK 4-14-8"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Pitangas amadurecendo",
+      "mensagem": "Os frutos ficam prontos de 3 a 5 semanas depois da florada e passam do ponto em poucos dias, além de atrair a mosca-das-frutas.",
+      "acao_requerida": "Passar pela planta a cada 2 dias e colher as pitangas vermelho-intensas ou roxas que se soltam com um leve toque, recolhendo e descartando as caídas no chão"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Costela-de-adão",
+    "nome_cientifico": "Monstera deliciosa",
+    "descricao": "Trepadeira tropical de folhas grandes e recortadas, nativa das florestas do México e da América Central. Muito resistente dentro de casa, cresce rápido com luz clara e fica mais bonita subindo por um tutor de fibra ou musgo.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo; só 5 cm mais largo que o torrão da muda, porque vaso grande demais encharca",
+    "volume_minimo_litros": 20,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% substrato para plantas, 30% casca de pinus fina, 20% perlita ou carvão picado, 10% húmus de minhoca; aerado e que seca em poucos dias",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo e à luz da casa. Uma folha velha amarelar é normal; a fase termina quando surge uma folha nova desenrolando do meio do caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Uma folha nova a cada 3 a 6 semanas no calor, cada uma maior que a anterior. Aparecem raízes aéreas marrons no caule: não corte, guie-as para o tutor ou para o substrato. Folhas novas ainda inteiras indicam planta jovem ou pouca luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Da primavera ao fim do verão cresce rápido e as folhas passam a abrir com recortes e furos. No inverno quase para: rega e adubação diminuem. Em casa raramente floresce. A cada dois anos o substrato se decompõe e a planta pede vaso novo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a costela-de-adão",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. As raízes ainda não exploraram o substrato novo e secam o torrão rápido.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a costela-de-adão",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o prato. No inverno o intervalo passa para 10 a 14 dias; no verão acima de 30 °C, confira a cada 5 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a costela-de-adão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá de NPK 10-10-10 em 1 L de água e regue com o substrato já úmido, ou espalhe 2 colheres de sopa de húmus na superfície. Entre maio e agosto, pule (a planta está parada).",
+      "critica": false
+    },
+    {
+      "id": "amarrar_tutor",
+      "titulo": "Prender o crescimento novo ao tutor",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Amarre com fita de jardim ou barbante frouxo o trecho de caule que cresceu desde a última vez, logo abaixo da folha nova, e encoste as raízes aéreas no tutor. Borrife o tutor de musgo, se for o caso, para as raízes agarrarem.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_inspecao",
+      "titulo": "Limpar e inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Passe um pano úmido nas duas faces das folhas, tirando a poeira. Procure no verso e nas axilas algodõezinhos brancos, escamas marrons ou pontinhos amarelados com teia fina.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro: tire a planta, desfaça um terço do torrão velho, corte raízes pretas e moles e replante num vaso 5 cm mais largo com substrato novo. Se já estiver no tamanho máximo que você quer, volte ao mesmo vaso após podar 1/4 das raízes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, costela-de-adão",
+      "mensagem": "Lugar certo é luz clara o dia todo, com no máximo o sol fraco da manhã. Sol forte da tarde queima as folhas em poucos dias.",
+      "acao_requerida": "Colocar o vaso a até 2 m de uma janela clara, longe do sol da tarde e de corrente do ar-condicionado"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Hora de colocar o tutor",
+      "mensagem": "A planta já começou a se esparramar; com apoio ela cresce para cima e faz folhas maiores e mais recortadas.",
+      "acao_requerida": "Enterrar um tutor de fibra de coco ou musgo, da altura da planta, junto ao caule sem ferir raízes grossas, e amarrar o caule a ele"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de baixo para cima, manchas marrons com halo amarelo, substrato sempre úmido e com cheiro azedo, raízes pretas e moles",
+      "prevencao_tratamento": "Regar só com 5 cm de substrato seco e nunca deixar água no prato. Se aparecer, tirar do vaso, cortar as raízes podres, polvilhar canela nos cortes e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e no verso, folhas pegajosas",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; depois, óleo de neem a 0,5% com uma gota de detergente a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos na folha, aspecto empoeirado e teias finas no verso; comum em ar seco",
+      "prevencao_tratamento": "Limpar as folhas com pano úmido e aumentar a umidade; se persistir, óleo de neem a 0,5% no verso a cada 5 dias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas grandes bege ou esbranquiçadas, secas, no meio das folhas voltadas para a janela",
+      "prevencao_tratamento": "Afastar do sol direto da tarde; as manchas não voltam ao verde, corte a folha só se mais da metade estiver queimada"
+    },
+    {
+      "nome": "Folhas sem recortes (pouca luz)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas pequenas, inteiras, com caule longo e esticado em direção à janela",
+      "prevencao_tratamento": "Levar para um lugar mais claro e dar um tutor; os recortes aparecem nas folhas seguintes, não nas que já abriram"
+    },
+    {
+      "nome": "Pontas e bordas marrons",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas secas e marrons, às vezes com borda amarela",
+      "prevencao_tratamento": "Sinal de ar seco ou rega irregular: evitar ar-condicionado direto, manter a rega pelo teste do dedo e aparar só a parte seca com tesoura limpa"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Inverno chegando: menos água e sem adubo",
+      "mensagem": "Com o frio e menos luz, a costela-de-adão quase para de crescer e o substrato demora mais para secar. Rega no mesmo ritmo do verão apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para quando 5 cm do substrato estiverem secos (10 a 14 dias) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com os dias mais longos e quentes, a planta retoma a produção de folhas. É a melhor época para trocar de vaso e fazer mudas.",
+      "acao_requerida": "Retomar a adubação mensal e cortar folhas velhas amarelas rente ao caule; para fazer muda, corte um pedaço de caule com um nó e uma raiz aérea e coloque na água"
+    }
+  ]
+}

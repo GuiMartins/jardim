@@ -1,0 +1,212 @@
+{
+  "planta": {
+    "nome_comum": "Ora-pro-nóbis",
+    "nome_cientifico": "Pereskia aculeata",
+    "descricao": "Cacto trepador de folhas verdadeiras, nativo do Brasil, com espinhos nos ramos e folhas comestíveis ricas em proteína, ferro e fibras (uma PANC clássica de Minas Gerais). Rústica, cresce rápido e produz folhas o ano todo no calor; em casa começa quase sempre por estaca.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 40 cm de diâmetro por 40 cm de profundidade, com furos no fundo, junto a uma treliça, cerca ou tutor de 1,5 a 2 m. Para enraizar, a estaca pode ir direto nele",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; drenante, porque a raiz apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Enterre um terço de uma estaca de 20 a 30 cm (ramo semilenhoso, com 3 ou mais nós) e mantenha a meia-sombra na primeira semana. As raízes se formam entre a 2ª e a 4ª semana; o sinal é o aparecimento de folhinhas novas nos nós de cima e a estaca resistir a um puxão leve."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 150,
+      "descricao": "Já em sol pleno, a planta emite ramos longos e flexíveis que procuram apoio. Conduza-os na treliça conforme crescem. A fase termina quando a planta tem vários ramos com mais de 1 m e folhagem densa, pronta para colheitas regulares."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Produz folhas o ano todo, com crescimento forte de outubro a abril e quase parado no frio. Floresce no verão e começo do outono (flores brancas perfumadas, que atraem abelhas), seguidas de frutos amarelos. Colha as pontas dos ramos com luvas, por causa dos espinhos em gancho; a colheita também serve de poda e deixa a planta mais cheia."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos. Sem raiz, a estaca não busca água: se o substrato secar por completo agora, ela murcha e não enraíza. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a ora-pro-nóbis",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. Acima de 30 °C confira a cada 2 ou 3 dias; de maio a agosto, a cada 7 a 10 dias. Ela tolera seca, mas não encharcamento.",
+      "critica": false
+    },
+    {
+      "id": "conduzir_ramos",
+      "titulo": "Conduzir os ramos na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": 365,
+      "instrucoes": "Com luvas, entrelace ou amarre com barbante frouxo os ramos novos que ficaram soltos, levando-os para cima e para os lados da treliça. Ramos que caem no chão enraízam e viram mato.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar com composto",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto sobre o substrato de um vaso de 40 L, afastado do caule, e regue em seguida. Folha é o produto: adubo orgânico rico em nitrogênio deixa as folhas maiores. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas e pontas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 120,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas e tesoura, corte 15 a 20 cm da ponta dos ramos mais compridos, logo acima de um nó, e destaque as folhas para a cozinha. Retire no máximo um terço da folhagem por vez para a planta rebrotar.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas, as axilas dos espinhos e a base do caule procurando pontos brancos algodonosos ou cascas marrons grudadas (cochonilhas), insetos verdes nas pontas (pulgão) e caule mole ou escuro rente ao substrato.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera, pode os ramos pela metade, tire a planta do vaso com luvas grossas, corte um terço das raízes enoveladas por fora e replante com substrato novo no mesmo vaso ou num 10 cm maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A estaca já passou da semana mais delicada e agora precisa de luz forte para enraizar e brotar.",
+      "acao_requerida": "Mudar o vaso para um lugar com pelo menos 4 horas de sol direto"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A estaca enraizou?",
+      "mensagem": "Com um mês, a estaca deve ter raízes e brotos novos nos nós de cima.",
+      "acao_requerida": "Puxar a estaca de leve: se resistir e tiver brotos, está enraizada. Se sair solta ou o caule estiver mole e escuro, fazer uma estaca nova"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Instalar a treliça",
+      "mensagem": "Os ramos novos vão crescer rápido e sem apoio tombam, se enroscam e ficam difíceis de colher por causa dos espinhos.",
+      "acao_requerida": "Firmar uma treliça, tela ou tutor de 1,5 a 2 m no vaso ou encostado a ele e prender os primeiros ramos"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Primeira colheita",
+      "mensagem": "A planta já tem folhagem suficiente para as primeiras colheitas sem se enfraquecer.",
+      "acao_requerida": "Colher as pontas dos ramos mais compridos com luvas, sem tirar mais de um terço das folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Caule mole e escuro rente ao substrato, folhas amarelando e caindo em massa, cheiro de mofo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e usar substrato com areia. Em planta afetada, corte os ramos sadios e faça estacas novas; descarte o substrato"
+    },
+    {
+      "nome": "Cochonilha (algodonosa e de carapaça)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos ou pequenas cascas marrons grudadas nos ramos e axilas dos espinhos; folhas amareladas e melado com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhados em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias por 3 aplicações. Lave bem as folhas antes de comer"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos ramos novos, brotos retorcidos e pegajosos",
+      "prevencao_tratamento": "Jato de água forte; se persistir, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mancha foliar (Colletotrichum, Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas arredondadas nas folhas, que depois caem; aparece em épocas de chuva e folhagem muito fechada",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas; colher e podar para arejar o interior da planta e remover as folhas manchadas"
+    },
+    {
+      "nome": "Queima pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, murchas e caindo depois de noites abaixo de 5 °C ou geada; pontas dos ramos secas",
+      "prevencao_tratamento": "Nas noites de geada, cobrir com TNT ou levar o vaso para perto de uma parede abrigada. Espere a primavera para cortar as partes secas: a planta rebrota dos ramos de baixo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Menos água no frio",
+      "mensagem": "No frio a ora-pro-nóbis quase para de crescer e perde parte das folhas; substrato úmido agora é o maior risco de apodrecer a raiz.",
+      "acao_requerida": "Espaçar a rega para a cada 7 a 10 dias, só com o substrato seco a 4 cm, suspender a adubação e proteger das geadas com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "No fim do inverno, antes da brotação, a poda renova a planta e estimula ramos novos cheios de folhas.",
+      "acao_requerida": "Com luvas, cortar os ramos secos, queimados pelo frio ou emaranhados e encurtar pela metade os mais compridos, sempre logo acima de um nó"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de flores",
+      "mensagem": "É a época das flores brancas perfumadas, que também são comestíveis e atraem abelhas. Com o calor, o substrato seca mais rápido.",
+      "acao_requerida": "Conferir o substrato a cada 2 ou 3 dias e colher algumas flores para salada, se quiser, deixando outras para as abelhas"
+    }
+  ]
+}
