@@ -27,7 +27,7 @@ import java.time.temporal.ChronoUnit
 class Cronograma(
     private val cultivo: PlantaCultivo,
     private val dataPlantio: LocalDate,
-    registros: List<RegistroAcao>,
+    private val registros: List<RegistroAcao>,
 ) {
     private val ultimaAcaoPorChave: Map<String, LocalDate> = registros
         .filter { it.realizadoEm.toLocalDate() >= dataPlantio }
@@ -56,6 +56,41 @@ class Cronograma(
         if (dia < 1 || cicloEncerradoEm(hoje)) return emptyList()
         return (pendenciasDeTarefas(dia) + pendenciasDeAlertas(dia) + pendenciasSazonais(hoje))
             .sortedWith(compareByDescending<Pendencia> { it.critica }.thenByDescending { it.diasDeAtraso })
+    }
+
+    /**
+     * O que vem nos [dias] dias seguintes a [hoje], supondo que o pendente de
+     * hoje é feito hoje e cada ocorrência futura no dia em que vence. Roda o
+     * próprio pendenciasEm com um histórico imaginário, então a previsão segue
+     * as mesmas regras da agenda. Só devolve os dias que têm alguma coisa.
+     */
+    fun proximosDias(hoje: LocalDate, dias: Int = 7): List<DiaPrevisto> {
+        val imaginario = registros.toMutableList()
+        fun fazerTudo(data: LocalDate, pendencias: List<Pendencia>) {
+            pendencias.mapTo(imaginario) { RegistroAcao(it.chave, it.venceEm, data.atStartOfDay(), StatusAcao.FEITA) }
+        }
+        fazerTudo(hoje, pendenciasEm(hoje))
+        return (1..dias).mapNotNull { i ->
+            val data = hoje.plusDays(i.toLong())
+            val pendencias = Cronograma(cultivo, dataPlantio, imaginario).pendenciasEm(data)
+            fazerTudo(data, pendencias)
+            if (pendencias.isEmpty()) null else DiaPrevisto(data, diaDoCiclo(data), pendencias)
+        }
+    }
+
+    /** Traduz a chave de um RegistroAcao de volta para o que ela é no JSON, para o histórico. */
+    fun identificar(chave: String): Identificacao? {
+        val partes = chave.split(":")
+        val indice = partes.getOrNull(1)?.toIntOrNull()
+        return when (partes.first()) {
+            "tarefa" -> cultivo.tarefasAgendadas.firstOrNull { it.id == partes.getOrNull(1) }
+                ?.let { Identificacao(Origem.TAREFA, it.titulo, it.tipo) }
+            "alerta" -> indice?.let { cultivo.alertasFase.getOrNull(it) }
+                ?.let { Identificacao(Origem.ALERTA, it.titulo, null) }
+            "sazonal" -> indice?.let { cultivo.eventosSazonais.getOrNull(it) }
+                ?.let { Identificacao(Origem.SAZONAL, it.titulo, null) }
+            else -> null
+        }
     }
 
     private fun pendenciasDeTarefas(dia: Int): List<Pendencia> = cultivo.tarefasAgendadas.mapNotNull { t ->

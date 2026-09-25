@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.Settings
@@ -75,6 +76,7 @@ import kotlinx.coroutines.flow.collectLatest
 fun HojeTela(
     aoAdicionar: () -> Unit,
     aoConfigurar: () -> Unit,
+    aoAbrirPlanta: (plantioId: Long) -> Unit,
     viewModel: HojeViewModel = viewModel(factory = HojeViewModel.Factory),
 ) {
     val cartoes by viewModel.cartoes.collectAsStateWithLifecycle()
@@ -153,6 +155,7 @@ fun HojeTela(
                         aoMarcar = { pendencia, status -> viewModel.marcar(cartao.id, pendencia, status) },
                         aoRecomecar = { viewModel.recomecar(cartao.id) },
                         aoEncerrar = { viewModel.encerrar(cartao.id) },
+                        aoAbrir = { aoAbrirPlanta(cartao.id) },
                     )
                 }
             }
@@ -209,14 +212,26 @@ private fun CartaoPlantioView(
     aoMarcar: (Pendencia, StatusAcao) -> Unit,
     aoRecomecar: () -> Unit,
     aoEncerrar: () -> Unit,
+    aoAbrir: () -> Unit,
 ) {
     var confirmando by remember { mutableStateOf<Confirmacao?>(null) }
     val recomecoTexto = if (cartao.deSemente) "Ressemeei hoje" else "Replantei hoje"
 
     ElevatedCard(Modifier.fillMaxWidth()) {
-        Row(Modifier.padding(start = 16.dp, top = 12.dp, end = 4.dp), verticalAlignment = Alignment.CenterVertically) {
+        // O cabeçalho abre a linha do tempo da planta; o menu ao lado tem o próprio toque.
+        Row(
+            Modifier.clickable(onClick = aoAbrir).padding(start = 16.dp, top = 12.dp, end = 4.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
             Column(Modifier.weight(1f)) {
-                Text(cartao.apelido, style = MaterialTheme.typography.titleLarge)
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(cartao.apelido, style = MaterialTheme.typography.titleLarge)
+                    Icon(
+                        Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                        contentDescription = "Ver linha do tempo",
+                        tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
                 val partes = buildList {
                     if (cartao.apelido != cartao.nomeComum) add(cartao.nomeComum)
                     if (cartao.cicloEncerrado) add("ciclo encerrado") else add("Dia ${cartao.dia}")

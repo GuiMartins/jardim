@@ -35,6 +35,12 @@ data class Pendencia(
  */
 enum class StatusAcao { FEITA, NAO_PRECISOU }
 
+/** Um dia da previsão da linha do tempo, com o que deve vencer nele. */
+data class DiaPrevisto(val data: LocalDate, val dia: Int, val pendencias: List<Pendencia>)
+
+/** O que uma chave do histórico é no JSON da planta. */
+data class Identificacao(val origem: Origem, val titulo: String, val tipo: TipoTarefa?)
+
 /**
  * Uma linha do histórico: o usuário fez uma pendência, ou conferiu e ela não
  * era necessária. O motor só lê; quem grava é a camada de dados.

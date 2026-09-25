@@ -1,10 +1,11 @@
 package com.jardim.motor
 
 import com.jardim.motor.agenda.Cronograma
+import com.jardim.motor.agenda.Identificacao
+import com.jardim.motor.agenda.ModoAviso
 import com.jardim.motor.agenda.Origem
 import com.jardim.motor.agenda.RegistroAcao
 import com.jardim.motor.agenda.StatusAcao
-import com.jardim.motor.agenda.ModoAviso
 import com.jardim.motor.agenda.foraDeEpoca
 import com.jardim.motor.agenda.paraAviso
 import com.jardim.motor.modelo.PlantaCultivo
@@ -237,6 +238,40 @@ class CronogramaTest {
             hoje.map { it.chave },
         )
         assertEquals(listOf(5, 5, 4, 0), hoje.map { it.diasDeAtraso })
+    }
+
+    @Test
+    fun `próximos dias do girassol esquecido, visto no dia 14`() {
+        // Supõe que o atrasado é feito hoje (dia 14): a rega da plântula volta
+        // no 16, 18 e 20, a inspeção no 17 e 20, e a adubação começa no 20.
+        val c = Cronograma(girassol(), plantioGirassol, emptyList())
+        val previsao = c.proximosDias(plantioGirassol.plusDays(13))
+        assertEquals(
+            mapOf(
+                16 to setOf("tarefa:rega_plantula"),
+                17 to setOf("tarefa:inspecao_pragas"),
+                18 to setOf("tarefa:rega_plantula"),
+                20 to setOf("tarefa:rega_plantula", "tarefa:inspecao_pragas", "tarefa:adubacao_cobertura"),
+            ),
+            previsao.associate { it.dia to it.pendencias.map { p -> p.chave }.toSet() },
+        )
+        assertTrue(previsao.flatMap { it.pendencias }.all { it.diasDeAtraso == 0 })
+    }
+
+    @Test
+    fun `próximos dias param no fim do ciclo`() {
+        val c = Cronograma(girassol(), plantioGirassol, emptyList())
+        assertTrue(c.proximosDias(plantioGirassol.plusDays(104)).isEmpty()) // visto do dia 105
+    }
+
+    @Test
+    fun `identifica cada tipo de chave do histórico`() {
+        val c = Cronograma(girassol(), plantioGirassol, emptyList())
+        assertEquals(Identificacao(Origem.TAREFA, "Regar o girassol jovem", TipoTarefa.REGA), c.identificar("tarefa:rega_plantula"))
+        assertEquals("Hora do desbaste!", c.identificar("alerta:1")?.titulo)
+        assertEquals("Calor e temporais de verão", c.identificar("sazonal:0:2026-12")?.titulo)
+        assertNull(c.identificar("tarefa:nao_existe"))
+        assertNull(c.identificar("alerta:99"))
     }
 
     @Test

@@ -33,6 +33,11 @@ Etapa 4 (2026-09-24):
 - Notificações em grupo: um resumo mais uma notificação por pendência, com "Feito" e, na rega, "Não precisou". Os itens chegam ordenados do mais importante ao menos importante e são publicados na ordem inversa, com `when` decrescente: o Samsung mostra na face do grupo o filho mais novo.
 - A permissão de notificação é pedida ao tocar em "Semeei"/"Plantei". Se estiver negada, a tela Hoje mostra um cartão com atalho para as configurações do Android.
 
+Etapa 5 (2026-09-25):
+- Tela da planta com cinco seções: Agora (dia, progresso, fase atual), Próximos 7 dias, Fases (linha do tempo com datas), Problemas comuns (`pragas_comuns`) e Histórico. Sem diário de fotos por enquanto.
+- A previsão (`Cronograma.proximosDias`) supõe que o pendente de hoje é feito hoje e o resto no dia em que vence. Ela roda o próprio `pendenciasEm` com um histórico imaginário, para nunca divergir da agenda real.
+- O histórico mostra também o que foi feito antes de um "Ressemeei"; `Cronograma.identificar` traduz a chave (`tarefa:…`, `alerta:N`, `sazonal:N:AAAA-MM`) de volta para o título.
+
 ## Notificações e agendamento
 
 - Cada aviso é um OneTimeWork único que, ao rodar, agenda o do dia seguinte com `APPEND_OR_REPLACE`: `REPLACE` cancelaria o worker que está rodando, e `KEEP` ignoraria o pedido. A abertura do app chama `garantirAgendado()` (`KEEP`), que reconstrói a corrente se ela quebrar. Não use PeriodicWorkRequest: ele escorrega o horário.

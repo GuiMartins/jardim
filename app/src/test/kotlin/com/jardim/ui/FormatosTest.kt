@@ -1,6 +1,7 @@
 package com.jardim.ui
 
 import java.time.LocalDate
+import java.time.LocalDateTime
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -10,6 +11,14 @@ class FormatosTest {
     fun `datas em português`() {
         assertEquals("Quinta-feira, 24 de setembro", dataLonga(LocalDate.of(2026, 9, 24)))
         assertEquals("1 de outubro de 2026", dataCompleta(LocalDate.of(2026, 10, 1)))
+    }
+
+    @Test
+    fun `datas da linha do tempo`() {
+        val hoje = LocalDate.of(2026, 9, 25)
+        assertEquals("Amanhã", diaDaPrevisao(LocalDate.of(2026, 9, 26), hoje))
+        assertEquals("Domingo, 27/09", diaDaPrevisao(LocalDate.of(2026, 9, 27), hoje))
+        assertEquals("24/09 às 22:34", dataHora(LocalDateTime.of(2026, 9, 24, 22, 34)))
     }
 
     @Test

@@ -8,13 +8,21 @@ import com.jardim.ui.configuracoes.ConfiguracoesTela
 import com.jardim.ui.hoje.HojeTela
 import com.jardim.ui.novaplanta.CatalogoTela
 import com.jardim.ui.novaplanta.PlantarTela
+import com.jardim.ui.planta.PlantaTela
 
 @Composable
 fun JardimNavegacao() {
     val nav = rememberNavController()
     NavHost(nav, startDestination = "hoje") {
         composable("hoje") {
-            HojeTela(aoAdicionar = { nav.navigate("catalogo") }, aoConfigurar = { nav.navigate("configuracoes") })
+            HojeTela(
+                aoAdicionar = { nav.navigate("catalogo") },
+                aoConfigurar = { nav.navigate("configuracoes") },
+                aoAbrirPlanta = { id -> nav.navigate("planta/$id") },
+            )
+        }
+        composable("planta/{id}") {
+            PlantaTela(aoVoltar = { nav.popBackStack() })
         }
         composable("catalogo") {
             CatalogoTela(aoEscolher = { arquivo -> nav.navigate("plantar/$arquivo") }, aoVoltar = { nav.popBackStack() })

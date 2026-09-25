@@ -5,9 +5,11 @@ import com.jardim.motor.agenda.Pendencia
 import com.jardim.motor.modelo.Dificuldade
 import com.jardim.motor.modelo.Luminosidade
 import com.jardim.motor.modelo.Planta
+import com.jardim.motor.modelo.TipoPraga
 import com.jardim.motor.modelo.TipoTarefa
 import java.time.Instant
 import java.time.LocalDate
+import java.time.LocalDateTime
 import java.time.Month
 import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
@@ -22,6 +24,26 @@ fun dataLonga(data: LocalDate): String =
 
 /** "24 de setembro de 2026" */
 fun dataCompleta(data: LocalDate): String = data.format(DateTimeFormatter.ofPattern("d 'de' MMMM 'de' yyyy", ptBr))
+
+/** "25/09" */
+fun dataCurta(data: LocalDate): String = data.format(DateTimeFormatter.ofPattern("dd/MM", ptBr))
+
+/** "Amanhã", ou "Sábado, 26/09" */
+fun diaDaPrevisao(data: LocalDate, hoje: LocalDate): String =
+    if (data == hoje.plusDays(1)) {
+        "Amanhã"
+    } else {
+        data.format(DateTimeFormatter.ofPattern("EEEE, dd/MM", ptBr)).replaceFirstChar { it.uppercase(ptBr) }
+    }
+
+/** "24/09 às 22:34" */
+fun dataHora(dataHora: LocalDateTime): String = dataHora.format(DateTimeFormatter.ofPattern("dd/MM 'às' HH:mm", ptBr))
+
+fun tipoPraga(tipo: TipoPraga): String = when (tipo) {
+    TipoPraga.PRAGA -> "Praga"
+    TipoPraga.DOENCA -> "Doença"
+    TipoPraga.DISTURBIO -> "Distúrbio"
+}
 
 /** [9, 10, 11] → "set, out, nov" */
 fun meses(meses: List<Int>): String =
@@ -53,10 +75,12 @@ fun luminosidade(l: Luminosidade): String = when (l) {
 fun numero(valor: Double): String =
     if (valor % 1.0 == 0.0) valor.toInt().toString() else valor.toString().replace('.', ',')
 
-fun icone(p: Pendencia): String = when (p.origem) {
+fun icone(p: Pendencia): String = icone(p.origem, p.tipo)
+
+fun icone(origem: Origem, tipo: TipoTarefa?): String = when (origem) {
     Origem.ALERTA -> "📣"
     Origem.SAZONAL -> "🗓️"
-    Origem.TAREFA -> when (p.tipo) {
+    Origem.TAREFA -> when (tipo) {
         TipoTarefa.REGA -> "💧"
         TipoTarefa.ADUBACAO -> "🌿"
         TipoTarefa.DESBASTE, TipoTarefa.PODA -> "✂️"

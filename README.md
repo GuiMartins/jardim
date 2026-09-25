@@ -71,6 +71,10 @@ simula o ciclo inteiro para garantir isso.
 - **Nova planta**: o catálogo, com dificuldade, duração do ciclo e se é boa
   época; depois apelido, data do dia 1 e o que preparar antes (vaso, luz,
   substrato, drenagem).
+- **Planta** (toque no nome dela na tela Hoje): a linha do tempo, com "Dia 16
+  de 105", barra de progresso e a fase atual; o que vem nos próximos 7 dias;
+  as fases com datas; problemas comuns (sintomas e tratamento) e o histórico
+  do que foi feito.
 - **Notificações**: horário do resumo (8h) e do lembrete da noite (19h), e um
   botão para testar na hora.
 
@@ -123,4 +127,4 @@ banco é Room, com o esquema de cada versão em `app/schemas/`.
 - [x] **Etapa 2**: motor (leitura e validação do JSON, agenda) com testes
 - [x] **Etapa 3**: banco local (plantios e histórico), tela "Hoje" e "Nova planta"
 - [x] **Etapa 4**: notificações (resumo da manhã, lembrete da noite, botões na notificação)
-- [ ] **Etapa 5**: linha do tempo da planta
+- [x] **Etapa 5**: linha do tempo da planta (agora, próximos dias, fases, problemas, histórico)
