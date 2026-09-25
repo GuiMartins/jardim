@@ -10,7 +10,11 @@
 #   start      abre o app no dispositivo/emulador conectado
 #   run        build + install + start, tudo de uma vez (o mais usado)
 #   logs       segue o logcat do processo do app (precisa estar rodando)
+#   print X    salva um print da tela ligada em X.png (o Fold tem duas telas)
 set -euo pipefail
+
+# Sem isso o Git Bash reescreve caminhos do aparelho (/sdcard -> C:/Program Files/Git/sdcard).
+export MSYS_NO_PATHCONV=1
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
@@ -55,8 +59,15 @@ case "$comando" in
         echo "Seguindo logcat do PID $pid (Ctrl+C pra sair)..."
         "$ADB" logcat --pid="$pid"
         ;;
+    print)
+        # Celular dobrável: screencap sem -d pega uma tela qualquer (às vezes a
+        # desligada). Escolhe a que está com mState=ON.
+        tela=$("$ADB" shell dumpsys display | awk '/uniqueId="local:/{match($0,/local:[0-9]+/); id=substr($0,RSTART+6,RLENGTH-6)} /mState=ON/{print id; exit}')
+        "$ADB" exec-out screencap -p -d "$tela" > "${2:-print}.png"
+        echo "salvo em ${2:-print}.png"
+        ;;
     *)
-        echo "Uso: ./dev.sh [emulator|test|build|install|start|run|logs]"
+        echo "Uso: ./dev.sh [emulator|test|build|install|start|run|logs|print]"
         exit 1
         ;;
 esac

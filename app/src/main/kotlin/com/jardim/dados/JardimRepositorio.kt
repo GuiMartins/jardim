@@ -9,6 +9,9 @@ import com.jardim.motor.leitura.ResultadoLeitura
 import com.jardim.motor.modelo.PlantaCultivo
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import java.time.LocalDate
 import java.time.LocalDateTime
 
@@ -24,6 +27,8 @@ data class PlantioAtivo(
 }
 
 class JardimRepositorio(private val dao: JardimDao) {
+
+    private val trava = Mutex()
 
     val plantiosAtivos: Flow<List<PlantioAtivo>> =
         combine(dao.plantiosAtivos(), dao.registrosDosAtivos()) { plantios, registros ->
@@ -61,6 +66,20 @@ class JardimRepositorio(private val dao: JardimDao) {
                 status = status,
             ),
         )
+
+    /**
+     * Para o botão da notificação, que pode ser tocado horas depois, quando a
+     * pendência já foi marcada no app: só registra se ela ainda existe. A trava
+     * evita registro duplo quando o botão é tocado duas vezes seguidas.
+     */
+    suspend fun registrarSePendente(plantioId: Long, chave: String, status: StatusAcao, hoje: LocalDate): Boolean {
+        trava.withLock {
+            val plantio = plantiosAtivos.first().firstOrNull { it.id == plantioId } ?: return false
+            val pendencia = plantio.cronograma().pendenciasEm(hoje).firstOrNull { it.chave == chave } ?: return false
+            registrar(plantioId, pendencia, status)
+            return true
+        }
+    }
 
     suspend fun desfazer(registroId: Long) = dao.apagarRegistro(registroId)
 

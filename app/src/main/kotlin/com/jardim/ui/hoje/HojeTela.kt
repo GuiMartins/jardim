@@ -1,5 +1,7 @@
 package com.jardim.ui.hoje
 
+import android.content.Intent
+import android.provider.Settings
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -18,8 +20,11 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ElevatedCard
@@ -49,6 +54,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -68,13 +74,21 @@ import kotlinx.coroutines.flow.collectLatest
 @Composable
 fun HojeTela(
     aoAdicionar: () -> Unit,
+    aoConfigurar: () -> Unit,
     viewModel: HojeViewModel = viewModel(factory = HojeViewModel.Factory),
 ) {
     val cartoes by viewModel.cartoes.collectAsStateWithLifecycle()
     val hoje by viewModel.dataDeHoje.collectAsStateWithLifecycle()
     val snackbar = remember { SnackbarHostState() }
+    val contexto = LocalContext.current
+    var notificacoesLigadas by remember { mutableStateOf(true) }
 
-    LifecycleEventEffect(Lifecycle.Event.ON_RESUME) { viewModel.atualizarDia() }
+    // No resume: o dia pode ter virado, e a pessoa pode ter voltado das
+    // configurações do Android depois de ligar as notificações.
+    LifecycleEventEffect(Lifecycle.Event.ON_RESUME) {
+        viewModel.atualizarDia()
+        notificacoesLigadas = viewModel.notificacoesLigadas()
+    }
 
     // collectLatest: marcar outra coisa troca a snackbar em vez de enfileirar.
     LaunchedEffect(Unit) {
@@ -95,6 +109,11 @@ fun HojeTela(
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )
+                    }
+                },
+                actions = {
+                    IconButton(onClick = aoConfigurar) {
+                        Icon(Icons.Filled.Settings, contentDescription = "Horários das notificações")
                     }
                 },
             )
@@ -118,6 +137,16 @@ fun HojeTela(
                 contentPadding = PaddingValues(start = 16.dp, top = 8.dp, end = 16.dp, bottom = 96.dp),
                 verticalArrangement = Arrangement.spacedBy(16.dp),
             ) {
+                if (!notificacoesLigadas) {
+                    item(key = "notificacoes") {
+                        NotificacoesDesligadas(aoAtivar = {
+                            contexto.startActivity(
+                                Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
+                                    .putExtra(Settings.EXTRA_APP_PACKAGE, contexto.packageName),
+                            )
+                        })
+                    }
+                }
                 items(lista, key = { it.id }) { cartao ->
                     CartaoPlantioView(
                         cartao = cartao,
@@ -150,6 +179,25 @@ private fun SemPlantas(aoAdicionar: () -> Unit, modifier: Modifier = Modifier) {
         )
         Spacer(Modifier.height(24.dp))
         Button(onClick = aoAdicionar) { Text("Escolher a primeira") }
+    }
+}
+
+@Composable
+private fun NotificacoesDesligadas(aoAtivar: () -> Unit) {
+    Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer)) {
+        Column(Modifier.padding(16.dp)) {
+            Text(
+                "Notificações desligadas",
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.onTertiaryContainer,
+            )
+            Text(
+                "Sem elas o app não consegue lembrar da rega; só dá para ver as tarefas abrindo aqui.",
+                color = MaterialTheme.colorScheme.onTertiaryContainer,
+            )
+            Spacer(Modifier.height(8.dp))
+            FilledTonalButton(onClick = aoAtivar) { Text("Ativar") }
+        }
     }
 }
 

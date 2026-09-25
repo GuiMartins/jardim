@@ -64,6 +64,11 @@ dependencies {
     implementation("androidx.compose.material:material-icons-core")
     debugImplementation("androidx.compose.ui:ui-tooling")
 
+    // Pinado em 2.9.1 como no Trombadário: a partir da 2.10 o AAR exige
+    // compileSdk 35 + AGP 8.6+.
+    implementation("androidx.work:work-runtime:2.9.1")
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+
     // Mesma versão do fatura-app, já no cache desta máquina.
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")

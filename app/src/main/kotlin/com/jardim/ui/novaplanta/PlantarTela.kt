@@ -1,5 +1,10 @@
 package com.jardim.ui.novaplanta
 
+import android.Manifest
+import android.content.pm.PackageManager
+import android.os.Build
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -36,7 +41,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.jardim.motor.agenda.foraDeEpoca
 import com.jardim.motor.modelo.FormaInicio
@@ -66,6 +73,18 @@ fun PlantarTela(
     var escolhendoData by remember { mutableStateOf(false) }
     var salvando by remember { mutableStateOf(false) }
 
+    val contexto = LocalContext.current
+    val plantar = {
+        salvando = true
+        viewModel.plantar(especie, apelido, dataPlantio, aoPlantar)
+    }
+    // A permissão de notificação (Android 13+) é pedida aqui, no momento em que
+    // ela faz sentido: a planta acabou de ganhar uma agenda. Planta mesmo se a
+    // pessoa negar; a tela Hoje mostra o aviso para ligar depois.
+    val pedirPermissao = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { plantar() }
+    val precisaPedir = Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+        ContextCompat.checkSelfPermission(contexto, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -79,8 +98,7 @@ fun PlantarTela(
             Surface(tonalElevation = 3.dp) {
                 Button(
                     onClick = {
-                        salvando = true
-                        viewModel.plantar(especie, apelido, dataPlantio, aoPlantar)
+                        if (precisaPedir) pedirPermissao.launch(Manifest.permission.POST_NOTIFICATIONS) else plantar()
                     },
                     enabled = !salvando,
                     modifier = Modifier.fillMaxWidth().navigationBarsPadding().padding(16.dp),

@@ -48,8 +48,8 @@ não são problema, e errar a data do plantio se corrige mudando um campo.
 - **Ressemeou?** "Ressemeei hoje" faz hoje virar o dia 1 e a agenda recomeçar;
   o histórico de antes fica guardado.
 - **Fora de época** (fora de `meses_plantio`) o app só avisa, não impede.
-- **Tarefa crítica** (falhar uma vez já causa dano) vai ganhar um lembrete
-  extra à noite, na etapa 4.
+- **Tarefa crítica** (falhar uma vez já causa dano) ganha um lembrete extra à
+  noite, se ainda não foi feita.
 
 ## Planta de referência
 
@@ -61,12 +61,33 @@ simula o ciclo inteiro para garantir isso.
 
 ## Telas
 
+| Hoje | Nova planta | Notificações |
+|:---:|:---:|:---:|
+| <img src="docs/telas/hoje.png" width="240"> | <img src="docs/telas/nova-planta.png" width="240"> | <img src="docs/telas/notificacoes.png" width="240"> |
+
 - **Hoje**: um cartão por planta, com o dia do ciclo e a fase ("Dia 15 ·
   Plântula") e as pendências de hoje e as atrasadas, críticas primeiro. Toque
   numa pendência para ver as instruções; "Feito" tem desfazer na snackbar.
 - **Nova planta**: o catálogo, com dificuldade, duração do ciclo e se é boa
   época; depois apelido, data do dia 1 e o que preparar antes (vaso, luz,
   substrato, drenagem).
+- **Notificações**: horário do resumo (8h) e do lembrete da noite (19h), e um
+  botão para testar na hora.
+
+## Notificações
+
+- **De manhã**, um grupo: recolhido, ele mostra a pendência mais importante e
+  o total; expandido, cada pendência tem os próprios botões ("Feito" e, na
+  rega, "Não precisou"). Dá para cuidar do dia sem abrir o app.
+- **À noite**, só as críticas que ainda não foram feitas, num canal mais
+  insistente.
+- Marcou no app, a notificação some; marcou na notificação, a tela Hoje se
+  atualiza sozinha. Um botão de notificação velha não registra de novo o que
+  já foi feito.
+- Agendado com WorkManager: sobrevive a reinícios e não precisa de permissão
+  de alarme exato. No Samsung, vale deixar o Jardim como **"Sem restrições"**
+  em Bateria, senão o sistema pode pôr o app para dormir depois de alguns dias
+  sem uso.
 
 ## Estrutura
 
@@ -90,7 +111,7 @@ roda em testes na JVM, em segundos, sem emulador.
 ```bash
 ./dev.sh test       # testes do motor
 ./dev.sh run        # build + instala + abre no celular ou emulador conectado
-./dev.sh emulator   # sobe o emulador
+./dev.sh print hoje # print da tela ligada do celular (funciona no dobrável)
 ```
 
 Precisa do JDK 17 e do Android SDK (`local.properties` com `sdk.dir`). O
@@ -101,5 +122,5 @@ banco é Room, com o esquema de cada versão em `app/schemas/`.
 - [x] **Etapa 1**: stack e regras de produto
 - [x] **Etapa 2**: motor (leitura e validação do JSON, agenda) com testes
 - [x] **Etapa 3**: banco local (plantios e histórico), tela "Hoje" e "Nova planta"
-- [ ] **Etapa 4**: notificações (resumo diário, lembrete da noite, botão "Concluir")
+- [x] **Etapa 4**: notificações (resumo da manhã, lembrete da noite, botões na notificação)
 - [ ] **Etapa 5**: linha do tempo da planta

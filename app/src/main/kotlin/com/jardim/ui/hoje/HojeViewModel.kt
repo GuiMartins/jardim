@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.jardim.JardimApp
+import com.jardim.avisos.Avisos
 import com.jardim.dados.JardimRepositorio
 import com.jardim.dados.PlantioAtivo
 import com.jardim.motor.agenda.Pendencia
@@ -38,7 +39,10 @@ data class CartaoPlantio(
 /** Uma ação recém-registrada, que a snackbar oferece desfazer. */
 data class AcaoRegistrada(val registroId: Long, val mensagem: String)
 
-class HojeViewModel(private val repositorio: JardimRepositorio) : ViewModel() {
+class HojeViewModel(
+    private val repositorio: JardimRepositorio,
+    private val avisos: Avisos,
+) : ViewModel() {
 
     private val hoje = MutableStateFlow(LocalDate.now())
     val dataDeHoje: StateFlow<LocalDate> = hoje
@@ -59,10 +63,14 @@ class HojeViewModel(private val repositorio: JardimRepositorio) : ViewModel() {
     fun marcar(plantioId: Long, pendencia: Pendencia, status: StatusAcao) {
         viewModelScope.launch {
             val id = repositorio.registrar(plantioId, pendencia, status)
+            // Marcou no app: a notificação da mesma pendência não pode ficar lá cobrando.
+            avisos.cancelar(plantioId, pendencia.chave)
             val como = if (status == StatusAcao.FEITA) "feito" else "conferido"
             registradas.send(AcaoRegistrada(id, "${pendencia.titulo}: $como"))
         }
     }
+
+    fun notificacoesLigadas(): Boolean = avisos.ligadas()
 
     fun desfazer(registroId: Long) {
         viewModelScope.launch { repositorio.desfazer(registroId) }
@@ -92,7 +100,10 @@ class HojeViewModel(private val repositorio: JardimRepositorio) : ViewModel() {
 
     companion object {
         val Factory = viewModelFactory {
-            initializer { HojeViewModel((this[APPLICATION_KEY] as JardimApp).repositorio) }
+            initializer {
+                val app = this[APPLICATION_KEY] as JardimApp
+                HojeViewModel(app.repositorio, app.avisos)
+            }
         }
     }
 }

@@ -4,7 +4,9 @@ import com.jardim.motor.agenda.Cronograma
 import com.jardim.motor.agenda.Origem
 import com.jardim.motor.agenda.RegistroAcao
 import com.jardim.motor.agenda.StatusAcao
+import com.jardim.motor.agenda.ModoAviso
 import com.jardim.motor.agenda.foraDeEpoca
+import com.jardim.motor.agenda.paraAviso
 import com.jardim.motor.modelo.PlantaCultivo
 import com.jardim.motor.modelo.TipoTarefa
 import java.time.LocalDate
@@ -235,6 +237,15 @@ class CronogramaTest {
             hoje.map { it.chave },
         )
         assertEquals(listOf(5, 5, 4, 0), hoje.map { it.diasDeAtraso })
+    }
+
+    @Test
+    fun `girassol no dia 31 - de manhã vai tudo, à noite só a rega crítica`() {
+        val pendencias = Cronograma(girassol(), plantioGirassol, emptyList()).pendenciasEm(plantioGirassol.plusDays(30))
+        assertTrue(pendencias.size > 1)
+        assertEquals(pendencias, paraAviso(ModoAviso.RESUMO, pendencias))
+        // A rega da plântula (não crítica) acabou no 30; a do crescimento, crítica, começa hoje.
+        assertEquals(listOf("tarefa:rega_crescimento_floracao"), paraAviso(ModoAviso.NOITE, pendencias).map { it.chave })
     }
 
     @Test
