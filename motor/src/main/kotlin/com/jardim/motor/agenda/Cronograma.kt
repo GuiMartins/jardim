@@ -15,11 +15,14 @@ import java.time.temporal.ChronoUnit
  * Regras de atraso (decididas na etapa 1, ver CLAUDE.md):
  * - Tarefa recorrente não acumula. Vence em `dia_inicio_ciclo`, fica pendente com
  *   o atraso crescendo até ser feita, e a próxima vence `frequencia_dias` depois
- *   do dia em que foi feita de verdade. Pular conta como feita.
+ *   do dia em que foi feita de verdade. "Conferi, não precisou" conta como feita.
  * - Se a janela da tarefa (`dia_fim_ciclo`) fecha com ela pendente, ela some.
  * - Alerta (`alertas_fase`) é único: fica pendente até ser registrado.
  * - Evento sazonal vale pelo mês: aparece no dia 1, se a planta já existia
  *   nesse dia, e some quando o mês acaba.
+ * - Ressemear move o dia 1 para a data nova. O histórico de antes continua no
+ *   banco, mas não conta mais para a agenda: o alerta "conferir a germinação"
+ *   tem que voltar a aparecer no novo dia 10.
  */
 class Cronograma(
     private val cultivo: PlantaCultivo,
@@ -27,6 +30,7 @@ class Cronograma(
     registros: List<RegistroAcao>,
 ) {
     private val ultimaAcaoPorChave: Map<String, LocalDate> = registros
+        .filter { it.realizadoEm.toLocalDate() >= dataPlantio }
         .groupBy { it.chave }
         .mapValues { (_, doItem) -> doItem.maxOf { it.realizadoEm.toLocalDate() } }
 

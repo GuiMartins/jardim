@@ -27,11 +27,17 @@ data class Pendencia(
     val diasDeAtraso: Int,
 )
 
-enum class StatusAcao { CONCLUIDA, PULADA }
+/**
+ * O nome vai para o banco (Room guarda enum como texto): renomear exige migração.
+ * NAO_PRECISOU é o "conferi, não precisou" das regas condicionais ("enfie o dedo;
+ * se estiver úmido, espere"): para a agenda vale como feita, mas o histórico
+ * guarda a diferença.
+ */
+enum class StatusAcao { FEITA, NAO_PRECISOU }
 
 /**
- * Uma linha do histórico: o usuário fez, ou pulou de propósito ("choveu, não
- * precisa regar"), uma pendência. O motor só lê; quem grava é a camada de dados.
+ * Uma linha do histórico: o usuário fez uma pendência, ou conferiu e ela não
+ * era necessária. O motor só lê; quem grava é a camada de dados.
  */
 data class RegistroAcao(
     val chave: String,

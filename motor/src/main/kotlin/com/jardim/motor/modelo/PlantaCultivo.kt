@@ -65,7 +65,7 @@ data class Tarefa(
     /** null só em PERENE: a tarefa continua para sempre. */
     val diaFimCiclo: Int?,
     val instrucoes: String,
-    /** Pular uma única vez já causa dano difícil de reverter; o app insiste mais. */
+    /** Falhar uma única vez já causa dano difícil de reverter; o app insiste mais. */
     val critica: Boolean,
 )
 

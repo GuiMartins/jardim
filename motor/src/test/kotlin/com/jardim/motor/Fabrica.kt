@@ -82,7 +82,7 @@ private fun cultivo(
     eventosSazonais = eventos,
 )
 
-fun feito(chave: String, em: LocalDate, status: StatusAcao = StatusAcao.CONCLUIDA) =
+fun feito(chave: String, em: LocalDate, status: StatusAcao = StatusAcao.FEITA) =
     RegistroAcao(chave, em, em.atTime(9, 0), status)
 
 /** Arquivo do catálogo que vai no APK (app/src/main/assets/catalogo). */

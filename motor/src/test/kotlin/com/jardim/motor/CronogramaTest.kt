@@ -4,6 +4,7 @@ import com.jardim.motor.agenda.Cronograma
 import com.jardim.motor.agenda.Origem
 import com.jardim.motor.agenda.RegistroAcao
 import com.jardim.motor.agenda.StatusAcao
+import com.jardim.motor.agenda.foraDeEpoca
 import com.jardim.motor.modelo.PlantaCultivo
 import com.jardim.motor.modelo.TipoTarefa
 import java.time.LocalDate
@@ -81,13 +82,40 @@ class CronogramaTest {
     }
 
     @Test
-    fun `pular também reinicia a contagem`() {
+    fun `conferi, não precisou - também reinicia a contagem`() {
         val c = cronograma(
             anual(tarefas = listOf(tarefa(frequencia = 2, inicio = 6))),
-            feito("tarefa:rega", dia(6), StatusAcao.PULADA),
+            feito("tarefa:rega", dia(6), StatusAcao.NAO_PRECISOU),
         )
         assertEquals(emptyList(), c.pendenciasEm(dia(7)))
         assertEquals(1, c.pendenciasEm(dia(8)).size)
+    }
+
+    // --- ressemeadura ---
+
+    @Test
+    fun `ressemear - histórico de antes do novo dia 1 não conta`() {
+        // Plantou em PLANTIO, marcou o alerta do dia 10 e a rega, não germinou e
+        // ressemeou no dia 11: esse passa a ser o novo dia 1.
+        val cultivo = anual(tarefas = listOf(tarefa(frequencia = 3, inicio = 1)), alertas = listOf(alerta(10)))
+        val novoPlantio = dia(11)
+        val c = Cronograma(
+            cultivo,
+            novoPlantio,
+            listOf(feito("alerta:0", dia(10)), feito("tarefa:rega", dia(10))),
+        )
+        assertEquals(listOf("tarefa:rega"), c.pendenciasEm(novoPlantio).map { it.chave })
+        assertEquals("alerta:0", c.pendenciasEm(novoPlantio.plusDays(9)).first { it.origem == Origem.ALERTA }.chave)
+    }
+
+    // --- época de plantio ---
+
+    @Test
+    fun `fora de época só pelo mês de meses_plantio`() {
+        val girassol = girassol() // setembro a fevereiro
+        assertFalse(foraDeEpoca(girassol, LocalDate.of(2026, 9, 24)))
+        assertFalse(foraDeEpoca(girassol, LocalDate.of(2027, 2, 28)))
+        assertTrue(foraDeEpoca(girassol, LocalDate.of(2027, 5, 10)))
     }
 
     @Test
