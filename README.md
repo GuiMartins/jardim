@@ -61,9 +61,9 @@ simula o ciclo inteiro para garantir isso.
 
 ## Telas
 
-| Hoje | Nova planta | Notificações |
-|:---:|:---:|:---:|
-| <img src="docs/telas/hoje.png" width="240"> | <img src="docs/telas/nova-planta.png" width="240"> | <img src="docs/telas/notificacoes.png" width="240"> |
+| Hoje | Planta | Nova planta | Notificações |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/telas/hoje.png" width="200"> | <img src="docs/telas/planta.png" width="200"> | <img src="docs/telas/nova-planta.png" width="200"> | <img src="docs/telas/notificacoes.png" width="200"> |
 
 - **Hoje**: um cartão por planta, com o dia do ciclo e a fase ("Dia 15 ·
   Plântula") e as pendências de hoje e as atrasadas, críticas primeiro. Toque
