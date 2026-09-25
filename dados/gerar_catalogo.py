@@ -13,6 +13,7 @@ Resposta bruta e custo de cada chamada ficam em dados/cache/geracao/.
 
     python dados/gerar_catalogo.py                 # tudo o que falta
     python dados/gerar_catalogo.py --limite 10
+    python dados/gerar_catalogo.py --ate 200         # até a posição 200 da lista
     python dados/gerar_catalogo.py --limite 50 --sem ARVORE,PALMEIRA --paralelo 4
 
 Depois rode ./gradlew :motor:test, que valida o catálogo inteiro com o port
@@ -169,6 +170,7 @@ def main():
     sys.stdout.reconfigure(encoding="utf-8")
     args = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     args.add_argument("--limite", type=int, help="quantas plantas gerar nesta rodada (padrão: todas as que faltam)")
+    args.add_argument("--ate", type=int, help="só plantas até esta posição da lista (ex.: 200)")
     args.add_argument("--sem", default="", help="categorias a pular, separadas por vírgula (ex.: ARVORE,PALMEIRA)")
     args.add_argument("--modelo", default=MODELO, help=f"modelo do claude (padrão: {MODELO})")
     args.add_argument("--esforco", default=ESFORCO, help=f"low, medium, high, xhigh ou max (padrão: {ESFORCO})")
@@ -178,7 +180,7 @@ def main():
     pular = {c.strip().upper() for c in opcoes.sem.split(",") if c.strip()}
     fila = json.loads(FILA.read_text(encoding="utf-8-sig"))["plantas"]
     pendentes = [p for p in sorted(fila, key=lambda p: p["posicao"])
-                 if p["categoria"] not in pular and not (CATALOGO / p["arquivo_catalogo"]).exists()]
+                 if p["categoria"] not in pular and (opcoes.ate is None or p["posicao"] <= opcoes.ate) and not (CATALOGO / p["arquivo_catalogo"]).exists()]
     lote = pendentes[:opcoes.limite]
     if not lote:
         print("Nada a gerar.")
