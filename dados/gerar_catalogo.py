@@ -33,6 +33,9 @@ GERACAO = PASTA / "cache" / "geracao"
 SKILL = Path.home() / ".claude/skills/planta-cultivo-json"
 TENTATIVAS = 2
 TEMPO_LIMITE = 15 * 60
+# Quase toda a saída é raciocínio, não o JSON: o esforço é o que mais pesa no custo.
+MODELO = "opus"
+ESFORCO = "medium"
 
 sys.path.insert(0, str(SKILL / "scripts"))
 import validar  # noqa: E402
@@ -66,7 +69,7 @@ def achar_claude():
     return str(versoes[-1])
 
 
-def chamar(claude, planta, pasta):
+def chamar(claude, planta, pasta, modelo=MODELO, esforco=ESFORCO):
     """Roda a skill uma vez; devolve (dados ou None, problemas, metadados)."""
     prompt = f"/planta-cultivo-json {planta['nome_comum']} ({planta['nome_cientifico']})"
     inicio = time.monotonic()
@@ -75,7 +78,7 @@ def chamar(claude, planta, pasta):
     # escrevia o JSON duas vezes, no arquivo e na resposta, e custava ~40% a
     # mais. Quem valida é este script, logo depois.
     proc = subprocess.run(
-        [claude, "-p", prompt, "--output-format", "json",
+        [claude, "-p", prompt, "--output-format", "json", "--model", modelo, "--effort", esforco,
          "--disallowedTools", "Bash", "PowerShell", "Write", "Edit", "NotebookEdit"],
         cwd=pasta, capture_output=True, timeout=TEMPO_LIMITE,
     )
@@ -109,13 +112,13 @@ def chamar(claude, planta, pasta):
     return dados, validar.validar(dados), meta
 
 
-def gerar(claude, planta):
+def gerar(claude, planta, modelo, esforco):
     pasta = GERACAO / Path(planta["arquivo_catalogo"]).stem
     pasta.mkdir(parents=True, exist_ok=True)
     tentativas = []
     for _ in range(TENTATIVAS):
         try:
-            dados, problemas, meta = chamar(claude, planta, pasta)
+            dados, problemas, meta = chamar(claude, planta, pasta, modelo, esforco)
         except subprocess.TimeoutExpired:
             dados, problemas, meta = None, [f"passou de {TEMPO_LIMITE // 60} min"], {}
         meta["problemas"] = problemas
@@ -133,6 +136,8 @@ def main():
     args = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     args.add_argument("--limite", type=int, required=True, help="quantas plantas gerar nesta rodada")
     args.add_argument("--sem", default="", help="categorias a pular, separadas por vírgula (ex.: ARVORE,PALMEIRA)")
+    args.add_argument("--modelo", default=MODELO, help=f"modelo do claude (padrão: {MODELO})")
+    args.add_argument("--esforco", default=ESFORCO, help=f"low, medium, high, xhigh ou max (padrão: {ESFORCO})")
     args.add_argument("--paralelo", type=int, default=3, help="sessões do claude ao mesmo tempo")
     opcoes = args.parse_args()
 
@@ -146,7 +151,8 @@ def main():
         return 0
 
     claude = achar_claude()
-    print(f"Gerando {len(lote)} planta(s) com {opcoes.paralelo} em paralelo ({claude})")
+    print(f"Gerando {len(lote)} planta(s) com {opcoes.modelo}, esforço {opcoes.esforco}, "
+          f"{opcoes.paralelo} em paralelo ({claude})")
     inicio = time.monotonic()
     falhas, custo, saida = [], 0.0, 0
 
@@ -165,12 +171,12 @@ def main():
 
     try:
         # A primeira planta vai sozinha: se faltar login, para aqui sem abrir as outras.
-        relatar(*gerar(claude, lote[0]))
+        relatar(*gerar(claude, lote[0], opcoes.modelo, opcoes.esforco))
     except SemLogin as erro:
         print(f"{erro}\nFaça login uma vez rodando no terminal:\n  \"{claude}\"\ne digite /login.")
         return 2
     with ThreadPoolExecutor(opcoes.paralelo) as pool:
-        for resultado in pool.map(lambda p: gerar(claude, p), lote[1:]):
+        for resultado in pool.map(lambda p: gerar(claude, p, opcoes.modelo, opcoes.esforco), lote[1:]):
             relatar(*resultado)
 
     minutos = (time.monotonic() - inicio) / 60
