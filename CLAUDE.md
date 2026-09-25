@@ -79,3 +79,5 @@ Versões iguais às do Trombadário e do fatura-app (AGP 8.5.2, Kotlin 1.9.24, K
 ## Commits
 
 Conventional commits em português com gitmoji, igual aos outros repos: `feat: ✨ ...`, `fix: 🐛 ...`, `chore: 🔧 ...`, `test: ✅ ...`, `docs: 📝 ...`.
+
+Push: autorizado sempre, do branch inteiro, incluindo commits de outras sessões que trabalham neste repositório (autorização do usuário em 2026-09-25). Commite só os seus arquivos; os das outras sessões elas mesmas commitam.
