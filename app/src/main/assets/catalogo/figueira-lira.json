@@ -1,0 +1,187 @@
+{
+  "planta": {
+    "nome_comum": "Figueira-lira",
+    "nome_cientifico": "Ficus lyrata",
+    "descricao": "Árvore da África Ocidental cultivada em vaso como planta de interior, com folhas enormes em forma de lira, que dão um ar escultural ao ambiente. É sensível a mudança de lugar, corrente de ar e excesso de água: a queda de folhas quase sempre avisa que algo mudou.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica, barro ou plástico grosso, com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com furos no fundo. Use o prato só para aparar a água e esvazie depois de cada rega",
+    "volume_minimo_litros": 20,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "50% substrato para plantas de interior, 20% casca de pinus fina, 20% perlita ou areia grossa, 10% húmus de minhoca; precisa drenar em segundos e não pode ficar compactado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta estranha a luz e a umidade da casa nova, e perder de 1 a 3 folhas de baixo é normal. Não troque de lugar nem de vaso nesta fase: cada mudança recomeça a adaptação. A fase termina quando para de cair folha e o broto da ponta volta a se abrir."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Surge uma folha nova a cada 3 a 6 semanas na primavera e no verão, cada uma do tamanho da anterior ou maior. Folhas novas menores e mais pálidas indicam pouca luz. Se ela cair para um lado, aproxime-a da janela."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce de setembro a março e fica quase parada de maio a agosto, quando bebe bem menos água. Por ano, ganha de 30 a 60 cm e algumas folhas novas. Troque o substrato a cada 2 anos. Uma poda leve na primavera faz brotar galhos laterais."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_conferir",
+      "titulo": "Conferir e regar a figueira-lira",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco nessa profundidade, regue devagar por toda a superfície até escorrer pelos furos e esvazie o prato depois de 30 minutos. Se ainda estiver úmido, não regue. No verão, o vaso de 20 L costuma pedir água a cada 5 a 7 dias; no inverno, a cada 10 a 14.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a figueira-lira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido NPK 3-1-2 (ou 20-20-20) na metade da dose do rótulo e regue com ele o substrato já úmido, nunca seco. De maio a agosto, use um quarto da dose. Evite adubar logo depois de trocar de vaso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_limpeza_folhas",
+      "titulo": "Inspecionar, limpar as folhas e girar o vaso",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure no verso e nas axilas algodõezinhos brancos, escamas marrons ou teias finas. Passe um pano úmido macio dos dois lados de cada folha para tirar a poeira, que bloqueia a luz. Depois gire o vaso um quarto de volta, sempre para o mesmo lado, para o tronco crescer reto.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso e remova cerca de um terço do substrato velho, junto com as raízes escuras e moles. Replante num vaso 5 cm maior de diâmetro, com substrato novo, e regue até escorrer. Se cair entre maio e agosto, espere setembro, quando ela volta a crescer e se recupera mais rápido.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar definitivo",
+      "mensagem": "A figueira-lira sofre a cada mudança de lugar. O ponto certo recebe muita luz, mas longe de ar-condicionado, aquecedor e porta que abre para a rua.",
+      "acao_requerida": "Colocar o vaso a até 1 m de uma janela clara (de preferência com sol da manhã), longe de correntes de ar, e não mover mais"
+    },
+    {
+      "dia_disparo": 10,
+      "titulo": "Queda de folhas na chegada é normal",
+      "mensagem": "Perder algumas folhas de baixo nas primeiras semanas é a planta se ajustando à luz da casa. Mais água não ajuda: o excesso piora a queda.",
+      "acao_requerida": "Recolher as folhas caídas, manter o lugar e continuar regando só quando o substrato estiver seco a 5 cm"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Avaliar a troca do vaso da loja",
+      "mensagem": "Plantas compradas costumam vir em vaso plástico apertado, com substrato que retém água demais.",
+      "acao_requerida": "Se saírem raízes pelos furos ou a água escorrer direto sem molhar o torrão, passar para um vaso de pelo menos 20 L com o substrato recomendado. Se for maio a agosto, esperar setembro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras que começam no meio ou na borda das folhas de baixo, folhas caindo ainda verdes, substrato com cheiro azedo e raízes pretas e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e nunca deixar água no prato. Se já tiver acontecido, tirar do vaso, cortar as raízes podres com tesoura limpa e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha (farinhenta e de carapaça)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto de algodão ou escamas marrons grudadas nas nervuras e no caule; folhas pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70% e lavar as folhas com água e sabão neutro. Se persistir, óleo de neem a 0,5% a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelados na folha, teias finas no verso e folhas foscas; aparece em ar seco, perto do ar-condicionado",
+      "prevencao_tratamento": "Limpar as folhas com pano úmido dos dois lados e afastar de fontes de ar seco. Se infestar, óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons irregulares com halo amarelo, muitas vezes em folhas que ficaram molhadas por muito tempo",
+      "prevencao_tratamento": "Regar o substrato, e não as folhas, e manter o ar circulando. Cortar as folhas muito atingidas com tesoura desinfetada"
+    },
+    {
+      "nome": "Queda de folhas por estresse",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas saudáveis amarelam ou caem de repente, depois de mudar de lugar, pegar corrente de ar fria ou ficar abaixo de 12 °C",
+      "prevencao_tratamento": "Não mover a planta, afastar de portas e do ar-condicionado e manter entre 16 e 30 °C. Ela se recupera sozinha se a causa sair"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas bege ou marrom-claras e secas no meio das folhas voltadas para a janela, depois de sol forte da tarde",
+      "prevencao_tratamento": "Evitar sol direto depois das 11h, ou filtrá-lo com cortina fina. Folha queimada não recupera, mas pode ficar na planta"
+    },
+    {
+      "nome": "Edema",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontinhos avermelhados ou marrons nas folhas novas, visíveis contra a luz",
+      "prevencao_tratamento": "Vem de rega irregular, com o substrato alternando entre muito seco e encharcado. Regularizar a rega; as folhas seguintes nascem limpas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "A figueira-lira vai desacelerar",
+      "mensagem": "Com o frio e os dias curtos, ela quase para de crescer e bebe bem menos água. É a época em que o excesso de rega mais apodrece raízes.",
+      "acao_requerida": "Espaçar as regas (em geral a cada 10 a 14 dias, sempre conferindo com o dedo), reduzir o adubo para um quarto da dose e afastar o vaso de vidros frios à noite"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento: hora de podar e renovar",
+      "mensagem": "A primavera é a melhor época para podar, trocar de vaso e voltar ao ritmo normal de rega e adubo.",
+      "acao_requerida": "Se quiser galhos laterais ou limitar a altura, cortar o topo logo acima de uma folha (a seiva branca irrita a pele: use luva). Voltar à dose normal de adubo e conferir a rega a cada 5 dias"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor de verão",
+      "mensagem": "No calor, o vaso seca mais rápido e o sol da tarde pela janela pode queimar as folhas.",
+      "acao_requerida": "Conferir o substrato com mais frequência e filtrar com cortina o sol direto depois das 11h"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "planta": {
+    "nome_comum": "Gravioleira",
+    "nome_cientifico": "Annona muricata",
+    "descricao": "Árvore frutífera tropical que dá a graviola, fruto grande de casca verde espinhosa e polpa branca, doce e ácida, ótima para sucos. Em vaso grande fica com 2 a 3 m. Muda enxertada começa a produzir em 2 a 3 anos, e a polinização manual aumenta muito o número de frutos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cimento ou fibra, com pelo menos 50 cm de diâmetro e 50 cm de profundidade e vários furos no fundo; comece com 40 L e passe para 80 a 100 L na primeira troca",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de arroz carbonizada ou perlita; mais 200 g de farinha de ossos e 100 g de calcário dolomítico por vaso de 60 L, misturados antes de plantar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho para o vaso definitivo e pode perder algumas folhas ou murchar nas horas quentes. Deixe-a em meia sombra nos primeiros 7 dias e depois passe para o sol pleno. A adaptação terminou quando surgem folhas novas brilhantes na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta cresce em fluxos de brotação, principalmente de setembro a março. É a fase de formar a copa: um tronco único até 60 a 70 cm e três ou quatro ramos principais acima disso."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 900,
+      "descricao": "A copa engrossa e a planta passa de 1,5 m. As primeiras flores podem surgir no fim do segundo ano, mas é comum que caiam sem formar fruto. Deixe firmar no máximo 1 ou 2 frutos nessa fase para não esgotar a planta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 901,
+      "dia_fim": null,
+      "descricao": "Árvore produtiva de 2 a 3 m em vaso. No ano típico, brota e floresce da primavera ao início do verão, com as flores saindo direto nos ramos grossos e no tronco. Os frutos amadurecem de 5 a 6 meses depois da polinização, entre o fim do verão e o outono. No inverno o crescimento para, e abaixo de 10 °C a planta perde folhas. Em vaso, espere de 3 a 8 frutos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a gravioleira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. As raízes ainda estão só no torrão da muda, que seca antes do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a gravioleira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos, cerca de 6 a 10 L num vaso de 60 L. No verão e com frutos se formando, confira a cada 2 dias, porque falta de água derruba flores e frutos pequenos. No inverno, espace para 6 a 7 dias e nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a gravioleira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 L de húmus de minhoca ou esterco curtido mais 1 colher de sopa de farinha de ossos por vaso de 60 L, a 10 cm do tronco, misture de leve na superfície e regue. Depois do dia 900, alterne com 1 colher de sopa de NPK 4-14-8 da floração em diante. De maio a julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as axilas dos ramos procurando cochonilhas brancas ou marrons e formigas subindo pelo tronco. Nos frutos, procure furos com serragem escura, sinal de broca, e manchas pretas afundadas, sinal de antracnose.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno ou no início da primavera, tire a planta do vaso, corte 3 a 5 cm das raízes enoveladas nas laterais e no fundo e replante com substrato novo, num vaso maior (80 a 100 L) enquanto couber. Se não der para tirar, raspe e troque os 10 cm de cima do substrato.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de ir para o sol pleno",
+      "mensagem": "Passada a primeira semana na meia sombra, a gravioleira precisa de sol direto para crescer firme e florescer.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo, com pelo menos 5 horas de sol direto, e protegido de vento forte"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Tirar brotos do porta-enxerto",
+      "mensagem": "Brotos que nascem abaixo do enxerto (a marca ou calombo no caule, perto do substrato) roubam força da copa e não dão fruto de graviola.",
+      "acao_requerida": "Cortar rente ao tronco todo broto que sair abaixo do enxerto e repetir sempre que aparecer"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Poda de formação da copa",
+      "mensagem": "Com o tronco passando de 70 cm, é hora de definir a estrutura. Uma copa baixa e aberta cabe no vaso e facilita polinizar e colher.",
+      "acao_requerida": "Cortar a ponta do tronco a 60–70 cm de altura e, nas brotações seguintes, deixar 3 ou 4 ramos bem distribuídos, tirando os outros"
+    },
+    {
+      "dia_disparo": 900,
+      "titulo": "Primeiras safras chegando",
+      "mensagem": "A gravioleira já tem idade para produzir. As flores ficam receptivas antes de soltar pólen, por isso a polinização natural é fraca e a manual faz muita diferença.",
+      "acao_requerida": "Na próxima floração, polinizar as flores à mão (veja o aviso de floração) e deixar firmar no máximo 3 a 4 frutos no primeiro ano"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem, a planta murcha mesmo com o substrato úmido, e as raízes ficam escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter os furos desentupidos. Com a planta atacada, suspender a rega, tirar do vaso, cortar as raízes podres e replantar em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Broca-do-fruto (Cerconota anonella)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos nos frutos com serragem escura, manchas pretas na casca e frutos que apodrecem ou caem ainda verdes",
+      "prevencao_tratamento": "Ensacar os frutos com saco de papel ou TNT quando tiverem 3 a 5 cm, recolher e descartar os frutos caídos ou furados longe do vaso"
+    },
+    {
+      "nome": "Broca-da-semente (Bephratelloides pomorum)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com vários furinhos redondos na casca, deixados pela vespinha adulta ao sair; polpa endurecida e escura em volta das sementes",
+      "prevencao_tratamento": "Ensacar os frutos pequenos e destruir os frutos atacados antes que as vespinhas saiam"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou escamas marrons nas axilas das folhas, ramos novos e pedúnculos dos frutos; fumagina preta e formigas por perto",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhados em álcool 70%, e depois óleo de neem a 0,5% com 1 gota de detergente a cada 7 dias, no fim da tarde, até sumirem. Barrar as formigas no tronco"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas em folhas, flores e frutos, que caem ou mumificam, piores em tempo quente e chuvoso",
+      "prevencao_tratamento": "Podar para arejar a copa, não molhar as folhas ao regar e retirar partes atacadas. Em ataque forte, pulverizar calda bordalesa a 1% na floração e no início dos frutos"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Abaixo de 10 °C as folhas escurecem, secam e caem, e ramos novos morrem da ponta para trás; geada mata a planta",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede voltada para o norte ou para dentro nas noites frias, e cobrir com TNT se houver risco de geada"
+    },
+    {
+      "nome": "Frutos tortos ou que caem pequenos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos deformados, com um lado murcho, ou frutinhos que amarelam e caem pouco depois da floração",
+      "prevencao_tratamento": "É polinização incompleta ou falta de água. Polinizar à mão, espalhando bem o pólen, e manter a rega regular desde a floração até o fruto engrossar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Proteger a gravioleira do frio",
+      "mensagem": "A graviola é tropical: abaixo de 10 °C perde folhas e com geada pode morrer. No frio ela quase não cresce e gasta pouca água.",
+      "acao_requerida": "Deixar o vaso no canto mais quente e ensolarado, protegê-lo nas noites abaixo de 10 °C, espaçar a rega para cada 6 a 7 dias e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza de fim de inverno",
+      "mensagem": "Antes da brotação da primavera é a hora de arejar a copa e mantê-la no tamanho do vaso.",
+      "acao_requerida": "Cortar ramos secos, doentes, cruzados e voltados para dentro, encurtar os que passaram de 2,5 m e retomar a adubação"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11,
+        12,
+        1
+      ],
+      "titulo": "Floração: polinizar à mão",
+      "mensagem": "As flores de graviola ficam receptivas antes de soltar pólen, e poucos insetos as polinizam. Sem ajuda, a maioria cai sem virar fruto.",
+      "acao_requerida": "No fim da tarde, colher com pincel macio o pólen de flores bem abertas (pétalas grossas separadas e pólen soltando) e passá-lo no centro das flores que começam a abrir, de manhã cedo. Repetir a cada 2 ou 3 dias enquanto houver flores"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Ensacar os frutos novos",
+      "mensagem": "As brocas põem ovos nos frutos ainda pequenos, e o estrago só aparece depois.",
+      "acao_requerida": "Envolver cada fruto de 3 a 5 cm num saco de papel ou TNT, amarrado de leve no pedúnculo, e tirar frutos a mais para deixar só 1 por ramo"
+    },
+    {
+      "meses": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "titulo": "Conferir o ponto dos frutos",
+      "mensagem": "A graviola não amadurece bem se colhida muito cedo e racha ou cai se passar do ponto no pé.",
+      "acao_requerida": "Colher quando a casca passa de verde-escura para verde-clara e fosca e os espinhos ficam mais espaçados e moles. Deixar amadurecer 3 a 5 dias fora da geladeira, até ceder ao apertar de leve"
+    }
+  ]
+}

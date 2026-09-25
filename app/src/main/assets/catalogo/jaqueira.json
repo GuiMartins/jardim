@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Jaqueira",
+    "nome_cientifico": "Artocarpus heterophyllus",
+    "descricao": "Árvore tropical de folhas grandes, brilhantes e sempre verdes, que dá o maior fruto comestível de árvore do mundo. No chão chega a 15 m; em vaso grande fica com 2 a 3 m de altura se for podada todo ano. Produz melhor quando vem de muda enxertada ou de variedade anã. Muda de semente em vaso pode levar 5 anos ou mais para dar frutos, e eles saem menores.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso plástico grosso, de fibra ou meia bombona com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com 4 ou mais furos largos no fundo e apoiado em pés ou num carrinho com rodízios para dar pra mover no inverno. A partir do terceiro ano, 100 a 150 L",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 20% areia grossa lavada e 5% de casca de pinus fina. Misture 200 g de farinha de ossos e 100 g de calcário dolomítico para cada 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho do viveiro e se acostuma ao vaso e ao sol. É normal perder uma ou duas folhas de baixo na primeira semana. Ela está pegando quando aparece um broto novo avermelhado ou verde-claro na ponta, o que costuma acontecer entre a 3ª e a 4ª semana."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes tomam o vaso e o caule engrossa. Na estação quente saem de 2 a 4 lançamentos de folhas novas. No inverno o crescimento quase para, e isso é normal. Se as folhas novas saem pequenas e amareladas, está faltando adubo ou sol."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A árvore forma a copa. Com a poda anual ela fica entre 1,5 e 2,5 m, com 3 a 4 galhos principais. Muda enxertada pode soltar as primeiras flores (espigas verdes e curtas no tronco e nos galhos grossos) no 3º ano. Os primeiros frutos costumam cair ainda pequenos, e isso é normal numa planta nova."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: cresce e floresce de setembro a dezembro, os frutos engordam no verão e amadurecem de janeiro a maio, e de junho a agosto a árvore fica quase parada. Em vaso, deixe no máximo 2 ou 3 frutos por ano e tire os outros ainda pequenos. A jaca está madura quando os espinhos da casca ficam mais espaçados e cedem ao apertar, o som ao bater fica oco e ela solta um cheiro forte e doce. Ao cortar o pedúnculo sai látex pegajoso: use luvas e óleo de cozinha na faca."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de jaqueira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até a água escorrer pelos furos e jogue fora a água que ficar no prato. Com a raiz ainda presa no torrão do viveiro, deixar secar uma vez já faz a muda murchar e perder as folhas.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a jaqueira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos: uns 6 a 8 L num vaso de 60 L. Acima de 32 °C ou com vento seco, confira a cada 2 dias. De junho a agosto, espace para a cada 5 ou 6 dias. Nunca deixe água parada no prato, porque a raiz apodrece com facilidade.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a jaqueira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 L de húmus de minhoca ou 300 g de bokashi mais 2 colheres de sopa de NPK 10-10-10 na borda do vaso, longe do tronco, e regue logo depois. Quando a planta já floresce, troque o NPK por 04-14-08 de agosto a dezembro. Não adube de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure escamas brancas ou marrons coladas nas nervuras e no caule, formigas subindo e descendo (sinal de cochonilha) e manchas marrons com borda escura. Olhe também a base do tronco: casca escura e mole é sinal de podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro. Tire a planta do vaso, corte com tesoura limpa as raízes que dão voltas no fundo e passe para um vaso 30% maior, até uns 150 L. Se já estiver no vaso final, tire 5 cm de raízes da lateral e do fundo e complete com substrato novo. Regue bem e deixe à meia-sombra por 7 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da jaqueira",
+      "mensagem": "Plante a muda na mesma altura em que ela estava no saquinho: enterrar o colo do caule faz o tronco apodrecer.",
+      "acao_requerida": "Rasgar o saquinho sem desmanchar o torrão, plantar com o colo rente à superfície, regar até escorrer e deixar 7 dias em meia-sombra"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A muda passou a primeira semana à meia-sombra. Se for direto para o sol forte, as folhas criadas no viveiro queimam.",
+      "acao_requerida": "Deixar 3 dias com sol só de manhã e depois mudar o vaso de vez para o lugar de sol pleno"
+    },
+    {
+      "dia_disparo": 240,
+      "titulo": "Poda de formação",
+      "mensagem": "Cortar a ponta da haste principal faz a jaqueira abrir galhos baixos e ficar num tamanho que o vaso aguenta.",
+      "acao_requerida": "Se a muda já passou de 80 cm, cortar a ponta a 60–70 cm do substrato com tesoura limpa, logo acima de uma folha. Nos brotos que saírem, deixar os 3 ou 4 mais bem distribuídos"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Idade de frutificar",
+      "mensagem": "A partir de agora a jaqueira pode florescer. As espigas masculinas são finas e caem logo. As femininas são mais grossas, com uma base que engorda, e viram fruto.",
+      "acao_requerida": "Quando os frutos pegarem, deixar só os 2 ou 3 melhores e tirar os outros com menos de 5 cm, para a árvore do vaso não se esgotar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, a planta murcha no calor, a casca da base do tronco fica escura e mole, e às vezes sai goma",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e não enterrar o colo. Se aparecer, tire o substrato encharcado, corte as raízes pretas, replante em substrato novo e aplique fungicida à base de fosfito de potássio"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons a pretas, afundadas, nas folhas e nas flores. Frutos novos escurecem e caem",
+      "prevencao_tratamento": "Molhar só o substrato, nunca as folhas, e manter a copa arejada com a poda. Tire as folhas e frutos doentes. Se o ataque for forte, pulverize calda bordalesa a 1% a cada 15 dias no tempo úmido"
+    },
+    {
+      "nome": "Podridão-mole do fruto (Rhizopus artocarpi)",
+      "tipo": "DOENCA",
+      "sintomas": "Espigas e frutos novos ficam moles, marrons e cobertos de um mofo cinza-escuro",
+      "prevencao_tratamento": "Tire e jogue no lixo (não na composteira) toda espiga ou fruto atacado assim que aparecer. Não deixe fruto caído apodrecendo no vaso"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou flocos brancos colados no caule e nas nervuras. Folhas pegajosas com mofo preto (fumagina) e formigas circulando",
+      "prevencao_tratamento": "Tire com escova macia ou algodão com álcool 70%. Em infestação grande, pulverize óleo mineral a 1% ou óleo de neem a 0,5% com detergente neutro no fim da tarde, repetindo depois de 10 dias"
+    },
+    {
+      "nome": "Queimadura de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com áreas marrons e secas, escurecidas de uma hora para outra depois de uma noite gelada. Ponteiros secam",
+      "prevencao_tratamento": "Abaixo de 5 °C, abrigue o vaso junto a uma parede ou sob a cobertura. Em noite de geada, cubra com TNT. Não pode os galhos queimados antes de setembro: eles protegem a brotação de baixo"
+    },
+    {
+      "nome": "Raiz enovelada / falta de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas amarelam por igual e caem, as folhas novas saem pequenas e a planta para de crescer na estação quente. Saem raízes pelos furos do vaso",
+      "prevencao_tratamento": "Mantenha a adubação a cada 60 dias na estação quente e troque de vaso ou renove o substrato a cada 2 anos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger a jaqueira do frio",
+      "mensagem": "A jaqueira é tropical: abaixo de 5 °C as folhas queimam, e geada pode matar uma planta nova. No frio ela quase não bebe água nem usa adubo.",
+      "acao_requerida": "Nas noites de previsão abaixo de 5 °C, levar o vaso para junto de uma parede voltada ao norte ou para baixo da cobertura, ou cobrir com TNT. Espaçar a rega e não adubar até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda anual e retomada",
+      "mensagem": "Com o fim do frio, a jaqueira vai brotar. É a hora certa de controlar o tamanho, antes das folhas novas.",
+      "acao_requerida": "Tirar os galhos secos, queimados pelo frio, cruzados e voltados para dentro da copa. Encurtar em até 1/3 os que passaram da altura desejada, de luvas por causa do látex. Depois, voltar a regar e adubar no ritmo normal"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: a jaqueira bebe mais",
+      "mensagem": "Com calor e dias longos, um vaso de 60 L pode secar em 2 dias. Na fase dos frutos, secar o vaso faz eles caírem.",
+      "acao_requerida": "Cobrir o substrato com 3 a 5 cm de palha ou casca de pinus e conferir a umidade a cada 2 dias"
+    }
+  ]
+}

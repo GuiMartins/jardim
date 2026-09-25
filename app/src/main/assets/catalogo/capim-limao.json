@@ -1,0 +1,185 @@
+{
+  "planta": {
+    "nome_comum": "Capim-limão",
+    "nome_cientifico": "Cymbopogon citratus",
+    "descricao": "Gramínea aromática perene que forma touceiras de folhas longas com cheiro forte de limão, usadas em chás e na culinária. Muito rústica e fácil de cultivar em vaso grande, desde que tenha sol pleno e não pegue geada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo; a touceira se alarga rápido",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; fértil e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação e Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda (um perfilho com raízes, com as folhas cortadas a uns 15 cm) enterrando a base 3 a 5 cm. As folhas antigas podem amarelar nas pontas. O enraizamento está feito quando surgem folhas novas no centro da touceira, em 2 a 3 semanas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento e Perfilhamento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "A touceira engrossa com novos perfilhos saindo da base e as folhas passam de 50 cm. Evite colher nesta fase para a planta formar reserva. Termina quando a touceira tem uns 10 perfilhos e folhas com 60 cm ou mais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Cresce forte da primavera ao outono, quando rende colheitas mensais de folhas e talos. No inverno o crescimento quase para e as pontas das folhas secam com o frio. No fim do inverno recebe uma poda de renovação, e a cada 2 anos a touceira é dividida para não sufocar no vaso. Floresce raramente em cultivo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de capim-limão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Sem raiz formada, a muda desidrata em poucos dias de substrato seco. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o capim-limão",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão confira a cada 2 dias; de junho a agosto, espace para a cada 5 a 7 dias, porque a planta quase para e a raiz apodrece em substrato frio e encharcado.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o capim-limão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca ou 1 colher de sopa de torta de mamona pela superfície de um vaso de 20 L, sem encostar na base dos perfilhos, e regue em seguida. Gramíneas pedem nitrogênio para renovar as folhas. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a touceira",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas e olhe a base dos perfilhos e o verso das folhas: procure pústulas cor de ferrugem, manchas marrons alongadas, cochonilhas brancas na base ou teias finas de ácaro. Retire folhas secas acumuladas no centro, que guardam umidade e pragas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de capim-limão",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 121,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura as folhas mais externas a uns 10 cm da base, ou arranque alguns perfilhos inteiros pela base para usar o talo. Tire no máximo um terço da touceira por vez. No inverno colha só o necessário.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro: tire a touceira do vaso, separe com faca ou pá em pedaços de 5 a 10 perfilhos com raiz, corte as folhas a 15 cm e replante um pedaço no mesmo vaso com substrato novo. Os outros pedaços viram mudas novas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "A muda pegou?",
+      "mensagem": "Com 3 semanas, o capim-limão enraizado já mostra folhas novas verdes saindo do centro.",
+      "acao_requerida": "Conferir se há folhas novas no centro; se a muda estiver toda seca e solta no substrato, replantar outro perfilho com raiz"
+    },
+    {
+      "dia_disparo": 121,
+      "titulo": "Liberado para colher",
+      "mensagem": "A touceira está formada e já aguenta colheitas regulares sem enfraquecer.",
+      "acao_requerida": "Fazer a primeira colheita cortando as folhas externas a 10 cm da base"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e da base (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Perfilhos amarelados que se soltam com facilidade, base mole e escura com cheiro ruim; substrato sempre úmido",
+      "prevencao_tratamento": "Vaso com furos e sem água parada no pratinho; regar só com o substrato seco a 3 cm, principalmente no inverno. Retire os perfilhos podres e replante as partes sadias em substrato novo"
+    },
+    {
+      "nome": "Ferrugem (Puccinia nakanishikii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas a marrons no verso das folhas, que soltam pó cor de ferrugem; folhas secam a partir da ponta",
+      "prevencao_tratamento": "Regar o substrato, não as folhas, e deixar a touceira arejada retirando folhas secas. Corte e descarte no lixo as folhas atacadas; em casos fortes, pode a touceira a 15 cm e deixe rebrotar"
+    },
+    {
+      "nome": "Mancha foliar (Curvularia, Helminthosporium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons alongadas com borda escura nas folhas, que se juntam e secam a folha",
+      "prevencao_tratamento": "Evitar molhar as folhas e o adensamento excessivo; remover as folhas manchadas e dividir a touceira quando estiver muito fechada"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodoados na base dos perfilhos e entre as bainhas das folhas; planta perde vigor",
+      "prevencao_tratamento": "Remover com cotonete ou escova embebidos em álcool a 70%; se persistir, óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teias finas no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Jato de água no verso das folhas a cada 3 dias em períodos secos; se persistir, óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Pontas secas por frio ou falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e secas, sem pústulas nem manchas",
+      "prevencao_tratamento": "No inverno é normal: basta aparar as pontas. Fora do inverno, indica rega irregular ou vaso pequeno: regular a rega e dividir a touceira se o vaso estiver tomado de raiz"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o capim-limão do frio",
+      "mensagem": "O capim-limão é tropical: para de crescer abaixo de 15 °C e a geada queima a touceira inteira.",
+      "acao_requerida": "Reduzir a rega para quando o substrato secar a 5 cm, suspender a adubação e, em noites com previsão abaixo de 5 °C, levar o vaso para perto da parede ou cobrir com tecido"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno a touceira está cheia de folhas secas e queimadas pelo frio. Uma poda agora faz a planta rebrotar forte na primavera.",
+      "acao_requerida": "Cortar todas as folhas a 15 a 20 cm da base, retirar as folhas secas do centro e retomar a adubação em setembro"
+    }
+  ]
+}

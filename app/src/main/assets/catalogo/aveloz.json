@@ -1,0 +1,163 @@
+{
+  "planta": {
+    "nome_comum": "Aveloz",
+    "nome_cientifico": "Euphorbia tirucalli",
+    "descricao": "Suculenta arbustiva de galhos finos, cilíndricos e sem folhas aparentes, também chamada de pau-pelado ou graveto-do-cão. Aguenta sol forte e esquecimento de rega, e pega fácil de estaca. O látex branco é tóxico e irritante para pele e olhos: manuseie com luvas e mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro (terracota) com pelo menos 25 cm de diâmetro e 25 cm de profundidade, com furos no fundo; o barro ajuda o substrato a secar entre as regas",
+    "volume_minimo_litros": 10,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 40% areia grossa lavada, 20% perlita ou casca de pinus miúda; ou substrato pronto para cactos e suculentas com 1 parte de areia grossa a mais",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Estaca",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A estaca, de 15 a 20 cm e com o corte já cicatrizado por 3 a 7 dias à sombra, fica enterrada 4 a 5 cm no substrato seco-úmido. Mantenha em luz clara com sol só da manhã. Por fora quase nada muda; as raízes se formam entre a 3ª e a 4ª semana. Estaca que amolece ou escurece na base está apodrecendo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Com raiz, a estaca resiste a um puxão leve e começa a soltar brotos verdes nas pontas. Leve para o sol pleno aos poucos (uma semana com meio dia de sol, depois o dia todo). A fase termina quando os brotos novos já ramificam e engrossam."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto ramificado que cresce da primavera ao outono e quase para no inverno. Pontas avermelhadas no sol forte ou no frio são normais. Ano típico: adubação e poda na primavera e no verão, rega bem espaçada no inverno e troca de vaso a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, molhe devagar com meio copo de água ao redor da estaca, sem encharcar. Se ainda estiver úmido, não regue: excesso de água apodrece a base antes de a raiz se formar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o aveloz",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; só regue se estiver totalmente seco, até a água escorrer pelos furos, e esvazie o pratinho. De maio a agosto, regue só a cada 3 a 4 semanas. Galhos murchos e enrugados pedem água; galhos moles e escuros na base indicam excesso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar galhos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure tufos brancos de algodão nas forquilhas dos galhos e na base do caule (cochonilha) e aperte levemente a base: ela deve estar firme, sem partes moles ou escuras.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o vaso e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De luvas e óculos, retire a planta com o substrato seco, sacuda a terra velha e corte raízes podres. Replante num vaso 5 cm maior com substrato novo e espere 5 dias para regar. Se cair fora de setembro a março, espere a primavera.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado com o látex",
+      "mensagem": "Qualquer corte ou galho quebrado do aveloz solta um látex branco que queima a pele e pode causar lesão grave nos olhos.",
+      "acao_requerida": "Usar luvas ao mexer na planta, nunca levar a mão aos olhos e deixar o vaso fora do alcance de crianças e animais"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A estaca enraizou?",
+      "mensagem": "Depois de um mês, a estaca costuma ter raízes e já pode ir para o sol pleno.",
+      "acao_requerida": "Puxar a estaca de leve: se resistir, passar a regar só com o substrato seco e levar ao sol aos poucos; se sair solta, conferir a base e replantar se estiver firme"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da raiz e do colo (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole, escura ou com cheiro ruim; galhos amarelando e tombando mesmo com o substrato úmido",
+      "prevencao_tratamento": "Regar só com o substrato seco e nunca deixar água no pratinho. Se aparecer, corte os galhos sadios acima da parte mole, deixe cicatrizar por uma semana e replante como estaca em substrato novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas forquilhas e na base; galhos enfraquecidos e pegajosos",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo de neem a 0,5% com detergente neutro no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Galhos novos finos, compridos, verde-claros e tombando para o lado da luz",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 horas de sol direto, adaptando aos poucos; podar os galhos estiolados na primavera"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas dos galhos pretas e moles depois de noites abaixo de 5 °C ou de geada",
+      "prevencao_tratamento": "Abrigar o vaso junto a uma parede ou sob cobertura nas noites frias e manter o substrato seco no inverno; cortar as pontas danificadas na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        11,
+        1
+      ],
+      "titulo": "Adubar o aveloz",
+      "mensagem": "Na estação de crescimento, uma adubação leve a cada dois meses mantém os brotos firmes. Mais que isso deixa a planta mole e sujeita a podridão.",
+      "acao_requerida": "Regar com adubo para cactos e suculentas diluído na metade da dose do rótulo, com o substrato úmido; pular se a estaca foi plantada há menos de 2 meses"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Na primavera o aveloz rebrota rápido; é a época de controlar o tamanho e tirar galhos estiolados ou danificados pelo frio.",
+      "acao_requerida": "De luvas e óculos, cortar os galhos logo acima de uma forquilha e borrifar água no corte para estancar o látex; os pedaços viram estacas novas"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "No frio o aveloz quase para de crescer, e substrato úmido com temperatura baixa é a combinação que mais apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para cada 3 a 4 semanas e abrigar o vaso nas noites abaixo de 5 °C"
+    }
+  ]
+}

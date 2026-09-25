@@ -1,0 +1,185 @@
+{
+  "planta": {
+    "nome_comum": "Agave-dragão",
+    "nome_cientifico": "Agave attenuata",
+    "descricao": "Suculenta mexicana de folhas largas, macias e verde-azuladas, sem espinhos, que formam uma roseta grande sobre um tronco curto. É das agaves mais seguras para varanda e para casa com criança ou pet, e pede pouca rega. Floresce uma vez só, depois de 8 a 15 anos, com uma haste arqueada de até 3 m (o 'rabo-de-dragão'). Depois disso a roseta morre e os filhotes da base continuam a planta.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica, pesado e largo (a roseta tomba vasos leves), com pelo menos 30 cm de diâmetro e 25 cm de profundidade e vários furos no fundo. Sem prato com água parada",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa de construção lavada, 30% perlita ou casca de pinus fina; ou substrato pronto para cactos e suculentas com 20% de areia grossa a mais",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda na mesma altura em que estava, sem enterrar a base da roseta, e firme o substrato ainda seco. Não regue nos primeiros 7 dias, porque raiz ferida no transplante apodrece em substrato molhado. Deixe a planta em luz clara e sol fraco da manhã. Um leve amarelado nas folhas de baixo é normal. A fase termina quando as folhas do centro voltam a crescer e ficam firmes."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a roseta abre uma folha nova a cada poucas semanas. Puxando a planta de leve pela base, ela não se mexe no vaso. Pode ir para o sol pleno da manhã e o da tarde filtrado. As folhas cinza-azuladas e firmes mostram que está tudo certo. Folhas moles, dobrando e amarelas desde a base indicam excesso de água."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão. No outono e no inverno quase para e bebe bem pouco. As folhas mais velhas secam por baixo e vão formando um tronco curto. Corte essas folhas rente ao tronco quando estiverem totalmente secas. Com os anos surgem filhotes na base, que podem ser separados com raiz e plantados em outro vaso. Depois de 8 a 15 anos a roseta solta uma haste floral enorme e arqueada. Ela morre depois de florescer, e os filhotes assumem o lugar dela."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a agave recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar na terra, sem molhar o centro da roseta, até a água sair pelos furos. Se ainda estiver úmido, espere mais 3 dias.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a agave-dragão",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Regue só se estiver totalmente seco, até escorrer pelos furos, e esvazie o prato em seguida. Não deixe água parada no centro da roseta. De maio a agosto, pule uma rega sim e outra não (cerca de 20 dias entre regas). Se a planta ficou exposta à chuva, pule a rega.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a roseta",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas e olhe as axilas (onde a folha encosta no tronco) e o verso das folhas. Procure tufos brancos como algodão, escamas marrons grudadas e manchas moles ou escuras na base.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro. Com o substrato seco, tire a planta, remova as raízes mortas e a terra velha e replante num vaso 5 a 10 cm mais largo, com substrato novo. Aproveite para separar os filhotes que já tenham raiz. Espere 7 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Hora de dar mais sol",
+      "mensagem": "Mudas de viveiro costumam vir da sombra. Se forem direto para o sol pleno, as folhas queimam e ficam com manchas brancas ou marrons.",
+      "acao_requerida": "Deixar a agave 2 horas por dia no sol da manhã e aumentar 1 hora a cada 3 ou 4 dias, até chegar a 5 horas"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "A agave já enraizou?",
+      "mensagem": "Com 2 meses, as raízes novas já devem segurar a planta no vaso.",
+      "acao_requerida": "Puxar a roseta de leve pela base. Se estiver firme, está enraizada. Se estiver solta e com a base mole, desenvasar e ver se há podridão"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas de baixo moles, translúcidas e amarelas. A base da roseta fica escura, mole e com cheiro ruim, e a planta tomba ou se solta do vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco, usar mistura bem arenosa e nunca deixar água no prato. Se aparecer, desenvase, corte todo o tecido mole até achar polpa firme, deixe a planta secar 5 a 7 dias à sombra e replante em substrato seco e novo"
+    },
+    {
+      "nome": "Cochonilha-algodão (Pseudococcidae)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos e cerosos nas axilas das folhas e nas raízes. A planta fica pegajosa e para de crescer",
+      "prevencao_tratamento": "Retire os insetos com cotonete embebido em álcool 70%. Se a infestação for grande, borrife óleo de neem a 0,5% com algumas gotas de detergente no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça (Diaspididae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou cinzentas grudadas nas folhas, com pontos amarelados ao redor",
+      "prevencao_tratamento": "Raspe as escamas com escova macia e água com sabão neutro. Depois aplique óleo mineral ou de neem a 0,5% a cada 10 dias até sumirem"
+    },
+    {
+      "nome": "Mancha-anelar das folhas (Coniothyrium concentricum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-acinzentadas com anéis concêntricos e pontinhos pretos nas folhas mais velhas",
+      "prevencao_tratamento": "Não molhe as folhas na rega e mantenha a planta em lugar ventilado. Corte as folhas muito manchadas rente ao tronco e jogue no lixo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas, amareladas ou marrons e secas na face das folhas voltada para o sol, principalmente depois de uma mudança brusca de lugar",
+      "prevencao_tratamento": "Aclimatar ao sol aos poucos e, em regiões muito quentes, proteger do sol das 12h às 15h no verão. As manchas não somem, mas as folhas novas nascem sadias"
+    },
+    {
+      "nome": "Dano por frio e geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com áreas encharcadas e escuras que depois secam e ficam marrons, depois de noites abaixo de 5 °C",
+      "prevencao_tratamento": "Em noites com previsão abaixo de 5 °C, recolher o vaso para perto de uma parede ou sob uma cobertura e deixar o substrato seco. Corte as folhas danificadas só em setembro, quando o frio passar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Espaçar a rega",
+      "mensagem": "Com o frio, a agave quase para de crescer e o substrato demora muito mais para secar. Rega no ritmo do verão agora é o caminho mais curto para a podridão.",
+      "acao_requerida": "Regar só a cada 20 dias, mais ou menos, até o fim de agosto, e sempre conferir antes se o substrato está seco a 5 cm"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A agave-dragão é das agaves mais sensíveis ao frio. Geada ou noites abaixo de 5 °C queimam as folhas, e com o substrato molhado podem matar a roseta.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, recolher o vaso para um lugar coberto e junto a uma parede, e não regar nesses dias"
+    },
+    {
+      "meses": [
+        9,
+        11,
+        1
+      ],
+      "titulo": "Adubar a agave",
+      "mensagem": "Na estação de crescimento, uma adubação leve deixa a roseta mais cheia e com cor mais bonita. Adubo em excesso deixa as folhas moles e esticadas.",
+      "acao_requerida": "Regar com adubo líquido para cactos e suculentas na metade da dose do rótulo, ou espalhar 1 colher de sopa de NPK 10-10-10 por vaso de 20 L longe da base, sempre com o substrato já úmido"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: chuva e sol forte",
+      "mensagem": "Temporais seguidos encharcam o vaso, e o sol do começo da tarde em dias acima de 32 °C pode queimar as folhas.",
+      "acao_requerida": "Se o vaso tomar chuva vários dias seguidos, colocá-lo sob uma cobertura até o substrato secar, e dar sombra das 12h às 15h nos dias mais quentes"
+    }
+  ]
+}

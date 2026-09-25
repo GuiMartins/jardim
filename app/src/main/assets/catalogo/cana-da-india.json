@@ -1,0 +1,204 @@
+{
+  "planta": {
+    "nome_comum": "Cana-da-índia",
+    "nome_cientifico": "Canna indica",
+    "descricao": "Planta rizomatosa tropical de folhas largas e flores vermelhas, laranja ou amarelas que aparecem da primavera ao outono. É rústica, cresce rápido e atrai beija-flores. Em vaso, começa pelo rizoma, que brota em 2 a 3 semanas e forma touceira.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de plástico grosso, cerâmica ou cimento, com pelo menos 40 cm de diâmetro e 35 cm de profundidade e vários furos no fundo. A touceira alta tomba vasos leves no vento",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou casca de arroz carbonizada, mais 1 colher de sopa de farinha de ossos por 10 L; fértil e que retenha umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "brotacao",
+      "nome": "Brotação do rizoma",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Plante o rizoma deitado, com as gemas (pontas rosadas) para cima, a 5–8 cm de profundidade. Os brotos enrolados como charutos aparecem entre o 10º e o 21º dia. Até lá, substrato só úmido: rizoma sem folha apodrece com facilidade se ficar encharcado."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento vegetativo",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "As folhas se desenrolam uma após a outra e a planta chega a 1–1,5 m. Novos brotos surgem ao redor do primeiro, formando touceira. A fase termina quando aparece a primeira haste floral no centro de um caule."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Floresce em ondas da primavera ao outono: cada caule dá uma haste floral e, depois dela, não floresce mais, enquanto novos caules tomam o lugar. No inverno o crescimento para; em regiões com geada as folhas queimam, mas o rizoma rebrota em agosto e setembro. A cada dois anos a touceira enche o vaso e precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar o rizoma",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos. Se ainda estiver úmido, não regue: sem folhas, o rizoma quase não consome água e apodrece no encharcamento.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cana-da-índia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 30 minutos. Com mais de 30 °C, confira todo dia: as folhas grandes murcham rápido e as bordas queimam de vez. No inverno, com a planta parada, espace para 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a touceira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 ou 1 xícara de bokashi/húmus na borda do vaso de 30 L, sem encostar nos caules, e regue em seguida. De junho a julho, com a planta parada, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_hastes",
+      "titulo": "Cortar hastes e folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa as hastes florais que já murcharam, logo abaixo das cápsulas de sementes, e os caules que já floresceram e estão amarelando, rente ao substrato. Tire também as folhas secas. Assim a planta gasta energia em caules novos que vão florescer.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folhas enroladas e presas com fios (dentro fica a lagarta), furos irregulares com rastro brilhante (lesma), pontos alaranjados em pó no verso (ferrugem) e riscas amarelas em mosaico nas folhas novas (vírus).",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de preferência entre agosto e outubro. Tire a planta do vaso, corte os caules a 15 cm e separe os rizomas com faca limpa, deixando 2 a 3 gemas em cada pedaço. Descarte as partes moles ou escuras. Replante um ou dois pedaços em substrato novo e dê os outros ou plante em outros vasos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "O rizoma já brotou?",
+      "mensagem": "A essa altura os brotos já deveriam estar acima do substrato. Se nada apareceu, o rizoma pode ter apodrecido.",
+      "acao_requerida": "Cavar com cuidado ao lado do rizoma e apertar: se estiver firme, espere mais uma semana com menos rega; se estiver mole e com cheiro ruim, descarte e plante outro"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Conferir a firmeza do vaso",
+      "mensagem": "A planta já passa de 1 m e as folhas largas pegam muito vento. Vaso leve tomba e quebra os caules.",
+      "acao_requerida": "Colocar o vaso em local protegido do vento ou pôr pedras no fundo do cachepô para dar peso"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeiras flores a caminho",
+      "mensagem": "As hastes florais começam a sair do centro dos caules mais velhos. Cada caule floresce uma só vez.",
+      "acao_requerida": "Garantir pelo menos 6 horas de sol direto; se a planta estiver na meia-sombra, mudar o vaso de lugar para não ficar só nas folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Lagarta-enroladeira (Calpodes ethlius)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas enroladas e costuradas com fios de seda; dentro, uma lagarta verde-clara que come a folha de dentro para fora",
+      "prevencao_tratamento": "Abrir as folhas enroladas e retirar as lagartas à mão; em infestações grandes, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Furos irregulares nas folhas novas e brotos roídos, com rastro brilhante de muco",
+      "prevencao_tratamento": "Catar à noite com lanterna; armadilha de cerveja num pote enterrado rente ao substrato; manter a base do vaso sem folhas caídas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas no verso, principalmente no tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ferrugem (Puccinia thaliae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas pequenas alaranjadas ou marrons no verso das folhas, que soltam pó ao passar o dedo; folhas secam de fora para dentro",
+      "prevencao_tratamento": "Retirar e descartar as folhas atacadas (não pôr na compostagem); regar no substrato, sem molhar as folhas; em casos fortes, fungicida à base de cobre"
+    },
+    {
+      "nome": "Podridão do rizoma",
+      "tipo": "DOENCA",
+      "sintomas": "Brotos que amarelam e caem, base dos caules mole e escura, cheiro de podre no substrato",
+      "prevencao_tratamento": "Não regar com o substrato ainda úmido, sobretudo antes da brotação e no inverno; esvaziar o prato; se atacar, cortar as partes moles, deixar o rizoma secar 2 dias e replantar em substrato novo"
+    },
+    {
+      "nome": "Viroses da canna (mosaico amarelo)",
+      "tipo": "DOENCA",
+      "sintomas": "Riscas e manchas amarelas em mosaico ao longo das nervuras, folhas deformadas e flores com listras; a planta vai perdendo vigor",
+      "prevencao_tratamento": "Não tem cura: descartar a planta inteira com o rizoma, desinfetar a tesoura com álcool e comprar rizomas de procedência; controlar pulgões, que transmitem o vírus"
+    },
+    {
+      "nome": "Queimadura nas bordas das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas marrons e secas, rasgos no limbo",
+      "prevencao_tratamento": "É falta de água no calor ou vento forte. Regar sem deixar o substrato secar por completo no verão e proteger o vaso do vento encanado"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: a cana-da-índia vai descansar",
+      "mensagem": "Com o frio a planta para de crescer e pode perder as folhas com geada. O rizoma continua vivo no vaso.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender a adubação até agosto e, se houver geada, levar o vaso para perto de uma parede ou sob beiral"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "O fim do inverno é a hora de limpar a touceira para a brotação da primavera sair forte.",
+      "acao_requerida": "Cortar rente ao substrato todos os caules secos, queimados ou que já floresceram, retomar a adubação mensal e a rega normal quando os brotos novos aparecerem"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: atenção à rega",
+      "mensagem": "No auge do verão, um vaso de 30 L com a touceira cheia seca em um dia e as folhas grandes queimam nas bordas.",
+      "acao_requerida": "Conferir o substrato todos os dias e regar no começo da manhã até escorrer pelos furos"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Espatódea",
+    "nome_cientifico": "Spathodea campanulata",
+    "descricao": "Árvore africana de flores grandes, alaranjadas e em forma de tulipa, comum em praças do Brasil. Em vaso grande fica como arvoreta de 2 a 4 m, podada, e pode levar anos para florescer. Tem potencial invasor e há estudos que associam o néctar à morte de abelhas nativas sem ferrão. Por isso, não plante perto de mata nem de meliponário.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e estável de cerâmica, cimento ou plástico grosso, com pelo menos 50 cm de diâmetro e 50 cm de profundidade e vários furos no fundo. Comece com um vaso de 30 a 40 L e passe para o definitivo quando as raízes ocuparem o torrão.",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa; mais 1 colher de sopa de farinha de ossos a cada 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode perder algumas folhas nas primeiras semanas pelo choque do transplante. A adaptação terminou quando surgem folhas novas, compostas e brilhantes, na ponta do caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido na primavera e no verão, com o caule engrossando e a planta ganhando de 50 cm a 1 m no ano. O sinal de que a planta se estabeleceu é o tronco já se sustentar sem tutor, com raízes visíveis perto dos furos do vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Cresce na estação quente e desacelera no inverno, quando pode perder parte das folhas se fizer frio. Em vaso, a floração é incerta e costuma vir só depois de 3 a 5 anos: cachos de botões na ponta dos ramos, do fim do outono ao início da primavera. A altura se controla com poda anual depois da floração, e a troca de substrato é a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_estabelecimento",
+      "titulo": "Regar a espatódea jovem",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Acima de 30 °C, confira todo dia; no inverno, a cada 4 dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a espatódea",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco nessa profundidade, regue até escorrer pelos furos, cerca de 1 L para cada 10 L de vaso. De junho a agosto, espaçe para a cada 5 a 7 dias. Folhas murchas no fim da tarde de verão indicam que precisa regar mais vezes.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a espatódea",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus de minhoca ou 1 colher de sopa de NPK 10-10-10 a cada 20 L de vaso, longe do tronco, e regue em seguida. De junho a agosto, pule a adubação se a planta estiver sem crescer.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os ramos novos. Procure carocinhos brancos ou marrons presos ao caule (cochonilha), folhas roídas ou lagartas, e manchas escuras encharcadas na base do tronco.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, corte cerca de 3 cm de raiz em volta do torrão com uma faca limpa e troque o substrato velho por mistura nova. Se já estiver no vaso definitivo, volte para o mesmo vaso. Regue bem e deixe à meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Coloque um tutor na muda",
+      "mensagem": "A espatódea jovem cresce rápido e fica alta e fina, e o vento a entorta ou quebra no vaso.",
+      "acao_requerida": "Cravar uma estaca de bambu a 5 cm do caule, até o fundo do vaso, e amarrar o caule em 2 pontos com fita ou tira de pano em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Hora do vaso definitivo?",
+      "mensagem": "Com 6 meses, a muda costuma ter tomado o vaso inicial. Raiz presa limita o crescimento e faz o substrato secar em horas.",
+      "acao_requerida": "Conferir se há raízes saindo pelos furos ou enrolando no torrão. Se houver, transplantar para um vaso de 60 L ou mais, com substrato novo e tutor"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Pode tirar o tutor",
+      "mensagem": "Com 1 ano, o tronco já deve se sustentar sozinho. Um tutor mantido por tempo demais deixa o tronco fraco e pode estrangular a casca.",
+      "acao_requerida": "Soltar as amarras e ver se a planta fica de pé sem tombar. Se ela se sustentar, retirar a estaca; se ainda tombar, amarrar mais frouxo e conferir de novo em 2 meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, a base do tronco escurece e amolece e o substrato cheira mal",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos livres e nunca deixar água no pratinho. Se aparecer, tire a planta do vaso, corte as raízes escuras e moles e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou escamas marrons presas aos ramos novos e ao verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%. Em infestação maior, aplicar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou só com as nervuras; bolinhas escuras de fezes sobre as folhas de baixo",
+      "prevencao_tratamento": "Catar as lagartas à mão. Se houver muitas, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Queima por frio ou geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem de repente, ficam secas e caem depois de uma noite fria; pontas dos ramos novos morrem",
+      "prevencao_tratamento": "Abaixo de 5 °C, levar o vaso para junto de uma parede ou sob uma cobertura, ou cobrir com TNT à noite. Esperar a primavera para cortar os ramos secos, até achar tecido verde"
+    },
+    {
+      "nome": "Queda de folhas por choque",
+      "tipo": "DISTURBIO",
+      "sintomas": "Muitas folhas amarelam e caem de uma vez depois de mudar o vaso de lugar, de um transplante ou de uma seca forte",
+      "prevencao_tratamento": "Evitar mudar a planta de lugar sem necessidade e manter a rega regular. Em geral ela rebrota em 3 a 4 semanas; não adube enquanto estiver sem folhas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteja do frio",
+      "mensagem": "A espatódea é tropical e sofre abaixo de 5 °C; geada queima folhas e ramos novos. Com o frio ela cresce menos e bebe menos água.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender o adubo e, em noites com previsão abaixo de 5 °C, abrigar o vaso ou cobrir com TNT"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Poda anual de condução",
+      "mensagem": "A floração acabou e a planta vai entrar na fase de crescimento forte. Podar agora mantém a altura compatível com o vaso sem cortar os botões do próximo inverno.",
+      "acao_requerida": "Cortar ramos secos, cruzados ou voltados para dentro e encurtar em até 1/3 os ramos mais altos, com tesoura limpa, logo acima de uma folha"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: confira a rega mais vezes",
+      "mensagem": "No calor forte, um vaso grande ao sol pode secar em 1 ou 2 dias, e a planta derruba folhas quando falta água.",
+      "acao_requerida": "Nos dias acima de 30 °C, conferir o substrato todo dia e regar de manhã cedo ou no fim da tarde"
+    }
+  ]
+}

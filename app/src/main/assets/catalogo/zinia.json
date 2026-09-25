@@ -1,0 +1,193 @@
+{
+  "planta": {
+    "nome_comum": "Zínia",
+    "nome_cientifico": "Zinnia elegans",
+    "descricao": "Flor anual de verão, muito florífera e resistente ao calor, com flores em quase todas as cores menos azul. Floresce cerca de dois meses depois da semeadura, atrai borboletas e dá ótimas flores de corte. Existem variedades anãs (30 cm) e altas (até 90 cm). Este cronograma considera as anãs e médias, as mais indicadas para vaso.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 120,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 18 cm de diâmetro e 20 cm de profundidade por planta, ou jardineira com 25 cm entre plantas, com furos no fundo",
+    "volume_minimo_litros": 4,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 7,
+      "descricao": "Semeie 2 a 3 sementes por vaso a 0,5 cm de profundidade. Com o substrato entre 21 e 30 °C, as plântulas surgem entre o 4º e o 7º dia, com duas folhas ovais (cotilédones)."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 8,
+      "dia_fim": 25,
+      "descricao": "Surgem os pares de folhas verdadeiras, ásperas e alongadas. A fase termina quando a planta tem 4 pares de folhas e uns 10 cm de altura."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento e Formação de Botões",
+      "dia_inicio": 26,
+      "dia_fim": 55,
+      "descricao": "A planta ramifica e engrossa o caule. Os primeiros botões aparecem na ponta dos ramos entre o 45º e o 55º dia; a fase termina quando o primeiro botão abre em flor."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 56,
+      "dia_fim": 110,
+      "descricao": "Floração contínua, com cada flor durando de 1 a 2 semanas. Quanto mais flores murchas você tira ou corta para vaso, mais a planta refaz botões. Folhas de baixo esbranquiçadas indicam oídio (veja Problemas comuns)."
+    },
+    {
+      "fase_id": "fim_de_ciclo",
+      "nome": "Fim de Ciclo e Sementes",
+      "dia_inicio": 111,
+      "dia_fim": 120,
+      "descricao": "A planta produz menos flores e as folhas de baixo secam. As flores deixadas na planta secam e viram cabeças de sementes; depois da coleta, a planta pode ir para o composto."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 7,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode secar nem encharcar: seco mata a semente germinando, encharcado a apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a zínia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue na base da planta, sem molhar as folhas, até escorrer pelos furos. Acima de 30 °C ou em vaso pequeno, confira todo dia; em dias nublados e frescos, espere o substrato secar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a zínia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 26,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Espalhe 1 colher de sopa de húmus de minhoca por vaso de 4 L sem encostar no caule, ou dissolva 1 colher de chá de NPK 4-14-8 em 1 L de água e regue a base. Regue em seguida. Evite adubo rico em nitrogênio, que faz folha e poucas flores.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_flores",
+      "titulo": "Tirar flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 56,
+      "dia_fim_ciclo": 105,
+      "instrucoes": "Corte as flores murchas ou desbotadas com tesoura, logo acima do primeiro par de folhas abaixo da flor. Aproveite para cortar flores abertas para vaso: cortar estimula novos botões.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Vire as folhas e procure pó branco (oídio), manchas marrons com anéis, pulgões nos brotos e teias finas no verso (ácaro). Arranque e jogue fora as folhas muito atacadas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Mais de uma muda por vaso disputa água e luz, e nenhuma cresce bem.",
+      "acao_requerida": "Deixar só a muda mais vigorosa em cada vaso, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Desponte para ramificar",
+      "mensagem": "Com 4 pares de folhas, a zínia está pronta para ser despontada. Ela fica mais baixa, cheia e com muito mais flores.",
+      "acao_requerida": "Cortar a ponta do caule principal logo acima do 3º par de folhas"
+    },
+    {
+      "dia_disparo": 105,
+      "titulo": "Guarde sementes para a próxima",
+      "mensagem": "Flores deixadas na planta secam e formam sementes para o próximo plantio.",
+      "acao_requerida": "Parar de tirar as flores murchas de 2 ou 3 cabeças; quando ficarem marrons e secas, colher, soltar as sementes em forma de ponta de flecha e guardar em envelope de papel"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Oídio (Golovinomyces cichoracearum)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado nas folhas, começando pelas de baixo; as folhas amarelam e secam",
+      "prevencao_tratamento": "Regar só a base, pela manhã, e deixar espaço para o ar circular. Retirar as folhas atacadas e pulverizar leite diluído (1 parte para 9 de água) ou bicarbonato de sódio (1 colher de chá por litro com gotas de detergente) a cada 7 dias"
+    },
+    {
+      "nome": "Mancha de alternária (Alternaria zinniae)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-avermelhadas com centro claro e anéis nas folhas e pétalas, que se juntam e secam a folha",
+      "prevencao_tratamento": "Não molhar as folhas e retirar as partes afetadas. Em ataque forte, fungicida à base de cobre conforme o rótulo"
+    },
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido; caule escurecido e mole rente ao substrato",
+      "prevencao_tratamento": "Substrato bem drenado, vaso com furos livres e rega só quando os 3 cm de cima estiverem secos. Planta com o colo podre não se recupera: descarte e troque o substrato"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; folhas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água forte; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto de poeira e teias finas no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas de manhã em dias secos; em infestação, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos arredondados nas folhas e pétalas roídas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo e jogar em água com sabão"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule fino, comprido e tombando, com poucas ou nenhuma flor",
+      "prevencao_tratamento": "Levar o vaso para onde receba pelo menos 5 horas de sol direto; despontar os ramos compridos para a planta rebrotar mais firme"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão chuvoso: cuidado com fungos",
+      "mensagem": "Calor com chuva e noites úmidas é a época do oídio e da mancha de alternária, as doenças que mais estragam a zínia.",
+      "acao_requerida": "Proteger o vaso da chuva contínua se possível, regar só a base pela manhã e afastar os vasos para o ar circular entre as plantas"
+    }
+  ]
+}

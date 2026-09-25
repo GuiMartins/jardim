@@ -1,0 +1,203 @@
+{
+  "planta": {
+    "nome_comum": "Couve-manteiga",
+    "nome_cientifico": "Brassica oleracea var. acephala",
+    "descricao": "Hortaliça de folhas largas e macias que não forma cabeça e produz por muitos meses a partir de uma única muda. É das plantas mais produtivas para vaso: colhendo as folhas de baixo toda semana, rende por um ano e meio ou mais. É bienal. Depois do segundo inverno, o caule fica comprido, as folhas diminuem e ela pode florescer. Este ciclo cobre os 18 meses em que vale a pena mantê-la.",
+    "tipo_ciclo": "BIENAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 540,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, barro ou tecido com pelo menos 30 cm de profundidade e 30 cm de diâmetro, com furos no fundo. Uma muda por vaso.",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto orgânico, 20% areia grossa ou vermiculita, mais 1 colher de sopa de calcário dolomítico e 2 colheres de sopa de farinha de ossos a cada 10 L. A couve prefere pH entre 6 e 6,5 e é muito exigente em nitrogênio.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao_muda",
+      "nome": "Adaptação da Muda",
+      "dia_inicio": 1,
+      "dia_fim": 15,
+      "descricao": "Plante a muda com 4 a 6 folhas, enterrando o caule até logo abaixo das primeiras folhas. Nos primeiros dias as folhas podem murchar no sol forte do meio-dia. A muda pegou quando fica firme ao ser puxada levemente e solta uma folha nova no centro."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 16,
+      "dia_fim": 60,
+      "descricao": "A planta abre uma folha nova a cada poucos dias, e as de baixo passam de 20 cm. Folhas verde-claras ou amareladas nesta fase indicam falta de nitrogênio. A fase termina quando há 10 ou mais folhas desenvolvidas e as de baixo atingem o tamanho de colheita."
+    },
+    {
+      "fase_id": "colheita_primeiro_ano",
+      "nome": "Colheita (1º ano)",
+      "dia_inicio": 61,
+      "dia_fim": 365,
+      "descricao": "Fase de maior produção. Colhendo as folhas de baixo toda semana, o caule sobe devagar e deixa cicatrizes, como um tronquinho de palmeira. Brotos laterais podem surgir nas axilas das folhas: tire-os quando tiverem 5 cm para concentrar a força no broto principal, ou enraíze-os em água para fazer mudas novas."
+    },
+    {
+      "fase_id": "colheita_segundo_ano",
+      "nome": "Colheita e Declínio (2º ano)",
+      "dia_inicio": 366,
+      "dia_fim": 540,
+      "descricao": "O caule fica longo e as folhas saem menores e mais duras. Depois do inverno a planta pode lançar no topo uma haste com botões amarelos (pendão floral). Quando isso acontece, as folhas amargam e a produção cai rápido. Hora de substituir por uma muda nova."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Regue pela manhã, devagar e ao redor do caule, até escorrer pelos furos. O substrato deve ficar úmido, sem encharcar. Se a muda murchar no sol forte da tarde, coloque o vaso na meia-sombra por alguns dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a couve",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 540,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos, molhando o substrato e não as folhas. Acima de 28 °C, confira todo dia. No inverno, em vaso grande, a rega costuma cair para a cada 3 ou 4 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a couve",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 540,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca ou 1 colher de sopa de torta de mamona por vaso de 20 L, a 5 cm do caule, misture de leve na superfície e regue em seguida. A colheita constante de folhas esgota o nitrogênio: não pule a adubação na fase de colheita.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 540,
+      "instrucoes": "Vire as folhas e procure ovos amarelos em grupo (curuquerê), lagartinhas verdes, colônias cinzentas de pulgão e furos novos. Esmague os ovos e retire as lagartas à mão. Olhe também o broto do centro, que é onde as pragas mais causam dano.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de couve",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 50,
+      "dia_fim_ciclo": 540,
+      "instrucoes": "Colha de baixo para cima as folhas com mais de 20 cm, puxando-as para baixo e para o lado até destacarem rente ao caule, ou cortando o talo com faca limpa. Deixe sempre pelo menos 6 a 8 folhas no topo. Aproveite para retirar folhas amarelas ou doentes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "A muda pegou?",
+      "mensagem": "Com uma semana, a muda deve estar firme no substrato e sem murchar no começo da manhã.",
+      "acao_requerida": "Puxar levemente a muda: se estiver firme, está enraizando. Se estiver solta ou com o caule escuro e mole, trocar por uma muda nova"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Primeira colheita",
+      "mensagem": "As folhas de baixo já devem ter mais de 20 cm. Colher com frequência estimula a planta a produzir mais.",
+      "acao_requerida": "Colher as 2 ou 3 folhas mais baixas e maiores, deixando pelo menos 8 folhas na planta"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Hora do tutor",
+      "mensagem": "O caule já está alto e fino, e com o peso das folhas a planta começa a tombar para o lado do sol.",
+      "acao_requerida": "Fincar uma estaca de 60 cm ao lado do caule, sem ferir a raiz, e amarrar o caule em 2 pontos com fita ou barbante frouxo, em forma de 8"
+    },
+    {
+      "dia_disparo": 450,
+      "titulo": "Prepare a substituta",
+      "mensagem": "A couve está entrando no fim da vida produtiva. Uma muda nova leva uns 2 meses para começar a produzir.",
+      "acao_requerida": "Comprar uma muda ou enraizar em um copo de água um broto lateral de 10 cm até soltar raízes, e plantar em outro vaso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Curuquerê-da-couve (Ascia monuste orseis)",
+      "tipo": "PRAGA",
+      "sintomas": "Borboletas brancas rondando a planta; grupos de ovos amarelos alongados no verso das folhas; lagartas cinza-esverdeadas com listras amarelas que comem a folha inteira e deixam só as nervuras em poucos dias",
+      "prevencao_tratamento": "Esmagar os ovos e catar as lagartas à mão a cada inspeção. Em infestação forte, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde, repetindo após 7 dias. Uma tela fina (voal) sobre o vaso impede a postura"
+    },
+    {
+      "nome": "Pulgão-da-couve (Brevicoryne brassicae)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de pulgões cinzentos com pó ceroso no verso das folhas e no broto; folhas encarquilhadas, amareladas e pegajosas. Pior no tempo seco de inverno",
+      "prevencao_tratamento": "Jato de água forte no verso das folhas; retirar as folhas muito infestadas. Se persistir, sabão de coco a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias, sempre molhando o verso das folhas"
+    },
+    {
+      "nome": "Traça-das-crucíferas (Plutella xylostella)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas lagartas verdes de até 1 cm que se agitam e caem presas a um fio quando tocadas; áreas raspadas que viram 'janelas' transparentes e depois furos",
+      "prevencao_tratamento": "Catar as lagartas; pulverizar Bacillus thuringiensis no fim da tarde a cada 7 dias enquanto houver lagartas. Evitar adubação excessiva de nitrogênio de uma vez só"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Furos irregulares nas folhas de baixo e rastros brilhantes de muco, sobretudo depois de noites úmidas",
+      "prevencao_tratamento": "Catar à noite com lanterna; manter o vaso elevado e sem folhas caídas ao redor; espalhar casca de ovo triturada na superfície do substrato"
+    },
+    {
+      "nome": "Podridão-negra (Xanthomonas campestris pv. campestris)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas em forma de V que começam na borda da folha, com as nervuras escurecendo até ficarem pretas; folhas secam de baixo para cima",
+      "prevencao_tratamento": "Regar o substrato sem molhar as folhas; retirar e jogar no lixo as folhas afetadas, limpando a tesoura com álcool entre os cortes. Não há cura: se atingir o caule, descarte a planta e troque o substrato"
+    },
+    {
+      "nome": "Podridão do colo por excesso de rega (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Caule escuro, mole e estrangulado rente ao substrato; a planta murcha mesmo com o substrato úmido e tomba",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, garantir furos desobstruídos e não deixar água parada no prato. Planta com o colo apodrecido não se recupera: descarte e use substrato novo"
+    },
+    {
+      "nome": "Falta de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas de baixo amarelando por inteiro, de forma uniforme, e folhas novas pequenas e verde-claras; crescimento lento",
+      "prevencao_tratamento": "Manter a adubação de cobertura a cada 3 semanas. Para corrigir rápido, regar com chorume de minhocário diluído 1:10 ou aplicar torta de mamona e regar bem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: couve no calor",
+      "mensagem": "Acima de 30 °C a couve murcha à tarde, as folhas endurecem e o curuquerê aparece mais.",
+      "acao_requerida": "Conferir a rega todo dia, mudar o vaso para um lugar com sombra depois das 14 h e redobrar a busca por ovos amarelos no verso das folhas"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno seco: época do pulgão",
+      "mensagem": "O frio é o melhor clima para a couve, mas o tempo seco favorece o pulgão, que se esconde no broto e no verso das folhas.",
+      "acao_requerida": "Espaçar a rega conforme o teste do dedo e, a cada inspeção, jogar um jato de água no verso das folhas e no broto para desalojar colônias"
+    }
+  ]
+}

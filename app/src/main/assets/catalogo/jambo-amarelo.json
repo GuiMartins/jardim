@@ -1,0 +1,213 @@
+{
+  "planta": {
+    "nome_comum": "Jambo-amarelo",
+    "nome_cientifico": "Syzygium jambos",
+    "descricao": "Árvore frutífera tropical da família das mirtáceas, parente da jabuticaba e da pitanga, com flores de estames longos e frutos amarelados, ocos, crocantes e com perfume de rosa. Na natureza passa de 8 m, mas em vaso grande e com poda de formação fica com 2 a 3 m e frutifica a partir do 3º ou 4º ano quando a muda é enxertada ou vem de alporque.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, fibra ou cimento com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo e apoiado em pés ou rodízios para não encostar no chão",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina ou fibra de coco; misturar 200 g de farinha de ossos e 100 g de calcário dolomítico por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está refazendo as raízes no vaso novo. Algumas folhas velhas podem amarelar e cair; isso é normal. A fase termina quando aparecem brotos novos avermelhados nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento em surtos: os ramos soltam fluxos de folhas novas cor de vinho que depois ficam verde-escuras e brilhantes. É a fase de formar o tronco e os primeiros galhos principais. Qualquer flor que surgir agora deve ser retirada para a energia ir para a copa."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A copa se fecha e o tronco engrossa. Mudas enxertadas ou de alporque podem dar as primeiras flores no fim dessa fase; mudas de semente costumam levar mais tempo. A fase muda quando a planta passa de 1,5 m e floresce de forma regular."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: crescimento lento no inverno, floração de agosto a outubro com pompons de estames branco-esverdeados, frutos maduros de outubro a dezembro e brotação forte no verão chuvoso. Depois da colheita, faz-se a poda de limpeza e de controle de altura. A cada dois anos, poda de raiz e troca parcial do substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de jambo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos (cerca de 4 a 6 L num vaso de 60 L). O torrão da muda não pode secar nesta fase, mas o prato também não pode ficar com água parada.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jambeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. Acima de 30 °C ou com frutos se formando, confira a cada 2 dias; no inverno o intervalo passa para 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o jambeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 litro de húmus de minhoca (ou 500 g de esterco de galinha curtido) e 1 colher de sopa de NPK 10-10-10 por vaso de 60 L, a 10 cm do tronco, afofe a superfície e regue bem. Planta adulta em vaso maior: dobre a dose. Pule a adubação de junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe com atenção os brotos novos avermelhados: pó amarelo-alaranjado indica ferrugem. Vire as folhas e procure cochonilhas (escamas ou algodãozinho branco) nos ramos e no verso das nervuras, além de folhas enroladas com insetos dentro.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Poda de raiz e troca de substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre setembro e outubro, após a colheita ou antes da brotação forte, tire a planta do vaso, corte 3 a 5 cm das raízes em volta e embaixo do torrão, raspe o substrato velho e devolva ao mesmo vaso com substrato novo (ou a um vaso até 20 L maior). Pode 1/4 da copa para compensar e mantenha à meia-sombra por 10 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio do jambeiro",
+      "mensagem": "A muda precisa ficar na mesma altura em que estava no saquinho: enterrar o colo ou o ponto do enxerto apodrece o tronco.",
+      "acao_requerida": "Plantar com o colo rente à superfície, firmar o substrato em volta, cravar um tutor ao lado e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de formação",
+      "mensagem": "Sem desponte, o jambeiro sobe num galho só e fica alto e desequilibrado no vaso.",
+      "acao_requerida": "Cortar a ponta do ramo principal a 60 ou 80 cm de altura e, quando brotarem, escolher 3 ou 4 ramos bem distribuídos para formar a copa, tirando os demais"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano completo",
+      "mensagem": "O jambeiro já deve ter tronco firme e copa com 3 ou 4 galhos principais.",
+      "acao_requerida": "Retirar o tutor se o tronco se sustentar sozinho e cortar os ramos que crescem para dentro da copa ou cruzados"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Idade de frutificar",
+      "mensagem": "A partir de agora a planta tem porte para segurar frutos. Se ainda estiver menor que 1,2 m, frutificar vai atrasar o crescimento.",
+      "acao_requerida": "Medir a planta: abaixo de 1,2 m, retirar os frutinhos que se formarem nesta safra; acima disso, deixar frutificar normalmente"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Ferrugem-das-mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nas folhas novas, brotos e flores; os brotos retorcem, secam e ficam pretos. O jambo é uma das mirtáceas mais sensíveis",
+      "prevencao_tratamento": "Deixar o vaso em local ventilado, regar o substrato e não as folhas, cortar e jogar no lixo os brotos atacados; em ataque forte, fungicida cúprico (calda bordalesa a 1%) nos brotos novos a cada 15 dias durante a brotação"
+    },
+    {
+      "nome": "Cochonilhas (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos nos ramos e no verso das folhas, folhas pegajosas e com fumagina preta, formigas subindo pelo tronco",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp., Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos, manchas amolecidas e larvas brancas dentro; caem antes de amadurecer",
+      "prevencao_tratamento": "Armadilha com garrafa PET furada e isca de suco de fruta ou proteína hidrolisada pendurada na copa desde a frutificação; recolher e descartar em saco fechado todo fruto caído"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nos frutos e manchas marrons irregulares nas folhas, principalmente no verão chuvoso",
+      "prevencao_tratamento": "Poda para arejar a copa, colher os frutos no ponto e retirar os podres; fungicida cúprico preventivo na floração em anos muito úmidos"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo com o substrato sempre úmido, murcha mesmo depois de regar, raízes escuras e moles com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e manter os furos desobstruídos; se já atacou, cortar as raízes podres e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Queima pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e brotos com manchas pardas ou escurecidas e secas depois de noites abaixo de 3 °C ou geada",
+      "prevencao_tratamento": "Nas noites frias, levar o vaso para perto de uma parede ou sob cobertura e cobrir a copa com manta TNT; não podar os ramos queimados até a primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o jambeiro do frio",
+      "mensagem": "O jambo é tropical: geada e noites abaixo de 3 °C queimam folhas e brotos, principalmente em plantas jovens. Com o frio, ele também bebe bem menos água.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, abrigar o vaso junto a uma parede ou cobrir a copa com manta TNT, e espaçar a rega para quando o substrato estiver seco a 5 cm"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Adubação para a floração",
+      "mensagem": "A floração começa entre agosto e outubro. Fósforo e potássio agora ajudam a segurar flores e frutos.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de farinha de ossos e 1 colher de sopa de sulfato de potássio (ou 2 de cinza de madeira) por vaso de 60 L, longe do tronco, e regar bem"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Época de colheita do jambo",
+      "mensagem": "Os frutos amadurecem cerca de 3 meses depois da flor. No ponto, ficam amarelo-claros, perfumados e se soltam com um leve giro; passados do ponto, caem e atraem mosca-das-frutas.",
+      "acao_requerida": "Passar a cada 2 ou 3 dias colhendo os frutos amarelados e perfumados, e recolher e descartar os caídos"
+    },
+    {
+      "meses": [
+        2,
+        3
+      ],
+      "titulo": "Poda de limpeza e de altura",
+      "mensagem": "Depois da safra, a poda mantém o jambeiro num tamanho que o vaso aguenta e arejada contra ferrugem e antracnose.",
+      "acao_requerida": "Cortar ramos secos, cruzados e voltados para dentro da copa e encurtar em até 1/3 os ramos que passaram da altura desejada, sempre acima de um par de folhas"
+    }
+  ]
+}

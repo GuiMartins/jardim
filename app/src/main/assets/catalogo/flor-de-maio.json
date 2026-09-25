@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Flor-de-maio",
+    "nome_cientifico": "Schlumbergera truncata",
+    "descricao": "Cacto epífito da Mata Atlântica, nativo da Serra do Mar, que vive sobre árvores e não em deserto: gosta de luz filtrada, umidade e substrato aerado. Floresce no outono (abril a junho) com flores rosas, vermelhas, brancas ou salmão nas pontas dos cladódios. Como costuma ser comprada já adulta e em botão, o dia 1 é a chegada da planta.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou barro com 14 a 16 cm de diâmetro e 12 cm de altura, largo e raso, com vários furos no fundo; serve também como vaso suspenso, já que os ramos pendem",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% casca de pinus fina, 30% terra vegetal, 20% fibra de coco em chips, 10% perlita ou carvão vegetal miúdo; solto e aerado, que seca por cima em poucos dias",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A planta sai da estufa e estranha a nova luz e temperatura. Se chegou em botão, é normal perder alguns; mover o vaso de lugar agrava a queda. Escolha de cara um ponto com luz clara, sem sol do meio-dia, e não o troque mais. A fase termina quando os cladódios estão firmes e os botões que restaram abrem."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "Surgem segmentos novos, verde-claros, nas pontas dos ramos. Cladódios murchos ou enrugados com substrato úmido indicam raiz podre; com substrato seco, falta de água. Considere a planta estabelecida quando brotam dois ou três segmentos novos por ramo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: cresce e recebe adubo de setembro a fevereiro; em março, com noites mais longas e frescas e menos água, forma botões; floresce de abril a junho; descansa em julho e agosto, quando se faz a poda de limpeza. Uma planta que não floresce quase sempre recebeu luz artificial à noite ou adubo e água demais no outono."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a flor-de-maio",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. Com botões ou flores, não deixe secar por completo, porque a sede derruba os botões. Em março e em julho, espere secar 4 cm antes de regar; acima de 30 °C, confira a cada 3 dias.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar cladódios",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as junções entre os segmentos e a base dos ramos à procura de tufos brancos de algodão, escamas marrons ou mosquitinhos no substrato. Aperte a base do caule: se estiver mole ou escura, desconfie de podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "A casca de pinus se decompõe e o substrato compacta em uns dois anos. Tire a planta, solte o substrato velho, corte raízes pretas ou moles e replante com mistura nova num vaso só 2 cm maior, pois ela floresce melhor com a raiz um pouco apertada. Se cair entre março e junho, com botões ou flores, adie para agosto ou setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar definitivo",
+      "mensagem": "A flor-de-maio derruba botões quando muda de luz ou de posição. O primeiro lugar que ela ganhar deve ser o definitivo.",
+      "acao_requerida": "Colocar o vaso perto de uma janela clara ou numa varanda com sol só da manhã, longe de vento, ar-condicionado e de lâmpadas acesas à noite, e não girar mais o vaso"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Confira o vaso da loja",
+      "mensagem": "Plantas de floricultura costumam vir em turfa compactada, que segura água demais e apodrece a raiz.",
+      "acao_requerida": "Se a planta não estiver em botão ou flor e o substrato continuar úmido 5 dias depois da rega, ou houver raízes saindo pelos furos, replantar no substrato recomendado; se estiver florida, esperar a floração terminar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Cladódios murchos e opacos mesmo com substrato úmido, base do caule mole e escura, segmentos que caem ao toque e cheiro de mofo no substrato",
+      "prevencao_tratamento": "Regar só com o topo seco, nunca deixar água no pratinho e usar substrato com casca de pinus. Se atacar, tire a planta, corte as raízes podres, deixe secar 1 dia e replante em substrato novo; se o colo estiver podre, enraíze estacas das partes sadias"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aparência de algodão nas junções dos segmentos e nas raízes; planta amarelada e crescimento parado",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; depois aplique óleo de neem a 0,5% com detergente neutro a cada 7 dias, 3 vezes, no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou cinzas grudadas nos cladódios, às vezes com melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Raspe com a unha ou escova macia e passe álcool 70% no local; repita o óleo de neem semanalmente até sumirem"
+    },
+    {
+      "nome": "Mosquito-do-fungo (Bradysia)",
+      "tipo": "PRAGA",
+      "sintomas": "Mosquitinhos pretos voando rente ao substrato; larvas que roem raízes finas em vaso sempre úmido",
+      "prevencao_tratamento": "Deixe o topo do substrato secar entre regas, cubra com 1 cm de areia grossa e use armadilha adesiva amarela"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões caem antes de abrir, às vezes todos de uma vez",
+      "prevencao_tratamento": "Causada por mudança de lugar, substrato seco, vento frio ou calor repentino. Com botões, não mova nem gire o vaso e mantenha o substrato levemente úmido"
+    },
+    {
+      "nome": "Cladódios avermelhados",
+      "tipo": "DISTURBIO",
+      "sintomas": "Segmentos ficam arroxeados ou avermelhados e finos, sem murchar de podridão",
+      "prevencao_tratamento": "Excesso de sol direto ou falta de água; leve para luz filtrada e ajuste a rega. Se persistir com sol e água certos, falta magnésio: 1 colher de chá de sulfato de magnésio em 1 L de água, uma vez na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Hora de preparar a floração",
+      "mensagem": "Os botões se formam com noites longas e frescas e um pouco de secura. Luz acesa à noite ou adubo agora impedem a floração.",
+      "acao_requerida": "Suspender o adubo, espaçar a rega até secar 4 cm do substrato e garantir de 12 a 14 horas de escuro total por noite, longe de lâmpadas e postes, até os botões aparecerem"
+    },
+    {
+      "meses": [
+        4,
+        5,
+        6
+      ],
+      "titulo": "Época de flores: não mexa no vaso",
+      "mensagem": "A flor-de-maio está em botão ou florida. Mudar o vaso de posição, deixar secar ou pegar vento frio derruba os botões.",
+      "acao_requerida": "Deixar o vaso parado no mesmo lugar, voltar à rega normal sem deixar secar e retirar as flores murchas torcendo-as de leve"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda depois da floração",
+      "mensagem": "Terminada a floração, a planta descansa. Encurtar os ramos agora faz ela ramificar e dar mais pontas, e mais pontas são mais flores no ano seguinte.",
+      "acao_requerida": "Torcer e destacar 1 ou 2 segmentos da ponta de cada ramo, regar só com 4 cm secos durante 4 semanas e, se quiser mudas, enfiar os pedaços de 2 ou 3 segmentos 1 cm em substrato úmido"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Adubar a flor-de-maio",
+      "mensagem": "Da primavera ao fim do verão a planta cresce e forma os segmentos que vão florir no outono.",
+      "acao_requerida": "Dissolver adubo NPK 10-10-10 ou fertilizante para orquídeas na metade da dose da embalagem e aplicar sobre o substrato já úmido, uma vez neste mês"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Proteger do calor forte",
+      "mensagem": "Acima de 32 °C e com sol da tarde, os cladódios avermelham e murcham.",
+      "acao_requerida": "Tirar o vaso de qualquer sol depois das 10h, conferir a rega a cada 3 dias e borrifar água em volta da planta nos dias mais secos"
+    }
+  ]
+}

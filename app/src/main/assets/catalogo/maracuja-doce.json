@@ -1,0 +1,234 @@
+{
+  "planta": {
+    "nome_comum": "Maracujá-doce",
+    "nome_cientifico": "Passiflora alata",
+    "descricao": "Trepadeira perene nativa do Brasil, de flores grandes e perfumadas vermelho-arroxeadas e frutos amarelos de polpa doce, comida ao natural. Em vaso grande com treliça ou pergolado, começa a produzir entre 8 e 12 meses depois do plantio da muda e rende bem por 3 a 4 anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande ou meia-bombona com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo, junto a uma treliça, cerca ou pergolado de no mínimo 2 m de altura",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 15% areia grossa, 10% casca de arroz carbonizada, mais 200 g de farinha de ossos e 100 g de calcário dolomítico por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. Folhas murchas nas horas quentes dos primeiros dias são normais; a fase acabou quando surgem gavinhas novas e o broto do topo passa a crescer vários centímetros por semana."
+    },
+    {
+      "fase_id": "formacao_ramas",
+      "nome": "Formação das Ramas",
+      "dia_inicio": 31,
+      "dia_fim": 240,
+      "descricao": "Crescimento rápido: o ramo principal sobe pelo suporte e, depois da poda da ponta, abre ramos laterais, que são os que vão dar flor. Termina com os primeiros botões florais nas axilas das folhas dos ramos novos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 241,
+      "dia_fim": null,
+      "descricao": "Floresce da primavera ao fim do verão; cada flor abre por um dia e, se polinizada, vira fruto maduro em 80 a 90 dias, com colheita principal entre dezembro e maio. No inverno cresce pouco e não produz. Depois de 3 a 4 anos a produção cai; vale renovar a planta com uma muda nova."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de maracujá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o maracujazeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). Com flores e frutos no verão, confira todo dia; falta de água derruba flores e frutos novos. No inverno, espace para cada 4 a 5 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o maracujazeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca ou 2 colheres de sopa de torta de mamona em volta do caule, a 10 cm dele, e regue. A partir da floração, acrescente 1 colher de sopa de NPK 4-14-8 por vaso. Pule a adubação em junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "conducao_ramas",
+      "titulo": "Conduzir as ramas no suporte",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Enrole as pontas novas no suporte e amarre com fitilho frouxo, em oito, as que estiverem soltas ou pendendo. Espalhe os ramos laterais na horizontal pela treliça, sem deixá-los embolar.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure lagartas alaranjadas com espinhos pretos comendo as folhas, percevejos nos frutos, manchas encharcadas ou escuras em folhas e frutos, e folhas com mosaico amarelado ou enrugadas. Olhe também o caule junto ao substrato.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, retire com uma pá de mão os 10 a 15 cm de cima do substrato sem ferir as raízes grossas e reponha com a mistura original, incluindo farinha de ossos e calcário. Regue bem em seguida.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Instalar o suporte",
+      "mensagem": "O maracujá cresce rápido e precisa de algo onde subir desde o começo; mexer no suporte depois quebra ramos.",
+      "acao_requerida": "Firmar uma estaca de 1,5 m ao lado da muda até alcançar a treliça ou o pergolado e amarrar o caule nela com fitilho frouxo"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Poda da ponta do ramo principal",
+      "mensagem": "Quando o ramo principal chega ao alto do suporte, cortar a ponta faz a planta abrir os ramos laterais, que são os que florescem.",
+      "acao_requerida": "Cortar os 5 cm da ponta do ramo principal quando ele passar do topo do suporte e remover os brotos que nascerem abaixo de 1 m de altura"
+    },
+    {
+      "dia_disparo": 200,
+      "titulo": "Prepare-se para polinizar",
+      "mensagem": "O maracujá-doce quase não forma fruto sozinho: depende da mamangava, que é rara na cidade, e as flores só vingam bem com pólen de outra planta.",
+      "acao_requerida": "Nas flores abertas, passar o dedo ou um pincel nas anteras amarelas e encostar o pólen nos três estigmas do topo, de preferência entre 10h e 15h e usando pólen de outro pé de maracujá-doce, se houver"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato molhado, folhas amarelando de baixo para cima, raízes escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos livres e nunca deixar água no pratinho; se atingir o colo do caule, a planta raramente se recupera"
+    },
+    {
+      "nome": "Fusariose e podridão do colo (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Murcha súbita de toda a planta, casca do caule rachada ou escurecida rente ao substrato",
+      "prevencao_tratamento": "Não enterrar o caule acima do nível da muda, não ferir o colo e evitar encharcamento; retire e descarte a planta e o substrato afetados"
+    },
+    {
+      "nome": "Lagarta-do-maracujazeiro (Agraulis vanillae, Dione juno)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas alaranjadas ou pretas com espinhos que devoram as folhas, às vezes em grupo, deixando só as nervuras",
+      "prevencao_tratamento": "Catar à mão e retirar as posturas amarelas no verso das folhas; em infestação grande, Bacillus thuringiensis no fim da tarde"
+    },
+    {
+      "nome": "Percevejos (Diactor bilineatus, Leptoglossus)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos novos murcham, enrugam e caem; picadas escuras na casca",
+      "prevencao_tratamento": "Catar os percevejos de manhã cedo com luva ou derrubá-los num pote com água e sabão"
+    },
+    {
+      "nome": "Ácaros",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas bronzeadas ou pontilhadas de amarelo, com teias finas no verso, em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Bacteriose (Xanthomonas)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas e oleosas nas folhas, que depois secam com halo amarelo; lesões nos frutos",
+      "prevencao_tratamento": "Regar no substrato sem molhar as folhas, cortar e descartar as partes atacadas e desinfetar a tesoura com álcool"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e fundas nos frutos e manchas pardas nas folhas em épocas chuvosas",
+      "prevencao_tratamento": "Manter a rama arejada com a poda anual e retirar frutos e folhas doentes; calda bordalesa em época de chuva frequente"
+    },
+    {
+      "nome": "Virose do endurecimento dos frutos (CABMV)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas com mosaico amarelo e enrugadas, frutos pequenos, deformados e de casca dura",
+      "prevencao_tratamento": "Não tem cura: controlar pulgões, desinfetar a tesoura entre plantas e trocar a planta atacada por uma muda sadia"
+    },
+    {
+      "nome": "Flores caem sem formar fruto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores abrem e caem inteiras dias depois, sem o ovário engrossar",
+      "prevencao_tratamento": "Falta de polinização ou de água na floração: polinize à mão e não deixe o substrato secar com flores abertas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O maracujá-doce sofre com geada e com noites abaixo de 5 °C, que queimam folhas e ramos novos.",
+      "acao_requerida": "Em noites com previsão de geada, cobrir a planta com TNT ou levar o vaso para perto de uma parede abrigada, e reduzir a rega"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "O maracujá dá fruto nos ramos do ano; podar no fim do inverno estimula ramos novos e mais flores na primavera.",
+      "acao_requerida": "Cortar os ramos laterais que já produziram a 2 ou 3 gemas do ramo principal, remover ramos secos e doentes e desembolar a rama"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Época de flor: polinizar",
+      "mensagem": "Cada flor abre só por um dia. Sem polinização, quase nenhuma vira fruto.",
+      "acao_requerida": "Nos dias de flor aberta, passar pólen das anteras para os estigmas com o dedo ou pincel entre 10h e 15h"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "Os frutos amadurecem cerca de 80 a 90 dias depois da flor e ficam mais doces quando colhidos maduros.",
+      "acao_requerida": "Colher os frutos com a casca pelo menos 70% amarela, cortando o pedúnculo com tesoura, e recolher os que caírem no chão"
+    }
+  ]
+}

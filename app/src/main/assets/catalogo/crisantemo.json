@@ -1,0 +1,212 @@
+{
+  "planta": {
+    "nome_comum": "Crisântemo",
+    "nome_cientifico": "Chrysanthemum × morifolium",
+    "descricao": "Herbácea perene de flores dobradas ou margaridas em muitas cores, vendida florida em vaso o ano todo porque os produtores controlam a luz para induzir a floração. Muita gente descarta o vaso quando as flores murcham, mas com uma poda e um vaso maior a planta rebrota e volta a florir sozinha todo outono, quando os dias ficam curtos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 18 a 20 cm de diâmetro e de profundidade, com furos no fundo; sem prato acumulando água",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto orgânico, 20% perlita ou areia grossa; mais 1 colher de sopa de farinha de ossos por vaso de 3 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "floracao_de_chegada",
+      "nome": "Floração de Chegada",
+      "dia_inicio": 1,
+      "dia_fim": 28,
+      "descricao": "A planta chega florida, com vários pés num vaso pequeno cheio de raiz, por isso seca rápido. As flores duram de 3 a 5 semanas se ficarem no sol da manhã e longe do calor da tarde. A fase acaba quando a maioria das flores escurece e as pétalas secam."
+    },
+    {
+      "fase_id": "poda_e_rebrota",
+      "nome": "Poda e Rebrota",
+      "dia_inicio": 29,
+      "dia_fim": 75,
+      "descricao": "Depois da poda, os caules cortados ficam parados por 2 a 3 semanas e então brotam na base e nas axilas. Quando os brotos novos passarem de 10 cm, corte a ponta de cada um (desponte) para a planta ramificar, mas só entre outubro e janeiro. De fevereiro a agosto, deixe os brotos crescerem para formar botões no outono. A fase termina quando a touceira está cheia de folhas novas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 76,
+      "dia_fim": null,
+      "descricao": "O ano do crisântemo segue a duração do dia. Na primavera e no verão ele cresce e ramifica; em fevereiro e março os dias encurtam e ele forma botões; de abril a junho floresce. Depois da floração vem a poda de inverno, com um período mais lento, e em setembro é hora de dividir a touceira e renovar o substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_crisantemo",
+      "titulo": "Regar o crisântemo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue no substrato, sem molhar folhas e flores, até escorrer pelos furos, e esvazie o prato depois de 15 minutos. Acima de 30 °C ou com a planta florida no vaso original, confira todo dia. No inverno, depois da poda, a rega costuma cair para a cada 3 ou 4 dias.",
+      "critica": true
+    },
+    {
+      "id": "limpeza_flores_murchas",
+      "titulo": "Tirar flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 28,
+      "instrucoes": "Corte com tesoura limpa, logo abaixo da flor, as que estiverem escuras ou com pétalas secas. Flor apodrecida no vaso atrai botrytis e prolonga a floração das outras menos do que parece.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crisantemo",
+      "titulo": "Adubar o crisântemo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato úmido, aplique adubo NPK 10-10-10 dissolvido (1 colher de chá rasa em 1 L de água) ou 1 colher de sopa de húmus por vaso de 3 L. De fevereiro a maio, troque por um adubo rico em fósforo (NPK 4-14-8) para florescer. Em julho e agosto, com a planta podada, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas_crisantemo",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as pontas dos brotos e os botões: procure pulgões agrupados, teias finas com pontinhos (ácaro), trilhas brancas sinuosas dentro da folha (minadora) e pústulas claras no verso (ferrugem branca). Arranque e jogue fora no lixo, não na compostagem, as folhas muito atacadas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Tire o crisântemo do plástico",
+      "mensagem": "O vaso vem enrolado em plástico ou papel decorativo que prende água no fundo e apodrece as raízes em poucos dias.",
+      "acao_requerida": "Retirar a embalagem e o cachepô sem furo, confirmar que a água escorre pelos furos do vaso e colocar a planta num lugar com sol da manhã"
+    },
+    {
+      "dia_disparo": 28,
+      "titulo": "Hora da poda pós-floração",
+      "mensagem": "As flores estão acabando. Sem poda e sem um vaso maior, o crisântemo de floricultura enfraquece e morre em poucos meses.",
+      "acao_requerida": "Cortar todos os caules a 10 a 15 cm do substrato, separar os pés se o vaso tiver vários e replantar cada um num vaso de 3 L com substrato novo"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Confira a rebrota",
+      "mensagem": "Os brotos novos já devem estar aparecendo na base dos caules podados. Caules secos e sem nenhum broto até agora indicam raiz podre.",
+      "acao_requerida": "Procurar brotos verdes na base; se não houver, tirar a planta do vaso, cortar raízes escuras e moles e replantar em substrato seco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato molhado, base dos caules escura e mole, raízes marrons que se desfazem ao toque",
+      "prevencao_tratamento": "Regar só com os 2 cm de cima secos, nunca deixar água no prato ou no cachepô; em planta atacada, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nas pontas dos brotos e nos botões, folhas enroladas e pegajosas, botões que não abrem",
+      "prevencao_tratamento": "Jato de água nos brotos; se voltar, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas no verso; aparece no calor seco",
+      "prevencao_tratamento": "Molhar o verso das folhas em dias quentes e secos; em ataque forte, óleo de neem a 0,5% no verso a cada 5 dias e cortar os ramos mais atacados"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Pétalas com riscos prateados ou manchas marrons, botões deformados, insetos minúsculos e alongados dentro das flores",
+      "prevencao_tratamento": "Tirar as flores atacadas, pendurar armadilha adesiva azul perto do vaso e aplicar óleo de neem a 0,5% nos botões"
+    },
+    {
+      "nome": "Mosca-minadora (Liriomyza spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Trilhas brancas sinuosas dentro das folhas, que depois secam",
+      "prevencao_tratamento": "Arrancar as folhas com trilhas logo que aparecerem e usar armadilha adesiva amarela"
+    },
+    {
+      "nome": "Ferrugem branca (Puccinia horiana)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amareladas na face de cima da folha e pústulas brancas ou rosadas no verso; as folhas secam de baixo para cima",
+      "prevencao_tratamento": "Não molhar as folhas, manter o vaso arejado e arrancar e descartar no lixo as folhas com pústulas; em ataque forte, fungicida à base de enxofre"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre as folhas e caules, mais comum no outono com noites frescas e úmidas",
+      "prevencao_tratamento": "Espaçar os vasos e dar sol direto; pulverizar leite diluído em água (1 parte para 9) ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Floração fora de época ou ausente",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta cresce muito, fica alta e não forma botões no outono, ou os botões param de se desenvolver",
+      "prevencao_tratamento": "O crisântemo só floresce com noites longas: manter o vaso longe de poste, lâmpada de varanda ou janela acesa à noite de fevereiro a maio"
+    },
+    {
+      "nome": "Folhas de baixo amarelas e secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas inferiores amarelam e secam em sequência enquanto as de cima ficam verdes",
+      "prevencao_tratamento": "Costuma ser vaso pequeno cheio de raiz ou falta de nitrogênio: passar para um vaso maior e retomar a adubação quinzenal"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        10,
+        11,
+        12,
+        1
+      ],
+      "titulo": "Desponte do crisântemo",
+      "mensagem": "Na primavera e no verão, cortar as pontas faz cada ramo virar dois ou três e a planta fica cheia e com muito mais flores no outono.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada broto com mais de 10 cm, logo acima de um par de folhas; parar no fim de janeiro"
+    },
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Nada de luz à noite",
+      "mensagem": "Os dias estão encurtando e o crisântemo começa a formar botões. Luz artificial à noite, até de poste ou lâmpada de varanda, atrasa ou impede a floração.",
+      "acao_requerida": "Deixar o vaso num canto que fique escuro à noite até o fim da floração"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Poda de inverno",
+      "mensagem": "A floração de outono terminou. Podar agora renova a touceira e evita caules lenhosos e sem folhas.",
+      "acao_requerida": "Cortar todos os caules a 10 a 15 cm do substrato, suspender a adubação até setembro e espaçar a rega"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "mensagem": "Com o calor voltando, o crisântemo brota da base. A touceira velha fica fraca no centro e o substrato já está gasto.",
+      "acao_requerida": "Tirar a planta do vaso, separar os brotos da borda com raiz, descartar o centro lenhoso e replantar 1 ou 2 brotos por vaso de 3 L com substrato novo"
+    }
+  ]
+}

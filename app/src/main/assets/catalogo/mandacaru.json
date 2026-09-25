@@ -1,0 +1,173 @@
+{
+  "planta": {
+    "nome_comum": "Mandacaru",
+    "nome_cientifico": "Cereus jamacaru",
+    "descricao": "Cacto colunar nativo da Caatinga, símbolo do sertão nordestino, com hastes verde-azuladas de 4 a 6 costelas e grandes flores brancas que abrem à noite. Em vaso cresce devagar e fica compacto, é quase indestrutível sob sol forte e morre principalmente por excesso de água.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro (terracota) pesado, com pelo menos 25 cm de profundidade e 25 cm de diâmetro, e furos largos no fundo. O barro perde umidade pelas paredes, e o peso impede que a coluna tombe com o vento",
+    "volume_minimo_litros": 12,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% areia grossa lavada, 30% terra vegetal, 20% pedrisco ou brita fina, 10% húmus de minhoca; ou substrato pronto para cactos e suculentas com 1/3 a mais de areia grossa. Deve escorrer a água na hora, sem empoçar",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera das raízes feridas no transplante. Fique na primeira semana sem regar e com sol só da manhã. É normal a coluna ficar levemente murcha ou enrugada sem mudar de cor. Sinal de que a fase terminou: a muda fica firme no vaso quando você a balança de leve, com as luvas."
+    },
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento e Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes novas exploram o vaso e a ponta da coluna começa a ficar verde mais claro, com aréolas novas e espinhos frescos. Isso mostra que ela voltou a crescer. Aqui ela já aguenta o sol pleno o dia todo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Em vaso, o mandacaru cresce de 10 a 30 cm por ano, sobretudo de outubro a março, e quase para no inverno seco. Pode ramificar sozinho ou depois de uma poda da ponta. Só floresce quando já está grande e antigo, o que é raro em vaso: as flores brancas abrem numa única noite, entre outubro e janeiro, e podem virar frutos vermelhos comestíveis. Se crescer fino e pálido na ponta, falta sol."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Conferir e regar o mandacaru",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de churrasco até o fundo do vaso e tire depois de 1 minuto. Se sair seco e limpo, regue devagar pela base até escorrer pelos furos e jogue fora a água do pratinho. Se sair úmido ou com terra grudada, não regue. De maio a setembro espace para uma rega a cada 30 dias. Em dia de chuva e frio, nunca regue.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o mandacaru",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato já úmido de uma rega, aplique adubo para cactos ou NPK 4-14-8 diluído na metade da dose da embalagem (cerca de 1 g por litro de água). Suspenda de maio a agosto. Adubo rico em nitrogênio deixa a coluna mole e fina.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar costelas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com lanterna, olhe entre as costelas e ao redor das aréolas à procura de chumaços brancos ou escamas. Aperte de leve a base da coluna, rente ao substrato: ela deve estar dura. Se estiver mole, escura ou com cheiro azedo, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o vaso e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro. Com o substrato seco, envolva a coluna em jornal dobrado ou numa mangueira cortada para segurar sem se espetar. Tire do vaso, sacuda o substrato velho e corte raízes podres ou secas. Plante num vaso 5 cm mais largo, com substrato novo e seco, e espere 7 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Não regue na primeira semana",
+      "mensagem": "As raízes quebradas no transplante apodrecem se receberem água antes de cicatrizar. Um cacto aguenta semanas sem rega; o risco agora é o excesso de água, não a falta.",
+      "acao_requerida": "Deixe o substrato seco até o dia 8 e mantenha a muda onde bata só o sol da manhã"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Mudas de viveiro costumam vir de estufa sombreada. Se forem direto para o sol da tarde, a pele queima e ficam manchas amareladas ou brancas que nunca somem.",
+      "acao_requerida": "Aumente o sol aos poucos: uma semana com sol até o meio-dia e, depois, o dia inteiro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da raiz e do colo (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Base da coluna mole, marrom ou preta, às vezes com cheiro azedo. A planta amolece e tomba de uma hora para outra, quase sempre depois de regas frequentes ou de água parada no pratinho",
+      "prevencao_tratamento": "Substrato arenoso, vaso de barro e rega só com o substrato seco até o fundo. Se já apodreceu, corte a coluna acima da parte mole até o miolo ficar verde e limpo, deixe o corte secar à sombra por 2 a 3 semanas e replante como estaca em substrato seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta (Pseudococcidae)",
+      "tipo": "PRAGA",
+      "sintomas": "Chumaços brancos parecidos com algodão entre as costelas, nas aréolas e na base; a planta perde o vigor e fica amarelada",
+      "prevencao_tratamento": "Retire com cotonete ou pincel embebido em álcool 70%. Em infestação maior, pulverize óleo de neem a 0,5% com algumas gotas de detergente neutro a cada 7 dias, no fim da tarde, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-de-escama (Diaspis echinocacti)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas brancas, cinzentas ou pardas grudadas na pele, que depois fica amarelada e manchada",
+      "prevencao_tratamento": "Raspe com escova de dente macia molhada em água com sabão neutro e depois passe álcool 70%. Repita a cada 10 dias até sumir"
+    },
+    {
+      "nome": "Cochonilha-da-raiz",
+      "tipo": "PRAGA",
+      "sintomas": "A planta para de crescer e fica opaca mesmo com rega certa; ao tirar do vaso, aparecem pontos brancos farinhentos nas raízes",
+      "prevencao_tratamento": "Tire do vaso, lave as raízes, descarte todo o substrato, deixe as raízes secarem 2 dias e replante em vaso lavado com substrato novo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amareladas, brancas ou marrons e secas do lado virado para o sol da tarde, logo depois de mudar a planta de lugar",
+      "prevencao_tratamento": "Aclimate aos poucos sempre que a planta vier da sombra. A mancha não se recupera, mas a planta continua crescendo normalmente pela ponta"
+    },
+    {
+      "nome": "Estiolamento por falta de luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "A ponta da coluna afina, fica verde-clara e se inclina para a janela",
+      "prevencao_tratamento": "Leve para um lugar com pelo menos 6 horas de sol direto. A parte fina não engrossa de novo; se incomodar, pode ser cortada e enraizada como estaca"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Chegou o repouso de inverno",
+      "mensagem": "Com o frio e os dias curtos, o mandacaru quase para de crescer e gasta muito pouca água. Substrato úmido no frio é a principal causa de podridão.",
+      "acao_requerida": "Regue no máximo uma vez por mês, só com o substrato seco até o fundo, e suspenda a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "O mandacaru aguenta frio seco, mas geada e temperaturas abaixo de 2 °C com substrato úmido queimam a pele e podem matar a coluna.",
+      "acao_requerida": "Em noites com previsão de geada, leve o vaso para perto de uma parede ou para baixo de uma cobertura e não regue nessa semana"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Os dias mais longos e quentes acordam o cacto. A ponta fica verde mais claro e surgem espinhos novos.",
+      "acao_requerida": "Volte à rega a cada 10 dias com o teste do palito e retome a adubação. É também a melhor época para trocar o vaso"
+    }
+  ]
+}

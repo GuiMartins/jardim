@@ -1,0 +1,185 @@
+{
+  "planta": {
+    "nome_comum": "Sibipiruna",
+    "nome_cientifico": "Cenostigma pluviosum (sin. Caesalpinia pluviosa)",
+    "descricao": "Árvore nativa da Mata Atlântica, muito usada na arborização de ruas do Sudeste. Na primavera cobre a copa de cachos de flores amarelas. Em vaso grande, com poda de condução, vira uma arvoreta de 2 a 3 m, bem menor que os 15 m que alcança no chão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (cimento, fibra ou plástico grosso) com pelo menos 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; vaso leve tomba com o vento quando a copa cresce",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 15% areia grossa, 10% casca de pinus fina ou perlita; misture 150 g de farinha de ossos por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente o transplante e pode perder algumas folhinhas mais velhas. Ela está adaptada quando aparecem brotos novos de folhas compostas, bem finas e de verde-claro, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o tronco engrossa. Na estação chuvosa a muda cresce rápido, de 50 cm a 1 m por ano. Nesta fase ela ainda não floresce: a planta está formando a estrutura da copa."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: no inverno seco (junho a agosto) a árvore perde parte das folhas e quase para de crescer. No fim do inverno ela brota, e de setembro a novembro vem a floração amarela, que pode levar de 3 a 5 anos para aparecer em vaso. No verão chuvoso ela cresce e forma vagens achatadas e marrons, que secam e abrem na árvore."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de sibipiruna",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos. As raízes ainda estão só no torrão da muda e não alcançam a umidade do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a sibipiruna",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelo fundo (cerca de 8 a 10 L num vaso de 60 L). No verão, com calor e vento, pode precisar a cada 2 dias. No inverno, quando a árvore perde folhas, espace para a cada 5 a 7 dias. Folhas murchas ou caindo em pleno verão indicam falta de água.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure crostas brancas ou marrons nos ramos e no verso dos folíolos (cochonilha), folhas recortadas em meia-lua (formiga cortadeira) e ramos com anel cortado na casca (serrador). Olhe também o pé do tronco: casca mole ou escura rente ao substrato indica excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de preferência entre agosto e outubro, antes da brotação. Tire a árvore do vaso, corte cerca de 1/5 das raízes que circulam o torrão e troque o substrato da borda e do fundo. Suba um tamanho de vaso (até uns 100 L) ou, se já estiver no maior, devolva ao mesmo vaso com substrato novo. Regue bem e deixe 1 semana fora do vento.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Coloque um tutor na muda",
+      "mensagem": "A sibipiruna cresce alta e fina no começo, e o vento pode entortar ou quebrar o caule antes de ele engrossar.",
+      "acao_requerida": "Enterrar uma estaca de bambu ou madeira a 5 cm do caule, sem ferir o torrão, e amarrar o caule em 2 pontos com fita ou tira de pano em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Primeira adubação",
+      "mensagem": "A muda já pegou e começa a crescer. Agora ela aproveita o adubo sem risco de queimar as raízes novas.",
+      "acao_requerida": "Espalhar 1 xícara de húmus de minhoca e 1 colher de sopa de NPK 10-10-10 pela superfície, longe do caule, e regar em seguida"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de sibipiruna",
+      "mensagem": "A árvore já tem estrutura para receber poda de condução e pode ficar grande demais para o lugar se não for contida.",
+      "acao_requerida": "Decidir a altura desejada, soltar o tutor se o tronco já se sustenta sozinho e planejar a poda de agosto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos secam da ponta para dentro; casca escura e mole no pé do tronco",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos desentupidos e nunca deixar água parada no pratinho. Se aparecer, tire do vaso, corte as raízes escuras e moles e replante em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Crostas brancas, cinzas ou marrons presas aos ramos finos e ao verso das folhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remova com escova macia ou algodão com álcool 70%. Em infestação maior, pulverize óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos cortados em meia-lua ou a árvore desfolhada de uma noite para outra; trilha de formigas carregando pedaços verdes",
+      "prevencao_tratamento": "Siga a trilha até o formigueiro e use isca formicida granulada perto dela, em dia seco. Uma faixa de graxa ou fita adesiva dupla-face em volta do vaso barra a subida"
+    },
+    {
+      "nome": "Serrador (Oncideres spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Ramos com um anel cortado em volta da casca, que secam e caem inteiros com um corte limpo",
+      "prevencao_tratamento": "Recolha e queime ou descarte no lixo os ramos caídos, porque os ovos ficam dentro deles. Pode abaixo do anel os ramos que ainda estão presos"
+    },
+    {
+      "nome": "Queda de folhas por estresse hídrico",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folíolos amarelam e caem em massa fora do inverno, depois de dias muito quentes ou de o vaso secar por completo",
+      "prevencao_tratamento": "Regar assim que os 5 cm de cima secarem no verão e cobrir o substrato com 3 cm de casca de pinus ou palha. A árvore rebrota em 2 a 3 semanas se as raízes não morreram"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno seco: menos água",
+      "mensagem": "A sibipiruna perde parte das folhas e quase para de crescer até agosto. Isso é normal e não é doença. Com menos folhas, ela gasta pouca água, e o substrato encharcado apodrece as raízes.",
+      "acao_requerida": "Espaçar a rega para a cada 5 a 7 dias, sempre conferindo com o dedo, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de condução",
+      "mensagem": "No fim do inverno a árvore está quase sem folhas e a brotação ainda não começou: é a melhor época para formar a copa e conter o tamanho.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que brotam no tronco abaixo da copa; encurtar em até 1/3 os ramos mais compridos, com corte limpo logo acima de uma gema"
+    },
+    {
+      "meses": [
+        9,
+        11,
+        1,
+        3
+      ],
+      "titulo": "Adubar a sibipiruna",
+      "mensagem": "Na estação de crescimento, o vaso esgota os nutrientes rápido. A adubação a cada 2 meses sustenta a brotação e a floração.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de NPK 10-10-10 e 1 xícara de húmus de minhoca pela superfície de um vaso de 60 L, longe do tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte no vaso",
+      "mensagem": "O substrato de vaso ao sol pleno passa dos 40 °C no verão e seca em 1 ou 2 dias.",
+      "acao_requerida": "Conferir o substrato todo dia, regar de manhã cedo e renovar a cobertura de casca de pinus ou palha sobre o substrato"
+    }
+  ]
+}

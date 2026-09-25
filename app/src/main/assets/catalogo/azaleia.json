@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Azaleia",
+    "nome_cientifico": "Rhododendron indicum",
+    "descricao": "Arbusto florífero de folhas pequenas que cobre-se de flores no outono e no inverno, justamente quando o jardim tem menos cor. Em vaso pede substrato ácido e rega constante, porque as raízes são finas e superficiais. Com esses cuidados, floresce por muitos anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico mais largo que fundo, com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 6,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal ácida (terra de urze ou substrato para azaleias), 30% casca de pinus fina, 20% turfa ou fibra de coco, 10% areia grossa; pH entre 4,5 e 5,5 e sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa e estranha a luz e a umidade novas: pode derrubar algumas folhas e botões. Não troque de vaso se estiver em flor. A fase acaba quando surgem brotos novos ou quando as folhas param de cair."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes finas começam a ocupar o substrato novo e a planta lança ramos de folhas verde-claras. Folha nova amarelada com nervuras verdes indica substrato pouco ácido ou água com calcário."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: floração do outono ao fim do inverno (abril a agosto), poda leve logo depois das flores, brotação e adubação na primavera e no verão, formação dos botões florais no fim do verão. Qualquer poda depois de janeiro corta os botões do ano seguinte."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a azaleia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. Prefira água da chuva ou água da torneira deixada 24 h em repouso. No verão acima de 30 °C, confira todo dia; no inverno, a cada 3 dias. Não molhe as flores.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas da azaleia",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos pálidos na face de cima com sujeira escura no verso (percevejo-de-renda), teias finas (ácaro) ou carocinhos brancos ou marrons presos nos ramos (cochonilha).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato da azaleia",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça logo depois da floração (setembro ou outubro), nunca com a planta em flor. Tire o torrão, solte as raízes externas com os dedos sem quebrar, e replante em substrato ácido novo num vaso 3 a 5 cm maior, sem enterrar o colo mais fundo do que estava.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, azaleia!",
+      "mensagem": "Plantas de floricultura costumam vir em substrato pouco e compactado, mas mexer nas raízes durante a floração faz cair as flores.",
+      "acao_requerida": "Colocar o vaso num lugar com sol só de manhã e luz clara no resto do dia, e deixar a troca de vaso para depois que as flores acabarem"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora de ver o substrato",
+      "mensagem": "Passado o primeiro mês, dá para saber se o substrato de origem segura água demais ou de menos.",
+      "acao_requerida": "Se a planta já não estiver em flor e o substrato secar em menos de um dia ou ficar encharcado por mais de três, replantar em substrato ácido novo num vaso um pouco maior"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com substrato úmido, ficam foscas e caem; raízes escuras e moles e casca da base do caule marrom",
+      "prevencao_tratamento": "Nunca deixar água parada no prato e usar substrato com casca de pinus para arejar; se aparecer, cortar raízes podres, replantar em substrato novo e espaçar as regas"
+    },
+    {
+      "nome": "Percevejo-de-renda (Stephanitis pyrioides)",
+      "tipo": "PRAGA",
+      "sintomas": "Face de cima das folhas pontilhada de branco-prateado; verso com pontos pretos de excremento e insetinhos de asas rendadas",
+      "prevencao_tratamento": "Evitar sol forte da tarde, que favorece a praga; pulverizar óleo de neem a 0,5% no verso das folhas no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas bronzeadas ou acinzentadas, com teias finas entre folhas e ramos, pior em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; em infestação, óleo de neem ou calda de sabão neutro a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, algodonosos ou marrons presos aos ramos e ao verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool; em infestação maior, óleo mineral ou de neem a 1% com detergente neutro, repetindo em 10 dias"
+    },
+    {
+      "nome": "Queima das flores (Ovulinia azaleae)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchinhas aquosas nas pétalas que crescem rápido; a flor inteira amolece, escurece e fica grudada no ramo",
+      "prevencao_tratamento": "Regar só o substrato, nunca as flores; retirar e descartar as flores doentes e as que murcham no vaso"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras ainda verdes",
+      "prevencao_tratamento": "Sinal de substrato alcalino ou água com calcário; regar com água da chuva, adubar com adubo para acidófilas e aplicar quelato de ferro conforme a embalagem"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões florais secam e caem antes de abrir",
+      "prevencao_tratamento": "Causado por substrato que secou, mudança de lugar em plena formação dos botões ou vento quente; manter a rega regular e não mudar o vaso de lugar de março a agosto"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda pós-floração",
+      "mensagem": "As flores acabaram e a azaleia vai brotar. Podar agora deixa a planta cheia e não corta os botões do próximo inverno.",
+      "acao_requerida": "Cortar as flores secas e encurtar em até um terço os ramos compridos ou desalinhados, logo acima de um tufo de folhas"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Adubação mensal",
+      "mensagem": "Na primavera e no verão a azaleia cresce e forma os botões do próximo inverno.",
+      "acao_requerida": "Aplicar adubo para plantas acidófilas (azaleias, camélias) na dose da embalagem para o volume do vaso, ou 1 colher de sopa de farelo de mamona curtido espalhado longe do caule, e regar em seguida"
+    },
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Chega de podar",
+      "mensagem": "Os botões florais do inverno já estão se formando na ponta dos ramos.",
+      "acao_requerida": "Não podar mais até a floração acabar e suspender a adubação a partir de março"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Proteger do calor",
+      "mensagem": "Sol da tarde e calor forte queimam as folhas e ressecam as raízes superficiais.",
+      "acao_requerida": "Levar o vaso para um lugar sem sol depois das 11h e cobrir o substrato com 2 cm de casca de pinus para segurar a umidade"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Começa a floração",
+      "mensagem": "Os botões vão abrir nas próximas semanas; mudar o vaso de lugar agora faz a planta derrubá-los.",
+      "acao_requerida": "Deixar o vaso fixo no lugar, regar só o substrato sem molhar os botões e retirar as flores que murcharem"
+    }
+  ]
+}

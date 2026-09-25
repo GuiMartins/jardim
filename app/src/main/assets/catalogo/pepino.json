@@ -1,0 +1,246 @@
+{
+  "planta": {
+    "nome_comum": "Pepino",
+    "nome_cientifico": "Cucumis sativus",
+    "descricao": "Hortaliça trepadeira de clima quente e crescimento rápido, que produz frutos para salada cerca de 55 dias após a semeadura. Em vaso, vá de cultivares compactas ou do tipo japonês/aodai conduzidas em treliça, que ocupam pouco espaço no chão e produzem por mais de um mês.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 90,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 30 cm de profundidade e 35 cm de diâmetro, furos no fundo e espaço para uma treliça ou tutor de 1,5 a 1,8 m de altura",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto curtido, 20% fibra de coco ou vermiculita para reter umidade; misture 1 colher de sopa de farinha de ossos por 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 7,
+      "descricao": "Semeie 2 a 3 sementes a 2 cm de profundidade no centro do vaso. Com substrato acima de 20 °C, as plântulas surgem entre o 4º e o 7º dia, com duas folhas ovais e lisas (cotilédones)."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 8,
+      "dia_fim": 21,
+      "descricao": "Surgem as folhas verdadeiras, ásperas e com lóbulos. A fase termina quando a planta tem 4 a 5 folhas verdadeiras e começa a soltar as primeiras gavinhas (fios enrolados)."
+    },
+    {
+      "fase_id": "crescimento_ramas",
+      "nome": "Crescimento das Ramas",
+      "dia_inicio": 22,
+      "dia_fim": 38,
+      "descricao": "A rama cresce vários centímetros por dia e as gavinhas procuram onde se agarrar. Conduza a haste principal na treliça; sem apoio, ela se espalha pelo chão e os frutos apodrecem."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 39,
+      "dia_fim": 52,
+      "descricao": "Aparecem primeiro as flores masculinas, amarelas e com haste fina, e alguns dias depois as femininas, com um minipepino atrás da pétala. Flor feminina que amarela e cai sem crescer não foi polinizada."
+    },
+    {
+      "fase_id": "frutificacao_colheita",
+      "nome": "Frutificação e Colheita",
+      "dia_inicio": 53,
+      "dia_fim": 90,
+      "descricao": "Os frutos ficam no ponto 8 a 12 dias depois da flor aberta. Colher sempre estimula novas flores; deixar frutos amadurecendo na planta faz ela parar de produzir. O ciclo termina quando as folhas de baixo secam e a produção cai."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 7,
+      "instrucoes": "Regue com regador de crivo fino pela manhã até umedecer os primeiros 3 cm do substrato. Ele não pode secar nem encharcar: semente de pepino em substrato frio e molhado apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o pepino",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue na base, sem molhar as folhas, até escorrer pelos furos. Na frutificação, com calor acima de 30 °C, confira também no fim da tarde: falta de água deixa o fruto amargo e torto.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar para crescer",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de bokashi por vaso de 20 L, sem encostar no caule, e regue em seguida.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_frutificacao",
+      "titulo": "Adubar para frutificar",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": 85,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus e 1 colher de chá de cinza de madeira peneirada (potássio) por vaso de 20 L e regue. Evite excesso de adubo nitrogenado, que dá folha e aborta flores.",
+      "critica": false
+    },
+    {
+      "id": "tutoragem_ramas",
+      "titulo": "Conduzir a rama na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Encaminhe a ponta da rama para cima e amarre a haste ao tutor com barbante em forma de 8, frouxo, a cada 20 a 30 cm de crescimento novo. Ramas soltas pendendo para fora do vaso quebram com o vento.",
+      "critica": false
+    },
+    {
+      "id": "poda_brotos",
+      "titulo": "Tirar brotos e folhas velhas",
+      "tipo": "PODA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Remova com a unha ou tesoura limpa os brotos laterais que nascem nas axilas dos 5 primeiros nós, a partir da base, e as folhas de baixo amareladas ou com mancha. Isso areja a planta e reduz oídio e míldio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e flores",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Vire as folhas e procure pó branco, manchas amarelas angulosas, insetos brancos que voam ao mexer, teias finas ou besouros verde-amarelos. Confira também o broto da ponta, onde o pulgão se agrupa.",
+      "critica": false
+    },
+    {
+      "id": "colheita_pepino",
+      "titulo": "Colher pepinos no ponto",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 53,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Corte com tesoura, deixando 1 cm de cabinho, os frutos verde-escuros e firmes com 15 a 20 cm (japonês: 20 a 25 cm; tipo conserva: 7 a 10 cm). Fruto que amarelou fica com semente dura e faz a planta parar de produzir.",
+      "critica": true
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "Com mais de uma plântula no vaso, as raízes disputam água e nenhuma planta produz bem.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa, cortando as outras rente ao substrato com tesoura para não mexer na raiz da que fica"
+    },
+    {
+      "dia_disparo": 18,
+      "titulo": "Instalar a treliça",
+      "mensagem": "As gavinhas vão aparecer nos próximos dias e a rama precisa ter onde subir.",
+      "acao_requerida": "Fincar no vaso uma treliça ou tutor de 1,5 a 1,8 m, a 5 cm do caule, ou esticar uma tela até um ponto fixo acima"
+    },
+    {
+      "dia_disparo": 42,
+      "titulo": "Polinização das flores femininas",
+      "mensagem": "Na varanda, com poucas abelhas, as flores femininas (com minipepino atrás) costumam cair sem formar fruto.",
+      "acao_requerida": "Pela manhã, colher uma flor masculina aberta, tirar as pétalas e encostar o miolo no centro de cada flor feminina aberta no dia"
+    },
+    {
+      "dia_disparo": 53,
+      "titulo": "Primeiros pepinos chegando",
+      "mensagem": "Os frutos das primeiras flores já devem estar perto do ponto de colheita.",
+      "acao_requerida": "Conferir o tamanho dos frutos e começar a colher os que estão firmes e verde-escuros"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Oídio (Podosphaera xanthii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco como talco na face de cima das folhas, que depois amarelam e secam, começando pelas mais velhas",
+      "prevencao_tratamento": "Sol pleno e boa ventilação, sem molhar as folhas; remova as folhas atacadas e pulverize leite diluído a 10% em água ou bicarbonato de sódio (1 colher de chá por litro com gotas de detergente neutro) a cada 7 dias"
+    },
+    {
+      "nome": "Míldio (Pseudoperonospora cubensis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas angulosas, limitadas pelas nervuras, com mofo cinza-arroxeado no verso; comum em tempo úmido e chuvoso",
+      "prevencao_tratamento": "Regue só na base e pela manhã, afaste o vaso de paredes que abafam; retire as folhas afetadas e, se avançar, aplique calda bordalesa a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha nas horas quentes mesmo com substrato molhado; base do caule escura e mole",
+      "prevencao_tratamento": "Vaso com furos livres e sem prato com água parada; regue só quando o dedo encontrar o substrato seco. Planta com colo podre não se recupera: descarte e use substrato novo"
+    },
+    {
+      "nome": "Pulgão (Aphis gossypii)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos no broto e no verso das folhas; folhas enroladas e pegajosas, com formigas por perto",
+      "prevencao_tratamento": "Jato de água nas colônias; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos minúsculos ao mexer nas folhas; folhas amareladas com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, que ficam cor de bronze, com teias finas no verso; piora com calor seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias quentes e secos; se houver teias, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos nas folhas e flores roídas; besouro verde com manchas amarelas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo, quando estão lentos, e proteger as plântulas novas com tecido TNT até a rama ganhar força"
+    },
+    {
+      "nome": "Fruto torto, afinado na ponta ou amargo",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos em forma de gota ou curvos, que não crescem por igual, ou com gosto amargo perto do cabo",
+      "prevencao_tratamento": "Deformação vem de polinização incompleta: polinize à mão. O amargor vem de estresse hídrico e calor: mantenha a rega regular e cubra o substrato com palha"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e chuva",
+      "mensagem": "Com calor forte o vaso seca em poucas horas, e o tempo úmido favorece o míldio.",
+      "acao_requerida": "Cobrir o substrato com 3 cm de palha, conferir a rega também no fim da tarde e retirar logo as folhas com manchas amarelas angulosas"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Frio chegando",
+      "mensagem": "Abaixo de 12 °C o pepino para de crescer e as flores caem; geada mata a planta.",
+      "acao_requerida": "Levar o vaso para o ponto mais ensolarado e abrigado do vento e, em noites abaixo de 10 °C, cobrir a planta com TNT"
+    }
+  ]
+}

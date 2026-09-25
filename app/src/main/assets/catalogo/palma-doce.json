@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Palma-doce",
+    "nome_cientifico": "Opuntia cochenillifera (sin. Nopalea cochenillifera)",
+    "descricao": "Cacto de raquetes verdes e quase sem espinhos, muito usado no Nordeste como forragem e hospedeiro histórico da cochonilha-do-carmim. Em vaso, forma uma planta escultural de sol pleno, e as raquetes novas e tenras podem ser comidas como nopal (refogadas ou em salada).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica pesado, com pelo menos 30 cm de diâmetro e 25 cm de profundidade, e furos largos no fundo. O barro seca mais rápido e o peso evita que a planta tombe quando crescer",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 30% perlita ou pedrisco fino, mais 1 colher de sopa de farinha de ossos a cada 5 L. Deve escorrer a água na hora, sem formar poça",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 45,
+      "descricao": "A raquete, já cicatrizada por 7 a 14 dias à sombra antes do plantio, vai soltando raízes a partir da parte enterrada. Por fora quase nada muda. Ela pode murchar um pouco e ficar enrugada, e isso é normal. A fase termina quando, puxando de leve, a raquete resiste firme no vaso."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 46,
+      "dia_fim": 240,
+      "descricao": "A raquete-mãe fica túrgida de novo e surgem os primeiros brotos nas bordas: pequenas raquetes com folhinhas cônicas que caem em poucas semanas. Na primavera e no verão devem aparecer 2 a 4 raquetes novas. A fase acaba quando as primeiras raquetes novas passam de 15 cm e ficam firmes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 241,
+      "dia_fim": null,
+      "descricao": "Planta formada, que cresce empilhando raquetes. Da primavera ao fim do verão emite raquetes novas e pode dar flores vermelhas tubulares, seguidas de frutos vermelhos. No inverno quase para: a rega cai para uma vez por mês e não se aduba. Se ficar alta e pesada, tire raquetes de cima para equilibrar. Elas servem de estaca para novas mudas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Rega leve da raquete",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver totalmente seco, despeje cerca de 300 ml em volta da raquete, sem encharcar. Se ainda estiver úmido, não regue. Sem raiz, a raquete apodrece com excesso de água e desidrata se passar semanas no seco.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a palma",
+      "tipo": "REGA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos e jogue fora a água do pratinho. Se estiver úmido, espere. Raquetes enrugadas pedem água; raquetes moles e amareladas na base indicam excesso. De maio a agosto, regue só uma vez a cada 30 dias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as raquetes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as duas faces das raquetes e as junções entre elas. Procure tufos brancos de algodão (esmague um: se sair líquido vermelho, é cochonilha-do-carmim), escamas brancas ou pardas grudadas e manchas moles ou escuras.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas grossas e jornal dobrado em volta das raquetes, tire a planta com o substrato seco. Corte raízes podres e passe para um vaso 5 a 10 cm mais largo com substrato novo. Espere 7 dias para regar, assim os cortes nas raízes cicatrizam.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Sem água na primeira semana",
+      "mensagem": "A raquete precisa de uma semana no substrato seco para o corte fechar de vez e as raízes começarem. Regar agora é a principal causa de podridão da estaca.",
+      "acao_requerida": "Enterrar 1/3 da raquete em pé, com o corte para baixo, firmar o substrato em volta e só regar a partir do 8º dia"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "A raquete enraizou?",
+      "mensagem": "Com cerca de 6 semanas, a estaca costuma estar enraizada e passa para a rega de planta estabelecida.",
+      "acao_requerida": "Puxar a raquete de leve: se resistir, está enraizada; se sair solta ou com a base mole e escura, cortar a parte podre, deixar cicatrizar 10 dias e replantar"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeiras raquetes novas",
+      "mensagem": "Os brotos nas bordas da raquete-mãe mostram que a planta pegou. A partir daqui ela aguenta mais sol e mais tempo sem água.",
+      "acao_requerida": "Se a planta estiver em meia-sombra, levar para o sol pleno aos poucos, 1 hora a mais por dia, para não queimar as raquetes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha-do-carmim (Dactylopius spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos cerosos, parecidos com algodão, nas raquetes; esmagados, soltam líquido vermelho-carmim. Raquetes amarelam, murcham e caem",
+      "prevencao_tratamento": "Retirar os tufos com escova e água com sabão neutro (1 colher de sopa por litro). Se voltar, pulverizar óleo de neem a 0,5% com detergente no fim da tarde, a cada 7 dias, por 3 aplicações. Raquetes muito tomadas devem ser cortadas e descartadas no lixo"
+    },
+    {
+      "nome": "Cochonilha-de-escama (Diaspis echinocacti)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas brancas ou pardas, grudadas como crosta nas raquetes, com manchas amareladas em volta",
+      "prevencao_tratamento": "Raspar com escova de dente macia e cotonete com álcool 70%, depois pulverizar óleo mineral a 1% ou neem a 0,5% a cada 10 dias até sumirem"
+    },
+    {
+      "nome": "Podridão da base e das raízes (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Base da raquete mole, escura e com cheiro ruim; a planta tomba ou as raquetes amarelam de baixo para cima com o substrato úmido",
+      "prevencao_tratamento": "Regar só com o substrato seco e nunca deixar água no pratinho. Na doença, cortar acima da parte podre até o tecido limpo, deixar a raquete sadia cicatrizar 10 a 14 dias e replantar em substrato novo"
+    },
+    {
+      "nome": "Podridão-mole das raquetes (Pectobacterium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas que se espalham rápido, deixando a raquete amolecida e com cheiro fétido, geralmente a partir de feridas",
+      "prevencao_tratamento": "Evitar ferir as raquetes e molhá-las em dias frios. Cortar a raquete afetada com lâmina desinfetada em álcool, com margem de tecido sadio, e descartar"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Raquetes novas finas, estreitas, compridas e verde-claras, que se curvam para o lado da luz",
+      "prevencao_tratamento": "Levar para um local com pelo menos 4 horas de sol direto. As raquetes deformadas não se corrigem e podem ser cortadas depois que as novas saírem normais"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelo-esbranquiçadas ou marrons e secas na face virada para o sol, depois de uma mudança brusca de lugar",
+      "prevencao_tratamento": "Aclimatar ao sol pleno aos poucos, ao longo de 1 a 2 semanas. As manchas não somem, mas a planta segue saudável"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Chegando o frio: menos água",
+      "mensagem": "No outono e no inverno a palma quase para de crescer. Substrato úmido com frio apodrece as raízes, e abaixo de 5 °C as raquetes sofrem.",
+      "acao_requerida": "Espaçar a rega para uma vez a cada 30 dias até agosto e, em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou para baixo de uma cobertura"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: a palma acorda",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento e começa a emitir raquetes novas.",
+      "acao_requerida": "Voltar à rega a cada 14 dias e tirar raquetes secas ou manchadas com faca limpa, usando luvas"
+    },
+    {
+      "meses": [
+        9,
+        11,
+        1,
+        3
+      ],
+      "titulo": "Adubar a palma",
+      "mensagem": "Durante o crescimento, uma adubação leve a cada dois meses sustenta as raquetes novas sem deixá-las moles.",
+      "acao_requerida": "Espalhar 1 colher de sopa de farinha de ossos ou de NPK 4-14-8 num vaso de 15 L, longe da base, e regar em seguida. Nada de adubo rico em nitrogênio"
+    },
+    {
+      "meses": [
+        11,
+        1,
+        3
+      ],
+      "titulo": "Raquetes novas no ponto de nopal",
+      "mensagem": "Raquetes novas com 10 a 20 cm, ainda tenras e verde-claras, estão no ponto para comer. Colher também controla o tamanho da planta em vaso.",
+      "acao_requerida": "Com luvas, cortar na junção as raquetes novas de 10 a 20 cm, deixando pelo menos 2 raquetes novas na planta. Tirar os gloquídeos (pelinhos) com faca antes de preparar"
+    }
+  ]
+}

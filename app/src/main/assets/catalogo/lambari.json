@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Lambari",
+    "nome_cientifico": "Tradescantia zebrina",
+    "descricao": "Pendente de folhas listradas em prata e verde com o verso roxo, muito usada em vasos suspensos e cachepôs. Cresce rápido, enraíza fácil por estaca e aguenta esquecimentos de rega. A seiva pode irritar a pele de pessoas e animais sensíveis, então use luvas na poda e deixe o vaso fora do alcance de cães e gatos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso suspenso ou cachepô com 15 a 20 cm de diâmetro e 12 a 15 cm de profundidade, com furos no fundo. Plante 4 a 6 estacas juntas no mesmo vaso para ele ficar cheio",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "50% terra vegetal, 30% fibra de coco ou substrato comercial para plantas, 20% areia grossa ou perlita; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Estaca",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Enterre 2 a 3 nós de estacas com 10 a 15 cm, tirando as folhas da parte enterrada. As raízes saem dos nós em 7 a 14 dias. A estaca pode murchar um pouco nos primeiros dias; quando ela fica firme e resiste a um puxão leve, enraizou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 60,
+      "descricao": "Surgem brotos novos nas pontas e ramificações nos nós. As folhas novas saem com listras prateadas bem marcadas se a luz estiver boa. Se os entrenós ficarem compridos e as folhas verdes e sem brilho, falta luz: mude o vaso para perto de uma janela com sol da manhã."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Os ramos pendem para fora do vaso e crescem vários centímetros por mês na primavera e no verão. Pequenas flores rosa-lilás aparecem no verão. No inverno o crescimento quase para. Com 1 a 2 anos a base do vaso fica pelada e os ramos compridos e ralos: é hora de renovar com as próprias estacas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar as estacas do lambari",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Toque a superfície do substrato: ela deve estar úmida, nunca encharcada nem seca. Regue devagar até escorrer pelos furos e esvazie o pratinho. Sem raiz, a estaca seca e morre em poucos dias se o substrato secar por completo.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o lambari",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. Se estiver úmido, deixe para a próxima. No verão ou com sol direto, confira a cada 2 a 3 dias; no inverno, a cada 6 a 7.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o lambari",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo NPK 10-10-10 na metade da dose da embalagem (cerca de 1 g por litro de água) e regue com o substrato já úmido. Não adube de junho a agosto. Excesso de adubo deixa as folhas verdes e sem listras.",
+      "critica": false
+    },
+    {
+      "id": "desponte_ramos",
+      "titulo": "Despontar os ramos",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas, corte logo acima de um nó as pontas dos ramos mais compridos ou ralos, e também os ramos secos ou com folhas verdes demais. Enterre as pontas cortadas (2 a 3 nós) no mesmo vaso, perto da base, para ele ficar cheio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e nós",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire algumas folhas e olhe os nós e o encontro da folha com o caule. Procure teias finas, pontinhos claros nas folhas, algodão branco ou colônias de insetos. Aperte a base dos ramos: caule mole e escuro indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "renovacao_vaso",
+      "titulo": "Renovar o vaso com estacas novas",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire de 6 a 10 pontas saudáveis de 10 a 15 cm, descarte as partes peladas e lenhosas, troque todo o substrato e replante as pontas como no começo. Faça de preferência entre setembro e março, quando o enraizamento é rápido.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "As estacas enraizaram?",
+      "mensagem": "Com duas semanas as estacas costumam ter raízes. A partir de agora o substrato pode secar um pouco entre as regas.",
+      "acao_requerida": "Puxar cada estaca de leve: se resistir, enraizou. Trocar as que saírem sem raiz ou estiverem moles na base por pontas novas"
+    },
+    {
+      "dia_disparo": 25,
+      "titulo": "Primeira desponta",
+      "mensagem": "Cortar as pontas agora faz cada estaca soltar dois ou mais ramos laterais, e o vaso fica cheio em vez de ter poucos fios compridos.",
+      "acao_requerida": "Cortar 1 a 2 cm da ponta de cada estaca, logo acima de um nó, e enterrar as pontas no mesmo vaso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do caule e da raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base dos ramos mole, escura e translúcida; ramos inteiros murcham mesmo com o substrato úmido; cheiro de mofo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm e nunca deixar água no pratinho. Cortar os ramos afetados, aproveitar as pontas sadias como estacas e replantar em substrato novo"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos claros nas folhas, que ficam opacas e amareladas; teias finas entre as folhas e nos nós, comum em ar seco e quente",
+      "prevencao_tratamento": "Lavar a planta com jato de água no verso das folhas e manter longe do ar-condicionado. Se persistir, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nos nós e no encontro das folhas; folhas amarelando e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Com muitos focos, cortar os ramos infestados e aplicar óleo de neem semanalmente por 3 semanas"
+    },
+    {
+      "nome": "Perda das listras e estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas verdes, pequenas e sem o prateado; entrenós longos; ramos finos e ralos",
+      "prevencao_tratamento": "Falta de luz ou excesso de adubo nitrogenado. Levar o vaso para um local com 2 a 3 horas de sol da manhã e podar os ramos estiolados para brotar de novo"
+    },
+    {
+      "nome": "Folhas queimadas e desbotadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas marrons e folhas esbranquiçadas no lado virado para o sol, principalmente depois de tardes quentes",
+      "prevencao_tratamento": "Evitar sol direto depois das 11 h no verão. Cortar as folhas muito danificadas; as novas saem normais"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e nada de adubo",
+      "mensagem": "Com o frio o lambari quase para de crescer e o substrato demora a secar. Rega em excesso agora apodrece a base dos ramos, e abaixo de 10 °C as folhas escurecem.",
+      "acao_requerida": "Regar só com o substrato seco a 3 cm, suspender a adubação e levar o vaso para dentro nas noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: proteger do sol da tarde",
+      "mensagem": "No calor forte o sol da tarde queima as folhas e o vaso suspenso seca em 2 ou 3 dias.",
+      "acao_requerida": "Deixar o vaso onde só bata sol até as 10 h e conferir a umidade do substrato a cada 2 dias"
+    }
+  ]
+}

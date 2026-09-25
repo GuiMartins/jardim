@@ -1,0 +1,228 @@
+{
+  "planta": {
+    "nome_comum": "Mexerica",
+    "nome_cientifico": "Citrus deliciosa (mexerica-do-rio), muda enxertada em limoeiro-cravo",
+    "descricao": "Tangerina de casca fina e solta, gomos doces e muito perfumados, tradicional nos quintais do Sudeste. Em vaso grande, uma muda enxertada fica com 1,5 a 2 m e começa a dar frutos no segundo ou terceiro ano, com colheita no outono e no inverno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 45 cm de diâmetro e 45 cm de altura, com vários furos no fundo e apoiado em pés ou rodízios para a água sair livre",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina ou perlita; misture 200 g de calcário dolomítico e 300 g de farinha de ossos a cada 50 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante com o ponto do enxerto (a cicatriz torta no caule) pelo menos 5 cm acima do substrato; enterrado, ele apodrece. Algumas folhas podem amarelar e cair na primeira semana. A fase termina quando surgem brotações novas, verde-claras, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A planta forma raiz e copa, com surtos de brotação a cada 2 ou 3 meses no calor. Flores e frutinhos que aparecerem neste primeiro ano devem ser retirados, para a energia ir para a estrutura. Arranque todo broto que nascer abaixo do enxerto: ele é do cavalo e rouba força da copa."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação e Primeiras Safras",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A copa ganha forma e a planta passa a segurar uma safra pequena, de 10 a 30 frutos. É normal cair boa parte dos frutinhos em novembro e dezembro: a planta ajusta a carga ao que consegue sustentar. A fase termina quando o tronco passa de 3 cm de diâmetro e a copa já cobre a boca do vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: poda de limpeza em agosto, florada perfumada em setembro e outubro, queda natural de frutinhos até dezembro, frutos engordando no verão e colheita de abril a julho. No inverno o crescimento quase para e a rega diminui. A cada dois anos, renove parte do substrato e das raízes."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do tronco; se estiver seco, regue devagar até escorrer pelos furos (uns 5 L num vaso de 50 L). Se ainda estiver úmido, espere mais um dia: a raiz nova apodrece no encharcado.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a mexerica",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco nessa profundidade, regue até a água sair pelos furos e esvazie o pratinho. Acima de 30 °C ou com frutos crescendo, confira a cada 2 dias. De junho a agosto, espace para a cada 5 ou 6 dias. Folhas enroladas ao meio-dia pedem água; folhas amarelas com substrato molhado pedem menos.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a mexerica",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 20-05-20 (ou 2 colheres de sopa no ano 3 em diante) mais 2 xícaras de húmus em volta do tronco, a 10 cm dele, e regue em seguida. Uma vez por ano, em setembro, junte 1 colher de chá de sulfato de magnésio diluído na rega. Pule a adubação que cair em junho ou julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as brotações novas: procure trilhas prateadas dentro da folha (minadora), cascas brancas ou marrons grudadas nos ramos (cochonilha), insetos agrupados (pulgão) e folhas com manchas amarelas assimétricas. Arranque qualquer broto que saia abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar substrato e raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em agosto, antes da florada: tire a planta do vaso, raspe 3 a 5 cm de raízes da lateral e do fundo do torrão e devolva ao mesmo vaso com substrato novo, ou passe para um vaso de 70 a 100 L. Mantenha o enxerto acima do substrato e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Firme a muda",
+      "mensagem": "Com o vento, a muda balança e rompe as raízes novas que estão se formando.",
+      "acao_requerida": "Cravar um tutor de bambu a 5 cm do tronco e amarrar em forma de 8 com fita de tecido, sem apertar"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Nada de frutos no primeiro ano",
+      "mensagem": "Flores e frutinhos agora gastam a energia que a muda precisa para formar raiz e copa.",
+      "acao_requerida": "Retirar com os dedos as flores e frutinhos que aparecerem até completar um ano de plantio"
+    },
+    {
+      "dia_disparo": 366,
+      "titulo": "Pode deixar frutificar",
+      "mensagem": "Com um ano de vaso, a mexerica já sustenta uma safra pequena na próxima florada.",
+      "acao_requerida": "Na florada, deixar os frutos e, depois da queda natural de dezembro, manter no máximo 1 fruto para cada 15 folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Gomose e podridão de raiz (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Casca do tronco escurecida e rachada perto do substrato, às vezes soltando goma âmbar; folhas amarelando e caindo com o substrato sempre úmido",
+      "prevencao_tratamento": "Enxerto sempre acima do substrato, rega só com o substrato seco a 5 cm e pratinho vazio. Raspe a casca doente até o tecido verde e pincele pasta de cobre (calda bordalesa grossa); corte a rega pela metade até rebrotar"
+    },
+    {
+      "nome": "Larva-minadora (Phyllocnistis citrella)",
+      "tipo": "PRAGA",
+      "sintomas": "Trilhas sinuosas e prateadas dentro das folhas novas, que ficam retorcidas e enroladas",
+      "prevencao_tratamento": "Ataca só brotação nova; em planta adulta o dano é estético. Em muda, pulverize óleo de neem a 0,5% nas brotações novas a cada 7 dias no fim da tarde e retire folhas muito atacadas"
+    },
+    {
+      "nome": "Cochonilhas (Orthezia, escama-farinha e outras)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos ou cascas brancas, marrons ou algodonosas nos ramos e no verso das folhas; folhas pegajosas cobertas de fumagina preta",
+      "prevencao_tratamento": "Remova com escova macia e água com sabão neutro; depois pulverize óleo mineral ou de neem a 1% a cada 10 dias, três vezes, fora do sol forte"
+    },
+    {
+      "nome": "Pulgão-preto-dos-citros (Toxoptera citricida)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias pretas nas pontas das brotações, folhas novas enroladas e pegajosas; formigas subindo o tronco",
+      "prevencao_tratamento": "Jato de água forte ou poda da ponta infestada; se voltar, sabão potássico ou neem a 0,5% a cada 5 dias. Uma faixa de graxa no tronco impede as formigas que protegem o pulgão"
+    },
+    {
+      "nome": "Mancha-marrom-de-alternária (Alternaria alternata)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons com halo amarelo nas folhas e brotações novas, que secam e caem; frutinhos com lesões escuras e queda",
+      "prevencao_tratamento": "Tangerinas são as mais sensíveis. Retire e descarte as partes atacadas, evite molhar a copa ao regar e pulverize fungicida cúprico nas brotações novas da primavera"
+    },
+    {
+      "nome": "Greening / HLB (Candidatus Liberibacter), transmitido pelo psilídeo",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas com manchas amarelas assimétricas entre as nervuras, frutos pequenos, tortos e amargos, com sementes abortadas",
+      "prevencao_tratamento": "Não tem cura. Compre só muda certificada, de viveiro telado, e controle o psilídeo (inseto pequeno e pardo nas brotações) com neem. Se confirmar, a planta deve ser eliminada para não contaminar outras"
+    },
+    {
+      "nome": "Clorose por falta de magnésio ou zinco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Magnésio: folhas velhas amarelas com um V verde na base. Zinco: folhas novas pequenas, estreitas e com manchas amarelas entre as nervuras",
+      "prevencao_tratamento": "Magnésio: 1 colher de chá de sulfato de magnésio em 5 L de água na rega, uma vez por mês por três meses. Zinco: pulverize sulfato de zinco a 0,3% nas brotações novas da primavera"
+    },
+    {
+      "nome": "Rachadura e queda de frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos rachados na casca no fim do verão ou caindo ainda verdes",
+      "prevencao_tratamento": "Causada por rega irregular: um período seco seguido de muita água. Mantenha a rega constante enquanto os frutos crescem e cubra o substrato com palha para segurar a umidade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza antes da florada",
+      "mensagem": "A mexerica floresce nos ramos novos que saem depois do inverno. Limpar a copa agora deixa entrar luz e ar e ajuda a controlar doenças.",
+      "acao_requerida": "Cortar ramos secos, doentes, cruzados e os que crescem para dentro da copa, além dos 'ladrões' verticais muito vigorosos; nunca tirar mais de 20% da copa"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Florada: não deixe secar",
+      "mensagem": "Seca durante a florada faz a planta derrubar flores e frutinhos em massa.",
+      "acao_requerida": "Conferir a rega a cada 2 dias e manter o substrato sempre levemente úmido até os frutinhos passarem do tamanho de uma ervilha"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Raleio dos frutinhos",
+      "mensagem": "A queda natural já passou. Excesso de frutos em vaso dá mexerica pequena e faz a planta alternar um ano com muito e outro sem nada.",
+      "acao_requerida": "Deixar no máximo 1 fruto para cada 15 folhas, tirando os menores, os tortos e os que estão encostados uns nos outros"
+    },
+    {
+      "meses": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "titulo": "Época de colher mexerica",
+      "mensagem": "Os frutos amadurecem no outono e no inverno. Mexerica não amadurece depois de colhida, e passada do ponto a casca estufa e os gomos secam.",
+      "acao_requerida": "Colher com tesoura, rente ao fruto, os que estão alaranjados por inteiro e com a casca começando a soltar; prove um antes de colher o resto"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Frio: menos água e proteção contra geada",
+      "mensagem": "No inverno a mexerica quase para de crescer e bebe bem menos. Tolera frio leve, mas geada queima as brotações e os frutos.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm e, em noite com previsão abaixo de 2 °C, encostar o vaso numa parede coberta ou cobrir a copa com TNT"
+    }
+  ]
+}

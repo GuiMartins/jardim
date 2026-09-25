@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Tamareira-anã",
+    "nome_cientifico": "Phoenix roebelenii",
+    "descricao": "Palmeira pequena do Sudeste Asiático, com tronco fino e folhas finas e arqueadas. Cresce devagar, fica bem em vaso por muitos anos e aguenta sol pleno e frio leve. Cuidado com os espinhos longos e pontudos na base das folhas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou fibra com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo. Evite cachepô sem saída de água",
+    "volume_minimo_litros": 25,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% casca de pinus fina ou fibra de coco, 10% húmus de minhoca; precisa escorrer a água em poucos segundos",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a mudança de luz e de vaso. Uma ou duas folhas de baixo podem amarelar, e isso é normal. Se ela veio de viveiro com sombra, deixe-a 1 semana na meia sombra antes do sol pleno, senão as folhas queimam. A fase termina quando surge uma folha nova no centro, ainda fechada como uma lança."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso novo e a palmeira volta a crescer, em ritmo lento: de 3 a 6 folhas novas por ano. Folhas novas com cor verde firme mostram que a planta pegou. Pontas marrons nas folhas indicam rega irregular ou sal acumulado no vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "A palmeira cresce da primavera ao outono e quase para no inverno. Pode dar cachos de flores creme na primavera e frutos pequenos e escuros no verão, que não são comestíveis. As folhas mais velhas secam aos poucos e são retiradas. A cada 2 anos o substrato se decompõe e precisa ser renovado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a tamareira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. O torrão da muda não pode secar por inteiro nestas semanas, mas o substrato também não pode ficar encharcado.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a tamareira",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos. Se ainda estiver úmido, espere mais um dia. No verão acima de 30 °C, confira a cada 2 ou 3 dias. No inverno, regue só a cada 7 a 10 dias. Não molhe o centro da coroa em dias frios.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_palmeira",
+      "titulo": "Adubar a tamareira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de adubo para palmeiras ou de NPK 10-10-10 com magnésio em volta do tronco, a 5 cm dele, e regue em seguida. Uma vez por ano, troque por 1 colher de sopa de sulfato de magnésio. De junho a agosto, pule esta tarefa.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Tirar as folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Use luvas grossas por causa dos espinhos. Corte rente ao tronco, com tesoura de poda, só as folhas de baixo que estiverem totalmente marrons. Folha amarelada ainda passa nutrientes para a planta: não corte. Nunca corte a folha-lança do centro.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e a base das folhas, junto ao tronco. Procure pontinhos brancos ou marrons grudados (cochonilha), teias finas com pontinhos amarelos (ácaro) e manchas marrons na folha-lança.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e março, tire a planta do vaso com luvas grossas, solte com cuidado as raízes que circulam o torrão e troque o substrato velho pela mistura recomendada. Se as raízes tomaram tudo, passe para um vaso 5 a 10 cm mais largo. Replante na mesma altura: enterrar o tronco apodrece a base.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, tamareira",
+      "mensagem": "Mudas de viveiro costumam vir em vaso pequeno e com substrato pesado. Ela também tem espinhos duros na base das folhas.",
+      "acao_requerida": "Passar a muda para um vaso de pelo menos 25 L com o substrato drenante recomendado, sem enterrar o tronco, e colocá-la longe de passagem de crianças e animais"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "Depois de uma semana de adaptação, a tamareira já aguenta mais luz. Com pouco sol, as folhas ficam compridas e fracas.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo, com pelo menos 3 horas de sol direto, de preferência pela manhã"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Adaptação concluída",
+      "mensagem": "A partir de agora a rega fica mais espaçada. Regar demais é o que mais mata palmeira em vaso.",
+      "acao_requerida": "Deixar o substrato secar nos primeiros 5 cm entre uma rega e outra"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do olho (Phytophthora palmivora)",
+      "tipo": "DOENCA",
+      "sintomas": "A folha-lança do centro escurece, amolece e sai com um puxão leve, com cheiro de podre. As folhas novas param de nascer",
+      "prevencao_tratamento": "Não deixe água parada na coroa nem no pratinho, principalmente no frio. Use substrato drenante. No começo, corte o tecido podre e aplique fungicida cúprico no centro da planta. Se o ponto de crescimento já apodreceu, a palmeira não se recupera"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam de baixo para cima, o substrato fica sempre úmido e com cheiro azedo, e a base do tronco amolece",
+      "prevencao_tratamento": "Regar só com os 5 cm de cima secos e esvaziar o pratinho. Se atingir a planta, tirar do vaso, cortar as raízes escuras e moles e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou tufos brancos no verso dos folíolos e na base das folhas. A folha fica pegajosa e cria fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%. Em infestação maior, pulverizar óleo mineral ou óleo de neem a 0,5% com algumas gotas de detergente, no fim da tarde, 3 vezes com 7 dias de intervalo"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontinhos amarelados e aspecto empoeirado, e teias finas no verso, principalmente em tempo seco e perto de parede quente",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água em dias secos. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Deficiência de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas com pontas e margens amarelo-alaranjadas e manchas translúcidas (potássio), ou faixa amarela larga nas bordas com o centro ainda verde (magnésio)",
+      "prevencao_tratamento": "Usar adubo para palmeiras, com potássio e magnésio, e aplicar sulfato de magnésio uma vez por ano. As folhas manchadas não voltam a ficar verdes. A melhora aparece nas folhas novas"
+    },
+    {
+      "nome": "Queimadura de sol ou de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrom-claras e secas nos folíolos mais expostos, que aparecem de repente depois de uma mudança para o sol pleno ou de uma noite de geada",
+      "prevencao_tratamento": "Acostumar a planta ao sol aos poucos e cobri-la com tecido (TNT) nas noites abaixo de 0 °C. Cortar os folíolos queimados só quando estiverem totalmente secos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água e nada de adubo",
+      "mensagem": "No frio a tamareira quase para de crescer. Substrato úmido e adubo nesta época apodrecem as raízes. Ela aguenta geada leve, até uns -2 °C, mas no vaso a raiz sente mais o frio.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, suspender a adubação até setembro e, no Sul, cobrir a planta com TNT nas noites de geada"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: a palmeira volta a crescer",
+      "mensagem": "Com o calor, a tamareira solta folhas novas e pode florescer. É a melhor época para retomar os cuidados de crescimento.",
+      "acao_requerida": "Retomar a adubação a cada 45 dias, voltar à rega normal e tirar as folhas que secaram no inverno"
+    }
+  ]
+}

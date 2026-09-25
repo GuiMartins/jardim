@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Figo-da-índia",
+    "nome_cientifico": "Opuntia ficus-indica",
+    "descricao": "Cacto de raquetes achatadas, originário do México e muito cultivado no Nordeste como palma forrageira. Em vaso grande, com sol pleno, dá flores amarelas na primavera e frutos doces no verão a partir do 2º ou 3º ano. É quase indestrutível, desde que não receba água demais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cimento, largo e pesado para não tombar, com pelo menos 40 cm de diâmetro, 35 cm de profundidade e furos grandes no fundo. Sem prato com água acumulada",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra de jardim, 40% areia grossa lavada, 20% pedrisco ou perlita; sem húmus em excesso nem terra argilosa, que retêm água e apodrecem a base",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Raquete",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Enterre a raquete já cicatrizada (deixada à sombra de 7 a 14 dias depois do corte) em pé, com um terço do comprimento no substrato seco, e escore com pedras. As raízes surgem entre a 2ª e a 4ª semana; a raquete pode murchar um pouco nesse período, o que é normal. Ela enraizou quando resiste a um puxão leve."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Surgem as primeiras raquetes novas na borda superior, verde-claras e macias, com folhinhas cônicas que caem em poucas semanas. Espere de 2 a 6 raquetes novas no primeiro ano. Raquetes finas, alongadas e pálidas indicam falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão e quase para no inverno. Flores amarelas surgem nas bordas das raquetes do ano anterior em outubro e novembro, e os frutos amadurecem de dezembro a março, mudando de verde para amarelo, laranja ou vermelho. No vaso, mantenha de 8 a 15 raquetes, podando o excesso depois da colheita."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Rega leve da raquete",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Molhe só os primeiros 3 cm de substrato em volta da raquete, cerca de 300 ml para o vaso de 30 L. Se o substrato ainda estiver úmido a 3 cm de profundidade, não regue. Água demais nesta fase apodrece a base antes de as raízes se formarem.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o figo-da-índia",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de churrasco até o fundo do vaso: só regue se ele sair seco e limpo. Regue até escorrer pelos furos e jogue fora a água que ficar no prato. De junho a agosto, espace para a cada 20 a 30 dias; com chuva frequente, pule a rega.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o figo-da-índia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá de adubo NPK 4-14-8 (ou adubo para cactos) em 2 L de água e regue com o substrato já úmido. Evite adubo rico em nitrogênio, que deixa as raquetes moles e sujeitas a podridão. De junho a agosto a planta está parada: não adube.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as raquetes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure tufos brancos de algodão nas raquetes (esmague um: se sair líquido vermelho, é cochonilha-do-carmim), manchas moles ou escuras e a base da planta amolecida.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, com o substrato seco: enrole as raquetes em jornal dobrado ou use luvas de couro, tire a planta, corte raízes podres e replante em substrato novo, num vaso 10 cm mais largo se as raízes estiverem enoveladas. Não regue por 7 dias depois.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Não regue a raquete ainda",
+      "mensagem": "A raquete recém-plantada ainda não tem raízes para absorver água; qualquer umidade agora pode apodrecer o corte.",
+      "acao_requerida": "Deixar o substrato seco por 7 dias, com o vaso em local claro, mas protegido do sol forte do meio-dia nesta primeira semana"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A raquete enraizou?",
+      "mensagem": "Com cerca de um mês, a raquete já deve estar presa ao substrato.",
+      "acao_requerida": "Puxar de leve: se resistir, mover para sol pleno; se sair solta com a base mole e escura, cortar a parte podre, cicatrizar por 10 dias e replantar em substrato seco"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano completo",
+      "mensagem": "A partir do segundo ano o figo-da-índia pode florir na primavera, se tiver sol pleno e rega espaçada no inverno.",
+      "acao_requerida": "Conferir se o vaso recebe pelo menos 6 horas de sol direto e mudar de lugar se as raquetes novas estiverem finas e pálidas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha-do-carmim (Dactylopius opuntiae)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodoado nas raquetes que soltam líquido vermelho ao serem esmagados; raquetes amarelam, murcham e caem",
+      "prevencao_tratamento": "Remover os tufos com escova e jato forte de água; pincelar álcool 70% nos focos e, se persistir, pulverizar solução de sabão neutro com óleo de neem a 0,5% a cada 7 dias. Raquetes muito infestadas devem ser cortadas e descartadas no lixo"
+    },
+    {
+      "nome": "Cochonilha-de-raiz (Rhizoecus spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Planta para de crescer e as raquetes enrugam mesmo com rega; pó branco nas raízes ao tirar do vaso",
+      "prevencao_tratamento": "Tirar a planta do vaso, lavar as raízes, cortar as mais atacadas, secar à sombra por 3 dias e replantar em substrato novo"
+    },
+    {
+      "nome": "Podridão da base e das raízes (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base da planta mole, escura e com cheiro ruim; raquetes tombam; raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo e nunca deixar água no prato. Na planta atacada, cortar acima da parte podre até o tecido verde e firme, deixar cicatrizar 10 a 14 dias e replantar como raquete nova"
+    },
+    {
+      "nome": "Podridão mole bacteriana (Pectobacterium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas que se espalham rápido e viram massa mole de cheiro forte, geralmente a partir de um ferimento",
+      "prevencao_tratamento": "Cortar a raquete afetada com faca limpa bem abaixo da mancha, polvilhar canela em pó no corte e manter a planta seca e ventilada"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Raquetes novas finas, compridas, estreitas e verde-pálidas, que envergam com o peso",
+      "prevencao_tratamento": "Levar para sol pleno aos poucos, ao longo de 2 semanas, para evitar queimadura; cortar as raquetes estioladas na primavera seguinte"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amareladas ou brancas e secas na face da raquete voltada para o sol, logo após mudança de lugar",
+      "prevencao_tratamento": "Aclimatar gradualmente plantas vindas da sombra; as manchas não somem, mas a raquete segue viva"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: rega mínima",
+      "mensagem": "No frio a planta quase para de crescer, e substrato úmido com temperatura baixa é a principal causa de podridão.",
+      "acao_requerida": "Regar no máximo a cada 20 a 30 dias, suspender a adubação e proteger o vaso de chuva constante; abaixo de 0 °C, cobrir com manta à noite"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomada do crescimento",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento e prepara a floração.",
+      "acao_requerida": "Voltar à rega a cada 10 dias com o substrato seco e fazer a primeira adubação da temporada"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de colher os figos",
+      "mensagem": "Em plantas com 2 anos ou mais, os frutos amadurecem neste período. Eles estão cobertos de gloquídios, espinhos minúsculos que grudam na pele.",
+      "acao_requerida": "Com luvas de couro e pinça, colher os frutos que mudaram de cor e cedem levemente ao toque, torcendo-os; esfregar os frutos em grama ou escovar sob água corrente antes de descascar"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Poda de raquetes",
+      "mensagem": "Depois da colheita, a planta tolera bem a poda, e as raquetes cortadas podem virar mudas novas.",
+      "acao_requerida": "Cortar na junta as raquetes cruzadas, doentes ou que desequilibram o vaso, mantendo de 8 a 15 raquetes; deixar as cortadas cicatrizando à sombra se quiser plantá-las em setembro"
+    }
+  ]
+}

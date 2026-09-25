@@ -1,0 +1,173 @@
+{
+  "planta": {
+    "nome_comum": "Vitória-régia",
+    "nome_cientifico": "Victoria amazonica",
+    "descricao": "Planta aquática gigante da Amazônia, com folhas flutuantes de bordas viradas para cima e flores noturnas perfumadas que abrem brancas e fecham rosadas na segunda noite. Em casa só cresce num tanque grande de água parada e ensolarada, onde as folhas ficam com 40 a 80 cm, bem menores que na natureza. Na natureza é perene, mas no Centro-Sul a água fria do inverno a faz declinar, por isso é cultivada como ANUAL: planta-se a muda na primavera e ela vai até o outono.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 240,
+    "meses_plantio": [
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Tanque sem furos, como uma caixa d'água de polietileno de 1000 L (cerca de 1,5 m de diâmetro e 60 a 80 cm de profundidade), num lugar aberto. A muda fica numa bacia ou vaso largo de 30 a 40 L, com 25 cm de profundidade, apoiado no fundo do tanque",
+    "volume_minimo_litros": 1000,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 10,
+    "substrato_recomendado": "Na bacia da raiz: 70% terra argilosa pesada (terra de barranco, sem adubo orgânico solto), 30% terra vegetal peneirada; cubra com 2 a 3 cm de areia grossa ou pedrisco para a terra não sujar a água nem flutuar",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda chega com folhas flutuantes de 10 a 20 cm. Mantenha só 10 a 20 cm de água acima da coroa para a água esquentar rápido (o ideal é acima de 25 °C). A fase termina quando surge uma folha nova maior que as anteriores."
+    },
+    {
+      "fase_id": "crescimento_folhas",
+      "nome": "Crescimento das Folhas",
+      "dia_inicio": 22,
+      "dia_fim": 75,
+      "descricao": "Cada folha nova sai maior que a anterior, a cada 4 a 7 dias, e as bordas começam a se virar para cima. Suba a água aos poucos até 40 a 60 cm acima da coroa. Se as folhas pararem de crescer, a água está fria ou falta adubo."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 76,
+      "dia_fim": 200,
+      "descricao": "Botões espinhosos sobem até a superfície e abrem ao anoitecer, brancos e com cheiro de abacaxi; na segunda noite a flor abre rosada e depois afunda. Para ter sementes, passe com um pincel o pólen da flor rosada no centro de uma flor branca da primeira noite. O fruto amadurece debaixo d'água em 6 a 8 semanas."
+    },
+    {
+      "fase_id": "declinio",
+      "nome": "Declínio de Outono",
+      "dia_inicio": 201,
+      "dia_fim": 240,
+      "descricao": "Com a água abaixo de 22 °C, as folhas novas saem cada vez menores e a floração para. Abaixo de 18 °C a planta apodrece. É a hora de guardar as sementes para a próxima primavera."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "completar_nivel_agua",
+      "titulo": "Completar o nível da água",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Marque o nível certo na parede do tanque com fita. Se a água baixou mais de 2 cm, complete com água de chuva ou água de torneira descansada por 24 h, devagar e no fim da tarde. Não troque mais de 10% do volume de uma vez para não esfriar a água. No verão acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_raiz",
+      "titulo": "Adubar a raiz",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 200,
+      "instrucoes": "Embrulhe 20 g de adubo de liberação lenta (NPK 14-14-14 ou específico para plantas aquáticas) numa bolinha de argila ou em papel-toalha e enterre 10 cm no substrato da bacia, a um palmo da coroa. Adubo solto na água não chega à raiz e deixa a água verde.",
+      "critica": false
+    },
+    {
+      "id": "remover_folhas_velhas",
+      "titulo": "Tirar folhas velhas",
+      "tipo": "PODA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 40,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Corte com tesoura, rente à coroa, o pecíolo das folhas amareladas, rasgadas ou com a borda apodrecendo; use luvas, porque os pecíolos têm espinhos. Folha podre na água suja o tanque e espalha fungo.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e água",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Procure pulgões escuros na face de cima das folhas, furos roídos, desovas rosadas de caramujo nas bordas do tanque e larvas de mosquito se mexendo na água. Confira também se os peixes estão vivos e comendo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Peixes contra o mosquito",
+      "mensagem": "Água parada ao ar livre vira criadouro do Aedes aegypti em uma semana. Peixes pequenos comem as larvas sem mexer na planta.",
+      "acao_requerida": "Colocar 4 a 6 lebistes (guppies) ou barrigudinhos no tanque; não use carpas nem kinguios, que comem as raízes"
+    },
+    {
+      "dia_disparo": 22,
+      "titulo": "Hora de subir a água",
+      "mensagem": "A muda já se firmou e as folhas precisam de mais coluna d'água para crescer.",
+      "acao_requerida": "Subir o nível em 5 a 10 cm por semana até ficar com 40 a 60 cm de água acima da coroa"
+    },
+    {
+      "dia_disparo": 76,
+      "titulo": "Primeiras flores a caminho",
+      "mensagem": "Botões espinhosos podem aparecer a qualquer momento. A flor abre só ao anoitecer e dura duas noites.",
+      "acao_requerida": "Conferir o tanque ao entardecer e, se quiser sementes, polinizar a flor branca com o pólen da flor rosada"
+    },
+    {
+      "dia_disparo": 200,
+      "titulo": "Guardar as sementes",
+      "mensagem": "A água vai esfriar e a planta não passa do inverno. Os frutos maduros se abrem debaixo d'água e soltam sementes que afundam.",
+      "acao_requerida": "Recolher as sementes escuras e guardá-las num pote com água, tampado, em temperatura ambiente; a semente morre se secar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-dos-nenúfares (Rhopalosiphum nymphaeae)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos marrons ou pretos na face de cima das folhas e nos botões; folhas novas deformadas",
+      "prevencao_tratamento": "Afunde a folha com a mão ou com jato de água para os peixes comerem os pulgões. Não use óleo de neem nem inseticida, que matam os peixes"
+    },
+    {
+      "nome": "Caramujos aquáticos (Pomacea spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e botões roídos por baixo; cachos de ovos rosa-choque nas bordas do tanque, acima da água",
+      "prevencao_tratamento": "Catar os caramujos e raspar as desovas para fora da água toda semana; conferir as mudas novas antes de pôr no tanque"
+    },
+    {
+      "nome": "Larvas de mosquito (Aedes aegypti, Culex)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas larvas se contorcendo perto da superfície, sobretudo nos cantos sem peixe",
+      "prevencao_tratamento": "Manter peixes pequenos no tanque o tempo todo; se os peixes morrerem, repor em até 3 dias ou usar larvicida biológico com Bti"
+    },
+    {
+      "nome": "Podridão das folhas e do rizoma (Pythium, fungos)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e moles que se espalham pela folha; coroa amolecida com cheiro ruim; folhas novas saem pequenas e apodrecem",
+      "prevencao_tratamento": "Tirar logo as folhas doentes, não deixar matéria orgânica apodrecendo no tanque e não plantar com a água abaixo de 22 °C"
+    },
+    {
+      "nome": "Água verde (excesso de algas)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Água turva e verde, lodo cobrindo os pecíolos e a bacia",
+      "prevencao_tratamento": "Enterrar o adubo em vez de jogar na água, cobrir o substrato com areia e deixar as folhas sombrearem a superfície; não troque toda a água de uma vez"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas cada vez menores, crescimento parado, bordas escurecendo quando a água fica abaixo de 20 °C",
+      "prevencao_tratamento": "Plantar só com a água acima de 25 °C; no outono, cobrir o tanque à noite com plástico transparente ou usar aquecedor de aquário"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4,
+        5,
+        6
+      ],
+      "titulo": "A água está esfriando",
+      "mensagem": "Com as noites frias, a água do tanque cai abaixo de 22 °C e a vitória-régia desacelera. Abaixo de 18 °C ela apodrece.",
+      "acao_requerida": "Medir a temperatura da água de manhã cedo; cobrir o tanque à noite com plástico transparente e parar de adubar"
+    }
+  ]
+}

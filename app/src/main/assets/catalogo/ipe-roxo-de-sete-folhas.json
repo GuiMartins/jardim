@@ -1,0 +1,202 @@
+{
+  "planta": {
+    "nome_comum": "Ipê-roxo-de-sete-folhas",
+    "nome_cientifico": "Handroanthus heptaphyllus",
+    "descricao": "Árvore nativa da Mata Atlântica, com folhas compostas de 5 a 7 folíolos, que perde as folhas no inverno e se cobre de flores rosa-arroxeadas entre junho e agosto. Em vaso grande fica como arvoreta de 2 a 3 m e costuma dar as primeiras flores 2 a 4 anos depois do plantio da muda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica, cimento ou plástico grosso, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, vários furos no fundo e de preferência sobre pés para não empoçar",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou pedrisco; acrescente 100 g de farinha de ossos por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode perder algumas folhas nas primeiras semanas pelo choque do transplante. Sinal de que pegou: brotos novos avermelhados ou verde-claros nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o caule engrossa. Mantenha só um tronco principal, tirando brotos que saem da base. No primeiro inverno ela perde as folhas; ramos verdes por dentro (raspe com a unha) estão vivos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: folhagem cheia de setembro a abril, queda das folhas em maio e junho, floração no galho pelado entre junho e agosto e brotação nova logo depois. Plantas vindas de semente podem levar mais alguns anos para a primeira florada."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de ipê",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda não tem raízes no substrato novo e seca antes do resto do vaso.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o ipê",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). No verão acima de 30 °C, confira a cada 2 dias; de maio a agosto, sem folhas, regue só a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o ipê",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus de minhoca mais 1 colher de sopa de NPK 10-10-10 por vaso de 60 L, longe do tronco, e regue em seguida. De maio a julho, com a planta parada, pule esta adubação; na que cair em julho ou agosto, troque o NPK por 2 colheres de farinha de ossos para ajudar a floração.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as brotações novas procurando cochonilhas, pulgões, lagartas e folíolos cortados em meia-lua (formiga cortadeira). Veja também se há trilha de formigas subindo pelo tronco.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro, logo depois da floração: tire a planta do vaso, corte 3 a 5 cm das raízes que dão volta no torrão, troque um terço do substrato por mistura nova ou passe para um vaso 20% maior. Regue bem e deixe à meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Colocar tutor na muda",
+      "mensagem": "O ipê novo tem caule fino e o vento balança o torrão, quebrando as raízes que estão começando a entrar no substrato.",
+      "acao_requerida": "Fincar uma estaca de bambu ao lado do torrão e amarrar o caule com fita ou tira de pano em oito, sem apertar"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Conferir a copa",
+      "mensagem": "Com 3 meses a muda já deve ter brotos novos. Galhos saindo muito baixos ou brotos na base roubam força do tronco principal.",
+      "acao_requerida": "Cortar rente os brotos que saem da base e do tronco abaixo de 1/3 da altura"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Soltar o tutor",
+      "mensagem": "Com um ano o tronco já deve se sustentar sozinho; a amarração velha pode estrangular o caule que engrossou.",
+      "acao_requerida": "Soltar a amarração e retirar o tutor se o caule ficar firme; se ainda tombar, afrouxar e amarrar mais alto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora do inverno, substrato sempre úmido e com cheiro azedo, base do tronco escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água parada no pratinho e reduzir muito a rega no inverno, quando a planta está sem folhas. Se atacar, tire a planta, corte as raízes escuras e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos cortados em meia-lua ou ramos desfolhados de uma noite para outra, trilha de formigas carregando pedaços de folha",
+      "prevencao_tratamento": "Siga a trilha até o formigueiro e use isca formicida granulada ao lado da trilha; no tronco, uma faixa de graxa sobre fita evita a subida"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodonosos ou escamas marrons nos ramos e no verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com escova ou algodão com álcool; em infestação, pulverizar óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo a cada 7 dias por 3 vezes"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro, bolinhas escuras de fezes no substrato",
+      "prevencao_tratamento": "Catar as lagartas à mão; em ataque forte, pulverizar Bacillus thuringiensis nas folhas"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre as folhas novas, que depois enrolam e secam, comum no outono seco",
+      "prevencao_tratamento": "Manter o vaso em local ventilado e ensolarado; pulverizar leite diluído em água (1:9) ou enxofre molhável a cada 7 dias"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "A planta perde quase todas as folhas entre maio e julho e parece morta",
+      "prevencao_tratamento": "É o ciclo natural da espécie, não doença. Raspe um ramo com a unha: verde por baixo está vivo. Não aumente a rega nem adube para tentar recuperar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Estação seca: menos água",
+      "mensagem": "O ipê entra em repouso, perde as folhas e usa pouca água. Substrato úmido nesse período apodrece as raízes.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 5 cm, em geral a cada 7 a 10 dias, e suspender a adubação com NPK"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Época da florada",
+      "mensagem": "Depois da queda das folhas, os botões aparecem na ponta dos galhos pelados. A florada dura de 2 a 3 semanas.",
+      "acao_requerida": "Manter o vaso no sol pleno e regar um pouco mais (a cada 5 a 7 dias) enquanto houver botões, sem encharcar"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger muda jovem da geada",
+      "mensagem": "A planta adulta aguenta geadas leves, mas mudas com menos de 2 anos podem perder as pontas dos ramos.",
+      "acao_requerida": "Em noites com previsão abaixo de 3 °C, encostar o vaso numa parede coberta ou cobrir a copa com manta de TNT até de manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de limpeza pós-florada",
+      "mensagem": "Acabada a floração e antes da brotação forte, é a hora de corrigir a forma da copa sem perder as flores do ano seguinte.",
+      "acao_requerida": "Cortar ramos secos, cruzados ou voltados para dentro rente ao galho, e encurtar em até 1/3 os que passaram do tamanho desejado; retomar a adubação normal"
+    }
+  ]
+}

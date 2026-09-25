@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Quiabo",
+    "nome_cientifico": "Abelmoschus esculentus",
+    "descricao": "Hortaliça de fruto de clima quente, da família do hibisco, muito rústica e produtiva no calor brasileiro. Em vaso, uma planta dá frutos por cerca de três meses se for colhida a cada dois dias. É perene em clima tropical, mas em casa é cultivada como anual.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 35 cm de profundidade e 35 cm de diâmetro, com furos no fundo; uma planta por vaso",
+    "volume_minimo_litros": 25,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto curtido, 20% areia grossa ou perlita; acrescente 1 colher de sopa de calcário e 2 de farinha de ossos por 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Deixe as sementes de molho em água morna por 12 a 24 horas antes de semear; a casca é dura. Semeie 3 sementes a 2 cm de profundidade no centro do vaso. As plântulas surgem entre o 5º e o 10º dia se o substrato estiver acima de 20 °C; em tempo frio a semente apodrece antes de nascer."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 11,
+      "dia_fim": 30,
+      "descricao": "Surgem as primeiras folhas verdadeiras, largas e recortadas. O crescimento parece lento no começo; a fase termina quando a planta tem 4 a 5 folhas verdadeiras e cerca de 20 cm."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 50,
+      "descricao": "O caule engrossa e a planta dispara em altura, podendo passar de 1 m. Folhas amarelando por baixo indicam falta de adubo ou excesso de água. A fase termina quando aparecem os primeiros botões nas axilas das folhas."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 51,
+      "dia_fim": 60,
+      "descricao": "Abrem flores amarelo-claras com centro vinho, que duram um único dia. Cada flor vira um fruto pronto para colher de 4 a 6 dias depois. Flores caindo sem formar fruto indicam falta de água, calor extremo ou noites frias."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 61,
+      "dia_fim": 150,
+      "descricao": "A planta floresce e frutifica sem parar enquanto for colhida. O quiabo está no ponto com 8 a 12 cm, quando a ponta quebra com um leve toque. Passado do ponto, fica fibroso e a planta reduz a produção. A fase termina quando a produção cai e as folhas de baixo secam."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Regue com regador de crivo fino pela manhã até umedecer os 3 primeiros centímetros. O substrato deve ficar úmido como esponja espremida, nunca encharcado, porque a semente apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o quiabo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C ou com a planta adulta carregada, confira todo dia. Não deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubação de cobertura",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 135,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca e 1 colher de chá de farinha de ossos ao redor do caule, sem encostar nele, e regue em seguida. A partir da floração, prefira adubo com mais fósforo e potássio (cinza de madeira peneirada, 1 colher de chá) e menos nitrogênio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Vire as folhas e procure pulgões nos brotos e botões, pó branco na face de cima, pontinhos amarelados com teia fina no verso e mosquinhas brancas que voam ao balançar a planta.",
+      "critica": false
+    },
+    {
+      "id": "colheita_quiabo",
+      "titulo": "Colher quiabos no ponto",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Corte com tesoura, deixando 1 cm de cabinho, todos os frutos com 8 a 12 cm cuja ponta quebra ao dobrar. Use luvas ou manga comprida, porque os pelos da planta irritam a pele. Retire também os frutos que passaram do ponto, para a planta continuar produzindo.",
+      "critica": true
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "Três plantas no mesmo vaso vão disputar água e raiz e nenhuma produz direito.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa, cortando as outras rente ao substrato com tesoura, sem arrancar"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Colocar tutor",
+      "mensagem": "O quiabo está ganhando altura e, carregado de frutos, tomba com vento forte em vaso.",
+      "acao_requerida": "Cravar uma estaca de 1,2 m a 5 cm do caule e amarrar frouxo com fita ou barbante em formato de 8"
+    },
+    {
+      "dia_disparo": 55,
+      "titulo": "Chegaram as flores",
+      "mensagem": "Cada flor aberta hoje vira um quiabo pronto em 4 a 6 dias.",
+      "acao_requerida": "Anotar quando as primeiras flores abriram e manter a rega em dia para elas não caírem"
+    },
+    {
+      "dia_disparo": 61,
+      "titulo": "Primeiros quiabos prontos",
+      "mensagem": "Os primeiros frutos devem estar com 8 a 12 cm. Deixar passar do ponto torna o fruto fibroso e reduz a produção.",
+      "acao_requerida": "Conferir o tamanho dos frutos e começar a colheita"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão (Aphis gossypii)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos, botões e verso das folhas; folhas enroladas e pegajosas, com fumagina preta",
+      "prevencao_tratamento": "Jato de água nas partes atacadas; se persistir, óleo de neem a 0,5% com uma gota de detergente neutro no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao balançar a planta; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelados nas folhas, que ficam bronzeadas e secam; teia fina no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas no fim da tarde em dias secos; óleo de neem ou calda de enxofre, sem aplicar acima de 30 °C"
+    },
+    {
+      "nome": "Oídio (Erysiphe cichoracearum)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco na face de cima das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Regar só o substrato, sem molhar as folhas; retirar as folhas atacadas; pulverizar leite diluído em água (1:9) a cada 7 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; base do caule escura e mole; plântulas tombam",
+      "prevencao_tratamento": "Não regar com o substrato ainda úmido, não deixar água no prato e usar vaso com furos. Planta com caule escurecido raramente se recupera: descarte o substrato"
+    },
+    {
+      "nome": "Fruto fibroso",
+      "tipo": "DISTURBIO",
+      "sintomas": "Quiabo duro, que não quebra na ponta e fica lenhoso ao cozinhar",
+      "prevencao_tratamento": "Colher a cada 2 dias, com 8 a 12 cm; frutos deixados na planta endurecem em poucos dias"
+    },
+    {
+      "nome": "Queda de flores e botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões e flores caem sem formar fruto",
+      "prevencao_tratamento": "Manter a rega regular, sem deixar o vaso secar por completo; ocorre também com noites abaixo de 15 °C, quando não há o que fazer além de esperar o calor"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "O frio encerra o quiabo",
+      "mensagem": "Com noites abaixo de 15 °C o quiabo para de florescer, derruba botões e os frutos crescem tortos e fibrosos.",
+      "acao_requerida": "Colher o que estiver no ponto, espaçar a rega conforme o substrato seca mais devagar e, se a produção parar, encerrar o plantio e reservar o vaso para setembro"
+    }
+  ]
+}

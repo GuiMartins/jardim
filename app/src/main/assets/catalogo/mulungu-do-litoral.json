@@ -1,0 +1,196 @@
+{
+  "planta": {
+    "nome_comum": "Mulungu-do-litoral",
+    "nome_cientifico": "Erythrina speciosa",
+    "descricao": "Arvoreta nativa da Mata Atlântica, de 3 a 5 m no chão e bem menor em vaso. Perde as folhas no inverno e se cobre de cachos de flores vermelho-coral que atraem beija-flores. Os ramos têm acúleos e as sementes são tóxicas se ingeridas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica ou cimento) com pelo menos 45 cm de diâmetro e 45 cm de profundidade, vários furos no fundo e prato raso para não acumular água parada por dias",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; misture 1 xícara de farinha de ossos por vaso para ajudar na floração",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda recém-plantada pode perder algumas folhas e parar de crescer por uns dias. A fase termina quando surgem brotos novos, verde-claros e com três folíolos, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e os ramos se alongam na primavera e no verão. No primeiro inverno a planta pode ficar pelada: é normal, e ela rebrota em setembro. Confira os ramos raspando a casca com a unha: verde por baixo significa vivo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ciclo anual: folhas cheias de outubro a abril, queda das folhas em maio e junho, floração vermelha nos ramos pelados de junho a setembro (em vaso, costuma começar a florir no 2º ou 3º ano), vagens escuras depois das flores e rebrota na primavera. Poda leve logo depois da floração mantém a copa compacta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o mulungu recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos (cerca de 3 a 4 L para um vaso de 50 L). Acima de 30 °C, confira todo dia. Esvazie o prato meia hora depois.",
+      "critica": true
+    },
+    {
+      "id": "rega_regular",
+      "titulo": "Regar o mulungu",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos. É uma planta que gosta de umidade, então no verão regue a cada 2 ou 3 dias. De maio a agosto, sem folhas, regue só quando os 5 cm estiverem secos, o que costuma levar de 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o mulungu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca e 1 colher de sopa de farinha de ossos na borda do vaso, afastado do tronco, e regue em seguida. De junho a agosto, com a planta sem folhas, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure pontas de ramo murchas ou ocas com serragem (broca), crostas brancas ou marrons no caule (cochonilha) e folhas pontilhadas de amarelo com teia fina no verso (ácaro). Use luva: os ramos têm acúleos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e outubro. Tire a planta do vaso, corte 3 a 5 cm das raízes que circulam a borda do torrão e replante com substrato novo no mesmo vaso ou num 10 cm maior, sem enterrar o colo além do nível anterior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "Enterrar o tronco além do nível em que a muda vinha apodrece o colo, mesmo numa planta que gosta de umidade.",
+      "acao_requerida": "Deixar o topo do torrão 2 a 3 cm abaixo da borda do vaso, sem cobrir o tronco com substrato, e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Firmar a muda contra o vento",
+      "mensagem": "A copa começa a pesar antes de as raízes firmarem no vaso. Vento forte balança a muda e rompe as raízes novas.",
+      "acao_requerida": "Cravar um tutor de bambu a 10 cm do tronco e amarrar com fita de tecido em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de mulungu",
+      "mensagem": "As raízes já devem ocupar boa parte do vaso e a planta pode florir a partir deste inverno ou do próximo.",
+      "acao_requerida": "Retirar o tutor se o tronco ficar firme sozinho e conferir se sai raiz pelos furos do fundo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Broca-dos-ponteiros (Terastia meticulosalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontas de ramos e brotações murcham de repente; o ramo fica oco, com furo e serragem escura",
+      "prevencao_tratamento": "Corte o ramo 5 cm abaixo da parte oca e descarte no lixo, sem compostar; repita a inspeção quinzenal na brotação da primavera"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Crostas brancas, algodonosas ou marrons coladas no caule e no verso das folhas; folhas amareladas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Remova com escova macia ou algodão com álcool 70%; em infestação maior, aplique óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto desbotado e teia fina no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; se persistir, calda de sabão neutro a 1% ou neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham com o substrato úmido, a casca do colo fica escura e mole e as raízes ficam marrons e com cheiro ruim",
+      "prevencao_tratamento": "Não deixe água parada no prato nem regue no inverno sem conferir o substrato; em caso suspeito, tire do vaso, corte as raízes podres e replante em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "A planta cresce e perde as folhas no inverno, mas não dá flores",
+      "prevencao_tratamento": "Dê pelo menos 5 horas de sol direto, evite adubo rico em nitrogênio no fim do verão e não pode os ramos entre março e junho, quando se formam os botões"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem entre abril e junho até a planta ficar pelada",
+      "prevencao_tratamento": "É natural da espécie, não é doença. Reduza a rega e não adube até a rebrota; raspe a casca com a unha para confirmar que o ramo está verde por baixo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "O mulungu vai perder as folhas",
+      "mensagem": "Com o frio, a planta entra no repouso: as folhas amarelam e caem. Sem folhas, ela gasta muito menos água.",
+      "acao_requerida": "Espaçar a rega para quando os 5 cm de cima do substrato estiverem secos e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Geada e floração",
+      "mensagem": "Os botões vermelhos surgem nos ramos pelados. Planta jovem em vaso sofre com geada forte, que queima os ponteiros e as flores.",
+      "acao_requerida": "Em noite com previsão abaixo de 3 °C, encostar o vaso numa parede ou sob beiral, ou cobrir a copa com manta TNT até de manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Rebrota da primavera",
+      "mensagem": "A floração termina e os brotos novos aparecem. É a hora de voltar a alimentar a planta.",
+      "acao_requerida": "Retomar a adubação com húmus e farinha de ossos e voltar à rega a cada 2 ou 3 dias conforme o teste do dedo"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Poda leve depois da floração",
+      "mensagem": "Podar agora mantém a copa proporcional ao vaso sem cortar os ramos que vão florir no próximo inverno.",
+      "acao_requerida": "Com luva, encurtar em até um terço os ramos longos e tirar os secos, cruzados e as vagens secas (sementes tóxicas: longe de crianças e animais)"
+    }
+  ]
+}

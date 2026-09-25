@@ -1,0 +1,201 @@
+{
+  "planta": {
+    "nome_comum": "Ninfeia",
+    "nome_cientifico": "Nymphaea spp. (híbridos tropicais e rústicos)",
+    "descricao": "Planta aquática de folhas redondas que flutuam e flores perfumadas que abrem de dia e fecham à tarde. Escolhemos os híbridos vendidos em garden centers no Brasil, cultivados em bacia, tina ou vaso sem furo. É a forma mais simples de ter um espelho d'água florido na varanda ou no quintal.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Bacia, tina, meia-barrica ou vaso sem furo, com pelo menos 50 cm de diâmetro e 35 cm de profundidade. A muda fica num cesto ou vaso raso de 20 a 25 cm, submerso no recipiente maior, com 15 a 30 cm de água acima da coroa",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "No cesto: 100% terra argilosa pesada (terra de barranco peneirada), sem casca, turfa nem composto leve, que flutuam e turvam a água. Coberta com 2 cm de areia grossa ou pedrisco para segurar a terra no lugar",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda perde algumas folhas velhas e solta folhas novas, avermelhadas e pequenas, que sobem até a superfície. Nesta fase o cesto fica mais raso (10 a 15 cm de água acima da coroa) para as folhas alcançarem a luz. A fase acaba quando 3 ou 4 folhas novas estão abertas sobre a água."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Já na profundidade final, a planta forma um tapete de folhas cada vez maiores. No calor e com 6 horas de sol ou mais, os primeiros botões aparecem entre 30 e 60 dias. Cada flor abre de manhã e fecha à tarde por 3 ou 4 dias e depois afunda. Sem botões até o dia 90 no verão, falta sol ou adubo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "De setembro a abril, a ninfeia solta folha nova e flor sem parar, e cada folha vive de 3 a 5 semanas. No inverno do Centro-Sul, o crescimento fica lento: as ninfeias tropicais param de florir, e as rústicas podem perder quase todas as folhas e ficar só com o rizoma. Folhas que se amontoam e se levantam acima da água mostram que o cesto ficou pequeno e o rizoma precisa ser dividido."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "completar_agua",
+      "titulo": "Completar o nível da água",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Complete a água até 2 cm da borda do recipiente, devagar e pela lateral, para não revolver a terra do cesto. Use água da chuva ou água da torneira deixada 24 horas num balde. No verão, um recipiente pequeno pode perder mais de 1 cm por dia: com a água baixa, as folhas ficam em pé, secam, e a água aquece demais para a coroa. No inverno, confira a cada 5 ou 6 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_pastilha",
+      "titulo": "Adubar o cesto",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Empurre 1 pastilha de adubo para plantas aquáticas (ou 1 colher de chá de NPK 10-10-10 ou de osmocote embrulhada em papel-toalha) 8 a 10 cm dentro da terra do cesto, a 5 cm da coroa, e feche o furo. Nunca jogue adubo solto na água, porque ele alimenta algas. De maio a agosto, pule esta tarefa.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas_flores",
+      "titulo": "Tirar folhas amarelas e flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura, o mais perto possível do cesto, os pecíolos de folhas amarelas, rasgadas ou furadas e das flores que já afundaram. Folha que apodrece na água deixa a água verde e com cheiro ruim.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas_larvas",
+      "titulo": "Inspecionar folhas e água",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire 3 ou 4 folhas e procure pulgões pretos, pedaços recortados e caramujos com ovos gelatinosos. Olhe a água parada por 1 minuto: larvas de mosquito se contorcendo perto da superfície pedem peixinhos ou Bti na hora.",
+      "critica": false
+    },
+    {
+      "id": "divisao_rizoma",
+      "titulo": "Dividir o rizoma e trocar a terra",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire o cesto da água, lave o rizoma e corte um pedaço de 8 a 10 cm com a ponta de crescimento e raízes. Descarte a parte velha e mole. Replante o pedaço inclinado, com a ponta para cima e a coroa rente à terra nova, cubra com areia e devolva o cesto à água.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Posicionar a muda raso",
+      "mensagem": "Muda recém-chegada afogada fundo demais gasta a reserva do rizoma para as folhas alcançarem a superfície e pode apodrecer.",
+      "acao_requerida": "Apoiar o cesto sobre tijolos para ficar com só 10 a 15 cm de água acima da coroa, num lugar com pelo menos 5 horas de sol direto"
+    },
+    {
+      "dia_disparo": 3,
+      "titulo": "Proteger a água contra o mosquito",
+      "mensagem": "Água parada ao sol é criadouro do Aedes aegypti em uma semana, e o recipiente da ninfeia não pode ser esvaziado nem coberto.",
+      "acao_requerida": "Colocar 2 ou 3 peixinhos (guppy, platy ou barrigudinho) ou aplicar Bti (larvicida biológico) na dose do rótulo, repetindo o Bti a cada 15 dias"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Baixar o cesto para a profundidade final",
+      "mensagem": "As folhas novas já chegam à superfície; a planta aguenta ficar mais funda, o que protege a coroa do calor e do frio.",
+      "acao_requerida": "Tirar um tijolo por vez, deixando 20 a 30 cm de água acima da coroa, e esperar as folhas voltarem a deitar sobre a água antes de baixar mais"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da coroa e do rizoma (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas novas saem pequenas, amarelas ou deformadas e param de nascer; o rizoma fica mole, escuro e com cheiro de podre",
+      "prevencao_tratamento": "Não usar terra com matéria orgânica leve no cesto e retirar folhas mortas toda semana. Na planta afetada, cortar a parte mole até o tecido firme e branco e replantar em terra nova. Se a ponta de crescimento estiver podre, a planta não se recupera"
+    },
+    {
+      "nome": "Pulgão-das-ninfeias (Rhopalosiphum nymphaeae)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos marrom-escuros sobre folhas e botões; folhas enrugadas e botões que não abrem",
+      "prevencao_tratamento": "Afundar as folhas com a mão por alguns segundos ou lavar com jato de água, para os peixes comerem os pulgões. Não usar inseticida nem óleo de neem, que matam peixes e fauna da água"
+    },
+    {
+      "nome": "Lagartas aquáticas (Parapoynx, Elophila)",
+      "tipo": "PRAGA",
+      "sintomas": "Pedaços ovais recortados na borda das folhas e casulos feitos de folha colados no verso",
+      "prevencao_tratamento": "Virar as folhas, esmagar ou retirar as lagartas e os casulos e cortar as folhas muito atacadas"
+    },
+    {
+      "nome": "Caramujos e lesmas-d'água",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas raspadas e furadas; massas de ovos gelatinosas no verso das folhas e na parede do recipiente",
+      "prevencao_tratamento": "Catar os caramujos e raspar as massas de ovos semanalmente; inspecionar mudas novas antes de colocá-las na água"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora e outros fungos)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas nas folhas, que se juntam até a folha apodrecer",
+      "prevencao_tratamento": "Cortar as folhas manchadas assim que aparecerem e manter a planta sem excesso de folhas amontoadas"
+    },
+    {
+      "nome": "Larvas de mosquito (Aedes aegypti, Culex)",
+      "tipo": "PRAGA",
+      "sintomas": "Larvas finas se contorcendo perto da superfície da água; não danificam a planta, mas fazem do recipiente um criadouro de dengue",
+      "prevencao_tratamento": "Manter 2 ou 3 peixinhos larvófagos no recipiente ou aplicar Bti a cada 15 dias; nunca usar óleo nem sal, que prejudicam a ninfeia"
+    },
+    {
+      "nome": "Água verde (excesso de algas)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Água turva e verde ou fios de alga cobrindo o cesto e as folhas",
+      "prevencao_tratamento": "Adubar só em pastilha enterrada, retirar folhas mortas e deixar as folhas cobrirem 60% a 70% da superfície. Retirar as algas filamentosas com um graveto e trocar 1/4 da água se ficar com cheiro ruim"
+    },
+    {
+      "nome": "Folhas pequenas e sem flor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas cada vez menores e amareladas, sem botões no verão",
+      "prevencao_tratamento": "Garantir pelo menos 6 horas de sol direto e retomar a adubação mensal. Se o cesto estiver lotado de rizomas, dividir"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Preparar a ninfeia para o inverno",
+      "mensagem": "Com o frio, a ninfeia cresce devagar, as tropicais param de florir e adubo nessa época só alimenta algas.",
+      "acao_requerida": "Suspender a adubação até setembro, cortar as folhas que forem amarelando e baixar o cesto para 30 cm de água, onde a temperatura oscila menos"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar a ninfeia na primavera",
+      "mensagem": "Com o calor, o rizoma volta a soltar folhas e a planta precisa de nutrientes para florir.",
+      "acao_requerida": "Limpar folhas velhas e detritos do fundo, voltar a adubar com pastilha e, se o cesto estiver lotado, dividir o rizoma agora"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: a água evapora mais rápido",
+      "mensagem": "No auge do verão, um recipiente pequeno pode baixar vários centímetros em poucos dias, e a água rasa esquenta demais.",
+      "acao_requerida": "Completar o nível da água a cada 2 dias e, se ela passar de 35 °C ao toque no meio da tarde, trocar 1/4 por água fresca"
+    }
+  ]
+}

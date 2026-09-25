@@ -1,0 +1,201 @@
+{
+  "planta": {
+    "nome_comum": "Buganvília",
+    "nome_cientifico": "Bougainvillea spectabilis",
+    "descricao": "Trepadeira arbustiva e espinhenta, nativa do Brasil, famosa pelas brácteas coloridas que envolvem as pequenas flores brancas. Em vaso pode ser conduzida como arbusto ou arvoreta, e floresce mais quando recebe sol pleno e rega um pouco escassa.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado (cerâmica ou cimento) com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com furos no fundo. O peso evita que o vaso tombe com o vento quando a copa cresce.",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa, 15% húmus de minhoca, 10% casca de pinus fina; bem drenado e pouco rico em matéria orgânica, para não estimular folha em vez de flor",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a mudança de ambiente e pode perder folhas e brácteas nas primeiras semanas; isso é normal. A raiz é frágil e não tolera ser desmanchada. A fase termina quando aparecem brotos novos avermelhados nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Ramos longos e vigorosos crescem rápido. É a hora de decidir a forma: amarrar a um tutor ou treliça para trepadeira, ou despontar as pontas para formar um arbusto. As primeiras brácteas costumam surgir nesta fase se a planta recebe sol pleno."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "No Centro-Sul, a florada mais forte vem do fim do inverno à primavera (agosto a novembro), com repetições menores no verão e no outono. Depois de cada florada, desponte os ramos para induzir nova brotação florífera. Crescimento intenso de primavera a outono; no inverno ela desacelera e pede menos água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e descarte a água do pratinho. Com a raiz ainda presa ao torrão original, a muda murcha rápido em dias quentes; acima de 30 °C confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a buganvília",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos. Folhas levemente murchas no fim da tarde de calor são normais; murchas de manhã indicam sede. No inverno, espace para cada 7 a 10 dias. Rega em excesso dá folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 por vaso de 30 L na borda, longe do caule, e regue em seguida. Evite adubos ricos em nitrogênio (ureia, esterco fresco), que fazem folhagem e cortam a floração. Em junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "despontar_ramos",
+      "titulo": "Despontar ramos longos",
+      "tipo": "PODA",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Use luvas por causa dos espinhos. Corte a ponta dos ramos que passaram do formato desejado, deixando 3 a 4 pares de folhas no ramo novo. A flor sai na brotação nova, então despontar depois de cada florada multiplica as brácteas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas dos brotos novos e procure pulgões, cochonilhas brancas nas axilas, folhas enroladas com teia (lagarta) e bordas roídas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera, tire a planta do vaso sem desmanchar o torrão, raspe 3 a 5 cm do substrato velho das laterais e do fundo e replante com substrato novo, no mesmo vaso ou num 5 a 10 cm maior. Regue bem e deixe 1 semana à meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante sem mexer na raiz",
+      "mensagem": "A raiz da buganvília é sensível e a planta costuma perder folhas se o torrão for desmanchado.",
+      "acao_requerida": "Cortar o saquinho ou tirar a muda do vaso com cuidado, plantar com o torrão inteiro na mesma altura em que estava e regar até escorrer"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Defina a forma da planta",
+      "mensagem": "Os ramos novos estão compridos e ainda flexíveis. É agora que se escolhe entre trepadeira e arbusto.",
+      "acao_requerida": "Para trepadeira, fincar uma treliça ou tutor no vaso e amarrar os ramos com fita macia; para arbusto, cortar as pontas dos ramos mais longos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas que caem mesmo com substrato úmido, planta murcha que não recupera após a rega, base do caule escura e mole",
+      "prevencao_tratamento": "Regar só quando os 5 cm de cima secarem, nunca deixar água no pratinho e usar substrato arenoso. Se atacada, retirar do vaso, cortar raízes escuras e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodonosos ou escamas marrons nas axilas das folhas e nos ramos; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos novos, que ficam enrolados e deformados",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% a cada 5 dias"
+    },
+    {
+      "nome": "Lagarta-da-buganvília (Asciodes gordialis)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas ou unidas por fios de seda, com fezes escuras; a planta pode ficar desfolhada em poucos dias",
+      "prevencao_tratamento": "Catar as lagartas e retirar as folhas enroladas; em ataque grande, Bacillus thuringiensis pulverizado no fim da tarde"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas circulares marrons ou arroxeadas nas folhas, que amarelam e caem, principalmente em época chuvosa",
+      "prevencao_tratamento": "Não molhar as folhas na rega, recolher as folhas caídas e desbastar ramos internos para ventilar; se avançar, fungicida à base de cobre"
+    },
+    {
+      "nome": "Queda de folhas e brácteas por mudança",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e brácteas caem de uma vez logo após a compra, transplante ou mudança de lugar, sem sinal de praga",
+      "prevencao_tratamento": "Evitar mudar o vaso de lugar e não desmanchar o torrão; manter o sol pleno e a rega regular. A planta rebrota em 2 a 4 semanas"
+    },
+    {
+      "nome": "Muita folha e pouca flor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta verde e vigorosa, com ramos longos, mas sem brácteas coloridas",
+      "prevencao_tratamento": "Garantir ao menos 6 horas de sol direto, espaçar a rega, suspender adubos nitrogenados e despontar os ramos para forçar brotação florífera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "A buganvília desacelera no frio e a rega em excesso apodrece a raiz. Geada queima ramos e folhas.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, suspender a adubação e, em noites com previsão de geada, levar o vaso para perto de uma parede ou cobrir com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Antes da brotação da primavera, a poda renova os ramos que vão carregar as brácteas da florada principal.",
+      "acao_requerida": "Com luvas, remover ramos secos, cruzados e voltados para dentro e encurtar os ramos principais em até um terço, cortando acima de uma gema"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: confira a rega no calor",
+      "mensagem": "Em vaso ao sol pleno, o substrato seca muito mais rápido nos dias acima de 32 °C.",
+      "acao_requerida": "Nos dias de calor forte, conferir o substrato todo dia no fim da tarde e regar se os 5 cm de cima estiverem secos"
+    }
+  ]
+}

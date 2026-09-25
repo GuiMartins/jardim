@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Dracena-vermelha",
+    "nome_cientifico": "Cordyline fruticosa",
+    "descricao": "Arbusto tropical de folhas largas vermelho-arroxeadas, muito usado em vasos de varanda e jardins. Cresce devagar em vaso, tolera erros de rega e ganha cor mais intensa com algumas horas de sol brando.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% substrato comercial com fibra de coco, 20% húmus de minhoca, 10% perlita ou areia grossa; levemente ácido e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda na mesma altura em que estava no saquinho, sem enterrar o caule. Nas primeiras semanas é normal perder 1 ou 2 folhas de baixo. A fase termina quando surge uma folha nova no topo, firme e colorida."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a planta solta uma folha nova a cada 1 ou 2 semanas no calor. Folhas novas esverdeadas indicam pouca luz: aproxime de uma janela ou de uma área com sol da manhã."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce de setembro a março e quase para no inverno. As folhas de baixo secam e caem naturalmente, deixando o caule nu; quando a planta ficar alta e rala, faça a poda de rejuvenescimento na primavera. Pode dar cachos de flores lilases no verão, seguidos de frutinhos vermelhos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a dracena recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Raiz recém-mexida não pode secar por completo nem ficar encharcada.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a dracena",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e não deixe água no pratinho. Prefira água de chuva ou de filtro: o flúor e o cloro da torneira queimam as pontas. No inverno o intervalo passa para 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a dracena",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 2 colheres de sopa de húmus) na borda do vaso, longe do caule, e regue em seguida. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e axilas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e o encaixe delas no caule procurando tufos brancos de algodão, teias finas ou manchas prateadas. Aproveite para arrancar as folhas de baixo já secas e passar um pano úmido nas folhas empoeiradas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso ou o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, tire a planta do vaso, solte as raízes enoveladas e replante num vaso 5 cm maior com substrato novo. Se não quiser aumentar o vaso, corte um terço das raízes de fora e troque o substrato.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Folhas de baixo caindo?",
+      "mensagem": "Perder 1 ou 2 folhas velhas nas primeiras semanas é uma reação normal à mudança. Preocupe-se só se o caule amolecer ou se as folhas novas murcharem.",
+      "acao_requerida": "Apertar a base do caule: se estiver firme, manter os cuidados; se estiver mole, reduzir a rega e conferir o cheiro das raízes"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "A raiz já se firmou no vaso novo e a planta pode começar a receber adubo.",
+      "acao_requerida": "Conferir se saiu folha nova no topo e deixar o vaso no lugar definitivo, com sol da manhã"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem de baixo para cima, a base do caule escurece e amolece e o substrato fica com cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no pratinho. Se o caule apodreceu, corte a parte sadia de cima e enraíze como estaca em substrato novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos com aspecto de algodão nas axilas e no verso das folhas; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação, pulverize óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teias finas no verso, principalmente em ambiente seco",
+      "prevencao_tratamento": "Lave o verso das folhas com jato de água e aumente a umidade ao redor; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Manchas prateadas e riscos nas folhas novas, que nascem deformadas",
+      "prevencao_tratamento": "Corte as folhas muito atacadas e aplique óleo de neem ou sabão potássico a cada 5 dias por 3 semanas"
+    },
+    {
+      "nome": "Pontas queimadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e margens das folhas marrons e secas, com o resto da planta saudável",
+      "prevencao_tratamento": "Causadas por flúor e cloro da água, excesso de adubo ou ar muito seco. Use água filtrada ou de chuva, regue até escorrer para lavar o sal e corte só a parte seca com tesoura"
+    },
+    {
+      "nome": "Perda de cor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas saem verdes ou de um vermelho apagado e o caule estica entre as folhas",
+      "prevencao_tratamento": "É falta de luz: leve para um lugar com 3 a 4 horas de sol da manhã, fazendo a mudança aos poucos ao longo de uma semana para não queimar"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou bege no meio das folhas voltadas para o sol da tarde",
+      "prevencao_tratamento": "Proteja do sol entre 11 h e 16 h no verão; as folhas queimadas não se recuperam, mas as novas saem normais"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteger do frio",
+      "mensagem": "A dracena-vermelha sofre abaixo de 10 °C e a geada mata as folhas. No frio ela quase não cresce e bebe pouca água.",
+      "acao_requerida": "Levar o vaso para perto de uma parede ou para dentro de casa nas noites abaixo de 10 °C, espaçar a rega para 7 a 10 dias e suspender a adubação"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de rejuvenescimento",
+      "mensagem": "Com a volta do calor, é a época de podar dracenas altas e peladas embaixo: o caule rebrota com 2 ou 3 novas cabeças.",
+      "acao_requerida": "Se o caule tiver mais de 1 m ou estiver nu na base, cortar a 20 cm do substrato e enraizar o topo em outro vaso como estaca; se não, só retirar as folhas secas"
+    }
+  ]
+}

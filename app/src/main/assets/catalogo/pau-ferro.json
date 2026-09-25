@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Pau-ferro",
+    "nome_cientifico": "Libidibia ferrea (sin. Caesalpinia ferrea)",
+    "descricao": "Árvore nativa do Brasil, de tronco liso com manchas claras e escuras, folhagem fina e flores amarelas. Em vaso grande, fica como arvoreta ornamental de crescimento rápido e tolera bem a seca; também é muito usada para bonsai.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica ou cimento), com pelo menos 45 cm de diâmetro e 40 cm de profundidade e vários furos no fundo, para não tombar com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa, 15% composto orgânico ou húmus de minhoca, 10% casca de pinus fina ou perlita; bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante para o vaso definitivo. Algumas folhinhas podem amarelar e cair na primeira semana, o que é normal. A fase termina quando surgem brotos novos, verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido na primavera e no verão, com ramos longos e folhas compostas bem finas. As raízes ocupam o vaso; se aparecerem saindo pelos furos antes do fim do primeiro ano, o vaso ficou pequeno. Mantenha só um tronco principal, tirando brotos que nascem na base."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arvoreta formada. Cresce forte de setembro a março, perde parte das folhas no inverno seco e rebrota na primavera. O tronco começa a descascar e a mostrar as manchas típicas. Em vaso, a floração amarela (novembro a fevereiro) costuma demorar alguns anos para aparecer."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda sem ocupar o vaso, a muda não aguenta secar por completo. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o pau-ferro",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e esvazie o pratinho. No inverno (junho a agosto), com a planta meio sem folhas, espace para uma vez por semana. Ele tolera seca, mas não tolera encharcamento.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o pau-ferro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 ou 1 xícara de húmus de minhoca na superfície de um vaso de 40 L, longe do tronco, e regue em seguida. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Examine a junção das folhas com os ramos e o tronco em busca de carapaças brancas ou marrons (cochonilha). Veja se há folhas cortadas em meia-lua ou trilhas de formigas subindo pelo vaso.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de preferência no fim do inverno. Tire a planta do vaso, corte cerca de 1/4 das raízes mais grossas e enoveladas da borda do torrão e replante com substrato novo no mesmo vaso ou num 10 cm maior. Regue bem e deixe em meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Muda de viveiro vem em saquinho apertado. Quanto antes ela for para o vaso grande, mais cedo a raiz se firma.",
+      "acao_requerida": "Cortar o saquinho sem desmanchar o torrão, plantar na mesma altura em que estava, firmar o substrato em volta e regar até escorrer"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda adaptada: sol pleno",
+      "mensagem": "Se já surgiram brotos novos, a raiz pegou e a planta aguenta sol o dia todo.",
+      "acao_requerida": "Levar o vaso para o local de sol mais forte e passar para a rega a cada 4 dias"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Conferir se o vaso ainda comporta",
+      "mensagem": "O pau-ferro cresce rápido. Com um ano, a raiz pode ter tomado o vaso inteiro.",
+      "acao_requerida": "Olhar os furos do fundo: se houver raízes grossas saindo, antecipar a renovação do substrato para o próximo agosto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora do inverno, ramos murcham mesmo com substrato úmido, base do tronco escurecida e raízes moles com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e nunca deixar água no pratinho. Se atacar, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodoadas ou marrons nos ramos e na base das folhas; fumagina preta e brotos fracos",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; em infestação, calda de sabão neutro com óleo de neem a 0,5% a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou ramos desfolhados de um dia para o outro, trilha de formigas no vaso",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca granulada própria perto dele, fora do vaso; barreira de graxa ou fita adesiva no pé do vaso"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos, finos e tortos, folhas espaçadas e queda constante de folhinhas",
+      "prevencao_tratamento": "Levar para um local com pelo menos 5 horas de sol direto e encurtar os ramos esticados na poda de agosto"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Parte da folhagem amarela e cai entre junho e agosto, sem manchas nem pragas",
+      "prevencao_tratamento": "É natural da espécie, que é semidecídua. Reduzir a rega e não adubar; a brotação volta em setembro"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno seco: menos água",
+      "mensagem": "O pau-ferro desacelera e perde parte das folhas. Com menos folha, o substrato demora mais a secar e a raiz apodrece com facilidade.",
+      "acao_requerida": "Espaçar a rega para uma vez por semana, sempre conferindo com o dedo, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno, antes da brotação, a planta aceita bem a poda e rebrota forte na primavera.",
+      "acao_requerida": "Cortar brotos da base do tronco, ramos cruzados ou secos e encurtar em 1/3 os ramos muito longos, com tesoura limpa, logo acima de uma gema"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte no vaso",
+      "mensagem": "Em dias acima de 32 °C, o vaso ao sol pleno seca muito mais rápido que o normal.",
+      "acao_requerida": "Nas ondas de calor, conferir o substrato a cada 2 dias e regar no começo da manhã"
+    }
+  ]
+}

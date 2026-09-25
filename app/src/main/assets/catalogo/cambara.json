@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Cambará",
+    "nome_cientifico": "Lantana camara",
+    "descricao": "Arbusto perene de flores em buquês que mudam de cor (amarelo, laranja, rosa, vermelho), muito resistente a sol forte e seca e ótimo para atrair borboletas. Todas as partes, principalmente os frutinhos verdes, são tóxicas para cães, gatos, gado e crianças; mantenha longe do alcance e retire os cachos de frutos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa, 25% húmus de minhoca ou composto; nada de terra argilosa pura, que encharca e apodrece a raiz",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está enraizando no vaso novo. É normal perder algumas folhas ou flores na primeira semana. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "Ramos crescem rápido e os primeiros buquês de flores aparecem. As raízes já ocupam o vaso e a planta passa a aguentar alguns dias sem água sem murchar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Floresce da primavera ao outono, quase sem parar enquanto recebe sol forte. No inverno cresce pouco, pode perder folhas e em frio intenso queima as pontas. A poda forte de fim de inverno renova a planta e garante floração farta; sem ela o arbusto fica lenhoso e ralo por dentro."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o cambará recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. Não deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cambará",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão quente pode precisar a cada 2 ou 3 dias; no inverno, a cada 7 a 10 dias. Folhas murchas ao meio-dia que se recuperam à tarde não indicam falta de água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar o cambará",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de farinha de ossos) na borda do vaso, longe do caule, e regue em seguida. Pule a adubação em junho e julho. Excesso de adubo com nitrogênio dá muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_frutos",
+      "titulo": "Cortar flores secas e frutinhos",
+      "tipo": "PODA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura os buquês secos e os cachos de bolinhas verdes ou pretas logo abaixo da inflorescência. Os frutos são tóxicos e, se ficarem, a planta gasta energia neles e floresce menos. Use luvas: a seiva irrita a pele.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure mosquinhas brancas que voam ao sacudir, pontinhos amarelados ou teias finas no verso, e pó branco sobre as folhas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso ou o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, corte 1/3 das raízes enoveladas de fora e replante com substrato novo num vaso igual ou 5 cm maior. Regue bem e mantenha à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Nada de adubo ainda",
+      "mensagem": "As raízes ainda estão se recuperando do transplante e adubo agora pode queimá-las.",
+      "acao_requerida": "Esperar até o dia 31 para a primeira adubação e só manter a rega"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora do desponte",
+      "mensagem": "Cortar as pontas agora faz o cambará ramificar e formar um arbusto cheio, com muito mais buquês.",
+      "acao_requerida": "Cortar com tesoura os 3 a 5 cm da ponta de cada ramo principal, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; folhas amareladas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Jato de água no verso das folhas e armadilha adesiva amarela; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde a cada 5 dias, três aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos ou prateados, teias finas no verso e nas pontas; comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água nos dias secos; óleo de neem a 0,5% a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Percevejo-de-renda (Teleonemia scrupulosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas descoloridas, com aspecto de bronze, e pontinhos pretos (excrementos) no verso",
+      "prevencao_tratamento": "Retirar e descartar folhas muito atacadas; óleo de neem a 0,5% no verso das folhas a cada 7 dias"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que depois amarelam e caem; comum com pouco sol e ar parado",
+      "prevencao_tratamento": "Mudar para lugar com mais sol e ventilação, regar só o substrato; pulverizar leite diluído a 10% ou bicarbonato (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelando de baixo para cima, base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco, nunca deixar água no prato e usar substrato com areia; se atacar, tirar do vaso, cortar raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Pouca floração por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos compridos e finos, muitas folhas e quase nenhum buquê",
+      "prevencao_tratamento": "Levar para lugar com pelo menos 6 horas de sol direto e suspender adubos ricos em nitrogênio"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno o cambará está quase parado; a poda forte agora gera brotação nova e floração farta na primavera.",
+      "acao_requerida": "Cortar todos os ramos pela metade ou até 1/3 da altura, eliminando galhos secos e cruzados, com luvas e tesoura limpa"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio e regar menos",
+      "mensagem": "No inverno o cambará cresce pouco e o substrato demora a secar; geada queima folhas e pontas.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm e, em noites com previsão de geada, levar o vaso para perto de uma parede ou sob cobertura"
+    }
+  ]
+}

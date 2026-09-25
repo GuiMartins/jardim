@@ -1,0 +1,212 @@
+{
+  "planta": {
+    "nome_comum": "Jamelão",
+    "nome_cientifico": "Syzygium cumini",
+    "descricao": "Árvore frutífera de origem indiana, muito comum em ruas e quintais do Brasil. Dá cachos de frutinhas roxo-escuras, doces e adstringentes, que mancham tudo o que tocam. No chão passa de 10 m, mas em vaso grande e com poda anual fica como arvoreta de 2 a 3 m e frutifica. A muda enxertada ou de alporquia começa a produzir mais cedo do que a de semente.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cimento ou fibra com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo. Comece num vaso de 30 a 40 L e passe para o definitivo, de 60 a 100 L, no segundo ano",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 15% areia grossa, 10% casca de arroz carbonizada, mais 1 punhado de farinha de ossos a cada 20 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. É normal cair uma ou outra folha velha nas primeiras duas semanas. A fase termina quando surgem brotos avermelhados na ponta dos ramos, que são as folhas novas do jamelão."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido na primavera e no verão, com fluxos de brotação vermelho-cobre que depois ficam verde-brilhante. Deixe um tronco principal e conduza 3 ou 4 ramos laterais bem distribuídos. Se o vaso ainda for o provisório, as raízes começam a aparecer pelos furos no fim desta fase."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1460,
+      "descricao": "A árvore engrossa o tronco e forma a copa. A poda anual depois do verão mantém a altura em 2 a 3 m. Mudas enxertadas ou de alporquia podem dar as primeiras flores já nesta fase; mudas de semente em geral ainda não florescem."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1461,
+      "dia_fim": null,
+      "descricao": "Ano típico: floração de pequenas flores brancas e perfumadas entre setembro e novembro, frutos amadurecendo de dezembro a fevereiro (verdes, depois rosados e por fim roxo-quase-pretos), poda de contenção em março e abril e crescimento lento no inverno. Troca de substrato e poda de raiz a cada dois anos mantêm a produção em vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de jamelão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. O substrato deve ficar úmido, nunca encharcado nem com água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jamelão",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 8 a 10 L num vaso de 60 L). No verão e durante a floração e a frutificação, confira a cada 2 dias; no inverno, espace para 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o jamelão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 litro de húmus de minhoca ou composto e 2 colheres de sopa de farelo de mamona ou torta de mamona curtida por vaso de 60 L, a 10 cm do tronco, misture de leve na superfície e regue. Em junho e julho, pule esta adubação: a árvore está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos e o verso das folhas procurando folhas enroladas ou deformadas, pontinhos brancos de cochonilha nos ramos e fumagina (pó preto). Confira também se a água escorre pelos furos e se o substrato não está com cheiro azedo.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 731,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Prefira fazer entre agosto e setembro, antes da brotação. Tire a árvore do vaso, corte 3 a 5 cm de raiz em volta de todo o torrão e raspe o substrato velho das laterais. Volte ao vaso (ou a um um pouco maior) com substrato novo, regue bem e mantenha a meia sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Jamelão no vaso",
+      "mensagem": "Nos primeiros dias a muda sente a mudança. Sol forte da tarde logo no início pode queimar as folhas.",
+      "acao_requerida": "Deixar o vaso em local com sol da manhã por 7 dias e só depois passar para o sol pleno"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "A muda já se adaptou. Com menos de 4 horas de sol direto o jamelão estica, fica ralo e não floresce.",
+      "acao_requerida": "Mudar o vaso para o lugar mais ensolarado da casa, com pelo menos 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Formar a copa",
+      "mensagem": "Com cerca de 80 cm a 1 m de altura, uma poda de ponta faz o jamelão ramificar baixo, o que é essencial para ele caber num vaso.",
+      "acao_requerida": "Cortar a ponta do tronco principal a 80 cm do substrato e escolher 3 ou 4 brotos laterais bem distribuídos para formar a copa"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano completo",
+      "mensagem": "Se a árvore ainda está no vaso provisório, as raízes já devem estar enoveladas.",
+      "acao_requerida": "Na próxima primavera, passar a árvore para o vaso definitivo de 60 a 100 L com substrato novo"
+    },
+    {
+      "dia_disparo": 1461,
+      "titulo": "Idade de frutificar",
+      "mensagem": "Mesmo mudas de semente costumam florescer a partir de agora. Se não florescer, a causa quase sempre é pouco sol ou excesso de adubo nitrogenado.",
+      "acao_requerida": "Garantir 6 horas ou mais de sol direto e trocar parte do adubo por farinha de ossos na primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (excesso de água)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, ramos secam de cima para baixo, substrato com cheiro azedo e raízes marrons e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter os furos desobstruídos. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Psilídeo do jamelão (Trioza sp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas com bolinhas ou calombos (galhas) na superfície, enroladas e deformadas; brotos atrofiados",
+      "prevencao_tratamento": "Cortar e descartar os brotos atacados; nas brotações seguintes, aplicar óleo de neem a 0,5% no fim da tarde a cada 7 dias enquanto as folhas estiverem vermelhas e macias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos brancos ou carapaças marrons grudados nos ramos e no verso das folhas, folhas pegajosas e com fumagina",
+      "prevencao_tratamento": "Remover com escova de dentes e água com sabão neutro; depois, óleo mineral a 1% ou óleo de neem a 0,5%, repetindo em 10 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e secas nas folhas e nos frutos; flores e frutinhos escurecem e caem, principalmente em verão muito chuvoso",
+      "prevencao_tratamento": "Podar para arejar a copa, recolher frutos e folhas caídos e não molhar a copa na rega; em ataques fortes, calda bordalesa a 1% após a colheita"
+    },
+    {
+      "nome": "Queda de flores e frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "A árvore floresce bem, mas as flores e os frutos verdes caem em massa",
+      "prevencao_tratamento": "Não deixar o substrato secar por completo entre setembro e fevereiro, quando flores e frutos estão se formando, e evitar adubo rico em nitrogênio nessa época"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Floração do jamelão",
+      "mensagem": "Árvores adultas soltam agora pequenas flores brancas e perfumadas. Falta de água nesta época derruba as flores.",
+      "acao_requerida": "Conferir a rega a cada 2 dias e dar 2 colheres de sopa de farinha de ossos por vaso de 60 L"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Época de colher jamelão",
+      "mensagem": "Em árvores que floresceram, os frutos amadurecem aos poucos: ficam roxo-quase-pretos, brilhantes e macios. Maduros caem sozinhos e mancham piso e roupa.",
+      "acao_requerida": "Colher a cada 2 ou 3 dias os frutos já escuros e macios e forrar o chão sob o vaso com jornal ou lona"
+    },
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Poda de contenção",
+      "mensagem": "Passada a frutificação, é a hora de controlar o tamanho da árvore para ela continuar cabendo no vaso.",
+      "acao_requerida": "Encurtar os ramos mais longos em até um terço, tirar ramos secos, cruzados e os que crescem para dentro da copa e manter a altura em 2 a 3 m"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O jamelão tolera frio leve, mas a geada queima folhas e brotos, e árvores com menos de 2 anos podem morrer.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, levar o vaso para perto de uma parede ou sob uma cobertura e regar menos, a cada 5 a 7 dias"
+    }
+  ]
+}

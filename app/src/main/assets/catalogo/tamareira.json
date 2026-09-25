@@ -1,0 +1,216 @@
+{
+  "planta": {
+    "nome_comum": "Tamareira",
+    "nome_cientifico": "Phoenix dactylifera",
+    "descricao": "Palmeira do deserto que dá as tâmaras, fácil de germinar a partir do caroço de uma tâmara comprada no mercado. Em vaso cresce devagar e vira uma palmeira ornamental de sol pleno. Raramente frutifica em casa, porque existem pés machos e fêmeas separados e a produção exige planta grande e clima seco.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Para germinar: copo ou vaso fundo de 15 cm de altura com furos. Vaso definitivo alto, de 40 cm de profundidade e 40 cm de diâmetro ou mais, com vários furos no fundo, porque a raiz principal desce reto e fundo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca e 10% perlita ou casca de arroz carbonizada; precisa drenar rápido e nunca empapar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 60,
+      "descricao": "Deixe o caroço limpo de polpa de molho em água morna por 48 horas, trocando a água a cada 12 horas, e enterre-o na vertical a 2 cm de profundidade. Com calor acima de 25 °C, a raiz sai em 2 a 6 semanas e desce antes de qualquer folha aparecer. A fase termina quando uma folhinha fina, parecida com capim, rompe o substrato."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 61,
+      "dia_fim": 365,
+      "descricao": "A muda solta 2 a 4 folhas inteiras, estreitas e compridas, uma por vez. A raiz já ocupa o fundo do copo, então a troca para o vaso fundo deve ser feita com o torrão inteiro. Crescimento lento é normal."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "As folhas novas começam a se dividir em folíolos, e a planta passa a parecer uma palmeira de verdade. A base engrossa. Aguenta mais sol e mais tempo sem água do que no primeiro ano."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Palmeira de folhas longas, rígidas e espinhosas na base. Cresce na primavera e no verão, fica quase parada no inverno e perde de vez em quando as folhas mais baixas, que secam. Em vaso ela se mantém entre 1,5 e 2,5 m por muitos anos. Use luvas: os espinhos da base das folhas furam."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer a semente da tamareira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Toque a superfície do substrato. Se o primeiro centímetro estiver seco, regue devagar até escorrer pelos furos. O substrato deve ficar úmido como uma esponja torcida, nunca encharcado nem seco, porque a raiz recém-saída morre se secar. Mantenha o copo num lugar quente e claro.",
+      "critica": true
+    },
+    {
+      "id": "rega_plantula",
+      "titulo": "Regar a muda de tamareira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": 365,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e regue só se estiver seco, até escorrer pelos furos. Esvazie o pratinho depois de 30 minutos. No inverno, espere o substrato secar até 5 cm de profundidade.",
+      "critica": false
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a tamareira",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 366,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue se estiver seco, até a água sair pelos furos. Acima de 32 °C, confira a cada 3 dias. De maio a agosto, regue só quando o substrato estiver seco até a metade do vaso, o que costuma levar 10 a 14 dias. O excesso de água mata mais tamareiras do que a seca.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a tamareira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 120,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe adubo de liberação lenta para palmeiras (ou NPK 10-10-10 com magnésio e micronutrientes) sobre o substrato, sem encostar no tronco: 1 colher de chá num vaso pequeno e 2 colheres de sopa num vaso de 40 L. Regue em seguida. Entre maio e agosto, use metade da dose.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas da tamareira",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Examine o verso dos folíolos e a base das folhas novas no centro da planta. Procure escamas brancas ou marrons, teias finas, pontinhos amarelos e pó preto grudento. Veja também se a folha central está firme e sem cheiro de podre.",
+      "critica": false
+    },
+    {
+      "id": "poda_folhas_secas",
+      "titulo": "Tirar folhas secas da tamareira",
+      "tipo": "PODA",
+      "frequencia_dias": 180,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas grossas, corte com serrote ou tesoura de poda limpa as folhas mais baixas que estejam totalmente marrons, a 5 cm do tronco. Não corte folhas verdes nem as que só têm as pontas amareladas, porque a palmeira ainda tira nutrientes delas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato ou o vaso da tamareira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 880,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, retire a planta com o torrão inteiro. Se as raízes estiverem enroladas no fundo, passe para um vaso 10 cm mais largo e mais fundo. Se o vaso já estiver no tamanho máximo, raspe 5 cm do substrato de cima e das laterais e complete com substrato novo. Nunca enterre a base do tronco mais fundo do que estava.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 50,
+      "titulo": "A tamareira já brotou?",
+      "mensagem": "A maioria dos caroços já soltou uma folhinha fina a esta altura. Se ainda não apareceu nada, pode ser só frio, ou a semente pode ter apodrecido.",
+      "acao_requerida": "Afastar o substrato com cuidado e olhar o caroço. Se tiver raiz branca, cobrir de novo e esperar. Se estiver mole ou mofado, descartar e semear outro caroço"
+    },
+    {
+      "dia_disparo": 75,
+      "titulo": "Acostumar a muda ao sol",
+      "mensagem": "A plântula que ficou em luz clara pode queimar se for de uma vez para o sol pleno.",
+      "acao_requerida": "Deixar o copo 2 horas no sol da manhã e aumentar 1 hora a cada 2 dias até ele ficar o dia inteiro no sol"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "A raiz principal já chegou ao fundo do copo. Se ficar mais tempo lá, ela enrola e a muda para de crescer.",
+      "acao_requerida": "Passar a muda com o torrão inteiro, sem soltar a terra nem quebrar a raiz, para um vaso de pelo menos 30 cm de profundidade com o substrato recomendado, e regar bem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do olho (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "A folha central amarela, murcha e sai com um puxão leve, com a base escura e cheiro de podre. O substrato fica úmido por dias e as folhas amarelam de baixo para cima",
+      "prevencao_tratamento": "Regar só com o substrato seco na profundidade indicada, não deixar água no pratinho nem no centro da planta, e usar substrato com areia. Se o olho já apodreceu, a planta raramente se recupera. Em caso inicial, tirar do vaso, cortar as raízes pretas e replantar em substrato seco"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas ou marrons presas aos folíolos e à base das folhas, ou algodão branco nas axilas. Folhas amareladas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%. Se a infestação for grande, pulverizar óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nos folíolos, que ficam acinzentados, e teias finas no verso. Aparece em tempo seco e em ambiente fechado",
+      "prevencao_tratamento": "Borrifar água nas folhas em dias secos e lavar a planta com jato de água. Se persistir, usar óleo de neem a 0,5% ou acaricida específico a cada 5 dias"
+    },
+    {
+      "nome": "Falso-carvão (Graphiola phoenicis)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas pequenas, pretas e duras dos dois lados dos folíolos, das quais saem filamentos amarelados. As folhas mais velhas amarelam antes do tempo",
+      "prevencao_tratamento": "Manter a planta em sol pleno e com ventilação, e não molhar as folhas no fim da tarde. Remover as folhas muito atacadas. Se o ataque for forte, pulverizar fungicida cúprico"
+    },
+    {
+      "nome": "Deficiência de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas com pontas secas e manchas alaranjadas translúcidas (potássio) ou com uma faixa amarela nas bordas e o centro ainda verde (magnésio)",
+      "prevencao_tratamento": "Usar adubo próprio para palmeiras, com potássio e magnésio, na dose indicada. As folhas afetadas não voltam a ficar verdes, mas as novas nascem sadias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas nos folíolos voltados para o sol, surgindo poucos dias depois de a planta mudar de lugar",
+      "prevencao_tratamento": "Levar para o sol pleno aos poucos, ao longo de 2 semanas, sempre que a planta vier da sombra ou de dentro de casa. As folhas queimadas não se recuperam"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Menos água no frio",
+      "mensagem": "Com o frio, a tamareira quase para de crescer, e o substrato demora muito mais para secar. Manter a rega de verão é o caminho mais curto para apodrecer a raiz.",
+      "acao_requerida": "Regar só quando o substrato estiver seco até a metade do vaso e reduzir o adubo à metade da dose até agosto"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "A tamareira adulta aguenta frio leve, mas mudas com menos de 2 anos queimam com geada.",
+      "acao_requerida": "Nas noites com previsão de geada, levar o vaso para perto de uma parede ou para baixo de um beiral, ou cobrir a planta com TNT, retirando a cobertura de manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "A tamareira volta a crescer",
+      "mensagem": "Com o calor da primavera, começa a temporada de crescimento: ela volta a pedir mais água e a soltar folhas novas.",
+      "acao_requerida": "Voltar à rega de verão e olhar se há raízes saindo pelos furos. Se houver, trocar para um vaso maior"
+    }
+  ]
+}

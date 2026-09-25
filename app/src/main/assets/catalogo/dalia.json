@@ -1,0 +1,213 @@
+{
+  "planta": {
+    "nome_comum": "Dália",
+    "nome_cientifico": "Dahlia pinnata (cultivares de jardim)",
+    "descricao": "Planta mexicana de raiz tuberosa com flores grandes e muito variadas em forma e cor, do verão ao outono. Em vaso, prefira as cultivares anãs ou médias (até 90 cm). No inverno a parte aérea seca e a planta volta a brotar das raízes tuberosas na primavera.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 35 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; para cultivares acima de 90 cm, 45 cm de diâmetro",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de pinus fina, mais 1 colher de sopa de farinha de ossos por vaso. Precisa drenar bem, porque a raiz tuberosa apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Enterre a raiz tuberosa deitada a 8–10 cm de profundidade, com o colo (onde ficam os olhos) voltado para cima. Os brotos surgem entre 2 e 4 semanas. Sem folhas, a raiz quase não bebe, e substrato molhado nessa fase é a principal causa de podridão. A fase termina quando os brotos passam de 5 cm."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 22,
+      "dia_fim": 60,
+      "descricao": "Os caules engrossam e as folhas se multiplicam rápido; a necessidade de água cresce junto. Com 3 ou 4 pares de folhas, faça o desponte para a planta ramificar. A fase termina quando aparecem os primeiros botões redondos nas pontas dos ramos."
+    },
+    {
+      "fase_id": "primeira_floracao",
+      "nome": "Primeira Floração",
+      "dia_inicio": 61,
+      "dia_fim": 150,
+      "descricao": "Os botões abrem entre 60 e 90 dias após o plantio, e a floração continua por meses se as flores murchas forem retiradas. Os caules ficam pesados e dobram com vento e chuva, então amarre-os ao tutor conforme crescem."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota em agosto e setembro, cresce na primavera e floresce de dezembro a abril. No fim do outono as folhas amarelam e a parte aérea seca. De junho a agosto fica dormente, só com as raízes tuberosas no vaso e quase sem rega. As raízes se multiplicam e devem ser divididas a cada primavera, antes de voltar a brotar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Conferir umidade da dália",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Só regue se estiver seco nessa profundidade, com meio copo (100 ml) ao redor do ponto de plantio. Depois da rega do plantio, a raiz tuberosa tem reserva própria e raramente precisa de água antes de brotar.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a dália",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, sem molhar as folhas. Em dias acima de 30 °C, confira todo dia. Na dormência (parte aérea seca, de junho a agosto), regue só um copo a cada 3 semanas e marque as outras vezes como 'não precisou'.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a dália",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá de NPK 4-14-8 em 1 litro de água e regue o vaso com o substrato já úmido. Na vez seguinte, troque por 2 colheres de sopa de farinha de ossos espalhadas na superfície. Evite adubo rico em nitrogênio, que faz muita folha e caule mole. Não adube na dormência (maio a agosto).",
+      "critica": false
+    },
+    {
+      "id": "amarrar_tutor",
+      "titulo": "Amarrar caules ao tutor",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Amarre ao tutor os caules que cresceram desde a última vez, a cada 20–30 cm de altura, com fita macia em forma de oito (cruzando entre o caule e o tutor). Os caules da dália são ocos e quebram na base com chuva forte.",
+      "critica": false
+    },
+    {
+      "id": "remover_flores_murchas",
+      "titulo": "Tirar flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 65,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte cada flor murcha com o cabo inteiro, até logo acima do primeiro par de folhas abaixo dela. Flor murcha deixada no pé vira semente, e a planta para de soltar botões. Botão de flor já murcha é pontudo; botão novo é redondo.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a dália",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos e o verso das folhas, procurando pulgões, pontinhos amarelados (ácaro), pó branco (oídio) e folhas roídas com rastro brilhante (lesma). À noite, confira o pé do vaso com uma lanterna.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Coloque o tutor agora",
+      "mensagem": "Enfiar o tutor depois que a planta brota pode furar a raiz tuberosa, que fica escondida no substrato.",
+      "acao_requerida": "Cravar um tutor de 1 m a 5 cm da raiz tuberosa no dia do plantio e regar uma vez até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 25,
+      "titulo": "Sem brotos ainda?",
+      "mensagem": "A maioria das dálias brota em até 4 semanas. Se nada apareceu, a raiz pode ter apodrecido ou foi plantada sem olho.",
+      "acao_requerida": "Afastar o substrato com cuidado e apertar a raiz: se estiver mole ou com cheiro ruim, descartar; se estiver firme, cobrir de novo e esperar mais 2 semanas sem regar"
+    },
+    {
+      "dia_disparo": 35,
+      "titulo": "Hora do desponte",
+      "mensagem": "Com 3 ou 4 pares de folhas, cortar a ponta faz a dália ramificar e dar muito mais flores, em caules mais firmes.",
+      "acao_requerida": "Cortar o broto principal logo acima do terceiro par de folhas com uma tesoura limpa"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da raiz tuberosa (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta não brota ou murcha mesmo com o substrato úmido; a base do caule fica escura e mole; a raiz tuberosa amolece e tem cheiro ruim",
+      "prevencao_tratamento": "Substrato drenante e rega só quando o dedo indicar seco, quase sem rega antes da brotação e na dormência. Descarte as raízes moles; nas firmes, corte a parte escura e deixe o corte secar 2 dias antes de replantar"
+    },
+    {
+      "nome": "Oídio (Golovinomyces cichoracearum)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado nas folhas, começando pelas de baixo, no fim do verão; as folhas amarelam e secam",
+      "prevencao_tratamento": "Deixe o vaso em local ventilado e regue sem molhar as folhas. No início, borrife bicarbonato de sódio (1 colher de chá por litro, com gotas de detergente neutro) a cada 7 dias e retire as folhas mais atacadas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e botões; folhas novas enrugadas e botões deformados",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos que depois ficam bronzeadas; teias finas no verso em tempo quente e seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; óleo de neem ou sabão potássico a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos novos roídos ou sumidos de uma noite para outra, com rastro brilhante",
+      "prevencao_tratamento": "Catar à noite com lanterna durante a brotação; espalhar casca de ovo moída ou cinza em volta dos brotos e manter o vaso afastado do chão"
+    },
+    {
+      "nome": "Caule tombado",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules dobrados ou rachados na base depois de vento ou chuva, com as flores voltadas para o chão",
+      "prevencao_tratamento": "Tutor colocado no plantio e amarrações a cada 20–30 cm. Um caule rachado pode ser recuperado enrolando fita na rachadura e amarrando-o a um tutor extra"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Fim da floração da dália",
+      "mensagem": "Com o frio chegando, a dália para de florescer e as folhas começam a amarelar. As raízes tuberosas estão guardando reservas para o próximo ano.",
+      "acao_requerida": "Parar de adubar e espaçar as regas; quando a parte aérea estiver amarela ou seca, cortar os caules a 10 cm do substrato"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Dália em dormência",
+      "mensagem": "Sem folhas, a raiz tuberosa quase não bebe água e apodrece em substrato frio e molhado. A geada não atinge a raiz se o vaso estiver protegido.",
+      "acao_requerida": "Regar só um copo a cada 3 semanas, tirar o prato de baixo do vaso e deixar o vaso abrigado da chuva e da geada"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Dividir e replantar as raízes",
+      "mensagem": "As raízes tuberosas se multiplicaram e o substrato está gasto. Dividi-las antes da brotação renova a planta e rende mudas.",
+      "acao_requerida": "Desenterrar as raízes, separar cada uma com um pedaço do colo com pelo menos um olho, deixar os cortes secarem 2 dias e replantar em substrato novo, uma raiz por vaso, cravando o tutor junto"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte no vaso",
+      "mensagem": "No auge do verão, o vaso ao sol seca em um dia, e o calor favorece o ácaro.",
+      "acao_requerida": "Conferir a umidade todo dia, cobrir o substrato com 3 cm de palha ou casca de pinus e borrifar o verso das folhas nos dias secos"
+    }
+  ]
+}

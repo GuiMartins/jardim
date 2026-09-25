@@ -1,0 +1,238 @@
+{
+  "planta": {
+    "nome_comum": "Cupuaçuzeiro",
+    "nome_cientifico": "Theobroma grandiflorum",
+    "descricao": "Árvore amazônica da família do cacau, que dá frutos grandes de polpa ácida e perfumada, usada em sucos, doces e cremes. Em vaso grande fica bem menor que no campo, mas uma muda enxertada pode frutificar a partir do terceiro ano se tiver calor, umidade e proteção contra o frio.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerca de 60 cm de diâmetro e 60 cm de profundidade, com vários furos no fundo. Comece com um de 40 L e passe para o definitivo de 100 L ou mais no segundo ano",
+    "volume_minimo_litros": 100,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco ou casca de pinus fina, 10% areia grossa; rico em matéria orgânica, levemente ácido (pH 5,5 a 6,5) e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a mudança de lugar e pode perder algumas folhas mais velhas. Mantenha em meia-sombra, longe de vento forte. A fase termina quando surgem brotos novos, avermelhados e moles, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A planta solta fluxos de folhas novas, que nascem cor-de-vinho e pendentes e depois ficam verdes e firmes. Arranque logo qualquer broto que saia abaixo da marca do enxerto, porque ele rouba força da copa. Ela ainda não aguenta sol forte do meio-dia nem frio abaixo de 10 °C."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "O tronco engrossa e, perto de 1 a 1,5 m, se abre naturalmente em três ramos (a forquilha). Aos poucos a planta tolera mais sol direto. Flores isoladas podem aparecer no fim desta fase, mas costumam cair sem formar fruto."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Em vaso, a planta fica entre 2 e 3 m se for podada. No Centro-Sul, floresce do fim do inverno à primavera, com flores grandes e vermelho-escuras nos ramos, e os frutos amadurecem no verão, uns 4 a 5 meses depois. Em vaso, espere poucos frutos por ano. Todo inverno ela precisa de proteção contra o frio, e depois da colheita recebe uma poda leve."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de cupuaçu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O substrato deve ficar sempre úmido, nunca encharcado. Esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cupuaçuzeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão acima de 30 °C, confira a cada 2 dias. No inverno, só regue quando os 5 cm estiverem secos, porque substrato frio e molhado apodrece a raiz. Folhas murchas ou com a borda seca indicam falta de água; folhas amarelas e caindo com o substrato úmido indicam excesso.",
+      "critica": true
+    },
+    {
+      "id": "borrifar_folhas",
+      "titulo": "Borrifar as folhas",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 365,
+      "instrucoes": "Borrife água nas duas faces das folhas pela manhã. A planta vem de clima úmido; ar seco queima a ponta das folhas novas. Nos dias de chuva ou com umidade acima de 70%, pode pular.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o cupuaçuzeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto mais 1 colher de sopa de farinha de ossos por vaso de 100 L, sem encostar no tronco, e regue em seguida. Da planta adulta em diante, some 1 colher de sopa de NPK 10-10-10 na primavera e no verão. Entre maio e agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure ramos com brotação inchada e em tufo (vassoura-de-bruxa), cochonilhas brancas ou marrons no verso das folhas e nos ramos, e furos ou manchas escuras nos frutos. Arranque também qualquer broto que sai abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e novembro. Tire a planta do vaso, raspe 3 a 5 cm das raízes que dão voltas por fora do torrão e troque uns 30% do substrato velho por novo. Se ainda não está no vaso definitivo de 100 L ou mais, passe para ele. Regue bem e deixe na meia-sombra por 2 semanas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Plantar no vaso de verdade",
+      "mensagem": "A muda veio num saquinho apertado. Quanto mais tempo ficar lá, mais a raiz principal se enrola.",
+      "acao_requerida": "Transplantar para um vaso de pelo menos 40 L com o substrato recomendado, deixando a marca do enxerto acima da superfície, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se já apareceram brotos novos, a raiz pegou no vaso novo. A partir de agora a rega pode ser mais espaçada.",
+      "acao_requerida": "Conferir se há brotos novos nas pontas e, se houver, aproximar o vaso de um lugar com sol da manhã"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Acostumar ao sol aos poucos",
+      "mensagem": "Com um ano, o cupuaçuzeiro já aguenta mais luz, e mais sol ajuda a planta a florir no futuro.",
+      "acao_requerida": "Aumentar o sol direto em 1 hora por semana até chegar a 5 ou 6 horas, recuando se as folhas ficarem com manchas queimadas"
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "Poda de formação",
+      "mensagem": "Em vaso, o cupuaçuzeiro precisa ficar baixo e com a copa aberta para caber e frutificar.",
+      "acao_requerida": "Deixar só os três ramos principais da forquilha, cortar os que nascem no tronco abaixo dela e encurtar o ramo mais alto se passar de 2 m"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Idade de florir",
+      "mensagem": "Uma muda enxertada bem cuidada começa a florir por volta do terceiro ano. As flores polinizadas viram frutos em uns 4 a 5 meses.",
+      "acao_requerida": "Na floração, passar um pincel macio de flor em flor pela manhã para ajudar a polinização, já que em casa faltam os insetos que fazem isso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem com o substrato úmido, a planta murcha mesmo regada e a base do tronco escurece e amolece",
+      "prevencao_tratamento": "Regar só com o dedo indicando seco, esvaziar o pratinho e usar substrato drenante; nos casos leves, suspender a rega e trocar o substrato encharcado, cortando as raízes pretas e moles"
+    },
+    {
+      "nome": "Vassoura-de-bruxa (Moniliophthora perniciosa)",
+      "tipo": "DOENCA",
+      "sintomas": "Brotos inchados em tufo, com folhas pequenas, que secam e ficam marrons como uma vassoura; frutos com manchas escuras e duras",
+      "prevencao_tratamento": "Cortar o ramo 15 cm abaixo da parte afetada, ensacar e jogar no lixo, nunca na compostagem; desinfetar a tesoura com álcool e preferir mudas de clones resistentes, como os da Embrapa"
+    },
+    {
+      "nome": "Broca-do-fruto (Conotrachelus humeropictus)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenos furos na casca do fruto e polpa podre com larvas brancas por dentro",
+      "prevencao_tratamento": "Recolher e destruir frutos furados ou caídos com lesões; se aparecer, ensacar os frutos pequenos com saco de TNT até a maturação"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodonosas ou marrons no verso das folhas e nos ramos; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com água e sabão neutro; em infestação maior, óleo mineral ou de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam com aspecto de cozidas e caem depois de noites abaixo de 10 °C; em geada, os ramos novos secam",
+      "prevencao_tratamento": "No inverno, levar o vaso para um lugar abrigado junto a uma parede, longe de vento, e cobrir com manta de TNT nas noites frias; não podar nem adubar até a brotação voltar"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas, esbranquiçadas ou marrons no meio das folhas mais expostas, surgindo depois de dias de sol forte",
+      "prevencao_tratamento": "Nos dois primeiros anos, dar só sol da manhã; aumentar a exposição aos poucos e nunca mudar a planta de uma sombra fechada direto para o sol pleno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Preparar para o inverno",
+      "mensagem": "O cupuaçuzeiro é amazônico e sofre abaixo de 10 °C. O frio no Centro-Sul chega em junho.",
+      "acao_requerida": "Escolher um lugar abrigado do vento e perto de uma parede para o inverno e deixar pronta uma manta de TNT para as noites frias"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Noites frias queimam as folhas e geada pode matar os ramos novos. No frio, a planta quase para e bebe menos água.",
+      "acao_requerida": "Cobrir com manta de TNT nas noites abaixo de 10 °C, regar só com o substrato seco a 5 cm e não adubar nem podar"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "Com o calor voltando, a planta adulta solta flores grandes e vermelho-escuras nos ramos. Seca nesta época derruba as flores.",
+      "acao_requerida": "Manter o substrato sempre úmido e polinizar com pincel macio pela manhã, passando de flor em flor"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "titulo": "Frutos amadurecendo",
+      "mensagem": "O cupuaçu maduro não é colhido: ele cai sozinho e solta um cheiro forte e doce. Parado no chão, estraga e atrai insetos.",
+      "acao_requerida": "Recolher todo dia os frutos caídos, guardar na sombra e abrir em até 3 dias, ou congelar a polpa"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Poda de limpeza pós-colheita",
+      "mensagem": "Terminada a safra, a planta aceita bem uma poda leve antes do frio.",
+      "acao_requerida": "Cortar ramos secos, doentes, cruzados ou voltados para dentro da copa e encurtar o ramo que passar de 2,5 m"
+    }
+  ]
+}

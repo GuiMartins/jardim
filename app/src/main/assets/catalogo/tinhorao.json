@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Tinhorão",
+    "nome_cientifico": "Caladium bicolor",
+    "descricao": "Planta tuberosa brasileira cultivada pelas folhas em forma de coração, pintadas de branco, rosa, vermelho e verde. É perene pelo tubérculo, mas entra em dormência no outono e inverno, quando as folhas somem e voltam na primavera. Toda a planta é tóxica se ingerida (oxalato de cálcio).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 20 a 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo; um tubérculo grande ou três pequenos por vaso",
+    "volume_minimo_litros": 5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% substrato para plantas ornamentais, 30% húmus de minhoca ou composto, 20% fibra de coco, 10% perlita ou areia grossa; fofo, rico em matéria orgânica e que não encharque",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 35,
+      "descricao": "Enterre o tubérculo a 3–5 cm de profundidade com as gemas (pontinhos salientes) para cima. Com o substrato acima de 21 °C, os primeiros brotos enrolados aparecem entre a 3ª e a 6ª semana; no frio demora mais. A fase termina quando a primeira folha se abre."
+    },
+    {
+      "fase_id": "formacao_folhagem",
+      "nome": "Formação da Folhagem",
+      "dia_inicio": 36,
+      "dia_fim": 90,
+      "descricao": "Novas folhas se abrem a cada poucos dias e o colorido fica definido. Folhas longas, moles e desbotadas indicam pouca luz; manchas brancas queimadas indicam sol forte demais. A fase termina quando a touceira está cheia, com 8 ou mais folhas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Ano típico: folhagem plena da primavera ao fim do verão, às vezes com uma inflorescência discreta (corte-a na base para não gastar energia do tubérculo). Em abril as folhas começam a amarelar; de maio a agosto o tubérculo dorme seco, sem folhas. Em setembro ele volta a brotar no substrato renovado. Não confunda a dormência com morte: aperte o tubérculo, que deve estar firme."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar o tubérculo plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 35,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; só regue se estiver seco, com pouca água, até umedecer sem escorrer muito. Sem folhas o tubérculo quase não bebe, e substrato encharcado apodrece o tubérculo antes de brotar.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o tinhorão",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Acima de 30 °C confira a cada 2 dias. Com as folhas amarelando (abril), regue só a cada 7 dias; com o tubérculo dormente e sem folhas (maio a agosto), não regue.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_folhagem",
+      "titulo": "Adubar o tinhorão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Só com a planta cheia de folhas (setembro a março): dissolva 1 g (meia colher de café) de NPK 10-10-10 por litro de água e regue o substrato já úmido, ou espalhe 2 colheres de sopa de húmus na superfície. De abril a agosto, sem adubo.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure teias finas e pontinhos claros (ácaro), insetos agrupados nos brotos (pulgão) e buracos com rastro brilhante (lesma). Na dormência, só aperte a base: o tubérculo deve estar firme.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Planta tóxica",
+      "mensagem": "Folhas, talos e tubérculo do tinhorão têm cristais de oxalato de cálcio, que queimam boca e garganta de crianças, cães e gatos.",
+      "acao_requerida": "Colocar o vaso fora do alcance de crianças e pets e lavar as mãos depois de mexer no tubérculo"
+    },
+    {
+      "dia_disparo": 42,
+      "titulo": "Ainda sem broto?",
+      "mensagem": "A maioria dos tubérculos já brotou nesta altura. Se não houver sinal, pode ser frio ou tubérculo podre.",
+      "acao_requerida": "Afastar o substrato e apertar o tubérculo: se estiver firme, manter em local mais quente e esperar; se estiver mole ou com cheiro ruim, descartar"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Confira a luz",
+      "mensagem": "Com as folhas abertas já dá para ver se o lugar serve: o colorido forte depende de luz clara sem sol quente da tarde.",
+      "acao_requerida": "Mudar o vaso de lugar se as folhas estiverem esticadas e pálidas (mais luz) ou com manchas queimadas (menos sol)"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do tubérculo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Tubérculo mole e escuro, com cheiro ruim; brotos murcham na base ou nunca aparecem",
+      "prevencao_tratamento": "Não regar tubérculo sem folhas em substrato úmido e frio; usar substrato que drena; descartar tubérculos moles e cortar partes afetadas dos firmes, deixando secar ao ar 2 dias antes de replantar"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas de borda amarela que escurecem e secam nas folhas",
+      "prevencao_tratamento": "Regar o substrato, não as folhas; retirar folhas manchadas e deixar o vaso em local ventilado"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos claros nas folhas, teias finas no verso e folhas com aspecto empoeirado, em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água e aumentar a umidade ao redor; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos nos brotos e folhas novas, que abrem deformadas e pegajosas",
+      "prevencao_tratamento": "Jato de água ou algodão com água e sabão neutro; óleo de neem a 0,5% se voltar"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Buracos irregulares nas folhas e rastro brilhante no vaso, principalmente depois de noites úmidas",
+      "prevencao_tratamento": "Catar à noite com lanterna e espalhar casca de ovo moída ou borra de café em volta do caule"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrons secas no meio das folhas, bordas enroladas",
+      "prevencao_tratamento": "Evitar sol direto depois das 10 h; tolera só sol fraco da manhã. Folhas queimadas não se recuperam, só as novas"
+    },
+    {
+      "nome": "Estiolamento por pouca luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Talos compridos e moles que tombam, folhas pequenas e com cor apagada",
+      "prevencao_tratamento": "Levar para local com luz clara o dia todo, perto de janela ou sob sombrite 50%"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "O tinhorão vai descansar",
+      "mensagem": "Com os dias mais curtos e frios, as folhas começam a amarelar e cair. É o início da dormência, não doença.",
+      "acao_requerida": "Espaçar a rega para a cada 7 dias, suspender o adubo e cortar rente ao substrato as folhas que secarem"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Dormência do tubérculo",
+      "mensagem": "Sem folhas, o tubérculo precisa ficar seco e protegido do frio até a primavera. Frio abaixo de 15 °C com substrato úmido apodrece o tubérculo.",
+      "acao_requerida": "Parar de regar, cortar o que restou de folhas e guardar o vaso seco em local abrigado, acima de 15 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Hora de acordar o tinhorão",
+      "mensagem": "Com o calor voltando, o tubérculo está pronto para brotar de novo. Substrato novo garante folhas grandes na temporada.",
+      "acao_requerida": "Tirar o tubérculo do vaso, descartar partes moles, replantar em substrato novo a 3–5 cm de profundidade e voltar a regar de leve só quando o substrato secar"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: proteja as folhas",
+      "mensagem": "No auge do verão as folhas finas queimam e murcham rápido com sol da tarde e ar seco.",
+      "acao_requerida": "Garantir sombra depois das 10 h, conferir a rega a cada 2 dias e borrifar água ao redor do vaso (não nas folhas) nos dias mais secos"
+    }
+  ]
+}

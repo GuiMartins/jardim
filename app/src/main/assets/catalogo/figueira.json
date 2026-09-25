@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Figueira",
+    "nome_cientifico": "Ficus carica 'Roxo de Valinhos'",
+    "descricao": "Árvore frutífera de folhas grandes que perde as folhas no inverno. Em vaso grande e com poda anual fica com 1,5 a 2 m. A 'Roxo de Valinhos' é a cultivar mais plantada no Brasil: não precisa de polinização e dá figos nos ramos que brotam depois da poda de inverno, às vezes já no primeiro verão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 45 a 50 cm de diâmetro e pelo menos 40 cm de profundidade, com vários furos no fundo; vasos de barro ou tecido esquentam menos a raiz no verão",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou esterco curtido, 20% areia grossa, mais 100 g de calcário dolomítico e 100 g de farinha de ossos por vaso de 40 L; a figueira prefere pH perto de 6,5",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. Se ela chegou sem folhas no inverno, as gemas incham e se abrem em 2 a 4 semanas. Se chegou com folhas, algumas podem amarelar e cair. A fase termina quando aparecem brotos novos e firmes."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Os ramos crescem depressa, e a figueira forma a estrutura de 3 a 4 ramos principais. Na 'Roxo de Valinhos' podem surgir figos já no primeiro verão, nas axilas das folhas dos ramos novos. Se forem muitos numa planta pequena, retire parte deles. No inverno as folhas caem, e isso é normal."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Todo ano a planta segue o mesmo ritmo. Perde as folhas entre maio e junho, é podada com força em julho, brota em agosto e setembro, forma figos na primavera e produz de janeiro a março. Em vaso de 40 a 60 L, uma planta adulta dá de 2 a 5 kg de figo por safra."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a figueira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda não pode secar nem ficar encharcado. Esvazie o pratinho 30 minutos depois de regar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a figueira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue até escorrer pelos furos se estiver seco. No verão, com a planta cheia de folhas e frutos, confira todo dia acima de 30 °C, porque vaso seco faz os figos caírem e rachar. De junho a agosto, sem folhas, regue só quando os 5 cm estiverem secos, cerca de uma vez por semana.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a figueira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 200 g) de esterco curtido ou composto e 1 colher de sopa de NPK 10-10-10 pela borda do vaso, longe do tronco, e regue em seguida. Da floração em diante (outubro a março), troque o NPK por 1 colher de sopa de farinha de ossos mais cinzas ou sulfato de potássio para dar doçura ao fruto. Não adube de junho a agosto, com a planta dormente.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e figos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelo-alaranjados em pó no verso (ferrugem) e teias finas com folha pálida (ácaro). Olhe a base do tronco e os ramos: serragem ou furos indicam broca. Nos figos, veja se há furos no 'olho' ou larvas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e aparar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de preferência no inverno, com a planta sem folhas. Tire a planta do vaso, corte 3 a 5 cm de raiz em toda a volta e no fundo do torrão e volte ao mesmo vaso com substrato novo. Se o dia cair na época de frutos, troque só os 10 cm de cima do substrato e deixe a troca completa para julho.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Figueira no vaso novo",
+      "mensagem": "A muda precisa de sol pleno desde o começo, mas a raiz ainda não pega água bem. Adubo forte agora queima as raízes novas.",
+      "acao_requerida": "Deixar o vaso no lugar mais ensolarado, com o colo da muda na mesma altura do substrato em que estava, e não adubar no primeiro mês"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora de formar a copa",
+      "mensagem": "Os brotos já cresceram. Escolher agora os ramos principais define o formato da figueira pelos próximos anos e evita uma copa embolada que não cabe no vaso.",
+      "acao_requerida": "Deixar 3 ou 4 ramos bem distribuídos em volta do tronco, a partir de 20 a 30 cm do substrato, e cortar rente os outros brotos e os que saem da raiz"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Ferrugem-da-figueira (Cerotelium fici)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas pequenas amarelo-alaranjadas em pó no verso das folhas e manchas marrom-avermelhadas em cima. As folhas amarelam e caem antes da hora, deixando os figos expostos e sem amadurecer",
+      "prevencao_tratamento": "Não molhe as folhas ao regar e deixe o ar circular na copa. Recolha as folhas caídas. Na época das chuvas, pulverize calda bordalesa a 1% a cada 15 dias, no fim da tarde"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e murchas mesmo com o substrato úmido, cheiro azedo no vaso e raízes escuras e moles",
+      "prevencao_tratamento": "Regue só com os 5 cm de cima secos, principalmente no inverno sem folhas. Nunca deixe água no pratinho. Se já aconteceu, tire a planta do vaso, corte as raízes podres e replante em substrato novo e arenoso"
+    },
+    {
+      "nome": "Broca-da-figueira (Azochis gripusalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Serragem e furos nos ramos e nas pontas. Os ramos murcham e quebram, e há galerias por dentro",
+      "prevencao_tratamento": "Corte o ramo atacado alguns centímetros abaixo do furo e jogue-o no lixo. Inspecione as pontas dos ramos novos na primavera, quando a lagarta entra"
+    },
+    {
+      "nome": "Mosca-do-figo (Zaprionus indianus)",
+      "tipo": "PRAGA",
+      "sintomas": "Figos maduros azedam e fermentam, com larvas brancas por dentro, geralmente entrando pelo 'olho' do fruto",
+      "prevencao_tratamento": "Colha os figos assim que amolecerem, sem deixar fruto maduro ou caído no vaso. Ensaque os figos ainda verdes com saquinhos de TNT ou papel"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado ou bronzeado e teias finas no verso, mais comum em tempo seco e quente",
+      "prevencao_tratamento": "Molhe o verso das folhas com jato de água de manhã a cada 3 dias. Se persistir, use óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Rachadura e queda dos figos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Figos verdes caem ou os quase maduros racham e azedam",
+      "prevencao_tratamento": "Mantenha a rega constante no verão, sem deixar o vaso secar e depois encharcar. Uma planta jovem com carga demais também derruba frutos: retire parte deles"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "A figueira está entrando em dormência",
+      "mensagem": "Com o frio as folhas amarelam e caem. Isso é normal. Sem folhas a planta quase não bebe água, e rega de verão agora apodrece a raiz.",
+      "acao_requerida": "Regar só quando os 5 cm de cima estiverem secos (cerca de uma vez por semana), suspender a adubação e recolher as folhas caídas"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "A 'Roxo de Valinhos' dá figos nos ramos que brotam depois da poda. Sem poda forte no inverno, a produção cai e a planta passa do tamanho do vaso.",
+      "acao_requerida": "Cortar cada ramo do ano anterior deixando 10 a 20 cm (2 ou 3 gemas) a partir da estrutura principal, com tesoura limpa e corte inclinado, e passar pasta bordalesa nos cortes grossos"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Desbrota e volta do crescimento",
+      "mensagem": "A figueira está brotando com força. Brotos demais disputam energia e dão figos pequenos.",
+      "acao_requerida": "Deixar 1 ou 2 brotos por ramo podado (4 a 8 no total), tirar com os dedos os outros e os que saem da base, e retomar a rega e a adubação normais"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Proteger os figos",
+      "mensagem": "Os figos estão se formando. Mosca-do-figo, vespas e pássaros atacam quando eles começam a amadurecer.",
+      "acao_requerida": "Ensacar os figos já formados com saquinhos de TNT ou papel e começar a calda bordalesa preventiva contra a ferrugem se chover muito"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de colher figos",
+      "mensagem": "Figo não amadurece depois de colhido. Ele está pronto quando fica macio, roxo e com o 'pescoço' dobrado, pendendo do ramo.",
+      "acao_requerida": "Passar pela planta a cada 2 dias e colher os figos macios torcendo pelo cabo, de manhã e com luvas, porque o látex irrita a pele"
+    }
+  ]
+}

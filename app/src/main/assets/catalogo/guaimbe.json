@@ -1,0 +1,201 @@
+{
+  "planta": {
+    "nome_comum": "Guaimbê",
+    "nome_cientifico": "Thaumatophyllum bipinnatifidum (sin. Philodendron bipinnatifidum)",
+    "descricao": "Arácea nativa da Mata Atlântica, com folhas grandes e muito recortadas que passam de 1 m em plantas adultas, além de raízes aéreas grossas. É rústica, cresce bem em vaso grande em varanda ou área de meia-sombra e dá um ar tropical imediato. Toda a planta tem cristais de oxalato de cálcio e é tóxica se mastigada: mantenha longe de crianças e pets.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica, cimento ou plástico grosso) com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; a planta adulta fica pesada no topo e tomba em vaso leve",
+    "volume_minimo_litros": 40,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 25% substrato comercial com fibra de coco, 20% húmus de minhoca, 15% casca de pinus fina ou perlita; rico em matéria orgânica, mas aerado para a raiz não apodrecer",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de ambiente e de vaso: uma ou duas folhas mais velhas podem amarelar e cair, o que é normal. A fase termina quando surge uma folha nova, que sai enrolada de dentro de uma bainha no centro da planta."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e as folhas novas saem cada vez maiores e mais recortadas, uma a cada 3 a 5 semanas no calor. Folhas novas menores que as anteriores ou esticadas em direção à luz indicam pouca claridade; manchas secas e amareladas no meio da folha indicam sol forte demais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce bastante de setembro a março e quase para no inverno. O caule engrossa, marcado pelas cicatrizes das folhas caídas, e emite raízes aéreas grossas que procuram o chão; podem ser direcionadas de volta para o vaso. Em vaso raramente floresce. Perde as folhas mais baixas aos poucos, o que é o ciclo natural dela."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o guaimbê (adaptação)",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 30 minutos. Com a raiz ainda recém-mexida, deixar o torrão secar por completo agora mata a muda.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o guaimbê",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e nunca deixe água parada no prato. Acima de 30 °C, confira a cada 2 ou 3 dias; no inverno, espace para uma vez por semana.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o guaimbê",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca mais 1 colher de sopa de NPK 10-10-10 por vaso de 40 L, longe do caule, e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Limpar folhas e tirar as secas",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Passe pano úmido nas duas faces das folhas para tirar o pó. Corte rente ao caule, com tesoura limpa, as folhas de baixo que estiverem mais de metade amarelas ou secas. Use luvas: a seiva irrita a pele.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas, os pecíolos e as bainhas das folhas novas: procure pontinhos brancos algodonosos ou escamas marrons (cochonilha), teias finas (ácaro) e manchas encharcadas com borda amarela. Aperte a base do caule: tem que estar firme, não mole.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato ou subir de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, solte as raízes que estiverem enroveladas e troque pelo menos um terço do substrato velho. Se as raízes tomaram o torrão inteiro, passe para um vaso 10 cm mais largo. Regue bem e deixe 2 semanas na sombra clara.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso definitivo",
+      "mensagem": "Muda de viveiro costuma vir em saco plástico ou vaso pequeno, onde a raiz não tem espaço nem drenagem.",
+      "acao_requerida": "Transferir para o vaso de 40 L com drenagem, mantendo o caule na mesma altura em que estava, sem enterrar mais fundo; regar até escorrer e deixar em meia-sombra"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Começa a adubação",
+      "mensagem": "A muda já se adaptou e as raízes novas conseguem aproveitar o adubo sem queimar.",
+      "acao_requerida": "Fazer a primeira adubação com húmus e NPK 10-10-10, longe do caule"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Raízes aéreas aparecendo",
+      "mensagem": "O guaimbê adulto solta raízes grossas do caule. Elas ajudam a sustentar a planta e absorvem água.",
+      "acao_requerida": "Direcionar as raízes aéreas longas para dentro do vaso ou cortar rente as que atrapalham; se a planta estiver inclinando, girar o vaso ou colocar um tutor firme"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e murchando mesmo com o substrato úmido; base do caule mole e escura, com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e nunca deixar água no prato. Em caso de sintoma, tirar do vaso, cortar as raízes podres e replantar em substrato novo e aerado"
+    },
+    {
+      "nome": "Cochonilha (algodonosa e de escama)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão ou escamas marrons nos pecíolos e no verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; depois aplicar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos no limbo, folhas com aspecto empoeirado e teias finas no verso, comum em local seco e abafado",
+      "prevencao_tratamento": "Lavar o verso das folhas com jato de água e aumentar a ventilação; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas, Pectobacterium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas, translúcidas, com halo amarelo, que crescem rápido e podem deixar a folha mole",
+      "prevencao_tratamento": "Não molhar as folhas no fim do dia; cortar as folhas afetadas com tesoura desinfetada em álcool e descartar no lixo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas grandes, secas, esbranquiçadas ou amarelo-palha no meio das folhas voltadas para o sol da tarde",
+      "prevencao_tratamento": "Deixar a planta com sol só até as 10h ou em luz filtrada; se vier de local sombreado, aumentar a exposição aos poucos ao longo de 3 semanas"
+    },
+    {
+      "nome": "Folhas amarelas por falta de nutriente",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas pequenas e verde-claras, com as de baixo amarelando uniformemente e rápido na estação de crescimento",
+      "prevencao_tratamento": "Retomar a adubação mensal de setembro a maio e, se o substrato tiver mais de 2 anos, trocá-lo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com o frio o guaimbê quase para de crescer e bebe bem menos. Substrato úmido no frio é a causa mais comum de podridão de raiz.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 5 cm (cerca de 1 vez por semana) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "Temperaturas abaixo de 5 °C queimam as folhas, e geada pode matar a planta em vaso.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para perto da parede ou para baixo de cobertura, ou cobrir com tecido não tecido (TNT)"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Início da estação de crescimento",
+      "mensagem": "Com o calor voltando, o guaimbê retoma o crescimento e começa a soltar folhas novas.",
+      "acao_requerida": "Voltar a regar com a frequência normal, retomar a adubação mensal e remover as folhas danificadas pelo inverno"
+    }
+  ]
+}

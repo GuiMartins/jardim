@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Jatobá",
+    "nome_cientifico": "Hymenaea courbaril",
+    "descricao": "Árvore nativa de grande porte (até 30 m no chão), de madeira nobre e fruto com polpa farinácea comestível. Em vaso fica como arvoreta jovem de 1,5 a 3 m com podas, de folhagem brilhante e muito resistente à seca; frutificar em vaso é raro, porque a árvore só produz depois de 8 a 12 anos e com raiz livre.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de cerâmica, cimento ou plástico grosso, com pelo menos 40 cm de profundidade e 40 cm de diâmetro, vários furos no fundo; a raiz pivotante precisa de altura mais que de largura",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra de barranco ou terra vegetal, 25% areia grossa lavada, 15% composto orgânico ou húmus de minhoca, 10% casca de pinus fina; drenante e pouco rico, como o solo do cerrado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação ao Vaso",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode perder algumas folhas mais velhas nas primeiras semanas. A fase termina quando surge uma brotação nova no ápice, com folhas de dois folíolos avermelhados ou verde-claros que depois escurecem e ficam brilhantes."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz pivotante desce até o fundo do vaso e o caule engrossa e lignifica. O crescimento é lento, de 30 a 60 cm no ano, e acontece em surtos na estação chuvosa. Termina quando o caule fica marrom e firme na base e a planta aguenta alguns dias de substrato seco sem murchar."
+    },
+    {
+      "fase_id": "arvoreta_adulta",
+      "nome": "Arvoreta em Vaso",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Planta estabelecida. Brota forte de setembro a março com as chuvas, desacelera no inverno e troca parte das folhas no fim da estação seca (agosto e setembro), o que é normal. Mantenha a altura com poda de formação no fim do inverno e troque o substrato a cada dois anos. Floração e frutos são improváveis em vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de jatobá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato. Com chuva ou abaixo de 18 °C, espere secar mais um dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jatobá",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e não deixe água no prato. No verão quente confira a cada 3 dias; de maio a agosto o intervalo passa para 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o jatobá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus de minhoca (ou 1 colher de sopa de NPK 10-10-10 dissolvida em 2 L de água) na superfície, longe do caule, e regue em seguida. Pule as adubações de maio a agosto, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e a junção dos ramos procurando cochonilhas brancas ou marrons, folhas cortadas em meia-lua (formiga) e manchas escuras. Veja também se há trilha de formigas subindo pelo vaso.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato ou subir de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro ou outubro, tire o torrão, corte as raízes que dão volta no fundo e troque um terço do substrato; se as raízes tomaram todo o vaso, passe para um 10 a 20 L maior. Não corte a raiz principal mais que 5 cm.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda de jatobá",
+      "mensagem": "O jatobá tem raiz pivotante longa e sensível: torrão quebrado ou raiz dobrada atrasa a muda por meses.",
+      "acao_requerida": "Colocar a muda no centro do vaso com o colo no mesmo nível do substrato, sem desmanchar o torrão, firmar a terra e regar até escorrer"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Se a muda veio de viveiro sombreado e ficou na meia-sombra no começo, ela já pode ir para o sol o dia todo.",
+      "acao_requerida": "Levar o vaso para o local mais ensolarado, aumentando o sol em 2 horas a cada 3 dias se as folhas mostrarem manchas queimadas"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de jatobá",
+      "mensagem": "A planta está estabelecida e já decide o formato da copa. Sem poda ela sobe numa haste só e fica alta demais para o vaso.",
+      "acao_requerida": "No próximo fim de inverno, despontar o ápice na altura desejada para estimular ramos laterais"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem com o substrato úmido, caule escurece na base, cheiro de mofo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e nunca deixar água no prato; se aparecer, tirar do vaso, cortar raízes moles e escuras e replantar em substrato novo e arenoso"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e brotos cortados em meia-lua ou desaparecidos de um dia para o outro; trilha de formigas no vaso",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca granulada formicida seguindo o rótulo; como barreira, passar graxa ou fita adesiva dupla-face em volta do vaso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodonosas ou marrons nos ramos e no verso das folhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova com álcool 70%; em infestação, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora e outros fungos)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas com borda escura nas folhas, que depois secam e caem",
+      "prevencao_tratamento": "Regar no substrato e não nas folhas, remover as folhas manchadas e manter o vaso ventilado; em caso persistente, fungicida cúprico"
+    },
+    {
+      "nome": "Queimadura de sol na muda",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas no centro das folhas logo depois de a muda ir para o sol",
+      "prevencao_tratamento": "Aclimatar a muda de viveiro aos poucos; as folhas queimadas não se recuperam, mas as novas já nascem adaptadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Jatobá em repouso",
+      "mensagem": "Com frio e dias curtos o jatobá quase para de crescer e bebe bem menos; rega de verão agora apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (7 a 10 dias), suspender o adubo e proteger de geada levando o vaso para perto de uma parede"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno, antes da brotação, a poda estimula ramos laterais e segura a altura da arvoreta.",
+      "acao_requerida": "Despontar o ramo principal na altura desejada e encurtar em um terço os ramos longos, com tesoura limpa, cortando logo acima de uma folha"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Troca de folhas e volta do crescimento",
+      "mensagem": "No fim da seca o jatobá derruba parte das folhas velhas e logo solta brotação avermelhada. Isso é normal, não é doença.",
+      "acao_requerida": "Voltar à rega normal a cada 3 a 4 dias quando surgirem os brotos e retomar a adubação"
+    }
+  ]
+}

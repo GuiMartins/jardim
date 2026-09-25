@@ -1,0 +1,177 @@
+{
+  "planta": {
+    "nome_comum": "Nim",
+    "nome_cientifico": "Azadirachta indica",
+    "descricao": "Árvore tropical de origem indiana, famosa pelo óleo de nim, extraído das sementes e usado como inseticida natural. Em vaso vira uma arvoreta de 1,5 a 2,5 m, de folhagem fina e perfumada, que aguenta seca e calor mas sofre com frio e encharcamento. As folhas também servem para preparar extrato caseiro contra pragas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; prefira barro ou plástico grosso, pesado o bastante para não tombar com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% casca de pinus fina ou carvão picado; precisa escorrer rápido, porque o nim tolera seca mas não raiz encharcada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. É normal perder algumas folhas velhas na primeira semana. A fase termina quando surgem brotos novos, verde-claros e avermelhados, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido na primavera e no verão, com folhas compostas de folíolos serrilhados. A raiz ocupa o vaso e a planta passa a aguentar alguns dias sem rega. No primeiro inverno, desacelera e pode perder parte das folhas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce forte de setembro a março, desacelera e perde parte das folhas no frio e na seca de inverno, e rebrota na primavera. Em vaso, a floração (pequenas flores brancas perfumadas) costuma aparecer só a partir do 3º ao 5º ano, seguida de frutinhos amarelos. A poda anual no fim do inverno controla a altura."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o nim recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Se ainda estiver úmido, não regue. Esvazie o pratinho 30 minutos depois. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o nim",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos. No verão quente pode ser preciso a cada 2 ou 3 dias; de maio a agosto, espace para a cada 7 a 10 dias. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o nim",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 colher de sopa de NPK 10-10-10 por vaso de 40 L, afastado 5 cm do tronco, e regue em seguida. De maio a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e os ramos novos: procure carapaças marrons ou brancas grudadas (cochonilha), pó branco (oídio) e pontas de ramo secando de cima para baixo.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas no fundo e replante com substrato novo, num vaso 10 cm maior se quiser que cresça ou no mesmo vaso para manter o tamanho. Se cair fora de setembro a novembro, deixe para a próxima primavera.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 31,
+      "titulo": "Fim da adaptação",
+      "mensagem": "A muda já enraizou. A partir de agora o nim prefere secar um pouco entre regas: rega demais é o que mais mata essa árvore em vaso.",
+      "acao_requerida": "Passar a regar só quando os primeiros 5 cm do substrato estiverem secos"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Despontar para ramificar",
+      "mensagem": "Mudas de nim tendem a crescer numa haste só, fina e alta. Cortar a ponta agora faz a planta soltar ramos laterais e formar copa.",
+      "acao_requerida": "Cortar os 5 cm da ponta do ramo principal com tesoura limpa, logo acima de uma folha"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do tronco escurecida e raízes marrons e moles, com cheiro de mofo",
+      "prevencao_tratamento": "Substrato arenoso, vaso com furos livres e pratinho sempre vazio. Ao notar, pare de regar até o substrato secar bem; se as raízes estiverem podres, corte as partes moles e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas carapaças marrons ou brancas grudadas nos ramos e no verso das folhas; folhas pegajosas e com fumagina (pó preto)",
+      "prevencao_tratamento": "Raspar com escova de dente macia e algodão com álcool 70%; em infestação maior, pulverizar óleo mineral a 1% com detergente neutro no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado nas folhas novas, que depois encarquilham e caem",
+      "prevencao_tratamento": "Manter a planta em sol pleno e com ventilação; remover folhas atacadas e pulverizar leite diluído a 10% em água ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Seca de ponteiros (Phomopsis azadirachtae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pontas dos ramos secam de cima para baixo, com casca escurecida; a seca avança para o ramo inteiro",
+      "prevencao_tratamento": "Cortar o ramo 5 cm abaixo da parte seca, com tesoura desinfetada em álcool entre um corte e outro; descartar os ramos cortados fora do jardim"
+    },
+    {
+      "nome": "Queima por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, secas de uma hora para outra depois de noite abaixo de 5 °C; ramos novos murchos e pretos",
+      "prevencao_tratamento": "Em noites abaixo de 8 °C, levar o vaso para perto de uma parede ou sob cobertura, ou cobrir com TNT; não podar os ramos queimados antes da primavera, porque eles protegem o resto"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Chegou a estação seca e fria",
+      "mensagem": "O nim desacelera no outono e no inverno e pode perder parte das folhas. É natural. Nessa época, rega de verão apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para a cada 7 a 10 dias e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o nim do frio",
+      "mensagem": "O nim é tropical: geada e noites abaixo de 5 °C queimam folhas e ramos novos, e mudas jovens podem morrer.",
+      "acao_requerida": "Nas noites com previsão abaixo de 8 °C, encostar o vaso numa parede protegida ou cobrir a copa com TNT, retirando pela manhã"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual do nim",
+      "mensagem": "No fim do inverno a planta ainda está parada; podar agora estimula brotação cheia na primavera e mantém a árvore num tamanho de vaso.",
+      "acao_requerida": "Tirar ramos secos, queimados pelo frio ou cruzados, e encurtar em até um terço os ramos mais altos, cortando logo acima de uma folha"
+    }
+  ]
+}

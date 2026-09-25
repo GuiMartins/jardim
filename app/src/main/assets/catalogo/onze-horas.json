@@ -1,0 +1,212 @@
+{
+  "planta": {
+    "nome_comum": "Onze-horas",
+    "nome_cientifico": "Portulaca grandiflora",
+    "descricao": "Suculenta rasteira de flores de seda em rosa, amarelo, laranja, vermelho e branco. As flores abrem com o sol forte do fim da manhã e fecham à tarde. Na natureza vive um ou dois anos, mas em vaso é cultivada como anual, de setembro até o frio. Aguenta calor e esquecimento na rega, e as estacas enraízam fácil para renovar a planta.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 180,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso raso, cuia ou jardineira com 12 a 15 cm de profundidade e furos no fundo; barro ou cerâmica, que secam mais rápido que o plástico",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 35% areia grossa lavada, 15% húmus de minhoca, 10% perlita ou casca de arroz carbonizada; solto e que seca em poucos dias",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "As sementes são minúsculas e precisam de luz para germinar: espalhe sobre o substrato úmido, pressione de leve com a mão e não cubra com terra. Com 21 a 30 °C, as plântulas aparecem entre o 7º e o 14º dia como fiapos verdes e avermelhados."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "Surgem as folhinhas cilíndricas e carnudas. As plântulas ainda são frágeis e morrem se o substrato encharcar ou secar de vez. A fase muda quando cada planta tem uns 3 cm e começa a soltar ramos laterais."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento e Ramificação",
+      "dia_inicio": 36,
+      "dia_fim": 55,
+      "descricao": "Os ramos se espalham e começam a cobrir o vaso. Com pouco sol, ficam compridos, finos e deitados, sinal de que precisam de um lugar mais claro. A fase termina quando aparecem os primeiros botões nas pontas."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 56,
+      "dia_fim": 150,
+      "descricao": "Flores novas abrem quase todo dia com sol direto e duram só um dia; não é preciso tirar as murchas, que caem sozinhas. Em dia nublado ou na sombra, os botões não abrem. Depois das flores formam-se cápsulas pequenas cheias de sementes pretas."
+    },
+    {
+      "fase_id": "declinio_sementes",
+      "nome": "Declínio e Sementes",
+      "dia_inicio": 151,
+      "dia_fim": 180,
+      "descricao": "A floração rareia, os ramos da base secam e a planta perde o vigor, principalmente com as noites frias. É a hora de guardar sementes e tirar estacas para o próximo ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife a superfície de manhã até ela ficar escura de úmida, sem formar poça. As sementes estão descobertas: um jato forte as arrasta para o fundo, e um dia de substrato seco mata a germinação.",
+      "critica": true
+    },
+    {
+      "id": "rega_plantula",
+      "titulo": "Regar as plântulas",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 35,
+      "instrucoes": "Toque a superfície: se o primeiro centímetro estiver seco, regue devagar pela borda do vaso até escorrer pelos furos. Se ainda estiver úmido, espere o dia seguinte. Encharcar apodrece o colo das plântulas.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a onze-horas",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e esvazie o pratinho. Acima de 32 °C confira a cada 2 ou 3 dias; com tempo frio ou chuvoso, espace para 6 a 7 dias. Folhas murchas e enrugadas pedem água; ramos moles e escuros na base indicam excesso.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para flores",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 40,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Dissolva 1 g (1/4 de colher de chá) de NPK 4-14-8 em 1 L de água e regue com o substrato já úmido. Não aumente a dose: adubo demais, principalmente nitrogenado, faz muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Afaste os ramos e olhe as pontas, as axilas das folhas e a base dos caules. Procure insetos verdes agrupados, tufos brancos de algodão, pústulas brancas no verso das folhas e caules escuros e moles rente ao substrato.",
+      "critica": false
+    },
+    {
+      "id": "colheita_sementes",
+      "titulo": "Colher sementes",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 100,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Procure cápsulas amareladas onde as flores caíram; a tampinha solta ao toque. Vire-as dentro de um envelope de papel e guarde as sementes pretas em lugar seco. Deixe algumas cair no vaso se quiser que a planta renasça sozinha.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 22,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As plântulas nascem amontoadas e disputam luz. Sem espaço, ficam finas e florescem pouco.",
+      "acao_requerida": "Deixar uma planta a cada 8 a 10 cm; transplantar as retiradas, com um torrão de terra, para outro vaso ou para os espaços vazios"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Estimular a ramificação",
+      "mensagem": "Beliscar as pontas agora faz a planta soltar ramos laterais e formar um tapete cheio, com mais pontas para dar flor.",
+      "acao_requerida": "Cortar com a unha ou tesoura 1 a 2 cm da ponta dos ramos mais compridos; as pontas cortadas enraízam se forem espetadas no substrato"
+    },
+    {
+      "dia_disparo": 56,
+      "titulo": "Primeiras flores chegando",
+      "mensagem": "Os primeiros botões devem estar aparecendo. As flores só abrem com sol direto, normalmente do fim da manhã ao início da tarde.",
+      "acao_requerida": "Conferir se o vaso pega pelo menos 5 horas de sol direto e, se não pegar, levá-lo para um lugar mais ensolarado"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Guardar estacas para o ano que vem",
+      "mensagem": "A planta começa a perder vigor. Estacas tiradas agora enraízam em uma a duas semanas e mantêm as cores de que você mais gostou.",
+      "acao_requerida": "Cortar 5 a 8 pontas de 6 cm dos ramos mais sadios, tirar as folhas da metade de baixo e espetar em substrato arenoso levemente úmido, em lugar claro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e da raiz (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Ramos moles, translúcidos e escuros na base; a planta tomba e a raiz fica marrom e desmancha; nas plântulas, tombamento rente ao substrato",
+      "prevencao_tratamento": "Substrato arenoso, vaso com furos, pratinho vazio e rega só com o substrato seco a 3 cm. Retire as plantas afetadas e deixe o vaso secar bem; aproveite ramos sadios como estacas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas e botões; brotos deformados e pegajosos",
+      "prevencao_tratamento": "Jato de água ou retirar com cotonete; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto de algodão nas axilas das folhas e na base dos ramos; planta amarelada e fraca",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em ataque forte, cortar os ramos tomados e aplicar óleo de neem a 0,5% semanalmente"
+    },
+    {
+      "nome": "Ferrugem-branca (Albugo portulacae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas brancas e elevadas no verso das folhas; folhas e ramos inchados e retorcidos",
+      "prevencao_tratamento": "Cortar e descartar no lixo as partes atacadas, evitar molhar as folhas e manter o vaso ventilado e ao sol"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Plântulas somem da noite para o dia; rastro brilhante no vaso",
+      "prevencao_tratamento": "Catar à noite com lanterna e espalhar casca de ovo moída ou areia grossa em volta do vaso"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos, finos e deitados, com folhas espaçadas; botões que não abrem ou flores raras",
+      "prevencao_tratamento": "Levar o vaso para um local com 6 horas ou mais de sol direto e beliscar as pontas compridas para a planta rebrotar compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Cuidado com as chuvas de verão",
+      "mensagem": "Vários dias seguidos de chuva deixam o substrato encharcado, e a onze-horas apodrece a base com facilidade.",
+      "acao_requerida": "Em semana chuvosa, levar o vaso para um lugar coberto e claro e suspender a rega até o substrato secar a 3 cm"
+    },
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "O frio está chegando",
+      "mensagem": "Abaixo de 10 °C a onze-horas para de florescer e costuma morrer. Com noites frias, ela quase não bebe água.",
+      "acao_requerida": "Espaçar a rega para uma vez por semana, manter o vaso no ponto mais ensolarado e protegido do vento e guardar estacas enraizadas perto de uma janela clara"
+    }
+  ]
+}

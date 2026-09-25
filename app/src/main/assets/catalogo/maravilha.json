@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Maravilha",
+    "nome_cientifico": "Mirabilis jalapa",
+    "descricao": "Arbusto herbáceo de raiz tuberosa, também chamado bonina ou boas-noites. As flores perfumadas abrem no fim da tarde e fecham na manhã seguinte, e um mesmo pé pode ter flores de várias cores. É perene: no inverno a parte de cima pode secar, e a planta rebrota do tubérculo na primavera. Sementes e raízes são tóxicas se ingeridas, então mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo, para caber o tubérculo, que engrossa ano a ano",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; solto, para o tubérculo não apodrecer",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Deixe as sementes (pretas, enrugadas e duras) de molho em água morna por 12 horas e enterre 2 ou 3 a 1,5 cm de profundidade no vaso definitivo. Com 20 a 25 °C, as plântulas surgem entre o 7º e o 14º dia, com duas folhas redondas e carnudas."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 15,
+      "dia_fim": 45,
+      "descricao": "Surgem as folhas verdadeiras, ovais e opostas. A plântula ainda tem raiz rasa e sofre se o substrato secar por completo. A fase termina quando a planta passa de 15 cm e começa a ramificar."
+    },
+    {
+      "fase_id": "crescimento",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 46,
+      "dia_fim": 80,
+      "descricao": "A planta ramifica e ganha volume depressa, e a raiz começa a engrossar e formar o tubérculo. Os primeiros botões aparecem nas pontas dos ramos entre o 60º e o 80º dia."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 81,
+      "dia_fim": null,
+      "descricao": "Floresce da primavera ao outono. As flores abrem por volta das 16h e duram uma noite. Cada flor deixa uma semente preta que cai e germina sozinha nos vasos vizinhos. No inverno o crescimento para e, com frio forte ou geada, os ramos secam, mas o tubérculo rebrota em setembro. Com 60 a 100 cm de altura, a planta fica mais bonita a cada ano, conforme o tubérculo cresce."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Manter as sementes úmidas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Regue a superfície com regador de bico fino ou borrifador pela manhã, até umedecer os 2 primeiros centímetros. O substrato não pode secar nem virar lama, porque semente encharcada apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_plantula",
+      "titulo": "Regar a maravilha jovem",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 80,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a maravilha",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 81,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e regue até escorrer pelos furos só se estiver seco. O tubérculo guarda água e tolera um pouco de seca, mas apodrece com o substrato sempre molhado. No inverno, espace para cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a maravilha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de chá de NPK 4-14-8 pela borda do vaso, sem encostar no caule, e regue em seguida. Evite excesso de nitrogênio, que dá muita folha e pouca flor. De maio a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as pontas dos brotos e vire as folhas. Procure colônias de pulgão, pontos brancos algodonosos, manchas marrons com borda escura e pó branco na superfície. Aperte a base do caule: se estiver mole, a raiz está apodrecendo.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso no fim do inverno, retire o substrato velho do tubérculo e corte as partes moles ou escuras. Replante no mesmo nível, com substrato novo, num vaso 5 a 10 cm mais largo se o tubérculo já ocupar metade do vaso.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Mais de uma plântula no mesmo vaso disputa espaço, e o tubérculo fica pequeno.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa e cortar as outras rente ao substrato com tesoura, sem puxar"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Desponte para encher",
+      "mensagem": "Cortar a ponta do ramo principal agora faz a maravilha ramificar e dar mais flores.",
+      "acao_requerida": "Beliscar com os dedos os 2 cm da ponta do ramo principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 70,
+      "titulo": "Primeiras flores chegando",
+      "mensagem": "As flores abrem no fim da tarde, e cada uma deixa uma semente preta que cai e germina sozinha.",
+      "acao_requerida": "Recolher as sementes pretas que se formam na base das flores velhas, para evitar mudas espalhadas pelos vasos e manter as sementes tóxicas longe de crianças e animais"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do tubérculo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amareladas de baixo para cima, base do caule mole e escura, tubérculo com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e reduzir a rega no inverno. Na planta afetada, cortar as partes moles do tubérculo, deixar secar um dia à sombra e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos brotos e nos botões; folhas novas enrugadas e pegajosas",
+      "prevencao_tratamento": "Jato de água nos brotos. Se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos nas axilas das folhas e na base dos ramos; planta amarelada e fraca",
+      "prevencao_tratamento": "Remover os tufos com cotonete embebido em álcool 70% e aplicar óleo de neem a 0,5% a cada 7 dias até sumir"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora mirabilis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas arredondadas marrons ou arroxeadas com centro mais claro, que se juntam e secam a folha",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e deixar espaço para o ar circular. Retirar e descartar as folhas manchadas; nos casos graves, calda bordalesa a cada 10 dias"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco na superfície das folhas, mais comum no fim do verão e no outono",
+      "prevencao_tratamento": "Manter a planta no sol e arejada. Pulverizar leite diluído em água (1:9) ou bicarbonato de sódio a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos, finos e tombando, folhas espaçadas e quase nenhuma flor",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 horas de sol direto. Podar os ramos compridos pela metade para a planta rebrotar mais compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Maravilha em repouso",
+      "mensagem": "No frio a maravilha para de crescer e o tubérculo apodrece fácil com o substrato molhado. Os ramos podem amarelar e secar: é normal.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, suspender a adubação e, se houver previsão de geada, levar o vaso para um lugar coberto"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "Antes da rebrota de setembro, cortar os ramos velhos renova a planta e evita um pé desengonçado.",
+      "acao_requerida": "Cortar todos os ramos secos ou fracos a 10 cm do substrato e retirar as folhas caídas do vaso"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Rebrota da primavera",
+      "mensagem": "Com o calor voltando, o tubérculo solta brotos novos e a planta volta a precisar de água e nutrientes.",
+      "acao_requerida": "Voltar à rega normal e aplicar a primeira adubação do ano com húmus de minhoca"
+    }
+  ]
+}

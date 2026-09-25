@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Hortelã",
+    "nome_cientifico": "Mentha spicata",
+    "descricao": "Erva aromática perene de folhas verdes e perfumadas, usada em chás, sucos, quibe e saladas. Cresce muito rápido por estolões (caules que correm rente ao chão) e ocupa o espaço de outras plantas, por isso deve ficar num vaso só para ela.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira mais largo do que fundo, com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo e só para a hortelã, porque os estolões invadem as plantas vizinhas",
+    "volume_minimo_litros": 8,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% fibra de coco; fica úmido por mais tempo sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "A muda sai do saquinho e se acostuma ao vaso novo. É normal murchar um pouco nas horas quentes dos primeiros dias. Surgirem folhas novas e firmes na ponta dos ramos mostra que as raízes pegaram."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 60,
+      "descricao": "Aparecem estolões na superfície do substrato e brotos novos em volta da muda. A planta vai cobrindo o vaso. Quando o substrato estiver quase todo coberto e os ramos passarem de 15 cm, as colheitas regulares podem começar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Touceira cheia, que dá colheitas a cada duas semanas na primavera e no verão. No verão lança espigas de flores lilases, e as folhas ficam menos aromáticas se elas não forem cortadas. No inverno cresce devagar e, com geada, a parte de cima pode secar, mas rebrota pelas raízes. Depois de um ano as raízes tomam o vaso todo, e a touceira precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de hortelã",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Regue pela manhã até escorrer pelos furos. Enquanto as raízes não pegam, o substrato não pode secar nem na superfície. Se a muda estiver murcha no fim da tarde, regue de novo.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a hortelã",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato e regue até escorrer pelos furos se estiver seco. A hortelã gosta de substrato sempre levemente úmido. Acima de 30 °C, confira todo dia. No inverno, confira a cada 3 ou 4 dias. Não deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a hortelã",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por vaso de 8 L sem cobrir as folhas e regue em seguida. De junho a agosto, pule a adubação, porque a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher e podar a hortelã",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura os ramos mais altos logo acima de um par de folhas, deixando pelo menos 5 cm de ramo. Tire no máximo um terço da planta de cada vez. Corte também as espigas de flor que aparecerem. Cada corte faz o ramo se dividir em dois, e a touceira fica mais cheia.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas da hortelã",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pulgões nas pontas, teias finas e pontinhos claros (ácaro) no verso e pústulas alaranjadas (ferrugem). Tire na hora as folhas com ferrugem.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a touceira do vaso, corte o torrão em 2 a 4 partes com faca limpa e descarte as raízes velhas e escuras do centro. Replante uma parte no mesmo vaso com substrato novo e regue bem. Se o dia cair no inverno, deixe para setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante a muda no vaso definitivo",
+      "mensagem": "Muda deixada no saquinho de viveiro fica com as raízes apertadas e seca em poucas horas.",
+      "acao_requerida": "Transplantar a muda com o torrão inteiro para o vaso com substrato úmido, na mesma altura em que estava, apertar levemente em volta e regar até escorrer"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Primeiro desponte",
+      "mensagem": "Com as raízes firmes, cortar as pontas agora faz a hortelã ramificar em vez de crescer em poucos ramos compridos.",
+      "acao_requerida": "Beliscar ou cortar os 2 cm da ponta de cada ramo acima de um par de folhas; as pontas já podem ir para o chá"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato molhado, base dos ramos escura e mole, raízes marrons e com cheiro ruim",
+      "prevencao_tratamento": "Regar só depois do teste do dedo, esvaziar o pratinho e manter os furos desobstruídos. Com a planta afetada, corte os ramos podres, replante as partes sadias em substrato novo e regue menos"
+    },
+    {
+      "nome": "Ferrugem da hortelã (Puccinia menthae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas a marrons no verso das folhas; folhas amarelam e caem, e os ramos ficam retorcidos",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter o vaso arejado. Arranque e jogue no lixo, não na compostagem, todos os ramos afetados. Em caso grave, corte a touceira rente ao substrato para ela rebrotar sadia"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que depois amarelam",
+      "prevencao_tratamento": "Mais sol e ventilação e menos adensamento (colher com regularidade). Retire as folhas afetadas e borrife 1 parte de leite para 9 de água a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos ramos; folhas novas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água forte nas pontas ou corte dos ramos infestados. Se persistir, sabão neutro a 1% no fim da tarde a cada 5 dias e lavar bem as folhas antes de consumir"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos claros nas folhas, que ficam foscas e amareladas; teias finas no verso em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos e cortar os ramos muito atacados. Se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, esperando 7 dias para colher"
+    },
+    {
+      "nome": "Folhas pequenas e ramos compridos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos e espaçados, folhas miúdas, pálidas e com pouco aroma",
+      "prevencao_tratamento": "Falta de sol ou vaso esgotado de raízes. Leve para um lugar com pelo menos 3 horas de sol direto, pode os ramos pela metade e, se a touceira tiver mais de um ano, divida e troque o substrato"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e floração",
+      "mensagem": "No calor, o vaso seca num dia e a hortelã lança espigas de flores. Com as flores, as folhas perdem aroma e crescem menos.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia, levar o vaso para um lugar com sombra à tarde se as folhas queimarem e cortar as espigas de flor logo que aparecerem"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: crescimento lento",
+      "mensagem": "No frio a hortelã quase para de crescer. Com geada, a parte de cima pode escurecer e secar, mas as raízes sobrevivem.",
+      "acao_requerida": "Espaçar a rega para quando os 2 cm de cima do substrato estiverem secos, suspender a adubação e, se os ramos secarem, cortar rente ao substrato e esperar a rebrota de setembro"
+    }
+  ]
+}

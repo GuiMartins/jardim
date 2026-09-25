@@ -1,0 +1,209 @@
+{
+  "planta": {
+    "nome_comum": "Moringa",
+    "nome_cientifico": "Moringa oleifera",
+    "descricao": "Árvore tropical de crescimento muito rápido, cultivada pelas folhas nutritivas, que se comem refogadas, em chá ou secas em pó. Em vaso, com podas frequentes, vira um arbusto de 1,5 a 2 m que fornece folhas por anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de plástico ou barro com pelo menos 45 cm de altura e 40 cm de diâmetro, com vários furos no fundo. Semeie direto no vaso definitivo: a raiz pivotante engrossa cedo e sofre com o transplante",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% casca de arroz carbonizada; precisa drenar rápido, porque a raiz apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 12,
+      "descricao": "Deixe as sementes de molho em água por 12 a 24 horas e semeie 2 por cova, a 2 cm de profundidade. O broto surge entre o 5º e o 12º dia. Semente que ficou mole e escura apodreceu por excesso de água."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 13,
+      "dia_fim": 45,
+      "descricao": "Aparecem as folhas compostas, com folíolos pequenos e redondos. O caule fica fino e verde, e a planta chega a uns 30 cm. Folíolos amarelando e caindo nessa fase quase sempre indicam rega demais."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vigoroso",
+      "dia_inicio": 46,
+      "dia_fim": 120,
+      "descricao": "A moringa pode crescer 30 cm por mês no calor. O caule engrossa e fica marrom na base. Quando passar de 60 cm, corte a ponta para ela ramificar, senão vira uma vara fina que tomba no vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Arbusto ramificado mantido entre 1,5 e 2 m pelas colheitas de ramos. Da primavera ao outono produz folhas sem parar e pode dar flores brancas perfumadas e vagens. No inverno, abaixo de uns 12 °C, cresce pouco e perde parte das folhas; volta a brotar forte em setembro."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 12,
+      "instrucoes": "Toque a superfície do substrato; se os primeiros 2 cm estiverem secos, regue com regador de bico fino até umedecer, sem deixar poça. A semente não pode secar depois de inchada, nem ficar encharcada.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar a moringa jovem",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e esvazie o pratinho. Acima de 32 °C, confira a cada 2 dias.",
+      "critica": false
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a moringa",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 121,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue bem até escorrer pelos furos. No verão quente pode precisar a cada 3 dias; no inverno, espace para a cada 10 dias. Folhas murchas ao meio-dia que se recuperam à tarde não pedem rega extra.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a moringa",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de esterco curtido de galinha no vaso de 50 L, longe do caule, e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher ramos de moringa",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa os ramos mais altos, 2 cm acima de um nó, e tire as folhas em casa. Colha no máximo um terço da copa de cada vez. O corte faz a planta ramificar e a mantém baixa no vaso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folíolos roídos, lagartas verdes no verso das folhas, pulgões nas pontas novas e escamas brancas nos ramos. Confira também se o caule está firme rente ao substrato.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, corte um terço das raízes finas da borda do torrão e replante no mesmo vaso com substrato novo, ou num vaso maior. Faça a poda drástica junto e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 18,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Se nasceram duas mudas na mesma cova, elas vão disputar a raiz e o vaso.",
+      "acao_requerida": "Deixar só a muda mais vigorosa, cortando a outra rente ao substrato com tesoura, sem arrancar"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Cortar a ponta da moringa",
+      "mensagem": "Sem esse corte, a moringa cresce como uma haste única, fina e alta, que tomba no vaso.",
+      "acao_requerida": "Se ela já passou de 60 cm, cortar a ponta a uns 50 cm de altura, logo acima de um nó; se ainda não passou, repetir quando chegar lá"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeira colheita",
+      "mensagem": "Os ramos laterais que nasceram depois do corte da ponta já devem estar cheios de folhas.",
+      "acao_requerida": "Colher as pontas dos ramos laterais, deixando pelo menos dois terços da copa"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo aos montes, caule mole e escuro rente ao substrato, cheiro azedo no vaso",
+      "prevencao_tratamento": "Substrato arenoso, vaso com furos livres e nada de pratinho com água. Regue só com o substrato seco. Com o caule já mole, a planta raramente se recupera"
+    },
+    {
+      "nome": "Lagarta-da-moringa (Noorda blitealis) e outras lagartas",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos roídos ou rendados, teias finas e fezes escuras nas folhas; em poucos dias a copa fica pelada",
+      "prevencao_tratamento": "Catar as lagartas à mão. Em infestação, pulverizar Bacillus thuringiensis (Bt) no fim da tarde e repetir após 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos nas pontas novas, que ficam encarquilhadas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas pontas; se persistir, óleo de neem a 0,5% com sabão neutro no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas ou marrons presas aos ramos e ao verso das folhas; formigas subindo pelo caule",
+      "prevencao_tratamento": "Remover com cotonete e álcool 70%; em ramos muito atacados, cortar e descartar. Óleo de neem ajuda a evitar a volta"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, secas e caindo depois de noites frias; pontas dos ramos murchas",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou para baixo de uma cobertura em noites abaixo de 8 °C. Não pode as partes queimadas até setembro: elas protegem os brotos de baixo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Preparar para o inverno",
+      "mensagem": "Com o frio chegando, a moringa cresce menos e bebe menos. Substrato frio e úmido é o principal motivo de a raiz apodrecer.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A moringa é tropical: abaixo de 8 °C as folhas queimam, e a geada pode matar a planta.",
+      "acao_requerida": "Nas noites frias, levar o vaso para um canto protegido do vento, encostado numa parede, ou para baixo de uma cobertura"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno, um corte forte faz a moringa rebrotar cheia de ramos novos na primavera.",
+      "acao_requerida": "Cortar todos os ramos a cerca de 1 m de altura, acima de um nó, e retirar os galhos secos ou queimados pelo frio"
+    }
+  ]
+}

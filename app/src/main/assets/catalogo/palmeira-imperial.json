@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Palmeira-imperial",
+    "nome_cientifico": "Roystonea oleracea",
+    "descricao": "Palmeira de tronco liso e cinzento e capitel verde brilhante, famosa pelas aleias do Jardim Botânico do Rio de Janeiro; na natureza passa de 30 m. Em vaso ela vive só a fase jovem, com um tufo de folhas arqueadas, por alguns anos, até pedir o chão, então é para quem quer criar a muda e depois plantá-la num lugar definitivo.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de plástico grosso, cimento ou fibra, com pelo menos 40 cm de altura e 40 cm de diâmetro e vários furos no fundo; a raiz é pivotante e cresce rápido para baixo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 25% areia grossa lavada, 20% húmus de minhoca, 15% casca de pinus fina; mais 1 colher de sopa de calcário dolomítico por 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e de luz. É normal a folha mais velha amarelar; não corte enquanto tiver verde, porque ela ainda alimenta a planta. A fase termina quando a lança do centro, a folha nova ainda fechada, volta a crescer."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e sai uma folha nova a cada 1 a 2 meses no calor, cada uma maior e mais dividida que a anterior. Com o frio o crescimento quase para, e isso não é problema."
+    },
+    {
+      "fase_id": "planta_jovem_em_vaso",
+      "nome": "Palmeira Jovem em Vaso",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "No vaso ela forma um tufo de folhas de 1,5 a 3 m e engrossa a base, mas o tronco de verdade só aparece no chão. Na primavera e no verão cresce e pede água e adubo; no inverno descansa. Remova só as folhas totalmente secas, cortando rente à base sem ferir o tronco. Quando as raízes saírem pelos furos ou o vaso tombar com o vento, é hora de plantar no chão, a pelo menos 5 m de construções, muros e canos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a palmeira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos. Não deixe água parada no prato nem no centro da planta.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a palmeira-imperial",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos, cerca de 1 L para cada 10 L de vaso. No verão acima de 30 °C, confira a cada 2 dias. De junho a agosto, espace para cada 5 a 7 dias e só regue com o substrato seco.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a palmeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de adubo para palmeiras (ou NPK 10-10-10 com magnésio) por 10 L de vaso, a 5 cm do caule, e regue em seguida. A cada duas adubações, junte 2 colheres de húmus. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e lança",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e as bainhas à procura de escamas marrons, algodão branco ou teias finas. Puxe de leve a lança central: se sair sem resistência ou com cheiro podre, é podridão do olho.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso ou plantar no chão",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, passe para um vaso 10 cm mais largo e mais fundo com substrato novo, sem enterrar a base mais fundo do que estava. Se o tufo já passa de 2 m ou as raízes saíram pelos furos, plante no chão a pelo menos 5 m de construções.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Acostumar ao sol aos poucos",
+      "mensagem": "Mudas de viveiro costumam crescer sob tela de sombreamento. Sol pleno de uma vez queima os folíolos, que ficam com manchas brancas e secas para sempre.",
+      "acao_requerida": "Deixar a palmeira só com o sol da manhã nas duas primeiras semanas e depois passá-la para o sol pleno"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Depois de duas semanas, a muda já aguenta o sol forte. Na sombra ela estica, fica fraca e com folhas moles.",
+      "acao_requerida": "Mudar o vaso para o lugar definitivo, com pelo menos 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de palmeira",
+      "mensagem": "Ela deve ter soltado de 4 a 8 folhas novas. Veja se as raízes já aparecem pelos furos ou se o vaso ficou pequeno para o tufo.",
+      "acao_requerida": "Conferir os furos do vaso e decidir, até a próxima primavera, se ela vai para um vaso maior ou para o chão"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do olho (Phytophthora palmivora)",
+      "tipo": "DOENCA",
+      "sintomas": "A lança central amarela, escurece e sai inteira ao ser puxada, com cheiro de podre; as folhas mais velhas continuam verdes por um tempo",
+      "prevencao_tratamento": "Não molhar o centro da planta, não deixar água no prato e manter o substrato drenado. No começo, retire a parte podre e aplique fungicida cúprico no olho; se o ponto de crescimento morreu, a palmeira não se recupera"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de baixo para cima com o substrato sempre úmido, base mole e cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, desentupir os furos e esvaziar o prato. Se as raízes estiverem pretas e moles, trocar o substrato e cortar as podres"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos no verso dos folíolos e nas bainhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia e água com sabão neutro; se persistir, óleo mineral ou de neem a 1% no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontinhos claros, aspecto bronzeado e teias finas no verso, principalmente no tempo seco",
+      "prevencao_tratamento": "Lavar o verso das folhas com jato de água a cada poucos dias no tempo seco; se infestar, óleo de neem a 0,5% semanal"
+    },
+    {
+      "nome": "Mancha foliar (Pestalotiopsis, Bipolaris)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ovais com borda amarela nos folíolos, que se juntam e secam a folha",
+      "prevencao_tratamento": "Remover as folhas muito atacadas, regar no substrato e não nas folhas e adubar em dia, porque a palmeira fraca é mais atacada; se espalhar, fungicida cúprico"
+    },
+    {
+      "nome": "Deficiência de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas com manchas amarelo-alaranjadas translúcidas e pontas secas (potássio) ou uma faixa amarela na borda com o centro ainda verde (magnésio)",
+      "prevencao_tratamento": "Usar adubo próprio para palmeiras, com potássio e magnésio; como corretivo, 1 colher de chá de sulfato de magnésio dissolvida em 1 L de água a cada 2 meses. As folhas manchadas não voltam a ficar verdes, mas as novas saem sadias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou palha, secas, na parte de cima dos folíolos logo depois de a muda ir para o sol forte",
+      "prevencao_tratamento": "Aclimatar em duas semanas, começando pelo sol da manhã. As folhas queimadas ficam marcadas; corte só quando secarem inteiras"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a palmeira quase para de crescer e o substrato demora a secar. Água demais agora é o caminho mais curto para a podridão da raiz.",
+      "acao_requerida": "Espaçar as regas para quando o substrato estiver seco a 5 cm e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio forte",
+      "mensagem": "A palmeira-imperial é tropical: abaixo de 5 °C os folíolos queimam, e geada pode matar a lança central.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, encostar o vaso numa parede protegida do vento e cobrir a planta com manta de TNT, tirando de manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: volta do crescimento",
+      "mensagem": "Com o calor, a palmeira retoma as folhas novas e precisa de mais água e nutrientes.",
+      "acao_requerida": "Voltar a regar com a frequência de verão e retomar a adubação a cada 2 meses"
+    }
+  ]
+}

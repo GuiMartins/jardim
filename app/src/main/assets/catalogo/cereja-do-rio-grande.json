@@ -1,0 +1,203 @@
+{
+  "planta": {
+    "nome_comum": "Cereja-do-rio-grande",
+    "nome_cientifico": "Eugenia involucrata",
+    "descricao": "Frutífera nativa da Mata Atlântica do Sul e Sudeste, da família da pitanga e da jabuticaba, com frutos roxo-escuros, doces e suculentos que amadurecem cerca de um mês depois da florada. Aguenta geada e cresce devagar, por isso vai bem em vaso grande por muitos anos. Muda enxertada ou de alporque começa a produzir em 2 a 3 anos; muda de semente leva de 4 a 6.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; plástico grosso ou cerâmica, sobre pés para a água escorrer",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina ou fibra de coco, 10% areia grossa; levemente ácido (pH 5,5 a 6,5), sem calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho para o vaso definitivo e pode perder algumas folhas ou parar de crescer por umas semanas. A fase acaba quando surgem brotos novos, avermelhados, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta solta brotações em surtos, principalmente na primavera e no verão. Folhas novas saem cor de vinho e ficam verde-brilhantes. Crescimento de 20 a 40 cm no ano é normal."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A planta engrossa o tronco e ramifica. Mudas enxertadas ou de alporque podem dar as primeiras flores brancas neste período; mudas de semente em geral só vegetam. Poucos frutos nas primeiras floradas são esperados."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: no fim do inverno perde boa parte das folhas (é normal, ela é semidecídua); em setembro e outubro floresce junto com a brotação nova; os frutos amadurecem de 3 a 5 semanas depois, entre outubro e dezembro, todos de uma vez. Depois da colheita vem o grande surto de folhas do verão, e no inverno ela desacelera."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Nas primeiras semanas o torrão da muda seca antes do resto do vaso: molhe bem em volta do caule. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cereja-do-rio-grande",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, vaso ao sol pode pedir água a cada 2 dias; no inverno, a cada 5 a 7 dias. Substrato seco na florada e na frutificação derruba flores e frutos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar com orgânico",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 litro de húmus de minhoca ou 2 colheres de sopa de bokashi por vaso de 50 L, a um palmo do caule, cubra com uma camada fina de substrato e regue. Em junho e julho pule a adubação; a partir do terceiro ano, acrescente 1 colher de sopa de farinha de ossos na adubação de agosto para ajudar a florada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as brotações novas: pó amarelo-alaranjado indica ferrugem; carocinhos brancos ou marrons presos nos ramos são cochonilhas; brotos enrolados e grudentos, pulgões. Em época de fruto, abra alguns frutos caídos e procure larvas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, raspe 3 a 5 cm de raízes em volta e no fundo do torrão e replante com substrato novo, ou passe para um vaso 20 a 30 L maior. Faça em agosto, antes da florada; se o lembrete cair com flores ou frutos, espere até o fim da colheita.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A muda vem em saquinho pequeno e as raízes enrolam se ficar muito tempo nele.",
+      "acao_requerida": "Cortar o saquinho sem desmanchar o torrão, plantar no vaso com o colo do caule no nível do substrato (enxerto sempre acima da terra), regar bem e deixar 3 dias à meia-sombra antes de ir para o sol"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Poda de formação",
+      "mensagem": "Uma copa baixa e ramificada produz mais e fica mais fácil de proteger dos pássaros no vaso.",
+      "acao_requerida": "Se a muda passou de 60 cm, cortar a ponta do ramo principal logo acima de uma folha para estimular 3 ou 4 ramos laterais; remover brotos que saem abaixo do enxerto"
+    },
+    {
+      "dia_disparo": 400,
+      "titulo": "Primeiras flores podem vir",
+      "mensagem": "Mudas enxertadas ou de alporque costumam florescer a partir do segundo ano. É comum a primeira florada vingar poucos frutos.",
+      "acao_requerida": "Na florada, manter o substrato sempre úmido e não adubar com nitrogênio até os frutos se formarem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mosca-das-frutas (Anastrepha fraterculus)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos, manchas moles e larvas brancas dentro; caem antes de amadurecer",
+      "prevencao_tratamento": "Ensacar os frutos verdes com saquinho de TNT ou organza; recolher e descartar em saco fechado todo fruto caído; armadilha com suco de fruta fermentado pendurada na copa"
+    },
+    {
+      "nome": "Ferrugem-das-mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nas brotações, folhas novas, flores e frutos jovens, que depois secam e ficam pretos",
+      "prevencao_tratamento": "Manter o vaso ventilado e não molhar a copa ao regar; podar e descartar as partes atacadas; em ataque forte, calda bordalesa a 0,5% nas brotações a cada 15 dias"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, marrons ou algodoadas presas nos ramos e no verso das folhas; fumagina preta e formigas por perto",
+      "prevencao_tratamento": "Esfregar com escova macia ou algodão com álcool; em infestação maior, óleo mineral ou óleo de neem a 1% com gotas de detergente, no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e murchas mesmo com o substrato molhado, raízes escuras e moles, cheiro de mofo no vaso",
+      "prevencao_tratamento": "Nunca deixar água parada no pratinho e regar só com o substrato seco a 4 cm; se ocorrer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Queda de folhas no fim do inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Entre julho e setembro a planta perde grande parte das folhas de uma vez, com os ramos ainda verdes e flexíveis",
+      "prevencao_tratamento": "É o comportamento natural da espécie antes da florada. Não aumente a rega nem aduba para compensar; raspe de leve um ramo com a unha: se estiver verde, a planta está viva e vai rebrotar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "A planta cresce pouco no frio e o substrato demora mais a secar. A espécie aguenta geada, mas vaso jovem sente mais.",
+      "acao_requerida": "Espaçar a rega para a cada 5 a 7 dias conferindo com o dedo, suspender a adubação e, em noite de geada forte, encostar o vaso numa parede ou cobrir a copa com TNT"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Florada: não deixe secar",
+      "mensagem": "A cereja floresce junto com a brotação nova. Falta de água agora derruba as flores e os frutinhos recém-formados.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, manter sempre levemente úmido e evitar molhar as flores ao regar"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Frutos amadurecendo",
+      "mensagem": "Os frutos passam de verde a vermelho e depois a roxo-escuro em poucos dias, e mosca-das-frutas e pássaros chegam antes de você.",
+      "acao_requerida": "Ensacar os frutos verdes ou cobrir a copa com tela; colher todo dia os frutos roxo-escuros que soltam com um toque leve e recolher os caídos"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Poda de limpeza pós-colheita",
+      "mensagem": "Logo depois da colheita a planta entra no surto de folhas do verão, a melhor hora para ajustar a copa.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que crescem para dentro da copa, e encurtar os ramos muito longos em até um terço, sempre acima de uma folha"
+    }
+  ]
+}

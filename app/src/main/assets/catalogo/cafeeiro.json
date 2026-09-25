@@ -1,0 +1,219 @@
+{
+  "planta": {
+    "nome_comum": "Cafeeiro",
+    "nome_cientifico": "Coffea arabica",
+    "descricao": "Arbusto perene de folhas verde-escuras brilhantes, flores brancas perfumadas e frutos vermelhos (cerejas) que dão o café. Em vaso fica entre 1,5 e 2 m com poda e começa a produzir cerca de 2 anos depois do plantio da muda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; comece com 20 a 30 L e passe para 50 L quando a raiz tomar o vaso",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina ou fibra de coco, 10% areia grossa, mais 1 colher de sopa de calcário dolomítico a cada 10 L; ligeiramente ácido (pH 5,5 a 6,5) e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo. É normal perder 1 ou 2 pares de folhas baixas. Deixe-a no sol da manhã e na sombra à tarde. A adaptação terminou quando surge um par de folhas novas, bem verdes e brilhantes, na ponta."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "O caule principal cresce e surgem os primeiros ramos laterais (plagiotrópicos) em pares opostos. É nesses ramos que o café vai florescer e frutificar. Um par de folhas novas a cada 2 ou 3 semanas no calor indica que está tudo bem."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Planta Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "A planta passa de 80 cm e cria vários andares de ramos laterais. Depois do primeiro inverno, pode dar uma floração pequena, que muitas vezes não vinga. Quando as raízes aparecem pelos furos, é hora de trocar para um vaso maior."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "O ano típico: floração em setembro e outubro, depois das primeiras chuvas que seguem o inverno seco. Os frutos ficam verdes e crescem de novembro a março e amadurecem vermelhos entre maio e agosto. Depois da colheita vem a poda de limpeza. No inverno o crescimento desacelera. Um cafeeiro adulto em vaso de 50 L rende de 200 g a 1 kg de cerejas por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de café",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda não pode secar nesta fase, mas também não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cafeeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Acima de 30 °C, confira a cada 2 dias. De junho a agosto, espere secar até 5 cm antes de regar. Folhas murchas ao meio-dia que se recuperam à noite são calor, não falta de água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o cafeeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 20-05-20 (ou 1 xícara de bokashi ou torta de mamona) por vaso de 30 L, a 5 cm do caule, e regue em seguida. De junho a agosto, use metade da dose. No primeiro ano, use metade da dose o ano todo.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas do café",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as axilas dos ramos. Procure pó alaranjado (ferrugem), manchas marrons secas com galerias por dentro (bicho-mineiro), bolinhas brancas algodoadas (cochonilha) e folhas bronzeadas com teias finas (ácaro).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato ou vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Em dia nublado, tire a planta do vaso, raspe 3 a 5 cm de raízes enoveladas nas laterais e no fundo e replante com substrato novo. Passe para um vaso de 50 L se ainda estiver no de 30 L. Faça isso de preferência entre setembro e março.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso definitivo",
+      "mensagem": "Mudas de café vêm em saquinhos pequenos e ficam com as raízes enroladas. Quanto antes forem para o vaso, melhor.",
+      "acao_requerida": "Cortar o saquinho sem desmanchar o torrão, plantar na mesma altura em que estava (sem enterrar o caule) e regar até escorrer"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Ramos laterais formados",
+      "mensagem": "Os ramos laterais que saem em pares do caule são os que vão dar café. Se o caule principal estiver fino e se curvando, a planta precisa de apoio.",
+      "acao_requerida": "Conferir se o caule se sustenta sozinho e, se envergar, prender a um tutor de bambu com fita macia em oito"
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "Primeira floração à vista",
+      "mensagem": "A partir desta idade, o cafeeiro pode mostrar botões brancos nas axilas dos ramos laterais depois do inverno. Falta de água quando os botões incham faz as flores caírem.",
+      "acao_requerida": "Na próxima primavera, manter a rega bem regular assim que os botões aparecerem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem de baixo para cima com o substrato úmido; a planta murcha mesmo regada; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e manter os furos livres. Em planta afetada, tirar do vaso, cortar as raízes podres e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Ferrugem-do-cafeeiro (Hemileia vastatrix)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas na face de cima das folhas e pó alaranjado no verso; as folhas caem e os ramos ficam pelados",
+      "prevencao_tratamento": "Arrancar e descartar as folhas atacadas, não molhar a folhagem na rega e manter a planta bem adubada e ventilada. Se o ataque se espalhar, pulverizar calda bordalesa a 1% no verso das folhas a cada 15 dias"
+    },
+    {
+      "nome": "Cercosporiose (Cercospora coffeicola)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas redondas marrons com centro claro e halo amarelo nas folhas (olho-pardo); nos frutos, manchas escuras e secas",
+      "prevencao_tratamento": "Costuma aparecer em planta com pouco nitrogênio ou potássio e sol forte demais. Manter a adubação em dia, dar sombra à tarde e retirar as folhas manchadas"
+    },
+    {
+      "nome": "Bicho-mineiro (Leucoptera coffeella)",
+      "tipo": "PRAGA",
+      "sintomas": "Manchas marrons irregulares que secam e descolam como papel; dentro delas há galerias e, às vezes, uma pequena lagarta",
+      "prevencao_tratamento": "Retirar e destruir as folhas minadas. Em ataque forte, óleo de neem a 0,5% no fim da tarde a cada 7 dias. Aparece mais nos meses secos"
+    },
+    {
+      "nome": "Cochonilha (Planococcus, Coccus)",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodoadas ou escamas marrons nas axilas dos ramos, no verso das folhas e nos frutos; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Em infestação maior, pulverizar água com sabão neutro e óleo de neem a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Ácaro-vermelho (Oligonychus ilicis)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas perdem o brilho e ficam bronzeadas na face de cima; teias finas e pontinhos avermelhados vistos com lupa",
+      "prevencao_tratamento": "Aparece com tempo seco e quente. Borrifar água nas folhas e aumentar a umidade ao redor. Se persistir, enxofre molhável ou óleo de neem a cada 7 dias"
+    },
+    {
+      "nome": "Escaldadura (queimadura de sol)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrom-claras secas no centro das folhas mais expostas, surgindo logo depois de mudar a planta de lugar",
+      "prevencao_tratamento": "Dar sombra nas horas mais quentes da tarde e acostumar a planta ao sol direto aos poucos, ao longo de 2 semanas"
+    },
+    {
+      "nome": "Clorose por falta de magnésio ou pH alto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas amarelam entre as nervuras, que continuam verdes; em pH alto, as folhas novas saem amareladas",
+      "prevencao_tratamento": "Aplicar 1 colher de sopa de sulfato de magnésio diluída em 2 L de água a cada 30 dias por 3 meses. Evitar água muito calcária e excesso de calcário no substrato"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Época da floração do café",
+      "mensagem": "Depois do inverno seco, as primeiras chuvas e regas fartas disparam a floração do cafeeiro. As flores brancas duram só 2 ou 3 dias e o perfume lembra jasmim.",
+      "acao_requerida": "Voltar à rega regular (sem deixar secar a 4 cm) assim que os botões incharem, para as flores não caírem"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Colheita das cerejas de café",
+      "mensagem": "Os frutos amadurecem aos poucos e passam de verdes a vermelhos (ou amarelos, em algumas variedades). A cereja no ponto solta com um leve torcer.",
+      "acao_requerida": "Passar a cada 1 ou 2 semanas colhendo só as cerejas vermelhas ou amarelas e firmes, deixando as verdes no pé"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza do cafeeiro",
+      "mensagem": "Com a colheita encerrada e antes da florada, é a melhor hora de limpar a planta e controlar a altura no vaso.",
+      "acao_requerida": "Cortar ramos secos, doentes ou que cruzam para dentro, retirar brotos ladrões verticais que saem da base e, se passou de 1,8 m, cortar o topo do caule principal logo acima de um par de ramos"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o café do frio",
+      "mensagem": "O cafeeiro sofre abaixo de 5 °C, e a geada queima folhas e ramos novos.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, levar o vaso para perto de uma parede, sob uma cobertura ou para dentro de casa, e regar só pela manhã"
+    }
+  ]
+}

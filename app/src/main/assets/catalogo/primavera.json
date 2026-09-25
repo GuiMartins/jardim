@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Primavera",
+    "nome_cientifico": "Bougainvillea glabra",
+    "descricao": "Trepadeira arbustiva e espinhenta, nativa do Brasil, cultivada pelas brácteas coloridas (roxas, rosas ou brancas) que cobrem a planta por meses. Em vaso, pode ser conduzida como arbusto, pequena árvore ou treliça, e floresce mais quando recebe muito sol e um pouco de aperto de água e de raiz.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico grosso com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; vaso pesado evita tombar quando a copa cresce",
+    "volume_minimo_litros": 25,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca, 10% casca de pinus fina ou perlita; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente o transplante: pode derrubar folhas e brácteas nas primeiras duas semanas, o que é normal. A fase termina quando surgem brotos novos, avermelhados ou verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e os ramos crescem rápido, às vezes mais de 30 cm por mês no calor. É a hora de escolher o formato (arbusto, tronco único ou treliça) e amarrar os ramos principais. As primeiras brácteas aparecem nas pontas dos ramos novos quando a planta pega sol pleno."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "No Centro-Sul, a florada mais forte vai do fim do inverno à primavera, com repiques no verão após cada poda leve. No outono e inverno o crescimento desacelera e a rega fica mais espaçada. Poda principal depois da florada, troca de substrato a cada dois anos e sol pleno o ano todo mantêm a planta florida por décadas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. As raízes ainda não saíram do torrão original e ele seca antes do resto do vaso. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a primavera",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos. No verão acima de 30 °C, confira a cada 2 ou 3 dias; no outono e inverno, espace para 6 a 8 dias. Folhas amarelando e caindo com substrato úmido indicam excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de farinha de ossos) na borda de um vaso de 25 L, longe do caule, e regue em seguida. Evite adubo rico em nitrogênio, que faz muita folha e pouca flor. Em junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "poda_leve",
+      "titulo": "Podar pontas e ramos compridos",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas (os espinhos ferem), corte as pontas dos ramos que passaram do formato desejado, 1 cm acima de uma folha. Aproveite para amarrar os ramos novos no tutor ou treliça. Ramos que brotam da base e disparam para cima sem florir (ladrões) saem rente ao caule. A florada vem nos brotos novos que surgem depois do corte.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e procure lagartas verdes finas, folhas roídas e costuradas, pontos brancos algodonosos nas axilas e manchas marrons com borda escura.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta com cuidado para não esfarelar o torrão: a primavera sente muito o mexer nas raízes. Raspe 3 a 5 cm de substrato velho das laterais, apare só as raízes enroladas no fundo e replante num vaso 5 cm maior, com substrato novo. Faça uma poda leve na copa para compensar e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar sem mexer no torrão",
+      "mensagem": "A primavera tem raízes finas e sensíveis. Desmanchar o torrão da muda pode fazê-la perder todas as folhas e travar por semanas.",
+      "acao_requerida": "Cortar o saquinho ou virar o vaso de viveiro, colocar o torrão inteiro no vaso definitivo na mesma altura em que estava e completar com substrato, sem apertar demais"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Escolher o formato da planta",
+      "mensagem": "Os ramos já estão compridos. Se não forem conduzidos agora, viram um emaranhado espinhento difícil de corrigir.",
+      "acao_requerida": "Fincar um tutor firme ou instalar uma treliça no vaso e amarrar 2 ou 3 ramos principais com fitilho, sem apertar"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Sem flor? Confira o sol",
+      "mensagem": "Primavera com muita folha e nenhuma bráctea quase sempre está recebendo menos de 5 horas de sol direto, água demais ou nitrogênio demais.",
+      "acao_requerida": "Mudar o vaso para o lugar mais ensolarado da casa, espaçar as regas e usar só adubo rico em fósforo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem em massa com o substrato úmido; ramos murcham, raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm de profundidade e nunca deixar água no pratinho. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco, esperando 3 dias para regar"
+    },
+    {
+      "nome": "Lagarta-da-primavera (Asciodes gordialis)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas das pontas roídas ou costuradas com fios de seda; lagartas verdes finas que se contorcem e caem ao serem tocadas",
+      "prevencao_tratamento": "Catar as lagartas e as folhas enroladas; com muitas lagartas, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos nas axilas das folhas e nos ramos novos; folhas pegajosas e formigas subindo pela planta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação, óleo mineral ou óleo de neem a 0,5% com detergente neutro, a cada 7 dias, 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; brotos deformados",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mancha-foliar (Cercospora bougainvilleae)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas circulares marrons com borda arroxeada nas folhas velhas, que amarelam e caem",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas; recolher as folhas caídas e podar para arejar a copa. Em casos fortes, fungicida à base de cobre a cada 10 dias"
+    },
+    {
+      "nome": "Queda de brácteas e folhas por mudança brusca",
+      "tipo": "DISTURBIO",
+      "sintomas": "A planta derruba brácteas, botões e folhas poucos dias depois de mudar de lugar, ir para a sombra ou ter as raízes mexidas",
+      "prevencao_tratamento": "Escolher um lugar definitivo de sol pleno e evitar mudar o vaso de lugar; a planta rebrota em 2 a 4 semanas se o sol e a rega estiverem certos"
+    },
+    {
+      "nome": "Muita folha e nenhuma flor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e vigorosos, folhas grandes e verde-escuras, sem brácteas coloridas",
+      "prevencao_tratamento": "Garantir 6 horas ou mais de sol direto, espaçar as regas e trocar adubo nitrogenado (ureia, esterco fresco) por adubo rico em fósforo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Menos água para florir",
+      "mensagem": "No outono o crescimento desacelera. Um pouco de sede nessa época induz a florada forte do fim do inverno e da primavera.",
+      "acao_requerida": "Deixar o substrato secar bem entre as regas, esperando as folhas das pontas ficarem levemente moles antes de regar"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A primavera tolera frio leve, mas a geada queima folhas e ramos novos. Nas serras e no Sul, o risco é real.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, levar o vaso para junto de uma parede ou cobrir a copa com manta de TNT, retirando pela manhã"
+    },
+    {
+      "meses": [
+        1,
+        2
+      ],
+      "titulo": "Poda principal depois da florada",
+      "mensagem": "Com a florada da primavera terminada, a poda agora renova os ramos que vão florir no próximo inverno e primavera.",
+      "acao_requerida": "Com luvas, encurtar em até um terço os ramos que floresceram, retirar ramos secos, cruzados e os que crescem para dentro da copa"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Melissa (Erva-cidreira-verdadeira)",
+    "nome_cientifico": "Melissa officinalis",
+    "descricao": "Erva perene da família da hortelã, com folhas enrugadas de aroma forte de limão, usadas em chá calmante e em sobremesas. Forma uma touceira de 30 a 60 cm que rebrota depois de cada corte e rende colheitas por anos no mesmo vaso. Não confundir com o capim-cidreira (Cymbopogon citratus) nem com a erva-cidreira-de-arbusto (Lippia alba), que também são chamados de cidreira.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 20 cm de profundidade e 25 cm de diâmetro, com furos no fundo; barro ou plástico servem, com prato sem água parada",
+    "volume_minimo_litros": 8,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; fértil, fofo e drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda enraíza no vaso novo. Pode murchar um pouco nas horas quentes nos primeiros dias: mantenha-a com sol só da manhã. A adaptação terminou quando surgem folhas novas, de verde vivo, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "A planta ramifica e começa a lançar novos brotos da base, fechando a touceira. Os primeiros cortes leves começam nessa fase. Ela está estabelecida quando cobre boa parte da superfície do vaso e rebrota em poucos dias depois de cada corte."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Touceira formada, colhida a cada duas semanas na primavera e no verão. No verão lança hastes com florzinhas brancas, que deixam as folhas menos aromáticas. No inverno cresce devagar e, onde geia, pode perder a parte de cima e rebrotar da raiz na primavera. A cada dois anos a touceira fica apertada e precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a melissa recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. As raízes ainda não saíram do torrão da muda, e deixar secar agora faz a planta murchar sem voltar. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a melissa",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. No verão, em vaso de 8 L, costuma pedir água a cada 2 dias; no inverno, a cada 5 a 7. Folhas murchas no fim da tarde quente que voltam à noite são normais; murchas de manhã indicam falta de água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a melissa",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca na superfície de um vaso de 8 L, sem encostar nos caules, e regue em seguida. Nos meses de junho a agosto, pule a adubação: a planta quase não cresce e o adubo se acumula.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher ramos de melissa",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte os ramos mais altos com tesoura limpa, logo acima de um par de folhas, deixando pelo menos 10 cm de planta. Tire no máximo um terço da folhagem por vez. Colha de manhã, depois que o orvalho secar, quando o aroma está mais forte. Se aparecerem hastes com botões florais, corte-as junto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas da melissa",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure insetos brancos ou verdes no verso, teias finas, pó branco na superfície ou pontinhos alaranjados. Olhe também a base dos caules: escurecida e mole indica excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, corte o torrão em 2 ou 3 partes com faca limpa, cada uma com raízes e brotos, e replante uma parte no mesmo vaso com substrato novo. Prefira fazer em março-abril ou setembro, fora do calor forte. As outras partes podem ir para outros vasos ou ser doadas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora de despontar a melissa",
+      "mensagem": "A muda já pegou. Cortar as pontas agora faz cada ramo se dividir em dois e forma uma touceira cheia em vez de caules compridos e ralos.",
+      "acao_requerida": "Cortar com tesoura os 2 a 3 cm da ponta de cada ramo, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "A melissa já tem folhagem suficiente para os primeiros cortes sem enfraquecer.",
+      "acao_requerida": "Colher até um terço dos ramos mais altos, cortando acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas amarelando de baixo para cima, base dos caules escura e mole, cheiro de mofo no substrato",
+      "prevencao_tratamento": "Regar só quando os 2 cm de cima estiverem secos e nunca deixar água no prato. Se aparecer, tire a planta, corte as raízes escuras, replante em substrato novo e seco e salve estacas dos ramos sadios como reserva"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Mantenha a planta arejada, com colheitas regulares, e regue o substrato sem molhar as folhas. Retire as folhas atacadas e pulverize leite diluído em água (1:9) ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Ferrugem (Puccinia menthae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pontinhos alaranjados ou marrons no verso das folhas, que caem em seguida",
+      "prevencao_tratamento": "Corte e descarte no lixo (não no composto) os ramos atacados e evite molhar as folhas. Em ataque forte, pode a touceira a 5 cm do substrato para rebrotar limpa"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas e no verso das folhas; brotos enrolados e pegajosos",
+      "prevencao_tratamento": "Jato de água ou esfregar com os dedos; se persistir, sabão neutro (1 colher de sopa por litro) no fim da tarde a cada 5 dias. Evite óleo de neem em folhas que serão colhidas logo; espere pelo menos 7 dias depois de aplicar"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta; folhas pálidas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e lavagem do verso das folhas com água e sabão neutro a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo e sem brilho, com teias finas no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos e lave a planta com jato de água; corte os ramos muito atacados"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amareladas ou com manchas marrons secas no lado virado para o sol, planta murcha à tarde mesmo com rega em dia",
+      "prevencao_tratamento": "Deixe a melissa com sol só da manhã; no verão, tire-a do sol da tarde ou use sombrite 50%. Corte as folhas queimadas que ela rebrota"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: sol da tarde e flores",
+      "mensagem": "No calor a melissa desidrata rápido, queima com o sol da tarde e lança hastes florais que deixam as folhas menos aromáticas.",
+      "acao_requerida": "Deixar o vaso só com sol da manhã, conferir a rega todo dia e cortar as hastes com botões florais assim que aparecerem"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "Com o frio a melissa quase para de crescer e o substrato demora a secar; onde geia, a parte de cima pode queimar.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm e, em noites com previsão de geada, levar o vaso para perto de uma parede ou cobrir com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno a touceira costuma estar lenhosa e rala. Uma poda forte agora faz a planta rebrotar cheia na primavera.",
+      "acao_requerida": "Cortar todos os ramos a 10 cm do substrato, tirar as folhas secas da base e adubar com 2 colheres de sopa de húmus"
+    }
+  ]
+}

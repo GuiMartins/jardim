@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Uvaia",
+    "nome_cientifico": "Eugenia pyriformis",
+    "descricao": "Árvore frutífera nativa da Mata Atlântica, da família da pitanga e da jabuticaba, que em vaso grande fica com 2 a 3 m. Dá frutos amarelos aveludados, muito aromáticos e ácidos, ótimos para suco e sorvete, que quase não chegam ao mercado porque estragam em um ou dois dias. É uma das nativas mais resistentes ao frio.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, fibra ou cimento, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo; comece num de 30 L e passe para o definitivo quando as raízes tomarem o torrão",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de pinus fina; levemente ácido (pH 5,5 a 6,5), sem calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e de lugar: pode perder algumas folhas e ficar parada. Deixe 1 semana em meia-sombra antes do sol pleno. A fase termina quando surgem brotos novos avermelhados nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta solta fluxos de folhas novas, que nascem cor de vinho e depois ficam verde-escuras e brilhantes. Crescimento lento, de 20 a 40 cm no ano, é normal para a espécie."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A copa se ramifica e engrossa o tronco. Mudas de semente costumam dar as primeiras flores entre o 3º e o 5º ano; mudas enxertadas ou compradas já grandes podem florescer antes. Floração nesta fase é pouca e muitas flores caem sem virar fruto."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação e flores brancas perfumadas entre o fim do inverno e o início da primavera (agosto e setembro), frutos maduros de 30 a 40 dias depois (setembro a novembro), poda leve de limpeza após a colheita e crescimento vegetativo no verão. No inverno ela desacelera e pede menos água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a uvaia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com as raízes ainda no torrão antigo, o miolo seca antes do resto do vaso: molhe bem em volta do caule.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a uvaia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). Acima de 30 °C, confira a cada 2 dias; no inverno, a cada 5 a 7. Na floração e na frutificação não deixe secar, ou flores e frutos caem.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a uvaia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 500 g de húmus de minhoca ou composto e 1 colher de sopa de farinha de ossos por vaso de 60 L, longe do tronco, e regue em seguida. Pule a adubação de junho e julho, quando a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos e o verso das folhas procurando pó amarelo-alaranjado (ferrugem), escamas brancas ou marrons presas aos ramos (cochonilha) e folhas enroladas com insetos dentro.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar o substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera ou após a colheita, tire a planta, corte 3 a 5 cm das raízes que enrolam na lateral e no fundo, e volte para um vaso 20% maior ou para o mesmo com substrato novo. Regue bem e deixe 1 semana na meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso",
+      "mensagem": "Muda deixada no saquinho ou no vaso de viveiro enrola as raízes e para de crescer.",
+      "acao_requerida": "Transplantar para o vaso de pelo menos 30 L sem enterrar o colo mais fundo do que estava e regar até escorrer"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Poda de formação",
+      "mensagem": "Uma uvaia de haste única vira uma árvore alta e fina, difícil de manter no vaso e de colher.",
+      "acao_requerida": "Se a muda passou de 70 cm e não ramificou, cortar a ponta da haste principal a 60 cm da base para forçar 3 ou 4 ramos laterais"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Idade de frutificar",
+      "mensagem": "A partir de agora a uvaia costuma florescer todo fim de inverno. Se não florir, as causas mais comuns são pouco sol ou vaso pequeno.",
+      "acao_requerida": "Conferir se a planta recebe ao menos 6 h de sol direto e se o vaso tem 60 L ou mais"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Ferrugem-das-mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nos brotos, folhas novas e flores, que depois secam, retorcem e ficam pretas",
+      "prevencao_tratamento": "Retire e descarte os brotos atacados, evite molhar a copa ao regar e mantenha a planta ventilada; em ataque forte, calda bordalesa ou fungicida cúprico a cada 10 dias nas brotações"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem com o substrato úmido, colo do caule escuro e mole, raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, garantir furos desobstruídos e nunca deixar água parada no pratinho; plantas afetadas: suspender a rega e trocar o substrato cortando as raízes podres"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos e manchas moles, larvas brancas dentro da polpa, queda de frutos antes de amadurecer",
+      "prevencao_tratamento": "Ensacar os frutos verdes com saquinho de TNT, recolher todo fruto caído no mesmo dia e usar armadilha com suco de fruta ou proteína hidrolisada perto do vaso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodonosas presas aos ramos e ao verso das folhas; folhas meladas e com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; se persistir, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Clorose por substrato alcalino",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes, crescimento fraco",
+      "prevencao_tratamento": "Não usar calcário em excesso nem água muito calcária; adubar com composto orgânico e, se precisar, aplicar sulfato de ferro ou quelato de ferro conforme o rótulo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "A uvaia desacelera no frio e aguenta geadas leves, mas substrato encharcado e frio apodrece a raiz. Mudas com menos de 1 m sofrem em geada forte.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm e, em noites de geada, cobrir mudas pequenas com TNT ou levá-las para perto de uma parede"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Floração chegando",
+      "mensagem": "No fim do inverno a uvaia solta brotos e botões florais. Falta de água ou de potássio agora faz as flores caírem.",
+      "acao_requerida": "Aplicar 1 colher de sopa de cinza de madeira ou farinha de ossos por vaso e manter o substrato sempre levemente úmido até os frutos formarem"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Época de colher uvaias",
+      "mensagem": "Os frutos amadurecem de 30 a 40 dias após a flor e ficam amarelo-alaranjados e macios. Maduros, caem sozinhos e estragam em um ou dois dias.",
+      "acao_requerida": "Passar pela planta todo dia, colher os frutos que soltam com um leve toque e recolher os caídos para não atrair mosca-das-frutas"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Poda de limpeza pós-colheita",
+      "mensagem": "Depois da safra a planta entra em crescimento; é a melhor hora de arejar a copa e controlar a altura.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que crescem para dentro da copa, e encurtar em até um terço os ramos que passaram da altura desejada"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "planta": {
+    "nome_comum": "Chuchu",
+    "nome_cientifico": "Sicyos edulis (sin. Sechium edule)",
+    "descricao": "Trepadeira vigorosa da família das abóboras, cultivada pelos frutos verdes e suaves e pelos brotos (cambuquira). Começa com o próprio fruto maduro e brotado, que é a semente, e em vaso grande com latada produz por 2 a 3 anos antes de pedir renovação.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso, caixa ou meio tambor com pelo menos 50 cm de diâmetro e 50 cm de profundidade, vários furos no fundo, encostado numa latada, grade ou tela de pelo menos 2 m de altura",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "50% terra vegetal, 30% esterco curtido ou composto orgânico, 20% areia grossa ou perlita; misture 150 g de calcário dolomítico e 150 g de farinha de ossos por 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "brotacao",
+      "nome": "Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 20,
+      "descricao": "Use um chuchu maduro que já soltou o broto na ponta larga. Enterre-o deitado e inclinado, com 2/3 do fruto no substrato e o broto para cima e para fora. O fruto alimenta a planta nestas semanas; as primeiras folhas e gavinhas abrem entre o 10º e o 20º dia. Fruto mole e escuro indica podridão por excesso de água."
+    },
+    {
+      "fase_id": "crescimento_rama",
+      "nome": "Crescimento das Ramas",
+      "dia_inicio": 21,
+      "dia_fim": 75,
+      "descricao": "As ramas crescem vários centímetros por dia e se agarram por gavinhas. É a fase de conduzir tudo para a latada: rama arrastando no chão apodrece e não produz. Quando a rama principal chega ao topo do suporte, despontar a ponta faz sair ramas laterais, que são as que florescem."
+    },
+    {
+      "fase_id": "floracao_primeiros_frutos",
+      "nome": "Floração e Primeiros Frutos",
+      "dia_inicio": 76,
+      "dia_fim": 120,
+      "descricao": "Surgem flores masculinas em cachos e femininas isoladas, com um chuchuzinho já formado atrás da flor. Abelhas fazem a polinização; em varanda fechada, passe o pólen das masculinas para as femininas com um pincel pela manhã. O fruto fica pronto de 15 a 20 dias depois da flor."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Produz em ondas, com pico no outono e na primavera; dias quentes e longos de verão dão mais rama que fruto. A geada queima a parte aérea no inverno, mas a raiz rebrota. Depois de 2 a 3 anos no mesmo vaso a produção cai e é hora de renovar o substrato ou replantar com um fruto novo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar o chuchu brotando",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 20,
+      "instrucoes": "Enfie o dedo 3 cm no substrato ao lado do fruto; regue só se estiver seco, sem molhar o fruto. O chuchu tem reserva própria e apodrece em substrato encharcado.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o chuchu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). No verão acima de 30 °C, confira todo dia; no inverno, com a planta parada, a cada 4 ou 5 dias.",
+      "critica": true
+    },
+    {
+      "id": "conduzir_ramas",
+      "titulo": "Conduzir as ramas na latada",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Leve as pontas soltas para a grade e prenda com barbante em oito frouxo. Tire as ramas que descem para o chão ou se enroscam em outras plantas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o chuchu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 300 g de esterco curtido ou 150 g de bokashi na superfície, longe do caule, e 1 colher de sopa de NPK 4-14-8; regue em seguida. Pule a adubação em junho e julho se a planta estiver parada pelo frio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas procurando pulgões, ácaros e pó branco; olhe as flores e os frutos novos em busca de furos com serragem, sinal da broca.",
+      "critica": false
+    },
+    {
+      "id": "colheita_chuchu",
+      "titulo": "Colher chuchus",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura, deixando 1 cm de cabinho, os frutos de 10 a 15 cm, ainda verde-claros e com a casca que se risca fácil com a unha. Passado do ponto ele endurece, fica fibroso e brota no pé, o que reduz a produção.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Depois da poda de fim de inverno, retire o terço de cima do substrato e parte da lateral, cortando raízes velhas, e complete com substrato novo adubado. Se a planta estiver fraca, replante com um chuchu brotado novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Monte a latada agora",
+      "mensagem": "As ramas vão começar a correr e precisam de suporte antes de se deitarem no chão.",
+      "acao_requerida": "Instalar grade, tela ou latada de pelo menos 2 m de altura junto ao vaso e amarrar o primeiro broto nela"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Despontar a rama principal",
+      "mensagem": "Ramas laterais são as que florescem. Cortar a ponta da principal no alto do suporte multiplica as laterais.",
+      "acao_requerida": "Cortar os últimos 5 cm da rama principal quando ela passar do topo do suporte e deixar 3 ou 4 laterais fortes"
+    },
+    {
+      "dia_disparo": 80,
+      "titulo": "Flores à vista",
+      "mensagem": "Flores femininas têm um chuchuzinho atrás; sem polinização elas amarelam e caem.",
+      "acao_requerida": "Se poucas abelhas visitam a planta, polinizar à mão pela manhã, passando o pólen das flores masculinas nas femininas com um pincel"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Broca-das-cucurbitáceas (Diaphania spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas verde-claras dentro de flores, ramas e frutos; furos com serragem escura e frutos que apodrecem",
+      "prevencao_tratamento": "Retirar e descartar frutos e ramas furados; aplicar Bacillus thuringiensis (Bt) no fim da tarde a cada 7 dias durante a floração"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nas pontas e no verso das folhas; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo, depois bronzeadas, com teia fina no verso; piora em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; óleo de neem a 0,5% a cada 5 dias e retirar as folhas muito atacadas"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos nas folhas e brotos roídos",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo; em ataque forte, óleo de neem a 0,5%"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco nas folhas, que amarelam e secam, começando pelas mais velhas",
+      "prevencao_tratamento": "Regar só o substrato e manter a latada arejada; pulverizar leite a 10% em água ou bicarbonato de sódio a 0,5% a cada 7 dias e retirar folhas muito atacadas"
+    },
+    {
+      "nome": "Podridão do fruto-semente e do colo (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Chuchu plantado mole e escuro, ou base do caule escurecida; a planta murcha mesmo com substrato úmido",
+      "prevencao_tratamento": "Não encharcar, principalmente na brotação; vaso com bons furos e fruto 1/3 fora do substrato. Planta com colo podre não se recupera: replante com fruto novo em substrato novo"
+    },
+    {
+      "nome": "Queda de flores e frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores femininas e chuchus pequenos amarelam e caem sem sinal de praga",
+      "prevencao_tratamento": "Falta de polinização, calor forte ou falta de água: polinizar à mão, manter a rega regular e cobrir o substrato com palha no verão"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o chuchu da geada",
+      "mensagem": "Geada queima as folhas e as ramas do chuchu; a raiz sobrevive se o vaso não congelar.",
+      "acao_requerida": "Em noites com previsão abaixo de 4 °C, cobrir a planta com TNT ou levar o vaso para perto de uma parede abrigada; reduzir a rega"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Com o fim do frio, as ramas velhas produzem pouco e escondem pragas. Podar agora concentra a rebrota da primavera.",
+      "acao_requerida": "Cortar as ramas secas e velhas, deixando 3 ou 4 ramas principais de cerca de 1 m presas à latada, e fazer a adubação logo depois"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: cuidado com a rega",
+      "mensagem": "No verão o chuchu transpira muito e o vaso seca em um dia; falta de água derruba flores e frutos.",
+      "acao_requerida": "Conferir o substrato todo dia e cobrir a superfície com 3 cm de palha para segurar a umidade"
+    }
+  ]
+}

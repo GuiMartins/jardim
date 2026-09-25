@@ -1,0 +1,185 @@
+{
+  "planta": {
+    "nome_comum": "Quaresmeira",
+    "nome_cientifico": "Pleroma granulosum (sin. Tibouchina granulosa)",
+    "descricao": "Árvore nativa da Mata Atlântica, com flores roxas ou rosadas que cobrem a copa. O nome vem da florada perto da Quaresma. Na natureza passa de 8 m; em vaso grande, com poda, fica um arbusto de 2 a 3 m que floresce duas vezes por ano, no verão e no inverno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de cerâmica, fibra ou plástico grosso, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo e base pesada para a planta não tombar com o vento",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa e 10% casca de pinus fina ou turfa, para deixar o solo levemente ácido (pH 5,5 a 6,5). Não use calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente o transplante e pode perder algumas folhas de baixo. É normal. A fase termina quando surgem brotos novos, de folhas aveludadas e verde-claras, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e os ramos crescem rápido. Quando o ramo principal passar de 1,2 m, corte a ponta para a planta ramificar e formar copa. Mudas bem enraizadas podem florescer já no primeiro ano."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arbusto formado, com duas floradas por ano: a principal entre dezembro e março e outra menor de junho a agosto. As flores abrem brancas, passam a rosa e depois a roxo, por isso a copa fica com três cores. Depois de cada florada, uma poda leve mantém o tamanho. A troca de substrato a cada dois anos evita que a planta enfraqueça."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a quaresmeira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. As raízes ainda não exploram o vaso todo, e um torrão seco nesta fase faz a muda murchar e perder os brotos. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a quaresmeira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos, com cerca de 5 a 8 L num vaso de 60 L. Na florada e no calor a planta bebe mais: se as folhas amolecerem à tarde, passe a regar a cada 2 dias. No inverno, se o substrato ainda estiver úmido, espace para a cada 5 dias. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a quaresmeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 4-14-8 e 1 litro de húmus de minhoca na superfície do vaso de 60 L, a 10 cm do tronco, e regue em seguida. O fósforo alto ajuda a florir; adubo rico em nitrogênio dá muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as axilas dos ramos. Procure lagartas, folhas roídas, pontos brancos algodoados (cochonilha) e manchas marrons com borda escura. Confira também se as folhas novas estão amarelas com as nervuras verdes, sinal de solo pouco ácido.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro: retire a planta, corte 3 a 5 cm das raízes que dão voltas no fundo, troque um terço do substrato por mistura nova e devolva a planta ao mesmo vaso ou a um maior. Pode os ramos em um terço para compensar a perda de raiz e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Colocar um tutor",
+      "mensagem": "A quaresmeira cresce rápido e tem madeira frágil quando jovem. Sem apoio, o vento entorta ou quebra a muda.",
+      "acao_requerida": "Cravar uma estaca firme ao lado do caule, sem ferir o torrão, e amarrar a muda em 2 pontos com fita macia em forma de 8"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Formar a copa",
+      "mensagem": "Se o ramo principal já passou de 1,2 m, é hora de induzir a ramificação para a planta formar copa em vez de crescer como uma vara.",
+      "acao_requerida": "Cortar a ponta do ramo principal logo acima de um par de folhas, na altura em que você quer a copa"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Soltar o tutor",
+      "mensagem": "Com um ano, o tronco já costuma se sustentar sozinho. Um amarrio esquecido estrangula a casca quando o tronco engrossa.",
+      "acao_requerida": "Afrouxar ou retirar as amarras. Se a planta ainda balançar muito no vaso, trocar a fita por uma nova, mais frouxa"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, a planta murcha sem melhorar depois da rega e as raízes ficam escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos desentupidos e nunca deixar água no pratinho. Se atacar, retire a planta, corte as raízes podres e replante em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro, bolinhas escuras de fezes nas folhas de baixo e ramos com folhas faltando da noite para o dia",
+      "prevencao_tratamento": "Catar as lagartas com luva. Em ataque forte, pulverize Bacillus thuringiensis (Dipel) no fim da tarde e repita após 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodoados ou escamas marrons nos ramos e nas axilas das folhas, folhas pegajosas e fumagina preta por cima",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%. Em infestação maior, pulverize óleo de neem a 0,5% com algumas gotas de detergente a cada 7 dias, 3 vezes, no fim da tarde"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora e outros fungos)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou arroxeadas, arredondadas e de borda escura, que se juntam e derrubam as folhas no verão chuvoso",
+      "prevencao_tratamento": "Regar no substrato, não nas folhas, e deixar a copa arejada com poda. Retire e descarte as folhas manchadas. Se espalhar, calda bordalesa a cada 10 dias"
+    },
+    {
+      "nome": "Clorose por solo pouco ácido",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelo-claras com as nervuras continuando verdes; a planta cresce pouco e floresce mal",
+      "prevencao_tratamento": "Não usar calcário nem água com cal. Acrescentar casca de pinus ou turfa ao substrato na renovação e aplicar quelato de ferro conforme o rótulo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Poda depois da florada de verão",
+      "mensagem": "A florada principal terminou. A quaresmeira floresce nas pontas dos ramos novos, então podar agora estimula brotos que florescem de novo no inverno e no verão seguinte.",
+      "acao_requerida": "Cortar as pontas dos ramos que floresceram, uns 20 cm, logo acima de um par de folhas, e tirar os galhos secos ou cruzados. Nunca cortar mais de um terço da copa"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "A quaresmeira aguenta frio leve, mas a geada queima as folhas e os brotos da florada de inverno. Em vaso, a raiz fica mais exposta ao frio.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, levar o vaso para perto de uma parede ou sob uma cobertura, ou cobrir a copa com manta de TNT até o sol nascer"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor e florada: mais água",
+      "mensagem": "No auge do calor e da florada, um vaso de 60 L pode secar em 2 dias, e a falta de água derruba os botões antes de abrirem.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e regar até escorrer pelos furos, de manhã cedo ou no fim da tarde"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "planta": {
+    "nome_comum": "Maracujazeiro",
+    "nome_cientifico": "Passiflora edulis f. flavicarpa (maracujá-azedo)",
+    "descricao": "Trepadeira tropical vigorosa que dá o maracujá-azedo, o mais plantado no Brasil, além de flores grandes e ornamentais. Em vaso grande e com treliça ela cobre muro ou pergolado e produz bem por uns 3 anos. Depois disso perde vigor e é melhor trocar por uma muda nova.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou caixote com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com furos no fundo, junto a uma treliça, cerca ou arame de pelo menos 1,8 m de altura",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de arroz carbonizada; mais 100 g de calcário dolomítico e 100 g de farinha de ossos a cada 50 L, misturados antes de plantar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo e quase não cresce na primeira semana. A fase acaba quando aparecem gavinhas novas se enrolando sozinhas no tutor e folhas novas de cor verde forte."
+    },
+    {
+      "fase_id": "conducao",
+      "nome": "Crescimento e Condução",
+      "dia_inicio": 31,
+      "dia_fim": 150,
+      "descricao": "A haste principal cresce rápido, até 10 cm por semana no calor. Conduza uma única haste até o topo do suporte, tirando os brotos laterais que saem abaixo dele. Quando ela passar do topo, corte a ponta para soltar os ramos laterais, que é onde saem as flores. A fase acaba quando a copa cobre o alto da treliça."
+    },
+    {
+      "fase_id": "primeira_floracao",
+      "nome": "Primeira Floração",
+      "dia_inicio": 151,
+      "dia_fim": 270,
+      "descricao": "Os ramos laterais formam botões nas axilas das folhas se a época for quente (setembro a abril). A flor abre depois do meio-dia e dura um dia só. O fruto fica pronto de 60 a 80 dias depois da polinização. No frio a planta só vegeta e espera a primavera."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 271,
+      "dia_fim": null,
+      "descricao": "No Centro-Sul, o ano típico tem floração de setembro a abril, safra de dezembro a julho e crescimento lento no inverno, que é quando se faz a poda de limpeza. A produção cai no terceiro ou quarto ano, com ramos lenhosos e poucas flores. Nessa hora, faça uma muda nova."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de maracujá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto da muda; se estiver seco, regue devagar até escorrer pelos furos. Não deixe o prato com água parada: raiz de maracujá apodrece fácil no encharcamento.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o maracujazeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 50 L). Na floração e com frutos, acima de 30 °C, confira todo dia, porque a falta de água derruba flores e frutos pequenos. No inverno, espace para cada 4 a 5 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o maracujazeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto na superfície, a 10 cm do caule, e regue em seguida. Da floração em diante, junte 1 colher de sopa de NPK 4-14-8 por vaso de 50 L. Em junho e julho, pule a adubação se a planta estiver parada pelo frio.",
+      "critica": false
+    },
+    {
+      "id": "conducao_haste",
+      "titulo": "Conduzir a haste no suporte",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Amarre a haste principal ao suporte com fitilho, em laço frouxo em forma de 8, a cada 20 a 30 cm. Tire com os dedos os brotos laterais que saíram abaixo do topo do suporte. Quando a haste passar do topo, corte a ponta dela.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure lagartas alaranjadas com espinhos pretos comendo as folhas, percevejos nos botões e frutos, teias finas com pontinhos no verso das folhas (ácaro) e manchas oleosas ou escuras nas folhas e frutos. Olhe também se há folhas novas enrugadas e em mosaico.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Instale o suporte agora",
+      "mensagem": "O maracujazeiro precisa subir logo. Instalar a treliça depois machuca as raízes e as gavinhas.",
+      "acao_requerida": "Fixar treliça, cerca ou arame de pelo menos 1,8 m junto ao vaso e prender a muda nele com um estaca de bambu"
+    },
+    {
+      "dia_disparo": 151,
+      "titulo": "Fique de olho nos botões",
+      "mensagem": "Com os ramos laterais formados, a planta já pode florescer se a época for quente. Em casa quase nunca há mamangava para polinizar, e sem polinização a flor cai sem formar fruto.",
+      "acao_requerida": "Nos dias com flor aberta, polinizar à mão à tarde, passando o pólen de uma flor para o estigma de outra com um pincel macio"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Hora de renovar o maracujazeiro",
+      "mensagem": "Com 3 anos, o maracujazeiro em vaso costuma ficar lenhoso, pegar doenças e produzir pouco.",
+      "acao_requerida": "Fazer uma muda nova por semente ou estaca na primavera e, quando ela estiver pronta, trocar a planta velha e renovar o substrato"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por encharcamento",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; a base do caule escurece e as raízes ficam moles e marrons",
+      "prevencao_tratamento": "Vaso com furos e camada de drenagem, nunca deixar água no prato e regar só com o substrato seco a 5 cm; planta com o caule já apodrecido não se recupera"
+    },
+    {
+      "nome": "Fusariose (Fusarium solani, F. oxysporum)",
+      "tipo": "DOENCA",
+      "sintomas": "Murcha repentina de ramos ou da planta inteira; ao cortar o caule perto da base, os vasos estão escurecidos",
+      "prevencao_tratamento": "Comprar muda sadia e usar substrato novo, sem ferir o caule ao capinar ou amarrar; não tem cura: descarte a planta e o substrato"
+    },
+    {
+      "nome": "Bacteriose (Xanthomonas axonopodis pv. passiflorae)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas oleosas nas folhas que ficam marrons com halo amarelo; ramos secam do ponteiro para baixo",
+      "prevencao_tratamento": "Regar no substrato sem molhar as folhas, podar e jogar fora os ramos afetados, desinfetar a tesoura com álcool; calda bordalesa a 1% na época de chuvas"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nas folhas, ramos e frutos, que apodrecem antes de amadurecer",
+      "prevencao_tratamento": "Arejar a copa com a poda, recolher frutos e folhas doentes; calda bordalesa a 1% a cada 15 dias em períodos úmidos"
+    },
+    {
+      "nome": "Vírus do endurecimento dos frutos (CABMV)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas novas enrugadas e em mosaico verde-claro e escuro; frutos pequenos, deformados e com casca dura e grossa",
+      "prevencao_tratamento": "É transmitido por pulgões e ferramentas; controle os pulgões e desinfete a tesoura. Não tem cura: arranque a planta afetada e comece com muda sadia"
+    },
+    {
+      "nome": "Lagarta-do-maracujá (Dione juno, Agraulis vanillae)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas alaranjadas com espinhos pretos, em grupo, que devoram as folhas em poucos dias",
+      "prevencao_tratamento": "Catar à mão as lagartas e os ovos amarelos no verso das folhas; em infestação grande, Bacillus thuringiensis (Dipel) conforme o rótulo"
+    },
+    {
+      "nome": "Percevejo (Diactor bilineatus, Holymenia clavigera)",
+      "tipo": "PRAGA",
+      "sintomas": "Botões e frutos novos murcham e caem; frutos com manchas e enrugados onde foram picados",
+      "prevencao_tratamento": "Catar os percevejos de manhã cedo num pote com água e sabão; óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Ácaro (Tetranychus spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, bronzeadas e com teia fina no verso, principalmente no tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% ou enxofre molhável a cada 7 dias"
+    },
+    {
+      "nome": "Queda de flores sem formar fruto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores abrem e caem no dia seguinte, sem crescer o fruto na base",
+      "prevencao_tratamento": "Falta de polinização, porque o maracujá-azedo não se autopoliniza bem. Polinize à mão à tarde, com pólen de outra flor e de preferência de outra planta; evite regar e pulverizar em cima das flores abertas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Começa a floração do maracujá",
+      "mensagem": "Com o calor voltando, o maracujazeiro solta botões nos ramos novos. Sem polinizador, a maioria das flores cai sem fruto.",
+      "acao_requerida": "Nos dias com flor aberta, polinizar à mão entre 13h e 17h, passando o pólen das anteras para os três estigmas de outra flor com um pincel"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Começa a safra",
+      "mensagem": "Os primeiros frutos da floração de primavera amadurecem de agora até o outono. O maracujá maduro fica amarelo e cai sozinho.",
+      "acao_requerida": "Recolher a cada 2 ou 3 dias os frutos caídos ou que soltam com um leve toque; eles aguentam uma semana na fruteira"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja o maracujá do frio",
+      "mensagem": "O maracujazeiro sofre abaixo de 10 °C e a geada queima folhas e ramos. No frio, ele quase para e bebe bem menos água.",
+      "acao_requerida": "Nas noites com previsão de geada, cobrir a copa com TNT ou levar o vaso para junto de uma parede abrigada; regar só com o substrato seco a 5 cm"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "Antes da brotação da primavera, a poda renova os ramos que vão dar flor e areja a copa contra doenças.",
+      "acao_requerida": "Cortar ramos secos, doentes e emaranhados e encurtar os ramos laterais que já produziram, deixando 3 a 4 gemas; desinfetar a tesoura com álcool entre os cortes"
+    }
+  ]
+}

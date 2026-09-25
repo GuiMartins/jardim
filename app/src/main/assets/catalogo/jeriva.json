@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Jerivá",
+    "nome_cientifico": "Syagrus romanzoffiana",
+    "descricao": "Palmeira nativa da Mata Atlântica e do Sul do Brasil, rústica, resistente a geada leve e de crescimento rápido. No chão passa de 10 m; em vaso grande fica bem menor e ornamental por muitos anos. Quando ficar grande demais para o vaso, o destino natural dela é o chão, onde os cocos alaranjados alimentam as aves.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro, cimento ou plástico grosso com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; prefira vaso pesado, porque a palmeira venta e tomba vaso leve",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca, 10% casca de pinus fina ou perlita; mistura solta que drena rápido e não compacta",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do viveiro, onde costuma ficar à meia-sombra, e precisa se acostumar ao sol pleno e ao vaso novo. Uma folha velha amarelada é normal. A fase acaba quando a flecha (a folha nova, fechada, no centro) volta a crescer e abre sem manchas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a palmeira passa a soltar uma folha nova a cada 1 ou 2 meses na primavera e no verão, quase parando no inverno. Folhas novas maiores e mais divididas que as anteriores mostram que ela firmou."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "No ano típico, cresce de setembro a março, com rega e adubação regulares, e desacelera de junho a agosto, quando pede menos água e nenhum adubo. As folhas mais baixas secam aos poucos e devem ser cortadas quando estiverem totalmente marrons. A cada dois anos o substrato é renovado. Em vaso raramente floresce; quando o tronco passar de 1,5 m ou as raízes saírem pelos furos mesmo após a troca, considere plantá-la no chão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o jerivá recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. O torrão da muda não pode secar por inteiro nestas semanas, mas também não deixe água parada. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jerivá",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e jogue fora a água do pratinho. No verão quente, confira a cada 2 dias; de junho a agosto, espace para a cada 7 a 10 dias. Nunca molhe o centro da copa (o olho) à noite.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o jerivá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de adubo para palmeiras (ou NPK 10-10-10 com magnésio e micronutrientes) por vaso de 40 L, a 5 cm do tronco, e regue em seguida. Uma vez por ano, acrescente 1 colher de sopa de sulfato de manganês e 1 de sulfato de magnésio. Pule de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e olho",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos em busca de cochonilhas (pontos brancos ou marrons presos), teias finas de ácaro e lagartas ou ninhos de seda entre as folhas. Confira se a flecha central está firme: puxe de leve; se soltar ou cheirar mal, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Cortar folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 120,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura de poda limpa, corte rente ao tronco só as folhas totalmente marrons e secas, sem puxar. Folha amarela ou parcialmente verde ainda alimenta a palmeira: deixe. Nunca corte a flecha central.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, tire a palmeira do vaso, solte com cuidado as raízes enroladas no fundo e replante em vaso 10 cm mais largo com substrato novo, na mesma altura do colo (sem enterrar o tronco). Se não houver vaso maior, troque o terço externo do torrão. Regue bem e deixe 7 dias à meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Acostume o jerivá ao sol",
+      "mensagem": "Mudas de viveiro costumam crescer à sombra e queimam se forem direto para o sol forte.",
+      "acao_requerida": "Deixar o vaso na primeira semana com sol só da manhã e passar para sol pleno ao longo de 10 a 15 dias"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se a flecha central voltou a crescer, a raiz pegou e a palmeira já aguenta intervalos maiores entre regas.",
+      "acao_requerida": "Conferir se há folha nova surgindo no centro e passar para a rega a cada 4 dias"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de jerivá",
+      "mensagem": "Com um ano no vaso, as raízes podem já estar saindo pelos furos.",
+      "acao_requerida": "Levantar o vaso e olhar o fundo; se houver muitas raízes para fora, antecipar a troca para um vaso maior na próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do olho e das raízes (Phytophthora, Thielaviopsis)",
+      "tipo": "DOENCA",
+      "sintomas": "Flecha central amarelada que solta ao puxar, com cheiro ruim; folhas novas murchas e base do tronco escura e mole; substrato sempre encharcado",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, esvaziar o pratinho e não molhar o olho à noite. No início, pare de regar, retire tecido podre e aplique fungicida cúprico no olho; se o tronco amolecer, a palmeira dificilmente se recupera"
+    },
+    {
+      "nome": "Lagarta-das-palmeiras (Brassolis sophorae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos roídos até a nervura e ninhos de seda com lagartas marrons agrupadas entre as folhas, que se escondem de dia",
+      "prevencao_tratamento": "Retirar os ninhos com luvas e destruí-los; em infestação grande, pulverizar Bacillus thuringiensis nas folhas no fim da tarde"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas ou marrons presas no verso dos folíolos e na base das folhas; folhas pegajosas, com fumagina preta",
+      "prevencao_tratamento": "Esfregar com escova macia e água com sabão neutro; se voltar, óleo mineral ou óleo de neem a 0,5% a cada 7 dias, três aplicações, no fim da tarde"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontilhado amarelo-acinzentado e teias muito finas no verso, sobretudo em tempo seco ou perto de parede quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; em ataque forte, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Deficiência de manganês (frizzle top)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas saem pequenas, amareladas, retorcidas e com folíolos queimados e crespos",
+      "prevencao_tratamento": "Comum no jerivá em substrato alcalino ou pobre. Aplicar sulfato de manganês (1 colher de sopa por vaso de 40 L) e usar adubo com micronutrientes; evitar calcário no substrato. As folhas deformadas não se recuperam, só as novas"
+    },
+    {
+      "nome": "Deficiência de potássio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas mais velhas com pintas amarelo-alaranjadas translúcidas e pontas dos folíolos secas e necrosadas",
+      "prevencao_tratamento": "Usar adubo de palmeira com potássio e magnésio de liberação lenta; não cortar essas folhas enquanto tiverem parte verde, porque a planta retira delas o potássio"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrom-claras e secas no meio dos folíolos, surgindo poucos dias após levar a muda para o sol forte",
+      "prevencao_tratamento": "Aclimatar a muda aos poucos ao sol pleno nas duas primeiras semanas; as manchas não somem, mas as folhas novas saem resistentes"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Jerivá no ritmo de inverno",
+      "mensagem": "Com o frio, a palmeira quase para de crescer e o substrato demora a secar; água em excesso agora apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para a cada 7 a 10 dias conferindo com o dedo, suspender o adubo e, em geada forte, encostar o vaso numa parede protegida"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar os cuidados de crescimento",
+      "mensagem": "A primavera reativa o crescimento e é a melhor época para adubar forte e trocar de vaso, se for preciso.",
+      "acao_requerida": "Voltar à rega normal e fazer a primeira adubação do ciclo, incluindo o sulfato de manganês e de magnésio anual"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte no vaso",
+      "mensagem": "No verão o vaso ao sol pleno seca em 1 ou 2 dias e a palmeira está no auge do crescimento.",
+      "acao_requerida": "Conferir a umidade do substrato a cada 2 dias e regar até escorrer quando os 4 cm de cima estiverem secos"
+    }
+  ]
+}

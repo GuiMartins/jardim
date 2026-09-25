@@ -1,0 +1,194 @@
+{
+  "planta": {
+    "nome_comum": "Morangueiro",
+    "nome_cientifico": "Fragaria × ananassa (cultivares de dia neutro, como 'San Andreas' e 'Albion')",
+    "descricao": "Planta perene rasteira que dá morangos doces em vaso ou jardineira, até em varanda. As cultivares de dia neutro, as mais vendidas em mudas no Brasil, produzem do fim do inverno ao início do verão. Em vaso, a produção cai muito a partir do terceiro ano, então vale renovar as plantas pelos estolões (as mudinhas que nascem nos ramos rasteiros).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade e furos no fundo, com 25 cm entre as plantas. Vasos suspensos ou jardineiras altas deixam os frutos pendurados, longe do substrato úmido",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% substrato comercial com fibra de coco, 20% húmus de minhoca e 10% casca de arroz carbonizada ou perlita. Deve ficar levemente ácido (pH 5,5 a 6,5): não use calcário nem cinza",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Plante a muda com a coroa (o miolo de onde saem as folhas) exatamente no nível do substrato: enterrada ela apodrece, alta demais ela seca. Algumas folhas velhas podem secar. A fase termina quando surgem folhas novas, verdes e brilhantes, no centro da coroa."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 60,
+      "descricao": "A planta forma raízes e novas folhas trifoliadas. Aparecem os primeiros cachos de flores brancas. Com uma coroa mais cheia e flores abrindo seguidas, a planta está pronta para produzir."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "No Centro-Sul, floresce e frutifica de julho a dezembro. O fruto amadurece 25 a 35 dias depois da flor. No calor de janeiro a março a produção cai e a planta solta muitos estolões. No outono ela se recupera para a safra seguinte. Em vaso, rende bem por dois anos; no terceiro, os frutos ficam pequenos e poucos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de morango",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar na base até escorrer pelos furos, sem molhar a coroa nem as folhas. As raízes da muda ainda são curtas e secam em um dia de sol.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o morangueiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue na base, pela manhã, até escorrer pelos furos, sem molhar folhas e frutos. Acima de 28 °C, confira todo dia. Na safra, aproveite a rega para colher os morangos com pelo menos 3/4 da casca vermelha, cortando pelo cabinho.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o morangueiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de húmus de minhoca por planta, longe da coroa, e regue em seguida. Da floração em diante, alterne com 1 colher de chá de farinha de ossos ou cinza de casca de banana curtida, ricas em fósforo e potássio. Excesso de nitrogênio faz muita folha e pouco fruto.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_estoloes",
+      "titulo": "Tirar estolões e folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com uma tesoura limpa, corte rente à coroa os ramos rasteiros (estolões) e as folhas amarelas, secas ou manchadas. Estolões tiram força da produção. Guarde 2 ou 3 só se quiser formar mudas novas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelos com teias finas (ácaro), insetos agrupados nos brotos (pulgão) e manchas roxas com centro claro. Nos frutos, procure mofo cinza ou mordidas de lesma. Retire na hora o que estiver doente ou podre.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Tire as primeiras flores",
+      "mensagem": "Flores que abrem logo depois do plantio drenam a muda antes de ela ter raiz. Retirá-las agora rende mais frutos e maiores depois.",
+      "acao_requerida": "Beliscar as flores e botões que aparecerem até o fim do primeiro mês"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Forre o vaso com palha",
+      "mensagem": "Frutos encostados no substrato úmido apodrecem e mofam. A cobertura também segura a umidade entre as regas.",
+      "acao_requerida": "Cobrir o substrato em volta da planta com 2 a 3 cm de palha seca, casca de pinus fina ou folhas secas, sem cobrir a coroa"
+    },
+    {
+      "dia_disparo": 730,
+      "titulo": "Hora de renovar o morangueiro",
+      "mensagem": "Depois de dois anos em vaso, a coroa envelhece e a produção cai. Mudas novas, feitas dos estolões da própria planta, voltam a produzir bem.",
+      "acao_requerida": "Enraizar 2 ou 3 estolões em copinhos com substrato, ainda presos à planta-mãe; depois de 3 semanas, cortar o ramo e plantá-los em substrato novo no lugar da planta velha, de março a maio"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, que ficam bronzeadas e secam; teias finas no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, sem atingir os frutos que serão colhidos logo"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes nos brotos e no verso das folhas novas, que ficam enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água ou calda de sabão neutro (1 colher de sopa por litro); em infestação forte, óleo de neem a 0,5%"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Buracos fundos nos frutos maduros e rastros brilhantes, geralmente depois de noites úmidas",
+      "prevencao_tratamento": "Catar à noite com lanterna; manter os frutos fora do contato com o substrato e o vaso afastado de outras plantas encostadas"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Frutos com manchas marrons e moles que se cobrem de um pó cinzento; flores secam",
+      "prevencao_tratamento": "Regar só na base, pela manhã, colher todo fruto maduro, remover e descartar os frutos atacados e manter o vaso em lugar ventilado"
+    },
+    {
+      "nome": "Podridão da coroa e das raízes (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha de repente, mesmo com o substrato úmido; ao cortar a coroa, o miolo está marrom-avermelhado",
+      "prevencao_tratamento": "Não enterre a coroa e não deixe água parada no pratinho; regue só quando os primeiros 2 cm estiverem secos. Planta atacada não se recupera: descarte e troque o substrato"
+    },
+    {
+      "nome": "Mancha-de-micosferela (Mycosphaerella fragariae)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pequenas e redondas nas folhas, roxas na borda e claras no centro",
+      "prevencao_tratamento": "Remover as folhas manchadas, evitar molhar a folhagem e não adensar as plantas; em ataque forte, calda bordalesa fora da época de colheita"
+    },
+    {
+      "nome": "Frutos deformados",
+      "tipo": "DISTURBIO",
+      "sintomas": "Morangos tortos, com a ponta dura e esverdeada e sementes amontoadas",
+      "prevencao_tratamento": "Sinal de polinização fraca, comum em varanda fechada ou no frio. Passe um pincel macio de flor em flor ao meio-dia e deixe a planta em lugar ventilado, com acesso a abelhas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Começou a safra de morangos",
+      "mensagem": "Os primeiros frutos da temporada estão amadurecendo. Morango colhido verde não amadurece mais, e passado do ponto atrai mofo e lesma.",
+      "acao_requerida": "Conferir a planta a cada 2 dias e colher os frutos com 3/4 da casca vermelha, cortando pelo cabinho"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteja o morango do calor",
+      "mensagem": "Acima de 30 °C, o morangueiro para de florir, as folhas queimam e o vaso seca em poucas horas.",
+      "acao_requerida": "Levar o vaso para um lugar só com sol da manhã ou cobrir com sombrite 30% à tarde, e conferir a umidade do substrato todo dia"
+    },
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Estolões para mudas novas",
+      "mensagem": "No fim do verão a planta solta muitos estolões vigorosos. É a melhor época para formar mudas para a próxima safra.",
+      "acao_requerida": "Se quiser mais plantas ou for renovar, apoiar a mudinha do estolão num copinho com substrato, sem cortar o ramo, e separar depois que enraizar"
+    }
+  ]
+}

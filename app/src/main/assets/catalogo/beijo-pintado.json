@@ -1,0 +1,193 @@
+{
+  "planta": {
+    "nome_comum": "Beijo-pintado",
+    "nome_cientifico": "Impatiens hawkeri (grupo Nova Guiné)",
+    "descricao": "Parente do beijinho comum, com flores maiores e folhas largas, muitas vezes variegadas ou bronzeadas, que florescem quase o ano todo na meia sombra. É perene, mas em vaso rende bem por 2 a 3 anos; depois fica lenhosa e vale renovar por estaca.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira de plástico ou cerâmica esmaltada com pelo menos 20 cm de diâmetro e 18 cm de profundidade, com furos no fundo; o plástico segura melhor a umidade que o barro",
+    "volume_minimo_litros": 4,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% substrato comercial para flores, 30% húmus de minhoca, 20% perlita ou casca de arroz carbonizada; fofo, que retenha umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda sai da estufa e pode perder algumas flores e botões nos primeiros dias; é normal. A adaptação terminou quando aparecem folhas novas no topo dos ramos e os botões param de cair."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "As raízes ocupam o vaso e a planta ramifica e fecha a copa. A floração fica contínua; se os ramos ficarem compridos e com poucas folhas, falta luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Floresce da primavera ao outono, com pico entre outubro e março. No inverno cresce devagar e floresce pouco; abaixo de 10 °C perde folhas. As flores velhas caem sozinhas, sem precisar arrancar. Depois de 2 a 3 anos os ramos ficam lenhosos e ralos na base: hora de renovar por estaca."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o beijo-pintado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue no substrato, sem molhar as folhas, até escorrer pelos furos, e esvazie o pratinho depois de 30 minutos. Acima de 30 °C confira todo dia; no inverno, a cada 3 ou 4 dias. Folhas murchas com o substrato úmido indicam excesso de água, não falta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g (1/4 de colher de chá) de adubo NPK 10-10-10, ou fertilizante líquido para flores na dose do rótulo, em 1 L de água e regue com o substrato já úmido. De junho a agosto, adube só uma vez por mês.",
+      "critica": false
+    },
+    {
+      "id": "poda_formacao",
+      "titulo": "Beliscar pontas compridas",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com a unha ou tesoura limpa a ponta dos ramos que passaram da copa, logo acima de um par de folhas. Isso faz o ramo se dividir em dois e mantém a planta cheia; retire também folhas amarelas e caules moles.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 3,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure teias finas e pontinhos amarelados (ácaro), insetos brancos que voam ao mexer (mosca-branca), colônias nas pontas (pulgão) e botões deformados (tripes). Olhe também a base do caule: ela deve estar firme, não escura e mole.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, raspe um terço do torrão por fora e replante com substrato novo num vaso 3 a 5 cm maior. Se a planta estiver lenhosa e rala, prefira enraizar estacas e recomeçar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Passe a muda para o vaso definitivo",
+      "mensagem": "A muda comprada costuma vir num copinho pequeno que seca em horas no calor.",
+      "acao_requerida": "Transplantar para o vaso de pelo menos 4 L na mesma altura em que estava, sem enterrar o caule, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 7,
+      "titulo": "Confira o lugar da planta",
+      "mensagem": "Depois de uma semana dá para ver se a luz está certa. Folhas com manchas queimadas ou planta murcha toda tarde pedem menos sol; ramos longos e poucas flores pedem mais luz.",
+      "acao_requerida": "Deixar só o sol da manhã (até as 10h) batendo na planta e ajustar o lugar conforme os sinais"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Faça estacas de reserva",
+      "mensagem": "O beijo-pintado enraíza fácil, e ter mudas novas garante a planta se a mãe apodrecer ou sofrer com o frio.",
+      "acao_requerida": "Cortar 2 ou 3 pontas de 8 a 10 cm, tirar as folhas de baixo e enraizar em copo com água ou substrato úmido à sombra; as raízes saem em 2 a 3 semanas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e das raízes (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; base do caule escura, mole e aquosa; raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regar só com o substrato seco na superfície, nunca deixar água no pratinho e não enterrar o caule. Planta atingida raramente se recupera: salve estacas das pontas sadias e descarte o substrato"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso; piora em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas pela manhã em dias secos; com infestação, óleo de neem a 0,5% ou sabão potássico no fim da tarde a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Tripes (Frankliniella occidentalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Flores com manchas prateadas ou riscos, botões deformados que não abrem e folhas novas enrugadas",
+      "prevencao_tratamento": "Retirar flores e botões atacados; armadilha adesiva azul perto do vaso e óleo de neem a 0,5% a cada 5 dias. Transmite o vírus INSV, que deixa anéis e manchas escuras nas folhas; planta com vírus deve ser descartada"
+    },
+    {
+      "nome": "Pulgão e mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias nas pontas e no verso das folhas, folhas pegajosas e fumagina preta por cima",
+      "prevencao_tratamento": "Jato de água no verso das folhas; se persistir, óleo de neem a 0,5% ou sabão potássico no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrons e secas no meio das folhas expostas ao sol, bordas crestadas e murcha diária à tarde",
+      "prevencao_tratamento": "Proteger do sol depois das 10h, principalmente no verão; as folhas queimadas não se recuperam, mas as novas saem sadias"
+    },
+    {
+      "nome": "Queda de botões por estresse",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões e flores caem antes de abrir, sem sinal de praga",
+      "prevencao_tratamento": "Costuma ser rega irregular (secar e encharcar alternadamente), mudança brusca de lugar ou calor acima de 32 °C. Manter a umidade constante e evitar mover o vaso"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor do verão",
+      "mensagem": "Com mais de 30 °C o vaso seca em um dia e o sol da tarde queima as folhas.",
+      "acao_requerida": "Conferir a rega todo dia e garantir sombra depois das 10h"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O beijo-pintado é tropical: abaixo de 10 °C perde folhas e com geada morre. No frio a raiz também apodrece mais fácil.",
+      "acao_requerida": "Levar o vaso para perto da parede ou para dentro em noites abaixo de 10 °C, regar a cada 3 ou 4 dias e adubar só uma vez por mês"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Com o fim do frio a planta volta a brotar; é a hora de recuperar a copa que ficou rala no inverno.",
+      "acao_requerida": "Cortar os ramos ralos em um terço do comprimento, acima de um par de folhas, e voltar a adubar a cada 15 dias"
+    }
+  ]
+}

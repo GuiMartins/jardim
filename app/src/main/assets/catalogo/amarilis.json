@@ -1,0 +1,209 @@
+{
+  "planta": {
+    "nome_comum": "Amarílis",
+    "nome_cientifico": "Hippeastrum spp. (híbridos)",
+    "descricao": "Planta de bulbo da família das amarilidáceas, com hastes de 40 a 60 cm e 2 a 4 flores grandes em forma de trombeta, vermelhas, brancas, rosas ou listradas. Em vaso o bulbo vive muitos anos e floresce todo ano na primavera. Considera-se aqui o bulbo comprado dormente, que é a forma mais comum de começar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico pesado com 15 a 18 cm de diâmetro, só 3 a 5 cm mais largo que o bulbo, e pelo menos 18 cm de profundidade, com furos no fundo. Vaso grande demais retém água e faz o bulbo apodrecer e florescer menos",
+    "volume_minimo_litros": 2.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca e 10% casca de pinus fina; plante com um terço do bulbo acima da superfície",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 28,
+      "descricao": "O bulbo fica com um terço para fora do substrato e forma raízes novas antes de brotar. Por fora parece que nada acontece. Um bulbo firme está saudável; um bulbo mole ou com cheiro azedo está apodrecendo. A fase termina quando aparece a ponta verde e achatada da haste floral ou das folhas."
+    },
+    {
+      "fase_id": "haste_floracao",
+      "nome": "Haste Floral e Floração",
+      "dia_inicio": 29,
+      "dia_fim": 75,
+      "descricao": "A haste cresce de 2 a 4 cm por dia e abre de 2 a 4 flores cerca de 5 a 7 semanas depois do plantio. Gire o vaso meia volta a cada rega para a haste crescer reta. Cada flor dura de 7 a 10 dias, e mais em local fresco e fora do sol forte da tarde. A fase termina quando murcha a última flor."
+    },
+    {
+      "fase_id": "recuperacao_bulbo",
+      "nome": "Recuperação do Bulbo",
+      "dia_inicio": 76,
+      "dia_fim": 180,
+      "descricao": "As folhas em forma de fita crescem e recarregam o bulbo para a próxima floração. Nunca corte folhas verdes: é delas que vem a próxima flor. O bulbo firme e maior que no plantio indica que a recuperação correu bem."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "O ano típico: folhas crescendo e adubo da primavera ao fim do verão, repouso com pouca água de abril a julho (as folhas podem amarelar, e isso é normal), retomada em agosto e floração entre setembro e novembro. O bulbo produz bulbilhos laterais, que podem ser separados na troca de substrato quando tiverem 5 cm."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar o bulbo com moderação",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 28,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue em volta do bulbo, sem molhar o bulbo em si, com cerca de 150 ml por vaso de 2,5 L. Sem raiz para absorver, o excesso de água apodrece o bulbo.",
+      "critica": false
+    },
+    {
+      "id": "rega_floracao",
+      "titulo": "Regar o amarílis em flor",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 29,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. Aproveite para girar o vaso meia volta. Acima de 30 °C, confira a cada 2 dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_manutencao",
+      "titulo": "Regar o amarílis",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 76,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De agosto a março, enfie o dedo 3 cm no substrato e, se estiver seco, regue até escorrer pelos furos. De abril a julho (repouso), regue só se o substrato estiver seco até 5 cm, com metade da água, no máximo a cada 15 dias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e bulbo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Aperte o colo do bulbo (deve estar firme), procure manchas vermelhas nas folhas e na haste, algodãozinho branco entre as escamas e lagartas pretas listradas de amarelo nas folhas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e separar bulbilhos",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça isso de preferência em julho ou agosto, no fim do repouso; se a planta estiver com haste floral, espere as flores murcharem. Tire o bulbo, corte raízes mortas e moles, separe bulbilhos com mais de 5 cm e replante em substrato novo com um terço do bulbo para fora. Só troque para um vaso maior se o bulbo estiver encostando na borda.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "A haste já apareceu?",
+      "mensagem": "A maioria dos bulbos mostra a ponta da haste floral entre a 3ª e a 6ª semana. Alguns soltam as folhas primeiro e florescem depois, ou só no ano seguinte.",
+      "acao_requerida": "Apertar o bulbo para conferir se está firme e passar o vaso para o lugar mais claro da casa, com sol da manhã"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Tutorar a haste",
+      "mensagem": "Com os botões pesando, a haste costuma tombar ou quebrar, principalmente se cresceu inclinada.",
+      "acao_requerida": "Enfiar uma vareta de bambu a 3 cm do bulbo, sem furá-lo, e prender a haste com barbante frouxo em dois pontos"
+    },
+    {
+      "dia_disparo": 75,
+      "titulo": "Cortar a haste que já floresceu",
+      "mensagem": "Flor murcha que forma sementes gasta a reserva do bulbo, e é essa reserva que faz a próxima floração.",
+      "acao_requerida": "Cortar as flores murchas e, quando a haste amarelar, cortá-la 5 cm acima do bulbo, mantendo todas as folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do bulbo (Fusarium e excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Bulbo mole no colo ou na base, cheiro azedo, escamas marrons e folhas amarelando de uma vez",
+      "prevencao_tratamento": "Deixar um terço do bulbo fora do substrato, usar vaso justo e regar só com o substrato seco. No início, desenterre, corte a parte podre até o tecido branco e firme, deixe secar 2 dias à sombra e replante em substrato novo"
+    },
+    {
+      "nome": "Mancha-vermelha (Stagonosporopsis curtisii)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas e riscos vermelho-escuros nas folhas, na haste e nas escamas do bulbo; a haste pode entortar no lado manchado",
+      "prevencao_tratamento": "Regar no substrato, sem molhar folhas e bulbo, e evitar ferir o bulbo. Retire as folhas muito manchadas; em ataque forte, aplique fungicida à base de cobre conforme o rótulo"
+    },
+    {
+      "nome": "Lagarta-do-lírio (Xanthopastis timais)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas pretas com anéis amarelos que devoram as folhas e entram no colo do bulbo",
+      "prevencao_tratamento": "Catar à mão e esmagar os ovos agrupados no verso das folhas. Em infestação, pulverize Bacillus thuringiensis no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão entre as escamas e na base das folhas; folhas deformadas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%. Se persistir, óleo de neem a 0,5% a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Riscos prateados e pontinhos pretos nas folhas e pétalas; botões que não abrem direito",
+      "prevencao_tratamento": "Lave as folhas com jato d'água e aplique óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Bulbo que não floresce",
+      "tipo": "DISTURBIO",
+      "sintomas": "Só folhas por mais de um ano, sem haste floral",
+      "prevencao_tratamento": "Costuma ser pouca luz, folhas cortadas cedo, falta de adubo depois da floração ou bulbo enterrado demais. Dê 4 horas ou mais de sol, mantenha as folhas até secarem sozinhas, adube na primavera e no verão e respeite o repouso de abril a julho"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Adubar o amarílis",
+      "mensagem": "Da primavera ao fim do verão as folhas estão recarregando o bulbo para a próxima floração.",
+      "acao_requerida": "Espalhar 1 colher de chá de adubo granulado NPK 4-14-8 na borda do vaso, sem encostar no bulbo, e regar em seguida"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Início do repouso",
+      "mensagem": "Com o outono, o amarílis desacelera. Um repouso seco de abril a julho é o que dispara a floração da primavera.",
+      "acao_requerida": "Espaçar a rega para a cada 15 dias, parar de adubar e deixar as folhas amarelarem sem cortá-las verdes"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O bulbo aguenta frio leve, mas geada e temperaturas abaixo de 5 °C queimam as folhas e podem apodrecer o bulbo molhado.",
+      "acao_requerida": "Nas noites abaixo de 5 °C, levar o vaso para dentro ou para baixo de uma cobertura, e não regar nesses dias"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Acordar o amarílis",
+      "mensagem": "Fim do repouso: a haste floral da primavera começa a se formar agora.",
+      "acao_requerida": "Remover as folhas secas, trocar os 2 cm de cima do substrato por húmus novo, voltar a regar toda semana e deixar o vaso no lugar mais ensolarado"
+    }
+  ]
+}

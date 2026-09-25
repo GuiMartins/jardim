@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Grumixama",
+    "nome_cientifico": "Eugenia brasiliensis",
+    "descricao": "Árvore frutífera nativa da Mata Atlântica, da família da pitanga e da jabuticaba, que dá frutinhas roxo-escuras parecidas com cereja, doces e levemente ácidas. Cresce devagar e aceita bem o vaso grande, onde fica com 2 a 3 m. Floresce no fim do inverno e frutifica no começo do verão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande com pelo menos 45 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo e apoiado em pés para a água escorrer livre",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% fibra de coco ou casca de pinus fina; levemente ácido (pH 5,5 a 6,5), sem calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante. É normal perder algumas folhas velhas; folhas novas avermelhadas nas pontas dos ramos mostram que a raiz pegou. Deixe em sol da manhã e sombra à tarde neste período."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso novo e a planta solta brotações em surtos, com folhas novas cor de vinho que depois ficam verde-escuras e brilhantes. Já pode ficar no sol pleno. O crescimento é lento: 20 a 40 cm no primeiro ano é bom resultado."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A copa se forma e o tronco engrossa. Mudas enxertadas ou já grandes podem florescer nesta fase; mudas de semente costumam levar de 4 a 6 anos desde a semeadura para dar os primeiros frutos. Conte a idade que a muda já tinha na compra."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: rega reduzida e sem adubo em junho e julho; poda leve de limpeza em agosto; floração branca e perfumada de agosto a outubro; frutos maduros de novembro a dezembro, cerca de 45 a 50 dias depois da flor; depois da colheita, um surto de folhas novas. No vaso, mantenha a copa entre 1,5 e 2,5 m."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda recém-plantada seca antes do resto do vaso, então molhe bem em volta do caule. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a grumixama",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão confira a cada 2 dias; em junho e julho, a cada 5 a 7 dias. Folhas murchas ou flores caindo indicam falta de água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a grumixama",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus de minhoca ou 1 colher de sopa de bokashi por vaso de 50 L, a 5 cm do caule, e regue em seguida. A partir do segundo ano, junte 1 colher de sopa de NPK 10-10-10. Não adube em junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure pó amarelo-alaranjado (ferrugem), escamas grudadas nos ramos ou pontos brancos algodonosos (cochonilhas) e formigas subindo pelo tronco, que costumam acompanhar as cochonilhas.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, raspe 3 a 5 cm das laterais e do fundo do torrão, corte raízes enoveladas e volte para o mesmo vaso (ou um 20% maior) com substrato novo. Regue bem e deixe na meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante no vaso definitivo",
+      "mensagem": "A grumixama não gosta de mudanças frequentes de vaso. Quanto antes ela estiver no recipiente grande, mais rápido se estabelece.",
+      "acao_requerida": "Transplantar a muda para o vaso de 50 L ou mais, no mesmo nível de terra em que estava, sem enterrar o colo, e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Muda adaptada: hora de mais sol",
+      "mensagem": "Se já surgiram folhas novas, a raiz pegou e a planta aguenta sol pleno.",
+      "acao_requerida": "Levar o vaso aos poucos para o lugar definitivo, com pelo menos 4 horas de sol direto, aumentando a exposição ao longo de uma semana"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Idade de frutificar",
+      "mensagem": "A grumixama já deve estar perto da idade de florescer, se a muda veio com um ou dois anos. Se ela não florescer em agosto e setembro, o motivo mais comum é pouco sol.",
+      "acao_requerida": "Conferir se o vaso recebe pelo menos 4 horas de sol direto e, se não, mudar a planta para um lugar mais ensolarado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, ramos secam da ponta para baixo e a base do caule escurece; o substrato cheira a mofo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter os furos desobstruídos; se já houver sintomas, tirar do vaso, cortar raízes escuras e moles e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Ferrugem-das-mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nas folhas e brotos novos, que depois se retorcem e secam; aparece com tempo úmido e ameno",
+      "prevencao_tratamento": "Retirar e descartar no lixo os brotos atacados, manter a copa arejada e evitar molhar as folhas ao regar; em ataque forte, pulverizar calda bordalesa nos brotos a cada 10 dias"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos grudados nos ramos e no verso das folhas, folhas pegajosas com fumagina preta e formigas subindo pelo tronco",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com água e sabão neutro; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinho e mancha mole na casca, que caem antes da hora e têm larvas brancas dentro",
+      "prevencao_tratamento": "Recolher e descartar todo fruto caído no mesmo dia, ensacar os cachos com tecido fino quando os frutos ainda estiverem verdes e usar armadilha com suco de fruta fermentado perto do vaso"
+    },
+    {
+      "nome": "Queimadura de sol e vento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas, marrom-claras, no centro das folhas viradas para o sol da tarde ou bordas ressecadas em lugar de vento forte",
+      "prevencao_tratamento": "Aclimatar a muda aos poucos ao sol pleno e protegê-la do sol da tarde no verão enquanto for jovem; em varanda alta, usar tela quebra-vento"
+    },
+    {
+      "nome": "Clorose por pH alto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes",
+      "prevencao_tratamento": "Não usar calcário nem cinza em excesso, incorporar composto orgânico e, se persistir, aplicar ferro quelatado conforme a embalagem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a grumixama quase para de crescer e o substrato demora mais para secar. Adulta, ela aguenta geadas leves, mas a muda jovem pode queimar.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender a adubação e, em noites com previsão de geada, cobrir mudas com menos de 2 anos com TNT ou levar o vaso para perto de uma parede"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda leve antes da floração",
+      "mensagem": "A grumixama vai brotar e florescer nas próximas semanas. Uma poda leve agora abre a copa para a luz e ajuda a evitar a ferrugem.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que crescem para dentro da copa, e encurtar os que passam da altura desejada; não tirar mais de 20% da copa"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Floração: não deixe secar",
+      "mensagem": "As flores e os frutinhos recém-formados caem quando o substrato seca, mesmo que por um só dia.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e regar sempre que estiver seco a 3 cm; evitar pulverizar produtos sobre as flores abertas"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Época de colheita da grumixama",
+      "mensagem": "Os frutos amadurecem em poucos dias e são disputados por pássaros e pela mosca-das-frutas.",
+      "acao_requerida": "Ensacar os cachos ainda verdes e colher a cada 1 ou 2 dias os frutos roxo-escuros e macios ao toque; recolher todos os frutos caídos no chão"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Limão-cravo",
+    "nome_cientifico": "Citrus × limonia",
+    "descricao": "Limoeiro rústico de frutos alaranjados por dentro e por fora, com casca fina e suco muito ácido e perfumado, ótimo para caipirinha, temperos e conservas. Aguenta frio, seca e vaso melhor que a maioria dos citros, tanto que é o porta-enxerto mais usado no Brasil. As mudas vendidas geralmente vêm de semente (pé-franco) e dão frutos iguais aos da planta-mãe.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 45 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo e apoiado em pezinhos para a água escoar",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou casca de pinus fina; acrescente 1 colher de sopa de calcário dolomítico por 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho para o vaso definitivo e pode perder algumas folhas ou murchar levemente nas horas mais quentes. A fase termina quando surgem brotos novos, verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 540,
+      "descricao": "As raízes ocupam o vaso e a copa cresce em fluxos de brotação, principalmente na primavera e no fim do verão. Flores e frutinhos que aparecerem nesse período devem ser retirados para a planta investir em raiz e galhos. A fase termina quando a copa tem uns 60 a 80 cm e os ramos estão lenhosos e firmes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 541,
+      "dia_fim": null,
+      "descricao": "Floresce com força em setembro e outubro, às vezes com florada menor no verão. Os frutos levam de 6 a 8 meses para amadurecer e ficam prontos principalmente de abril a julho, quando a casca passa de verde a laranja-avermelhada. Cresce pouco no inverno, quando pede menos água e nenhum adubo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda não alcançou a terra nova e seca muito rápido. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o limoeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e descarte a água do pratinho. Se ainda estiver úmido, deixe para o próximo dia. No verão pode precisar a cada 2 dias; no inverno, a cada 5 a 7. Folhas enroladas de manhã indicam sede; folhas amarelando e caindo com terra molhada indicam excesso.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o limoeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou adubo específico para citros com micronutrientes) mais 1 punhado de húmus na borda do vaso, longe do tronco, e regue em seguida. A partir do 2º ano, use 3 colheres. Não adube em junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos e o verso das folhas: procure pulgões pretos, caminhos prateados dentro da folha (minador), lagartas que parecem cocô de passarinho, placas brancas ou marrons presas nos ramos (cochonilha) e fumagina preta. Confira também a base do tronco em busca de rachaduras que soltam goma.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, corte 3 a 5 cm das raízes que circulam a borda do torrão e remova um terço do substrato velho. Volte ao mesmo vaso (ou a um 10 cm maior) com substrato novo, sem enterrar o colo acima do nível original. Prefira fazer entre agosto e setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A muda não deve ficar no saquinho: as raízes enovelam e a planta para de crescer.",
+      "acao_requerida": "Transplantar para o vaso de 40 L mantendo o colo (onde o tronco vira raiz) no mesmo nível em que estava no saquinho, regar bem e deixar 3 dias à meia-sombra antes de ir ao sol pleno"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Nada de frutos no primeiro ano",
+      "mensagem": "A muda já pegou. Se florir ou segurar frutinhos agora, gasta a energia que precisa para formar raiz e copa.",
+      "acao_requerida": "Até a planta completar cerca de um ano e meio, retirar com os dedos as flores e os frutinhos que aparecerem"
+    },
+    {
+      "dia_disparo": 541,
+      "titulo": "Pode deixar frutificar",
+      "mensagem": "A planta já tem estrutura para segurar uma safra.",
+      "acao_requerida": "Deixar as flores da próxima florada virarem fruto; se vingarem muitos, raleie deixando um fruto a cada 10 a 15 cm de ramo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e gomose (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo com o substrato úmido, raízes escuras e moles, casca da base do tronco rachada soltando goma âmbar",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e não enterrar o colo nem amontoar terra no tronco. Na gomose, raspe a casca doente até o tecido sadio e pincele pasta bordalesa; com raízes podres, corte as partes moles e troque o substrato"
+    },
+    {
+      "nome": "Pulgão-preto-dos-citros (Toxoptera citricida)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos nos brotos novos, folhas encarquilhadas, melado pegajoso e formigas subindo pelo tronco",
+      "prevencao_tratamento": "Jato de água nos brotos; se voltar, óleo de neem a 0,5% com sabão neutro no fim da tarde, a cada 5 dias, até sumir. Além do estrago, transmite o vírus da tristeza"
+    },
+    {
+      "nome": "Minador-dos-citros (Phyllocnistis citrella)",
+      "tipo": "PRAGA",
+      "sintomas": "Galerias prateadas e sinuosas dentro das folhas novas, que ficam retorcidas e enroladas",
+      "prevencao_tratamento": "Ataca só a brotação nova. Retire e descarte as folhas muito atacadas e aplique óleo de neem a 0,5% nos brotos a cada 7 dias durante os fluxos de brotação. Folhas maduras não são afetadas"
+    },
+    {
+      "nome": "Lagarta-dos-citros (Heraclides thoas, 'lagarta-cachorrinho')",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas comidas pelas bordas e lagartas marrom e branco que parecem cocô de passarinho e soltam cheiro forte e chifres laranja quando tocadas",
+      "prevencao_tratamento": "Catar à mão (com luva) e descartar; em plantas pequenas, poucas lagartas desfolham um ramo inteiro em dias. Se forem muitas, Bacillus thuringiensis nas folhas"
+    },
+    {
+      "nome": "Cochonilhas (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Placas marrons ou tufos brancos presos em ramos e nervuras, melado e fumagina preta cobrindo as folhas",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia embebidos em álcool 70% e aplique óleo mineral ou de neem a 1% a cada 10 dias, fora do sol forte"
+    },
+    {
+      "nome": "Verrugose (Elsinoë fawcettii)",
+      "tipo": "DOENCA",
+      "sintomas": "Verrugas salientes e ásperas, de cor palha a marrom, em folhas novas e na casca dos frutos, que ficam deformados",
+      "prevencao_tratamento": "O limão-cravo é bem suscetível. Evite molhar a copa na rega e aplique calda bordalesa ou fungicida cúprico na queda das pétalas e nos fluxos de brotação em tempo úmido; retire as folhas muito afetadas"
+    },
+    {
+      "nome": "Clorose por falta de micronutrientes (ferro, zinco, magnésio)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelas com nervuras verdes: nas folhas novas indica ferro ou zinco; nas folhas velhas, magnésio",
+      "prevencao_tratamento": "Use adubo para citros com micronutrientes e calcário dolomítico no substrato. Para corrigir, aplique quelato de ferro ou adubo foliar com zinco e manganês nas folhas novas, e 1 colher de sopa de sulfato de magnésio diluída em 5 L de água na rega, uma vez por mês até melhorar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com o frio o limoeiro quase para de crescer, e substrato encharcado no inverno é o caminho da podridão de raiz. Ele aguenta geada fraca, mas vaso exposto sofre mais que planta no chão.",
+      "acao_requerida": "Suspender a adubação, regar só quando o substrato estiver seco a 5 cm e, em noite com previsão de geada, encostar o vaso numa parede ou cobrir a copa com manta"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza antes da brotação",
+      "mensagem": "No fim do inverno a planta ainda está parada, e a poda agora orienta a brotação forte da primavera, que carrega as flores.",
+      "acao_requerida": "Cortar ramos secos, doentes, cruzados ou voltados para dentro da copa, e os brotos que saem do tronco abaixo da copa; nunca tirar mais de 20% da copa"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Florada: não deixe secar",
+      "mensagem": "É a florada principal do ano. Falta de água agora derruba flores e frutinhos recém-formados.",
+      "acao_requerida": "Retomar a adubação, conferir o substrato a cada 2 dias e regar assim que os primeiros 5 cm secarem"
+    },
+    {
+      "meses": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "titulo": "Época de colher limão-cravo",
+      "mensagem": "Os frutos da florada de primavera amadurecem agora. No pé eles aguentam semanas sem estragar, mas o excesso de frutos maduros atrasa a próxima florada.",
+      "acao_requerida": "Colher com tesoura, deixando um pedacinho do cabo, os frutos com casca laranja-avermelhada que cedem levemente ao apertar"
+    }
+  ]
+}

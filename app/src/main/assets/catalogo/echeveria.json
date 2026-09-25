@@ -1,0 +1,178 @@
+{
+  "planta": {
+    "nome_comum": "Echevéria",
+    "nome_cientifico": "Echeveria spp. (principalmente Echeveria elegans e híbridos)",
+    "descricao": "Suculenta mexicana em forma de rosa, com folhas carnudas cobertas de uma cera azulada ou rosada. É a suculenta de rosa mais vendida no Brasil, e esta ficha vale para a Echeveria elegans e os híbridos comuns de floricultura. Aguenta esquecimento e sol forte, mas morre com facilidade se receber rega demais ou pouca luz.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, raso, com 10 a 15 cm de diâmetro e 8 a 10 cm de profundidade, com furo grande no fundo. Evite cachepô sem furo e pratinho com água parada",
+    "volume_minimo_litros": 0.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% substrato para cactos e suculentas (ou terra vegetal peneirada), 30% areia grossa lavada, 30% perlita ou casca de arroz carbonizada; deve secar por completo em 2 a 3 dias depois da rega",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação ao vaso",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Plante a muda com o substrato seco e não regue na primeira semana: as raízes quebradas no transplante cicatrizam no seco e não apodrecem. Deixe em luz clara com sol só da manhã. A rosa pode perder 1 ou 2 folhas da base, o que é normal."
+    },
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 15,
+      "dia_fim": 60,
+      "descricao": "As raízes novas ocupam o vaso. Aumente o sol direto aos poucos, 1 hora a mais por semana, até chegar a 6 horas. A fase terminou quando a planta fica firme ao ser empurrada de leve e o centro da rosa solta folhas novas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no outono e fica quase parada no auge do verão e no inverno. No sol forte, as pontas das folhas ficam rosadas e a rosa fica compacta. Se ficar esverdeada, espichada e com folhas espaçadas e voltadas para baixo, falta luz. Solta hastes florais com sininhos laranja ou rosa, em geral da primavera ao início do verão. Com os anos, forma filhotes ao redor da rosa principal."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a echevéria",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de madeira até o fundo do vaso: se sair com terra úmida grudada, não regue e confira na próxima vez. Se sair seco, regue o substrato (não o centro da rosa) até escorrer pelo furo e jogue fora a água do pratinho. No inverno e em dias nublados, espace para 15 a 20 dias. Folhas murchas e enrugadas pedem água; folhas moles e translúcidas indicam excesso de água.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_leve",
+      "titulo": "Adubar a echevéria",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na rega do dia, dilua adubo para cactos e suculentas (ou NPK 10-10-10) na metade da dose do rótulo e regue o substrato úmido. Pule a adubação de junho a agosto, quando a planta está parada: adubo nessa época deixa a rosa mole e espichada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a rosa",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra de leve as folhas e olhe o centro e a junção com o caule procurando algodãozinho branco (cochonilha). Olhe também a haste floral, se houver, procurando pulgão. Puxe com a mão as folhas secas da base: elas escondem cochonilha e retêm umidade.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato seco, tire a planta, solte a terra velha das raízes, corte as raízes secas ou escuras e replante em substrato novo num vaso 2 a 3 cm maior. Separe os filhotes com raiz e plante cada um num vaso. Só regue 5 a 7 dias depois.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Não regue ainda",
+      "mensagem": "As raízes machucadas no transplante apodrecem se receberem água logo. A echevéria tem reserva nas folhas e aguenta uma semana tranquila.",
+      "acao_requerida": "Deixar o substrato seco e o vaso em luz clara com sol só da manhã até o dia 7"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Confira o enraizamento",
+      "mensagem": "Com um mês, a muda já deve ter soltado raízes novas no substrato.",
+      "acao_requerida": "Empurrar a rosa de leve para o lado: se estiver firme, aumentar o sol direto aos poucos; se balançar solta, manter a rega espaçada e esperar mais duas semanas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas da base moles, translúcidas ou pretas; caule escuro e mole rente ao substrato; a rosa se solta com um puxão leve",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo, usar substrato arenoso e nunca deixar água no pratinho. Se o caule apodreceu, corte a rosa acima da parte escura, deixe cicatrizar 3 a 5 dias na sombra e replante em substrato seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão entre as folhas e no centro da rosa; folhas deformadas e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete molhado em álcool 70%. Em infestação maior, pulverizar óleo de neem a 0,5% com algumas gotas de detergente no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Cochonilha-de-raiz",
+      "tipo": "PRAGA",
+      "sintomas": "A planta para de crescer e murcha mesmo com rega em dia; pó branco nas raízes ao tirar do vaso",
+      "prevencao_tratamento": "Tirar do vaso, lavar as raízes, cortar as mais atacadas, deixar secar 2 dias e replantar em substrato e vaso limpos"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos na haste floral e nos botões",
+      "prevencao_tratamento": "Cortar a haste floral atacada ou lavar com jato de água; se persistir, óleo de neem a 0,5%"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Rosa esticada com folhas espaçadas, apontando para baixo e para a janela; perde a cor rosada e fica verde-clara",
+      "prevencao_tratamento": "Mudar para local com pelo menos 4 horas de sol direto, aumentando aos poucos. A parte esticada não volta: corte a rosa, deixe cicatrizar e replante"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrons ou brancas secas no meio das folhas voltadas para o sol, surgidas depois de uma mudança brusca de lugar ou de uma onda de calor",
+      "prevencao_tratamento": "Aumentar o sol direto aos poucos ao longo de 2 a 3 semanas. Nos dias acima de 35 °C, proteger do sol das 11h às 15h. As manchas não saem, mas somem conforme as folhas velhas caem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: rega mínima",
+      "mensagem": "No frio a echevéria quase para de crescer e o substrato demora a secar. Rega frequente agora é a principal causa de podridão.",
+      "acao_requerida": "Espaçar a rega para 15 a 20 dias, sempre de manhã, e recolher o vaso para perto de uma parede ou para dentro nas noites abaixo de 5 °C, para proteger da geada"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão chuvoso: proteja da chuva",
+      "mensagem": "Chuva de vários dias deixa o substrato encharcado e a água parada no centro da rosa apodrece a planta.",
+      "acao_requerida": "Deixar o vaso sob beiral ou cobertura nos períodos de chuva e não regar enquanto o substrato estiver úmido"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Época de flores e mudas",
+      "mensagem": "Na primavera, a echevéria costuma soltar hastes florais e cresce bem, o que faz desta a melhor época para multiplicar.",
+      "acao_requerida": "Cortar a haste floral rente à rosa quando as flores secarem e, se quiser mudas, destacar folhas inteiras da base, deixar secar 3 dias e deitar sobre substrato seco em sombra clara"
+    }
+  ]
+}

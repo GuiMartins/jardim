@@ -1,0 +1,185 @@
+{
+  "planta": {
+    "nome_comum": "Ipê-de-jardim",
+    "nome_cientifico": "Tecoma stans",
+    "descricao": "Arbusto ou arvoreta de crescimento rápido, com cachos de flores amarelas em forma de sino da primavera ao outono, muito visitados por abelhas e beija-flores. Em vaso fica entre 1,5 e 2,5 m com poda anual. Espalha sementes com facilidade e é considerado invasor em pastagens do Sul e Sudeste, por isso vale tirar as vagens antes de abrirem.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico grosso com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; pesado ou largo na base, porque a copa pega vento",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou pedrisco fino; misturar 100 g de farinha de ossos por vaso de 50 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de lugar e pode perder algumas folhas ou flores nas primeiras duas semanas. Ela está adaptada quando surgem brotos novos, verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 240,
+      "descricao": "Crescimento rápido de ramos e folhas compostas; as raízes ocupam o vaso. Se a muda já veio com porte, pode florescer ainda nesta fase. A planta está estabelecida quando o caule principal engrossa e fica firme sem tutor."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 241,
+      "dia_fim": null,
+      "descricao": "Floresce em ondas de setembro a maio, com pico no verão, e forma vagens longas e finas depois de cada onda. No inverno cresce pouco e pode perder parte das folhas, principalmente em regiões com geada. Poda forte no fim do inverno mantém o porte e garante florada cheia."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda presa ao torrão da muda, deixar secar de vez faz a planta murchar e perder as folhas. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o ipê-de-jardim",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão quente pode precisar a cada 2 dias; no inverno, a cada 5 a 7.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florescer",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 4-14-8 mais 1 xícara de húmus de minhoca por vaso de 50 L, longe do caule, e regue em seguida. Pule a adubação de junho e julho, quando a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os brotos e as axilas dos ramos: procure pulgões nas pontas, cochonilhas brancas ou marrons coladas no caule, lagartas e pó branco nas folhas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, junto da poda: tire a planta do vaso, corte cerca de 3 cm das raízes que dão voltas no torrão e troque um terço do substrato por mistura nova. Se já está no vaso máximo, só faça a raspagem de 5 cm da superfície e reponha com composto.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante no vaso definitivo",
+      "mensagem": "Muda que fica no saquinho enrola a raiz e cresce pouco. O ipê-de-jardim cresce rápido e precisa de espaço desde o começo.",
+      "acao_requerida": "Transplantar para o vaso de 50 L com o torrão inteiro, na mesma altura em que estava, apertar o substrato em volta e regar até escorrer"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Defina o formato da planta",
+      "mensagem": "Agora se decide se ela vai ser arbusto cheio ou arvoreta de um tronco só. Quanto antes, menos corte depois.",
+      "acao_requerida": "Para arbusto, cortar a ponta do ramo principal a 60 cm de altura; para arvoreta, deixar um ramo principal preso a um tutor e tirar os brotos da parte de baixo do caule"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos murcham, raízes marrons e moles com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e manter os furos desobstruídos. Em caso avançado, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e botões florais; folhas novas enrugadas e melado pegajoso com formigas",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% com algumas gotas de detergente no fim da tarde, a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou flocos brancos presos nos ramos e no verso das folhas; folhas amareladas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; depois pulverizar óleo mineral ou neem a 1% a cada 7 dias até sumir"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro ou só com as nervuras, com fezes escuras em grânulos sobre as folhas de baixo",
+      "prevencao_tratamento": "Catar à mão com luva; em infestação grande, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que depois ficam amarelas e secas",
+      "prevencao_tratamento": "Deixar a copa arejada com poda, não molhar as folhas ao regar; aplicar leite diluído a 10% ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Pouca ou nenhuma floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta cheia de folhas verde-escuras e ramos longos, mas quase sem flores",
+      "prevencao_tratamento": "Levar para lugar com pelo menos 6 horas de sol direto, trocar adubo rico em nitrogênio por um rico em fósforo (4-14-8) e não pular a poda do fim do inverno, pois a flor nasce nos ramos novos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e cuidado com a geada",
+      "mensagem": "A planta está quase parada e usa pouca água. Geada queima as folhas e os ramos novos, principalmente em plantas jovens.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, não adubar e, nas noites com previsão de geada, levar o vaso para perto de uma parede ou cobrir a copa com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "A flor nasce nos ramos do ano. Podar agora, antes da brotação da primavera, deixa a planta compacta e com muito mais cachos.",
+      "acao_requerida": "Cortar os ramos do ano anterior pela metade ou até um terço, logo acima de um par de gemas, e retirar ramos secos, cruzados e os que crescem para dentro da copa"
+    },
+    {
+      "meses": [
+        1,
+        4
+      ],
+      "titulo": "Tirar as vagens",
+      "mensagem": "As vagens gastam energia que iria para novas flores e, ao abrir, espalham sementes aladas que viram mudas invasoras no terreno vizinho.",
+      "acao_requerida": "Cortar com tesoura os cachos de vagens verdes ou secas logo abaixo da base, antes que se abram"
+    }
+  ]
+}

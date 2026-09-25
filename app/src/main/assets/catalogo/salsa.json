@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Salsa",
+    "nome_cientifico": "Petroselinum crispum",
+    "descricao": "Erva aromática indispensável na cozinha brasileira, com folhas lisas ou crespas colhidas aos poucos por vários meses. É bienal: no segundo ano, depois do frio, emite o pendão floral e as folhas ficam amargas e escassas. Por isso o ciclo aqui cobre só a fase de produção de folhas, que é o que interessa em casa.",
+    "tipo_ciclo": "BIENAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 330,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 20 cm de profundidade e furos no fundo; a salsa tem raiz pivotante e não gosta de ser transplantada, então semeie direto no recipiente definitivo",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; rico em matéria orgânica e sempre úmido, mas sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 25,
+      "descricao": "Deixe as sementes de molho em água morna por 24 horas antes de semear e cubra com 0,5 cm de substrato, 3 a 4 sementes por cova a cada 10 cm. A germinação é lenta e irregular: as plântulas surgem entre o 14º e o 25º dia, com duas folhas finas e compridas. Se nada nascer até o dia 30, ressemeie."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 26,
+      "dia_fim": 50,
+      "descricao": "Aparecem as primeiras folhas verdadeiras, já recortadas como as da salsa adulta. O crescimento ainda é lento; a fase termina quando cada planta tem de 5 a 6 folhas."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 51,
+      "dia_fim": 75,
+      "descricao": "A touceira engrossa e forma novas folhas pelo centro. Não corte ainda: a planta precisa de folhas para firmar a raiz. Está pronta para colher quando tiver 15 a 20 cm de altura e hastes com três segmentos de folha."
+    },
+    {
+      "fase_id": "colheita_continua",
+      "nome": "Colheita Contínua",
+      "dia_inicio": 76,
+      "dia_fim": 330,
+      "descricao": "Colha sempre as hastes externas, deixando o miolo brotar. Com adubação e colheita regulares, a planta produz por vários meses. O fim chega quando surge um talo central grosso e ereto (pendão floral), normalmente na primavera seguinte ao inverno: as folhas ficam menores e amargas e é hora de semear de novo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar a semeadura",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 25,
+      "instrucoes": "Borrife a superfície pela manhã até o primeiro centímetro ficar úmido. A semente da salsa demora a germinar e morre se secar uma vez. Cobrir o vaso com jornal ou pano úmido até as plântulas aparecerem ajuda a manter a umidade.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a salsa",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 26,
+      "dia_fim_ciclo": 330,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Acima de 30 °C, confira todo dia; no inverno, a cada 3 ou 4 dias costuma bastar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a salsa",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 40,
+      "dia_fim_ciclo": 300,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca (ou 1 colher de chá de torta de mamona) por vaso de 3 L, sem encostar nas hastes, e regue em seguida. A colheita constante gasta nitrogênio; folhas amarelando por baixo pedem adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e hastes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 26,
+      "dia_fim_ciclo": 330,
+      "instrucoes": "Afaste as folhas e olhe o verso e a base das hastes: procure pulgões agrupados, lagartas verdes com listras pretas e manchas marrons com pontinhos escuros.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher salsa",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 76,
+      "dia_fim_ciclo": 330,
+      "instrucoes": "Corte com tesoura as hastes mais externas rente à base, tirando no máximo um terço da touceira por vez. Retire também hastes amareladas. Colher com frequência estimula novas folhas no centro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As plântulas de cada cova estão competindo por espaço e nutrientes. Sem desbaste, a touceira fica fraca e fina.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa de cada cova, cortando as outras rente ao substrato com tesoura (não puxe, para não mexer na raiz da que fica)"
+    },
+    {
+      "dia_disparo": 76,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "A salsa já deve ter 15 a 20 cm e bastante folha. A partir de agora, colher com frequência faz a planta produzir mais.",
+      "acao_requerida": "Conferir a altura e colher as hastes externas, preservando o miolo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas amarelando de baixo para cima e base das hastes escura e mole",
+      "prevencao_tratamento": "Regue só com o substrato seco a 2 cm, mantenha furos desobstruídos e não deixe água no pratinho; retire a planta afetada e reduza a rega das demais"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem de repente com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Use substrato novo, borrife em vez de encharcar na germinação e deixe o vaso em local ventilado; retire as plântulas afetadas"
+    },
+    {
+      "nome": "Septoriose (Septoria petroselini)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons nas folhas com pontinhos pretos no centro, começando pelas folhas mais velhas",
+      "prevencao_tratamento": "Regue no substrato, não nas folhas, e evite adensar as plantas; corte e descarte as folhas manchadas; em ataque forte, calda bordalesa a 1% a cada 10 dias, respeitando 7 dias antes de colher"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos na base das hastes e no verso das folhas; folhas encarquilhadas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas folhas; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Lagarta-da-salsa (borboletas Papilio)",
+      "tipo": "PRAGA",
+      "sintomas": "Hastes roídas até o talo e lagartas verdes com faixas pretas e pontos amarelos sobre as folhas",
+      "prevencao_tratamento": "Cate as lagartas à mão; em ataque grande, Bacillus thuringiensis (Bt) pulverizado nas folhas"
+    },
+    {
+      "nome": "Pendoamento precoce",
+      "tipo": "DISTURBIO",
+      "sintomas": "Surge um talo central grosso com flores amarelo-esverdeadas em guarda-chuva; as folhas diminuem e ficam amargas",
+      "prevencao_tratamento": "É provocado pelo frio seguido de calor ou por falta de água; corte o pendão logo que aparecer para ganhar algumas semanas, e deixe uma nova semeadura já encaminhada"
+    },
+    {
+      "nome": "Amarelecimento por falta de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas mais velhas amarelas por inteiro e brotação nova pálida e fina",
+      "prevencao_tratamento": "Adube com húmus ou torta de mamona e retire as folhas amarelas; troque o substrato se o vaso for pequeno e muito colhido"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger a salsa do calor",
+      "mensagem": "Com calor forte, a salsa murcha nas horas quentes, as folhas endurecem e ela tende a pendoar.",
+      "acao_requerida": "Deixar o vaso onde receba só o sol da manhã e conferir a umidade do substrato todo dia"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Fique de olho no pendão floral",
+      "mensagem": "Depois do inverno, a salsa semeada no ano anterior costuma emitir o talo de flor, sinal de fim da produção de folhas.",
+      "acao_requerida": "Cortar o talo central assim que aparecer e fazer uma nova semeadura em outro vaso para substituir a planta"
+    }
+  ]
+}

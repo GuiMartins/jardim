@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Ginkgo",
+    "nome_cientifico": "Ginkgo biloba",
+    "descricao": "Árvore caducifólia milenar, a única sobrevivente de sua linhagem, com folhas em leque que ficam douradas no outono antes de cair. Em vaso cresce devagar e fica compacta; gosta de invernos frios, então vai melhor no Sul e nas serras do Sudeste do que no calor constante. As mudas de semente só revelam o sexo depois de 15 a 20 anos (as fêmeas dão sementes de cheiro forte), por isso prefira mudas enxertadas de macho quando houver.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; cor clara aquece menos no verão",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; solto, levemente ácido a neutro e que não encharque",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está refazendo as raízes no vaso novo e pode perder algumas folhas ou parar de crescer. A fase termina quando surgem folhas novas firmes e a planta não murcha mais nas horas quentes. Se foi plantada no inverno, sem folhas, o sinal é o inchaço das gemas nos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento: é normal a muda ganhar só 10 a 30 cm no primeiro ano. Ela passa pelo primeiro outono dourado e pela primeira dormência, e as raízes começam a ocupar o vaso. O ginkgo brota em surtos curtos na primavera e depois parece parar; não aumente o adubo para forçar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota em setembro, cresce de setembro a dezembro, passa o verão com o crescimento mais lento, amarela em maio e fica sem folhas de junho a agosto. Em vaso de 40 a 60 L chega a 1,5 a 2,5 m em muitos anos. Pede troca de substrato a cada três anos e quase nenhuma poda."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. O torrão da muda não pode secar por inteiro enquanto as raízes novas se formam. Se a muda estiver sem folhas (inverno), confira o dedo e regue só quando secar, porque sem folhas ela gasta pouca água.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o ginkgo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 a 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão, acima de 30 °C, confira todo dia. De junho a agosto, sem folhas, o substrato costuma continuar úmido: regue só quando estiver seco a 5 cm.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e os ramos, principalmente nas axilas, à procura de carocinhos brancos ou marrons presos (cochonilha). Confira se as folhas estão com a borda marrom e se o substrato cheira a mofo ou fica encharcado por dias.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e conferir as raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça na planta dormente, entre junho e agosto; se o lembrete cair em outra época, espere até o fim do inverno. Tire a planta, solte e retire cerca de um terço do substrato velho, apare as raízes que dão voltas no fundo e replante em substrato novo, num vaso 10 cm mais largo se as raízes estiverem enoveladas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Firme a muda com um tutor",
+      "mensagem": "Muda jovem de ginkgo tem caule fino e cresce torta com o vento enquanto as raízes não seguram o torrão.",
+      "acao_requerida": "Cravar uma estaca de bambu a 5 cm do caule, sem atravessar o torrão, e amarrar o caule com fita macia em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Confira se a muda pegou",
+      "mensagem": "Três semanas depois do plantio, a muda já deve mostrar folhas firmes ou gemas inchadas.",
+      "acao_requerida": "Raspar de leve a casca de um ramo fino com a unha: verde por baixo é sinal de vida; marrom e seco indica ramo morto, que deve ser cortado até o ponto verde"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de ginkgo: solte o tutor",
+      "mensagem": "Com um ano de vaso, as raízes já seguram a planta e o amarrilho pode estar estrangulando o caule.",
+      "acao_requerida": "Afrouxar ou retirar a amarração; mantenha o tutor só se a planta ainda tombar com o vento"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas e amareladas mesmo com o substrato úmido, raízes escuras e moles, cheiro de mofo; no inverno, gemas que não brotam em setembro",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no pratinho, principalmente na dormência. Se aparecer, tire a planta do vaso, corte as raízes podres e replante em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou escudos marrons presos aos ramos e ao verso das folhas; folhas pegajosas ou com fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia molhada em álcool 70%; em infestação maior, óleo mineral ou de neem a 1% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Queimadura das bordas (sol e calor no vaso)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas marrons e secas no verão, a partir do lado que recebe sol da tarde",
+      "prevencao_tratamento": "Manter o substrato sem secar por inteiro nos dias quentes, sombrear o vaso (não a copa), usar cobertura morta e, em regiões muito quentes, preferir sol da manhã. As folhas queimadas não voltam, mas a brotação seguinte vem normal"
+    },
+    {
+      "nome": "Amarelamento fora de época",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelas ou pálidas em pleno verão, fora do amarelamento normal de maio",
+      "prevencao_tratamento": "Costuma ser encharcamento ou substrato esgotado. Confira a drenagem e, se o substrato estiver há mais de dois anos no vaso, adube na próxima primavera ou troque o substrato no inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Outono dourado",
+      "mensagem": "O ginkgo vai ficar amarelo-ouro e perder todas as folhas nas próximas semanas. É o ciclo normal, não doença.",
+      "acao_requerida": "Recolher as folhas caídas do substrato e começar a espaçar a rega conforme a copa esvazia"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Dormência: regar pouco",
+      "mensagem": "Sem folhas, a planta quase não usa água, e substrato úmido e frio é o que mais apodrece raiz de ginkgo em vaso.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 5 cm, não adubar e esvaziar o pratinho depois de cada chuva"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda leve antes da brotação",
+      "mensagem": "Fim do inverno é a única época boa para podar o ginkgo, que aceita pouca poda e brota devagar.",
+      "acao_requerida": "Cortar só ramos secos, quebrados ou cruzados, rente a uma gema; não corte a ponta do ramo principal, que forma a copa"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Brotação: retomar a adubação",
+      "mensagem": "As gemas estão abrindo e a planta volta a precisar de água e nutrientes.",
+      "acao_requerida": "Espalhar 3 colheres de sopa de húmus ou 1 colher de sopa de NPK 10-10-10 por vaso de 40 L, longe do caule, regar em seguida e voltar à rega normal"
+    },
+    {
+      "meses": [
+        11,
+        1
+      ],
+      "titulo": "Adubação de cobertura",
+      "mensagem": "O ginkgo ainda está em crescimento e aproveita uma adubação leve. Depois de fevereiro, pare para ele endurecer os ramos antes do outono.",
+      "acao_requerida": "Espalhar 3 colheres de sopa de húmus por vaso de 40 L sem encostar no caule e regar em seguida"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: proteja o vaso",
+      "mensagem": "O sol da tarde esquenta a parede do vaso e cozinha as raízes, o que queima as bordas das folhas.",
+      "acao_requerida": "Sombrear o vaso com outro vaso, tábua ou juta, cobrir o substrato com 3 cm de casca de pinus e conferir a rega todo dia acima de 30 °C"
+    }
+  ]
+}

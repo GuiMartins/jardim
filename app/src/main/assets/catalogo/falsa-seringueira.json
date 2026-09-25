@@ -1,0 +1,177 @@
+{
+  "planta": {
+    "nome_comum": "Falsa-seringueira",
+    "nome_cientifico": "Ficus elastica",
+    "descricao": "Árvore tropical da Ásia cultivada em vaso como planta ornamental de interior, com folhas grandes, grossas e brilhantes (verde-escuras ou variegadas, como 'Tineke' e 'Burgundy'). É resistente e tolera esquecimentos, mas não tolera excesso de água nem mudanças bruscas de lugar. O látex branco que escorre dos cortes irrita a pele e é tóxico para cães e gatos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, barro ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo; use um vaso só 5 cm mais largo que o torrão, porque vaso grande demais retém água e apodrece a raiz",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% terra vegetal, 30% substrato para plantas ou fibra de coco, 20% perlita ou areia grossa lavada; misture 1 colher de sopa de farinha de ossos por litro",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta estranha a nova luz e costuma derrubar 1 a 3 folhas de baixo nas primeiras semanas; isso é normal. Não troque de lugar nem de vaso nesse período. A fase termina quando para a queda de folhas e a ponta dos galhos mostra uma bainha avermelhada nova."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Uma folha nova surge a cada 2 a 4 semanas na primavera e no verão, protegida por uma bainha que cai sozinha. Folhas novas menores e mais espaçadas que as antigas indicam pouca luz: aproxime o vaso da janela aos poucos. Gire o vaso um quarto de volta a cada rega para o tronco crescer reto."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce de setembro a março, soltando folhas novas e subindo 30 a 60 cm por ano em boa luz; de junho a agosto quase para, e rega e adubo diminuem. A poda de formação é na primavera. Em vaso chega a 2 ou 3 metros; a altura se controla com poda da ponta e com o tamanho do vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a falsa-seringueira",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato: se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. Se ainda estiver úmido, não regue. No inverno, o intervalo passa para 10 a 14 dias; acima de 30 °C, confira a cada 5 dias. Folhas caídas e moles com substrato úmido indicam excesso de água, não falta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a falsa-seringueira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dissolva 1 colher de chá de NPK 10-10-10 em 1 litro de água e regue o substrato já úmido, nunca seco. Alternativa orgânica: 2 colheres de sopa de húmus de minhoca espalhadas na superfície. De junho a agosto, não adube: marque como feito e pule.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_limpeza_folhas",
+      "titulo": "Limpar e inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Passe um pano úmido macio nas duas faces de cada folha, apoiando a folha por baixo com a outra mão. Poeira reduz a luz que a folha aproveita. Ao limpar, procure no verso e nas axilas das folhas pontinhos brancos algodonosos ou escamas marrons (cochonilha) e teias finas com pontos amarelados (ácaro).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o vaso e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e novembro; se cair no inverno, espere a primavera. Tire a planta, solte as raízes enoveladas do fundo e corte as escuras e moles. Replante num vaso 5 cm mais largo com substrato novo, na mesma altura de antes. Se a planta já estiver no tamanho que você quer, volte ao mesmo vaso depois de aparar 1/5 das raízes. Use luvas por causa do látex.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar definitivo",
+      "mensagem": "A falsa-seringueira derruba folhas quando muda de lugar ou pega corrente de ar. Achar o ponto certo agora evita perdas depois.",
+      "acao_requerida": "Colocar o vaso a até 1,5 m de uma janela bem clara, com no máximo o sol da manhã batendo, longe de ar-condicionado e de portas com vento. Não troque de vaso agora, mesmo que o da loja seja feio"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Confira se o vaso da loja ainda serve",
+      "mensagem": "Já adaptada, a planta aguenta uma troca de vaso se as raízes estiverem apertadas.",
+      "acao_requerida": "Olhar os furos do fundo: se houver raízes saindo ou o substrato secar em menos de 4 dias, passar para um vaso 5 cm mais largo com o substrato recomendado; se não, deixar como está até a troca programada"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas de baixo amarelam e caem em sequência, substrato úmido com cheiro azedo, raízes escuras e moles que se desfazem ao puxar, base do tronco amolecida",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm e nunca deixar água no pratinho. Se aparecer, tirar do vaso, cortar todas as raízes moles com tesoura limpa, deixar o torrão secar 1 dia à sombra e replantar em substrato novo e vaso lavado, regando pouco nas semanas seguintes"
+    },
+    {
+      "nome": "Cochonilha (farinhenta e de carapaça)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos ou escamas marrons grudadas no verso das folhas, nas axilas e no caule; folhas pegajosas e fumagina (pó preto) por cima",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70% e limpar as folhas; em infestação grande, borrifar óleo de neem a 0,5% com 1 gota de detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos ou prateados na folha, que perde o brilho; teias finas no verso e entre as folhas, comum em ambiente seco com ar-condicionado",
+      "prevencao_tratamento": "Limpar as folhas com pano úmido a cada 15 dias e evitar ar muito seco; se aparecer, lavar as folhas no chuveiro e aplicar óleo de neem a 0,5% no verso a cada 5 dias por 3 semanas"
+    },
+    {
+      "nome": "Queda de folhas por estresse",
+      "tipo": "DISTURBIO",
+      "sintomas": "Várias folhas saudáveis ficam amarelas e caem de uma vez, sem sinal de praga, logo depois de mudança de lugar, corrente de ar frio ou frio abaixo de 10 °C",
+      "prevencao_tratamento": "Manter no mesmo lugar, longe de portas, janelas abertas no inverno e saída de ar-condicionado. Não compensar com mais rega nem adubo: a planta rebrota sozinha em algumas semanas se as raízes estiverem boas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas grandes brancas, beges ou marrons e secas no meio das folhas voltadas para a janela, surgidas depois de sol forte da tarde ou mudança brusca para local mais claro",
+      "prevencao_tratamento": "Evitar sol direto depois das 10h ou filtrá-lo com cortina fina; aumentar a luz aos poucos, 30 cm por semana. As folhas manchadas não se recuperam, mas podem ficar se mais da metade estiver verde"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras de contorno irregular, muitas vezes com halo amarelo, começando pela ponta ou pela margem das folhas",
+      "prevencao_tratamento": "Não molhar as folhas no fim do dia e manter o ar circulando; cortar as folhas afetadas e jogar no lixo, não na compostagem; se espalhar, aplicar fungicida à base de cobre conforme a embalagem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e nada de adubo",
+      "mensagem": "No frio a falsa-seringueira quase para de crescer e o substrato demora mais para secar. Rega no ritmo do verão é a causa mais comum de podridão de raiz.",
+      "acao_requerida": "Espaçar a rega para 10 a 14 dias sempre conferindo com o dedo, suspender a adubação até setembro e afastar o vaso de janelas frias e correntes de ar abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Época da poda de formação",
+      "mensagem": "Com a volta do crescimento, a planta rebrota rápido dos cortes. Podar a ponta faz nascerem galhos laterais e deixa a planta mais cheia.",
+      "acao_requerida": "Se a planta estiver alta ou com poucos galhos, cortar a ponta do caule 1 cm acima de uma folha, com luvas e tesoura limpa, e estancar o látex com papel úmido. Se estiver no formato que você quer, não pode"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com sol da tarde e sede",
+      "mensagem": "O sol do verão atravessa o vidro com força e queima as folhas em poucas horas; com calor o substrato também seca mais rápido.",
+      "acao_requerida": "Garantir que o sol da tarde não bata direto nas folhas e conferir o substrato a cada 5 dias nas semanas acima de 30 °C"
+    }
+  ]
+}

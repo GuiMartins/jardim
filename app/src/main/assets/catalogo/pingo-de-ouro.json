@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Pingo-de-ouro",
+    "nome_cientifico": "Duranta erecta 'Aurea'",
+    "descricao": "Arbusto perene de folhagem amarelo-dourada muito usado em cercas vivas, bordaduras e topiarias, que aceita podas frequentes e cresce rápido. Em vaso forma bolas e cones densos que dão cor ao ano todo. Os frutos e as folhas são tóxicos se ingeridos, então mantenha longe de crianças e pets que mastigam plantas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou fibra com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; para cerca viva em jardineira, 40 cm de largura e 40 cm de profundidade, com uma muda a cada 30 cm",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; acrescente 1 colher de sopa de farinha de ossos por 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acomoda ao vaso novo. Algumas folhas podem amarelar demais e cair nos primeiros dias, o que é normal. A adaptação terminou quando aparecem brotos novos, dourados e brilhantes, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e os ramos crescem depressa, de 5 a 10 cm por mês no calor. É a fase de formar a copa com podas de ponta, que fazem a planta ramificar e fechar. Está estabelecida quando a copa fica densa e as raízes começam a aparecer pelos furos do fundo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto formado. Na primavera e no verão cresce rápido e pede podas de manutenção a cada 1 ou 2 meses para manter o formato; no outono desacelera e no inverno quase para. A cor dourada depende de sol direto: na sombra as folhas esverdeiam. Se não for podada, pode dar cachos de flores lilases seguidos de bagas alaranjadas tóxicas; podada com frequência, raramente floresce."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o pingo-de-ouro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos. Não deixe água parada no pratinho. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o pingo-de-ouro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, em vaso ao sol, pode precisar de rega a cada 1 ou 2 dias; no inverno, a cada 5 a 7 dias. Ramos murchos no fim da tarde de calor com substrato seco pedem rega imediata.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o pingo-de-ouro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 por vaso de 30 L sobre o substrato úmido, longe do caule, e regue em seguida; ou use 3 colheres de sopa de húmus de minhoca. Entre maio e agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "poda_manutencao",
+      "titulo": "Podar para manter o formato",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura de poda limpa, apare os ramos que passaram do contorno da copa, cortando 1 cm acima de um par de folhas. Na fase de formação, corte só as pontas (2 a 3 cm) para ramificar. Retire também ramos secos e brotos totalmente verdes. No inverno, faça só um acerto leve.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e do interior da copa. Procure pontinhos brancos parecidos com algodão nas axilas (cochonilha), insetos agrupados nos brotos (pulgão), teias finas e folhas pontilhadas de cinza (ácaro) e manchas marrons arredondadas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato ou o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e outubro, tire a planta do vaso, desembarace e corte 2 a 3 cm das raízes que dão voltas no fundo e replante em substrato novo, num vaso 5 cm maior de diâmetro. Faça uma poda leve da copa para compensar e mantenha à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vindo, pingo-de-ouro!",
+      "mensagem": "A muda vai sentir a mudança nos primeiros dias. Sol forte logo de cara pode queimar as folhas amarelas.",
+      "acao_requerida": "Deixar a planta em meia-sombra por 7 dias e depois levar para o local definitivo com pelo menos 4 horas de sol direto"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Com a planta adaptada, a poda de ponta agora faz cada ramo se dividir em dois e a copa fechar mais rápido.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de todos os ramos principais, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Planta formada",
+      "mensagem": "O pingo-de-ouro já está estabelecido no vaso. Daqui para frente as podas regulares mantêm a copa densa e dourada.",
+      "acao_requerida": "Conferir se as raízes já saem pelos furos e anotar a data para a futura troca de substrato"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, ramos murcham de baixo para cima, base do caule escura e mole, cheiro ruim no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e manter os furos livres. Se aparecer, tirar do vaso, cortar as raízes escuras e moles e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e nos ramos, folhas pegajosas e fumagina preta por cima",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com 2 gotas de detergente por litro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos novos, pontas enroladas e deformadas",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos cinzentos ou bronzeados, perda do brilho e teias finas entre as folhas, pior em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos e lavar a copa com jato de água; se persistir, óleo de neem ou enxofre molhável conforme o rótulo, fora do sol forte"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou arroxeadas arredondadas nas folhas, que depois amarelam e caem",
+      "prevencao_tratamento": "Regar direto no substrato sem molhar a copa, podar o miolo para arejar e recolher as folhas caídas; em ataque forte, fungicida cúprico conforme o rótulo"
+    },
+    {
+      "nome": "Folhas verdes em vez de douradas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhagem nova e interna perde o amarelo e fica verde-clara; às vezes surgem ramos inteiros verdes",
+      "prevencao_tratamento": "Falta de sol direto: mudar para um lugar com pelo menos 4 a 6 horas de sol. Cortar na base os ramos que voltaram a ser totalmente verdes, porque crescem mais que os dourados"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas das pontas com áreas brancas ou marrons secas, logo após mudar a planta da sombra para o sol",
+      "prevencao_tratamento": "Aclimatar aos poucos, aumentando o sol direto ao longo de 1 a 2 semanas; as folhas queimadas não se recuperam e saem na próxima poda"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Menos água e sem adubo até agosto",
+      "mensagem": "Com o frio chegando, o pingo-de-ouro desacelera e o substrato demora mais para secar. Rega no ritmo do verão agora é o caminho para a raiz apodrecer.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm, em geral a cada 5 a 7 dias, e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger das geadas",
+      "mensagem": "Geada queima os ramos novos do pingo-de-ouro, que vem de clima tropical. Em regiões serranas e no Sul isso pode matar as pontas da copa.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, cobrir a planta com TNT ou levar o vaso para perto de uma parede ou sob um beiral"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de primavera e volta da adubação",
+      "mensagem": "A planta está saindo do repouso e vai brotar forte. É a melhor época para uma poda mais firme e para retomar a adubação.",
+      "acao_requerida": "Cortar até um terço do comprimento dos ramos para refazer o formato, retirar galhos secos do inverno e voltar a adubar a cada 45 dias"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "planta": {
+    "nome_comum": "Munguba",
+    "nome_cientifico": "Pachira aquatica",
+    "descricao": "Árvore amazônica de beira de rio, vendida em vaso como planta ornamental, muitas vezes com os troncos trançados (a 'árvore do dinheiro'). O tronco grosso guarda água, por isso ela tolera esquecimentos de rega, mas apodrece com vaso encharcado. Em vaso, a raiz limitada a mantém entre 1 e 2,5 m e permite podar para dar forma.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com vários furos no fundo e sem prato com água parada; só 3 a 5 cm mais largo que o torrão da muda, porque vaso grande demais guarda umidade e apodrece a raiz",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% casca de pinus fina ou fibra de coco, 20% areia grossa ou perlita, 10% húmus de minhoca; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a mudança de luz e umidade: é comum amarelar e soltar algumas folhas de baixo nas duas primeiras semanas. Não mude o vaso de lugar nem aumente a rega por causa disso. A fase termina quando surgem folhas novas, verde-claras, no topo dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso novo e a planta passa a lançar folhas palmadas (5 a 9 folíolos) em série. Os ramos se alongam na direção da luz; se entortarem demais, gire o vaso um quarto de volta a cada rega. Tronco firme e folhas sem manchas indicam que a planta se firmou."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão, desacelera no outono e quase para no inverno, quando pode perder parte das folhas com o frio. Em vaso raramente floresce; quando floresce ao ar livre, as flores são grandes, com longos estames creme-avermelhados, e os frutos são cápsulas marrons com sementes comestíveis. O ano da planta adulta é: poda de forma no início da primavera, adubação na época quente, rega reduzida no inverno e troca de substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a munguba recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e descarte a água do prato depois de 15 minutos. Se ainda estiver úmido, não regue: a raiz recém-mexida apodrece fácil.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a munguba",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o prato. No inverno o intervalo passa para 8 a 12 dias. Tronco mole ou enrugado na base é sinal de excesso, não de falta de água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a munguba",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato úmido, espalhe 2 colheres de sopa de húmus de minhoca na borda do vaso ou dissolva 1 colher de chá de NPK 10-10-10 em 1 L de água e regue. Suspenda de maio a agosto, quando a planta quase não cresce.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas dos ramos: procure pontinhos brancos algodonosos (cochonilha), teias finas (ácaro) e aperte a base do tronco, que deve estar firme. Limpe a poeira das folhas com pano úmido.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, retire a planta, solte um terço do substrato velho do torrão, corte raízes escuras ou moles e replante com substrato novo num vaso 5 cm mais largo. Regue e deixe uma semana à meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 5,
+      "titulo": "Folhas caindo? É adaptação",
+      "mensagem": "A munguba costuma perder algumas folhas de baixo quando muda de ambiente. Mexer no vaso ou regar mais piora a situação.",
+      "acao_requerida": "Manter o vaso no mesmo lugar, com luz clara, e seguir regando só quando o substrato estiver seco a 3 cm"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Conferir as raízes",
+      "mensagem": "Se a muda veio num vaso de loja apertado, as raízes já podem estar saindo pelos furos.",
+      "acao_requerida": "Olhar o fundo do vaso; se houver raízes saindo pelos furos, passar a planta para um vaso 5 cm mais largo com substrato novo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do colo (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo em massa, base do tronco mole, enrugada ou escura, cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e nunca deixar água no prato. Se aparecer, tire a planta, corte raízes e partes moles do tronco até o tecido firme, deixe secar 1 dia e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos nas axilas das folhas e nos ramos; folhas pegajosas e amarelando",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; depois, óleo de neem a 0,5% com uma gota de detergente a cada 7 dias, três aplicações, no fim da tarde"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teias finas no verso, comum em ambiente interno seco",
+      "prevencao_tratamento": "Lavar as folhas com jato de água no verso e aumentar a umidade ao redor; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas marrom-claras no meio das folhas voltadas para o sol, surgindo dias depois de mudar a planta de lugar",
+      "prevencao_tratamento": "Levar para o sol forte aos poucos, uma hora a mais por semana; em apartamento, evitar sol da tarde atrás do vidro"
+    },
+    {
+      "nome": "Queda de folhas por frio ou corrente de ar",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecendo nas bordas e caindo de uma vez em noites abaixo de 10 °C ou perto de ar-condicionado",
+      "prevencao_tratamento": "Afastar de portas abertas, janelas com vento e saídas de ar-condicionado; no inverno, recolher para dentro em noites frias"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a munguba quase para de crescer e o substrato demora mais a secar. É a época em que ela mais apodrece por excesso de rega.",
+      "acao_requerida": "Espaçar a rega para cada 8 a 12 dias, suspender a adubação e recolher o vaso para dentro nas noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Hora da poda de forma",
+      "mensagem": "Com o calor chegando, a munguba volta a brotar com força, e os cortes de agora fecham rápido e engrossam a copa.",
+      "acao_requerida": "Cortar os ramos compridos ou tortos logo acima de uma folha, deixando 2 ou 3 folhas em cada ramo, e retirar folhas secas"
+    }
+  ]
+}
