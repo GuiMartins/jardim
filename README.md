@@ -22,8 +22,8 @@ flowchart LR
     H[("histórico<br/>RegistroAcao")] --> K
     K -->|pendências de hoje| T["tela Hoje"]
     K -->|pendências de hoje| N["notificação diária"]
-    T -->|concluir / pular| H
-    N -->|concluir / pular| H
+    T -->|feito / não precisou| H
+    N -->|feito / não precisou| H
 ```
 
 Cada espécie é um JSON com as fases da vida da planta, tarefas recorrentes,
@@ -36,17 +36,20 @@ não são problema, e errar a data do plantio se corrige mudando um campo.
 
 | Tipo | Aparece | Some |
 |---|---|---|
-| **Tarefa recorrente** (rega, adubação, colheita…) | no dia de início; depois, `frequência` dias após a última vez que foi feita | quando é feita ou pulada, ou quando a janela dela termina |
+| **Tarefa recorrente** (rega, adubação, colheita…) | no dia de início; depois, `frequência` dias após a última vez que foi feita | quando é feita (ou conferida, se for rega), ou quando a janela dela termina |
 | **Alerta único** (desbaste, primeira colheita…) | no dia de disparo | quando é feito |
 | **Evento sazonal** (poda de inverno, proteger do frio…) | no dia 1 do mês, se a planta já existia | quando é feito, ou quando o mês acaba |
 
 - **Atraso não acumula.** Esqueceu a rega por uma semana? Aparece *uma* rega
   com 7 dias de atraso, não quatro regas empilhadas.
-- **Tarefa crítica** (pular uma vez já causa dano) ganha um lembrete extra à
-  noite.
-- Depois de **7 dias sem uma rega** (crítica ou não), o app pergunta se a
-  planta ainda está viva em vez de continuar cobrando. Inspeção, alerta ou
-  evento atrasados não contam: indicam só um aviso não lido.
+- **Rega tem dois botões**: "Feito" e "Conferi, não precisou". A rega do
+  girassol é condicional ("enfie o dedo; se estiver úmido, espere"), então
+  conferir também reinicia a contagem; o histórico guarda a diferença.
+- **Ressemeou?** "Ressemeei hoje" faz hoje virar o dia 1 e a agenda recomeçar;
+  o histórico de antes fica guardado.
+- **Fora de época** (fora de `meses_plantio`) o app só avisa, não impede.
+- **Tarefa crítica** (falhar uma vez já causa dano) vai ganhar um lembrete
+  extra à noite, na etapa 4.
 
 ## Planta de referência
 
@@ -55,6 +58,15 @@ referência para o projeto: anual de 105 dias, 6 fases, 7 tarefas (4 delas de
 rega), 7 alertas, 9 pragas e 2 eventos sazonais. Cuidado em dia do plantio à
 colheita, ele gera **128 ações, nunca mais de 3 no mesmo dia**. Um teste
 simula o ciclo inteiro para garantir isso.
+
+## Telas
+
+- **Hoje**: um cartão por planta, com o dia do ciclo e a fase ("Dia 15 ·
+  Plântula") e as pendências de hoje e as atrasadas, críticas primeiro. Toque
+  numa pendência para ver as instruções; "Feito" tem desfazer na snackbar.
+- **Nova planta**: o catálogo, com dificuldade, duração do ciclo e se é boa
+  época; depois apelido, data do dia 1 e o que preparar antes (vaso, luz,
+  substrato, drenagem).
 
 ## Estrutura
 
@@ -76,17 +88,18 @@ roda em testes na JVM, em segundos, sem emulador.
 ## Rodando
 
 ```bash
-./gradlew :motor:test      # testes do motor
-./gradlew assembleDebug    # APK debug
-adb install -r app/build/outputs/apk/debug/app-debug.apk
+./dev.sh test       # testes do motor
+./dev.sh run        # build + instala + abre no celular ou emulador conectado
+./dev.sh emulator   # sobe o emulador
 ```
 
-Precisa do JDK 17 e do Android SDK (`local.properties` com `sdk.dir`).
+Precisa do JDK 17 e do Android SDK (`local.properties` com `sdk.dir`). O
+banco é Room, com o esquema de cada versão em `app/schemas/`.
 
 ## Roteiro
 
 - [x] **Etapa 1**: stack e regras de produto
 - [x] **Etapa 2**: motor (leitura e validação do JSON, agenda) com testes
-- [ ] **Etapa 3**: banco local (plantios e histórico) e tela "Hoje"
+- [x] **Etapa 3**: banco local (plantios e histórico), tela "Hoje" e "Nova planta"
 - [ ] **Etapa 4**: notificações (resumo diário, lembrete da noite, botão "Concluir")
 - [ ] **Etapa 5**: linha do tempo da planta
