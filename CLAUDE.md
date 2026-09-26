@@ -50,6 +50,13 @@ Depois da etapa 5 (2026-09-25):
 - `Catalogo.busca` lê só o índice, pré-carregado em segundo plano ao abrir o app. `Catalogo.especie(arquivo)` lê o JSON inteiro sob demanda (fora da main thread).
 - `BuscaCatalogo` (motor) faz o autocomplete: normalização que mantém o tamanho do texto (a faixa destacada vale no nome original), começo de palavra em qualquer ordem, e níveis igual > nome começa > primeira palavra > palavra do meio > outro nome > científico > no meio da palavra > erro de digitação (só quando nada exato casou). Empates vão para a mais popular. As regras estão em `BuscaCatalogoTest`, com casos tirados dos nomes reais ("pitanga" → Pitangueira antes de Pitangatuba).
 
+## Transições de tela (2026-09-25)
+
+- Container transform (`Modifier.container`, em `ui/Transicoes.kt`) do cartão da planta para a tela dela e do botão "Nova planta" para a busca; profundidade (eixo Z) no resto. O padrão do navigation-compose, crossfade de 700 ms, foi recusado.
+- As duas pontas de um container usam a mesma chave (`chaveDoPlantio`, `CHAVE_NOVA_PLANTA`). Só vai para a camada de cima quem tem par (`isMatchFound`): sem isso, o botão e os outros cartões flutuavam sobre a tela que abria.
+- O `SharedTransitionLayout` tem o fundo do tema: sem ele, a profundidade mostrava o fundo claro da janela entre uma tela e outra.
+- Para conferir uma animação: `adb shell screenrecord`, depois `ffmpeg` (instalado pelo winget) extrai os quadros.
+
 ## Notificações e agendamento
 
 - Cada aviso é um OneTimeWork único que, ao rodar, agenda o do dia seguinte com `APPEND_OR_REPLACE`: `REPLACE` cancelaria o worker que está rodando, e `KEEP` ignoraria o pedido. A abertura do app chama `garantirAgendado()` (`KEEP`), que reconstrói a corrente se ela quebrar. Não use PeriodicWorkRequest: ele escorrega o horário.

@@ -32,6 +32,7 @@ import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.FilledTonalButton
+import androidx.compose.material3.FloatingActionButtonDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -66,7 +67,10 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.jardim.motor.agenda.Pendencia
 import com.jardim.motor.agenda.StatusAcao
 import com.jardim.motor.modelo.TipoTarefa
+import com.jardim.ui.CHAVE_NOVA_PLANTA
 import com.jardim.ui.atraso
+import com.jardim.ui.chaveDoPlantio
+import com.jardim.ui.container
 import com.jardim.ui.dataLonga
 import com.jardim.ui.icone
 import kotlinx.coroutines.flow.collectLatest
@@ -125,6 +129,8 @@ fun HojeTela(
                 onClick = aoAdicionar,
                 icon = { Icon(Icons.Filled.Add, contentDescription = null) },
                 text = { Text("Nova planta") },
+                // Cresce e vira a tela de busca (container transform).
+                modifier = Modifier.container(CHAVE_NOVA_PLANTA, FloatingActionButtonDefaults.extendedFabShape),
             )
         },
         snackbarHost = { SnackbarHost(snackbar) },
@@ -217,7 +223,8 @@ private fun CartaoPlantioView(
     var confirmando by remember { mutableStateOf<Confirmacao?>(null) }
     val recomecoTexto = if (cartao.deSemente) "Ressemeei hoje" else "Replantei hoje"
 
-    ElevatedCard(Modifier.fillMaxWidth()) {
+    // O cartão cresce e vira a tela da planta (container transform).
+    ElevatedCard(Modifier.fillMaxWidth().container(chaveDoPlantio(cartao.id), CardDefaults.elevatedShape)) {
         // O cabeçalho abre a linha do tempo da planta; o menu ao lado tem o próprio toque.
         Row(
             Modifier.clickable(onClick = aoAbrir).padding(start = 16.dp, top = 12.dp, end = 4.dp),
