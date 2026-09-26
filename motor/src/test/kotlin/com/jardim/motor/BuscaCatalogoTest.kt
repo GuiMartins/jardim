@@ -12,11 +12,12 @@ import kotlin.test.assertTrue
 
 class BuscaCatalogoTest {
 
-    private fun item(nome: String, cientifico: String, vararg outros: String, posicao: Int? = null) = ItemCatalogo(
+    private fun item(nome: String, cientifico: String, vararg outros: String, posicao: Int? = null, categoria: String? = null) = ItemCatalogo(
         arquivo = normalizar(nome).replace(' ', '-') + ".json",
         nomeComum = nome,
         nomeCientifico = cientifico,
         outrosNomes = outros.toList(),
+        categoria = categoria,
         posicao = posicao,
         dificuldade = Dificuldade.FACIL,
         tipoCiclo = TipoCiclo.ANUAL,
@@ -27,12 +28,12 @@ class BuscaCatalogoTest {
     // Posições e sinônimos no formato de dados/plantas-populares.json.
     private val busca = BuscaCatalogo(
         listOf(
-            item("Roseira", "Rosa spp.", "Rosa", "Mini-rosa", posicao = 1),
+            item("Roseira", "Rosa spp.", "Rosa", "Mini-rosa", posicao = 1, categoria = "FLOR"),
             item("Espada-de-são-jorge", "Dracaena trifasciata", "Sansevieria", "Língua-de-sogra", posicao = 2),
             item("Girassol", "Helianthus annuus", posicao = 3),
             item("Jiboia", "Epipremnum aureum", posicao = 4),
-            item("Manjericão", "Ocimum basilicum", "Alfavaca", posicao = 5),
-            item("Costela-de-adão", "Monstera deliciosa", posicao = 6),
+            item("Manjericão", "Ocimum basilicum", "Alfavaca", posicao = 5, categoria = "ERVA_AROMATICA"),
+            item("Costela-de-adão", "Monstera deliciosa", posicao = 6, categoria = "FOLHAGEM"),
             item("Samambaia", "Nephrolepis exaltata", posicao = 8),
             item("Alecrim", "Salvia rosmarinus", posicao = 10),
             item("Alecrim-do-campo", "Baccharis dracunculifolia", posicao = 500),
@@ -41,6 +42,10 @@ class BuscaCatalogoTest {
             item("Pitangatuba", "Eugenia selloi", posicao = 700),
             item("Alface", "Lactuca sativa", posicao = 12),
             item("Lavanda", "Lavandula angustifolia", "Alfazema", posicao = 30),
+            // Só a primeira tem "orquídea" no nome; as outras, só na categoria.
+            item("Orquídea-borboleta", "Phalaenopsis spp.", "Falenópsis", posicao = 11, categoria = "ORQUIDEA"),
+            item("Dendróbio", "Dendrobium nobile", posicao = 25, categoria = "ORQUIDEA"),
+            item("Cattleya", "Cattleya spp.", "Catleia", posicao = 39, categoria = "ORQUIDEA"),
             item("Rabanete", "Raphanus sativus"), // sem ranking
         ),
     )
@@ -59,7 +64,7 @@ class BuscaCatalogoTest {
     @Test
     fun `busca vazia mostra todas, das mais populares para as sem ranking`() {
         val todas = nomes("")
-        assertEquals(15, todas.size)
+        assertEquals(18, todas.size)
         assertEquals(listOf("Roseira", "Espada-de-são-jorge", "Girassol"), todas.take(3))
         assertEquals("Rabanete", todas.last())
         assertEquals(todas, nomes("   "))
@@ -116,6 +121,31 @@ class BuscaCatalogoTest {
         val r = busca.buscar("helianthus").single()
         assertEquals("Girassol", r.item.nomeComum)
         assertEquals(listOf("Helianthus"), recortes(r.item.nomeCientifico, r.destaquesCientifico))
+    }
+
+    @Test
+    fun `acha pela categoria, depois de quem casou pelo nome`() {
+        // Dendróbio e Cattleya não têm "orquídea" no nome: sem a categoria, não apareciam.
+        assertEquals(listOf("Orquídea-borboleta", "Dendróbio", "Cattleya"), nomes("orquidea"))
+        assertEquals(listOf("Manjericão"), nomes("erva aromatica"))
+        // Casou pela categoria: não há trecho do nome para destacar.
+        assertEquals(emptyList(), busca.buscar("orquidea").last().destaquesNome)
+    }
+
+    @Test
+    fun `categoria no plural e pelo começo, como no nome`() {
+        assertEquals(nomes("orquidea"), nomes("orquideas"))
+        assertEquals(listOf("Roseira"), nomes("flores"))
+        assertEquals(listOf("Costela-de-adão"), nomes("folhagens"))
+        assertEquals(listOf("Manjericão"), nomes("ervas aromaticas"))
+        assertEquals(listOf("Manjericão"), nomes("arom erva"))
+        assertEquals(nomes("orquidea"), nomes("orq"))
+    }
+
+    @Test
+    fun `categoria não entra com menos de 3 letras`() {
+        // "fl" não traz a Roseira pela categoria FLOR.
+        assertTrue("Roseira" !in nomes("fl"))
     }
 
     @Test

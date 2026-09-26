@@ -28,8 +28,9 @@ data class ResultadoBusca(
  *  3. casou com palavras do meio do nome;
  *  4. casou com um dos outros nomes;
  *  5. casou com o nome científico;
- *  6. o texto aparece no meio de uma palavra do nome ("sol" em "Girassol");
- *  7. casou com um erro de digitação ("girasol"), só quando nada acima achou.
+ *  6. casou com a categoria ("orquídea" → Cattleya, que não tem a palavra no nome);
+ *  7. o texto aparece no meio de uma palavra do nome ("sol" em "Girassol");
+ *  8. casou com um erro de digitação ("girasol"), só quando nada acima achou.
  * Dentro do mesmo nível, ganha a mais popular; sem ranking, a de nome mais curto.
  */
 class BuscaCatalogo(itens: List<ItemCatalogo>) {
@@ -48,6 +49,9 @@ class BuscaCatalogo(itens: List<ItemCatalogo>) {
         val nome = Campo(item.nomeComum)
         val cientifico = Campo(item.nomeCientifico)
         val outros = item.outrosNomes.map(::Campo)
+
+        /** O código do levantamento já é o nome sem acento: ERVA_AROMATICA vira "erva aromatica". */
+        val categoria = item.categoria?.let { palavrasDe(normalizar(it)).map { p -> p.texto } }
     }
 
     private class Achado(val entrada: Entrada, val nivel: Int, val resultado: ResultadoBusca)
@@ -106,6 +110,9 @@ class BuscaCatalogo(itens: List<ItemCatalogo>) {
         comecosDePalavra(e.cientifico, termos)?.let { faixas ->
             return Achado(e, CIENTIFICO, ResultadoBusca(e.item, destaquesCientifico = faixas))
         }
+        if (e.categoria != null && casaCategoria(e.categoria, termos)) {
+            return Achado(e, CATEGORIA, ResultadoBusca(e.item))
+        }
         val meio = e.nome.normalizado.indexOf(junta)
         if (meio >= 0) {
             return Achado(e, NO_MEIO, ResultadoBusca(e.item, destaquesNome = listOf(meio until meio + junta.length)))
@@ -123,6 +130,22 @@ class BuscaCatalogo(itens: List<ItemCatalogo>) {
             }
         }
         return null
+    }
+
+    /**
+     * O digitado casa com a categoria? [categoria] vem normalizada e em palavras
+     * (["orquidea"], ["erva", "aromatica"]); [termos] é o digitado, também
+     * normalizado e separado (["orquideas"], ["erva", "arom"]).
+     */
+    private fun casaCategoria(categoria: List<String>, termos: List<String>): Boolean {
+        // Com menos letras, "a" traria todas as árvores, arbustos e aquáticas.
+        if (termos.sumOf { it.length } < MINIMO_PARA_CATEGORIA) return false
+        // Como no nome: cada termo é o começo de uma palavra diferente, em qualquer ordem.
+        val livres = categoria.toMutableList()
+        return termos.all { termo ->
+            val palavra = livres.firstOrNull { p -> singulares(termo).any { p.startsWith(it) } } ?: return false
+            livres.remove(palavra)
+        }
     }
 
     /** Cada termo é o começo de uma palavra diferente do campo; devolve as faixas ou null. */
@@ -161,11 +184,29 @@ class BuscaCatalogo(itens: List<ItemCatalogo>) {
         const val PALAVRA_DO_MEIO = 3
         const val OUTRO_NOME = 4
         const val CIENTIFICO = 5
-        const val NO_MEIO = 6
-        const val COM_ERRO = 7
+        const val CATEGORIA = 6
+        const val NO_MEIO = 7
+        const val COM_ERRO = 8
 
         /** Termos curtos demais casariam com tudo se aceitassem um erro. */
         const val MINIMO_PARA_ERRO = 4
+
+        const val MINIMO_PARA_CATEGORIA = 3
+
+        /**
+         * O termo e as formas dele no singular, pelas regras de plural que aparecem
+         * nas categorias: orquideas, flores, folhagens, medicinais, forracoes. As
+         * formas erradas que sobram ("flore") não atrapalham: só casam se uma
+         * palavra da categoria começar com elas.
+         */
+        fun singulares(termo: String): List<String> = buildList {
+            add(termo)
+            if (termo.endsWith("oes")) add(termo.dropLast(3) + "ao")
+            if (termo.endsWith("ns")) add(termo.dropLast(2) + "m")
+            if (termo.endsWith("is")) add(termo.dropLast(2) + "l")
+            if (termo.endsWith("es")) add(termo.dropLast(2))
+            if (termo.endsWith("s")) add(termo.dropLast(1))
+        }.filter { it.length >= MINIMO_PARA_CATEGORIA }
 
         fun palavrasDe(normalizado: String): List<Palavra> = buildList {
             var inicio = -1
