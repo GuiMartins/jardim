@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="icone_fundo">#FFD5F2CC</color>
+    <!-- background do tema claro (ui/Tema.kt); o escuro está em values-night. -->
+    <color name="fundo">#FFF7FBF1</color>
 </resources>

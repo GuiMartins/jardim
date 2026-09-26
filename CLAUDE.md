@@ -50,6 +50,12 @@ Depois da etapa 5 (2026-09-25):
 - `Catalogo.busca` lê só o índice, pré-carregado em segundo plano ao abrir o app. `Catalogo.especie(arquivo)` lê o JSON inteiro sob demanda (fora da main thread).
 - `BuscaCatalogo` (motor) faz o autocomplete: normalização que mantém o tamanho do texto (a faixa destacada vale no nome original), começo de palavra em qualquer ordem, e níveis igual > nome começa > primeira palavra > palavra do meio > outro nome > científico > categoria (com plural: "orquídeas" acha Cattleya) > no meio da palavra > erro de digitação (só quando nada exato casou). Empates vão para a mais popular. As regras estão em `BuscaCatalogoTest`, com casos tirados dos nomes reais ("pitanga" → Pitangueira antes de Pitangatuba).
 
+## Abertura (2026-09-25)
+
+- Animação "semente" (`ui/Abertura.kt`, Compose): a semente cai, o caule sobe, abrem duas folhas e aparece "Jardim"; ~1,6 s, e um toque pula. O usuário escolheu essa entre três opções, sabendo que ela atrasa cada abertura a frio (a "Brotar", de 0,7 s, e a "Só a saída", sem espera, foram recusadas).
+- Ela é uma camada por cima da navegação: o Hoje carrega por baixo enquanto a semente brota. `rememberSaveable` impede que ela volte ao dobrar o celular ou girar a tela.
+- A abertura do sistema (Android 12+) fica só com o fundo do tema e um ícone transparente (`values-v31/themes.xml`), para emendar na semente. O `windowBackground` segue claro/escuro (`@color/fundo`); antes, a janela piscava branca antes do tema escuro.
+
 ## Transições de tela (2026-09-25)
 
 - Container transform (`Modifier.container`, em `ui/Transicoes.kt`) do cartão da planta para a tela dela e do botão "Nova planta" para a busca; profundidade (eixo Z) no resto. O padrão do navigation-compose, crossfade de 700 ms, foi recusado.

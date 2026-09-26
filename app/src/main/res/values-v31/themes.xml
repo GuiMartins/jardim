@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android 12+ sempre mostra uma abertura do sistema. Aqui ela é só o fundo, sem
+         ícone, e emenda na animação da semente (ui/Abertura.kt), que o app desenha. -->
+    <style name="Theme.Jardim" parent="Base.Jardim">
+        <item name="android:windowBackground">@color/fundo</item>
+        <item name="android:windowSplashScreenBackground">@color/fundo</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+    </style>
+</resources>

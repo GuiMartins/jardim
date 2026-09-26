@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Claro ou escuro conforme o sistema (values-night troca o pai). -->
+    <style name="Base.Jardim" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- A janela já nasce com o fundo do app: sem isso, a abertura piscava branca
+         antes do tema escuro. -->
+    <style name="Theme.Jardim" parent="Base.Jardim">
+        <item name="android:windowBackground">@color/fundo</item>
+    </style>
+</resources>
