@@ -197,7 +197,8 @@ private fun Requisitos(r: RequisitosIniciais) {
         "${luminosidade(r.luminosidade)}: de ${numero(r.horasSolMinimas)} a ${numero(r.horasSolDiariasRecomendadas)} horas de sol direto por dia."
     }
     val itens = listOf(
-        "🪴 Vaso" to "${r.tipoVasoOuSolo} Mínimo de ${numero(r.volumeMinimoLitros)} L por planta.",
+        // O girassol termina a frase com ponto; quase todo o resto do catálogo, não.
+        "🪴 Vaso" to "${r.tipoVasoOuSolo.trimEnd().let { if (it.endsWith('.')) it else "$it." }} Mínimo de ${numero(r.volumeMinimoLitros)} L por planta.",
         "☀️ Luz" to luz,
         "🟫 Substrato" to r.substratoRecomendado,
         "💧 Drenagem" to if (r.camadaDrenagem) {
