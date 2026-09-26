@@ -29,8 +29,11 @@ EMULATOR="$ANDROID_HOME/emulator/emulator.exe"
 AVD_NOME="${AVD_NOME:-money_hole_test}"
 PACOTE="com.jardim"
 ACTIVITY="$PACOTE/.MainActivity"
-APK="$SCRIPT_DIR/app/build/outputs/apk/release/app-release.apk"
-APK_DEBUG="$SCRIPT_DIR/app/build/outputs/apk/debug/app-debug.apk"
+# O adb.exe só entende caminho do Windows, e o MSYS_NO_PATHCONV acima impede o
+# Git Bash de converter /c/... sozinho: converte aqui.
+nativo() { if command -v cygpath >/dev/null; then cygpath -w "$1"; else echo "$1"; fi; }
+APK="$(nativo "$SCRIPT_DIR/app/build/outputs/apk/release/app-release.apk")"
+APK_DEBUG="$(nativo "$SCRIPT_DIR/app/build/outputs/apk/debug/app-debug.apk")"
 
 comando="${1:-run}"
 
