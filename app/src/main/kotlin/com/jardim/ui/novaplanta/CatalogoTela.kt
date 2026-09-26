@@ -70,7 +70,15 @@ fun CatalogoTela(
     val lista = rememberLazyListState()
     val hoje = remember { LocalDate.now() }
 
-    LaunchedEffect(Unit) { foco.requestFocus() }
+    // Teclado só na chegada: voltando da tela Plantar, a pessoa quer ver a lista.
+    // O rememberSaveable sobrevive enquanto a busca está na pilha, por baixo.
+    var jaFocou by rememberSaveable { mutableStateOf(false) }
+    LaunchedEffect(Unit) {
+        if (!jaFocou) {
+            foco.requestFocus()
+            jaFocou = true
+        }
+    }
     // Resultado novo começa do topo, senão o melhor resultado fica escondido.
     LaunchedEffect(consulta) { lista.scrollToItem(0) }
     // Rolar a lista é sinal de que a pessoa quer ver, não digitar.
