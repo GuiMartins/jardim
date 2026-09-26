@@ -75,7 +75,7 @@ fun PlantaTela(
             TopAppBar(
                 title = {
                     Column {
-                        Text(estado?.apelido.orEmpty())
+                        Text(estado?.apelido.orEmpty(), maxLines = 1, overflow = TextOverflow.Ellipsis)
                         Text(
                             estado?.nomeCientifico.orEmpty(),
                             style = MaterialTheme.typography.bodySmall,

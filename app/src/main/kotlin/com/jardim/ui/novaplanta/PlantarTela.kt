@@ -43,6 +43,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -102,7 +103,8 @@ private fun PlantarConteudo(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(planta.nomeComum) },
+                // A barra tem altura fixa: um nome em duas linhas sairia cortado ao meio.
+                title = { Text(planta.nomeComum, maxLines = 1, overflow = TextOverflow.Ellipsis) },
                 navigationIcon = {
                     IconButton(onClick = aoVoltar) { Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Voltar") }
                 },
@@ -188,6 +190,9 @@ private fun PlantarConteudo(
 private fun Requisitos(r: RequisitosIniciais) {
     val luz = if (r.horasSolDiariasRecomendadas == 0.0) {
         "${luminosidade(r.luminosidade)}, sem sol direto."
+    } else if (r.horasSolMinimas == 0.0) {
+        // Meia-sombra que aguenta ficar sem sol: "de 0 a 2 horas" soa estranho.
+        "${luminosidade(r.luminosidade)}: até ${numero(r.horasSolDiariasRecomendadas)} horas de sol direto por dia."
     } else {
         "${luminosidade(r.luminosidade)}: de ${numero(r.horasSolMinimas)} a ${numero(r.horasSolDiariasRecomendadas)} horas de sol direto por dia."
     }

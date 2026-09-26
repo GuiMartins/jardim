@@ -161,7 +161,9 @@ private fun ItemDoCatalogo(resultado: ResultadoBusca, hoje: LocalDate, onClick: 
                     realcar(item.nomeCientifico, resultado.destaquesCientifico, destaque),
                     style = MaterialTheme.typography.bodySmall,
                     fontStyle = FontStyle.Italic,
-                    maxLines = 1,
+                    // Há nomes de 100 letras, com sinônimos e cultivares: numa linha só,
+                    // o trecho que casou na busca podia ficar escondido no "…".
+                    maxLines = 2,
                     overflow = TextOverflow.Ellipsis,
                 )
                 val detalhes = listOfNotNull(item.categoria?.let(::categoria), resumo(item.dificuldade, item.duracaoCicloDias))

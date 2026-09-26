@@ -225,7 +225,8 @@ private fun CartaoPlantioView(
         ) {
             Column(Modifier.weight(1f)) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Text(cartao.apelido, style = MaterialTheme.typography.titleLarge)
+                    // Sem o weight, um nome longo ocupa a linha toda e a seta some.
+                    Text(cartao.apelido, style = MaterialTheme.typography.titleLarge, modifier = Modifier.weight(1f, fill = false))
                     Icon(
                         Icons.AutoMirrored.Filled.KeyboardArrowRight,
                         contentDescription = "Ver linha do tempo",
