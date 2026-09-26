@@ -159,7 +159,8 @@ private fun ItemDoCatalogo(resultado: ResultadoBusca, hoje: LocalDate, onClick: 
                 resultado.outroNome?.let { outro ->
                     Text(
                         buildAnnotatedString {
-                            append("também chamada de ")
+                            // Neutro: "também chamada" ficava errado em Dendróbio, Filodendro...
+                            append("outro nome: ")
                             append(realcar(outro, resultado.destaquesOutroNome, destaque))
                         },
                         style = MaterialTheme.typography.bodyMedium,
