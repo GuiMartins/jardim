@@ -1,0 +1,104 @@
+{
+  "skill_name": "planta-cultivo-json",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/planta-cultivo-json Tomate Cherry",
+      "expected_output": "JSON de planta ANUAL começando por semente ou muda, com tutoragem, colheita recorrente na janela de frutificação e todas as tarefas dentro de duracao_ciclo_dias.",
+      "files": [],
+      "expectations": [
+        "Resposta é só o JSON, sem texto antes ou depois",
+        "O JSON é válido (faz parse)",
+        "Segue o esquema da skill: campos, tipos, enums e regras de dias",
+        "Fases encadeadas desde o dia 1, sem lacunas nem sobreposição",
+        "Tarefas e alertas não passam do fim do ciclo",
+        "Sem valores de exemplo esquecidos (números > 0, nenhum enum com '|')",
+        "Todos os tipos de tarefa pertencem à lista corrigida (sem TUTRAGEM)",
+        "Há tarefa de REGA marcada como crítica",
+        "Nenhuma tarefa de só conferir, sem ação (exceto PRAGA_CHECK)",
+        "Inclui tutoragem (tarefa ou alerta)",
+        "Colheita recorrente (a cada ≤ 7 dias, janela ≥ 14 dias)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "/planta-cultivo-json Orquídea Phalaenopsis",
+      "expected_output": "JSON de planta PERENE comprada adulta (sem fase de semeadura), duracao_ciclo_dias null, última fase com dia_fim null, rega contínua com dia_fim_ciclo null e replantio periódico.",
+      "files": [],
+      "expectations": [
+        "Resposta é só o JSON, sem texto antes ou depois",
+        "O JSON é válido (faz parse)",
+        "Segue o esquema da skill: campos, tipos, enums e regras de dias",
+        "Fases encadeadas desde o dia 1, sem lacunas nem sobreposição",
+        "Tarefas e alertas não passam do fim do ciclo",
+        "Sem valores de exemplo esquecidos (números > 0, nenhum enum com '|')",
+        "Todos os tipos de tarefa pertencem à lista corrigida (sem TUTRAGEM)",
+        "Há tarefa de REGA marcada como crítica",
+        "Nenhuma tarefa de só conferir, sem ação (exceto PRAGA_CHECK)",
+        "Floração tratada como evento sazonal por mês (não por dia)",
+        "Não começa por semeadura (planta adulta ou muda)",
+        "Perene sem data de fim inventada (duração null, última fase e rega sem fim)",
+        "Inclui replantio periódico"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "/planta-cultivo-json Manjericão",
+      "expected_output": "JSON do manjericão em vaso, com rega crítica frequente, colheita de folhas recorrente e poda/remoção das inflorescências para prolongar a produção.",
+      "files": [],
+      "expectations": [
+        "Resposta é só o JSON, sem texto antes ou depois",
+        "O JSON é válido (faz parse)",
+        "Segue o esquema da skill: campos, tipos, enums e regras de dias",
+        "Fases encadeadas desde o dia 1, sem lacunas nem sobreposição",
+        "Tarefas e alertas não passam do fim do ciclo",
+        "Sem valores de exemplo esquecidos (números > 0, nenhum enum com '|')",
+        "Todos os tipos de tarefa pertencem à lista corrigida (sem TUTRAGEM)",
+        "Há tarefa de REGA marcada como crítica",
+        "Nenhuma tarefa de só conferir, sem ação (exceto PRAGA_CHECK)",
+        "Aviso de frio como evento sazonal por mês",
+        "Orienta a remover as flores para prolongar a produção",
+        "Colheita de folhas recorrente (a cada ≤ 14 dias)"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "/planta-cultivo-json Tomate cherry, manjericão e alecrim",
+      "expected_output": "Três blocos ```json, na ordem tomate cherry, manjericão, alecrim, cada um completo e válido, sem texto antes, entre ou depois deles.",
+      "files": [],
+      "expectations": [
+        "Um bloco ```json por planta pedida",
+        "Blocos na ordem do pedido",
+        "Todo bloco é JSON válido e passa no validar.py",
+        "Nenhum texto antes ou entre os blocos",
+        "Nenhum texto depois do último bloco"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "/planta-cultivo-json Hortelã\nAlecrim\nCadeira de praia",
+      "expected_output": "Dois blocos ```json (hortelã e alecrim, nessa ordem) e, depois do último, uma única frase dizendo que cadeira de praia não foi reconhecida como planta.",
+      "files": [],
+      "expectations": [
+        "Um bloco ```json por planta pedida",
+        "Blocos na ordem do pedido",
+        "Todo bloco é JSON válido e passa no validar.py",
+        "Nenhum texto antes ou entre os blocos",
+        "Itens que não são planta citados numa frase depois do último bloco"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "/planta-cultivo-json Manjericão, varanda com sol da manhã",
+      "expected_output": "Um único bloco ```json do manjericão; 'varanda com sol da manhã' é contexto, não uma segunda planta.",
+      "files": [],
+      "expectations": [
+        "Um bloco ```json por planta pedida",
+        "Blocos na ordem do pedido",
+        "Todo bloco é JSON válido e passa no validar.py",
+        "Nenhum texto antes ou entre os blocos",
+        "Nenhum texto depois do último bloco"
+      ]
+    }
+  ]
+}

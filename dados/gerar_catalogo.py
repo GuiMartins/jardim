@@ -35,7 +35,7 @@ PASTA = Path(__file__).parent
 FILA = PASTA / "plantas-populares.json"
 CATALOGO = PASTA.parent / "app/src/main/assets/catalogo"
 GERACAO = PASTA / "cache" / "geracao"
-SKILL = Path.home() / ".claude/skills/planta-cultivo-json"
+SKILL = PASTA.parent / ".claude/skills/planta-cultivo-json"
 TENTATIVAS = 2
 TEMPO_LIMITE = 15 * 60
 # Erro passageiro da API: espera 1, 2 e 4 minutos antes de desistir da planta.

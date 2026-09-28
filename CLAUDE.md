@@ -10,7 +10,7 @@ App Android **pessoal** (APK instalado direto, sem Play Store) de acompanhamento
 
 ## JSON da planta
 
-O formato é o da skill `planta-cultivo-json` (`~/.claude/skills/planta-cultivo-json/SKILL.md`). `ValidadorCultivo` é o port do `scripts/validar.py` da skill, com as mesmas mensagens: mudou uma regra lá, muda aqui também. O teste `todo JSON do catálogo do app é válido` valida todo o catálogo a cada `:motor:test`.
+O formato é o da skill `planta-cultivo-json`, versionada em `.claude/skills/planta-cultivo-json/` (2026-09-27). É skill de projeto: o Claude Code só a enxerga aberto dentro do repositório, inclusive numa subpasta (o `gerar_catalogo.py` roda o `claude -p` em `dados/cache/geracao/<planta>/`). Não crie uma cópia em `~/.claude/skills/`: a pessoal tem prioridade sobre a de projeto, e as mudanças feitas aqui deixariam de valer sem aviso. `ValidadorCultivo` é o port do `scripts/validar.py` da skill, com as mesmas mensagens: mudou uma regra lá, muda aqui também. O teste `todo JSON do catálogo do app é válido` valida todo o catálogo a cada `:motor:test`.
 
 O **girassol** (`catalogo/girassol.json`) é o JSON de referência do projeto, fornecido pelo usuário: os testes de cenário real, os exemplos e as decisões de tela e notificação partem dele.
 

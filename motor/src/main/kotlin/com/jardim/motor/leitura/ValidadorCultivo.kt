@@ -7,7 +7,7 @@ import com.jardim.motor.modelo.TipoTarefa
 
 /**
  * Regras da linha do tempo da skill planta-cultivo-json (seção 4), portadas do
- * scripts/validar.py dela. Campos, tipos e enums o kotlinx.serialization já
+ * .claude/skills/planta-cultivo-json/scripts/validar.py. Campos, tipos e enums o kotlinx.serialization já
  * garante na leitura; aqui fica a coerência entre campos. Mudou uma regra no
  * validar.py, muda aqui também (as mensagens são as mesmas de propósito).
  */

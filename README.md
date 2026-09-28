@@ -120,8 +120,10 @@ Para testar volume sem pôr nada no repositório:
 ## Estrutura
 
 ```
-motor/   Kotlin puro: leitura e validação do JSON, cálculo da agenda
-app/     Android (Jetpack Compose); catálogo em app/src/main/assets/catalogo/
+motor/    Kotlin puro: leitura e validação do JSON, cálculo da agenda
+app/      Android (Jetpack Compose); catálogo em app/src/main/assets/catalogo/
+dados/    levantamento das plantas populares e geração do catálogo em lote
+.claude/  skill planta-cultivo-json, que escreve o JSON de cada espécie
 ```
 
 O `motor` não depende do Android, então toda a lógica de "o que fazer hoje"
@@ -129,10 +131,16 @@ roda em testes na JVM, em segundos, sem emulador.
 
 ## Adicionar uma planta
 
-1. No Claude Code: `/planta-cultivo-json Manjericão`
+1. No Claude Code, aberto neste repositório: `/planta-cultivo-json Manjericão`
+   (a skill mora em [`.claude/skills/planta-cultivo-json/`](.claude/skills/planta-cultivo-json/SKILL.md))
 2. Salve a resposta em `app/src/main/assets/catalogo/manjericao.json`
 3. Rode `./gradlew :motor:test`: o teste do catálogo recusa qualquer JSON fora
    do formato. O índice da busca se refaz sozinho no próximo build.
+
+Em lote, `python dados/gerar_catalogo.py` roda a skill para cada planta da
+lista de populares que ainda não está no catálogo, uma sessão do Claude Code
+por planta, e só grava o JSON que passa no `validar.py` da skill. Opções:
+`python dados/gerar_catalogo.py --help`.
 
 Para escolher a próxima, [`dados/plantas-populares.json`](dados/plantas-populares.json)
 lista as 1000 plantas cultivadas mais populares do Brasil, com nome, categoria e

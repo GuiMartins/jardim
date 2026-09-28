@@ -5,6 +5,8 @@ local.properties
 .idea/
 *.iml
 captures/
+# permissões locais do Claude Code; a skill em .claude/skills/ vai para o git
+.claude/settings.local.json
 
 # levantamento de plantas populares: respostas das APIs
 dados/cache/
