@@ -5,3 +5,7 @@ local.properties
 .idea/
 *.iml
 captures/
+
+# levantamento de plantas populares: respostas das APIs
+dados/cache/
+__pycache__/
