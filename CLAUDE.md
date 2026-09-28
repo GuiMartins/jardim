@@ -19,9 +19,11 @@ O formato é o da skill `planta-cultivo-json`, versionada em `.claude/skills/pla
 O `validar.py` confere a forma; a skill `revisar-planta` (`.claude/skills/revisar-planta/`) confere o conteúdo contra fontes na web e devolve achados em JSON (`campo`, `atual`, `proposto`, `gravidade`, `fontes`). Sem fonte aberta, não há achado. `dados/revisar_catalogo.py` roda a skill em lote, com Sonnet (outro modelo que não o da geração, para não herdar os mesmos enganos), numa cópia do JSON em `dados/cache/revisao/<planta>/`:
 
 - `--calibrar` revisa cópias com os erros de `evals/erros_plantados.json` (todos passam no `validar.py`, senão o validador entregaria a resposta) e mede quantos a skill acha. Primeira rodada: 9 de 10. As cópias ficam em `revisao-b/`, e não "calibracao", porque o claude vê o nome da pasta.
-- `--amostra N` sorteia por categoria (uma por categoria, o resto proporcional) e o relatório pondera cada categoria pelo tamanho dela no catálogo. Os achados vão para `dados/cache/revisao/relatorio.md` em checklist: o usuário aprova um por um, nada muda o catálogo sozinho.
-- Custa ~US$ 0,60 por planta (as páginas abertas pesam): o dobro da geração. O catálogo inteiro sairia uns US$ 400; por isso primeiro se mede numa amostra.
+- `--amostra N` sorteia por categoria (uma por categoria, o resto proporcional) e o relatório (`dados/cache/revisao/relatorio.md`) pondera cada categoria pelo tamanho dela no catálogo. Amostra de 30 (2026-09-28): 2 com achado ALTA (~8% do catálogo, IC 3% a 23%), 19 com ALTA ou MEDIA, quase tudo `temperatura_minima_c` alta demais (a temperatura em que a planta para de crescer, não a de dano). A skill agora explica a mínima e ignora diferença de até 2 °C.
+- `--todas --esperar` revisa o catálogo inteiro, da planta mais popular à menos, e no limite do plano espera 30 min e continua (decisão do usuário em 2026-09-28, ~US$ 0,60 por planta).
+- Nada muda o catálogo sozinho: `--lista` escreve `dados/cache/revisao/achados.md` com os achados sem decisão, o usuário marca `[x]` (aplicar) ou `[-]` (recusar), e `--aplicar` grava, passa no `validar.py` e registra a decisão em `achados.json`. Girassol e rabanete, formatados à mão, só têm o valor trocado no texto.
 - O Sonnet exagera a gravidade (marca ALTA o que a régua diz MEDIA): decida pela taxa de "ALTA ou MEDIA".
+- Nome popular trocado (`Língua-de-leão` como `Hibiscus × archeri`) vem da `curadoria.csv`, não do gerador: a correção é lá, e a espécie precisa ser gerada de novo.
 
 O **girassol** (`catalogo/girassol.json`) é o JSON de referência do projeto, fornecido pelo usuário: os testes de cenário real, os exemplos e as decisões de tela e notificação partem dele.
 

@@ -10,6 +10,7 @@ se o JSON mudar (ou com --refazer).
     python dados/revisar_catalogo.py --calibrar           # erros plantados: quantos a skill acha?
     python dados/revisar_catalogo.py --amostra 30         # amostra estratificada por categoria
     python dados/revisar_catalogo.py girassol.json alecrim.json
+    python dados/revisar_catalogo.py --todas --esperar     # tudo, retomando a cada limite do plano
     python dados/revisar_catalogo.py --relatorio          # taxa de erro da amostra e lista de achados
 
 A calibração copia os JSONs de .claude/skills/revisar-planta/evals/erros_plantados.json
@@ -26,6 +27,7 @@ import argparse
 import hashlib
 import json
 import math
+import os
 import random
 import re
 import subprocess
@@ -44,6 +46,7 @@ REVISAO = PASTA / "cache" / "revisao"
 CALIBRACAO = PASTA / "cache" / "revisao-b"
 AMOSTRA = REVISAO / "amostra.json"
 RELATORIO = REVISAO / "relatorio.md"
+LISTA = REVISAO / "achados.md"
 ERROS = PASTA.parent / ".claude/skills/revisar-planta/evals/erros_plantados.json"
 # Outro modelo que não o da geração (opus): quem revisa não herda os mesmos enganos.
 # A calibração diz se ele dá conta; se não der, --modelo opus.
@@ -55,6 +58,8 @@ ESPERAS = (60, 120, 240)
 GRAVIDADES = ("ALTA", "MEDIA", "BAIXA")
 
 PASSO = re.compile(r"\.?([^.\[\]]+)|\[([^\]]+)\]")
+# "- [x] ... <!-- roseira.json#3 -->": a marca que o usuário põe e o achado a que ela se refere.
+MARCA = re.compile(r"^- \[([ xX-])\] .*<!-- (\S+\.json)#(\d+) -->\s*$")
 
 
 def resolver(dados, caminho):
@@ -100,6 +105,16 @@ def categorias():
     fila = json.loads(FILA.read_text(encoding="utf-8-sig"))["plantas"]
     da_fila = {p["arquivo_catalogo"]: p.get("categoria") for p in fila if p.get("arquivo_catalogo")}
     return {c.name: da_fila.get(c.name) or "SEM_CATEGORIA" for c in sorted(CATALOGO.glob("*.json"))}
+
+
+def por_popularidade():
+    """Os arquivos do catálogo, da planta mais popular à menos: se a rodada parar, o que importa já foi."""
+    fila = json.loads(FILA.read_text(encoding="utf-8-sig"))["plantas"]
+    posicao = {}
+    for p in fila:
+        if p.get("arquivo_catalogo"):
+            posicao[p["arquivo_catalogo"]] = min(p["posicao"], posicao.get(p["arquivo_catalogo"], math.inf))
+    return sorted(categorias(), key=lambda a: (posicao.get(a, math.inf), a))
 
 
 def alocar(tamanhos, n):
@@ -168,6 +183,14 @@ def plantar_erros():
     return lote
 
 
+def copia(dados):
+    return json.dumps(dados, ensure_ascii=False, indent=2) + "\n"
+
+
+def hash_de(dados):
+    return hashlib.sha1(copia(dados).encode("utf-8")).hexdigest()
+
+
 def conferir_resposta(bruto, dados):
     """Problemas de formato na resposta da skill (lista vazia se ela serve)."""
     if not isinstance(bruto, dict) or not isinstance(bruto.get("achados"), list):
@@ -233,17 +256,22 @@ def chamar(claude, arquivo, pasta, modelo, esforco):
 
 
 def revisar(claude, arquivo, dados, base, opcoes, parar):
-    """Devolve (arquivo, tentativas); tentativas é None se já estava revisada ou a rodada parou."""
+    """Devolve (arquivo, tentativas); tentativas é None se já estava revisada ou a rodada parou.
+
+    dados None: lê o catálogo agora, e não na partida. Uma rodada longa não pode
+    revisar a versão velha de uma planta que o --aplicar corrigiu no meio dela.
+    """
+    if dados is None:
+        dados = json.loads((CATALOGO / arquivo).read_text(encoding="utf-8-sig"))
     pasta = base / Path(arquivo).stem
     pasta.mkdir(parents=True, exist_ok=True)
-    copia = json.dumps(dados, ensure_ascii=False, indent=2) + "\n"
-    hash_ = hashlib.sha1(copia.encode("utf-8")).hexdigest()
+    hash_ = hash_de(dados)
     salvo = pasta / "achados.json"
     if not opcoes.refazer and salvo.exists() and json.loads(salvo.read_text(encoding="utf-8")).get("sha1") == hash_:
         return arquivo, None
     if parar.is_set():
         return arquivo, None
-    (pasta / arquivo).write_text(copia, encoding="utf-8")
+    (pasta / arquivo).write_text(copia(dados), encoding="utf-8")
     tentativas = []
     for _ in range(TENTATIVAS):
         for espera in (*ESPERAS, None):
@@ -352,6 +380,122 @@ def pontuar(lote):
         print(f"\nAchou {pegos} de {revisadas} erros plantados ({100 * pegos // revisadas}%).")
 
 
+def mudanca(atual, proposto):
+    """O que o achado muda: o valor inteiro, ou, num texto, só o trecho que muda, com um pouco de contexto."""
+    if not (isinstance(atual, str) and isinstance(proposto, str)):
+        return f"{json.dumps(atual, ensure_ascii=False)} → {json.dumps(proposto, ensure_ascii=False)}"
+    ini = len(os.path.commonprefix([atual, proposto]))
+    fim = len(os.path.commonprefix([atual[ini:][::-1], proposto[ini:][::-1]]))
+    tirado, posto = atual[ini:len(atual) - fim], proposto[ini:len(proposto) - fim]
+    antes = ("…" if ini > 40 else "") + atual[max(0, ini - 40):ini]
+    depois = atual[len(atual) - fim:][:40] + ("…" if fim > 40 else "")
+    return f"«{antes}{f'~~{tirado}~~' if tirado else ''}{f'**{posto}**' if posto else ''}{depois}»"
+
+
+def linha_achado(arquivo, i, achado):
+    fontes = " ".join(f"[{n + 1}]({f})" for n, f in enumerate(achado["fontes"]))
+    return (f"- [ ] **{achado['gravidade']}** `{achado['campo']}`: {mudanca(achado.get('atual'), achado['proposto'])}. "
+            f"{achado.get('motivo', '')} {fontes} <!-- {arquivo}#{i} -->")
+
+
+def lista():
+    """Todos os achados ainda sem decisão, por gravidade e, dentro dela, da planta mais popular à menos."""
+    nomes, desatualizadas = {}, []
+    por_gravidade = {g: [] for g in GRAVIDADES}
+    for arquivo in por_popularidade():
+        salvo = ler_achados(REVISAO, arquivo)
+        if not salvo:
+            continue
+        dados = json.loads((CATALOGO / arquivo).read_text(encoding="utf-8-sig"))
+        if hash_de(dados) != salvo["sha1"]:
+            desatualizadas.append(arquivo)
+            continue
+        nomes[arquivo] = dados["planta"]["nome_comum"]
+        decididos = salvo.get("decisoes", {})
+        for i, a in enumerate(salvo["achados"]):
+            if str(i) not in decididos:
+                por_gravidade[a["gravidade"]].append((arquivo, i, a))
+    linhas = ["# Achados da revisão do catálogo", "",
+              "Marque `[x]` para aplicar ou `[-]` para recusar e rode `python dados/revisar_catalogo.py --aplicar`. "
+              "O que ficar `[ ]` volta na próxima lista. Um limite de temperatura e o texto que repete o número "
+              "costumam vir em achados separados: aprove os dois juntos.", ""]
+    for gravidade, itens in por_gravidade.items():
+        linhas += [f"## {gravidade} ({len(itens)})", ""]
+        anterior = None
+        for arquivo, i, a in itens:
+            if arquivo != anterior:
+                linhas.append(f"### {nomes[arquivo]} (`{arquivo}`)")
+                anterior = arquivo
+            linhas.append(linha_achado(arquivo, i, a))
+        linhas.append("")
+    if desatualizadas:
+        linhas += ["## JSON mudou depois da revisão (rode de novo para revisar)", "",
+                   ", ".join(f"`{a}`" for a in desatualizadas), ""]
+    LISTA.write_text("\n".join(linhas), encoding="utf-8")
+    print(", ".join(f"{len(v)} {g}" for g, v in por_gravidade.items()) + f" sem decisão → {LISTA}")
+
+
+def aplicar(caminho):
+    """Aplica os achados marcados [x] e registra os [-] como recusados, em achados.json.
+
+    Os JSONs gerados são reescritos com json.dumps, que é o formato em que o
+    gerar_catalogo.py os gravou. Os feitos à mão (girassol, rabanete) só têm o
+    valor trocado no texto, para o diff não virar o arquivo inteiro.
+    """
+    marcas = defaultdict(dict)
+    for linha in Path(caminho).read_text(encoding="utf-8").splitlines():
+        casamento = MARCA.match(linha)
+        if casamento and casamento.group(1) != " ":
+            marcas[casamento.group(2)][casamento.group(3)] = "aplicado" if casamento.group(1) in "xX" else "recusado"
+    aplicados, recusados, falhas = 0, 0, []
+    for arquivo, decisoes in marcas.items():
+        salvo = ler_achados(REVISAO, arquivo)
+        destino = CATALOGO / arquivo
+        texto = destino.read_text(encoding="utf-8-sig")
+        dados = json.loads(texto)
+        if salvo is None or hash_de(dados) != salvo["sha1"]:
+            falhas.append(f"{arquivo}: o JSON mudou depois da revisão; revise de novo")
+            continue
+        a_mao = copia(dados) != texto
+        feitas = {}
+        for i, decisao in decisoes.items():
+            if decisao == "recusado":
+                feitas[i] = decisao
+                continue
+            achado = salvo["achados"][int(i)]
+            recipiente, chave = resolver(dados, achado["campo"])[:2]
+            if recipiente[chave] != achado.get("atual"):
+                falhas.append(f"{arquivo} {achado['campo']}: o valor citado no achado não é o do JSON; corrija à mão")
+                continue
+            if a_mao:
+                rotulo = f'"{chave}": ' if isinstance(chave, str) else ""
+                velho = rotulo + json.dumps(recipiente[chave], ensure_ascii=False)
+                if texto.count(velho) != 1:
+                    falhas.append(f"{arquivo} {achado['campo']}: arquivo feito à mão e valor ambíguo; corrija à mão")
+                    continue
+                texto = texto.replace(velho, rotulo + json.dumps(achado["proposto"], ensure_ascii=False))
+            recipiente[chave] = achado["proposto"]
+            feitas[i] = decisao
+        problemas = validar.validar(dados)
+        if problemas:
+            falhas.append(f"{arquivo}: as correções quebram o validar.py ({'; '.join(problemas[:2])}); nada gravado")
+            continue
+        destino.write_text(texto if a_mao else copia(dados), encoding="utf-8")
+        # O hash novo marca a planta como revisada: a rodada não a revisa de novo por causa das próprias correções.
+        salvo["sha1"] = hash_de(dados)
+        salvo.setdefault("decisoes", {}).update(feitas)
+        (REVISAO / Path(arquivo).stem / "achados.json").write_text(
+            json.dumps(salvo, ensure_ascii=False, indent=2), encoding="utf-8")
+        aplicados += sum(d == "aplicado" for d in feitas.values())
+        recusados += sum(d == "recusado" for d in feitas.values())
+    print(f"{aplicados} aplicado(s) e {recusados} recusado(s) em {len(marcas)} planta(s).")
+    for falha in falhas:
+        print(f"✗ {falha}")
+    if aplicados:
+        print("Rode ./gradlew :motor:test, que valida o catálogo inteiro.")
+    return 1 if falhas else 0
+
+
 def wilson(p, n, z=1.96):
     """Intervalo de 95% para uma proporção; com amostra pequena e p perto de 0, o normal daria negativo."""
     if n == 0:
@@ -409,10 +553,8 @@ def relatorio():
     for arquivo, salvo in sorted(revisadas.items(), key=lambda par: (escolhidos[par[0]], par[0])):
         linhas.append(f"### {nomes.get(arquivo, arquivo)} (`{arquivo}`, {escolhidos[arquivo]})")
         linhas.append("")
-        for a in sorted(salvo["achados"], key=lambda a: ordem[a["gravidade"]]):
-            fontes = " ".join(f"[{i + 1}]({f})" for i, f in enumerate(a["fontes"]))
-            linhas.append(f"- [ ] **{a['gravidade']}** `{a['campo']}`: {json.dumps(a.get('atual'), ensure_ascii=False)} → "
-                          f"{json.dumps(a['proposto'], ensure_ascii=False)}. {a.get('motivo', '')} {fontes}")
+        for i, a in sorted(enumerate(salvo["achados"]), key=lambda par: ordem[par[1]["gravidade"]]):
+            linhas.append(linha_achado(arquivo, i, a))
         conferidos = ", ".join(f"`{c.get('campo')}`" for c in salvo.get("conferidos", []))
         linhas += [f"- Conferido e certo: {conferidos or 'nada informado'}", ""]
     RELATORIO.write_text("\n".join(linhas), encoding="utf-8")
@@ -426,8 +568,14 @@ def main():
     args.add_argument("arquivos", nargs="*", help="JSONs do catálogo a revisar (ex.: girassol.json)")
     args.add_argument("--amostra", type=int, help="sorteia N plantas, estratificadas por categoria")
     args.add_argument("--semente", type=int, default=1, help="semente do sorteio (padrão: 1)")
+    args.add_argument("--todas", action="store_true", help="o catálogo inteiro, das mais populares às menos")
+    args.add_argument("--esperar", action="store_true",
+                      help="no limite do plano, espera 30 min e continua, em vez de parar")
     args.add_argument("--calibrar", action="store_true", help="revisa cópias com erros plantados e pontua")
     args.add_argument("--relatorio", action="store_true", help="só refaz o relatório da amostra")
+    args.add_argument("--lista", action="store_true", help="escreve achados.md com tudo o que falta decidir")
+    args.add_argument("--aplicar", nargs="?", const=str(LISTA), metavar="ARQUIVO.md",
+                      help=f"aplica os achados marcados [x] (padrão: {LISTA.name})")
     args.add_argument("--seco", action="store_true", help="sorteia ou planta os erros, sem chamar o claude")
     args.add_argument("--refazer", action="store_true", help="revisa de novo mesmo quem já tem achados")
     args.add_argument("--modelo", default=MODELO, help=f"modelo do claude (padrão: {MODELO})")
@@ -435,21 +583,32 @@ def main():
     args.add_argument("--paralelo", type=int, default=3, help="sessões do claude ao mesmo tempo")
     opcoes = args.parse_args()
 
+    if opcoes.aplicar:
+        return aplicar(opcoes.aplicar)
+    if opcoes.lista:
+        lista()
+        return 0
     if opcoes.calibrar:
         plantados = plantar_erros()
         print(f"{len(plantados)} erro(s) plantado(s); o validar.py passa em todos.")
         motivo = None if opcoes.seco else rodar([(a, d) for a, d, _ in plantados], CALIBRACAO, opcoes)
         pontuar(plantados)
-    elif opcoes.amostra or opcoes.arquivos:
+    elif opcoes.amostra or opcoes.arquivos or opcoes.todas:
         if opcoes.amostra:
             escolhidos = sortear(opcoes.amostra, opcoes.semente)
             print(f"Amostra de {len(escolhidos)}: " + ", ".join(f"{a} ({c})" for a, c in escolhidos.items()))
+        elif opcoes.todas:
+            escolhidos = por_popularidade()
         else:
             escolhidos = opcoes.arquivos
         motivo = None
         if not opcoes.seco:
-            lote = [(a, json.loads((CATALOGO / a).read_text(encoding="utf-8-sig"))) for a in escolhidos]
+            lote = [(a, None) for a in escolhidos]
             motivo = rodar(lote, REVISAO, opcoes)
+            while motivo and opcoes.esperar and motivo.startswith("Limite de uso"):
+                print(f"{time.strftime('%H:%M')} limite do plano; nova tentativa em 30 min", flush=True)
+                time.sleep(30 * 60)
+                motivo = rodar(lote, REVISAO, opcoes)
             if opcoes.amostra:
                 relatorio()
     elif opcoes.relatorio:

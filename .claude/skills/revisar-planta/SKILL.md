@@ -29,7 +29,7 @@ Na ordem do estrago que um erro faz. Confira sempre os itens 1 a 4.
 
 1. **Identidade.** O `nome_cientifico` é a planta que se chama `nome_comum` no Brasil? Se a planta estiver trocada, o resto do JSON descreve outra espécie: registre esse achado e pare por aí.
 2. **Números que viram lembrete no celular.** Um erro aqui faz a pessoa agir errado, e na hora errada.
-   - `temperatura_minima_c` (o app manda abrigar a planta quando a previsão fica abaixo disso) e `temperatura_maxima_c`.
+   - `temperatura_minima_c` (o app manda abrigar a planta quando a previsão fica abaixo disso) e `temperatura_maxima_c`. A mínima é a temperatura em que a parte mais sensível da planta (broto novo, folha nova, flor) **sofre dano**, e não a temperatura em que ela para de crescer. O catálogo costuma errar para cima, usando a temperatura em que a planta para de crescer, e aí o app manda abrigar a planta em noites que não fazem mal. No Centro-Sul, a geada é coisa de uma noite: o torrão do vaso não congela inteiro, como no inverno dos Estados Unidos e da Europa. Por isso, não some margem de "planta em vaso" ao dano que as fontes dão para planta no chão. Uma diferença de até 2 °C, para cima ou para baixo, não é achado.
    - `meses_plantio` e os `meses` de `eventos_sazonais` (floração, poda, dormência).
    - A rega de regime, que é a tarefa `REGA` com a janela mais longa: `frequencia_dias` para aquele volume de vaso, e `critica`. Fontes quase nunca dão a rega em dias. Julgue pela tolerância da planta à seca e ao encharcamento, que as fontes descrevem.
    - Os dias que marcam o ciclo: germinação, primeira colheita, `duracao_ciclo_dias` de planta anual.
