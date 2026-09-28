@@ -163,7 +163,7 @@ O app usa os dias para decidir em que fase a planta está hoje e quais lembretes
 Monte o JSON, salve-o num arquivo temporário (na pasta de rascunho da sessão, se houver uma) e rode o validador que acompanha esta skill:
 
 ```bash
-python "<diretório base desta skill>/scripts/validar.py" caminho/do/arquivo.json
+python "${CLAUDE_SKILL_DIR}/scripts/validar.py" caminho/do/arquivo.json
 ```
 
 Ele confere campos, tipos, enums e as regras da seção 4, ou seja, exatamente o que quebraria o app. Corrija o que ele apontar e rode de novo até sair `OK`. Se não houver Python disponível, revise a seção 4 item por item antes de responder.
