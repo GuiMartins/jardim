@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou fibra com pelo menos 40 cm de profundidade e 40 cm de diâmetro, de base larga para não tombar com o vento, e vários furos no fundo",

@@ -11,7 +11,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande ou saco de cultivo com pelo menos 45 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo; as raízes tuberosas crescem para os lados e para baixo",

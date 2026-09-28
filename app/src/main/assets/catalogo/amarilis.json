@@ -14,7 +14,9 @@
       6,
       7,
       8
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou plástico pesado com 15 a 18 cm de diâmetro, só 3 a 5 cm mais largo que o bulbo, e pelo menos 18 cm de profundidade, com furos no fundo. Vaso grande demais retém água e faz o bulbo apodrecer e florescer menos",

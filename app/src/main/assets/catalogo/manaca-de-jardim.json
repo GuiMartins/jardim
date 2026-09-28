@@ -15,7 +15,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou fibra com pelo menos 40 cm de diâmetro e 40 cm de profundidade e vários furos no fundo; comece num vaso só 5 a 10 cm maior que o torrão da muda",

@@ -14,7 +14,9 @@
       7,
       8,
       9
-    ]
+    ],
+    "temperatura_minima_c": -15,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro, cimento ou plástico grosso com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo e elevado do piso por pezinhos para a água escorrer livre",

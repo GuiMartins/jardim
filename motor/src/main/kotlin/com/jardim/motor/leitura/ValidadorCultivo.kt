@@ -19,6 +19,7 @@ object ValidadorCultivo {
         checarTextos(c)
         checarMeses(c.planta.mesesPlantio, "planta.meses_plantio")
         c.eventosSazonais.forEachIndexed { i, e -> checarMeses(e.meses, "eventos_sazonais[$i].meses") }
+        checarTemperaturas(c)
         checarRequisitos(c.requisitosIniciais)
         if (c.fasesCicloVida.isEmpty()) add("fases_ciclo_vida: a lista não pode ser vazia")
         if (c.tarefasAgendadas.isEmpty()) add("tarefas_agendadas: a lista não pode ser vazia")
@@ -55,6 +56,14 @@ object ValidadorCultivo {
         if (meses.isEmpty() || meses.toSet().size != meses.size || meses.any { it !in 1..12 }) {
             add("$caminho: $meses deveria ser lista não vazia de meses de 1 a 12, sem repetição")
         }
+    }
+
+    private fun MutableList<String>.checarTemperaturas(c: PlantaCultivo) {
+        val minima = c.planta.temperaturaMinimaC
+        val maxima = c.planta.temperaturaMaximaC
+        if (minima !in -20..50) add("planta.temperatura_minima_c: precisa estar entre -20 e 50")
+        if (maxima !in -20..50) add("planta.temperatura_maxima_c: precisa estar entre -20 e 50")
+        if (minima >= maxima) add("planta.temperatura_minima_c ($minima) precisa ser menor que a máxima ($maxima)")
     }
 
     private fun MutableList<String>.checarRequisitos(r: RequisitosIniciais) {

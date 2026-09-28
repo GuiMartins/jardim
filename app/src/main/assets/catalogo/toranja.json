@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de 50 a 60 cm de diâmetro e pelo menos 45 cm de profundidade, com vários furos no fundo e apoiado em pés ou rodízios para a água escorrer; comece com um de 40 cm e passe para o definitivo no primeiro transplante",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de altura e 45 cm de diâmetro e vários furos no fundo; a raiz é pivotante e o vaso raso deixa a palmeira instável",

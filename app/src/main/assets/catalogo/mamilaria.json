@@ -17,7 +17,9 @@
       2,
       3,
       4
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 35
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro raso, de 10 a 14 cm de diâmetro e 8 a 10 cm de altura, só 2 a 3 cm maior que a planta, com furo no fundo; o barro deixa o substrato secar mais rápido que o plástico",

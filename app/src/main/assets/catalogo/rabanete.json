@@ -7,7 +7,9 @@
     "dificuldade": "FACIL",
     "forma_inicio": "SEMENTE",
     "duracao_ciclo_dias": 35,
-    "meses_plantio": [3, 4, 5, 6, 7, 8, 9]
+    "meses_plantio": [3, 4, 5, 6, 7, 8, 9],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade e furos no fundo",

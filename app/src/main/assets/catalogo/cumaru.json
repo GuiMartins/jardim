@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 8,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Comece num saco de muda ou tubete alto (15 cm de largura por 25 cm de profundidade) e passe para um vaso definitivo fundo, com pelo menos 40 cm de diâmetro e 40 cm de profundidade e furos no fundo: a raiz pivotante desce reta e enrola em vaso raso",

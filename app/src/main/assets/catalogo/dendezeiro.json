@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande e fundo, com pelo menos 45 cm de diâmetro e 45 cm de profundidade e vários furos no fundo; prefira plástico grosso ou fibra, porque o vaso de barro seca rápido demais para essa palmeira",

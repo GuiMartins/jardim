@@ -13,7 +13,9 @@
       7,
       8,
       9
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso largo ou floreira com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; a framboeseira espalha a raiz para os lados e solta brotos novos ao redor da haste",

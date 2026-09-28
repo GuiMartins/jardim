@@ -18,7 +18,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou cachepô suspenso com 15 a 20 cm de diâmetro e 15 cm de profundidade, com furos no fundo. Evite vaso muito maior que o torrão: o substrato sobrando fica úmido demais e apodrece as raízes",

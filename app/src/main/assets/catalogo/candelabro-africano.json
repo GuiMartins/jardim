@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 35
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro pesado, com pelo menos 25 cm de diâmetro e 25 cm de profundidade e furos largos no fundo. O barro seca mais rápido e o peso segura a planta, que tem a copa pesada e tomba em vaso de plástico leve",

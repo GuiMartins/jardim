@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com furos grandes no fundo, 15 a 18 cm de diâmetro para a estaca; depois vaso ou cesta suspensa de 25 a 30 cm. Ela floresce melhor com a raiz um pouco apertada, então não exagere no tamanho",

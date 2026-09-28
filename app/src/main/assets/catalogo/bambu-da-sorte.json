@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com furos no fundo, pelo menos 12 cm de diâmetro e 12 cm de profundidade para um arranjo de 3 a 5 hastes; sem cachepô acumulando água",

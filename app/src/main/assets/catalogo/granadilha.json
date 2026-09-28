@@ -13,7 +13,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande ou meia-bombona com pelo menos 50 cm de diâmetro e 50 cm de profundidade, vários furos no fundo, apoiado junto a uma espaldeira, treliça ou pergolado de 1,8 a 2 m de altura",

@@ -15,7 +15,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou jardineira com pelo menos 15 cm de profundidade e 20 cm de diâmetro, com vários furos no fundo; o barro poroso ajuda o substrato a secar entre as regas",

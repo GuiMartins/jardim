@@ -16,7 +16,9 @@
       2,
       3,
       4
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada, que perde menos água que o barro cru, com 15 a 20 cm de diâmetro e de altura e furos no fundo. Use um prato largo com argila expandida e água abaixo do nível das pedras, para dar umidade sem encharcar a raiz",

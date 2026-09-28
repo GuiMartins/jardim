@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira larga e rasa, com pelo menos 20 cm de profundidade e 40 cm de comprimento, com furos no fundo. Ela se espalha mais para os lados do que para baixo, então vale mais a área que a altura.",

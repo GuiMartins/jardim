@@ -15,7 +15,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, de 15 a 20 cm de diâmetro e profundidade igual ou pouco maior, com furo largo no fundo; base pesada, porque a planta adulta fica pesada no topo e tomba vaso leve",

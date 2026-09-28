@@ -13,7 +13,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico grosso ou barro com pelo menos 50 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo; comece num de 30 L e passe para o definitivo depois do primeiro ano",

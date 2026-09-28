@@ -14,7 +14,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado (cerâmica, cimento ou fibra com lastro) com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; o peso evita que a copa alta tombe o vaso com o vento",

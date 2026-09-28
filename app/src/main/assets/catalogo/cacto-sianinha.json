@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 33
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pendente ou cachepô de plástico ou barro, de 15 a 20 cm de diâmetro e 12 a 15 cm de altura, com vários furos no fundo; sem prato acumulando água",

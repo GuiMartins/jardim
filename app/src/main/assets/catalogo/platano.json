@@ -13,7 +13,9 @@
       7,
       8,
       9
-    ]
+    ],
+    "temperatura_minima_c": -10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado de cerâmica, cimento ou plástico grosso com pelo menos 55 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo e apoiado em pés para a água escorrer; em terraço, prenda o vaso ou use base larga, porque a copa pega vento",

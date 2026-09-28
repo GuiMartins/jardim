@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira ou vaso largo e raso, com pelo menos 15 cm de profundidade e 25 cm de diâmetro, com furos no fundo; a planta se espalha rente ao substrato",

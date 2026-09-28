@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada SEM furos (ou com furos, dentro de um cachepô vedado), com pelo menos 30 cm de diâmetro e 25 cm de profundidade, para segurar água como um brejo",

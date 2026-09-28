@@ -12,7 +12,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 15,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 20 a 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo; um tubérculo grande ou três pequenos por vaso",

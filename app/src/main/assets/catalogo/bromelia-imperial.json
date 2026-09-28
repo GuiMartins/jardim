@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso largo e pesado (cerâmica ou cimento), com pelo menos 40 cm de diâmetro e 30 cm de altura e furos grandes no fundo; a roseta adulta pesa e tomba vasos de plástico leves",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 4,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande e fundo, com pelo menos 50 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo; a raiz pivotante precisa de altura mais do que de largura",

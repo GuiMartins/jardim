@@ -15,7 +15,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo; cerâmica ou plástico grosso. Também vai bem em cesto suspenso de 30 cm, se os ramos puderem pender",

@@ -16,7 +16,9 @@
       2,
       3,
       4
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 33
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro de 12 a 15 cm de diâmetro e profundidade, com furo no fundo. O barro é pesado e evita que a haste alta tombe o vaso.",

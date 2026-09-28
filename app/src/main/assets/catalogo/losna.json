@@ -15,7 +15,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso só para ela, com pelo menos 30 cm de diâmetro e 30 cm de profundidade e vários furos no fundo; barro ou cerâmica sem esmalte ajuda o substrato a secar entre as regas",

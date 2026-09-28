@@ -17,7 +17,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 20 cm de profundidade e furos no fundo; a salsa tem raiz pivotante e não gosta de ser transplantada, então semeie direto no recipiente definitivo",

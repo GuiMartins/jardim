@@ -14,7 +14,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 8,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso plástico ou de barro com pelo menos 30 cm de profundidade e 30 cm de diâmetro, com vários furos no fundo; uma muda por vaso",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro pesado, com pelo menos 25 cm de diâmetro e 25 cm de profundidade e furos grandes no fundo. O barro ajuda a secar o substrato e o peso impede que a coluna tombe com o vento",

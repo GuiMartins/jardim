@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo e pesado (cimento, fibra ou cerâmica), com pelo menos 50 cm de profundidade e 50 cm de diâmetro e furos grandes no fundo. A raiz principal desce reta, e um vaso raso deixa a planta travada",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande ou jardineira funda, com pelo menos 45 cm de diâmetro e 45 cm de profundidade, furos no fundo, junto a uma treliça, grade ou tela de pelo menos 2 m de altura",

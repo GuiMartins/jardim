@@ -13,7 +13,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Comece a estaca num vaso de 5 L com furos. A partir do segundo ano, passe para um vaso definitivo de pelo menos 50 cm de diâmetro e 45 cm de profundidade, pesado (cerâmica ou cimento) para não tombar com o vento, com vários furos no fundo",

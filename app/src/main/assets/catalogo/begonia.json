@@ -14,7 +14,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 15 a 18 cm de diâmetro e 15 cm de profundidade, com furos no fundo; em jardineira, uma muda a cada 15 cm",

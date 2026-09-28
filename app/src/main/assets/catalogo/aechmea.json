@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica pesada, de 12 a 15 cm de diâmetro e 12 cm de profundidade, com furos no fundo. A raiz é pequena e serve mais para fixar a planta, mas a roseta pesa e tomba vaso plástico leve",

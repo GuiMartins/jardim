@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 12,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 25 a 30 cm de diâmetro e 25 cm de profundidade, com furos no fundo; se usar cachepô, esvazie a água acumulada depois de cada rega",

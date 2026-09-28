@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou barro com pelo menos 22 cm de diâmetro e 20 cm de profundidade, com furos no fundo. Se ficar dentro de um cachepô, esvazie a água que juntar no fundo dele.",

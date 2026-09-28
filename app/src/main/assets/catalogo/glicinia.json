@@ -13,7 +13,9 @@
       7,
       8,
       9
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado de barro, cimento ou fibra com no mínimo 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo. Precisa de treliça, pérgola ou tutor robusto de pelo menos 1,8 m bem fixado, porque o tronco fica pesado e o vaso tomba com o vento.",

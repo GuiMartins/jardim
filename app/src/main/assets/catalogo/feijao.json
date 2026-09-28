@@ -15,7 +15,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de profundidade e 30 cm de diâmetro (cerca de 10 L para 2 plantas), com furos no fundo",

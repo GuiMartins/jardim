@@ -14,7 +14,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira funda, com pelo menos 30 cm de profundidade e furos no fundo; um vaso de 30 cm de diâmetro comporta 5 a 7 cormos a 8–10 cm um do outro. Prefira vaso pesado (barro ou cimento), porque as hastes floridas tombam vasos leves",

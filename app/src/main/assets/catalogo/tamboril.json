@@ -13,7 +13,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Semeie em copo ou saquinho de muda de 500 mL com furos; a muda vai depois para um vaso definitivo de pelo menos 40 cm de profundidade e 40 cm de diâmetro, pesado (cerâmica ou cimento) para não tombar no vento, com furos no fundo",

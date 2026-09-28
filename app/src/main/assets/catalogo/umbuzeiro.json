@@ -13,7 +13,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso largo e fundo de barro, cimento ou plástico grosso, com pelo menos 45 cm de profundidade e 50 cm de diâmetro e vários furos no fundo. Os xilopódios crescem para os lados e para baixo, então vaso raso limita a planta",

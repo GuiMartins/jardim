@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro com 15 cm de diâmetro e 15 cm de profundidade, com furo no fundo. O barro ajuda o substrato a secar e dá peso para a planta alta não tombar",

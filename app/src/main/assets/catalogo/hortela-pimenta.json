@@ -18,7 +18,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira mais largo que fundo, com pelo menos 30 cm de diâmetro, 20 cm de profundidade e furos no fundo; só a hortelã no vaso, porque os rizomas sufocam as vizinhas",

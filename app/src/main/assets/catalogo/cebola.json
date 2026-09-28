@@ -12,7 +12,9 @@
       5,
       6,
       7
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira ou vaso largo com pelo menos 20 cm de profundidade e furos no fundo. Deixe 10 cm entre as mudas: uma jardineira de 60 x 20 cm comporta cerca de 10 plantas em duas fileiras.",

@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 12,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 30 cm de profundidade e 30 cm de diâmetro, com furos no fundo e espaço para fincar um tutor de 1,5 m ou encostar numa tela",

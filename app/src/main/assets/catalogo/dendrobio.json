@@ -16,7 +16,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pequeno de barro ou plástico com furos no fundo e nas laterais, 12 a 15 cm de diâmetro; o dendróbio gosta de raiz apertada, então o vaso deve ter só 2 a 3 cm de folga em volta da touceira",

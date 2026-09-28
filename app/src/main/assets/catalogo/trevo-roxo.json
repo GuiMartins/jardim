@@ -14,7 +14,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso largo e raso, com 15 a 20 cm de diâmetro e 12 a 15 cm de profundidade, com furos no fundo; 8 a 12 rizomas por vaso",

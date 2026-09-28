@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica sem esmalte, com 15 a 20 cm de diâmetro e 15 a 18 cm de altura, com vários furos no fundo. Vaso fundo, porque as raízes são grossas e crescem para baixo. Não deixe em cachepô sem furo.",

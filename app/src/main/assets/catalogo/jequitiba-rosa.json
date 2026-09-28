@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": -1,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo ou saco de cultivo com pelo menos 45 cm de altura e 40 cm de diâmetro, com vários furos no fundo. A raiz pivotante precisa de profundidade mais do que de largura",

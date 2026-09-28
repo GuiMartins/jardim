@@ -13,7 +13,9 @@
       6,
       7,
       8
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 20
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica de 12 a 15 cm de diâmetro e 12 cm de altura, com furos no fundo e prato para rega por baixo. Não use vaso muito maior que o torrão: o substrato que sobra fica encharcado e apodrece o tubérculo",

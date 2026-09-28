@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado de cerâmica ou barro, com 20 a 25 cm de diâmetro e 20 cm de profundidade e furos no fundo. Escolha só 3 a 4 cm maior que o torrão: em vaso folgado a clívia faz raiz e demora a florescer",

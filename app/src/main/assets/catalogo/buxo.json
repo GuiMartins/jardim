@@ -14,7 +14,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": -3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo; evite vaso preto fino no sol, que esquenta a raiz",

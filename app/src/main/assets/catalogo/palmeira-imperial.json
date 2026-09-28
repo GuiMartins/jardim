@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo de plástico grosso, cimento ou fibra, com pelo menos 40 cm de altura e 40 cm de diâmetro e vários furos no fundo; a raiz é pivotante e cresce rápido para baixo",

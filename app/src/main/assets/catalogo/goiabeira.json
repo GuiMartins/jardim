@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cerâmica ou fibra, com pelo menos 50 cm de diâmetro e 45 cm de profundidade e vários furos no fundo. Comece direto no vaso definitivo ou num intermediário de 30 L",

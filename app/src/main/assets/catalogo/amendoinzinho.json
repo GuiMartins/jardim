@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira ou vaso largo e raso, com pelo menos 20 cm de profundidade e furos no fundo; quanto maior a boca, maior o tapete. Plante as mudas a cada 15 a 20 cm",

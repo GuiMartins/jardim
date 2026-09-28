@@ -16,7 +16,9 @@
       2,
       3,
       4
-    ]
+    ],
+    "temperatura_minima_c": 12,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado de cerâmica, barro ou plástico grosso, com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com furos no fundo. Use o prato só para aparar a água e esvazie depois de cada rega",

@@ -13,7 +13,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 8,
+    "temperatura_maxima_c": 35
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Na germinação, copinhos ou bandeja de células com 5 cm de profundidade. Vaso definitivo com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Placa de madeira ou cortiça de 30 x 30 cm com musgo, ou cesto de orquídea ou vaso raso com muitos furos, de 20 a 25 cm de diâmetro, pendurado ou preso na parede",

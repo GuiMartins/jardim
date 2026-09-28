@@ -13,7 +13,9 @@
       7,
       8,
       9
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de diâmetro e 45 cm de profundidade e vários furos no fundo; o peso evita que a árvore tombe com o vento",

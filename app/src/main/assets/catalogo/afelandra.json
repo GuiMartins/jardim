@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 15,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada com 15 a 20 cm de diâmetro e de profundidade e furos no fundo; o vaso de barro sem esmalte seca rápido demais para esta planta",

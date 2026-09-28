@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Sem vaso de terra: fixada num pedaço de madeira, cortiça, casca de árvore ou pedra, ou apoiada num recipiente aberto de uns 10 cm de diâmetro, sem substrato e sem água parada no fundo. Nada de terrário fechado, que acumula umidade e apodrece a base",

@@ -14,7 +14,9 @@
       5,
       6,
       7
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 30 cm de profundidade e furos no fundo; a profundidade permite enterrar o talo para branqueá-lo. Espaçamento de 10 a 12 cm entre plantas",

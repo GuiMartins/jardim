@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de 40 cm de diâmetro e 40 cm de profundidade para começar, com furos no fundo, passando depois para 50 a 60 cm. Prefira vasos pesados (cimento, barro) porque a copa densa pega vento e tomba vasos leves",

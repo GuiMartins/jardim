@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 15 cm de profundidade e 15 cm de diâmetro por muda, com furos no fundo; em jardineira, deixe 20 cm entre as mudas. Também vai bem em cesta suspensa.",

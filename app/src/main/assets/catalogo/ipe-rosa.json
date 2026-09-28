@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande, pesado e estável (cerâmica, cimento ou plástico grosso), com pelo menos 45 cm de diâmetro e 45 cm de profundidade, vários furos no fundo e pés para não ficar apoiado direto no chão",

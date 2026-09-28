@@ -12,7 +12,9 @@
       6,
       7,
       8
-    ]
+    ],
+    "temperatura_minima_c": -10,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico grosso com pelo menos 45 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo e apoiado em pés para a água escorrer",

@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico grosso, cimento ou fibra com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; suba para 80 a 100 L conforme a árvore crescer",

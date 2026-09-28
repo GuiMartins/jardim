@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Para germinar: copo ou vaso fundo de 15 cm de altura com furos. Vaso definitivo alto, de 40 cm de profundidade e 40 cm de diâmetro ou mais, com vários furos no fundo, porque a raiz principal desce reto e fundo",

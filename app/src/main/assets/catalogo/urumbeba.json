@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 34
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou cimento, pesado e largo, com pelo menos 35 cm de diâmetro, 35 cm de profundidade e furos grandes no fundo. Vaso de plástico leve tomba quando a planta cresce e fica pesada em cima",

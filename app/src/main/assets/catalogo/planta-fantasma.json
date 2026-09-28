@@ -15,7 +15,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 35
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, de 12 a 15 cm de diâmetro e 10 a 12 cm de profundidade, com furo grande no fundo; sem prato com água acumulada",

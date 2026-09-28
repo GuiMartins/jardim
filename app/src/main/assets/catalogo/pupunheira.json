@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo de plástico grosso, fibra ou cimento com pelo menos 45 cm de diâmetro e 45 cm de altura, com vários furos no fundo; comece com 40 a 60 L e passe para 100 L ou mais no segundo transplante",

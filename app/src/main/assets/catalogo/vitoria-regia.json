@@ -11,7 +11,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 18,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Tanque sem furos, como uma caixa d'água de polietileno de 1000 L (cerca de 1,5 m de diâmetro e 60 a 80 cm de profundidade), num lugar aberto. A muda fica numa bacia ou vaso largo de 30 a 40 L, com 25 cm de profundidade, apoiado no fundo do tanque",

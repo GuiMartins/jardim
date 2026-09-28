@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso raso, cuia ou jardineira com 12 a 15 cm de profundidade e furos no fundo; barro ou cerâmica, que secam mais rápido que o plástico",

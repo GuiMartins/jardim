@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 8,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso suspenso ou cachepô de plástico, largo e raso (15 a 20 cm de diâmetro, 12 a 15 cm de profundidade), com furos no fundo; a raiz é superficial e vaso fundo demais acumula água parada",

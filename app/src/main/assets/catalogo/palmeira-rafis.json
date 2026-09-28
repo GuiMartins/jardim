@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou cachepô com vaso interno, de 30 a 40 cm de diâmetro e pelo menos 30 cm de profundidade, com furos no fundo; só 5 cm mais largo que o torrão atual, porque vaso grande demais retém água e apodrece a raiz",

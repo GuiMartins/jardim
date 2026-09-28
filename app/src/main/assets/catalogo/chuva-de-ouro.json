@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou de plástico com furos no fundo e nas laterais, de 12 a 15 cm de diâmetro e 10 a 12 cm de altura. Deve caber só as raízes mais 2 a 3 cm de folga para os novos pseudobulbos",

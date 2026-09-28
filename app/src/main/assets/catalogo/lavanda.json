@@ -14,7 +14,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, com pelo menos 30 cm de diâmetro e 25 cm de profundidade e vários furos no fundo; o barro deixa o substrato secar mais rápido, que é o que a lavanda quer. Evite prato com água parada embaixo.",

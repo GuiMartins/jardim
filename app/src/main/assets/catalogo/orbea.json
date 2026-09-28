@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso raso e largo de barro, com 15 a 20 cm de diâmetro e 10 a 12 cm de altura, com furo grande no fundo; os caules se espalham para os lados e a raiz é curta",

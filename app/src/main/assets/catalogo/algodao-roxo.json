@@ -13,7 +13,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 8,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Semeie em copo ou saquinho de 500 mL com furos; depois transplante para vaso definitivo com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com furos no fundo",

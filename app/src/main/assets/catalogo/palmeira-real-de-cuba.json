@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo e pesado (cerâmica, cimento ou plástico grosso), com pelo menos 40 cm de diâmetro e 45 cm de profundidade e vários furos no fundo. Precisa ser pesado para a palmeira não tombar com o vento",

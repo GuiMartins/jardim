@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo de plástico ou cimento com pelo menos 45 cm de profundidade e 40 cm de diâmetro, com furos no fundo e um prato largo embaixo; a raiz do buriti desce mais do que se espalha",

@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Na semeadura, copo ou vaso de 10 cm de diâmetro e 12 cm de profundidade. O vaso definitivo é de barro ou plástico, com pelo menos 30 cm de diâmetro e 30 cm de profundidade, e vários furos no fundo. O barro ajuda o substrato a secar entre as regas",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": -1,
+    "temperatura_maxima_c": 33
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica pesado e largo, com pelo menos 30 cm de diâmetro e 25 cm de profundidade e furos no fundo; o barro ajuda a secar e o peso evita que a touceira tombe",

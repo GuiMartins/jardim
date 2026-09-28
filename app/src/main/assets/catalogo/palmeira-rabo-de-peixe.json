@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; pesado ou largo na base, porque a copa pega vento",

@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 12,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso raso de 12 a 15 cm de diâmetro e 10 a 12 cm de altura, com furos grandes no fundo. De barro ou cerâmica, que pesa mais e não deixa a roseta tombar. Não deixe água parada no cachepô.",

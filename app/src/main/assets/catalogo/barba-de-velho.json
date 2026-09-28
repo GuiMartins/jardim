@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Sem vaso: tufo de 20 a 40 cm pendurado solto num galho, gancho ou suporte de arame galvanizado, nylon ou madeira (nunca cobre, que é tóxico para ela), com ar circulando por todos os lados e sem encostar em parede úmida",

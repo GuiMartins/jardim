@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 4,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado e largo (cimento, cerâmica ou plástico grosso), com pelo menos 50 cm de diâmetro, 50 cm de profundidade e vários furos no fundo. A base precisa ser larga para o vento não derrubar a planta, que tem folhas grandes",

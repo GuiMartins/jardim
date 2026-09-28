@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de 60 a 70 cm de diâmetro e pelo menos 50 cm de profundidade, com vários furos no fundo e pés ou calços que o afastem do chão. Comece num vaso de 40 L e passe para o definitivo depois de 2 anos",

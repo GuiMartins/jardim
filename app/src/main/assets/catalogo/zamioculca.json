@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com furos no fundo, só 3 a 5 cm mais largo que o torrão (em geral 20 a 25 cm de diâmetro e de altura); vaso grande demais retém água e apodrece o rizoma. Sem cachepô acumulando água",

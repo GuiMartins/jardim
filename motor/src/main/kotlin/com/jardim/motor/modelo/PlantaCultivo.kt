@@ -31,6 +31,10 @@ data class Planta(
     /** Último dia do ciclo; null para PERENE. */
     val duracaoCicloDias: Int?,
     val mesesPlantio: List<Int>,
+    /** Abaixo disso, em vaso ao ar livre, a planta sofre dano: avisar para abrigar. */
+    val temperaturaMinimaC: Int,
+    /** Acima disso o vaso seca rápido e a folha queima: avisar para conferir a rega à tarde. */
+    val temperaturaMaximaC: Int,
 )
 
 @Serializable

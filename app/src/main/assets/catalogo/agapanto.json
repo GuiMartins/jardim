@@ -16,7 +16,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de 30 a 35 cm de diâmetro e 25 a 30 cm de profundidade, com furos no fundo. Prefira vaso pesado (cerâmica ou cimento), porque as hastes floridas tombam vasos leves com o vento",

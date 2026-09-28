@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo de cerâmica, cimento ou plástico grosso com pelo menos 40 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo. A raiz pivotante é longa, então prefira vaso mais fundo que largo",

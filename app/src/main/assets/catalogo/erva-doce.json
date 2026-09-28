@@ -15,7 +15,9 @@
       7,
       8,
       9
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo com pelo menos 30 cm de profundidade e 25 cm de diâmetro, com furos no fundo; a raiz é pivotante e não gosta de ser mudada, então semeie direto no vaso definitivo",

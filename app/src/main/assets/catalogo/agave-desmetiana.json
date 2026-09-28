@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 38
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou cimento, pesado e mais largo que fundo: 35 a 40 cm de diâmetro e 25 a 30 cm de profundidade para a planta adulta, com furos grandes no fundo. Para o filhote, comece num vaso de 20 cm. O barro ajuda o substrato a secar, e o peso impede que a roseta tombe o vaso.",

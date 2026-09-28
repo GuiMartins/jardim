@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": -3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico, não de barro (o barro solta sais), com pelo menos 12 cm de profundidade porque as raízes são longas, 10 a 12 cm de diâmetro e furos no fundo, apoiado num prato que fica com água",

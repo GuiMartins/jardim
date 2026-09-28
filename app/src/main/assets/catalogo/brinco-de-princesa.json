@@ -14,7 +14,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Cesta suspensa ou vaso com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo. Vaso plástico ou vitrificado seca mais devagar que o de barro, e isso ajuda no calor",

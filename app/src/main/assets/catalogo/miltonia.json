@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou de barro de 12 a 15 cm de diâmetro e 10 a 12 cm de altura, com vários furos no fundo e nas laterais; pendurado ou apoiado sobre pedriscos, nunca com água parada no pratinho",

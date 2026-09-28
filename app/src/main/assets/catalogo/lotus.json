@@ -12,7 +12,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Bacia, vaso ou tanque redondo e SEM furos, com 50 a 60 cm de diâmetro e 30 a 40 cm de profundidade. Precisa ser redondo porque a ponta do rizoma cresce rente à parede e quebra ao se prender nos cantos de um vaso quadrado. Variedades anãs (lótus de tigela) aceitam recipientes de 15 a 20 L.",

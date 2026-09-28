@@ -12,7 +12,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Semear em copinhos ou bandeja de mudas; depois vaso definitivo com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo",

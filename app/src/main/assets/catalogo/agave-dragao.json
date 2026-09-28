@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica, pesado e largo (a roseta tomba vasos leves), com pelo menos 30 cm de diâmetro e 25 cm de profundidade e vários furos no fundo. Sem prato com água parada",

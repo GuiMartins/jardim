@@ -16,7 +16,9 @@
       2,
       3,
       4
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 18 a 20 cm de diâmetro e 16 cm de profundidade, com vários furos no fundo; mais largo que fundo, porque as raízes se espalham rasas",

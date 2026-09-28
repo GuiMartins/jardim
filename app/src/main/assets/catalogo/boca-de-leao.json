@@ -14,7 +14,9 @@
       6,
       7,
       8
-    ]
+    ],
+    "temperatura_minima_c": -3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de 18 a 20 cm de diâmetro e pelo menos 20 cm de profundidade, com furos no fundo; em jardineira, deixe 20 cm entre plantas",

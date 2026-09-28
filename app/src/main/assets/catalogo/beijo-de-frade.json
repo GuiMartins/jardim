@@ -14,7 +14,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de 18 a 20 cm de diâmetro e pelo menos 15 cm de profundidade por planta, ou jardineira com 25 cm entre plantas, sempre com furos no fundo. Para semear, use copinhos ou bandeja de células com furos",

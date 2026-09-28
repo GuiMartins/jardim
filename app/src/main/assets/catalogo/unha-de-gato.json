@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo e uma treliça, tela ou estaca de fibra de coco para a planta subir",

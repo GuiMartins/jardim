@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 12,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com furos no fundo, com 15 a 20 cm de diâmetro e de profundidade e só 2 a 4 cm mais largo que o torrão da muda. Vaso grande demais retém água e apodrece a raiz",

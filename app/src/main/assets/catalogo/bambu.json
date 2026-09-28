@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira de boca larga e paredes retas, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, e vários furos no fundo. Evite vaso bojudo (de boca estreita): a touceira não sai dele na hora de dividir. Vaso plástico grosso ou fibra, pesado o bastante para não tombar com o vento",

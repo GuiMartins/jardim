@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande de plástico, fibra ou cerâmica, com pelo menos 40 cm de diâmetro e 40 cm de profundidade e vários furos no fundo; a estaca pode enraizar antes num vaso de 3 a 5 L",

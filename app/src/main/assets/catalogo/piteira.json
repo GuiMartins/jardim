@@ -16,7 +16,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": -3,
+    "temperatura_maxima_c": 35
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado e largo, de barro ou cimento, com pelo menos 35 cm de diâmetro e 30 cm de altura, vários furos no fundo e sem prato com água parada; a roseta adulta pesa e tomba vasos leves",

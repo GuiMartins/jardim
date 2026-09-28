@@ -11,7 +11,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso largo ou jardineira com pelo menos 30 cm de profundidade e 35 cm de diâmetro, com furos no fundo; o rizoma cresce para os lados, então largura vale mais que altura",

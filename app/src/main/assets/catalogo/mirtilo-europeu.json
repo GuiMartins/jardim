@@ -13,7 +13,9 @@
       6,
       7,
       8
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso largo e raso, com pelo menos 35 cm de diâmetro e 25 cm de profundidade, de plástico ou cerâmica esmaltada (o cimento solta cal e sobe o pH), com vários furos no fundo",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado de cerâmica ou cimento, com pelo menos 40 cm de diâmetro e 40 cm de profundidade e vários furos no fundo. O peso segura o arbusto no vento",

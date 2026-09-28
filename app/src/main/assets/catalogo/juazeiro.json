@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande e fundo, de pelo menos 50 cm de profundidade e 50 cm de diâmetro, com vários furos no fundo; comece com um de 30 L e passe para 60 L ou mais quando as raízes saírem pelos furos",

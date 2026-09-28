@@ -14,7 +14,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou caixa plástica com pelo menos 40 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo, junto de uma treliça ou tela de 1,5 a 2 m de altura para as ramas subirem",

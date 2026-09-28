@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso largo de pelo menos 40 cm de diâmetro e 35 cm de profundidade, com furos no fundo. O rizoma se espalha para os lados, então prefira vasos mais largos que fundos",

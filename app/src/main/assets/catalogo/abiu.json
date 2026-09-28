@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 8,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso plástico ou de fibra com pelo menos 45 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo; na troca de vaso, suba até 100 L. Se o vaso ficar no chão, apoie sobre pés ou tijolos para a água escorrer",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado de 35 a 40 cm de diâmetro e 30 cm de profundidade, sem furo ou dentro de um cachepô sem furo, para manter 3 a 5 cm de água acima da base; boca larga e fundo largo para não tombar com o vento",

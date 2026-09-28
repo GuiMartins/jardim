@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica de 14 a 18 cm de diâmetro e 12 a 15 cm de profundidade, com vários furos no fundo; a flor-de-cera floresce melhor com a raiz um pouco apertada, então não use vaso grande demais. Vaso suspenso ou com arco/treliça para os ramos",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 35
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Bacia, cachepô ou vaso SEM furos, com pelo menos 30 cm de diâmetro e 15 cm de profundidade de água; boca larga para a roseta flutuar e a água trocar gases",

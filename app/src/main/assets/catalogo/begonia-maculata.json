@@ -16,7 +16,9 @@
       2,
       3,
       4
-    ]
+    ],
+    "temperatura_minima_c": 12,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada com 16 a 20 cm de diâmetro e profundidade, com furos no fundo e sem prato acumulando água; só 2 a 3 cm maior que o torrão da muda, porque vaso grande demais fica encharcado",

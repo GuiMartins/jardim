@@ -15,7 +15,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira largo e raso, com 15 a 20 cm de profundidade, 25 a 30 cm de diâmetro e furos no fundo; a planta se espalha para os lados, não para baixo. Prato embaixo ajuda a segurar umidade no verão, mas esvazie a água parada depois de 30 minutos",

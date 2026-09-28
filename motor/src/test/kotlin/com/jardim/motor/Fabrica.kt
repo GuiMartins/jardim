@@ -70,7 +70,7 @@ private fun cultivo(
 ) = PlantaCultivo(
     planta = Planta(
         "Planta de teste", "Plantae testis", "Só existe nos testes.",
-        tipoCiclo, Dificuldade.FACIL, FormaInicio.MUDA, duracao, (1..12).toList(),
+        tipoCiclo, Dificuldade.FACIL, FormaInicio.MUDA, duracao, (1..12).toList(), 5, 30,
     ),
     requisitosIniciais = RequisitosIniciais(
         "Vaso de 20 cm com furos", 5.0, Luminosidade.SOL_DIRETO, 4.0, 6.0, "Terra e húmus", true,

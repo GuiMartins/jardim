@@ -16,7 +16,9 @@
       2,
       3,
       4
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 15 a 20 cm de diâmetro e de profundidade, vários furos no fundo e prato sem água acumulada. Prefira um vaso só 2 a 4 cm mais largo que o torrão, porque vaso grande demais mantém o substrato encharcado.",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 8,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso plástico ou de cimento com pelo menos 40 cm de profundidade e 35 cm de diâmetro, com vários furos no fundo; a raiz pivotante é funda e pede vaso mais alto que largo",

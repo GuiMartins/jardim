@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade, porque a raiz é pivotante, e furos no fundo. Semeie direto no vaso definitivo: a planta sofre com o transplante e pendoa cedo",

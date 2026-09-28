@@ -14,7 +14,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso alto e fundo, com pelo menos 50 cm de profundidade e 35 cm de diâmetro e vários furos no fundo. A raiz pivotante desce reta, e vaso raso a faz enrolar",

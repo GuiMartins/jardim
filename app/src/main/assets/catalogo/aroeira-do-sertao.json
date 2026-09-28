@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado (cerâmica ou cimento) com pelo menos 45 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo; a raiz pivotante precisa de profundidade e o peso evita que o vento derrube a árvore",

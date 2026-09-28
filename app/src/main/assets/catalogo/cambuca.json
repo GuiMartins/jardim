@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico grosso, cerâmica ou fibra, com vários furos no fundo. Muda: 30 cm de diâmetro e 30 cm de profundidade. Vaso definitivo: pelo menos 50 cm de diâmetro e 45 cm de profundidade",

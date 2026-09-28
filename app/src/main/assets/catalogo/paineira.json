@@ -13,7 +13,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 33
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Comece em copo ou saquinho de 1 L com furos; a planta definitiva vai para vaso pesado (barro ou cimento) com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo",

@@ -14,7 +14,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": -1,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso, com pelo menos 45 cm de diâmetro e 45 cm de profundidade, pesado para não tombar com o vento e com vários furos no fundo",

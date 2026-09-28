@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande com pelo menos 45 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo e apoiado em pés para a água escorrer livre",

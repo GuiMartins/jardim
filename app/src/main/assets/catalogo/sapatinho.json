@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico com 10 a 12 cm de diâmetro e 10 cm de altura, com vários furos no fundo e nas laterais baixas; o plástico segura a umidade que a raiz pede",

@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Tina, bacia ou vaso cachepô SEM furos, com pelo menos 60 cm de diâmetro e 40 cm de profundidade, cheio de água. Dentro dele vai um vaso de plantio baixo e largo (30 a 40 cm de diâmetro, 15 a 20 cm de altura) com a planta, apoiado em tijolos para ajustar a altura da água sobre a coroa",

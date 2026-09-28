@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Semeie em copo ou saquinho de 500 ml com furos; aos 2 meses passe para vaso de 10 a 15 L e, com 1 ano, para o vaso definitivo: plástico grosso ou cerâmica com pelo menos 45 cm de diâmetro, 40 cm de profundidade e vários furos no fundo",

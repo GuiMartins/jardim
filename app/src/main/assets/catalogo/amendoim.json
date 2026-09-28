@@ -12,7 +12,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira larga com pelo menos 30 cm de profundidade e 35 cm de diâmetro, com furos no fundo; a largura importa porque os ginóforos se enterram até 20 cm ao redor da planta",

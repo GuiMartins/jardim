@@ -12,7 +12,9 @@
       4,
       5,
       6
-    ]
+    ],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade e furos no fundo; uma jardineira de 60 cm comporta 4 plantas",

@@ -16,7 +16,9 @@
       2,
       3,
       4
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 35
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso, cuia suspensa ou jardineira com pelo menos 15 cm de profundidade e 20 cm de diâmetro, com furos no fundo; plante 4 a 6 estacas juntas para a touceira ficar cheia",

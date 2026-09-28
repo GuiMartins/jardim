@@ -13,7 +13,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 20 a 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo, para 3 a 4 bulbos juntos; vaso grande demais atrasa a floração",

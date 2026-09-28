@@ -16,7 +16,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico, cimento ou fibra com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo. Comece com a muda enxertada de viveiro certificado (saco ou tubete) e deixe o ponto de enxertia 5 cm acima do substrato",

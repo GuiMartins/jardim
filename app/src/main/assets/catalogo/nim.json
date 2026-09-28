@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 8,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande de pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; prefira barro ou plástico grosso, pesado o bastante para não tombar com o vento",

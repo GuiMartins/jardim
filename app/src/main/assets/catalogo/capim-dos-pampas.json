@@ -16,7 +16,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": -3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica, cimento ou fibra), com no mínimo 50 cm de diâmetro e 45 cm de profundidade e furos grandes no fundo; precisa ser estável, porque a touceira alta pega muito vento",

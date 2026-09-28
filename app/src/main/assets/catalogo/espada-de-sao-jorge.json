@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado de barro ou cerâmica, com furos no fundo, de 18 a 22 cm de diâmetro e profundidade parecida; largo e raso é melhor que fundo, porque o rizoma cresce para os lados. O barro ajuda a secar e o peso evita que a planta tombe",

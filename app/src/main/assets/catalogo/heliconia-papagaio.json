@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso largo, com pelo menos 35 cm de diâmetro e 30 cm de profundidade, com vários furos no fundo; a touceira cresce para os lados, então prefira vaso mais largo que alto",

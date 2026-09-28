@@ -16,7 +16,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com 18 a 22 cm de diâmetro, mais largo que fundo (raiz fina e superficial), com furos no fundo e sem prato com água parada",

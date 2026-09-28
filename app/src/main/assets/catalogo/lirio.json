@@ -15,7 +15,9 @@
       7,
       8,
       9
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso com pelo menos 25 cm de profundidade e 20 cm de diâmetro para 1 a 2 bulbos (30 cm de diâmetro para 3), com furos no fundo. O lírio solta raízes também no caule enterrado, por isso o bulbo vai fundo: 10 a 15 cm de substrato por cima dele",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 8,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado (cerâmica, cimento ou plástico grosso) com pelo menos 50 cm de diâmetro e 50 cm de profundidade e vários furos no fundo; comece num de 20 a 30 L e passe para o definitivo no fim da adaptação",

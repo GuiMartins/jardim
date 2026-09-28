@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso plástico ou de cerâmica com furos no fundo, 18 a 22 cm de diâmetro e profundidade, só 2 a 4 cm maior que o torrão da muda; cachepô sem furo só por fora, esvaziando a água que acumular",

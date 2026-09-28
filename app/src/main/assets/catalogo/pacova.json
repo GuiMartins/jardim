@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso largo e pesado (cerâmica ou cimento), com pelo menos 35 cm de diâmetro e 30 cm de profundidade, com furos no fundo. A roseta pesa para os lados e tomba vasos plásticos leves",

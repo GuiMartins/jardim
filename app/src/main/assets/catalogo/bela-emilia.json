@@ -14,7 +14,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com furos no fundo; comece num de 20 L se a muda for pequena e passe para o definitivo no primeiro transplante",

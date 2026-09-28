@@ -58,6 +58,8 @@ Use um único valor por campo, em maiúsculas e sem acento.
 | `planta.tipo_ciclo` | enum | Classifique pelo cultivo em vaso, não pela botânica: tomate e manjericão são perenes na natureza, mas em casa são cultivados como `ANUAL`. Nesses casos, diga isso na `descricao` |
 | `planta.duracao_ciclo_dias` | inteiro ou `null` | Último dia do ciclo; `null` para PERENE |
 | `planta.meses_plantio` | lista de inteiros 1–12 | Meses bons para começar (semear, plantar ou comprar). Planta que pode começar o ano todo leva os 12 meses |
+| `planta.temperatura_minima_c` | inteiro, °C | A menor temperatura que a planta **em vaso, ao ar livre**, aguenta sem dano: folha queimada, broto morto, raiz que apodrece no frio. O app avisa "abrigue hoje à noite" quando a previsão da mínima fica abaixo disso. Planta que aguenta geada leva o valor negativo que aguenta (ex.: -5). Não confunda com a temperatura em que ela só para de crescer, nem com o frio de que ela precisa para florescer |
+| `planta.temperatura_maxima_c` | inteiro, °C | A partir de quanto o calor pede cuidado extra: o vaso seca em poucas horas, a folha queima, a flor aborta. O app avisa "confira a rega também à tarde e sombreie nas horas quentes" quando a previsão da máxima passa disso. Costuma ser o mesmo número das instruções de rega ("acima de 30 °C, confira todo dia") |
 | `requisitos_iniciais.tipo_vaso_ou_solo` | texto | Tipo de recipiente, profundidade/diâmetro em cm, furos |
 | `requisitos_iniciais.volume_minimo_litros` | número > 0 | Por planta |
 | `requisitos_iniciais.horas_sol_minimas` | número 0–24 | Horas de **sol direto** abaixo das quais a planta estiola, não floresce ou não produz. 0 para plantas que vivem só de luz clara indireta |
@@ -82,7 +84,9 @@ Use um único valor por campo, em maiúsculas e sem acento.
     "dificuldade": "FACIL",
     "forma_inicio": "SEMENTE",
     "duracao_ciclo_dias": 35,
-    "meses_plantio": [3, 4, 5, 6, 7, 8, 9]
+    "meses_plantio": [3, 4, 5, 6, 7, 8, 9],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade e furos no fundo",
@@ -119,7 +123,7 @@ Use um único valor por campo, em maiúsculas e sem acento.
 }
 ```
 
-Repare em duas coisas. O desbaste, que acontece uma vez só, é um **alerta**, não uma tarefa. E `eventos_sazonais` está vazio porque o ciclo é curto e `meses_plantio` já evita o calor do verão, que deixa o rabanete oco e ardido.
+Repare em três coisas. O desbaste, que acontece uma vez só, é um **alerta**, não uma tarefa. `eventos_sazonais` está vazio porque o ciclo é curto e `meses_plantio` já evita o calor do verão, que deixa o rabanete oco e ardido. E as temperaturas: o rabanete aguenta geada leve, então a mínima é negativa, e a máxima é o mesmo 30 °C da instrução de rega.
 
 ### Plantas perenes
 
@@ -157,6 +161,7 @@ O app usa os dias para decidir em que fase a planta está hoje e quais lembretes
 6. Pelo menos uma tarefa `REGA` tem `critica: true`. `critica` significa que pular **uma única** ocorrência já causa dano difícil de reverter: a planta murcha sem voltar, a raiz racha, o fruto passa do ponto. O app usa isso para insistir no lembrete, então não marque como crítico o que tolera um atraso. A colheita do rabanete é crítica, porque dois dias a mais deixam a raiz oca. A colheita semanal de folhas de manjericão não é.
 7. `fase_id` e `id` ficam em snake_case e não se repetem.
 8. `meses_plantio` e `eventos_sazonais[].meses` são listas não vazias de inteiros de 1 (janeiro) a 12 (dezembro), sem repetição. Um período que atravessa o ano fica como `[11, 12, 1, 2]`.
+9. `temperatura_minima_c` e `temperatura_maxima_c` são inteiros de -20 a 50, e a mínima é menor que a máxima. Quando um texto do JSON cita o limite ("com previsão abaixo de 5 °C, abrigue o vaso"), o campo usa o mesmo número: o aviso do app e a instrução que a pessoa lê não podem se contradizer.
 
 ## 5. Validar antes de responder
 

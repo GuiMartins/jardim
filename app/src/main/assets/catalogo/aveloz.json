@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro (terracota) com pelo menos 25 cm de diâmetro e 25 cm de profundidade, com furos no fundo; o barro ajuda o substrato a secar entre as regas",

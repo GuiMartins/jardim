@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 8,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 40 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo; a planta forma raiz tuberosa funda. Semeie antes em copo ou saquinho de muda de 15 cm de altura e passe para o vaso definitivo quando a raiz tomar o copo",

@@ -17,7 +17,9 @@
       2,
       3,
       4
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou plástico com 12 a 15 cm de diâmetro e de profundidade, com furos no fundo; o barro ajuda o substrato a secar entre regas. Várias mudinhas podem começar juntas num vaso raso e ser separadas depois",

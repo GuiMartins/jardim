@@ -11,7 +11,9 @@
       3,
       4,
       5
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade e furos no fundo; dentes a 10–12 cm um do outro (uma jardineira de 60 × 20 cm comporta 8 a 10 dentes)",

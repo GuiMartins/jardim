@@ -16,7 +16,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou cachepô suspenso com pelo menos 20 cm de diâmetro e 18 cm de profundidade, com furos no fundo; para cobrir treliça, jardineira de 40 cm com uma muda a cada 20 cm",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande de plástico, fibra ou alvenaria com pelo menos 60 cm de diâmetro e 60 cm de altura, com vários furos no fundo e sobre rodízios ou pés para não empoçar",

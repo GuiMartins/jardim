@@ -16,7 +16,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de 45 a 50 cm de diâmetro e pelo menos 40 cm de profundidade, de plástico grosso, cerâmica ou meia bombona, com vários furos no fundo",

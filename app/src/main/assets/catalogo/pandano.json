@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado de cerâmica ou concreto, com pelo menos 45 cm de diâmetro e 45 cm de profundidade e furos no fundo. Vaso leve de plástico tomba com o vento quando a copa cresce",

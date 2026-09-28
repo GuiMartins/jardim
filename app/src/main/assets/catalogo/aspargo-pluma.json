@@ -16,7 +16,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico grosso ou cerâmica com pelo menos 25 cm de diâmetro e 25 cm de profundidade, com furos no fundo. Evite vaso de boca estreita: as raízes tuberosas engrossam, podem rachar vaso fino e prendem a planta na hora de trocar de vaso",

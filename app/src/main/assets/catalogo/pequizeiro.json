@@ -12,7 +12,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso alto, de pelo menos 50 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo. Prefira barro ou tambor cortado: a raiz pivotante precisa descer, e vaso raso a enrola e trava o crescimento.",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado e estável (cimento, barro ou plástico grosso) com pelo menos 50 cm de profundidade e 50 cm de diâmetro, com vários furos no fundo; a raiz é profunda e a planta tomba com vento em vaso leve",

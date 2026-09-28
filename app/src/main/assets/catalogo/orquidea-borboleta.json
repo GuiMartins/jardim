@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 12,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico transparente ou de barro com muitos furos no fundo e nas laterais, 12 a 15 cm de diâmetro, só um pouco maior que o bolo de raízes; a raiz precisa de ar e não pode ficar em água parada no pratinho",

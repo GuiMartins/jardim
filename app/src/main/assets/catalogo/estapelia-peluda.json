@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro largo e raso, com 15 a 20 cm de diâmetro, 10 a 12 cm de profundidade e furo no fundo. A raiz é curta, e o barro ajuda o substrato a secar entre as regas",

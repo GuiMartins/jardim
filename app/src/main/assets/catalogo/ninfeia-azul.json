@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Tina, bacia ou vaso cerâmico esmaltado SEM furos, com pelo menos 50 cm de diâmetro e 30 a 40 cm de profundidade. Dentro dela vai um vaso raso de plantio (20 a 25 cm de diâmetro, 12 a 15 cm de altura), apoiado sobre tijolos para regular a profundidade da água sobre a coroa",

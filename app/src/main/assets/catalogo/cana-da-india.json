@@ -13,7 +13,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado de plástico grosso, cerâmica ou cimento, com pelo menos 40 cm de diâmetro e 35 cm de profundidade e vários furos no fundo. A touceira alta tomba vasos leves no vento",

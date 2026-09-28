@@ -14,7 +14,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Para semear, copinhos ou bandeja de células de 5 cm. Para a planta adulta, vaso de pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo",

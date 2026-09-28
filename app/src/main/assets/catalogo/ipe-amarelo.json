@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": -1,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado de cimento, fibra ou plástico grosso, com no mínimo 50 cm de diâmetro e 45 cm de profundidade, vários furos no fundo e pés que o afastem do piso",

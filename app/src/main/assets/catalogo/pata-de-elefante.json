@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 35
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro mais largo que fundo (bacia ou tigela), só 3 a 5 cm mais largo que o cáudice, com furos no fundo. O barro ajuda o substrato a secar, e o vaso justo evita que sobre substrato molhado sem raiz",

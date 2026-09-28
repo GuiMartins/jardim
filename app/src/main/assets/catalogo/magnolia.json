@@ -14,7 +14,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 50 cm de profundidade e 50 cm de diâmetro, com vários furos no fundo. A raiz é carnosa e larga, por isso o vaso precisa ser mais largo que estreito e fundo",

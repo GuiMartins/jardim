@@ -15,7 +15,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado (cerâmica, cimento ou plástico grosso) com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com furos largos no fundo. A planta fica alta e pega vento: vaso leve tomba",

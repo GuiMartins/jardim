@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso plástico, de cimento ou barrica com pelo menos 50 cm de diâmetro e 50 cm de profundidade e vários furos no fundo. Comece com um de 40 a 60 L e passe para 100 L quando a planta passar de 1,5 m. Deixe em local protegido do vento, que quebra os galhos e seca as flores.",

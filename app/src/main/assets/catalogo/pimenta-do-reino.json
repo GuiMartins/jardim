@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo e um tutor de 1,5 a 2 m (estaca de madeira, tutor de fibra de coco ou tela) fixado no centro no dia do plantio",

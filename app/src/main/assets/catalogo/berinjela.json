@@ -15,7 +15,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 35 cm de profundidade e 35 cm de diâmetro, com furos no fundo; uma muda por vaso",

@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": -3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira larga ou vaso raso e largo, com pelo menos 15 cm de profundidade de substrato e vários furos no fundo; a grama vai em placas ou pedaços de placa (plugs)",

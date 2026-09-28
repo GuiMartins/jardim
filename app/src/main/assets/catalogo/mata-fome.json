@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de profundidade e 45 cm de diâmetro, vários furos no fundo; comece com uns 40 L e passe para 80 a 100 L quando a copa passar de 1,5 m",

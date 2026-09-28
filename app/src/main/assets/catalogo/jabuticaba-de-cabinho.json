@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico grosso, cimento ou barro com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; para a planta adulta, passe para 60 cm de diâmetro",

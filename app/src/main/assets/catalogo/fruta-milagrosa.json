@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso com furos no fundo, começando com 25 cm de diâmetro e 25 cm de profundidade para uma muda de 30 a 50 cm; na vida adulta, 40 cm de diâmetro. Prefira vaso plástico ou de barro esmaltado por dentro, que perde menos água",

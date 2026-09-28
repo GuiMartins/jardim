@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso raso ou cesto suspenso com 15 a 20 cm de diâmetro e 10 a 12 cm de profundidade, com furos no fundo. As raízes são superficiais, e vaso fundo demais acumula água embaixo",

@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Bacia, tina, meia-barrica ou vaso sem furo, com pelo menos 50 cm de diâmetro e 35 cm de profundidade. A muda fica num cesto ou vaso raso de 20 a 25 cm, submerso no recipiente maior, com 15 a 30 cm de água acima da coroa",

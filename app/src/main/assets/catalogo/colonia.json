@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso largo e pesado, com pelo menos 45 cm de diâmetro e 40 cm de profundidade, e vários furos no fundo; o rizoma se espalha para os lados e a touceira alta tomba em vaso leve",

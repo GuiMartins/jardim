@@ -12,7 +12,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande ou saco de cultivo com pelo menos 45 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo; a raiz cresce para baixo e para os lados",

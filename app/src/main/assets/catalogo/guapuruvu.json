@@ -13,7 +13,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Comece num saco de muda ou vaso de 3 a 5 L com furos. Quando a raiz tomar o recipiente, passe para um vaso de pelo menos 40 cm de diâmetro e 40 cm de profundidade (40 L). A raiz principal é pivotante e profunda, então prefira vasos mais fundos que largos",

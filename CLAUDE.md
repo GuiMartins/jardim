@@ -12,6 +12,8 @@ App Android **pessoal** (APK instalado direto, sem Play Store) de acompanhamento
 
 O formato é o da skill `planta-cultivo-json`, versionada em `.claude/skills/planta-cultivo-json/` (2026-09-27). É skill de projeto: o Claude Code só a enxerga aberto dentro do repositório, inclusive numa subpasta (o `gerar_catalogo.py` roda o `claude -p` em `dados/cache/geracao/<planta>/`). Não crie uma cópia em `~/.claude/skills/`: a pessoal tem prioridade sobre a de projeto, e as mudanças feitas aqui deixariam de valer sem aviso. `ValidadorCultivo` é o port do `scripts/validar.py` da skill, com as mesmas mensagens: mudou uma regra lá, muda aqui também. O teste `todo JSON do catálogo do app é válido` valida todo o catálogo a cada `:motor:test`.
 
+`temperatura_minima_c` e `temperatura_maxima_c` (em `planta`, 2026-09-27) são os limites dos avisos do tempo. As espécies geradas antes deles foram preenchidas por `dados/temperaturas.py`, que manda ao claude só as frases sobre temperatura, em lotes (US$ 2,47 pelas 627, contra uns US$ 200 de rodar a skill de novo). Onde o texto já fixa o número ("com previsão abaixo de 5 °C, abrigue"), vale o texto: é a regra 9 da skill, e o claude bateu com ele em 96% dos casos (nos outros, ficou o texto).
+
 O **girassol** (`catalogo/girassol.json`) é o JSON de referência do projeto, fornecido pelo usuário: os testes de cenário real, os exemplos e as decisões de tela e notificação partem dele.
 
 ## Regras de produto

@@ -16,7 +16,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo; vasos de barro ajudam a não encharcar",

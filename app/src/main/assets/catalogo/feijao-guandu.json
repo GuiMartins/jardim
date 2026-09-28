@@ -12,7 +12,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou balde grande com pelo menos 40 cm de profundidade e 35 cm de diâmetro, com furos no fundo; raiz pivotante e funda, planta de 1,5 a 2 m",

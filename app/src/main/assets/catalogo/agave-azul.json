@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 35
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro (cerâmica sem esmalte) com pelo menos 30 cm de diâmetro e 25 cm de profundidade e furos largos no fundo. O barro perde umidade pelas paredes e reduz o risco de podridão. Evite cachepô sem furo.",

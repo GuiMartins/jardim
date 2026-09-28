@@ -14,7 +14,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou jardineira larga, com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo. De preferência de barro, que seca mais rápido. A touceira se espalha para os lados",

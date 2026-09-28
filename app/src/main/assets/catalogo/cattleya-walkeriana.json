@@ -17,7 +17,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": 8,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro raso de 10 a 12 cm de diâmetro, com furos no fundo e nas laterais, ou planta amarrada em placa de cortiça ou tronco. Vaso grande demais retém umidade e apodrece as raízes finas.",

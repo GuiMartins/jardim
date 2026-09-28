@@ -20,7 +20,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 5,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso raso e pesado (barro ou cerâmica), com 12 a 15 cm de diâmetro, 10 a 12 cm de altura e furos grandes no fundo; a roseta pesa em cima e tomba vasos plásticos leves",

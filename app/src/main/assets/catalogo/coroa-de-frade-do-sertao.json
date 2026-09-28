@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro sem esmalte, 3 a 5 cm mais largo que o corpo do cacto (15 a 18 cm de diâmetro para uma planta de 12 cm), com 12 a 15 cm de profundidade e furo grande no fundo. Evite cachepô e prato com água parada",

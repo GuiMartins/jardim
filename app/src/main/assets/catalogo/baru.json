@@ -13,7 +13,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo, com pelo menos 40 cm de altura e 40 cm de diâmetro, com vários furos no fundo. A raiz pivotante do baru pede profundidade mais que largura. Depois do primeiro ano, passe para um vaso ou caixa de 100 L ou mais.",

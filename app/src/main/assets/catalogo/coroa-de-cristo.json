@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro (cerâmica sem esmalte) com 15 a 20 cm de diâmetro e de profundidade e furos grandes no fundo. O barro ajuda o substrato a secar entre as regas. Prefira um vaso só um pouco maior que o torrão da muda.",

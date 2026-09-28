@@ -14,7 +14,9 @@
       12,
       1,
       2
-    ]
+    ],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande de cerâmica, cimento ou plástico grosso, com pelo menos 50 cm de profundidade e 50 cm de diâmetro, vários furos no fundo e pés que o afastem do piso. Ideal: 100 L ou mais para a árvore adulta",

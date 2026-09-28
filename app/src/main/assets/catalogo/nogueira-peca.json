@@ -11,7 +11,9 @@
       6,
       7,
       8
-    ]
+    ],
+    "temperatura_minima_c": -8,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo de pelo menos 50 cm de altura e 45 cm de diâmetro, com vários furos no fundo; a nogueira forma raiz pivotante longa, então prefira vasos mais altos que largos",

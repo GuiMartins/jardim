@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso largo de plástico, cerâmica ou fibra, com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; o rizoma se espalha para os lados",

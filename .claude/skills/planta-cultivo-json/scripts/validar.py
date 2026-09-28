@@ -34,6 +34,8 @@ ESQUEMA_PLANTA = {
     "forma_inicio": FORMAS_INICIO,
     "duracao_ciclo_dias": "inteiro?",
     "meses_plantio": "meses",
+    "temperatura_minima_c": "inteiro",
+    "temperatura_maxima_c": "inteiro",
 }
 ESQUEMA_REQUISITOS = {
     "tipo_vaso_ou_solo": "texto",
@@ -155,6 +157,15 @@ def checar_requisitos(req, erros):
             erros.append(f"requisitos_iniciais.horas_sol_minimas ({minimas}) não pode passar das recomendadas ({horas})")
 
 
+def checar_temperaturas(planta, erros):
+    minima, maxima = planta.get("temperatura_minima_c"), planta.get("temperatura_maxima_c")
+    for campo, valor in (("temperatura_minima_c", minima), ("temperatura_maxima_c", maxima)):
+        if eh_inteiro(valor) and not -20 <= valor <= 50:
+            erros.append(f"planta.{campo}: precisa estar entre -20 e 50")
+    if eh_inteiro(minima) and eh_inteiro(maxima) and minima >= maxima:
+        erros.append(f"planta.temperatura_minima_c ({minima}) precisa ser menor que a máxima ({maxima})")
+
+
 def checar_ids(itens, campo, caminho, erros):
     vistos = set()
     for i, item in enumerate(itens):
@@ -265,6 +276,8 @@ def validar(dados):
 
     planta = dados.get("planta", {})
     checar_objeto(planta, ESQUEMA_PLANTA, "planta", erros)
+    if isinstance(planta, dict):
+        checar_temperaturas(planta, erros)
     requisitos = dados.get("requisitos_iniciais", {})
     checar_objeto(requisitos, ESQUEMA_REQUISITOS, "requisitos_iniciais", erros)
     if isinstance(requisitos, dict):

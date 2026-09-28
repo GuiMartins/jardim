@@ -13,7 +13,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo, e um tutor firme de 1,8 a 2 m ou uma pequena pérgola ou treliça junto ao vaso",

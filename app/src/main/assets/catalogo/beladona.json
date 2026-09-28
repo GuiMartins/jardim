@@ -12,7 +12,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 20 cm de diâmetro e 25 cm de profundidade para um bulbo, com furos no fundo; o bulbo fica com o pescoço (a ponta) no nível do substrato ou um pouco acima",

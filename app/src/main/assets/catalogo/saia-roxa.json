@@ -13,7 +13,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 3,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 35 cm de diâmetro e 30 cm de profundidade, com furos no fundo e pesado o bastante para não tombar com a planta de 1 m",

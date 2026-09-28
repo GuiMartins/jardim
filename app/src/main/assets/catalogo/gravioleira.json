@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cimento ou fibra, com pelo menos 50 cm de diâmetro e 50 cm de profundidade e vários furos no fundo; comece com 40 L e passe para 80 a 100 L na primeira troca",

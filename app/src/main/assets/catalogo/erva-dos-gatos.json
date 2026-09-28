@@ -14,7 +14,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 20 cm de profundidade e 20 cm de diâmetro, com furos no fundo; o barro ajuda a secar entre as regas",

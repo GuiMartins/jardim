@@ -13,7 +13,9 @@
       11,
       12,
       1
-    ]
+    ],
+    "temperatura_minima_c": 4,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso grande ou meia-bombona com pelo menos 45 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo; vaso pesado ou largo para não tombar com o vento",

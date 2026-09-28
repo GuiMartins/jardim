@@ -12,7 +12,9 @@
       10,
       11,
       12
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso ou caixa com pelo menos 40 cm de profundidade e 45 cm de diâmetro, com furos no fundo, encostado numa treliça, tela ou grade de 1,8 m ou mais de altura",

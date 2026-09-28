@@ -15,7 +15,9 @@
       1,
       2,
       3
-    ]
+    ],
+    "temperatura_minima_c": 10,
+    "temperatura_maxima_c": 32
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso fundo e pesado (cerâmica ou plástico grosso) com pelo menos 45 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo. A palmeira tem raiz pivotante e cresce para baixo antes de crescer para cima",

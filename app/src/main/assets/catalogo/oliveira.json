@@ -15,7 +15,9 @@
       9,
       10,
       11
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 35
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, com pelo menos 45 cm de diâmetro e 40 cm de profundidade e vários furos no fundo. O barro deixa a raiz respirar e seca mais rápido que o plástico",

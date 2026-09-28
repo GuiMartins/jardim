@@ -16,7 +16,9 @@
       2,
       3,
       4
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 35
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso suspenso ou alto, de barro ou plástico, com 18 a 25 cm de diâmetro e furos grandes no fundo, pendurado ou sobre um suporte para os caules caírem livres",

@@ -13,7 +13,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": -5,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de plástico grosso, cimento ou fibra com pelo menos 45 cm de diâmetro e 45 cm de profundidade, vários furos no fundo e pés para a água escoar",

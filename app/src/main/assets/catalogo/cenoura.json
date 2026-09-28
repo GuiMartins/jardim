@@ -17,7 +17,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": -2,
+    "temperatura_maxima_c": 28
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 30 cm de profundidade livre de substrato e vários furos no fundo; raiz que bate no fundo entorta ou bifurca",

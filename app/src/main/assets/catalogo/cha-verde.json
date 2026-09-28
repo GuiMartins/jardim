@@ -13,7 +13,9 @@
       8,
       9,
       10
-    ]
+    ],
+    "temperatura_minima_c": 0,
+    "temperatura_maxima_c": 30
   },
   "requisitos_iniciais": {
     "tipo_vaso_ou_solo": "Vaso de 35 a 40 cm de diâmetro e pelo menos 35 cm de profundidade, com vários furos no fundo. Prefira terracota ou plástico grosso de cor clara, que esquentam menos a raiz no verão.",
