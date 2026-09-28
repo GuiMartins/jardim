@@ -1,5 +1,6 @@
 package com.jardim.ui.configuracoes
 
+import com.jardim.motor.tempo.noCentroSul
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -57,6 +58,8 @@ class ConfiguracoesViewModel(
 
     val horarios = preferencias.horarios.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
+    val cidade = preferencias.cidade.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
+
     fun mudar(modo: ModoAviso, horario: LocalTime) {
         viewModelScope.launch {
             preferencias.mudar(modo, horario)
@@ -82,9 +85,11 @@ private val hhmm = DateTimeFormatter.ofPattern("HH:mm")
 @Composable
 fun ConfiguracoesTela(
     aoVoltar: () -> Unit,
+    aoEscolherCidade: () -> Unit,
     viewModel: ConfiguracoesViewModel = viewModel(factory = ConfiguracoesViewModel.Factory),
 ) {
     val horarios by viewModel.horarios.collectAsStateWithLifecycle()
+    val cidade by viewModel.cidade.collectAsStateWithLifecycle()
     var editando by remember { mutableStateOf<ModoAviso?>(null) }
     val snackbar = remember { SnackbarHostState() }
     val escopo = rememberCoroutineScope()
@@ -92,7 +97,7 @@ fun ConfiguracoesTela(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Notificações") },
+                title = { Text("Configurações") },
                 navigationIcon = {
                     IconButton(onClick = aoVoltar) { Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Voltar") }
                 },
@@ -122,6 +127,22 @@ fun ConfiguracoesTela(
                     viewModel.testar()
                     escopo.launch { snackbar.showSnackbar("Resumo enviado; confira a barra de notificações.") }
                 },
+            )
+            HorizontalDivider()
+            ListItem(
+                headlineContent = { Text("Cidade da previsão do tempo") },
+                supportingContent = {
+                    val escolhida = cidade
+                    Text(
+                        when {
+                            escolhida == null -> "Nenhuma: sem avisos de geada, calor, vento e chuva"
+                            noCentroSul(escolhida) -> escolhida.descricao
+                            else -> "${escolhida.descricao}. Fora do Centro-Sul, para o qual o catálogo foi pensado: o app não avisa \"fora de época\"."
+                        },
+                    )
+                },
+                trailingContent = { Text(if (cidade == null) "Escolher" else "Trocar", color = MaterialTheme.colorScheme.primary) },
+                modifier = Modifier.clickable(onClick = aoEscolherCidade),
             )
         }
 

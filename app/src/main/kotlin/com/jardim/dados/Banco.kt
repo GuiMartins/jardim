@@ -1,6 +1,7 @@
 package com.jardim.dados
 
 import android.content.Context
+import android.content.res.AssetManager
 import androidx.room.Dao
 import androidx.room.Database
 import androidx.room.Entity
@@ -13,7 +14,11 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverter
 import androidx.room.TypeConverters
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
+import com.jardim.motor.agenda.Local
 import com.jardim.motor.agenda.StatusAcao
+import com.jardim.motor.leitura.Migracoes
 import kotlinx.coroutines.flow.Flow
 import java.time.LocalDate
 import java.time.LocalDateTime
@@ -32,6 +37,8 @@ data class PlantioEntity(
     /** Cópia do JSON da espécie no dia do plantio: mexer no catálogo depois não muda o plantio. */
     val cultivoJson: String,
     val encerradoEm: LocalDate? = null,
+    /** Onde o vaso fica; null nos plantios de antes da pergunta (sem avisos do tempo até responder). */
+    val local: Local? = null,
 )
 
 @Entity(
@@ -80,6 +87,9 @@ interface JardimDao {
 
     @Query("UPDATE plantio SET encerradoEm = :data WHERE id = :id")
     suspend fun encerrar(id: Long, data: LocalDate)
+
+    @Query("UPDATE plantio SET local = :local WHERE id = :id")
+    suspend fun mudarLocal(id: Long, local: Local)
 }
 
 /** Datas em texto ISO (2026-10-01): legível no banco e ordena certo no ORDER BY. */
@@ -97,13 +107,35 @@ class Conversores {
     fun paraDataHora(dataHora: LocalDateTime?): String? = dataHora?.toString()
 }
 
-@Database(entities = [PlantioEntity::class, RegistroAcaoEntity::class], version = 1, exportSchema = true)
+@Database(entities = [PlantioEntity::class, RegistroAcaoEntity::class], version = 2, exportSchema = true)
 @TypeConverters(Conversores::class)
 abstract class JardimDatabase : RoomDatabase() {
     abstract fun dao(): JardimDao
 
     companion object {
         fun criar(context: Context): JardimDatabase =
-            Room.databaseBuilder(context, JardimDatabase::class.java, "jardim.db").build()
+            Room.databaseBuilder(context, JardimDatabase::class.java, "jardim.db")
+                .addMigrations(migracao1para2(context.assets))
+                .build()
+    }
+}
+
+/**
+ * Versão 2 (2026-09-27): a coluna `local` e os limites de temperatura nas cópias
+ * do JSON. Sem eles, o LeitorCultivo recusaria as cópias antigas e as plantas
+ * sumiriam da tela. Os limites vêm do JSON atual da espécie no catálogo.
+ */
+private fun migracao1para2(assets: AssetManager) = object : Migration(1, 2) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL("ALTER TABLE plantio ADD COLUMN local TEXT")
+        db.query("SELECT id, especie, cultivoJson FROM plantio").use { cursor ->
+            while (cursor.moveToNext()) {
+                val doCatalogo = runCatching {
+                    assets.open("catalogo/${cursor.getString(1)}").bufferedReader().use { it.readText() }
+                }.getOrNull()
+                val completa = Migracoes.comTemperaturas(cursor.getString(2), doCatalogo)
+                db.execSQL("UPDATE plantio SET cultivoJson = ? WHERE id = ?", arrayOf<Any>(completa, cursor.getLong(0)))
+            }
+        }
     }
 }

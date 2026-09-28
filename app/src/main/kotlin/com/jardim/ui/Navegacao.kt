@@ -1,5 +1,6 @@
 package com.jardim.ui
 
+import com.jardim.ui.cidade.CidadeTela
 import androidx.compose.animation.AnimatedContentScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionLayout
@@ -66,7 +67,10 @@ fun JardimNavegacao() {
                     )
                 }
                 tela("configuracoes") {
-                    ConfiguracoesTela(aoVoltar = { nav.popBackStack() })
+                    ConfiguracoesTela(aoVoltar = { nav.popBackStack() }, aoEscolherCidade = { nav.navigate("cidade") })
+                }
+                tela("cidade") {
+                    CidadeTela(aoVoltar = { nav.popBackStack() })
                 }
             }
         }

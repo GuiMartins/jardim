@@ -1,5 +1,14 @@
 package com.jardim.ui.planta
 
+import com.jardim.ui.nomeDoLocal
+import com.jardim.ui.EscolherLocal
+import com.jardim.motor.agenda.Local
+import androidx.compose.ui.graphics.Color
+import androidx.compose.runtime.remember
+import androidx.compose.material3.TextButton
+import androidx.compose.material3.ListItemDefaults
+import androidx.compose.material3.ListItem
+import androidx.compose.material3.AlertDialog
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -98,6 +107,7 @@ fun PlantaTela(
             contentPadding = PaddingValues(bottom = 32.dp),
         ) {
             item(key = "agora") { Agora(estado) }
+            item(key = "local") { OndeFica(estado, aoMudar = viewModel::mudarLocal) }
             proximos(estado)
             fases(estado)
             problemas(estado.problemas)
@@ -123,6 +133,56 @@ private fun Vazio(texto: String) {
         modifier = Modifier.padding(horizontal = 16.dp),
         color = MaterialTheme.colorScheme.onSurfaceVariant,
     )
+}
+
+/**
+ * Onde o vaso fica e os limites de temperatura da espécie. Plantio de antes da
+ * pergunta mostra as opções direto, porque sem resposta não há aviso do tempo.
+ */
+@Composable
+private fun OndeFica(estado: EstadoPlanta, aoMudar: (Local) -> Unit) {
+    var mudando by remember { mutableStateOf(false) }
+    val local = estado.local
+    OutlinedCard(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp)) {
+        if (local == null) {
+            Column(Modifier.padding(top = 16.dp)) {
+                Text("Onde ela fica?", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(horizontal = 16.dp))
+                Text(
+                    "Responda para o app avisar de geada, calor forte e vento só quando o tempo chega até ela.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    modifier = Modifier.padding(horizontal = 16.dp),
+                )
+                EscolherLocal(null, aoEscolher = aoMudar)
+            }
+        } else {
+            val limites = "Sofre abaixo de ${estado.minimaC} °C e pede cuidado acima de ${estado.maximaC} °C."
+            val semCidade = if (!estado.temCidade && local != Local.DENTRO_DE_CASA) {
+                " Escolha sua cidade em Configurações para receber os avisos do tempo."
+            } else {
+                ""
+            }
+            ListItem(
+                overlineContent = { Text("Onde fica") },
+                headlineContent = { Text(nomeDoLocal(local)) },
+                supportingContent = { Text(limites + semCidade) },
+                trailingContent = { TextButton(onClick = { mudando = true }) { Text("Mudar") } },
+                colors = ListItemDefaults.colors(containerColor = Color.Transparent),
+            )
+        }
+    }
+    if (mudando && local != null) {
+        AlertDialog(
+            onDismissRequest = { mudando = false },
+            title = { Text("Onde ela fica?") },
+            text = {
+                EscolherLocal(local, aoEscolher = {
+                    aoMudar(it)
+                    mudando = false
+                })
+            },
+            confirmButton = { TextButton(onClick = { mudando = false }) { Text("Fechar") } },
+        )
+    }
 }
 
 @Composable

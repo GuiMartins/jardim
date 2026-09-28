@@ -1,0 +1,142 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "4b16f34b3455e06240ce4d8755bdfb25",
+    "entities": [
+      {
+        "tableName": "plantio",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `especie` TEXT NOT NULL, `apelido` TEXT NOT NULL, `dataPlantio` TEXT NOT NULL, `cultivoJson` TEXT NOT NULL, `encerradoEm` TEXT, `local` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "especie",
+            "columnName": "especie",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "apelido",
+            "columnName": "apelido",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dataPlantio",
+            "columnName": "dataPlantio",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cultivoJson",
+            "columnName": "cultivoJson",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "encerradoEm",
+            "columnName": "encerradoEm",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "local",
+            "columnName": "local",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "registro_acao",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `plantioId` INTEGER NOT NULL, `chave` TEXT NOT NULL, `venceEm` TEXT NOT NULL, `realizadoEm` TEXT NOT NULL, `status` TEXT NOT NULL, FOREIGN KEY(`plantioId`) REFERENCES `plantio`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "plantioId",
+            "columnName": "plantioId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chave",
+            "columnName": "chave",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "venceEm",
+            "columnName": "venceEm",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "realizadoEm",
+            "columnName": "realizadoEm",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_registro_acao_plantioId",
+            "unique": false,
+            "columnNames": [
+              "plantioId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_registro_acao_plantioId` ON `${TABLE_NAME}` (`plantioId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "plantio",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "plantioId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4b16f34b3455e06240ce4d8755bdfb25')"
+    ]
+  }
+}

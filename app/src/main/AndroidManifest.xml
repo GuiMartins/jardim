@@ -4,6 +4,12 @@
     <!-- Android 13+: pedida na hora de plantar (PlantarTela). -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
+    <!-- Previsão do tempo e busca de cidade (Open-Meteo). -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Uma vez, para achar a cidade ("Usar minha localização"); nunca em segundo plano. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:name=".JardimApp"
         android:icon="@mipmap/ic_launcher"

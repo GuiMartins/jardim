@@ -7,6 +7,9 @@ import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.jardim.JardimApp
+import kotlinx.coroutines.launch
+import com.jardim.motor.agenda.Local
+import com.jardim.avisos.Preferencias
 import com.jardim.dados.JardimRepositorio
 import com.jardim.dados.PlantioAtivo
 import com.jardim.motor.agenda.DiaPrevisto
@@ -42,6 +45,12 @@ data class EstadoPlanta(
     val proximos: List<DiaPrevisto>,
     val problemas: List<Praga>,
     val historico: List<ItemHistorico>,
+    /** null nos plantios de antes da pergunta: a tela pede a resposta. */
+    val local: Local?,
+    val minimaC: Int,
+    val maximaC: Int,
+    /** Sem cidade não há previsão, e a tela avisa onde escolher. */
+    val temCidade: Boolean,
 )
 
 sealed interface TelaPlanta {
@@ -53,20 +62,28 @@ sealed interface TelaPlanta {
     data class Pronta(val estado: EstadoPlanta) : TelaPlanta
 }
 
-class PlantaViewModel(repositorio: JardimRepositorio, private val plantioId: Long) : ViewModel() {
+class PlantaViewModel(
+    private val repositorio: JardimRepositorio,
+    preferencias: Preferencias,
+    private val plantioId: Long,
+) : ViewModel() {
 
     private val hoje = MutableStateFlow(LocalDate.now())
 
     val tela: StateFlow<TelaPlanta> =
-        combine(repositorio.plantiosAtivos, hoje) { plantios, dia ->
-            plantios.firstOrNull { it.id == plantioId }?.let { TelaPlanta.Pronta(it.estado(dia)) } ?: TelaPlanta.Sumiu
+        combine(repositorio.plantiosAtivos, hoje, preferencias.cidade) { plantios, dia, cidade ->
+            plantios.firstOrNull { it.id == plantioId }?.let { TelaPlanta.Pronta(it.estado(dia, cidade != null)) } ?: TelaPlanta.Sumiu
         }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), TelaPlanta.Carregando)
 
     fun atualizarDia() {
         hoje.value = LocalDate.now()
     }
 
-    private fun PlantioAtivo.estado(hoje: LocalDate): EstadoPlanta {
+    fun mudarLocal(local: Local) {
+        viewModelScope.launch { repositorio.mudarLocal(plantioId, local) }
+    }
+
+    private fun PlantioAtivo.estado(hoje: LocalDate, temCidade: Boolean): EstadoPlanta {
         val cronograma = cronograma()
         val dia = cronograma.diaDoCiclo(hoje)
         return EstadoPlanta(
@@ -94,12 +111,16 @@ class PlantaViewModel(repositorio: JardimRepositorio, private val plantioId: Lon
             historico = registros.sortedByDescending { it.realizadoEm }.map { r ->
                 val quem = cronograma.identificar(r.chave)
                 ItemHistorico(
-                    icone = quem?.let { icone(it.origem, it.tipo) } ?: "•",
+                    icone = quem?.let { icone(it.origem, it.tipo, it.risco) } ?: "•",
                     titulo = quem?.titulo ?: r.chave,
                     realizadoEm = r.realizadoEm,
                     status = r.status,
                 )
             },
+            local = local,
+            minimaC = cultivo.planta.temperaturaMinimaC,
+            maximaC = cultivo.planta.temperaturaMaximaC,
+            temCidade = temCidade,
         )
     }
 
@@ -108,7 +129,7 @@ class PlantaViewModel(repositorio: JardimRepositorio, private val plantioId: Lon
             initializer {
                 val app = this[APPLICATION_KEY] as JardimApp
                 val id = checkNotNull(createSavedStateHandle().get<String>("id")).toLong()
-                PlantaViewModel(app.repositorio, id)
+                PlantaViewModel(app.repositorio, app.preferencias, id)
             }
         }
     }

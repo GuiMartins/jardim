@@ -21,6 +21,8 @@ class AvisoWorker(contexto: Context, parametros: WorkerParameters) : CoroutineWo
         val modo = inputData.getString(MODO)?.let(ModoAviso::valueOf) ?: return Result.failure()
         val avulso = inputData.getBoolean(AVULSO, false)
         try {
+            // Geada e calor dependem da previsão de hoje; sem rede, vale a última baixada.
+            app.previsoes.atualizar()
             val hoje = LocalDate.now()
             val itens = app.repositorio.plantiosAtivos.first().flatMap { plantio ->
                 paraAviso(modo, plantio.cronograma().pendenciasEm(hoje)).map { ItemAviso(plantio.id, plantio.apelido, it) }

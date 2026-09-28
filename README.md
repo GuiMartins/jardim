@@ -99,6 +99,23 @@ simula o ciclo inteiro para garantir isso.
   Jardim como **"Sem restrições"** em Bateria, senão o sistema pode pôr o app
   para dormir depois de alguns dias sem uso.
 
+## Tempo
+
+O app pergunta a cidade uma vez (pela localização aproximada ou pelo nome) e,
+ao plantar, onde o vaso vai ficar: ao ar livre, coberto ou dentro de casa.
+Cada espécie do catálogo tem a temperatura mínima que aguenta e a máxima a
+partir da qual pede cuidado. Com a previsão da [Open-Meteo](https://open-meteo.com):
+
+| Aviso | Quando | Para quem |
+|---|---|---|
+| 🥶 Proteger do frio esta noite | a mínima de amanhã fica abaixo da que a planta aguenta (coberta ganha 2 °C) | ao ar livre e coberta; entra no lembrete da noite |
+| 🥵 Calor forte hoje | a máxima passa do limite da planta | ao ar livre e coberta |
+| 💨 Vento forte hoje | rajadas de 60 km/h ou mais | ao ar livre e coberta |
+| 🌧️ Choveu ontem | 10 mm ou mais | ao ar livre: a rega continua, mas pede para conferir com o dedo |
+
+Os avisos entram na tela Hoje, nas notificações e na previsão dos próximos 7
+dias da planta. Sem internet, vale a última previsão baixada.
+
 ## Catálogo e busca
 
 O app foi feito para aguentar o catálogo das 1000 plantas mais populares do
@@ -183,3 +200,4 @@ desenvolvimento desta máquina. Medido no Galaxy Z Fold7, com 1000 plantas:
 - [x] **Etapa 3**: banco local (plantios e histórico), tela "Hoje" e "Nova planta"
 - [x] **Etapa 4**: notificações (resumo da manhã, lembrete da noite, botões na notificação)
 - [x] **Etapa 5**: linha do tempo da planta (agora, próximos dias, fases, problemas, histórico)
+- [x] **Etapa 6**: avisos do tempo (geada, calor, vento e chuva pela previsão da cidade e pelo lugar de cada vaso)

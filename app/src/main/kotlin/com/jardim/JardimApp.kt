@@ -7,6 +7,7 @@ import com.jardim.avisos.Preferencias
 import com.jardim.dados.Catalogo
 import com.jardim.dados.JardimDatabase
 import com.jardim.dados.JardimRepositorio
+import com.jardim.tempo.Previsoes
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -18,8 +19,9 @@ class JardimApp : Application() {
     val escopo = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
     val catalogo by lazy { Catalogo(assets) }
-    val repositorio by lazy { JardimRepositorio(JardimDatabase.criar(this).dao()) }
     val preferencias by lazy { Preferencias(this) }
+    val repositorio by lazy { JardimRepositorio(JardimDatabase.criar(this).dao(), preferencias.previsao) }
+    val previsoes by lazy { Previsoes(this, preferencias) }
     val avisos by lazy { Avisos(this) }
     val agendador by lazy { Agendador(this, preferencias) }
 
@@ -32,5 +34,6 @@ class JardimApp : Application() {
         // Deixa o índice do catálogo pronto antes de alguém tocar em "Nova planta":
         // com 1000 plantas ele leva uma fração de segundo, e a busca abre na hora.
         escopo.launch(Dispatchers.IO) { catalogo.busca }
+        escopo.launch { previsoes.atualizar() }
     }
 }

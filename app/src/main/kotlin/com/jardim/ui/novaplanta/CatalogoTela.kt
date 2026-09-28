@@ -69,6 +69,7 @@ fun CatalogoTela(
     val teclado = LocalSoftwareKeyboardController.current
     val lista = rememberLazyListState()
     val hoje = remember { LocalDate.now() }
+    val calendarioVale by viewModel.calendarioVale.collectAsStateWithLifecycle()
 
     // Teclado só na chegada: voltando da tela Plantar, a pessoa quer ver a lista.
     // O rememberSaveable sobrevive enquanto a busca está na pilha, por baixo.
@@ -136,7 +137,7 @@ fun CatalogoTela(
                     contentPadding = PaddingValues(bottom = 16.dp),
                 ) {
                     items(pronto.resultados, key = { it.item.arquivo }) { resultado ->
-                        ItemDoCatalogo(resultado, hoje, onClick = { aoEscolher(resultado.item.arquivo) })
+                        ItemDoCatalogo(resultado, hoje, calendarioVale, onClick = { aoEscolher(resultado.item.arquivo) })
                     }
                 }
             }
@@ -145,11 +146,11 @@ fun CatalogoTela(
 }
 
 @Composable
-private fun ItemDoCatalogo(resultado: ResultadoBusca, hoje: LocalDate, onClick: () -> Unit) {
+private fun ItemDoCatalogo(resultado: ResultadoBusca, hoje: LocalDate, calendarioVale: Boolean, onClick: () -> Unit) {
     val item = resultado.item
     val cores = MaterialTheme.colorScheme
     val destaque = SpanStyle(fontWeight = FontWeight.Bold, color = cores.primary)
-    val fora = foraDeEpoca(item.mesesPlantio, hoje)
+    val fora = calendarioVale && foraDeEpoca(item.mesesPlantio, hoje)
 
     ListItem(
         headlineContent = { Text(realcar(item.nomeComum, resultado.destaquesNome, destaque)) },

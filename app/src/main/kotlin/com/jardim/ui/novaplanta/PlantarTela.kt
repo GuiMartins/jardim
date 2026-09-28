@@ -46,8 +46,11 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.jardim.dados.Especie
+import com.jardim.motor.agenda.Local
+import com.jardim.ui.EscolherLocal
 import com.jardim.motor.agenda.foraDeEpoca
 import com.jardim.motor.modelo.FormaInicio
 import com.jardim.motor.modelo.RequisitosIniciais
@@ -85,13 +88,15 @@ private fun PlantarConteudo(
 
     var apelido by rememberSaveable { mutableStateOf(planta.nomeComum) }
     var dataPlantio by rememberSaveable { mutableStateOf(LocalDate.now()) }
+    var local by rememberSaveable { mutableStateOf<Local?>(null) }
     var escolhendoData by remember { mutableStateOf(false) }
     var salvando by remember { mutableStateOf(false) }
+    val calendarioVale by viewModel.calendarioVale.collectAsStateWithLifecycle()
 
     val contexto = LocalContext.current
     val plantar = {
         salvando = true
-        viewModel.plantar(especie, apelido, dataPlantio, aoPlantar)
+        viewModel.plantar(especie, apelido, dataPlantio, checkNotNull(local), aoPlantar)
     }
     // A permissão de notificação (Android 13+) é pedida aqui, no momento em que
     // ela faz sentido: a planta acabou de ganhar uma agenda. Planta mesmo se a
@@ -116,9 +121,17 @@ private fun PlantarConteudo(
                     onClick = {
                         if (precisaPedir) pedirPermissao.launch(Manifest.permission.POST_NOTIFICATIONS) else plantar()
                     },
-                    enabled = !salvando,
+                    enabled = !salvando && local != null,
                     modifier = Modifier.fillMaxWidth().navigationBarsPadding().padding(16.dp),
-                ) { Text(if (deSemente) "Semeei" else "Plantei") }
+                ) {
+                    Text(
+                        when {
+                            local == null -> "Escolha onde ela vai ficar"
+                            deSemente -> "Semeei"
+                            else -> "Plantei"
+                        },
+                    )
+                }
             }
         },
     ) { padding ->
@@ -148,7 +161,7 @@ private fun PlantarConteudo(
                 )
             }
 
-            if (foraDeEpoca(especie.cultivo, dataPlantio)) {
+            if (calendarioVale && foraDeEpoca(especie.cultivo, dataPlantio)) {
                 Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer)) {
                     Text(
                         "Fora da época ideal (${meses(planta.mesesPlantio)}). Dá para plantar, mas ela pode " +
@@ -157,6 +170,16 @@ private fun PlantarConteudo(
                         color = MaterialTheme.colorScheme.onTertiaryContainer,
                     )
                 }
+            }
+
+            Column {
+                Text("Onde ela vai ficar?", style = MaterialTheme.typography.titleMedium)
+                Text(
+                    "Para avisar de geada, calor forte, vento e chuva só quando o tempo chega até ela.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                EscolherLocal(local, aoEscolher = { local = it })
             }
 
             Text("Antes de começar", style = MaterialTheme.typography.titleMedium)

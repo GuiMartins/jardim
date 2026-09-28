@@ -1,5 +1,7 @@
 package com.jardim
 
+import com.jardim.ui.BoasVindas
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -23,8 +25,14 @@ class MainActivity : ComponentActivity() {
                 // Só na abertura: dobrar o celular ou girar a tela recria a activity,
                 // mas o rememberSaveable lembra que a semente já brotou.
                 var abrindo by rememberSaveable { mutableStateOf(true) }
+                // Começa em "vista" para não piscar: o DataStore responde em milissegundos,
+                // e a semente cobre a tela nesse meio tempo.
+                val boasVindasVista by (application as JardimApp).preferencias.boasVindasVista
+                    .collectAsStateWithLifecycle(initialValue = true)
+                var boasVindasFechada by rememberSaveable { mutableStateOf(false) }
                 Box {
                     JardimNavegacao()
+                    if (!boasVindasVista && !boasVindasFechada) BoasVindas(aoTerminar = { boasVindasFechada = true })
                     if (abrindo) Abertura(aoTerminar = { abrindo = false })
                 }
             }

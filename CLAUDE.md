@@ -45,6 +45,16 @@ Depois da etapa 5 (2026-09-25):
 - O resumo das 8h fica no WorkManager, sem alarme exato: o usuário aceitou que ele chegue quando o celular sai do Doze (no primeiro dia real, 08:44). Alarme exato com `USE_EXACT_ALARM` seria permitido, porque o app é instalado direto e a regra da Play Store não vale, mas foi recusado.
 - O celular recebe o build **release** (R8 + shrink), assinado com a chave de debug desta máquina: instala por cima do debug sem perder o banco. Instalar de outra máquina exige desinstalar antes, e isso apaga o histórico.
 
+## Avisos do tempo (2026-09-27)
+
+- A cidade é escolhida uma vez, nas boas-vindas ou em Configurações: pela localização aproximada (`ACCESS_COARSE_LOCATION`, pedida só nessa hora, coordenadas arredondadas a 2 casas) ou pela busca da Open-Meteo. A previsão também é da Open-Meteo (grátis, sem chave), guardada no DataStore e renovada quando tem mais de 3 h: na abertura, ao voltar para o Hoje e antes de cada aviso. Sem rede, vale a última.
+- "Onde ela vai ficar?" é obrigatório ao plantar, sem resposta marcada de início: `Local` (`AO_AR_LIVRE`, `COBERTO`, `DENTRO_DE_CASA`), gravado pelo nome no banco. Plantios de antes da pergunta ficam com `local` null (sem aviso do tempo) até a resposta, nas boas-vindas ou na tela da planta.
+- O `Cronograma` recebe `Tempo` (local + previsão). Frio: mínima de amanhã, arredondada, abaixo de `temperatura_minima_c` (coberto ganha 2 °C); é crítico, então entra no lembrete das 19h. Calor: máxima de hoje, arredondada, acima de `temperatura_maxima_c`. Vento: rajada de 60 km/h ou mais. A chave é `tempo:<risco>:<data>` e vale só pelo dia.
+- Chuva de 10 mm ou mais ontem só acrescenta contexto à rega de vaso ao ar livre ("confira com o dedo"): o tempo nunca some com uma tarefa.
+- Fora do Centro-Sul (pelo estado da cidade; sem estado, latitude ao norte de 15° S), o app não diz "fora de época", porque os meses do catálogo são do Centro-Sul.
+- As boas-vindas aparecem uma vez (flag no DataStore), por cima da navegação e embaixo da semente: explicam e pedem notificação e cidade, e perguntam onde fica cada planta antiga. Tudo é opcional.
+- Banco v2: coluna `local`, e as cópias do JSON dos plantios completadas com as temperaturas do catálogo atual (`Migracoes.comTemperaturas`; espécie que saiu do catálogo leva 5 e 30 °C, a mediana).
+
 ## Catálogo e busca (2026-09-25)
 
 - O catálogo vai chegar a ~1000 espécies, geradas por outra frente do projeto (`dados/`: levantamento das plantas populares e `gerar_catalogo.py`), que grava direto em `app/src/main/assets/catalogo/`. **Não ponha arquivos temporários nessa pasta.** Para testar volume, use `-PcatalogoExtra=<pasta fora do repo>`.

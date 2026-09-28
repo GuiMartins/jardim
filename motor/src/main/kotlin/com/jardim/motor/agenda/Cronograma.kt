@@ -2,9 +2,11 @@ package com.jardim.motor.agenda
 
 import com.jardim.motor.modelo.Fase
 import com.jardim.motor.modelo.PlantaCultivo
+import com.jardim.motor.modelo.TipoTarefa
 import java.time.LocalDate
 import java.time.YearMonth
 import java.time.temporal.ChronoUnit
+import kotlin.math.roundToInt
 
 /**
  * Agenda de um plantio, calculada a partir do JSON da espécie, da data do dia 1
@@ -23,11 +25,15 @@ import java.time.temporal.ChronoUnit
  * - Ressemear move o dia 1 para a data nova. O histórico de antes continua no
  *   banco, mas não conta mais para a agenda: o alerta "conferir a germinação"
  *   tem que voltar a aparecer no novo dia 10.
+ * - Aviso do tempo (com [tempo]) vale só pelo dia: a geada de ontem já passou,
+ *   então não atrasa nem acumula. A chave leva a data, como no sazonal.
  */
 class Cronograma(
     private val cultivo: PlantaCultivo,
     private val dataPlantio: LocalDate,
     private val registros: List<RegistroAcao>,
+    /** Onde o vaso fica e a previsão; sem ele, nenhum aviso do tempo. */
+    private val tempo: Tempo? = null,
 ) {
     private val ultimaAcaoPorChave: Map<String, LocalDate> = registros
         .filter { it.realizadoEm.toLocalDate() >= dataPlantio }
@@ -54,7 +60,8 @@ class Cronograma(
     fun pendenciasEm(hoje: LocalDate): List<Pendencia> {
         val dia = diaDoCiclo(hoje)
         if (dia < 1 || cicloEncerradoEm(hoje)) return emptyList()
-        return (pendenciasDeTarefas(dia) + pendenciasDeAlertas(dia) + pendenciasSazonais(hoje))
+        return (comChuva(pendenciasDeTarefas(dia), hoje) + pendenciasDeAlertas(dia) + pendenciasSazonais(hoje) +
+            pendenciasDoTempo(hoje))
             .sortedWith(compareByDescending<Pendencia> { it.critica }.thenByDescending { it.diasDeAtraso })
     }
 
@@ -72,7 +79,7 @@ class Cronograma(
         fazerTudo(hoje, pendenciasEm(hoje))
         return (1..dias).mapNotNull { i ->
             val data = hoje.plusDays(i.toLong())
-            val pendencias = Cronograma(cultivo, dataPlantio, imaginario).pendenciasEm(data)
+            val pendencias = Cronograma(cultivo, dataPlantio, imaginario, tempo).pendenciasEm(data)
             fazerTudo(data, pendencias)
             if (pendencias.isEmpty()) null else DiaPrevisto(data, diaDoCiclo(data), pendencias)
         }
@@ -89,6 +96,8 @@ class Cronograma(
                 ?.let { Identificacao(Origem.ALERTA, it.titulo, null) }
             "sazonal" -> indice?.let { cultivo.eventosSazonais.getOrNull(it) }
                 ?.let { Identificacao(Origem.SAZONAL, it.titulo, null) }
+            "tempo" -> Risco.entries.firstOrNull { it.name.lowercase() == partes.getOrNull(1) }
+                ?.let { Identificacao(Origem.TEMPO, it.titulo, null, it) }
             else -> null
         }
     }
@@ -156,5 +165,41 @@ class Cronograma(
                 diasDeAtraso = ChronoUnit.DAYS.between(inicioDoMes, hoje).toInt(),
             )
         }
+    }
+
+    private fun pendenciasDoTempo(hoje: LocalDate): List<Pendencia> {
+        val tempo = tempo ?: return emptyList()
+        val planta = cultivo.planta
+        val dia = tempo.em(hoje)
+        val riscos = tempo.local.riscos
+        fun pendencia(risco: Risco, contexto: String, critica: Boolean = false): Pendencia? {
+            val chave = "tempo:${risco.name.lowercase()}:$hoje"
+            if (risco !in riscos || chave in ultimaAcaoPorChave) return null
+            return Pendencia(chave, Origem.TEMPO, risco.titulo, risco.instrucoes, contexto, null, critica, hoje, 0, risco)
+        }
+        return listOfNotNull(
+            // Crítica: uma noite de geada basta para matar, então entra no lembrete da noite.
+            frioDaNoite(tempo.local, planta.temperaturaMinimaC, tempo.em(hoje.plusDays(1)))?.let {
+                pendencia(Risco.FRIO, "Previsão de ${graus(it)} nesta madrugada. Abaixo de ${planta.temperaturaMinimaC} °C, a planta sofre dano.", critica = true)
+            },
+            dia?.takeIf { it.maximaC.roundToInt() > planta.temperaturaMaximaC }?.let {
+                pendencia(Risco.CALOR, "Previsão de ${graus(it.maximaC)}. Acima de ${planta.temperaturaMaximaC} °C, o vaso seca em poucas horas.")
+            },
+            dia?.takeIf { it.rajadaKmh >= RAJADA_FORTE_KMH }?.let {
+                pendencia(Risco.VENTO, "Rajadas de até ${it.rajadaKmh.roundToInt()} km/h previstas.")
+            },
+        )
+    }
+
+    /**
+     * Com chuva forte ontem, a rega de um vaso ao ar livre continua aparecendo
+     * (o tempo nunca some com uma tarefa), mas lembra de conferir antes.
+     */
+    private fun comChuva(pendencias: List<Pendencia>, hoje: LocalDate): List<Pendencia> {
+        val tempo = tempo?.takeIf { Risco.CHUVA in it.local.riscos } ?: return pendencias
+        val ontem = tempo.em(hoje.minusDays(1))?.takeIf { it.chuvaMm >= CHUVA_QUE_MOLHA_MM } ?: return pendencias
+        val aviso = "Choveu ${ontem.chuvaMm.roundToInt()} mm ontem. Enfie o dedo no substrato antes de regar: " +
+            "se estiver úmido, é \"Não precisou\"."
+        return pendencias.map { if (it.tipo == TipoTarefa.REGA) it.copy(contexto = aviso) else it }
     }
 }

@@ -1,5 +1,6 @@
 package com.jardim.ui.hoje
 
+import androidx.compose.ui.text.style.TextOverflow
 import android.content.Intent
 import android.provider.Settings
 import androidx.compose.animation.AnimatedVisibility
@@ -85,6 +86,7 @@ fun HojeTela(
 ) {
     val cartoes by viewModel.cartoes.collectAsStateWithLifecycle()
     val hoje by viewModel.dataDeHoje.collectAsStateWithLifecycle()
+    val tempo by viewModel.tempoDeHoje.collectAsStateWithLifecycle()
     val snackbar = remember { SnackbarHostState() }
     val contexto = LocalContext.current
     var notificacoesLigadas by remember { mutableStateOf(true) }
@@ -111,15 +113,17 @@ fun HojeTela(
                     Column {
                         Text("Hoje")
                         Text(
-                            dataLonga(hoje),
+                            listOfNotNull(dataLonga(hoje), tempo).joinToString(" · "),
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis,
                         )
                     }
                 },
                 actions = {
                     IconButton(onClick = aoConfigurar) {
-                        Icon(Icons.Filled.Settings, contentDescription = "Horários das notificações")
+                        Icon(Icons.Filled.Settings, contentDescription = "Configurações")
                     }
                 },
             )

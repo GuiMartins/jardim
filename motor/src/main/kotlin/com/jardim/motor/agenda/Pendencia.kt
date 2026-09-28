@@ -4,8 +4,8 @@ import com.jardim.motor.modelo.TipoTarefa
 import java.time.LocalDate
 import java.time.LocalDateTime
 
-/** De qual bloco do JSON da planta a pendência veio. */
-enum class Origem { TAREFA, ALERTA, SAZONAL }
+/** De qual bloco do JSON da planta a pendência veio, ou TEMPO se veio da previsão. */
+enum class Origem { TAREFA, ALERTA, SAZONAL, TEMPO }
 
 /**
  * Algo a fazer hoje ou já atrasado: vira uma linha na tela "Hoje" e entra no
@@ -25,6 +25,8 @@ data class Pendencia(
     val critica: Boolean,
     val venceEm: LocalDate,
     val diasDeAtraso: Int,
+    /** Só TEMPO tem risco. */
+    val risco: Risco? = null,
 )
 
 /**
@@ -39,7 +41,7 @@ enum class StatusAcao { FEITA, NAO_PRECISOU }
 data class DiaPrevisto(val data: LocalDate, val dia: Int, val pendencias: List<Pendencia>)
 
 /** O que uma chave do histórico é no JSON da planta. */
-data class Identificacao(val origem: Origem, val titulo: String, val tipo: TipoTarefa?)
+data class Identificacao(val origem: Origem, val titulo: String, val tipo: TipoTarefa?, val risco: Risco? = null)
 
 /**
  * Uma linha do histórico: o usuário fez uma pendência, ou conferiu e ela não

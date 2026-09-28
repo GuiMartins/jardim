@@ -1,5 +1,9 @@
 package com.jardim.ui.hoje
 
+import kotlin.math.roundToInt
+import com.jardim.motor.agenda.graus
+import com.jardim.tempo.Previsoes
+import com.jardim.avisos.Preferencias
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY
 import androidx.lifecycle.viewModelScope
@@ -42,10 +46,19 @@ data class AcaoRegistrada(val registroId: Long, val mensagem: String)
 class HojeViewModel(
     private val repositorio: JardimRepositorio,
     private val avisos: Avisos,
+    private val previsoes: Previsoes,
+    preferencias: Preferencias,
 ) : ViewModel() {
 
     private val hoje = MutableStateFlow(LocalDate.now())
     val dataDeHoje: StateFlow<LocalDate> = hoje
+
+    /** "Curitiba: 12 a 24 °C", embaixo da data; null sem cidade ou sem previsão de hoje. */
+    val tempoDeHoje: StateFlow<String?> =
+        combine(preferencias.cidade, preferencias.previsao, hoje) { cidade, dias, dia ->
+            val previsto = dias?.firstOrNull { it.data == dia } ?: return@combine null
+            cidade?.let { "${it.nome}: ${previsto.minimaC.roundToInt()} a ${graus(previsto.maximaC)}" }
+        }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
     /** null enquanto o banco não respondeu, para não piscar a tela de "sem plantas". */
     val cartoes: StateFlow<List<CartaoPlantio>?> =
@@ -58,6 +71,8 @@ class HojeViewModel(
     /** Ao voltar para o app: quem deixou aberto de um dia para o outro vê o dia novo. */
     fun atualizarDia() {
         hoje.value = LocalDate.now()
+        // O app pode ficar dias aberto em segundo plano: a previsão velha se renova aqui.
+        viewModelScope.launch { previsoes.atualizar() }
     }
 
     fun marcar(plantioId: Long, pendencia: Pendencia, status: StatusAcao) {
@@ -102,7 +117,7 @@ class HojeViewModel(
         val Factory = viewModelFactory {
             initializer {
                 val app = this[APPLICATION_KEY] as JardimApp
-                HojeViewModel(app.repositorio, app.avisos)
+                HojeViewModel(app.repositorio, app.avisos, app.previsoes, app.preferencias)
             }
         }
     }

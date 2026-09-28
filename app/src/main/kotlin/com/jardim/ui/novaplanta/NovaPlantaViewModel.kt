@@ -6,10 +6,13 @@ import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.jardim.JardimApp
+import com.jardim.avisos.Preferencias
 import com.jardim.dados.Catalogo
 import com.jardim.dados.Especie
 import com.jardim.dados.JardimRepositorio
+import com.jardim.motor.agenda.Local
 import com.jardim.motor.catalogo.ResultadoBusca
+import com.jardim.motor.tempo.noCentroSul
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -17,6 +20,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.stateIn
@@ -33,7 +37,17 @@ sealed interface EstadoBusca {
 class NovaPlantaViewModel(
     private val catalogo: Catalogo,
     private val repositorio: JardimRepositorio,
+    preferencias: Preferencias,
 ) : ViewModel() {
+
+    /**
+     * Os meses de plantio do catálogo foram pensados para o Centro-Sul. Fora
+     * dele, "fora de época" estaria errado, então a tela não diz nada. Sem
+     * cidade escolhida, vale o Centro-Sul, que é o padrão do catálogo.
+     */
+    val calendarioVale: StateFlow<Boolean> = preferencias.cidade
+        .map { it == null || noCentroSul(it) }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), true)
 
     private val consulta = MutableStateFlow("")
 
@@ -56,9 +70,9 @@ class NovaPlantaViewModel(
     suspend fun carregar(arquivo: String): Especie? = withContext(Dispatchers.IO) { catalogo.especie(arquivo) }
 
     /** Grava no viewModelScope: sair da tela no meio não cancela o plantio. */
-    fun plantar(especie: Especie, apelido: String, dataPlantio: LocalDate, depois: () -> Unit) {
+    fun plantar(especie: Especie, apelido: String, dataPlantio: LocalDate, local: Local, depois: () -> Unit) {
         viewModelScope.launch {
-            repositorio.plantar(especie, apelido.trim().ifEmpty { especie.cultivo.planta.nomeComum }, dataPlantio)
+            repositorio.plantar(especie, apelido.trim().ifEmpty { especie.cultivo.planta.nomeComum }, dataPlantio, local)
             depois()
         }
     }
@@ -67,7 +81,7 @@ class NovaPlantaViewModel(
         val Factory = viewModelFactory {
             initializer {
                 val app = this[APPLICATION_KEY] as JardimApp
-                NovaPlantaViewModel(app.catalogo, app.repositorio)
+                NovaPlantaViewModel(app.catalogo, app.repositorio, app.preferencias)
             }
         }
     }

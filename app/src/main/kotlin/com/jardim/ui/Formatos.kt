@@ -2,6 +2,7 @@ package com.jardim.ui
 
 import com.jardim.motor.agenda.Origem
 import com.jardim.motor.agenda.Pendencia
+import com.jardim.motor.agenda.Risco
 import com.jardim.motor.modelo.Dificuldade
 import com.jardim.motor.modelo.Luminosidade
 import com.jardim.motor.modelo.Planta
@@ -102,11 +103,18 @@ fun luminosidade(l: Luminosidade): String = when (l) {
 fun numero(valor: Double): String =
     if (valor % 1.0 == 0.0) valor.toInt().toString() else valor.toString().replace('.', ',')
 
-fun icone(p: Pendencia): String = icone(p.origem, p.tipo)
+fun icone(p: Pendencia): String = icone(p.origem, p.tipo, p.risco)
 
-fun icone(origem: Origem, tipo: TipoTarefa?): String = when (origem) {
+fun icone(origem: Origem, tipo: TipoTarefa?, risco: Risco? = null): String = when (origem) {
     Origem.ALERTA -> "📣"
     Origem.SAZONAL -> "🗓️"
+    Origem.TEMPO -> when (risco) {
+        Risco.FRIO -> "🥶"
+        Risco.CALOR -> "🥵"
+        Risco.VENTO -> "💨"
+        Risco.CHUVA -> "🌧️"
+        null -> "🌡️"
+    }
     Origem.TAREFA -> when (tipo) {
         TipoTarefa.REGA -> "💧"
         TipoTarefa.ADUBACAO -> "🌿"

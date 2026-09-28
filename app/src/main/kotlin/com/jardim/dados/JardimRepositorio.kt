@@ -1,9 +1,12 @@
 package com.jardim.dados
 
 import com.jardim.motor.agenda.Cronograma
+import com.jardim.motor.agenda.DiaDoTempo
+import com.jardim.motor.agenda.Local
 import com.jardim.motor.agenda.Pendencia
 import com.jardim.motor.agenda.RegistroAcao
 import com.jardim.motor.agenda.StatusAcao
+import com.jardim.motor.agenda.Tempo
 import com.jardim.motor.leitura.LeitorCultivo
 import com.jardim.motor.leitura.ResultadoLeitura
 import com.jardim.motor.modelo.PlantaCultivo
@@ -15,23 +18,32 @@ import kotlinx.coroutines.sync.withLock
 import java.time.LocalDate
 import java.time.LocalDateTime
 
-/** Um plantio ativo com o cultivo já lido da cópia e o histórico no formato do motor. */
+/** Um plantio ativo com o cultivo já lido da cópia, o histórico no formato do motor e o tempo. */
 data class PlantioAtivo(
     val id: Long,
     val apelido: String,
     val dataPlantio: LocalDate,
     val cultivo: PlantaCultivo,
     val registros: List<RegistroAcao>,
+    /** null nos plantios de antes da pergunta "onde ela vai ficar?". */
+    val local: Local?,
+    /** Local e previsão juntos; null se falta um dos dois, e aí não há aviso do tempo. */
+    val tempo: Tempo?,
 ) {
-    fun cronograma() = Cronograma(cultivo, dataPlantio, registros)
+    fun cronograma() = Cronograma(cultivo, dataPlantio, registros, tempo)
 }
 
-class JardimRepositorio(private val dao: JardimDao) {
+/**
+ * [previsao] é a última previsão da cidade do usuário: entra no fluxo dos
+ * plantios, então a tela Hoje, a da planta e os avisos já recebem os avisos
+ * do tempo sem saber que ela existe.
+ */
+class JardimRepositorio(private val dao: JardimDao, previsao: Flow<List<DiaDoTempo>?>) {
 
     private val trava = Mutex()
 
     val plantiosAtivos: Flow<List<PlantioAtivo>> =
-        combine(dao.plantiosAtivos(), dao.registrosDosAtivos()) { plantios, registros ->
+        combine(dao.plantiosAtivos(), dao.registrosDosAtivos(), previsao) { plantios, registros, dias ->
             val porPlantio = registros.groupBy { it.plantioId }
             plantios.map { p ->
                 PlantioAtivo(
@@ -42,19 +54,24 @@ class JardimRepositorio(private val dao: JardimDao) {
                     registros = porPlantio[p.id].orEmpty().map {
                         RegistroAcao(it.chave, it.venceEm, it.realizadoEm, it.status)
                     },
+                    local = p.local,
+                    tempo = if (p.local != null && dias != null) Tempo(p.local, dias) else null,
                 )
             }
         }
 
-    suspend fun plantar(especie: Especie, apelido: String, dataPlantio: LocalDate): Long =
+    suspend fun plantar(especie: Especie, apelido: String, dataPlantio: LocalDate, local: Local): Long =
         dao.inserirPlantio(
             PlantioEntity(
                 especie = especie.arquivo,
                 apelido = apelido,
                 dataPlantio = dataPlantio,
                 cultivoJson = especie.json,
+                local = local,
             ),
         )
+
+    suspend fun mudarLocal(plantioId: Long, local: Local) = dao.mudarLocal(plantioId, local)
 
     suspend fun registrar(plantioId: Long, pendencia: Pendencia, status: StatusAcao): Long =
         dao.inserirRegistro(
