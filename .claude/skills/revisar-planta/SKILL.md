@@ -13,7 +13,7 @@ O JSON foi escrito por outro modelo, de memória, sem consultar fonte nenhuma. E
 Duas regras valem mais que o resto:
 
 - **Sem fonte, sem achado.** Todo achado cita pelo menos uma página que você abriu e que sustenta a correção. A sua memória serve para desconfiar, não para corrigir: você aprendeu com os mesmos textos do modelo que escreveu o JSON e tende a repetir os mesmos enganos.
-- **Convenção diferente não é erro.** As fontes costumam falar de cultivo no chão e no hemisfério norte; o JSON fala de vaso no Centro-Sul do Brasil. Converta antes de comparar (meses do hemisfério norte: some 6). Se a fonte dá uma faixa e o JSON está dentro dela, está certo. Um achado que troca um número razoável por outro número razoável só gasta o tempo de quem revisa.
+- **Convenção diferente não é erro.** As fontes costumam falar de cultivo no chão e no hemisfério norte; o JSON fala de vaso no Centro-Sul do Brasil. Converta antes de comparar, mas com cuidado com os meses: somar 6 aos meses do hemisfério norte só dá uma ideia, porque floração e dormência dependem do frio e da duração do dia, e o inverno daqui é outro. Para mudar um mês, a fonte precisa ser do Brasil ou de clima parecido. Se a fonte dá uma faixa e o JSON está dentro dela, está certo. Um achado que troca um número razoável por outro número razoável só gasta o tempo de quem revisa.
 
 Argumento vazio ou arquivo que não existe: diga isso em uma frase, sem JSON.
 
