@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Sapucaia",
+    "nome_cientifico": "Lecythis pisonis",
+    "descricao": "Árvore nativa da Mata Atlântica, famosa pela brotação cor-de-rosa na primavera, pelas flores lilases e pelo fruto em forma de cumbuca com castanhas comestíveis. No chão passa de 20 m; em vaso grande vive bem como arvoreta jovem por alguns anos, mas raramente floresce ou frutifica antes de ir para o solo definitivo.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e fundo, com pelo menos 50 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo; a raiz pivotante precisa de altura mais do que de largura",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; levemente ácido e rico em matéria orgânica",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 45,
+      "descricao": "A muda sente a troca de vaso e pode perder uma ou duas folhas velhas. Mantenha em meia sombra na primeira semana e aumente o sol aos poucos. A fase termina quando surge um broto novo, geralmente avermelhado ou rosado, na ponta do caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 46,
+      "dia_fim": 540,
+      "descricao": "A raiz ocupa o vaso e a muda cresce de 30 a 80 cm por ano, em surtos de folhas novas rosadas que depois ficam verdes. No inverno o crescimento para e algumas folhas caem. A fase termina quando as raízes começam a aparecer pelos furos do vaso."
+    },
+    {
+      "fase_id": "arvoreta_em_vaso",
+      "nome": "Arvoreta em Vaso",
+      "dia_inicio": 541,
+      "dia_fim": null,
+      "descricao": "Ano típico: parada e queda parcial de folhas em junho e julho, brotação rosa intensa entre agosto e outubro, crescimento forte no verão chuvoso. Em vaso a floração é rara; se o objetivo é ver flores e cumbucas, planeje o plantio no chão, em local com espaço para uma árvore grande, longe de construções."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de sapucaia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda recém-plantada seca antes do resto do vaso, então regue perto do caule. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a sapucaia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão acima de 30 °C confira a cada 2 dias; em junho e julho, com a planta parada, regue só quando os 5 cm estiverem secos, o que pode levar 6 a 8 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a sapucaia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto sobre o substrato, sem encostar no caule, mais 1 colher de sopa de NPK 10-10-10 dissolvida em 5 L de água; regue em seguida. Pule a adubação em junho e julho, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos rosados e o verso das folhas: procure folhas cortadas em meia-lua (formiga), pontos brancos algodonosos ou escamas marrons no caule (cochonilha) e manchas escuras irregulares (antracnose).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas no fundo e troque um terço do substrato por mistura nova. Se não quiser mais podar raízes, passe para um vaso maior ou plante no chão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de mais sol",
+      "mensagem": "A muda já teve uma semana para se adaptar à meia sombra. Sapucaia jovem cresce fina e fraca se ficar sem sol direto.",
+      "acao_requerida": "Levar o vaso para um local com pelo menos 4 horas de sol direto, de preferência pela manhã"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Conferir o tamanho do vaso",
+      "mensagem": "Com seis meses a raiz pivotante pode já ter chegado ao fundo do vaso.",
+      "acao_requerida": "Olhar os furos do fundo; se houver raízes saindo, planejar a troca para um vaso maior ou o plantio no chão na próxima primavera"
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "Pensar no lugar definitivo",
+      "mensagem": "A sapucaia é uma árvore de grande porte e só floresce bem no chão. Quanto mais tempo no vaso, mais a raiz se enrola e mais difícil fica o transplante.",
+      "acao_requerida": "Decidir se ela vai para o chão, em local a pelo menos 8 m de construções e muros, e fazer o plantio entre setembro e dezembro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora do inverno, substrato sempre úmido com cheiro azedo, base do caule escurecida e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, esvaziar o pratinho e reduzir a rega no inverno; se aparecer, retirar raízes podres, replantar em substrato novo e seco e só regar de novo quando secar"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos e folhas novas cortados em meia-lua de um dia para o outro, trilha de formigas no vaso ou no chão próximo",
+      "prevencao_tratamento": "Passar graxa ou fita adesiva dupla-face no tronco ou no pé do vaso; localizar o formigueiro e usar isca formicida longe do vaso, fora do alcance de crianças e animais"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou flocos brancos algodonosos no caule e na nervura das folhas, folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia embebidos em álcool 70%; em infestação maior, óleo mineral ou óleo de neem a 0,5% no fim da tarde a cada 7 dias, três aplicações"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons a pretas irregulares nas folhas novas, que secam a partir da ponta, principalmente em verões chuvosos",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas; retirar e descartar as folhas manchadas; em ataque forte, fungicida cúprico conforme o rótulo"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e brotos escurecem e secam de uma vez após noite fria; em planta jovem o ponteiro pode morrer",
+      "prevencao_tratamento": "Em noites abaixo de 4 °C, colocar o vaso junto a uma parede ou sob cobertura, ou cobrir com TNT; esperar a brotação da primavera para cortar as partes secas"
+    },
+    {
+      "nome": "Queimadura de sol na brotação",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas rosadas ficam esbranquiçadas ou marrons e secas nas bordas logo após mudança para sol pleno",
+      "prevencao_tratamento": "Aumentar a exposição ao sol aos poucos, ao longo de 2 semanas, e manter o substrato úmido durante a brotação"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: sapucaia em repouso",
+      "mensagem": "A planta para de crescer e pode perder parte das folhas. É normal e não é falta de água; rega em excesso agora apodrece a raiz, e geada queima a planta jovem.",
+      "acao_requerida": "Espaçar a rega até os 5 cm de substrato secarem, suspender a adubação e proteger o vaso nas noites abaixo de 4 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação antes da brotação",
+      "mensagem": "Logo antes de rebrotar é o melhor momento para dar forma à arvoreta com pouco estresse.",
+      "acao_requerida": "Cortar ramos secos, quebrados ou que cruzam o tronco, e ramos laterais baixos que disputam com o eixo principal; não cortar o ponteiro do tronco"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Brotação rosa da primavera",
+      "mensagem": "A sapucaia solta folhas novas cor-de-rosa. É o pico de crescimento do ano e a época em que ela mais consome água e nutrientes.",
+      "acao_requerida": "Voltar à rega a cada 3 dias, retomar a adubação e vigiar formigas nos brotos novos"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Azaleia-belga",
+    "nome_cientifico": "Rhododendron simsii (híbridos belgas)",
+    "descricao": "Arbusto de flores dobradas e vistosas, vendido em vaso já florido no outono e no inverno. Com substrato ácido, água sem calcário e poda logo depois das flores, volta a florir todo ano por muitos anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com 18 a 22 cm de diâmetro, mais largo que fundo (raiz fina e superficial), com furos no fundo e sem prato com água parada",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "40% casca de pinus fina compostada, 30% turfa ou fibra de coco, 20% terra de folhas (ou substrato para azaleias), 10% perlita; pH entre 4,5 e 5,5, sem calcário e sem terra de jardim",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação e Floração",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta chega florida, quase sempre num torrão de turfa que seca muito rápido. Mantenha em local claro e fresco, sem sol da tarde nem vento de ar-condicionado, e retire as flores murchas a cada 2 ou 3 dias. Queda de botões fechados nesta fase indica torrão seco ou mudança brusca de lugar."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "As flores acabam e surgem brotos novos verde-claros nas pontas dos ramos. É a hora de poda leve e de trocar para substrato ácido. A fase termina quando os brotos novos endurecem e ficam verde-escuros."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: cresce e recebe adubo de outubro a fevereiro, forma os botões florais no fim do verão (março), floresce de maio a setembro e é podada levemente logo depois das flores. Poda depois de dezembro corta os botões do ano seguinte."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_azaleia",
+      "titulo": "Regar a azaleia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Toque o substrato: se o primeiro centímetro estiver seco, regue devagar com água da chuva, filtrada ou de torneira descansada por 24 h, até escorrer pelos furos. Se o vaso estiver leve e o torrão soltando da borda, mergulhe o vaso num balde por 15 minutos e deixe escorrer. No inverno, confira a cada 3 ou 4 dias; acima de 30 °C, todo dia. Nunca deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_acidofila",
+      "titulo": "Adubar a azaleia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De outubro a fevereiro, dissolva adubo para plantas acidófilas (azaleias e camélias) na metade da dose do rótulo e regue com o substrato já úmido. De março a setembro, período de botões e flores, pule esta adubação: nitrogênio agora faz folha no lugar de flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire 5 folhas de pontos diferentes e procure no verso pontinhos pretos e brilhantes (percevejo-de-renda), teias finas (ácaro) ou escamas brancas. Folha de cima prateada ou pontilhada de amarelo confirma a praga.",
+      "critica": false
+    },
+    {
+      "id": "troca_de_vaso",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Logo depois da floração, tire a planta do vaso, solte as raízes externas com os dedos sem desmanchar o torrão e replante em substrato ácido novo, num vaso 2 a 4 cm maior. Mantenha o colo na mesma altura de antes e deixe à sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Confira o torrão da azaleia",
+      "mensagem": "Azaleias de floricultura vêm num torrão de turfa que, quando seca, repele a água: a rega escorre pela borda e a raiz continua seca.",
+      "acao_requerida": "Mergulhar o vaso num balde de água por 15 minutos até parar de soltar bolhas e escorrer bem antes de devolver ao lugar"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora de trocar de vaso",
+      "mensagem": "As flores acabaram e a planta está brotando. O substrato de viveiro é pobre e compacta; em substrato ácido novo ela se firma para a próxima floração.",
+      "acao_requerida": "Replantar em vaso 2 a 4 cm maior com a mistura ácida recomendada, cortando antes as pontas dos ramos que passaram do formato da copa"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e ficam opacas mesmo com o substrato úmido; raízes marrons e moles, base do caule escurecida",
+      "prevencao_tratamento": "Regar só quando a superfície secar, não deixar água no prato e usar substrato arejado com casca de pinus. Planta afetada: tirar do vaso, cortar raízes podres e replantar em substrato novo; em caso avançado, descartar"
+    },
+    {
+      "nome": "Percevejo-de-renda (Stephanitis pyrioides)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontilhado amarelo-prateado em cima e pontinhos pretos pegajosos no verso, onde ficam insetos pequenos de asas rendadas",
+      "prevencao_tratamento": "Evitar sol forte da tarde e ar parado. Lavar o verso das folhas e aplicar sabão potássico ou óleo de neem a 0,5% no verso, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas bronzeadas ou acinzentadas, teias finas entre folhas e ramos, pior em tempo seco",
+      "prevencao_tratamento": "Manter o ar úmido (bandeja com pedrinhas e água sem encostar no vaso) e borrifar o verso das folhas; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas ou marrons presas nos ramos e no verso das folhas, folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70% e aplicar óleo mineral ou de neem a 1% a cada 10 dias até sumir"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores com manchas encharcadas que viram bolor cinza e grudam nas folhas",
+      "prevencao_tratamento": "Retirar flores murchas a cada 2 ou 3 dias, não molhar as flores ao regar e manter ventilação"
+    },
+    {
+      "nome": "Clorose férrica (água ou substrato alcalino)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com nervuras verdes; a planta para de crescer e floresce pouco",
+      "prevencao_tratamento": "Regar com água da chuva ou filtrada, nunca adicionar calcário nem casca de ovo, e usar adubo para acidófilas. Para corrigir, aplicar quelato de ferro conforme o rótulo"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões fechados ficam marrons e caem antes de abrir",
+      "prevencao_tratamento": "Causada por torrão que secou, calor ou mudança brusca de lugar. Nunca deixar secar na época dos botões (março a maio) e escolher um local fixo, claro e fresco"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "A azaleia está formando botões",
+      "mensagem": "No fim do verão ela forma os botões das flores do inverno. Adubo nitrogenado e poda agora cortam a floração.",
+      "acao_requerida": "Suspender adubação e poda até o fim das flores e não deixar o substrato secar nenhuma vez"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Temporada de flores",
+      "mensagem": "A azaleia está florindo. Flor murcha presa à planta atrai mofo-cinzento e gasta energia.",
+      "acao_requerida": "Retirar as flores murchas a cada 2 ou 3 dias, torcendo-as na base sem arrancar os brotos ao lado"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Poda depois da floração",
+      "mensagem": "As flores acabaram: esta é a única janela de poda. Depois de dezembro, a tesoura corta os botões do ano que vem.",
+      "acao_requerida": "Encurtar em um terço os ramos que saíram do formato, logo acima de uma folha, e retomar a adubação mensal para acidófilas"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor do verão",
+      "mensagem": "Com o calor, o vaso seca em um dia e o sol da tarde queima as folhas.",
+      "acao_requerida": "Deixar a azaleia só com sol da manhã, conferir a rega todo dia e manter o ar úmido com uma bandeja de pedrinhas e água sob o vaso"
+    }
+  ]
+}

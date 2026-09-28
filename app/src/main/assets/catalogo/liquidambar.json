@@ -1,0 +1,207 @@
+{
+  "planta": {
+    "nome_comum": "Liquidâmbar",
+    "nome_cientifico": "Liquidambar styraciflua",
+    "descricao": "Árvore caducifólia da América do Norte, com folhas em forma de estrela que ficam vermelhas, roxas e alaranjadas no outono. Plantada no chão passa de 20 m; num vaso grande fica com 2 a 4 m e é cultivada pela cor de outono, que só fica intensa onde o inverno é frio (Sul e serras). Em clima quente, as folhas ficam amarelo-pardas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de diâmetro e 45 cm de profundidade e vários furos no fundo; o peso evita que a árvore tombe com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% casca de pinus fina ou perlita; levemente ácido (pH 5,5 a 6,5), sem calcário nem cinza",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. Se foi plantada no inverno, sem folhas, espere as gemas incharem; se foi plantada com folhas, algumas podem amarelar e cair. A fase termina quando surgem folhas novas firmes na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento de ramos novos e engrossamento do tronco. No primeiro ano a árvore cresce de 30 a 60 cm em vaso. Ela está estabelecida quando atravessa um verão sem murchar entre as regas e brota com força depois do primeiro inverno."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota em setembro, cresce de outubro a março, as folhas ganham cor entre abril e junho e caem no inverno, quando a árvore dorme até agosto. Em vaso o crescimento desacelera depois de 3 a 4 anos; a troca de substrato e a poda de raízes a cada 2 anos mantêm a árvore saudável."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Se a muda estiver sem folhas (inverno), regue só quando o substrato estiver seco a 5 cm. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o liquidâmbar",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 6 a 8 L num vaso de 40 L). No verão acima de 30 °C, confira todo dia. Na dormência, sem folhas (junho a agosto), regue só quando estiver seco a 5 cm, em geral a cada 7 a 10 dias.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure lagartas, folhas roídas, cochonilhas (escamas brancas ou marrons) nos ramos e folhas amareladas com nervuras verdes. Confira se o tronco tem rachaduras escuras ou exsudação.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a árvore do vaso, corte 3 a 5 cm das raízes da borda e do fundo do torrão com tesoura limpa e replante com substrato novo, no mesmo vaso ou num 10 cm maior. Se a árvore estiver com folhas no auge do verão, troque só os 10 cm de cima do substrato e deixe a troca completa para agosto, antes da brotação.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firme a árvore contra o vento",
+      "mensagem": "Muda alta num vaso ainda leve tomba com facilidade e solta as raízes novas.",
+      "acao_requerida": "Cravar uma estaca ao lado do tronco, sem ferir o torrão, e amarrar com fita macia em oito"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "As raízes já devem ter chegado ao substrato novo. A partir de agora a rega pode ficar mais espaçada.",
+      "acao_requerida": "Conferir se há brotos novos firmes; se o tronco já não balança, afrouxar a amarração da estaca"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano completo",
+      "mensagem": "A árvore está estabelecida e o tronco já se sustenta sozinho.",
+      "acao_requerida": "Retirar a estaca e a amarração para o tronco engrossar com o balanço do vento"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem fora de época; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e reduzir a rega na dormência. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelo-claras com as nervuras ainda verdes; crescimento fraco",
+      "prevencao_tratamento": "É falta de ferro e manganês causada por substrato alcalino. Não usar calcário nem cinza; aplicar ferro quelatizado (EDTA ou EDDHA) conforme a embalagem e usar substrato com casca de pinus ou turfa"
+    },
+    {
+      "nome": "Queima das bordas das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Margens das folhas secas, marrons e quebradiças no verão, com o centro ainda verde",
+      "prevencao_tratamento": "Falta de água nos dias quentes ou vento seco. Regar a fundo quando o substrato secar, cobrir o substrato com 3 cm de casca e evitar paredes que refletem calor à tarde"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro, ramos com folhas faltando e fezes escuras no substrato",
+      "prevencao_tratamento": "Catar à mão; em ataque grande, pulverizar Bacillus thuringiensis (Bt) no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodonosas nos ramos e no verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; se persistir, óleo mineral ou óleo de neem a 0,5% a cada 7 dias, fora do sol forte"
+    },
+    {
+      "nome": "Cancro dos ramos (Botryosphaeria)",
+      "tipo": "DOENCA",
+      "sintomas": "Ramos secando da ponta para trás, casca afundada e escura, às vezes com resina escorrendo",
+      "prevencao_tratamento": "Planta estressada por seca é a mais atacada. Cortar o ramo 10 cm abaixo da lesão com tesoura desinfetada em álcool e manter a rega regular"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Brotação: a árvore acordou",
+      "mensagem": "As gemas incham e abrem as primeiras folhas. A árvore volta a beber mais e precisa de nutrientes para o ano todo.",
+      "acao_requerida": "Voltar à rega normal (conferir a cada 3 dias) e fazer a primeira adubação do ano"
+    },
+    {
+      "meses": [
+        9,
+        11,
+        1
+      ],
+      "titulo": "Adubar o liquidâmbar",
+      "mensagem": "Na estação de crescimento, a árvore em vaso gasta os nutrientes do substrato em poucos meses.",
+      "acao_requerida": "Espalhar 2 punhados de húmus de minhoca mais 1 colher de sopa de NPK 10-10-10 num vaso de 40 L, longe do tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte no vaso",
+      "mensagem": "Vaso em sol pleno esquenta e seca em um dia nas semanas acima de 30 °C, e as bordas das folhas queimam.",
+      "acao_requerida": "Nos dias quentes, conferir o substrato todo dia e cobrir a superfície com 3 cm de casca de pinus"
+    },
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Cor de outono",
+      "mensagem": "As folhas ficam vermelhas, roxas ou amarelas. Não é doença: é o começo da dormência, e noites frias deixam a cor mais forte.",
+      "acao_requerida": "Parar de adubar e começar a espaçar as regas, sempre conferindo o substrato antes"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Dormência de inverno",
+      "mensagem": "Sem folhas, a árvore quase não bebe. Substrato encharcado no frio apodrece as raízes.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 5 cm, em geral a cada 7 a 10 dias, e não adubar"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Na dormência, sem folhas, a estrutura dos galhos fica visível e o corte cicatriza antes da brotação.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que disputam a ponta com o tronco principal; para manter a altura, encurtar os ramos mais longos logo acima de uma gema, com tesoura desinfetada"
+    }
+  ]
+}

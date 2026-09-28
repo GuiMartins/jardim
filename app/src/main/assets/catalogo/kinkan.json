@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Kinkan",
+    "nome_cientifico": "Citrus japonica (sin. Fortunella margarita, cv. 'Nagami')",
+    "descricao": "Pequeno cítrico de origem chinesa, compacto e muito produtivo em vaso. Os frutos ovais e alaranjados são comidos com casca, que é doce, enquanto a polpa é ácida. É o cítrico que melhor se adapta a varanda: floresce no verão e segura os frutos maduros por meses no inverno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, plástico grosso ou fibra com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo e apoiado em pés ou rodízios para a água sair livre",
+    "volume_minimo_litros": 35,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal peneirada, 25% substrato para cítricos ou casca de pinus fina, 20% húmus de minhoca, 15% areia grossa ou perlita; acrescente 1 xícara de farinha de ossos por vaso. O substrato precisa drenar rápido e ter pH entre 5,5 e 6,5",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enxertada se acostuma ao vaso e ao novo lugar. É normal cair algumas folhas nas primeiras semanas. Não adube nesta fase. A adaptação terminou quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a copa ganha volume em surtos de brotação. Se a muda florescer ou der frutos neste primeiro ano, deixe no máximo 5 a 8 frutos, para ela não gastar energia antes da hora. Arranque qualquer broto que nasça abaixo do calo do enxerto (a cicatriz na parte baixa do tronco): esse ramo é do cavalo e não dá kinkan."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação forte na primavera (setembro e outubro), floração perfumada de dezembro a fevereiro, às vezes em duas ou três ondas, e frutos que ficam laranja entre maio e agosto e seguram no pé por semanas. Depois da colheita, faça uma poda leve de formação. Folhas caídas em massa quase sempre indicam variação brusca de rega ou mudança de lugar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o kinkan recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos e jogue fora a água do pratinho. O torrão da muda seca antes do resto do vaso, então molhe bem em volta do tronco. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o kinkan",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e esvazie o pratinho. No verão com calor forte, confira a cada 2 dias; de junho a agosto, espace para 5 a 7 dias. Deixar secar até murchar derruba flores e frutinhos; deixar encharcado apodrece a raiz.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organomineral",
+      "titulo": "Adubar o kinkan",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato úmido, espalhe 2 colheres de sopa de NPK 10-10-10 (ou adubo específico para cítricos) e 3 colheres de sopa de húmus pela borda do vaso de 35 L, longe do tronco, e regue em seguida. A cada 3 meses, troque o NPK por 1 colher de sopa de sulfato de magnésio diluído em 2 L de água. De junho a agosto, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire 10 folhas, principalmente as brotações novas: procure trilhas prateadas em serpentina (larva-minadora), bolinhas marrons ou algodão branco grudados nos ramos (cochonilha), colônias de pulgão e folhas pegajosas ou com fuligem preta. Aproveite para arrancar brotos que nasçam abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o kinkan de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, raspe 3 a 5 cm de raiz em volta e no fundo do torrão com faca limpa e replante com substrato novo, no mesmo vaso ou num 10 cm maior. Mantenha o calo do enxerto acima do substrato. Se cair em pleno inverno ou com a planta carregada de flores, espere até setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso definitivo",
+      "mensagem": "O saquinho da muda limita a raiz e seca em poucas horas. Quanto antes ela for para o vaso, menor o estresse.",
+      "acao_requerida": "Plantar no vaso de 35 L com a camada de drenagem, mantendo o colo e o calo do enxerto acima da superfície, e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira adubação",
+      "mensagem": "A muda já deve ter soltado brotos novos. A partir de agora ela passa a receber adubo todo mês.",
+      "acao_requerida": "Conferir se há brotação nova antes de adubar; se ainda não houver, adubar só com húmus"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Controlar a carga do primeiro ano",
+      "mensagem": "Muda nova que segura muitos frutos para de crescer e às vezes derruba todos de uma vez.",
+      "acao_requerida": "Deixar no máximo 5 a 8 frutinhos bem distribuídos e retirar o resto com tesoura"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e gomose (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas que caem sem murchar, substrato sempre úmido com cheiro ruim, casca da base do tronco escura, rachada e soltando goma âmbar",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e não enterrar o colo. Se aparecer goma, raspe a casca podre até o tecido verde, pincele pasta bordalesa e reduza a rega"
+    },
+    {
+      "nome": "Cochonilhas (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças marrons ou tufos brancos grudados nos ramos e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Larva-minadora-dos-citros (Phyllocnistis citrella)",
+      "tipo": "PRAGA",
+      "sintomas": "Trilhas prateadas em serpentina nas folhas novas, que ficam enroladas e deformadas",
+      "prevencao_tratamento": "Ataca só brotação nova. Pulverize óleo de neem a 0,5% a cada 7 dias enquanto houver brotos tenros; folhas maduras não precisam de tratamento"
+    },
+    {
+      "nome": "Pulgão-preto-dos-citros (Toxoptera citricida)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos nas pontas dos ramos, brotos enrugados e formigas subindo pelo tronco",
+      "prevencao_tratamento": "Jato de água forte nas colônias; se persistir, sabão neutro a 1% ou óleo de neem a 0,5%. Afaste as formigas, que protegem o pulgão"
+    },
+    {
+      "nome": "Ácaro-da-leprose e ácaro-da-ferrugem",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com casca bronzeada ou áspera, folhas com manchas cloróticas e pontos amarelados; piora em tempo seco",
+      "prevencao_tratamento": "Borrife água nas folhas nos dias secos e quentes; se aparecer, enxofre molhável ou óleo mineral a 1%, nunca acima de 30 °C"
+    },
+    {
+      "nome": "Clorose por falta de ferro ou magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ferro: folhas novas amarelas com nervuras verdes. Magnésio: folhas velhas com um V amarelo a partir da ponta e base ainda verde",
+      "prevencao_tratamento": "Não use água muito calcária nem calcário no substrato. Para ferro, quelato de ferro na dose do rótulo; para magnésio, 1 colher de sopa de sulfato de magnésio em 2 L de água, aplicado no substrato"
+    },
+    {
+      "nome": "Queda de folhas por choque",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas verdes caem aos montes poucos dias depois de mudar a planta de lugar ou de um período muito seco seguido de encharcamento",
+      "prevencao_tratamento": "Mude o vaso de lugar aos poucos e mantenha a rega regular. A planta rebrota em 3 a 6 semanas se a raiz estiver sadia"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Kinkans amadurecendo",
+      "mensagem": "Os frutos ficam laranja-vivo e macios ao toque. Eles aguentam semanas no pé, então dá para colher aos poucos.",
+      "acao_requerida": "Colher com tesoura, cortando o cabinho, os frutos totalmente laranja; puxar com a mão rasga a casca"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio o kinkan cresce pouco e a raiz em vaso encharca fácil. Geada queima brotos e frutos.",
+      "acao_requerida": "Espaçar a rega para 5 a 7 dias, suspender a adubação e levar o vaso para perto de uma parede ou cobrir com TNT nas noites abaixo de 3 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda leve e volta da adubação",
+      "mensagem": "Com a colheita acabando e a brotação de primavera começando, é a hora de formar a copa.",
+      "acao_requerida": "Retirar ramos secos, cruzados e os que crescem para dentro, encurtar os muito compridos em até um terço e retomar a adubação mensal"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Floração: rega sem falhas",
+      "mensagem": "As flores e os frutinhos recém-formados caem com qualquer seca do substrato no calor.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e não deixar o vaso secar até a folha murchar; não pulverizar óleo sobre as flores abertas"
+    }
+  ]
+}

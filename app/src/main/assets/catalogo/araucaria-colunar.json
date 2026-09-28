@@ -1,0 +1,185 @@
+{
+  "planta": {
+    "nome_comum": "Araucária-colunar",
+    "nome_cientifico": "Araucaria columnaris",
+    "descricao": "Conífera da Nova Caledônia de copa estreita e colunar, muito vendida em vaso como pinheirinho de Natal, muitas vezes com o nome de araucária-de-norfolk, que é outra espécie (A. heterophylla). Em vaso cresce devagar, de 20 a 30 cm por ano, e vive muitos anos numa varanda ou quintal com sol. O tronco tende a se inclinar para o norte, uma característica da espécie que não é doença.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e estável (cerâmica ou cimento) com pelo menos 35 cm de diâmetro e 35 cm de profundidade e vários furos no fundo; a copa alta tomba vasos leves com o vento",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou casca de pinus fina; levemente ácido e que escoe a água em poucos segundos",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai da estufa ou da loja e estranha o sol e o vento. Algumas agulhas das pontas podem amarelar na primeira semana. Aumente o sol aos poucos: comece com a luz da manhã e passe ao sol pleno na terceira semana. A fase termina quando surgem pontas novas, de um verde mais claro, no topo e nos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso novo e o broto do topo cresce, formando um novo andar de ramos em volta do tronco a cada surto de crescimento. Gire o vaso um quarto de volta a cada duas semanas, junto com uma das regas, para a copa crescer por igual. Nunca corte a ponta do tronco: a araucária não forma outro ponteiro e fica com o topo deformado para sempre."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão, com um ou dois andares novos de ramos por ano, e fica quase parada no inverno, quando pede menos água e nenhum adubo. Os ramos mais baixos secam aos poucos com a idade, o que é normal se forem poucos. Muitos ramos baixos secando de uma vez indicam falta de luz ou uma seca forte do vaso. A cada dois anos, troque o substrato ou passe para um vaso maior."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a araucária recém-chegada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. O torrão da muda de loja seca muito rápido, e ramos que secam nesta fase não voltam a ficar verdes.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a araucária",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e não deixe água parada no pratinho. Acima de 30 °C, confira a cada 2 dias; no inverno, espace para a cada 5 a 7 dias. A cada duas semanas, aproveite a rega para girar o vaso um quarto de volta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a araucária",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa rasa de NPK 10-10-10 (ou 3 colheres de sopa de húmus de minhoca) por vaso de 30 L, na borda do vaso, longe do tronco, e regue em seguida. Não adube de maio a agosto, quando a planta está parada, nem com o substrato seco.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e agulhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base das agulhas e a junção dos ramos com o tronco procurando tufos brancos de algodão ou pontinhos marrons grudados. Passe um lenço branco sob um ramo: pontinhos vermelhos que se mexem são ácaros. Confira também se o topo tem pontas novas e verdes.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso ou o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro. Passe para um vaso 5 a 10 cm mais largo sem desmanchar o torrão; se o vaso já estiver no tamanho máximo, raspe 5 cm de substrato do topo e das laterais e complete com substrato novo. Regue bem e deixe na meia sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Proteja a ponta do tronco",
+      "mensagem": "O broto do topo é o único ponteiro da araucária. Se ele quebrar ou for cortado, a planta não forma outro e o topo fica torto para sempre.",
+      "acao_requerida": "Colocar o vaso longe de portas, cortinas e passagem, e nunca pendurar enfeites ou estrelas na ponta"
+    },
+    {
+      "dia_disparo": 20,
+      "titulo": "Conferir o vaso de loja",
+      "mensagem": "Muitas mudas vêm em vasos pequenos demais, que secam em um dia e deixam a raiz enrolada.",
+      "acao_requerida": "Se saírem raízes pelos furos ou o vaso tiver menos de 30 L, transplantar para o vaso definitivo sem desmanchar o torrão, mantendo o tronco na mesma altura de antes"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Adaptação concluída",
+      "mensagem": "A araucária já deve ter pontas novas e aguenta sol pleno. Chegou a hora de começar a adubação leve.",
+      "acao_requerida": "Conferir se há pontas verde-claras no topo e deixar o vaso no lugar definitivo, com pelo menos 4 horas de sol direto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Agulhas amarelando e depois marrons de baixo para cima com o substrato ainda úmido; base do tronco escura e mole; cheiro de mofo no vaso",
+      "prevencao_tratamento": "Regue só com o substrato seco a 4 cm e nunca deixe água no pratinho. Se aparecer, pare de regar, tire a planta do vaso, corte as raízes escuras e moles e replante em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Cochonilha-farinhenta e cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de algodão ou escamas marrons grudadas na base das agulhas e nas junções dos ramos; ramos pegajosos e com fumagina preta",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo depois de 7 e 14 dias"
+    },
+    {
+      "nome": "Ácaro-vermelho (Tetranychus spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Agulhas desbotadas, com pontinhos amarelos, e teias finas entre elas; comum em ambiente seco e abafado ou dentro de casa",
+      "prevencao_tratamento": "Borrife água na copa em dias secos e mantenha o vaso ao ar livre. Se persistir, óleo de neem a 0,5% a cada 5 dias, três aplicações"
+    },
+    {
+      "nome": "Ramos inferiores secando",
+      "tipo": "DISTURBIO",
+      "sintomas": "Vários ramos baixos ficam marrons e quebradiços de uma vez; eles não voltam a ficar verdes",
+      "prevencao_tratamento": "Costuma ser falta de luz (planta dentro de casa) ou uma seca forte do vaso. Leve para um lugar com sol direto, regule a rega e corte os ramos totalmente secos rente ao tronco"
+    },
+    {
+      "nome": "Queimadura por sol ou por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e agulhas do lado mais exposto ficam marrons de repente, depois de uma mudança para o sol pleno ou de uma madrugada abaixo de 0 °C",
+      "prevencao_tratamento": "Aumente o sol aos poucos ao trocar a planta de lugar e cubra ou abrigue o vaso nas noites de geada. As partes queimadas não se recuperam, mas a brotação nova cobre o dano"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção da geada",
+      "mensagem": "A araucária cresce pouco no frio. Substrato encharcado no inverno é a principal causa de podridão de raiz, e mudas jovens queimam com geada.",
+      "acao_requerida": "Espaçar a rega para a cada 5 a 7 dias conforme o teste do dedo, suspender a adubação e abrigar o vaso ou cobrir a copa com manta nas noites com previsão abaixo de 2 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o crescimento",
+      "mensagem": "Com o calor, a araucária volta a brotar e a gastar mais água e nutrientes.",
+      "acao_requerida": "Voltar à rega a cada 3 dias e retomar a adubação mensal; se a troca de vaso estiver próxima, faça agora"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Enfeitar sem machucar",
+      "mensagem": "Enfeites pesados quebram os ramos, e lâmpadas quentes queimam as agulhas. A planta também não pode ficar semanas dentro de casa sem sol.",
+      "acao_requerida": "Usar só pisca-pisca de LED e enfeites leves, nada na ponta do tronco, e devolver o vaso ao sol no máximo em 10 dias"
+    }
+  ]
+}

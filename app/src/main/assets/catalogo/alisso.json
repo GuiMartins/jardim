@@ -1,0 +1,165 @@
+{
+  "planta": {
+    "nome_comum": "Alisso",
+    "nome_cientifico": "Lobularia maritima",
+    "descricao": "Planta baixa e de crescimento rápido que forma almofadas cobertas de florzinhas brancas, lilases ou roxas com perfume de mel. Atrai abelhas e joaninhas e fica bonita na borda de jardineiras. Na natureza vive alguns anos, mas em vaso perde o vigor depois de uma estação, por isso é cultivada como anual.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 15 cm de profundidade e furos no fundo; uma touceira a cada 15 cm",
+    "volume_minimo_litros": 2,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% substrato comercial para flores, 20% areia grossa; pouco rico, porque adubo em excesso faz folha e não flor",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Espalhe as sementes sobre o substrato úmido, umas 5 a 8 por cova a cada 15 cm, e só pressione com a mão, sem cobrir: a luz ajuda a germinar. As plântulas surgem entre o 5º e o 10º dia, com 18 a 24 °C."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 11,
+      "dia_fim": 30,
+      "descricao": "Aparecem as primeiras folhas verdadeiras, estreitas e acinzentadas. As mudas são frágeis e tombam com excesso de água. A fase termina quando cada plantinha tem uns 5 cm e começa a ramificar."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento e Ramificação",
+      "dia_inicio": 31,
+      "dia_fim": 50,
+      "descricao": "A planta se espalha em almofada e aparecem os primeiros cachos de botões nas pontas. Com menos de 4 horas de sol, os ramos ficam compridos e moles."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 51,
+      "dia_fim": 150,
+      "descricao": "Os cachos de flores se abrem em sequência e a almofada fica coberta de branco ou lilás por vários meses. Quando o centro fica ralo e com sementes, uma poda de renovação traz nova florada em 2 a 3 semanas. No calor forte a floração para. A planta perde o vigor por volta dos 5 meses: é hora de semear de novo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. As sementes estão descobertas e morrem se secarem um único dia; também não deixe empoçar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o alisso",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, sem molhar as flores. Se ainda estiver úmido, espere mais um dia: encharcar apodrece a raiz. Acima de 30 °C, confira todo dia; no inverno, a cada 3 ou 4 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar o alisso",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Dissolva meia dose de adubo líquido para flores (NPK com mais fósforo, como 4-14-8) na água da rega e regue com o substrato já úmido. Não use adubo rico em nitrogênio, que faz folha e não flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o alisso",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Afaste os ramos e olhe as pontas e o verso das folhas: procure pulgões agrupados, lagartinhas verdes, folhas roídas ou mofo cinza no centro da almofada.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Mudas amontoadas competem por luz e ficam fracas e compridas.",
+      "acao_requerida": "Em cada cova, deixar as 3 mudas mais vigorosas e cortar as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Primeiras flores chegando",
+      "mensagem": "Os botões já devem estar aparecendo nas pontas dos ramos. Pouca flor com ramos compridos indica falta de sol.",
+      "acao_requerida": "Conferir se o vaso recebe pelo menos 4 horas de sol direto; se não, mudá-lo para um lugar mais ensolarado"
+    },
+    {
+      "dia_disparo": 100,
+      "titulo": "Poda de renovação",
+      "mensagem": "Depois de 7 semanas florindo, o centro da almofada fica ralo e cheio de sementes, e a floração diminui.",
+      "acao_requerida": "Cortar toda a planta com tesoura, reduzindo a altura em um terço a metade, e regar em seguida; a nova florada vem em 2 a 3 semanas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Mudas caem com o caule escuro e fino rente ao substrato; em plantas adultas, a almofada murcha com o substrato úmido e a base fica marrom e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, usar vaso com furos e areia no substrato; retirar as plantas afetadas e deixar o vaso secar mais entre as regas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas e nos cachos de flores; brotos deformados e pegajosos",
+      "prevencao_tratamento": "Jato de água nas pontas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Lagarta-da-couve (Plutella xylostella)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com furos pequenos ou só a película transparente; lagartinhas verdes que se debatem quando tocadas",
+      "prevencao_tratamento": "Catar as lagartas à mão; o alisso é da família da couve, então mantenha-o longe de couves e rúculas infestadas; se houver muitas, Bacillus thuringiensis conforme o rótulo"
+    },
+    {
+      "nome": "Míldio (Hyaloperonospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas na face de cima das folhas e mofo acinzentado no verso, com tempo frio e úmido",
+      "prevencao_tratamento": "Regar na base e de manhã, não adensar o plantio; remover os ramos afetados e jogar fora, sem compostar"
+    },
+    {
+      "nome": "Parada da floração no calor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Com mais de 30 °C por vários dias a planta para de florir, amarela no centro e fica rala",
+      "prevencao_tratamento": "Mudar o vaso para um lugar com sombra à tarde, manter a rega em dia e fazer a poda de renovação; a floração volta quando o calor diminui"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: proteja o alisso",
+      "mensagem": "O alisso gosta de clima ameno e para de florir no calor do verão, podendo secar em poucos dias.",
+      "acao_requerida": "Levar o vaso para um lugar com sol só de manhã, conferir a rega todo dia e aparar os ramos secos"
+    }
+  ]
+}

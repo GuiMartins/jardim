@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Caramboleira",
+    "nome_cientifico": "Averrhoa carambola",
+    "descricao": "Árvore frutífera tropical de porte pequeno que produz carambolas, frutas em forma de estrela, azedinhas ou doces conforme a variedade. Uma muda enxertada, como as das variedades doces Golden Star e B-10, dá frutos em vaso grande já no segundo ano e floresce várias vezes por ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo, de preferência de plástico grosso ou fibra, para não ficar pesado demais para mover",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de arroz carbonizada, mais 200 g de calcário dolomítico e 300 g de farinha de ossos por vaso de 60 L; pH levemente ácido (5,5 a 6,5)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enxertada se ajusta ao vaso e ao sol. É normal perder algumas folhas mais velhas na primeira semana. A fase termina quando aparecem brotos novos, avermelhados, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e a copa se ramifica em fluxos de brotação avermelhada. Podem surgir as primeiras flores, pequenas e rosadas, nos ramos e no tronco. Remova sempre os brotos que nascem abaixo do enxerto, porque eles são do porta-enxerto e roubam força da copa."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Em vaso, a árvore fica com 1,5 a 2,5 m. No Centro-Sul, floresce principalmente de setembro a dezembro e de novo de fevereiro a abril. Os frutos amadurecem 60 a 75 dias após a flor: colha quando as quinas passarem de verde para amarelo, com as pontas das quinas ainda levemente verdes. Isso dá duas safras principais, uma de dezembro a março e outra de junho a agosto. No inverno o crescimento desacelera, e rega e adubo devem acompanhar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de carambola",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos (uns 5 a 8 L no vaso de 60 L). A raiz da muda ainda está no torrão original e seca rápido: nos dias acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a caramboleira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (10 a 15 L no vaso de 60 L). Com flor ou fruto, o substrato não pode secar por completo, senão a planta derruba tudo. No verão quente, confira a cada 2 dias; de junho a agosto, o intervalo pode passar para 5 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organomineral",
+      "titulo": "Adubar a caramboleira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 litro de húmus de minhoca ou composto e 2 colheres de sopa de NPK 10-10-10 pela borda do vaso, longe do tronco, e regue em seguida. Na florada e com frutos, troque o NPK por 4-14-8. De junho a agosto, use só metade da dose.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontos brancos ou marrons presos aos ramos (cochonilha), teias finas e folhas prateadas (ácaro) e manchas escuras afundadas nos frutos. Aproveite para cortar rente ao tronco qualquer broto que nasça abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, corte 3 a 5 cm de raiz em volta e no fundo do torrão com uma faca limpa, e replante no mesmo vaso (ou num maior) com substrato novo na mesma receita. Faça de preferência em setembro ou outubro, e regue bem em seguida.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Olho no porta-enxerto",
+      "mensagem": "Brotos que nascem abaixo da marca do enxerto são do porta-enxerto: dão fruto azedo e pequeno e roubam força da copa.",
+      "acao_requerida": "Localizar a cicatriz do enxerto no tronco e cortar rente qualquer broto que saia abaixo dela"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de formação",
+      "mensagem": "Para uma copa baixa e cheia, adequada ao vaso, a muda precisa de 3 ou 4 ramos principais bem distribuídos.",
+      "acao_requerida": "Se a haste principal passou de 70 cm, cortar a ponta a 60 cm do substrato e escolher 3 ou 4 brotos laterais para formar a copa, removendo os demais"
+    },
+    {
+      "dia_disparo": 300,
+      "titulo": "Primeiros frutos: raleie",
+      "mensagem": "No primeiro ano, muitos frutos esgotam a planta jovem e atrasam o crescimento da copa.",
+      "acao_requerida": "Deixar no máximo 5 a 8 frutos na planta e tirar os outros ainda pequenos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; raízes escuras e moles; casca da base do tronco escurecida",
+      "prevencao_tratamento": "Nunca deixar água parada no pratinho e manter os furos desobstruídos; regar só com o substrato seco a 5 cm. Com sintoma, suspender a rega, retirar as raízes podres e replantar em substrato novo"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp., Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com pequenos furos e manchas moles, que apodrecem por dentro com larvas brancas",
+      "prevencao_tratamento": "Ensacar os frutos com 3 a 4 cm em sacos de papel ou TNT; recolher e descartar frutos caídos; armadilha caseira com suco de fruta em garrafa PET furada"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons presas aos ramos e ao verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; em infestação forte, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Ácaro",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas prateadas ou bronzeadas, com pontinhos claros e teias finas no verso, em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas no tempo seco; enxofre molhável ou óleo de neem a 0,5% se persistir"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nos frutos e manchas marrons nas folhas, piores na época de chuva",
+      "prevencao_tratamento": "Não molhar a copa na rega, podar para arejar, recolher frutos e folhas doentes; calda bordalesa a 1% na florada em anos de muito ataque"
+    },
+    {
+      "nome": "Clorose por falta de ferro e zinco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes, crescimento travado; comum quando o substrato fica alcalino por excesso de calcário",
+      "prevencao_tratamento": "Manter o pH entre 5,5 e 6,5, sem calcário extra; aplicar micronutrientes quelatados (ferro e zinco) via foliar ou no substrato conforme a embalagem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger a caramboleira do frio",
+      "mensagem": "A caramboleira é tropical: geada queima folhas e ramos novos, e plantas jovens podem morrer abaixo de 0 °C.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, levar o vaso para junto de uma parede, sob o beiral, ou cobrir a copa com TNT, retirando pela manhã"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza anual",
+      "mensagem": "Antes da florada principal, a poda areja a copa, controla o tamanho no vaso e reduz doenças.",
+      "acao_requerida": "Cortar ramos secos, doentes, cruzados e os que crescem para dentro da copa, e encurtar os mais longos para manter a árvore até uns 2 m"
+    },
+    {
+      "meses": [
+        11,
+        12,
+        3,
+        4
+      ],
+      "titulo": "Ensacar os frutos",
+      "mensagem": "Os frutos da florada estão se formando, e é nessa fase que a mosca-das-frutas põe os ovos.",
+      "acao_requerida": "Envolver cada fruto de 3 a 4 cm num saco de papel ou TNT, amarrado no pedúnculo, e deixar até a colheita"
+    }
+  ]
+}

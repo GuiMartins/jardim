@@ -1,0 +1,163 @@
+{
+  "planta": {
+    "nome_comum": "Barba-de-velho",
+    "nome_cientifico": "Tillandsia usneoides",
+    "descricao": "Bromélia epífita sem raízes, formada por fios prateados que pendem de galhos e absorvem água e nutrientes pelas escamas das folhas. É cultivada sem vaso nem substrato: basta pendurá-la num lugar claro e ventilado e borrifá-la, o que a torna uma decoração viva ideal para varandas e janelas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Sem vaso: tufo de 20 a 40 cm pendurado solto num galho, gancho ou suporte de arame galvanizado, nylon ou madeira (nunca cobre, que é tóxico para ela), com ar circulando por todos os lados e sem encostar em parede úmida",
+    "volume_minimo_litros": 1,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "Nenhum: a planta vive no ar. Nunca enterre nem enrole em musgo ou esfagno úmido, que abafa os fios e causa podridão",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "O tufo se ajusta à luz e à umidade do novo lugar. Pode perder alguns fios secos da parte interna, o que é normal. Fios prateado-esverdeados e macios indicam boa hidratação; fios cinza-pálidos, quebradiços e secos pedem mais borrifos. A fase termina quando as pontas dos fios voltam a crescer, verde-claras."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "Os fios alongam alguns centímetros por mês e o tufo fica mais cheio. Se o miolo começar a escurecer, abra o tufo com os dedos para ventilar: miolo compacto e úmido apodrece. Nesta fase já dá para separar pedaços e pendurar em outros pontos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Tufo estabelecido que cresce continuamente. Na primavera e no verão cresce mais rápido e pode dar flores minúsculas, verde-amareladas e perfumadas à noite, escondidas entre os fios. No inverno seco do Centro-Sul desidrata mais fácil e pede atenção aos borrifos. Tufos muito compridos ficam pesados e abafados por dentro: divida em partes quando passarem de uns 60 cm."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "borrifar_barba_de_velho",
+      "titulo": "Borrifar a barba-de-velho",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De manhã, borrife água de chuva, filtrada ou de torneira descansada por 24 h por todo o tufo, por fora e por dentro, até os fios ficarem verde-escuros e pingando levemente. Ela precisa secar em até 4 horas: não borrife à noite. Em dias acima de 30 °C ou com umidade do ar abaixo de 40%, borrife todo dia; em dias frios e chuvosos, pode pular.",
+      "critica": true
+    },
+    {
+      "id": "banho_imersao",
+      "titulo": "Banho de imersão",
+      "tipo": "REGA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Mergulhe o tufo inteiro numa bacia com água sem cloro por 15 a 20 minutos. Depois sacuda com força, abra os fios com os dedos e pendure de novo num lugar ventilado para secar por completo antes de anoitecer.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_foliar",
+      "titulo": "Adubar pelo borrifo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo foliar para bromélias ou orquídeas a 1/4 da dose indicada no rótulo e use no lugar de um borrifo comum. Não adube de junho a agosto, quando o crescimento quase para, nem com a planta desidratada: hidrate primeiro.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_tufo",
+      "titulo": "Inspecionar o tufo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra o tufo com os dedos e olhe o miolo: procure fios escuros e moles com cheiro de mofo, pontinhos brancos ou marrons grudados nos fios (cochonilha) e teias finas. Retire com tesoura os fios secos ou podres.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar da barba-de-velho",
+      "mensagem": "Ela não tem raiz: vive da luz, do ar e da água que cai nos fios. Lugar abafado faz apodrecer; sol forte da tarde queima.",
+      "acao_requerida": "Pendurar solta num ponto claro e ventilado, com sol da manhã ou luz filtrada, usando suporte de nylon, madeira ou arame galvanizado, nunca de cobre"
+    },
+    {
+      "dia_disparo": 7,
+      "titulo": "Confira a cor dos fios",
+      "mensagem": "Depois de uma semana dá para ver se o lugar e os borrifos estão certos. Fios cinza-claros e quebradiços indicam sede; miolo escuro e úmido indica excesso de água ou pouca ventilação.",
+      "acao_requerida": "Comparar a cor seca dos fios com a do dia da chegada e ajustar a frequência dos borrifos ou mudar a planta para um lugar mais ventilado"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Dá para multiplicar",
+      "mensagem": "O tufo já está estabelecido e qualquer pedaço de fio vira uma planta nova.",
+      "acao_requerida": "Se o tufo estiver cheio, separar com os dedos um punhado de fios e pendurar em outro ponto claro e ventilado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Miolo do tufo escuro, marrom ou preto, mole e com cheiro de mofo; fios que se desmancham ao toque",
+      "prevencao_tratamento": "Borrifar só de manhã, garantir que seque em até 4 horas e manter o tufo solto e ventilado. Corte e descarte as partes podres, abra o tufo e suspenda os borrifos até secar por completo"
+    },
+    {
+      "nome": "Desidratação",
+      "tipo": "DISTURBIO",
+      "sintomas": "Fios cinza-pálidos, finos, ásperos e quebradiços, que não ficam verdes mesmo logo após o borrifo; tufo encolhe",
+      "prevencao_tratamento": "Aumentar a frequência dos borrifos e fazer um banho de imersão de 20 minutos. Afastar de ar-condicionado, aquecedor e vento seco constante"
+    },
+    {
+      "nome": "Toxicidade por cobre",
+      "tipo": "DISTURBIO",
+      "sintomas": "Fios escurecem e morrem a partir do ponto de apoio, mesmo com rega e luz corretas",
+      "prevencao_tratamento": "Nunca pendurar em arame de cobre nem borrifar com fungicida à base de cobre. Troque o suporte por nylon, madeira ou arame galvanizado e corte as partes mortas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Fios amarelados ou esbranquiçados e ressecados no lado virado para o sol, sobretudo depois de tardes quentes",
+      "prevencao_tratamento": "Mudar para um ponto com sol só da manhã ou luz filtrada por árvore ou tela de sombreamento de 50%"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos brancos algodonosos ou escamas marrons grudados nos fios, geralmente no miolo do tufo",
+      "prevencao_tratamento": "Mergulhar o tufo em água com 1 colher de chá de sabão neutro por litro por 10 minutos e enxaguar em água limpa; repetir após 7 dias. Nos focos pequenos, remover com cotonete com álcool 70%"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        7,
+        8,
+        9
+      ],
+      "titulo": "Ar seco: atenção aos borrifos",
+      "mensagem": "No fim do inverno e início da primavera a umidade do ar no Centro-Sul costuma cair abaixo de 30%, e a barba-de-velho desidrata em poucos dias.",
+      "acao_requerida": "Borrifar todo dia de manhã nos dias secos e fazer um banho de imersão por semana até as chuvas voltarem"
+    }
+  ]
+}

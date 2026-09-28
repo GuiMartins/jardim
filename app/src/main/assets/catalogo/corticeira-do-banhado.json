@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Corticeira-do-banhado",
+    "nome_cientifico": "Erythrina crista-galli",
+    "descricao": "Árvore nativa do Sul do Brasil, de banhados e beiras de rio, com cachos de flores vermelho-coral na primavera e no verão que atraem beija-flores. Em vaso grande fica como arvoreta de 2 a 3 m se for podada todo inverno. Os ramos têm espinhos e as sementes são tóxicas: cultive longe do alcance de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica, cimento ou plástico grosso com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com furos no fundo; o peso evita que o vento derrube a árvore",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; mistura rica que retém umidade, já que a espécie vem de solo encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso novo e ao sol. Pode perder algumas folhas nos primeiros dias; a fase acabou quando surgem brotos novos nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 730,
+      "descricao": "Crescimento rápido de ramos e raízes. Mudas pequenas costumam florescer só no segundo ou terceiro ano; até lá, poda de formação no inverno para definir um tronco e poucos galhos principais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: perde boa parte das folhas no outono e inverno, é podada no fim do inverno, rebrota em setembro e floresce de outubro a fevereiro, às vezes em duas levas. As flores saem nos ramos do ano, por isso a poda de inverno aumenta a floração."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a corticeira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Ela gosta de solo sempre úmido: no verão, acima de 30 °C, confira todo dia. Sem folhas no inverno, regue só quando os 5 cm de cima secarem.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a corticeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, espalhe 3 colheres de sopa de NPK 4-14-8 ou 1 litro de húmus de minhoca pela borda do vaso de 60 L, sem encostar no tronco, e regue em seguida. De abril a agosto, pule a adubação: a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure lagartas enroladas nas folhas novas, furos com serragem nos ramos, cochonilhas brancas ou marrons coladas nos galhos e trilhas de formigas subindo pelo tronco. Use luvas por causa dos espinhos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, raspe 5 cm do torrão em volta, corte as raízes enoveladas e replante com substrato novo no mesmo vaso ou num 10 cm maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A muda cresce rápido e precisa do vaso grande logo no começo; saquinho ou vaso pequeno trava as raízes.",
+      "acao_requerida": "Transplantar a muda para o vaso de 60 L, com o colo no mesmo nível do substrato, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se já há brotos novos, as raízes pegaram e a planta pode receber adubo.",
+      "acao_requerida": "Conferir os brotos novos e colocar o vaso no lugar definitivo, com pelo menos 5 horas de sol direto"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano completo",
+      "mensagem": "A corticeira deve ter ganhado bastante altura. Tronco fino e muito alto tomba no vento.",
+      "acao_requerida": "Amarrar o tronco a um tutor firme com fita macia se ele balançar muito, e escolher 3 a 4 galhos principais para a poda do próximo inverno"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Broca da corticeira (Terastia meticulosalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagarta que perfura os ramos novos; ponta do galho murcha e seca, com furo e serragem na base",
+      "prevencao_tratamento": "Cortar o ramo atacado 5 cm abaixo do furo e jogar no lixo; em ataque forte, Bacillus thuringiensis nas brotações a cada 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons coladas nos ramos e no verso das folhas, folhas amareladas e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; se persistir, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Formiga-cortadeira",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou ramos pelados de um dia para o outro",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida granulada perto dele; fita adesiva ou graxa em volta do vaso impede a subida"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre as folhas, que depois amarelam e caem",
+      "prevencao_tratamento": "Manter em local com sol pleno e ventilado; retirar as folhas atacadas e pulverizar leite diluído em água (1:9) ou bicarbonato a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta verde e vigorosa, mas sem flores na primavera",
+      "prevencao_tratamento": "Garantir 6 a 8 horas de sol direto, fazer a poda de inverno para estimular ramos novos e evitar adubo rico em nitrogênio"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Queda de folhas no outono",
+      "mensagem": "A corticeira perde boa parte das folhas no frio. É normal e não é sinal de doença.",
+      "acao_requerida": "Reduzir a rega para quando os 5 cm de cima do substrato secarem e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno a planta ainda está parada. As flores saem nos ramos novos, então a poda agora aumenta a floração da primavera.",
+      "acao_requerida": "Com luvas, cortar os ramos do ano anterior deixando 2 a 3 gemas a partir do galho principal e retirar galhos secos ou cruzados"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Rebrota da primavera",
+      "mensagem": "Os brotos novos estão saindo e a planta volta a consumir água e nutrientes.",
+      "acao_requerida": "Retomar a rega a cada 2 dias e a adubação mensal"
+    },
+    {
+      "meses": [
+        1,
+        2
+      ],
+      "titulo": "Limpar flores e vagens",
+      "mensagem": "As vagens gastam energia da planta e as sementes são tóxicas.",
+      "acao_requerida": "Cortar os cachos de flores secas e as vagens antes de amadurecerem, para estimular uma segunda floração"
+    }
+  ]
+}

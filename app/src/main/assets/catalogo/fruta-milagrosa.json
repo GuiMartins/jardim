@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Fruta-milagrosa",
+    "nome_cientifico": "Synsepalum dulcificum",
+    "descricao": "Arbusto da África Ocidental de crescimento lento, cujos frutinhos vermelhos contêm miraculina, proteína que faz alimentos ácidos parecerem doces por 30 a 60 minutos. Em vaso passa pouco de 1,5 m, frutifica várias vezes por ano, mas exige substrato e água ácidos: calcário ou água dura amarelam as folhas e acabam com ela.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso com furos no fundo, começando com 25 cm de diâmetro e 25 cm de profundidade para uma muda de 30 a 50 cm; na vida adulta, 40 cm de diâmetro. Prefira vaso plástico ou de barro esmaltado por dentro, que perde menos água",
+    "volume_minimo_litros": 12,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% turfa ou fibra de coco, 30% casca de pinus fina, 20% terra vegetal sem calcário, 10% perlita; pH entre 4,5 e 5,8. Pode usar substrato pronto para azaleia ou mirtilo. Nunca ponha calcário, cinza ou casca de ovo",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e de luz e pode perder algumas folhas mais velhas. Mantenha-a em luz clara com sol só no começo da manhã. A adaptação terminou quando aparecem brotos novos, avermelhados, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso novo e a planta solta brotações em surtos, com semanas paradas entre eles, o que é normal nessa espécie lenta. Folhas novas verde-escuras e brilhantes indicam que o pH está certo; amarelas com nervuras verdes indicam substrato ou água alcalinos."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 181,
+      "dia_fim": 730,
+      "descricao": "A planta cresce de 10 a 20 cm por ano e ramifica. Mudas enxertadas ou de 2 a 3 anos já podem dar as primeiras flores, pequenas e brancas, nas axilas das folhas. A planta entra na fase adulta quando floresce e segura os frutos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Floresce em surtos, principalmente da primavera ao fim do verão, e às vezes também no outono. Os frutos ficam maduros cerca de 30 a 45 dias depois da flor. No inverno quase não cresce e pede menos água. Troque o substrato a cada dois anos, porque a turfa se decompõe e deixa de ser ácida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a fruta-milagrosa",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Use água da chuva, filtrada ou deixada 24 h em repouso com 1 colher de chá de vinagre por 5 L. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a fruta-milagrosa",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Use água da chuva, filtrada ou acidificada (1 colher de chá de vinagre por 5 L). Acima de 30 °C confira a cada 2 dias; no inverno, a cada 5 a 7 dias. A raiz não aguenta secar de todo nem ficar encharcada.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_acida",
+      "titulo": "Adubar com adubo ácido",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo para azaleias ou plantas acidófilas na metade da dose da embalagem e regue com o substrato já úmido. Uma vez por trimestre, acrescente quelato de ferro na dose do rótulo. Pule a adubação de junho a agosto, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teia fina no verso (ácaro) e carocinhos brancos ou marrons presos aos ramos (cochonilha). Repare também se as folhas novas estão amarelas com nervuras verdes.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 540,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, tire a planta do vaso, solte com cuidado as raízes que dão voltas e passe para um vaso 5 a 10 cm mais largo, com substrato ácido novo. Mantenha o colo na mesma altura de antes e deixe a planta 2 semanas na sombra clara.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A fruta-milagrosa não tolera calcário e sofre com raiz enterrada fundo demais.",
+      "acao_requerida": "Plantar no substrato ácido, com o colo na mesma altura em que estava no saquinho, regar com água da chuva ou filtrada e deixar em luz clara, sem sol da tarde"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Mais luz para a muda",
+      "mensagem": "Adaptada, a planta já aguenta mais sol e cresce mais com ele.",
+      "acao_requerida": "Mudar o vaso para um lugar com 3 a 4 horas de sol da manhã e sombra à tarde"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Confira a cor das folhas novas",
+      "mensagem": "Folhas novas amarelas com nervuras verdes indicam que o substrato ficou alcalino, geralmente por causa da água da torneira.",
+      "acao_requerida": "Se as folhas estiverem assim, passar a regar só com água da chuva ou acidificada e aplicar quelato de ferro na dose do rótulo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, escurecem e caem; raízes marrons e moles com cheiro ruim",
+      "prevencao_tratamento": "Regar só quando os 3 cm de cima estiverem secos e nunca deixar água no pratinho. Se aparecer, tire a planta, corte as raízes podres e replante em substrato novo e ácido, regando pouco por 2 semanas"
+    },
+    {
+      "nome": "Clorose por pH alto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com nervuras verdes, crescimento travado e queda de flores",
+      "prevencao_tratamento": "Regar com água da chuva, filtrada ou acidificada; aplicar quelato de ferro e, se não melhorar em um mês, trocar o substrato por um próprio para azaleias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas no verso, principalmente em tempo seco",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água em dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, três aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou escamas marrons nos ramos e no verso das folhas; folhas pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, óleo mineral ou de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Queima das pontas por excesso de sais",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas marrons e secas, crosta branca na superfície do substrato",
+      "prevencao_tratamento": "Adubar só na metade da dose e sempre com o substrato úmido; a cada 3 meses regue com bastante água da chuva até escorrer bem pelos furos, para lavar os sais"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteja do frio",
+      "mensagem": "Abaixo de 10 °C a fruta-milagrosa perde folhas, e a geada mata. No inverno ela quase para de crescer e bebe menos.",
+      "acao_requerida": "Nas noites abaixo de 10 °C, levar o vaso para perto de uma parede ou para dentro de casa, longe de correntes de vento frio; espaçar as regas e suspender o adubo até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor da primavera a planta retoma a brotação e prepara as floradas.",
+      "acao_requerida": "Retomar a adubação ácida mensal e voltar a regar a cada 3 dias, conferindo o substrato com o dedo"
+    },
+    {
+      "meses": [
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de frutos",
+      "mensagem": "Os frutos ficam maduros cerca de 30 a 45 dias depois da flor e caem ou murcham se ficarem muito tempo no pé.",
+      "acao_requerida": "A cada 2 ou 3 dias, colher os frutos totalmente vermelhos e comer frescos, ou guardar na geladeira por até 3 dias"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte",
+      "mensagem": "Sol da tarde e vaso quente queimam as folhas e secam a raiz rapidamente.",
+      "acao_requerida": "Garantir sombra depois das 11h e conferir a umidade do substrato a cada 2 dias"
+    }
+  ]
+}

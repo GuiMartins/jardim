@@ -1,0 +1,231 @@
+{
+  "planta": {
+    "nome_comum": "Gladíolo",
+    "nome_cientifico": "Gladiolus × hortulanus",
+    "descricao": "Palma-de-santa-rita de jardim, híbrido que forma hastes eretas de 60 a 120 cm com flores em espiga em quase todas as cores, ótimas para vaso de flor cortada. Nasce de um cormo (bulbo) que floresce cerca de 90 dias depois de plantado; em vaso é cultivado como anual: depois da floração o cormo é arrancado, guardado seco e replantado na temporada seguinte.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira funda, com pelo menos 30 cm de profundidade e furos no fundo; um vaso de 30 cm de diâmetro comporta 5 a 7 cormos a 8–10 cm um do outro. Prefira vaso pesado (barro ou cimento), porque as hastes floridas tombam vasos leves",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa, 25% húmus de minhoca ou composto curtido, mais 1 colher de sopa de farinha de ossos por vaso de 20 L; solto e bem drenado, porque cormo em terra encharcada apodrece",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 20,
+      "descricao": "Enterre os cormos com a ponta para cima a 10–12 cm de profundidade (plantio fundo ajuda a haste a ficar em pé). A folha pontuda, como uma lança verde, rompe o substrato entre o 10º e o 20º dia. Até lá, o substrato só precisa ficar levemente úmido."
+    },
+    {
+      "fase_id": "crescimento_folhas",
+      "nome": "Crescimento das Folhas",
+      "dia_inicio": 21,
+      "dia_fim": 60,
+      "descricao": "Surgem as folhas em leque, uma a cada 5 a 7 dias. É aqui que a planta decide o tamanho da espiga: falta de água ou de sol com 3 a 6 folhas gera hastes curtas ou sem flor. Com 5 a 6 folhas, a planta está chegando à fase seguinte."
+    },
+    {
+      "fase_id": "emissao_haste",
+      "nome": "Emissão da Haste Floral",
+      "dia_inicio": 61,
+      "dia_fim": 85,
+      "descricao": "Com 6 a 8 folhas, a haste floral sobe do meio do leque e os botões aparecem enfileirados, ainda verdes. As hastes altas precisam estar amarradas ao tutor. Termina quando o primeiro botão da base mostra cor."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 86,
+      "dia_fim": 110,
+      "descricao": "As flores abrem de baixo para cima, 1 a 2 por dia; cada espiga dura 10 a 14 dias na planta. Para vaso de flor, corte a haste quando os 2 primeiros botões estiverem abertos, deixando pelo menos 4 folhas na planta para alimentar o cormo."
+    },
+    {
+      "fase_id": "maturacao_cormo",
+      "nome": "Maturação do Cormo",
+      "dia_inicio": 111,
+      "dia_fim": 140,
+      "descricao": "Sem a flor, as folhas continuam verdes e enchem o cormo novo, que se forma por cima do velho, junto com pequenos cormilhos. Não corte as folhas verdes: é delas que vem a flor do ano seguinte. A fase acaba quando as folhas amarelam da ponta para a base."
+    },
+    {
+      "fase_id": "secagem_arranque",
+      "nome": "Secagem e Arranque",
+      "dia_inicio": 141,
+      "dia_fim": 150,
+      "descricao": "Corte a rega e deixe o substrato secar. Com as folhas quase todas amarelas, arranque os cormos, corte as folhas a 2 cm do cormo e deixe-os secar à sombra e ventilados por 2 a 3 semanas. Depois descarte o cormo velho murcho de baixo e guarde o novo em saco de papel, em lugar fresco e seco, até a próxima temporada."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar os cormos plantados",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 20,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Antes de brotar o cormo quase não bebe: substrato encharcado agora é o jeito mais comum de apodrecê-lo.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o gladíolo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar junto à base até escorrer pelos furos, sem molhar as folhas. Acima de 30 °C ou em vaso pequeno, confira todo dia. Secar até murchar com 3 a 8 folhas deixa a espiga curta ou sem flor.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Regar menos para o cormo amadurecer",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 121,
+      "dia_fim_ciclo": 140,
+      "instrucoes": "Regue só quando o substrato estiver seco a 5 cm de profundidade, com metade da água de antes. As folhas vão amarelar aos poucos; isso é normal e sinal de que o cormo está amadurecendo.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o gladíolo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de húmus mais 1 colher de chá de cinza de madeira) por vaso de 20 L, longe dos caules, e regue em seguida. Evite adubo rico em nitrogênio, que faz muita folha e haste fraca.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Abra com cuidado o leque de folhas e os botões mais altos e procure riscos prateados, pontinhos pretos e insetos alongados de 1 mm (tripes). Olhe também o verso das folhas procurando teias finas (ácaro).",
+      "critica": false
+    },
+    {
+      "id": "limpeza_flores",
+      "titulo": "Tirar as flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 86,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Arranque com os dedos as flores murchas da base da espiga, para a haste ficar bonita e não formar sementes. Quando a espiga toda passar, corte a haste logo acima da última folha, mantendo as folhas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Chegar terra no pé",
+      "mensagem": "Com 3 a 4 folhas, a planta começa a crescer para cima e a base fica exposta ao vento.",
+      "acao_requerida": "Completar o vaso com 3 a 5 cm de substrato junto à base das plantas, sem cobrir o leque de folhas"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Hora de colocar o tutor",
+      "mensagem": "A haste floral vai subir nas próximas semanas e, cheia de flores, tomba com o vento ou a chuva.",
+      "acao_requerida": "Fincar uma estaca de bambu de 1 m a 5 cm da base de cada planta, sem furar o cormo, e amarrar a haste com fita macia a cada 20–30 cm conforme crescer"
+    },
+    {
+      "dia_disparo": 86,
+      "titulo": "Primeiras flores abrindo",
+      "mensagem": "Os botões da base devem estar mostrando cor.",
+      "acao_requerida": "Para flor de vaso, cortar a haste de manhã cedo com 2 flores abertas, deixando 4 folhas na planta"
+    },
+    {
+      "dia_disparo": 141,
+      "titulo": "Parar de regar",
+      "mensagem": "O cormo novo já está formado; agora ele precisa secar para não apodrecer no armazenamento.",
+      "acao_requerida": "Suspender a rega e deixar o vaso protegido da chuva até as folhas amarelarem"
+    },
+    {
+      "dia_disparo": 148,
+      "titulo": "Arrancar e guardar os cormos",
+      "mensagem": "Com as folhas amarelas, os cormos estão prontos para descansar até a próxima temporada.",
+      "acao_requerida": "Desenterrar os cormos, cortar as folhas a 2 cm, secar à sombra por 2 a 3 semanas, separar os cormilhos e guardar em saco de papel em lugar fresco e seco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Tripes do gladíolo (Thrips simplex)",
+      "tipo": "PRAGA",
+      "sintomas": "Riscos prateados ou esbranquiçados nas folhas, botões que secam sem abrir e flores manchadas e deformadas; insetos alongados de 1 mm escondidos entre as folhas",
+      "prevencao_tratamento": "Óleo de neem a 0,5% com algumas gotas de sabão neutro no fim da tarde, a cada 5 dias, direcionado ao leque e aos botões; armadilha adesiva azul perto do vaso. Antes de guardar os cormos, mergulhe-os 5 minutos em água a 45 °C para matar os tripes que hibernam neles"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos que depois ficam bronzeadas, teias finas no verso; piora em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas de manhã cedo; se persistir, calda de sabão neutro a 1% ou óleo de neem a cada 5 dias"
+    },
+    {
+      "nome": "Fusariose (Fusarium oxysporum f. sp. gladioli)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam da ponta para a base antes da floração e a planta tomba; o cormo tem manchas marrons, duras e afundadas, que avançam para dentro",
+      "prevencao_tratamento": "Plantar só cormos firmes, sem manchas; descartar as plantas afetadas com o cormo e o substrato daquele vaso; não replantar gladíolo no mesmo substrato no ano seguinte"
+    },
+    {
+      "nome": "Podridão do cormo por excesso de rega (Penicillium, Botrytis)",
+      "tipo": "DOENCA",
+      "sintomas": "O cormo não brota ou a brotação amarela e morre; ao desenterrar, ele está mole, escuro e com mofo azulado ou cinza",
+      "prevencao_tratamento": "Substrato com areia e vaso com furos livres; regar pouco até a brotação e não deixar água no prato. No armazenamento, secar bem os cormos e manter em lugar ventilado"
+    },
+    {
+      "nome": "Mancha de botrytis (Botrytis gladiolorum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas e marrons nas flores e pequenas manchas avermelhadas nas folhas, com mofo cinza em tempo úmido",
+      "prevencao_tratamento": "Regar na base sem molhar folhas e flores, retirar flores murchas a cada poucos dias e deixar espaço para o ar circular entre as plantas"
+    },
+    {
+      "nome": "Haste torta",
+      "tipo": "DISTURBIO",
+      "sintomas": "A ponta da espiga se curva para cima ou para o lado, formando um 'pescoço de ganso'",
+      "prevencao_tratamento": "A haste sempre cresce para cima e em direção à luz: tutore cedo, não deixe o vaso tombado e não o gire depois que a espiga surgir. Hastes cortadas devem ficar em pé no balde"
+    },
+    {
+      "nome": "Espiga cega ou curta",
+      "tipo": "DISTURBIO",
+      "sintomas": "A planta faz folhas, mas a haste não aparece ou sai com poucos botões, que secam sem abrir",
+      "prevencao_tratamento": "Garantir 6 horas ou mais de sol direto, regar com regularidade entre a 3ª e a 8ª folha e plantar cormos com pelo menos 3 cm de diâmetro; cormos pequenos às vezes só fazem folhas no primeiro ano"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte no vaso",
+      "mensagem": "No verão o vaso pode secar em um dia e as flores queimam no sol forte da tarde.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia e, se possível, dar sombra ao vaso depois das 15 h enquanto houver flores"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Geada queima as folhas e pode matar o cormo ainda na terra.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para perto de uma parede ou para dentro, ou cobrir com tecido não tecido"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "planta": {
+    "nome_comum": "Chapéu-de-couro",
+    "nome_cientifico": "Echinodorus grandiflorus",
+    "descricao": "Planta nativa de brejos e margens de rios do Brasil, com folhas grandes, grossas e em forma de coração. É cultivada pelo chá medicinal tradicional das folhas e pelo porte ornamental. Em vaso, cresce bem desde que o substrato fique sempre encharcado, como no brejo.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada SEM furos (ou com furos, dentro de um cachepô vedado), com pelo menos 30 cm de diâmetro e 25 cm de profundidade, para segurar água como um brejo",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "60% terra de barranco argilosa, 30% húmus de minhoca, 10% areia grossa lavada por cima; não use perlita, vermiculita nem casca de pinus, que boiam quando o vaso fica cheio de água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda (touceira dividida com rizoma e raízes) pode amarelar ou perder 1 ou 2 folhas velhas enquanto se acostuma ao vaso. A fase acaba quando surge a primeira folha nova, enrolada, saindo do centro da touceira."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "As folhas novas saem cada vez maiores e de pecíolo mais longo, e a touceira engrossa. A planta está estabelecida quando tem 6 ou mais folhas adultas firmes e grandes, com a lâmina de 20 cm ou mais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão a planta solta folhas novas sem parar e lança hastes florais compridas com flores brancas; de algumas hastes nascem mudinhas que podem ser plantadas. No inverno o crescimento fica lento e algumas folhas amarelam e secam, o que é normal. Folhas adultas podem ser colhidas o ano todo, nunca mais de um terço da touceira de uma vez."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brejo",
+      "titulo": "Completar a água do chapéu-de-couro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Encoste o dedo na superfície: a água deve estar no nível do substrato ou 1 cm abaixo, deixando a terra encharcada. Complete com água até esse nível. Não deixe uma lâmina de água livre por cima, porque ela vira criadouro do mosquito da dengue. Acima de 30 °C, confira todo dia; no inverno, a cada 4 dias basta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o chapéu-de-couro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por vaso de 20 L e enterre levemente com os dedos, sem encostar na base das folhas. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os pecíolos e a base da touceira: procure pulgões agrupados, caramujos e lesmas, furos e manchas marrons com borda amarela. Arranque rente à base as folhas totalmente secas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas para o chá",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 121,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa, rente à base do pecíolo, 2 a 3 folhas adultas, grandes e sem manchas. Deixe sempre as folhas novas do centro e pelo menos dois terços da touceira. Seque as folhas à sombra, em local ventilado, antes de guardar.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, lave as raízes e separe a touceira com faca limpa em partes que tenham rizoma, raízes e 3 ou mais folhas. Replante uma parte no mesmo vaso com substrato novo e doe ou plante as outras.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "O vaso está segurando água?",
+      "mensagem": "O chapéu-de-couro é planta de brejo: se a água escoa pelo fundo, a terra seca em horas no sol e as folhas queimam.",
+      "acao_requerida": "Conferir se o vaso não tem furos ou está dentro de um cachepô vedado e se a água fica no nível do substrato"
+    },
+    {
+      "dia_disparo": 121,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "A touceira já está estabelecida e aguenta perder algumas folhas sem enfraquecer.",
+      "acao_requerida": "Colher 2 ou 3 folhas adultas e sem manchas, cortando rente à base do pecíolo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos, verdes ou pretos, nos pecíolos, nas folhas novas e nas hastes florais; folhas novas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água forte nas partes atacadas; se persistir, sabão neutro a 1% (10 mL por litro) borrifado no fim da tarde a cada 5 dias. Não use inseticida se as folhas forem para chá"
+    },
+    {
+      "nome": "Caramujos e lesmas",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou com buracos grandes irregulares, rastros brilhantes secos na manhã seguinte",
+      "prevencao_tratamento": "Catar à noite ou de manhã cedo, olhando embaixo das folhas e na borda do vaso. Não use iscas com metaldeído, tóxicas para pets e para o chá"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora e outros fungos)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas, muitas vezes com halo amarelo, que crescem e juntam até secar a folha",
+      "prevencao_tratamento": "Retirar e descartar as folhas manchadas, regar na terra sem molhar as folhas e manter o vaso em local ventilado. Não colher folhas manchadas para chá"
+    },
+    {
+      "nome": "Folhas queimadas por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas murchas que depois ficam com as bordas marrons e secas, principalmente depois de dias quentes",
+      "prevencao_tratamento": "Manter a água sempre no nível do substrato; num vaso com furos, usar prato fundo ou cachepô. Cortar as folhas queimadas: as novas saem normais"
+    },
+    {
+      "nome": "Clorose por substrato esgotado",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas pequenas, verde-claras ou amareladas, com as nervuras mais verdes, na primavera ou no verão",
+      "prevencao_tratamento": "Retomar a adubação mensal com húmus e, se a planta está há mais de 2 anos no mesmo substrato, dividir a touceira e trocar a terra"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "Com o frio o chapéu-de-couro quase para de crescer, e algumas folhas amarelam e secam. É normal, não é doença.",
+      "acao_requerida": "Conferir a água a cada 4 dias, suspender a adubação até setembro e cortar rente à base as folhas totalmente secas. Em região com geada, levar o vaso para perto de uma parede ou sob uma cobertura"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Época das flores",
+      "mensagem": "No verão a planta lança hastes compridas com flores brancas. Elas gastam energia que iria para as folhas, e em algumas nascem mudinhas.",
+      "acao_requerida": "Se o objetivo é colher folhas, cortar as hastes florais na base. Se quiser mudas, deixar a haste e, quando uma mudinha tiver raízes, prendê-la sobre um vaso com terra encharcada até enraizar e depois cortar a haste"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Petúnia",
+    "nome_cientifico": "Petunia × atkinsiana (sin. Petunia × hybrida)",
+    "descricao": "Híbrido de petúnias sul-americanas que floresce sem parar por meses, em branco, rosa, roxo, vermelho e bicolores. É ótima para jardineiras e vasos pendentes em varanda ensolarada. Na natureza é uma perene de vida curta, mas em vaso se cultiva como anual a partir da muda de floricultura, porque depois de uns seis meses a planta fica lenhosa e floresce pouco.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 180,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 20 cm de diâmetro e 15 cm de profundidade, jardineira com 20 cm entre mudas ou cesta pendente de 25 cm, sempre com furos no fundo",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% substrato comercial para flores, 30% húmus de minhoca e 20% perlita ou casca de arroz carbonizada; levemente ácido (pH 5,5 a 6,5), sem calcário nem terra de barranco",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação da Muda",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Plante a muda na mesma altura do torrão, firme o substrato em volta e regue bem. Nos primeiros dias ela pode murchar um pouco no sol forte do meio-dia e se recuperar no fim da tarde. A fase termina quando surgem pontas novas, de verde mais claro."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento e Ramificação",
+      "dia_inicio": 11,
+      "dia_fim": 30,
+      "descricao": "As raízes tomam o vaso e a planta solta ramos laterais. Muda que chegou florida pode dar menos flores agora, enquanto enraíza. Pinçar as pontas nesta fase gera uma planta mais cheia, que floresce por mais tempo."
+    },
+    {
+      "fase_id": "floracao_plena",
+      "nome": "Floração Plena",
+      "dia_inicio": 31,
+      "dia_fim": 150,
+      "descricao": "A planta cobre o vaso ou pende da cesta com flores novas toda semana. É quando ela mais consome água e adubo. Se os ramos ficarem compridos, pelados no meio e com flores só na ponta, está na hora da poda de renovação."
+    },
+    {
+      "fase_id": "fim_de_ciclo",
+      "nome": "Fim de Ciclo",
+      "dia_inicio": 151,
+      "dia_fim": 180,
+      "descricao": "Os caules ficam lenhosos, as folhas de baixo amarelam e as flores diminuem de tamanho e de número, mesmo com rega e adubo em dia. É hora de trocar por mudas novas. Estacas de 8 cm das pontas enraízam em água ou areia úmida em umas duas semanas, se quiser manter a mesma cor."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Pela manhã, enfie o dedo 1 cm no substrato. Se estiver seco, regue na base até escorrer pelos furos, sem molhar as flores. Se estiver úmido, não regue: raiz nova encharcada apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a petúnia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue na base, de manhã, até escorrer pelos furos, e esvazie o pratinho depois de 30 minutos. Cesta pendente ou dias acima de 30 °C pedem conferência diária. No inverno, espaçe para a cada 3 ou 4 dias, sempre pelo teste do dedo.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 165,
+      "instrucoes": "Dissolva adubo líquido para floração (NPK 10-10-10 ou com mais fósforo, como 4-14-8) na metade da dose da embalagem e regue com ele o substrato já úmido, nunca seco. Uma vez por mês, troque por 2 colheres de sopa de húmus espalhadas na superfície.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_flores",
+      "titulo": "Tirar flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 175,
+      "instrucoes": "Belisque cada flor murcha junto com o cálice e a base verde, onde a semente se forma. Se a planta fizer semente, para de florir. Aproveite para tirar as folhas amarelas e grudentas, que viram porta de entrada do mofo cinzento.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Vire as folhas das pontas e procure pulgões, mosca-branca ou pontinhos amarelados (ácaro). Abra dois ou três botões furados, que é onde a lagarta se esconde. Procure também bolor cinza nas flores velhas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Pinçar as pontas",
+      "mensagem": "A muda já enraizou. Se você cortar as pontas agora, cada ramo solta dois ou três novos e a planta fica cheia, em vez de comprida e rala.",
+      "acao_requerida": "Cortar com os dedos ou com tesoura os 2 cm finais de cada ramo, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de renovação",
+      "mensagem": "Na metade da floração a petúnia costuma esticar e florir só nas pontas. Uma poda agora traz uma segunda onda de flores em umas três semanas.",
+      "acao_requerida": "Cortar os ramos mais compridos pela metade, logo acima de uma folha, e fazer uma adubação líquida em seguida. Se a planta ainda estiver compacta e florida, pular esta poda"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Fim de ciclo se aproximando",
+      "mensagem": "A partir de agora a planta tende a lenhificar e florir menos. Se quiser a mesma cor na próxima estação, este é o momento de tirar estacas.",
+      "acao_requerida": "Tirar 4 ou 5 estacas de 8 cm das pontas sem flor, remover as folhas de baixo e enraizar em água ou areia úmida à meia-sombra"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido. A base do caule escurece e amolece, e as raízes ficam marrons e se desfazem",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, usar substrato bem drenado e nunca deixar água no pratinho. Planta com o colo já escuro não se recupera: descarte e troque o substrato"
+    },
+    {
+      "nome": "Mofo cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores e folhas velhas cobertas de pó cinza aveludado, manchas marrons encharcadas nas pétalas, principalmente em tempo úmido e fresco",
+      "prevencao_tratamento": "Tirar flores murchas com frequência, regar na base e de manhã e deixar o vaso ventilado. Remova e jogue no lixo as partes afetadas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas e nos botões. Folhas novas enrugadas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas pontas. Se persistir, pulverizar óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta, ovos e ninfas no verso das folhas, folhas amareladas com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias, por três aplicações"
+    },
+    {
+      "nome": "Lagarta-dos-botões (Helicoverpa spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Botões furados que não abrem, flores comidas e bolinhas de fezes escuras sobre as folhas",
+      "prevencao_tratamento": "Catar as lagartas à mão no começo da noite e retirar os botões furados. Em infestação forte, aplicar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo, com aspecto empoeirado e teias finas no verso, pior em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos e aplicar óleo de neem a 0,5% a cada 5 dias. Separar a planta infestada das outras"
+    },
+    {
+      "nome": "Clorose por falta de ferro",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelo-claras com as nervuras ainda verdes. As folhas velhas ficam normais",
+      "prevencao_tratamento": "É sinal de pH alto: evite calcário e água muito dura. Regue com adubo que tenha ferro quelatado (Fe-EDDHA) e, no próximo plantio, use substrato levemente ácido"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuva forte e calor de verão",
+      "mensagem": "As chuvas de verão rasgam as pétalas, encharcam o vaso e favorecem podridão e mofo. O calor acima de 32 °C seca a cesta em poucas horas.",
+      "acao_requerida": "Pôr o vaso sob um beiral nos dias de temporal, conferir a umidade do substrato todo dia e regar só se o dedo sair seco"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Noites de geada",
+      "mensagem": "A petúnia aguenta frio leve, mas a geada queima as folhas e as pontas em uma noite só.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, levar o vaso para perto da parede ou sob cobertura, ou cobri-lo com TNT, e regar menos até o frio passar"
+    }
+  ]
+}

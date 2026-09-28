@@ -1,0 +1,269 @@
+{
+  "planta": {
+    "nome_comum": "Pimenta-dedo-de-moça",
+    "nome_cientifico": "Capsicum baccatum var. pendulum",
+    "descricao": "Pimenta de ardência média, com frutos alongados e pendentes de 6 a 8 cm que passam do verde ao vermelho. É a pimenta usada na calabresa em flocos e produz bem em vaso na varanda. É perene e, bem cuidada, vive de 3 a 5 anos no vaso, com uma poda de renovação no fim de cada inverno. Aqui o cultivo começa pela semente, que germina devagar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Na germinação, copinhos ou bandeja de células com 5 cm de profundidade. Vaso definitivo com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita, mais 1 colher de sopa de farinha de ossos por litro de mistura. Para a semeadura, use substrato comercial para mudas, fino e sem adubo",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Semeie 2 ou 3 sementes por copinho, a 0,5 cm de profundidade, num lugar quente (25 a 30 °C). A pimenta-dedo-de-moça é lenta: as plântulas costumam surgir entre o 10º e o 21º dia, e abaixo de 20 °C podem nem nascer. A fase acaba quando aparecem as duas folhinhas ovais (cotilédones)."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 22,
+      "dia_fim": 50,
+      "descricao": "Surgem as folhas verdadeiras, mais pontudas que os cotilédones. A muda está pronta para o vaso definitivo quando tem de 4 a 6 folhas verdadeiras e uns 10 cm de altura. Se ela ficar comprida, fina e tombando, falta sol."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 51,
+      "dia_fim": 90,
+      "descricao": "O caule engrossa, a planta ganha altura e começa a se ramificar em forquilha. Folhas verde-escuras e crescimento firme indicam que está tudo certo. Folhas de baixo amarelando pedem adubação."
+    },
+    {
+      "fase_id": "floracao_frutificacao",
+      "nome": "Floração e Primeiros Frutos",
+      "dia_inicio": 91,
+      "dia_fim": 150,
+      "descricao": "Aparecem flores brancas com manchas amarelo-esverdeadas na base das pétalas, característica do C. baccatum. Tirar a primeira flor da forquilha principal fortalece a planta. Os frutos crescem verdes e começam a avermelhar por volta do 140º dia. Calor acima de 35 °C ou falta de água fazem as flores caírem."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Planta formada, de 0,8 a 1,5 m, que produz em ondas da primavera ao outono. No inverno do Centro-Sul ela quase para, perde folhas e às vezes segura os frutos sem amadurecer. Uma poda de renovação no fim do inverno faz a planta rebrotar forte. A produção cai depois do 3º ou 4º ano, e aí vale semear de novo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Borrife a superfície até umedecer o primeiro centímetro. O substrato não pode secar nem formar poça. Cobrir os copinhos com plástico transparente ajuda a manter a umidade. Tire o plástico assim que as plântulas surgirem.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar as mudas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Toque a superfície do copinho: se estiver seca, regue devagar até escorrer pelo furo. Copinho pequeno seca em um dia de sol, e a muda murcha sem volta. Em dias frios e nublados, pode pular se ainda estiver úmido.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pimenteira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos e jogue fora a água do pratinho. No verão, com a planta carregada, confira todo dia. No inverno, espace para a cada 4 ou 5 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar para crescer",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 50,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca e 1 colher de sopa de torta de mamona por vaso de 15 L, afastado 5 cm do caule. Misture levemente na superfície e regue em seguida.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_producao",
+      "titulo": "Adubar para florir e frutificar",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de farinha de ossos, 1 colher de chá de cinza de madeira e 2 colheres de sopa de húmus por vaso de 15 L, longe do caule, e regue. Evite adubo rico em nitrogênio, que faz folha e derruba flor. Suspenda de junho a agosto, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as pontas dos brotos. Procure pulgões agrupados, pontinhos amarelos com teia fina (ácaro), mosquinhas brancas que voam ao sacudir a planta e folhas novas deformadas ou prateadas (tripes).",
+      "critica": false
+    },
+    {
+      "id": "colheita_pimentas",
+      "titulo": "Colher pimentas maduras",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 140,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura, deixando 1 cm do cabinho, as pimentas totalmente vermelhas e brilhantes. Colher com frequência estimula novas flores. Frutos enrugando no pé já passaram do ponto. No inverno, quando quase não há frutos, colha os que estiverem vermelhos e deixe os verdes.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, junto com a poda: tire a planta do vaso, corte 3 cm das raízes que circulam o torrão, remova um terço do substrato velho e complete com substrato novo adubado. Regue bem e deixe à meia-sombra por 5 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 22,
+      "titulo": "As sementes germinaram?",
+      "mensagem": "A germinação da dedo-de-moça termina por volta do 21º dia. Se nada nasceu até agora, provavelmente faltou calor ou as sementes estavam velhas.",
+      "acao_requerida": "Se não houver nenhuma plântula, ressemeie com sementes novas num lugar mais quente (sobre a geladeira ou ao sol da manhã)"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "Com mais de uma muda por copinho, as raízes se enroscam e todas ficam fracas.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada copinho, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Mudar para o vaso definitivo",
+      "mensagem": "A muda deve estar com 4 a 6 folhas verdadeiras. Se ficar mais tempo no copinho, a raiz enovela e a planta atrasa.",
+      "acao_requerida": "Transplantar para o vaso de pelo menos 15 L, na mesma altura em que estava, regar bem e deixar 3 dias à meia-sombra antes do sol pleno"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Colocar o tutor",
+      "mensagem": "A pimenteira chega a 1 m ou mais, e os galhos carregados de frutos quebram com vento.",
+      "acao_requerida": "Fincar uma estaca de 1,2 m a 5 cm do caule e amarrar o caule com fita ou tira de pano em oito, sem apertar"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeiras flores a caminho",
+      "mensagem": "A planta começa a florir. A primeira flor, na forquilha principal, costuma segurar o crescimento se virar fruto.",
+      "acao_requerida": "Tirar a primeira flor da forquilha com a unha e passar para a adubação de floração"
+    },
+    {
+      "dia_disparo": 140,
+      "titulo": "Primeiras pimentas vermelhas",
+      "mensagem": "Os primeiros frutos devem estar mudando do verde para o vermelho.",
+      "acao_requerida": "Colher as que estiverem totalmente vermelhas e deixar as outras amadurecerem no pé"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da raiz e do colo (Phytophthora capsici)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, caule escuro e mole rente ao substrato, raízes marrons que se desfazem",
+      "prevencao_tratamento": "É a principal causa de morte em vaso. Regue só quando os 3 cm de cima secarem, esvazie o pratinho e não enterre o caule além do nível original. Planta com o colo apodrecido não se recupera: descarte com o substrato"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e no verso das folhas; folhas novas enroladas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% com algumas gotas de detergente neutro no fim da tarde, a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, que ficam foscas e acinzentadas; teia fina no verso e entre as folhas em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; enxofre molhável ou óleo de neem no verso das folhas a cada 5 dias, fora do sol forte"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; folhas amareladas e pegajosas, e ela transmite viroses",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Tripes e vira-cabeça (Tospovírus)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas novas deformadas, com manchas em anel ou bronzeadas; brotos curvados e frutos manchados. O vírus é levado pelo tripes, um inseto minúsculo que deixa as folhas prateadas",
+      "prevencao_tratamento": "Controle o tripes com armadilha adesiva azul e neem. Não há cura para o vírus: arranque a planta infectada para não contaminar as outras"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas circulares afundadas e escuras nos frutos, com anéis rosados ou alaranjados no centro, principalmente nos maduros e em tempo quente e chuvoso",
+      "prevencao_tratamento": "Regue no substrato, sem molhar os frutos, colha assim que amadurecerem e descarte no lixo os frutos manchados. Em ataque forte, calda bordalesa a cada 10 dias"
+    },
+    {
+      "nome": "Podridão apical",
+      "tipo": "DISTURBIO",
+      "sintomas": "Mancha escura, seca e afundada na ponta do fruto",
+      "prevencao_tratamento": "Vem da falta de cálcio causada por rega irregular. Mantenha a umidade constante e ponha 1 colher de sopa de calcário ou casca de ovo moída por vaso na renovação do substrato"
+    },
+    {
+      "nome": "Queda de flores",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores amarelam e caem sem formar fruto, em grande quantidade",
+      "prevencao_tratamento": "Acontece acima de 35 °C, abaixo de 15 °C, com falta de água ou com excesso de nitrogênio. Nos dias muito quentes, dê sombra à tarde, regue com regularidade e troque o adubo por um rico em fósforo e potássio"
+    },
+    {
+      "nome": "Queimadura de sol nos frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas e secas, como papel, no lado do fruto virado para o sol",
+      "prevencao_tratamento": "Acontece quando uma poda ou a queda de folhas expõe os frutos no verão. Não desfolhe a planta e use tela de sombreamento de 30% nas tardes acima de 35 °C"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 10 °C a pimenteira para de crescer, e a geada mata a parte aérea. Com o frio, ela bebe pouca água, e o substrato encharcado apodrece a raiz.",
+      "acao_requerida": "Levar o vaso para perto de uma parede protegida ou para dentro nas noites abaixo de 8 °C, regar só com o substrato seco a 3 cm e suspender a adubação"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno, a pimenteira adulta está cansada e cheia de galhos finos. Podar agora faz ela rebrotar forte e produzir mais na primavera. Planta com menos de 6 meses não precisa dessa poda.",
+      "acao_requerida": "Se a planta já produziu, corte os galhos pela metade ou até um terço da altura, logo acima de uma gema, tire os galhos secos e cruzados e retome a adubação quando surgirem brotos"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com calor e secura",
+      "mensagem": "No auge do verão, o vaso seca em um dia, e acima de 35 °C as flores caem.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia, regar de manhã cedo e, nas tardes acima de 35 °C, sombrear a planta ou mudar o vaso para um lugar só com sol da manhã"
+    }
+  ]
+}

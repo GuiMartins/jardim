@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Sálvia-vermelha",
+    "nome_cientifico": "Salvia splendens",
+    "descricao": "Espécie nativa da Mata Atlântica brasileira, com espigas de flores vermelho-vivo que atraem beija-flores por meses a fio. Na natureza é um subarbusto perene de vida curta, mas em vaso é cultivada como anual: depois de uma temporada de floração a planta fica lenhosa e rala, e compensa trocar por uma muda nova.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 240,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 18 cm de diâmetro e 18 cm de profundidade, ou jardineira com 20 cm entre mudas, sempre com furos no fundo",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; fértil e solto, sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 15,
+      "descricao": "A muda sai da bandeja do viveiro e se instala no vaso. Pode murchar nas horas mais quentes nos primeiros dias; a adaptação terminou quando aparecem brotos novos nas pontas e a planta não murcha mais ao meio-dia."
+    },
+    {
+      "fase_id": "enfolhamento",
+      "nome": "Enfolhamento",
+      "dia_inicio": 16,
+      "dia_fim": 45,
+      "descricao": "Os ramos laterais crescem, especialmente depois do desponte, e a planta forma uma touceira cheia de 25 a 40 cm. As espigas novas começam a aparecer nas pontas, ainda verdes."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 46,
+      "dia_fim": 200,
+      "descricao": "Espigas vermelhas se sucedem por meses. Cada espiga dura 2 a 4 semanas; cortar as que perderam as flores mantém a planta florindo. No meio da fase, uma poda de renovação dá uma segunda leva forte de flores."
+    },
+    {
+      "fase_id": "declinio",
+      "nome": "Declínio",
+      "dia_inicio": 201,
+      "dia_fim": 240,
+      "descricao": "Os caules engrossam e ficam lenhosos, a base perde folhas e as espigas saem menores e mais espaçadas. É hora de colher sementes ou tirar estacas das pontas para começar plantas novas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a sálvia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Regue pela manhã até escorrer pelos furos. O torrão da muda é pequeno e seca em um dia de sol; se murchar à tarde com o substrato seco, regue de novo na hora.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a sálvia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e jogue fora a água do prato. No verão, acima de 30 °C, confira todo dia; no inverno, a cada 3 ou 4 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 225,
+      "instrucoes": "Dissolva 1 colher de chá rasa de NPK 4-14-8 em 1 L de água e regue o substrato já úmido, sem molhar as folhas. Excesso de nitrogênio dá muita folha e pouca espiga.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_espigas",
+      "titulo": "Cortar espigas passadas",
+      "tipo": "PODA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 55,
+      "dia_fim_ciclo": 225,
+      "instrucoes": "Corte com tesoura limpa as espigas que já perderam a maior parte das flores vermelhas, logo acima do primeiro par de folhas abaixo delas. Dali saem dois ramos novos com espigas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Vire as folhas e olhe o verso: pontinhos amarelados com teia fina (ácaro), insetos brancos que voam ao mexer (mosca-branca) ou colônias verdes nos brotos (pulgão).",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante no vaso definitivo",
+      "mensagem": "A muda vem num copinho ou bandeja com pouca terra e seca muito rápido ali.",
+      "acao_requerida": "Transplantar para o vaso sem desmanchar o torrão, deixando o colo na mesma altura em que estava, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 18,
+      "titulo": "Hora de despontar",
+      "mensagem": "Tirar as pontas agora faz a sálvia ramificar e formar uma touceira com muito mais espigas.",
+      "acao_requerida": "Beliscar com os dedos a ponta de cada ramo, logo acima do segundo par de folhas; se já houver espiga vermelha, corte-a também"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Poda de renovação",
+      "mensagem": "Depois de meses florindo, a planta tende a ficar alta e desfolhada na base. Uma poda agora traz uma nova leva de espigas em 4 a 6 semanas.",
+      "acao_requerida": "Cortar todos os ramos em um terço da altura, sempre acima de um par de folhas, e adubar em seguida"
+    },
+    {
+      "dia_disparo": 200,
+      "titulo": "Guarde sementes ou estacas",
+      "mensagem": "A planta está entrando no fim do ciclo em vaso. Dá para começar a próxima geração a partir dela.",
+      "acao_requerida": "Tirar estacas de 8 cm das pontas sem flor e enraizar em areia úmida, ou colher as sementes pretas das espigas secas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato molhado; base do caule escura e mole, raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm e nunca deixar água parada no prato. Planta com o caule podre não se recupera: tire estacas das pontas sadias e descarte o resto com o substrato"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam bronzeadas e secas; teia fina no verso, sobretudo em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se instalar, óleo de neem a 0,5% no fim da tarde a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos ao mexer na planta; folhas amareladas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; sabão neutro a 1% ou óleo de neem no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e espigas novas; pontas enroladas e deformadas",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queda de flores por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Depois de uma murcha forte, as flores vermelhas caem todas e as folhas de baixo amarelam",
+      "prevencao_tratamento": "Não deixar o vaso secar por completo no verão; vasos pequenos ou de barro ao sol pedem conferência diária"
+    },
+    {
+      "nome": "Clorose por falta de nutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelo-claras com nervuras verdes, espigas pequenas",
+      "prevencao_tratamento": "Manter a adubação quinzenal e acrescentar 2 colheres de sopa de húmus na superfície a cada 2 meses"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Proteja a sálvia do frio",
+      "mensagem": "Abaixo de 10 °C a sálvia-vermelha para de florir e as folhas arroxeiam; geada mata a planta.",
+      "acao_requerida": "Nas noites frias, levar o vaso para perto de uma parede ou sob uma cobertura, e espaçar as regas para a cada 3 ou 4 dias"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: atenção à rega",
+      "mensagem": "No calor forte o vaso pode secar em um único dia, e uma murcha derruba todas as flores abertas.",
+      "acao_requerida": "Conferir o substrato todos os dias e, se a planta murchar à tarde, dar sombra nas horas mais quentes"
+    }
+  ]
+}

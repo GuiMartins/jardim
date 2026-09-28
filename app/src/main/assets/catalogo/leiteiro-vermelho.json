@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Leiteiro-vermelho",
+    "nome_cientifico": "Euphorbia cotinifolia",
+    "descricao": "Arbusto tropical de folhas arredondadas vinho-arroxeadas, que dá cor forte a varandas e quintais e aguenta bem o calor e a seca. Todas as partes soltam um látex branco tóxico e irritante para pele e olhos: use luvas ao podar e mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado (cerâmica ou cimento) com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com furos no fundo; a planta fica alta e o vento derruba vaso leve",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa lavada, 25% húmus de minhoca ou composto; bem drenado, sem argila compactada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode perder algumas folhas de baixo nas primeiras semanas pela mudança de luz e de vaso; é normal. A fase termina quando surgem folhas novas avermelhadas nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e os ramos crescem rápido na primavera e no verão. Quanto mais sol, mais escura e vermelha fica a folhagem; na sombra ela esverdeia e os ramos ficam longos e fracos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Cresce forte de setembro a março e solta pequenas flores brancas na ponta dos ramos no verão. No inverno quase para e pode perder parte das folhas com frio; rebrota na primavera. Poda de formação no fim do inverno e troca de substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Com as raízes ainda curtas, um dia de sol forte com o torrão seco murcha a muda.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o leiteiro-vermelho",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e não deixe água parada no pratinho. Acima de 30 °C confira a cada 2 dias; de maio a agosto espace para a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o leiteiro-vermelho",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 xícara de húmus) na borda do vaso de 40 L, sem encostar no caule, e regue em seguida. De maio a agosto pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as axilas dos ramos procurando bolinhas brancas algodonosas, escamas marrons ou teias finas com pontinhos amarelados nas folhas. Confira também se a base do caule está firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, com luvas e óculos: tire a planta do vaso, remova um terço do substrato velho e as raízes enroladas no fundo, e replante com substrato novo no mesmo vaso ou num 10 cm maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado com o látex",
+      "mensagem": "Qualquer corte ou folha quebrada solta um leite branco tóxico que irrita pele e olhos e faz mal se ingerido.",
+      "acao_requerida": "Deixar o vaso fora do alcance de crianças e animais e separar luvas para mexer na planta"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Muda adaptada",
+      "mensagem": "A muda já deve estar soltando folhas novas vermelhas. A partir de agora ela aguenta regas mais espaçadas e começa a receber adubo.",
+      "acao_requerida": "Conferir se há brotação nova nas pontas; se a planta ainda estiver perdendo folhas, levar para um local com mais sol"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Cortar as pontas agora faz a planta ramificar e virar um arbusto cheio em vez de uma haste única comprida.",
+      "acao_requerida": "Com luvas, cortar 5 cm da ponta dos ramos mais altos logo acima de uma folha; lavar a tesoura e estancar o látex com um borrifo de água"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule mole e escurecida; cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e garantir furos desobstruídos. Se o caule amolecer, cortar a parte sadia e enraizar como estaca em areia úmida"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodonosas nas axilas dos ramos e no verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; se persistir, óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelados nas folhas, teias finas entre folhas e ramos, folhagem opaca e sem brilho, mais comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se infestar, óleo de neem a 0,5% a cada 5 dias ou acaricida à base de enxofre"
+    },
+    {
+      "nome": "Folhagem verde e ramos compridos (falta de sol)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas perdem o vinho e ficam verde-bronze; ramos longos, finos e com folhas espaçadas",
+      "prevencao_tratamento": "Levar para um local com pelo menos 4 a 6 horas de sol direto e podar os ramos estiolados na primavera"
+    },
+    {
+      "nome": "Queda de folhas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Perda repentina de muitas folhas após noites abaixo de 8 °C; pontas dos ramos escurecidas depois de geada",
+      "prevencao_tratamento": "Encostar o vaso numa parede protegida nas noites frias e cobrir com TNT em dias de geada; esperar a rebrota de setembro antes de cortar ramos secos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Menos água e sem adubo",
+      "mensagem": "Com o frio a planta quase para de crescer e o substrato demora mais a secar; rega no ritmo de verão apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para a cada 7 a 10 dias, sempre conferindo com o dedo, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O leiteiro-vermelho é tropical: abaixo de 8 °C perde folhas e geada queima os ramos.",
+      "acao_requerida": "Nas noites frias, encostar o vaso numa parede abrigada do vento; em aviso de geada, cobrir a planta com TNT até de manhã"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de fim de inverno",
+      "mensagem": "Podar agora, antes da brotação, deixa a planta compacta e com muita folha nova vermelha na primavera.",
+      "acao_requerida": "Com luvas e óculos, cortar ramos secos e reduzir os mais longos em até um terço, logo acima de uma gema; lavar a tesoura depois"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Com o calor voltando, a planta rebrota e precisa de mais água e nutrientes.",
+      "acao_requerida": "Voltar a regar a cada 4 dias conferindo o substrato e fazer a primeira adubação da temporada"
+    }
+  ]
+}

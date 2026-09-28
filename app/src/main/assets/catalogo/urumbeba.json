@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Urumbeba",
+    "nome_cientifico": "Brasiliopuntia brasiliensis",
+    "descricao": "Cacto nativo do Brasil, da restinga e das matas secas. Tem um tronco cilíndrico e ramos de cladódios achatados e finos, como folhas. Em vaso fica entre 1,5 e 3 m, bem menor que os 4 a 15 m que alcança no chão, e rende uma escultura viva e resistente. As flores são amarelas e os frutos amarelos e comestíveis, mas em vaso eles costumam aparecer só depois de alguns anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cimento, pesado e largo, com pelo menos 35 cm de diâmetro, 35 cm de profundidade e furos grandes no fundo. Vaso de plástico leve tomba quando a planta cresce e fica pesada em cima",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 30% pedrisco fino ou perlita, mais 1 colher de sopa de farinha de ossos a cada 10 L; ou substrato pronto para cactos e suculentas, com 1 parte de areia grossa para cada 3 partes de substrato",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 45,
+      "descricao": "Antes de plantar, deixe o cladódio cortado secar à sombra por 7 a 14 dias, até o corte formar uma casca seca (calo). Depois, enterre de 3 a 5 cm da base, em pé, no substrato seco e firme. Se ele tombar, escore com pedras ou um palito. As raízes se formam em 3 a 6 semanas. Para saber se enraizou, puxe de leve: se o cladódio resistir, já tem raiz. Cladódio mole ou com a base escura está podre."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 46,
+      "dia_fim": 365,
+      "descricao": "Brotam cladódios novos, verde-claros e macios, nas bordas do antigo. O crescimento se concentra na primavera e no verão e quase para no inverno. Cladódio novo fino, alongado e verde-pálido é sinal de pouca luz. Leve o vaso para um lugar mais ensolarado aos poucos, ao longo de uma semana."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "A base do caule endurece e vai virando um tronco. A planta cresce na primavera e no verão, descansa no outono e no inverno com pouca água, e pode florescer entre setembro e dezembro, com frutos amarelos maduros no verão e no começo do outono. Se ela ficar pesada demais em cima, corte cladódios no fim do inverno, na junção com o ramo, e use os pedaços como novas estacas. Os espinhos e os pelinhos (gloquídeos) grudam na pele: mexa sempre com luva grossa ou jornal dobrado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca de urumbeba",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver totalmente seco, regue com cerca de 1 copo (200 ml) ao redor da base, sem molhar o cladódio. Se ainda estiver úmido, espere mais 3 dias. Nesta fase o erro que mata é regar demais: substrato encharcado apodrece a base antes de a raiz nascer.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a urumbeba",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de churrasco até o fundo do vaso e tire. Se sair seco e limpo, regue devagar até escorrer pelos furos e jogue fora a água do pratinho. Se sair úmido ou com terra grudada, espere. Na primavera e no verão isso dá a cada 7 a 10 dias. De maio a agosto, regue só a cada 20 a 30 dias, e não regue com frio abaixo de 10 °C.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cacto",
+      "titulo": "Adubar a urumbeba",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dilua adubo para cactos ou NPK 10-10-10 pela metade da dose do rótulo e aplique no substrato já úmido, junto com uma rega. De abril a agosto a planta está parada: pule esta adubação. Adubo com muito nitrogênio deixa os cladódios moles e sujeitos a podridão.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar cladódios",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luva, procure tufos brancos de algodão ou escamas marrons nas juntas dos cladódios e em volta dos espinhos, e manchas moles ou escuras na base do caule. Aperte a base: tem que estar firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, com o substrato seco, enrole o caule em jornal dobrado ou numa mangueira cortada e tire a planta do vaso. Solte as raízes, corte as podres (escuras e moles) e plante num vaso 5 a 10 cm mais largo, com substrato novo e seco. Espere 7 dias para regar, para as raízes machucadas cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Não regue a estaca ainda",
+      "mensagem": "O cladódio recém-plantado ainda não tem raiz para absorver água. Molhar agora é o jeito mais comum de apodrecer a base.",
+      "acao_requerida": "Deixar o vaso no sol filtrado ou pegando só o sol da manhã, com o substrato seco, até o dia 8"
+    },
+    {
+      "dia_disparo": 46,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "A estaca deve ter raízes e começar a brotar. A partir de agora ela precisa de sol direto para crescer firme e sem esticar.",
+      "acao_requerida": "Aumentar a exposição ao sol aos poucos, 1 a 2 horas a mais por dia, até ela ficar o dia todo no sol pleno em cerca de uma semana"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Confira o equilíbrio do vaso",
+      "mensagem": "Os cladódios novos pesam, e a urumbeba em vaso tende a tombar com vento ou quando fica pesada de um lado só.",
+      "acao_requerida": "Girar o vaso um quarto de volta, ver se ele balança e, se balançar, pôr pedras no fundo do cachepô ou passar para um vaso mais largo e pesado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da base e das raízes (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "A base do caule ou do cladódio fica mole, escura e com cheiro ruim; a planta amolece e tomba",
+      "prevencao_tratamento": "Regar só com o substrato totalmente seco, nunca deixar água no pratinho e usar substrato bem arenoso. Se aparecer, corte a parte sã acima da podridão, deixe secar e formar calo por 2 semanas e replante como estaca, em substrato novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas juntas dos cladódios e em volta dos espinhos; cladódios amarelados e murchos",
+      "prevencao_tratamento": "Remover com cotonete molhado em álcool 70%. Se a infestação for grande, pulverizar óleo de neem a 0,5% com algumas gotas de detergente neutro, no fim da tarde, a cada 7 dias, por 3 semanas"
+    },
+    {
+      "nome": "Cochonilha-de-escama (Diaspis echinocacti)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas redondas, brancas a marrons, grudadas na superfície do cladódio; manchas amarelas embaixo delas",
+      "prevencao_tratamento": "Raspar com escova de dentes macia molhada em água com sabão neutro; se voltarem, aplicar óleo mineral a 1% no fim da tarde, a cada 10 dias"
+    },
+    {
+      "nome": "Cochonilha-do-carmim (Dactylopius opuntiae)",
+      "tipo": "PRAGA",
+      "sintomas": "Massas cerosas brancas que soltam um líquido vermelho quando esmagadas; cladódios amarelam e caem",
+      "prevencao_tratamento": "Isolar a planta, remover as massas com jato forte de água e escova e cortar os cladódios muito atacados. Não traga estacas de plantas infestadas"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Cladódios novos finos, compridos, verde-pálidos e curvados em direção à luz",
+      "prevencao_tratamento": "Levar para o sol pleno aos poucos. A parte esticada não volta ao normal: corte-a no fim do inverno para brotar de novo, já firme"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelo-claras ou brancas e secas, que depois ficam marrons, no lado do cladódio virado para o sol",
+      "prevencao_tratamento": "Acontece quando a planta vem da sombra direto para o sol forte. Aumente a exposição ao longo de 1 a 2 semanas; as manchas ficam como cicatriz"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Urumbeba entrando em descanso",
+      "mensagem": "Com o frio e os dias curtos, a urumbeba quase para de crescer e passa a usar bem pouca água. Rega no ritmo do verão agora apodrece as raízes.",
+      "acao_requerida": "Espaçar as regas para a cada 20 a 30 dias e parar de adubar até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger a urumbeba da geada",
+      "mensagem": "Ela aguenta frio seco, mas geada e temperatura abaixo de 2 °C queimam e amolecem os cladódios, principalmente com o substrato úmido.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, levar o vaso para perto de uma parede ou para debaixo de um beiral e cobrir com um tecido leve (TNT), tirando de manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor da primavera, a urumbeba volta a brotar cladódios e pode formar botões de flor.",
+      "acao_requerida": "Voltar à rega a cada 7 a 10 dias, retomar a adubação e, se ela estiver pesada ou torta, cortar agora os cladódios em excesso com luva e faca limpa"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "planta": {
+    "nome_comum": "Faveleira",
+    "nome_cientifico": "Cnidoscolus quercifolius",
+    "descricao": "Árvore nativa da Caatinga, da família da mandioca, que perde as folhas na seca e rebrota com as chuvas. Tem pelos que queimam a pele, por isso se maneja sempre de luvas, e sementes oleaginosas usadas na alimentação sertaneja. Em vaso fica um arbusto de 1,5 a 2 m, com a base do caule engrossada, e aguenta sol forte e rega esquecida.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 40 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo; a planta forma raiz tuberosa funda. Semeie antes em copo ou saquinho de muda de 15 cm de altura e passe para o vaso definitivo quando a raiz tomar o copo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% areia grossa lavada, 30% terra vegetal, 20% húmus de minhoca; nada de turfa ou terra argilosa que segure água",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 40,
+      "descricao": "Antes de semear, lixe de leve a casca da semente no lado oposto ao ponto de encaixe e deixe de molho em água morna por 24 horas. Semeie a 2 cm de profundidade, com o substrato úmido e em lugar quente (acima de 25 °C). A germinação é lenta e irregular: as primeiras plântulas surgem entre o 10º e o 30º dia, algumas só perto do 40º."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 41,
+      "dia_fim": 150,
+      "descricao": "Surgem as folhas recortadas, parecidas com folha de carvalho, já com pelos urticantes. A base do caule começa a engrossar. A fase termina quando as raízes aparecem pelos furos do copo e a muda passa dos 20 cm."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Juvenil",
+      "dia_inicio": 151,
+      "dia_fim": 730,
+      "descricao": "Já no vaso definitivo, a planta forma o tronco e a raiz tuberosa que guarda água. No primeiro inverno ela pode perder parte ou todas as folhas: é dormência, não morte. Arranhe de leve o caule com a unha; se estiver verde por baixo, está viva."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota e cresce com o calor e as chuvas da primavera e do verão, dá flores brancas pequenas no fim da primavera e frutos com três sementes que estouram ao secar. Do outono ao fim do inverno amarela, perde as folhas e quase para de beber água. Pode florescer em vaso a partir do terceiro ou quarto ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar as sementes da faveleira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 40,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue com regador de bico fino até umedecer tudo, sem formar poça. A semente precisa de umidade constante para germinar, mas apodrece se o copo ficar encharcado.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar a muda de faveleira",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 41,
+      "dia_fim_ciclo": 730,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e esvazie o pratinho. Se a planta estiver sem folhas no inverno, regue só uma vez a cada 15 dias, pouca água.",
+      "critica": false
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a faveleira",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 731,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e esvazie o pratinho. Com a planta sem folhas (outono e inverno), regue a cada 20 a 30 dias, só para a raiz não murchar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a faveleira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com a planta com folhas, espalhe 2 colheres de sopa de húmus de minhoca (1 colher na muda) sobre o substrato, longe do caule, e regue. Se ela estiver sem folhas, pule esta vez: planta dormente não aproveita adubo.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a faveleira",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas, vire algumas folhas e olhe o verso e as axilas dos ramos: procure bolinhas brancas de algodão, pontinhos amarelados com teias finas ou lagartas grandes. Aperte a base do caule: deve estar firme, nunca mole.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato da faveleira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 820,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De luvas e manga comprida, tire a planta do vaso no fim do inverno, pouco antes da brotação. Solte a terra velha sem ferir a raiz tuberosa, corte só raízes finas podres ou secas e replante no mesmo vaso ou num 10 cm maior, com substrato novo. Espere 5 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Conferir a germinação",
+      "mensagem": "A faveleira germina devagar e de forma irregular, mas a esta altura algumas sementes costumam ter brotado.",
+      "acao_requerida": "Se nenhuma brotou, cavar uma semente com cuidado: se estiver mole ou mofada, trocar por outra escarificada; se estiver firme, manter a rega e esperar até o dia 40"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Use luvas a partir de agora",
+      "mensagem": "As folhas e o caule já têm pelos urticantes, que queimam a pele como urtiga e ardem por horas.",
+      "acao_requerida": "Deixar luvas grossas perto da planta e colocar o vaso fora do alcance de crianças e animais"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "A raiz da faveleira cresce funda e engrossa; se ficar presa no copo, entorta e a planta para de crescer.",
+      "acao_requerida": "Com luvas, passar a muda com o torrão inteiro para o vaso de 40 L, na mesma altura em que estava, e regar só depois de 2 dias"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da raiz e da base do caule (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole e escura, folhas murchas mesmo com a terra úmida, cheiro de podre no substrato",
+      "prevencao_tratamento": "Substrato arenoso, pratinho sempre vazio e quase nada de água com a planta sem folhas. Se aparecer, tire a planta, corte tudo que estiver mole até achar tecido firme, deixe secar 3 dias à sombra e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas axilas das folhas e na base dos ramos; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "De luvas, remover com cotonete embebido em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Ácaro-vermelho",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto de poeira e teias finíssimas no verso, comum no calor seco",
+      "prevencao_tratamento": "Jato de água no verso das folhas; se persistir, enxofre molhável ou óleo de neem a 0,5% a cada 5 dias, nunca no sol forte"
+    },
+    {
+      "nome": "Mandarová (Erinnyis ello)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas grandes, verdes ou escuras, com um espinho na ponta do corpo; folhas comidas até a nervura em poucos dias",
+      "prevencao_tratamento": "Catar as lagartas de luvas e eliminar; em ataque forte, Bacillus thuringiensis pulverizado nas folhas"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos, compridos e tortos em direção à luz, folhas pequenas e espaçadas, caule que não engrossa na base",
+      "prevencao_tratamento": "Levar para o lugar mais ensolarado da casa, com pelo menos 6 horas de sol direto; a faveleira não se adapta a meia-sombra"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "A faveleira vai entrar em dormência",
+      "mensagem": "Com o frio e a seca, a faveleira amarela e derruba as folhas até o fim do inverno. É o ciclo natural dela, não doença.",
+      "acao_requerida": "Espaçar a rega para a cada 20 a 30 dias, parar de adubar e não tentar salvar as folhas com mais água"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Planta do sertão, a faveleira não tolera geada e sofre abaixo de 8 °C, principalmente com a terra úmida.",
+      "acao_requerida": "Em noites com previsão abaixo de 8 °C, levar o vaso para perto de uma parede ou sob uma cobertura e manter o substrato seco"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta das folhas",
+      "mensagem": "Com o calor da primavera, a faveleira rebrota nas pontas dos ramos e volta a crescer.",
+      "acao_requerida": "Quando aparecerem os primeiros brotos, voltar à rega semanal e retomar a adubação"
+    }
+  ]
+}

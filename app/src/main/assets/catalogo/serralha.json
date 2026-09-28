@@ -1,0 +1,199 @@
+{
+  "planta": {
+    "nome_comum": "Serralha",
+    "nome_cientifico": "Sonchus oleraceus",
+    "descricao": "PANC de folhas tenras e levemente amargas, comidas cruas em salada ou refogadas como a couve. Nasce sozinha em canteiros e frestas, e no vaso cresce rápido e quase sem cuidado. Quando floresce, as folhas ficam duras e amargas e a planta completa o ciclo.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 90,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de profundidade, para a raiz pivotante, e furos no fundo; numa jardineira de 60 cm cabem 3 plantas",
+    "volume_minimo_litros": 4,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa; solto e fundo para a raiz descer",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Semeie 3 a 4 sementes por cova, a no máximo 0,5 cm de profundidade: elas precisam de luz para germinar. As plântulas, com duas folhinhas redondas, aparecem entre o 5º e o 10º dia."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 11,
+      "dia_fim": 25,
+      "descricao": "Surgem as primeiras folhas verdadeiras, recortadas e com a borda levemente espinhosa. Um líquido branco escorre se uma folha for quebrada: é normal."
+    },
+    {
+      "fase_id": "roseta",
+      "nome": "Formação da Roseta",
+      "dia_inicio": 26,
+      "dia_fim": 45,
+      "descricao": "As folhas crescem rente ao substrato, em roseta, e chegam a 10 a 15 cm. A fase termina quando a roseta tem 8 ou mais folhas grandes e as externas já podem ser colhidas."
+    },
+    {
+      "fase_id": "colheita_folhas",
+      "nome": "Colheita de Folhas",
+      "dia_inicio": 46,
+      "dia_fim": 75,
+      "descricao": "Melhor época para comer: folhas grandes, macias e pouco amargas. Colha sempre as de fora e deixe o miolo. Quando um caule oco começar a subir do centro, a planta está entrando em floração."
+    },
+    {
+      "fase_id": "floracao_sementes",
+      "nome": "Floração e Sementes",
+      "dia_inicio": 76,
+      "dia_fim": 90,
+      "descricao": "O caule floral sobe até 60 cm a 1 m e abre flores amarelas parecidas com as do dente-de-leão. As folhas ficam duras e amargas. Os botões e as folhas novas do caule ainda podem ser comidos refogados; depois as flores viram bolinhas brancas de sementes que voam longe."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. As sementes estão quase na superfície: se o substrato secar um dia inteiro, elas morrem; se encharcar, apodrecem.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a serralha",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia; no inverno, a cada 3 dias costuma bastar. Falta de água deixa as folhas mais amargas e apressa a floração.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar com húmus",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 65,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por planta, afastado 3 cm da roseta, e regue em seguida. O nitrogênio do húmus mantém as folhas grandes e tenras.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Vire as folhas e olhe o verso e o miolo da roseta: procure pulgões agrupados, pó branco, pontinhos alaranjados ou trilhas brancas sinuosas dentro da folha.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de serralha",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 40,
+      "dia_fim_ciclo": 80,
+      "instrucoes": "Corte com tesoura as 3 a 4 folhas mais externas e maiores, rente à base, deixando pelo menos 5 folhas no centro. Prefira colher de manhã, quando estão mais firmes.",
+      "critica": false
+    },
+    {
+      "id": "corte_flores",
+      "titulo": "Cortar flores antes das sementes",
+      "tipo": "PODA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 76,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Corte os botões e as flores murchas antes de virarem bolinhas brancas. Os botões fechados podem ir para a panela. Se quiser guardar sementes, deixe só 2 ou 3 cabeças e cubra com um saquinho de tecido.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 18,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "As plântulas de cada cova estão disputando espaço. Sem desbaste, a roseta fica pequena e floresce cedo.",
+      "acao_requerida": "Deixar só a plântula mais forte de cada cova, cortando as outras rente ao substrato com tesoura (elas podem ir para a salada)"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Primeira colheita de folhas",
+      "mensagem": "A roseta já tem folhas externas de 10 a 15 cm, macias e no melhor ponto.",
+      "acao_requerida": "Colher as 3 folhas mais externas e provar: quanto mais nova a folha, menos amarga"
+    },
+    {
+      "dia_disparo": 72,
+      "titulo": "A serralha vai florescer",
+      "mensagem": "Em poucos dias um caule deve subir do centro da roseta, e depois dele as folhas endurecem e amargam.",
+      "acao_requerida": "Fazer uma colheita maior das folhas boas agora e, se quiser continuar colhendo, semear outro vaso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes, pretos ou acinzentados no miolo da roseta, no caule floral e no verso das folhas; folhas enrugadas e pegajosas",
+      "prevencao_tratamento": "Jato de água ou esmagar com os dedos; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias, esperando 3 dias antes de colher"
+    },
+    {
+      "nome": "Mosca-minadora (Liriomyza spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Trilhas brancas e sinuosas dentro da folha, como desenhos a lápis",
+      "prevencao_tratamento": "Retirar e descartar as folhas com trilhas; a planta continua produzindo folhas novas"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco, como farinha, sobre as folhas, mais comum em tempo seco e noites frias",
+      "prevencao_tratamento": "Retirar as folhas atingidas, regar só o substrato e manter o vaso ventilado; se espalhar, leite diluído em água (1:9) nas folhas a cada 7 dias"
+    },
+    {
+      "nome": "Ferrugem (Coleosporium sonchi)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas no verso das folhas, que soltam pó ao tocar",
+      "prevencao_tratamento": "Retirar e descartar as folhas atingidas sem sacudir, não molhar as folhas e não deixar o vaso encostado em outras plantas"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha com o substrato úmido, base da roseta escura e mole, raiz com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e garantir furos livres; planta com a base mole não se recupera, semeie de novo em substrato novo"
+    },
+    {
+      "nome": "Pendoamento precoce",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule floral subindo antes do 60º dia, com a roseta ainda pequena e folhas amargas",
+      "prevencao_tratamento": "Causado por calor forte, falta de água ou vaso raso. Semeie de março a outubro, regue com regularidade e use vaso com 25 cm de profundidade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor apressa a floração",
+      "mensagem": "No verão a serralha floresce mais cedo e as folhas amargam rápido, principalmente se o substrato secar.",
+      "acao_requerida": "Conferir a rega todo dia, dar sombra nas horas mais quentes da tarde e colher as folhas com mais frequência, enquanto estão tenras"
+    }
+  ]
+}

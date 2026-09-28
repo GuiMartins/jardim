@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Barriguda",
+    "nome_cientifico": "Ceiba pubiflora",
+    "descricao": "Árvore nativa do Cerrado e da Caatinga, parente da paineira, com tronco verde, aculeado e dilatado em forma de garrafa, onde guarda água para a seca. Em vaso fica pequena, com o tronco engrossando ano a ano, e é cultivada como planta escultural ou pré-bonsai. Perde as folhas no inverno seco; exemplares adultos podem dar flores rosadas nessa época, mas em vaso isso é raro e demora anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e pesado (cerâmica ou cimento), com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; o peso evita que a copa tombe o vaso com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% perlita ou pedrisco fino; precisa drenar rápido, porque raiz encharcada apodrece o tronco",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo. Pode perder algumas folhas nas primeiras semanas; está tudo bem se o tronco continuar firme e verde. Comece em meia-sombra e passe para o sol pleno aos poucos. A fase termina quando surgem folhas novas nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Raízes ocupam o vaso e o caule ganha altura e começa a engrossar na base. Folhas compostas, com 5 a 7 folíolos, saem em surtos na estação chuvosa. No primeiro inverno ela perde as folhas: é o ciclo natural, não doença. Tronco mole ou enrugado é sinal de problema."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce e fica cheia de folhas de outubro a abril, com rega e adubo; amarela e derruba as folhas entre maio e julho; passa o inverno pelada, só com o tronco, vivendo da água que guardou; rebrota em setembro ou outubro. O tronco engrossa um pouco a cada ano. Flores rosadas no inverno só aparecem em plantas com muitos anos e vaso grande."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a barriguda (adaptação)",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Se ainda estiver úmido, espere mais um dia. Sem raízes firmes, a muda não aguenta secar de vez nem ficar encharcada.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a barriguda",
+      "tipo": "REGA",
+      "frequencia_dias": 6,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; só regue se estiver seco nessa profundidade, até escorrer pelos furos, e nunca deixe água no pratinho. No verão quente, confira a cada 4 dias. Sem folhas (inverno), regue só a cada 20 a 30 dias, um copo de água, para as raízes finas não morrerem.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a barriguda",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 xícara de húmus de minhoca) na borda do vaso de 40 L, longe do tronco, e regue em seguida. Pule a adubação quando a planta estiver sem folhas (maio a agosto).",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos brancos ou marrons grudados (cochonilha), teias finas e folhas pontilhadas (ácaro) ou folhas roídas (lagarta). Aperte de leve a base do tronco com luvas, por causa dos acúleos: deve estar firme; mole ou escuro indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato ou vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e outubro, quando a planta rebrota. Tire do vaso, apare até um terço das raízes enoveladas, troque o substrato por um novo e passe para um vaso 5 a 10 cm maior se as raízes preenchiam tudo. Regue só 3 dias depois, para os cortes cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A barriguda é árvore de sol pleno. Depois da primeira semana à meia-sombra, já pode ir se acostumando ao sol direto.",
+      "acao_requerida": "Deixar o vaso 3 horas de sol da manhã por dia nesta semana e aumentar até o sol pleno ao fim do mês"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se já apareceram folhas novas, as raízes estão pegando. A rega agora fica mais espaçada: esta planta prefere secar entre uma rega e outra.",
+      "acao_requerida": "Conferir se há brotos novos e se o tronco está firme; se estiver mole, suspender a rega até o substrato secar por completo"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de barriguda",
+      "mensagem": "Com um ano, as raízes podem já estar saindo pelos furos do vaso.",
+      "acao_requerida": "Olhar o fundo do vaso; se houver raízes saindo pelos furos, planejar a troca para um vaso maior na próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (excesso de água)",
+      "tipo": "DOENCA",
+      "sintomas": "Tronco amolece, enruga ou escurece na base; folhas caem fora do inverno; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e quase nada no inverno; esvaziar o pratinho. Se afetar, tirar do vaso, cortar as raízes podres, deixar secar 2 dias à sombra e replantar em substrato novo bem arenoso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodonosas ou marrons grudadas nos ramos e no verso das folhas; folhas pegajosas",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teias finas no verso, comum em tempo quente e seco",
+      "prevencao_tratamento": "Jato de água no verso das folhas duas vezes por semana; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos roídos pelas bordas ou desaparecidos, com fezes escuras no vaso",
+      "prevencao_tratamento": "Catar as lagartas à mão; em ataque forte, Bacillus thuringiensis conforme o rótulo"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule fino e comprido, tronco que não engrossa, folhas espaçadas e pálidas",
+      "prevencao_tratamento": "Mudar para o lugar mais ensolarado da casa, com pelo menos 5 horas de sol direto; o crescimento torto pode ser corrigido com poda no fim do inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "A barriguda vai perder as folhas",
+      "mensagem": "Com o frio e a seca, a barriguda amarela e derruba as folhas. É o descanso natural dela, não doença, e o tronco guarda água para esse período.",
+      "acao_requerida": "Espaçar a rega aos poucos até chegar a um copo de água a cada 20 a 30 dias e parar a adubação até a rebrota"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Sem folhas, dá para ver bem os galhos. Podar agora, antes da rebrota, deixa a copa compacta e o tronco em destaque.",
+      "acao_requerida": "Com luvas, cortar ramos secos, cruzados ou compridos demais logo acima de uma gema, com tesoura limpa; não cortar mais que um terço da copa"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Rebrota: retomar os cuidados",
+      "mensagem": "Com o calor e as chuvas, a barriguda solta brotos novos. É a época de voltar a regar normalmente e a adubar.",
+      "acao_requerida": "Voltar à rega sempre que o substrato secar a 5 cm e fazer a primeira adubação quando as folhas novas abrirem"
+    }
+  ]
+}

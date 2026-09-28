@@ -1,0 +1,218 @@
+{
+  "planta": {
+    "nome_comum": "Bananeira",
+    "nome_cientifico": "Musa × paradisiaca (cultivares anãs, ex.: 'Prata-anã')",
+    "descricao": "Erva gigante tropical que forma touceira: cada pseudocaule dá um único cacho e morre, e um filho nascido do rizoma toma o lugar dele. Para vaso, escolha uma cultivar anã, como a Prata-anã, que fica entre 2 e 3 m e frutifica em recipiente grande. A touceira vive muitos anos e dá um cacho por ciclo de pseudocaule.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou meia-bombona com pelo menos 60 cm de diâmetro e 50 cm de profundidade, vários furos no fundo e base firme e pesada (a planta adulta com cacho tomba vasos leves)",
+    "volume_minimo_litros": 100,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% esterco bovino curtido ou composto, 20% húmus de minhoca, 10% areia grossa ou perlita, mais 200 g de farinha de ossos e 100 g de cinza de madeira misturados por vaso de 100 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o rizoma 5 cm abaixo da superfície, sem enterrar o pseudocaule além disso. As folhas velhas podem amarelar e secar. A adaptação terminou quando uma folha nova se abre por completo, verde e firme, saindo do centro."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 300,
+      "descricao": "No verão sai uma folha nova a cada 7 a 10 dias e o pseudocaule engrossa. Brotos (rebentos) começam a surgir em volta da base. No inverno o crescimento quase para abaixo de 15 °C. A fase termina quando a planta tem cerca de 25 a 30 folhas emitidas e as folhas novas ficam menores e mais eretas, sinal de que o cacho está a caminho."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 301,
+      "dia_fim": null,
+      "descricao": "Em vaso, o coração (inflorescência roxa) costuma sair entre 10 e 15 meses após o plantio. As pencas se formam e o cacho enche por 90 a 120 dias; colha quando os frutos perdem as quinas e o primeiro amarelar aparece na penca de cima, e deixe amadurecer à sombra. Depois da colheita, corte o pseudocaule da mãe a 50 cm do chão (o resto seca e devolve nutrientes) e deixe o filho escolhido assumir. O ciclo seguinte é mais rápido, de 8 a 12 meses até o novo cacho."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de bananeira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Substrato encharcado apodrece o rizoma recém-plantado: se ainda estiver molhado, espere mais um dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a bananeira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 15 a 20 L num vaso de 100 L). Acima de 30 °C ou com cacho enchendo, confira todo dia. No inverno, espere secar 5 cm, o que costuma levar 4 a 6 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a bananeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 litro de húmus ou esterco curtido e 1 colher de sopa de cloreto de potássio (ou 1 xícara de cinza de madeira) em volta do pseudocaule, a 10 cm dele, e regue em seguida. Banana consome muito potássio. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "desbaste_rebentos",
+      "titulo": "Desbastar os rebentos",
+      "tipo": "DESBASTE",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Mantenha só a planta-mãe e um filho sucessor (o mais vigoroso, de folhas estreitas). Corte os outros brotos rente ao substrato e destrua o ponto de crescimento no centro do corte com a ponta de uma faca, senão eles rebrotam.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Retirar folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao pseudocaule as folhas secas, dobradas ou com mais da metade manchada, usando faca limpa. Pique e use como cobertura sobre o substrato. Nunca retire folhas verdes sadias: a planta precisa de pelo menos 8 para encher o cacho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a bananeira",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure manchas amarelas em risco que escurecem, pó branco ou ácaros no verso. Afaste a cobertura e confira a base do pseudocaule em busca de galerias, serragem ou besouros pretos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Logo depois de uma colheita, tire a touceira do vaso, separe o filho com um pedaço do rizoma, descarte o rizoma velho da mãe e replante em substrato novo com a mesma receita inicial.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Cobrir o substrato",
+      "mensagem": "Vaso de bananeira ao sol perde água muito rápido pela superfície.",
+      "acao_requerida": "Cobrir o substrato com 5 cm de palha, folhas secas ou casca de pinus, deixando 5 cm livres em volta do pseudocaule"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Escolher o filho sucessor",
+      "mensagem": "Os rebentos já devem estar visíveis. O melhor sucessor tem folhas estreitas como uma lança e nasce do lado mais iluminado.",
+      "acao_requerida": "Marcar o rebento mais vigoroso e eliminar os demais, cortando rente e destruindo o ponto de crescimento"
+    },
+    {
+      "dia_disparo": 280,
+      "titulo": "Preparar escora para o cacho",
+      "mensagem": "O coração pode aparecer nos próximos meses, e o peso do cacho tomba a planta em vaso, principalmente com vento.",
+      "acao_requerida": "Deixar um bambu ou caibro de 2 m com forquilha na ponta pronto para apoiar o pseudocaule do lado oposto ao do cacho"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma por encharcamento (Dickeya, Pectobacterium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do pseudocaule mole e escurecida com cheiro de podre, folhas centrais murchando e planta que tomba",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos desobstruídos e nunca deixar prato com água. Planta com rizoma podre raramente se salva: aproveite um rebento sadio em substrato novo"
+    },
+    {
+      "nome": "Moleque-da-bananeira (Cosmopolites sordidus)",
+      "tipo": "PRAGA",
+      "sintomas": "Galerias escuras no rizoma e na base do pseudocaule, serragem, planta fraca e que tomba; besouro preto de 1 cm escondido na base",
+      "prevencao_tratamento": "Usar muda limpa, retirar restos de pseudocaule cortado e fazer iscas com pedaços de pseudocaule cortados ao meio deixados sobre o substrato, catando os besouros a cada 3 dias"
+    },
+    {
+      "nome": "Mal-do-panamá (Fusarium oxysporum f. sp. cubense)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas velhas amarelando da borda para o centro e quebrando junto ao pseudocaule; por dentro, o pseudocaule tem riscos marrom-avermelhados",
+      "prevencao_tratamento": "Não tem cura. Compre muda certificada, de preferência micropropagada. Planta atacada deve ir para o lixo com o substrato, e o vaso deve ser lavado com água sanitária"
+    },
+    {
+      "nome": "Sigatoka-amarela (Pseudocercospora musicola)",
+      "tipo": "DOENCA",
+      "sintomas": "Riscos amarelo-claros nas folhas que viram manchas alongadas marrons com centro cinza, secando a folha",
+      "prevencao_tratamento": "Retirar as folhas muito manchadas, manter a planta ventilada e ao sol e não molhar as folhas no fim da tarde"
+    },
+    {
+      "nome": "Ácaro e tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas prateadas ou bronzeadas com teia fina no verso; frutos com pontos ásperos ou rachaduras na casca",
+      "prevencao_tratamento": "Jato de água no verso das folhas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 7 dias"
+    },
+    {
+      "nome": "Deficiência de potássio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas amarelo-alaranjadas que secam a partir da ponta e da borda e se dobram; cacho pequeno e frutos finos",
+      "prevencao_tratamento": "Manter a adubação mensal com potássio na estação quente; em caso de sintoma, aplicar 1 colher de sopa de cloreto de potássio e regar bem"
+    },
+    {
+      "nome": "Friagem e geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Abaixo de 12 °C a casca dos frutos fica acinzentada e as folhas amarelam; com geada, as folhas escurecem e secam em poucos dias",
+      "prevencao_tratamento": "Colocar o vaso junto a uma parede ao norte ou em local coberto nas noites frias e cobrir a planta com TNT em noites de geada"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: bananeira em repouso",
+      "mensagem": "Com frio, a bananeira quase para de crescer e o substrato demora a secar. Rega em excesso agora apodrece o rizoma, e geada queima as folhas.",
+      "acao_requerida": "Espaçar a rega até o substrato secar 5 cm, suspender a adubação e proteger a planta nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomada da primavera",
+      "mensagem": "Com o calor voltando, a bananeira volta a soltar folhas e rebentos.",
+      "acao_requerida": "Retirar as folhas queimadas pelo frio, retomar a adubação mensal e renovar a cobertura do substrato"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: sede e vento",
+      "mensagem": "No calor forte o vaso pode secar em um dia, e ventanias rasgam as folhas e tombam plantas com cacho.",
+      "acao_requerida": "Conferir a umidade todo dia e deixar o vaso protegido do vento ou escorado"
+    }
+  ]
+}

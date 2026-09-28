@@ -1,0 +1,240 @@
+{
+  "planta": {
+    "nome_comum": "Videira",
+    "nome_cientifico": "Vitis vinifera",
+    "descricao": "Trepadeira lenhosa que dá a uva europeia de mesa e de vinho (Itália, Rubi, Moscato). Em vaso grande, conduzida num tutor ou numa pequena pérgola, produz alguns cachos por ano a partir do segundo ou terceiro verão. Perde as folhas no inverno. É mais sensível ao míldio que as uvas americanas, como a Niágara, e por isso pede folhas secas e bem arejadas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo, e um tutor firme de 1,8 a 2 m ou uma pequena pérgola ou treliça junto ao vaso",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa; 200 g de calcário dolomítico e 200 g de farinha de ossos misturados por vaso de 40 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enxertada se firma no vaso novo. Se ela chegou dormente, as gemas incham e soltam as primeiras folhas em 2 a 4 semanas. Folhas novas se abrindo mostram que a raiz pegou. Mantenha o ponto do enxerto (o calo no caule) uns 5 cm acima do substrato."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação do Tronco",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Primeiro ano: o objetivo é formar um tronco reto até o topo do tutor, não produzir uva. Conduza um único ramo vertical e tire os brotos laterais do tronco. Se aparecer algum cacho, retire-o ainda em flor. No outono as folhas amarelam e caem, e o ramo fica marrom e lenhoso: a planta entrou em dormência."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "O ano típico: poda de inverno em julho, brotação em agosto e setembro, floração em outubro, cachos crescendo de novembro a janeiro e colheita no verão. Depois da colheita a planta acumula reservas até as folhas caírem, entre maio e junho. No segundo ano deixe no máximo 2 ou 3 cachos; a partir do terceiro, de 6 a 10 por vaso de 40 L."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de videira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Não deixe água parada no pratinho: raiz nova apodrece em substrato encharcado.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a videira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue só se estiver seco, até escorrer pelos furos, molhando o substrato e nunca as folhas. No verão, com cachos, confira a cada 2 dias. Na dormência (maio a julho, sem folhas), regue só quando os 5 cm estiverem secos, o que costuma levar uma semana ou mais.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_formacao",
+      "titulo": "Adubar a videira jovem",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 365,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 xícara de húmus de minhoca) pela borda do vaso, longe do tronco, e regue em seguida. Se a planta estiver sem folhas, na dormência, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "tutoragem_formacao",
+      "titulo": "Amarrar o ramo principal",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Prenda o ramo principal ao tutor a cada 20 cm com fitilho ou tira de pano, em forma de oito e frouxo, para não estrangular. Quebre com os dedos os brotos que saíram do tronco abaixo do topo do tutor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e cachos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure manchas amarelas oleosas em cima com mofo branco embaixo (míldio), pó branco nas folhas ou bagas (oídio) e pontos amarelos com teias finas (ácaro). Sem folhas, no inverno, procure escamas brancas ou marrons no tronco (cochonilha).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de preferência no inverno, com a planta dormente. Tire a videira do vaso, raspe 5 cm de raiz e de substrato velho nas laterais e no fundo e devolva-a ao mesmo vaso com substrato novo na mesma receita. Regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Instale o tutor já no plantio",
+      "mensagem": "Enterrar o tutor depois fere as raízes. A videira vai subir por ele durante toda a vida.",
+      "acao_requerida": "Cravar um tutor firme de 1,8 a 2 m junto à muda, a 5 cm do caule, e prender a haste com uma amarra frouxa em forma de oito"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Escolha o ramo principal",
+      "mensagem": "A muda deve ter soltado vários brotos. Dividir a força entre eles atrasa a formação do tronco.",
+      "acao_requerida": "Deixar só o broto mais forte e mais reto, quebrar os outros rente ao caule e retirar qualquer broto que saia abaixo do enxerto"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Ramo chegou ao topo?",
+      "mensagem": "Quando o ramo principal passa do topo do tutor, cortar a ponta faz ele engrossar e soltar os braços que vão carregar os cachos.",
+      "acao_requerida": "Se o ramo já passou do topo do tutor, cortar a ponta 10 cm acima dele e deixar crescer 2 brotos laterais no alto, um para cada lado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Míldio (Plasmopara viticola)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas e oleosas na parte de cima da folha, com mofo branco embaixo; flores e cachos novos escurecem e secam. Explode em primavera e verão chuvosos",
+      "prevencao_tratamento": "Regar só o substrato, nunca as folhas; deixar o vaso em local ventilado e com chuva de pouca duração (sob beiral, se possível); calda bordalesa a 0,5% a cada 10 a 14 dias da brotação até a colheita em períodos chuvosos; tirar e descartar as folhas atacadas"
+    },
+    {
+      "nome": "Oídio (Erysiphe necator)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco-acinzentado nas folhas, ramos e bagas; bagas atacadas racham e secam",
+      "prevencao_tratamento": "Desbrotar para arejar o centro da planta; enxofre molhável (2 g/L) no fim da tarde, fora dos dias acima de 30 °C, a cada 10 dias enquanto houver sintomas"
+    },
+    {
+      "nome": "Antracnose (Elsinoe ampelina)",
+      "tipo": "DOENCA",
+      "sintomas": "Pequenas manchas escuras com centro claro que furam as folhas; lesões fundas nos ramos e bagas com aspecto de 'olho de passarinho'",
+      "prevencao_tratamento": "Retirar e queimar ou descartar os ramos atacados na poda de inverno; calda bordalesa no início da brotação"
+    },
+    {
+      "nome": "Podridão das raízes por encharcamento",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com os 5 cm de cima secos, esvaziar o pratinho, manter os furos desobstruídos; se já atacou, cortar as raízes podres e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Cochonilhas (inclusive pérola-da-terra, Eurhizococcus brasiliensis)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodoadas no tronco e nos ramos; nas raízes, bolinhas amarelas como pérolas. Planta definha sem motivo aparente",
+      "prevencao_tratamento": "No tronco, raspar com escova macia e pincelar óleo mineral a 1% no inverno; nas raízes não há cura em vaso: descartar o substrato, lavar as raízes e replantar"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, que ficam bronzeadas; teias finas no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Jato de água no verso das folhas de manhã; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Vespas, abelhas e passarinhos nos cachos",
+      "tipo": "PRAGA",
+      "sintomas": "Bagas furadas e esvaziadas perto da maturação, cachos com cheiro de fermentado",
+      "prevencao_tratamento": "Ensacar os cachos com saco de papel manteiga ou TNT logo depois do raleio, quando as bagas estiverem do tamanho de ervilha"
+    },
+    {
+      "nome": "Rachadura das bagas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bagas maduras racham e apodrecem depois de chuva forte ou de uma rega farta após dias de seca",
+      "prevencao_tratamento": "Manter a rega regular na maturação, sem deixar o vaso secar e depois encharcar; proteger o vaso da chuva nas semanas antes da colheita"
+    },
+    {
+      "nome": "Queimadura de sol nos cachos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bagas do lado do sol ficam murchas, marrons e ressecadas",
+      "prevencao_tratamento": "Não tirar as folhas que sombreiam os cachos no verão; ensacar os cachos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Hora da poda de inverno",
+      "mensagem": "Sem folhas, a videira está dormente. É a poda que decide quantos cachos saem na primavera, porque a uva nasce nos ramos novos que brotam das gemas deixadas agora.",
+      "acao_requerida": "No primeiro inverno, cortar o ramo principal no topo do tutor. Nos seguintes, cortar cada ramo do ano anterior deixando 2 a 3 gemas (poda curta) e retirar os ramos secos, fracos ou cruzados"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Adubação da brotação",
+      "mensagem": "As gemas vão inchar e brotar: a planta precisa de nutrientes para os ramos novos e a floração.",
+      "acao_requerida": "Espalhar 3 colheres de sopa de NPK 10-10-10 e 1 xícara de húmus pela borda do vaso, longe do tronco, e regar; retomar a rega normal"
+    },
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Desbrota e raleio dos cachos",
+      "mensagem": "Brotos em excesso sombreiam os cachos e abafam a planta, e isso favorece o míldio. Cachos demais num vaso ficam pequenos e azedos.",
+      "acao_requerida": "Quebrar os brotos sem cacho que saem do tronco, cortar a ponta dos ramos com cacho 3 folhas depois do último cacho e deixar no máximo 1 cacho por ramo; com as bagas do tamanho de ervilha, ensacar os cachos"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "Cor sozinha engana: a uva só adoça no pé e não amadurece depois de colhida.",
+      "acao_requerida": "Provar uma baga da ponta de baixo do cacho; se estiver doce, cortar o cacho inteiro com tesoura pelo cabinho, de manhã cedo"
+    },
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Adubação pós-colheita",
+      "mensagem": "Depois da colheita, a videira guarda no tronco e nas raízes a energia da brotação do ano seguinte.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de NPK 10-10-10 pela borda do vaso e regar; manter as folhas saudáveis até caírem sozinhas"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Entrada na dormência",
+      "mensagem": "As folhas amarelam e caem: é o repouso normal de inverno, não doença. A planta parada bebe pouco.",
+      "acao_requerida": "Espaçar a rega até os 5 cm de cima secarem, parar de adubar e recolher do chão as folhas caídas, onde os fungos passam o inverno"
+    }
+  ]
+}

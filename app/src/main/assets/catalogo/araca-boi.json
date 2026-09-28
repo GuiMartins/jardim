@@ -1,0 +1,217 @@
+{
+  "planta": {
+    "nome_comum": "Araçá-boi",
+    "nome_cientifico": "Eugenia stipitata",
+    "descricao": "Arbusto frutífero da Amazônia, da família da pitanga e da jabuticaba, que em vaso fica com 1,5 a 2,5 m e dá frutos amarelos, grandes, perfumados e bem ácidos, ótimos para suco, sorvete e geleia. Começa a produzir cedo, cerca de um ano depois do plantio de uma muda formada, mas não tolera frio nem geada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 40 cm de diâmetro e 40 cm de profundidade (ideal 50 cm), com vários furos no fundo; prefira cerâmica ou plástico grosso de cor clara, que esquentam menos a raiz",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita, mais 1 colher de sopa de calcário dolomítico por 10 L; levemente ácido (pH 5,5 a 6,5) e rico em matéria orgânica",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo. Nos primeiros 10 dias, deixe-a em meia-sombra ou só com sol da manhã e depois aumente o sol aos poucos. Folhas murchas ao meio-dia que se recuperam à tarde são normais; folhas que secam e caem indicam sol forte demais ou falta de água. A fase termina quando surgem brotos novos, avermelhados, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "crescimento",
+      "nome": "Crescimento e Formação",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A planta solta brotações em ondas, sempre com folhas novas cor de vinho que depois ficam verdes. É a fase de formar a copa: quando o caule passar de 60 a 80 cm, a poda da ponta faz a planta ramificar. Algumas mudas já florescem no fim desta fase; se isso acontecer antes de a planta ter uns 80 cm, retire as flores para ela gastar a energia em crescer."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "No Centro-Sul, a planta adulta floresce principalmente de setembro a novembro, com flores brancas e perfumadas, e os frutos amadurecem cerca de 50 a 60 dias depois, entre dezembro e março. Em verões longos e quentes pode haver uma segunda florada. No inverno o crescimento quase para e a planta precisa de proteção contra o frio. Depois da colheita, uma poda leve mantém a copa compacta e produtiva."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de araçá-boi",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda restrita ao torrão da muda, ele seca em um dia no calor. Nos dias frios ou nublados, se o substrato ainda estiver úmido, pule a rega.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o araçá-boi",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 a 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. A planta é da Amazônia e gosta de terra sempre levemente úmida: seca forte durante a floração ou a frutificação derruba flores e frutos. Acima de 30 °C, confira todo dia. De junho a agosto, com a planta parada, o substrato demora mais a secar: confira antes e regue só se estiver seco, porque terra fria e encharcada apodrece a raiz.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o araçá-boi",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 xícara (cerca de 200 g) de húmus de minhoca ou composto sobre o substrato, longe do caule, e complete com 1 colher de sopa de NPK 10-10-10 (vaso de 40 L); regue em seguida. De setembro a março, troque o NPK por 04-14-08 para favorecer flores e frutos. Em junho, julho e agosto, pule a adubação química e use só o húmus.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e os brotos novos em busca de cochonilhas (escamas marrons ou algodãozinho branco) e pulgões. Procure manchas escuras e afundadas em folhas e frutos, sinal de antracnose. Na época dos frutos, veja se há furinhos com a polpa amolecendo em volta, sinal de mosca-das-frutas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato ou aumentar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro, retire a planta do vaso, raspe cerca de 3 cm de raízes enoveladas nas laterais e no fundo e replante com substrato novo no mesmo vaso ou em um de 10 a 20 L a mais. Se cair no inverno, espere a primavera. Deixe a planta 10 dias em meia-sombra e sem adubo depois da troca.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Hora de pegar mais sol",
+      "mensagem": "A muda já passou pelos dias mais sensíveis depois do plantio. Sem sol, o araçá-boi cresce fino e demora a produzir.",
+      "acao_requerida": "Levar o vaso para um lugar com pelo menos 4 horas de sol direto, de preferência o sol da manhã, aumentando aos poucos ao longo de uma semana"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de formação",
+      "mensagem": "Uma copa baixa e ramificada produz mais e cabe melhor em vaso. Se o caule principal já passou de 60 a 80 cm, é hora de cortar a ponta.",
+      "acao_requerida": "Cortar a ponta do caule principal logo acima de um par de folhas, a 60 a 80 cm do substrato, com tesoura limpa. Se a planta ainda estiver menor, fazer o corte quando ela chegar a essa altura"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiras floradas à vista",
+      "mensagem": "Com um ano no vaso, a planta costuma estar pronta para florescer na próxima primavera. Flores e frutos jovens caem se faltar água ou adubo.",
+      "acao_requerida": "Conferir se a planta tem pelo menos 80 cm e copa ramificada; se tiver, deixar as flores e manter a rega regular a partir de setembro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; raízes escuras, moles e com cheiro ruim; base do caule escurecida",
+      "prevencao_tratamento": "Não deixar água parada no pratinho e regar menos no inverno. Se aparecer, tirar a planta do vaso, cortar as raízes podres e replantar em substrato novo, bem drenado"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras e afundadas nas folhas novas e nos frutos, que apodrecem antes de amadurecer",
+      "prevencao_tratamento": "Regar no substrato, sem molhar folhas e frutos; podar para arejar a copa; retirar e descartar frutos e folhas atacados. Em ataque forte, calda bordalesa a 1% na brotação, fora da época de colheita"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos na casca dos frutos, polpa amolecida e com larvas brancas; frutos caem antes da hora",
+      "prevencao_tratamento": "Ensacar os frutos jovens com saquinhos de TNT ou papel manteiga; recolher todo fruto caído e descartá-lo em saco fechado; armadilha de garrafa PET com suco de fruta fermentado perto do vaso"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou pontos de algodão branco nos ramos e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em água com sabão neutro; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam com aspecto queimado e caem depois de noites abaixo de 10 °C; com geada, os ramos secam",
+      "prevencao_tratamento": "No inverno, deixar o vaso junto a uma parede ensolarada ou em local coberto; em noites com previsão abaixo de 8 °C, levar para dentro ou cobrir com TNT. Só podar os ramos secos quando a brotação voltar, na primavera"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas nas folhas mais expostas, logo depois de a planta ir para o sol forte",
+      "prevencao_tratamento": "Acostumar a planta ao sol aos poucos; em regiões de verão muito quente, preferir sol da manhã e sombra no início da tarde"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Preparar para o frio",
+      "mensagem": "O araçá-boi é tropical: abaixo de 10 °C as folhas escurecem, e a geada mata os ramos.",
+      "acao_requerida": "Escolher desde já um lugar abrigado para o inverno, junto a uma parede ensolarada ou sob cobertura, e separar um TNT para cobrir a planta nas noites mais frias"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Com a planta parada, o risco é o frio somado a terra encharcada.",
+      "acao_requerida": "Nas noites com previsão abaixo de 8 °C, levar o vaso para dentro ou cobrir com TNT; espaçar as regas e nunca deixar água no pratinho"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Começa a florada",
+      "mensagem": "Com o calor voltando, a planta adulta solta flores brancas nas axilas das folhas. Falta de água agora derruba as flores.",
+      "acao_requerida": "Manter o substrato sempre levemente úmido e passar a adubação para a fórmula 04-14-08"
+    },
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Proteger os frutos jovens",
+      "mensagem": "Os frutinhos verdes formados agora são o alvo da mosca-das-frutas.",
+      "acao_requerida": "Ensacar os frutos com saquinhos de TNT ou papel manteiga quando tiverem uns 2 cm e recolher os frutos caídos"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "Os frutos passam de verde a amarelo-claro e ficam perfumados. Maduros, amassam fácil e duram só 2 a 3 dias fora da geladeira.",
+      "acao_requerida": "Conferir a planta a cada 2 ou 3 dias e colher os frutos totalmente amarelos, que soltam com um leve toque; usar logo ou congelar a polpa"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "Depois da colheita, uma poda leve mantém a copa arejada, compacta e pronta para produzir na próxima primavera.",
+      "acao_requerida": "Retirar ramos secos, doentes ou cruzados e encurtar em até um terço os que passaram da altura desejada, cortando logo acima de um par de folhas"
+    }
+  ]
+}

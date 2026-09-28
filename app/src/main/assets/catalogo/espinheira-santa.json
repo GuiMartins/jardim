@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Espinheira-santa",
+    "nome_cientifico": "Maytenus ilicifolia",
+    "descricao": "Arbusto nativo do Sul do Brasil, de folhas duras com margem espinhosa parecidas com as do azevinho, usadas tradicionalmente em chá. Em vaso cresce devagar e fica com 1,5 a 2 m. A primeira colheita de folhas só vem depois de um ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou casca de pinus fina; levemente ácido (pH 5,5 a 6,5), sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas velhas. Mantenha-a na sombra clara nos primeiros 10 dias e depois leve aos poucos para o sol da manhã. A adaptação terminou quando surgem brotos novos, verde-claros ou avermelhados, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento, de 20 a 40 cm no primeiro ano, com a raiz ocupando o vaso. Não colha folhas ainda: a planta precisa delas para enraizar. Se a muda tiver um ramo só, a poda de formação no 3º mês faz ela ramificar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arbusto ramificado e denso. Cresce na primavera e no verão, floresce com flores miúdas amarelo-esverdeadas entre agosto e outubro e dá frutinhos vermelhos que abrem mostrando sementes com arilo branco no verão. No inverno quase para. As folhas podem ser colhidas algumas vezes por ano, sem tirar mais de um terço da copa de cada vez."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a espinheira-santa",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda é pequeno e seca antes do resto do vaso. Nunca deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a espinheira-santa",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue até escorrer pelos furos se estiver seco nessa profundidade. No verão, acima de 30 °C, confira a cada 2 ou 3 dias; no inverno, espace para a cada 6 ou 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a espinheira-santa",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras (cerca de 300 g) de húmus de minhoca ou 2 colheres de sopa de bokashi sobre o substrato, longe do caule, e regue em seguida. Entre junho e agosto a planta está quase parada: pule essa adubação se cair no inverno.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os ramos jovens: procure carocinhos brancos ou marrons presos ao caule (cochonilha), lagartas ou folhas roídas nas bordas e manchas escuras.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas para chá",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 120,
+      "dia_inicio_ciclo": 366,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa as pontas de ramos com folhas maduras, verde-escuras e firmes, logo acima de um par de folhas. Não tire mais de um terço da copa. Seque as folhas à sombra, em lugar ventilado, por 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, raspe cerca de 5 cm do torrão pelos lados e por baixo e replante com substrato novo, no mesmo vaso ou num 10 cm maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Hora de pegar sol",
+      "mensagem": "A muda já deve ter se recuperado do transplante. Direto para o sol forte, as folhas queimam.",
+      "acao_requerida": "Levar o vaso para um lugar com sol da manhã, começando com 2 horas por dia e aumentando ao longo de duas semanas"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de formação",
+      "mensagem": "A espinheira-santa tende a crescer com poucos ramos. Cortar a ponta agora faz ela engrossar e ramificar, o que rende mais folhas depois.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta do ramo principal e dos ramos mais compridos, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 366,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "A planta completou um ano e já tem raiz para aguentar a perda de folhas.",
+      "acao_requerida": "Colher pontas de ramos com folhas maduras, sem passar de um terço da copa"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escura e mole; cheiro de mofo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3–4 cm, esvaziar o pratinho e garantir furos desobstruídos. Com sinais, tire do vaso, corte as raízes escuras e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, algodoados ou marrons presos aos ramos e ao verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; em infestação, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Lagarta-da-espinheira-santa (Thelosia camina)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro, às vezes ramos inteiros desfolhados; lagartas peludas agrupadas nos ramos",
+      "prevencao_tratamento": "Catar as lagartas com luvas (os pelos irritam a pele) e cortar os ramos com ovos ou colônias; em ataque grande, Bacillus thuringiensis pulverizado no fim da tarde"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas pardas ou esbranquiçadas e secas nas folhas mais expostas, logo após mudar a planta de lugar",
+      "prevencao_tratamento": "Aclimatar a muda ao sol aos poucos; no verão, proteger do sol forte da tarde. As folhas queimadas não se recuperam, mas a planta rebrota"
+    },
+    {
+      "nome": "Clorose por substrato alcalino ou pobre",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelo-claras com as nervuras ainda verdes",
+      "prevencao_tratamento": "Não usar calcário nem cinza no vaso; manter a adubação orgânica em dia e, se persistir, trocar o substrato por um mais ácido, com casca de pinus e composto"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a espinheira-santa quase para de crescer e o substrato demora a secar. A planta adulta aguenta geadas leves, mas raiz encharcada no frio apodrece.",
+      "acao_requerida": "Espaçar as regas para a cada 6 ou 7 dias, conferindo com o dedo, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com o calor",
+      "mensagem": "Em vaso, o substrato seca rápido nos dias quentes, e o sol forte da tarde queima as folhas.",
+      "acao_requerida": "Conferir o substrato a cada 2 ou 3 dias nas ondas de calor e dar sombra à planta depois das 14h"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "planta": {
+    "nome_comum": "Cabeleira-de-velho",
+    "nome_cientifico": "Euphorbia leucocephala",
+    "descricao": "Arbusto do México e da América Central que, do outono ao inverno, se cobre de pequenas brácteas brancas e parece um véu de neve. Resiste bem à seca e floresce quando os dias ficam curtos, por isso precisa de noites escuras. O látex branco irrita pele e olhos: use luvas para podar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico grosso com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca; bem drenado, a raiz apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode perder algumas folhas nos primeiros dias por causa da troca de vaso. A adaptação termina quando surgem folhas novas, verde-claras, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e os ramos se alongam depressa na estação quente. A planta passa a aguentar alguns dias de substrato seco sem murchar; é o sinal de que já está estabelecida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce da primavera ao fim do verão; com os dias mais curtos, de abril a agosto, forma nas pontas dos ramos as brácteas brancas. Depois da floração vem a poda de setembro, e o ciclo recomeça. No frio pode perder parte das folhas, o que é normal."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe água parada no pratinho. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cabeleira-de-velho",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No inverno, espace para cerca de uma rega por semana. Folhas amarelando e caindo com substrato úmido indicam excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a cabeleira-de-velho",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 punhados de húmus) por vaso de 40 L, longe do caule, e regue em seguida. No inverno use metade da dose. Evite adubo rico em nitrogênio a partir de março: ele faz folha em vez de flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as axilas dos ramos procurando algodãozinho branco, pontinhos amarelados ou teias finas. Confira também se a base do caule está firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou de substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, depois da poda. Com luvas, tire a planta, corte até um terço das raízes enoveladas e replante em substrato novo num vaso igual ou 10 cm maior. Regue bem e deixe 1 semana na meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "A muda pegou",
+      "mensagem": "Com folhas novas nas pontas, a planta já enraizou e pode passar a regas mais espaçadas.",
+      "acao_requerida": "Conferir se há brotos novos; se houver, deixar o substrato secar 5 cm antes de cada rega"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Desponte para encher a copa",
+      "mensagem": "Cortar as pontas dos ramos mais compridos faz a planta ramificar e dar mais flores. Entre março e agosto isso cortaria os botões: nesse caso, espere setembro.",
+      "acao_requerida": "Com luvas e fora do período de março a agosto, cortar 5 cm da ponta dos ramos mais longos e lavar o látex da tesoura com água"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem com o substrato úmido; base do caule escura e mole; planta murcha mesmo regada",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, usar vaso com furos e nunca deixar água no pratinho. Se aparecer, tirar do vaso, cortar raízes escuras e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodoado nas axilas dos ramos e no verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Falta de floração por luz noturna",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta verde e saudável que não forma brácteas brancas no outono e inverno",
+      "prevencao_tratamento": "Ela só floresce com noites longas e escuras: manter longe de poste, lâmpada de varanda ou janela iluminada à noite a partir de março"
+    },
+    {
+      "nome": "Queda de folhas no frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem em dias abaixo de 10 °C; em geada, ramos escurecem e secam",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou sob cobertura nas noites frias e reduzir a rega; cortar os ramos queimados só em setembro"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Os dias estão encurtando",
+      "mensagem": "A cabeleira-de-velho começa a preparar as flores quando as noites ficam longas. Luz artificial à noite ou podas agora cancelam a floração.",
+      "acao_requerida": "Tirar o vaso de perto de lâmpadas acesas à noite e suspender qualquer poda até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A planta não tolera geada e perde folhas abaixo de 10 °C, bem na época em que está florida.",
+      "acao_requerida": "Em noites abaixo de 8 °C, levar o vaso para local abrigado e regar só quando o substrato estiver seco a 5 cm"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda depois da floração",
+      "mensagem": "As brácteas já secaram. Podar agora renova a planta e estimula ramos novos, que florescerão no próximo inverno.",
+      "acao_requerida": "De luvas, cortar os ramos floridos pela metade e retirar os secos ou cruzados; lavar a tesoura e as mãos por causa do látex"
+    }
+  ]
+}

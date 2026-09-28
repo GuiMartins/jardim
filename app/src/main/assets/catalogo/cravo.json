@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Cravo",
+    "nome_cientifico": "Dianthus caryophyllus",
+    "descricao": "Flor perfumada de pétalas franjadas, clássica de buquês, que em vaso floresce da primavera ao outono. É uma perene de vida curta: depois de 2 a 3 anos a planta fica lenhosa e floresce menos, e o comum é renová-la por estaca.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 18 cm de diâmetro e 18 cm de profundidade, com furos no fundo; o barro ajuda o substrato a secar entre as regas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa lavada, 25% húmus de minhoca, mais 1 colher de sopa de calcário dolomítico por litro; o cravo prefere substrato bem drenado e levemente alcalino (pH 6,5 a 7,5)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Plante a muda na mesma altura em que estava, sem enterrar o colo (a base do caule), que apodrece se ficar coberto. Nas primeiras semanas ela pode murchar levemente no sol forte; a fase termina quando surgem folhas novas, azuladas e firmes, no centro da touceira."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "A planta forma novas brotações laterais e engrossa a touceira. Depois do desponte, cada ponta cortada abre dois ou mais ramos, o que multiplica as futuras flores. A fase termina quando aparecem os primeiros botões redondos no alto das hastes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Floresce em ondas da primavera ao outono, com pausa ou pouca flor no auge do verão e no inverno. Cada haste florida dura de 1 a 2 semanas; tirar as flores murchas mantém a produção. A partir do segundo ano a base fica lenhosa e sem folhas, e a partir do terceiro vale substituir a planta por estacas enraizadas dela mesma."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de cravo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue na base, sem molhar as folhas, até escorrer pelos furos. Com a raiz ainda pequena, a muda não aguenta o vaso secar por inteiro. Esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cravo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco nessa profundidade, na base e pela manhã, até escorrer pelos furos. Excesso de água mata mais cravos do que a seca. No verão acima de 30 °C, confira a cada 2 dias; no inverno, a cada 5 a 6 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar o cravo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá de NPK 4-14-8 em 1 litro de água e regue o substrato já úmido, sem molhar as folhas. Adubo rico em nitrogênio faz folha mole e pouca flor. No inverno, pule uma aplicação sim, outra não.",
+      "critica": false
+    },
+    {
+      "id": "retirar_flores_murchas",
+      "titulo": "Tirar flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte a haste da flor murcha ou seca logo acima do primeiro par de folhas saudável, com tesoura limpa. Isso evita que a planta gaste energia com sementes e estimula novos botões. Recolha as pétalas caídas no substrato, que mofam.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o cravo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e os botões: procure pulgões, teias finas (ácaro), riscos prateados nas pétalas (tripes) e pústulas marrons nas folhas (ferrugem). Aperte de leve o colo: se estiver mole ou escuro, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No outono ou no fim do inverno, tire a planta do vaso, solte um terço do torrão velho e replante com substrato novo, na mesma altura. Se a base estiver muito lenhosa e sem folhas, é melhor plantar as estacas enraizadas no lugar da planta velha.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desponte",
+      "mensagem": "A muda já pegou. Cortar a ponta agora faz ela ramificar e dar muito mais flores.",
+      "acao_requerida": "Cortar com os dedos ou tesoura a ponta de cada haste principal, logo acima do 5º ou 6º par de folhas"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Colocar um tutor",
+      "mensagem": "As hastes florais do cravo são finas e tombam com o peso dos botões e com a chuva.",
+      "acao_requerida": "Fincar 3 varetas de bambu na borda do vaso e contornar as hastes com barbante frouxo, a meia altura"
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "Fazer estacas para renovar",
+      "mensagem": "Com um ano e meio, o cravo começa a ficar lenhoso na base. Estacas feitas agora substituem a planta quando ela cansar.",
+      "acao_requerida": "Cortar 3 a 4 brotos laterais sem flor com 8 a 10 cm, tirar as folhas de baixo e enterrar 3 cm em areia com substrato úmido, à meia-sombra, até enraizarem (3 a 4 semanas)"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e das raízes (Rhizoctonia, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido; a base do caule fica escura, mole e se solta com facilidade",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e não enterrar o colo. Planta atacada raramente se recupera: tire estacas das partes sadias e descarte o substrato"
+    },
+    {
+      "nome": "Murcha de fusário (Fusarium oxysporum f. sp. dianthi)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e secam de um lado só da planta; ao cortar o caule, aparecem riscos marrons por dentro",
+      "prevencao_tratamento": "Não tem cura. Descarte a planta com o substrato, lave o vaso com água sanitária a 10% e comece com muda sadia e substrato novo"
+    },
+    {
+      "nome": "Ferrugem do cravo (Uromyces dianthi)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas marrom-alaranjadas e pulverulentas nas folhas e hastes, que amarelam em volta",
+      "prevencao_tratamento": "Regar na base, sem molhar as folhas, e deixar o vaso em lugar ventilado. Retire as folhas afetadas; em ataque forte, fungicida à base de cobre a cada 10 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; brotos deformados e pegajosos",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas entre as hastes, principalmente no tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas pela manhã em dias secos; em ataque, óleo de neem ou sabão potássico a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Pétalas com riscos prateados ou manchas descoloridas; botões que não abrem direito",
+      "prevencao_tratamento": "Retirar e descartar flores atacadas; armadilha adesiva azul perto do vaso e óleo de neem nos botões"
+    },
+    {
+      "nome": "Cálice rachado",
+      "tipo": "DISTURBIO",
+      "sintomas": "O cálice verde que segura a flor racha de um lado e as pétalas se espalham para fora",
+      "prevencao_tratamento": "Causado por variação brusca de temperatura e por excesso de nitrogênio. Evite adubo rico em nitrogênio; um anel de fita ou elástico em volta do botão, quando começa a abrir, segura a flor"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Limpeza de fim de inverno",
+      "mensagem": "A primavera está chegando e o cravo vai retomar a brotação forte. Uma limpeza agora prepara a floração.",
+      "acao_requerida": "Cortar as hastes secas e as florais velhas rente às brotações novas, retirar folhas mortas da base e retomar a adubação a cada 20 dias"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger o cravo do calor",
+      "mensagem": "O cravo sofre acima de 30 °C: floresce menos e fica mais sujeito a ácaro e podridão com as chuvas de verão.",
+      "acao_requerida": "Deixar o vaso onde receba sol da manhã e sombra à tarde, afastar de paredes que irradiam calor e proteger de chuvas fortes seguidas"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Menos água no inverno",
+      "mensagem": "No frio a planta quase para de crescer e o substrato demora a secar, o que favorece a podridão das raízes.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm (a cada 5 a 6 dias) e, em noites de geada, levar o vaso para perto de uma parede ou sob cobertura"
+    }
+  ]
+}

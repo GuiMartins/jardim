@@ -1,0 +1,181 @@
+{
+  "planta": {
+    "nome_comum": "Pau-d'água",
+    "nome_cientifico": "Dracaena fragrans 'Massangeana'",
+    "descricao": "Arbusto africano de caule lenhoso e folhas longas com faixa central amarela, vendido em vaso ou em toletes de caule já enraizados. É uma das plantas de interior mais tolerantes à pouca luz e ao esquecimento da rega, por isso é ótima para sala e escritório. Também é vendida como Dracena.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo. Cachepô sem furo só por fora, nunca com a planta plantada direto nele",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "50% substrato para plantas de folhagem, 25% terra vegetal, 15% casca de pinus fina, 10% areia grossa ou perlita; solto e que não fique empapado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa ou da loja, com muito mais luz, e costuma perder 1 a 3 folhas de baixo, que amarelam e secam. É normal. Não troque de vaso nem adube agora; escolha o lugar definitivo perto de uma janela clara, sem sol forte da tarde, e não fique mudando de lugar. A adaptação acabou quando as folhas de baixo param de amarelar e surge uma folha nova no topo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Crescimento lento, de 1 a 2 folhas novas por mês na estação quente. As folhas novas devem sair firmes e com a faixa amarela nítida; se saírem verde-escuras e sem listra, falta luz. Folhas de baixo secando de vez em quando fazem parte da renovação: corte-as rente ao caule quando estiverem totalmente secas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão a planta cresce e pede rega e adubo; do outono ao fim do inverno quase para, e o substrato demora mais a secar. Com os anos o caule sobe e as folhas se concentram no topo; se ficar alta demais, corte o caule na altura desejada no fim do inverno, que ele rebrota logo abaixo do corte. Plantas antigas e bem iluminadas podem soltar à noite cachos de flores brancas muito perfumadas, geralmente no inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o pau-d'água",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 a 4 cm no substrato: se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água que ficar no prato depois de 30 minutos. Se ainda estiver úmido, não regue e confira de novo em 3 dias. No inverno o intervalo costuma passar de 10 a 14 dias. Se as pontas das folhas queimarem, use água de chuva ou filtrada, porque a planta é sensível ao flúor da água da torneira.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o pau-d'água",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, espalhe 1 colher de sopa de NPK 10-10-10 (ou 3 colheres de húmus de minhoca) por vaso de 15 L, longe do caule, e regue em seguida. Com o substrato seco, regue antes para não queimar as raízes. De abril a agosto, pule a adubação: a planta está quase parada e o sal do adubo acumula e queima as pontas das folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_limpeza_folhas",
+      "titulo": "Inspecionar e limpar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e a axila onde a folha encontra o caule, procurando pontinhos brancos algodoados, teias finas ou pontilhado prateado. Depois passe um pano úmido nas duas faces das folhas para tirar a poeira, que reduz a luz aproveitada e esconde ácaros.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o vaso e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, solte as raízes que estiverem enroladas e corte as escuras e moles. Replante num vaso 5 cm maior de diâmetro com substrato novo, na mesma altura em que o caule estava enterrado. Regue bem e deixe na sombra clara por 2 semanas, sem adubo por 1 mês.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Confira o vaso de chegada",
+      "mensagem": "Muitas dracenas vêm plantadas direto em cachepô sem furo ou com o vaso plástico dentro de um enfeite que acumula água. A raiz apodrece em poucas semanas assim.",
+      "acao_requerida": "Verificar se há furos no fundo; se não houver, deixar a planta no vaso plástico com furos dentro do cachepô e esvaziar a água acumulada depois de cada rega"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "O lugar está bom?",
+      "mensagem": "Dois meses bastam para a planta mostrar se gostou do lugar. Folhas novas pequenas e sem a faixa amarela indicam pouca luz; manchas secas e desbotadas no meio da folha indicam sol forte demais.",
+      "acao_requerida": "Olhar as últimas folhas novas e, se for o caso, aproximar ou afastar a planta da janela uma única vez"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de baixo para cima em várias ao mesmo tempo, base do caule mole e escura, substrato sempre úmido e com cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no prato. Se o caule estiver mole, corte acima da parte podre até achar tecido firme e claro, deixe o corte secar 2 dias e replante o tolete em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados nas axilas das folhas e no verso; folhas pegajosas e às vezes com fumagina preta",
+      "prevencao_tratamento": "Remover os tufos com cotonete embebido em álcool 70%; depois pulverizar óleo de neem a 0,5% com algumas gotas de detergente a cada 7 dias, 3 vezes seguidas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontilhado amarelado ou prateado, teias finas no verso e nas axilas, comum em ambiente seco com ar-condicionado",
+      "prevencao_tratamento": "Limpar as folhas com pano úmido a cada 2 semanas e lavar a planta com jato de água no chuveiro; se persistir, óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Riscos prateados e manchas descoloridas nas folhas, com pontinhos pretos (fezes) e insetos alongados muito pequenos",
+      "prevencao_tratamento": "Lavar as folhas e aplicar óleo de neem a 0,5% ou sabão potássico a cada 5 dias por 3 semanas; isolar a planta das outras"
+    },
+    {
+      "nome": "Pontas queimadas por flúor e sais",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e margens das folhas marrons e secas, com uma borda amarela entre a parte seca e a verde",
+      "prevencao_tratamento": "Regar com água de chuva ou filtrada, não exagerar no adubo e, a cada 3 meses, regar em abundância deixando escorrer bastante para lavar os sais. As pontas já secas não voltam; apare-as com tesoura seguindo o formato da folha"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com manchas encharcadas que depois ficam marrons, ou murcha repentina após noites abaixo de 10 °C ou perto de porta e janela com vento frio",
+      "prevencao_tratamento": "Manter a planta dentro de casa e afastada de correntes de ar frio e da saída do ar-condicionado; cortar as folhas mortas só quando o tempo esquentar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Menos rega e sem adubo no frio",
+      "mensagem": "Com o frio e os dias curtos, a dracena quase para de crescer e o substrato demora muito mais a secar. É nesta época que a maioria delas apodrece por excesso de rega.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 4 cm e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 10 °C as folhas sofrem queimaduras de frio, e varandas abertas e janelas com vento frio são os lugares mais perigosos.",
+      "acao_requerida": "Levar a planta para dentro nas noites frias e afastá-la de janelas, portas e da saída do ar-condicionado"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Início da estação de crescimento",
+      "mensagem": "Com o calor voltando, a dracena retoma o crescimento. É a melhor época para podar o caule alto demais e para trocar o vaso, se já estiver na hora.",
+      "acao_requerida": "Retomar a adubação, cortar as folhas secas rente ao caule e, se a planta estiver alta demais, cortar o caule na altura desejada"
+    }
+  ]
+}

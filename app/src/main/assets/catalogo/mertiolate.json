@@ -1,0 +1,178 @@
+{
+  "planta": {
+    "nome_comum": "Mertiolate",
+    "nome_cientifico": "Jatropha multifida",
+    "descricao": "Arbusto tropical de folhas grandes, recortadas como uma mão aberta, e cachos de flores vermelho-coral que aparecem quase o ano todo no calor. É resistente à seca e fácil de cuidar em vaso grande ao sol. Toda a planta é tóxica, principalmente as sementes e o látex: mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica ou cimento, com pelo menos 40 cm de diâmetro e 40 cm de profundidade, e furos largos no fundo. O peso segura a copa contra o vento",
+    "volume_minimo_litros": 35,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% perlita ou casca de pinus fina; precisa drenar rápido, porque a raiz apodrece no encharcamento",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo e ao sol. É normal perder uma ou duas folhas de baixo na primeira semana. A fase termina quando surgem folhas novas no topo, já firmes e bem recortadas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e o caule começa a engrossar e ficar lenhoso na base. No calor aparecem os primeiros cachos de flores coral no alto dos ramos. Folhas caindo em série indicam rega demais ou falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto de 1,5 a 2 m em vaso. Floresce da primavera ao outono; no inverno cresce pouco, pode perder parte das folhas e pede rega bem espaçada. Uma poda leve no fim do inverno mantém a copa cheia, e a troca de substrato a cada dois anos evita que a raiz fique sufocada."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de mertiolate",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Acima de 30 °C, confira a cada 2 dias. Com o substrato ainda úmido, não regue.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o mertiolate",
+      "tipo": "REGA",
+      "frequencia_dias": 6,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. De maio a agosto, espace para cada 12 a 15 dias. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o mertiolate",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 punhados de húmus) pela borda do vaso, longe do caule, e regue em seguida. De abril a agosto, pule esta adubação: a planta está parada e o adubo se acumula no substrato.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as axilas e os cachos de flor. Procure tufos brancos de algodão (cochonilha), pontinhos claros com teias finas (ácaro) ou manchas escuras moles no caule.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, de luvas, tire a planta do vaso, raspe cerca de um terço do torrão velho e corte as raízes escuras ou enroladas. Replante com substrato novo no mesmo vaso ou num 5 a 10 cm mais largo e regue só depois de 2 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado: planta tóxica",
+      "mensagem": "O látex que escorre ao cortar o mertiolate irrita a pele e os olhos, e as sementes são venenosas se ingeridas.",
+      "acao_requerida": "Deixar o vaso fora do alcance de crianças e animais e usar luvas sempre que for podar ou manusear"
+    },
+    {
+      "dia_disparo": 7,
+      "titulo": "Acostumar ao sol pleno",
+      "mensagem": "Mudas vindas de viveiro sombreado queimam se forem direto para o sol forte da tarde.",
+      "acao_requerida": "Se as folhas mostrarem manchas brancas ou marrons secas, deixar só com sol da manhã por mais uma semana antes de passar para o sol pleno"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Raiz firme: rega pode espaçar",
+      "mensagem": "A muda já enraizou no vaso e aguenta mais tempo entre regas. Rega em excesso agora é o maior risco.",
+      "acao_requerida": "Passar a conferir o substrato a 4 cm de profundidade antes de regar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo em série, base do caule escura e mole, substrato com cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm e nunca deixar água no pratinho. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas axilas das folhas e nos cachos de flor; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teias finas no verso, mais comum no tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queda de folhas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem de uma vez após noites abaixo de 10 °C; ramos ficam pelados",
+      "prevencao_tratamento": "Levar o vaso para local abrigado do vento nas noites frias e reduzir a rega. Se o caule estiver firme, a planta rebrota na primavera; não pode nem aduba até lá"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "No frio o mertiolate quase para de crescer e a raiz apodrece fácil com rega em excesso. Geada queima a planta.",
+      "acao_requerida": "Regar só com o substrato seco a 4 cm, a cada 12 a 15 dias, e abrigar o vaso nas noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza e formação",
+      "mensagem": "No fim do inverno a planta está parada; podar agora estimula ramos novos e mais flores na primavera.",
+      "acao_requerida": "De luvas e óculos, cortar ramos secos, finos ou desalinhados logo acima de um nó e lavar a tesoura depois, porque o látex é tóxico"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar a adubação",
+      "mensagem": "Com o calor voltando, o mertiolate retoma o crescimento e se prepara para florescer.",
+      "acao_requerida": "Voltar a aplicar o adubo a cada 2 meses e voltar a regar a cada 6 dias, sempre conferindo o substrato antes"
+    }
+  ]
+}

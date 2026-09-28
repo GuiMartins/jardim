@@ -1,0 +1,193 @@
+{
+  "planta": {
+    "nome_comum": "Cacto-sianinha",
+    "nome_cientifico": "Selenicereus anthonyanus (sin. Epiphyllum anthonyanum)",
+    "descricao": "Cacto epífito do México, de ramos achatados e recortados em zigue-zague como fita de sianinha, muito usado em vaso pendente. Planta adulta dá flores grandes, rosa e creme, perfumadas, que abrem uma única noite no fim da primavera e no verão. Pega fácil por estaca de um ramo, que é a forma mais comum de começar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pendente ou cachepô de plástico ou barro, de 15 a 20 cm de diâmetro e 12 a 15 cm de altura, com vários furos no fundo; sem prato acumulando água",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "40% casca de pinus fina, 30% substrato para cactos e suculentas, 20% fibra de coco, 10% perlita ou carvão vegetal em pedaços pequenos; leve e arejado, como o de orquídea",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da estaca",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Use um pedaço de ramo de 10 a 15 cm que já secou o corte na sombra por 3 a 5 dias. Enterre 2 a 3 cm da base no substrato levemente úmido e deixe em luz clara sem sol direto. As raízes saem em 2 a 4 semanas; a estaca pode murchar um pouco no começo. Quando ela resiste a um puxão leve, enraizou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "A estaca volta a ficar firme e solta brotos novos na base ou nas bordas, finos e arroxeados no início. Os ramos novos crescem lisos e só depois ganham o recorte típico. Ramos longos e finos, sem recorte, indicam falta de luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão, desacelera no outono e quase para no inverno. A floração costuma começar só com 2 a 3 anos, quando os ramos já pendem para fora do vaso: botões surgem nas bordas dos ramos na primavera e as flores abrem à noite, de novembro a janeiro. Um inverno mais seco e fresco, com boa luz, é o que induz os botões."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Umedecer a estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue pouco, só até umedecer ao redor da estaca, sem encharcar. Substrato seco por muitos dias impede as raízes novas de se firmarem; encharcado apodrece a base.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cacto-sianinha",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e descarte a água que sobrar. Se ainda estiver úmido, pule. De maio a agosto, espere secar quase todo o vaso (a cada 10 a 14 dias). Ramos murchos e enrugados pedem água; ramos moles e amarelados na base indicam excesso.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o cacto-sianinha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido para cactos ou orquídeas (NPK 10-10-10) à metade da dose do rótulo e regue com ele o substrato já úmido. De agosto a dezembro, prefira fórmula rica em fósforo (NPK 4-14-8) para estimular botões. De maio a julho, não aplique.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as reentrâncias do recorte e a base dos ramos procurando algodãozinho branco, carapaças marrons ou manchas moles e escuras. Confira também o substrato perto da base.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "A casca de pinus se decompõe e o substrato passa a reter água demais. Na primavera, tire a planta, solte o substrato velho, corte raízes escuras e moles e replante no mesmo vaso ou em um só 2 a 4 cm maior, com substrato novo. Espere 5 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "A estaca enraizou?",
+      "mensagem": "Com 3 semanas, a maioria das estacas já tem raízes.",
+      "acao_requerida": "Puxar a estaca de leve: se resistir, enraizou. Se sair solta, conferir se a base está firme (replantar) ou mole e escura (cortar acima da parte podre, deixar secar 5 dias e recomeçar)"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Mais luz para crescer",
+      "mensagem": "A estaca enraizada já aguenta um pouco de sol e precisa de luz forte para ramificar e formar o recorte.",
+      "acao_requerida": "Mudar o vaso para um lugar com sol da manhã (até as 10h) ou luz clara o dia todo, longe do sol forte da tarde"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano: pendurar o vaso",
+      "mensagem": "Os ramos começam a passar da borda do vaso e crescem melhor pendentes, como na natureza.",
+      "acao_requerida": "Pendurar o vaso ou colocá-lo em lugar alto, com os ramos livres para cair; ramos quebrados podem virar novas estacas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da base e das raízes (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Ramos amarelados, moles e translúcidos a partir da base; base escura e com cheiro ruim; planta tomba no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, usar substrato com casca e nunca deixar água no prato. Se aparecer, tirar do vaso, cortar tudo o que estiver mole, deixar secar 3 a 5 dias e replantar em substrato novo; ramos sadios podem ser enraizados como estacas"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas reentrâncias dos ramos e na base; ramos amarelando e melado pegajoso",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenos escudos marrons ou cinzentos grudados nos ramos, que saem ao raspar com a unha; manchas amareladas no lugar",
+      "prevencao_tratamento": "Raspar com escova de dente macia e álcool 70%; aplicar óleo mineral ou de neem a 0,5% a cada 7 dias até sumirem"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Ramos novos roídos nas bordas e rastro brilhante no vaso, principalmente depois de chuva",
+      "prevencao_tratamento": "Catar à noite com lanterna; vaso pendurado dificulta o acesso. Espalhar casca de ovo moída ou terra de diatomácea ao redor"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos avermelhados ou amarelados no lado virado para o sol, depois manchas brancas ou marrons secas",
+      "prevencao_tratamento": "Tirar do sol da tarde e deixar só com sol da manhã; a mancha não some, mas os ramos novos crescem verdes"
+    },
+    {
+      "nome": "Queda de botões florais",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões pequenos amarelam e caem antes de abrir",
+      "prevencao_tratamento": "Não mudar o vaso de lugar nem girá-lo depois que os botões aparecerem; manter a rega regular sem deixar secar totalmente nem encharcar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: repouso do cacto-sianinha",
+      "mensagem": "No frio a planta quase para de crescer. Um inverno mais seco e fresco, com boa luz, é o que induz os botões da primavera. Abaixo de 10 °C os ramos podem ser danificados.",
+      "acao_requerida": "Espaçar a rega para quando o vaso secar quase todo, suspender o adubo e levar o vaso para dentro ou para perto da parede nas noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Primavera: volta do crescimento",
+      "mensagem": "A planta retoma o crescimento e as adultas começam a formar botões nas bordas dos ramos. É também a melhor época para fazer estacas.",
+      "acao_requerida": "Voltar à rega normal e ao adubo rico em fósforo, e escolher agora o lugar do vaso, sem mudá-lo mais até o fim da floração"
+    },
+    {
+      "meses": [
+        11,
+        12,
+        1
+      ],
+      "titulo": "Época das flores noturnas",
+      "mensagem": "As flores do cacto-sianinha abrem ao anoitecer e murcham na manhã seguinte, com perfume forte à noite.",
+      "acao_requerida": "Acompanhar os botões inchados e conferir a planta à noite para ver as flores; depois de murchas, retirá-las para não apodrecerem nos ramos"
+    }
+  ]
+}

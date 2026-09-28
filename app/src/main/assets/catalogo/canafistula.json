@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Canafístula",
+    "nome_cientifico": "Peltophorum dubium",
+    "descricao": "Árvore nativa da Mata Atlântica e do Cerrado, da família das leguminosas, de crescimento rápido, com folhas finamente recortadas e cachos de flores amarelas no verão. No chão passa de 15 m; em vaso grande fica como arvoreta de 2 a 3 m por alguns anos, até ir para o chão, e costuma florescer só a partir do 4º ou 5º ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cimento ou fibra, com pelo menos 50 cm de profundidade e 45 cm de diâmetro e vários furos no fundo; comece num de 30 a 40 L e passe para um maior depois",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; misture 1 colher de sopa de calcário por 10 L se a terra for ácida",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso novo e ao sol. É normal perder algumas folhinhas nos primeiros dias; a fase termina quando aparecem brotos novos, verde-claros, na ponta do caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido na primavera e no verão: a muda pode ganhar 50 cm a 1 m no primeiro ano. O caule ainda é fino e flexível, por isso o tutor segue necessário. Raízes começando a sair pelos furos indicam que o vaso ficou pequeno."
+    },
+    {
+      "fase_id": "arvoreta_adulta",
+      "nome": "Arvoreta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "No ano típico, a canafístula brota forte de setembro a março, pode florescer em cachos amarelos entre dezembro e fevereiro (em vaso, geralmente só depois do 4º ano) e forma vagens achatadas no outono. No inverno perde boa parte das folhas e quase para de crescer: isso é normal e não indica doença. Em vaso, a copa se mantém pequena com poda de formação anual."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de canafístula",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia: a muda recém-plantada, com a raiz ainda restrita ao torrão, murcha rápido em vaso ao sol.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a canafístula",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão pode precisar a cada 2 dias; no inverno, quando ela perde as folhas, espace para a cada 6 ou 7 dias e só regue com o substrato seco.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a canafístula",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 200 g) de húmus de minhoca ou composto sobre o substrato, sem encostar no tronco, e regue em seguida. Entre junho e agosto, com a árvore parada, pule esta adubação. Por ser leguminosa, ela dispensa adubo rico em nitrogênio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folhas cortadas em meia-lua e trilhas de formigas no vaso, cascas brancas ou marrons grudadas nos ramos (cochonilha) e ramos com corte circular na casca (serrador).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso ou plantar no chão",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Em setembro ou outubro mais próximo, passe para um vaso 10 a 15 cm maior em diâmetro com substrato novo, aparando com tesoura limpa as raízes que estiverem enroladas no fundo. Se já estiver num vaso de 100 L ou mais, considere plantar no chão, a pelo menos 5 m de construções e canos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firmar a muda com um tutor",
+      "mensagem": "O caule da canafístula jovem é fino e cresce rápido; com vento, a muda tomba e a raiz se solta do substrato.",
+      "acao_requerida": "Fincar uma estaca de bambu ou madeira a 5 cm do caule, até o fundo do vaso, e amarrar o caule com fita ou barbante em oito, sem apertar"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "A muda já deve ter ramos laterais baixos que roubam energia do tronco principal.",
+      "acao_requerida": "Cortar rente ao tronco, com tesoura limpa, os ramos do terço inferior, mantendo um único broto principal no topo"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Conferir as raízes e o tutor",
+      "mensagem": "Com um ano, a canafístula pode estar com o vaso tomado pelas raízes, e a amarração do tutor pode estar estrangulando o caule que engrossou.",
+      "acao_requerida": "Ver se há raízes saindo pelos furos (se houver, trocar para um vaso maior na primavera) e afrouxar ou refazer as amarras; retirar o tutor se o tronco já se sustenta sozinho"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Formiga cortadeira (saúva e quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e folíolos cortados em meia-lua ou arrancados de uma noite para outra; trilha de formigas carregando pedaços verdes",
+      "prevencao_tratamento": "Siga a trilha até o formigueiro e aplique isca formicida granulada ao lado dela, longe da chuva; uma faixa de graxa ou fita adesiva dupla-face no tronco ou no pé do vaso impede a subida"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas cascas brancas, marrons ou algodonosas presas aos ramos e ao verso das folhas; folhas amareladas e melado com fumagina preta",
+      "prevencao_tratamento": "Esfregue com escova macia ou algodão com álcool; em infestação maior, aplique óleo mineral ou óleo de neem a 1% no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Serrador (Oncideres spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Ramo com um corte em anel perfeito na casca, que seca e cai inteiro; besouro cinza de antenas longas no tronco",
+      "prevencao_tratamento": "Recolha e queime ou descarte em saco fechado os ramos caídos, onde ficam os ovos; cate os besouros que aparecerem no verão"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo fora do inverno, substrato sempre úmido e com cheiro azedo, base do caule escurecida e mole",
+      "prevencao_tratamento": "Regue só com o substrato seco a 5 cm e nunca deixe água parada no pratinho; se o cheiro estiver forte, retire a planta, corte as raízes escuras e replante em substrato novo e drenante"
+    },
+    {
+      "nome": "Raízes enoveladas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Crescimento para, folhas pequenas, substrato seca em poucas horas e raízes saem pelos furos ou giram em volta do torrão",
+      "prevencao_tratamento": "Trocar para um vaso maior a cada 2 anos, aparando as raízes enroladas; em vaso definitivo, podar um pouco a copa e as raízes juntas para manter o equilíbrio"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: a canafístula vai descansar",
+      "mensagem": "No frio ela perde boa parte das folhas e quase para de crescer. Isso é normal, e a planta parada gasta pouca água.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação anual",
+      "mensagem": "No fim do inverno, antes da brotação, a poda cicatriza rápido e orienta o crescimento da primavera.",
+      "acao_requerida": "Cortar ramos secos, cruzados ou voltados para dentro e encurtar em um terço os ramos mais compridos, para manter a copa compacta no vaso"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e sede no vaso",
+      "mensagem": "Com a copa cheia e dias quentes, o vaso seca muito mais rápido. É também a época da floração amarela nas plantas mais velhas.",
+      "acao_requerida": "Conferir o substrato todo dia e regar sempre que os primeiros 5 cm estiverem secos, de preferência no começo da manhã"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Cipreste-italiano",
+    "nome_cientifico": "Cupressus sempervirens 'Stricta'",
+    "descricao": "Conífera mediterrânea de copa estreita e colunar, usada como marco vertical em varandas, entradas e terraços. Em vaso fica bem mais baixa que no chão (2 a 4 m) e aguenta vento e sol forte, mas não perdoa encharcamento: raiz sempre molhada é a principal causa de morte no Brasil.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado (cerâmica, cimento ou fibra com lastro) com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; o peso evita que a copa alta tombe o vaso com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% casca de pinus fina ou composto orgânico peneirado, mais 1 colher de sopa de calcário dolomítico a cada 10 L; deve escorrer a água em segundos",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saco do viveiro para o vaso definitivo e sente a mudança. É normal algumas escamas internas ficarem marrons e caírem. A fase termina quando surgem pontas novas verde-claras no topo e nas laterais."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o novo substrato e a planta cresce de 20 a 40 cm no primeiro ano, principalmente na primavera e no verão. Nesta fase a copa ainda é fina; se a ponta principal entortar, prenda-a com fita macia a um bambu fino até firmar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Planta firme no vaso, com copa densa e colunar. Cresce na primavera e no verão, quase para no inverno. Pede poda leve de contorno no início da primavera, adubação só na estação de crescimento e troca de substrato a cada dois anos. Escamas marrons só no miolo da copa são renovação normal; pontas marrons indicam falta ou excesso de água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o cipreste recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Se ainda estiver úmido, espere o dia seguinte. O torrão do viveiro não pode secar por completo nem ficar encharcado.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cipreste",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e nunca deixe água no pratinho. No verão acima de 30 °C, confira a cada 2 dias; no inverno, espaçe para 7 a 10 dias. Ramos que secam por completo não rebrotam da madeira velha.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o cipreste",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 xícara de húmus de minhoca) na borda do vaso de 40 L, longe do tronco, e regue em seguida. De abril a agosto, pule esta adubação: a planta está parada e o adubo acumula sal nas raízes.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a copa",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos e olhe o miolo da copa e a base dos galhos: procure teias finas, pontinhos amarelados, carapaças brancas ou marrons coladas nos ramos, e ramos inteiros ficando marrom-avermelhados com resina escorrendo no tronco.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno ou início da primavera, tire a planta do vaso, raspe 3 a 5 cm de raiz enovelada nas laterais e no fundo e replante com substrato novo, num vaso 10 cm maior ou no mesmo vaso se já for o tamanho final. Regue bem e mantenha à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "O saco ou vaso do viveiro é pequeno demais para o cipreste e seca em horas no sol.",
+      "acao_requerida": "Transplantar para o vaso de pelo menos 40 L, mantendo o colo na mesma altura em que estava, sem enterrar o tronco, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Firmar contra o vento",
+      "mensagem": "A copa colunar pega muito vento e pode tombar o vaso ou soltar as raízes que ainda estão se fixando.",
+      "acao_requerida": "Encostar o vaso numa parede ou mureta, ou colocar pedras no fundo do cachepô, e amarrar a muda a um tutor com fita macia se ela balançar no torrão"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Copa inteira fica verde-acinzentada e depois marrom de uma vez, mesmo com o substrato úmido; raízes escuras, moles e com cheiro ruim; casca da base do tronco solta",
+      "prevencao_tratamento": "Substrato com areia e casca que escorra rápido, vaso com furos livres e nada de água parada no pratinho. Ao primeiro sinal, pare a rega até secar 5 cm, corte raízes podres e replante em substrato novo; planta toda marrom não se recupera"
+    },
+    {
+      "nome": "Cancro do cipreste (Seiridium cardinale)",
+      "tipo": "DOENCA",
+      "sintomas": "Um ramo de cada vez fica marrom-avermelhado; na base dele, a casca afunda e escorre resina",
+      "prevencao_tratamento": "Corte o ramo 10 cm abaixo da lesão com tesoura desinfetada em álcool, jogue fora os restos e evite molhar a copa. Pulverize calda bordalesa na primavera se houver mais ramos afetados"
+    },
+    {
+      "nome": "Ácaro-vermelho (Oligonychus ununguis)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas com pontinhos amarelados, aspecto empoeirado e bronzeado, teias finas no miolo da copa; pior em tempo quente e seco",
+      "prevencao_tratamento": "Jato de água forte na copa uma vez por semana no calor seco. Se persistir, óleo de neem a 0,5% ou enxofre molhável no fim da tarde, a cada 7 dias por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, marrons ou algodoadas presas aos ramos; fumagina preta e ramos enfraquecidos",
+      "prevencao_tratamento": "Remova com escova macia e água com sabão neutro; em infestação maior, óleo mineral a 1% no fim da tarde, repetindo após 15 dias"
+    },
+    {
+      "nome": "Pontas secas por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas dos ramos marrons e quebradiças, começando pelo lado mais exposto ao sol; substrato seco e descolado da borda do vaso",
+      "prevencao_tratamento": "Mantenha a rega regular no verão, conferindo pelo dedo; se o torrão encolher, mergulhe o vaso num balde por 20 minutos. Ramos totalmente secos não voltam: corte até a parte verde"
+    },
+    {
+      "nome": "Queima de sais do adubo",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas marrons em toda a copa logo depois de adubar, crosta branca na superfície do substrato",
+      "prevencao_tratamento": "Não adube no inverno nem com substrato seco. Se acontecer, lave o vaso passando 3 vezes o volume dele em água pelos furos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda leve de contorno",
+      "mensagem": "A brotação da primavera está começando: é a hora de acertar a forma de coluna sem deixar a planta pelada.",
+      "acao_requerida": "Aparar só as pontas verdes que escapam do contorno, no máximo 1/3 do crescimento novo, sem cortar até a madeira sem folhas, que não rebrota"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: vaso seca mais rápido",
+      "mensagem": "No verão o substrato de um vaso ao sol pleno pode secar em dois dias, e ramos secos não se recuperam.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e regar de manhã cedo, sem molhar a copa à noite"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "Com frio a planta quase para de crescer e consome pouca água; o excesso agora é o que apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para 7 a 10 dias, regando só quando o substrato estiver seco a 5 cm, e suspender o adubo até setembro"
+    }
+  ]
+}

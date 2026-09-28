@@ -1,0 +1,201 @@
+{
+  "planta": {
+    "nome_comum": "Alfeneiro",
+    "nome_cientifico": "Ligustrum lucidum",
+    "descricao": "Árvore perene de folhas verde-escuras e brilhantes que, em vaso e com poda frequente, vira um arbusto denso para cerca viva, topiaria ou tela de privacidade. Aguenta geada, vento e poluição. É invasora nas matas do Sul e Sudeste, porque os pássaros espalham os frutos, e frutos e folhas são tóxicos para pessoas e animais. Por isso, cultive sempre cortando os cachos antes de frutificar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica, cimento ou plástico grosso com pelo menos 45 cm de diâmetro e 40 cm de profundidade, com furos no fundo; o peso evita que o vento derrube a planta",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; misture 1 xícara de farinha de ossos a cada 40 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está enraizando no vaso novo. É normal cair algumas folhas velhas na primeira semana. Brotos claros nas pontas dos ramos mostram que a raiz pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido na primavera e no verão, de 30 a 60 cm por ano. É a fase das podas de formação: cortar as pontas faz a planta ramificar desde a base e fechar a copa. Quando a raiz começa a sair pelos furos do vaso, a planta está estabelecida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arbusto denso mantido no tamanho pela poda. Ano típico: brota forte de setembro a março, floresce em cachos brancos e perfumados entre novembro e janeiro, forma frutos roxo-escuros de abril a julho (que devem ser cortados antes de amadurecer) e cresce pouco no inverno. Troca de substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de alfeneiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda não saiu do torrão da muda, e se ele secar a muda perde as folhas e pode morrer. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o alfeneiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 40 L). No verão acima de 30 °C, confira a cada 2 dias. No inverno a planta cresce pouco: regue só quando os 5 cm estiverem secos, o que costuma levar de 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o alfeneiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 2 xícaras de húmus de minhoca) na borda do vaso de 40 L, sem encostar no tronco, e regue em seguida. De junho a agosto, pule essa adubação: a planta está quase parada e o adubo acumula sal no vaso.",
+      "critica": false
+    },
+    {
+      "id": "poda_manutencao",
+      "titulo": "Aparar o alfeneiro",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 150,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura de poda limpa, corte os ramos novos que passaram do formato desejado, deixando 2 pares de folhas em cada um. Pode a base um pouco mais larga que o topo, para a luz chegar embaixo e a planta não pelar. Entre junho e agosto, corte só os ramos que estiverem fora do formato.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire 10 folhas de ramos diferentes e olhe o verso e os ramos finos. Procure escamas marrons ou brancas, algodão branco, pontinhos prateados, teias finas ou manchas marrons arredondadas nas folhas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No outono ou no fim do inverno, tire a planta do vaso, corte 3 a 5 cm de raiz ao redor e embaixo do torrão, retire um terço do substrato velho e replante com substrato novo no mesmo vaso (ou num vaso 10 cm maior). Pode a copa em um terço para equilibrar com a raiz cortada e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda",
+      "mensagem": "Plantar na altura certa evita que o tronco apodreça.",
+      "acao_requerida": "Plantar a muda com o colo (onde o tronco encontra a raiz) no mesmo nível do substrato, firmar a terra ao redor, regar até escorrer e deixar 3 dias à meia-sombra antes de ir para o sol pleno"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "A raiz já pegou. Cortar agora as pontas faz o alfeneiro ramificar desde a base, em vez de subir como uma vara fina.",
+      "acao_requerida": "Cortar a ponta do ramo principal e as pontas dos laterais, logo acima de um par de folhas, tirando uns 10 cm de cada"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de alfeneiro",
+      "mensagem": "A partir de agora ele pode florescer. As flores viram frutos que os pássaros espalham pela mata, onde o alfeneiro é invasor.",
+      "acao_requerida": "Olhar os furos do vaso: se as raízes estiverem saindo, planejar a troca de substrato para o próximo outono"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido, ramos secam de cima para baixo, raízes escuras e moles com cheiro ruim",
+      "prevencao_tratamento": "Rega só com o substrato seco a 5 cm, furos desobstruídos e sem água no pratinho. Se aparecer, tirar do vaso, cortar as raízes podres, replantar em substrato novo e seco e regar pouco por 2 semanas"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos de algodão branco nos ramos e no verso das folhas; folhas pegajosas e fumagina preta por cima",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em infestação, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Tripes e ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos prateados ou amarelados, aspecto desbotado e bronzeado; no caso do ácaro, teias finas no verso",
+      "prevencao_tratamento": "Mais comum em tempo seco e quente: borrifar água no verso das folhas; se persistir, óleo de neem a 0,5% a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Mancha-foliar (Cercospora ligustri)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas, às vezes com borda escura, que se juntam e fazem a folha cair; começa nas folhas de baixo",
+      "prevencao_tratamento": "Regar no substrato e não sobre as folhas, podar o interior para ventilar, recolher as folhas caídas; em casos fortes, fungicida à base de cobre"
+    },
+    {
+      "nome": "Queda de folhas por estresse",
+      "tipo": "DISTURBIO",
+      "sintomas": "Muitas folhas amarelam e caem de uma vez, logo após mudar de lugar, de vaso ou depois de secar demais num dia quente",
+      "prevencao_tratamento": "Mudanças de luz feitas aos poucos e rega mais atenta no verão; mantida a rega certa, a planta rebrota em 3 a 4 semanas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        1
+      ],
+      "titulo": "Cortar os cachos de flores",
+      "mensagem": "A floração está acabando e cada cacho vai virar dezenas de frutos, que os pássaros levam para a mata, onde o alfeneiro é invasor. O pólen também costuma causar alergia.",
+      "acao_requerida": "Cortar todos os cachos de flores murchas ou de frutinhos verdes rente ao primeiro par de folhas abaixo deles e descartar no lixo, não na compostagem"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Conferir se escaparam frutos",
+      "mensagem": "Os frutos que sobraram começam a ficar roxo-escuros. Maduros, atraem sabiás e são tóxicos para crianças e animais.",
+      "acao_requerida": "Procurar cachos de frutos em toda a copa, cortá-los e recolher os que caíram no vaso ou no chão"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "O alfeneiro aguenta geada, mas quase para de crescer, e o substrato demora mais para secar.",
+      "acao_requerida": "Espaçar a rega até os 5 cm de substrato secarem e pular a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de redução de fim de inverno",
+      "mensagem": "Logo antes da brotação é a hora de uma poda mais forte, se a planta passou do tamanho ou pelou embaixo.",
+      "acao_requerida": "Cortar até um terço do volume da copa, encurtando os ramos mais longos acima de um par de gemas e tirando os ramos secos e cruzados do interior"
+    }
+  ]
+}

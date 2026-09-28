@@ -1,0 +1,176 @@
+{
+  "planta": {
+    "nome_comum": "Conteira",
+    "nome_cientifico": "Hedychium gardnerianum",
+    "descricao": "Gengibre ornamental do Himalaia, com folhas largas em hastes de até 1,8 m e espigas de flores amarelas com estames vermelhos, muito perfumadas, no fim do verão. É uma das invasoras mais agressivas do mundo (Açores, Havaí, Nova Zelândia), por isso em vaso corte as espigas antes das sementes e nunca descarte rizomas perto de mata ou curso d'água.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e pesado (plástico grosso, cerâmica ou cimento) com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com furos no fundo; o rizoma cresce para os lados e a touceira alta tomba vasos leves",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco, 10% areia grossa ou perlita; rico e que segure umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "brotacao",
+      "nome": "Brotação do Rizoma",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante o rizoma deitado, com as gemas (pontas rosadas) para cima, coberto por só 2 a 3 cm de substrato. Os primeiros brotos pontudos saem entre a 2ª e a 4ª semana. Sem folhas, o rizoma gasta pouca água e apodrece se ficar encharcado."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 150,
+      "descricao": "As hastes abrem folhas largas e novas hastes surgem ao lado. A fase termina quando a touceira tem 3 ou mais hastes acima de 1 m. Rizoma grande pode florescer já no primeiro verão; rizoma pequeno costuma florescer só no segundo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota forte na primavera, floresce de fevereiro a abril (cada haste floresce uma vez só), amarela e desacelera no inverno e pode perder as folhas com geada, rebrotando do rizoma em setembro. A cada dois anos a touceira enche o vaso e precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar o rizoma",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o prato. Se estiver úmido, não regue: rizoma sem folhas apodrece em substrato molhado.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a conteira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos (cerca de 3 L num vaso de 30 L). No verão acima de 30 °C confira todo dia: as folhas largas perdem muita água e as bordas queimam de forma permanente. De junho a agosto, regue só quando os 5 cm de cima secarem.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a conteira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 ou 1 xícara de húmus de minhoca pela borda do vaso, longe das hastes, e regue em seguida. De maio a agosto pule a adubação: a planta está desacelerando e o adubo acumula sal no vaso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teia fina (ácaro), bolinhas brancas ou marrons presas nas nervuras (cochonilha) e brotos roídos rente ao substrato (lesma). Aperte a base das hastes: haste mole e escura indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre agosto e setembro, antes da brotação. Tire a touceira do vaso, corte o rizoma com faca limpa em pedaços com 2 ou 3 gemas cada, descarte as partes moles e replante um pedaço no vaso com substrato novo. Sobras vão para o lixo comum ou são dadas, nunca jogadas em terreno baldio ou mata.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Os brotos já saíram?",
+      "mensagem": "A maioria dos rizomas de conteira brota em até 4 semanas. Sem broto até agora, o rizoma pode ter apodrecido ou estar enterrado fundo demais.",
+      "acao_requerida": "Afastar o substrato com os dedos e conferir o rizoma: se estiver firme, deixá-lo com só 2 cm de cobertura e regar menos; se estiver mole e com cheiro ruim, descartar a parte podre"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Touceira formada",
+      "mensagem": "A conteira já deve ter várias hastes altas. A touceira pesa e o vento derruba vasos leves.",
+      "acao_requerida": "Conferir se o vaso está firme; se tombar com vento, trocar por um vaso mais pesado ou pôr pedras no fundo do cachepô"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes amarelam de baixo para cima e soltam fácil; base mole e escura; rizoma marrom e com cheiro azedo",
+      "prevencao_tratamento": "Não deixar água parada no prato e reduzir a rega no inverno; cortar as partes podres do rizoma até o tecido firme e claro, deixar secar um dia e replantar em substrato novo"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam foscas e acinzentadas; teia fina no verso, comum em varanda coberta e seca",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 3 dias por 2 semanas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodonosas ou escamas marrons nas nervuras e na base das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em infestação, óleo mineral ou de neem a 1% com detergente neutro, repetindo após 10 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos novos roídos rente ao substrato e rastro brilhante no vaso, sobretudo na primavera chuvosa",
+      "prevencao_tratamento": "Catar à noite com lanterna e espalhar casca de ovo moída ou borra de café em volta das hastes"
+    },
+    {
+      "nome": "Queimadura das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas e pontas das folhas marrons e secas, ou manchas esbranquiçadas no meio da folha",
+      "prevencao_tratamento": "Causada por sol forte da tarde ou substrato que secou por inteiro. Mudar para sol só da manhã e regar antes de o vaso secar; a parte queimada não se recupera, corte-a acompanhando o formato da folha"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        2,
+        3,
+        4
+      ],
+      "titulo": "Cortar as espigas que murcharam",
+      "mensagem": "A conteira está em flor. Depois de murchar, cada espiga forma cápsulas com sementes laranja que os pássaros espalham pela mata, onde ela vira praga.",
+      "acao_requerida": "Cortar com tesoura toda espiga que perdeu as flores, logo abaixo dela, antes de as cápsulas abrirem, e jogar no lixo comum"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Conteira no inverno",
+      "mensagem": "Com o frio a planta desacelera, as hastes que floresceram amarelam e a geada pode queimar as folhas. O rizoma continua vivo.",
+      "acao_requerida": "Regar só quando os 5 cm de cima do substrato secarem, suspender o adubo e, onde gear, levar o vaso para perto de uma parede ou sob cobertura nas noites frias"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Limpar a touceira para a brotação",
+      "mensagem": "Hastes que já floresceram não florescem de novo e só roubam espaço dos brotos que saem em setembro.",
+      "acao_requerida": "Cortar rente ao substrato todas as hastes secas, amarelas ou queimadas pela geada e espalhar uma camada de 2 cm de composto por cima"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "planta": {
+    "nome_comum": "Palmeira-real-de-cuba",
+    "nome_cientifico": "Roystonea regia",
+    "descricao": "Palmeira de estipe liso e acinzentado e palmito verde brilhante, muito usada em avenidas e jardins tropicais do Brasil. Na natureza passa de 20 m, mas em vaso fica anos como uma palmeira jovem e ornamental. Depois de uns 4 a 6 anos costuma pedir plantio no chão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo e pesado (cerâmica, cimento ou plástico grosso), com pelo menos 40 cm de diâmetro e 45 cm de profundidade e vários furos no fundo. Precisa ser pesado para a palmeira não tombar com o vento",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 25% areia grossa lavada, 25% composto orgânico ou húmus de minhoca, 10% casca de pinus fina ou perlita. Precisa segurar umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está refazendo as raízes no vaso novo. É normal a ponta de uma folha velha secar. Não pode faltar água, e o torrão também não pode ficar encharcado. A fase acabou quando a lança central (a folha nova ainda fechada, no centro) volta a crescer."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Entre a primavera e o verão abre uma folha nova a cada 1 ou 2 meses, e as folhas novas saem maiores que as anteriores. Nas mudas maiores, a base das folhas começa a formar o palmito verde. As folhas mais baixas amarelam e secam aos poucos. Corte só as que estiverem totalmente secas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Palmeira Jovem Estabelecida",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "O ano típico: cresce bem de outubro a março, quase para no inverno e perde de 3 a 5 folhas velhas por ano. Em vaso ela não floresce nem dá frutos. Quando as raízes saírem pelos furos ou a água escorrer direto sem molhar o torrão, está na hora de um vaso maior ou do chão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a palmeira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos, cerca de 3 a 4 L num vaso de 50 L. Se ainda estiver úmido, espere mais um dia. Tire a água do pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a palmeira",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato. Se estiver seco, regue até escorrer pelos furos. No verão, com sol pleno e mais de 30 °C, confira a cada 2 dias. No inverno, espace para a cada 7 a 10 dias. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_palmeira",
+      "titulo": "Adubar a palmeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de adubo de liberação lenta para palmeiras (com potássio, magnésio e manganês, tipo NPK 8-2-12 com micronutrientes) na borda do vaso, a 5 cm do estipe, e regue em seguida. Se preferir adubo orgânico, use 1 L de húmus de minhoca. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e palmito",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire os folíolos e procure pontinhos brancos ou marrons grudados (cochonilha), teias finas e folhas desbotadas (ácaro), além de manchas marrons com borda amarela. Aperte de leve a base da lança central: ela deve estar firme e sem cheiro.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato ou vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, passe a palmeira com o torrão inteiro para um vaso 10 a 15 cm maior de diâmetro ou para o chão, sem desmanchar as raízes. Mantenha a mesma altura do colo: enterrar o estipe apodrece a base. Regue bem e deixe 2 semanas à meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio na altura certa",
+      "mensagem": "Palmeira enterrada mais fundo do que estava no saco apodrece na base do estipe. E raiz de palmeira quebrada não se regenera.",
+      "acao_requerida": "Conferir se o colo ficou no mesmo nível do substrato, sem terra acumulada em volta do estipe, e firmar a muda sem pisotear o torrão"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora de ir para o sol pleno",
+      "mensagem": "Mudas de viveiro costumam vir de meia-sombra. Ir de uma vez para o sol forte queima as folhas.",
+      "acao_requerida": "Aumentar o sol direto aos poucos: 2 horas de manhã na primeira semana, depois meio período e, a partir da terceira semana, sol o dia inteiro"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de palmeira",
+      "mensagem": "A palmeira-real cresce rápido e passa dos 20 m no chão. Em vaso ela aguenta alguns anos, mas vai precisar de um lugar definitivo.",
+      "acao_requerida": "Medir a altura e olhar os furos do vaso. Se já houver raízes saindo, planejar o próximo vaso ou o plantio no chão para a primavera, longe de muros, fios e calhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por encharcamento (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam de baixo para cima mesmo com o substrato úmido, a base do estipe fica mole e escura, e o substrato cheira a azedo",
+      "prevencao_tratamento": "Regar só com os 4 cm de cima secos e nunca deixar água no pratinho. No começo, suspenda a rega até secar e troque o substrato por um novo e mais arenoso. Com a base mole, a planta raramente se recupera"
+    },
+    {
+      "nome": "Podridão do olho (Phytophthora palmivora)",
+      "tipo": "DOENCA",
+      "sintomas": "A lança central amarela ou escurece e sai inteira quando puxada, com cheiro podre na base",
+      "prevencao_tratamento": "Não molhar o centro da copa ao regar, principalmente no inverno. No início, remova o tecido podre e aplique fungicida cúprico no olho. Se a gema morrer, a palmeira não rebrota"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodonosas no verso dos folíolos e na base das folhas. Folhas pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Retirar com pano ou escova macia umedecidos em água com detergente neutro (1 colher de chá por litro). Nas infestações maiores, óleo mineral ou óleo de neem a 0,5% a cada 7 dias, no fim da tarde, 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontinhos claros, aspecto desbotado ou bronzeado e teias finas no verso, mais comum em tempo seco e perto de paredes quentes",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água nos dias secos e lavar com jato forte. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mancha foliar (Pestalotiopsis, Helminthosporium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas, ovais, com halo amarelo, que se juntam e secam os folíolos",
+      "prevencao_tratamento": "Evitar molhar as folhas no fim da tarde e cortar as folhas muito atacadas. Adubar direito, porque planta com falta de potássio é mais atacada. Se as manchas aumentarem, fungicida cúprico"
+    },
+    {
+      "nome": "Falta de manganês (frizzle top)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas saem pequenas, amareladas, com os folíolos enrugados, queimados e retorcidos, como se estivessem chamuscadas",
+      "prevencao_tratamento": "Aplicar sulfato de manganês no substrato (1 colher de chá dissolvida em 2 L de água) e usar adubo para palmeiras com micronutrientes. Substrato com muito calcário piora. As folhas deformadas não se recuperam, mas as novas saem normais"
+    },
+    {
+      "nome": "Falta de potássio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas mais velhas com pontinhos translúcidos, amarelos ou alaranjados, e pontas dos folíolos secas e necrosadas",
+      "prevencao_tratamento": "Usar adubo com mais potássio que nitrogênio (tipo 8-2-12) e magnésio. Não corte as folhas amarelas que ainda estão vivas, porque a palmeira tira nutrientes delas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou palha secas no meio dos folíolos, logo depois de a planta mudar para um lugar mais ensolarado",
+      "prevencao_tratamento": "Passar para o sol pleno aos poucos, ao longo de 2 a 3 semanas. As folhas queimadas não se recuperam; corte só depois de secarem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a palmeira quase para de crescer e o substrato demora mais a secar. É a época em que ela mais apodrece por excesso de rega.",
+      "acao_requerida": "Regar só com os 5 cm de cima secos, em geral a cada 7 a 10 dias, sempre de manhã e sem molhar o centro da copa. Não adubar até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A palmeira-real é tropical: abaixo de 5 °C as folhas queimam, e a geada pode matar a gema.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para junto de uma parede, sob um beiral ou cobrir a copa com manta de TNT, e tirar a proteção de manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Com o calor voltando, a palmeira volta a abrir folhas novas e precisa de nutrientes.",
+      "acao_requerida": "Voltar a adubar, cortar rente ao estipe as folhas totalmente secas e aumentar a rega conforme o substrato secar mais rápido"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: conferir a rega mais vezes",
+      "mensagem": "Com sol pleno e calor, um vaso de 50 L pode secar em 2 dias, e as pontas das folhas queimam quando falta água.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e regar à tarde, se secar rápido. Nos dias secos, borrifar o verso das folhas para afastar o ácaro"
+    }
+  ]
+}

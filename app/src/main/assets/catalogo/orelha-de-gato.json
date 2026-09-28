@@ -1,0 +1,171 @@
+{
+  "planta": {
+    "nome_comum": "Orelha-de-gato",
+    "nome_cientifico": "Kalanchoe tomentosa",
+    "descricao": "Suculenta de Madagascar, também chamada de planta-panda, com folhas grossas cobertas de pelos prateados e pontas marrom-ferrugem. É compacta, aguenta esquecimento de rega e raramente floresce em vaso, então vale pela folhagem.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, de 12 a 15 cm de diâmetro e 12 cm de profundidade, com furo grande no fundo e sem prato com água acumulada",
+    "volume_minimo_litros": 1,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% substrato pronto para cactos e suculentas, 30% areia grossa lavada, 20% perlita ou casca de arroz carbonizada; deve escorrer a água em segundos",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A planta sai da estufa, onde recebia luz filtrada, e precisa se acostumar ao sol direto. Comece com sol da manhã e aumente aos poucos. Folhas firmes e sem manchas marrons secas indicam que se adaptou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "As raízes ocupam o substrato novo e surgem pares de folhas no topo das hastes. Rosetas compactas e folhas prateadas mostram luz suficiente; hastes compridas com folhas espaçadas e verde-claras indicam falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Cresce devagar da primavera ao outono e quase para no inverno. Com os anos forma um arbusto de 30 a 50 cm e lança brotos laterais. A floração, rara em casa, aparece no fim do inverno em hastes compridas com flores tubulares; corte a haste quando secar. Hastes que tombam podem ser cortadas e enraizadas como estaca depois de secarem 3 dias à sombra."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega",
+      "titulo": "Regar a orelha-de-gato",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato: regue só se estiver totalmente seco. Molhe o substrato, nunca as folhas peludas, até escorrer pelo furo, e descarte a água do prato. Folha mole e enrugada pede água; folha translúcida e amolecida na base é excesso. De junho a agosto, espaçe para 15 a 20 dias.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas do topo e olhe as axilas e a base do caule procurando tufos brancos de algodão (cochonilha). Aperte a base do caule: deve estar firme, não mole nem escura.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato seco, tire a planta do vaso, solte a terra velha e corte raízes escuras ou moles. Replante em substrato novo, num vaso 2 a 3 cm maior se as raízes estiverem enoveladas, e espere 5 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Confira a terra da loja",
+      "mensagem": "Suculentas de viveiro costumam vir em terra fofa que retém muita água, o que apodrece a raiz em vaso de apartamento.",
+      "acao_requerida": "Se o substrato estiver escuro, pesado e úmido, deixe secar alguns dias e transplante para o substrato de suculenta recomendado; espere 5 dias antes de regar"
+    },
+    {
+      "dia_disparo": 22,
+      "titulo": "Pode ir para o sol",
+      "mensagem": "Passada a adaptação, a orelha-de-gato já tolera sol direto por mais horas e fica mais compacta e prateada com ele.",
+      "acao_requerida": "Deixar o vaso onde receba pelo menos 5 horas de sol direto, de preferência da manhã"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas de baixo amolecidas, translúcidas ou amareladas que caem ao toque; base do caule escura e mole; cheiro de mofo no substrato",
+      "prevencao_tratamento": "Regar só com substrato seco, vaso com furo e sem prato encharcado. Se o caule apodreceu, corte a parte sadia acima da lesão, deixe secar 3 dias e enraíze como estaca em substrato seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e na base; folhas deformadas e pegajosas",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; se voltar, óleo de neem a 0,5% no substrato e na base, sem encharcar as folhas, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Cochonilha-de-raiz",
+      "tipo": "PRAGA",
+      "sintomas": "Planta murcha mesmo com substrato úmido; pó branco nas raízes ao tirar do vaso",
+      "prevencao_tratamento": "Tirar do vaso, lavar as raízes, cortar as mais atacadas e replantar em substrato e vaso limpos"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Hastes finas e alongadas, folhas espaçadas, menores e verde-claras, planta tombando para a janela",
+      "prevencao_tratamento": "Levar para um lugar com sol direto, aumentando as horas aos poucos. As partes esticadas não voltam: corte as pontas e enraíze para refazer a planta"
+    },
+    {
+      "nome": "Dano por frio ou geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, translúcidas e moles depois de noites abaixo de 5 °C",
+      "prevencao_tratamento": "Recolher para dentro ou para baixo de cobertura em noites frias; retirar as folhas danificadas quando secarem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Adubação do mês",
+      "mensagem": "Na estação de crescimento a orelha-de-gato aproveita uma adubação leve por mês. Adubo forte deixa as folhas moles e a planta esticada.",
+      "acao_requerida": "Regar com adubo líquido para suculentas ou NPK 10-10-10 na metade da dose do rótulo, sempre com o substrato já úmido"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "No frio a planta quase para de crescer e o substrato demora a secar; é quando a rega em excesso mais apodrece a raiz. Abaixo de 10 °C as folhas sofrem.",
+      "acao_requerida": "Espaçar a rega para 15 a 20 dias, suspender o adubo e recolher o vaso em noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuva de verão",
+      "mensagem": "Chuvas seguidas encharcam o vaso e deixam água parada entre as folhas peludas, abrindo caminho para podridão.",
+      "acao_requerida": "Deixar o vaso sob cobertura em semanas chuvosas, sem tirar do sol, e nunca deixar água no prato"
+    }
+  ]
+}

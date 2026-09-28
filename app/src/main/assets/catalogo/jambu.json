@@ -1,0 +1,204 @@
+{
+  "planta": {
+    "nome_comum": "Jambu",
+    "nome_cientifico": "Acmella oleracea",
+    "descricao": "Erva amazônica de ramos rasteiros, famosa pela folha e pela flor que adormecem a boca, base do tacacá e do pato no tucupi. É perene de vida curta, mas em vaso é cultivada como anual: rende colheitas por uns quatro meses e depois envelhece, e o melhor é semear de novo.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 20 cm de profundidade e furos no fundo; 1 planta por vaso de 5 L ou 3 plantas a cada 60 cm de jardineira",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 40% húmus de minhoca ou composto bem curtido, 10% areia grossa ou fibra de coco; rico em matéria orgânica para segurar umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 12,
+      "descricao": "As sementes são minúsculas e precisam de luz para germinar: espalhe 4 a 5 por cova sobre o substrato úmido e apenas pressione, sem cobrir, ou peneire uma camada de 2 mm por cima. Entre 20 e 30 °C, as plântulas aparecem do 5º ao 12º dia; abaixo de 18 °C a germinação falha."
+    },
+    {
+      "fase_id": "mudas",
+      "nome": "Mudas",
+      "dia_inicio": 13,
+      "dia_fim": 35,
+      "descricao": "Surgem as primeiras folhas verdadeiras, ovais e de borda levemente dentada. As mudas são frágeis e secam rápido; a fase termina quando a planta tem 4 a 6 pares de folhas e começa a soltar ramos laterais."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 36,
+      "dia_fim": 60,
+      "descricao": "Os ramos se alongam e tombam, e onde encostam no substrato podem soltar raízes. A folhagem fica densa e verde-escura. A fase muda quando aparecem os primeiros botões redondos na ponta dos ramos."
+    },
+    {
+      "fase_id": "floracao_colheita",
+      "nome": "Floração e Colheita",
+      "dia_inicio": 61,
+      "dia_fim": 130,
+      "descricao": "Abrem as flores em botão, amarelas com o centro vermelho, que concentram o espilantol, o composto que dá o formigamento. É o auge da colheita: cortar os ramos estimula novas brotações e mais flores."
+    },
+    {
+      "fase_id": "declinio",
+      "nome": "Declínio",
+      "dia_inicio": 131,
+      "dia_fim": 150,
+      "descricao": "Os ramos engrossam e ficam lenhosos, as folhas diminuem e endurecem e as flores secam formando sementes. Colha o que restar, guarde sementes das flores secas e semeie um vaso novo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes de jambu",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 12,
+      "instrucoes": "Borrife a superfície pela manhã até ela ficar úmida ao toque; não jogue água com regador, que arrasta as sementes. Se o dia estiver quente e ventoso, borrife de novo à tarde.",
+      "critica": true
+    },
+    {
+      "id": "rega_mudas",
+      "titulo": "Regar as mudas de jambu",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 35,
+      "instrucoes": "Toque a superfície: se o primeiro centímetro estiver seco, regue devagar junto à base até escorrer pelos furos. Mudas com raiz rasa morrem se o substrato secar por um dia inteiro de calor.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jambu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos. O jambu gosta de substrato sempre úmido, nunca encharcado: acima de 28 °C confira todo dia. Ramos murchos ao meio-dia indicam que o intervalo está longo.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o jambu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de bokashi por vaso de 5 L, sem encostar nos ramos, e regue em seguida. Como o produto é a folha, adubo orgânico rico em nitrogênio é bem-vindo; aplique de preferência logo depois de uma colheita.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e flores",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Vire as folhas e procure colônias de pulgão nas pontas dos ramos, pontinhos brancos voando ao mexer (mosca-branca) e furos redondos. Nas flores, veja se há botões deformados com pó escuro por dentro.",
+      "critica": false
+    },
+    {
+      "id": "colheita_ramos",
+      "titulo": "Colher ramos de jambu",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Corte com tesoura limpa os ramos mais compridos, com folhas e flores, uns 15 cm abaixo da ponta, deixando pelo menos 2 nós com folhas em cada ramo para rebrotar. Não tire mais de um terço da planta por vez. Use em até 2 dias ou guarde na geladeira em saco com papel-toalha.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As mudas de cada cova estão disputando espaço e luz. Deixar todas faz plantas finas e pouco ramificadas.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada cova, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Desponte para ramificar",
+      "mensagem": "Tirar a ponta dos ramos principais agora faz a planta soltar brotos laterais e render muito mais folhas e flores.",
+      "acao_requerida": "Beliscar ou cortar os 2 a 3 cm da ponta de cada ramo principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 61,
+      "titulo": "Primeiras flores de jambu",
+      "mensagem": "Os botões amarelos com centro vermelho estão abrindo: é quando folhas e flores têm mais sabor e formigamento.",
+      "acao_requerida": "Conferir se há ramos com flores abertas e fazer a primeira colheita"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Guardar sementes e planejar o próximo vaso",
+      "mensagem": "A planta começa a envelhecer e a produção cai nas próximas semanas. As flores que secaram no pé já têm sementes.",
+      "acao_requerida": "Colher flores secas e marrons, deixar secar à sombra por uma semana, esfarelar e guardar as sementes em envelope de papel; se estiver na época, semear um vaso novo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Mudas caem com o caule escuro e fino rente ao substrato; na planta adulta, ramos murcham mesmo com o substrato molhado e a base do caule fica mole e escura",
+      "prevencao_tratamento": "Use substrato novo, vaso com furos livres e nunca deixe água parada no pratinho; úmido não é encharcado. Retire plantas afetadas e deixe o substrato secar um pouco entre regas"
+    },
+    {
+      "nome": "Carvão do jambu (Thecaphora spilanthes)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores incham, deformam e ficam cheias de um pó preto no lugar das sementes",
+      "prevencao_tratamento": "Corte e jogue no lixo, fora da composteira, toda flor com pó escuro assim que aparecer; não guarde sementes de plantas afetadas e use sementes de origem confiável"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos ramos e botões; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água ou esfregar com o dedo; se persistir, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% no fim da tarde a cada 5 dias, suspendendo a colheita por 7 dias após o neem"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer nos ramos; folhas amareladas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e lavagem do verso das folhas; em infestação, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos espalhados pelas folhas novas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo, quando estão lentos, e manter o vaso longe de hortaliças infestadas"
+    },
+    {
+      "nome": "Folhas duras e floração precoce por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta pequena que floresce cedo, com folhas miúdas, duras e amareladas nas bordas",
+      "prevencao_tratamento": "Manter o substrato sempre úmido e adubar com matéria orgânica; cortar as flores precoces e regar com regularidade para a planta voltar a soltar folhas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger o jambu do frio",
+      "mensagem": "O jambu é tropical: abaixo de 12 °C para de crescer, as folhas escurecem, e a geada mata a planta.",
+      "acao_requerida": "Levar o vaso para o local mais quente e ensolarado da casa, longe de vento; em noite com previsão abaixo de 8 °C, colocar para dentro ou cobrir com tecido leve, e espaçar as regas porque o substrato seca mais devagar"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "planta": {
+    "nome_comum": "Moreia-bicolor",
+    "nome_cientifico": "Dietes bicolor",
+    "descricao": "Planta perene de rizoma da família das íris, nativa da África do Sul, com touceira de folhas em leque e flores amarelo-claras com manchas marrons que abrem da primavera ao fim do verão. É muito resistente ao sol forte, ao vento e a esquecimentos de rega, o que a torna ótima para vasos de varanda e jardins de pouca manutenção.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 30 cm de diâmetro e 30 cm de profundidade, de cerâmica ou plástico, com vários furos no fundo; a touceira se alarga, então prefira vasos mais largos que altos",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; bem drenado para o rizoma não apodrecer",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda na mesma altura em que estava, sem enterrar a base do leque de folhas. Algumas pontas podem secar nos primeiros dias; a fase termina quando surgem folhas novas no centro do leque."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a touceira ganha novos leques ao redor do primeiro. Nesta fase a planta já tolera alguns dias sem água. Mudas pequenas podem não florescer no primeiro ano."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Touceira formada, com hastes florais que brotam da primavera ao fim do verão. Cada flor dura um ou dois dias, mas a mesma haste floresce de novo por várias temporadas, por isso não corte as hastes depois da florada. No inverno o crescimento desacelera e a rega diminui. A cada três anos a touceira enche o vaso e precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda curta, substrato seco por dias seguidos mata a muda. Não deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a moreia",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue só se estiver seco, até escorrer pelos furos. No verão acima de 30 °C, confira a cada 2 dias; no inverno, espace para a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a moreia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 xícara de húmus de minhoca) na borda do vaso de 15 L, longe da base das folhas, e regue em seguida. Pule a adubação que cair em junho ou julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra o leque e procure pontos brancos ou marrons presos às folhas (cochonilha), manchas ovais escuras com borda amarela e base das folhas mole ou com cheiro ruim. Retire folhas secas rente à base.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, separe o rizoma com faca limpa em pedaços com pelo menos 3 leques e raízes, corte as folhas pela metade e replante cada parte em substrato novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "A muda pegou?",
+      "mensagem": "Com um mês, a moreia deve estar mostrando folhas novas no centro do leque. A partir de agora a rega pode ser mais espaçada.",
+      "acao_requerida": "Conferir se há folhas novas e se a planta está firme ao puxar de leve pela base; se estiver mole na base, deixar o substrato secar antes da próxima rega"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base das folhas mole, escura e com cheiro ruim; leques amarelam e se soltam do rizoma com facilidade",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no prato e não enterrar a base do leque. Retire as partes podres, corte o rizoma até o tecido firme, deixe secar um dia e replante em substrato novo"
+    },
+    {
+      "nome": "Mancha foliar (Heterosporium, Didymellina)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas ovais marrom-acinzentadas com halo amarelo nas folhas, que se juntam e secam a ponta",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter o vaso ventilado. Corte as folhas manchadas e, se espalhar, aplique fungicida à base de cobre a cada 10 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodoados ou escamas marrons presas às folhas, principalmente na base do leque; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhados em álcool 70% diluído em água (1:1); em infestação maior, óleo de neem a 0,5% no fim da tarde a cada 7 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas nas bordas e rastro brilhante no vaso, com danos aparecendo de manhã",
+      "prevencao_tratamento": "Cate os bichos à noite ou de manhã cedo e mantenha o vaso afastado do chão úmido; uma faixa de borra de café ou casca de ovo moída na borda ajuda"
+    },
+    {
+      "nome": "Pontas secas e marrons",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas secas e marrons, sem manchas no meio da folha",
+      "prevencao_tratamento": "Geralmente é seca prolongada, excesso de adubo ou vento forte. Aumente a regularidade da rega no verão, não passe da dose de adubo e apare as pontas em diagonal com tesoura limpa"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "No frio a moreia cresce pouco e o substrato demora a secar. Rega em excesso agora é a principal causa de rizoma podre.",
+      "acao_requerida": "Espaçar a rega para a cada 7 a 10 dias, só com o substrato seco a 4 cm, e não adubar"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Limpeza antes da primavera",
+      "mensagem": "A florada começa em setembro. Tirar as folhas velhas agora abre espaço para os leques novos e melhora a ventilação.",
+      "acao_requerida": "Cortar rente à base as folhas secas ou manchadas, sem cortar as hastes florais antigas, que florescem de novo, e retomar a adubação normal"
+    }
+  ]
+}

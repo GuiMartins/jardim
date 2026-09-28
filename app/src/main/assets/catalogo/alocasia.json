@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Alocásia",
+    "nome_cientifico": "Alocasia macrorrhizos",
+    "descricao": "Folhagem tropical de folhas enormes em forma de coração ou escudo, conhecida como orelha-de-elefante-gigante. É a alocásia mais robusta e fácil de manter em vaso, e dá um ar de floresta à varanda. Toda a planta é tóxica se ingerida (cristais de oxalato de cálcio): mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica ou plástico grosso), com pelo menos 40 cm de diâmetro e 35 cm de profundidade para a planta adulta e furos no fundo. A muda pode começar num vaso de 25 cm e subir de tamanho no primeiro transplante.",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% terra vegetal, 30% húmus de minhoca, 20% casca de pinus fina ou fibra de coco, 10% perlita ou areia grossa; rico e úmido, mas que escorra a água em poucos segundos",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e de lugar: é normal perder a folha mais velha e as outras ficarem um pouco caídas na primeira semana. A adaptação terminou quando surge uma folha nova, que sai enrolada de dentro do pecíolo da anterior."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Com calor, a planta solta uma folha nova a cada 2 a 4 semanas, cada uma maior que a anterior, e o caule (rizoma) engrossa na base. Folhas pendendo para um lado indicam luz de um lado só: gire o vaso um quarto de volta a cada rega."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Em vaso, chega a 1,2 a 2 m com folhas de 50 a 80 cm. Cresce forte da primavera ao fim do verão, fica quase parada no inverno e pode perder algumas folhas no frio. Mantém 4 a 6 folhas ao mesmo tempo: quando nasce uma nova, a mais velha amarela e pode ser cortada rente ao caule. Brotos laterais (filhotes) na base podem ser separados no transplante para fazer novas mudas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a alocásia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. O substrato deve ficar úmido, nunca encharcado: o rizoma recém-plantado apodrece fácil. Não adube neste mês.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a alocásia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Acima de 30 °C, confira a cada 2 dias: as folhas grandes perdem muita água e secam pelas bordas se o vaso esvaziar. No inverno, só regue quando os 5 cm de cima estiverem secos (a cada 6 a 8 dias).",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a alocásia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, espalhe 3 colheres de sopa de húmus de minhoca na superfície de um vaso de 30 L ou dissolva NPK 10-10-10 (1 colher de chá por litro de água) e regue com o substrato já úmido. De junho a agosto, pule a adubação. Aproveite para cortar rente ao caule a folha mais velha se ela já estiver amarela.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e os pecíolos com luz: procure pontinhos claros na folha, teias finas (ácaro), bolinhas brancas de algodão (cochonilha) ou insetos agrupados. Passe um pano úmido nas duas faces das folhas para tirar a poeira, o que também afasta o ácaro.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o vaso e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera (setembro a novembro), tire a planta do vaso, solte as raízes de fora e troque todo o substrato. Passe para um vaso 5 a 10 cm mais largo, sem enterrar o caule mais fundo do que estava. Filhotes com raiz própria podem ser separados com faca limpa e plantados em vasos de 5 L. Use luvas: a seiva irrita a pele.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado: planta tóxica",
+      "mensagem": "Folhas, caule e seiva da alocásia têm cristais que queimam a boca e irritam a pele. Mastigar uma folha causa dor e inchaço em crianças, cães e gatos.",
+      "acao_requerida": "Colocar o vaso fora do alcance de crianças e animais e usar luvas ao cortar folhas ou mexer nas raízes"
+    },
+    {
+      "dia_disparo": 7,
+      "titulo": "A folha velha amarelou?",
+      "mensagem": "É comum a muda perder uma folha na primeira semana depois do plantio. Isso é adaptação, não doença, desde que o caule esteja firme.",
+      "acao_requerida": "Apertar a base do caule: se estiver firme, cortar só a folha amarela rente ao caule; se estiver mole ou escura, ver o item Podridão do rizoma"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Hora de começar a adubar",
+      "mensagem": "A muda já se firmou no vaso. A partir de agora ela precisa de nutrientes para formar folhas cada vez maiores.",
+      "acao_requerida": "Fazer a primeira adubação leve, com metade da dose indicada na tarefa de adubação"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma e das raízes (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Várias folhas amarelam ao mesmo tempo, a planta murcha mesmo com o substrato molhado, a base do caule fica mole, escura e com cheiro ruim",
+      "prevencao_tratamento": "Só regar com os 3 cm de cima secos, nunca deixar água no pratinho e reduzir a rega no inverno. Se acontecer, tire a planta do vaso, corte com faca limpa toda parte mole até achar tecido firme e branco, deixe secar 1 dia e replante em substrato novo e mais arejado"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros que depois ficam amareladas e opacas; teias finas no verso e entre folha e pecíolo, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Limpar as folhas com pano úmido toda semana e evitar lugar com ar-condicionado ou vento seco. Se aparecer, lavar o verso das folhas com jato de água e aplicar óleo de neem a 0,5% com algumas gotas de detergente neutro no fim da tarde, a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas de aspecto algodoado nas axilas das folhas, no pecíolo e no verso; folhas pegajosas e às vezes com fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestações maiores, óleo de neem a 0,5% a cada 7 dias até sumir"
+    },
+    {
+      "nome": "Mancha foliar bacteriana (Xanthomonas)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas, escuras, com halo amarelo, que crescem e se juntam; comum com folha molhada à noite",
+      "prevencao_tratamento": "Regar só o substrato e de manhã, sem molhar as folhas, e manter o ar circulando. Cortar as folhas atacadas com tesoura limpa com álcool e jogar no lixo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas grandes brancas, bege ou marrons e secas no meio da folha, do lado virado para o sol, surgindo depois de um dia quente",
+      "prevencao_tratamento": "Deixar só sol da manhã (até as 10 h) ou luz clara filtrada; as folhas queimadas não se recuperam e podem ser cortadas quando mais de metade estiver seca"
+    },
+    {
+      "nome": "Dano de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amolecem, escurecem e caem depois de noites abaixo de 10 °C; a planta para de crescer",
+      "prevencao_tratamento": "No inverno, levar o vaso para perto de uma parede ou para dentro de casa em noites frias e regar bem menos. Se perder todas as folhas, mantenha o rizoma quase seco: ele costuma brotar de novo na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: alocásia em repouso",
+      "mensagem": "Com o frio, a alocásia quase para de crescer e bebe muito menos água. Rega no ritmo do verão é a causa mais comum de rizoma podre nesta época.",
+      "acao_requerida": "Regar só com os 5 cm de cima do substrato secos, suspender a adubação e proteger a planta de noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: a alocásia acorda",
+      "mensagem": "Os dias mais quentes fazem a planta voltar a crescer. É o melhor momento para trocar de vaso ou separar filhotes, se o vaso já está cheio de raízes.",
+      "acao_requerida": "Voltar à rega normal, retomar a adubação mensal e cortar as folhas estragadas pelo frio"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: sol forte e ácaros",
+      "mensagem": "O calor seca o vaso rápido, o sol da tarde queima as folhas e o tempo seco favorece o ácaro-rajado.",
+      "acao_requerida": "Conferir a umidade do substrato a cada 2 dias, tirar a planta do sol depois das 10 h e limpar o verso das folhas com pano úmido toda semana"
+    }
+  ]
+}

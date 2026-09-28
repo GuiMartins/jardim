@@ -1,0 +1,173 @@
+{
+  "planta": {
+    "nome_comum": "Beldroega",
+    "nome_cientifico": "Portulaca oleracea",
+    "descricao": "Suculenta rasteira, uma PANC de folhas carnudas e levemente ácidas, rica em ômega-3, que se come crua em saladas ou refogada. Cresce rápido no calor, aguenta alguns dias sem água e dá a primeira colheita em pouco mais de um mês. Ela se espalha sozinha pelas sementes.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 90,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso largo e raso, com pelo menos 15 cm de profundidade e 25 cm de diâmetro, com furos no fundo; a planta se espalha rente ao substrato",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa, 20% húmus de minhoca; bem drenado, sem retenção excessiva de água",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "As sementes são minúsculas e pretas: espalhe-as sobre o substrato e só pressione com a mão, sem cobrir, porque precisam de luz para germinar. Com o substrato acima de 20 °C, as plântulas avermelhadas surgem entre o 5º e o 10º dia."
+    },
+    {
+      "fase_id": "crescimento_inicial",
+      "nome": "Crescimento Inicial",
+      "dia_inicio": 11,
+      "dia_fim": 30,
+      "descricao": "Surgem as folhas carnudas em forma de gota e os caules avermelhados começam a se ramificar rente ao substrato. A fase termina quando os ramos passam de 10 cm."
+    },
+    {
+      "fase_id": "colheita_folhas",
+      "nome": "Colheita de Ramos",
+      "dia_inicio": 31,
+      "dia_fim": 75,
+      "descricao": "Os ramos tenros estão prontos para colher e rebrotam a cada corte. Pequenas flores amarelas abrem só pela manhã de sol; quanto mais você colhe, mais a planta demora a florescer e mais tenras ficam as folhas."
+    },
+    {
+      "fase_id": "florescimento_sementes",
+      "nome": "Florescimento e Sementes",
+      "dia_inicio": 76,
+      "dia_fim": 90,
+      "descricao": "A floração se generaliza, os caules endurecem e as folhas ficam menores e mais ácidas. As cápsulas se abrem como uma tampinha e soltam sementes que germinam no próprio vaso na estação seguinte."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Borrife a superfície pela manhã até ela ficar escura de úmida. Não use regador: o jato leva as sementes, que estão descobertas. Em dia acima de 30 °C, borrife também no fim da tarde.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a beldroega",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos; se estiver úmido, espere. Em semana de chuva ou nublada, espace para 5 dias: o excesso de água apodrece o colo antes da falta de água causar dano.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar com húmus",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por vaso de 3 L, sem encostar nos caules, e regue em seguida. Evite adubo químico rico em nitrogênio, que deixa as folhas aguadas e sem sabor.",
+      "critica": false
+    },
+    {
+      "id": "colheita_ramos",
+      "titulo": "Colher ramos de beldroega",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Corte com tesoura as pontas dos ramos, de 5 a 10 cm, deixando pelo menos 3 pares de folhas na base de cada ramo para rebrotar. Colha de manhã, quando as folhas estão mais crocantes, e corte os botões florais que aparecerem.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Procure colônias de insetos nas pontas dos ramos, trilhas esbranquiçadas dentro das folhas, bolhas brancas no verso e caules escuros ou moles rente ao substrato.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "As sementes são tão pequenas que costumam nascer amontoadas. Plantas apertadas ficam finas e pegam fungo.",
+      "acao_requerida": "Deixar uma planta a cada 10 cm, cortando as outras rente ao substrato; as plântulas retiradas podem ir para a salada"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Primeira colheita",
+      "mensagem": "Os ramos já passaram de 10 cm e estão tenros.",
+      "acao_requerida": "Colher as pontas dos ramos maiores, deixando a base com folhas para rebrotar"
+    },
+    {
+      "dia_disparo": 76,
+      "titulo": "Beldroega começou a sementear",
+      "mensagem": "A planta está no fim do ciclo: os caules endurecem e as cápsulas vão espalhar sementes pelo vaso e pelos vasos vizinhos.",
+      "acao_requerida": "Fazer uma colheita grande dos ramos ainda tenros e decidir: arrancar a planta antes de as cápsulas abrirem ou deixar algumas sementes caírem no vaso para ela voltar sozinha na primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Caules escuros, moles e aquosos rente ao substrato; a planta tomba mesmo com o substrato úmido",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, garantir furos desobstruídos e areia no substrato; retirar as plantas afetadas e deixar o vaso secar"
+    },
+    {
+      "nome": "Ferrugem-branca (Albugo portulacae)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amareladas na face de cima das folhas e bolhas brancas pulverulentas no verso; folhas e ramos deformados",
+      "prevencao_tratamento": "Evitar molhar as folhas e manter espaçamento para ventilar; cortar e descartar no lixo os ramos atacados, sem compostar"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos ou verdes nas pontas dos ramos e nos botões; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água ou cortar as pontas infestadas; se persistir, calda de sabão neutro (1 colher de sopa por litro) e esperar 7 dias e lavar bem antes de consumir"
+    },
+    {
+      "nome": "Minadora-das-folhas (Liriomyza spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Trilhas sinuosas esbranquiçadas dentro das folhas carnudas",
+      "prevencao_tratamento": "Retirar as folhas minadas assim que aparecerem; armadilha adesiva amarela perto do vaso"
+    },
+    {
+      "nome": "Estiolamento por pouca luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos, finos e verde-claros, com folhas pequenas e espaçadas, sem o avermelhado do caule",
+      "prevencao_tratamento": "Levar o vaso para um lugar com pelo menos 4 horas de sol direto e colher as pontas estioladas para a planta rebrotar mais compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Frio chegando",
+      "mensagem": "A beldroega para de crescer abaixo de 15 °C e morre com a primeira geada.",
+      "acao_requerida": "Colher todos os ramos tenros antes das noites frias e, em noite com previsão de geada, levar o vaso para perto de uma parede ou para baixo de uma cobertura"
+    }
+  ]
+}

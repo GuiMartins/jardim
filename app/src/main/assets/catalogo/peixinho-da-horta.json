@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Peixinho-da-horta",
+    "nome_cientifico": "Stachys byzantina",
+    "descricao": "Planta perene de folhas grossas, prateadas e aveludadas, uma PANC muito querida no Brasil: empanada e frita, a folha lembra um peixinho. É rústica, gosta de sol e de pouca água, e dá colheitas de folhas o ano todo em vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira larga, com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo. De preferência de barro, que seca mais rápido. A touceira se espalha para os lados",
+    "volume_minimo_litros": 6,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca; bem drenado, porque a raiz apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 20,
+      "descricao": "A muda firma a raiz no vaso novo. Pode perder uma ou duas folhas de baixo, o que é normal. A fase termina quando saem folhas novas e prateadas do centro da roseta."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 21,
+      "dia_fim": 60,
+      "descricao": "A roseta cresce e começam a sair brotos laterais, que formam a touceira. As folhas ficam maiores e mais grossas. Quando a planta tiver umas 10 folhas grandes, já aguenta as colheitas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Touceira formada, que dá folhas o ano todo. Na primavera e no verão sobem hastes com flores lilás, que puxam energia das folhas. No verão chuvoso, as folhas de baixo apodrecem com facilidade. No inverno, cresce mais devagar e pede menos água. A cada dois anos, o centro da touceira fica ralo e é hora de dividir."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de peixinho",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 20,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue o solo em volta da muda até escorrer pelos furos, sem molhar as folhas. Esvazie o pratinho em seguida.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o peixinho",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e regue só se estiver seco nessa profundidade. Molhe o solo, não as folhas peludas, até escorrer pelos furos. No inverno, espace para 6 ou 7 dias. Folhas moles e escuras na base são sinal de água demais.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o peixinho",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de farinha de ossos por vaso de 6 L, na borda do vaso, longe da roseta, e regue. Adubo em excesso deixa as folhas moles e menos saborosas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de peixinho",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura, rente à base, as folhas grandes e firmes de fora da roseta. Deixe sempre pelo menos 2/3 das folhas e o miolo intacto. Lave e seque bem antes de empanar.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas_velhas",
+      "titulo": "Tirar folhas secas ou podres da base",
+      "tipo": "PODA",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste a roseta e retire as folhas de baixo que estão amarelas, secas ou escuras e moles, encostadas no substrato. Elas retêm umidade e começam a podridão da coroa.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o peixinho",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure pó branco sobre as folhas, manchas marrons, folhas roídas com rastro brilhante (lesma) e a base da roseta escura ou com cheiro de mofo.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, separe com as mãos ou com uma faca limpa as rosetas laterais com raiz e descarte o centro velho e ralo. Replante as melhores em substrato novo e regue. De preferência no outono ou no início da primavera.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 5,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Mudas vindas de viveiro costumam estar acostumadas à meia-sombra. No sol forte e de uma vez, as folhas queimam.",
+      "acao_requerida": "Se a muda estava na sombra, deixe-a 2 horas por dia no sol direto e aumente aos poucos até 6 horas ao longo da semana"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "A roseta já deve ter folhas grandes e grossas, prontas para o peixinho empanado.",
+      "acao_requerida": "Colher só as 3 ou 4 maiores folhas de fora e deixar o resto para a planta continuar crescendo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da coroa e da raiz (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas da base escuras, moles e com cheiro ruim; o centro da roseta amolece e a planta tomba",
+      "prevencao_tratamento": "Regar só com o substrato seco, nunca deixar água no pratinho e não molhar as folhas. Retire as partes podres, deixe secar e replante as rosetas sadias em substrato novo e arenoso"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que ficam amareladas e secam",
+      "prevencao_tratamento": "Sol pleno e boa ventilação; retire as folhas atacadas e pulverize leite diluído em água (1:9) ou bicarbonato de sódio a 0,5% no fim da tarde, a cada 7 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas nas bordas, com rastro brilhante, principalmente depois de noites úmidas",
+      "prevencao_tratamento": "Catar à noite com lanterna; espalhar casca de ovo triturada ou areia grossa em volta da roseta e levantar o vaso do chão"
+    },
+    {
+      "nome": "Estiolamento e folha verde-escura",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas finas, compridas e pouco prateadas; a roseta se abre e fica rala",
+      "prevencao_tratamento": "Falta de sol. Mude o vaso para um lugar com pelo menos 4 a 6 horas de sol direto"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Hastes de flor subindo",
+      "mensagem": "Na primavera, o peixinho solta hastes altas com flores lilás. Elas puxam energia da planta e as folhas ficam menores.",
+      "acao_requerida": "Cortar as hastes florais rente à roseta assim que aparecerem, a não ser que você queira as flores para as abelhas"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão chuvoso: cuidado com a podridão",
+      "mensagem": "Calor e chuva frequente são a principal causa de morte do peixinho em vaso: as folhas peludas seguram a umidade e a base apodrece.",
+      "acao_requerida": "Tirar o vaso da chuva direta, esvaziar o pratinho após cada chuva e remover toda folha escura da base"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "No frio, a planta cresce devagar e o substrato demora a secar.",
+      "acao_requerida": "Espaçar a rega para quando os 3 primeiros centímetros do substrato estiverem secos, em geral a cada 6 ou 7 dias, e suspender a adubação até setembro"
+    }
+  ]
+}

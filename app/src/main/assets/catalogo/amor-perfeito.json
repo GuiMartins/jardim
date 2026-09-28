@@ -1,0 +1,179 @@
+{
+  "planta": {
+    "nome_comum": "Amor-perfeito",
+    "nome_cientifico": "Viola × wittrockiana",
+    "descricao": "Flor de clima frio, com pétalas aveludadas em quase todas as cores e o típico 'rostinho' no centro; floresce justamente no outono e no inverno, quando o jardim fica mais vazio. É perene de vida curta, mas no Brasil o calor da primavera a esgota, então em vaso é cultivada como anual, a partir de mudas compradas no outono.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 15 cm de profundidade e furos no fundo; numa jardineira de 60 cm cabem 4 mudas, a 15 cm uma da outra",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% vermiculita ou areia grossa; fofo, rico em matéria orgânica e sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação da Muda",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Plante a muda na mesma altura em que estava no copinho, sem enterrar o colo. Nos primeiros dias as folhas podem murchar levemente no sol forte do meio-dia; a fase termina quando surgem folhas novas no centro e a planta não murcha mais."
+    },
+    {
+      "fase_id": "enraizamento_floracao",
+      "nome": "Enraizamento e Primeiras Flores",
+      "dia_inicio": 15,
+      "dia_fim": 60,
+      "descricao": "As raízes ocupam o vaso e a planta se alarga. Os botões se multiplicam e as flores ficam maiores. Se os ramos ficarem compridos e com poucas folhas, falta sol."
+    },
+    {
+      "fase_id": "plena_floracao",
+      "nome": "Plena Floração",
+      "dia_inicio": 61,
+      "dia_fim": 120,
+      "descricao": "Auge do inverno e da florada: a planta fica coberta de flores se as murchas forem retiradas com frequência. Folhas amareladas na base indicam falta de adubo ou excesso de água."
+    },
+    {
+      "fase_id": "declinio",
+      "nome": "Declínio com o Calor",
+      "dia_inicio": 121,
+      "dia_fim": 150,
+      "descricao": "Com dias mais quentes e longos, os ramos se alongam, as flores diminuem e a planta tomba. É o fim natural do ciclo em vaso: deixe algumas flores formarem cápsulas se quiser sementes e depois substitua a planta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Pela manhã, enfie o dedo 1 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, sem molhar as flores. O torrão da muda é pequeno e seca em um dia de sol.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o amor-perfeito",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue na base pela manhã até escorrer pelos furos. Em dias frios e nublados o vaso pode ficar 3 a 4 dias sem precisar; acima de 25 °C, confira todo dia. Não deixe água no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 135,
+      "instrucoes": "Dissolva 1 g (meia colher de chá rasa) de NPK 4-14-8 ou adubo para floração em 1 L de água e regue com ele o substrato já úmido. Alternativa orgânica: 1 colher de sopa de húmus de minhoca por vaso, espalhada longe do caule.",
+      "critica": false
+    },
+    {
+      "id": "retirar_flores_murchas",
+      "titulo": "Tirar as flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Corte com a unha ou tesoura cada flor murcha junto com o cabinho, rente à folhagem. Sem isso a planta forma sementes e para de florir em poucas semanas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Olhe o verso das folhas e os botões em busca de pulgões, teias finas ou manchas; procure trilhas prateadas de lesma e flores roídas, e veja se há mofo cinzento em flores velhas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora de rejuvenescer os ramos longos",
+      "mensagem": "Ramos compridos e com poucas folhas florescem pouco e tombam. Um corte leve estimula brotos novos na base.",
+      "acao_requerida": "Cortar pela metade os ramos mais compridos e desfolhados, logo acima de um par de folhas, e manter os ramos compactos"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "O fim do ciclo se aproxima",
+      "mensagem": "Com o calor chegando, a planta vai perder vigor nas próximas semanas. Isso é normal no amor-perfeito cultivado em vaso.",
+      "acao_requerida": "Se quiser sementes, parar de tirar as flores murchas de 2 ou 3 ramos e colher as cápsulas quando ficarem bege e virarem para cima; planejar a substituição da planta"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; base do caule escura e mole; raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, esvaziar o pratinho e não enterrar o colo da muda. Planta com o colo apodrecido não se recupera: descarte e troque o substrato"
+    },
+    {
+      "nome": "Mofo cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores e folhas com manchas encharcadas cobertas por um pó cinza, comum em tempo frio e úmido",
+      "prevencao_tratamento": "Retirar flores murchas com frequência, regar na base sem molhar a folhagem e deixar o vaso em local ventilado; remover e descartar as partes afetadas"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco na face de cima das folhas, que depois amarelam",
+      "prevencao_tratamento": "Boa ventilação e sol; no início, pulverizar leite diluído em água (1 parte para 9) ou bicarbonato de sódio a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Insetos verdes ou pretos agrupados nos botões e no verso das folhas; brotos deformados e pegajosos",
+      "prevencao_tratamento": "Jato de água ou retirada com algodão; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e pétalas roídas durante a noite; trilhas prateadas no vaso",
+      "prevencao_tratamento": "Catar à noite ou cedo; colocar casca de ovo moída ou borra de café em volta do caule e manter o vaso elevado do chão"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso, comum no fim do ciclo, com calor e ar seco",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento e florada pobre",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e fracos, folhas espaçadas, flores pequenas e poucas",
+      "prevencao_tratamento": "Levar o vaso para pelo menos 4 horas de sol direto, de preferência pela manhã; cortar os ramos longos pela metade para rebrotar compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Proteja do calor da tarde",
+      "mensagem": "O amor-perfeito sofre acima de 25 °C: murcha à tarde, alonga os ramos e para de florir.",
+      "acao_requerida": "Deixar o vaso com sol só pela manhã e sombra à tarde, e conferir a umidade do substrato todo dia"
+    }
+  ]
+}

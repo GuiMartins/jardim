@@ -1,0 +1,196 @@
+{
+  "planta": {
+    "nome_comum": "Malvavisco",
+    "nome_cientifico": "Malvaviscus penduliflorus",
+    "descricao": "Arbusto da família das malvas com flores vermelhas pendentes em forma de brinco que nunca se abrem por completo e florescem quase o ano todo. É rústico, cresce rápido, aceita poda forte e atrai beija-flores. Por isso é uma boa escolha para varanda ensolarada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo. Pode ser vaso pesado ou com base larga, porque o arbusto fica alto e tomba com o vento",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; misture 1 colher de sopa de farinha de ossos por 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Depois do transplante para o vaso definitivo, a muda pode derrubar algumas folhas e botões. Deixe-a nas primeiras duas semanas em local com sol só de manhã. A adaptação terminou quando aparecem brotos novos e verde-claros nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Com as raízes firmes no vaso, a planta cresce rápido, lança ramos novos e volta a florir. As pontas despontadas se ramificam em dois ou três galhos. Se ela ficar comprida e rala, o sol está sendo pouco."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto cheio que floresce quase sem parar da primavera ao outono. No inverno do Centro-Sul, cresce devagar e floresce menos. A poda do fim do inverno controla a altura (em vaso, entre 1,2 e 1,8 m) e renova a floração. As raízes costumam tomar o vaso em cerca de dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de malvavisco",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até a água escorrer pelos furos. Com as raízes ainda curtas, a muda não aguenta ficar seca. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o malvavisco",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, pode ser preciso regar a cada 2 dias. No inverno, a cada 5 ou 6.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o malvavisco",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de farinha de ossos mais 1 punhado de húmus) pela borda do vaso de 30 L, sem encostar no caule, e regue em seguida. Em junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "despontar_ramos",
+      "titulo": "Despontar os ramos compridos",
+      "tipo": "PODA",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 120,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte 5 a 10 cm da ponta dos ramos que passaram da copa, logo acima de um par de folhas. Isso deixa o arbusto cheio e aumenta o número de pontas que dão flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as pontas dos ramos. Procure algodãozinho branco (cochonilha), insetos agrupados (pulgão), mosquinhas brancas que voam ao balançar a planta ou folhas pontilhadas de amarelo com teias finas (ácaro).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato ou o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas no fundo e replante com substrato novo, no mesmo vaso ou num 10 cm maior. Depois, pode a copa em um terço para compensar as raízes cortadas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de ir para o sol pleno",
+      "mensagem": "A muda já teve duas semanas para se acostumar ao vaso. Com mais sol, ela floresce mais.",
+      "acao_requerida": "Mudar o vaso para um local com pelo menos 6 horas de sol direto por dia"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Os ramos novos já estão firmes. Despontar agora faz a planta ramificar desde a base, em vez de crescer como uma vara só.",
+      "acao_requerida": "Cortar a ponta de cada ramo principal, 2 cm acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas que caem mesmo com o substrato úmido, planta murcha que não se recupera com rega, base do caule escura e raízes marrons e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no pratinho. Se aparecer, tire a planta do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas axilas das folhas e nos botões; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%. Nas infestações, aplique óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas novas e nos botões, que ficam deformados e caem",
+      "prevencao_tratamento": "Jato de água forte nas pontas. Se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao balançar a planta; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso, comum em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, calda de enxofre ou óleo de neem no verso a cada 5 dias"
+    },
+    {
+      "nome": "Queda de botões por estresse",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir, logo depois de mudar a planta de lugar, de uma rega esquecida ou de uma onda de frio",
+      "prevencao_tratamento": "Manter a rega regular, evitar mudar o vaso de lugar com frequência e proteger do vento frio; a floração volta sozinha em algumas semanas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "No frio, o malvavisco quase para de crescer e o substrato demora mais para secar. Geada queima as folhas e as pontas dos ramos.",
+      "acao_requerida": "Espaçar a rega (só com o substrato seco a 3 cm) e, em noite com previsão abaixo de 5 °C, levar o vaso para perto de uma parede ou cobrir com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual do malvavisco",
+      "mensagem": "No fim do inverno, a planta está pronta para rebrotar. Podar agora renova os ramos e garante uma floração cheia na primavera.",
+      "acao_requerida": "Cortar todos os ramos em um terço a metade do comprimento, logo acima de uma gema, e retirar galhos secos, finos ou cruzados"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: conferir a rega com mais frequência",
+      "mensagem": "Com calor e sol forte, o vaso de 30 L pode secar em 1 ou 2 dias. A planta murcha e derruba os botões.",
+      "acao_requerida": "Conferir o substrato todo dia no fim da tarde e regar sempre que os 3 cm de cima estiverem secos"
+    }
+  ]
+}

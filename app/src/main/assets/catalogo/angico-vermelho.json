@@ -1,0 +1,209 @@
+{
+  "planta": {
+    "nome_comum": "Angico-vermelho",
+    "nome_cientifico": "Anadenanthera macrocarpa (Benth.) Brenan (sin. Anadenanthera colubrina var. cebil)",
+    "descricao": "Árvore nativa do Cerrado e da Mata Atlântica, de crescimento rápido, folhas bipinadas delicadas e casca escura e rugosa, que na natureza passa de 15 m. Em vaso fica como arvoreta de 1,5 a 3 m, ou como pré-bonsai, contida por poda e pelo tamanho do recipiente. As sementes são tóxicas se ingeridas: mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Germinar em copos ou tubetes de 300 ml com furo; vaso definitivo de plástico grosso ou cerâmica com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo e pesado o bastante para não tombar com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa lavada, 25% húmus de minhoca ou composto curtido; na germinação, 1 parte de areia para 1 de substrato comercial",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 12,
+      "descricao": "As sementes não têm dormência e perdem a viabilidade em poucos meses: use sementes do ano e não precisa escarificar. Enterre 2 sementes por copo a 1 cm de profundidade. A germinação ocorre entre o 3º e o 10º dia, com o caulinho saindo curvado e erguendo as duas folhas redondas da semente."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 13,
+      "dia_fim": 90,
+      "descricao": "Surgem as folhas compostas, finamente divididas, que se fecham ao anoitecer. A muda cresce rápido e pode chegar a 20–30 cm. A fase termina quando as raízes aparecem pelo furo do copo: é a hora de passar para o vaso definitivo."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Arvoreta",
+      "dia_inicio": 91,
+      "dia_fim": 365,
+      "descricao": "O caule engrossa e lenhifica, fica marrom e começa a ramificar. Pode passar de 1 m no primeiro ano. No inverno seco perde parte das folhas, o que é normal; confira se os ramos continuam verdes por dentro raspando de leve a casca com a unha."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: folhagem cheia de outubro a maio, queda parcial ou total das folhas de junho a agosto e rebrota com as primeiras chuvas de setembro e outubro. Em vaso, a floração (bolinhas brancas perfumadas) e as vagens achatadas são raras antes de 5 a 8 anos. O tamanho é controlado pela poda de inverno e pela troca de substrato a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar as sementes do angico",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 12,
+      "instrucoes": "Regue devagar com regador de bico fino ou borrifador até o substrato ficar úmido em todo o copo, sem poça. A superfície não pode secar nem formar crosta até as plântulas aparecerem.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar a muda de angico",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelo furo. Copo pequeno no sol seca rápido: acima de 30 °C, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar o angico",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 4 a 6 L num vaso de 40 L). No verão quente, confira a cada 2 dias. De junho a agosto, sem folhas, espace para cada 8 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o angico",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca ou composto sobre o substrato, sem encostar no caule, e regue em seguida. Na muda em copo, use só 1 colher de chá. É leguminosa e fixa parte do nitrogênio: dispense adubo químico nitrogenado. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o angico",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folhas cortadas em meia-lua ou ramos pelados de um dia para o outro (formiga-cortadeira), carocinhos brancos ou marrons nos ramos e no verso das folhas (cochonilha) e serragem saindo de furos no tronco (broca).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno (agosto). Tire o torrão do vaso, corte com tesoura limpa cerca de 1/4 das raízes da periferia e as que enrolam no fundo, e volte ao mesmo vaso com substrato novo, ou passe a um vaso 10 cm maior se quiser que a árvore cresça. Regue bem e deixe 1 semana na meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Deixe uma muda por copo",
+      "mensagem": "Se as duas sementes germinaram, elas vão disputar raiz e luz no copo pequeno.",
+      "acao_requerida": "Cortar rente ao substrato, com tesoura, a muda mais fraca de cada copo, sem puxar para não arrancar a raiz da outra"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Endurecer a muda ao sol",
+      "mensagem": "Se as mudas germinaram na meia-sombra, precisam se acostumar ao sol pleno antes de ir para o vaso definitivo.",
+      "acao_requerida": "Deixar a muda 2 horas no sol direto a mais a cada 3 dias, até ficar o dia todo sem murchar"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "A muda de angico cresce rápido e a raiz principal já deve estar enrolando no fundo do copo.",
+      "acao_requerida": "Passar a muda com o torrão inteiro para o vaso de 40 L, na mesma altura do colo em que estava, regar bem e deixar 1 semana na meia-sombra"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Instalar um tutor",
+      "mensagem": "O caule fino da arvoreta ainda enverga com vento e com o peso da copa.",
+      "acao_requerida": "Cravar uma estaca de bambu a 5 cm do caule e amarrar com fita macia em forma de 8, sem apertar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora do inverno, substrato sempre úmido e com cheiro azedo, colo do caule escuro e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e reduzir muito a rega no inverno; se aparecer, tirar do vaso, cortar as raízes escuras e replantar em substrato novo e arenoso"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas murcham e caem com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Substrato novo com areia, sem encharcar na germinação e com boa ventilação; retire as plântulas afetadas"
+    },
+    {
+      "nome": "Formiga-cortadeira (Atta, Acromyrmex)",
+      "tipo": "PRAGA",
+      "sintomas": "Recortes em meia-lua nas folhas e muda desfolhada inteira em uma noite",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e aplicar isca granulada formicida longe do vaso; como barreira, envolver o caule com fita adesiva dupla-face ou cone de plástico com graxa"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, cerosos ou marrons presos aos ramos novos e ao verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova com álcool 70%; em infestação maior, óleo mineral ou de neem a 0,5% no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Broca-do-tronco",
+      "tipo": "PRAGA",
+      "sintomas": "Furos no tronco ou nos ramos com serragem saindo e ramos que secam de cima para baixo",
+      "prevencao_tratamento": "Cortar o ramo atacado abaixo do furo; no tronco, introduzir um arame fino no furo para matar a larva e selar com pasta cicatrizante"
+    },
+    {
+      "nome": "Queda de folhas na seca",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem de junho a agosto, com os ramos ainda verdes e flexíveis por dentro",
+      "prevencao_tratamento": "É o comportamento natural da espécie; não aumente a rega nem adube para compensar. A rebrota vem em setembro ou outubro"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Angico entrando no repouso",
+      "mensagem": "Com o frio e a seca, o angico perde as folhas e para de crescer. Substrato encharcado sem folhas para transpirar apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para cada 8 a 10 dias, conferindo com o dedo, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Sem folhas, dá para ver a estrutura dos galhos, e a poda agora rebrota forte com as chuvas.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que passam da altura desejada, logo acima de uma gema, com tesoura limpa; em ramos de mais de 1 cm, passar pasta cicatrizante"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Rebrota do angico",
+      "mensagem": "Com o calor e as primeiras chuvas, os brotos novos aparecem e a árvore volta a consumir água e nutrientes.",
+      "acao_requerida": "Voltar a regar a cada 4 dias, conferindo com o dedo, e retomar a adubação com húmus"
+    }
+  ]
+}

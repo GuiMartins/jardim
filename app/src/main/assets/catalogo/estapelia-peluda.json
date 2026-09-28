@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Estapélia-peluda",
+    "nome_cientifico": "Stapelia hirsuta",
+    "descricao": "Suculenta sul-africana de caules verdes quadrangulares e aveludados, sem espinhos, que forma touceiras baixas. É cultivada pelas flores grandes, em forma de estrela, roxas com listras creme e cobertas de pelos. Elas cheiram a carniça para atrair moscas polinizadoras. Aguenta bem a falta d'água e é fácil de multiplicar por pedaços de caule.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro largo e raso, com 15 a 20 cm de diâmetro, 10 a 12 cm de profundidade e furo no fundo. A raiz é curta, e o barro ajuda o substrato a secar entre as regas",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% areia grossa lavada, 30% terra vegetal, 30% perlita ou pedrisco fino (brita 0); sem húmus em excesso, para escorrer toda a água em segundos",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Enterre 1 a 2 cm do caule já cicatrizado (seco ao ar por 2 a 3 dias) no substrato seco e deixe à luz clara sem sol forte. O caule pode enrugar um pouco, e isso é normal. A fase termina quando, ao puxar de leve, o caule resiste, sinal de que as raízes já pegaram."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "O caule volta a ficar firme e surgem brotos novos na base. Vá passando para o sol direto aos poucos, uma hora a mais por semana. A planta está estabelecida quando tem 3 ou mais caules novos e firmes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "A touceira cresce na primavera e no verão. De janeiro a maio saem botões inflados como balões na base dos caules, que abrem em estrelas peludas de 8 a 12 cm. No inverno a planta quase para e pede pouquíssima água. Com os anos, os caules do centro envelhecem e secam, e é hora de renovar a touceira."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Rega leve da estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Molhe só em volta do caule com meio copo d'água (cerca de 100 ml por vaso de 1,5 L), o bastante para umedecer os 2 primeiros centímetros. Se o substrato ainda estiver úmido ao toque, pule esta rega: sem raiz, excesso de água apodrece a base.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a estapélia",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de madeira até o fundo do vaso: se sair seco e limpo, regue até escorrer pelo furo e esvazie o pratinho. Se sair úmido, não regue. Com mais de 30 °C e sol pleno, confira a cada 7 dias. De maio a agosto, espace para a cada 20 a 30 dias. Caules murchos e enrugados no verão pedem água.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a estapélia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dilua adubo líquido para cactos e suculentas (ou NPK 10-10-10) na metade da dose do rótulo e aplique no lugar de uma rega, com o substrato já úmido. De abril a agosto, não adube: a planta está parada e o sal se acumula na raiz.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar caules e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os caules e olhe a base, os sulcos e o encontro com o substrato. Procure algodãozinho branco (cochonilha), manchas pretas e moles ou caules que afundam ao toque.",
+      "critica": false
+    },
+    {
+      "id": "renovar_touceira",
+      "titulo": "Renovar a touceira e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso com o substrato seco, descarte os caules velhos e lenhosos do centro e replante só os caules firmes da borda em substrato novo. Espere 7 dias para a primeira rega.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 8,
+      "titulo": "Primeira rega da estaca",
+      "mensagem": "Na primeira semana, a estaca ficou no seco para o corte terminar de cicatrizar e começar a soltar raízes.",
+      "acao_requerida": "Fazer a primeira rega leve, só umedecendo os 2 primeiros centímetros do substrato"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A estaca enraizou?",
+      "mensagem": "Um mês depois do plantio, as raízes já devem segurar o caule.",
+      "acao_requerida": "Puxar o caule de leve: se resistir, começar a acostumar ao sol; se soltar, conferir se a base está firme e seca e replantar em substrato seco"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Pronta para a vida adulta",
+      "mensagem": "A touceira está estabelecida e, a partir do próximo verão, pode dar botões.",
+      "acao_requerida": "Deixar em local com pelo menos 4 a 5 horas de sol direto, de preferência pela manhã"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do caule e da raiz (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Caules que escurecem na base, ficam moles e translúcidos e tombam; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo e nunca deixar água no pratinho. Corte os caules sadios acima da parte podre, deixe cicatrizar por 3 dias e replante em substrato novo e seco. Descarte o resto"
+    },
+    {
+      "nome": "Cochonilha-farinhenta (Pseudococcidae)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão na base dos caules e nos sulcos; caules amarelados e com crescimento parado",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%. Se voltar, pulverize óleo de neem a 0,5% no fim da tarde a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Cochonilha-de-raiz (Rhizoecus)",
+      "tipo": "PRAGA",
+      "sintomas": "Planta murcha mesmo com rega em dia; pó branco nas raízes e na parede do vaso ao desenvassar",
+      "prevencao_tratamento": "Desenvasse, lave as raízes, corte as muito atacadas, deixe secar por 2 dias e replante em vaso limpo com substrato novo"
+    },
+    {
+      "nome": "Larvas de mosca nas flores",
+      "tipo": "PRAGA",
+      "sintomas": "Ovos brancos ou larvas pequenas no centro das flores, que as moscas-varejeiras depositam enganadas pelo cheiro",
+      "prevencao_tratamento": "As larvas não se alimentam da planta e morrem sem comida. Retire as flores murchas antes que apodreçam sobre os caules"
+    },
+    {
+      "nome": "Caules avermelhados (estresse de sol ou frio)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules que ficam roxos ou avermelhados, às vezes com manchas palha secas do lado virado para o sol",
+      "prevencao_tratamento": "Vermelho sem manchas é defesa da planta e não faz mal. Com manchas secas, proteja do sol da tarde no verão e acostume ao sol forte aos poucos"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules finos, compridos, verde-claros e tombando para o lado da luz; sem flores",
+      "prevencao_tratamento": "Leve para um lugar com pelo menos 4 horas de sol direto. As pontas estioladas não voltam: corte-as e use como estaca"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        1
+      ],
+      "titulo": "Época de botões",
+      "mensagem": "De janeiro a maio saem botões inflados na base dos caules. As flores abertas duram poucos dias e têm cheiro de carniça.",
+      "acao_requerida": "Manter a rega do verão sem falhas longas e, se o cheiro incomodar, deixar o vaso longe de janelas enquanto houver flor aberta"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Espaçar a rega para o inverno",
+      "mensagem": "Com os dias mais frios e curtos, a estapélia desacelera e o substrato demora mais a secar.",
+      "acao_requerida": "Passar a regar a cada 20 a 30 dias, sempre com o substrato seco até o fundo, e suspender o adubo até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 5 °C, e principalmente com o substrato úmido, os caules se danificam e apodrecem.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para dentro ou para baixo de uma cobertura, e não regar na véspera de frio"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento e solta brotos novos.",
+      "acao_requerida": "Voltar à rega a cada 10 dias com o teste do palito e retomar a adubação mensal"
+    }
+  ]
+}

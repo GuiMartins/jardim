@@ -1,0 +1,187 @@
+{
+  "planta": {
+    "nome_comum": "Caquizeiro",
+    "nome_cientifico": "Diospyros kaki",
+    "descricao": "Árvore frutífera de folhas caducas, de origem asiática, que dá caquis doces no outono e cores fortes nas folhas antes da queda. Em vaso grande, com muda enxertada e poda anual, fica com 2 a 2,5 m e produz. As cultivares mais fáceis de achar são a Fuyu (doce, come-se firme) e a Rama Forte (taninosa, precisa amadurecer bem mole).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou meia-bombona com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo e apoiado em pés ou num suporte com rodinhas, para a água escorrer",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa e 10% casca de pinus fina ou perlita, mais 200 g de farinha de ossos a cada 60 L; solto, sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 60,
+      "descricao": "Plante a muda com o ponto de enxerto (o calombo no caule) 5 cm acima do substrato, sem enterrar. Se for plantada no inverno, ela fica parada, sem folhas, e isso é normal. A adaptação terminou quando as gemas incham e soltam folhas verde-claras em toda a copa. Raspe de leve a casca de um galho seco: se estiver verde por baixo, está viva."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da copa",
+      "dia_inicio": 61,
+      "dia_fim": 730,
+      "descricao": "Os ramos crescem forte na primavera e no verão. É a fase de dar forma: 3 ou 4 galhos principais bem distribuídos, abertos como um vaso. Flores podem aparecer no segundo ano, mas a muda costuma derrubar quase todos os frutinhos; deixe no máximo 5. A fase termina quando o tronco passa de 3 cm de diâmetro e a copa já tem estrutura."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota e floresce em setembro e outubro, derruba parte dos frutos por conta própria em novembro, os caquis engordam no verão e amadurecem de março a maio. As folhas ficam laranja e caem em maio e junho, e a árvore dorme até agosto. Num vaso de 60 a 100 L, uma planta adulta dá de 15 a 40 frutos por safra."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_caquizeiro",
+      "titulo": "Regar o caquizeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato perto da borda. Se estiver seco, regue devagar até escorrer pelos furos (uns 6 a 10 L num vaso de 60 L). Se estiver úmido, não regue. Da brotação até a colheita (setembro a maio), com frutos no pé e acima de 30 °C, confira todo dia. Sem folhas, no inverno, o substrato demora bem mais para secar.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure cochonilhas (escamas brancas ou marrons grudadas nos ramos), ácaros (pontinhos e teia fina no verso) e manchas escuras. Nos frutos, procure furinhos com a casca amolecida em volta, que são sinal de mosca-das-frutas. Arranque também qualquer broto que saia abaixo do calombo do enxerto: ele é do porta-enxerto e rouba força da copa.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Firmar a muda",
+      "mensagem": "Até as raízes firmarem, o vento balança a muda e rompe as raízes novas.",
+      "acao_requerida": "Cravar um tutor de 1,2 m ao lado do tronco, sem furar o torrão, e amarrar com fita ou tira de pano em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Se a muda veio como uma vara única, precisa de um corte para lançar os galhos que vão formar a copa.",
+      "acao_requerida": "Se ela ainda não tiver ramos laterais, cortar a haste principal a 60–70 cm do substrato, logo acima de uma gema. Se já tiver, escolher 3 ou 4 ramos bem distribuídos e tirar os outros rente ao tronco"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Tirar o tutor?",
+      "mensagem": "Depois de uns 6 meses, o tronco costuma se sustentar sozinho. Uma amarra esquecida estrangula a casca quando o tronco engrossa.",
+      "acao_requerida": "Afrouxar as amarras. Se a muda ficar firme sem o apoio, retirar o tutor; se ainda tombar, amarrar de novo mais frouxo"
+    },
+    {
+      "dia_disparo": 700,
+      "titulo": "Primeira safra de verdade vem aí",
+      "mensagem": "Com quase dois anos no vaso, o caquizeiro já pode segurar frutos na próxima florada. Excesso de frutos na primeira safra esgota a planta e deixa todos pequenos.",
+      "acao_requerida": "Na próxima florada, deixar no máximo 10 a 15 frutos na planta toda, um por ramo, e tirar o resto ainda pequeno"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mosca-das-frutas (Anastrepha fraterculus, Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos, casca amolecida ou escurecida em volta e larvas brancas na polpa; os frutos caem antes de amadurecer",
+      "prevencao_tratamento": "Ensacar os frutos com saquinho de TNT ou de papel quando estiverem do tamanho de uma noz; recolher e descartar em saco fechado os frutos caídos; armadilha de garrafa PET com suco de fruta fermentado ou proteína hidrolisada pendurada na copa"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, cinza ou marrons presas nos ramos e no verso das folhas; folhas pegajosas com fumagina (pó preto) e ramos que definham",
+      "prevencao_tratamento": "Esfregar os ramos com escova macia e água com sabão neutro; em infestação grande, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo depois de 10 dias. No inverno, sem folhas, a aplicação de óleo mineral é mais eficiente"
+    },
+    {
+      "nome": "Ácaros",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto bronzeado ou prateado e teia fina no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água nos dias quentes e secos; se persistir, óleo de neem a 0,5% ou calda de enxofre de acordo com o rótulo, sem aplicar acima de 30 °C"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, excesso de água)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e amarelam mesmo com o substrato úmido, a base do tronco escurece, as raízes ficam marrons e moles e o substrato cheira a azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, sem deixar água no pratinho, e manter os furos desentupidos. Se já apareceu, suspender a rega até secar, retirar a planta, cortar as raízes podres e replantar em substrato novo, mais arenoso"
+    },
+    {
+      "nome": "Cercosporiose (Cercospora kaki)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras e angulosas nas folhas a partir do verão; as folhas amarelam e caem antes do tempo e os frutos ficam sem açúcar",
+      "prevencao_tratamento": "Recolher e descartar as folhas caídas no outono, podar para abrir a copa ao vento e regar no substrato, sem molhar as folhas. Em ano chuvoso, calda bordalesa a 1% na brotação e 30 dias depois"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pretas e fundas nos frutos e nos ramos novos, às vezes com pontinhos alaranjados no centro; os ramos secam da ponta para trás",
+      "prevencao_tratamento": "Cortar os ramos atacados 10 cm abaixo da lesão e retirar os frutos manchados; em épocas de muita chuva, calda bordalesa a 1% a cada 15 dias"
+    },
+    {
+      "nome": "Queda prematura de frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutinhos verdes amarelam no cálice e caem em massa em novembro e dezembro, com a planta sadia",
+      "prevencao_tratamento": "Uma parte da queda é natural. Ela piora com o substrato secando entre regas, com excesso de nitrogênio na florada e com frutos demais para o tamanho do vaso. Mantenha a umidade regular, adube com menos nitrogênio na florada e faça o raleio"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "O caquizeiro vai dormir",
+      "mensagem": "As folhas ficam laranja e caem: é a dormência, não doença. Sem folhas a planta quase não bebe, e substrato encharcado no frio apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega até o substrato secar a 5 cm (em geral a cada 7 a 10 dias), suspender a adubação e recolher as folhas caídas"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de inverno",
+      "mensagem": "A árvore está parada e sem folhas, então dá para enxergar a estrutura. Os caquis nascem nos ramos novos que saem dos galhos do ano anterior, então a poda também controla o tamanho.",
+      "acao_requerida": "Tirar os ramos secos, cruzados e os que crescem para dentro; encurtar os ramos longos em um terço, cortando acima de uma gema voltada para fora; manter a copa até uns 2 m. A cada 2 ou 3 anos, aproveitar para tirar a planta do vaso, cortar 5 cm de raiz em volta do torrão e completar com substrato novo"
+    },
+    {
+      "meses": [
+        9,
+        11,
+        1
+      ],
+      "titulo": "Adubar o caquizeiro",
+      "mensagem": "Da brotação ao enchimento dos frutos, a planta precisa de nutrientes. No vaso eles acabam depressa.",
+      "acao_requerida": "Espalhar 1 L de húmus de minhoca ou composto e 2 colheres de sopa de NPK 10-10-10 sobre o substrato, longe do tronco, e regar em seguida. Em janeiro, trocar o NPK por 4-14-8 ou 1 colher de farinha de ossos mais 1 de cinzas, para adoçar os frutos"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Ralear os frutos",
+      "mensagem": "A queda natural dos frutinhos já passou. Se ficarem frutos demais, todos ficam pequenos e a planta alterna: um ano carrega, no outro quase não dá.",
+      "acao_requerida": "Deixar um fruto por ramo (o maior e mais bem formado) e tirar os outros com tesoura. Nos que ficarem, colocar saquinho de TNT contra a mosca-das-frutas"
+    },
+    {
+      "meses": [
+        3,
+        4,
+        5
+      ],
+      "titulo": "Época de colher caqui",
+      "mensagem": "Os caquis estão amadurecendo. Deixados no pé muito maduros, racham, atraem mosca e caem.",
+      "acao_requerida": "Colher com tesoura, com um pedaço do cabinho, os frutos que ficaram totalmente laranja. Fuyu pode ser comido firme. Rama Forte e outros taninosos amadurecem fora do pé, embrulhados em jornal ou num saco com uma maçã ou banana, até ficarem moles como gelatina"
+    }
+  ]
+}

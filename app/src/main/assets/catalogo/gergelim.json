@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Gergelim",
+    "nome_cientifico": "Sesamum indicum",
+    "descricao": "Planta anual de clima quente, com flores brancas ou rosadas em forma de sino, que forma cápsulas cheias de sementes oleosas. Em vaso, uma planta chega a 1 m e rende algumas colheres de sementes para torrar em casa. As cápsulas se abrem sozinhas quando secam, então o ponto de colheita pede atenção.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 120,
+    "meses_plantio": [
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso com pelo menos 30 cm de profundidade e 25 cm de diâmetro, com furos no fundo; uma planta por vaso ou três a cada 40 cm numa jardineira funda",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 20% húmus de minhoca, 30% areia grossa ou perlita; bem drenado, porque o gergelim não tolera raiz encharcada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 7,
+      "descricao": "Semeie 3 a 4 sementes por cova, a 1 cm de profundidade, com o substrato acima de 21 °C. As plântulas surgem entre o 3º e o 7º dia; abaixo de 18 °C a germinação falha."
+    },
+    {
+      "fase_id": "crescimento_inicial",
+      "nome": "Crescimento Inicial",
+      "dia_inicio": 8,
+      "dia_fim": 30,
+      "descricao": "Crescimento lento nas primeiras semanas, com folhas opostas e alongadas. A planta ainda é frágil e sofre com encharcamento. A fase termina quando ela passa de 20 cm e acelera."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 50,
+      "descricao": "O caule cresce vários centímetros por semana e engrossa. Surgem os primeiros botões nas axilas das folhas do meio do caule, sinal de que a floração começa."
+    },
+    {
+      "fase_id": "floracao_capsulas",
+      "nome": "Floração e Formação das Cápsulas",
+      "dia_inicio": 51,
+      "dia_fim": 85,
+      "descricao": "Flores em sino abrem de baixo para cima, cada uma dura um dia e deixa uma cápsula verde no lugar. Falta de água agora derruba flores; excesso de água apodrece o caule."
+    },
+    {
+      "fase_id": "maturacao",
+      "nome": "Maturação",
+      "dia_inicio": 86,
+      "dia_fim": 99,
+      "descricao": "As sementes enchem dentro das cápsulas. As folhas de baixo amarelam e caem naturalmente; isso não é doença. A fase termina quando as cápsulas de baixo ficam amarelo-palha."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 100,
+      "dia_fim": 120,
+      "descricao": "As cápsulas amadurecem de baixo para cima e racham na ponta ao secar, jogando as sementes fora. Colha as amareladas antes que abram e termine de secá-las à sombra dentro de um saco de papel."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Manter as sementes úmidas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 7,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. A semente é minúscula e rasa: se a crosta secar um dia, ela morre sem brotar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o gergelim",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 99,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Se ainda estiver úmido, espere mais um dia. Em dias acima de 32 °C durante a floração, confira todo dia.",
+      "critica": false
+    },
+    {
+      "id": "rega_reduzida",
+      "titulo": "Rega leve na colheita",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 100,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Regue só quando o substrato estiver seco a 5 cm, com metade da água de antes. A planta está secando para amadurecer as cápsulas; água demais agora provoca mofo nas cápsulas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o gergelim",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 65,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca e 1 colher de chá de farinha de ossos por vaso de 15 L, longe do caule, e regue em seguida. A partir da floração, evite adubo rico em nitrogênio, que faz folha em vez de cápsula.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 105,
+      "instrucoes": "Olhe o verso das folhas e os brotos da ponta: procure pulgões, folhas enroladas presas por teia (lagarta), folhas novas duras e encurvadas (ácaro-branco) e manchas escuras angulosas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_capsulas",
+      "titulo": "Colher cápsulas maduras",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 100,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Corte com tesoura as cápsulas amarelo-palha, antes que rachem na ponta. Deixe-as secar 1 semana à sombra dentro de um saco de papel e depois sacuda para soltar as sementes.",
+      "critica": true
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As plântulas da mesma cova competem por luz e raiz; deixadas juntas, todas ficam finas e produzem pouco.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa de cada cova, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Colocar um tutor",
+      "mensagem": "O gergelim passa de 80 cm e, carregado de cápsulas, tomba com o vento em vaso.",
+      "acao_requerida": "Fincar uma estaca de 1 m a 5 cm do caule e amarrá-lo em forma de 8 com barbante, sem apertar"
+    },
+    {
+      "dia_disparo": 100,
+      "titulo": "Primeiras cápsulas maduras",
+      "mensagem": "As cápsulas de baixo devem estar ficando amarelo-palha. Se esperar a planta toda secar, as primeiras já terão aberto e perdido as sementes.",
+      "acao_requerida": "Conferir as cápsulas da base e começar a colheita"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do caule e da raiz (Macrophomina phaseolina, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; caule escurecido ou acinzentado na base, com pontinhos pretos",
+      "prevencao_tratamento": "Substrato bem drenado e rega só com o substrato seco a 3 cm; não reaproveite substrato de plantas doentes. Planta afetada não se recupera: descarte-a com o substrato"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem com o caule fino e escuro rente ao substrato",
+      "prevencao_tratamento": "Semear com o tempo quente, em substrato novo, sem encharcar; retirar as plântulas afetadas"
+    },
+    {
+      "nome": "Mancha-angular (Cercospora sesami)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons angulosas nas folhas, limitadas pelas nervuras; folhas amarelam e caem cedo",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas; retirar as folhas manchadas; em ataque forte, calda bordalesa a 1% a cada 10 dias"
+    },
+    {
+      "nome": "Lagarta-enroladeira (Antigastra catalaunalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas dos ponteiros enroladas e presas por teia, com lagarta verde dentro; cápsulas furadas",
+      "prevencao_tratamento": "Abrir as folhas enroladas e retirar as lagartas à mão; em infestação, Bacillus thuringiensis no fim da tarde a cada 7 dias"
+    },
+    {
+      "nome": "Ácaro-branco (Polyphagotarsonemus latus)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas pequenas, duras, bronzeadas e com a borda virada para baixo; ponteiro para de crescer",
+      "prevencao_tratamento": "Retirar os ponteiros deformados; enxofre molhável a 0,3% ou óleo de neem a 0,5% no fim da tarde, repetindo em 5 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e no verso das folhas; folhas enrugadas e pegajosas",
+      "prevencao_tratamento": "Jato de água; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Queda de flores por estresse",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões e flores caem sem formar cápsula, em dias muito quentes ou depois de o substrato secar por completo",
+      "prevencao_tratamento": "Não deixar o vaso secar por inteiro na floração; em calor forte, sombra leve no começo da tarde"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Noites esfriando",
+      "mensagem": "Abaixo de 15 °C o gergelim para de amadurecer as cápsulas, e o orvalho do outono favorece mofo nelas.",
+      "acao_requerida": "Colher todas as cápsulas que já estiverem amarelando e, se a planta estiver no fim, cortá-la inteira e pendurá-la de cabeça para baixo à sombra, sobre um pano, para as últimas secarem"
+    }
+  ]
+}

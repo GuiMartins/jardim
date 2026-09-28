@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Papoula",
+    "nome_cientifico": "Papaver rhoeas",
+    "descricao": "Papoula-dos-campos: anual de flores vermelhas e sedosas que duram um dia cada, com muitos botões em sequência. Não aceita transplante porque tem raiz pivotante, então é semeada direto no vaso definitivo. Gosta de frio ameno e floresce do fim do inverno à primavera no Centro-Sul.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 130,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 25 cm de profundidade e furos no fundo; a raiz pivotante precisa de profundidade mais do que de largura. Deixe 15 a 20 cm entre plantas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca; substrato pobre e bem drenado, porque terra rica demais dá folha e caule mole em vez de flor",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 15,
+      "descricao": "Misture as sementes, que são minúsculas, com um pouco de areia fina e espalhe sobre o substrato úmido, só pressionando com a mão: elas precisam de luz para germinar, então não as enterre. Com 10 a 20 °C, as plântulas aparecem entre o 7º e o 14º dia. Acima de 25 °C a germinação falha."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 16,
+      "dia_fim": 35,
+      "descricao": "Surgem as primeiras folhas verdadeiras, acinzentadas e recortadas. As mudas são frágeis e tombam com excesso de água. É a hora de desbastar; nunca tente transplantar as que sobrarem, porque não pegam."
+    },
+    {
+      "fase_id": "roseta",
+      "nome": "Roseta de Folhas",
+      "dia_inicio": 36,
+      "dia_fim": 70,
+      "descricao": "A planta forma uma roseta rente ao substrato com folhas peludas e bem recortadas, e aguenta frio e geada leve. No fim da fase, o caule floral começa a subir do centro da roseta."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Botões e Floração",
+      "dia_inicio": 71,
+      "dia_fim": 110,
+      "descricao": "Os botões ficam pendentes, curvados para baixo, e se endireitam na véspera de abrir. Cada flor dura um ou dois dias, mas a planta abre flores novas por várias semanas se as murchas forem cortadas. Caules de 40 a 60 cm costumam se sustentar sozinhos; em local com vento, amarre-os frouxamente numa varinha."
+    },
+    {
+      "fase_id": "capsulas_sementes",
+      "nome": "Cápsulas e Sementes",
+      "dia_inicio": 111,
+      "dia_fim": 130,
+      "descricao": "As últimas flores viram cápsulas verdes que secam e ficam marrom-claras. A semente está pronta quando a cápsula chacoalha e abre pequenos poros sob a tampa. Depois disso a planta amarela e morre: o ciclo terminou."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar a semeadura",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Borrife a superfície pela manhã até ela ficar escura de úmida, sem formar poça. As sementes estão na superfície: um dia seco mata as que estão germinando, e um jato forte de regador as lava para o fundo.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a papoula",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos, molhando o substrato e não as folhas. No frio e com tempo nublado, o intervalo passa de 4 a 5 dias; acima de 28 °C na floração, confira a cada 2 dias. Encharcar apodrece a raiz.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_leve",
+      "titulo": "Adubação leve",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 25,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Espalhe 1 colher de sopa de húmus de minhoca por vaso de 3 L, longe do colo da planta, e regue em seguida. Não use adubo rico em nitrogênio (ureia, esterco fresco): a papoula fica com caule mole e floresce pouco.",
+      "critica": false
+    },
+    {
+      "id": "remover_flores_murchas",
+      "titulo": "Cortar flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 75,
+      "dia_fim_ciclo": 105,
+      "instrucoes": "Corte com tesoura, logo abaixo da cápsula, as flores que já perderam as pétalas. Sem isso a planta põe a energia nas sementes e para de abrir botões. Se quiser colher sementes, deixe de 3 a 5 cápsulas nas hastes mais fortes.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Olhe os caules logo abaixo dos botões e o verso das folhas procurando pulgões pretos agrupados, pó branco ou manchas amareladas com mofo cinza por baixo. Ao anoitecer, procure lesmas na base da roseta.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 22,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As papoulas aglomeradas ficam fracas e florescem pouco, e as mudas retiradas não pegam em outro vaso.",
+      "acao_requerida": "Deixar uma planta a cada 15 a 20 cm, cortando as outras rente ao substrato com tesoura, sem puxar, para não arrancar a raiz das vizinhas"
+    },
+    {
+      "dia_disparo": 70,
+      "titulo": "Botões chegando",
+      "mensagem": "O caule floral está subindo e os botões pendentes vão aparecer nas próximas semanas. A partir de agora a planta precisa de todo o sol possível.",
+      "acao_requerida": "Levar o vaso para o ponto mais ensolarado e, se o local for de vento, fincar uma varinha ao lado de cada planta"
+    },
+    {
+      "dia_disparo": 105,
+      "titulo": "Deixe as últimas cápsulas",
+      "mensagem": "A floração está no fim. As cápsulas que ficarem agora dão as sementes para o próximo ano.",
+      "acao_requerida": "Parar de cortar as flores murchas e deixar as cápsulas secarem na planta"
+    },
+    {
+      "dia_disparo": 125,
+      "titulo": "Colher as sementes",
+      "mensagem": "As cápsulas secas e marrons já devem chacoalhar ao balançar.",
+      "acao_requerida": "Cortar as cápsulas secas, virá-las sobre um papel para soltar as sementes e guardá-las num envelope em local seco até o outono"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-preto (Aphis fabae)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos no caule logo abaixo dos botões; botões que murcham ou abrem deformados",
+      "prevencao_tratamento": "Esmagar com os dedos ou lavar com jato de água; se voltar, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Plântulas cortadas rente ao substrato ou folhas roídas com rastro brilhante",
+      "prevencao_tratamento": "Catar à noite com lanterna; espalhar casca de ovo triturada ou areia grossa em volta das plantas na fase de plântula"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas murcham e caem com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, borrifar em vez de encharcar na germinação e desbastar a tempo para o ar circular; retirar as plântulas afetadas"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Roseta murcha mesmo com o substrato úmido, folhas de baixo amarelas e colo mole e escuro",
+      "prevencao_tratamento": "Regar só com os 3 cm de cima secos, usar substrato com areia e vaso com furos; planta com colo mole não se recupera"
+    },
+    {
+      "nome": "Míldio (Peronospora arborescens)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amareladas na face de cima das folhas com mofo cinza-arroxeado no verso; folhas e caules retorcidos",
+      "prevencao_tratamento": "Não molhar as folhas, manter o espaçamento do desbaste e arrancar as plantas muito atacadas, porque o fungo passa pelas sementes"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco nas folhas e caules, mais comum no fim do ciclo com dias quentes e noites frias",
+      "prevencao_tratamento": "Remover folhas atacadas e pulverizar leite diluído (1 parte para 9 de água) ou bicarbonato a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Estiolamento por pouca luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules compridos, finos e tombados, poucos botões ou botões que secam sem abrir",
+      "prevencao_tratamento": "Dar ao menos 5 horas de sol direto desde a germinação; não se corrige depois que o caule espichou, só na próxima semeadura"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Calor encurta a floração",
+      "mensagem": "A papoula é planta de clima ameno. Com calor forte, as flores duram menos e a planta seca mais rápido.",
+      "acao_requerida": "Regar de manhã cedo, conferir o substrato a cada 2 dias e, acima de 30 °C, proteger o vaso do sol da tarde"
+    }
+  ]
+}

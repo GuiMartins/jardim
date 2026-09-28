@@ -1,0 +1,172 @@
+{
+  "planta": {
+    "nome_comum": "Lírio-do-amazonas",
+    "nome_cientifico": "Urceolina amazonica (sin. Eucharis amazonica)",
+    "descricao": "Bulbosa perene da Amazônia, de folhas largas e brilhantes, que dá hastes com flores brancas perfumadas parecidas com narcisos, até duas ou três vezes por ano. Vive bem na meia-sombra de varandas e salas claras e floresce melhor com o vaso apertado. Todas as partes, sobretudo o bulbo, são tóxicas para pessoas e animais se ingeridas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 20 a 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo, para 3 a 4 bulbos juntos; vaso grande demais atrasa a floração",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% terra vegetal, 30% húmus de minhoca ou composto, 20% casca de pinus fina, 10% perlita ou areia grossa; rico em matéria orgânica e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 45,
+      "descricao": "Plante os bulbos com o pescoço rente à superfície, a 5 cm um do outro, e firme o substrato. As primeiras folhas enroladas aparecem entre a 3ª e a 6ª semana; antes disso o bulbo está enraizando e quase não consome água."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 46,
+      "dia_fim": 365,
+      "descricao": "Cada bulbo forma de 3 a 5 folhas largas e as raízes ocupam o vaso. É raro florescer no primeiro ano; folhas novas saudáveis, verde-escuras e firmes indicam que está no caminho. Folhas amareladas e caídas costumam ser excesso de água ou frio."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Touceira sempre verde que floresce uma a três vezes por ano, geralmente depois de 4 a 6 semanas de rega reduzida. Cada haste leva de 3 a 8 flores que duram cerca de uma semana; quando a última murchar, corte a haste rente à base com tesoura limpa e mantenha as folhas, que alimentam o bulbo. Os bulbos-filhos vão lotando o vaso, o que favorece a floração."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar os bulbos em brotação",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; só regue se estiver seco, com meio copo de água por bulbo, sem molhar o pescoço. Bulbo sem folhas em substrato encharcado apodrece.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o lírio-do-amazonas",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. No calor acima de 30 °C confira a cada 2 ou 3 dias; no inverno e no período de descanso, só quando os 5 cm de cima estiverem secos.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o lírio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido para floração (NPK 4-14-8 ou similar) na metade da dose do rótulo e regue com ele o substrato já úmido. Pule a adubação de junho a agosto e durante o descanso antes da floração.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, as axilas e o pescoço dos bulbos. Procure tufos brancos de algodão, manchas vermelhas alongadas e base mole ou com cheiro azedo.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Dividir a touceira e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a touceira do vaso, separe grupos de 3 a 5 bulbos com raízes e replante em substrato novo, cada grupo num vaso só um pouco maior que ele. Espere a floração seguinte atrasar alguns meses.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 45,
+      "titulo": "Os bulbos já brotaram?",
+      "mensagem": "A maioria dos bulbos solta folhas até a 6ª semana. Se nenhum brotou, pode ter faltado calor ou sobrado água.",
+      "acao_requerida": "Apertar o pescoço de um bulbo sem folhas: se estiver firme, mantenha em local quente e regue menos; se estiver mole, retire-o e descarte"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano completo",
+      "mensagem": "A touceira já deve estar enraizada. Se ainda não floresceu, um descanso de rega costuma induzir as primeiras hastes.",
+      "acao_requerida": "Reduzir a rega por 4 a 6 semanas, deixando as folhas ficarem levemente murchas sem amarelar, e voltar à rega normal em seguida"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do bulbo (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas que tombam, pescoço do bulbo mole e escuro, cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco na superfície, esvaziar o pratinho e não enterrar o pescoço; retire os bulbos moles, corte as partes podres e replante os sãos em substrato novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos cotonosos nas axilas das folhas e no pescoço do bulbo; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação, óleo de neem a 0,5% com detergente neutro a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Mancha-vermelha (Stagonospora curtisii)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas vermelho-alaranjadas alongadas nas folhas, hastes e pescoço do bulbo, que depois secam",
+      "prevencao_tratamento": "Não molhar as folhas na rega, manter boa ventilação e cortar as folhas afetadas; em casos fortes, fungicida à base de cobre"
+    },
+    {
+      "nome": "Ácaro-do-bulbo (Rhizoglyphus, Steneotarsonemus)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas deformadas e com estrias avermelhadas; bulbo com escamas secas e farelentas",
+      "prevencao_tratamento": "Plantar só bulbos firmes e limpos; descarte os bulbos atacados e não reaproveite o substrato"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelo-palha ou marrons e secas no meio das folhas voltadas para o sol",
+      "prevencao_tratamento": "Deixar só com sol da manhã ou luz filtrada; corte as folhas muito danificadas"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelando em série e manchas escuras encharcadas depois de noites abaixo de 10 °C",
+      "prevencao_tratamento": "Levar para dentro de casa ou perto de parede nas noites frias e reduzir a rega no inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Preparar o lírio para o frio",
+      "mensagem": "O lírio-do-amazonas é tropical e sofre abaixo de 10 °C; com frio, substrato úmido apodrece o bulbo.",
+      "acao_requerida": "Espaçar as regas, suspender a adubação até agosto e deixar o vaso em local abrigado, levando para dentro nas noites frias"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar os cuidados de primavera",
+      "mensagem": "Com o calor voltando, a touceira retoma o crescimento e costuma lançar hastes florais nos meses seguintes.",
+      "acao_requerida": "Voltar à rega normal e à adubação mensal e cortar as folhas secas do inverno rente à base"
+    }
+  ]
+}

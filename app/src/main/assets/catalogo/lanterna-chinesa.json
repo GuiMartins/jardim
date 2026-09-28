@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Lanterna-chinesa",
+    "nome_cientifico": "Callianthe picta (sin. Abutilon pictum)",
+    "descricao": "Arbusto nativo do Brasil, da família das malvas, com flores pendentes em forma de sino, alaranjadas com veios vermelhos, que aparecem quase o ano todo e atraem beija-flores. Em vaso forma um arbusto de 1 a 1,5 m que aceita poda e floresce já no primeiro ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou barro com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com furos no fundo e prato sem água parada",
+    "volume_minimo_litros": 25,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; 1 colher de sopa de farinha de ossos por litro de vaso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode derrubar algumas flores e folhas mais velhas nos primeiros dias no lugar novo; é normal. A fase termina quando aparecem folhas novas no topo dos ramos, sinal de que a raiz pegou no vaso."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "Os ramos se alongam depressa e surgem os primeiros botões nas axilas das folhas. Com a raiz ocupando o vaso, a planta passa a pedir mais água nos dias quentes. Desponte os ramos que passarem de 30 cm para a planta encorpar em vez de crescer como um caniço."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Arbusto formado que floresce da primavera ao outono e, em inverno ameno, quase sem parar. No calor a rega é o ponto crítico: folhas grandes murcham rápido em vaso. No inverno o crescimento desacelera, e no fim dele vem a poda anual que renova os ramos floríferos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a lanterna-chinesa",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. Se estiver úmido, espere mais um dia: a raiz nova apodrece com o vaso encharcado.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a lanterna-chinesa",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Acima de 30 °C confira todo dia, porque as folhas murcham em poucas horas. No inverno, espace para cada 5 a 7 dias, sempre conferindo com o dedo.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florescer",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá de NPK 4-14-8 em 1 L de água e regue o substrato já úmido, sem molhar as folhas; a cada dois meses, troque por 2 colheres de sopa de húmus espalhadas na superfície. Pule junho e julho, quando a planta quase não cresce.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e procure pontinhos brancos que voam ao mexer (mosca-branca), crostas ou algodão nos ramos (cochonilha) e teias finas com folhas pontilhadas de amarelo (ácaro).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, raspe cerca de um terço do torrão e das raízes enroladas e replante com substrato novo, num vaso 5 cm maior se as raízes estiverem saindo pelos furos. Regue bem e deixe à sombra clara por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A muda vem num saquinho ou vaso pequeno, que seca rápido e aperta a raiz.",
+      "acao_requerida": "Transplantar para o vaso de 25 L sem desmanchar o torrão, na mesma altura em que estava, e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora do desponte",
+      "mensagem": "Os ramos novos já se alongaram. Cortar as pontas agora faz a planta ramificar e dar mais flores.",
+      "acao_requerida": "Cortar com tesoura limpa 2 a 3 cm da ponta de cada ramo com mais de 30 cm, logo acima de uma folha"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetinhos brancos ao mexer na planta; folhas amareladas, pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; óleo de neem a 0,5% no verso das folhas no fim da tarde, a cada 5 dias por 3 semanas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Crostas marrons ou tufos brancos de aspecto algodoado nos ramos e no verso das folhas; planta enfraquecida e pegajosa",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, óleo mineral ou de neem a 1% a cada 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontilhado amarelo, aspecto empoeirado e teias finas no verso, principalmente no tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, enxofre molhável ou óleo de neem no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e botões; brotos novos enrugados e botões que caem",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelando de baixo para cima, base do caule escura e raízes marrons e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no prato e manter os furos desobstruídos; replantar em substrato novo cortando as raízes podres"
+    },
+    {
+      "nome": "Clorose por falta de ferro ou magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes (ferro) ou folhas velhas amareladas entre as nervuras (magnésio)",
+      "prevencao_tratamento": "Adubar com regularidade e trocar o substrato a cada dois anos; aplicar quelato de ferro ou 1 colher de chá de sulfato de magnésio por litro de água, uma vez"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir, logo após mudança de lugar ou depois de o vaso secar demais",
+      "prevencao_tratamento": "Evitar mudar o vaso de lugar durante a floração e não deixar o substrato secar por completo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno a planta está pronta para renovar os ramos. As flores saem nos ramos novos, então a poda agora garante floração farta na primavera.",
+      "acao_requerida": "Cortar os ramos em um terço do comprimento, logo acima de uma gema, e tirar os ramos secos, fracos ou cruzados para o centro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A lanterna-chinesa perde folhas e brotos com geada e sofre abaixo de 5 °C. No frio ela bebe bem menos.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para perto de uma parede ou cobrir com TNT; espaçar a rega e não adubar"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Cuidado com o calor",
+      "mensagem": "No verão o vaso seca em um dia e o sol forte da tarde queima as folhas grandes.",
+      "acao_requerida": "Deixar a planta com sol só de manhã, conferir a rega todo dia e cobrir o substrato com 2 cm de casca de pinus ou palha"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Palmeira-leque-da-china",
+    "nome_cientifico": "Livistona chinensis",
+    "descricao": "Palmeira de crescimento lento, com folhas em leque grandes e de pontas caídas, muito usada em vasos de varanda, halls e jardins. Aguenta bem vento, calor e frio moderado e vive décadas em vaso. Aqui o cultivo parte de uma muda comprada em vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou fibra com pelo menos 40 cm de profundidade e 40 cm de diâmetro, de base larga para não tombar com o vento, e vários furos no fundo",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% substrato comercial para plantas, 20% areia grossa lavada, 10% húmus de minhoca; solto e sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e de lugar. Uma ou duas folhas velhas podem amarelar, o que é normal. A adaptação terminou quando a folha nova do centro (a lança, fechada e pontuda) volta a crescer."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o substrato novo e a palmeira solta folhas novas devagar, uma a cada 1 ou 2 meses no calor. Aos poucos ela pode ir para um lugar com mais sol da manhã. Folhas novas menores ou amareladas pedem adubo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Palmeira estabelecida. Cresce na primavera e no verão, quando pede mais água e adubo, e fica quase parada no inverno. Solta de 3 a 6 folhas por ano, e as mais baixas secam aos poucos. A cada dois anos o substrato se esgota e é preciso trocar de vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a palmeira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água do pratinho. O torrão da muda ainda não se ligou ao substrato novo e, se secar por completo, as raízes finas morrem.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a palmeira-leque",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Se ainda estiver úmido, espere mais um dia. Acima de 30 °C ou em sol pleno, confira a cada 2 dias. No inverno, a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a palmeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou adubo próprio para palmeiras, com magnésio) por vaso de 30 L sobre o substrato úmido, longe do tronco, e regue em seguida. De maio a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas_secas",
+      "titulo": "Cortar folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao tronco, com tesoura de poda limpa, só as folhas totalmente marrons e secas. Folha amarela ou meio verde ainda passa nutriente para a palmeira: deixe. Pontas secas podem ser aparadas acompanhando o formato da folha, sem cortar o verde.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e pecíolos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e a base dos pecíolos, onde eles saem do tronco. Procure escamas marrons ou brancas grudadas, algodãozinho branco, teias finas ou pontinhos amarelos. Passe o dedo: melado pegajoso indica cochonilha.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro. Tire a palmeira do vaso, solte as raízes que estão enroladas no fundo sem cortar as grossas e replante num vaso 5 a 10 cm mais largo, com substrato novo, na mesma altura em que estava. Regue bem e deixe 2 semanas na meia sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Palmeira plantada: sem adubo por enquanto",
+      "mensagem": "As raízes mexidas no plantio queimam fácil com adubo. Nas primeiras semanas, o que a palmeira precisa é de água na medida certa e luz clara sem sol forte.",
+      "acao_requerida": "Deixar o vaso num lugar claro, protegido do sol da tarde, e não adubar até o dia 31"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se a folha central voltou a crescer, a palmeira já pegou e aguenta mais luz.",
+      "acao_requerida": "Aproximar o vaso de um lugar com 3 a 4 horas de sol da manhã, aumentando a exposição ao longo de 2 semanas para as folhas não queimarem"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Palmeira estabelecida",
+      "mensagem": "Seis meses depois do plantio, as raízes já ocupam o vaso. Daqui em diante a rotina é regar pelo toque, adubar na estação quente e limpar folhas secas.",
+      "acao_requerida": "Conferir se há raízes saindo pelos furos do fundo; se houver muitas, antecipar a troca de vaso para a próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do olho (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido. A folha central fica escura, apodrece e sai com um puxão leve, com cheiro ruim na base",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, esvaziar o pratinho e nunca molhar o centro da palmeira à noite. No começo, suspender a rega, trocar o substrato e cortar as raízes moles. Se o olho apodreceu, a palmeira raramente se recupera"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou brancas grudadas no verso das folhas e nos pecíolos, ou tufos de algodão branco nas axilas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia e água com sabão neutro. Nas infestações maiores, óleo mineral ou óleo de neem a 0,5% no fim da tarde, 3 aplicações com 7 dias de intervalo"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto desbotado e teias finas no verso, principalmente em tempo seco ou dentro de casa",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos e lavar a palmeira com jato de água. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mancha foliar (Pestalotiopsis, Helminthosporium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou cinzentas com borda escura nas folhas, que se juntam e secam partes do leque",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter o lugar ventilado. Cortar as folhas muito manchadas e, se avançar, aplicar fungicida à base de cobre"
+    },
+    {
+      "nome": "Deficiência de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas mais velhas com manchas amarelo-alaranjadas ou pontas necróticas, enquanto as novas continuam verdes. Folhas novas pequenas e deformadas indicam falta de potássio",
+      "prevencao_tratamento": "Usar adubo para palmeiras com potássio e magnésio. Para magnésio, 1 colher de chá de sulfato de magnésio dissolvida em 1 L de água, uma vez por mês na estação quente. As folhas afetadas não voltam a ficar verdes; as novas saem boas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas no meio das folhas que ficam viradas para o sol, logo depois de uma mudança de lugar",
+      "prevencao_tratamento": "Levar para o sol aos poucos, ao longo de 2 semanas, e proteger do sol da tarde no verão. Cortar só as partes totalmente secas"
+    },
+    {
+      "nome": "Pontas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e secas, sem manchas no resto do leque",
+      "prevencao_tratamento": "Costuma ser ar seco, rega irregular ou acúmulo de sais do adubo. Regar com fartura até escorrer, para lavar o substrato, e borrifar água nas folhas em ambientes internos com ar-condicionado"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Chegando o frio: menos água e sem adubo",
+      "mensagem": "Com o frio, a palmeira quase para de crescer e bebe bem menos. Substrato frio e encharcado é o caminho mais rápido para a podridão de raiz.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (em geral a cada 7 a 10 dias) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: a palmeira volta a crescer",
+      "mensagem": "O calor volta e a folha nova do centro recomeça a subir. É a melhor época para retomar a adubação e, se for o ano, trocar de vaso.",
+      "acao_requerida": "Retomar a adubação mensal e voltar a conferir a rega a cada 3 ou 4 dias"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com sede e sol da tarde",
+      "mensagem": "Em vaso, os dias acima de 30 °C secam o substrato em 2 dias, e o sol forte da tarde queima as folhas.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e, se o vaso pega sol depois das 13h, levá-lo para um lugar com sombra à tarde"
+    }
+  ]
+}

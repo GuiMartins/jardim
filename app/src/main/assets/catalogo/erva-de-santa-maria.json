@@ -1,0 +1,176 @@
+{
+  "planta": {
+    "nome_comum": "Erva-de-santa-maria",
+    "nome_cientifico": "Dysphania ambrosioides",
+    "descricao": "Erva aromática de cheiro forte, também chamada de mastruz, muito usada na medicina popular brasileira. Na natureza é uma perene de vida curta, mas em vaso vive uns 8 meses: floresce, solta sementes e decai, por isso aqui é tratada como ANUAL. Folhas, sementes e principalmente o óleo contêm ascaridol, que é tóxico: use só em pequena quantidade, com orientação de profissional de saúde, nunca na gravidez, e mantenha o vaso longe de crianças e animais.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 240,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 20 cm de diâmetro e 20 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa, 20% húmus de minhoca; bem drenado e pouco adubado, porque a planta gosta de solo pobre",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 15,
+      "descricao": "Espalhe as sementes, que são minúsculas, na superfície do substrato e só pressione de leve: elas precisam de luz para germinar. As plântulas aparecem entre o 7º e o 15º dia, com folhinhas estreitas e cheiro forte ao amassar."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 16,
+      "dia_fim": 40,
+      "descricao": "Surgem as folhas verdadeiras, alongadas e de borda recortada. A fase termina quando a muda passa de 8 a 10 cm e começa a ramificar."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 41,
+      "dia_fim": 90,
+      "descricao": "A planta ramifica e chega a 40 a 60 cm. A partir do dia 60 já dá para colher pontas de ramos. Planta alta e fina, com folhas espaçadas, é sinal de pouco sol."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 91,
+      "dia_fim": 170,
+      "descricao": "Aparecem espigas de florzinhas verdes, quase invisíveis, nas pontas e axilas dos ramos. A colheita de folhas continua; as folhas ficam menores e o cheiro mais forte."
+    },
+    {
+      "fase_id": "sementes_declinio",
+      "nome": "Sementes e Declínio",
+      "dia_inicio": 171,
+      "dia_fim": 240,
+      "descricao": "As espigas secam e ficam cheias de sementes pretas e miúdas. As folhas de baixo amarelam e caem. Quando a planta estiver mais seca que verde, o ciclo acabou: recolha as sementes e ressemeie."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro, sem jato forte, que enterra ou arrasta as sementes. A superfície não pode secar nem encharcar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a erva-de-santa-maria",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Se ainda estiver úmido, espere mais um dia. No calor acima de 30 °C, confira a cada 2 dias; no frio, a cada 5.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_leve",
+      "titulo": "Adubação leve",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Espalhe 1 colher de sopa de húmus de minhoca na superfície de um vaso de 5 L, sem encostar no caule, e regue em seguida. Não exagere: adubo demais deixa a planta mole e com menos aroma.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher pontas de ramos",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": 200,
+      "instrucoes": "Corte com tesoura limpa os 5 a 10 cm finais dos ramos mais altos, logo acima de um par de folhas; isso também faz a planta ramificar. Não tire mais de um terço da folhagem por vez. Use luvas se tiver pele sensível e guarde o que colheu fora do alcance de crianças.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Vire as folhas das pontas e procure insetos agrupados, trilhas claras sinuosas dentro da folha ou teias finas. Confira também se a base do caule está firme e sem manchas escuras.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As mudinhas estão disputando espaço. Cada planta adulta ocupa sozinha um vaso de 5 L.",
+      "acao_requerida": "Deixar só a muda mais vigorosa no vaso, cortando as outras rente ao substrato com tesoura, ou transplantar as sobras com cuidado para vasos próprios"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Começou a floração",
+      "mensagem": "As espigas de flores verdes estão aparecendo. Se deixar todas formarem semente, a planta se espalha sozinha pelos vasos vizinhos.",
+      "acao_requerida": "Decidir quantas espigas deixar para semente e cortar as outras junto com a colheita das pontas"
+    },
+    {
+      "dia_disparo": 175,
+      "titulo": "Guardar sementes",
+      "mensagem": "As espigas estão secando e cheias de sementes pretas. É a chance de garantir a próxima planta.",
+      "acao_requerida": "Cortar 2 ou 3 espigas secas dentro de um saco de papel, sacudir para soltar as sementes e guardá-las em pote fechado, identificado e longe de crianças"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido; base do caule escura e mole; folhas de baixo amarelam de uma vez",
+      "prevencao_tratamento": "Regue só com os 3 cm de cima secos, use substrato com areia e nunca deixe água no pratinho. Planta com o caule já mole raramente se recupera: ressemeie em substrato novo"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas e no verso das folhas novas; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água nas pontas; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-minadora (Liriomyza spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Trilhas claras e sinuosas dentro das folhas, que depois secam",
+      "prevencao_tratamento": "Retire e descarte as folhas com trilhas; em ataque forte, óleo de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules finos e compridos, tombando, folhas pequenas e muito espaçadas, cheiro fraco",
+      "prevencao_tratamento": "Leve o vaso para um lugar com pelo menos 4 horas de sol direto e colha as pontas para a planta ramificar mais baixa"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "A erva-de-santa-maria não tolera geada: uma noite abaixo de 2 °C queima a planta inteira.",
+      "acao_requerida": "Nas noites com previsão de frio forte, levar o vaso para perto de uma parede ou para dentro e espaçar a rega para cada 5 dias"
+    }
+  ]
+}

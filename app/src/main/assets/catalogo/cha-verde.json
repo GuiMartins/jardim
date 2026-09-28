@@ -1,0 +1,203 @@
+{
+  "planta": {
+    "nome_comum": "Chá-verde",
+    "nome_cientifico": "Camellia sinensis var. sinensis",
+    "descricao": "Arbusto perene de folhas brilhantes que dá o chá verde, o preto e o branco. Pede substrato ácido. Em vaso, mantido com poda entre 80 cm e 1,2 m, rende brotos para o chá caseiro a partir do terceiro ano e floresce com pequenas flores brancas e perfumadas no outono e no inverno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 35 a 40 cm de diâmetro e pelo menos 35 cm de profundidade, com vários furos no fundo. Prefira terracota ou plástico grosso de cor clara, que esquentam menos a raiz no verão.",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal ácida ou terra de mata, 30% casca de pinus fina compostada, 20% húmus de minhoca, 10% perlita ou areia grossa lavada. Não use calcário nem cinza. O pH ideal fica entre 4,5 e 5,5.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso. É normal perder algumas folhas velhas, mas as pontas não devem murchar. A fase termina quando surgem brotos novos, verde-claros e levemente peludos, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 730,
+      "descricao": "A raiz ocupa o vaso e a planta ganha ramos, crescendo em surtos de brotação de setembro a março e quase parando no inverno. Ainda não colha: toda folha nova alimenta a raiz. Podas de inverno leves, só para formar um arbusto baixo e cheio."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Arbusto formado, mantido entre 80 cm e 1,2 m. No ano típico, as brotações de setembro a março rendem colheitas de 'dois brotos e uma folha' a cada 2 a 4 semanas. Entre abril e julho vêm as flores brancas, e de maio a agosto a planta descansa. A poda de inverno mantém a altura e estimula a brotação."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o chá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e descarte a água do pratinho. Use água de chuva ou água da torneira deixada em repouso de um dia para o outro: a água calcária amarela as folhas com o tempo. No verão acima de 30 °C, confira a cada 2 dias. No inverno, a cada 4 ou 5. A raiz não tolera nem secar por completo nem ficar encharcada.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_acida",
+      "titulo": "Adubar com adubo para plantas ácidas",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca mais 1 colher de sopa de torta de mamona ao redor do caule, a 5 cm dele, ou use adubo granulado para azaleias e camélias na dose da embalagem, e regue em seguida. De maio a agosto, use metade da dose. Não use adubo com calcário nem farinha de ossos em excesso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas de baixo e do miolo. Procure pontinhos amarelados com teia fina (ácaro), escamas marrons ou brancas presas aos ramos (cochonilha) e insetos agrupados nos brotos (pulgão). Confira também se as folhas novas saem amareladas com as nervuras verdes.",
+      "critica": false
+    },
+    {
+      "id": "colheita_brotos",
+      "titulo": "Colher brotos para chá",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 731,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com a unha ou uma tesoura limpa, colha as pontas macias, com o broto fechado e as 2 folhas abaixo dele, e deixe pelo menos 3 folhas maduras em cada ramo. Para chá verde, murche as folhas por 1 hora, aqueça-as numa frigideira seca por 2 a 3 minutos, enrole-as com as mãos e seque em forno baixo. De maio a agosto a planta quase não brota: nesse período, colha só as pontas que ficaram macias.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar o substrato e trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire o torrão do vaso, solte as raízes enoveladas e corte até 2 cm das que circulam o fundo. Replante com substrato ácido novo num vaso 5 a 10 cm maior ou, se quiser manter o tamanho, no mesmo vaso com um terço do substrato renovado. Deixe à sombra clara por 1 semana. Faça de preferência entre agosto e setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Mudas de chá costumam vir em saquinho ou vaso pequeno, com a raiz apertada. Plantar logo no substrato ácido evita que ela sofra.",
+      "acao_requerida": "Plantar a muda no vaso de 30 L sem enterrar o colo mais fundo do que estava, regar até escorrer e deixar 2 semanas só com sol da manhã"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano completo",
+      "mensagem": "A planta deve ter pelo menos dobrado de volume. Se está alta e com poucos ramos, ela precisa de poda de formação para virar arbusto.",
+      "acao_requerida": "Na próxima poda de inverno, cortar a ponta do ramo principal a 40 ou 50 cm do substrato para estimular ramos laterais"
+    },
+    {
+      "dia_disparo": 731,
+      "titulo": "Colheita liberada!",
+      "mensagem": "Com dois anos no vaso, a raiz já aguenta a retirada das pontas. A partir de agora, colher estimula novas brotações.",
+      "acao_requerida": "Fazer a primeira colheita leve na próxima brotação, só com o broto e as 2 folhas de baixo, sem tirar folha madura"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem. As raízes ficam marrons, moles e com cheiro ruim, e a base do caule escurece.",
+      "prevencao_tratamento": "Substrato bem drenado, vaso com furos livres e pratinho sempre vazio. Ao primeiro sinal, tire a planta do vaso, corte as raízes podres e replante em substrato novo, regando menos até ela brotar de novo."
+    },
+    {
+      "nome": "Ácaro-vermelho (Oligonychus coffeae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam bronzeadas e sem brilho. Teia fina no verso, principalmente em tempo seco e quente.",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos. Se infestar, aplique óleo de neem a 0,5% ou calda de enxofre molhável no fim da tarde, a cada 7 dias, por 3 aplicações."
+    },
+    {
+      "nome": "Cochonilha (escamas e cochonilha-farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos presos aos ramos e ao verso das folhas. Melado pegajoso e fumagina preta por cima.",
+      "prevencao_tratamento": "Retire com cotonete ou escova macia molhada em álcool 70%. Depois, aplique óleo mineral ou de neem a 1% com detergente neutro, repetindo a cada 10 dias."
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias pretas ou verdes nos brotos novos, que ficam enrolados e pegajosos.",
+      "prevencao_tratamento": "Jato de água forte ou lavagem com sabão neutro a 1%. Se persistir, óleo de neem a 0,5%. Não colha para chá por 7 dias depois de aplicar qualquer produto."
+    },
+    {
+      "nome": "Antracnose e mancha-de-folha (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons irregulares com borda escura nas folhas, que secam e caem, mais comuns no verão chuvoso.",
+      "prevencao_tratamento": "Regue no substrato, sem molhar as folhas, e deixe o arbusto arejado com a poda. Recolha e descarte as folhas manchadas. Nos casos fortes, use calda bordalesa, com 21 dias de carência antes de colher."
+    },
+    {
+      "nome": "Clorose por substrato alcalino",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes. A planta para de crescer.",
+      "prevencao_tratamento": "Use água de chuva ou água descansada, nunca calcário. Incorpore casca de pinus ou turfa ao substrato e aplique quelato de ferro ou sulfato de ferro (1 g/L) na rega uma vez por mês até as folhas voltarem a esverdear."
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou bronzeadas na face de cima das folhas mais expostas, depois de dias de sol forte à tarde.",
+      "prevencao_tratamento": "Deixe o vaso onde bata só o sol da manhã ou use tela de sombreamento de 30 a 50% no verão. As folhas queimadas não se recuperam, mas as novas saem normais."
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de inverno",
+      "mensagem": "A planta está em repouso. Podar agora mantém o arbusto baixo e faz brotar muitas pontas novas na primavera, que são o que se colhe.",
+      "acao_requerida": "Cortar todos os ramos para deixar a copa entre 80 cm e 1 m, com corte reto logo acima de uma folha, e tirar os ramos secos ou cruzados. No primeiro ano, retirar só os ramos secos."
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio forte",
+      "mensagem": "A planta aguenta frio, mas no vaso a raiz fica exposta: geada e vento gelado queimam os brotos e as flores.",
+      "acao_requerida": "Nas noites com previsão abaixo de 0 °C, encostar o vaso numa parede protegida ou cobrir a planta com TNT. Regar só pela manhã."
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Brotação de primavera",
+      "mensagem": "A planta sai do repouso e solta o primeiro surto de brotos, o mais saboroso do ano.",
+      "acao_requerida": "Voltar à dose cheia de adubo e à rega mais frequente. Na planta adulta, colher os primeiros brotos assim que o broto e as 2 folhas estiverem abertos."
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor do verão",
+      "mensagem": "Sol forte da tarde e vaso quente estressam a raiz e queimam as folhas.",
+      "acao_requerida": "Garantir sombra das 13h às 16h e conferir a umidade do substrato a cada 2 dias. Se a superfície secar rápido, cobrir com 3 cm de casca de pinus."
+    }
+  ]
+}

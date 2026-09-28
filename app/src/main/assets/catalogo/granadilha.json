@@ -1,0 +1,232 @@
+{
+  "planta": {
+    "nome_comum": "Granadilha",
+    "nome_cientifico": "Passiflora ligularis",
+    "descricao": "Maracujá-doce dos Andes, trepadeira vigorosa de fruto com casca laranja e dura e polpa doce e perfumada, que se come de colher. Gosta de clima ameno de serra (15 a 25 °C): no Centro-Sul vai bem em regiões altas, mas em baixada quente derruba as flores no verão. Em vaso exige recipiente grande, estrutura para subir e, muitas vezes, polinização à mão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande ou meia-bombona com pelo menos 50 cm de diâmetro e 50 cm de profundidade, vários furos no fundo, apoiado junto a uma espaldeira, treliça ou pergolado de 1,8 a 2 m de altura",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de pinus fina ou perlita; pH entre 5,5 e 6,5, mais 200 g de farinha de ossos misturados no vaso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma a raiz no vaso novo e pode ficar parada ou perder uma ou duas folhas velhas nos primeiros dias. A fase termina quando surgem folhas novas e as primeiras gavinhas começam a se enrolar no apoio."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Trepadeira",
+      "dia_inicio": 31,
+      "dia_fim": 210,
+      "descricao": "Crescimento rápido: conduza um único ramo principal até o topo da estrutura, amarrando-o com fitilho frouxo e tirando os brotos laterais que saem abaixo de 1,5 m. Quando o ramo principal chegar ao topo, corte a ponta dele para forçar 2 a 4 ramos laterais, que são os que florescem."
+    },
+    {
+      "fase_id": "primeira_producao",
+      "nome": "Primeira Floração e Frutificação",
+      "dia_inicio": 211,
+      "dia_fim": 365,
+      "descricao": "Os ramos laterais soltam flores brancas e roxas, abertas só pela manhã. Sem mamangavas por perto, poucas viram fruto: faça a polinização à mão. Do fruto pegar até amadurecer passam uns 80 dias; ele fica verde, depois amarelo e por fim laranja com pintinhas brancas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Floresce principalmente da primavera ao início do outono e frutifica de forma escalonada, com colheitas espalhadas por vários meses. Poda anual no fim do inverno renova os ramos que produzem. Em vaso, rende bem por 4 a 6 anos; depois a produção cai e vale renovar com muda nova."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de granadilha",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto da muda; se estiver seco, regue devagar em volta do caule até escorrer pelos furos. Não deixe prato com água parada: a raiz nova apodrece fácil.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a granadilha",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (num vaso de 60 L, uns 5 a 8 L). Acima de 28 °C confira todo dia; no inverno, confira a cada 3 ou 4 dias e regue só se estiver seco. Falta de água na floração derruba flores e frutos novos.",
+      "critica": true
+    },
+    {
+      "id": "tutoragem_conducao",
+      "titulo": "Amarrar e conduzir os ramos",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Amarre o ramo principal na estrutura com fitilho em laço frouxo a cada 20 cm de crescimento novo e arranque com os dedos os brotos laterais que saírem abaixo de 1,5 m. Acima disso, espalhe os ramos laterais pela treliça sem deixá-los se enrolar uns nos outros.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_formacao",
+      "titulo": "Adubar para crescer",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca ou bokashi mais 1 colher de sopa de NPK 10-10-10 na superfície, a 10 cm do caule, e regue em seguida. Em junho e julho, use só o húmus.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_producao",
+      "titulo": "Adubar para florir e frutificar",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 211,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou bokashi mais 1 colher de sopa de NPK rico em potássio (12-6-12 ou 4-14-8) na superfície, longe do caule, e regue em seguida. Em junho e julho, com a planta quase parada, use só o húmus.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, flores e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure lagartas alaranjadas com espinhos pretos nas folhas novas, pontinhos amarelados e teias finas no verso das folhas (ácaro), manchas escuras nos frutos e percevejos nos botões. Cate as lagartas à mão e anote o que encontrou.",
+      "critica": false
+    },
+    {
+      "id": "colheita_granadilha",
+      "titulo": "Colher granadilhas maduras",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 300,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Colha os frutos com a casca toda laranja-amarelada e pintinhas brancas, cortando o cabinho com tesoura. Fruto ainda com manchas verdes não amadurece bem fora da planta. Frutos que caírem sozinhos também servem, desde que a casca não esteja rachada.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato do topo",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Raspe com uma pá de mão os 10 cm de cima do substrato, sem cavar junto ao caule, e reponha com mistura de 1 parte de composto para 1 de terra vegetal, mais 100 g de farinha de ossos. Regue bem em seguida.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Estrutura antes de crescer",
+      "mensagem": "A granadilha cresce vários metros e se prende pelas gavinhas. Montar o apoio depois, com a planta enrolada em tudo, quebra os ramos.",
+      "acao_requerida": "Instalar uma espaldeira, treliça ou pergolado de 1,8 a 2 m junto ao vaso e amarrar a muda em uma estaca que chegue até ele"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "O ramo principal chegou ao topo?",
+      "mensagem": "A granadilha floresce nos ramos laterais. Enquanto o ramo principal só sobe, não há flor.",
+      "acao_requerida": "Se o ramo principal já passou do topo da estrutura, cortar a ponta 10 cm abaixo dele; se ainda não chegou, repetir o corte quando chegar"
+    },
+    {
+      "dia_disparo": 200,
+      "titulo": "Flores à vista: polinize à mão",
+      "mensagem": "As flores abrem de manhã e duram um dia. Sem mamangavas, a maioria cai sem virar fruto.",
+      "acao_requerida": "Entre 8h e 11h, esfregar com um pincel macio o pólen amarelo das anteras sobre os três estigmas (as pontas de cima) de cada flor aberta"
+    },
+    {
+      "dia_disparo": 300,
+      "titulo": "Primeiros frutos amadurecendo",
+      "mensagem": "Os primeiros frutos devem estar trocando o verde pelo amarelo. A casca dura aguenta alguns dias na planta, mas não amadurece bem se colhida verde.",
+      "acao_requerida": "Conferir a cor dos frutos e colher só os que estiverem laranja-amarelados"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e das raízes (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha de repente mesmo com o substrato úmido; a base do caule escurece e amolece, e as raízes ficam marrons e soltam a casca",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e não enterrar o caule além do nível da muda. Planta com o colo apodrecido raramente se recupera: descarte o substrato e recomece com muda nova"
+    },
+    {
+      "nome": "Lagarta-do-maracujá (Dione juno, Agraulis vanillae)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas alaranjadas ou pretas com espinhos, em grupo, comendo as folhas novas até sobrar só a nervura; desfolha rápida em poucos dias",
+      "prevencao_tratamento": "Catar as lagartas e os ovos amarelos no verso das folhas; em infestação grande, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Ácaro-rajado e ácaro-branco",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, bronzeadas ou enrugadas, com teias finas no verso; piora em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, enxofre molhável ou óleo de neem a 0,5% a cada 5 dias, sempre no fim da tarde"
+    },
+    {
+      "nome": "Antracnose e verrugose (Colletotrichum, Cladosporium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nas folhas e frutos, ou verrugas marrons e ásperas na casca dos frutos novos; ramos secando da ponta para trás",
+      "prevencao_tratamento": "Não molhar as folhas na rega, podar para arejar a copa e retirar folhas e frutos manchados; em época chuvosa, pulverizar calda bordalesa a cada 15 dias"
+    },
+    {
+      "nome": "Percevejos (Diactor bilineatus, Holymenia clavigera)",
+      "tipo": "PRAGA",
+      "sintomas": "Botões florais e frutos novos murcham e caem; frutos maiores ficam enrugados com pontos de picada",
+      "prevencao_tratamento": "Catar os percevejos de manhã cedo, quando estão lentos, e jogá-los em água com sabão"
+    },
+    {
+      "nome": "Queda de flores por calor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões e flores amarelam e caem antes de abrir ou logo depois, sem sinal de praga, em sequência de dias acima de 30 °C",
+      "prevencao_tratamento": "Dar sombra parcial à tarde no verão, cobrir o substrato com palha para manter a raiz fresca e regar de manhã cedo; em baixada quente a produção se concentra no outono e na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: proteja a granadilha",
+      "mensagem": "A granadilha é planta de serra. Acima de 30 °C ela derruba flores, queima folhas e o vaso seca em horas.",
+      "acao_requerida": "Cobrir o substrato com 5 cm de palha, providenciar sombrite de 30 a 50% para o período da tarde e conferir a rega todo dia"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Risco de geada",
+      "mensagem": "Geada queima os ramos novos e pode matar a planta jovem. No frio ela quase para de crescer e bebe pouca água.",
+      "acao_requerida": "Em noites com previsão abaixo de 3 °C, cobrir a planta com TNT ou levar o vaso para junto de uma parede protegida; espaçar as regas e suspender o NPK"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual de renovação",
+      "mensagem": "A granadilha floresce nos ramos novos. Podar no fim do inverno, antes da brotação, garante muitos ramos jovens e floração forte na primavera.",
+      "acao_requerida": "Cortar os ramos secos, doentes e os que já deram fruto, deixando 2 a 3 gemas em cada ramo lateral; se a planta tiver menos de 6 meses, retirar só os ramos secos"
+    }
+  ]
+}

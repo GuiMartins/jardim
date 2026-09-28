@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Cumaru",
+    "nome_cientifico": "Dipteryx odorata",
+    "descricao": "Árvore amazônica da família das leguminosas, que na natureza passa de 25 m e dá a fava-tonka, semente de aroma de baunilha e amêndoa. Em vaso cresce devagar e vira uma árvore jovem ornamental por alguns anos, até pedir o chão. Frutificação em vaso é rara, porque na natureza ela só começa depois de 6 a 10 anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Comece num saco de muda ou tubete alto (15 cm de largura por 25 cm de profundidade) e passe para um vaso definitivo fundo, com pelo menos 40 cm de diâmetro e 40 cm de profundidade e furos no fundo: a raiz pivotante desce reta e enrola em vaso raso",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou perlita; levemente ácido (pH 5 a 6) e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 40,
+      "descricao": "Quebre o caroço duro do fruto com cuidado e tire a semente escura e alongada; deixe-a de molho 24 h em água e enterre-a deitada, a 2 cm de profundidade. Mantenha o saco de muda em meia-sombra. A semente descascada brota entre o 10º e o 40º dia; o fruto inteiro pode levar mais de 2 meses. A fase termina quando o caule sai do substrato e abre o primeiro par de folhas."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 41,
+      "dia_fim": 120,
+      "descricao": "Surgem as folhas compostas, com folíolos brilhantes e a nervura do meio alada. A muda é sensível a sol forte do meio-dia e a substrato seco. Deixe-a em sol da manhã ou meia-sombra clara. Quando a raiz começar a sair pelos furos do saco, é hora do vaso definitivo."
+    },
+    {
+      "fase_id": "muda_jovem",
+      "nome": "Muda Jovem",
+      "dia_inicio": 121,
+      "dia_fim": 365,
+      "descricao": "Já no vaso grande, a muda cresce em surtos, com várias folhas novas avermelhadas de uma vez e pausas entre eles. Aumente o sol aos poucos até chegar a 6 h de sol direto. No fim do primeiro ano costuma ter de 40 a 70 cm."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "O caule engrossa e fica lenhoso na base, e a planta aguenta sol pleno e pequenas falhas de rega. Cresce sobretudo de setembro a março e quase para no inverno."
+    },
+    {
+      "fase_id": "arvore_jovem_vaso",
+      "nome": "Árvore Jovem em Vaso",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão, brota com força e pede água e adubo. No outono desacelera e, no inverno, fica parada e sensível ao frio abaixo de 10 °C. A cada dois anos precisa de substrato novo ou de vaso maior. Se a raiz ocupar todo o vaso de 60 a 100 L, o melhor destino é plantar no chão, com espaço para uma árvore grande."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer a semente do cumaru",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 40,
+      "instrucoes": "Enfie o dedo 1 cm no substrato: se estiver seco, regue devagar com regador de bico fino até escorrer pelos furos. O substrato deve ficar úmido como esponja espremida, nunca encharcado, senão a semente apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar a muda de cumaru",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 41,
+      "dia_fim_ciclo": 365,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Muda em saco pequeno seca rápido: acima de 30 °C, confira todo dia. No inverno, espace para cada 4 ou 5 dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_arvore",
+      "titulo": "Regar o cumaru",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 366,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue devagar até sair água pelos furos e esvazie o pratinho depois de 30 minutos. No verão quente pode precisar a cada 2 dias; de junho a agosto, a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o cumaru",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por litro de vaso (máximo de 1 kg), mais 1 colher de sopa de farinha de ossos, sem encostar no caule, e regue em seguida. De junho a agosto, pule a adubação, porque a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 41,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as brotações novas procurando cochonilhas brancas ou marrons, folíolos cortados em meia-lua (formiga cortadeira) e manchas escuras. Confira também se a base do caule está firme e sem escurecimento.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro, tire a planta do vaso. Se as raízes estiverem enroladas, passe para um vaso 20 a 30% maior. Se não estiverem, raspe um terço do substrato velho e complete com mistura nova. Não corte a raiz pivotante principal. Regue bem e deixe a planta em meia-sombra por 7 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 40,
+      "titulo": "A semente brotou?",
+      "mensagem": "A semente descascada de cumaru costuma brotar em até 40 dias. Se o fruto foi plantado inteiro, pode demorar até o dobro.",
+      "acao_requerida": "Cavar de leve ao lado da semente: se ela estiver mole ou com cheiro de podre, descartar e semear outra, já sem o caroço; se estiver firme, manter a rega e esperar mais 30 dias"
+    },
+    {
+      "dia_disparo": 100,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "A raiz pivotante do cumaru cresce rápido para baixo e, se bater no fundo do saco, enrola e prejudica a árvore para sempre.",
+      "acao_requerida": "Rasgar o saco de muda com cuidado, sem desmanchar o torrão, e plantar no vaso de 40 L na mesma altura em que estava; regar bem e deixar 7 dias em meia-sombra"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Acostumar ao sol pleno",
+      "mensagem": "Já firme no vaso novo, a muda cresce mais e fica mais resistente com sol direto, mas passar de uma vez da sombra para o sol queima as folhas.",
+      "acao_requerida": "Aumentar o sol direto aos poucos ao longo de 2 semanas: 2 h de sol da manhã na primeira semana, 4 h na segunda, até chegar a 6 h"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escura e mole; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 a 5 cm, nunca deixar água no pratinho e usar substrato com areia grossa; se atacar, tirar do vaso, cortar as raízes escuras e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos cortados em meia-lua ou mudas desfolhadas de uma noite para a outra; trilha de formigas carregando pedaços de folha",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e tratar com isca formicida granulada longe de crianças e animais; proteger o caule da muda com uma faixa de graxa ou um cone de plástico"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou escamas marrons no caule e nas nervuras; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia com álcool 70% e depois aplicar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons a pretas irregulares nas folhas novas, que secam e caem, em épocas quentes e úmidas",
+      "prevencao_tratamento": "Regar no substrato e não nas folhas, deixar o vaso em local ventilado e retirar as folhas manchadas; se espalhar, aplicar calda bordalesa a 1% a cada 10 dias"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, com aspecto queimado ou cozido, depois de noites abaixo de 8 °C; em geada, a ponta dos ramos morre",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou para debaixo de uma cobertura nas noites frias; não podar o dano antes de setembro, porque a parte seca protege o resto do ramo"
+    },
+    {
+      "nome": "Queimadura de sol na muda",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou bronzeadas no meio dos folíolos da muda que passou direto da sombra para o sol",
+      "prevencao_tratamento": "Aumentar o sol aos poucos ao longo de 2 semanas; as folhas queimadas não se recuperam, mas as novas nascem adaptadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger o cumaru do frio",
+      "mensagem": "Árvore tropical amazônica, o cumaru para de crescer no inverno do Centro-Sul, sofre abaixo de 10 °C e morre com geada.",
+      "acao_requerida": "Deixar o vaso encostado numa parede voltada para o norte ou sob cobertura nas noites frias, reduzir a rega para quando o substrato secar a 5 cm e suspender o adubo até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomada da primavera",
+      "mensagem": "Com o calor voltando, o cumaru solta a nova brotação. É a melhor época para podar e para mexer no vaso.",
+      "acao_requerida": "Cortar os ramos secos pelo frio até o primeiro tecido verde, eliminar os brotos que disputam com o tronco principal e voltar a regar e adubar no ritmo normal"
+    }
+  ]
+}

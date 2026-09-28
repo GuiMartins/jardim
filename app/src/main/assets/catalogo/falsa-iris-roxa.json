@@ -1,0 +1,177 @@
+{
+  "planta": {
+    "nome_comum": "Falsa-íris-roxa",
+    "nome_cientifico": "Trimezia sabini",
+    "descricao": "Planta herbácea rizomatosa da família das íris, nativa do Brasil, com leque de folhas em espada e flores roxas que duram um só dia, mas se renovam por semanas na primavera e no verão. Rústica e tolerante à meia-sombra, forma touceiras que se dividem com facilidade e ainda solta mudinhas nas hastes florais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira larga, com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo; a touceira cresce mais para os lados que para baixo",
+    "volume_minimo_litros": 10,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou casca de pinus fina; rico em matéria orgânica, que segura umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o rizoma rente à superfície, sem enterrar a base do leque de folhas. Uma ou duas folhas externas podem amarelar enquanto as raízes se firmam. A fase termina quando aparece uma folha nova no centro do leque."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "O rizoma lança novos leques ao lado do primeiro e a touceira começa a encher o vaso. Folhas verde-escuras e firmes indicam luz e rega certas; folhas pálidas e compridas demais pedem mais luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Touceira formada, com vários leques. Na primavera e no verão surgem hastes achatadas que se parecem com folhas e soltam flores roxas de manhã, que murcham no fim do dia; cada haste floresce várias vezes. Depois da floração, a ponta da haste pode formar uma mudinha. No inverno o crescimento desacelera, e a cada dois anos a touceira pede divisão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O substrato deve ficar úmido, nunca encharcado, e o prato não pode acumular água.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a falsa-íris",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. No calor acima de 30 °C, confira a cada 2 dias; no inverno, espace para a cada 5 ou 6 dias. Pontas das folhas secas e marrons indicam falta de água.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a touceira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de farinha de ossos por vaso de 10 L, afastado do rizoma, e regue em seguida. Suspenda de junho a agosto, quando a planta quase não cresce.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base dos leques e o verso das folhas procurando bolinhas brancas de algodão, escamas marrons ou lesmas escondidas. Aperte a base do leque: se estiver mole ou com cheiro ruim, há podridão.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a touceira do vaso e separe os leques com faca limpa, deixando cada parte com rizoma e raízes. Replante em substrato novo com o rizoma rente à superfície e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda firmada",
+      "mensagem": "Um mês depois do plantio, as raízes já devem ter pegado no substrato novo.",
+      "acao_requerida": "Puxar levemente o leque: se estiver firme, a muda pegou; se soltar, conferir se o rizoma não apodreceu por excesso de água"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Touceira pronta para florir",
+      "mensagem": "Com seis meses, a planta já tem reservas para lançar hastes florais na próxima primavera.",
+      "acao_requerida": "Garantir pelo menos 2 horas de sol direto da manhã, sem o qual ela forma folhas mas não floresce"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do leque mole, escura e com cheiro ruim; folhas amarelam de fora para dentro e o leque se solta",
+      "prevencao_tratamento": "Não deixe água parada no prato e não enterre o rizoma. Corte as partes podres até o tecido sadio, deixe secar ao ar por um dia e replante em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodoado na base das folhas e entre os leques; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; se persistir, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e flores roídas pelas bordas, com rastro prateado de muco",
+      "prevencao_tratamento": "Cate à noite com lanterna; mantenha o vaso afastado do chão úmido e espalhe casca de ovo triturada na superfície"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora, Alternaria)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ovais com borda amarelada nas folhas, que se juntam e secam a folha",
+      "prevencao_tratamento": "Regue direto no substrato, sem molhar as folhas, e deixe o ar circular; corte as folhas atingidas rente à base"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas desbotadas ou amarelo-palha com áreas secas esbranquiçadas no lado exposto",
+      "prevencao_tratamento": "Evite sol direto das 11 h às 15 h; mude para um lugar só com sol da manhã"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: temporada de flores",
+      "mensagem": "Com o calor voltando, a falsa-íris lança as hastes florais. Cada flor dura um dia, mas a haste floresce de novo várias vezes.",
+      "acao_requerida": "Retomar a adubação mensal e não cortar as hastes achatadas, que parecem folhas mas são as que dão flor"
+    },
+    {
+      "meses": [
+        2,
+        3
+      ],
+      "titulo": "Mudinhas nas hastes",
+      "mensagem": "No fim do verão, as pontas das hastes que já floresceram costumam formar pequenos leques com raízes.",
+      "acao_requerida": "Separar as mudinhas que já tenham raízes de 2 cm e plantar em vasinhos com substrato úmido, ou curvar a haste até encostar a mudinha na terra de outro vaso"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "No frio a planta quase para de crescer e o substrato demora mais para secar, o que aumenta o risco de podridão do rizoma.",
+      "acao_requerida": "Espaçar a rega para quando os 3 cm de cima estiverem secos, suspender a adubação até setembro e cortar rente à base as hastes florais secas"
+    }
+  ]
+}

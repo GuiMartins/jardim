@@ -1,0 +1,170 @@
+{
+  "planta": {
+    "nome_comum": "Sapatinho-do-diabo",
+    "nome_cientifico": "Euphorbia tithymaloides (sin. Pedilanthus tithymaloides)",
+    "descricao": "Arbusto suculento de caules verdes em zigue-zague e folhas às vezes variegadas de branco e rosa. Na primavera e no verão abre pequenas flores vermelhas com formato de sapatinho. Aguenta seca e se multiplica fácil por estaca, mas o látex branco irrita pele e olhos e é tóxico se ingerido: mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 25 cm de diâmetro e 25 cm de profundidade, com furos no fundo. O barro ajuda a secar o substrato entre as regas",
+    "volume_minimo_litros": 10,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% casca de pinus fina ou perlita, 10% húmus de minhoca; deve drenar rápido e nunca empapar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Estaca",
+      "dia_inicio": 1,
+      "dia_fim": 35,
+      "descricao": "Use uma ponta de caule de 10 a 15 cm, lave o látex em água corrente e deixe o corte secar à sombra por 1 a 2 dias antes de enterrar 4 cm no substrato levemente úmido. A estaca pode perder algumas folhas nas primeiras semanas, o que é normal. As raízes se formam entre a 3ª e a 5ª semana: a estaca resiste a um puxão leve e aparecem brotos novos nas gemas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 36,
+      "dia_fim": 150,
+      "descricao": "Os brotos crescem e os caules começam a fazer o zigue-zague típico. Folhas novas firmes e coloridas mostram que as raízes já ocupam o vaso. Caules finos, compridos e com folhas espaçadas indicam falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Arbusto de 40 a 80 cm em vaso, cresce e floresce da primavera ao fim do verão, com as flores vermelhas nas pontas dos ramos. No inverno o crescimento para e, com frio abaixo de 10 °C, parte das folhas cai; os caules verdes seguem vivos e rebrotam em setembro. Poda de formação no início da primavera e troca de substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 35,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar só até umedecer, sem deixar água no pratinho. A estaca sem raiz apodrece no substrato encharcado e resseca se ele ficar seco muitos dias. Mantenha em claridade forte, com no máximo 2 horas de sol da manhã até enraizar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o sapatinho-do-diabo",
+      "tipo": "REGA",
+      "frequencia_dias": 6,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Se ainda estiver úmido, espere. No calor acima de 30 °C, confira a cada 4 dias; de junho a agosto, espace para a cada 12 a 15 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o sapatinho-do-diabo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 2 colheres de sopa de farinha de ossos com húmus) na borda do vaso de 10 L, sem encostar nos caules, e regue em seguida. De junho a agosto, pule a adubação: a planta está parada e o adubo só acumula sal no substrato.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar caules e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as axilas das folhas, as pontas dos ramos e o verso das folhas em busca de bolinhas brancas algodonosas, escamas marrons ou teias finas. Aperte a base dos caules: tem que estar firme, nunca mole ou escura.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, de luvas e óculos por causa do látex: tire a planta do vaso, solte as raízes, corte as podres ou secas e replante em substrato novo, num vaso 5 cm maior se as raízes estiverem enoveladas. Espere 5 dias para regar, para os cortes nas raízes cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "A estaca enraizou?",
+      "mensagem": "Com cerca de um mês, a estaca costuma já ter raízes e brotos novos. Ela pode ir para o sol aos poucos.",
+      "acao_requerida": "Puxar a estaca de leve: se resistir, passar o vaso para 3 a 5 horas de sol direto, começando pelo sol da manhã por uma semana"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Hora do primeiro desponte",
+      "mensagem": "Cortar a ponta dos caules faz a planta ramificar e ficar cheia, em vez de crescer em poucas varas compridas.",
+      "acao_requerida": "De luvas, cortar 3 a 5 cm da ponta dos caules mais altos com tesoura limpa e lavar o látex que escorrer com um borrifo de água"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole, escura ou enrugada; folhas amarelam e caem mesmo com o substrato úmido; cheiro de mofo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no pratinho. Cortar os caules sadios acima da parte mole, deixar secar 2 dias e replantar como estaca em substrato novo; descartar a parte podre e o substrato velho"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos nas axilas das folhas e nas pontas; folhas amareladas, deformadas e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com uma gota de detergente no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Lavar a planta com jato fraco de água, incluindo o verso das folhas; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queda de folhas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem de uma vez no inverno, deixando os caules verdes pelados",
+      "prevencao_tratamento": "Proteger de vento frio e de noites abaixo de 10 °C, reduzir a rega e não adubar. Com caules firmes, a planta rebrota na primavera; não confundir com podridão"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules finos e compridos, folhas pequenas e espaçadas, variegado desbotado e nenhuma flor",
+      "prevencao_tratamento": "Passar para um lugar com pelo menos 3 horas de sol direto, fazendo a transição em uma semana para não queimar; despontar os ramos esticados"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com o frio, o sapatinho-do-diabo para de crescer e pode perder folhas. Substrato úmido no frio apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para a cada 12 a 15 dias, suspender o adubo e abrigar o vaso de vento frio e de noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de formação da primavera",
+      "mensagem": "A planta volta a brotar em setembro. Podar agora deixa o arbusto cheio e com mais pontas para florir.",
+      "acao_requerida": "De luvas e óculos, cortar os caules secos, pelados ou fora do formato, a 2 cm acima de uma gema; os pedaços sadios de 10 a 15 cm servem de estaca"
+    }
+  ]
+}

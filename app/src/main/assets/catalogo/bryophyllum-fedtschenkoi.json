@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Calanchoê-lavanda",
+    "nome_cientifico": "Kalanchoe fedtschenkoi (sin. Bryophyllum fedtschenkoi)",
+    "descricao": "Suculenta de Madagascar com folhas azul-acinzentadas de borda recortada, que ficam rosadas ou arroxeadas no sol forte, e sinos cor de coral no fim do inverno. Uma estaca enraíza fácil e aguenta esquecimento. Todas as partes são tóxicas para cães, gatos e aves (bufadienolídeos): deixe o vaso fora do alcance deles.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico de 12 a 15 cm de diâmetro e 10 a 12 cm de profundidade, com furos no fundo e sem prato com água parada",
+    "volume_minimo_litros": 1,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% substrato para cactos e suculentas (ou terra vegetal peneirada), 30% areia grossa lavada, 20% perlita ou casca de pinus miúda; deve escorrer a água em segundos",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 28,
+      "descricao": "Uma estaca de caule com 8 a 10 cm, com o corte cicatrizado ao ar por 2 a 3 dias, é enterrada até 3 cm no substrato e mantida em luz clara, sem sol forte. As raízes surgem entre a 2ª e a 4ª semana. A estaca pode perder uma ou duas folhas de baixo, e isso é normal. Ela enraizou quando resiste ao puxar de leve e solta folhas novas no topo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 29,
+      "dia_fim": 120,
+      "descricao": "A planta passa aos poucos para o sol direto e começa a ramificar pela base. No sol as folhas ficam mais firmes e ganham borda rosada. Se ficarem verdes, moles e muito espaçadas no caule, falta luz. A fase termina quando surgem brotos laterais e o vaso fica cheio de hastes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Touceira de hastes com 20 a 30 cm, que tombam para fora do vaso com o tempo. Cresce da primavera ao outono, desacelera no inverno e floresce do fim do inverno ao início da primavera, quando as noites são longas. Depois da floração, as hastes que deram flor ficam compridas e peladas embaixo e pedem poda. Às vezes solta plantinhas na borda das folhas, e qualquer folha caída pode virar muda."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 28,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar só até umedecer, sem deixar escorrer muito pelos furos. Sem raiz, a estaca não repõe água, e deixar secar por completo agora atrasa ou mata o enraizamento. Encharcar apodrece a base.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o calanchoê",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 29,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Só regue se estiver totalmente seco: aí molhe tudo até escorrer pelos furos e jogue fora a água do prato. Folhas enrugadas pedem água. Folhas moles e translúcidas são sinal de excesso. De maio a agosto, espace para a cada 15 a 20 dias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar hastes e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as axilas das folhas, o encontro das hastes com o substrato e os botões florais. Procure tufos brancos de algodão (cochonilha), insetos verdes ou pretos agrupados (pulgão) e manchas escuras e moles na base do caule.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o vaso e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta com o substrato seco, solte as raízes velhas e replante em substrato novo, num vaso 2 a 4 cm mais largo. Espere 5 dias para a primeira rega, para as raízes machucadas cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "A estaca enraizou?",
+      "mensagem": "Em 3 semanas a maioria das estacas já tem raiz. Se ela estiver solta e a base escura e mole, apodreceu.",
+      "acao_requerida": "Puxar a estaca de leve. Se resistir, está enraizada. Se a base apodreceu, cortar acima da parte escura, deixar cicatrizar 3 dias e replantar em substrato seco"
+    },
+    {
+      "dia_disparo": 29,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "Com raízes, o calanchoê precisa de sol direto para ficar compacto e colorido. A mudança brusca queima as folhas.",
+      "acao_requerida": "Deixar 1 a 2 horas de sol da manhã na primeira semana e aumentar 1 hora por semana até chegar a 4 a 6 horas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule escura e mole, folhas moles, translúcidas ou amareladas que caem ao toque, substrato sempre úmido e com cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato totalmente seco, sem água no prato. Se atacar, corte as hastes sadias acima da parte escura, deixe cicatrizar 3 dias e replante como estaca em substrato novo, descartando o resto"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e na base das hastes, folhas pegajosas e crescimento travado",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%, repetindo a cada 7 dias por 3 semanas. Em infestação grande, óleo de neem a 0,5% no fim da tarde, longe do sol forte"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos botões e nas hastes florais, flores deformadas que não abrem",
+      "prevencao_tratamento": "Jato de água ou água com sabão neutro (1 colher de chá por litro) nos botões. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado nas folhas, que depois ficam com manchas marrons e secas",
+      "prevencao_tratamento": "Mais sol e ventilação, sem molhar as folhas. Retire as folhas atacadas e aplique bicarbonato de sódio (1 colher de chá por litro, com gota de detergente) a cada 7 dias"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Hastes compridas e finas que tombam, folhas verdes pequenas e muito espaçadas, sem cor rosada na borda",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 3 a 4 horas de sol direto. As partes esticadas não voltam: pode as hastes e use as pontas como estaca"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrons e secas no lado das folhas virado para o sol, logo depois de a planta mudar de lugar",
+      "prevencao_tratamento": "Aclimatar ao sol aos poucos, começando pelo sol da manhã. No verão, proteja do sol do meio da tarde se ela ficar atrás de vidro"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Noites escuras para florir",
+      "mensagem": "O calanchoê só forma botões quando as noites passam de 12 horas de escuro. A luz de uma lâmpada à noite impede a floração do fim do inverno.",
+      "acao_requerida": "Deixar o vaso num lugar sem luz artificial acesa depois do anoitecer até os botões aparecerem"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "No frio a planta quase para de crescer e o substrato demora a secar. Geada e temperaturas abaixo de 5 °C matam as hastes.",
+      "acao_requerida": "Espaçar as regas para a cada 15 a 20 dias e, em noites abaixo de 5 °C, levar o vaso para dentro ou para baixo de uma cobertura"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda depois da floração",
+      "mensagem": "Passada a floração, as hastes que floresceram ficam compridas e peladas embaixo. Podar agora faz a touceira brotar compacta na primavera.",
+      "acao_requerida": "Cortar as hastes florais secas rente às folhas e encurtar pela metade as hastes esticadas, logo acima de um par de folhas. As pontas cortadas podem virar estacas"
+    },
+    {
+      "meses": [
+        10,
+        12,
+        2
+      ],
+      "titulo": "Adubação da estação de crescimento",
+      "mensagem": "Da primavera ao fim do verão a planta cresce e aproveita uma adubação leve. Adubo demais deixa a planta mole e verde.",
+      "acao_requerida": "Dissolver NPK 10-10-10 ou adubo para suculentas em metade da dose do rótulo e aplicar numa rega com o substrato já úmido. Pule se a planta tiver menos de 2 meses ou se acabou de trocar de vaso"
+    }
+  ]
+}

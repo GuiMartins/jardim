@@ -1,0 +1,179 @@
+{
+  "planta": {
+    "nome_comum": "Cana-do-brejo",
+    "nome_cientifico": "Costus spiralis",
+    "descricao": "Planta nativa das matas úmidas do Brasil. Tem hastes em espiral de 1 a 2 m e, no verão e no outono, inflorescências de brácteas vermelhas. É cultivada como ornamental de meia sombra e como planta medicinal tradicional: o chá das folhas é usado como diurético.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo de pelo menos 40 cm de diâmetro e 35 cm de profundidade, com furos no fundo. O rizoma se espalha para os lados, então prefira vasos mais largos que fundos",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco ou casca de pinus fina. Deve reter umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. As folhas de baixo podem amarelar, e isso é normal. A fase termina quando surge uma folha nova enrolada na ponta de uma haste ou um broto novo saindo do substrato."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "O rizoma se espalha e lança novas hastes em volta da haste principal. Cada haste cresce em espiral, com as folhas girando em torno do caule. A planta está estabelecida quando tem 3 ou mais hastes e as mais velhas passam de 80 cm."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão, a touceira lança hastes novas e cresce rápido. Do fim do verão ao outono, as hastes maduras formam na ponta uma espiga de brácteas vermelhas que dura semanas. No inverno o crescimento para e algumas hastes velhas secam. Cada haste que já floresceu vai declinando aos poucos e é substituída pelas novas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver apenas úmido ou seco, regue devagar até escorrer pelos furos. Nesta fase o torrão não pode secar por inteiro. Esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cana-do-brejo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e regue até escorrer pelos furos se estiver seco. No verão acima de 30 °C, confira a cada 2 dias. No inverno, espaçe para a cada 5 a 7 dias. Folhas enroladas no meio do dia pedem água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a touceira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca ou 1 colher de sopa de torta de mamona curtida por vaso de 30 L, longe das hastes, e regue em seguida. De junho a agosto, pule a adubação: a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar hastes e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as axilas onde a folha encontra a haste. Procure cochonilhas (pontos brancos ou marrons grudados), lagartas, folhas roídas e manchas escuras na base das hastes.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 540,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Se for primavera, tire a planta do vaso. Corte o rizoma com faca limpa em pedaços com 2 ou 3 hastes e raízes cada um, e replante em substrato novo. Fora da primavera, adie para setembro ou outubro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "Enterrar a haste mais fundo do que estava favorece o apodrecimento. A muda precisa de umidade constante e de sombra no primeiro mês.",
+      "acao_requerida": "Plantar na mesma altura em que a muda estava, firmar o substrato em volta, regar bem e deixar o vaso fora do sol direto por 2 semanas"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de ir para o lugar definitivo",
+      "mensagem": "Depois de duas semanas na sombra, a muda já aguenta um pouco de sol.",
+      "acao_requerida": "Mudar o vaso para um lugar com sol da manhã (até as 10h) e sombra à tarde"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base das hastes escura e mole, hastes que tombam ou amarelam de uma vez, cheiro azedo no substrato",
+      "prevencao_tratamento": "Substrato úmido não quer dizer encharcado: nunca deixe água parada no pratinho. Tire a planta, corte as partes moles do rizoma, polvilhe canela em pó no corte e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons grudadas nas axilas das folhas e no verso delas; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool. Em infestação maior, pulverize óleo de neem a 0,5% com algumas gotas de detergente no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Lagartas e lesmas",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou com buracos grandes; rastro brilhante de muco no vaso",
+      "prevencao_tratamento": "Cate à mão no início da manhã ou à noite. Contra lagartas, Bacillus thuringiensis nas folhas; contra lesmas, casca de ovo triturada sobre o substrato"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas no meio das folhas voltadas para o sol da tarde",
+      "prevencao_tratamento": "Mude o vaso para um lugar com sol só de manhã. As folhas queimadas não se recuperam: corte-as quando estiverem mais de metade secas"
+    },
+    {
+      "nome": "Pontas secas por ar seco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas marrons e quebradiças, principalmente no inverno ou perto de ar-condicionado",
+      "prevencao_tratamento": "Agrupe com outros vasos, afaste de correntes de ar e borrife água nas folhas pela manhã nos dias secos. Apare só a parte seca com tesoura, seguindo o formato da folha"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "No frio a cana-do-brejo quase para de crescer e o substrato demora mais para secar. Rega de verão agora apodrece o rizoma.",
+      "acao_requerida": "Regar só quando os 3 cm de cima do substrato estiverem secos (a cada 5 a 7 dias) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "Abaixo de 5 °C as folhas queimam, e a geada mata as hastes até o chão.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para perto da parede ou para baixo de uma cobertura, ou cobrir com tecido leve"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Limpeza de fim de inverno",
+      "mensagem": "As hastes que secaram ou já floresceram e estão amarelando tiram espaço e energia das brotações da primavera.",
+      "acao_requerida": "Cortar rente ao substrato as hastes secas, amarelas ou tombadas e retomar a adubação mensal"
+    }
+  ]
+}

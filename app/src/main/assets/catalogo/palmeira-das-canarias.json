@@ -1,0 +1,209 @@
+{
+  "planta": {
+    "nome_comum": "Palmeira-das-canárias",
+    "nome_cientifico": "Phoenix canariensis",
+    "descricao": "Palmeira robusta das Ilhas Canárias, de folhas longas e arqueadas com espinhos fortes na base. Em vaso cresce devagar e fica anos com porte de palmeira jovem; aguenta sol pleno, vento, seca curta e geada leve. Aqui o cultivo começa com uma muda comprada, de 40 a 80 cm.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica ou cimento), com pelo menos 40 cm de diâmetro e 40 cm de profundidade e vários furos no fundo; a copa pega muito vento e vaso leve tomba",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% casca de pinus fina ou perlita; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e de lugar: uma ou duas folhas de baixo podem amarelar, e isso é normal. Se veio de viveiro sombreado, as folhas podem ganhar manchas claras de queimadura no sol forte. A fase termina quando surge uma folha nova, ainda fechada, no centro da copa."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso novo e a palmeira solta de 3 a 6 folhas novas por ano, cada vez mais longas e divididas. Crescimento lento é normal para a espécie. Folha nova amarela ou com pontas secas indica rega irregular ou falta de potássio e magnésio."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Palmeira estabelecida em vaso: cresce da primavera ao outono e quase para no inverno. As folhas de baixo secam aos poucos e são retiradas. O tronco demora anos para aparecer; em vaso ela fica compacta enquanto as raízes estiverem contidas. Troca de vaso ou de substrato a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a palmeira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 30 minutos. Nos primeiros dias as raízes ainda não saíram do torrão e secam rápido. Acima de 32 °C, confira a cada 2 dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a palmeira",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão quente, confira a cada 3 ou 4 dias; no inverno, a cada 10 a 14 dias. Nunca deixe água parada no prato.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_palmeira",
+      "titulo": "Adubar a palmeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de adubo para palmeiras (ou NPK 10-10-10 com 1 colher de chá de sulfato de magnésio) por vaso de 40 L, a 10 cm do caule, e regue em seguida. De maio a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "poda_folhas_secas",
+      "titulo": "Retirar folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 120,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas grossas e óculos, corte rente à base as folhas de baixo que estiverem totalmente marrons. Não corte folhas ainda verdes ou só amareladas: a palmeira tira potássio delas, e cortá-las piora a deficiência.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e coroa",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e a base das folhas em busca de escamas brancas ou marrons, teias finas e pontinhos amarelos. Confira se a folha central sai firme e verde; folha central murcha ou que se solta ao puxar é sinal grave.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, retire a palmeira com o torrão, solte as raízes enroladas no fundo sem quebrar muitas e passe para um vaso 10 cm mais largo, ou devolva ao mesmo vaso com substrato novo. Mantenha a base do caule na mesma altura de antes e deixe à meia-sombra por 2 semanas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado com os espinhos",
+      "mensagem": "A base das folhas tem espinhos rígidos e pontudos que furam luva fina e machucam os olhos.",
+      "acao_requerida": "Posicionar o vaso longe de passagem e de crianças e usar luvas grossas e óculos sempre que mexer na planta"
+    },
+    {
+      "dia_disparo": 2,
+      "titulo": "Acostume ao sol aos poucos",
+      "mensagem": "Mudas de viveiro costumam vir da sombra e queimam no sol forte da tarde nos primeiros dias.",
+      "acao_requerida": "Deixar só com sol da manhã na primeira semana e passar para sol pleno ao longo de 15 dias"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "Se já apareceu uma folha nova no centro, as raízes pegaram. A rega passa a ser menos frequente.",
+      "acao_requerida": "Conferir se há folha nova surgindo no centro da copa; se não houver e as folhas estiverem murchas, verificar se o substrato está encharcado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de baixo para cima com substrato sempre úmido, cheiro azedo no vaso, raízes escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, usar vaso furado sem água parada no prato; se já apodreceu, tirar do vaso, cortar as raízes podres e replantar em substrato novo e arenoso"
+    },
+    {
+      "nome": "Murcha de fusário (Fusarium oxysporum f. sp. canariensis)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas secando de um lado só da copa, de baixo para cima, com uma faixa marrom ao longo da nervura central",
+      "prevencao_tratamento": "Não tem cura; desinfetar a tesoura com álcool antes de cada corte e não reaproveitar o substrato de planta doente; descartar a palmeira afetada para não contaminar outras"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas ou marrons presas no verso dos folíolos e na base das folhas; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; em infestação maior, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontinhos amarelos, aspecto empoeirado e teias finas no verso, pior em tempo seco e quente",
+      "prevencao_tratamento": "Jato de água forte no verso das folhas a cada 3 dias por 2 semanas; se persistir, acaricida à base de enxofre ou óleo de neem"
+    },
+    {
+      "nome": "Broca-do-olho-do-coqueiro (Rhynchophorus palmarum)",
+      "tipo": "PRAGA",
+      "sintomas": "Folha central murcha, amarela ou que se solta ao puxar; furos com serragem e cheiro de fermentado na base das folhas",
+      "prevencao_tratamento": "Não ferir o caule e cortar folhas só quando secas; ao notar os sinais, procurar um agrônomo, porque a larva destrói o palmito e a planta costuma morrer"
+    },
+    {
+      "nome": "Falta de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas com faixa amarela nas bordas e pontas dos folíolos secas e alaranjadas, enquanto o centro da folha segue verde",
+      "prevencao_tratamento": "Usar adubo próprio para palmeiras, com potássio e magnésio; não cortar folhas amareladas ainda vivas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas claras, quase brancas ou marrons e secas, nas folhas mais expostas logo após a mudança de lugar",
+      "prevencao_tratamento": "Aclimatar ao sol pleno ao longo de 2 semanas; as folhas queimadas não se recuperam, mas as novas já nascem adaptadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Palmeira em repouso de inverno",
+      "mensagem": "No frio a palmeira quase não cresce e bebe bem menos água. Aguenta geada leve, mas o substrato encharcado no frio apodrece as raízes.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (a cada 10 a 14 dias) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor voltando, a palmeira retoma o crescimento e começa a soltar folhas novas.",
+      "acao_requerida": "Retomar a adubação e voltar a conferir a rega a cada 5 dias"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte de verão",
+      "mensagem": "Em vaso ao sol, o substrato pode secar em 2 ou 3 dias nas semanas mais quentes, e o ácaro aparece com o tempo seco.",
+      "acao_requerida": "Conferir o substrato a cada 3 dias e molhar o verso das folhas com jato de água uma vez por semana"
+    }
+  ]
+}

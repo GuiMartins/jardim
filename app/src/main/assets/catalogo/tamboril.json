@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Tamboril",
+    "nome_cientifico": "Enterolobium contortisiliquum",
+    "descricao": "Árvore nativa do Brasil, também chamada orelha-de-macaco por causa do fruto enrolado em forma de orelha. Cresce muito rápido e no chão passa de 20 m. No vaso fica contida por anos como árvore jovem ou bonsai, com folhagem fina e recortada que cai no inverno. Com o tempo, o melhor destino é o chão, longe de muros e canos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Semeie em copo ou saquinho de muda de 500 mL com furos; a muda vai depois para um vaso definitivo de pelo menos 40 cm de profundidade e 40 cm de diâmetro, pesado (cerâmica ou cimento) para não tombar no vento, com furos no fundo",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra de jardim, 30% areia grossa, 20% composto orgânico ou húmus de minhoca; para a semeadura, metade areia e metade substrato comercial",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 15,
+      "descricao": "A casca da semente é dura e impermeável: na véspera, lixe um ponto da borda (do lado oposto à cicatriz) até aparecer o miolo claro e deixe de molho em água morna por 12 a 24 horas. As que incharam vão para o substrato a 1 cm de profundidade. As sementes escarificadas germinam entre o 5º e o 12º dia; as que não incharam no molho quase nunca germinam."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 16,
+      "dia_fim": 60,
+      "descricao": "Depois das duas folhas redondas da semente surgem as folhas compostas, divididas em muitos folíolos pequenos. A muda cresce rápido e, perto do dia 45, as raízes começam a sair pelos furos do copo: é a hora do vaso definitivo."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda em Crescimento",
+      "dia_inicio": 61,
+      "dia_fim": 365,
+      "descricao": "Fase de crescimento acelerado: com sol pleno, a muda pode passar de 1 m no primeiro ano. O caule engrossa e fica lenhoso na base. As folhas se fecham à noite, o que é normal."
+    },
+    {
+      "fase_id": "arvore_jovem",
+      "nome": "Árvore Jovem em Vaso",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce forte da primavera ao outono, perde quase todas as folhas entre junho e agosto e rebrota em setembro. Em vaso raramente floresce; no chão, a floração branca aparece depois de uns 5 anos, e os frutos (tóxicos, ricos em saponina) amadurecem no inverno. O vaso segura o porte, mas a árvore pede poda anual e renovação da terra a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer a semeadura",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Borrife ou regue de leve pela manhã até umedecer o primeiro centímetro. O substrato não pode secar nem ficar encharcado, porque a semente escarificada apodrece em água parada.",
+      "critica": true
+    },
+    {
+      "id": "rega_plantula",
+      "titulo": "Regar a muda de tamboril",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Copo pequeno ao sol seca rápido: acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o tamboril",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão quente, confira a cada 2 dias. Sem folhas, no inverno, regue só a cada 7 a 10 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o tamboril",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 por 10 L de vaso (ou 2 punhados de húmus) na borda, longe do caule, e regue em seguida. Pule a adubação de junho a agosto, quando a árvore está sem folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folíolos cortados em meia-lua (formiga), pontos brancos ou marrons grudados nos ramos novos (cochonilha) e galhos cortados em anel.",
+      "critica": false
+    },
+    {
+      "id": "renovar_vaso",
+      "titulo": "Podar raízes e renovar a terra",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno. Tire a árvore do vaso, corte com tesoura limpa 1/4 das raízes que dão voltas pela borda e pelo fundo e replante com substrato novo no mesmo vaso ou num maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Conferir a germinação",
+      "mensagem": "Semente escarificada que não brotou até agora dificilmente vai brotar.",
+      "acao_requerida": "Desenterrar as que não germinaram; se estiverem duras e secas, lixar de novo, deixar de molho e semear outra vez"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "A muda cresce rápido, e raiz presa no copo fica enovelada e atrasa a árvore por meses.",
+      "acao_requerida": "Passar a muda com o torrão inteiro para o vaso de pelo menos 30 L, na mesma altura de antes, e regar bem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (excesso de água)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora do inverno, substrato sempre úmido e com cheiro azedo, base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e reduzir a rega quando a árvore perde as folhas; se já houver raiz podre, cortar as partes escuras e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas murcham e caem com o caule fino e escuro rente ao substrato",
+      "prevencao_tratamento": "Semear em substrato novo e arenoso, sem encharcar; retirar as plântulas afetadas"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos cortados em meia-lua ou ramos desfolhados de uma noite para outra; trilha de formigas no vaso",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida granulada ao lado dela, longe de crianças e animais; faixa de graxa ou fita adesiva no vaso dificulta a subida"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons grudadas nos ramos novos e no verso das folhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool; em infestação maior, óleo mineral ou de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Serrador (Oncideres spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Galhos cortados em anel perfeito, que secam e caem",
+      "prevencao_tratamento": "Recolher e queimar ou descartar os galhos cortados, onde ficam os ovos; catar os besouros quando aparecerem no verão"
+    },
+    {
+      "nome": "Raiz enovelada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Raízes saindo pelos furos, água escorre logo sem molhar o torrão, árvore para de crescer e murcha rápido",
+      "prevencao_tratamento": "Podar raízes e renovar a terra a cada 2 anos ou passar para vaso maior; no limite, plantar no chão"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Queda de folhas é normal",
+      "mensagem": "O tamboril perde as folhas no inverno. Nessa época ele bebe pouco, e rega de verão apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, conferindo o substrato a 4 cm, e suspender a adubação"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Sem folhas, dá para ver a estrutura da árvore, e a poda agora é seguida pela brotação da primavera.",
+      "acao_requerida": "Cortar galhos secos, cruzados ou que crescem para dentro e encurtar em até 1/3 os ramos longos, logo acima de uma gema"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Rebrota da primavera",
+      "mensagem": "As folhas novas estão voltando, e a árvore precisa de água e adubo para crescer.",
+      "acao_requerida": "Voltar à rega a cada 3 dias e retomar a adubação"
+    }
+  ]
+}

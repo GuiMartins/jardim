@@ -1,0 +1,235 @@
+{
+  "planta": {
+    "nome_comum": "Toranja",
+    "nome_cientifico": "Citrus maxima",
+    "descricao": "Maior fruto cítrico que existe, de casca grossa e gomos doce-amargos, também chamado de pomelo (não confundir com o grapefruit, Citrus × paradisi, que é um híbrido dela). Em vaso grande, a muda enxertada fica com 2 a 3 m, perfuma a varanda na florada e começa a produzir entre o 3º e o 4º ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 50 a 60 cm de diâmetro e pelo menos 45 cm de profundidade, com vários furos no fundo e apoiado em pés ou rodízios para a água escorrer; comece com um de 40 cm e passe para o definitivo no primeiro transplante",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina ou perlita; acrescente 1 xícara de calcário dolomítico e 2 xícaras de farinha de ossos a cada 60 L. pH entre 6 e 6,5",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o colo (e o ponto de enxertia, uma cicatriz torta no caule) pelo menos 5 cm acima do substrato; enterrar o enxerto convida a gomose. Algumas folhas podem amarelar e cair com a mudança. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A planta solta fluxos de brotação a cada 2 ou 3 meses na estação quente, e as raízes ocupam o vaso. Brotos que nascem abaixo do enxerto (folhas diferentes, espinhos longos) são do porta-enxerto e devem ser arrancados. Flores que aparecerem neste primeiro ano devem ser tiradas para a energia ir para as raízes."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "Formação da copa: 3 ou 4 ramos principais bem distribuídos. A planta pode florescer e segurar alguns frutos no segundo e no terceiro ano; deixe no máximo 2 ou 3 por planta, porque cada toranja pesa de 1 a 2 kg e esgota uma árvore jovem."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: florada perfumada no fim do inverno e na primavera (agosto a outubro), frutinhos caindo em massa em novembro e dezembro (queda natural), crescimento dos frutos no verão e colheita do outono ao inverno, de 5 a 8 meses depois da flor. Em vaso de 60 a 100 L, uma planta adulta segura bem de 6 a 12 frutos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de toranja",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do tronco; se estiver seco, regue devagar em volta do torrão até escorrer pelos furos. Não deixe água parada no pratinho nem encostada no caule.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a toranja",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 1 L para cada 10 L de vaso). Acima de 30 °C ou com frutos crescendo, confira a cada 2 dias; no inverno, a cada 4 ou 5. Secar a ponto de murchar derruba flores e frutinhos e racha os frutos grandes na rega seguinte.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_citros",
+      "titulo": "Adubar a toranja",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na borda do vaso, longe do tronco, 1 colher de sopa de NPK 20-05-20 (ou adubo próprio para citros) por ano de idade da planta, até no máximo 4 colheres, mais 1 xícara de húmus ou torta de mamona curtida. Regue em seguida. Pule a adubação de junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos (caminhos prateados de larva-minadora, pulgões), o verso das folhas e os galhos (cochonilhas, fumagina preta), e a base do tronco (casca escura rachada ou soltando goma). Arranque os brotos que saem abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre agosto e setembro, antes da brotação, tire a planta do vaso, raspe 3 a 5 cm de raiz em volta do torrão e por baixo, e volte ao vaso (ou a um maior) com substrato novo. Se a data cair em outra época, espere o fim do inverno.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Confira o ponto de enxertia",
+      "mensagem": "Se a fita plástica do enxerto ainda estiver no caule, ela estrangula a planta conforme o tronco engrossa.",
+      "acao_requerida": "Cortar e retirar qualquer fita ou arame que ainda esteja no caule e conferir se o enxerto ficou acima do substrato"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Nada de frutos no primeiro ano",
+      "mensagem": "A muda ainda está formando raízes; segurar frutos agora atrasa a planta em um ano.",
+      "acao_requerida": "Retirar com a unha as flores e os frutinhos que aparecerem até completar um ano de vaso"
+    },
+    {
+      "dia_disparo": 400,
+      "titulo": "Hora de formar a copa",
+      "mensagem": "Com um ano de vaso, a planta aguenta uma poda de formação que define a arquitetura da árvore.",
+      "acao_requerida": "Escolher 3 ou 4 ramos bem distribuídos a partir de 40 cm do substrato, encurtar as pontas em um terço e remover os ramos que cruzam ou crescem para dentro"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Primeira safra de verdade",
+      "mensagem": "A toranja já tem porte para segurar mais frutos.",
+      "acao_requerida": "Na próxima florada, deixar os frutos vingarem e, após a queda natural de dezembro, manter no máximo um fruto a cada 8 a 10 L de vaso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Gomose (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Casca escura e úmida na base do tronco, rachaduras que soltam goma âmbar, folhas amarelando e caindo; em estágio avançado, a planta seca inteira",
+      "prevencao_tratamento": "Nunca enterrar o enxerto nem deixar água parada no pratinho ou encostada no tronco. No início, raspe a casca doente até o tecido verde e pincele pasta bordalesa; se o anel ao redor do tronco se fechar, a planta não se recupera"
+    },
+    {
+      "nome": "Podridão de raiz por encharcamento",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas mesmo com o substrato úmido, amarelamento geral, cheiro azedo no vaso e raízes marrons e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos livres e o vaso elevado. Em caso suspeito, suspenda a rega até secar bem e, se as raízes estiverem podres, corte-as e replante em substrato novo"
+    },
+    {
+      "nome": "Larva-minadora-dos-citros (Phyllocnistis citrella)",
+      "tipo": "PRAGA",
+      "sintomas": "Caminhos prateados e sinuosos nas folhas novas, que ficam enroladas e deformadas",
+      "prevencao_tratamento": "Ataca só os brotos novos: pulverize óleo de neem a 0,5% nos brotos a cada 7 dias durante os fluxos de brotação. Não arranque as folhas atacadas, que ainda fazem fotossíntese"
+    },
+    {
+      "nome": "Cochonilhas (escama-farinha, cochonilha-parda)",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons presas aos galhos e ao verso das folhas, melado pegajoso e fumagina (pó preto) nas folhas",
+      "prevencao_tratamento": "Remova com escova de dente e água com sabão neutro; depois aplique óleo mineral ou de neem a 1% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Pulgão-preto-dos-citros (Toxoptera citricida)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos nos brotos, que encarquilham; formigas subindo pelo tronco",
+      "prevencao_tratamento": "Jato de água forte nos brotos e calda de sabão neutro a 1%; controle as formigas, que protegem os pulgões"
+    },
+    {
+      "nome": "Ácaros (ácaro-da-leprose, ácaro-da-falsa-ferrugem)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e frutos com manchas amarronzadas, casca do fruto áspera e bronzeada; em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos e aplique enxofre molhável (2 g/L) fora das horas quentes, sem misturar com óleo"
+    },
+    {
+      "nome": "Clorose por falta de micronutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com nervuras verdes (ferro, zinco, manganês) ou folhas velhas com um V amarelo na ponta (magnésio)",
+      "prevencao_tratamento": "Pulverize adubo foliar com micronutrientes a cada 60 dias na primavera e no verão e aplique 1 colher de sopa de sulfato de magnésio diluída na rega a cada 3 meses; confira se o substrato não está encharcado, o que também bloqueia a absorção"
+    },
+    {
+      "nome": "Queda e rachadura de frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutinhos caindo em massa ou frutos grandes com rachaduras na casca depois de uma rega forte",
+      "prevencao_tratamento": "A queda de dezembro é natural e ajusta a carga. Fora disso, é sinal de rega irregular: mantenha o substrato com umidade constante, sem secar demais e sem encharcar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8,
+        9,
+        10
+      ],
+      "titulo": "Florada da toranja",
+      "mensagem": "As flores brancas e perfumadas definem a safra do ano que vem. Falta de água ou calor seco agora derruba as flores.",
+      "acao_requerida": "Manter o substrato úmido sem encharcar, não podar os ramos floridos e retomar a adubação se ela estava suspensa"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "Fim do inverno, antes da brotação: é a época em que a toranja cicatriza melhor e não perde a florada.",
+      "acao_requerida": "Cortar galhos secos, doentes, ladrões que saem do tronco e os ramos que cruzam por dentro da copa, com tesoura limpa com álcool"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Raleio dos frutinhos",
+      "mensagem": "Depois da queda natural, os frutos que ficaram vão crescer até o inverno. Carga demais esgota a planta e deixa as toranjas pequenas.",
+      "acao_requerida": "Deixar no máximo um fruto a cada 8 a 10 L de vaso, tirando os menores e os que estão encostados uns nos outros"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Época de colher toranjas",
+      "mensagem": "Os frutos estão maduros quando a casca passa de verde a amarelo-esverdeada e fica levemente macia ao apertar. A toranja não amadurece depois de colhida.",
+      "acao_requerida": "Colher com tesoura, deixando 1 cm de cabo, os frutos que já mudaram de cor; os outros aguentam semanas no pé"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com o frio a planta cresce pouco e o substrato demora mais para secar, o que favorece a gomose.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender a adubação e, em geada, levar o vaso para perto de uma parede ou cobrir a copa com manta à noite"
+    }
+  ]
+}

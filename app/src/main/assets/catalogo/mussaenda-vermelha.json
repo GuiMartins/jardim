@@ -1,0 +1,173 @@
+{
+  "planta": {
+    "nome_comum": "Mussaenda-vermelha",
+    "nome_cientifico": "Mussaenda erythrophylla",
+    "descricao": "Arbusto tropical da África Ocidental. O que chama atenção nele não são as flores, que são pequenas e cor de creme, mas as sépalas vermelhas e aveludadas, que parecem folhas coloridas. Em vaso fica com 1 a 1,5 m se for podado todo ano e floresce da primavera ao outono, mas não aguenta geada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% húmus de minhoca, 20% casca de pinus fina ou fibra de coco, 10% areia grossa. Deve ficar levemente ácido (pH 5,5 a 6,5), então não use calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda recém-plantada pode perder algumas folhas ou sépalas vermelhas por causa do estresse da mudança. Nas duas primeiras semanas, deixe o vaso em sol da manhã. A adaptação termina quando aparecem brotos novos nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso, e os ramos se alongam e se ramificam. Agora ela já pode ficar no sol pleno. Se estiver na época quente, os primeiros cachos de sépalas vermelhas surgem nas pontas dos ramos novos. Ramos longos e com poucas folhas indicam falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "No ano típico, ela brota forte na primavera e fica coberta de cachos vermelhos de novembro a abril. No inverno cresce pouco e pode perder parte das folhas se fizer frio. Floresce nos ramos do ano, por isso a poda do fim do inverno faz a floração seguinte ser mais cheia."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a mussaenda",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e, se estiver seco, regue devagar até a água escorrer pelos furos. Acima de 30 °C, confira a cada 2 dias. No inverno, espace para cada 5 a 7 dias e só regue com o substrato seco. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a mussaenda",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 3 colheres de sopa de farinha de ossos com 1 xícara de húmus) na borda do vaso de 30 L, longe do caule, e regue em seguida. De junho a agosto, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as axilas e as pontas dos ramos. Procure algodãozinho branco (cochonilha), insetos agrupados nos brotos (pulgão) ou pontinhos amarelos com teia fina (ácaro).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, corte cerca de 3 cm das raízes que estiverem enoveladas e plante de novo com substrato novo, no mesmo vaso ou num 5 cm maior. Deixe-a 1 semana na meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora de ir para o sol pleno",
+      "mensagem": "Passadas duas semanas, a muda já se recuperou do plantio. Sem pelo menos 4 horas de sol direto, a mussaenda fica com ramos compridos e dá pouca cor.",
+      "acao_requerida": "Levar o vaso para um local com 6 horas de sol direto, protegendo-o do sol forte da tarde se o calor passar de 35 °C"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Desponte para encorpar",
+      "mensagem": "Quando as pontas dos ramos são cortadas, a planta ramifica, e cada ramo novo pode dar um cacho de sépalas vermelhas.",
+      "acao_requerida": "Cortar 3 a 5 cm da ponta de cada ramo principal, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido, as folhas amarelam e caem de baixo para cima e as raízes ficam escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, esvaziar o pratinho e diminuir a rega no inverno. Se estiver com podridão, tire a planta do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e nos ramos novos, folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%. Se houver muitas, pulverize óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões, com as folhas novas enroladas",
+      "prevencao_tratamento": "Jato de água nos brotos. Se voltarem, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto de poeira, e teia fina no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos. Se infestar, use enxofre molhável ou acaricida à base de óleo mineral, seguindo o rótulo"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras ainda verdes",
+      "prevencao_tratamento": "Evite calcário e água muito dura. Aplique quelato de ferro seguindo o rótulo e adube com húmus, que acidifica levemente o substrato"
+    },
+    {
+      "nome": "Queda de folhas por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas ou caindo em massa depois de noites abaixo de 10 °C",
+      "prevencao_tratamento": "Nas noites frias, leve o vaso para perto de uma parede ou para debaixo de uma cobertura e reduza a rega. Espere a brotação da primavera antes de cortar os ramos que parecerem mortos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A mussaenda é tropical: noites abaixo de 10 °C derrubam as folhas, e a geada mata os ramos. O substrato frio e encharcado apodrece a raiz.",
+      "acao_requerida": "Levar o vaso para um local abrigado do vento e sob cobertura nas noites frias e regar só quando o substrato estiver seco a 3 cm"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual da mussaenda",
+      "mensagem": "Ela floresce nos ramos novos. Podar no fim do inverno, antes da brotação, gera mais ramos e mais cachos vermelhos no verão.",
+      "acao_requerida": "Encurtar todos os ramos em um terço a metade, cortando acima de um par de gemas, e retirar os ramos secos ou cruzados"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar a adubação",
+      "mensagem": "A brotação da primavera começou, e a planta precisa de nutrientes para formar os ramos que vão florescer.",
+      "acao_requerida": "Voltar a adubar todo mês e a regar a cada 3 dias, conferindo antes com o dedo"
+    }
+  ]
+}

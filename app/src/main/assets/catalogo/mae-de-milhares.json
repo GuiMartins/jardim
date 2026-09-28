@@ -1,0 +1,172 @@
+{
+  "planta": {
+    "nome_comum": "Mãe-de-milhares",
+    "nome_cientifico": "Kalanchoe laetivirens",
+    "descricao": "Suculenta de Madagascar que forma dezenas de plantinhas prontas nas bordas das folhas. Elas caem e enraízam sozinhas, por isso é uma das plantas mais fáceis de multiplicar e também pode se espalhar por outros vasos. É tóxica para cães, gatos e crianças se ingerida.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro com 12 a 15 cm de diâmetro e 12 cm de profundidade, com furo no fundo e sem prato com água parada",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% substrato para cactos e suculentas (ou terra vegetal), 30% areia grossa lavada, 30% perlita ou casca de arroz carbonizada; deve escorrer a água em segundos",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Apoie a plantinha sobre o substrato levemente úmido, sem enterrar as folhas. As raízes finas já existem e se fixam em 1 a 3 semanas. A fase acabou quando, puxando de leve, a muda resiste e aparecem folhas novas no centro."
+    },
+    {
+      "fase_id": "crescimento",
+      "nome": "Crescimento",
+      "dia_inicio": 22,
+      "dia_fim": 180,
+      "descricao": "O caule sobe e as folhas crescem até 10 a 15 cm, já com plantinhas nas bordas. Folhas espaçadas e caule fino e pálido indicam falta de luz: aproxime a planta da janela aos poucos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão e quase para no inverno, quando pode lançar uma haste com flores rosadas em sino. Depois de florir, a roseta principal costuma enfraquecer, e as plantinhas das folhas garantem a continuação. Com 2 anos o caule fica alto e desengonçado: é hora de replantar as pontas ou mudas novas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue em volta da muda com um copinho de 50 ml, sem molhar as folhas. As raízes ainda são curtas e secam em poucos dias, mas encharcar apodrece a base.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a mãe-de-milhares",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; só regue se estiver totalmente seco, até escorrer pelo furo, e esvazie o prato. No inverno, espace para a cada 15 a 20 dias. Folhas murchas e enrugadas pedem água; folhas moles e translúcidas indicam excesso.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a suculenta",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua NPK 10-10-10 (ou adubo para suculentas) na metade da dose do rótulo e regue com ele o substrato úmido. Pule de junho a agosto, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_plantinhas",
+      "titulo": "Inspecionar e recolher plantinhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure tufos brancos de algodão nas axilas das folhas e insetos na haste floral. Aproveite para recolher as plantinhas caídas no próprio vaso e nos vasos vizinhos: plante as que quiser e descarte o resto no lixo, não no jardim.",
+      "critica": false
+    },
+    {
+      "id": "renovar_vaso",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, troque todo o substrato. Se o caule estiver alto e tombando, corte a ponta com 10 cm, deixe o corte secar 3 dias à sombra e plante no substrato novo, ou substitua por plantinhas bem formadas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "A muda enraizou?",
+      "mensagem": "Em duas semanas, a plantinha já deve estar presa ao substrato.",
+      "acao_requerida": "Puxar de leve a muda: se soltar, reapoiar sobre o substrato e manter perto da luz; se resistir, manter a rega da fase"
+    },
+    {
+      "dia_disparo": 22,
+      "titulo": "Mais luz agora",
+      "mensagem": "Com raízes firmes, a planta aguenta mais sol e fica compacta. Mudança brusca queima as folhas.",
+      "acao_requerida": "Aproximar o vaso do sol da manhã aos poucos, uma hora a mais por semana, evitando o sol forte depois das 11h no verão"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da base por excesso de rega (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule preta e mole, folhas de baixo amarelas e translúcidas, planta tombando",
+      "prevencao_tratamento": "Regar só com o substrato seco e nunca deixar água no prato. Se já apodreceu, corte a parte sadia acima da mancha, deixe cicatrizar 3 dias e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e na base; folhas pegajosas e deformadas",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; em infestação maior, óleo de neem a 0,5% no fim da tarde a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos na haste floral e nos botões, que murcham antes de abrir",
+      "prevencao_tratamento": "Jato de água ou água com sabão neutro (1 colher de chá por litro); se persistir, óleo de neem a 0,5%"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule fino e comprido, folhas pequenas e espaçadas, cor verde-pálida e planta tombando para a janela",
+      "prevencao_tratamento": "Aumentar a luz aos poucos e girar o vaso toda semana; a parte estiolada não volta, então replante a ponta ou as plantinhas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrons, secas ou esbranquiçadas nas folhas voltadas para o sol",
+      "prevencao_tratamento": "Adaptar ao sol gradualmente e proteger do sol das 11h às 15h no verão; as manchas ficam, mas as folhas novas saem sadias"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "No frio a planta quase para de crescer e apodrece fácil com substrato úmido. Abaixo de 5 °C e com geada, as folhas congelam.",
+      "acao_requerida": "Regar só a cada 15 a 20 dias e, nas noites abaixo de 5 °C, levar o vaso para dentro de casa ou para baixo de uma cobertura"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: limpar e voltar a adubar",
+      "mensagem": "A planta retoma o crescimento. As hastes que floriram no inverno já secaram e só ocupam espaço.",
+      "acao_requerida": "Cortar as hastes florais secas rente à roseta, retirar folhas mortas da base e retomar a adubação mensal"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Orquídea-grapete",
+    "nome_cientifico": "Spathoglottis unguiculata",
+    "descricao": "Orquídea terrestre do Sudeste Asiático, com folhas longas e plissadas e hastes eretas de flores roxas com perfume de uva, que se renovam quase o ano todo. Ela cresce na terra, gosta de sol e perdoa mais do que as orquídeas de casca. Por isso é uma das melhores para começar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 18 a 20 cm de diâmetro e 16 cm de profundidade, com vários furos no fundo; mais largo que fundo, porque as raízes se espalham rasas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% substrato para plantas ou terra vegetal, 30% casca de pinus fina, 20% chips de fibra de coco, 10% perlita ou areia grossa; deve reter umidade, mas escorrer a água em segundos",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa, onde tinha luz filtrada, e precisa se acostumar ao sol aos poucos: comece com sol da manhã. É normal cair uma flor ou amarelar uma folha velha. Se a folha nova surgir firme e verde, ela se adaptou. Folhas com manchas brancas ou marrons secas indicam sol forte demais para esse momento."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "Saem brotos novos da base dos pseudobulbos, e as raízes se firmam no substrato. As primeiras hastes florais novas costumam aparecer nesta fase. A planta está estabelecida quando um broto novo chega a 2/3 do tamanho das folhas antigas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Da primavera ao outono, a touceira forma brotos e hastes de 40 a 60 cm, que florescem por semanas, abrindo flores novas na ponta. Na ponta da haste velha podem nascer mudinhas (keikis). Quando tiverem 2 a 3 raízes de 3 cm, destaque-as e plante-as. Corte a haste rente à base quando ela secar por inteiro. No inverno, ela cresce devagar e pede menos água. Quando a touceira encosta na borda do vaso, é hora de dividir."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a orquídea-grapete",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar sobre o substrato, sem molhar o miolo das folhas, até a água escorrer pelos furos. Esvazie o pratinho depois de 30 minutos. No verão com sol, confira a cada 2 dias. No inverno, a cada 5 ou 6 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a orquídea-grapete",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g (1/4 de colher de chá) de adubo para orquídeas NPK 20-20-20 em 1 L de água e regue o substrato já úmido, nunca seco. Na floração, pode trocar por NPK 10-30-20 na mesma dose. De junho a agosto, adube só uma vez por mês. Aproveite para cortar as hastes florais que já secaram.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e flores",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe entre as pregas. Procure pontinhos amarelados com teias finas (ácaro), carocinhos brancos ou marrons (cochonilha) e flores roídas com rastro brilhante (lesma). Olhe também embaixo do vaso.",
+      "critica": false
+    },
+    {
+      "id": "dividir_touceira",
+      "titulo": "Trocar o substrato e dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, solte o substrato velho e corte as raízes podres, que ficam moles e escuras. Separe a touceira em partes de pelo menos 3 pseudobulbos e replante cada uma em substrato novo, na mesma altura em que estava. Espere 3 dias para regar de novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Confira o vaso de chegada",
+      "mensagem": "Muitas grapetes chegam em vaso sem furos suficientes ou com terra compactada, que encharca e apodrece as raízes.",
+      "acao_requerida": "Verificar se o vaso tem furos e se a água escorre em segundos. Se não escorrer, passar a planta para o vaso e o substrato recomendados, sem desmanchar o torrão"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Aumente o sol aos poucos",
+      "mensagem": "Depois de duas semanas de sol da manhã, a planta aguenta mais luz e floresce melhor com ela.",
+      "acao_requerida": "Levar para um lugar com 4 a 5 horas de sol direto, evitando o sol forte depois das 14h no verão"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Hora de começar a adubar",
+      "mensagem": "A adaptação terminou e a planta já consegue aproveitar nutrientes para formar brotos e hastes.",
+      "acao_requerida": "Começar a adubação quinzenal diluída"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e pseudobulbo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "A base da planta fica escura e mole, as folhas amarelam de baixo para cima e a planta se solta do vaso ao ser puxada de leve",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm e nunca deixar água no pratinho. Se acontecer, tirar do vaso, cortar as partes podres com tesoura desinfetada com álcool, polvilhar canela em pó nos cortes e replantar em substrato novo"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos prateados ou amarelados, que ficam opacas. No verso, teias finas e pontinhos que se mexem",
+      "prevencao_tratamento": "No calor seco, borrifar água no verso das folhas pela manhã. Se aparecer, lavar o verso com água e sabão neutro (1 colher de chá por litro) e aplicar óleo de neem a 0,5% no fim da tarde a cada 5 dias, por 3 semanas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou escamas marrons nas pregas das folhas e na base dos pseudobulbos. Às vezes, folhas pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Com muitas, pulverizar óleo mineral ou de neem a 0,5% a cada 7 dias, até sumirem"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Botões e flores roídos durante a noite, folhas novas com bordas comidas e rastro prateado no vaso",
+      "prevencao_tratamento": "Procurar com lanterna à noite e embaixo do vaso e catar à mão. Um anel de casca de ovo moída ou borra de café na borda do vaso ajuda a afastar"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora, Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas arredondadas, às vezes com halo amarelo, que crescem nas folhas mais velhas",
+      "prevencao_tratamento": "Regar no substrato, não nas folhas, e deixar o ar circular em volta da planta. Cortar as folhas muito manchadas e, se a doença se espalhar, aplicar fungicida à base de cobre"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrom-claras, secas, no meio das folhas voltadas para o sol, que aparecem de um dia para o outro",
+      "prevencao_tratamento": "Acostumar a planta ao sol aos poucos e evitar o sol das 11h às 15h no verão. As folhas queimadas não se recuperam, mas a planta segue bem"
+    },
+    {
+      "nome": "Pontas secas por excesso de sais",
+      "tipo": "DISTURBIO",
+      "sintomas": "As pontas das folhas secam e ficam marrons, com crosta branca na superfície do substrato",
+      "prevencao_tratamento": "Não passar da dose do adubo. Uma vez por mês, regar com o dobro de água limpa para lavar os sais. Raspar a crosta e repor o substrato"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "No frio, a grapete cresce devagar e o substrato demora a secar. Abaixo de 10 °C, as folhas se danificam e a raiz molhada apodrece.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm, adubar só uma vez por mês e levar o vaso para perto da parede ou para dentro nas noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomada do crescimento",
+      "mensagem": "Com o calor voltando, surgem brotos novos na base e a planta volta a precisar de água e adubo com frequência.",
+      "acao_requerida": "Voltar à rega a cada 3 dias e à adubação quinzenal. Se a touceira encosta na borda do vaso, dividir agora"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: ácaros e sol da tarde",
+      "mensagem": "O calor seca o vaso rápido e favorece o ácaro-rajado. O sol da tarde de verão queima as folhas.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, borrifar o verso das folhas pela manhã e proteger do sol depois das 14h"
+    }
+  ]
+}

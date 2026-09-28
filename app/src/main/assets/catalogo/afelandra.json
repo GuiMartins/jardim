@@ -1,0 +1,199 @@
+{
+  "planta": {
+    "nome_comum": "Afelandra",
+    "nome_cientifico": "Aphelandra squarrosa",
+    "descricao": "Planta nativa da Mata Atlântica, também chamada de planta-zebra pelas folhas verde-escuras com nervuras brancas. Em vaso, cresce como folhagem de meia-sombra e, no fim do verão e no outono, solta espigas de brácteas amarelas que duram de 4 a 6 semanas. Não perdoa substrato seco nem ar frio: quando isso acontece, derruba as folhas de baixo.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada com 15 a 20 cm de diâmetro e de profundidade e furos no fundo; o vaso de barro sem esmalte seca rápido demais para esta planta",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "50% substrato para plantas com turfa ou fibra de coco, 30% húmus de minhoca e 20% perlita ou casca de pinus fina; deve reter umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa, úmida e quente, e vai para um ambiente mais seco. É normal que caiam 1 ou 2 folhas de baixo. Deixe-a perto de uma janela clara, sem sol forte do meio-dia e longe de ar-condicionado e de correntes de ar. A fase termina quando surge um par de folhas novas firmes no topo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "As raízes ocupam o vaso novo e a planta volta a crescer com folhas grandes e nervuras bem marcadas. Se as brácteas que vieram da loja secaram, corte a espiga logo acima do primeiro par de folhas saudáveis. Folhas pequenas e sem brilho nesta fase indicam pouca luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão, cresce e pede adubo. Do fim do verão ao outono, forma espigas de brácteas amarelas nas pontas dos ramos. No inverno cresce pouco, pede menos água e sofre abaixo de 15 °C. Com os anos, os caules perdem as folhas de baixo; a poda do fim do inverno a mantém compacta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a afelandra",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue com água em temperatura ambiente até escorrer pelos furos e descarte o que ficar no pratinho após 15 minutos. O substrato deve ficar sempre levemente úmido: se secar por inteiro, a planta murcha e derruba as folhas de baixo, que não voltam. No inverno, confira a cada 5 dias e regue só quando os 2 cm de cima estiverem secos.",
+      "critica": true
+    },
+    {
+      "id": "borrifar_umidade",
+      "titulo": "Aumentar a umidade do ar",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Borrife água filtrada ao redor da planta, sem encharcar as brácteas, ou reponha a água de uma bandeja com pedrinhas sob o vaso, sem que o fundo do vaso toque a água. Nos dias úmidos de chuva, pode pular. Em dias secos ou com ar-condicionado ligado, faça todo dia.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a afelandra",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido NPK 10-10-10 (ou específico para folhagens) na metade da dose do rótulo e aplique sobre o substrato já úmido. De setembro a abril, adube a cada 15 dias; de maio a agosto, pule a adubação porque a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brácteas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, as axilas e entre as brácteas. Procure bolinhas brancas algodoadas, carapaças marrons grudadas nas nervuras, teias finas ou pontinhos amarelados na folha. Passe um pano úmido nas folhas para tirar a poeira.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, solte com os dedos o substrato velho das bordas do torrão e corte as raízes escuras e moles. Replante num vaso 2 a 4 cm mais largo, com substrato novo, e deixe-a 2 semanas longe de sol direto.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, afelandra!",
+      "mensagem": "Ela vem de estufa quente e úmida. Nos primeiros dias, luz forte, ar frio ou substrato seco derrubam folhas.",
+      "acao_requerida": "Colocar o vaso a até 1,5 m de uma janela clara, sem sol do meio-dia, longe de ar-condicionado e de portas com corrente de ar, e tirar o plástico ou papel decorativo que prende água no fundo"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora de conferir o vaso",
+      "mensagem": "As afelandras chegam em vasos pequenos de produção, com o torrão apertado, e secam em poucas horas.",
+      "acao_requerida": "Tirar a planta do vaso e, se as raízes estiverem enroladas em volta do torrão, replantar num vaso de 15 a 20 cm com o substrato recomendado"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Brácteas secas? Corte a espiga",
+      "mensagem": "A espiga que veio da loja já deve ter passado. Deixá-la na planta gasta energia e atrasa as brotações novas.",
+      "acao_requerida": "Se as brácteas estiverem marrons, cortar a espiga com tesoura limpa logo acima do primeiro par de folhas saudáveis"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas mesmo com o substrato úmido, base do caule escura e mole, raízes marrons que se desfazem e cheiro azedo no vaso",
+      "prevencao_tratamento": "Nunca deixe água parada no pratinho nem no cachepô. Se aparecer, tire a planta do vaso, corte as raízes podres, replante com substrato novo e seco e só regue quando os 2 cm de cima secarem"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados nas axilas das folhas e entre as brácteas; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; depois aplique óleo de neem a 0,5% com algumas gotas de detergente neutro a cada 7 dias, por 3 semanas, no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons e ovais grudadas nas nervuras do verso das folhas e nos caules; melado e fumagina preta sobre as folhas",
+      "prevencao_tratamento": "Raspe com a unha ou uma escova macia e limpe com pano umedecido em água e sabão neutro; repita a inspeção semanalmente e aplique óleo de neem nos casos persistentes"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso; é mais comum com o ar seco e o ar-condicionado",
+      "prevencao_tratamento": "Mantenha a umidade do ar alta e lave o verso das folhas com jato suave de água; se persistir, aplique óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas brotações e nas espigas de flor; brotos deformados",
+      "prevencao_tratamento": "Remova com jato de água ou pano úmido; se voltar, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Queda das folhas de baixo",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas inferiores murcham, amarelam ou caem de uma vez, deixando o caule pelado",
+      "prevencao_tratamento": "É a resposta da afelandra a substrato que secou, a frio abaixo de 15 °C ou a correntes de ar. Mantenha a rega regular e a planta longe de janelas frias e do ar-condicionado; os caules pelados se renovam com a poda do fim do inverno"
+    },
+    {
+      "nome": "Pontas e bordas queimadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas e pontas das folhas marrons e secas, às vezes com as folhas enroladas para baixo",
+      "prevencao_tratamento": "Indica ar seco, sol direto forte ou excesso de sais do adubo. Aumente a umidade, afaste do sol do meio-dia e, a cada 2 meses, regue com bastante água até escorrer por 1 minuto para lavar o substrato"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteja do frio e regue menos",
+      "mensagem": "A afelandra cresce pouco no frio, e abaixo de 15 °C começa a perder folhas. O substrato demora mais para secar, e o risco de podridão aumenta.",
+      "acao_requerida": "Afastar o vaso de janelas frias e de correntes de ar à noite, suspender a adubação e regar só quando os 2 cm de cima do substrato estiverem secos"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Antes de a planta voltar a crescer, a poda remove os caules pelados e estimula ramos novos, que são os que vão florescer no fim do verão.",
+      "acao_requerida": "Cortar os caules mais altos ou sem folhas embaixo logo acima de um par de folhas ou nós, deixando 10 a 15 cm de caule; as pontas cortadas enraízam em água ou em substrato úmido"
+    },
+    {
+      "meses": [
+        2,
+        3
+      ],
+      "titulo": "Época das brácteas amarelas",
+      "mensagem": "Com luz clara suficiente e adubação feita no verão, as espigas amarelas surgem nas pontas dos ramos e duram algumas semanas.",
+      "acao_requerida": "Deixar a planta no lugar mais claro sem sol forte e, quando as brácteas ficarem marrons, cortar a espiga acima do primeiro par de folhas saudáveis"
+    }
+  ]
+}

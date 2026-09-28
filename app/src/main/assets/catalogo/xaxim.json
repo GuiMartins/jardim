@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Xaxim",
+    "nome_cientifico": "Dicksonia sellowiana",
+    "descricao": "Samambaia arborescente da Mata Atlântica de altitude, de crescimento muito lento (poucos centímetros de tronco por ano). Suas frondes largas lembram uma pequena palmeira e dão um ar de floresta à varanda sombreada. A espécie está ameaçada de extinção e sua extração da natureza é proibida: compre só planta de viveiro licenciado, com nota fiscal.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico largo e pesado, com pelo menos 45 cm de diâmetro e 40 cm de profundidade e vários furos no fundo; pesado para não tombar com o vento nas frondes",
+    "volume_minimo_litros": 40,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% terra vegetal, 30% casca de pinus média, 20% fibra de coco, 10% húmus de minhoca; ácido, rico em matéria orgânica, que segure umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 45,
+      "descricao": "A planta sente a mudança de luz e umidade do viveiro para a casa. É normal que 1 ou 2 frondes mais velhas amarelem e sequem; báculos novos (brotos enrolados no topo do tronco) que continuam abrindo mostram que ela se firmou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 46,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o tronco volta a emitir raízes aéreas marrons. Espere de 4 a 10 frondes novas por ano, abrindo em ondas na primavera e no verão. Frondes pequenas e pálidas indicam luz demais ou ar seco."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Na primavera o topo do tronco solta uma coroa de báculos que se desenrolam em frondes de 1 a 2 m; no verão ela pede rega e umidade no máximo; no outono e no inverno cresce pouco e aceita rega mais espaçada. As frondes velhas secam e pendem em volta do tronco ao longo do ano. O tronco cresce só 5 a 8 cm por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_tronco_substrato",
+      "titulo": "Regar substrato e tronco do xaxim",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver só levemente úmido ou seco, regue até escorrer pelos furos. Depois molhe o tronco de cima a baixo com regador de bico fino, porque ele absorve água pelas raízes aéreas, e borrife as frondes. Acima de 28 °C ou em dia de vento seco, confira todo dia; de maio a agosto, a cada 3 ou 4 dias costuma bastar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o xaxim",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca ou 1 colher de sopa de bokashi sobre o substrato de um vaso de 40 L, longe do tronco, e regue em seguida. De maio a agosto use metade da dose. Não use adubo químico concentrado: samambaias queimam as raízes com sal.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_frondes_secas",
+      "titulo": "Cortar frondes secas",
+      "tipo": "PODA",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa as frondes totalmente marrons e secas, a 5 cm do tronco. Deixe as que ainda têm parte verde, porque elas continuam alimentando a planta. Nunca corte nem toque nos báculos do topo.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar frondes e báculos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire algumas frondes e olhe o verso e a nervura central: procure escamas marrons presas ou algodão branco (cochonilha) e teias finas com pontinhos (ácaro). Não confunda com os soros, pontos marrons em fileiras regulares, que são os esporos e são normais. Olhe também os báculos à procura de mordidas de lesma.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No outono ou no fim do inverno, tire a planta do vaso com ajuda, retire um terço do substrato velho da lateral e do fundo sem ferir as raízes e complete com substrato novo. Só passe a um vaso maior se as raízes estiverem enroveladas em volta do torrão. Mantenha o tronco na mesma altura em que estava.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vindo, xaxim!",
+      "mensagem": "A primeira semana decide a adaptação. Sol direto da tarde e ar seco queimam as frondes em poucas horas.",
+      "acao_requerida": "Colocar o vaso em local com luz clara e no máximo sol fraco da manhã, protegido de vento, e molhar bem substrato e tronco"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "Se o xaxim chegou em vaso ou saco menor que 40 L, ele já está adaptado para a troca.",
+      "acao_requerida": "Transplantar para o vaso definitivo com o substrato recomendado, mantendo o tronco na mesma altura; se já estiver no vaso certo, nada a fazer"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Adaptação concluída?",
+      "mensagem": "Báculos abrindo no topo mostram que a planta se firmou. Frondes novas secando ainda enroladas indicam falta de umidade ou luz forte demais.",
+      "acao_requerida": "Conferir os báculos; se estiverem secando, mudar o vaso para um lugar mais sombreado e borrifar o tronco duas vezes por dia"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raízes (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Frondes murcham mesmo com o substrato molhado, base do tronco mole e escura, cheiro azedo no vaso",
+      "prevencao_tratamento": "Garanta furos desobstruídos e nunca deixe água parada no prato. Molhe o tronco, mas deixe o substrato secar os 2 cm de cima entre regas; se houver raízes podres, corte-as e troque o substrato"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos de algodão no verso das frondes e nas hastes; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em água com sabão neutro. Samambaias são sensíveis a óleo: teste óleo de neem a 0,5% numa só fronde e espere 3 dias antes de aplicar no resto"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Frondes com pontinhos claros, aspecto desbotado e teias finas no verso; piora com ar seco e calor",
+      "prevencao_tratamento": "Aumente a umidade borrifando as frondes, inclusive o verso, 1 a 2 vezes por dia; lave o verso com jato fraco de água"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Báculos e frondes novas roídos, com rastro prateado e brilhante no vaso",
+      "prevencao_tratamento": "Cate à noite com lanterna e espalhe casca de ovo triturada ou areia grossa em volta do tronco"
+    },
+    {
+      "nome": "Queimadura das frondes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das frondes marrons e quebradiças, frondes novas pequenas e amareladas",
+      "prevencao_tratamento": "Causada por sol direto forte, vento ou ar seco. Tire do sol da tarde, proteja do vento e molhe o tronco com mais frequência; as partes queimadas não voltam, mas as frondes seguintes saem sadias"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Brotação de primavera",
+      "mensagem": "Os báculos novos estão para abrir no topo do tronco. Eles são frágeis e morrem se ressecarem ou forem tocados.",
+      "acao_requerida": "Não mexer no topo do tronco, aumentar a rega do tronco e voltar à adubação com dose cheia"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: xaxim com sede",
+      "mensagem": "No verão, dias acima de 30 °C secam o tronco e o substrato em poucas horas e queimam as frondes.",
+      "acao_requerida": "Conferir a rega todo dia, molhar o tronco de manhã e no fim da tarde e manter o vaso fora do sol da tarde"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos rega",
+      "mensagem": "O xaxim quase para de crescer no frio e o substrato demora mais a secar. Ele aguenta geada fraca, mas o vento frio e seco queima as frondes.",
+      "acao_requerida": "Espaçar a rega para a cada 3 ou 4 dias, pela manhã, e cobrir o topo do tronco com manta ou TNT nas noites de geada"
+    }
+  ]
+}

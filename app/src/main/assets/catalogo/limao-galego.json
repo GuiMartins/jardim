@@ -1,0 +1,218 @@
+{
+  "planta": {
+    "nome_comum": "Limão-galego",
+    "nome_cientifico": "Citrus × aurantiifolia",
+    "descricao": "Limoeiro de frutos pequenos, redondos, de casca fina e suco muito perfumado, o limão de tempero e de caipirinha tradicional. Arbusto espinhento e vigoroso que se adapta bem a vasos grandes e começa a produzir cerca de um ano e meio depois do plantio de uma muda enxertada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro, cimento ou plástico grosso com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo. Apoie o vaso em pés ou tijolos para a água escorrer livre",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita, mais 1 colher de sopa de calcário dolomítico por 10 L para chegar a pH 6 a 6,5. Sem terra argilosa pura, que compacta e apodrece a raiz",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas nas duas primeiras semanas. A fase acaba quando surgem brotos novos, verde-claros e macios, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "formacao_copa",
+      "nome": "Formação da Copa",
+      "dia_inicio": 31,
+      "dia_fim": 540,
+      "descricao": "A planta cresce em fluxos: brota de uma vez, endurece as folhas e descansa algumas semanas. Deixe três ou quatro ramos principais bem distribuídos e retire qualquer broto que nasça abaixo da marca do enxerto (a cicatriz torta a 10 a 20 cm do substrato). As primeiras flores podem aparecer, mas a planta ainda não sustenta muitos frutos."
+    },
+    {
+      "fase_id": "planta_adulta_producao",
+      "nome": "Planta Adulta em Produção",
+      "dia_inicio": 541,
+      "dia_fim": null,
+      "descricao": "Floresce principalmente na primavera, com floradas menores ao longo do ano. Os frutos amadurecem de 5 a 6 meses depois da flor, com safra maior do fim da primavera ao outono. No inverno o crescimento quase para e a planta pede menos água e adubo. Um pé em vaso de 40 a 60 L produz de 50 a 150 limões por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de limão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda restrita ao torrão da muda, o substrato não pode secar por inteiro, mas também não pode ficar com água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o limoeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco nessa profundidade, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão acima de 30 °C, confira a cada 2 dias; de junho a agosto, a cada 5 a 7. Seca forte na florada ou com frutos pequenos faz a planta derrubar tudo.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_citros",
+      "titulo": "Adubar o limoeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na borda do vaso, longe do tronco, 1 colher de sopa de NPK 10-10-10 (ou adubo próprio para citros) mais 2 colheres de sopa de farinha de ossos ou torta de mamona por vaso de 40 L, e regue em seguida. De junho a agosto, use metade da dose. Uma vez por semestre, acrescente adubo foliar com micronutrientes (zinco, manganês, magnésio).",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure trilhas prateadas em zigue-zague (larva-minadora), pulgões, cochonilhas brancas ou marrons nos ramos, lagartas marrom e brancas parecidas com cocô de passarinho e manchas escuras nos frutinhos. Aproveite para arrancar qualquer broto que nasça abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, raspe 3 a 5 cm das laterais e do fundo do torrão com uma faca e corte raízes enroladas ou escuras. Volte a plantar com substrato novo, no mesmo vaso ou num 10 cm maior, sem enterrar o colo do tronco.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso definitivo",
+      "mensagem": "Muda enterrada fundo demais apodrece no colo, a doença que mais mata limoeiro em vaso.",
+      "acao_requerida": "Plantar com o topo do torrão 2 cm acima do nível do substrato, firmar, regar bem e deixar a marca do enxerto sempre fora da terra"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Tirar os brotos do cavalo",
+      "mensagem": "Ramos que nascem abaixo do enxerto são do porta-enxerto: crescem rápido, têm muito espinho e não dão limão-galego.",
+      "acao_requerida": "Cortar rente ao tronco todo broto que sair abaixo da cicatriz do enxerto e repetir sempre que aparecer"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Segurar os primeiros frutos",
+      "mensagem": "Com a raiz ainda se formando, muitos frutos esgotam a muda e atrasam a copa.",
+      "acao_requerida": "Deixar no máximo 5 a 10 frutinhos no primeiro ano e arrancar os outros ainda do tamanho de uma ervilha"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Gomose e podridão de raiz (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Casca do tronco perto do substrato escurece, racha e solta uma goma âmbar; folhas amarelam e caem, e a planta murcha mesmo com o substrato úmido",
+      "prevencao_tratamento": "Não enterrar o colo, não deixar água no pratinho e regar só com o substrato seco a 5 cm. Raspar a casca doente até o tecido verde e pincelar pasta de cobre (calda bordalesa grossa); se a raiz estiver marrom e mole, trocar todo o substrato"
+    },
+    {
+      "nome": "Larva-minadora-dos-citros (Phyllocnistis citrella)",
+      "tipo": "PRAGA",
+      "sintomas": "Galerias prateadas em zigue-zague nas folhas novas, que ficam enroladas e deformadas",
+      "prevencao_tratamento": "Óleo de neem a 0,5% ou óleo mineral a 1% nas brotações novas a cada 7 dias enquanto durar o fluxo; folhas maduras não são atacadas"
+    },
+    {
+      "nome": "Cochonilhas (escama-farinha, ortézia)",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, marrons ou algodonosas grudadas nos ramos e no verso das folhas; melado pegajoso e formigas subindo pelo tronco",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool; aplicar óleo mineral a 1% ou calda de sabão neutro a cada 7 dias até sumirem. Uma faixa de graxa no tronco barra as formigas que as protegem"
+    },
+    {
+      "nome": "Pulgão-preto-dos-citros (Toxoptera citricida)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias pretas nos brotos novos, que encarquilham; transmite o vírus da tristeza",
+      "prevencao_tratamento": "Jato de água; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias. Comprar muda enxertada em porta-enxerto tolerante à tristeza (limão-cravo ou citrumelo) e de viveiro registrado"
+    },
+    {
+      "nome": "Lagarta-dos-citros (Papilio spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas comidas a partir da borda, em pouco tempo; lagarta marrom com manchas brancas parecida com cocô de passarinho",
+      "prevencao_tratamento": "Catar à mão e retirar os ovos amarelos redondos das folhas novas. Em ataque grande, Bacillus thuringiensis conforme o rótulo"
+    },
+    {
+      "nome": "Antracnose do limão-galego (Colletotrichum acutatum)",
+      "tipo": "DOENCA",
+      "sintomas": "Pétalas com manchas cor de laranja, frutinhos que caem logo depois da florada e deixam o cálice preso ao ramo, brotos secando nas pontas",
+      "prevencao_tratamento": "Evitar molhar a copa na florada, recolher flores e frutinhos caídos e podar ramos secos. Em primavera chuvosa, calda bordalesa a 1% no início da florada e 15 dias depois"
+    },
+    {
+      "nome": "Clorose por falta de nutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes (ferro, zinco, manganês) ou folhas velhas amarelando em forma de V invertido a partir da ponta (magnésio)",
+      "prevencao_tratamento": "Adubo foliar com micronutrientes e sulfato de magnésio (1 colher de chá por litro) na brotação; conferir se o substrato não está encharcado, que impede a raiz de absorver"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O limão-galego é dos citros mais sensíveis ao frio: abaixo de 2 °C queima folhas e ramos novos, e a raiz em vaso encharcado apodrece no frio.",
+      "acao_requerida": "Em noites com previsão abaixo de 4 °C, levar o vaso para junto de uma parede ou sob cobertura e regar só quando o substrato secar a 5 cm"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "No fim do inverno, antes da brotação e da florada, a poda areja a copa e reduz fungos.",
+      "acao_requerida": "Cortar ramos secos, doentes, cruzados e os que crescem para dentro da copa, e encurtar em um terço os ramos longos demais; usar luvas por causa dos espinhos"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Florada do limoeiro",
+      "mensagem": "É na primavera que se forma a maior safra do ano. Falta de água ou de adubo agora derruba flores e frutinhos.",
+      "acao_requerida": "Voltar à dose cheia de adubo e não deixar o substrato secar por inteiro enquanto houver flores"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Queda de frutinhos é normal",
+      "mensagem": "Semanas depois da florada, a planta derruba parte dos frutinhos para ajustar a carga ao que consegue sustentar.",
+      "acao_requerida": "Manter a rega regular e não aumentar o adubo; só se preocupar se caírem quase todos ou vierem com manchas escuras"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "titulo": "Safra de limão-galego",
+      "mensagem": "É a época de maior produção. Limão que passa do ponto fica amarelo, perde suco e cai.",
+      "acao_requerida": "Colher com tesoura os frutos de casca lisa, brilhante e verde-clara que cedem levemente ao apertar, uma ou duas vezes por semana"
+    }
+  ]
+}

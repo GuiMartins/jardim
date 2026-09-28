@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Vriésia",
+    "nome_cientifico": "Vriesea splendens e híbridos (Vriesea spp.)",
+    "descricao": "Bromélia de folhas em roseta que formam um copo central de água e de uma haste achatada em forma de espada vermelha ou amarela que dura meses. O gênero tem muitas espécies, e aqui escolhemos a Vriesea splendens e seus híbridos, as mais vendidas em floricultura no Brasil. Cada roseta floresce uma vez só, depois morre aos poucos e deixa filhotes que continuam a planta por anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso raso de 12 a 15 cm de diâmetro e 10 a 12 cm de altura, com furos grandes no fundo. De barro ou cerâmica, que pesa mais e não deixa a roseta tombar. Não deixe água parada no cachepô.",
+    "volume_minimo_litros": 1,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "50% casca de pinus média, 30% chips de fibra de coco, 20% carvão vegetal em pedaços. Solto e arejado, porque a raiz serve mais para fixar a planta do que para absorver água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa, onde tinha umidade alta, e se acostuma com a casa. Ponha perto de uma janela clara, sem sol da tarde. É normal que as pontas de uma ou duas folhas sequem. Se a roseta ficar firme e a espada continuar colorida, ela se adaptou."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "A espada colorida é feita de brácteas e dura de 2 a 4 meses. As flores de verdade, amarelas, saem entre as brácteas e duram poucos dias. Se você comprou a planta sem flor, ela está na fase adulta e pode florescer em 1 a 3 anos, geralmente entre a primavera e o verão. A fase acaba quando a espada perde a cor e começa a secar."
+    },
+    {
+      "fase_id": "filhotes",
+      "nome": "Filhotes",
+      "dia_inicio": 121,
+      "dia_fim": 365,
+      "descricao": "Depois de florescer, a planta-mãe não floresce de novo. Ela para de crescer e solta 1 a 3 filhotes na base, entre as folhas de baixo. Continue cuidando da mãe, porque é ela que alimenta os filhotes. As folhas dela amarelam e secam ao longo de meses. Um filhote está pronto para ser separado quando tem de um terço à metade do tamanho da mãe e raízes próprias."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Os filhotes viram rosetas independentes, que florescem com 2 a 3 anos, quase sempre na primavera ou no verão. Nesse ano típico, a planta cresce da primavera ao outono, fica quase parada no inverno e segue a mesma rotina de copo com água limpa, luz clara e pouco adubo. Planta adulta que não floresce em 3 anos precisa de mais luz."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "renovar_agua_copo",
+      "titulo": "Renovar a água do copo da vriésia",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Despeje água no copo central até transbordar, para jogar fora a água velha, e deixe o copo com água limpa até um terço da altura. Use água de chuva, filtrada ou de torneira que descansou 24 h. Depois enfie o dedo 2 cm no substrato: só regue ali se estiver seco. Isso também impede que o mosquito da dengue se crie no copo. No inverno, com dias abaixo de 12 °C, deixe o copo quase vazio.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_foliar",
+      "titulo": "Adubar a vriésia pelas folhas",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo para bromélias ou NPK 20-20-20 em um quarto da dose do rótulo. Borrife nas folhas e no substrato no fim da tarde, nunca direto no copo com água parada. De maio a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a base das folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas com cuidado e olhe a base delas e o verso. Procure carocinhos marrons ou algodão branco (cochonilha), o centro da roseta mole ou com cheiro ruim (podridão) e larvas se mexendo na água do copo.",
+      "critica": false
+    },
+    {
+      "id": "trocar_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a roseta do vaso, descarte o substrato velho, que esfarela e retém água demais, e replante na mesma altura em mistura nova de casca de pinus, fibra de coco e carvão. Não enterre a base das folhas. Escore a planta com palitos até ela se firmar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Vriésia nova em casa",
+      "mensagem": "Plantas de floricultura costumam vir com cachepô sem furo e água acumulada no fundo, o que apodrece a base em poucas semanas.",
+      "acao_requerida": "Esvaziar o cachepô, conferir se o vaso tem furos, trocar a água do copo e escolher um lugar claro sem sol da tarde"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "A espada está secando?",
+      "mensagem": "Quando as brácteas perdem a cor, a haste só gasta energia que iria para os filhotes.",
+      "acao_requerida": "Cortar a haste da flor rente ao centro da roseta com tesoura limpa quando ela estiver sem cor ou seca"
+    },
+    {
+      "dia_disparo": 270,
+      "titulo": "Hora de separar os filhotes",
+      "mensagem": "Os filhotes que já têm de um terço à metade do tamanho da mãe e raízes próprias conseguem viver sozinhos.",
+      "acao_requerida": "Soltar cada filhote da mãe com faca limpa, rente à base, deixar o corte secar por 1 dia e plantar num vaso de 12 cm com o mesmo substrato. Se ainda estiverem pequenos, esperar mais 2 ou 3 meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do coração (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "O centro da roseta escurece e fica mole, as folhas do meio se soltam com um puxão leve e há cheiro de podre",
+      "prevencao_tratamento": "Nunca deixar água parada no cachepô nem o substrato encharcado, e esvaziar o copo no frio. Se só o centro apodreceu, a roseta não se recupera: salve os filhotes sadios e descarte a mãe"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou tufos brancos parecidos com algodão na base e no verso das folhas; folhas com manchas amarelas e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70% ou esfregar com escova macia e água com sabão neutro. Se houver muitas, borrifar óleo mineral ou de neem a 0,5% no fim da tarde, a cada 7 dias, por 3 semanas"
+    },
+    {
+      "nome": "Larvas do mosquito da dengue (Aedes aegypti)",
+      "tipo": "PRAGA",
+      "sintomas": "Larvas finas que se mexem em zigue-zague na água do copo central",
+      "prevencao_tratamento": "Renovar a água do copo a cada 5 dias, fazendo transbordar. No verão chuvoso, se não der para manter a troca, deixar o copo seco e molhar só as folhas e o substrato"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrom-claras e secas no meio das folhas, do lado virado para a janela",
+      "prevencao_tratamento": "Tirar do sol direto depois das 9h. As manchas não somem, mas as folhas novas nascem sadias"
+    },
+    {
+      "nome": "Pontas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e secas, sem avançar para o resto da folha",
+      "prevencao_tratamento": "Costuma ser ar muito seco, água com cloro ou adubo forte. Use água descansada ou de chuva, dilua mais o adubo e, nos dias secos, borrife água ao redor da planta. Apare a ponta seca com tesoura, acompanhando o formato da folha"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água no copo",
+      "mensagem": "No frio a vriésia fica quase parada. Água fria acumulada no centro da roseta é a principal causa de podridão.",
+      "acao_requerida": "Manter o copo quase vazio nos dias abaixo de 12 °C, molhar o substrato só quando estiver seco a 2 cm, suspender o adubo e afastar a planta de janelas geladas"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: sol forte e dengue",
+      "mensagem": "No verão o sol da tarde queima as folhas, a água do copo evapora mais rápido e o mosquito da dengue se reproduz em poucos dias.",
+      "acao_requerida": "Proteger do sol depois das 9h, conferir o copo a cada 2 ou 3 dias e nunca pular a renovação da água"
+    }
+  ]
+}

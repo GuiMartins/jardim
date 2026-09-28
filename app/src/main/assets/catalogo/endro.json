@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Endro",
+    "nome_cientifico": "Anethum graveolens",
+    "descricao": "Erva aromática anual da família da cenoura, também chamada de dill ou aneto. Tem folhas finas como fios, usadas em peixes, pepino em conserva e molhos de iogurte, e sementes para chá e tempero. Prefere o clima ameno: no calor ela floresce cedo e para de dar folhas.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 100,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de profundidade para a raiz pivotante, com furos no fundo. Semeie direto no vaso definitivo, porque o endro não aceita bem o transplante",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; solto e que drene bem",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Semeie a 0,5 cm de profundidade, 3 a 4 sementes por cova, com covas a 15 cm uma da outra. As plântulas saem entre o 7º e o 14º dia, com duas folhas compridas e estreitas parecidas com capim."
+    },
+    {
+      "fase_id": "crescimento_inicial",
+      "nome": "Crescimento Inicial",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "Surgem as folhas verdadeiras, finas e plumosas. A planta cresce devagar no começo e passa de uns 15 cm no fim da fase. Falta de água aqui já faz a planta florescer cedo."
+    },
+    {
+      "fase_id": "colheita_folhas",
+      "nome": "Colheita de Folhas",
+      "dia_inicio": 36,
+      "dia_fim": 65,
+      "descricao": "A planta está com 25 a 40 cm e bem ramificada. É a melhor época para colher as folhas, que têm mais aroma antes da floração. A fase termina quando aparece no alto do caule um botão achatado que vira uma umbela, um guarda-chuva de florzinhas."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 66,
+      "dia_fim": 85,
+      "descricao": "O caule central sobe a 60 a 100 cm e abre umbelas amarelas que atraem joaninhas e vespinhas benéficas. As folhas ficam mais escassas e menos saborosas, mas as flores podem ir para a conserva de pepino."
+    },
+    {
+      "fase_id": "formacao_sementes",
+      "nome": "Formação de Sementes",
+      "dia_inicio": 86,
+      "dia_fim": 100,
+      "descricao": "As flores dão lugar a sementes achatadas, que passam de verdes para marrom-palha. Quando secam, a planta amarela e encerra o ciclo. Semeie de novo a cada 3 a 4 semanas para ter folhas o tempo todo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes do endro",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. As sementes são pequenas e rasas: se secarem um dia depois de começar a germinar, morrem. Não encharque.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o endro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Acima de 28 °C, confira todo dia; no frio, a cada 3 dias. Murchar de sede faz o endro florescer antes da hora.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o endro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 65,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por vaso de 5 L, sem encostar no caule, e regue em seguida. Nada de adubo químico forte: o endro tem mais aroma em solo pouco adubado.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o endro",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Olhe as pontas novas e as umbelas procurando pulgões agrupados e lagartas listradas entre as folhas finas. Confira também a base do caule, que não pode estar escura nem mole.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de endro",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 40,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Corte com tesoura os ramos externos rente ao caule, tirando no máximo um terço da planta por vez. Colha de manhã, depois do orvalho secar. Use fresco ou congele picado, porque o endro seco perde quase todo o aroma.",
+      "critica": false
+    },
+    {
+      "id": "colheita_sementes",
+      "titulo": "Colher sementes de endro",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 88,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Corte as umbelas com as sementes já marrom-palha e que se soltam com um toque. Pendure de cabeça para baixo dentro de um saco de papel, em lugar seco e ventilado, por uma semana; depois guarde as sementes num pote fechado.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "As mudas de cada cova disputam espaço, e o endro espremido fica fino e floresce cedo.",
+      "acao_requerida": "Deixar só a muda mais vigorosa em cada cova (uma a cada 15 cm), cortando as outras rente ao substrato com tesoura para não mexer na raiz das que ficam"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Endro crescendo: coloque um tutor",
+      "mensagem": "O caule é oco e fino, e com vento ou chuva forte a planta tomba quando passa de 50 cm.",
+      "acao_requerida": "Enfiar uma vareta de bambu de 1 m a 5 cm do caule e amarrar frouxo com barbante em 8, a cada 20 cm de altura"
+    },
+    {
+      "dia_disparo": 66,
+      "titulo": "Floração do endro",
+      "mensagem": "Com as umbelas abrindo, a planta passa a gastar energia em flor e semente, e as folhas diminuem.",
+      "acao_requerida": "Decidir: cortar as umbelas assim que aparecem para esticar a colheita de folhas por mais 1 a 2 semanas, ou deixá-las abrir para ter sementes e atrair insetos benéficos"
+    },
+    {
+      "dia_disparo": 86,
+      "titulo": "Sementes se formando",
+      "mensagem": "As sementes vão amadurecer nas próximas semanas e, quando secam, caem sozinhas com o vento.",
+      "acao_requerida": "Envolver as umbelas mais cheias com um saquinho de papel ou tule, preso no caule, para não perder as sementes que caírem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes, pretos ou acinzentados nas pontas novas e nas umbelas; folhas retorcidas e pegajosas, com formigas subindo pelo caule",
+      "prevencao_tratamento": "Jato de água forte nas colônias; se persistir, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias. Espere 7 dias antes de colher depois do neem"
+    },
+    {
+      "nome": "Lagartas (borboletas e mariposas)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas comidas até sobrar só o talo; lagartas verdes com listras pretas e pintas amarelas, ou fezes escuras entre as folhas",
+      "prevencao_tratamento": "Catar à mão pela manhã. Se a infestação for grande, pulverizar Bacillus thuringiensis (Bt), que só afeta lagartas"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; base do caule escura e mole; folhas amarelando de baixo para cima",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, nunca deixar água no pratinho e usar substrato com areia. Planta afetada não se recupera: descarte e troque o substrato"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas murcham e caem com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, sem encharcar na germinação e com boa ventilação; retire as plântulas afetadas"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre folhas e caules, que depois amarelam e secam",
+      "prevencao_tratamento": "Deixar o vaso em lugar arejado e regar só o substrato, sem molhar as folhas; cortar as partes atacadas e pulverizar leite diluído (1 parte para 9 de água) a cada 7 dias"
+    },
+    {
+      "nome": "Florescimento precoce (espigamento)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Com menos de 30 cm a planta já lança o caule floral e dá poucas folhas",
+      "prevencao_tratamento": "Causado por calor, dias longos, falta de água ou vaso pequeno. Semear entre março e setembro, não deixar murchar e usar vaso com pelo menos 25 cm de profundidade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: proteja o endro",
+      "mensagem": "Com calor forte e dias longos, o endro floresce depressa e as folhas ficam duras e amargas.",
+      "acao_requerida": "Deixar o vaso onde bate só o sol da manhã, com sombra à tarde, e conferir a umidade do substrato todo dia"
+    }
+  ]
+}

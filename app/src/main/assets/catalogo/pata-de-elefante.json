@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Pata-de-elefante",
+    "nome_cientifico": "Beaucarnea recurvata",
+    "descricao": "Planta de origem mexicana que guarda água na base inchada do caule (cáudice), com um tufo de folhas finas e arqueadas no topo. Cresce devagar, tolera esquecimento na rega e vive décadas em vaso. Por isso é uma das melhores plantas para iniciantes, desde que não seja encharcada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro mais largo que fundo (bacia ou tigela), só 3 a 5 cm mais largo que o cáudice, com furos no fundo. O barro ajuda o substrato a secar, e o vaso justo evita que sobre substrato molhado sem raiz",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% substrato para cactos e suculentas, 30% areia grossa lavada, 20% terra vegetal e 10% perlita ou pedrisco; deve secar por inteiro poucos dias depois da rega",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta vem de viveiro sombreado e precisa se acostumar à luz da casa. Algumas folhas de baixo podem amarelar, e isso é normal. Não troque de vaso nem adube agora. A fase termina quando surgem folhas novas, verde-claras, no centro do tufo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Já aclimatada ao sol, a planta retoma o crescimento lento, com poucas folhas novas por mês na primavera e no verão. O cáudice deve estar firme ao toque. Se estiver mole ou enrugado, a rega está errada (mole: excesso; enrugado: falta)."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce de setembro a março e fica quase parada no inverno, quando pede bem menos água. O cáudice engorda e o tronco sobe alguns centímetros por ano. Em vaso, raramente floresce. As pontas das folhas secam com o tempo, e dá para apará-las com tesoura, sem cortar o verde. Trocar de vaso a cada 3 anos, sempre num vaso só um pouco maior."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pata-de-elefante",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de madeira até o fundo do vaso. Só regue se ele sair seco e limpo. Molhe devagar em volta do cáudice, nunca no topo dele, até escorrer pelos furos, e esvazie o prato depois de 15 minutos. De maio a agosto, regue só a cada 20 a 30 dias. Na dúvida, não regue: excesso de água mata, falta de água ela aguenta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a pata-de-elefante",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo para cactos e suculentas (ou NPK 10-10-10) na metade da dose do rótulo e aplique numa rega, com o substrato já úmido. Pule as adubações de maio a agosto, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e cáudice",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra o tufo e olhe a base das folhas, procurando algodão branco (cochonilha-farinhenta), escamas marrons ou teias finas. Aperte o cáudice perto do substrato: ele deve estar duro. Se estiver mole ou escuro, é sinal de podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o vaso e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de setembro a novembro, com o substrato seco. Tire a planta, solte o substrato velho das raízes e remova as raízes moles ou escuras. Replante num vaso só 3 a 5 cm mais largo, com o cáudice na mesma altura de antes (não enterre mais). Espere 7 dias para a primeira rega.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Chegou a pata-de-elefante",
+      "mensagem": "Ela saiu de um viveiro com sombra. Sol forte logo de cara queima as folhas, e trocar de vaso agora estressa a raiz.",
+      "acao_requerida": "Deixar a planta na primeira semana em luz clara, sem sol direto do meio-dia, e manter o vaso em que ela veio, se tiver furos"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Começar a dar sol",
+      "mensagem": "Depois de uma semana de adaptação, a planta já pode receber sol direto aos poucos.",
+      "acao_requerida": "Mudar a planta para um lugar com sol da manhã (2 a 3 horas) e, depois de mais 2 semanas, para onde receba 6 horas de sol"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Conferir o vaso",
+      "mensagem": "Vaso plástico de viveiro sem furos ou com substrato que fica úmido por mais de uma semana apodrece o cáudice.",
+      "acao_requerida": "Se o substrato ainda estiver úmido 7 dias depois da rega ou o vaso não tiver furos, replantar num vaso de barro largo com o substrato recomendado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do cáudice e das raízes (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole, escura ou com cheiro azedo; folhas do centro soltam com um puxão leve; substrato sempre úmido",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo e nunca deixar água no prato. Se aparecer, tire a planta do vaso, corte as partes moles até chegar ao tecido firme e claro, deixe secar à sombra por 3 a 5 dias e replante em substrato seco e novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão na base das folhas e nas axilas do tufo; folhas amarelando e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Se houver muitas, pulverizar óleo de neem a 0,5% com algumas gotas de detergente no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou cinzas grudadas nas folhas e no tronco, que saem raspando com a unha",
+      "prevencao_tratamento": "Raspar com escova de dente macia e álcool 70%; depois, óleo mineral ou de neem a 0,5% a cada 10 dias até sumirem"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos ou prateados e teias finas entre elas, mais comum dentro de casa com ar seco",
+      "prevencao_tratamento": "Levar a planta para local mais arejado e com sol; lavar as folhas com jato de água e aplicar óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrom-claras secas no meio das folhas, logo depois de mudar a planta para o sol",
+      "prevencao_tratamento": "Aclimatar ao sol aos poucos, começando pelo sol da manhã. As manchas não somem, mas as folhas novas já nascem adaptadas"
+    },
+    {
+      "nome": "Estiolamento por falta de luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas finas, moles e verde-claras, tufo desfolhando embaixo e tronco que não engorda",
+      "prevencao_tratamento": "Mudar para janela com pelo menos 3 horas de sol direto, fazendo a transição aos poucos"
+    },
+    {
+      "nome": "Pontas das folhas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas marrons e secas nas folhas mais velhas",
+      "prevencao_tratamento": "É normal em pequena quantidade, por idade ou ar seco. Apare só a parte marrom com tesoura limpa. Se atingir muitas folhas novas, verifique se a rega está espaçada demais no verão ou se o adubo está forte"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Reduzir a rega no inverno",
+      "mensagem": "Com o frio e os dias curtos, a pata-de-elefante quase para de crescer e o substrato demora muito mais para secar.",
+      "acao_requerida": "Espaçar as regas para a cada 20 a 30 dias, sempre conferindo com o palito, e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "A planta adulta aguenta frio seco, mas geada com o substrato úmido queima as folhas e pode apodrecer o cáudice.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, levar o vaso para baixo de uma cobertura ou para dentro de casa e não regar nesses dias"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o ritmo da primavera",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento e passa a pedir mais água e nutrientes.",
+      "acao_requerida": "Voltar a regar a cada 10 dias (conferindo com o palito) e retomar a adubação a cada 2 meses"
+    }
+  ]
+}

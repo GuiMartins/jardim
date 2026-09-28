@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Assacu",
+    "nome_cientifico": "Hura crepitans",
+    "descricao": "Árvore amazônica da família das euforbiáceas, de crescimento rápido e tronco coberto de espinhos cônicos, famosa pelo fruto que explode ao secar e lança as sementes a dezenas de metros. Em vaso fica como arvoreta ornamental de folhas grandes e brilhantes e raramente chega a frutificar. O látex é cáustico e as sementes são tóxicas: use luvas e óculos ao podar e mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica ou cimento) com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; a árvore cresce rápido e tomba vasos leves com o vento",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa; mais 1 colher de sopa de farinha de ossos por 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo. Pode perder uma ou duas folhas de baixo, o que é normal. Nas duas primeiras semanas deixe-a em meia-sombra e depois leve ao sol pleno aos poucos. A fase termina quando surge um broto novo no ápice com folhas em forma de coração."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido no calor e na chuva: a muda pode ganhar de 50 cm a 1 m no primeiro ano. Os espinhos cônicos começam a aparecer no caule. No inverno o crescimento para e parte das folhas pode cair. Raízes saindo pelos furos do vaso indicam que a troca de vaso vai ser necessária antes do previsto."
+    },
+    {
+      "fase_id": "arvoreta_adulta",
+      "nome": "Arvoreta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação forte de setembro a março, com folhas grandes e lustrosas; semidormência de junho a agosto, com perda parcial das folhas e pouca necessidade de água. Em vaso a altura se controla com poda no fim do inverno. Flores vermelho-escuras e o fruto explosivo são raros em vaso. Se aparecerem frutos, colha antes de secarem e descarte as sementes, que são tóxicas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o assacu recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda não pode secar por inteiro nesta fase, mas também não deixe água parada no prato. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o assacu",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. No verão quente, confira a cada 2 ou 3 dias. De junho a agosto, com a planta semidormente, regue só quando os 5 cm de cima estiverem secos há alguns dias, cerca de uma vez por semana.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o assacu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 xícara de húmus de minhoca) por vaso de 60 L, a 5 cm do tronco, e regue em seguida. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as nervuras em busca de cochonilhas (pontinhos brancos ou marrons grudados), teias finas de ácaro e folhas roídas por lagartas. Confira também a base do tronco: casca mole ou escura indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro ou outubro. Use luvas grossas e óculos, porque os espinhos ferem e o látex queima a pele e os olhos. Tire a planta, apare 1/4 das raízes que estiverem enoveladas e replante com substrato novo num vaso 10 cm maior, ou no mesmo vaso se quiser conter o tamanho.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A muda já se acostumou ao vaso. O assacu precisa de sol pleno para crescer firme e não estiolar.",
+      "acao_requerida": "Levar o vaso para o sol direto aos poucos: 2 a 3 horas por dia na primeira semana e sol pleno a partir da segunda"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Cuidado com o látex e os espinhos",
+      "mensagem": "O caule já começa a formar espinhos, e qualquer corte solta um látex cáustico que irrita a pele e pode cegar se atingir os olhos.",
+      "acao_requerida": "Posicionar o vaso longe de passagens, crianças e animais, e guardar luvas e óculos para qualquer manuseio da planta"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de assacu",
+      "mensagem": "A planta completou o primeiro ano. Se as raízes estiverem saindo pelos furos ou a rega escorrer rápido demais, o vaso ficou pequeno.",
+      "acao_requerida": "Conferir os furos do vaso e, se houver raízes saindo, antecipar a troca de vaso para a próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo mesmo com o substrato úmido; base do tronco mole ou escura; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, esvaziar o prato e reduzir a rega no inverno. Se aparecer, tire a planta, corte as raízes escuras e moles e replante em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos cotonosos ou escamas marrons grudadas no verso das folhas e nos ramos novos; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em infestação maior, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas no verso, principalmente no tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou com grandes buracos; fezes escuras nas folhas de baixo",
+      "prevencao_tratamento": "Catar as lagartas com luva; em ataque forte, aplicar Bacillus thuringiensis conforme o rótulo"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas e murchas de repente após noites abaixo de 5 °C; ponteiros secos",
+      "prevencao_tratamento": "Espécie tropical: abaixo de 8 °C leve o vaso para perto de uma parede ou sob cobertura. Pode os ramos mortos só em setembro, quando a brotação mostrar até onde o dano chegou"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelando e caindo de junho a agosto, com ramos firmes e verdes por dentro",
+      "prevencao_tratamento": "É a semidormência natural da espécie. Não aumente a rega nem adube. Raspe de leve a casca de um ramo: se estiver verde, a planta está viva e vai rebrotar na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteger e regar menos",
+      "mensagem": "O assacu é tropical e entra em semidormência no frio. Excesso de água agora apodrece as raízes, e as geadas queimam os ramos.",
+      "acao_requerida": "Espaçar a rega para cerca de uma vez por semana, suspender o adubo e abrigar o vaso nas noites com previsão abaixo de 8 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno a planta está parada e cicatriza bem. É a hora de controlar a altura para o vaso não tombar.",
+      "acao_requerida": "Com luvas, óculos e manga comprida, cortar acima de uma gema os ramos que passaram da altura desejada e os ramos cruzados; lavar a tesoura e as mãos em água corrente logo depois por causa do látex"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomada do crescimento",
+      "mensagem": "Com o calor voltando, o assacu rebrota com força e volta a precisar de água e nutrientes.",
+      "acao_requerida": "Voltar à rega a cada 3 ou 4 dias conforme o teste do dedo e retomar a adubação"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Brinco-de-princesa",
+    "nome_cientifico": "Fuchsia × hybrida",
+    "descricao": "Arbusto de flores pendentes, que lembram brincos, em rosa, vermelho, roxo e branco. Atrai beija-flores e fica muito bonito em cesta suspensa ou vaso alto na varanda. Gosta de clima ameno: com mais de 30 °C para de florir, e floresce melhor na primavera e no outono.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Cesta suspensa ou vaso com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo. Vaso plástico ou vitrificado seca mais devagar que o de barro, e isso ajuda no calor",
+    "volume_minimo_litros": 6,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "40% terra vegetal, 30% húmus de minhoca, 20% fibra de coco e 10% perlita ou areia grossa. Deve ficar úmido e fofo, sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda estranha a mudança de lugar e pode derrubar botões e algumas folhas na primeira semana. Isso é normal. Deixe-a em lugar claro, sem sol forte e protegida do vento. A fase termina quando surgem brotos novos nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "As raízes ocupam o vaso novo e os ramos se alongam. Os despontes desta fase fazem a planta ramificar: cada ponta cortada vira dois ramos, e cada ramo dá flores. A fase termina quando a copa fica cheia e aparecem os primeiros botões depois do último desponte."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "O ano típico: floração forte da primavera ao começo do verão, pausa no calor de dezembro a fevereiro (poucas flores e folhas mais moles), segunda floração no outono e crescimento lento no inverno. A poda de fim de inverno renova a planta. Tire as flores murchas e as bagas que se formam depois delas: se a planta produz sementes, ela floresce menos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o brinco-de-princesa",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até a água sair pelos furos e esvazie o prato depois de 30 minutos. Cesta suspensa com mais de 28 °C pode precisar de água todo dia. No inverno, confira a cada 3 ou 4 dias. Aproveite para tirar as flores murchas e as bagas verdes ou roxas.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo NPK para floração (4-14-8 ou parecido) na metade da dose do rótulo e regue com ele com o substrato já úmido, nunca seco. A cada dois meses, troque uma das adubações por 2 colheres de sopa de húmus espalhadas por cima. Pule a adubação com mais de 30 °C e nos meses frios, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "desponte_ramos",
+      "titulo": "Despontar os ramos",
+      "tipo": "PODA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Em cada ramo que já tem 3 ou 4 pares de folhas depois do último corte, belisque com a unha ou corte com tesoura limpa a ponta, logo acima de um par de folhas. Faça isso em todos os ramos, para a copa crescer por igual.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Balance de leve os ramos e veja se sobe uma nuvem de mosquinhas brancas. Vire as folhas e procure ovos, teias finas, pontos amarelos, pó alaranjado e insetos nas pontas novas e nos botões.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, junto com a poda: tire a planta do vaso, raspe 2 a 3 cm do torrão pelos lados e por baixo, corte as raízes escuras ou moles e replante com substrato novo, num vaso 3 a 5 cm maior ou no mesmo vaso lavado. Regue bem e deixe na sombra clara por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "Passado o susto da chegada, a muda aguenta a troca. Vaso de loja pequeno seca em horas e limita a floração.",
+      "acao_requerida": "Transplantar para a cesta ou o vaso de pelo menos 6 L, sem enterrar o caule mais fundo do que estava, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Pare de despontar e deixe florir",
+      "mensagem": "A copa já está formada. Cada ponta cortada agora seria um botão a menos, e os botões levam de 6 a 8 semanas para abrir depois do último desponte.",
+      "acao_requerida": "Deixar os ramos crescerem livres e manter a adubação de floração"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mosca-branca (Trialeurodes vaporariorum, Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta; ovos e ninfas no verso das folhas; folhas amareladas, pegajosas e com fumagina preta",
+      "prevencao_tratamento": "É a praga número um da fúcsia. Lave o verso das folhas com jato de água, pendure uma armadilha adesiva amarela perto e aplique óleo de neem a 0,5% com uma gota de detergente neutro no fim da tarde, a cada 5 dias, por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, que ficam foscas e acinzentadas; teias finas entre folhas e botões no calor seco",
+      "prevencao_tratamento": "Aparece em tempo quente, seco e parado. Borrife água no verso das folhas nas manhãs quentes e aplique óleo de neem ou sabão potássico a cada 5 dias até sumir. Corte os ramos muito atacados"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nas pontas novas e nos botões; folhas novas enrugadas e botões que caem sem abrir",
+      "prevencao_tratamento": "Jato de água ou retirada com os dedos. Se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias. Evite excesso de adubo nitrogenado, que produz as brotações moles que o pulgão prefere"
+    },
+    {
+      "nome": "Ferrugem da fúcsia (Pucciniastrum epilobii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas de pó alaranjado no verso das folhas e manchas amarelas por cima; as folhas caem",
+      "prevencao_tratamento": "Retire e jogue no lixo (não na compostagem) as folhas afetadas, regue no substrato sem molhar as folhas e deixe a planta num lugar ventilado. Em ataque forte, fungicida à base de enxofre ou calda bordalesa, fora do sol quente"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha com o substrato molhado, as folhas amarelam de baixo para cima, a base do caule escurece e as raízes ficam marrons e moles",
+      "prevencao_tratamento": "Esvazie sempre o prato e só regue com o substrato seco a 2 cm de profundidade. Se já começou, tire a planta do vaso, corte as raízes podres, replante em substrato novo e seco e regue pouco por duas semanas. Uma estaca sadia salva a variedade se a planta não se recuperar"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores e botões com manchas marrons encharcadas que se cobrem de um bolor cinza; ocorre no frio úmido e com flores murchas acumuladas",
+      "prevencao_tratamento": "Retire diariamente as flores murchas e as folhas caídas no vaso, não molhe a copa e deixe o ar circular. Corte as partes com bolor com tesoura limpa"
+    },
+    {
+      "nome": "Queda de botões por estresse",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões fechados e flores caem em massa sem sinal de praga",
+      "prevencao_tratamento": "As causas são calor acima de 30 °C, substrato que secou por completo, sol forte da tarde ou mudança de lugar. Mantenha a planta num ponto fixo com sol só da manhã, regue antes de secar de vez e, no verão, leve para a sombra mais fresca da casa"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteja do calor do verão",
+      "mensagem": "Acima de 30 °C a fúcsia para de florir, solta botões e as folhas amolecem. Com cuidado ela atravessa o verão e volta a florir no outono.",
+      "acao_requerida": "Tirar do sol direto e levar para o lugar mais fresco e ventilado com luz clara, conferir a rega todo dia e suspender o adubo até o calor passar"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja do frio e da geada",
+      "mensagem": "A fúcsia aguenta frio, mas a geada queima a copa, e o substrato frio e molhado apodrece a raiz.",
+      "acao_requerida": "Nas noites abaixo de 5 °C, levar para um lugar coberto junto à parede, espaçar a rega para quando o substrato estiver seco a 3 cm e não adubar"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno a planta está quase parada. Podar agora renova os ramos, que florescem nas pontas novas, e evita uma fúcsia comprida e pelada na base.",
+      "acao_requerida": "Cortar todos os ramos de um terço à metade do comprimento, logo acima de um par de gemas, eliminar os galhos secos ou cruzados e retomar a adubação quando a brotação começar"
+    }
+  ]
+}

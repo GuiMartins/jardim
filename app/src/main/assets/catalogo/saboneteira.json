@@ -1,0 +1,187 @@
+{
+  "planta": {
+    "nome_comum": "Saboneteira",
+    "nome_cientifico": "Sapindus saponaria",
+    "descricao": "Árvore nativa do Brasil, rústica e resistente à seca, cujos frutos têm saponinas e fazem espuma na água, por isso o nome. Em vaso grande vira uma arvoreta ornamental de 2 a 3 m, controlada com poda. Frutos e sementes são tóxicos se ingeridos: mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de cerâmica, cimento ou plástico grosso, com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com furos no fundo; comece num de 20 a 30 L se a muda for pequena e suba de tamanho no transplante",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa; acrescente 1 xícara de farinha de ossos por vaso de 40 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. Algumas folhas podem amarelar e cair na primeira semana; é normal. A fase termina quando surgem brotos novos, avermelhados ou verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido na primavera e no verão, com folhas compostas longas e caule engrossando. As raízes começam a ocupar o vaso; a planta já aguenta alguns dias de substrato seco sem murchar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Brota forte de setembro a março e desacelera no inverno, quando pode perder parte das folhas. Em vaso, a floração (pequenas flores brancas em cachos no fim da primavera e no verão) e os frutos (bolinhas amarelo-alaranjadas que amadurecem no outono) podem demorar vários anos ou não vir. Poda anual no fim do inverno e troca de substrato a cada 2 anos mantêm o tamanho e o vigor."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a saboneteira",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos. No verão quente, confira a cada 2 ou 3 dias; no inverno, espace para 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a saboneteira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca e 2 colheres de sopa de NPK 10-10-10 sobre o substrato de um vaso de 40 L, afastado 5 cm do caule, e regue em seguida. De junho a agosto, use só o húmus.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as brotações novas e o verso das folhas procurando pulgões e pontos pegajosos; passe o dedo nos ramos procurando carocinhos brancos ou marrons (cochonilhas).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, raspe 3 a 5 cm de terra velha ao redor do torrão, corte as raízes que dão voltas no fundo e replante com substrato novo, no mesmo vaso ou num 10 cm maior. Prefira fazer entre agosto e setembro; se cair no verão, faça num dia nublado e mantenha à meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firmar a muda",
+      "mensagem": "Com o vento, a muda balança e rompe as raízes novas antes de firmar.",
+      "acao_requerida": "Enterrar um tutor de bambu a 5 cm do caule, sem ferir o torrão, e amarrar o caule com fita ou barbante frouxo em forma de 8"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Sol pleno liberado",
+      "mensagem": "A muda já deve ter brotos novos. Se ficou à meia-sombra na adaptação, agora pode ir para o sol o dia inteiro.",
+      "acao_requerida": "Levar o vaso para o local de sol pleno definitivo"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Formar a copa",
+      "mensagem": "Sem desponte, a saboneteira sobe numa haste única e fica alta e rala no vaso.",
+      "acao_requerida": "Cortar a ponta do ramo principal na altura desejada da copa (80 cm a 1,2 m), logo acima de uma folha, para estimular brotações laterais"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Retirar o tutor",
+      "mensagem": "Com um ano, o caule já deve se sustentar sozinho; o amarrio pode estar estrangulando a casca.",
+      "acao_requerida": "Soltar o amarrio e retirar o tutor; se o caule ainda tombar, amarrar de novo mais frouxo e conferir em 3 meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; cheiro azedo na terra; base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter os furos livres. Se aparecer, suspender a rega, tirar a planta do vaso, cortar as raízes escuras e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou escamas marrons nos ramos e nervuras; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%; em infestação maior, pulverizar óleo mineral ou óleo de neem a 1% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nas brotações novas, que ficam enroladas e deformadas",
+      "prevencao_tratamento": "Jato de água nas brotações; se persistir, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem entre junho e agosto, com os ramos firmes e verdes por dentro ao raspar a casca",
+      "prevencao_tratamento": "É o repouso natural da espécie, que é semidecídua. Reduza a rega e não adube com NPK até a brotação de setembro"
+    },
+    {
+      "nome": "Raízes enoveladas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Água escorre direto pelos furos sem molhar o torrão, raízes saindo pelo fundo, planta murcha rápido e cresce pouco",
+      "prevencao_tratamento": "Fazer a troca de substrato com poda de raízes; até lá, regar por imersão, deixando o vaso 20 minutos numa bacia com água"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Início do repouso de inverno",
+      "mensagem": "Com o frio a saboneteira desacelera e pode perder folhas; o substrato demora mais a secar.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, em geral a cada 7 a 10 dias, e suspender o NPK até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual",
+      "mensagem": "No fim do inverno, antes da brotação, a poda controla a altura no vaso e deixa a copa mais cheia.",
+      "acao_requerida": "Encurtar em um terço os ramos mais compridos, retirar ramos secos, cruzados ou voltados para dentro, com corte inclinado logo acima de uma gema"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomada do crescimento",
+      "mensagem": "Com o calor voltando, a saboneteira rebrota e passa a beber e comer mais.",
+      "acao_requerida": "Voltar a conferir a rega a cada 3 a 4 dias e retomar a adubação com NPK junto com o húmus"
+    }
+  ]
+}

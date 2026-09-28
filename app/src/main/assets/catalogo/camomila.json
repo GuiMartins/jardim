@@ -1,0 +1,178 @@
+{
+  "planta": {
+    "nome_comum": "Camomila",
+    "nome_cientifico": "Matricaria chamomilla (syn. Matricaria recutita)",
+    "descricao": "Erva anual de flores pequenas, brancas com miolo amarelo, colhidas para o chá calmante e digestivo. Gosta de clima ameno: no Centro-Sul, semeia-se no outono e colhe-se no inverno e no começo da primavera.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 120,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade e furos no fundo; uma jardineira de 60 cm comporta 4 plantas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa, 20% húmus de minhoca; leve e bem drenado, sem esterco fresco (excesso de nitrogênio dá muita folha e pouca flor)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "As sementes são minúsculas e precisam de luz para germinar: espalhe-as sobre o substrato úmido e apenas pressione com a mão, sem cobrir. As plântulas, muito finas, aparecem entre o 7º e o 14º dia."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "Surgem as folhas verdadeiras, finamente recortadas como as da cenoura. A planta ainda é frágil e cresce devagar; a fase termina quando ela forma uma pequena roseta de 5 cm."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 36,
+      "dia_fim": 60,
+      "descricao": "Os ramos se alongam e a planta chega a 20–40 cm, com cheiro de maçã ao esfregar as folhas. No fim da fase aparecem os primeiros botões redondos nas pontas dos ramos."
+    },
+    {
+      "fase_id": "floracao_colheita",
+      "nome": "Floração e Colheita",
+      "dia_inicio": 61,
+      "dia_fim": 110,
+      "descricao": "As flores abrem em ondas; quanto mais se colhe, mais botões surgem. O ponto de colheita é quando as pétalas brancas estão totalmente abertas e horizontais e o miolo amarelo ainda está firme, antes de ficar cônico e soltar pó."
+    },
+    {
+      "fase_id": "senescencia",
+      "nome": "Fim do Ciclo",
+      "dia_inicio": 111,
+      "dia_fim": 120,
+      "descricao": "A floração diminui, as folhas de baixo amarelam e os miolos das flores esquecidas escurecem e secam, cheios de sementes. Colha o que restar e retire a planta; as sementes secas servem para a próxima semeadura no outono."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife a superfície pela manhã até ela escurecer de umidade, sem jato forte, que enterra ou arrasta as sementes. A superfície não pode secar nem virar poça.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a camomila",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar junto à base até escorrer pelos furos, sem molhar as flores. Em dias frios e nublados o substrato pode levar 3 a 4 dias para secar: só regue quando o teste do dedo pedir.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_leve",
+      "titulo": "Adubação leve",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 85,
+      "instrucoes": "Espalhe 1 colher de sopa de húmus de minhoca por planta, sem encostar no caule, e regue em seguida. Não use adubo químico rico em nitrogênio, que deixa a planta alta, mole e com poucas flores.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Olhe as pontas dos ramos e os botões florais à procura de pulgões agrupados e passe o dedo nas folhas procurando pó branco.",
+      "critica": false
+    },
+    {
+      "id": "colheita_flores",
+      "titulo": "Colher flores abertas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": 118,
+      "instrucoes": "Em manhã seca, depois que o orvalho evaporar, destaque as flores com pétalas totalmente abertas puxando entre os dedos em forma de pente. Seque à sombra, espalhadas numa peneira, por 5 a 7 dias, até esfarelarem, e guarde em pote fechado.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As mudinhas estão apertadas e vão competir por luz. Plantas espremidas ficam finas, tombam e florescem pouco.",
+      "acao_requerida": "Deixar uma planta a cada 15 cm, cortando as sobras rente ao substrato com tesoura (ou transplantar as sobras para outro vaso)"
+    },
+    {
+      "dia_disparo": 58,
+      "titulo": "Botões à vista",
+      "mensagem": "Os primeiros botões devem estar aparecendo nas pontas dos ramos. A colheita começa em poucos dias.",
+      "acao_requerida": "Separar uma peneira ou tela limpa num lugar arejado e à sombra para secar as flores"
+    },
+    {
+      "dia_disparo": 100,
+      "titulo": "Guardar sementes",
+      "mensagem": "A floração vai diminuir nas próximas semanas. Flores deixadas na planta secam e dão sementes para o próximo outono.",
+      "acao_requerida": "Parar de colher 5 ou 6 flores dos ramos mais fortes e deixá-las secar na planta até o miolo ficar marrom"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, base do caule escura e mole, folhas de baixo amarelando",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, usar substrato com areia e nunca deixar água no pratinho; retirar as plantas afetadas"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem de repente com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, borrifar sem encharcar e semear sem aglomerar; retirar as plântulas caídas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos ramos e nos botões; botões deformados e pegajosos",
+      "prevencao_tratamento": "Jato de água nos ramos; se persistir, calda de sabão neutro (1 colher de sopa por litro) no fim da tarde a cada 5 dias. Não use neem em flores que vão virar chá sem esperar 7 dias antes de colher"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre folhas e ramos, que depois amarelam e secam",
+      "prevencao_tratamento": "Espaçar as plantas, regar na base sem molhar as folhas e retirar os ramos atacados; pulverizar leite diluído em água (1:9) a cada 7 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos compridos, finos e tombados, verde-claros, com poucos ou nenhum botão",
+      "prevencao_tratamento": "Levar o vaso para um lugar com pelo menos 4 horas de sol direto; ramos já tombados podem ser amparados com barbante em volta do vaso"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "O calor está chegando",
+      "mensagem": "Com dias quentes a camomila acelera, as flores abrem e passam do ponto em um ou dois dias e a planta logo vai para semente.",
+      "acao_requerida": "Colher todos os dias as flores abertas e deixar só as reservadas para sementes"
+    }
+  ]
+}

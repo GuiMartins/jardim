@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Ninfeia-azul",
+    "nome_cientifico": "Nymphaea nouchali",
+    "descricao": "Ninfeia tropical de flores azul-lilás perfumadas, que abrem de manhã e fecham à tarde, com folhas redondas flutuando na água. Em casa é cultivada numa tina ou bacia sem furos. Floresce da primavera ao outono e para de crescer quando a água esfria no inverno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Tina, bacia ou vaso cerâmico esmaltado SEM furos, com pelo menos 50 cm de diâmetro e 30 a 40 cm de profundidade. Dentro dela vai um vaso raso de plantio (20 a 25 cm de diâmetro, 12 a 15 cm de altura), apoiado sobre tijolos para regular a profundidade da água sobre a coroa",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "No vaso de plantio: 90% terra argilosa de barranco (pesada, sem adubo orgânico solto) e 10% areia grossa, mais uma camada de 2 a 3 cm de cascalho ou areia grossa por cima para a terra não turvar a água. Não use substrato comercial, turfa ou casca de pinus, porque flutuam e apodrecem na água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Plante a muda com a coroa (ponto de onde saem as folhas) no nível do cascalho, sem enterrar. Comece com só 10 a 15 cm de água sobre a coroa, apoiando o vaso nos tijolos. Folhas velhas podem amarelar e morrer; a fase termina quando surgem 3 ou 4 folhas novas que chegam à superfície e se abrem flutuando."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 60,
+      "descricao": "As folhas ficam maiores e mais numerosas, cobrindo parte da superfície. Aprofunde a água para 20 a 30 cm sobre a coroa, tirando um tijolo de cada vez. Com água acima de 22 °C e 5 horas de sol ou mais, o primeiro botão aparece em 4 a 8 semanas; ele sobe até a superfície e abre em 3 a 4 dias seguidos, pela manhã."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "De outubro a abril a planta floresce sem parar, com uma flor nova a cada poucos dias e folhas renovadas toda semana. Folhas devem ocupar no máximo 2/3 da superfície; se amontoarem e se levantarem da água, a planta pede divisão. Quando a água cai abaixo de 18 °C (maio a agosto), o crescimento para e muitas folhas morrem; a planta volta na primavera."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "completar_agua",
+      "titulo": "Completar a água da tina",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Complete até a marca do nível, com água de chuva ou da torneira descansada por 24 h, despejando devagar na borda para não levantar a terra. No verão a tina perde 1 a 1,5 cm por dia; com água baixa demais, as folhas ficam fora e secam e a água rasa passa de 35 °C, cozinhando a coroa. No inverno, confira a cada 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "limpar_folhas_flores",
+      "titulo": "Tirar folhas amarelas e flores passadas",
+      "tipo": "PODA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura, o mais perto possível da coroa, cada folha amarela ou furada e cada flor que já fechou pela última vez e afundou. Folha podre na água vira adubo para algas e deixa a água verde. Recolha também as folhas caídas de outras plantas.",
+      "critica": false
+    },
+    {
+      "id": "adubar_pastilha",
+      "titulo": "Adubar com pastilha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Empurre 1 pastilha de adubo para plantas aquáticas (ou 10 g de NPK 10-10-10 embrulhados numa bolinha de argila ou papel-jornal) 5 cm dentro da terra, a 5 cm da coroa. Nunca jogue adubo solto na água: ele alimenta as algas. Suspenda de maio a agosto, quando a água está fria.",
+      "critica": false
+    },
+    {
+      "id": "checar_larvas_pragas",
+      "titulo": "Conferir larvas de mosquito e pragas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a água parada contra a luz procurando larvas se contorcendo (Aedes aegypti, transmissor da dengue). Vire as folhas e procure pulgões escuros, lagartas protegidas entre recortes de folha e caramujos. Com peixes (lebiste ou platy) na tina, as larvas não chegam a adulto; sem peixe, use Bti (larvicida biológico) na dose do rótulo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Coloque peixinhos na tina",
+      "mensagem": "Água parada ao ar livre vira criadouro de mosquito da dengue em uma semana. Peixinhos comem as larvas e não prejudicam a ninfeia.",
+      "acao_requerida": "Soltar 2 ou 3 lebistes (guppies) ou platys na tina, ou aplicar Bti se não quiser peixes"
+    },
+    {
+      "dia_disparo": 22,
+      "titulo": "Hora de aprofundar a água",
+      "mensagem": "As folhas novas já alcançam a superfície com folga. Mais água sobre a coroa estabiliza a temperatura e deixa a planta crescer maior.",
+      "acao_requerida": "Tirar um tijolo de baixo do vaso de plantio, deixando 20 a 30 cm de água sobre a coroa; se as folhas ficarem submersas, espere uma semana e tente de novo"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Já floresceu?",
+      "mensagem": "Com água quente e sol pleno, a ninfeia-azul costuma dar o primeiro botão até aqui. Sem flores, a causa quase sempre é pouco sol, água fria ou falta de adubo.",
+      "acao_requerida": "Se ainda não houve botão, mudar a tina para um lugar com pelo menos 5 horas de sol direto e conferir se a pastilha de adubo foi colocada"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Larvas de mosquito (Aedes aegypti, Culex)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas larvas que se contorcem na água e sobem à superfície para respirar; mosquitos em volta da tina",
+      "prevencao_tratamento": "Manter peixes larvófagos (lebiste, platy) na tina ou aplicar Bti a cada 15 a 30 dias; nunca deixar a água sem controle"
+    },
+    {
+      "nome": "Pulgão-da-ninfeia (Rhopalosiphum nymphaeae)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de pulgões marrom-escuros em cima das folhas e nos botões; folhas deformadas e botões que não abrem",
+      "prevencao_tratamento": "Afundar as folhas com a mão por alguns segundos ou lavar com jato de água, para os peixes comerem os pulgões. Não use inseticida nem óleo de neem: matam os peixes"
+    },
+    {
+      "nome": "Lagarta-aquática (Elophila spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Recortes ovais nas bordas das folhas e pedaços de folha colados formando abrigos no verso",
+      "prevencao_tratamento": "Virar as folhas, retirar os abrigos com as lagartas e cortar as folhas muito atacadas"
+    },
+    {
+      "nome": "Caramujos e lesmas-d'água",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e botões raspados, com buracos de bordas irregulares; ovos gelatinosos no verso das folhas e na parede da tina",
+      "prevencao_tratamento": "Catar à mão, raspar as posturas e deixar uma folha de alface na água à noite como isca para recolher de manhã"
+    },
+    {
+      "nome": "Mancha-foliar (Cercospora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas redondas nas folhas, que se juntam até a folha apodrecer",
+      "prevencao_tratamento": "Cortar e jogar fora as folhas manchadas logo que aparecerem; manter a tina em lugar ventilado e sem superlotação de folhas"
+    },
+    {
+      "nome": "Podridão da coroa (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas e botões novos saem pretos e moles, a coroa fica mole e com cheiro ruim, e a planta para de soltar folhas",
+      "prevencao_tratamento": "Evitar adubo orgânico solto e folhas podres na água; tirar a planta, cortar as partes moles até o tecido firme e replantar em terra nova. Se a coroa inteira estiver mole, a planta está perdida"
+    },
+    {
+      "nome": "Folhas pequenas e amareladas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas cada vez menores, amarelas por igual, e nenhum botão, mesmo no verão",
+      "prevencao_tratamento": "Quase sempre é falta de adubo ou vaso de plantio apertado demais. Pôr a pastilha em dia e, na primavera, dividir e replantar em terra nova"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Parar a adubação",
+      "mensagem": "Com o outono, a água esfria, a ninfeia desacelera e deixa de usar o adubo, que só alimentaria as algas.",
+      "acao_requerida": "Não colocar mais pastilhas até setembro e continuar tirando as folhas que amarelarem"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A ninfeia-azul é tropical: com a água abaixo de 10 °C ou geada na tina, a coroa pode morrer. É normal ela perder quase todas as folhas agora.",
+      "acao_requerida": "Deixar a tina no lugar mais ensolarado e abrigado do vento; em regiões com geada, baixar o vaso de plantio para o fundo e cobrir a tina à noite com plástico ou tampa"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Replantar e dividir",
+      "mensagem": "A água volta a esquentar e a planta retoma o crescimento. É a melhor época para renovar a terra, que se esgota em um ano de vaso.",
+      "acao_requerida": "Tirar a planta, lavar as raízes, separar os brotos com raiz em mudas novas e replantar em terra argilosa nova com uma pastilha de adubo; retomar a adubação mensal"
+    }
+  ]
+}

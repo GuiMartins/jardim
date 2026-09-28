@@ -1,0 +1,204 @@
+{
+  "planta": {
+    "nome_comum": "Erva-mate",
+    "nome_cientifico": "Ilex paraguariensis",
+    "descricao": "Árvore nativa da Mata de Araucária, cujas folhas secas dão o chimarrão e o tererê. Em vaso grande e com podas anuais fica com 1,5 a 2,5 m e rende uma pequena colheita de folhas a partir do terceiro ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 45 cm de diâmetro e 45 cm de profundidade, de barro ou plástico grosso, com vários furos no fundo; a raiz é pivotante e não tolera água parada",
+    "volume_minimo_litros": 50,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina, 10% areia grossa; ácido (pH 5 a 6), sem calcário e sem terra de obra",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho para o vaso definitivo e pode perder algumas folhas baixas. A fase termina quando aparecem brotos novos, verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento, com surtos na primavera e no verão. A muda ainda queima com sol forte do meio-dia: folhas com manchas marrom-claras e secas indicam que precisa de mais sombra."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A planta ganha altura e ramos laterais. As podas de inverno servem para formar a copa baixa e ramificada; ainda não se colhe, porque tirar muita folha agora atrasa o crescimento."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Brota forte de setembro a março e para no inverno, quando as folhas amadurecem e ficam no ponto de colheita. Floresce com flores brancas miúdas na primavera; as frutinhas vermelhas só aparecem em plantas femininas com uma masculina por perto. A cada inverno se colhe parte dos ramos, e a cada dois anos se renova o substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de erva-mate",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz nova ainda não alcança o fundo do vaso, e a muda murcha sem voltar se o torrão secar por inteiro. Esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a erva-mate",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos, cerca de 4 a 5 L num vaso de 50 L. Acima de 30 °C confira a cada 2 dias; de junho a agosto, a cada 5 a 6 dias. Nunca deixe água no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a erva-mate",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, espalhe 1 L de húmus de minhoca e 1 colher de sopa de NPK 10-10-10 na borda do vaso, sem encostar no tronco, e regue em seguida. De abril a agosto, pule a adubação: a planta está parada e o adubo só acumula sal.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos procurando folhas enroladas com bolhas (ampola), o verso das folhas procurando pontos marrons ou aspecto bronzeado (ácaro), e o tronco procurando furos com serragem (broca).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre maio e agosto. Tire a planta do vaso, corte 3 a 5 cm das raízes enoveladas nas laterais e no fundo, e replante com 1/3 de substrato novo. Se o vaso já estiver no limite, pode trocar só os 10 cm de cima.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Muda nova: vaso e sombra",
+      "mensagem": "Muda de erva-mate queima com sol forte e morre se o torrão ficar encharcado no primeiro mês.",
+      "acao_requerida": "Plantar no vaso definitivo sem enterrar o colo acima do nível do saquinho, regar bem e deixar num lugar só com sol da manhã"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Hora de acostumar ao sol",
+      "mensagem": "Com um ano de vaso a planta aguenta mais luz, e mais sol deixa a copa densa e as folhas mais grossas.",
+      "acao_requerida": "Ao longo de 3 semanas, aproximar o vaso de onde bate sol até ter 4 a 5 horas de sol direto, evitando o sol das 12h às 15h no verão"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Primeira colheita neste inverno",
+      "mensagem": "Com três anos a planta já tem folha suficiente para uma colheita sem se enfraquecer.",
+      "acao_requerida": "No próximo inverno, colher no máximo 1/3 dos ramos, conforme o lembrete de poda e colheita"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com substrato úmido, pontas dos ramos murcham, raízes marrons e moles com cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, esvaziar o pratinho e manter os furos livres; se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Ampola-da-erva-mate (Gyropsylla spegazziniana)",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos novos com folhas dobradas formando bolhas (galhas), com insetos minúsculos e um pó branco dentro; o broto para de crescer",
+      "prevencao_tratamento": "Cortar e descartar os brotos com galhas; em infestação grande, óleo de neem a 0,5% nos brotos no fim da tarde, a cada 7 dias, de setembro a dezembro"
+    },
+    {
+      "nome": "Ácaro-do-bronzeado (Dichopelmus notus)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas perdem o brilho, ficam bronzeadas ou ferrugem no verso e caem, principalmente em época seca e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, enxofre molhável na dose do rótulo, sem aplicar acima de 30 °C"
+    },
+    {
+      "nome": "Broca-da-erva-mate (Hedypathes betulinus)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos no tronco e nos ramos grossos com serragem escura saindo ou acumulada no substrato; ramos acima do furo secam",
+      "prevencao_tratamento": "Catar os besouros adultos (cinza e preto, antenas longas) de outubro a fevereiro; cortar o ramo abaixo da galeria ou introduzir um arame no furo para matar a larva"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons presas nos ramos e no verso das folhas, folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete e álcool 70%; em muitos pontos, óleo mineral ou de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Clorose por substrato alcalino",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes, crescimento fraco",
+      "prevencao_tratamento": "Nunca usar calcário nem cinza; regar com água da chuva se a da torneira for dura, e acidificar com casca de pinus e composto; em casos fortes, quelato de ferro na dose do rótulo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrom-claras e secas no meio das folhas voltadas para o sol, surgindo depois de um dia quente",
+      "prevencao_tratamento": "Mudas com menos de um ano só com sol da manhã; plantas maiores devem ser acostumadas ao sol aos poucos e protegidas do sol da tarde no verão"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com geada",
+      "mensagem": "A erva-mate para de crescer no frio e bebe menos. Plantas adultas aguentam geada leve, mas mudas com menos de dois anos queimam.",
+      "acao_requerida": "Espaçar a rega até o substrato secar a 4 cm e, em noite com previsão de geada, levar mudas jovens para perto de uma parede coberta ou cobrir com TNT"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda e colheita de inverno",
+      "mensagem": "As folhas estão maduras e a planta está parada: é a época tradicional de colher erva-mate e de podar para formar a copa.",
+      "acao_requerida": "Nos primeiros três anos, só encurtar a ponta dos ramos mais altos para a planta ramificar. A partir do terceiro ano, colher até 1/3 dos ramos com tesoura limpa, deixando folhas em todos os galhos, e secar as folhas à sombra"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: proteger do calor",
+      "mensagem": "Em vaso, o sol forte da tarde esquenta a raiz e queima as folhas, e o substrato seca muito mais rápido.",
+      "acao_requerida": "Garantir sombra das 12h às 16h e conferir a umidade do substrato a cada 2 dias"
+    }
+  ]
+}

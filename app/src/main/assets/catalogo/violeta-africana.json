@@ -1,0 +1,207 @@
+{
+  "planta": {
+    "nome_comum": "Violeta-africana",
+    "nome_cientifico": "Streptocarpus ionanthus (antiga Saintpaulia ionantha), híbridos",
+    "descricao": "Planta de interior compacta, em roseta de folhas aveludadas, que floresce várias vezes por ano em roxo, rosa, azul ou branco. Vai bem em peitoril de janela com luz clara e sem sol forte, e com os cuidados certos vive e floresce por muitos anos no mesmo vaso pequeno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso raso de plástico ou cerâmica com 10 a 12 cm de diâmetro e 8 a 10 cm de altura, com furos no fundo. O diâmetro do vaso deve ter cerca de 1/3 da largura da roseta, porque vaso grande demais mantém o substrato úmido e a planta demora a florir. Vaso autoirrigável próprio para violeta também serve.",
+    "volume_minimo_litros": 0.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "50% substrato próprio para violeta ou turfa, 25% perlita e 25% vermiculita; leve, fofo e levemente ácido (pH 6 a 6,5), sem terra de jardim",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa, onde tinha luz e umidade controladas, e pode perder as flores abertas e um ou dois pares de folhas de baixo. Isso é normal. Mantenha-a perto de uma janela clara sem sol das 10h às 16h, longe de ar-condicionado e corrente de vento. A adaptação terminou quando surgem folhas novas firmes no centro da roseta."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 90,
+      "descricao": "A roseta volta a crescer de forma simétrica e aparecem os primeiros botões florais entre as folhas do centro. Se as folhas se esticam para cima com talos compridos e finos, a luz está fraca: aproxime da janela. Se ficam amareladas, duras e voltadas para baixo, está com luz demais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Com boa luz e adubação regular, a violeta floresce em ondas de 6 a 8 semanas com pausas curtas entre elas, o ano todo. Florescimento mais forte na primavera e no outono; no inverno o crescimento desacelera e no calor acima de 30 °C a floração fica fraca. Com o tempo, as folhas de baixo caem e forma-se um 'pescoço' de caule nu, sinal de que é hora de replantar mais fundo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_violeta",
+      "titulo": "Regar a violeta",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Toque a superfície do substrato: regue só se o primeiro centímetro estiver seco e o vaso estiver leve ao levantar. Use água em temperatura ambiente e regue por baixo: deixe o vaso num prato com 2 cm de água por 20 a 30 minutos e descarte o que sobrar. Se regar por cima, molhe só o substrato, nunca o centro da roseta nem as folhas, porque água fria nas folhas deixa manchas e água parada no centro apodrece a coroa. Aproveite para girar o vaso 1/4 de volta, para a roseta crescer simétrica. No inverno, o intervalo costuma passar para 7 a 10 dias; no calor, confira a cada 3 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido próprio para violeta ou de floração (tipo NPK 10-30-20) na METADE da dose do rótulo e aplique na água da rega, com o substrato já levemente úmido. A cada 3 meses, regue uma vez só com água pura em abundância, deixando escorrer pelos furos, para lavar o excesso de sais (crosta branca na borda do vaso). Suspenda nos 30 dias depois de uma troca de vaso.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_roseta",
+      "titulo": "Limpar flores e folhas velhas",
+      "tipo": "PODA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Retire as flores murchas puxando o talo inteiro rente à base. Tire as folhas de baixo amareladas, murchas ou manchadas, destacando-as de lado junto ao caule. Procure brotações laterais (ladrões) com roseta própria entre as folhas e retire-as com a ponta de um lápis enquanto são pequenas: a violeta deve ter uma só coroa, com 3 a 5 fileiras de folhas. Limpe a poeira das folhas com pincel macio e seco.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a violeta",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas e olhe o centro da roseta: folhinhas novas deformadas, apertadas e muito peludas indicam ácaro. Vire as folhas e procure algodõezinhos brancos (cochonilha) nas axilas e no verso. Veja se há pó branco (oídio) nas folhas ou flores e se o caule junto ao substrato está firme, não mole e escuro.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, remova metade do substrato velho e as raízes escuras ou moles. Se formou 'pescoço' de caule nu, raspe-o de leve e enterre-o no substrato novo, de modo que as folhas de baixo fiquem logo acima da superfície. Use vaso do mesmo tamanho ou só 2 cm maior, se a roseta cresceu. Regue por baixo e deixe 1 semana em luz mais fraca, sem adubo por 30 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Quarentena da violeta nova",
+      "mensagem": "Plantas de loja às vezes trazem ácaros e cochonilhas que passam para as outras. E trocar de vaso no mesmo dia soma dois estresses.",
+      "acao_requerida": "Deixar a violeta 3 semanas longe das outras plantas e não trocar o vaso agora, a menos que o substrato esteja encharcado e com cheiro ruim"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Violeta adaptada",
+      "mensagem": "Passado o primeiro mês, a planta já está pronta para receber adubo e decidir se o vaso de loja serve.",
+      "acao_requerida": "Conferir se o vaso tem cerca de 1/3 da largura da roseta e furos no fundo; se for muito maior ou sem furo, passar para um vaso raso de 10 a 12 cm com o substrato recomendado"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Já apareceram botões?",
+      "mensagem": "Violeta saudável que não mostrou nenhum botão em 3 meses quase sempre está com pouca luz.",
+      "acao_requerida": "Se não houver botões, colocar a planta a menos de 50 cm de uma janela clara, com no máximo sol fraco da manhã, ou sob luz de LED 12 horas por dia"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da coroa e das raízes (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas mesmo com o substrato úmido; o centro da roseta escurece e fica mole; o caule junto ao substrato apodrece e a planta se solta do vaso",
+      "prevencao_tratamento": "Principal causa de morte da violeta em vaso. Regue só com o primeiro centímetro seco, nunca deixe água no prato nem no centro da roseta e use vaso pequeno com substrato aerado. Se só as raízes apodreceram, corte a parte ruim e replante em substrato novo; se a coroa está mole, salve folhas sadias enraizando-as em água ou substrato"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre folhas, talos e flores, que sai ao esfregar",
+      "prevencao_tratamento": "Mais comum com dias quentes e noites frias e pouca ventilação. Afaste as plantas, retire as flores e folhas atingidas e aplique bicarbonato de sódio (1 colher de chá por litro de água com 2 gotas de detergente) com pincel nas manchas, repetindo após 7 dias"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores e folhas com manchas marrons encharcadas cobertas por mofo cinzento",
+      "prevencao_tratamento": "Retire flores murchas e folhas danificadas logo que aparecerem, não molhe a roseta e melhore a ventilação. Descarte todo o material mofado fora de casa"
+    },
+    {
+      "nome": "Cochonilha-farinhenta (inclusive a de raiz)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas, no verso ou, na de raiz, grudados nas raízes e na parede do vaso; planta amarelada e sem crescer",
+      "prevencao_tratamento": "Remova os insetos com cotonete embebido em álcool 70%, sem encostar nas flores. Na de raiz, lave as raízes, troque todo o substrato e lave o vaso. Repita a inspeção semanal por 1 mês"
+    },
+    {
+      "nome": "Ácaro do ciclâmen (Phytonemus pallidus)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas do centro pequenas, retorcidas, amontoadas e com excesso de pelos; botões que não abrem ou flores deformadas. O ácaro é invisível a olho nu",
+      "prevencao_tratamento": "Muito difícil de controlar. Isole a planta na hora; em infestação leve, retire o centro atingido e aplique acaricida de venda em garden a cada 7 dias por 3 semanas. Em infestação forte, descarte a planta para não contaminar as outras"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Pólen amarelo espalhado sobre as pétalas escuras; flores que duram pouco e têm riscos claros; insetos alongados e pequenos que se movem rápido",
+      "prevencao_tratamento": "Retire todas as flores e botões por 2 a 3 semanas para quebrar o ciclo e aplique óleo de neem a 0,5% nas folhas, sem encharcar a roseta, no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Manchas anelares por água fria",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas ou anéis amarelo-claros ou esbranquiçados nas folhas, que não somem",
+      "prevencao_tratamento": "Não é doença: a folha foi molhada com água mais fria que ela ou pegou sol logo depois de molhar. As manchas ficam, mas não se espalham. Regue por baixo com água em temperatura ambiente"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrons secas nas folhas viradas para a janela; folhas amareladas, duras e com as bordas para baixo",
+      "prevencao_tratamento": "Afaste do sol direto entre 10h e 16h ou filtre com cortina clara. As folhas queimadas não se recuperam: retire-as quando as novas crescerem"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta verde e saudável, mas sem botões há meses; folhas com talos longos esticados para cima",
+      "prevencao_tratamento": "Quase sempre é pouca luz, às vezes vaso grande demais ou várias coroas na mesma planta. Aproxime da janela ou use LED 12 horas por dia, mantenha uma só coroa e adube a cada 14 dias com adubo de floração"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteger a violeta do frio",
+      "mensagem": "Abaixo de 15 °C a violeta para de crescer e as folhas ficam escuras e moles. O vidro da janela esfria muito de madrugada, e o substrato úmido no frio favorece a podridão.",
+      "acao_requerida": "Afastar o vaso uns 30 cm do vidro à noite, espaçar as regas (tocar o substrato antes; costuma ir para 7 a 10 dias) e usar água morna ao toque"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e sol mais fortes",
+      "mensagem": "Acima de 30 °C a violeta floresce pouco, e o sol do verão entra mais forte e por mais tempo em algumas janelas, queimando as folhas.",
+      "acao_requerida": "Conferir se o sol direto não bate na planta depois das 10h, manter o ambiente ventilado sem vento direto e conferir o substrato a cada 3 dias"
+    }
+  ]
+}

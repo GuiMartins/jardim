@@ -1,0 +1,157 @@
+{
+  "planta": {
+    "nome_comum": "Cebola",
+    "nome_cientifico": "Allium cepa (cultivares de dia curto, como 'Baia Periforme', 'Crioula' e 'Texas Grano')",
+    "descricao": "Hortaliça de bulbo usada todos os dias na cozinha. Em vaso, começa com mudas, que são vendidas em bandejas ou maços em feiras e lojas agrícolas. Na natureza a cebola é bienal: forma o bulbo no primeiro ano e floresce no segundo. Em casa, cultiva-se como anual e colhe-se o bulbo. No Centro-Sul, use cultivares de dia curto, porque as de dia longo não formam bulbo aqui.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 120,
+    "meses_plantio": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso largo com pelo menos 20 cm de profundidade e furos no fundo. Deixe 10 cm entre as mudas: uma jardineira de 60 x 20 cm comporta cerca de 10 plantas em duas fileiras.",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada e 20% húmus de minhoca, mais 1 colher de sopa de calcário dolomítico a cada 10 L (pH entre 6 e 6,5). Precisa ficar solto e drenar bem, para o bulbo engordar sem apodrecer.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "pegamento",
+      "nome": "Pegamento da Muda",
+      "dia_inicio": 1,
+      "dia_fim": 15,
+      "descricao": "Antes de plantar, apare as raízes para 2 cm e as folhas para um terço do comprimento. Enterre só a base branca, a 2 ou 3 cm de profundidade: muda funda forma bulbo comprido e pequeno. As folhas velhas podem amarelar nos primeiros dias. A muda pegou quando aparece uma folha nova, verde e firme, saindo do centro."
+    },
+    {
+      "fase_id": "crescimento_folhas",
+      "nome": "Crescimento das Folhas",
+      "dia_inicio": 16,
+      "dia_fim": 60,
+      "descricao": "A planta forma folhas tubulares novas, uma a cada uma ou duas semanas. O tamanho do bulbo depende de quantas folhas se formam agora, então esta é a fase de adubar com nitrogênio. Arranque à mão o mato que nascer, porque a cebola compete mal com ele."
+    },
+    {
+      "fase_id": "bulbificacao",
+      "nome": "Formação do Bulbo",
+      "dia_inicio": 61,
+      "dia_fim": 100,
+      "descricao": "A base da planta engrossa e o bulbo aparece na superfície. Não cubra o bulbo com terra: ele se forma parcialmente exposto. Sai de cena a adubação com nitrogênio e fica a rega regular. Rega irregular agora racha o bulbo ou forma bulbos duplos."
+    },
+    {
+      "fase_id": "maturacao_colheita",
+      "nome": "Maturação, Colheita e Cura",
+      "dia_inicio": 101,
+      "dia_fim": 120,
+      "descricao": "O pescoço amolece e as folhas tombam sozinhas (o 'estalo'). Pare de regar. Colha quando metade ou mais das plantas tiver tombado e deixe as cebolas curando de 7 a 10 dias à sombra, em lugar ventilado. A cura terminou quando a casca externa fica seca e estala e o pescoço está fino e seco."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_pegamento",
+      "titulo": "Regar as mudas de cebola",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Regue de manhã até umedecer os primeiros 5 cm do substrato. A raiz aparada ainda é curta e seca rápido, e o substrato não pode secar na superfície. Se ficar encharcado a ponto de empoçar, pule a rega do dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar a cebola",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Enfie o dedo 2 cm no substrato perto da planta. Se estiver seco, regue devagar no substrato, sem molhar as folhas, até escorrer pelos furos. Se estiver úmido, deixe para o dia seguinte. Nos dias frios e nublados do inverno, a rega costuma ficar a cada 3 ou 4 dias. Com sol forte ou vento, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_nitrogenio",
+      "titulo": "Adubar a cebola",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca e 1 colher de chá de torta de mamona para cada 10 L de vaso, entre as fileiras e sem encostar nas plantas. Misture de leve na superfície e regue em seguida. Não adube com nitrogênio depois do dia 60: ele atrasa a maturação e deixa o bulbo mole, que apodrece guardado.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas da cebola",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 5,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Abra com os dedos o centro da planta, onde as folhas novas saem, e procure insetos minúsculos amarelados ou pretos (tripes). Veja também se há manchas prateadas, riscos esbranquiçados ou manchas roxas com halo amarelo nas folhas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 60,
+      "titulo": "O bulbo vai começar a engordar",
+      "mensagem": "A cebola entra na formação do bulbo. Nitrogênio a partir de agora atrasa a maturação e prejudica a conservação.",
+      "acao_requerida": "Parar a adubação com nitrogênio e afastar com os dedos a terra que estiver cobrindo a base da planta, deixando o topo do bulbo à mostra"
+    },
+    {
+      "dia_disparo": 100,
+      "titulo": "Hora de cortar a água",
+      "mensagem": "Os bulbos estão quase maduros. Regar agora faz a cebola rebrotar e apodrecer no pescoço.",
+      "acao_requerida": "Suspender a rega e, se chover muito, levar o vaso para um lugar coberto e com sol"
+    },
+    {
+      "dia_disparo": 110,
+      "titulo": "Conferir o ponto de colheita",
+      "mensagem": "Quando metade ou mais das folhas tombou sozinha, a cebola está pronta.",
+      "acao_requerida": "Arrancar as cebolas puxando pela base das folhas, deixar 1 ou 2 dias ao sol e depois de 7 a 10 dias à sombra ventilada. Só então cortar as folhas 2 cm acima do bulbo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Tripes (Thrips tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Manchas prateadas ou esbranquiçadas nas folhas, que depois secam da ponta para a base; insetos de 1 mm escondidos no centro da planta",
+      "prevencao_tratamento": "Jato de água forte no centro da planta. Se persistir, óleo de neem a 0,5% com algumas gotas de detergente neutro, no fim da tarde, a cada 5 dias. O ataque piora com tempo seco e quente"
+    },
+    {
+      "nome": "Podridão da raiz e da base (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; base da planta mole e escura, com raízes podres e cheiro ruim",
+      "prevencao_tratamento": "Não encharcar: regar só com os 2 cm de cima secos, usar substrato com areia e vaso com furos livres. Retire as plantas afetadas com o substrato em volta e não replante cebola nesse substrato"
+    },
+    {
+      "nome": "Mancha-púrpura (Alternaria porri)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas ovais esbranquiçadas nas folhas que ficam roxas no centro, com halo amarelo; a folha quebra no ponto da mancha",
+      "prevencao_tratamento": "Regar o substrato, nunca as folhas, e manter o vaso ventilado, com espaço entre as plantas. Remova as folhas manchadas. Em ataque forte, calda bordalesa a 1% a cada 7 dias"
+    },
+    {
+      "nome": "Míldio (Peronospora destructor)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas alongadas amarelo-pálidas com mofo cinza-arroxeado por cima, visíveis de manhã cedo em tempo frio e úmido",
+      "prevencao_tratamento": "Evitar molhar as folhas e deixar o vaso em local arejado. Retire as folhas atacadas. Calda bordalesa a 1% previne em períodos de garoa prolongada"
+    },
+    {
+      "nome": "Pendoamento precoce",
+      "tipo": "DISTURBIO",
+      "sintomas": "Surge uma haste floral grossa no centro da planta; o bulbo fica pequeno, duro no meio e não se conserva",
+      "prevencao_tratamento": "Usar mudas com a espessura de um lápis (mudas grossas demais pendoam com o frio) e respeitar os meses de plantio. Se a haste aparecer, quebre-a logo e consuma essa cebola primeiro"
+    },
+    {
+      "nome": "Cebola que não forma bulbo ('charuto')",
+      "tipo": "DISTURBIO",
+      "sintomas": "Depois do dia 80 a planta continua só com folhas e a base fina, sem engrossar",
+      "prevencao_tratamento": "Acontece com cultivar de dia longo no Centro-Sul ou com menos de 6 horas de sol direto. Use cultivares de dia curto e o lugar mais ensolarado da casa. Essas plantas podem ser colhidas como cebolinha"
+    }
+  ],
+  "eventos_sazonais": []
+}

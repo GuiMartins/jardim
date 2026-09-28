@@ -1,0 +1,244 @@
+{
+  "planta": {
+    "nome_comum": "Cherimoia",
+    "nome_cientifico": "Annona cherimola",
+    "descricao": "Árvore frutífera semidecídua dos Andes, parente da fruta-do-conde, com polpa branca, cremosa e muito doce. Em vaso grande e com muda enxertada, frutifica em 3 a 4 anos. Prefere clima ameno, como o das serras do Sudeste e do Sul: calor forte acima de 30 °C na floração e geada atrapalham. Quase sempre precisa de polinização manual para dar frutos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso plástico, de cimento ou barrica com pelo menos 50 cm de diâmetro e 50 cm de profundidade e vários furos no fundo. Comece com um de 40 a 60 L e passe para 100 L quando a planta passar de 1,5 m. Deixe em local protegido do vento, que quebra os galhos e seca as flores.",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa e 10% casca de pinus fina ou perlita, mais 1 colher de sopa de calcário dolomítico a cada 10 L (pH entre 6 e 7). Solto e bem drenado: a raiz apodrece em substrato encharcado.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. É normal perder algumas folhas mais velhas; folhas novas, verde-claras e com pelinhos, mostram que ela pegou. Mantenha fora do sol forte do meio-dia nas duas primeiras semanas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "O crescimento vem em fluxos: brotação forte na primavera e no verão, e a planta quase para no inverno. Tire todo broto que nascer abaixo da marca do enxerto, porque ele vem do cavalo e rouba força da copa. A fase termina quando a planta completa o primeiro ano com 3 ou 4 ramos principais formados."
+    },
+    {
+      "fase_id": "formacao_copa",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A planta engrossa o tronco e ramifica. A cada fim de inverno, a poda mantém a copa aberta e com 1,5 a 2 m de altura, que é o limite prático em vaso. Podem surgir algumas flores no segundo ou terceiro ano; poucos frutos a essa altura são normais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: perde parte das folhas no fim do inverno e brota em agosto e setembro. Floresce da primavera ao início do verão, com flores que são femininas de manhã e masculinas à tarde, por isso a polinização manual faz a diferença. Os frutos crescem durante o verão e amadurecem do outono ao inverno, de abril a julho. Um vaso de 100 L sustenta de 5 a 15 frutos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de cherimoia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. A raiz recém-plantada ainda não busca água no fundo do vaso: se secar agora, a muda murcha e não se recupera. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cherimoia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, com frutos, pode ser preciso regar a cada 2 dias. De junho a agosto, com a planta parada, espace para cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a cherimoia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus ou esterco curtido e 1 colher de sopa de farinha de ossos por vaso de 60 L, a um palmo do tronco, e regue em seguida. A partir do terceiro ano, acrescente 1 colher de sopa de NPK 10-10-10 na primavera e troque por um adubo rico em potássio (sulfato de potássio ou cinza) quando houver frutos. Pule a adubação de junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure cochonilhas brancas ou marrons nos ramos e nas nervuras. Nos frutos, procure furinhos com serragem escura (broca) e manchas pretas afundadas (antracnose). Confira se nasceu broto abaixo do enxerto e, se nasceu, arranque rente ao tronco.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça no fim do inverno, antes da brotação. Se a planta ainda cabe num vaso maior, passe para um 10 a 20 cm mais largo. Se já está no vaso definitivo, tire o torrão, corte 3 a 5 cm das raízes que circulam a borda, raspe o substrato velho das laterais e complete com substrato novo. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar sem enterrar o enxerto",
+      "mensagem": "A marca do enxerto (a cicatriz torta no tronco, perto da base) precisa ficar pelo menos 5 cm acima do substrato. Enterrada, ela apodrece ou solta raízes da copa e perde as vantagens do enxerto.",
+      "acao_requerida": "Conferir a altura do enxerto, prender a muda a um tutor com amarrio frouxo em oito e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de formação",
+      "mensagem": "Uma muda de haste única vira uma vara alta demais para o vaso. Cortar a ponta agora força os ramos laterais que formam a copa.",
+      "acao_requerida": "Se a muda passou de 70 cm, cortar a ponta a 60 ou 70 cm do substrato, logo acima de uma gema, e depois escolher 3 ou 4 brotos bem distribuídos para serem os ramos principais"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Tirar o tutor",
+      "mensagem": "Depois de um ano, o tronco já deve se sustentar. Amarrio esquecido estrangula a casca conforme o tronco engrossa.",
+      "acao_requerida": "Soltar os amarrios e retirar o tutor; se o tronco ainda envergar com o vento, amarrar de novo com folga por mais alguns meses"
+    },
+    {
+      "dia_disparo": 1000,
+      "titulo": "Prepare-se para as primeiras flores",
+      "mensagem": "Plantas enxertadas costumam florescer para valer a partir do terceiro ano. Sem polinização manual, a maioria das flores cai sem virar fruto, porque a flor é feminina de manhã e masculina à tarde e quase não há insetos que a polinizem por aqui.",
+      "acao_requerida": "Separar um pincel macio nº 2 e um potinho com tampa para guardar o pólen na geladeira durante a florada"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; a base do tronco escurece e as raízes ficam marrons, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, esvaziar o pratinho e nunca enterrar o colo. Se aparecer, suspenda a rega, tire a planta do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Broca-do-fruto (Cerconota anonella)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furos e serragem escura na casca, que escurecem, apodrecem e caem antes de amadurecer",
+      "prevencao_tratamento": "Ensacar cada fruto com saco de TNT ou papel quando ele tiver o tamanho de uma noz; recolher e destruir os frutos atacados"
+    },
+    {
+      "nome": "Broca-das-sementes (Bephratelloides pomorum)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com vários furinhos redondos de 2 mm e polpa endurecida e escura em volta das sementes",
+      "prevencao_tratamento": "Ensacar os frutos ainda pequenos e destruir os caídos ou furados, para a vespinha não completar o ciclo"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodonosos ou escamas marrons nos ramos, nas nervuras e no pedúnculo dos frutos; fumagina preta sobre as folhas",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%. Em infestação maior, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetido a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha, Ceratitis)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos maduros com pontos de picada que amolecem em volta; larvas brancas na polpa",
+      "prevencao_tratamento": "Ensacar os frutos e colher assim que a casca mudar de cor; recolher os frutos caídos"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pretas e afundadas nos frutos e nas flores, que secam e caem; manchas escuras nas folhas em tempo úmido",
+      "prevencao_tratamento": "Manter a copa aberta pela poda, não molhar folhas e flores na rega e remover as partes atacadas. Em ataque forte, calda bordalesa a 1% fora da florada"
+    },
+    {
+      "nome": "Rachadura dos frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos rachados na casca perto da maturação, geralmente depois de chuva ou rega forte após dias de seca",
+      "prevencao_tratamento": "Manter a umidade do substrato constante enquanto os frutos crescem e colher assim que a casca clarear"
+    },
+    {
+      "nome": "Queimadura de sol e do frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrons e secas na casca dos frutos voltados para o sol da tarde; brotos e folhas pretas e secas depois de noites abaixo de 0 °C",
+      "prevencao_tratamento": "Não desfolhar demais na poda, porque as folhas fazem sombra nos frutos; nas noites de geada, recolher o vaso para perto de uma parede ou cobrir a copa com TNT"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e cuidado com a geada",
+      "mensagem": "A cherimoia está quase parada e pode perder folhas, o que é normal. Substrato frio e úmido apodrece a raiz, e geada queima os brotos e mata plantas novas.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, suspender a adubação e, nas noites com previsão abaixo de 2 °C, levar o vaso para junto de uma parede ou cobrir a copa com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual antes da brotação",
+      "mensagem": "O fim do inverno é a hora de podar: a cherimoia floresce nos ramos novos que brotam depois do corte, e uma copa baixa e aberta cabe no vaso e facilita a polinização.",
+      "acao_requerida": "Tirar os ramos secos, cruzados e os que crescem para dentro; encurtar os ramos do ano em um terço, logo acima de uma gema voltada para fora, mantendo a planta com até 2 m"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar a adubação",
+      "mensagem": "A brotação começou e a planta precisa de nutrientes para os ramos novos e para a florada que vem logo em seguida.",
+      "acao_requerida": "Aplicar a adubação completa (húmus, farinha de ossos e, a partir do terceiro ano, NPK 10-10-10) e voltar a regar a cada 3 dias"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Polinização manual",
+      "mensagem": "Cada flor é feminina na primeira manhã, com as pétalas entreabertas, e masculina no fim da tarde, quando as pétalas abrem bem e soltam pólen. Sem ajuda, poucas flores vingam.",
+      "acao_requerida": "No fim da tarde, recolher com o pincel o pólen das flores bem abertas e guardar no potinho na geladeira; na manhã seguinte, passar o pólen dentro das flores entreabertas. Repetir 2 ou 3 vezes por semana durante a florada"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: proteger a florada e os frutinhos",
+      "mensagem": "Acima de 30 °C com ar seco, as flores secam antes de pegar e o substrato do vaso esquenta demais.",
+      "acao_requerida": "Nos dias quentes, dar sombra ao vaso (não à copa) e regar no início da manhã; se possível, borrifar água ao redor da planta no fim da tarde para subir a umidade"
+    },
+    {
+      "meses": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "titulo": "Época de colher a cherimoia",
+      "mensagem": "Os frutos amadurecem aos poucos. Na árvore, quase nunca ficam macios: ficam prontos para colher quando a casca muda de verde-escura para verde-amarelada e as escamas se alisam.",
+      "acao_requerida": "Colher com um pedaço do cabo os frutos que clarearam e deixar amadurecer de 3 a 7 dias fora da geladeira, até cederem à pressão do dedo como um abacate maduro"
+    }
+  ]
+}

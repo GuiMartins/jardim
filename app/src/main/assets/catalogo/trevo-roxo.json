@@ -1,0 +1,199 @@
+{
+  "planta": {
+    "nome_comum": "Trevo-roxo",
+    "nome_cientifico": "Oxalis triangularis",
+    "descricao": "Planta bulbosa de folhas roxas em forma de borboleta, que se fecham à noite, e flores rosadas delicadas. É muito usada em vasos de varanda e em interiores claros. Cresce a partir de pequenos rizomas escamosos e pode entrar em dormência no frio ou no calor forte, rebrotando depois. As folhas contêm ácido oxálico: mantenha longe de cães, gatos e crianças pequenas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e raso, com 15 a 20 cm de diâmetro e 12 a 15 cm de profundidade, com furos no fundo; 8 a 12 rizomas por vaso",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% substrato universal para vasos, 30% húmus de minhoca, 20% areia grossa ou perlita; solto e sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Enterre os rizomas a 2 cm de profundidade, com a ponta mais fina para cima, afastados 2 a 3 cm entre si. Os primeiros brotos roxos, ainda enrolados, aparecem entre o 7º e o 21º dia. Substrato encharcado nesta fase apodrece os rizomas antes de brotarem."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 75,
+      "descricao": "As folhas de três folíolos se abrem e o vaso vai se enchendo. As folhas se fecham ao anoitecer e em dias muito escuros, o que é normal. Talos compridos e caídos indicam falta de luz: aproxime o vaso da janela."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 76,
+      "dia_fim": null,
+      "descricao": "Touceira cheia, com flores rosadas ou lilases em hastes acima das folhas na primavera e no verão. Em alguns anos a planta murcha inteira no frio ou num calor forte e entra em dormência de 3 a 6 semanas: não é morte, os rizomas continuam vivos sob o substrato. Os rizomas se multiplicam e, a cada dois anos, o vaso pede divisão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar os rizomas",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue pouco, só até umedecer, sem deixar escorrer muito pelos furos. Antes de brotar, os rizomas quase não bebem e apodrecem com excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o trevo-roxo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. No verão acima de 30 °C, confira a cada 2 dias; no inverno, a cada 5 a 7. Folhas murchas com o substrato úmido indicam excesso de água, não falta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o trevo-roxo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido NPK 10-10-10 na metade da dose do rótulo e regue com ele o substrato já úmido. Suspenda no inverno e enquanto a planta estiver dormente, sem folhas.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Tirar folhas e flores secas",
+      "tipo": "PODA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Puxe com cuidado, pela base do talo, as folhas amareladas ou secas e as hastes de flores murchas. Isso mantém o vaso arejado e evita fungos entre os talos.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire algumas folhas e olhe o verso contra a luz: procure pontinhos claros e teias finas (ácaro), pústulas alaranjadas (ferrugem) ou insetos agrupados nos talos novos (pulgão).",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir e renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno ou no início da primavera, tire a touceira do vaso, separe os rizomas em grupos de 8 a 12, descarte os moles ou escuros e replante em substrato novo a 2 cm de profundidade. O substrato velho se decompõe e compacta em uns dois anos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 22,
+      "titulo": "Os rizomas brotaram?",
+      "mensagem": "A maioria dos rizomas brota em até três semanas. Se nada apareceu, algum deles pode ter apodrecido.",
+      "acao_requerida": "Afastar o substrato com o dedo e apertar um rizoma: se estiver mole ou escuro, descartá-lo; se estiver firme, esperar mais uma semana com a rega espaçada"
+    },
+    {
+      "dia_disparo": 76,
+      "titulo": "Trevo-roxo estabelecido",
+      "mensagem": "A touceira já está formada e pode receber um pouco mais de sol para florescer melhor.",
+      "acao_requerida": "Deixar o vaso onde pegue sol direto da manhã por 3 a 4 horas, protegido do sol da tarde"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão dos rizomas (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Talos amolecem na base e tombam; folhas murcham mesmo com o substrato úmido; rizomas moles, escuros e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm e nunca deixar água no pratinho. Se aparecer, tirar a planta do vaso, descartar os rizomas moles e replantar os firmes em substrato novo e seco"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teias finas no verso, principalmente em ambiente seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas em dias secos; se houver infestação, lavar as folhas no chuveiro e aplicar óleo de neem a 0,5% no fim da tarde, a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ferrugem (Puccinia oxalidis)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas e pulverulentas no verso das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Cortar e jogar no lixo as folhas afetadas, regar só o substrato sem molhar as folhas e manter o vaso arejado; se persistir, fungicida à base de enxofre"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos nos talos novos e nos botões florais; folhas deformadas e pegajosas",
+      "prevencao_tratamento": "Jato de água ou pano úmido nos talos; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Talos longos e finos que se deitam para fora do vaso, folhas pequenas e mais verdes que roxas, pouca ou nenhuma flor",
+      "prevencao_tratamento": "Mudar o vaso para um lugar mais claro, com algumas horas de sol da manhã; cortar os talos compridos rente ao substrato para que brotem talos novos e mais firmes"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas desbotadas ou marrons e bordas secas nas folhas expostas ao sol da tarde",
+      "prevencao_tratamento": "Proteger do sol direto entre 11h e 16h, principalmente no verão; tirar as folhas queimadas, que não se recuperam"
+    },
+    {
+      "nome": "Dormência confundida com morte",
+      "tipo": "DISTURBIO",
+      "sintomas": "Todas as folhas murcham e secam em poucas semanas, mas os rizomas continuam firmes sob o substrato",
+      "prevencao_tratamento": "Cortar as folhas secas, suspender o adubo e regar pouco, só a cada 2 a 3 semanas; deixar o vaso à meia-sombra e voltar à rega normal quando surgirem brotos novos, em 3 a 6 semanas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Frio: menos água para o trevo-roxo",
+      "mensagem": "No inverno a planta cresce devagar e pode até entrar em dormência. Substrato frio e úmido é o que mais apodrece os rizomas.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 3 cm, suspender o adubo até setembro e proteger o vaso de geada e vento frio"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar os cuidados",
+      "mensagem": "Com o calor voltando, o trevo-roxo rebrota com força e começa a florescer.",
+      "acao_requerida": "Voltar à rega normal, retomar o adubo mensal e tirar as folhas velhas que sobraram do inverno"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: sombra à tarde",
+      "mensagem": "Sol da tarde e calor acima de 32 °C queimam as folhas e podem fazer a planta entrar em dormência no verão.",
+      "acao_requerida": "Deixar o vaso onde só pegue sol da manhã e conferir a rega a cada 2 dias, sem deixar água no pratinho"
+    }
+  ]
+}

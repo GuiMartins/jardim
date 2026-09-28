@@ -1,0 +1,166 @@
+{
+  "planta": {
+    "nome_comum": "Ciclame",
+    "nome_cientifico": "Cyclamen persicum (híbridos de vaso)",
+    "descricao": "Planta tuberosa de flores com pétalas viradas para cima e folhas em coração marmorizadas de prata, vendida já florida no outono e no inverno. É perene: depois da floração entra em dormência no calor e volta a brotar do tubérculo. Por isso muita gente descarta o vaso quando as folhas amarelam, mas ela pode florir por muitos anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica de 12 a 15 cm de diâmetro e 12 cm de altura, com furos no fundo e prato para rega por baixo. Não use vaso muito maior que o torrão: o substrato que sobra fica encharcado e apodrece o tubérculo",
+    "volume_minimo_litros": 1.2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% substrato para plantas ornamentais à base de turfa ou fibra de coco, 25% perlita ou vermiculita, 25% casca de pinus fina; leve, levemente ácido e drenando rápido",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta chega florida e vinda de estufa fresca. É normal que alguns botões murchem e uma ou duas folhas amarelem na primeira semana. Ela fica bem num lugar claro e fresco, entre 10 e 20 °C, sem sol forte do meio-dia e longe de aquecedor e de cozinha. A adaptação acabou quando surgem botões novos no centro da roseta."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 31,
+      "dia_fim": 150,
+      "descricao": "Os botões abrem em sequência por meses enquanto o tempo está fresco. Flor murcha e folha amarela se tiram torcendo o cabo e puxando rente ao tubérculo: um pedaço que fica ali apodrece e passa a podridão para a coroa. Quando o calor chega, os botões param de sair e as folhas começam a amarelar. É o sinal de que a planta vai entrar em dormência, não de que está morrendo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "O ano típico no Centro-Sul segue o clima. Na primavera, entre outubro e novembro, as folhas amarelam e secam. No verão, de dezembro a fevereiro, fica só o tubérculo em dormência, com rega mínima. Entre fevereiro e março brotam folhinhas novas: é hora de trocar o substrato. De abril a setembro ela forma folhas, dá botões e floresce. A cada ano o tubérculo engrossa e dá mais flores."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_por_baixo",
+      "titulo": "Conferir a rega do ciclame",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato pela borda do vaso. Se estiver seco, ponha água no prato até 2 cm de altura, espere 20 minutos e jogue fora o que sobrar. Nunca molhe o centro do tubérculo nem as folhas. Com a planta murcha e o substrato seco, regue na hora: ela costuma se levantar em poucas horas. Em dormência, sem folhas, só umedeça a borda a cada 2 ou 3 semanas e marque as outras conferências como 'não precisou'. Aproveite para tirar flores murchas e folhas amarelas torcendo o cabo.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso com luz boa. Procure pontinhos amarelados ou teias finas (ácaro), riscos prateados nas pétalas (tripes), colônias verdes nos botões (pulgão) e mofo cinzento no centro da roseta. Botões e folhas novas deformados e encarquilhados indicam o ácaro-do-ciclame. Bata de leve na planta sobre um papel branco e veja se caem bichinhos que andam.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Tirar o ciclame da embalagem",
+      "mensagem": "O vaso costuma vir num cachepô ou num plástico decorativo que acumula água no fundo e apodrece o tubérculo em poucos dias.",
+      "acao_requerida": "Tirar o plástico, conferir se o vaso tem furos e deixar a planta num lugar claro e fresco, sem sol do meio-dia, sobre um prato raso"
+    },
+    {
+      "dia_disparo": 14,
+      "titulo": "O ciclame está se adaptando?",
+      "mensagem": "Depois de duas semanas em casa, a planta deve estar firme e com botões novos. Folhas moles com o substrato úmido indicam excesso de água. Folhas amarelando em série indicam calor ou falta de luz.",
+      "acao_requerida": "Encostar o dedo no substrato e na base do tubérculo; se estiver encharcado ou mole, espaçar a rega; se o lugar passa de 22 °C, mudar para um canto mais fresco e claro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do tubérculo e da coroa (Pythium, Fusarium, Erwinia)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas e flores tombam de uma vez mesmo com o substrato úmido; o centro do tubérculo fica mole, escuro e com cheiro ruim",
+      "prevencao_tratamento": "Regar só por baixo e só com o substrato seco a 2 cm, sem deixar água parada no prato. Com parte do tubérculo ainda firme, corte a região podre com lâmina limpa, deixe secar um dia e replante em substrato novo; tubérculo mole por inteiro não se recupera"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas nas pétalas e nos cabos, que se cobrem de um pó cinzento; flores e folhas apodrecem no centro da roseta",
+      "prevencao_tratamento": "Tirar flores murchas e folhas amarelas inteiras, com cabo, assim que aparecem; não molhar as folhas e manter o vaso em lugar ventilado. Descarte as partes afetadas longe da planta"
+    },
+    {
+      "nome": "Ácaro-do-ciclame (Phytonemus pallidus)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas pequenas, encarquilhadas e duras; botões deformados que não abrem ou abrem com pétalas retorcidas e manchadas",
+      "prevencao_tratamento": "Isolar a planta das outras na hora. Retirar folhas e botões deformados e aplicar acaricida à base de abamectina ou enxofre molhável conforme o rótulo, repetindo após 7 dias; em infestação forte, descartar a planta"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Riscos prateados e manchas desbotadas nas pétalas, flores que murcham cedo; insetos finos e alongados escondidos na base das flores",
+      "prevencao_tratamento": "Retirar flores atacadas; óleo de neem a 0,5% no fim da tarde a cada 5 dias por 3 aplicações, sem encharcar a coroa; armadilha adesiva azul por perto"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes nos botões e no verso das folhas novas; folhas pegajosas e botões que secam",
+      "prevencao_tratamento": "Retirar com cotonete umedecido em água com sabão neutro; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Amarelecimento por calor ou ar seco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Várias folhas amarelam de uma vez, os botões secam antes de abrir e a floração acaba cedo, sem podridão no tubérculo",
+      "prevencao_tratamento": "Manter entre 10 e 20 °C, longe de aquecedor, lareira, forno e sol direto da tarde; à noite, levar para o cômodo mais fresco da casa. No fim da primavera, é o começo normal da dormência"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Adubar o ciclame este mês",
+      "mensagem": "Com folhas novas e botões se formando, a planta precisa de potássio e fósforo para florir bem. Adubo demais, ainda mais nitrogenado, dá muita folha e pouca flor.",
+      "acao_requerida": "Diluir adubo líquido para floração (tipo NPK 4-14-8) na metade da dose do rótulo e dar pela rega por baixo, com o substrato já úmido; repetir uma vez no meio do mês"
+    },
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Ciclame entrando em dormência",
+      "mensagem": "O calor da primavera faz o ciclame parar de florir e amarelar as folhas. É o ciclo natural: o tubérculo guarda energia para o próximo inverno.",
+      "acao_requerida": "Espaçar a rega aos poucos, parar de adubar e tirar as folhas conforme secam, torcendo o cabo. Não jogue fora o tubérculo"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Tubérculo descansando",
+      "mensagem": "Sem folhas, o ciclame quase não usa água. Rega normal agora apodrece o tubérculo no calor do verão.",
+      "acao_requerida": "Deixar o vaso deitado de lado ou num canto sombreado e fresco, umedecendo só a borda do substrato a cada 2 ou 3 semanas para o tubérculo não murchar"
+    },
+    {
+      "meses": [
+        2,
+        3
+      ],
+      "titulo": "Hora de trocar o substrato",
+      "mensagem": "Quando brotam as primeiras folhinhas no tubérculo, a dormência acabou. Substrato novo agora dá força para a próxima floração.",
+      "acao_requerida": "Tirar o tubérculo do vaso, soltar o substrato velho, cortar raízes podres e replantar em substrato novo num vaso só 2 cm maior, com um terço do tubérculo acima da superfície; voltar para lugar claro e retomar a rega por baixo"
+    }
+  ]
+}

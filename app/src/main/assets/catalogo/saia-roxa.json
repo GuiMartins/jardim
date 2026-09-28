@@ -1,0 +1,213 @@
+{
+  "planta": {
+    "nome_comum": "Saia-roxa",
+    "nome_cientifico": "Datura metel (forma de flor dobrada roxa e branca)",
+    "descricao": "Arbusto da família do tomate com grandes flores em trombeta dobrada, roxas por fora e brancas por dentro, perfumadas ao entardecer. Na natureza vive poucos anos, mas em vaso no Centro-Sul é cultivada como anual, de semente, porque sofre com o frio. ATENÇÃO: todas as partes, sobretudo as sementes, são muito tóxicas se ingeridas (alcaloides tropânicos). Mantenha longe de crianças e animais e use luvas ao manusear.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 180,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 35 cm de diâmetro e 30 cm de profundidade, com furos no fundo e pesado o bastante para não tombar com a planta de 1 m",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; 1 colher de sopa de farinha de ossos por vaso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Deixe as sementes de molho em água morna por 24 horas e semeie 3 por vaso, a 1 cm de profundidade. A germinação é irregular: as plântulas surgem entre o 7º e o 21º dia, mais rápido acima de 22 °C."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 22,
+      "dia_fim": 45,
+      "descricao": "Surgem as folhas verdadeiras, largas e de borda ondulada. A fase termina quando a muda passa de 15 cm e tem 5 ou 6 folhas."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 46,
+      "dia_fim": 80,
+      "descricao": "O caule engrossa e se ramifica em forquilha, formando um arbusto de 60 cm a 1 m. As folhas grandes perdem muita água: murcha no meio da tarde e recuperação à noite é sinal de vaso pequeno ou rega curta. A fase muda quando aparecem os primeiros botões compridos nas forquilhas."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 81,
+      "dia_fim": 165,
+      "descricao": "As flores abrem ao entardecer e duram 1 a 2 dias, com novas ondas de botões a cada semana. Depois de cada flor forma-se um fruto redondo e espinhento; tirá-los prolonga a floração."
+    },
+    {
+      "fase_id": "frutificacao_final",
+      "nome": "Frutificação e Fim do Ciclo",
+      "dia_inicio": 166,
+      "dia_fim": 180,
+      "descricao": "A floração diminui, as folhas de baixo amarelam e os frutos que ficaram na planta secam e racham, soltando as sementes pretas. Com o frio do outono a planta declina; é hora de guardar sementes e encerrar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode secar nem ficar encharcado, senão as sementes apodrecem.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a saia-roxa",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Com a planta adulta e acima de 30 °C, confira todo dia; em dias frios e nublados, espace para 3 ou 4 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a saia-roxa",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 165,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus ou 1 colher de sopa de NPK 4-14-8 na borda do vaso, sem encostar no caule, e regue em seguida. A partir dos botões, prefira adubo com mais fósforo e potássio para não fazer só folha.",
+      "critica": false
+    },
+    {
+      "id": "remover_flores_frutos",
+      "titulo": "Tirar flores murchas e frutos",
+      "tipo": "PODA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 81,
+      "dia_fim_ciclo": 165,
+      "instrucoes": "De luvas, corte com tesoura as flores murchas e os frutos espinhentos ainda verdes, rente ao cabinho. Deixe no máximo 1 ou 2 frutos a partir do dia 140 se quiser sementes. Descarte tudo no lixo, longe de crianças e animais.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teia fina (ácaro), insetos brancos que voam ao mexer (mosca-branca), colônias de pulgão nos brotos e lagartas verdes grandes ou folhas roídas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Mais de uma saia-roxa no mesmo vaso disputam água e nenhuma forma um arbusto bonito.",
+      "acao_requerida": "De luvas, deixar só a muda mais vigorosa e cortar as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Planta ganhando altura",
+      "mensagem": "Os ramos em forquilha ficam pesados com folhas e flores e podem rachar com o vento.",
+      "acao_requerida": "Cravar uma estaca de 1 m perto do caule, sem ferir a raiz, e amarrar o caule principal com fita macia em oito"
+    },
+    {
+      "dia_disparo": 80,
+      "titulo": "Primeiros botões",
+      "mensagem": "Os botões compridos e verdes nas forquilhas abrem em flores roxas ao entardecer nos próximos dias.",
+      "acao_requerida": "Garantir pelo menos 6 horas de sol e começar a adubação com mais fósforo e potássio"
+    },
+    {
+      "dia_disparo": 160,
+      "titulo": "Guardar sementes para o próximo ano",
+      "mensagem": "Os frutos deixados na planta secam e racham sozinhos, espalhando sementes tóxicas.",
+      "acao_requerida": "De luvas, colher os frutos que ficaram marrons antes de rachar, secar à sombra num saco de papel e guardar as sementes em pote fechado e identificado, fora do alcance de crianças"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, depois bronzeadas e secas; teia fina no verso, pior no calor seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias quentes; se persistir, óleo de neem a 0,5% ou calda de sabão neutro no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos ao mexer na planta; folhas amareladas e pegajosas, com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e botões; folhas novas enroladas",
+      "prevencao_tratamento": "Jato de água forte; se voltar, calda de sabão neutro ou óleo de neem no fim da tarde"
+    },
+    {
+      "nome": "Mandarová (Manduca sexta)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagarta verde grande, com chifre na ponta, e folhas inteiras comidas em poucos dias; bolinhas de fezes escuras no chão",
+      "prevencao_tratamento": "Catar as lagartas à mão, de luvas, olhando o verso das folhas; em infestação, Bacillus thuringiensis (Dipel) nas folhas"
+    },
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido; base do caule escura e mole; raízes marrons",
+      "prevencao_tratamento": "Só regar com os 3 cm de cima secos, nunca deixar água no pratinho e usar substrato com areia; planta com o caule mole raramente se recupera"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco nas folhas, que depois amarelam e caem",
+      "prevencao_tratamento": "Regar só o substrato, sem molhar as folhas; retirar folhas atacadas e pulverizar leite diluído a 10% ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Murcha de calor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas grandes caídas no meio da tarde que se recuperam à noite",
+      "prevencao_tratamento": "Sinal de vaso pequeno ou rega curta: regue de manhã até escorrer, cubra o substrato com palha e, se for frequente, passe para um vaso maior no início do ciclo"
+    },
+    {
+      "nome": "Amarelamento por falta de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas de baixo amarelam por inteiro e caem, com crescimento lento",
+      "prevencao_tratamento": "Retomar a adubação a cada 15 dias com húmus ou composto; no fim do ciclo, é o envelhecimento normal da planta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com a sede",
+      "mensagem": "Com calor forte, a saia-roxa em vaso perde muita água pelas folhas grandes e pode secar num dia só.",
+      "acao_requerida": "Conferir o substrato todo dia, regar de manhã cedo e cobrir a superfície com palha ou casca de pinus"
+    },
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 10 °C a saia-roxa para de florescer, e a geada a mata.",
+      "acao_requerida": "Nas noites frias, levar o vaso para perto de uma parede ou para dentro, reduzir a rega e guardar as sementes antes que a planta morra"
+    }
+  ]
+}

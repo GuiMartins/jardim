@@ -1,0 +1,211 @@
+{
+  "planta": {
+    "nome_comum": "Cássia-rosa",
+    "nome_cientifico": "Cassia grandis",
+    "descricao": "Árvore da família das leguminosas, nativa da Amazônia e da América Central, que no fim do inverno perde as folhas e se cobre de cachos de flores rosa-salmão. Em vaso grande ela fica pequena, com 2 a 3 m, e floresce bem mais tarde que no chão: conte com 4 a 6 anos a partir da muda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cimento, cerâmica ou plástico grosso, com pelo menos 50 cm de diâmetro e 50 cm de profundidade e vários furos no fundo; o peso evita que a árvore tombe com o vento",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou pedrisco fino, mais 200 g de farinha de ossos por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode perder algumas folhas nos primeiros dias por causa do transplante. A fase acabou quando surgem brotos novos de folhas compostas, verde-claras, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o caule engrossa. Espere de 30 a 60 cm de crescimento no primeiro ano, concentrado na primavera e no verão. No inverno ela pode perder parte das folhas; isso é normal."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1460,
+      "descricao": "A copa se forma e o tronco engrossa, mas ainda não há flores. Todo inverno ela perde as folhas e rebrota em setembro. Ramos que crescem para dentro da copa ou se cruzam saem na poda de novembro."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1461,
+      "dia_fim": null,
+      "descricao": "Ano típico: de junho a agosto a árvore fica quase sem folhas; entre agosto e outubro os ramos pelados se cobrem de cachos rosa; depois vêm as folhas novas e, com sorte, vagens compridas e escuras, que levam meses para amadurecer. Em vaso a floração pode falhar em anos com pouco sol ou adubo rico em nitrogênio."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a cássia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos (cerca de 5 L num vaso de 60 L). Acima de 30 °C, confira todo dia: a raiz ainda não alcança o fundo do vaso.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cássia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão quente, confira a cada 2 dias. De junho a agosto, sem folhas, espace para a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a cássia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de bokashi na superfície, longe do tronco, e regue em seguida. Na planta adulta, troque uma das adubações de julho ou agosto por 2 colheres de sopa de NPK 4-14-8 para favorecer as flores. Pule as adubações de maio a julho se a árvore estiver sem folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure lagartas verdes ou amarelas comendo os folíolos, carapaças brancas ou marrons nos ramos e furos com serragem no tronco. Confira também se há trilhas de formigas subindo pelo vaso.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e setembro, antes da brotação: tire a árvore do vaso, corte 5 cm das raízes em volta e no fundo do torrão, troque um terço do substrato por mistura nova e devolva ao mesmo vaso. Se ainda estiver abaixo de 100 L, passe para um vaso maior sem podar raízes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firmar a muda",
+      "mensagem": "A cássia cresce alta e fina nos primeiros anos, e o vento tomba ou quebra a muda solta no vaso.",
+      "acao_requerida": "Cravar um tutor de bambu ao lado do torrão, sem ferir as raízes, e amarrar o caule com fita ou barbante em oito, folgado"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se a muda veio de viveiro sombreado, agora ela aguenta o sol cheio o dia todo.",
+      "acao_requerida": "Levar o vaso para o local mais ensolarado, com pelo menos 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de cássia",
+      "mensagem": "O tronco já deve se sustentar sozinho, e o tutor apertado estrangula a casca.",
+      "acao_requerida": "Soltar a amarração e retirar o tutor se o caule ficar de pé sem ele; se tombar, amarrar de novo mais acima e mais folgado"
+    },
+    {
+      "dia_disparo": 1461,
+      "titulo": "Idade de florescer",
+      "mensagem": "A partir de agora a cássia pode florescer no fim do inverno, desde que tome muito sol e não receba excesso de nitrogênio.",
+      "acao_requerida": "Garantir 8 horas de sol direto e trocar o adubo de agosto por um rico em fósforo (NPK 4-14-8)"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora do inverno, substrato sempre úmido e cheiro azedo; raízes escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e reduzir muito a rega no inverno, quando ela está sem folhas; conferir se os furos do vaso não entupiram. Em caso avançado, tirar do vaso, cortar as raízes podres e replantar em substrato novo"
+    },
+    {
+      "nome": "Lagarta-da-borboleta-amarela (Phoebis spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas verdes ou amareladas bem camufladas nas nervuras; folíolos comidos a partir da borda até sobrar só o talo",
+      "prevencao_tratamento": "Catar à mão; em árvore grande, o dano costuma ser tolerável. Em infestação forte numa muda pequena, aplicar Bacillus thuringiensis no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, cinzas ou marrons grudadas nos ramos novos, com formigas e fumagina preta por perto",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; em colônias grandes, óleo mineral a 1% ou óleo de neem a 0,5% a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Formiga-cortadeira",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua, às vezes a muda inteira desfolhada numa noite",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida granulada perto dele, longe de animais; uma faixa de graxa ou cone plástico no tronco barra a subida"
+    },
+    {
+      "nome": "Broca-do-tronco",
+      "tipo": "PRAGA",
+      "sintomas": "Furos no tronco ou nos ramos com serragem acumulada embaixo; ramo acima do furo seca",
+      "prevencao_tratamento": "Cortar e descartar o ramo atacado abaixo do furo; no tronco, introduzir um arame no orifício para matar a larva e vedar com pasta cúprica"
+    },
+    {
+      "nome": "Queda de folhas por frio ou falta de luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem de uma vez; em geada, brotos pretos e murchos",
+      "prevencao_tratamento": "No inverno, a queda é natural e não pede ação. Em geada, cobrir a copa com manta à noite e cortar só na primavera as pontas que não rebrotarem. Fora do inverno, levar para um local com mais sol"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Cássia em repouso",
+      "mensagem": "No inverno ela perde as folhas e quase para de beber água. Substrato úmido nesta época apodrece as raízes, e a geada queima os brotos.",
+      "acao_requerida": "Regar só a cada 7 a 10 dias, com o substrato seco a 5 cm, e cobrir a copa com manta nas noites de previsão de geada"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Floração chegando",
+      "mensagem": "Na árvore adulta os botões rosa aparecem nos ramos ainda sem folhas. Falta de água agora faz os botões caírem.",
+      "acao_requerida": "Voltar a regar a cada 3 ou 4 dias e aplicar 2 colheres de sopa de NPK 4-14-8 espalhadas no substrato"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Passada a floração e com as folhas novas abertas, a árvore cicatriza rápido. Em vaso, a poda mantém a copa compacta e equilibrada.",
+      "acao_requerida": "Cortar os ramos secos, os que cruzam ou crescem para dentro da copa e encurtar em um terço os mais compridos, com corte logo acima de uma gema"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte no vaso",
+      "mensagem": "No verão a cássia cresce rápido e um vaso ao sol pleno pode secar em dois dias.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e regar até escorrer pelos furos quando estiver seco a 5 cm"
+    }
+  ]
+}

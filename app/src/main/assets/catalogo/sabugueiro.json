@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Sabugueiro",
+    "nome_cientifico": "Sambucus nigra",
+    "descricao": "Arbusto perene de crescimento rápido, com umbelas de flores brancas perfumadas usadas em chá e xarope, seguidas de cachos de frutinhas pretas. Em vaso grande fica com 1,5 a 2 m se podado todo inverno. Atenção: folhas, ramos, sementes e frutos crus ou verdes são tóxicos; os frutos só se consomem maduros e cozidos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cerâmica ou meia bombona, com pelo menos 45 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou casca de pinus fina; rico em matéria orgânica e que retenha umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. Pode perder algumas folhas de baixo nos primeiros dias; a fase termina quando surgem brotos novos e verde-claros nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento vigoroso de ramos novos, ocos por dentro e cheios de medula branca. Mudas vindas de estaca já podem dar as primeiras umbelas na primavera. A fase termina quando as raízes ocupam o vaso e a planta passa por um inverno completo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: no inverno cresce pouco e pode perder parte das folhas; brota forte em agosto e setembro, floresce de setembro a novembro e os frutos amadurecem entre dezembro e fevereiro. Floresce e frutifica nos ramos do ano, por isso a poda de inverno não tira a produção."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de sabugueiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o sabugueiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos (uns 4 a 6 L num vaso de 40 L). No verão e durante a floração, confira a cada 1 ou 2 dias: folhas murchas ao meio-dia avisam que já faltou água. No inverno, com a planta parada, espace para a cada 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o sabugueiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto e 1 colher de sopa de farinha de ossos na superfície, a 10 cm do tronco, afofe levemente e regue. Em junho e julho, com a planta parada, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar pontas e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 10,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as pontas dos brotos e o verso das folhas: procure colônias de pulgões pretos, pontinhos amarelados com teias finas (ácaro) e pó branco (oídio).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no inverno, tire a planta do vaso, corte 3 a 5 cm das raízes em volta do torrão, troque um terço do substrato por mistura nova e volte ao mesmo vaso ou a um 10 cm maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Desponte para ramificar",
+      "mensagem": "A muda já pegou. Cortar as pontas agora faz o sabugueiro virar um arbusto cheio em vez de uma vara comprida.",
+      "acao_requerida": "Cortar 5 a 10 cm da ponta de cada ramo principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Tire os brotos da base",
+      "mensagem": "O sabugueiro solta muitos brotos novos do pé, que roubam força e deixam a planta embolada.",
+      "acao_requerida": "Manter só 3 a 5 ramos principais bem distribuídos e cortar rente ao substrato os brotos extras que saem da base"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano no vaso",
+      "mensagem": "Raízes saindo pelos furos ou água escorrendo direto sem molhar o torrão indicam que o vaso ficou pequeno.",
+      "acao_requerida": "Conferir os furos do vaso; se houver raízes enoveladas, passar no próximo inverno para um vaso 10 a 15 cm maior"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-do-sabugueiro (Aphis sambuci)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias densas de pulgões pretos nas pontas dos brotos e nas hastes das flores; folhas enroladas e pegajosas, com formigas subindo",
+      "prevencao_tratamento": "Jato forte de água nas pontas; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias. Evite excesso de adubo nitrogenado"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que depois ficam bronzeadas; teias finas no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água nos dias secos; tratar com óleo de neem a 0,5% ou calda de enxofre, repetindo em 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou escamas marrons grudadas nos ramos e nas nervuras",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em infestação maior, óleo mineral a 1% com sabão neutro"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que depois amarelam e caem",
+      "prevencao_tratamento": "Boa ventilação e poda de ramos cruzados; regar no substrato, não nas folhas; pulverizar leite diluído a 10% ou bicarbonato de sódio (1 colher de chá por litro) semanalmente"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelando de baixo para cima, base do caule escura e raízes marrons e moles",
+      "prevencao_tratamento": "Não deixar água no pratinho e reduzir a rega no inverno; retirar raízes podres, trocar o substrato e regar só quando os 4 cm de cima estiverem secos"
+    },
+    {
+      "nome": "Queima e murcha por calor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas secas e marrons, folhas murchas à tarde e flores que caem antes de abrir",
+      "prevencao_tratamento": "Não deixar o torrão secar por completo no verão; cobrir o substrato com palha e, em locais muito quentes, dar sombra na tarde; evitar vaso preto ao sol forte"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Sabugueiro entrando no repouso",
+      "mensagem": "Com o frio, a planta desacelera e pode perder folhas. Rega e adubo em excesso agora apodrecem a raiz.",
+      "acao_requerida": "Espaçar a rega para quando os 4 cm de cima estiverem secos e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "O sabugueiro floresce nos ramos novos; podar no inverno estimula brotação forte e mais umbelas na primavera.",
+      "acao_requerida": "Cortar os ramos do ano anterior a 2 ou 3 gemas da base, eliminar ramos secos, fracos ou cruzados e deixar 3 a 5 ramos principais"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Época das flores de sabugueiro",
+      "mensagem": "As umbelas brancas estão abrindo. As flores servem para chá e xarope, mas cada umbela colhida é um cacho de frutos a menos.",
+      "acao_requerida": "Colher pela manhã as umbelas totalmente abertas, cortando o cabinho com tesoura; deixar algumas na planta se quiser frutos"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Frutos de sabugueiro amadurecendo",
+      "mensagem": "Os cachos ficam pretos e brilhantes. Frutos crus ou verdes, folhas e cabinhos são tóxicos.",
+      "acao_requerida": "Cortar os cachos inteiros quando todas as frutinhas estiverem pretas, retirar os cabinhos e usar só cozidos (geleia, xarope)"
+    }
+  ]
+}

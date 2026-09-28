@@ -1,0 +1,218 @@
+{
+  "planta": {
+    "nome_comum": "Perpétua",
+    "nome_cientifico": "Gomphrena globosa",
+    "descricao": "Flor de pompons redondos e papiráceos em roxo, rosa, branco ou vermelho, que aguenta calor, sol forte e alguma seca. Floresce por meses seguidos e as flores secam sem perder a cor, daí o nome. Em vaso é cultivada como anual, a partir de sementes.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 180,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 20 cm de profundidade e furos no fundo; um vaso de 20 cm de diâmetro comporta uma planta, e numa jardineira as plantas ficam a 20 cm umas das outras",
+    "volume_minimo_litros": 4,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa ou perlita, 25% húmus de minhoca; bem drenado e sem excesso de matéria orgânica, que dá muita folha e pouca flor",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Deixe as sementes de molho em água morna por uma noite antes de semear. Semeie 2 ou 3 por vaso a 0,5 cm de profundidade e cubra de leve. Com 21 a 27 °C, as plântulas surgem entre o 7º e o 14º dia; no frio a germinação falha ou atrasa."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "Aparecem as folhas verdadeiras, ovais e levemente peludas. A fase termina quando a muda tem 4 a 6 folhas e uns 8 cm de altura."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 36,
+      "dia_fim": 70,
+      "descricao": "A planta ramifica e forma uma touceira de 30 a 50 cm. No fim da fase surgem os primeiros botões verdes na ponta dos ramos. Caule comprido e mole indica falta de sol."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 71,
+      "dia_fim": 165,
+      "descricao": "Os pompons se abrem e se renovam por meses enquanto faz calor. Cortar as flores prontas estimula novos ramos floríferos. Pompons que escurecem e desmancham ao toque passaram do ponto."
+    },
+    {
+      "fase_id": "fim_ciclo",
+      "nome": "Fim do Ciclo",
+      "dia_inicio": 166,
+      "dia_fim": 180,
+      "descricao": "A floração diminui, as folhas de baixo amarelam e a planta perde o vigor, principalmente quando esfria. Deixe alguns pompons secarem na planta para colher sementes e depois retire-a do vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode secar nem ficar encharcado, porque a semente apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar as mudas",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 35,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue devagar na base até escorrer pelos furos. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a perpétua",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos, sem molhar as flores. A planta adulta tolera um pouco de seca, mas não encharcamento. Em dias de chuva ou frio, espace para 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Espalhe 1 colher de chá de NPK 4-14-8 por vaso de 4 L, longe do caule, e regue em seguida. Evite adubo rico em nitrogênio, que dá folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "colheita_flores",
+      "titulo": "Cortar flores prontas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 75,
+      "dia_fim_ciclo": 175,
+      "instrucoes": "Corte com tesoura, rente a um par de folhas, os pompons de cor firme e totalmente abertos, e também os que já escureceram. Para secar, amarre em maços e pendure de cabeça para baixo em local seco e escuro por 2 semanas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Vire as folhas e procure insetos agrupados nos brotos, pontinhos claros com teia fina no verso, manchas escuras redondas ou pó branco.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As mudas do mesmo vaso estão disputando espaço e luz.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada vaso, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Despontar para ramificar",
+      "mensagem": "Tirar a ponta agora faz a planta abrir vários ramos e dar muito mais pompons.",
+      "acao_requerida": "Cortar com os dedos ou tesoura os 2 cm do topo do ramo principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 71,
+      "titulo": "Primeiros pompons",
+      "mensagem": "Os primeiros botões devem estar ganhando cor. A partir daqui, cortar flores faz nascer mais flores.",
+      "acao_requerida": "Conferir a cor dos pompons e começar a cortar os que estiverem totalmente abertos"
+    },
+    {
+      "dia_disparo": 160,
+      "titulo": "Guardar sementes",
+      "mensagem": "Pompons secos na planta guardam as sementes para o próximo ciclo.",
+      "acao_requerida": "Deixar 3 ou 4 pompons secarem na planta, colher quando estiverem quebradiços, esfarelar e guardar as sementes num envelope de papel em local seco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido; base do caule escura e mole; raízes marrons que se soltam",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, usar substrato arenoso e nunca deixar água no pratinho; retirar a planta afetada, que raramente se recupera"
+    },
+    {
+      "nome": "Tombamento",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem de repente com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, rega só por borrifo na germinação e boa ventilação; retirar as plântulas afetadas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; folhas novas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teias finas no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água nos dias quentes e secos; se persistir, óleo de neem ou sabão potássico a cada 5 dias"
+    },
+    {
+      "nome": "Mancha-de-cercospora",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas redondas marrons com borda escura nas folhas, que amarelam e caem de baixo para cima",
+      "prevencao_tratamento": "Regar na base sem molhar as folhas, remover e descartar as folhas manchadas e manter espaço entre as plantas"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco como talco sobre as folhas, mais comum com noites úmidas e dias secos",
+      "prevencao_tratamento": "Boa ventilação e sol pleno; retirar as folhas atacadas e pulverizar leite diluído em água (1:9) ou bicarbonato a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules longos, finos e tombados, poucas flores e cor apagada",
+      "prevencao_tratamento": "Levar o vaso para o local mais ensolarado, com pelo menos 5 horas de sol direto; despontar para a planta ramificar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuvas de verão",
+      "mensagem": "Com a chuva frequente, o vaso fica encharcado e os fungos de folha e de raiz aparecem mais.",
+      "acao_requerida": "Conferir se o pratinho não acumula água, pular a rega depois de chuva e retirar as folhas manchadas"
+    },
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Chegada do frio",
+      "mensagem": "Abaixo de 15 °C a perpétua para de florir e começa a declinar.",
+      "acao_requerida": "Espaçar a rega, cortar os últimos pompons para secar e deixar alguns na planta para colher sementes"
+    }
+  ]
+}

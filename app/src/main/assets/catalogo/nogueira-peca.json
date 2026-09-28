@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Nogueira-pecã",
+    "nome_cientifico": "Carya illinoinensis",
+    "descricao": "Árvore caducifólia de grande porte que produz a noz-pecã, cultivada no Sul do Brasil. Em vaso ela cresce bem por alguns anos como árvore jovem ornamental, mas raramente frutifica: precisa de frio no inverno, de dois cultivares para polinizar e de 6 a 10 anos (muda enxertada) antes da primeira safra, então o vaso é uma etapa antes de ir para o chão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de pelo menos 50 cm de altura e 45 cm de diâmetro, com vários furos no fundo; a nogueira forma raiz pivotante longa, então prefira vasos mais altos que largos",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal argilo-arenosa, 25% composto orgânico curtido, 15% areia grossa, 10% casca de pinus fina; pH entre 6,0 e 6,5 (corrija com 1 colher de sopa de calcário dolomítico por 10 L se a terra for ácida)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 60,
+      "descricao": "Plante a muda ainda dormente (sem folhas) no inverno, sem enterrar o ponto do enxerto. Os ramos parecem secos, mas a casca raspada com a unha mostra verde por baixo. A brotação começa em setembro; se você plantou em junho, ela pode levar mais de 60 dias."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 61,
+      "dia_fim": 365,
+      "descricao": "Surgem folhas compostas com 9 a 17 folíolos e a muda cresce de 20 a 50 cm na primavera e no verão. No outono as folhas amarelam e caem: é dormência normal, não morte. A fase termina quando a planta completa o primeiro ciclo de brotação e queda de folhas no vaso."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1825,
+      "descricao": "A árvore engrossa o tronco e forma a copa. Em vaso o crescimento desacelera quando as raízes circulam o torrão: folhas menores e pontas secando no verão indicam que ela pede um vaso maior ou o plantio no chão."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1826,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota em setembro, floresce em outubro (amentilhos pendentes são as flores masculinas; as femininas ficam na ponta dos ramos novos), as nozes crescem no verão e amadurecem em abril e maio, quando a casca verde racha. Perde as folhas de maio a julho e dorme no inverno. Em vaso a produção é pequena ou nula; sem um segundo cultivar por perto, as flores femininas quase não viram noz."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a nogueira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Sem folhas a muda gasta pouca água: não deixe o pratinho com água parada, porque a raiz apodrece no frio.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a nogueira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). No verão acima de 30 °C, confira todo dia. Com a árvore sem folhas (junho a agosto), espace para cada 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire os folíolos e procure pulgões amarelos ou pretos, melado pegajoso, manchas escuras aveludadas e cochonilhas nos ramos. Entre junho e agosto, sem folhas, basta olhar o tronco e os ramos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça no inverno, com a árvore sem folhas. Passe para um vaso 20 a 30% maior; se não houver vaso maior, apare 3 a 5 cm das raízes que circulam o torrão e complete com substrato novo. Se tiver espaço, é a hora de plantar no chão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante sem enterrar o enxerto",
+      "mensagem": "O calo do enxerto enterrado pode apodrecer ou soltar raízes do cavalo.",
+      "acao_requerida": "Deixar o ponto do enxerto 5 cm acima do substrato, firmar a terra em volta da raiz e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "A nogueira brotou?",
+      "mensagem": "Com a primavera, as gemas devem ter inchado e soltado folhas novas.",
+      "acao_requerida": "Se não brotou, raspe a casca de um ramo com a unha: verde é vivo, espere mais; marrom e seco até a base indica muda morta"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano no vaso",
+      "mensagem": "A nogueira vira uma árvore de 20 a 30 m e em vaso só produz pouco ou nada.",
+      "acao_requerida": "Decidir se ela vai para o chão, a pelo menos 10 m de construções, ou se continua em vaso como árvore ornamental"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-amarelo e pulgão-preto da nogueira (Monelliopsis pecanis, Melanocallis caryaefoliae)",
+      "tipo": "PRAGA",
+      "sintomas": "Insetos pequenos no verso dos folíolos, folhas pegajosas com melado e fumagina preta; o pulgão-preto deixa manchas amarelas angulosas e causa queda de folhas",
+      "prevencao_tratamento": "Jato de água forte no verso das folhas; se persistir, óleo de neem a 0,5% ou sabão potássico no fim da tarde, a cada 5 a 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou brancos presos aos ramos, ramos finos secando",
+      "prevencao_tratamento": "Remover com escova macia e álcool 70%; no inverno, óleo mineral a 1% nos ramos sem folhas"
+    },
+    {
+      "nome": "Sarna da nogueira (Venturia effusa)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pretas aveludadas nos folíolos novos e na casca das nozes, que caem antes de amadurecer",
+      "prevencao_tratamento": "Sol pleno e ventilação, sem molhar as folhas na rega; recolha as folhas caídas no outono; em ataques fortes, calda bordalesa a 1% na brotação"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e amarelam mesmo com o substrato úmido; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Vaso com bons furos, sem pratinho cheio e rega espaçada no inverno; se atacar, corte as raízes podres e troque o substrato"
+    },
+    {
+      "nome": "Roseta por falta de zinco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folíolos pequenos, amarelados entre as nervuras e enrugados, ramos com entrenós curtos formando tufos na ponta",
+      "prevencao_tratamento": "Pulverize sulfato de zinco a 0,3% nas folhas novas na primavera e evite calcário em excesso, que trava o zinco"
+    },
+    {
+      "nome": "Queima das bordas das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Margens dos folíolos marrons e secas no verão, principalmente nos dias quentes e com vento",
+      "prevencao_tratamento": "Não deixe o substrato secar por completo; vaso claro ou encapado reduz o aquecimento das raízes; confira se o vaso já está pequeno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Adubação da brotação",
+      "mensagem": "A nogueira está brotando e precisa de nitrogênio e zinco para formar folhas grandes.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de NPK 10-10-10 por vaso de 60 L na borda, longe do tronco, e regar; pulverizar sulfato de zinco a 0,3% nas folhas novas"
+    },
+    {
+      "meses": [
+        11,
+        1
+      ],
+      "titulo": "Adubação de cobertura",
+      "mensagem": "No auge do crescimento, o substrato do vaso já esgotou boa parte do adubo.",
+      "acao_requerida": "Espalhar 1 litro de composto orgânico ou húmus de minhoca sobre o substrato, sem encostar no tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Folhas caindo: é dormência",
+      "mensagem": "A nogueira perde as folhas no outono e passa o inverno parada. Ela precisa desse frio para brotar bem.",
+      "acao_requerida": "Recolher as folhas caídas, parar de adubar e deixar o vaso ao ar livre no frio; não levar para dentro de casa"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Sem folhas, dá para ver a estrutura e a árvore cicatriza antes de brotar.",
+      "acao_requerida": "Manter um tronco central, tirar ramos que cruzam, ramos secos e brotos que saem abaixo do enxerto, com corte limpo rente ao ramo principal"
+    }
+  ]
+}

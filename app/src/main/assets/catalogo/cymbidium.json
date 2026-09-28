@@ -1,0 +1,220 @@
+{
+  "planta": {
+    "nome_comum": "Cymbidium",
+    "nome_cientifico": "Cymbidium spp. (híbridos)",
+    "descricao": "Orquídea semiterrestre de folhas longas e pseudobulbos, vendida em flor no inverno. Este cronograma é para os híbridos comuns no Brasil (padrão e miniatura), que dão hastes com 10 a 20 flores de 6 a 10 cm e duram até 2 meses. Aguenta frio, gosta de muita luz e só floresce se passar o outono com noites frescas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica sem esmalte, com 15 a 20 cm de diâmetro e 15 a 18 cm de altura, com vários furos no fundo. Vaso fundo, porque as raízes são grossas e crescem para baixo. Não deixe em cachepô sem furo.",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% casca de pinus média (1 a 2 cm), 20% fibra ou chips de coco, 15% perlita ou pedrisco, 10% carvão vegetal em pedaços e 5% húmus de minhoca. Fica aerado, mas guarda um pouco de umidade.",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa e se ajusta à luz e à umidade da casa. Se chegou em flor, alguns botões podem cair na primeira semana, e isso é normal. Deixe-a num lugar com sol só da manhã e evite mudá-la de lugar. A fase acabou quando as flores continuam firmes e as folhas não amarelam."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Brotos novos (futuros pseudobulbos) nascem na base dos pseudobulbos antigos, em geral na primavera e no verão. Folhas verde-claras, quase amareladas, mostram que a luz está boa. Verde-escuras e moles indicam falta de luz, e a planta não vai florescer. Depois da floração, corte a haste seca rente à base."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "O ano de um Cymbidium adulto: da primavera ao verão ele faz brotos e pseudobulbos novos e pede rega e adubo com frequência. No fim do verão e no outono, as noites frescas (10 °C mais frias que o dia) fazem nascer as hastes florais. Elas saem da base do pseudobulbo e são redondas e pontudas, diferentes dos brotos de folha, que são achatados. As flores abrem do inverno até o começo da primavera. Um pseudobulbo floresce uma vez só, mas continua guardando reserva para a planta. Com o vaso lotado de pseudobulbos, divida a touceira depois da floração."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o Cymbidium",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato: se estiver quase seco, regue devagar até escorrer bastante pelos furos e deixe escorrer tudo, sem água parada no pratinho. Acima de 30 °C, confira a cada 2 ou 3 dias. De junho a agosto, espace para a cada 6 ou 7 dias, mas nunca deixe secar totalmente enquanto houver haste floral: é isso que faz os botões caírem.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o Cymbidium",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g (1/4 de colher de chá) de adubo para orquídeas em 1 L de água e regue com ele o substrato já úmido. De setembro a janeiro use a fórmula de crescimento (NPK 20-20-20 ou 30-10-10); de fevereiro a maio, a de floração (10-30-20). De junho a agosto, adube só a cada 30 dias. Uma vez por mês, regue só com água para lavar os sais.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e hastes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas contra a luz e procure pontinhos prateados ou teias finas (ácaro), escamas marrons ou algodão branco na base das folhas (cochonilha) e insetos nos botões. Olhe também o substrato e as hastes à noite, atrás de lesmas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato ou dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça logo depois da floração (setembro a novembro). Se houver haste floral agora, espere as flores acabarem. Tire a planta do vaso, remova o substrato velho e corte as raízes podres (moles e marrons). Se o vaso estiver lotado, divida em grupos de pelo menos 3 pseudobulbos com folhas. Replante no mesmo nível, com substrato novo, e espere 5 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Tire do cachepô",
+      "mensagem": "Cymbidium de floricultura costuma vir dentro de um cachepô ou de um plástico decorativo que acumula água no fundo e apodrece as raízes em poucas semanas.",
+      "acao_requerida": "Retirar o cachepô ou plástico e deixar o vaso de furos apoiado num pratinho sem água, num lugar com sol só da manhã"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Confira o substrato de fábrica",
+      "mensagem": "Muitas plantas chegam em musgo ou fibra compactada, que retém água demais em casa.",
+      "acao_requerida": "Aperte o substrato: se estiver compactado, encharcado ou com cheiro azedo, troque-o assim que terminar a floração, seguindo as instruções da tarefa de troca de substrato"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e de pseudobulbo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando a partir da base, pseudobulbos moles e escuros, raízes marrons e ocas que se desfazem ao toque",
+      "prevencao_tratamento": "Não deixe água no pratinho e só regue quando os 3 cm de cima estiverem quase secos. Troque o substrato a cada 2 anos. Se aparecer, corte as partes podres com tesoura esterilizada, passe canela em pó e replante em substrato novo"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos prateados ou amarelados no verso das folhas, que depois ficam foscas; teias finas em tempo seco e quente",
+      "prevencao_tratamento": "Nos dias secos, borrife água no verso das folhas. Se aparecer, lave as folhas com água e sabão neutro e aplique óleo de neem a 0,5% a cada 5 dias, 3 vezes, no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos de algodão na base das folhas e nos pseudobulbos; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70% e depois aplique óleo mineral a 1% ou óleo de neem a cada 7 dias até sumir"
+    },
+    {
+      "nome": "Pulgão nos botões",
+      "tipo": "PRAGA",
+      "sintomas": "Insetos verdes ou pretos agrupados nas hastes e botões florais; botões deformados e pegajosos",
+      "prevencao_tratamento": "Jato fraco de água ou cotonete com água e sabão neutro. Evite óleo nos botões, porque mancha as flores"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Hastes florais e botões roídos, pontas de raiz comidas, trilhas brilhantes no vaso",
+      "prevencao_tratamento": "Procure à noite com lanterna, embaixo do vaso e no substrato. Mantenha o vaso suspenso ou sobre pés e ponha uma fita de cobre na borda"
+    },
+    {
+      "nome": "Vírus do mosaico do Cymbidium (CymMV)",
+      "tipo": "DOENCA",
+      "sintomas": "Estrias ou manchas amarelas alongadas que ficam pretas e afundadas nas folhas novas; flores com manchas marrons",
+      "prevencao_tratamento": "Não tem cura. Esterilize a tesoura na chama ou em álcool 70% entre uma planta e outra. Isole ou descarte a planta infectada"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir",
+      "prevencao_tratamento": "Causas: substrato que secou, mudança brusca de lugar ou de temperatura, ar quente e seco perto de aquecedor, gás etileno de frutas maduras. Mantenha a rega regular e não mude a planta de lugar com a haste formada"
+    },
+    {
+      "nome": "Não florescer",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta saudável e com folhas verde-escuras, mas sem hastes florais há mais de um ano",
+      "prevencao_tratamento": "Quase sempre é falta de luz ou de noites frescas no outono. Dê mais sol da manhã (folha verde-clara é o ponto) e, de março a maio, deixe a planta ao ar livre à noite para pegar uma diferença de uns 10 °C entre o dia e a noite"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas pardas, secas ou esbranquiçadas no meio das folhas voltadas para o sol",
+      "prevencao_tratamento": "Evite sol direto entre 10h e 16h no verão; use tela de sombreamento de 50% ou mude a planta para um lugar só com sol da manhã. Aumente a luz aos poucos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: proteja o Cymbidium",
+      "mensagem": "Acima de 30 °C, o substrato seca rápido e o sol da tarde queima as folhas. É também a época em que os pseudobulbos novos se formam.",
+      "acao_requerida": "Deixar só com sol da manhã ou sob tela de sombreamento de 50% e conferir a umidade do substrato a cada 2 dias"
+    },
+    {
+      "meses": [
+        3,
+        4,
+        5
+      ],
+      "titulo": "Noites frescas fazem as flores",
+      "mensagem": "Neste período, a diferença de temperatura entre o dia e a noite é o que faz nascer as hastes florais. Com a planta dentro de casa, a noite fica quente e ela não floresce.",
+      "acao_requerida": "Deixar o vaso ao ar livre dia e noite (varanda, quintal), com sol da manhã, desde que não gele, e usar o adubo de floração"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Tutorar as hastes florais",
+      "mensagem": "As hastes crescem e, sem apoio, tortam ou quebram com o peso dos botões.",
+      "acao_requerida": "Quando a haste tiver uns 15 cm, espetar uma vareta no substrato, longe dos pseudobulbos, e prender a haste com arame revestido a cada 10 cm, sem apertar. Não girar o vaso enquanto os botões se formam"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos rega, cuidado com a geada",
+      "mensagem": "O Cymbidium aguenta frio até uns 3 °C, mas geada queima folhas e flores. O substrato seca mais devagar agora.",
+      "acao_requerida": "Espaçar a rega para a cada 6 ou 7 dias, sem deixar secar de todo, e levar para um lugar coberto nas noites com previsão abaixo de 3 °C"
+    },
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Fim da floração: limpeza",
+      "mensagem": "Depois das flores, a planta volta a crescer. É a melhor época para podar as hastes e trocar o vaso.",
+      "acao_requerida": "Cortar as hastes secas rente à base com tesoura esterilizada e tirar as folhas totalmente amarelas. Se o vaso estiver lotado de pseudobulbos, trocar o substrato ou dividir agora"
+    }
+  ]
+}

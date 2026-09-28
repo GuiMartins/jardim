@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Lavanda",
+    "nome_cientifico": "Lavandula angustifolia",
+    "descricao": "Subarbusto aromático do Mediterrâneo, de folhas cinza-esverdeadas e espigas roxas muito perfumadas, usadas em sachês, chás e óleos. É a lavanda 'verdadeira'. Em vaso vive vários anos se tiver sol forte e substrato que drene bem, mas sofre no verão quente e úmido do Brasil e floresce melhor em regiões de inverno frio (serra, Sul, altitude).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, com pelo menos 30 cm de diâmetro e 25 cm de profundidade e vários furos no fundo; o barro deixa o substrato secar mais rápido, que é o que a lavanda quer. Evite prato com água parada embaixo.",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% pedrisco ou perlita, 10% húmus de minhoca, mais 1 colher de sopa de calcário dolomítico por 5 L de mistura: pobre, alcalino e muito drenante",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho para o vaso definitivo e passa alguns dias com leve murcha nas horas quentes. Deixe-a 3 a 4 dias em meia-sombra antes do sol pleno. A adaptação terminou quando aparecem pontas novas, mais claras, no alto dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a planta ramifica e forma uma touceira arredondada. Nesta fase ela passa a tolerar dias sem rega. Pode soltar as primeiras espigas; cortá-las ainda verdes direciona a energia para os ramos. Sinal de que está estabelecida: os ramos da base começam a ficar marrons e lenhosos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Touceira de 40 a 60 cm, com base lenhosa. No ano típico, brota na primavera, floresce do fim da primavera ao começo do verão (outubro a janeiro no Centro-Sul), recebe uma poda depois da floração, desacelera no verão úmido e fica quase parada no inverno, quando o frio ajuda a induzir a floração seguinte. Com poda anual, vive de 5 a 8 anos em vaso; sem poda, fica pelada e lenhosa em 3 ou 4."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a lavanda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato: se estiver seco, regue no pé, sem molhar a folhagem, até escorrer pelos furos. O torrão da muda ainda é pequeno e seca antes do resto do vaso. Acima de 30 °C, confira a cada 2 dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a lavanda",
+      "tipo": "REGA",
+      "frequencia_dias": 6,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e só regue se estiver seco nessa profundidade; aí regue bem, até escorrer pelos furos, e esvazie o prato. Na dúvida, espere mais um dia: a lavanda aguenta seca e morre de encharcamento. No inverno e em semanas chuvosas, o intervalo passa de 10 a 15 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_leve",
+      "titulo": "Adubação leve",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de farinha de ossos ou 1 colher de chá de NPK 4-14-8 na borda do vaso de 15 L e regue em seguida. Pule a adubação de maio a julho. Adubo rico em nitrogênio, como esterco fresco ou ureia, faz folha mole, reduz o perfume e atrai fungo.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a lavanda",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos e olhe o miolo da touceira e a base dos caules: procure ramos escurecidos ou murchos com o substrato úmido, manchas marrons nas folhas, cochonilhas brancas nos caules e teias finas no verso das folhas. Corte e descarte os ramos secos do miolo para o ar circular.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Em março/abril ou agosto/setembro, tire a planta do vaso, solte com os dedos um terço do torrão velho, corte raízes pretas ou enroladas no fundo e replante com substrato novo na mesma receita, num vaso igual ou 5 cm maior. Deixe 3 dias em meia-sombra e regue pouco na primeira semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A muda vem num saquinho com substrato de viveiro, que retém água demais para a lavanda.",
+      "acao_requerida": "Transplantar para o vaso de 15 L com o substrato arenoso, deixando o colo da planta na mesma altura em que estava, sem enterrar o caule, e regar uma vez até escorrer"
+    },
+    {
+      "dia_disparo": 35,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Cortar as pontas agora faz a lavanda ramificar da base e formar uma touceira cheia, em vez de ramos compridos e pelados.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo com tesoura limpa, sempre acima de um par de folhas, e retirar espigas que tiverem aparecido"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Segunda poda de formação",
+      "mensagem": "A planta já tem mais ramos; uma segunda desponta deixa a copa arredondada e compacta antes da primeira floração forte.",
+      "acao_requerida": "Aparar a touceira por igual, tirando cerca de um terço do crescimento verde, sem chegar à parte marrom e lenhosa"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Ramos murcham e ficam cinza-amarronzados mesmo com o substrato úmido; a base do caule escurece e as raízes ficam marrons e moles",
+      "prevencao_tratamento": "Substrato arenoso, vaso de barro com furos, nunca deixar água no prato e regar só com o substrato seco a 5 cm. Com a planta já afetada, corte os ramos mortos, replante em substrato novo e seco e suspenda a rega por uma semana; se o colo estiver podre, faça estacas dos ramos sadios"
+    },
+    {
+      "nome": "Mancha foliar e seca de ramos (Alternaria, Septoria)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas nas folhas e ramos que secam de cima para baixo, piores no verão chuvoso e no miolo abafado da touceira",
+      "prevencao_tratamento": "Regar no pé, sem molhar a folhagem, afastar o vaso de paredes para ventilar e limpar os ramos secos do miolo. Remova e descarte as partes afetadas; se espalhar, aplique calda bordalesa a 1% em dia seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenos pontos brancos algodonosos ou escamas marrons grudados nos caules e na base das folhas; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestações maiores, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teias finas entre as folhas, comum em tempo quente e seco ou em varanda coberta",
+      "prevencao_tratamento": "Jato de água no verso das folhas pela manhã, em dia de sol, para secar rápido; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos, compridos e moles, folhas espaçadas e mais verdes que cinza, pouca ou nenhuma floração e pouco perfume",
+      "prevencao_tratamento": "Levar para o lugar mais ensolarado da casa, com pelo menos 6 horas de sol direto; os ramos estiolados não se recuperam, então pode-os pela metade depois da mudança"
+    },
+    {
+      "nome": "Base lenhosa e pelada",
+      "tipo": "DISTURBIO",
+      "sintomas": "A parte de baixo da planta vira galho marrom sem folhas e só as pontas continuam verdes; a touceira abre no meio",
+      "prevencao_tratamento": "Evitável com a poda anual depois da floração, sempre dentro da parte verde. Cortar no lenho velho sem folhas raramente rebrota; uma planta já pelada se renova por estaca de ponta, feita na primavera ou no outono"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "A lavanda está acordando",
+      "mensagem": "Com o fim do inverno, a planta volta a brotar e forma as espigas da floração.",
+      "acao_requerida": "Voltar ao intervalo normal de rega, retomar a adubação leve e cortar ramos secos ou quebrados pelo frio, sem podar ramos verdes"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Colher as flores",
+      "mensagem": "As espigas estão no melhor ponto quando metade das florzinhas abriu: é quando têm mais óleo e perfume.",
+      "acao_requerida": "Cortar as espigas de manhã, depois que o orvalho secar, logo acima do primeiro par de folhas do ramo; amarrar em maços e secar de cabeça para baixo em local escuro e ventilado"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Cuidado com o verão úmido",
+      "mensagem": "Calor com chuva é a época em que a lavanda mais morre em vaso: o substrato fica molhado e os fungos atacam o miolo da touceira.",
+      "acao_requerida": "Tirar o vaso da chuva direta em semanas chuvosas, só regar com o substrato seco a 5 cm, esvaziar o prato e abrir o miolo da planta tirando ramos secos"
+    },
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Poda anual pós-floração",
+      "mensagem": "Depois da floração, a poda mantém a touceira compacta e evita que a base fique lenhosa e pelada.",
+      "acao_requerida": "Cortar todas as hastes florais secas e reduzir a touceira em cerca de um terço, em formato arredondado, sempre deixando pelo menos 2 cm de parte verde com folhas acima da madeira"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: rega mínima",
+      "mensagem": "No frio a lavanda quase para de crescer e bebe muito pouco. Esse frio ajuda a induzir as flores da primavera.",
+      "acao_requerida": "Espaçar a rega para 10 a 15 dias, sempre conferindo com o dedo, e não adubar; deixar o vaso no sol, sem levá-lo para dentro de casa"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "planta": {
+    "nome_comum": "Cajá-manga",
+    "nome_cientifico": "Spondias dulcis (variedade anã, muda enxertada)",
+    "descricao": "Árvore frutífera tropical de frutos amarelos, ácidos e aromáticos, ótimos para suco e consumo in natura. Em vaso, use a variedade anã enxertada: fica com 1,5 a 2,5 m e pode frutificar já no segundo ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cerâmica ou meia-bombona, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo; comece num de 40 L e passe para o definitivo depois do primeiro ano",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de pinus fina ou perlita; mais 200 g de farinha de ossos e 100 g de calcário dolomítico por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o ponto de enxerto (a cicatriz no caule) pelo menos 5 cm acima do substrato e deixe-a em meia-sombra na primeira semana, depois em sol pleno. Folhas caídas ou amareladas nos primeiros dias são normais. A fase termina quando surgem brotos novos, avermelhados, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz toma o vaso e a copa cresce em fluxos de brotação. Tire qualquer broto que nasça abaixo do enxerto, porque é do porta-enxerto e não dá o fruto certo. Flores que aparecerem no primeiro ano podem ser tiradas para a planta investir em raiz e ramos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "No ano típico, a planta perde parte das folhas no inverno, brota e floresce com o calor da primavera e amadurece os frutos do verão ao outono, em cachos pendentes. A variedade anã pode florescer de novo fora de época se tiver calor e água. Mantenha a copa baixa e aberta com uma poda por ano no fim do inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de cajá-manga",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos (cerca de 3 a 4 L num vaso de 40 L). Acima de 30 °C, confira todo dia. A raiz recém-plantada ainda não alcança o fundo do vaso e morre se o torrão secar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cajá-manga",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (5 a 8 L num vaso de 60 L). No verão e com frutos se formando, confira a cada 2 dias. No inverno, com a planta sem folhas, espace para uma vez por semana.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o cajá-manga",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca e 1 colher de sopa de NPK 10-10-10 pela borda do vaso, longe do caule, e regue em seguida. A partir da floração, troque o NPK por 4-14-8 ou farinha de ossos com cinza de madeira. Em junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas novas e os ramos em busca de cochonilhas (escamas ou algodão branco), manchas escuras em folhas e frutos e furinhos em frutos verdes. Veja também se há brotos saindo abaixo do enxerto e corte-os rente ao caule.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça no fim do inverno. Tire a planta do vaso, raspe 3 a 5 cm de raiz das laterais e do fundo com uma faca limpa, e volte ao mesmo vaso com substrato novo. Regue bem e deixe em meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 45,
+      "titulo": "Poda de formação",
+      "mensagem": "Com a muda pegando, é hora de definir a copa baixa, que facilita a colheita e cabe na varanda.",
+      "acao_requerida": "Cortar a ponta do ramo principal a 50–60 cm do substrato e, das brotações que surgirem, deixar 3 ou 4 ramos bem distribuídos"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "Com um ano, a raiz provavelmente já tomou o vaso inicial e a planta começa a produzir.",
+      "acao_requerida": "Passar para um vaso de 60 a 100 L com substrato novo, sem enterrar o ponto de enxerto (se estiver no fim do outono ou inverno, esperar até setembro)"
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "Primeiros frutos de verdade",
+      "mensagem": "A partir de agora a planta aguenta segurar frutos. Cachos muito cheios deixam os frutos pequenos e cansam a planta.",
+      "acao_requerida": "Deixar no máximo 4 a 6 frutos por cacho, tirando os menores ainda verdes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem; base do caule escurecida e cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com os 5 cm de cima secos, nunca deixar água no pratinho e reduzir a rega no inverno. Se aparecer, tirar do vaso, cortar as raízes escuras e moles e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos de algodão nos ramos e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; em infestações maiores, óleo mineral ou óleo de neem a 1% no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp., Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos na casca dos frutos verdes, que depois amolecem e caem com larvas dentro",
+      "prevencao_tratamento": "Recolher e descartar em saco fechado todo fruto caído; ensacar os cachos com saco de TNT quando os frutos tiverem 2 cm; armadilha com suco de fruta fermentado perto do vaso"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas em folhas, flores e frutos, que racham e apodrecem; mais comum em épocas chuvosas",
+      "prevencao_tratamento": "Manter a copa aberta com poda, não molhar as folhas ao regar e retirar partes doentes; em ataque forte, calda bordalesa ou fungicida cúprico no início da floração"
+    },
+    {
+      "nome": "Queda de folhas e frutos por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem em massa com noites abaixo de 10 °C; frutos pequenos caem verdes",
+      "prevencao_tratamento": "É normal perder parte das folhas no inverno. Abaixo de 5 °C, levar o vaso para perto da parede ou cobrir a copa à noite; geada mata ramos e plantas jovens"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O cajá-manga é tropical e não tolera geada. No frio ele perde folhas e quase para de beber água.",
+      "acao_requerida": "Encostar o vaso numa parede ensolarada, cobrir a copa com TNT em noites abaixo de 5 °C, regar só com o substrato seco e suspender a adubação"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual",
+      "mensagem": "Antes da brotação da primavera é o melhor momento para manter a árvore baixa e arejada.",
+      "acao_requerida": "Cortar ramos secos, cruzados e voltados para dentro, e encurtar em um terço os mais altos, mantendo a copa abaixo de 2 m"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Brotação e floração",
+      "mensagem": "Com o calor, a planta brota e solta cachos de flores pequenas esbranquiçadas. Falta de água agora derruba as flores.",
+      "acao_requerida": "Voltar a regar a cada 2 ou 3 dias e retomar a adubação com fórmula rica em fósforo e potássio"
+    },
+    {
+      "meses": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "titulo": "Época de colher cajá-manga",
+      "mensagem": "Os frutos amadurecem em cachos e caem sozinhos quando passam do ponto.",
+      "acao_requerida": "Colher os frutos quando começarem a amarelar e ceder levemente ao apertar; para suco e conserva, podem ser colhidos ainda verde-amarelados"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Miltônia",
+    "nome_cientifico": "Miltonia spp. (híbridos)",
+    "descricao": "Orquídea brasileira da Mata Atlântica, de flores grandes e perfumadas em tons de roxo, rosa, amarelo e branco. A ficha descreve os híbridos vendidos em floricultura, derivados de Miltonia spectabilis, M. clowesii e M. regnellii, que têm os mesmos cuidados das espécies. Gosta de umidade constante e luz clara, e floresce do fim do verão ao outono.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou de barro de 12 a 15 cm de diâmetro e 10 a 12 cm de altura, com vários furos no fundo e nas laterais; pendurado ou apoiado sobre pedriscos, nunca com água parada no pratinho",
+    "volume_minimo_litros": 1,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% casca de pinus média (1 a 2 cm), 30% fibra de coco em cubos, 10% carvão vegetal em pedaços, 10% musgo esfagno; retém umidade sem encharcar as raízes finas",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se acostuma à luz e à umidade da casa. Se chegou florida, as flores duram de 3 a 5 semanas; queda de botões ou algumas folhas amareladas na base são comuns agora. Não troque de vaso nem adube forte nesta fase. A adaptação terminou quando as folhas novas estão firmes e sem manchas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Surge um broto novo na base do último pseudobulbo, e dele saem raízes brancas e finas. O broto cresce, forma folhas e depois engrossa num pseudobulbo novo. Folhas que saem enrugadas como sanfona indicam falta de água ou ar seco durante o crescimento. A fase termina quando o pseudobulbo novo está formado e liso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "O ano típico: na primavera e no verão a planta lança brotos e cresce, com rega e adubação regulares. Do fim do verão ao outono as hastes florais saem da base dos pseudobulbos novos. No inverno o crescimento desacelera, e a rega e a adubação diminuem. Pseudobulbos velhos sem folhas continuam servindo de reserva e não devem ser cortados enquanto estiverem firmes e verdes."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_miltonia",
+      "titulo": "Regar a miltônia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato: se estiver apenas úmido ou quase seco, regue com água sem cloro até escorrer bem pelos furos e deixe o vaso escorrer por completo. A miltônia não gosta de secar de todo nem de ficar encharcada. No verão acima de 30 °C, confira a cada 2 dias; de junho a agosto, espace para 5 a 6 dias. Regue pela manhã para as folhas secarem antes da noite.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_miltonia",
+      "titulo": "Adubar a miltônia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 0,5 g de adubo para orquídeas NPK 20-20-20 por litro de água (metade da dose do rótulo) e regue o substrato, que já deve estar úmido. A miltônia é sensível ao acúmulo de sais: a cada 4 adubações, regue só com água em abundância para lavar o vaso. De junho a agosto, adube uma vez por mês.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas, as axilas entre as folhas e a base dos pseudobulbos. Procure pontinhos brancos ou marrons presos (cochonilha), prateado ou pontos escuros nas folhas (tripes, ácaro), brotos roídos (lesma) e manchas moles e escuras na base.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 540,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espere o fim da floração e o momento em que o broto novo começa a soltar raízes, de preferência de setembro a novembro. Tire a planta do vaso, remova todo o substrato velho, corte as raízes ocas ou podres com tesoura esterilizada no álcool e replante no mesmo tamanho de vaso (ou 2 cm maior), com o pseudobulbo mais velho encostado na borda e o broto voltado para o centro. Espere 5 dias para voltar a adubar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, miltônia!",
+      "mensagem": "Miltônia recém-chegada estranha mudanças bruscas de luz. O substrato da floricultura costuma estar bom por alguns meses.",
+      "acao_requerida": "Colocar a planta perto de uma janela clara, com no máximo sol fraco até as 9h, e conferir se o vaso tem furos. Não trocar de vaso enquanto estiver florida"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Confira o substrato",
+      "mensagem": "Substrato velho, que esfarela ou cheira azedo, apodrece as raízes finas da miltônia.",
+      "acao_requerida": "Afastar um pouco o substrato na borda do vaso: se estiver escuro, farelento ou com cheiro de mofo, fazer a troca completa assim que as flores caírem"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Olhe a cor das folhas",
+      "mensagem": "A cor das folhas é o melhor termômetro de luz da miltônia.",
+      "acao_requerida": "Comparar as folhas: verde-claro puxando para amarelo é luz ideal; verde-escuro indica pouca luz (aproxime da janela); tons avermelhados ou manchas secas indicam sol demais (afaste)"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e pseudobulbo (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Raízes marrons, moles e ocas; pseudobulbos escurecendo a partir da base; broto novo que amolece e solta com um puxão leve",
+      "prevencao_tratamento": "Não deixar água no pratinho nem no miolo do broto; usar substrato arejado e trocar quando decompor. Na planta atacada, cortar todo o tecido mole com tesoura esterilizada, passar canela em pó no corte e replantar em substrato novo, regando menos por 2 semanas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, marrons ou algodonosas presas no verso das folhas e na base dos pseudobulbos; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com algumas gotas de detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Tripes e ácaro",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com aspecto prateado ou pontilhado amarelo, flores com manchas ou deformadas; aparecem mais com ar seco e quente",
+      "prevencao_tratamento": "Manter a umidade do ar alta (bandeja com pedriscos e água sob o vaso) e lavar o verso das folhas com água; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Lesma e caracol",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos, pontas de raiz e botões roídos de uma noite para outra; rastro brilhante no vaso",
+      "prevencao_tratamento": "Catar à noite com lanterna; manter o vaso suspenso ou longe do chão e de outros vasos com folhagem encostada"
+    },
+    {
+      "nome": "Folhas em sanfona",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas saem enrugadas e dobradas como uma sanfona",
+      "prevencao_tratamento": "É causado por falta de água ou ar muito seco enquanto a folha se forma, e a folha afetada não se recupera. Nunca deixar o substrato secar por completo durante o crescimento do broto e aumentar a umidade do ar em dias secos"
+    },
+    {
+      "nome": "Pontas das folhas queimadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e secas, avançando aos poucos",
+      "prevencao_tratamento": "Sinal de acúmulo de sais do adubo ou da água dura. Lavar o vaso com bastante água a cada mês, usar água de chuva ou filtrada e não passar da meia dose de adubo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        2,
+        3,
+        4
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "Do fim do verão ao outono as hastes florais saem da base dos pseudobulbos novos. Mudar o vaso de lugar agora faz os botões virarem e às vezes caírem.",
+      "acao_requerida": "Manter o vaso sempre na mesma posição, não molhar as flores e, quando a haste secar, cortá-la rente à base"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "No frio a miltônia cresce pouco e sofre abaixo de 10 °C. Substrato molhado com frio apodrece as raízes.",
+      "acao_requerida": "Espaçar a rega para cada 5 ou 6 dias, adubar só uma vez por mês e levar o vaso para dentro de casa nas noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Calor forte: sombra e umidade",
+      "mensagem": "Acima de 30 °C, com sol da tarde, as folhas finas queimam e o substrato seca em 1 ou 2 dias.",
+      "acao_requerida": "Garantir sombra depois das 10h, conferir a rega a cada 2 dias e deixar o vaso sobre uma bandeja com pedriscos e água, sem que o fundo encoste na água"
+    }
+  ]
+}

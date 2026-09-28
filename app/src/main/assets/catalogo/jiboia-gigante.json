@@ -1,0 +1,202 @@
+{
+  "planta": {
+    "nome_comum": "Jiboia-gigante",
+    "nome_cientifico": "Epipremnum pinnatum",
+    "descricao": "Trepadeira tropical parente da jiboia comum. Quando sobe por um tutor, as folhas crescem e ganham recortes profundos, o que dá à planta um visual de floresta dentro de casa. As folhas são tóxicas se ingeridas (oxalato de cálcio), então mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 25 cm de diâmetro e 25 cm de profundidade, com furos no fundo e espaço para um tutor de 1 a 1,5 m",
+    "volume_minimo_litros": 12,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% substrato para plantas, 30% casca de pinus fina, 20% fibra de coco, 10% perlita ou carvão vegetal; aerado, para a raiz não ficar encharcada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta à nova luz e ao novo vaso. Uma ou duas folhas velhas podem amarelar, e isso é normal. A fase termina quando surge a primeira folha nova, enrolada e verde-clara, na ponta do ramo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes tomam o vaso e os ramos se alongam, soltando raízes aéreas nos nós. Cada folha nova sai um pouco maior que a anterior se o ramo estiver preso ao tutor. Ramos soltos pendendo produzem folhas pequenas e inteiras."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "A planta cresce rápido de setembro a março, com uma folha nova a cada 1 ou 2 semanas por ramo, e fica quase parada no inverno. Os ramos que sobem pelo tutor passam a dar folhas grandes com recortes e furos. Na primavera se poda o que passou do tutor e, a cada 2 anos, troca-se o substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a jiboia-gigante nova",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho após 15 minutos. A raiz da muda recém-plantada ainda não alcança o vaso todo e seca rápido.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a jiboia-gigante",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o pratinho. No verão, confira a cada 3 ou 4 dias; no inverno, a cada 8 a 10 dias. Folha murcha com substrato úmido é excesso de água, não falta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a jiboia-gigante",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo NPK 10-10-10 na metade da dose da embalagem (cerca de 1 g por litro) e regue o substrato já úmido; ou espalhe 2 colheres de sopa de húmus de minhoca sem encostar no caule. Pule de junho a agosto, quando a planta quase não cresce.",
+      "critica": false
+    },
+    {
+      "id": "tutoragem_ramos",
+      "titulo": "Prender os ramos novos no tutor",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Encoste no tutor os segmentos que cresceram desde a última vez, com os nós voltados para ele, e prenda com fita de jardinagem ou arame encapado sem apertar. Borrife o tutor de musgo ou fibra para as raízes aéreas se agarrarem.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar e limpar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas: procure pontinhos brancos algodoados, teias finas ou manchas prateadas. Passe um pano úmido nas duas faces para tirar a poeira, que reduz a fotossíntese e esconde ácaros.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, tire a planta com o tutor, retire o substrato velho e corte raízes pretas e moles. Replante num vaso 5 cm maior de diâmetro com substrato novo, na mesma altura de antes, e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Instale o tutor agora",
+      "mensagem": "Fincar um tutor depois que as raízes tomam o vaso corta raízes. Com apoio desde o início, a jiboia-gigante sobe e as folhas crescem e recortam.",
+      "acao_requerida": "Fincar um tutor de musgo, fibra de coco ou madeira até o fundo do vaso, rente à muda, e prender os ramos nele com fita de jardinagem"
+    },
+    {
+      "dia_disparo": 14,
+      "titulo": "Confira o lugar da planta",
+      "mensagem": "Duas semanas bastam para ver se a luz está certa. Manchas marrons secas indicam sol forte demais; ramos compridos com folhas pequenas e espaçadas indicam pouca luz.",
+      "acao_requerida": "Olhar as folhas novas e, se preciso, mover o vaso para perto de uma janela clara com no máximo 2 horas de sol da manhã"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e murchas mesmo com substrato úmido, base do caule escura e mole, cheiro azedo no vaso, raízes pretas que se desfazem",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e usar substrato aerado. Se aparecer, tirar do vaso, cortar as raízes podres, replantar em substrato novo e seco e fazer estacas dos ramos sadios como garantia"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados nas axilas das folhas e no verso; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; depois, óleo de neem a 0,5% com uma gota de detergente a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos na folha, aspecto opaco e teias finas no verso, mais comum com ar seco",
+      "prevencao_tratamento": "Lavar as folhas com jato de água no verso, aumentar a umidade do ar e aplicar óleo de neem a 0,5% a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Manchas prateadas ou riscos na folha, folhas novas deformadas e pontinhos pretos de excremento",
+      "prevencao_tratamento": "Limpar as folhas com pano úmido, isolar a planta e aplicar óleo de neem a 0,5% a cada 5 dias; armadilha adesiva azul perto do vaso"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas, Erwinia)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas com halo amarelo que escurecem e crescem rápido, às vezes com cheiro ruim",
+      "prevencao_tratamento": "Não molhar as folhas ao regar e manter ventilação; cortar as folhas afetadas com tesoura limpa com álcool e descartá-las no lixo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas grandes bege ou marrons, secas e papiráceas, na parte da folha voltada para a janela",
+      "prevencao_tratamento": "Afastar do sol da tarde ou filtrar com cortina; as folhas queimadas não se recuperam e podem ser cortadas"
+    },
+    {
+      "nome": "Folhas pequenas e sem recortes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas menores que as antigas, inteiras, com ramos compridos entre elas",
+      "prevencao_tratamento": "Falta de luz ou de apoio: aproximar da janela e prender os ramos no tutor para a planta subir; ramos pendentes quase nunca recortam"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a jiboia-gigante quase para de crescer e o substrato demora a secar, o que favorece a podridão de raiz. Abaixo de 12 °C ela sofre.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm (8 a 10 dias), suspender a adubação e afastar o vaso de janelas frias e correntes de ar à noite"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: poda e estacas",
+      "mensagem": "A planta volta a crescer, e esta é a melhor época para podar ramos que passaram do tutor ou ficaram sem folhas. Os pedaços cortados enraízam fácil.",
+      "acao_requerida": "Cortar os ramos compridos logo acima de um nó, com tesoura limpa, e pôr os pedaços de 2 ou 3 nós na água ou em substrato úmido para fazer mudas"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e ar seco",
+      "mensagem": "Com calor o substrato seca mais rápido e os ácaros se multiplicam no ar seco de ambientes com ar-condicionado.",
+      "acao_requerida": "Conferir o substrato a cada 3 ou 4 dias, borrifar o tutor e manter o vaso longe da saída do ar-condicionado"
+    }
+  ]
+}

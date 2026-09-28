@@ -1,0 +1,207 @@
+{
+  "planta": {
+    "nome_comum": "Mentastro",
+    "nome_cientifico": "Mentha suaveolens",
+    "descricao": "Hortelã de folhas arredondadas, rugosas e aveludadas, com aroma que lembra maçã e menta, usada em chás, sucos e sobremesas. É mais resistente ao sol e à seca que as outras hortelãs, mas se espalha por rizomas e toma o canteiro, por isso vai melhor em vaso só dela.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira mais largo que fundo, com pelo menos 30 cm de diâmetro e 20 cm de profundidade, com furos no fundo; os rizomas correm na horizontal e precisam de área, não de profundidade",
+    "volume_minimo_litros": 10,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; rico em matéria orgânica e que retenha umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "A muda recém-plantada pode murchar nas horas quentes e perder algumas folhas de baixo. Mantenha-a longe do sol forte da tarde nestes dias. A fase terminou quando surgem folhas novas no topo e a muda não murcha mais ao meio-dia."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 60,
+      "descricao": "Os rizomas se espalham pelo vaso e aparecem brotos novos saindo do substrato longe do caule principal. Os ramos engrossam e as folhas ficam mais aveludadas. A planta está estabelecida quando o vaso tem vários brotos e os ramos passam de 20 cm."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Touceira densa que produz folhas o ano todo, com crescimento forte da primavera ao outono. No verão solta espigas de flores brancas a rosadas; cortá-las mantém as folhas macias e aromáticas. No inverno o crescimento desacelera e, com geada, a parte aérea pode secar e rebrotar dos rizomas na primavera. A cada ano o vaso se enche de raízes e o centro da touceira enfraquece, sinal de que é hora de dividir."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de mentastro",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Nestes dias o substrato deve ficar sempre levemente úmido, nunca encharcado nem com água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o mentastro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão acima de 30 °C, confira todo dia; no inverno, a cada 3 ou 4 dias costuma bastar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar com húmus",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por vaso de 10 L sobre o substrato, sem encostar nos caules, e regue em seguida. Pule a adubação em junho e julho, quando a planta quase não cresce.",
+      "critica": false
+    },
+    {
+      "id": "colheita_pontas",
+      "titulo": "Colher as pontas do mentastro",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura os ramos mais altos logo acima de um par de folhas, tirando no máximo um terço da planta por vez. Colher com frequência faz a touceira ramificar e evita que fique lenhosa.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pústulas alaranjadas, pó branco, teias finas, pontinhos amarelados ou insetos agrupados nas pontas dos ramos.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, corte o torrão em 3 ou 4 pedaços com faca limpa e descarte o miolo velho e lenhoso. Replante um pedaço com substrato novo e doe ou plante os outros em vasos próprios. Prefira fazer entre agosto e outubro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Hora do primeiro desponte",
+      "mensagem": "A muda já pegou. Cortar as pontas agora faz ela soltar ramos laterais e formar uma touceira cheia em vez de poucos ramos compridos.",
+      "acao_requerida": "Cortar a ponta de cada ramo logo acima do segundo ou terceiro par de folhas, de cima para baixo"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "O mentastro já tem folhas suficientes para colher sem enfraquecer.",
+      "acao_requerida": "Colher as pontas dos ramos mais altos para chá ou suco, deixando pelo menos dois terços da planta"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas de baixo amarelando e caules escurecidos e moles na base; cheiro de mofo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm e nunca deixar água no pratinho; se ocorrer, corte a parte podre, replante as partes sadias dos rizomas em substrato novo e seco"
+    },
+    {
+      "nome": "Ferrugem da hortelã (Puccinia menthae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas ou marrons no verso das folhas, que depois amarelam e caem; brotos novos deformados",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter ventilação; retire e jogue no lixo (não na compostagem) os ramos afetados; em ataque forte, corte tudo rente ao substrato para rebrotar limpo"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que ficam secas e retorcidas",
+      "prevencao_tratamento": "Mais sol e ventilação, poda das partes afetadas; pulverizar leite diluído (1 parte para 9 de água) a cada 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelados nas folhas, aspecto desbotado e teias finas nas pontas dos ramos, pior em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas em dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, respeitando 7 dias antes de colher"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos; folhas novas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água nos brotos e corte das pontas infestadas; se persistir, sabão neutro a 1% ou óleo de neem a 0,5%"
+    },
+    {
+      "nome": "Lagartas",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou com furos grandes, fezes escuras sobre as folhas",
+      "prevencao_tratamento": "Catar as lagartas à mão no fim da tarde; em infestação, Bacillus thuringiensis conforme o rótulo"
+    },
+    {
+      "nome": "Estiolamento e perda de aroma",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos e compridos, folhas pequenas, espaçadas e pálidas, com pouco cheiro",
+      "prevencao_tratamento": "Mudar para um lugar com pelo menos 3 horas de sol direto e cortar os ramos esticados pela metade para rebrotar"
+    },
+    {
+      "nome": "Touceira enovelada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Centro do vaso sem folhas e lenhoso, rega escorrendo direto pelos furos, raízes saindo pelo fundo e crescimento fraco só nas bordas",
+      "prevencao_tratamento": "Dividir a touceira, descartar o miolo velho e replantar em substrato novo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Mentastro florescendo",
+      "mensagem": "No verão o mentastro solta espigas de flores. Quando floresce, as folhas ficam mais duras e com menos aroma.",
+      "acao_requerida": "Cortar as espigas florais logo abaixo da flor, junto com o primeiro par de folhas"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, proteção da geada",
+      "mensagem": "No frio o mentastro cresce pouco e o substrato demora a secar. Com geada, a parte de cima pode queimar, mas os rizomas sobrevivem.",
+      "acao_requerida": "Espaçar as regas conforme o teste do dedo e, nas noites de geada, levar o vaso para perto de uma parede ou sob cobertura"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno, uma poda forte tira os ramos velhos e danificados pelo frio e prepara a brotação vigorosa da primavera.",
+      "acao_requerida": "Cortar todos os ramos a 5 cm do substrato e espalhar 2 colheres de sopa de húmus em seguida"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Chicória",
+    "nome_cientifico": "Cichorium endivia var. crispum",
+    "descricao": "Folhosa de folhas recortadas e crespas, levemente amargas, muito usada em saladas e refogados. Escolhemos a chicória crespa, a mais cultivada em hortas caseiras do Brasil. Na natureza pode viver dois anos, mas em casa é cultivada como anual e colhida antes de florescer.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 95,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 20 cm de profundidade e 25 cm de diâmetro por planta, com furos no fundo",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto curtido, 20% fibra de coco ou areia grossa; fofo, rico em matéria orgânica e com boa retenção de umidade",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 8,
+      "descricao": "Semeie 3 a 4 sementes por cova a 0,5 cm de profundidade, cobrindo com uma camada fina de substrato peneirado. Entre 18 e 25 °C, as plântulas surgem entre o 4º e o 8º dia; acima de 30 °C a germinação falha."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 9,
+      "dia_fim": 25,
+      "descricao": "Abrem as folhas de semente, arredondadas, e depois as primeiras folhas verdadeiras, já recortadas. A fase termina quando a muda tem 4 a 5 folhas e uns 5 cm de altura."
+    },
+    {
+      "fase_id": "crescimento_folhas",
+      "nome": "Crescimento das Folhas",
+      "dia_inicio": 26,
+      "dia_fim": 60,
+      "descricao": "A planta forma uma roseta rente ao substrato e cresce rápido. Falta de água ou calor forte nesta fase deixa as folhas duras e muito amargas."
+    },
+    {
+      "fase_id": "formacao_roseta",
+      "nome": "Formação da Roseta",
+      "dia_inicio": 61,
+      "dia_fim": 80,
+      "descricao": "A roseta fica cheia, com 25 a 35 cm de diâmetro, e o miolo começa a fechar com folhas mais claras e tenras. Uma haste subindo no centro é sinal de pendoamento: colha logo."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 81,
+      "dia_fim": 95,
+      "descricao": "A planta está no ponto quando a roseta está cheia e o miolo claro. Dá para colher as folhas externas aos poucos ou cortar a planta inteira rente ao substrato. Depois disso ela tende a pendoar e amargar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 8,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro do substrato. Não deixe formar crosta seca nem encharcar; em dias quentes, borrife de novo no fim da tarde.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a chicória",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 95,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar na base da planta até escorrer pelos furos, sem molhar o miolo. Acima de 28 °C, confira todo dia; em dias frios e nublados, pode passar para cada 3 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a chicória",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de torta de mamona curtida ao redor da planta, a 3 cm do caule, e regue em seguida. Não adube nos últimos 20 dias antes da colheita.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 95,
+      "instrucoes": "Afaste as folhas e olhe o verso e o miolo: procure pulgões agrupados, lagartas, rastros brilhantes de lesma e manchas marrons ou mofo branco na base das folhas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de chicória",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 81,
+      "dia_fim_ciclo": 95,
+      "instrucoes": "Corte com faca ou tesoura as 3 a 5 folhas externas maiores, rente à base, deixando o miolo crescer. Se aparecer uma haste subindo no centro, corte a planta inteira no mesmo dia.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "As mudas da mesma cova estão disputando espaço. Sem desbaste, nenhuma forma roseta cheia.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada vaso, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 70,
+      "titulo": "Quer uma chicória menos amarga?",
+      "mensagem": "Tampar a luz do miolo por uns 10 dias deixa as folhas internas claras, tenras e mais suaves.",
+      "acao_requerida": "Com as folhas secas, juntar as folhas externas para cima e amarrar com barbante frouxo, ou cobrir o centro com um prato de plástico; soltar depois de chuva ou rega para não apodrecer"
+    },
+    {
+      "dia_disparo": 81,
+      "titulo": "Chicória no ponto",
+      "mensagem": "A roseta já deve estar cheia e com o miolo claro.",
+      "acao_requerida": "Começar a colher as folhas externas ou cortar a planta inteira rente ao substrato"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos no miolo e no verso das folhas; folhas enrugadas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas folhas; se persistir, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias, suspendendo 7 dias antes de colher"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Buracos irregulares nas folhas e rastro prateado e brilhante, principalmente depois de noites úmidas",
+      "prevencao_tratamento": "Catar à noite com lanterna; espalhar casca de ovo triturada ao redor da planta e afastar o vaso de muros úmidos"
+    },
+    {
+      "nome": "Lagartas",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro e fezes escuras no miolo",
+      "prevencao_tratamento": "Catar à mão; se forem muitas, Bacillus thuringiensis (Dipel) na dose do rótulo, no fim da tarde"
+    },
+    {
+      "nome": "Podridão do colo e mofo-branco (Sclerotinia, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas de baixo murcham e amolecem, com a base escura ou coberta por mofo branco algodonoso, mesmo com o substrato úmido",
+      "prevencao_tratamento": "Regar só quando os 2 cm de cima secarem, na base e de manhã; não deixar água no prato; retirar a planta afetada com o substrato ao redor e não reaproveitar essa terra"
+    },
+    {
+      "nome": "Queima das bordas (tipburn)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas internas ficam marrons e secas, às vezes apodrecendo depois",
+      "prevencao_tratamento": "É falta de cálcio nas folhas novas causada por rega irregular e calor; manter a umidade constante e acrescentar 1 colher de sopa de calcário ou casca de ovo moída por vaso no preparo do substrato"
+    },
+    {
+      "nome": "Pendoamento precoce",
+      "tipo": "DISTURBIO",
+      "sintomas": "Surge uma haste no centro que sobe rápido; as folhas ficam pequenas, duras e muito amargas",
+      "prevencao_tratamento": "Provocado por calor, dias longos e falta de água; semear entre fevereiro e agosto, não deixar o vaso secar e colher assim que a haste aparecer"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Calor à vista: risco de pendoar",
+      "mensagem": "Com dias longos e quentes, a chicória tende a soltar a haste de flor e amargar de vez.",
+      "acao_requerida": "Conferir o miolo a cada rega, dar sombra nas horas mais quentes e colher a planta inteira se a haste central começar a subir"
+    }
+  ]
+}

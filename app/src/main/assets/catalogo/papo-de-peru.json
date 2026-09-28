@@ -1,0 +1,193 @@
+{
+  "planta": {
+    "nome_comum": "Papo-de-peru",
+    "nome_cientifico": "Aristolochia gigantea",
+    "descricao": "Trepadeira nativa do Brasil, vigorosa e semilenhosa, com flores enormes cor de vinho rendadas de creme, em forma de cachimbo, que aparecem da primavera ao outono. É planta hospedeira das lagartas das borboletas-rabo-de-andorinha (Battus polydamas), ótima para cobrir treliças e pérgolas. Toda a planta é tóxica (ácido aristolóquico): mantenha longe de crianças e animais e use luvas na poda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande ou jardineira funda, com pelo menos 40 cm de diâmetro e 40 cm de profundidade, furos no fundo e treliça, grade ou pérgola de 2 m ou mais junto do vaso",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; mais 1 colher de sopa de farinha de ossos a cada 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso novo e ao sol. Algumas folhas de baixo podem amarelar e cair. A fase termina quando surgem brotos novos, de folhas em forma de coração, e as gavinhas começam a se enrolar."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 240,
+      "descricao": "Os ramos crescem rápido e procuram apoio, podendo avançar vários centímetros por semana no calor. Conduza os ramos pela treliça para cobri-la por igual. A planta costuma dar as primeiras flores entre o fim do primeiro e o segundo ano, quando os ramos principais já estão lenhosos na base."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 241,
+      "dia_fim": null,
+      "descricao": "Brota com força a partir de setembro, floresce da primavera ao início do outono em ondas sucessivas e desacelera no inverno, quando pode perder parte das folhas se fizer frio. Depois da floração formam-se cápsulas alongadas com sementes. Poda de limpeza no fim do inverno e troca do substrato a cada dois anos mantêm a planta vigorosa no vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de papo-de-peru",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos. A raiz ainda não explorou o vaso e a muda murcha rápido nos dias quentes. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o papo-de-peru",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão acima de 30 °C, confira a cada 2 dias; de junho a agosto, espace para a cada 5 a 7 dias e só regue com o substrato seco nessa profundidade.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o papo-de-peru",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca e 1 colher de sopa de NPK 4-14-8 na borda do vaso de 40 L, sem encostar no caule, e regue em seguida. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "conducao_ramos",
+      "titulo": "Conduzir os ramos na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Enrole os ramos novos que estão soltos na treliça, no sentido em que já se enrolam, e prenda com fitilho frouxo onde for preciso. Espalhe os ramos para os lados, para cobrir a treliça por igual em vez de formar um bolo no topo.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas dos ramos: procure cochonilhas brancas ou marrons, pontinhos amarelados com teia fina (ácaro) e lagartas pretas com espinhos alaranjados. Confira também se a base do caule está firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Prefira fazer entre agosto e setembro. Solte o torrão, corte com tesoura limpa cerca de 1/5 das raízes mais externas e enoveladas e replante no mesmo vaso com substrato novo, ou num vaso 10 cm maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Instale o apoio agora",
+      "mensagem": "O papo-de-peru cresce rápido e se enrola no que encontrar. Instalar a treliça depois machuca os ramos.",
+      "acao_requerida": "Fixar treliça, grade ou fios de pelo menos 2 m de altura junto do vaso e encostar os ramos da muda nela"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Estimule a ramificação",
+      "mensagem": "Se a muda subiu com um ou dois ramos só, ela vai florescer só no alto e deixar a base pelada.",
+      "acao_requerida": "Cortar com tesoura limpa a ponta dos ramos principais, logo acima de uma folha, para forçar brotações laterais; usar luvas"
+    },
+    {
+      "dia_disparo": 241,
+      "titulo": "Planta adulta: flores a caminho",
+      "mensagem": "Com os ramos lenhosos na base, a planta já tem força para florescer na próxima primavera e verão. As flores são enormes e podem ter cheiro leve de fruta passada, que atrai moscas polinizadoras.",
+      "acao_requerida": "Manter o vaso no ponto de mais sol disponível e conferir se a treliça aguenta o peso da planta adulta"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas mesmo com substrato úmido, amarelamento geral, base do caule escura e mole, cheiro de podre no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e reduzir a rega no inverno. Se aparecer, tire a planta do vaso, corte as raízes escuras e replante em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Cochonilha (Pseudococcus, Coccus)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de algodão ou carapaças marrons nas axilas e no verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool; em infestação maior, borrifar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam bronzeadas, teia fina no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% ou calda de sabão de coco a cada 5 dias"
+    },
+    {
+      "nome": "Lagarta da borboleta-rabo-de-andorinha (Battus polydamas)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas pretas ou marrom-avermelhadas com espinhos alaranjados, em grupo, comendo as folhas e brotos até o talo",
+      "prevencao_tratamento": "São larvas de borboleta nativa e a planta é a hospedeira delas: se quiser as borboletas, deixe algumas e só retire o excesso para outra planta da mesma espécie. Para controlar, cate à mão com luvas; evite inseticida"
+    },
+    {
+      "nome": "Folhas queimadas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, secas e caídas depois de noites abaixo de 5 °C ou de geada; pontas dos ramos secas",
+      "prevencao_tratamento": "Nas noites frias, encostar o vaso numa parede protegida ou cobrir com TNT. Não pode logo em seguida: espere a brotação de setembro e então corte só o que secou"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, nada de adubo",
+      "mensagem": "Com o frio a planta quase para de crescer e pode perder folhas. Substrato encharcado no inverno apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 4 cm, suspender a adubação e proteger o vaso de geada nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza e condução",
+      "mensagem": "O fim do inverno é a hora de podar: a planta floresce nos ramos novos que vão brotar na primavera.",
+      "acao_requerida": "Com luvas e tesoura limpa, retirar ramos secos, fracos e emaranhados e encurtar em até 1/3 os que passaram da treliça; reservar a poda fora do alcance de crianças e animais"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retome o crescimento",
+      "mensagem": "A brotação de primavera começou. É quando a planta mais precisa de nutriente para formar ramos e botões.",
+      "acao_requerida": "Voltar a adubar todo mês e a regar a cada 3 dias, e prender os ramos novos na treliça"
+    }
+  ]
+}

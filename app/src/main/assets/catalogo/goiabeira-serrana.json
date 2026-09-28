@@ -1,0 +1,207 @@
+{
+  "planta": {
+    "nome_comum": "Goiabeira-serrana",
+    "nome_cientifico": "Acca sellowiana (sin. Feijoa sellowiana)",
+    "descricao": "Arbusto frutífero nativo das serras do Sul do Brasil, também chamado de feijoa. Aguenta geada e cresce bem em vaso grande. Tem flores vermelhas e brancas de pétalas comestíveis e frutos verdes aromáticos, de sabor entre goiaba, abacaxi e hortelã. Muda enxertada ou de estaca começa a produzir em 2 a 3 anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo. Comece com 40 L e passe a 60–80 L quando a planta for adulta",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 15% areia grossa, 10% casca de pinus fina. Levemente ácido (pH 5,5 a 6,5); não use calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante. Pode perder algumas folhas velhas no começo. A fase termina quando aparecem brotos novos, de ponta verde-prateada, nos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta ganha ramos e folhas. Nessa fase ela cresce devagar, uns 20 a 40 cm no ano. Se aparecerem flores no primeiro ano, arranque-as para a energia ir para a estrutura."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "O arbusto forma a copa, e as primeiras flores costumam surgir entre o 2º e o 3º ano. Os primeiros frutos são poucos, e muitos caem pequenos: isso é normal até a planta amadurecer."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce na primavera, floresce em outubro e novembro, os frutos engordam no verão e amadurecem de março a maio, quando caem sozinhos. Depois da colheita vem uma poda leve, e no inverno a planta fica mais lenta e aguenta geada."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda não alcança o resto do vaso e seca antes: não deixe secar por completo. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a goiabeira-serrana",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. No verão, com frutos no pé, confira a cada 2 dias: a falta de água faz o fruto cair. De junho a agosto, espace para cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a goiabeira-serrana",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (uns 200 g) de húmus de minhoca ou bokashi no vaso de 40 L, longe do tronco, cubra com um pouco de substrato e regue. Da primavera ao verão, acrescente 1 colher de sopa (15 g) de NPK 10-10-10. De junho a agosto, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire folhas de vários ramos e confira os caules. Procure escamas marrons ou brancas coladas (cochonilha), fumagina preta, manchas escuras afundadas nos frutos e furos pequenos na casca com área mole em volta (mosca-das-frutas).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso. Se as raízes estiverem enroladas, passe para um vaso 10 a 20 L maior. Se já estiver no de 80 L, corte 3 a 5 cm da volta do torrão com faca limpa e devolva ao mesmo vaso com substrato novo. Regue bem e deixe à meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A goiabeira-serrana não gosta de ficar enterrada mais funda do que vinha no saquinho.",
+      "acao_requerida": "Plantar no vaso definitivo com o colo (a base do caule) no mesmo nível em que estava na muda, apertar o substrato em volta e regar até escorrer"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de formação",
+      "mensagem": "Uma muda de haste única vira uma vara comprida. Despontar agora faz a planta ramificar e virar um arbusto compacto, próprio para vaso.",
+      "acao_requerida": "Cortar 5 a 10 cm da ponta do ramo principal, logo acima de um par de folhas, a cerca de 50 cm do substrato"
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "Pense no polinizador",
+      "mensagem": "Muitas goiabeiras-serranas produzem pouco sozinhas: as flores precisam de pólen de outra planta. Com um só pé, boa parte dos frutos cai pequena.",
+      "acao_requerida": "Se tiver espaço, colocar uma segunda muda de outra origem (outro viveiro ou variedade) a menos de 10 m. Com um pé só, fazer polinização manual na floração"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mosca-das-frutas (Anastrepha fraterculus)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos na casca do fruto com área mole e escura em volta; larvas brancas na polpa; frutos caem antes da hora",
+      "prevencao_tratamento": "Recolha e descarte, em saco fechado, os frutos caídos ou bichados a cada 2 dias. Pendure armadilha de garrafa PET com suco de fruta e vinagre em dezembro. Ensacar os frutos com saquinho de TNT evita a postura"
+    },
+    {
+      "nome": "Cochonilha (Ceroplastes, Saissetia)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou cerosas brancas presas nos ramos e no verso das folhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia e álcool 70%. Em infestação maior, pulverize óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nos frutos e manchas marrons nas folhas; frutos apodrecem no pé em verão chuvoso",
+      "prevencao_tratamento": "Poda que abra a copa para o ar circular, regar o substrato sem molhar a folhagem e retirar frutos e folhas doentes. Em ataque forte, calda bordalesa depois da colheita"
+    },
+    {
+      "nome": "Podridão de raiz por encharcamento (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo com o substrato úmido; murcha mesmo regada; raízes escuras e moles, com cheiro ruim",
+      "prevencao_tratamento": "Não deixe água parada no prato e regue só com os 5 cm de cima secos. Se já estiver podre, tire do vaso, corte as raízes moles e replante em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Queda de frutos pequenos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos do tamanho de uma azeitona amarelam e caem semanas depois da floração",
+      "prevencao_tratamento": "Costuma ser falta de polinização cruzada ou de água. Faça polinização manual entre flores de plantas diferentes e não deixe o substrato secar por completo de novembro a março"
+    },
+    {
+      "nome": "Clorose por pH alto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amareladas com as nervuras verdes",
+      "prevencao_tratamento": "Evite calcário e água muito calcária. Acidifique com casca de pinus ou borra de café no substrato e aplique quelato de ferro conforme a embalagem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Floração da goiabeira-serrana",
+      "mensagem": "As flores abrem agora. Na natureza, quem poliniza são pássaros que comem as pétalas doces. Em vaso, na cidade, a polinização costuma falhar.",
+      "acao_requerida": "Com um pincel macio, passar o pólen das flores abertas de uma planta para as de outra (ou entre flores do mesmo pé, se só tiver um), a cada 2 dias durante a floração. Não podar nestes meses"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Frutos em formação",
+      "mensagem": "Os frutos estão engordando. Falta de água agora faz cair boa parte deles.",
+      "acao_requerida": "Conferir a umidade do substrato a cada 2 dias, e todo dia nas ondas de calor. Ensacar os frutos com TNT, se houver mosca-das-frutas por perto"
+    },
+    {
+      "meses": [
+        3,
+        4,
+        5
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "O fruto maduro continua verde: o sinal é ele se soltar com um toque leve ou cair sozinho, com a polpa translúcida por dentro.",
+      "acao_requerida": "A cada 2 dias, recolher os frutos caídos e sacudir de leve os ramos. Deixar amolecer 2 a 3 dias em temperatura ambiente e consumir em até uma semana"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Poda leve pós-colheita",
+      "mensagem": "A colheita terminou. As flores do ano que vem nascem nos brotos novos da primavera, então a poda leve deve ser feita agora, não em setembro.",
+      "acao_requerida": "Cortar os ramos secos, cruzados ou voltados para dentro e encurtar em até 1/3 os que passaram da altura desejada. A partir daqui, espaçar a rega e suspender a adubação até agosto"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "planta": {
+    "nome_comum": "Achachairu",
+    "nome_cientifico": "Garcinia humilis",
+    "descricao": "Árvore frutífera da Bolívia, parente do bacupari e do mangostão, de crescimento lento e copa compacta que aceita bem o vaso grande. Dá frutos alaranjados de casca grossa e polpa branca agridoce. Muda enxertada ou de 1 a 2 anos costuma frutificar entre o 3º e o 5º ano no vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cerâmica ou tambor cortado com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; começar com um de 30 a 40 L e passar ao definitivo no segundo ano",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco ou casca de pinus fina, 10% areia grossa; levemente ácido (pH 5,5 a 6,5), sem calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder uma ou duas folhas velhas. Mantenha-a em meia-sombra clara ou só com sol da manhã. A fase termina quando surge a primeira brotação nova, avermelhada, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta solta de dois a quatro fluxos de brotação por ano. Aumente o sol aos poucos, uma hora a mais por semana, até chegar a 6 horas. Folhas brancas ou queimadas indicam que o sol aumentou rápido demais. Como o crescimento é lento, 15 a 30 cm no primeiro ano é normal."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1460,
+      "descricao": "A copa fecha e fica em forma de cone, com ramos laterais em andares. A planta já aguenta sol pleno. As primeiras flores, pequenas, brancas e perfumadas, podem aparecer entre agosto e outubro a partir do 3º ano, e é comum as primeiras caírem sem firmar fruto."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1461,
+      "dia_fim": null,
+      "descricao": "Ano típico: floresce entre agosto e outubro, os frutos crescem na primavera e amadurecem de dezembro a fevereiro. Depois da colheita solta um fluxo de brotação, e no inverno quase para de crescer. No vaso, a planta se mantém com 1,5 a 2,5 m."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o achachairu (adaptação)",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. O torrão da muda nova não pode secar por inteiro.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o achachairu",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato e regue até escorrer pelos furos se estiver seco nessa profundidade. No verão acima de 30 °C, confira a cada 2 dias. No inverno, só quando os 5 cm de cima estiverem secos. As raízes finas morrem se o vaso secar por inteiro, mas nunca deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o achachairu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus de minhoca ou composto e 1 colher de sopa de farinha de ossos pela borda do vaso, longe do tronco. Depois, regue. A partir do 3º ano, acrescente 1 colher de sopa de NPK 10-10-10 (troque por um rico em potássio, como o 4-14-8, de agosto a novembro). Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as brotações novas. Procure carapaças brancas ou marrons coladas nos ramos, teias finas, manchas escuras afundadas e melado pegajoso. Confira também se a base do tronco está firme e seca.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera, tire a planta do vaso, corte 3 a 5 cm das raízes enoveladas nas laterais e no fundo e devolva-a ao mesmo vaso (ou a um 10 a 20 L maior) com substrato novo, no mesmo nível do colo. Regue bem e deixe 2 semanas em meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso",
+      "mensagem": "A muda vem num saquinho ou vaso pequeno, e as raízes precisam de espaço para firmar antes do calor.",
+      "acao_requerida": "Passar para um vaso de 30 a 40 L com o substrato recomendado, sem enterrar o colo nem o enxerto, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Hora de dar mais sol",
+      "mensagem": "A muda já se adaptou. Daqui em diante ela cresce e frutifica melhor com sol direto, mas a transição precisa ser gradual.",
+      "acao_requerida": "Aumentar a exposição ao sol em cerca de 1 hora por semana até chegar a 6 horas diárias"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Passar para o vaso definitivo",
+      "mensagem": "Com um ano, as raízes provavelmente já contornam o vaso. Um vaso apertado segura o crescimento e atrasa a frutificação.",
+      "acao_requerida": "Transplantar para um vaso de pelo menos 60 L (de preferência entre setembro e novembro), mantendo o torrão inteiro"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Primeiras flores podem vir",
+      "mensagem": "A partir de agora, o achachairu pode florescer entre agosto e outubro. É normal as primeiras florações caírem sem dar fruto.",
+      "acao_requerida": "Manter a rega regular e a adubação com potássio na primavera, sem podar os ramos das pontas, onde nascem as flores"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo com o substrato úmido, murcha mesmo após rega, raízes escuras e moles, cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só quando o dedo sentir o substrato seco, manter os furos livres e nunca deixar água no pratinho. Em caso de suspeita, tirar do vaso, cortar as raízes podres e replantar em substrato novo e mais arejado"
+    },
+    {
+      "nome": "Cochonilhas (de carapaça e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos marrons ou tufos brancos nos ramos e no verso das folhas, melado pegajoso e fumagina preta por cima",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia e álcool 70%. Em infestações maiores, pulverizar óleo mineral ou óleo de neem a 1% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Ácaros",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto bronzeado e teias finas no verso, sobretudo no tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos períodos secos. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos na casca de frutos em maturação, polpa amolecida e com larvas",
+      "prevencao_tratamento": "Colher assim que a casca ficar toda laranja, recolher frutos caídos e pendurar armadilha de garrafa PET com suco de fruta fermentado perto da planta"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas em folhas novas e frutos, queima das pontas das brotações em tempo quente e úmido",
+      "prevencao_tratamento": "Evitar molhar a copa ao regar, manter o vaso arejado e cortar as partes afetadas. Se voltar, usar calda bordalesa na brotação"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrons e secas no meio das folhas voltadas para o sol, logo após mudar a planta de lugar",
+      "prevencao_tratamento": "Aumentar o sol aos poucos, uma hora por semana. As folhas queimadas não se recuperam, mas as novas já brotam adaptadas"
+    },
+    {
+      "nome": "Clorose por pH alto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes, crescimento travado",
+      "prevencao_tratamento": "Evitar calcário e água muito alcalina, adubar com matéria orgânica e aplicar ferro quelatado conforme a embalagem"
+    },
+    {
+      "nome": "Queda de flores e frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores e frutos pequenos caem em massa na primavera",
+      "prevencao_tratamento": "Não deixar o vaso secar da floração até os frutos engrossarem e evitar mudar a planta de lugar nesse período. Nas primeiras florações, alguma queda é normal"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O achachairu é tropical: abaixo de 5 °C as folhas queimam, e geada pode matar a planta nova.",
+      "acao_requerida": "Nas noites com previsão abaixo de 8 °C, levar o vaso para perto de uma parede ou para dentro, ou cobrir a copa com manta (TNT). Reduzir a rega enquanto o frio durar"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Floração: rega sem falhas",
+      "mensagem": "É a época das flores, e nela a falta de água ou o vento forte fazem as flores e os frutinhos caírem.",
+      "acao_requerida": "Conferir a umidade do substrato a cada 2 dias, não deixar o vaso secar e não trocar a planta de lugar até os frutos engrossarem"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "Os frutos amadurecem no pé: estão prontos quando a casca fica toda laranja e cede um pouco ao apertar. Colhidos verdes, não adoçam.",
+      "acao_requerida": "Passar pela planta a cada 2 ou 3 dias, colher os frutos totalmente laranja cortando o cabinho com tesoura e recolher os caídos"
+    },
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Poda de limpeza após a colheita",
+      "mensagem": "Com a colheita acabada, a planta vai soltar um fluxo de brotação. É a hora de limpar a copa sem perder as flores do ano seguinte.",
+      "acao_requerida": "Cortar ramos secos, doentes, cruzados ou que saem abaixo do enxerto. Não encurtar os ramos saudáveis das pontas, onde nascem as flores"
+    }
+  ]
+}

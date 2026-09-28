@@ -1,0 +1,193 @@
+{
+  "planta": {
+    "nome_comum": "Dinheiro-em-penca",
+    "nome_cientifico": "Callisia repens",
+    "descricao": "Planta rasteira e suculenta, da família das trapoerabas (Commelinaceae), de folhinhas carnudas que arroxeiam no verso quando pegam sol. Cresce rápido e cobre o vaso ou pende de cestos suspensos. Pega com facilidade por estaca, e por isso é a forma de começar mais comum. A seiva pode irritar a pele de cães e gatos, então deixe o vaso fora do alcance deles.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso raso ou cesto suspenso com 15 a 20 cm de diâmetro e 10 a 12 cm de profundidade, com furos no fundo. As raízes são superficiais, e vaso fundo demais acumula água embaixo",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa ou perlita, 20% húmus de minhoca; deve escorrer a água em poucos segundos",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Enterre 3 a 5 estacas de 5 a 8 cm (sem as folhas da parte enterrada) a 2 cm de profundidade, juntas no centro do vaso, e deixe o vaso em luz clara sem sol forte. Entre o 7º e o 14º dia surgem raízes nos nós. A fase acaba quando as estacas resistem a um puxão leve e começam a soltar folhas novas na ponta."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Os ramos se alongam e soltam brotos laterais que se espalham pelo substrato. Aos poucos, leve o vaso para um lugar com sol da manhã: com sol, o verso das folhas arroxeia e os entrenós ficam curtos. A fase acaba quando a planta cobre quase toda a superfície do vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Uma touceira densa que transborda pela borda do vaso. Cresce de setembro a março e quase para no inverno. Às vezes solta florzinhas brancas e miúdas, sem valor ornamental. Com o tempo o centro fica ralo e lenhoso: as podas regulares e a renovação por estacas a cada dois anos mantêm a planta cheia."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar as estacas",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Toque a superfície do substrato. Se o primeiro centímetro estiver seco, regue devagar até escorrer pelos furos. Sem raiz, a estaca não aguenta substrato seco, mas também apodrece em substrato encharcado: esvazie o pratinho depois da rega.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o dinheiro-em-penca",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato e só regue se estiver seco, até escorrer pelos furos. Não deixe água no pratinho. No verão quente, em cesto suspenso, pode secar em 2 a 3 dias. De junho a agosto, espace para cada 7 a 10 dias. As folhas carnudas guardam água: murchas e enrugadas pedem rega, moles e translúcidas indicam excesso.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o dinheiro-em-penca",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo NPK 10-10-10 na metade da dose indicada na embalagem (cerca de 1 g por litro) e regue com essa solução o substrato já úmido. De maio a agosto, pule a adubação: a planta está quase parada e o adubo acumula sal nas raízes. Excesso de adubo deixa a planta verde e mole, sem o roxo das folhas.",
+      "critica": false
+    },
+    {
+      "id": "poda_limpeza",
+      "titulo": "Podar e adensar",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte os ramos compridos e ralos logo acima de um nó, e tire as folhas secas do centro. Aproveite os pedaços de 5 a 8 cm como estacas: enterre-os nas falhas do mesmo vaso para a touceira ficar cheia.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a touceira",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos e olhe o centro da touceira e a base dos caules: procure tufos brancos de algodão (cochonilha), insetos verdes nas pontas (pulgão), teias finas (ácaro) e caules moles e escuros rente ao substrato (podridão).",
+      "critica": false
+    },
+    {
+      "id": "renovar_vaso",
+      "titulo": "Renovar a planta por estacas",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Depois de dois anos o substrato se decompõe e o centro da touceira fica lenhoso. De preferência na primavera, corte estacas de 5 a 8 cm das pontas mais bonitas, descarte a planta velha e o substrato, e replante as estacas em substrato novo, como no começo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "As estacas enraizaram?",
+      "mensagem": "A essa altura, a maioria das estacas já soltou raízes nos nós enterrados.",
+      "acao_requerida": "Puxar cada estaca de leve: as que resistem já enraizaram. Troque as que saírem soltas e com a base mole e escura por estacas novas"
+    },
+    {
+      "dia_disparo": 22,
+      "titulo": "Hora de pegar mais luz",
+      "mensagem": "As estacas enraizadas já aguentam mais luz. Sem sol direto, a planta estica, fica rala e perde o roxo das folhas.",
+      "acao_requerida": "Mudar o vaso para um lugar com 2 a 3 horas de sol da manhã, evitando o sol forte da tarde"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do caule e da raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Caules moles, escuros e translúcidos rente ao substrato; a touceira desmancha no centro e cheira a mofo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm e nunca deixar água no pratinho. Corte as partes sadias como estacas e replante em substrato novo; descarte o resto e o substrato velho"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de algodão entre as folhas e na base dos ramos; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova os tufos com cotonete embebido em álcool 70%. Se persistir, pulverize óleo de neem a 0,5% com algumas gotas de detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas novas; brotos retorcidos",
+      "prevencao_tratamento": "Corte as pontas mais atacadas e lave o restante com um jato fraco de água. Se voltar, aplique óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas entre os ramos, mais comum em lugar quente e seco",
+      "prevencao_tratamento": "Lave a planta com água no chuveiro e aumente a umidade ao redor. Se persistir, óleo de neem a 0,5% a cada 5 dias, atingindo o verso das folhas"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e finos com folhas espaçadas, pequenas e verde-claras, sem nenhum roxo",
+      "prevencao_tratamento": "Falta de luz. Leve o vaso para um lugar com sol da manhã e pode os ramos esticados para a planta rebrotar compacta"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas esbranquiçadas ou marrons e secas, principalmente no topo, depois de dias de sol forte à tarde",
+      "prevencao_tratamento": "Proteger do sol das 11h às 16h, sobretudo no verão. Retire as folhas queimadas: elas não se recuperam, mas a planta rebrota"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "No frio, o dinheiro-em-penca quase para de crescer e o substrato demora mais a secar. É a época em que ele mais apodrece por excesso de rega, e abaixo de 5 °C as folhas carnudas queimam.",
+      "acao_requerida": "Regar só com o substrato seco a 3 cm, suspender a adubação e, nas noites abaixo de 8 °C, levar o vaso para dentro ou para perto de uma parede abrigada"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com o sol da tarde",
+      "mensagem": "Com o calor, o cesto suspenso seca muito rápido e o sol forte da tarde queima as folhas.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e deixar o vaso onde pegue só o sol da manhã"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "planta": {
+    "nome_comum": "Mamilária",
+    "nome_cientifico": "Mammillaria spp. (ex.: M. elongata, M. gracilis, M. prolifera)",
+    "descricao": "Gênero de cactos pequenos e globosos ou em touceira, com espinhos finos e uma coroa de flores miúdas em volta do topo no fim do inverno e na primavera. Este guia vale para as espécies mais vendidas em vaso no Brasil, que vêm como planta adulta. É um dos cactos mais fáceis para começar, desde que tenha sol e pouca água.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro raso, de 10 a 14 cm de diâmetro e 8 a 10 cm de altura, só 2 a 3 cm maior que a planta, com furo no fundo; o barro deixa o substrato secar mais rápido que o plástico",
+    "volume_minimo_litros": 0.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% substrato para cactos (ou terra vegetal peneirada), 30% areia grossa lavada, 30% perlita ou pedrisco fino; cubra a superfície com uma camada de 1 cm de pedrisco para o colo da planta não ficar em contato com terra úmida",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "A planta troca de vaso e de substrato e fica a seco na primeira semana para as raízes cortadas cicatrizarem. Mantenha em luz clara com só sol da manhã: plantas de loja costumam vir de estufa e queimam se forem direto para o sol forte. A fase termina quando o corpo continua firme e sem manchas após a primeira rega."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 90,
+      "descricao": "Aumente o sol aos poucos até chegar a 6 horas diretas. Raízes novas firmam a planta no vaso: ela deixa de balançar quando empurrada de leve. Sinal de sol demais é um tom avermelhado ou bronzeado; mancha branca ou marrom seca é queimadura. Sinal de sol de menos é o topo afinando e esticando na direção da janela."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Cresce e produz filhotes na primavera e no verão, quando bebe mais água. No inverno entra em repouso: rega bem espaçada e local claro e fresco, o que induz a coroa de flores que abre entre agosto e outubro. Depois das flores podem vir pequenos frutos vermelhos com sementes. Filhotes que se soltam fácil podem ser destacados e plantados em vaso próprio depois de 3 dias secando."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a mamilária",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de churrasco até o fundo do vaso: se sair seco e limpo, regue devagar pela borda, sem molhar o corpo da planta, até escorrer pelo furo, e esvazie o pratinho. Se sair úmido, não regue. De setembro a abril o intervalo fica entre 7 e 12 dias; de junho a agosto, regue só a cada 3 ou 4 semanas e pouco; abaixo de 10 °C, não regue.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Procurar cochonilhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com uma lupa ou a câmera do celular, olhe entre os tubérculos e na base da planta procurando tufos brancos parecidos com algodão, teias finas ou pontinhos vermelhos. Confira também se o corpo está firme; parte mole ou escura na base é sinal de podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Prefira fazer entre setembro e novembro. Com o substrato seco, segure a planta com uma tira de jornal dobrada em volta do corpo, tire o substrato velho, corte raízes secas ou escuras e plante no mesmo tipo de mistura, em vaso 2 cm maior se a touceira encostar na borda. Espere 7 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Troque o vaso de loja",
+      "mensagem": "Mamilárias costumam vir em vasinho de plástico com turfa, que segura água demais e apodrece a raiz.",
+      "acao_requerida": "Com o torrão seco, tirar a turfa, conferir se as raízes estão claras e firmes, plantar no substrato mineral indicado sem enterrar o colo e só regar depois de 7 dias"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de dar mais sol",
+      "mensagem": "A planta já teve tempo de se acostumar ao vaso novo; agora precisa de sol direto para não esticar, mas a mudança tem que ser gradual.",
+      "acao_requerida": "Aumentar o sol direto em cerca de 1 hora a cada 3 dias até chegar a 6 horas, começando pelo sol da manhã"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e da raiz (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Base mole, translúcida ou escura, planta tombando ou se soltando do substrato, cheiro de podre; costuma aparecer após regas seguidas em substrato que não seca",
+      "prevencao_tratamento": "Só regar com o substrato totalmente seco, nunca deixar água no pratinho e usar substrato mineral. Se pegou, tire a planta, corte com faca limpa toda a parte escura até aparecer tecido verde-claro sadio, deixe o corte secar 5 a 7 dias à sombra e replante em substrato seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta (Pseudococcidae)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão entre os tubérculos e na base, crescimento parado",
+      "prevencao_tratamento": "Retire com cotonete ou pincel embebido em álcool 70%; repita a cada 7 dias até sumir. Isole a planta para não passar para outras"
+    },
+    {
+      "nome": "Cochonilha-de-raiz (Rhizoecus)",
+      "tipo": "PRAGA",
+      "sintomas": "Planta murcha e parada mesmo com rega certa; ao tirar do vaso, pó branco e ceroso nas raízes e na parede do torrão",
+      "prevencao_tratamento": "Tire todo o substrato, lave as raízes em água corrente, mergulhe-as 10 minutos em água com detergente neutro (1 colher de chá por litro), deixe secar 3 dias e replante em substrato e vaso novos"
+    },
+    {
+      "nome": "Ácaro-vermelho (Tetranychidae)",
+      "tipo": "PRAGA",
+      "sintomas": "Manchas ferrugem ou acinzentadas no corpo, pontinhos vermelhos que andam e teias finas entre os espinhos; comum em tempo quente e seco",
+      "prevencao_tratamento": "Borrife água no corpo de manhã para quebrar as teias; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, 3 aplicações, longe do sol forte"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Topo afinando, verde-claro e crescendo torto em direção à luz; espinhos mais espaçados; a planta não floresce",
+      "prevencao_tratamento": "Dar pelo menos 4 horas de sol direto, aumentando aos poucos. A parte esticada não volta ao formato, mas o crescimento novo sai compacto"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Mancha branca, amarelada ou marrom seca no lado virado para o sol, surgida logo após mudança de lugar",
+      "prevencao_tratamento": "Aclimatar ao sol aos poucos e, no verão acima de 35 °C, dar sombra leve à tarde. A cicatriz fica, mas não se espalha"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Início do repouso de inverno",
+      "mensagem": "Com frio e dias curtos a mamilária quase não cresce. Pouca água e local fresco e claro agora são o que faz a coroa de flores aparecer no fim do inverno.",
+      "acao_requerida": "Espaçar a rega para a cada 3 ou 4 semanas, suspender o adubo e manter a planta no lugar mais claro da casa, protegida de geada e de chuva"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Adubar a mamilária",
+      "mensagem": "Na estação de crescimento um pouco de adubo ajuda a formar filhotes e flores. O excesso deixa a planta mole e sujeita a podridão.",
+      "acao_requerida": "Na próxima rega, usar adubo líquido para cactos ou NPK com pouco nitrogênio (ex.: 4-14-8) na metade da dose do rótulo, com o substrato já levemente úmido"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger das chuvas de verão",
+      "mensagem": "Semanas de chuva seguida mantêm o substrato encharcado e são a principal causa de podridão em cactos ao ar livre.",
+      "acao_requerida": "Deixar o vaso sob beiral ou cobertura, com sol, e esvaziar o pratinho depois de cada chuva"
+    }
+  ]
+}

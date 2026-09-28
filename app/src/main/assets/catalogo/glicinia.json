@@ -1,0 +1,223 @@
+{
+  "planta": {
+    "nome_comum": "Glicínia",
+    "nome_cientifico": "Wisteria sinensis",
+    "descricao": "Trepadeira lenhosa e caducifólia, famosa pelos cachos pendentes de flores lilás e perfumadas que se abrem de setembro a outubro, antes ou junto com as folhas. Em vaso, pede estrutura firme e duas podas por ano para florir. Compre muda enxertada ou de estaca, que floresce em 2 a 3 anos (a de semente pode levar mais de 10). Sementes e vagens são tóxicas para crianças e pets.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de barro, cimento ou fibra com no mínimo 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo. Precisa de treliça, pérgola ou tutor robusto de pelo menos 1,8 m bem fixado, porque o tronco fica pesado e o vaso tomba com o vento.",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% perlita; pH entre 6 e 7, sem calcário em excesso (solo alcalino amarela as folhas)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está refazendo raízes no vaso novo. Pode perder algumas folhas ou ficar parada; é normal. Brotos novos na ponta dos ramos indicam que ela pegou. Não aduba e não poda nesta fase."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Na estação quente a planta solta ramos longos e finos que se enrolam em sentido horário. Escolha um ramo forte como tronco principal e amarre-o na estrutura com fita macia a cada 20 cm, conforme cresce. No inverno perde as folhas: galhos secos por fora mas verdes ao raspar a casca estão só dormentes."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Estrutura",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "O tronco engrossa e lenhifica e você define os braços laterais que vão carregar as flores. As podas de verão e inverno transformam ramos longos em esporões curtos, onde nascem os botões. Mudas enxertadas costumam dar os primeiros cachos no 2º ou 3º ano; os botões florais são gordos e arredondados, os de folha são finos e pontudos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: dorme de junho a agosto sem folhas; floresce em setembro e outubro; brota com força de novembro a março, quando os ramos longos precisam ser encurtados; poda de inverno em julho. A cada dois anos precisa de substrato renovado e poda de raiz, porque o vaso limita o crescimento."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a glicínia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos do fundo. Com a raiz ainda pequena, secar de vez faz a muda perder os brotos. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a glicínia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 L num vaso de 50 L). Acima de 30 °C, confira a cada 2 dias. Na dormência (sem folhas, junho a agosto), só regue quando os 5 cm estiverem secos, o que costuma levar uma semana. Deixar secar com botões formados (agosto a outubro) derruba os cachos antes de abrir.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as pontas dos brotos novos e o verso das folhas: procure pulgões agrupados, carapaças brancas ou marrons presas aos ramos, pó branco nas folhas e folhas amarelas com nervuras verdes. Confira também se saem brotos da base, abaixo do enxerto, e corte-os rente.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Se estiver entre junho e agosto (dormência): tire a planta do vaso, corte 5 cm de raiz em volta e no fundo do torrão com serrote ou faca, e replante no mesmo vaso com substrato novo. Em outra época, só raspe os 5 cm de cima do substrato e reponha com composto novo, deixando a poda de raiz para o próximo inverno.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Instale a estrutura de apoio",
+      "mensagem": "A glicínia cresce metros por ano e fica pesada. A estrutura precisa estar firme antes dos ramos chegarem nela.",
+      "acao_requerida": "Fixar treliça, tutor ou pérgola robusta de pelo menos 1,8 m e amarrar o ramo principal nela com fita macia, sem apertar"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Escolha o tronco principal",
+      "mensagem": "Com a muda pegando, vários ramos disputam a subida. Um tronco só, bem conduzido, forma uma planta mais forte e florífera.",
+      "acao_requerida": "Deixar o ramo mais grosso e reto como líder, amarrado na estrutura, e encurtar os concorrentes para 2 ou 3 folhas"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Comece a adubar",
+      "mensagem": "As raízes já se estabeleceram e a planta pode receber adubo nas épocas de crescimento.",
+      "acao_requerida": "Aplicar 2 colheres de sopa de NPK 4-14-8 espalhadas na borda do vaso e regar em seguida (se for junho ou julho, espere agosto)"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Ainda sem flores?",
+      "mensagem": "Muda enxertada já deveria ter florescido. As causas mais comuns são pouco sol, adubo rico em nitrogênio e poda de inverno que cortou os botões gordos.",
+      "acao_requerida": "Conferir se o vaso recebe 6 horas de sol direto, trocar o adubo por um rico em fósforo e potássio e, na próxima poda de inverno, preservar os esporões curtos com botões arredondados"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem; raízes escuras, moles e com cheiro ruim; base do tronco escurecida",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter a drenagem livre. Se aparecer, tire do vaso, corte as raízes podres e replante em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos brotos; folhas novas enroladas e pegajosas, às vezes com formigas",
+      "prevencao_tratamento": "Jato forte de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, marrons ou algodoadas presas aos ramos e na junção das folhas; planta enfraquecida e com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool; em infestação grande, óleo mineral a 1% no inverno, com a planta sem folhas"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que depois amarelam e caem, mais no fim do verão",
+      "prevencao_tratamento": "Evite molhar as folhas e deixe a copa arejada com a poda de verão; pulverize bicarbonato de sódio (1 colher de chá por litro, com gota de detergente) a cada 7 dias"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes",
+      "prevencao_tratamento": "Substrato alcalino ou calcário em excesso trava o ferro. Aplique quelato de ferro conforme a embalagem e use composto orgânico na renovação do substrato"
+    },
+    {
+      "nome": "Queda de botões florais",
+      "tipo": "DISTURBIO",
+      "sintomas": "Cachos em formação secam e caem antes de abrir, entre agosto e outubro",
+      "prevencao_tratamento": "Causada por falta de água na formação dos botões ou geada tardia. Não deixe o substrato secar nessa época e proteja o vaso em noites abaixo de 0 °C"
+    },
+    {
+      "nome": "Excesso de folhas e nenhuma flor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta vigorosa, com ramos longos e muita folha, mas sem cachos",
+      "prevencao_tratamento": "Evite adubo rico em nitrogênio, garanta ao menos 6 horas de sol direto e faça as duas podas: a de verão encurta os ramos longos e a de inverno preserva os esporões com botões"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de inverno da glicínia",
+      "mensagem": "Sem folhas, é fácil ver a estrutura e distinguir botões de flor (gordos e arredondados) dos de folha (finos). Esta poda define a floração da primavera.",
+      "acao_requerida": "Encurtar os ramos laterais podados no verão para 2 ou 3 gemas a partir da base, preservando os botões gordos, e retirar ramos secos, cruzados e brotos abaixo do enxerto"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Adubação antes da floração",
+      "mensagem": "Os botões estão inchando. Fósforo e potássio agora ajudam os cachos a abrir cheios.",
+      "acao_requerida": "Espalhar 3 colheres de sopa de farinha de ossos ou 2 de NPK 4-14-8 na borda do vaso e regar em seguida"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Glicínia em floração",
+      "mensagem": "É a época dos cachos. Secura ou mudança brusca de lugar agora derruba as flores.",
+      "acao_requerida": "Manter a rega em dia sem deixar o substrato secar, não mudar o vaso de lugar e cortar os cachos murchos antes de formarem vagens (tóxicas)"
+    },
+    {
+      "meses": [
+        12,
+        2
+      ],
+      "titulo": "Poda de verão da glicínia",
+      "mensagem": "A planta solta ramos longos que roubam energia da floração e embolam a estrutura.",
+      "acao_requerida": "Cortar os ramos longos que não serão usados na estrutura, deixando 5 ou 6 folhas (cerca de 30 cm) a partir do ramo principal, e amarrar na estrutura os que vão formar braços"
+    },
+    {
+      "meses": [
+        11,
+        1,
+        3
+      ],
+      "titulo": "Adubação de crescimento",
+      "mensagem": "A planta está em plena brotação e consome nutrientes rápido no vaso.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de NPK 4-14-8 ou 1 litro de húmus de minhoca na borda do vaso e regar em seguida; nada de adubo rico em nitrogênio, que faz folha e não flor"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Dormência: reduza a rega",
+      "mensagem": "A glicínia perdeu as folhas e está descansando. Com pouca evaporação, o excesso de água apodrece as raízes.",
+      "acao_requerida": "Espaçar as regas, regando só quando o substrato estiver seco a 5 cm, e não adubar até agosto"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Ipê-amarelo-da-serra",
+    "nome_cientifico": "Handroanthus albus",
+    "descricao": "Árvore nativa da Mata Atlântica de altitude e das serras do Sul e Sudeste. Perde as folhas no inverno e se cobre de flores amarelo-ouro entre agosto e setembro. Em vaso grande fica com 3 a 5 m e tolera geada leve. Uma muda de viveiro costuma levar de 3 a 6 anos para dar a primeira florada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de cerâmica, cimento ou plástico grosso, com pelo menos 50 cm de profundidade e 50 cm de diâmetro, vários furos no fundo e pés que o afastem do piso. Ideal: 100 L ou mais para a árvore adulta",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 25% areia grossa lavada, 25% composto orgânico ou húmus de minhoca, 10% perlita ou casca de pinus fina. O substrato precisa drenar rápido, porque a raiz apodrece com água parada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante. Pode perder algumas folhas mais velhas nas duas primeiras semanas, e isso é normal. A fase termina quando surgem folhas novas, verde-claras e compostas de 5 folíolos, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o tronco começa a engrossar. A muda cresce em surtos na primavera e no verão. No primeiro inverno, espere que ela fique quase ou totalmente sem folhas; o ramo continua verde e flexível por dentro se você raspar a casca com a unha."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Árvore Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "O ano típico: as folhas amarelam e caem entre maio e julho. Nos anos em que a árvore já tem idade para florir, os cachos de flores amarelas abrem em agosto e setembro, com os galhos ainda sem folhas, e duram de 1 a 2 semanas. Depois vêm as folhas novas e as vagens, que abrem e soltam sementes aladas em outubro e novembro. O crescimento forte vai da primavera ao fim do verão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do caule. Se estiver seco, regue devagar até escorrer pelos furos do fundo. Com a raiz ainda sem pegar no substrato novo, deixar o torrão secar por inteiro mata a muda. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o ipê",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco nessa profundidade, regue até escorrer pelo fundo, cerca de 5 L num vaso de 60 L. Se ainda estiver úmido, não regue. No inverno, com a árvore sem folhas, ela bebe bem menos: regue só quando os 5 cm estiverem secos, o que costuma levar de 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o ipê",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 litro de húmus de minhoca) por vaso de 60 L, a 10 cm do tronco, afofe a superfície com um garfo e regue em seguida. De junho a agosto, com a árvore sem folhas, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pó alaranjado de ferrugem, cochonilhas brancas ou marrons nos ramos e folhas recortadas em meia-lua, sinal de formiga cortadeira. Olhe também a base do tronco, buscando serragem ou galerias.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e checar as raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro ou outubro, depois da florada. Tire a árvore do vaso. Se as raízes rodeiam o torrão, passe para um vaso 20 a 30% maior. Se ela já está no vaso máximo, corte 1/5 das raízes da borda e do fundo com tesoura limpa, troque 1/3 do substrato por mistura nova e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A muda de viveiro costuma vir num saco pequeno, com a raiz apertada. Plantar no vaso definitivo com a raiz enovelada trava o crescimento por anos.",
+      "acao_requerida": "Desfazer com os dedos as raízes que rodeiam o torrão, plantar na mesma altura em que estava no saco, sem enterrar o colo, e fincar um tutor de bambu amarrado ao tronco em forma de 8 se a muda tiver mais de 80 cm"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Limpar o tronco",
+      "mensagem": "Brotos laterais na parte baixa do tronco roubam força do broto principal e deixam a árvore torta e arbustiva.",
+      "acao_requerida": "Cortar rente ao tronco os brotos que saem abaixo de um terço da altura da muda, com tesoura limpa, deixando intacta a ponta principal"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Tirar o tutor",
+      "mensagem": "Com um ano de vaso, o tronco já deve se sustentar sozinho. O amarrio deixado por muito tempo estrangula a casca.",
+      "acao_requerida": "Soltar o amarrio e retirar o tutor. Se a árvore ainda tombar com o vento, amarrar de novo com folga por mais 6 meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem fora do inverno. As raízes ficam escuras, moles e com cheiro ruim, e a base do tronco pode escurecer",
+      "prevencao_tratamento": "Regar só com os 5 cm de cima secos, manter os furos desobstruídos e o vaso fora de pratinho com água. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e arenoso"
+    },
+    {
+      "nome": "Ferrugem-do-ipê (Prospodium spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas de pó alaranjado ou marrom no verso das folhas, com manchas amarelas na face de cima; as folhas atacadas secam e caem antes da hora",
+      "prevencao_tratamento": "Recolher e descartar as folhas caídas, evitar molhar a copa ao regar e manter o vaso em local ventilado. Em ataque forte, fungicida cúprico (calda bordalesa) nas folhas a cada 10 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, marrons ou algodonosas grudadas nos ramos e no verso das folhas; folhas pegajosas e, às vezes, com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%. Em infestação maior, óleo mineral ou óleo de neem a 1% com detergente neutro, no fim da tarde, a cada 7 dias por 3 aplicações"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas recortadas em meia-lua e desfolha rápida, às vezes em uma noite só; trilha de formigas subindo pelo tronco",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e tratar com isca granulada própria longe do vaso; enquanto isso, passar uma faixa de graxa ou fita adesiva de cola em volta do vaso ou do tronco"
+    },
+    {
+      "nome": "Raiz enovelada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Crescimento para, folhas pequenas e amareladas, a água escorre direto pelo fundo sem molhar o torrão e aparecem raízes saindo pelos furos",
+      "prevencao_tratamento": "Renovar o substrato e podar as raízes a cada 2 anos. Quando a água não penetrar, mergulhar o vaso num balde por 20 minutos até o torrão se reidratar"
+    },
+    {
+      "nome": "Queimadura de sol na muda",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas, marrons ou esbranquiçadas no meio das folhas voltadas para o sol, logo depois da chegada da muda",
+      "prevencao_tratamento": "Muda criada em viveiro sombreado precisa de 1 a 2 semanas de sol da manhã antes do sol pleno. As folhas queimadas não se recuperam, mas as novas nascem adaptadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Queda de folhas do ipê",
+      "mensagem": "O ipê é caducifólio: amarelar e perder as folhas agora é o repouso de inverno, não doença. É ele que prepara a florada de agosto.",
+      "acao_requerida": "Espaçar a rega para quando os 5 cm de cima do substrato estiverem secos (cerca de 7 a 10 dias), suspender o adubo e recolher as folhas caídas"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Época da florada",
+      "mensagem": "Se a árvore já tem idade para florir, os botões aparecem nas pontas dos galhos sem folhas. Faltar água agora faz os botões caírem antes de abrir.",
+      "acao_requerida": "Voltar a regar a cada 4 a 5 dias, sempre que os 5 cm de cima estiverem secos, e não podar nenhum galho até a florada acabar"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Com a florada passada e as folhas novas brotando, é a época certa para podar: os cortes fecham rápido e a poda não tira os botões do ano seguinte.",
+      "acao_requerida": "Cortar galhos secos, cruzados ou que crescem para dentro da copa, rente à inserção, e encurtar em até 1/3 os que desequilibram a árvore. Se não quiser as sementes, tirar as vagens verdes"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte no vaso",
+      "mensagem": "Em pleno crescimento e sob sol forte, o vaso seca bem mais rápido, principalmente se for escuro ou pequeno para o tamanho da árvore.",
+      "acao_requerida": "Conferir o substrato a cada 2 a 3 dias nas semanas acima de 30 °C e cobrir a superfície com 3 cm de casca de pinus ou palha para segurar a umidade"
+    }
+  ]
+}

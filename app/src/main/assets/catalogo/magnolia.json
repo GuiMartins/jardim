@@ -1,0 +1,166 @@
+{
+  "planta": {
+    "nome_comum": "Magnólia",
+    "nome_cientifico": "Magnolia grandiflora",
+    "descricao": "Árvore de folhas grandes, brilhantes e perenes, famosa pelas flores brancas de até 25 cm e perfume de limão, que abrem do fim da primavera ao verão. Em vaso fica bem menor que no chão (2 a 3 m) e dá flor mais cedo se a muda for enxertada ou de estaca: de 2 a 4 anos, contra 10 ou mais anos quando nasce de semente.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 50 cm de profundidade e 50 cm de diâmetro, com vários furos no fundo. A raiz é carnosa e larga, por isso o vaso precisa ser mais largo que estreito e fundo",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina, 10% areia grossa; levemente ácido (pH 5,5 a 6,5), sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está refazendo as raízes no vaso novo. É normal cair uma ou outra folha velha amarela; folhas novas murchas ou pretas indicam rega errada. A fase termina quando surge um broto novo na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A planta ocupa o vaso e solta um ou dois surtos de folhas por estação quente, cada um com 10 a 30 cm de ramo novo. Pode ainda não florescer. Folhas grandes, verde-escuras e brilhantes mostram que substrato e luz estão certos; folhas pálidas com nervuras verdes indicam substrato alcalino."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação forte de setembro a novembro, botões grandes e peludos na ponta dos ramos e flores de outubro a fevereiro, cada uma durando 2 a 3 dias. Depois vêm frutos em cone com sementes vermelhas. No inverno a planta desacelera e bebe menos, mas não perde a folhagem. Folhas velhas caem aos poucos o ano todo, sobretudo na primavera; isso é normal."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a magnólia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do torrão da muda; se estiver seco, regue devagar até escorrer pelos furos. Se ainda estiver úmido, espere. Raiz nova sem firmeza seca rápido, mas encharcada apodrece. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a magnólia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco nessa profundidade, regue até escorrer pelos furos (cerca de 8 a 10 L num vaso de 60 L). Não deixe água parada no pratinho. No calor forte e durante a floração, confira a cada 2 dias; no inverno, a rega costuma ficar a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire algumas folhas e percorra os ramos com o dedo: procure escamas marrons grudadas no caule, fumagina (pó preto) nas folhas, manchas marrons com borda escura e folhas amarelas com nervuras verdes.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso e veja as raízes. Se estiverem dando voltas no fundo, passe para um vaso 10 a 15 cm mais largo. Se o vaso já estiver no tamanho máximo, corte 5 cm das raízes das laterais e do fundo e complete com substrato novo. Mexa o mínimo possível: a raiz da magnólia é sensível. Se cair no auge do verão ou em plena floração, deixe para o fim do inverno (agosto).",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar definitivo",
+      "mensagem": "A magnólia sente ser mudada de posição e ter a raiz mexida: pode derrubar botões e folhas. Um vaso de 60 L com terra molhada passa de 80 kg.",
+      "acao_requerida": "Deixar o vaso já no lugar onde vai ficar, com pelo menos 4 horas de sol direto e protegido de vento forte, que rasga as folhas; se precisar mover depois, usar base com rodinhas"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora da cobertura morta",
+      "mensagem": "As raízes da magnólia ficam perto da superfície e sofrem com o substrato quente e seco no sol.",
+      "acao_requerida": "Cobrir o substrato com 3 cm de casca de pinus ou folhas secas, deixando 5 cm livres em volta do tronco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem; raízes escuras, moles e com cheiro ruim; base do tronco escurecida",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter os furos livres. Se aparecer, tirar do vaso, cortar as raízes podres, replantar em substrato novo e seco e regar pouco até brotar de novo"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou esbranquiçadas grudadas nos ramos e no verso das folhas; folhas pegajosas e cobertas de fumagina preta; ramos enfraquecidos",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool; em infestação grande, pulverizar óleo mineral ou óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Mancha foliar (Phyllosticta, Pseudocercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas, redondas ou irregulares, às vezes com borda amarela, nas folhas mais velhas",
+      "prevencao_tratamento": "Regar o substrato, não as folhas; retirar e descartar as folhas muito atacadas e as caídas no vaso; em ataque forte, fungicida cúprico conforme o rótulo"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelo-claras com as nervuras continuando verdes; crescimento fraco",
+      "prevencao_tratamento": "Substrato alcalino (calcário, cimento do vaso, água muito dura) trava o ferro. Usar substrato ácido com casca de pinus, adubo para plantas acidófilas e, se preciso, ferro quelatado na dose do rótulo"
+    },
+    {
+      "nome": "Queimadura das bordas das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas e pontas das folhas secas e marrons, principalmente no verão ou do lado do vento",
+      "prevencao_tratamento": "Sinal de falta de água, vento forte ou excesso de adubo. Conferir a rega com mais frequência no calor, proteger do vento e nunca adubar com o substrato seco"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        12
+      ],
+      "titulo": "Adubar a magnólia",
+      "mensagem": "Na primavera e no verão a magnólia brota e floresce, e o vaso já não tem nutrientes suficientes para isso.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de adubo de liberação lenta (tipo osmocote 14-14-14) ou 1 xícara de húmus com 1 colher de farinha de ossos na superfície de um vaso de 60 L e regar em seguida. Pular se a planta foi plantada há menos de 30 dias"
+    },
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Limpeza depois da floração",
+      "mensagem": "A floração está no fim. Podar agora não tira os botões do próximo ano, que se formam no fim do inverno e na primavera.",
+      "acao_requerida": "Cortar ramos secos, quebrados ou cruzados e encurtar só os que desequilibram a copa, sempre logo acima de uma folha; nunca podar pesado"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Menos água no inverno",
+      "mensagem": "Com frio e dias curtos a magnólia quase para de crescer, e o substrato demora mais para secar.",
+      "acao_requerida": "Espaçar as regas para quando o substrato estiver seco a 5 cm, em geral a cada 5 a 7 dias, e voltar ao ritmo normal quando surgirem os brotos em setembro"
+    }
+  ]
+}

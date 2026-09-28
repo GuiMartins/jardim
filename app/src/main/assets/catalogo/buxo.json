@@ -1,0 +1,175 @@
+{
+  "planta": {
+    "nome_comum": "Buxo",
+    "nome_cientifico": "Buxus sempervirens",
+    "descricao": "Arbusto perene de folhas pequenas, duras e brilhantes, clássico da topiaria: aceita podas frequentes e vira bola, cone ou cerca viva baixa. Cresce devagar (5 a 15 cm por ano) e vive décadas em vaso se não encharcar nem secar por completo.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo; evite vaso preto fino no sol, que esquenta a raiz",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa lavada ou perlita, mais 1 colher de sopa de calcário dolomítico por 10 L (o buxo prefere pH neutro a levemente alcalino)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do viveiro e sente a troca de vaso e de luz: algumas folhas podem amarelar ou cair. Não pode nem aduba nesta fase. Termina quando surgem brotos novos verde-claros nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso novo e a planta passa a brotar a cada primavera e fim de verão. As podas leves dessa fase servem para adensar: cortar só as pontas estimula ramificação e forma a copa fechada que a topiaria precisa."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação forte na primavera (setembro a novembro), poda de forma depois dela, nova brotação no verão e um retoque no início do outono. No inverno cresce quase nada e pode bronzear as folhas no frio e vento; volta a ficar verde na primavera. Troca de vaso a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o buxo recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão do viveiro seca antes da terra ao redor: molhe bem junto ao caule. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o buxo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho após 30 minutos. No verão acima de 30 °C, confira todo dia; no inverno, o substrato costuma aguentar 5 a 7 dias. Secar o torrão inteiro queima as folhas de vez.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra a copa com as mãos e olhe o interior: procure folhas pontilhadas de amarelo (ácaro), bolinhas brancas ou marrons nos ramos (cochonilha) e manchas marrons com ramos pelados de dentro para fora (fungo).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato do buxo",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em março-abril ou setembro, tire a planta, solte as raízes que giram em volta do torrão, remova um terço da terra velha e replante com substrato novo num vaso 5 cm maior (ou no mesmo, aparando 2 cm das raízes externas). Regue bem e deixe à meia sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "O vaso de viveiro é pequeno e seca em horas no calor. Quanto antes a muda for para o vaso definitivo, mais rápido ela se estabelece.",
+      "acao_requerida": "Transplantar para o vaso de 15 L com o substrato recomendado, deixando o colo do caule no mesmo nível em que estava, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Buxo enraizado: liberado para podar e adubar",
+      "mensagem": "Com dois meses no vaso, as raízes já exploram o substrato novo. A partir de agora a planta aguenta poda e adubo.",
+      "acao_requerida": "Aparar 2 a 3 cm das pontas mais compridas para adensar a copa e seguir os lembretes sazonais de poda e adubação"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas perdem o brilho, ficam verde-acinzentadas e depois palha, mesmo com o substrato úmido; casca do colo escura e raízes marrons e moles",
+      "prevencao_tratamento": "Substrato drenante, furos desobstruídos e pratinho sempre vazio; regar só com o dedo seco. Se aparecer, tirar do vaso, cortar as raízes podres, replantar em substrato novo e regar menos"
+    },
+    {
+      "nome": "Queima-do-buxo (Calonectria / Cylindrocladium buxicola)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras nas folhas, riscas pretas nos ramos novos e queda rápida de folhas de dentro para fora, deixando buracos na copa",
+      "prevencao_tratamento": "Regar no substrato, nunca por cima da copa; manter circulação de ar e desinfetar a tesoura com álcool. Retirar ramos afetados e as folhas caídas; em ataque forte, fungicida à base de cobre nas brotações"
+    },
+    {
+      "nome": "Ácaro-do-buxo (Eurytetranychus buxi)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo-prateado na face de cima, depois opacas e bronzeadas; aparece em tempo quente e seco",
+      "prevencao_tratamento": "Molhar a copa com jato forte de água em dias secos, cedo pela manhã; se persistir, óleo de neem a 0,5% ou calda de sabão neutro no fim da tarde a cada 7 dias, 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças marrons ou flocos brancos presos aos ramos e ao verso das folhas; folhas meladas e fumagina (pó preto)",
+      "prevencao_tratamento": "Remover com escova macia ou cotonete com álcool; em infestação grande, óleo mineral a 1% com sabão neutro, a cada 10 dias, fora do sol forte"
+    },
+    {
+      "nome": "Bronzeamento das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas passam de verde a alaranjadas ou bronze, sem manchas nem bichos, principalmente no inverno, após sol forte da tarde ou depois de o torrão secar",
+      "prevencao_tratamento": "Proteger do vento frio e do sol da tarde no verão; não deixar o substrato secar por completo. As folhas bronzeadas costumam reverdecer na primavera; adube com nitrogênio na brotação"
+    },
+    {
+      "nome": "Folhas amarelas por falta de nutriente",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas amarelo-claras por igual (nitrogênio) ou amarelas entre as nervuras (magnésio), com crescimento parado",
+      "prevencao_tratamento": "Seguir a adubação da primavera-verão; para falta de magnésio, 1 colher de chá de sulfato de magnésio em 1 L de água, uma rega"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        11,
+        1
+      ],
+      "titulo": "Adubar o buxo",
+      "mensagem": "Na primavera e no verão o buxo está brotando e aproveita o adubo; no outono e inverno ele não precisa.",
+      "acao_requerida": "Espalhar 1 colher de sopa de NPK 10-10-10 (ou 2 colheres de sopa de húmus) na borda de um vaso de 15 L, sem encostar no caule, e regar em seguida"
+    },
+    {
+      "meses": [
+        11,
+        3
+      ],
+      "titulo": "Poda de forma do buxo",
+      "mensagem": "A brotação da estação já endureceu: é a hora de devolver o formato à planta sem expor o interior ao sol forte nem ao frio.",
+      "acao_requerida": "Com tesoura afiada e desinfetada, aparar os brotos novos até 1 cm da silhueta anterior, num dia nublado; nunca cortar dentro da madeira velha sem folhas"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o buxo do frio",
+      "mensagem": "Vento frio e geada bronzeiam as folhas, e o substrato frio e encharcado favorece a podridão de raiz.",
+      "acao_requerida": "Afastar o vaso de corredores de vento, levar para junto de uma parede em noites de geada e só regar quando o dedo sair seco a 3 cm"
+    }
+  ]
+}

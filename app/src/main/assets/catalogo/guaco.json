@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Guaco",
+    "nome_cientifico": "Mikania glomerata",
+    "descricao": "Trepadeira perene nativa da Mata Atlântica, de folhas grandes, brilhantes e com cheiro de baunilha ao amassar. É cultivada pelo chá e xarope das folhas, usados tradicionalmente para tosse, e pela cobertura rápida de grades e treliças. O chá deve ser evitado por quem usa anticoagulantes, por causa da cumarina.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 35 cm de diâmetro e 35 cm de profundidade, furos no fundo e treliça, grade ou tutor de 1,5 a 2 m ao lado",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou casca de arroz carbonizada; rico em matéria orgânica e úmido sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode perder algumas folhas velhas ou murchar nas horas quentes nos primeiros dias. A fase termina quando surgem ramos novos, verde-claros, que começam a se enrolar em volta do que encontram."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Crescimento rápido: os ramos podem avançar 20 a 40 cm por mês no calor. Sem condução, eles se enroscam uns nos outros e formam um bolo no alto do tutor. A fase termina quando a planta cobre boa parte da treliça e tem folhas grandes o bastante para colher sem enfraquecê-la."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão cresce muito e rende colheitas mensais de folhas. No inverno quase para, e floresce entre o fim do inverno e a primavera com cachos de florzinhas brancas e perfumadas. A poda no fim do inverno mantém a planta compacta e com folhas novas na base."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o guaco",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. No verão, com a planta grande, pode precisar todo dia; no inverno, a cada 4 a 5 dias. Folhas murchas de manhã indicam falta d'água; esvazie o pratinho após 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o guaco",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto sobre o substrato de um vaso de 30 L, afastado 5 cm do caule, e regue em seguida. Nos meses frios (junho a agosto) pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "conducao_ramos",
+      "titulo": "Conduzir os ramos na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enrole os ramos novos soltos no tutor ou na treliça, espalhando-os para os lados, e prenda com fitilho frouxo onde não se seguram sozinhos. Ramos que passaram do topo podem ser cortados logo acima de um par de folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire folhas das pontas e do meio da planta e procure pontinhos brancos ou marrons grudados, insetos agrupados, teias finas ou folhas comidas por lagartas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de guaco",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Colha de manhã, depois que o orvalho secar, as folhas maiores e bem verdes, deixando pelo menos dois terços da folhagem na planta. Seque à sombra em local ventilado e guarde em pote fechado por até 6 meses.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, corte as raízes enoveladas no fundo e nas laterais e replante com substrato novo num vaso igual ou 10 cm maior. Pode os ramos pela metade para compensar a perda de raiz.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Instale o tutor agora",
+      "mensagem": "O guaco é trepadeira e procura apoio desde o primeiro dia. Enfiar o tutor depois fere as raízes.",
+      "acao_requerida": "Fixar treliça, grade ou bambu de 1,5 a 2 m junto ao vaso e enrolar os ramos da muda nele"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Desponte para encher a base",
+      "mensagem": "Se a planta subiu com poucos ramos, a base fica pelada e as folhas se concentram no alto.",
+      "acao_requerida": "Cortar a ponta dos 2 ou 3 ramos mais compridos logo acima de um par de folhas para estimular brotações laterais"
+    },
+    {
+      "dia_disparo": 181,
+      "titulo": "Colheitas liberadas",
+      "mensagem": "A planta já está estabelecida e aguenta colheitas regulares de folhas.",
+      "acao_requerida": "Fazer a primeira colheita tirando no máximo um terço das folhas maiores"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato molhado; base do caule escura e mole, raízes marrons e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, manter furos desobstruídos e nunca deixar água no pratinho; em caso de ataque, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas algodoadas ou escamas marrons grudadas nos ramos e no verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia embebida em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro a cada 7 dias, no fim da tarde"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos ramos; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água nas pontas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontilhado claro, depois amareladas e secas; teias finas no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Molhar o verso das folhas com água em dias secos e retirar folhas muito atacadas; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Lagartas",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com bordas comidas ou grandes furos irregulares; bolinhas escuras de fezes sobre as folhas",
+      "prevencao_tratamento": "Catar as lagartas à mão nas inspeções; em ataque grande, Bacillus thuringiensis (Dipel) conforme a embalagem"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas no meio das folhas expostas ao sol da tarde; folhas amareladas e endurecidas",
+      "prevencao_tratamento": "Posicionar o vaso onde receba sol da manhã e sombra à tarde; retirar as folhas queimadas"
+    },
+    {
+      "nome": "Clorose por falta de nutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas amarelando por inteiro e crescimento lento na primavera e no verão",
+      "prevencao_tratamento": "Retomar a adubação orgânica a cada 45 dias e renovar o substrato se ele tiver mais de 2 anos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno o guaco está quase parado; podar agora faz brotar muitos ramos novos e folhas maiores na primavera.",
+      "acao_requerida": "Cortar ramos secos e emaranhados e encurtar os demais em até metade, sempre logo acima de um par de folhas"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Menos água no frio",
+      "mensagem": "Com o frio a planta cresce pouco e o substrato demora a secar, o que favorece a podridão de raiz.",
+      "acao_requerida": "Espaçar as regas para a cada 4 a 5 dias, conferindo com o dedo, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "O guaco tolera frio leve, mas geada queima folhas e pontas dos ramos.",
+      "acao_requerida": "Em noites com previsão de geada, levar o vaso para perto de uma parede ou cobrir a planta com TNT até de manhã"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Babosa-arbustiva",
+    "nome_cientifico": "Aloe arborescens",
+    "descricao": "Suculenta arbustiva da África do Sul que forma touceiras de rosetas com folhas serrilhadas e dá cachos de flores vermelho-alaranjadas no inverno, muito visitadas por beija-flores. Aguenta bem sol forte, seca e esquecimento. Em vaso fica menor, com 60 cm a 1 m de altura.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica pesado e largo, com pelo menos 30 cm de diâmetro e 25 cm de profundidade e furos no fundo; o barro ajuda a secar e o peso evita que a touceira tombe",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 40% areia grossa lavada, 20% perlita ou casca de pinus fina; ou substrato pronto para cactos e suculentas. Sem húmus em excesso, que segura água",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma raízes novas no substrato. É normal perder uma ou duas folhas de baixo. A fase acaba quando a roseira resiste a um puxão leve e o centro solta folha nova."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A roseta cresce, as folhas ficam grossas e firmes e o caule começa a ramificar. Folhas finas e caídas indicam pouca luz. Folhas avermelhadas indicam sol forte ou frio, o que é normal e passa sozinho."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Touceira com vários caules e filhotes na base. Na primavera e no verão cresce e pede rega regular. No outono e no inverno quase para, precisa de pouca água e, a partir do 2º ou 3º ano, solta hastes de flores vermelhas entre junho e agosto."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a muda de babosa",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Se ainda estiver úmido, espere mais 2 dias.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a babosa-arbustiva",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de madeira até o fundo do vaso. Se sair seco e limpo, regue até escorrer pelos furos e esvazie o pratinho. Se sair úmido, não regue. De maio a agosto, regue só a cada 20 a 30 dias. Nunca molhe o centro da roseta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a babosa",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá de NPK 10-10-10 (ou adubo para cactos) em 1 L de água e regue com o substrato já úmido. Entre maio e agosto pule a adubação, porque a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base das folhas e o encontro com o caule. Procure algodão branco, escamas marrons, manchas moles e escuras ou deformações verrugosas. Aperte a base do caule, que deve estar firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta com o substrato seco e de luvas, porque as folhas têm espinhos. Solte os filhotes com raiz e deixe o corte secar 2 dias antes de plantá-los em vasos próprios. Replante a mãe em substrato novo, no mesmo vaso ou num 5 cm maior, e só regue 7 dias depois.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Não regue ainda",
+      "mensagem": "As raízes machucadas no plantio apodrecem se receberem água logo. Babosa aguenta uma semana a seco sem problema.",
+      "acao_requerida": "Plantar no substrato seco, deixar em meia-sombra clara e só regar a partir do 7º dia"
+    },
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A muda já começou a enraizar. Passar de uma vez para o sol pleno queima as folhas.",
+      "acao_requerida": "Pôr ao sol da manhã por uma semana e depois no lugar definitivo, com pelo menos 4 horas de sol direto"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Babosa completou um ano",
+      "mensagem": "A planta já está estabelecida. Filhotes na base são sinal de boa saúde e dão mudas novas.",
+      "acao_requerida": "Conferir se as raízes saem pelos furos. Se saírem, passar para um vaso 5 a 10 cm mais largo na próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole e escura, folhas de baixo translúcidas e murchas que se soltam com facilidade, cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo e nunca deixar água no pratinho. Se aparecer, tirar do vaso, cortar tudo que estiver mole até achar tecido firme, deixar secar 3 a 5 dias e replantar em substrato seco e novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos de algodão branco na base das folhas e nas raízes; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Em infestação maior, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-da-babosa (Aceria aloinis)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e hastes florais com deformações verrugosas, crescimentos em forma de couve-flor",
+      "prevencao_tratamento": "Cortar e descartar no lixo, não na compostagem, as partes deformadas, com tesoura limpa com álcool. Isolar a planta. Se voltar, aplicar enxofre molhável seguindo a embalagem"
+    },
+    {
+      "nome": "Mancha-foliar (ferrugem-da-babosa)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas redondas marrons ou pretas nas folhas, às vezes com halo amarelo, que pioram em tempo úmido",
+      "prevencao_tratamento": "Não molhar as folhas, deixar o vaso em local ventilado e retirar as folhas muito manchadas. Se as manchas avançarem, usar fungicida cúprico seguindo a embalagem"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas finas, compridas e caídas para os lados, verde-claro, e caule alongado",
+      "prevencao_tratamento": "Levar aos poucos para um lugar com pelo menos 4 horas de sol direto. As folhas que já cresceram assim não voltam ao normal, mas as novas nascem firmes"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrom-claras secas no meio das folhas após mudança brusca para sol forte",
+      "prevencao_tratamento": "Aclimatar em 1 a 2 semanas ao mudar de lugar. Folha avermelhada não é queimadura: é estresse leve de sol ou frio e não precisa de cuidado"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Rega de inverno",
+      "mensagem": "Com o frio a babosa quase para de crescer, e substrato úmido em dia frio apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para a cada 20 a 30 dias, sempre com o substrato seco até o fundo, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Floração e geada",
+      "mensagem": "É a época das hastes vermelhas nas plantas com 2 anos ou mais. A babosa aguenta frio leve, mas geada queima as folhas.",
+      "acao_requerida": "Em noites com previsão de geada, levar o vaso para perto da parede ou para baixo de uma cobertura"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor, a planta retoma o crescimento e as hastes de flores já secaram.",
+      "acao_requerida": "Cortar rente à roseta as hastes florais secas, voltar à rega a cada 10 dias e retomar a adubação"
+    }
+  ]
+}

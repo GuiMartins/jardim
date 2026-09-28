@@ -1,0 +1,187 @@
+{
+  "planta": {
+    "nome_comum": "Aguapé",
+    "nome_cientifico": "Pontederia crassipes (sin. Eichhornia crassipes)",
+    "descricao": "Planta aquática flutuante, nativa da bacia amazônica, com pecíolos inflados que funcionam como boias e flores lilás com mancha amarela. Em casa vive numa bacia ou vaso sem furos com água parada, filtra a água e se multiplica depressa por brotos laterais. Nunca descarte o excesso em rios, lagos ou bueiros: fora do lugar de origem ela cobre a superfície e sufoca o ambiente.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Bacia, cachepô ou vaso sem furos, largo e raso: pelo menos 40 cm de diâmetro e 20 cm de profundidade, com espaço para as rosetas flutuarem sem se amontoar",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "Sem substrato: só água, de chuva ou de torneira deixada 24 h num balde aberto para o cloro sair. Opcional: 3 cm de terra argilosa no fundo, coberta por 2 cm de areia lavada, para dar nutrientes às raízes que chegam lá",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Coloque a muda sobre a água, sem afundar a roseta; as raízes ficam penduradas embaixo. Uma ou duas folhas velhas podem amarelar pela mudança de água. A fase termina quando surge uma folha nova, firme e brilhante, no centro da roseta."
+    },
+    {
+      "fase_id": "multiplicacao",
+      "nome": "Multiplicação",
+      "dia_inicio": 15,
+      "dia_fim": 60,
+      "descricao": "A planta solta estolões curtos com rosetas-filhas que se soltam sozinhas. No calor, o número de rosetas pode dobrar em 2 a 3 semanas. As raízes ficam longas, escuras e plumosas: sinal de água com nutriente suficiente."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "No ano típico, cresce forte e floresce da primavera ao fim do verão, com hastes de flores lilás que duram 1 a 2 dias cada; floração pede sol pleno e rosetas não apertadas demais. No inverno o crescimento para, e abaixo de 10 °C as pontas das folhas queimam. A cobertura ideal é de no máximo dois terços da superfície: o resto livre deixa luz e oxigênio entrarem na água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "completar_agua",
+      "titulo": "Completar o nível da água",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Veja a marca da água na borda do recipiente e complete até 2 cm abaixo da boca com água de chuva ou de torneira descansada 24 h. Se as raízes encostarem no fundo seco ou na lama, elas morrem em poucos dias de sol. Acima de 30 °C, confira todo dia; no inverno, a cada 5 a 7 dias basta.",
+      "critica": true
+    },
+    {
+      "id": "checar_larvas",
+      "titulo": "Procurar larvas de mosquito",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a água parada por 1 minuto, principalmente nas bordas e entre as raízes: larvas do mosquito da dengue são filetes de 3 a 8 mm que sobem e descem se contorcendo. Se achar, retire com uma peneira fina e troque metade da água. O jeito definitivo é pôr 2 ou 3 peixinhos (guaru ou lebiste), que comem as larvas.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_excesso",
+      "titulo": "Tirar folhas velhas e o excesso de rosetas",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente à roseta as folhas amarelas ou marrons e as hastes de flor secas; material podre na água vira lodo e cheiro ruim. Se as rosetas cobrirem mais de dois terços da superfície, retire as mais velhas até sobrar um terço livre. Doe as sobras ou jogue no lixo orgânico ou na compostagem, nunca em rio, lago ou ralo.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_agua",
+      "titulo": "Adubar a água",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido para aquáticas ou NPK 20-20-20 a um quarto da dose do rótulo (cerca de 0,5 g por 10 L) em água e despeje longe das folhas. Folhas novas amareladas com nervura verde pedem também um quelato de ferro. Pule de junho a agosto, quando a planta não cresce, e pule se a água estiver verde de alga.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Água parada precisa de vigia",
+      "mensagem": "O recipiente do aguapé é água parada, onde o mosquito da dengue pode se criar em cerca de uma semana.",
+      "acao_requerida": "Pôr 2 ou 3 peixinhos pequenos (guaru ou lebiste) no recipiente, ou se comprometer com a checagem de larvas a cada 5 dias"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeiras rosetas-filhas",
+      "mensagem": "A essa altura a planta já deve ter soltado várias rosetas novas e a superfície começa a ficar cheia.",
+      "acao_requerida": "Separar as rosetas-filhas com raiz própria e doar ou compostar as que não couberem, deixando um terço da água livre"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de aguapé: trocar a água",
+      "mensagem": "Depois de um ano, o fundo acumula lodo de folhas e raízes mortas, que tira oxigênio da água.",
+      "acao_requerida": "Tirar as plantas para um balde, esvaziar e lavar o recipiente só com água (sem sabão), repor a água descansada e devolver as rosetas mais bonitas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Larvas de mosquito (Aedes aegypti, Culex)",
+      "tipo": "PRAGA",
+      "sintomas": "Filetes de 3 a 8 mm se contorcendo na água, pupas em forma de vírgula paradas na superfície; mosquitos rondando o recipiente",
+      "prevencao_tratamento": "Peixinhos que comem larvas (guaru, lebiste); na falta deles, retirar as larvas com peneira e trocar metade da água a cada 5 dias. Não use inseticida na água"
+    },
+    {
+      "nome": "Pulgão-das-aquáticas (Rhopalosiphum nymphaeae)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos marrom-escuros nas folhas e na base da roseta; folhas novas enroladas e pegajosas",
+      "prevencao_tratamento": "Afundar a roseta na água por alguns segundos ou lavar com jato fraco, para os pulgões caírem e servirem de comida aos peixes; retirar as folhas muito infestadas"
+    },
+    {
+      "nome": "Caramujos e lesmas",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e pecíolos raspados, com buracos de borda irregular; raízes roídas",
+      "prevencao_tratamento": "Catar os caramujos e as massas de ovos gelatinosas presas nas raízes; examinar mudas novas antes de juntar às outras"
+    },
+    {
+      "nome": "Podridão da roseta (fungos e bactérias)",
+      "tipo": "DOENCA",
+      "sintomas": "Base da roseta mole, escura e com cheiro ruim; pecíolos se soltam ao toque e a planta afunda",
+      "prevencao_tratamento": "Retirar logo a roseta afetada e as folhas mortas da água; não amontoar rosetas nem afundar a coroa; trocar metade da água se ela estiver turva e malcheirosa"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora piaropi)",
+      "tipo": "DOENCA",
+      "sintomas": "Pequenas manchas marrons com halo amarelo nas folhas, que crescem e secam a folha do ápice para a base",
+      "prevencao_tratamento": "Cortar as folhas manchadas e manter as rosetas espaçadas, com vento circulando; sol pleno ajuda a folha a secar"
+    },
+    {
+      "nome": "Clorose por falta de nutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas pequenas e amarelo-claras, raízes brancas e curtas em vez de escuras e plumosas",
+      "prevencao_tratamento": "Acontece em água de torneira pura sem adubo; seguir a adubação mensal diluída e, se as nervuras ficarem verdes com o limbo amarelo, dar quelato de ferro"
+    },
+    {
+      "nome": "Queimadura de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas marrons e secas depois de noites abaixo de 10 °C; com geada, a roseta inteira escurece",
+      "prevencao_tratamento": "Nas noites frias, levar o recipiente para perto de uma parede ou sob cobertura; cortar as folhas queimadas só na primavera, quando saírem folhas novas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Aguapé no frio",
+      "mensagem": "No inverno o aguapé para de crescer, e noites abaixo de 10 °C queimam as folhas. A água também evapora menos.",
+      "acao_requerida": "Suspender a adubação, espaçar a reposição de água para a cada 5 a 7 dias e abrigar o recipiente junto a uma parede ou sob cobertura nas noites frias"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Recomeço da primavera",
+      "mensagem": "Com o calor voltando, o aguapé retoma o crescimento e logo começa a soltar rosetas e flores.",
+      "acao_requerida": "Cortar as folhas queimadas pelo frio, trocar metade da água e retomar a adubação mensal"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Explosão de verão",
+      "mensagem": "No auge do calor o aguapé pode dobrar de quantidade em duas semanas, e rosetas apertadas florescem menos e apodrecem mais.",
+      "acao_requerida": "Retirar as rosetas até sobrar um terço da superfície livre e descartar as sobras no lixo orgânico ou na compostagem, nunca em rios ou lagos"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Cacto-candelabro",
+    "nome_cientifico": "Euphorbia trigona",
+    "descricao": "Suculenta africana de caules eretos com três ou quatro quinas e espinhos em pares, que lembra um cacto mas é uma eufórbia. É muito resistente, pede pouca rega e forma uma coluna escultural em vaso. O látex branco que escorre de qualquer corte irrita pele e olhos e é tóxico se ingerido: mantenha longe de crianças e pets.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica pesado, com pelo menos 20 cm de diâmetro e 20 cm de profundidade, com furos no fundo; o peso evita que a coluna tombe quando crescer",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% substrato para cactos e suculentas, 30% areia grossa lavada, 20% perlita ou pedrisco, 10% húmus de minhoca; deve escorrer a água em segundos",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante em substrato seco e espere 7 dias para a primeira rega, para as raízes machucadas no transplante cicatrizarem. Não coloque direto no sol pleno se a muda vinha de loja: aumente o sol aos poucos em duas semanas. Algumas folhinhas podem cair; é normal."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e as pontas dos caules voltam a crescer, com folhas novas verde-claras ou avermelhadas no topo. A planta está firme quando não balança ao ser tocada de leve na base. Gire o vaso um quarto de volta sempre que regar para ela crescer reta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce de 10 a 30 cm por ano de setembro a março e quase para no inverno, quando pode perder parte das folhas. Ramifica em novos caules paralelos, formando o candelabro. Caules muito altos e finos indicam falta de sol; se a coluna passar de 1,5 m, apoie num tutor ou corte o topo (use luvas por causa do látex)."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_estabelecimento",
+      "titulo": "Regar o cacto-candelabro",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de madeira até o fundo do vaso; só regue se sair totalmente seco. Molhe o substrato até escorrer pelos furos e esvazie o pratinho em seguida. De maio a agosto, regue só a cada 3 a 4 semanas; abaixo de 10 °C, não regue.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar para cactos",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido para cactos (ou NPK 10-10-10) na metade da dose do rótulo e aplique no substrato já úmido. Pule de maio a agosto, quando a planta está parada e o adubo só acumula sal.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar caules e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe entre os espinhos e nas quinas dos caules procurando algodãozinho branco ou escamas marrons. Aperte de leve a base do caule rente ao substrato: ela deve estar dura; mole ou escura indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas grossas e o caule enrolado em jornal dobrado, tire a planta com o substrato seco. Passe para um vaso 5 cm maior com substrato novo e espere 7 dias para regar. Faça entre setembro e fevereiro; se cair no inverno, adie para setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado com o látex",
+      "mensagem": "Qualquer caule ou espinho quebrado solta um látex branco que queima a pele e pode cegar temporariamente se atingir os olhos.",
+      "acao_requerida": "Usar luvas ao manusear e, se o látex tocar a pele, lavar com água e sabão na hora; nunca coçar os olhos"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Primeira rega",
+      "mensagem": "As raízes já cicatrizaram do plantio e podem receber água sem risco de apodrecer.",
+      "acao_requerida": "Regar até escorrer pelos furos e esvaziar o pratinho"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Depois de duas semanas de adaptação, a planta aguenta mais sol direto e precisa dele para não crescer fina.",
+      "acao_requerida": "Mover o vaso para o lugar com pelo menos 4 horas de sol direto; se aparecerem manchas bege ou esbranquiçadas, recuar para sol da manhã por mais uma semana"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole, escura ou com cheiro azedo; caule tomba ou fica enrugado mesmo com o substrato úmido",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo e nunca deixar água no pratinho. Se aparecer, corte acima da parte podre com faca limpa (use luvas), deixe o corte secar 7 a 10 dias à sombra e replante como estaca em substrato seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas quinas, entre os espinhos e na base; crescimento travado",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas crostas marrons ou acinzentadas grudadas no caule que saem ao raspar com a unha",
+      "prevencao_tratamento": "Raspar com escova de dente macia e álcool 70%; repetir a inspeção a cada 2 semanas até não aparecerem novas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelados ou marrons na pele do caule e teias finas nas pontas, comum em lugar quente, seco e sem vento",
+      "prevencao_tratamento": "Lavar os caules com jato de água fraco pela manhã e aumentar a ventilação; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas bege, brancas ou marrons secas no lado virado para o sol, logo após mudar a planta de lugar",
+      "prevencao_tratamento": "Aumentar o sol aos poucos ao longo de duas semanas. As manchas não somem, mas não se espalham se a planta se adaptar"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas dos caules finas, verde-pálidas e tortas em direção à janela",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 horas de sol direto e girar o vaso a cada rega. A parte fina não engrossa; pode ser cortada na primavera"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "As folhas das quinas amarelam e caem entre maio e agosto, com o caule firme",
+      "prevencao_tratamento": "É reação normal ao frio e à pouca luz; não aumente a rega por causa disso. Folhas voltam em setembro. Se o caule também amolecer, trate como podridão"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Reduzir a rega para o inverno",
+      "mensagem": "Com o frio, o cacto-candelabro quase para de crescer e a água demora muito a secar no vaso, o que abre caminho para a podridão.",
+      "acao_requerida": "Espaçar a rega para a cada 3 a 4 semanas e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 10 °C a planta sofre, e geada ou substrato molhado no frio mata os caules.",
+      "acao_requerida": "Em noites previstas abaixo de 10 °C, levar o vaso para perto da parede ou para dentro, perto de uma janela clara, e não regar nesses dias"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Com o calor voltando, a planta brota folhas novas nas pontas e volta a crescer.",
+      "acao_requerida": "Voltar a regar a cada 10 dias com o substrato seco e retomar a adubação mensal"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Cuidado com a chuva de verão",
+      "mensagem": "Dias seguidos de chuva de verão encharcam o vaso descoberto e podem apodrecer a base mesmo sem rega.",
+      "acao_requerida": "Em semanas chuvosas, colocar o vaso sob uma cobertura e pular a rega até o substrato secar"
+    }
+  ]
+}

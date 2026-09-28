@@ -1,0 +1,204 @@
+{
+  "planta": {
+    "nome_comum": "Gliricídia",
+    "nome_cientifico": "Gliricidia sepium",
+    "descricao": "Árvore leguminosa tropical de crescimento muito rápido, usada como cerca viva, adubo verde e sombra de cacau e café. Fixa nitrogênio, aguenta seca e poda drástica e cobre-se de cachos de flores rosa-lilás no fim do inverno. Em vaso vira um arbusto podado, e os ramos cortados servem de adubo verde para as outras plantas. Folhas e sementes são tóxicas para roedores e cavalos: mantenha longe de animais que possam mastigá-las.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande ou meia-bombona com pelo menos 45 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo; vaso pesado ou largo para não tombar com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa, 20% composto orgânico ou húmus de minhoca; bem drenado, sem adubo nitrogenado forte (a planta fixa o próprio nitrogênio)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Estaca",
+      "dia_inicio": 1,
+      "dia_fim": 45,
+      "descricao": "Use estaca de ramo maduro com 2 a 4 cm de espessura e 40 a 60 cm de comprimento, cortada em bisel embaixo e reta em cima, enterrada 15 a 20 cm. Os brotos aparecem entre o 10º e o 20º dia, mas saem da reserva da estaca antes de haver raiz: não puxe nem mude o vaso de lugar. A fase termina quando os brotos passam de 15 cm e continuam firmes em dias quentes."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 46,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido de ramos com folhas compostas. Na primavera e no verão a planta pode crescer mais de 1 m. Pode perder parte das folhas no primeiro inverno, o que é normal. Algumas estacas já florescem no primeiro fim de inverno."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce forte de outubro a abril, perde boa parte das folhas no inverno seco, floresce em cachos rosa-lilás de julho a setembro, com os galhos quase pelados, e rebrota com as chuvas. Em vaso, mantenha-a entre 1,5 e 2 m com duas podas por ano. Os ramos podados, picados, são adubo verde para a horta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca de gliricídia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O substrato deve ficar úmido, nunca encharcado: água parada apodrece a base da estaca. Em dias acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a gliricídia",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos. No verão quente pode precisar a cada 2 ou 3 dias; no inverno, sem folhas, regue a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_leve",
+      "titulo": "Adubar a gliricídia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus ou composto sobre o substrato, longe do tronco, e regue em seguida. Como é leguminosa, dispensa ureia e adubos ricos em nitrogênio. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar brotos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as pontas dos ramos e o verso das folhas novas atrás de colônias de pulgão preto, formigas subindo pelo tronco e cochonilhas brancas nos galhos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e podar as raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro, tire a planta do vaso, corte 1/4 das raízes da volta e do fundo, troque metade do substrato por mistura nova e replante na mesma altura. Pode junto 1/3 da copa para equilibrar com a raiz reduzida.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Os brotos ainda não são raiz",
+      "mensagem": "A estaca brotou com a energia que tinha guardada; as raízes ainda estão se formando.",
+      "acao_requerida": "Não puxar a estaca para conferir, não adubar e manter a rega regular até o dia 45"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Estaca enraizada",
+      "mensagem": "Com brotos firmes e crescendo, a estaca já tem raízes próprias e aguenta intervalos maiores entre regas.",
+      "acao_requerida": "Deixar só os 3 ou 4 brotos mais fortes, bem distribuídos, cortando os outros rente à estaca"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Poda de formação",
+      "mensagem": "Os ramos principais já devem ter passado de 60 cm. Encurtá-los agora faz a copa ramificar e ficar compacta para o vaso.",
+      "acao_requerida": "Cortar a ponta de cada ramo principal a uns 50 cm da base, logo acima de uma folha"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-preto (Aphis craccivora)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos nas pontas dos ramos e brotos novos, que ficam enrolados e pegajosos; formigas subindo pelo tronco",
+      "prevencao_tratamento": "Corte as pontas muito infestadas; jato de água; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodoados ou escamas marrons grudadas nos galhos, com fumagina preta nas folhas abaixo",
+      "prevencao_tratamento": "Remova com escova ou algodão com álcool 70%; em infestação forte, óleo mineral ou de neem a 1% e poda dos ramos mais atacados"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou ramos pelados de uma noite para outra",
+      "prevencao_tratamento": "Siga a trilha até o formigueiro e trate com isca formicida; enquanto isso, passe graxa ou fita adesiva dupla-face em volta do vaso"
+    },
+    {
+      "nome": "Podridão da estaca e das raízes (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base da estaca escura e mole, brotos que murcham mesmo com substrato úmido, cheiro azedo no vaso",
+      "prevencao_tratamento": "Regue só com o substrato seco na profundidade indicada, garanta furos livres e nunca deixe prato com água; estaca com a base podre deve ser descartada e substituída"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem de junho a agosto, deixando os galhos quase pelados",
+      "prevencao_tratamento": "É o repouso natural da espécie na estação seca: reduza a rega e não adube. Se os ramos estiverem murchos ou enrugados, confira o encharcamento"
+    },
+    {
+      "nome": "Dano por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ponteiros e folhas escurecidos e secos depois de noite abaixo de 2 °C",
+      "prevencao_tratamento": "Em regiões com geada, leve o vaso para perto de uma parede ou sob beiral nas noites frias; corte os ponteiros queimados só em setembro"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Início do repouso de inverno",
+      "mensagem": "A gliricídia vai perder boa parte das folhas nos próximos meses e passa a beber bem menos água.",
+      "acao_requerida": "Espaçar a rega para a cada 7 a 10 dias, conferindo 5 cm de substrato, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "A espécie é tropical e não tolera geada; ramos jovens queimam abaixo de 2 °C.",
+      "acao_requerida": "Nas noites com previsão abaixo de 4 °C, levar o vaso para junto de uma parede ou sob cobertura"
+    },
+    {
+      "meses": [
+        7,
+        8
+      ],
+      "titulo": "Floração da gliricídia",
+      "mensagem": "Os cachos rosa-lilás aparecem nos galhos quase sem folhas. As flores atraem abelhas e beija-flores.",
+      "acao_requerida": "Não podar até a floração terminar; manter a rega espaçada"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Poda anual depois da floração",
+      "mensagem": "Com as flores já caídas e as chuvas começando, a planta rebrota com força. É o melhor momento para reduzir a copa.",
+      "acao_requerida": "Cortar todos os ramos à metade ou até 1/3 do comprimento, logo acima de uma gema, mantendo a altura total perto de 1,5 m; picar os ramos e espalhar as folhas como cobertura nos outros vasos"
+    },
+    {
+      "meses": [
+        1
+      ],
+      "titulo": "Poda de manutenção de verão",
+      "mensagem": "No auge do verão a gliricídia estica ramos longos que desequilibram o vaso e sombreiam outras plantas.",
+      "acao_requerida": "Encurtar os ramos que passaram de 50 cm além da copa e tirar os que crescem para dentro ou cruzados"
+    }
+  ]
+}

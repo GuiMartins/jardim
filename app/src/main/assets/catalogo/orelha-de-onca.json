@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Orelha-de-onça",
+    "nome_cientifico": "Pleroma heteromallum (sin. Tibouchina heteromalla)",
+    "descricao": "Arbusto nativo do Brasil (cerrado e campos rupestres de Minas Gerais e da Bahia), da família da quaresmeira. As folhas são grandes, aveludadas e prateadas, e as flores roxas saem em cachos na ponta dos ramos. Chama atenção mesmo sem flor e floresce bem em vaso grande a pleno sol.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; prefira cerâmica ou plástico grosso, porque vaso fino esquenta demais a raiz no sol",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% substrato à base de casca de pinus, 20% húmus de minhoca e 10% areia grossa ou perlita. O resultado deve ser levemente ácido (pH 5,5 a 6,5) e solto. Não use calcário nem terra de obra",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas de baixo ou murchar nas horas mais quentes. Nas duas primeiras semanas, sol só de manhã. Ela terminou de se adaptar quando saem folhas novas, prateadas e aveludadas, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e os ramos se alongam depressa. Já pode ficar no sol pleno. Se um ramo crescer sozinho e comprido, corte a ponta dele para a planta ramificar e ficar mais cheia. Ela está estabelecida quando segura o sol da tarde sem murchar e tem vários ramos firmes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto de 1 a 2 m em vaso. Cresce na primavera e no verão e floresce do fim da primavera ao outono, com picos de flores roxas na ponta dos ramos novos. No inverno cresce pouco e aceita menos água. Uma poda leve no fim do inverno mantém a planta compacta e com mais pontas para florir."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda não se enraizou no vaso novo e seca antes do resto do substrato: regue perto do caule. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a orelha-de-onça",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco nessa profundidade, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. No verão, com calor acima de 30 °C, confira a cada 2 dias. No inverno, espace para cada 5 a 7 dias. Não molhe as folhas aveludadas no sol forte.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar a orelha-de-onça",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 para cada 10 L de vaso sobre o substrato úmido, longe do caule, e regue em seguida. A cada duas adubações, troque o NPK por 2 punhados de húmus ou bokashi. Em junho, julho e agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure cochonilhas brancas nas nervuras, lagartas ou folhas roídas nas pontas, manchas marrons com borda amarela e folhas novas amareladas com as nervuras verdes.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça isso entre setembro e novembro. Tire a planta do vaso, remova um terço do substrato velho e corte as raízes enroladas no fundo. Replante com substrato novo, no mesmo vaso ou num vaso 10 cm maior. Depois, deixe duas semanas no sol só da manhã.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Coloque um tutor na muda",
+      "mensagem": "Os ramos da orelha-de-onça são longos e quebradiços quando jovens. Com vento e o peso das folhas grandes, a muda tomba ou racha na base.",
+      "acao_requerida": "Enterrar uma estaca de bambu a 5 cm do caule, sem ferir o torrão, e amarrar o ramo principal com fita macia em forma de 8"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de ir para o sol pleno",
+      "mensagem": "Depois de duas semanas de adaptação com sol só de manhã, a muda já aguenta mais luz. Com menos de 4 horas de sol, ela estiola e não floresce.",
+      "acao_requerida": "Mudar o vaso para um lugar com pelo menos 6 horas de sol direto por dia"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Desponte para ramificar",
+      "mensagem": "Cortar as pontas agora faz cada ramo abrir em dois ou três. Como as flores saem na ponta dos ramos, mais pontas dão mais flores.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo principal, logo acima de um par de folhas, com tesoura limpa"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato molhado, as folhas amarelam e caem de baixo para cima, e a base do caule escurece e amolece",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e manter os furos do vaso livres. Nos primeiros sinais, suspenda a rega, tire a planta do vaso, corte as raízes escuras e moles e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas nervuras do verso das folhas e nas axilas dos ramos; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Em infestação maior, aplique óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas roídas nas bordas ou com grandes buracos, pontas de ramo comidas e bolinhas de fezes escuras sobre as folhas",
+      "prevencao_tratamento": "Catar as lagartas à mão, de luva, porque algumas queimam a pele. Em ataque forte, pulverize Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora e outros fungos)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas com halo amarelo nas folhas mais velhas, que depois secam e caem",
+      "prevencao_tratamento": "Regar no substrato sem molhar as folhas, manter o vaso num lugar arejado e retirar as folhas manchadas. Se as manchas se espalharem, use calda bordalesa ou fungicida cúprico conforme o rótulo"
+    },
+    {
+      "nome": "Clorose por falta de ferro",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes, crescimento fraco e poucas flores",
+      "prevencao_tratamento": "Sinal de substrato alcalino ou calcário na mistura. Regue com quelato de ferro conforme o rótulo e, na próxima troca, use substrato com casca de pinus e sem calcário"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e pontas de ramo escurecidas, com aspecto cozido, depois de uma noite muito fria",
+      "prevencao_tratamento": "Nas noites abaixo de 3 °C, levar o vaso para perto de uma parede ou sob uma cobertura. Não pode as partes queimadas antes do fim do inverno, porque elas protegem os ramos de baixo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "No frio a orelha-de-onça cresce pouco e o substrato demora a secar. Com rega em excesso, a raiz apodrece, e a geada queima as folhas.",
+      "acao_requerida": "Espaçar a rega para cada 5 a 7 dias e, nas noites com previsão abaixo de 3 °C, abrigar o vaso junto a uma parede ou sob uma cobertura"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de fim de inverno",
+      "mensagem": "Antes da brotação da primavera é a melhor hora de podar: a planta refaz os ramos e floresce nas pontas novas.",
+      "acao_requerida": "Cortar até um terço do comprimento dos ramos longos, logo acima de um par de folhas, e retirar os ramos secos, queimados pela geada ou cruzados para dentro da copa"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: o vaso seca rápido",
+      "mensagem": "Com calor forte e a planta em plena folhagem, um vaso a pleno sol pode secar em um dia só, e as folhas grandes murcham na hora mais quente.",
+      "acao_requerida": "Nos dias acima de 30 °C, conferir o substrato todo dia de manhã e cobrir a superfície com 3 cm de casca de pinus para segurar a umidade"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Espinafre",
+    "nome_cientifico": "Spinacia oleracea",
+    "descricao": "Hortaliça de folhas tenras e ricas em ferro e folato, de clima frio: germina mal acima de 25 °C e floresce cedo (pendoa) com calor e dias longos, por isso no Centro-Sul se semeia no outono e inverno. Não confundir com o 'espinafre' de feira mais comum no Brasil, que costuma ser o espinafre-da-nova-zelândia (Tetragonia tetragonoides), outra planta, mais tolerante ao calor.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 75,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade e furos no fundo; numa jardineira de 60 cm cabem 4 a 5 plantas a 12–15 cm umas das outras",
+    "volume_minimo_litros": 4,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% fibra de coco ou areia grossa, mais 1 colher de sopa de calcário dolomítico a cada 10 L; o espinafre quer pH entre 6,5 e 7,5 e amarela em substrato ácido",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 12,
+      "descricao": "Deixe as sementes de molho em água por 12 horas e semeie a 1,5 cm de profundidade, 2 a 3 sementes por cova a cada 12–15 cm. As plântulas, com duas folhas estreitas e compridas, surgem entre o 6º e o 12º dia; com o substrato acima de 25 °C a germinação falha."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 13,
+      "dia_fim": 25,
+      "descricao": "Aparecem as primeiras folhas verdadeiras, arredondadas. É a hora de deixar uma planta por cova. A fase termina quando cada planta tem 4 a 5 folhas verdadeiras."
+    },
+    {
+      "fase_id": "crescimento_roseta",
+      "nome": "Crescimento da Roseta",
+      "dia_inicio": 26,
+      "dia_fim": 44,
+      "descricao": "A planta forma uma roseta baixa e larga de folhas escuras. Folhas claras ou amareladas indicam falta de nitrogênio ou substrato ácido. A fase termina quando as folhas de fora passam de 8 a 10 cm."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 45,
+      "dia_fim": 75,
+      "descricao": "Colha as folhas de fora e deixe o miolo produzir novas. O ciclo acaba quando a planta pendoa: o centro se alonga num talo e as folhas novas ficam pequenas, pontudas e amargas. Ao ver o talo, colha a planta inteira."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer a semeadura",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 12,
+      "instrucoes": "Regue com regador de crivo fino ou borrifador até umedecer os 2 primeiros centímetros. A superfície não pode secar nem formar crosta, e também não pode ficar encharcada.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o espinafre",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue no pé, sem molhar as folhas, até escorrer pelos furos. Falta de água faz o espinafre pendoar antes da hora. Em dias frios e nublados, confira a cada 3 dias; acima de 25 °C, todo dia.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar com húmus",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca (ou 1 de bokashi) por planta, sem encostar nas folhas, e regue em seguida. Folha precisa de nitrogênio; se as folhas estiverem claras, use a dose de bokashi.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Vire as folhas e procure pulgões, lagartas, trilhas brancas sinuosas dentro da folha e manchas amarelas com mofo acinzentado no verso. De manhã cedo, procure lesmas e rastros de baba no substrato.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de fora",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Corte com tesoura, rente à base, as folhas externas com mais de 8 cm, tirando no máximo um terço das folhas de cada planta. Deixe o miolo intacto para continuar produzindo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "Várias plântulas na mesma cova competem e ficam fracas e pequenas.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa de cada cova, cortando as outras rente ao substrato com tesoura (as folhinhas podem ir para a salada)"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeiras folhas prontas",
+      "mensagem": "As folhas de fora já devem ter 8 a 10 cm, o ponto de colheita.",
+      "acao_requerida": "Começar a colher as folhas externas, sempre preservando o miolo"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Fique de olho no pendão",
+      "mensagem": "Com a idade e os dias mais longos, o espinafre começa a florescer. Depois que o talo central sobe, as folhas ficam amargas em poucos dias.",
+      "acao_requerida": "Olhar o centro de cada planta; se ele estiver se alongando num talo, colher a planta inteira cortando rente ao substrato"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos no verso das folhas e no miolo; folhas enrugadas e pegajosas",
+      "prevencao_tratamento": "Jato de água no verso das folhas; se persistir, sabão de coco a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias, respeitando 7 dias antes de colher"
+    },
+    {
+      "nome": "Larva-minadora (Liriomyza spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Trilhas brancas e sinuosas ou manchas claras dentro da folha, com uma larva minúscula na ponta",
+      "prevencao_tratamento": "Arrancar e descartar as folhas minadas assim que aparecerem; tela antiinseto sobre a jardineira em áreas com muita infestação"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Buracos irregulares nas folhas, plântulas comidas durante a noite e rastros de baba brilhante",
+      "prevencao_tratamento": "Catar à noite ou de manhã cedo; armadilha com pote de cerveja enterrado até a boca; afastar o vaso de cantos úmidos e de folhas caídas"
+    },
+    {
+      "nome": "Míldio (Peronospora farinosa)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas na face de cima da folha e mofo cinza-arroxeado no verso, pior em tempo frio e úmido",
+      "prevencao_tratamento": "Regar no pé e de manhã, sem molhar as folhas; manter 12–15 cm entre plantas para o ar circular; retirar e descartar as folhas atacadas"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas murcham e caem com o caule escuro e afinado rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, sem encharcar durante a germinação; retirar as plântulas afetadas e deixar a superfície secar levemente entre as regas"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato molhado, folhas amarelando a partir da base e raízes marrons e moles",
+      "prevencao_tratamento": "Só regar quando os 2 cm de cima estiverem secos; conferir se os furos do vaso não estão entupidos e nunca deixar água parada no prato"
+    },
+    {
+      "nome": "Pendoamento precoce",
+      "tipo": "DISTURBIO",
+      "sintomas": "O centro da planta se alonga num talo com folhas pequenas e pontudas; as folhas ficam amargas",
+      "prevencao_tratamento": "Semear só entre março e julho, não deixar faltar água e dar sombra à tarde nos dias quentes; depois que começa não tem volta, então colha a planta inteira"
+    },
+    {
+      "nome": "Folhas amarelas por substrato ácido ou falta de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas verde-claras ou amareladas por igual, crescimento lento, planta pequena",
+      "prevencao_tratamento": "Misturar calcário dolomítico no preparo do substrato (1 colher de sopa a cada 10 L) e manter a adubação com húmus ou bokashi a cada 15 dias"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Primavera: espinafre tende a pendoar",
+      "mensagem": "Com dias mais longos e o calor voltando, o espinafre floresce rápido e as folhas ficam amargas.",
+      "acao_requerida": "Mover o vaso para um lugar com sombra depois das 13h, não deixar o substrato secar e colher as plantas maiores inteiras antes que pendoem"
+    }
+  ]
+}

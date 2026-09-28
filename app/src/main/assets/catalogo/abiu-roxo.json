@@ -1,0 +1,216 @@
+{
+  "planta": {
+    "nome_comum": "Abiu-roxo",
+    "nome_cientifico": "Chrysophyllum cainito",
+    "descricao": "Árvore frutífera tropical da família do abiu, também chamada de caimito, de folhas verdes por cima e douradas por baixo. O fruto roxo tem polpa branca, doce e gelatinosa, que forma uma estrela quando cortado ao meio. Em vaso grande, uma muda enxertada começa a produzir entre o 3º e o 4º ano; muda de semente pode levar 6 a 8 anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso definitivo de pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo; comece num de 40 cm e passe para o maior no primeiro transplante se a muda for pequena",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; levemente ácido (pH 5,5 a 6,5) e que não encharque",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas velhas. Mantenha em sol da manhã na primeira semana e vá levando para o sol pleno. A fase termina quando surgem brotos novos, cor de cobre, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e a planta solta fluxos de folhas novas em ondas, principalmente na primavera e no verão. É a fase de formar a copa: 3 a 4 ramos principais bem distribuídos."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "O tronco engrossa e a copa se fecha. Mudas enxertadas podem dar as primeiras flores no 2º ou 3º ano; se vierem poucas frutas, deixe só 2 ou 3 para não esgotar a planta. Mudas de semente seguem só em folhas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: flores pequenas, branco-amareladas e perfumadas no outono (março a maio), frutos amadurecendo do fim do inverno à primavera (julho a outubro), poda leve depois da colheita e novo fluxo de folhas no verão. Em vaso, mantenha a árvore entre 1,5 e 2,5 m com poda."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de abiu-roxo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda curta, o torrão da muda seca antes do resto do vaso: molhe bem perto do caule.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o abiu-roxo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). Acima de 30 °C, confira a cada 2 dias. De junho a agosto, com frio, espace para cada 5 a 7 dias. Nunca deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o abiu-roxo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto e 1 colher de sopa de NPK 10-10-10 por vaso de 60 L, longe do caule, e regue em seguida. Na planta adulta, troque o NPK por 4-14-8 a partir de fevereiro para favorecer flor e fruto. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso dourado e as axilas dos ramos: procure escamas brancas ou marrons presas, fumagina preta, manchas escuras afundadas e brotos novos enrolados.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, passe para um vaso 20% maior ou, se já estiver no tamanho final, tire a planta, corte 3 a 5 cm das raízes em volta do torrão, troque um terço do substrato por mistura nova e devolva ao mesmo vaso. Use luvas: o látex branco da planta gruda.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "O saquinho da muda limita a raiz e seca em poucas horas no sol. Quanto antes ela for para o vaso, mais rápido se adapta.",
+      "acao_requerida": "Transplantar a muda sem desmanchar o torrão, com o colo (e o ponto do enxerto) acima do nível do substrato, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Hora da poda de formação",
+      "mensagem": "Uma copa baixa e aberta cabe melhor no vaso e facilita a colheita.",
+      "acao_requerida": "Se a muda passou de 70 cm, cortar a ponta do ramo principal logo acima de uma folha, a uns 60 cm do substrato, e deixar 3 a 4 brotos laterais bem distribuídos. Tirar brotos que saiam abaixo do enxerto"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de abiu-roxo",
+      "mensagem": "A raiz já deve ter tomado o vaso. Se ele ainda é o de 40 cm, está na hora de passar para o definitivo.",
+      "acao_requerida": "Conferir se há raízes saindo pelos furos; se houver, transplantar na primavera para um vaso de 60 L ou mais"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Idade de produzir",
+      "mensagem": "Mudas enxertadas já costumam florescer a partir de agora. As flores são miúdas e ficam escondidas nas axilas das folhas.",
+      "acao_requerida": "Passar a adubação para a fórmula de floração (4-14-8) a partir de fevereiro e manter o substrato sem secar de março a outubro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, raízes escuras e moles com cheiro ruim, a planta murcha no calor",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, furos desobstruídos e sem pratinho cheio. Se aparecer, tirar do vaso, cortar as raízes podres, trocar o substrato e regar menos até brotar"
+    },
+    {
+      "nome": "Cochonilha (escama e farinha)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos presos nos ramos e no verso das folhas; melado pegajoso e fumagina preta por cima",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com água e sabão neutro; em infestação, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha, Ceratitis)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos, polpa amolecida e larvas brancas dentro; frutos caem antes de amadurecer",
+      "prevencao_tratamento": "Ensacar os frutos com saquinho de TNT quando estiverem do tamanho de uma bola de gude; recolher e descartar no lixo fechado os frutos caídos"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nas folhas novas e nos frutos, às vezes com pontos alaranjados no centro; brotos secam na ponta",
+      "prevencao_tratamento": "Evitar molhar a copa na rega e manter a copa arejada com poda; cortar as partes doentes e, se persistir, pulverizar calda bordalesa no fim da tarde"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam com aspecto cozido e caem depois de noites abaixo de 5 °C; geada queima os brotos e pode matar planta jovem",
+      "prevencao_tratamento": "Nas noites frias de inverno, levar o vaso para perto de uma parede ou sob cobertura, ou cobrir a copa com TNT. Não podar os ramos queimados antes de setembro"
+    },
+    {
+      "nome": "Queda de flores e frutos por seca",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores e frutinhos verdes caem em massa depois de um dia de substrato seco ou de calor forte",
+      "prevencao_tratamento": "Não deixar o substrato secar por completo entre março e outubro; cobrir a superfície com 3 cm de casca de pinus ou palha para reter umidade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3,
+        4,
+        5
+      ],
+      "titulo": "Floração do abiu-roxo",
+      "mensagem": "É a época das flores miúdas e perfumadas nas axilas das folhas. Poda e secagem do substrato agora derrubam as flores e a safra.",
+      "acao_requerida": "Não podar até depois da colheita e conferir a rega com mais atenção"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O abiu-roxo é tropical: abaixo de 5 °C as folhas queimam, e geada mata planta jovem. No frio ele também bebe menos água.",
+      "acao_requerida": "Nas noites frias, abrigar o vaso junto a uma parede ou sob cobertura, ou cobrir a copa com TNT; espaçar a rega e suspender o adubo"
+    },
+    {
+      "meses": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "titulo": "Colheita do abiu-roxo",
+      "mensagem": "O fruto não amadurece depois de colhido e também não cai sozinho quando fica bom: colhido verde, fica cheio de látex e travoso.",
+      "acao_requerida": "Colher com tesoura, deixando o cabinho, só os frutos que perderam o brilho, estão levemente enrugados perto do cabo e cedem um pouco ao apertar"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Poda leve depois da colheita",
+      "mensagem": "Com a safra encerrada, a poda agora controla o tamanho da árvore no vaso e prepara os ramos que vão florescer no outono.",
+      "acao_requerida": "Encurtar em um terço os ramos que passaram da altura desejada, tirar galhos secos, cruzados e voltados para dentro da copa; usar luvas por causa do látex"
+    }
+  ]
+}

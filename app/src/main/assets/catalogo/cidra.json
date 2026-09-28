@@ -1,0 +1,230 @@
+{
+  "planta": {
+    "nome_comum": "Cidra",
+    "nome_cientifico": "Citrus medica",
+    "descricao": "Uma das espécies ancestrais dos cítricos, dá frutos grandes, de casca grossa e rugosa e muito perfumada. A parte branca da casca (albedo) é o que vai no tradicional doce de cidra. Em vaso, comece com muda enxertada: ela frutifica em 2 a 3 anos, contra 6 ou mais da planta de semente, e aguenta bem o vaso grande numa varanda ensolarada. Só não tolera geada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 45 cm de diâmetro e 45 cm de profundidade, vários furos no fundo e pés ou calços que o afastem do chão",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 25% areia grossa lavada ou perlita, 25% composto orgânico ou húmus de minhoca, 10% casca de pinus fina; mais 1 colher de sopa de calcário dolomítico a cada 10 L para manter o pH entre 6 e 6,5",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas mais velhas. Isso é normal. A fase acaba quando surgem brotos novos, verde-claros, nas pontas dos ramos. Nesta fase, nada de adubo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 730,
+      "descricao": "As raízes ocupam o vaso e a copa se forma em fluxos de brotação: vários na primavera e no verão, quase nenhum no inverno. É comum a muda florir já no primeiro ano. Tire esses frutinhos, porque eles gastam a energia que devia ir para a raiz e a copa. Ao fim de dois anos, a copa deve estar fechada e o tronco com uns 2 cm de diâmetro."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "O ano típico: a floração principal vem na primavera, com flores brancas arroxeadas por fora e muito perfumadas, e a cidra ainda floresce em menor quantidade em outras épocas. O fruto leva de 6 a 8 meses para amadurecer e fica pronto quando a casca passa de verde a amarela, geralmente no outono e no inverno. No fim do inverno vem a poda de limpeza, e a cada dois anos o substrato é renovado. Num vaso de 40 a 60 L, conte com 3 a 8 frutos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar em volta do tronco até a água escorrer pelos furos. Se ainda estiver úmido, espere o dia seguinte. As raízes ainda não saíram do torrão da muda, que seca antes do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cidra",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos, cerca de 1 L para cada 10 L de vaso. Se estiver úmido, não regue: raiz encharcada apodrece. No verão, confira a cada 2 dias. No inverno, a cada 5 a 7. Folhas enroladas em forma de canoa ao meio-dia indicam sede.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a cidra",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de adubo para cítricos (ou NPK 10-10-10) num vaso de 40 L, na borda e longe do tronco. Regue em seguida. De setembro a março, adube em toda ocorrência. De abril a agosto, pule uma sim, outra não. A cada três adubações, borrife nas folhas um adubo foliar com zinco, manganês e magnésio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos, que são o alvo do pulgão e do minador, e procure trilhas prateadas nas folhas. Vire as folhas e procure pontos, escamas ou algodão no verso e nos ramos. Confira também a base do tronco: casca rachada soltando goma é sinal de gomose. Procure ainda lagartas marrom e brancas, parecidas com cocô de passarinho.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 731,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso e corte 3 a 5 cm das raízes que dão volta no torrão. Raspe uns 20% do substrato velho e replante no mesmo vaso com substrato novo, ou passe para um vaso 10 a 20 L maior. Mantenha o colo (onde começam as raízes) acima do nível do substrato e regue bem. Se cair na época de frutos pendurados, espere a colheita.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso definitivo",
+      "mensagem": "Muda de viveiro vem num saco pequeno, onde a raiz enovela rápido. Plantar no vaso grande hoje evita que ela trave o crescimento.",
+      "acao_requerida": "Plantar a muda no vaso de 40 L com o ponto do enxerto (a 'cicatriz' no tronco) pelo menos 10 cm acima do substrato, sem enterrar o colo, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Tirar brotos do porta-enxerto",
+      "mensagem": "Brotos que nascem abaixo da cicatriz do enxerto são do porta-enxerto: roubam força e não dão cidra.",
+      "acao_requerida": "Cortar rente ao tronco todo broto que aparecer abaixo do enxerto, e repetir sempre que surgir um novo"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Sem frutos no primeiro ano",
+      "mensagem": "Frutinhos que vingam na muda jovem esgotam a planta e atrasam a copa. Frutificar para valer é a partir do terceiro ano.",
+      "acao_requerida": "Retirar com tesoura os frutinhos que estiverem se formando e repetir até completar um ano de plantio"
+    },
+    {
+      "dia_disparo": 731,
+      "titulo": "Liberada para frutificar",
+      "mensagem": "Com dois anos no vaso, a cidra tem raiz e copa para segurar os frutos.",
+      "acao_requerida": "Deixar os frutos vingarem, raleando para no máximo um fruto a cada 20 a 30 folhas, porque cada cidra pode passar de 1 kg"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e gomose (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo com o substrato úmido, raízes escuras e moles, casca da base do tronco rachada soltando goma âmbar",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, não deixar água no pratinho e manter o colo e o enxerto fora do substrato. Raspe a casca doente até o tecido sadio, pincele pasta bordalesa e troque o substrato encharcado"
+    },
+    {
+      "nome": "Minador-dos-citros (Phyllocnistis citrella)",
+      "tipo": "PRAGA",
+      "sintomas": "Trilhas prateadas e sinuosas dentro das folhas novas, que ficam retorcidas e enroladas",
+      "prevencao_tratamento": "Arrancar e descartar as folhas muito atacadas. Nos fluxos de brotação, pulverize óleo de neem a 0,5% nos brotos a cada 7 dias, no fim da tarde. Folha adulta não é atacada"
+    },
+    {
+      "nome": "Cochonilhas (escama e cochonilha-de-cera)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou flocos brancos fixos em ramos e no verso das folhas; melado pegajoso e fumagina preta por cima",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com água e sabão neutro. Nos casos maiores, óleo mineral a 1% ou óleo de neem a cada 10 dias, fora do sol forte"
+    },
+    {
+      "nome": "Pulgão-preto-dos-citros (Toxoptera citricida)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias pretas nos brotos novos, que encarquilham; formigas subindo o tronco",
+      "prevencao_tratamento": "Jato de água nos brotos. Se voltar, sabão neutro a 1% ou neem a 0,5% a cada 5 dias. Controle as formigas, que protegem o pulgão"
+    },
+    {
+      "nome": "Lagarta-dos-citros (Papilio spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas comidas das bordas para dentro; lagarta marrom com manchas brancas, parecida com cocô de passarinho",
+      "prevencao_tratamento": "Catar à mão durante a inspeção. Em planta pequena, poucas lagartas desfolham um ramo inteiro em dias"
+    },
+    {
+      "nome": "Verrugose (Elsinoë fawcettii)",
+      "tipo": "DOENCA",
+      "sintomas": "Verrugas ásperas cor de palha nas folhas novas e nos frutos, que ficam deformados",
+      "prevencao_tratamento": "A cidra é bem suscetível. Evite molhar a copa na rega e retire as partes com verrugas. Na queda das pétalas, uma aplicação de fungicida cúprico protege os frutos"
+    },
+    {
+      "nome": "Clorose por deficiência de micronutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amareladas com as nervuras verdes: nas folhas novas, falta zinco, manganês ou ferro; nas velhas, com um V verde na base, falta magnésio",
+      "prevencao_tratamento": "Adubo foliar com micronutrientes para cítricos, mais sulfato de magnésio (1 colher de sopa por 5 L de água) no substrato. Confira se o pH não passou de 7"
+    },
+    {
+      "nome": "Queda de flores e frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores e frutos do tamanho de ervilha caindo em massa logo após a floração",
+      "prevencao_tratamento": "Parte da queda é natural. Em excesso, vem de rega irregular ou calor forte: mantenha o substrato uniformemente úmido na floração e não deixe secar por completo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio e regar menos",
+      "mensagem": "Com o frio, a cidra quase para de crescer. É o cítrico mais sensível a geada, e abaixo de 3 °C folhas e ramos queimam.",
+      "acao_requerida": "Espaçar a rega para quando o substrato secar a 5 cm e reduzir a adubação à metade. Em noites com previsão abaixo de 3 °C, levar o vaso para perto da parede ou cobrir a copa com manta TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza de fim de inverno",
+      "mensagem": "Antes da brotação da primavera é a hora de arejar a copa. Copa aberta tem menos cochonilha e fungo e frutos mais bem formados.",
+      "acao_requerida": "Cortar galhos secos, cruzados e voltados para dentro, os brotos vigorosos que sobem retos do meio da copa (ramos-ladrões) e tudo o que brotar abaixo do enxerto. Use tesoura limpa e luvas, porque os ramos têm espinhos"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Floração da cidra",
+      "mensagem": "Vem a florada principal. Estresse hídrico agora derruba flores e frutinhos.",
+      "acao_requerida": "Voltar a adubar todo mês, manter o substrato uniformemente úmido e reforçar a inspeção dos brotos contra minador e pulgão"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: vaso seca mais rápido",
+      "mensagem": "No auge do verão, um vaso ao sol pode secar num só dia, e a falta de água derruba os frutos em formação.",
+      "acao_requerida": "Conferir o substrato todo dia no fim da tarde e cobrir a superfície com 3 cm de casca de pinus ou palha para segurar a umidade"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Época de colher cidras",
+      "mensagem": "Os frutos da florada da primavera ficam prontos no outono e no inverno. A casca passa de verde a amarela e o perfume fica forte.",
+      "acao_requerida": "Colher com tesoura, deixando um pedaço de cabo, as cidras de casca amarela. Para doce de cidra, dá para colher ainda verde-amarelada, com o albedo mais firme"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Árvore-do-viajante",
+    "nome_cientifico": "Ravenala madagascariensis",
+    "descricao": "Planta de Madagascar da família da ave-do-paraíso, com folhas enormes dispostas num leque plano sobre um único tronco. No chão passa de 10 m, mas num vaso grande fica entre 2 e 4 m e raramente floresce. O nome vem da água que se acumula na base das folhas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cimento, barro ou plástico grosso) com pelo menos 45 cm de diâmetro e 45 cm de profundidade e vários furos no fundo; o leque pega muito vento e tomba vaso leve",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% perlita ou casca de pinus fina; rico, mas que drene bem para o rizoma não apodrecer",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do viveiro, em geral criada à meia-sombra, e precisa se acostumar ao sol aos poucos. É normal perder ou amarelar uma folha velha. A fase acaba quando surge uma folha nova, enrolada como um charuto, no centro do leque."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e sai uma folha nova a cada 3 a 6 semanas no calor. O leque começa a ficar plano e simétrico, orientado num único plano. Brotos laterais podem aparecer na base; retire-os se quiser um tronco só."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Da primavera ao fim do verão cresce rápido, pede muita água e adubo e forma o tronco pouco a pouco, à medida que as folhas velhas secam e caem. No inverno quase para: a rega e o adubo diminuem. Frio abaixo de 5 °C queima as folhas e geada pode matar a planta. As folhas rasgadas pelo vento são normais e não indicam doença."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe água parada no pratinho. Acima de 30 °C, confira todo dia: a raiz ainda está no torrão da muda e seca antes do resto do vaso.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a árvore-do-viajante",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 50 L). No verão pode precisar a cada 2 dias; de junho a agosto, com frio, regue só a cada 7 a 10 dias e sempre conferindo antes, porque substrato frio e encharcado apodrece o rizoma.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a árvore-do-viajante",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus de minhoca ou composto sobre o substrato, sem encostar no tronco, mais 1 colher de sopa de NPK 10-10-10 por vaso de 50 L, e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Tirar folhas secas e brotos da base",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao tronco, com serrote de poda ou faca limpa, as folhas mais baixas que estiverem secas ou mais de metade amarelas. Nunca tire folha verde saudável. Se houver brotos laterais saindo da base, corte-os rente ao substrato para manter um tronco só.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e bainhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as bainhas na base do leque atrás de escamas marrons, pontos brancos algodoados ou teias finas. Aperte a base do tronco: se estiver mole ou com cheiro ruim, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar para um vaso maior",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, passe para um vaso 10 a 15 cm mais largo com substrato novo, mantendo o colo da planta na mesma altura de antes. Se o vaso já estiver no maior tamanho possível, tire a planta, raspe 5 cm de substrato velho em volta do torrão e reponha com mistura nova. Separe os brotos da base com raiz para fazer mudas, se quiser.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio na meia-sombra",
+      "mensagem": "Mudas de viveiro queimam se forem direto para o sol forte. Duas semanas de meia-sombra evitam folhas brancas e ressecadas.",
+      "acao_requerida": "Plantar no vaso definitivo, deixar o colo na mesma altura do torrão e colocar o vaso num lugar com sol só de manhã e protegido de vento forte"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A muda já se firmou no vaso e pode começar a receber sol pleno, que é o que faz o leque crescer.",
+      "acao_requerida": "Mudar o vaso para o lugar definitivo, com pelo menos 6 horas de sol direto e longe de corredores de vento"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Firmar o vaso contra o vento",
+      "mensagem": "O leque já está largo e funciona como uma vela: uma rajada pode tombar o vaso e quebrar as folhas.",
+      "acao_requerida": "Colocar o vaso encostado numa parede ou ponha pedras no fundo do cachepô para dar peso; gire o leque para que fique paralelo à direção do vento dominante"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma e das raízes (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folha nova do centro amarela e sai com um puxão; base do tronco mole, escura e com cheiro ruim; o leque todo murcha mesmo com o substrato úmido",
+      "prevencao_tratamento": "É a principal causa de morte em vaso. Regue só com o substrato seco a 5 cm, nunca deixe água no pratinho e reduza muito a rega no inverno. Ao primeiro sinal, pare de regar, retire o substrato encharcado, corte as partes moles com faca limpa e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha (escama e farinha)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons grudadas ou tufos brancos algodoados no verso das folhas e nas bainhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Retire com escova macia ou algodão com álcool 70%; depois, pulverize óleo de neem a 0,5% com uma gota de detergente no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto desbotado e teias finas no verso, sobretudo em tempo quente e seco",
+      "prevencao_tratamento": "Molhe o verso das folhas com jato de água a cada 3 dias nos períodos secos; se persistir, óleo de neem a 0,5% semanal"
+    },
+    {
+      "nome": "Mancha foliar (Helminthosporium, Pestalotiopsis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ovais com halo amarelo que crescem e se juntam, principalmente nas folhas mais velhas",
+      "prevencao_tratamento": "Regue no substrato, não por cima do leque, e remova as folhas muito atacadas. Se espalhar, calda bordalesa ou fungicida à base de cobre a cada 10 dias"
+    },
+    {
+      "nome": "Queimadura por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com áreas cinzentas ou marrons, com aspecto de cozidas, depois de noites abaixo de 5 °C",
+      "prevencao_tratamento": "Nas noites frias, encoste o vaso numa parede voltada para o norte ou cubra o leque com manta de TNT. Não corte as folhas queimadas até a primavera: elas protegem o centro"
+    },
+    {
+      "nome": "Folhas rasgadas e pontas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas partidas em tiras ao longo das nervuras e bordas marrons e secas",
+      "prevencao_tratamento": "Os rasgos vêm do vento e não prejudicam a planta; proteja de corredores de vento. As pontas secas indicam falta de água ou ar muito seco: confira a rega e borrife água nos dias secos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Preparar para o inverno",
+      "mensagem": "Com os dias mais curtos e frios, a árvore-do-viajante quase para de crescer e passa a gastar pouca água.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, sempre conferindo o substrato, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Noites abaixo de 5 °C queimam as folhas, e geada pode matar a planta.",
+      "acao_requerida": "Conferir a previsão; nas noites com menos de 8 °C, encostar o vaso numa parede abrigada ou cobrir o leque com manta de TNT"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento e passa a precisar de mais água e adubo.",
+      "acao_requerida": "Voltar a regar a cada 3 dias, retomar a adubação mensal e cortar as folhas que o frio queimou"
+    }
+  ]
+}

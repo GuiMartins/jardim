@@ -1,0 +1,193 @@
+{
+  "planta": {
+    "nome_comum": "Artemísia",
+    "nome_cientifico": "Artemisia vulgaris",
+    "descricao": "Erva perene aromática. As folhas são recortadas, verde-escuras por cima e prateadas por baixo, e servem para chás, banhos e defumações e para espantar insetos. É rústica e se espalha por rizomas, por isso rende muito em vaso com pouco cuidado. O chá é contraindicado na gravidez.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo; os rizomas enchem vasos menores em poucos meses",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa ou perlita, 20% húmus de minhoca; num solo pobre e bem drenado as folhas ficam mais aromáticas",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda se ajusta ao vaso novo, e é normal cair alguma folha de baixo. A fase termina quando surgem brotos novos no topo e na base."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "As hastes crescem rápido e surgem novos brotos dos rizomas ao redor da muda. Quando a touceira passa de 40 cm e cobre boa parte do vaso, já aguenta colheitas regulares."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Touceira de 60 cm a 1,2 m. Cresce forte na primavera e no verão. No fim do verão e no outono floresce em espigas de flores miúdas amareladas ou avermelhadas. No inverno cresce devagar, fica lenhosa e pede poda drástica. A cada ano os rizomas lotam o vaso e ela precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de artemísia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda não saiu do torrão da muda, então não deixe secar por completo. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a artemísia",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e só regue se estiver seco nessa profundidade, até escorrer pelos furos. Ela tolera seca curta, mas não encharcamento: esvazie o pratinho depois de regar. No verão quente, confira a cada 2 dias; no inverno, a cada 6 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a artemísia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na superfície de um vaso de 15 L 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de farinha de ossos, sem encostar nas hastes, e regue em seguida. Não adube em junho e julho. Excesso de nitrogênio deixa a planta mole e com menos aroma.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher ramos de artemísia",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte 15 a 20 cm das pontas das hastes mais altas, logo acima de um par de folhas, de preferência pela manhã. Tire no máximo um terço da folhagem por vez. Use os ramos frescos ou seque-os pendurados de cabeça para baixo, à sombra. Cortar as pontas também deixa a touceira compacta.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a artemísia",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Nas pontas dos brotos e no verso das folhas, procure pulgões e os pontos brancos da cochonilha. Nas folhas de baixo, veja se há pó branco (oídio) ou pontinhos alaranjados (ferrugem).",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso e corte o torrão em 2 a 4 pedaços com faca ou pá, cada um com rizomas e brotos. Replante um deles no mesmo vaso com substrato novo; os outros viram mudas. O melhor é fazer isso no fim do inverno ou no outono; se cair no auge do verão, adie algumas semanas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora de desbrotar a ponta",
+      "mensagem": "A muda já pegou. Cortar a ponta agora faz ela ramificar e formar uma touceira cheia, em vez de uma haste só.",
+      "acao_requerida": "Cortar os 5 cm do topo de cada haste principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "A touceira já tem folhagem suficiente para colher sem enfraquecer a planta.",
+      "acao_requerida": "Colher as pontas mais altas, sem passar de um terço da folhagem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas de baixo amarelando e base das hastes escura e mole",
+      "prevencao_tratamento": "Só regar quando os 3 cm de cima estiverem secos, esvaziar o pratinho e usar substrato com areia. Em caso avançado, cortar as partes podres e replantar os rizomas sadios em substrato novo"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos brotos; brotos retorcidos e pegajosos",
+      "prevencao_tratamento": "Jato de água ou corte das pontas infestadas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodoados ou carapaças marrons nas hastes e no verso das folhas; planta enfraquecida",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70% e aplicar a cada 7 dias óleo de neem a 0,5% com algumas gotas de detergente neutro"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco-acinzentado sobre as folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Não molhar as folhas ao regar, deixar o vaso em local ventilado e desbastar as hastes de dentro da touceira. Retirar as folhas atacadas e pulverizar a cada 7 dias leite diluído a 10% em água ou bicarbonato (1 colher de chá por litro)"
+    },
+    {
+      "nome": "Ferrugem (Puccinia)",
+      "tipo": "DOENCA",
+      "sintomas": "Pontinhos alaranjados ou marrons em relevo no verso das folhas, com manchas amarelas na face de cima",
+      "prevencao_tratamento": "Retirar as folhas atacadas e jogá-las no lixo, não molhar a folhagem e melhorar a ventilação; em ataque forte, poda drástica"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Hastes finas, compridas e tombando, com folhas espaçadas, pálidas e pouco perfumadas",
+      "prevencao_tratamento": "Levar o vaso para um lugar com pelo menos 4 horas de sol direto e podar as hastes esticadas para rebrotarem mais firmes"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        2,
+        3
+      ],
+      "titulo": "A artemísia vai florescer",
+      "mensagem": "No fim do verão ela solta espigas de flores miúdas. O pólen dessas flores causa alergia, e as sementes brotam em qualquer vaso por perto.",
+      "acao_requerida": "Cortar as espigas assim que aparecerem, a menos que queira usar as flores, e secar os ramos cortados para usar depois"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Menos água no inverno",
+      "mensagem": "Com frio e dias curtos, a artemísia cresce pouco e o substrato demora a secar. É nessa época que a raiz mais apodrece.",
+      "acao_requerida": "Espaçar as regas para cada 6 a 7 dias, sempre conferindo com o dedo, e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno as hastes velhas estão lenhosas e secas. Uma poda drástica agora faz a touceira rebrotar cheia e macia na primavera.",
+      "acao_requerida": "Cortar todas as hastes a 10 a 15 cm do substrato e retomar a adubação"
+    }
+  ]
+}

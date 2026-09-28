@@ -1,0 +1,187 @@
+{
+  "planta": {
+    "nome_comum": "Clívia",
+    "nome_cientifico": "Clivia miniata",
+    "descricao": "Planta de sombra sul-africana de folhas largas e verde-escuras, que no fim do inverno abre cachos de flores alaranjadas. Vive décadas no mesmo vaso, gosta de ficar com as raízes apertadas e só floresce bem se passar o inverno fresca e mais seca. Todas as partes são tóxicas para cães, gatos e crianças se ingeridas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica ou barro, com 20 a 25 cm de diâmetro e 20 cm de profundidade e furos no fundo. Escolha só 3 a 4 cm maior que o torrão: em vaso folgado a clívia faz raiz e demora a florescer",
+    "volume_minimo_litros": 5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% casca de pinus fina ou substrato para orquídea, 30% terra vegetal, 20% perlita ou areia grossa, 10% húmus de minhoca; solto e aerado, porque as raízes carnosas apodrecem em substrato compacto",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta estranha a mudança de luz e pode amarelar uma ou duas folhas velhas. Mantenha-a em claridade forte sem sol do meio-dia e não troque de vaso agora. A adaptação terminou quando surge uma folha nova no centro do leque."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Crescimento lento e constante, com uma folha nova a cada 1 ou 2 meses. As raízes grossas e brancas podem aparecer na superfície ou pelos furos, o que é normal. Folhas eretas e verde-escuras indicam boa luz; folhas moles e alongadas pedem um lugar mais claro."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce da primavera ao outono com rega e adubo, descansa fresca e mais seca de maio a julho e lança a haste floral entre agosto e outubro. Depois das flores, pode formar frutos vermelhos que levam quase um ano para amadurecer. Com os anos forma filhotes na base, que podem ser separados quando tiverem 4 ou mais folhas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_clivia",
+      "titulo": "Regar a clívia",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho após 30 minutos. Se ainda estiver úmido, não regue. De maio a julho, no repouso, regue só quando o vaso estiver seco até a metade (cerca de a cada 15 dias). Não deixe água parada no centro do leque de folhas.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_cochonilha",
+      "titulo": "Procurar cochonilhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas e olhe a base delas, onde uma encaixa na outra, e o verso das folhas. Procure tufos brancos como algodão, escamas marrons grudadas ou folhas pegajosas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Se a planta estiver com haste floral, espere as flores murcharem. Tire o torrão, remova o substrato velho com os dedos, corte raízes moles ou escuras com tesoura limpa e replante na mesma altura, num vaso no máximo 4 cm maior. Separe os filhotes que tiverem 4 ou mais folhas e raízes próprias. Regue só depois de 3 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar da clívia",
+      "mensagem": "A clívia queima com sol forte e fica sem flor no escuro. O ideal é claridade forte o dia todo, com no máximo sol fraco da manhã.",
+      "acao_requerida": "Colocar a planta perto de uma janela clara ou numa varanda coberta, sem sol direto depois das 10h, e não trocar de vaso agora"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Confira o vaso",
+      "mensagem": "Se o vaso de loja for de plástico fino e estiver tombando, ou se o substrato ficar encharcado por mais de uma semana, a clívia precisa de um vaso novo. Raízes saindo pelos furos, sozinhas, não são motivo para trocar.",
+      "acao_requerida": "Passar para um vaso pesado 3 a 4 cm maior, com o substrato recomendado, só se houver um desses dois problemas; se estiver florindo, esperar as flores murcharem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha-farinhenta (Pseudococcus spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão escondidos na base das folhas e no centro do leque; folhas amareladas, pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Retire os tufos com cotonete embebido em álcool 70%; depois pulverize óleo de neem a 0,5% com algumas gotas de detergente neutro, no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou cinzentas grudadas no verso das folhas; manchas amarelas na face de cima",
+      "prevencao_tratamento": "Raspe as escamas com a unha ou uma escova macia e limpe a folha com pano úmido em água e sabão neutro; repita o óleo de neem semanalmente se voltarem"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Bordas das folhas e botões florais roídos, com rastro prateado",
+      "prevencao_tratamento": "Cate à noite com lanterna; cerque a base do vaso com casca de ovo moída ou borra de café seca"
+    },
+    {
+      "nome": "Podridão de raiz e colo (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando a partir da base, base do leque mole e escura com cheiro ruim; a planta se solta do substrato",
+      "prevencao_tratamento": "Regue só com o substrato seco, sobretudo no inverno, e nunca deixe água no pratinho. Na planta atacada, corte todas as partes moles com tesoura limpa, polvilhe canela em pó nos cortes, deixe secar 1 dia e replante em substrato novo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelo-esbranquiçadas ou marrons e secas no meio das folhas, do lado virado para a janela",
+      "prevencao_tratamento": "Afaste a planta do sol direto depois das 10h. As manchas não somem: corte a folha só se mais da metade dela secar"
+    },
+    {
+      "nome": "Haste floral presa",
+      "tipo": "DISTURBIO",
+      "sintomas": "As flores abrem escondidas entre as folhas, porque a haste não se alonga",
+      "prevencao_tratamento": "Garanta o repouso fresco (10 a 15 °C à noite) e seco de maio a julho e volte à rega normal assim que a haste aparecer. Calor no inverno ou rega irregular na subida da haste causam o problema"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta saudável, com muitas folhas, que não lança haste no fim do inverno",
+      "prevencao_tratamento": "Costuma ser falta de repouso fresco e seco no inverno, pouca luz ou vaso grande demais. Leve para um lugar mais claro, respeite o repouso de maio a julho e não troque de vaso sem necessidade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Começa o repouso de inverno",
+      "mensagem": "A clívia precisa de 8 a 10 semanas frescas e mais secas para formar a haste floral. Sem esse descanso, ela não floresce ou as flores abrem presas entre as folhas.",
+      "acao_requerida": "Espaçar a rega (só com o vaso seco até a metade), suspender o adubo e deixar a planta num lugar claro e fresco, longe de aquecedor. Se a noite ficar abaixo de 5 °C, recolher para dentro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Fim do repouso",
+      "mensagem": "É a época em que a haste floral aparece no centro das folhas. Agora ela precisa de água para se alongar.",
+      "acao_requerida": "Quando a haste tiver uns 10 cm, voltar à rega semanal e não girar nem mudar o vaso de lugar até as flores abrirem, para as flores não entortarem"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Adubar a clívia",
+      "mensagem": "Na estação de crescimento, uma adubação por mês mantém as folhas escuras e prepara a floração do ano seguinte.",
+      "acao_requerida": "Regar com adubo líquido NPK equilibrado (10-10-10) ou para floração (4-14-8) na metade da dose do rótulo, com o substrato já úmido; de abril a agosto, não adubar"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Cortar a haste que floriu",
+      "mensagem": "Se as flores já secaram, os frutos que se formam gastam energia da planta por quase um ano.",
+      "acao_requerida": "Cortar a haste seca rente à base com tesoura limpa. Se quiser as sementes, deixar os frutos até ficarem vermelhos"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Calanchoê-tubiflora",
+    "nome_cientifico": "Kalanchoe delagoensis",
+    "descricao": "Suculenta de Madagascar com folhas cilíndricas manchadas, que formam pequenas mudas nas pontas e dão cachos de flores alaranjadas em forma de sino no inverno. Quase não morre, mas espalha mudas por todo lado e é tóxica para cães, gatos e pessoas se ingerida. Por isso fica melhor num vaso isolado, longe de pets.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro de 12 a 15 cm de diâmetro e profundidade, com furo no fundo. O barro é pesado e evita que a haste alta tombe o vaso.",
+    "volume_minimo_litros": 1,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada e 30% perlita ou casca de arroz carbonizada, ou substrato pronto para cactos e suculentas",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A mudinha tirada da ponta da folha é colocada deitada sobre o substrato, sem enterrar. Em 1 a 3 semanas ela solta raízes finas e fica presa. Para saber se enraizou, puxe de leve: se resistir, já pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "A haste sobe reta e as folhas cilíndricas crescem mais grossas e manchadas. Cor avermelhada nas folhas é sinal de sol forte, não de doença. Folhas finas e espaçadas, com a planta inclinada para a janela, indicam falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "A haste chega a 50 a 90 cm e produz mudinhas nas pontas das folhas o ano todo. No inverno, as hastes maduras formam um cacho de flores alaranjadas. Depois de florescer, essa haste seca e morre, mas as mudas da base e as que caíram continuam o vaso. Na primavera e no verão cresce mais e bebe mais água; no inverno fica quase parada."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Borrifar a mudinha",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Borrife a superfície do substrato ao redor da mudinha até umedecer o primeiro centímetro. Sem raiz, ela não tem reserva e desidrata no sol forte. Não encharque: o vaso deve secar entre uma borrifada e outra.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a calanchoê",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver totalmente seco, regue até escorrer pelo furo e esvazie o pratinho. Se ainda houver umidade, espere mais alguns dias. De maio a agosto, regue no máximo a cada 20 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a calanchoê",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g de NPK 10-10-10 (ou adubo para cactos e suculentas) em 1 L de água e use essa solução numa rega normal, com o substrato já úmido. De maio a agosto, pule a adubação: a planta está parada e o adubo acumula sal na raiz.",
+      "critica": false
+    },
+    {
+      "id": "remover_mudinhas",
+      "titulo": "Recolher mudinhas caídas",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Recolha as mudinhas que caíram no substrato, no pratinho e nos vasos vizinhos. Deixe no máximo 3 hastes por vaso. As que sobrarem vão para o lixo orgânico, não para o jardim, porque a espécie é invasora.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a calanchoê",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure tufos brancos de algodão na junção das folhas com a haste e insetos agrupados nos botões de flor. Aperte a base da haste: ela deve estar firme, não mole ou escura.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, descarte as hastes secas ou que já floresceram e replante de 1 a 3 hastes saudáveis em substrato novo. Espere 5 dias para regar, assim as raízes machucadas cicatrizam.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Planta tóxica",
+      "mensagem": "A calanchoê-tubiflora contém bufadienolídeos, que afetam o coração de cães, gatos e crianças se ingeridos.",
+      "acao_requerida": "Deixar o vaso num lugar alto ou fora do alcance de pets e crianças e lavar as mãos depois de mexer nas mudinhas"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "A mudinha pegou?",
+      "mensagem": "Já é tempo de a mudinha ter enraizado e a rega passar a ser espaçada.",
+      "acao_requerida": "Puxar a mudinha de leve: se resistir, está enraizada; se sair solta, apoiá-la de novo no substrato úmido"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Haste ficando alta",
+      "mensagem": "A haste costuma passar de 40 cm por aqui, e o peso das folhas no topo pode tombar o vaso ou quebrá-la.",
+      "acao_requerida": "Girar o vaso um quarto de volta para a haste crescer reta e, se ela estiver inclinada, prendê-la a um palito de bambu com barbante frouxo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base da haste mole, escura ou translúcida; folhas murchas e enrugadas mesmo com o substrato úmido; cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco e nunca deixar água no pratinho. Se a base apodreceu, corte a parte sadia de cima ou recolha mudinhas sadias e replante em substrato seco e novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão na junção das folhas e na base da haste; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%. Se voltar, pulverize óleo de neem a 0,5% com uma gota de detergente no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos verdes ou pretos nos botões de flor e no topo da haste; botões deformados que caem sem abrir",
+      "prevencao_tratamento": "Jato de água ou esfregar com os dedos. Se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Haste fina e muito inclinada, folhas espaçadas e verde-claras, sem manchas nem pontas avermelhadas",
+      "prevencao_tratamento": "Levar o vaso para um lugar com pelo menos 4 horas de sol direto. A parte estiolada não volta: corte o topo e replante como nova muda"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Espaçar a rega",
+      "mensagem": "Com o frio, a calanchoê cresce pouco e o substrato demora a secar. Rega no ritmo do verão agora apodrece a raiz.",
+      "acao_requerida": "Passar a regar no máximo a cada 20 dias até setembro e suspender a adubação"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "Abaixo de 5 °C as folhas suculentas congelam, ficam transparentes e apodrecem. É também a época da floração.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para perto de uma parede coberta ou para dentro de casa"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Limpar as hastes que floresceram",
+      "mensagem": "A haste que deu flor no inverno seca e morre depois. As mudinhas da base e as que caíram assumem o vaso.",
+      "acao_requerida": "Cortar rente ao substrato as hastes secas ou de flores murchas e deixar só as hastes novas mais vigorosas"
+    }
+  ]
+}

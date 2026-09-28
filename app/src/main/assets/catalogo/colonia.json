@@ -1,0 +1,179 @@
+{
+  "planta": {
+    "nome_comum": "Colônia",
+    "nome_cientifico": "Alpinia zerumbet",
+    "descricao": "Planta tropical de rizoma, da família do gengibre, com folhas longas e perfumadas e cachos pendentes de flores brancas e rosadas que parecem porcelana. É rústica e forma touceira alta, então pede vaso grande. As folhas são usadas em chá na medicina popular brasileira.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e pesado, com pelo menos 45 cm de diâmetro e 40 cm de profundidade, e vários furos no fundo; o rizoma se espalha para os lados e a touceira alta tomba em vaso leve",
+    "volume_minimo_litros": 40,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou casca de pinus fina; rico em matéria orgânica e úmido, mas sem empoçar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o rizoma a 3 ou 5 cm abaixo da superfície, na mesma altura em que vinha. Algumas folhas podem amarelar ou secar nas pontas com a mudança. A adaptação terminou quando um broto novo aponta na base da touceira."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "O rizoma se espalha e novos caules sobem da base, cada um com um leque de folhas. Cada caule só floresce no segundo ano de vida, então é normal não haver flores nesse primeiro ano. A fase termina quando a touceira ocupa boa parte do vaso e tem caules de mais de 1 metro."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Touceira de 1,5 a 2,5 m em vaso. Cresce forte da primavera ao outono e floresce entre novembro e fevereiro, nos caules com mais de um ano. No inverno cresce pouco e as folhas podem queimar nas pontas com o frio. O caule que floresceu não floresce de novo: corte-o rente à base depois da floração para dar lugar aos novos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de colônia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz recém-plantada ainda não alcança o fundo do vaso, e um dia de substrato seco murcha as folhas de vez. Esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a colônia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos. Folhas enroladas no meio do dia são sinal de sede. No verão acima de 30 °C, confira a cada 2 dias; de junho a agosto, espace para a cada 5 ou 6 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a colônia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto sobre o substrato, sem encostar nos caules, e regue em seguida. Pode alternar com 1 colher de sopa de NPK 10-10-10 dissolvida em 2 L de água. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as bainhas junto à base dos caules: procure pontos brancos de algodão (cochonilha), teias finas e pontilhado claro (ácaro) e caules moles ou escuros rente ao substrato.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre setembro e novembro, tire a planta do vaso e corte o rizoma com faca limpa em pedaços com 2 ou 3 caules e raízes cada. Replante um pedaço no mesmo vaso com substrato novo e doe ou plante os outros. Se estiver fora dessa época, espere a primavera.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Folhas secando na adaptação?",
+      "mensagem": "É comum a muda perder algumas folhas ao mudar de vaso. Folha seca não volta a ficar verde e só gasta energia.",
+      "acao_requerida": "Cortar rente as folhas totalmente secas e conferir se o vaso não está em sol forte da tarde durante a adaptação"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano da colônia",
+      "mensagem": "Os caules que nasceram no começo já têm um ano e podem florescer na próxima primavera e verão.",
+      "acao_requerida": "Conferir se as raízes já saem pelos furos do vaso; se sim, planejar a divisão da touceira para setembro ou outubro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Caules amarelam de baixo para cima, ficam moles e escuros na base e se soltam com facilidade; cheiro ruim no substrato",
+      "prevencao_tratamento": "Não deixar água parada no pratinho nem regar substrato ainda úmido, principalmente no inverno. Retire os caules afetados, corte a parte podre do rizoma até o tecido firme e claro, deixe secar e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos cerosos ou carapaças marrons nas bainhas e no verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; se houver muitas, pulverize óleo de neem a 0,5% com uma gota de detergente no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontilhado claro nas folhas, que ficam foscas e bronzeadas; teias finas no verso em tempo seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos e quentes; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mancha foliar (Colletotrichum, Pestalotiopsis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ovais com borda escura nas folhas, que crescem e se juntam em tempo úmido",
+      "prevencao_tratamento": "Regue no substrato, não nas folhas, e deixe espaço para o ar circular. Corte as folhas muito manchadas e jogue fora, fora da compostagem"
+    },
+    {
+      "nome": "Queima de pontas e bordas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e margens das folhas secas e marrons, sem manchas no meio da folha",
+      "prevencao_tratamento": "Causada por sol forte da tarde, vento, frio abaixo de 10 °C ou substrato que secou demais. Mude o vaso para sol da manhã, mantenha a rega regular e apare só a parte seca com tesoura, acompanhando o formato da folha"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3,
+        4
+      ],
+      "titulo": "Cortar os caules que floresceram",
+      "mensagem": "O caule da colônia floresce uma vez só. Depois disso, ele envelhece e ocupa espaço dos brotos novos, que vão florescer no próximo verão.",
+      "acao_requerida": "Cortar rente ao substrato os caules que deram flor neste verão e os que estão amarelos ou secos"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a colônia quase para de crescer e o substrato demora a secar, o que favorece a podridão do rizoma. Geada queima as folhas.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender a adubação e levar o vaso para perto de uma parede ou cobertura nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar os cuidados da primavera",
+      "mensagem": "Com o calor voltando, a colônia solta brotos novos e precisa de nutrientes para os caules que vão florescer.",
+      "acao_requerida": "Limpar folhas secas, espalhar uma camada de 2 cm de composto sobre o substrato e voltar à rega e adubação normais"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Pariparoba",
+    "nome_cientifico": "Piper umbellatum",
+    "descricao": "Arbusto nativo da Mata Atlântica, da família da pimenta-do-reino. Tem folhas grandes em forma de coração, usadas na medicina popular e refogadas como verdura. Cresce rápido em meia sombra e fica bonito em vasos grandes de varanda ou quintal sombreado.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "40% terra vegetal, 30% húmus de minhoca ou composto orgânico, 20% fibra de coco ou casca de pinus fina, 10% areia grossa; rico em matéria orgânica, fofo e que retenha umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está se acostumando ao vaso novo. É normal cair uma ou duas folhas velhas e as folhas murcharem um pouco nas horas quentes. A fase termina quando aparece a primeira folha nova e firme na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a planta solta folhas novas a cada duas ou três semanas, cada vez maiores. Os ramos ficam com os nós inchados, típicos do gênero Piper. Quando os ramos passam de 50 cm e a planta ramifica, ela está estabelecida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto de 1 a 2 m em vaso. Cresce forte da primavera ao outono, soltando espigas brancas e finas de flores reunidas em umbela, seguidas de frutinhos. No inverno o crescimento para e algumas folhas amarelam e caem. Folhas murchas ao meio-dia com o substrato úmido indicam sol forte demais, não falta de água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a pariparoba recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda não chegou ao fundo do vaso e o torrão da muda seca antes do resto do substrato. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pariparoba",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Ela gosta de solo sempre levemente úmido. No verão, confira a cada 2 dias; de junho a agosto, espace para 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a pariparoba",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de composto orgânico sobre o substrato, a 5 cm do caule, afofe de leve e regue. De junho a agosto, pule a adubação, porque a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e os nós dos ramos. Procure pontinhos brancos de algodão (cochonilha), teias finas com folha pontilhada de amarelo (ácaro), manchas marrons com halo amarelo (fungo) ou folhas roídas com rastro brilhante (lesma).",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de pariparoba",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 120,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa as folhas maiores e sadias da parte de baixo, rente ao pecíolo, sem tirar mais de um terço da folhagem de uma vez. Use frescas ou seque à sombra. As folhas da ponta ficam na planta para ela continuar crescendo.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, desfaça um terço do torrão velho, corte as raízes enroladas e podres e replante com substrato novo num vaso 10 cm mais largo ou no mesmo vaso. Deixe em sombra clara por 2 semanas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora de desbrotar a ponta",
+      "mensagem": "A pariparoba tende a crescer em uma haste só e fica desengonçada. Cortar a ponta agora faz a planta ramificar e ficar cheia.",
+      "acao_requerida": "Cortar a ponta do ramo principal logo acima de um nó, a uns 40 cm do substrato. A estaca cortada enraíza em água ou em substrato úmido"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de pariparoba",
+      "mensagem": "Com um ano, as raízes costumam tomar o vaso todo, e a rega passa a escorrer rápido sem molhar o torrão.",
+      "acao_requerida": "Conferir se há raízes saindo pelos furos; se houver, adiantar a troca de vaso para a próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas e amareladas mesmo com o substrato úmido; base do caule escura e mole; cheiro azedo no substrato",
+      "prevencao_tratamento": "Nunca deixe água parada no pratinho e regue só com o topo seco. Se aparecer, tire a planta, corte as raízes escuras e replante em substrato novo; faça estacas dos ramos sadios como garantia"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto de algodão nos nós, nas axilas das folhas e no verso; folhas amarelas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo, depois bronzeadas; teias finas no verso, principalmente em época seca e em local abafado",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; óleo de neem a 0,5% a cada 5 dias se persistir"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Buracos irregulares nas folhas novas e rastro brilhante no vaso, com estrago aparecendo de manhã",
+      "prevencao_tratamento": "Catar à noite com lanterna; manter o vaso afastado de muros úmidos e sem folhas caídas acumuladas"
+    },
+    {
+      "nome": "Antracnose e manchas foliares (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas arredondadas, às vezes com halo amarelo, que se espalham em época chuvosa",
+      "prevencao_tratamento": "Regue no substrato, não nas folhas; retire e descarte as folhas manchadas e abra espaço para o ar circular; calda bordalesa em caso de avanço"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas desbotadas, com áreas secas e esbranquiçadas no centro e bordas enroladas após dias de sol forte à tarde",
+      "prevencao_tratamento": "Deixar a planta onde pegue só sol da manhã ou luz filtrada; mudar de lugar aos poucos, ao longo de uma semana"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A pariparoba é tropical e as folhas queimam com geada e com temperaturas abaixo de 5 °C. No inverno ela também bebe bem menos água.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, levar o vaso para perto da parede ou cobrir com tecido; espaçar a rega para quando o substrato estiver seco a 3 cm"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de limpeza da primavera",
+      "mensagem": "Com o fim do frio, a planta volta a brotar. Tirar agora os ramos feios do inverno deixa a planta cheia e renovada.",
+      "acao_requerida": "Cortar ramos secos, finos ou compridos demais logo acima de um nó, reduzindo até um terço da altura, e retomar a adubação"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: cuidado com o sol da tarde",
+      "mensagem": "No auge do verão, as folhas grandes perdem água rápido e queimam com sol direto depois das 11h.",
+      "acao_requerida": "Garantir sombra a partir do fim da manhã e conferir o substrato a cada 2 dias"
+    }
+  ]
+}

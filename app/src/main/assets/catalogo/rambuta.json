@@ -1,0 +1,227 @@
+{
+  "planta": {
+    "nome_comum": "Rambutã",
+    "nome_cientifico": "Nephelium lappaceum",
+    "descricao": "Árvore frutífera tropical do Sudeste Asiático, parente da lichia, com frutos vermelhos cobertos de pelos macios e polpa branca, doce e translúcida. Em vaso, use muda enxertada: ela dá frutos em 3 a 4 anos e vem de planta feminina ou hermafrodita, enquanto um pé de semente pode ser macho e nunca frutificar. Não tolera frio abaixo de 10 °C, então no Centro-Sul o vaso precisa de abrigo no inverno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, fibra ou cimento, com pelo menos 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; de preferência sobre rodízios, para levar ao abrigo no inverno",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina ou areia grossa, 10% vermiculita; pH ácido, entre 5,0 e 6,0. Acrescente 300 g de farinha de ossos por vaso na montagem",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda no vaso definitivo com o ponto do enxerto (a cicatriz no caule) acima do substrato e deixe-a em meia sombra na primeira semana, passando ao sol pleno aos poucos. Algumas folhas podem amarelar e cair; a adaptação terminou quando surgem brotos novos avermelhados na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A planta cresce em surtos: brota um lote de folhas avermelhadas, que endurecem e ficam verde-escuras, e descansa algumas semanas antes do próximo surto. Retire qualquer broto que nasça abaixo do enxerto. Espere 30 a 60 cm de crescimento no ano."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A copa se ramifica e o caule engrossa. Flores podem aparecer no fim do inverno a partir do 2º ano; em planta com menos de 1,2 m, corte os cachos de flores para a energia ir para a estrutura. A fase termina quando a planta passa de 1,5 m e segura bem os ramos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: parada no inverno (junho a agosto) com abrigo do frio, floração em cachos de flores pequenas entre agosto e outubro, frutos crescendo na primavera e amadurecendo de janeiro a março, poda leve logo após a colheita. Em vaso, uma planta bem cuidada produz de 5 a 15 kg de frutos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de rambutã",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz recém-plantada ainda não explora o vaso todo e morre se o torrão da muda secar. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o rambutã",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 8 a 10 L num vaso de 60 L) e esvazie o prato depois de 30 minutos. No verão e com frutos, confira a cada 2 dias; no inverno, com a planta parada, espace para 5 a 7 dias. Molhe também as folhas em dias secos, porque a planta gosta de umidade do ar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o rambutã",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 litro de húmus de minhoca ou 300 g de bokashi pela borda do vaso, longe do caule, e regue em seguida. A partir do 3º ano, acrescente 1 colher de sopa de NPK 10-10-10 (troque por NPK 04-14-08 de julho a outubro, para favorecer flores e frutos). Não adube de junho a agosto se a planta estiver parada pelo frio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e mais velhas e olhe o verso e os ramos: procure bolinhas brancas ou marrons grudadas (cochonilha), pontinhos amarelados com teia fina (ácaro), manchas escuras afundadas (antracnose) e brotos abaixo do enxerto, que devem ser arrancados.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, raspe 5 cm de raízes enoveladas nas laterais e no fundo e volte para um vaso 20% maior (ou o mesmo, se já tiver 100 L ou mais) com substrato novo. Se o transplante cair entre maio e agosto, espere até setembro. Deixe em meia sombra por uma semana depois.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Confira o pegamento",
+      "mensagem": "A muda já deve estar brotando. Brotos que nascem abaixo do enxerto vêm do cavalo e roubam força da copa.",
+      "acao_requerida": "Arrancar rente ao caule todo broto abaixo da cicatriz do enxerto e passar o vaso para o sol pleno"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Poda de formação",
+      "mensagem": "Uma copa baixa e ramificada produz mais e cabe melhor no vaso do que um tronco único alto.",
+      "acao_requerida": "Cortar a ponta do ramo principal a 60 a 80 cm do substrato, logo acima de uma folha, para forçar 3 ou 4 ramos laterais"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de rambutã",
+      "mensagem": "A raiz já ocupa boa parte do vaso e a planta passa a pedir mais água e adubo.",
+      "acao_requerida": "Conferir se a água ainda escorre bem pelos furos e passar a regar até escorrer a cada visita"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Idade de produzir",
+      "mensagem": "A muda enxertada chega à idade de frutificar. A partir de agora, deixe as flores do fim do inverno virarem frutos.",
+      "acao_requerida": "Parar de cortar os cachos de flores e passar a usar NPK 04-14-08 de julho a outubro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com substrato úmido, amarelam e caem; raízes escuras, moles e com cheiro ruim; base do caule escurecida",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e garantir furos desobstruídos; em caso de suspeita, suspender a rega, cortar as raízes podres e replantar em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, marrons ou algodoadas nos ramos e no verso das folhas; melado pegajoso e fumagina preta por cima",
+      "prevencao_tratamento": "Remover com cotonete ou escova e álcool 70%; em infestação, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Ácaro",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados ou prateados, bronzeadas no verso, às vezes com teia fina; pior em tempo seco",
+      "prevencao_tratamento": "Molhar as folhas em dias secos; se persistir, calda de enxofre ou óleo de neem a 0,5% no verso das folhas a cada 7 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nas folhas novas, nas flores e nos frutos; flores secam e caem em tempo úmido",
+      "prevencao_tratamento": "Deixar a copa arejada com a poda pós-colheita, recolher folhas e frutos caídos e, na floração chuvosa, aplicar calda bordalesa a 1% a cada 15 dias"
+    },
+    {
+      "nome": "Oídio (Oidium spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre as flores e folhas novas; flores caem sem formar frutos",
+      "prevencao_tratamento": "Evitar sombra e ar parado; aplicar calda de enxofre ou leite diluído a 10% nas flores no começo dos sintomas"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam com aspecto queimado ou transparente e caem depois de noites abaixo de 10 °C; ponteiros secam",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede voltada ao norte ou para dentro nas noites frias; cobrir com manta de TNT abaixo de 8 °C; só podar a parte seca depois do inverno"
+    },
+    {
+      "nome": "Rachadura e queda de frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos pequenos caem verdes ou racham na casca durante o enchimento",
+      "prevencao_tratamento": "Manter a umidade do substrato constante da floração à colheita, sem alternar seca e encharcamento; adubar com potássio e cálcio (NPK 04-14-08 e farinha de ossos)"
+    },
+    {
+      "nome": "Clorose por pH alto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes",
+      "prevencao_tratamento": "Não usar calcário no substrato; regar com água da chuva quando possível e aplicar quelato de ferro ou sulfato de ferro conforme a embalagem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteja o rambutã do frio",
+      "mensagem": "Abaixo de 10 °C as folhas queimam, e uma geada pode matar a planta. Com o frio, ela para de crescer e bebe menos.",
+      "acao_requerida": "Levar o vaso para um canto abrigado do vento e ensolarado, cobrir com manta nas noites abaixo de 8 °C, espaçar a rega e suspender o adubo"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Floração do rambutã",
+      "mensagem": "Plantas com mais de 3 anos soltam cachos de flores pequenas no fim do inverno e na primavera. Seca ou encharcamento agora derrubam as flores.",
+      "acao_requerida": "Manter o substrato sempre levemente úmido, usar NPK 04-14-08 na adubação e evitar molhar as flores"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de colher rambutã",
+      "mensagem": "Os frutos ficam prontos cerca de 4 meses após a floração, quando a casca e os pelos estão totalmente vermelhos ou amarelos, conforme a variedade. Eles não amadurecem depois de colhidos.",
+      "acao_requerida": "Cortar os cachos maduros com tesoura, com um pedaço do ramo; colher a cada 3 ou 4 dias antes que os pássaros cheguem e os frutos escureçam"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Poda pós-colheita",
+      "mensagem": "Os ramos que deram frutos precisam ser encurtados para brotar e amadurecer antes do inverno, que é o que dá flores no ano seguinte.",
+      "acao_requerida": "Cortar 20 a 30 cm dos ramos que deram cachos, tirar galhos secos e cruzados para arejar o centro da copa e fazer uma adubação"
+    }
+  ]
+}

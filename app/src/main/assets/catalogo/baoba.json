@@ -1,0 +1,199 @@
+{
+  "planta": {
+    "nome_comum": "Baobá",
+    "nome_cientifico": "Adansonia digitata",
+    "descricao": "Árvore africana de tronco bojudo que armazena água, cultivada em vaso como planta de coleção ou bonsai por causa do caule que engrossa na base desde jovem. Cresce devagar, é perene e perde as folhas no inverno seco. Por isso tolera esquecimento, mas não tolera excesso de água.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Na semeadura, copo ou vaso de 10 cm de diâmetro e 12 cm de profundidade. O vaso definitivo é de barro ou plástico, com pelo menos 30 cm de diâmetro e 30 cm de profundidade, e vários furos no fundo. O barro ajuda o substrato a secar entre as regas",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% perlita ou brita fina, 10% húmus de minhoca. Deve escorrer a água em segundos e nunca formar lama",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A casca da semente é dura e impermeável. Antes de semear, lixe um ponto da borda até aparecer o miolo claro, ou despeje água quase fervente sobre as sementes e deixe de molho por 24 horas. Enterre a 2 cm de profundidade, em local quente (acima de 25 °C). As que foram escarificadas brotam entre o 7º e o 21º dia; algumas demoram até 30. A fase termina quando o broto abre as duas folhas arredondadas (cotilédones)."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "Surgem folhas simples e alongadas. As folhas palmadas, com 5 a 7 folíolos como os dedos de uma mão, só aparecem depois de alguns meses. O caule é verde e macio e começa a engrossar na base. A plântula está pronta para o vaso definitivo quando as raízes aparecem pelos furos do copo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 121,
+      "dia_fim": 730,
+      "descricao": "O caule fica marrom-acinzentado e a base forma o bojo característico. No primeiro inverno as folhas amarelam e caem: é dormência normal, não é morte. Aperte o caule: firme e liso é sinal de planta sadia, e mole ou enrugado indica raiz podre ou seca extrema. Cresce de 20 a 40 cm por ano em vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Em vaso, o baobá segue um ano típico: folhas novas em setembro e outubro, crescimento forte e rega regular no verão chuvoso, queda das folhas entre maio e junho e repouso seco até agosto. Raramente floresce em vaso antes de 15 ou 20 anos. Pode ser conduzido como bonsai com podas no fim do inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Toque a superfície: se o primeiro centímetro estiver seco, regue com borrifador ou em fio fino até umedecer, sem encharcar. Substrato seco mata a raiz que está saindo, e substrato encharcado apodrece a semente.",
+      "critica": true
+    },
+    {
+      "id": "rega_plantula",
+      "titulo": "Regar a plântula de baobá",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Se ainda estiver úmido, espere mais um dia. Acima de 32 °C, confira a cada 2 dias.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o baobá",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 121,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Só regue se estiver seco, e então regue até escorrer pelos furos. Nunca deixe água no pratinho. Sem folhas (maio a agosto), dê só meio copo de água a cada 3 ou 4 semanas e pule as outras regas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o baobá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g (1/4 de colher de chá) de NPK 10-10-10 em 1 litro de água e regue com o substrato já úmido. Em plântula, use metade da dose. De maio a agosto, sem folhas, não adube.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelos com teias finas (ácaro) ou bolinhas brancas algodoadas nas axilas e no caule (cochonilha). Aperte a base do caule: ela deve estar firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e subir de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça isso entre setembro e novembro. Se o lembrete cair no inverno, espere até lá. Tire a planta com o torrão, corte raízes pretas ou moles e passe para um vaso 5 a 10 cm maior com substrato novo. Espere 7 dias antes da primeira rega para os cortes cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Alguma semente brotou?",
+      "mensagem": "Sementes bem escarificadas costumam brotar até a terceira semana. Se nenhuma apareceu, provavelmente a casca não deixou a água entrar.",
+      "acao_requerida": "Desenterrar uma semente. Se estiver dura e do mesmo tamanho, lixar a borda até ver o miolo claro e semear de novo. Se estiver mole, descartar e reduzir a rega"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "A plântula já deve ter raízes suficientes para ir ao vaso grande. No copo pequeno, o crescimento trava.",
+      "acao_requerida": "Passar a muda com o torrão inteiro para o vaso de 20 L com substrato arenoso, na mesma altura do caule, e só regar 3 dias depois"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão radicular (Pythium, Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole, escura ou enrugada; folhas amarelam e caem fora do inverno; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e quase nada no inverno. Se aparecer, tirar do vaso, cortar as raízes e a parte mole do caule até o tecido firme, deixar secar 2 dias à sombra e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântula murcha e cai com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Semear em substrato novo e arenoso, sem encharcar e com bom sol. Retirar as plântulas afetadas"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados nas axilas das folhas e no caule; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Em infestação maior, pulverizar óleo de neem a 0,5% com algumas gotas de detergente neutro a cada 7 dias, no fim da tarde"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Jato de água no verso das folhas a cada 3 dias. Se persistir, óleo de neem a 0,5% semanal"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule fino e comprido, sem engrossar na base, com folhas pequenas e espaçadas e a planta tombando para a janela",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 a 6 horas de sol direto. O trecho estiolado não engrossa depois; se quiser, pode podá-lo no fim do inverno"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas escuras nas folhas e pontas do caule murchas depois de noites abaixo de 8 °C",
+      "prevencao_tratamento": "Nas noites frias, levar o vaso para dentro ou para junto de uma parede protegida. Manter o substrato seco no frio"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "O baobá vai perder as folhas",
+      "mensagem": "Com o frio e o tempo seco, o baobá amarela e derruba as folhas. É a dormência natural dele, e a planta não está morrendo.",
+      "acao_requerida": "Reduzir a rega a meio copo a cada 3 ou 4 semanas quando as folhas caírem e suspender a adubação até a brotação"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O baobá é tropical: abaixo de 8 °C o caule pode ser danificado, e geada mata a planta jovem.",
+      "acao_requerida": "Em noites com previsão abaixo de 10 °C, levar o vaso para dentro, perto de uma janela, e manter o substrato seco"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Fim da dormência",
+      "mensagem": "Com o calor voltando, surgem os brotos novos. É a melhor época para podar, trocar de vaso e retomar os cuidados normais.",
+      "acao_requerida": "Quando aparecerem brotos, voltar à rega semanal e à adubação mensal. Se quiser formar a copa, podar os ramos longos acima de uma gema"
+    }
+  ]
+}

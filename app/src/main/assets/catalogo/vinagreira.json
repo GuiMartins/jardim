@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Vinagreira",
+    "nome_cientifico": "Hibiscus sabdariffa",
+    "descricao": "Também chamada de hibisco, caruru-azedo ou azedinha. Rende folhas ácidas para o cuxá maranhense e cálices vermelhos e carnudos para chá, geleia e suco. Na natureza pode viver mais de um ano, mas em vaso é cultivada como anual. Ela só floresce quando os dias ficam mais curtos (março a maio), por isso deve ser semeada na primavera.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 240,
+    "meses_plantio": [
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso plástico ou de barro com pelo menos 35 cm de profundidade e 35 cm de diâmetro, com vários furos no fundo; uma planta por vaso",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; acrescente 1 colher de sopa de calcário dolomítico a cada 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Semeie 3 sementes a 1,5 cm de profundidade no centro do vaso. Com o substrato acima de 25 °C, as plântulas aparecem entre o 4º e o 10º dia, com duas folhas arredondadas e caule avermelhado."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 11,
+      "dia_fim": 45,
+      "descricao": "Surgem as folhas verdadeiras, primeiro inteiras e depois recortadas em 3 a 5 lobos. A fase termina quando a planta passa de 30 cm e firma o caule."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 46,
+      "dia_fim": 150,
+      "descricao": "A planta cresce rápido no calor e se ramifica. É a melhor época para colher folhas. Ela não floresce enquanto os dias forem longos: isso é normal, não é falta de adubo."
+    },
+    {
+      "fase_id": "floracao_calices",
+      "nome": "Floração e Colheita dos Cálices",
+      "dia_inicio": 151,
+      "dia_fim": 240,
+      "descricao": "Entre março e maio, com os dias mais curtos, abrem flores amarelo-claras com o centro vinho, que duram um dia só. Depois que a flor cai, o cálice vermelho incha em volta da cápsula. Ele está no ponto 10 a 20 dias depois, quando fica carnudo e brilhante e ainda quebra fácil. Termina quando a planta para de florescer e começa a secar com o frio."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Borrife ou regue com regador de crivo fino pela manhã, só até umedecer os primeiros 2 cm. A superfície não pode secar, mas também não deve ficar água empoçada.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a vinagreira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até a água escorrer pelos furos e esvazie o prato. Com planta grande e acima de 30 °C, confira todo dia. A partir de maio, com o frio, espace para a cada 3 ou 4 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a vinagreira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 220,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca ou 1 colher de sopa de bokashi em volta do caule, sem encostar nele, e regue em seguida. A partir da floração, acrescente 1 colher de chá de farinha de ossos para ajudar a formar os cálices.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de vinagreira",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Colha as folhas novas e macias das pontas dos ramos, até um terço da folhagem por vez. Cortar as pontas também faz a planta ramificar e dar mais cálices depois.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Vire as folhas e procure ácaros (pontinhos e teias finas), mosca-branca e pulgão. Olhe também as axilas e os botões atrás de massas brancas de cochonilha e o colo do caule atrás de manchas escuras.",
+      "critica": false
+    },
+    {
+      "id": "colheita_calices",
+      "titulo": "Colher os cálices",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 160,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Colha com tesoura os cálices vermelhos, inchados e brilhantes que ainda quebram fácil ao dobrar, de 10 a 20 dias depois da queda da flor. Deixe os pequenos para a próxima passada. Em casa, separe o cálice da cápsula verde e use-o fresco ou seque-o à sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As plântulas estão competindo pelo mesmo vaso. Uma vinagreira só já ocupa 30 L.",
+      "acao_requerida": "Deixar só a muda mais vigorosa e cortar as outras rente ao substrato com tesoura, sem arrancar"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Despontar a vinagreira",
+      "mensagem": "Com cerca de 40 cm, cortar a ponta faz a planta abrir em vários ramos, e cada ramo vai dar cálices.",
+      "acao_requerida": "Cortar os 3 a 5 cm da ponta principal logo acima de uma folha"
+    },
+    {
+      "dia_disparo": 70,
+      "titulo": "Colocar tutor",
+      "mensagem": "Em vaso ela chega a 1,5 m, e o vento pode tombar o vaso ou lascar o caule quando os ramos pesarem.",
+      "acao_requerida": "Cravar uma estaca de 1,2 m a 5 cm do caule e amarrar com fita macia em oito, sem apertar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e da raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, colo do caule escuro e mole, raízes marrons",
+      "prevencao_tratamento": "Não deixe água no prato, use substrato bem drenado e regue só quando os 3 cm de cima estiverem secos. Planta com o colo apodrecido raramente se recupera: descarte-a com o substrato"
+    },
+    {
+      "nome": "Cochonilha-rosada (Maconellicoccus hirsutus)",
+      "tipo": "PRAGA",
+      "sintomas": "Massas brancas algodonosas nos brotos, botões e cálices; brotos enrugados e cálices deformados",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70% e pode os brotos muito atacados. Se persistir, aplique óleo de neem a 0,5% com detergente neutro a cada 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, depois bronzeadas; teias finas no verso em tempo quente e seco",
+      "prevencao_tratamento": "Molhe o verso das folhas com jato de água a cada 2 ou 3 dias. Em ataque forte, use óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca e pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Insetos brancos que voam ao mexer na planta ou colônias verdes nas pontas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e jato de água; se persistir, sabão potássico ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Nematoide-das-galhas (Meloidogyne spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Planta raquítica e amarelada que murcha no calor; raízes cheias de caroços",
+      "prevencao_tratamento": "Use substrato novo ou comprado, nunca terra de canteiro de hortaliças. Planta atacada não tem cura em vaso: descarte o substrato"
+    },
+    {
+      "nome": "Não floresce por luz à noite",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta grande e sadia chega a abril ou maio sem nenhum botão floral",
+      "prevencao_tratamento": "A vinagreira precisa de noites longas e escuras para florescer. Afaste o vaso de postes, holofotes e luzes de varanda que ficam acesas à noite"
+    },
+    {
+      "nome": "Folhas amarelas por falta de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas de baixo amarelam por inteiro e caem, e o crescimento para no verão",
+      "prevencao_tratamento": "Faça a adubação de cobertura em dia; em vaso a chuva e a rega lavam os nutrientes. Se o substrato ficar encharcado, o amarelado pode ser falta de ar na raiz, não de adubo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Floração da vinagreira chegando",
+      "mensagem": "Os dias estão encurtando, e é isso que faz a vinagreira soltar os botões nas próximas semanas.",
+      "acao_requerida": "Parar de colher as pontas dos ramos, que é onde nascem os botões, e trocar parte do húmus da adubação por farinha de ossos"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A vinagreira é tropical: abaixo de 10 °C ela para, e a geada queima os cálices e mata a planta.",
+      "acao_requerida": "Em noites com previsão abaixo de 8 °C, levar o vaso para perto de uma parede ou sob cobertura e colher antes da geada todos os cálices que já estiverem vermelhos"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "planta": {
+    "nome_comum": "Maxixe",
+    "nome_cientifico": "Cucumis anguria",
+    "descricao": "Trepadeira da família do pepino, rústica e muito produtiva no calor, que dá frutinhos ovais cobertos de espinhos moles, usados em refogados, saladas e picles. Em vaso com treliça, uma única planta rende dezenas de frutos por mês no verão.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 120,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira funda com pelo menos 30 cm de profundidade e 35 cm de diâmetro, furos no fundo e espaço para uma treliça ou tela de 1,5 m de altura",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto curtido, 20% areia grossa ou perlita, mais 1 colher de sopa de calcário dolomítico e 1 xícara de farinha de ossos por 20 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 8,
+      "descricao": "Semeie 3 sementes a 2 cm de profundidade no centro do vaso. Com o substrato acima de 20 °C, as plântulas surgem entre o 4º e o 8º dia, com duas folhas ovais e lisas (cotilédones)."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 9,
+      "dia_fim": 25,
+      "descricao": "Aparecem as folhas verdadeiras, recortadas e ásperas. A fase termina quando a planta solta a primeira gavinha (fio enrolado) procurando onde se agarrar."
+    },
+    {
+      "fase_id": "crescimento_ramas",
+      "nome": "Crescimento das Ramas",
+      "dia_inicio": 26,
+      "dia_fim": 40,
+      "descricao": "As ramas crescem vários centímetros por dia e se prendem pela gavinha. Surgem as primeiras flores amarelas, quase todas masculinas (sem frutinho na base)."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 41,
+      "dia_fim": 55,
+      "descricao": "Aparecem as flores femininas, com um mini maxixe espinhoso atrás da pétala. Flor feminina polinizada engorda o frutinho em poucos dias; a não polinizada amarela e cai."
+    },
+    {
+      "fase_id": "frutificacao_colheita",
+      "nome": "Frutificação e Colheita",
+      "dia_inicio": 56,
+      "dia_fim": 105,
+      "descricao": "Pico de produção: frutos ficam no ponto 5 a 7 dias depois da flor. Quanto mais se colhe, mais a planta produz; fruto esquecido que amadurece faz a planta parar de florescer."
+    },
+    {
+      "fase_id": "declinio",
+      "nome": "Declínio",
+      "dia_inicio": 106,
+      "dia_fim": 120,
+      "descricao": "As folhas de baixo amarelam, as ramas novas ficam curtas e os frutos, menores. Colha o que restar e, se quiser continuar produzindo, semeie outro vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 8,
+      "instrucoes": "Regue devagar com regador de crivo fino até umedecer os primeiros 3 cm. O substrato não pode secar nem encharcar: semente de cucurbitácea apodrece em solo frio e alagado.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar a muda de maxixe",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 25,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, sem molhar as folhas. Em dias acima de 30 °C, confira todo dia.",
+      "critica": false
+    },
+    {
+      "id": "rega_producao",
+      "titulo": "Regar o maxixe",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 26,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Regue de manhã, na base da planta, até escorrer pelos furos (cerca de 2 a 3 L num vaso de 20 L). No calor forte, se as folhas murcharem à tarde, regue de novo no fim do dia. Evite molhar as folhas, que favorece oídio e míldio.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o maxixe",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 105,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de bokashi ao redor do caule, a 5 cm dele, e regue em seguida. A partir da floração, acrescente 1 colher de chá de cinza de madeira peneirada (potássio) para encher os frutos.",
+      "critica": false
+    },
+    {
+      "id": "guiar_ramas",
+      "titulo": "Guiar as ramas na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 26,
+      "dia_fim_ciclo": 70,
+      "instrucoes": "Passe as pontas das ramas soltas pela treliça ou prenda-as com barbante em laço frouxo (tipo oito). Ramas que caem para fora do vaso quebram e escondem frutos, que acabam passando do ponto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Vire as folhas e procure pó branco (oídio), manchas amarelas angulosas (míldio), pulgões, mosca-branca e furos. Abra as ramas e procure frutinhos com furo e serragem (broca).",
+      "critica": false
+    },
+    {
+      "id": "colheita_maxixe",
+      "titulo": "Colher os maxixes no ponto",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 56,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Corte com tesoura, deixando 1 cm de cabinho, os frutos verdes com 4 a 6 cm e espinhos macios. Fruto que amarelou ou ficou duro já tem semente formada: retire também, para a planta não parar de produzir.",
+      "critica": true
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Três plantas no mesmo vaso de 20 L competem por água e produzem pouco. Uma só rende mais que as três juntas.",
+      "acao_requerida": "Deixar só a muda mais vigorosa, cortando as outras rente ao substrato com tesoura (não arranque, para não mexer na raiz dela)"
+    },
+    {
+      "dia_disparo": 20,
+      "titulo": "Instale a treliça",
+      "mensagem": "As primeiras gavinhas vão aparecer nos próximos dias. Colocar o suporte agora evita ferir raízes depois.",
+      "acao_requerida": "Fincar no vaso uma treliça, tela ou três bambus em tripé de 1,5 m, amarrados no alto, e encostar a muda nele"
+    },
+    {
+      "dia_disparo": 42,
+      "titulo": "Primeiras flores femininas",
+      "mensagem": "Flores com um mini maxixe atrás da pétala precisam do pólen das flores masculinas. Em varanda alta ou fechada, sem abelhas, elas caem sem formar fruto.",
+      "acao_requerida": "Se não vir abelhas pela manhã, colher uma flor masculina aberta, tirar as pétalas e encostar o miolo no centro das flores femininas, até as 10h"
+    },
+    {
+      "dia_disparo": 56,
+      "titulo": "Começa a colheita",
+      "mensagem": "Os primeiros frutos devem estar com 4 a 6 cm. Colher cedo e sempre é o que mantém a planta produzindo.",
+      "acao_requerida": "Procurar frutos escondidos entre as folhas e colher todos os que estiverem no ponto"
+    },
+    {
+      "dia_disparo": 100,
+      "titulo": "Planeje o próximo vaso",
+      "mensagem": "A produção começa a cair nas próximas semanas. Uma nova semeadura agora emenda a colheita, se ainda estiver dentro da época quente.",
+      "acao_requerida": "Semear outro vaso de maxixe se o mês estiver entre setembro e fevereiro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Oídio (Podosphaera xanthii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco como talco na face de cima das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Regar sem molhar as folhas e deixar o vaso em local ventilado; retirar as folhas atacadas e pulverizar leite diluído (1 parte para 9 de água) ou bicarbonato de sódio (1 colher de chá por litro, com gotas de detergente neutro) a cada 7 dias"
+    },
+    {
+      "nome": "Míldio (Pseudoperonospora cubensis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas angulosas, limitadas pelas nervuras, com mofo acinzentado no verso da folha; aparece em tempo úmido",
+      "prevencao_tratamento": "Regar só de manhã e na base, sem molhar as folhas; retirar e descartar folhas afetadas; em ataque forte, calda bordalesa a 1% no fim da tarde a cada 7 dias"
+    },
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; base do caule escura e mole",
+      "prevencao_tratamento": "Vaso com furos desobstruídos, camada de drenagem e prato sem água parada; conferir com o dedo antes de regar. Planta com colo apodrecido não se recupera: descarte e troque o substrato"
+    },
+    {
+      "nome": "Broca-das-cucurbitáceas (Diaphania nitidalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos e pontas de rama com furos e serragem escura; lagartas verdes dentro",
+      "prevencao_tratamento": "Colher os frutos no ponto e destruir os furados; em ataque repetido, pulverizar Bacillus thuringiensis no fim da tarde a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nas pontas e no verso das folhas; folhas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas folhas; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; folhas amareladas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos nas folhas e flores roídas; besouros verdes com manchas amarelas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo; proteger as mudas com tecido fino (TNT) até a floração"
+    },
+    {
+      "nome": "Queda de frutinhos sem polinização",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutinhos das flores femininas amarelam, murcham e caem com 1 a 2 cm",
+      "prevencao_tratamento": "Polinizar à mão pela manhã com uma flor masculina; manter flores atrativas (manjericão, cosmos) por perto para chamar abelhas"
+    },
+    {
+      "nome": "Frutos amargos e deformados por estresse hídrico",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos tortos, afinados numa ponta ou com gosto amargo depois de dias de murcha",
+      "prevencao_tratamento": "Rega regular todo dia no calor, cobertura do substrato com palha para segurar a umidade e adubação com potássio na frutificação"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: reforce a rega",
+      "mensagem": "No auge do verão, um vaso de 20 L com a planta carregada pode secar em meio dia, e a murcha repetida deixa os frutos amargos e tortos.",
+      "acao_requerida": "Cobrir o substrato com 3 cm de palha ou folhas secas e conferir a umidade também no fim da tarde"
+    },
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "O frio encerra o maxixe",
+      "mensagem": "Abaixo de 15 °C a planta para de florescer e fica sujeita a doenças. Não vale insistir até a próxima primavera.",
+      "acao_requerida": "Colher todos os frutos restantes, reduzir a rega e encerrar o plantio; guardar o vaso para semear de novo em setembro"
+    }
+  ]
+}

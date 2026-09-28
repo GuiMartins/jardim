@@ -1,0 +1,220 @@
+{
+  "planta": {
+    "nome_comum": "Cravo-de-defunto",
+    "nome_cientifico": "Tagetes erecta",
+    "descricao": "Também chamado de cravo-africano ou tagetes, dá flores dobradas amarelas ou laranja, grandes como pompons, por meses a fio. É uma das flores mais fáceis de cultivar a partir da semente e, perto da horta, atrai joaninhas e ajuda a reduzir nematoides. Semeada no início de agosto, floresce a tempo do Dia de Finados.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso com 20 a 25 cm de diâmetro e pelo menos 20 cm de profundidade, com furos no fundo; em jardineira, deixe 25 cm entre as plantas",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% substrato comercial para flores, 20% areia grossa ou perlita, mais 1 colher de sopa de farinha de ossos por vaso de 5 L. Fique longe de esterco fresco: o excesso de nitrogênio dá folha e pouca flor",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 7,
+      "descricao": "Semeie 3 sementes por vaso, a 0,5 cm de profundidade, e cubra de leve. Acima de 20 °C as plântulas aparecem entre o 4º e o 7º dia, com duas folhinhas estreitas."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 8,
+      "dia_fim": 30,
+      "descricao": "Surgem as folhas verdadeiras, recortadas como pena e com cheiro forte ao toque. O caule ainda é fino e sensível a encharcamento. A fase termina quando a muda passa de 10 cm e tem 4 a 5 pares de folhas."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 55,
+      "descricao": "A planta ramifica e engrossa. Nas variedades altas, o caule passa de 40 cm. Perto do fim da fase aparecem os primeiros botões fechados, verdes e redondos, na ponta dos ramos."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 56,
+      "dia_fim": 135,
+      "descricao": "Os botões se abrem em flores dobradas de 6 a 10 cm, e cada uma dura de 2 a 3 semanas. Tirando as flores secas, a planta continua lançando botões novos por uns dois meses e meio."
+    },
+    {
+      "fase_id": "declinio_sementes",
+      "nome": "Declínio e Sementes",
+      "dia_inicio": 136,
+      "dia_fim": 150,
+      "descricao": "Os botões novos ficam raros e menores, e as folhas de baixo amarelam. As flores deixadas na planta secam e viram cápsulas cheias de sementes finas e pretas. Depois da colheita das sementes, a planta pode ir para a compostagem."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 7,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. Com as sementes tão rasas, uma tarde de sol com o substrato seco basta para perder a germinação.",
+      "critica": true
+    },
+    {
+      "id": "rega_mudas",
+      "titulo": "Regar as mudas",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 1 cm no substrato e, se estiver seco, regue devagar na base, sem molhar as folhas, até escorrer pelos furos. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cravo-de-defunto",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e só regue se estiver seco, molhando a terra até escorrer pelos furos. Evite molhar as flores, que apodrecem por dentro. Em dias frios ou nublados, o intervalo passa para 3 ou 4 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para flores",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Espalhe 1 colher de sopa de farinha de ossos ou de NPK 4-14-8 em volta da planta, a 3 cm do caule, e regue em seguida. Não use adubo rico em nitrogênio: dá folhagem e atrasa as flores.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_flores_secas",
+      "titulo": "Tirar as flores secas",
+      "tipo": "PODA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": 135,
+      "instrucoes": "Corte com tesoura as flores murchas ou marrons logo abaixo da cabeça, até o primeiro par de folhas. Assim a planta não gasta energia em sementes e lança botões novos.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teia fina (ácaro), insetos agrupados nas pontas e nos botões (pulgão), manchas escuras nas folhas e mofo cinza dentro das flores.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Com três mudas no mesmo vaso, nenhuma se desenvolve direito.",
+      "acao_requerida": "Deixar só a muda mais vigorosa, cortando as outras rente ao substrato com tesoura, sem arrancar para não mexer na raiz da que fica"
+    },
+    {
+      "dia_disparo": 25,
+      "titulo": "Desponte a muda",
+      "mensagem": "Cortar a ponta agora faz a planta ramificar. Ela fica mais baixa, mais firme e com muito mais flores.",
+      "acao_requerida": "Beliscar com os dedos a ponta do caule principal logo acima do 4º par de folhas"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Tutor para as variedades altas",
+      "mensagem": "Cravo-africano alto passa de 60 cm, e as flores pesadas tombam com vento ou chuva.",
+      "acao_requerida": "Se a planta já passou de 40 cm, cravar uma vareta de bambu de 60 cm a 5 cm do caule e amarrar frouxo, em oito, com barbante"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Guarde sementes para o próximo ano",
+      "mensagem": "As sementes das flores deixadas secar na planta germinam bem no ano seguinte.",
+      "acao_requerida": "Deixar 2 ou 3 flores secarem na planta até ficarem marrons, colher, abrir e guardar as sementes pretas num envelope de papel em local seco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com a terra úmida, e o caule escurece e amolece rente ao substrato; nas mudas, elas tombam",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, garantir furos livres e não deixar água no pratinho; tirar e descartar as plantas afetadas junto com o substrato"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas no verso e entre os botões, principalmente no tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas no fim da tarde em dias secos; se persistir, óleo de neem a 0,5% a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas e nos botões, que ficam deformados e pegajosos",
+      "prevencao_tratamento": "Jato de água; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Mudas roídas ou cortadas durante a noite e rastro brilhante no vaso",
+      "prevencao_tratamento": "Catar à noite com lanterna e espalhar casca de ovo triturada em volta das mudas"
+    },
+    {
+      "nome": "Podridão-cinzenta (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Mofo cinza e pétalas marrons e moles no centro das flores dobradas, depois de chuva ou rega por cima",
+      "prevencao_tratamento": "Não molhar as flores, retirar logo as flores afetadas e, em períodos chuvosos, deixar o vaso sob abrigo"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre as folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Espaçar os vasos para ventilar; borrifar leite diluído a 10% ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules compridos, finos e tombados, folhas espaçadas e pouca ou nenhuma flor",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 6 horas de sol direto; despontar a planta para ela ramificar mais baixo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuvas de verão e flores dobradas",
+      "mensagem": "As chuvas fortes e diárias do verão encharcam as flores dobradas e deixam o substrato sempre molhado, e é assim que começam a podridão-cinzenta e a podridão de raiz.",
+      "acao_requerida": "Nos dias de temporal, deixar o vaso sob abrigo, esvaziar o pratinho depois da chuva e pular a rega enquanto o substrato estiver úmido a 3 cm"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O cravo-de-defunto não aguenta geada, e abaixo de 10 °C para de florescer.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para perto de uma parede ou para dentro, ou cobrir com TNT"
+    }
+  ]
+}

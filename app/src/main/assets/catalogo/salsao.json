@@ -1,0 +1,202 @@
+{
+  "planta": {
+    "nome_comum": "Salsão",
+    "nome_cientifico": "Apium graveolens var. dulce",
+    "descricao": "Também chamado de aipo, é cultivado pelos talos crocantes e aromáticos e pelas folhas usadas como tempero. A planta é bienal, mas em casa é tratada como ANUAL: colhe-se no primeiro ciclo, antes de ela florescer. Começar por muda poupa os cerca de 70 dias de sementeira, que é lenta e delicada.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 120,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de profundidade e 25 cm de diâmetro por planta, com furos no fundo; em jardineira, 25 cm entre plantas",
+    "volume_minimo_litros": 10,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto curtido, 10% fibra de coco, 10% areia grossa, mais 1 colher de sopa de calcário dolomítico por 10 L; rico e com boa retenção de umidade, porque o salsão tem raiz rasa e muito exigente em água",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação da Muda",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Plante a muda na mesma altura em que vinha na bandeja, sem enterrar o miolo de onde saem as folhas novas. Nos primeiros dias as folhas externas podem murchar um pouco no calor. A fase termina quando o centro solta folhas novas e a planta fica firme o dia todo."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 15,
+      "dia_fim": 60,
+      "descricao": "A roseta se abre e os talos se multiplicam a partir do centro. É a fase de maior consumo de nitrogênio e água: folhas verde-claras ou amareladas pedem adubo. Brotos laterais que surgem na base do pé podem ser arrancados para concentrar o vigor nos talos principais."
+    },
+    {
+      "fase_id": "engrossamento_talos",
+      "nome": "Engrossamento dos Talos",
+      "dia_inicio": 61,
+      "dia_fim": 90,
+      "descricao": "Os talos alongam e engrossam, formando um feixe compacto. Falta de água nesta fase deixa os talos fibrosos, ocos e amargos, e rega irregular causa o escurecimento do miolo (coração negro). Folhas externas já podem ser colhidas para tempero."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 91,
+      "dia_fim": 120,
+      "descricao": "Os talos externos passam de 25 cm e estão firmes e quebradiços. Colha aos poucos, de fora para dentro, ou corte o pé inteiro rente ao substrato. Se surgir uma haste central alta e dura (pendoamento), colha tudo logo: os talos endurecem e amargam."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de salsão",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Regue pela manhã até escorrer pelos furos, molhando o substrato e não as folhas. O substrato deve ficar sempre úmido como esponja espremida, nunca seco nem com água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o salsão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar na base até escorrer pelos furos. O salsão não tolera secar: acima de 28 °C ou com vento, confira todo dia. No inverno, se o dedo sair úmido, espere mais um dia.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o salsão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 105,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca e 1 colher de chá de torta de mamona (ou bokashi) por vaso de 10 L, em volta do pé sem encostar nos talos, e regue em seguida. Uma vez por mês, troque a torta por 1 colher de chá de farinha de ossos ou casca de ovo moída, fonte de cálcio contra o coração negro.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e talos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Vire as folhas e procure pulgões agrupados e trilhas brancas sinuosas dentro da folha (mosca-minadora). Nas folhas de baixo, procure manchas marrons com pontinhos pretos. Abra o centro do pé e veja se as folhas novas estão verdes, não escuras ou podres. Retire as folhas afetadas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_talos",
+      "titulo": "Colher talos de salsão",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Destaque com um puxão lateral, rente à base, os 2 a 4 talos mais externos com mais de 25 cm. Deixe sempre pelo menos 6 talos centrais para a planta continuar produzindo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Cobrir o substrato",
+      "mensagem": "A muda pegou. Uma camada de cobertura segura a umidade que o salsão tanto precisa e reduz a rega irregular.",
+      "acao_requerida": "Espalhar 2 cm de palha, casca de arroz ou folhas secas picadas sobre o substrato, deixando 3 cm livres em volta do pé"
+    },
+    {
+      "dia_disparo": 75,
+      "titulo": "Branquear os talos (opcional)",
+      "mensagem": "Talos protegidos da luz nas últimas semanas ficam mais claros, tenros e menos amargos.",
+      "acao_requerida": "Envolver o feixe de talos com papelão ou jornal dobrado, amarrado frouxo com barbante, deixando as folhas de fora; manter até a colheita"
+    },
+    {
+      "dia_disparo": 91,
+      "titulo": "Salsão pronto para colher",
+      "mensagem": "Os talos externos devem estar com mais de 25 cm, firmes e quebradiços.",
+      "acao_requerida": "Conferir o tamanho dos talos externos e começar a colheita de fora para dentro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos no verso das folhas e no miolo; folhas novas enrugadas e pegajosas",
+      "prevencao_tratamento": "Jato de água forte nas folhas; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-minadora (Liriomyza spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Trilhas brancas ou prateadas e sinuosas dentro das folhas, que depois secam",
+      "prevencao_tratamento": "Arrancar e descartar no lixo as folhas minadas; armadilha adesiva amarela perto do vaso; óleo de neem a 0,5% semanal em infestação forte"
+    },
+    {
+      "nome": "Septoriose (Septoria apiicola)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons nas folhas e talos, com pontinhos pretos no centro; começa nas folhas de baixo e sobe",
+      "prevencao_tratamento": "Regar só a base, nunca as folhas; manter espaço para ventilar; retirar as folhas manchadas; em casos fortes, calda bordalesa a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Cercosporiose (Cercospora apii)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas arredondadas amareladas que ficam cinza-acastanhadas, sem pontinhos pretos, mais comuns no calor úmido",
+      "prevencao_tratamento": "As mesmas medidas da septoriose: rega na base, ventilação e retirada das folhas afetadas; calda bordalesa se espalhar"
+    },
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato molhado; base dos talos escura, mole e com cheiro ruim",
+      "prevencao_tratamento": "Úmido sim, encharcado não: esvaziar o pratinho após a rega e garantir furos livres; plantar sem enterrar o miolo; descartar a planta atingida e o substrato"
+    },
+    {
+      "nome": "Coração negro",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas do centro escurecem, ficam moles e apodrecem, enquanto as externas seguem verdes",
+      "prevencao_tratamento": "É falta de cálcio no miolo causada por rega irregular: manter a umidade constante, pôr calcário no substrato e adubar com fonte de cálcio; evitar excesso de nitrogênio"
+    },
+    {
+      "nome": "Talo fibroso, oco e amargo",
+      "tipo": "DISTURBIO",
+      "sintomas": "Talos finos, duros, com fios grossos ou ocos por dentro e gosto amargo",
+      "prevencao_tratamento": "Causado por falta de água, calor forte ou colheita tardia: regar sem deixar secar, dar sombra na tarde de verão e colher assim que os talos atingirem o tamanho"
+    },
+    {
+      "nome": "Pendoamento precoce",
+      "tipo": "DISTURBIO",
+      "sintomas": "Surge uma haste central alta e dura, que vai dar flores; os talos param de engrossar e amargam",
+      "prevencao_tratamento": "É provocado por um período longo abaixo de 10 °C seguido de calor: proteger do frio intenso no inverno; se pendoar, colher a planta inteira na hora"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o salsão do frio",
+      "mensagem": "Duas semanas seguidas abaixo de 10 °C podem fazer o salsão pendoar, e a geada queima as folhas.",
+      "acao_requerida": "Nas noites abaixo de 8 °C ou com previsão de geada, levar o vaso para perto da parede ou para baixo de uma cobertura, ou cobri-lo com tecido não tecido (TNT)"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Salsão no calor",
+      "mensagem": "Acima de 28 °C o vaso seca em horas e os talos ficam fibrosos e amargos.",
+      "acao_requerida": "Deixar o vaso só com o sol da manhã, com sombra depois das 13 h, e conferir a umidade do substrato todo dia"
+    }
+  ]
+}

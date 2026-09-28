@@ -1,0 +1,203 @@
+{
+  "planta": {
+    "nome_comum": "Juazeiro",
+    "nome_cientifico": "Sarcomphalus joazeiro (sin. Ziziphus joazeiro)",
+    "descricao": "Árvore nativa da Caatinga, sempre verde mesmo na seca, com ramos espinhentos e frutinhos amarelos comestíveis de polpa branca e adocicada. Em vaso grande vira uma arvoreta rústica e resistente à falta de água, mas as mudas levam de 3 a 5 anos para dar os primeiros frutos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e fundo, de pelo menos 50 cm de profundidade e 50 cm de diâmetro, com vários furos no fundo; comece com um de 30 L e passe para 60 L ou mais quando as raízes saírem pelos furos",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou esterco curtido, 10% casca de pinus ou pedrisco; precisa drenar rápido, porque a raiz tolera seca mas não encharcamento",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está firmando as raízes no vaso novo. Pode perder algumas folhas nas primeiras semanas; a fase termina quando surgem brotos novos de cor verde-clara nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento contínuo de ramos em zigue-zague, com espinhos aos pares na base das folhas. A raiz principal aprofunda rápido; quando ela aparecer pelos furos, é hora de passar para o vaso definitivo. A planta está estabelecida quando atravessa o primeiro inverno sem perder folhas em massa."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arvoreta sempre verde. O ano típico tem crescimento forte na primavera e no verão, floração miúda e amarelo-esverdeada entre novembro e dezembro e frutos que amadurecem de junho a julho, a partir do terceiro a quinto ano. No inverno o crescimento para e a rega diminui. A copa é mantida pequena com poda de formação no fim do inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de juazeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe água parada no pratinho. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_estabelecimento",
+      "titulo": "Regar o juazeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 365,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. De junho a agosto, espace para cada 6 dias.",
+      "critica": false
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar o juazeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 366,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue fundo até escorrer bem pelos furos. Com o substrato ainda úmido, pule a rega. No inverno, espace para cada 8 a 10 dias; no verão muito quente, encurte para cada 3 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o juazeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de esterco curtido ou húmus na superfície, a um palmo do tronco, afofe levemente e regue. Na planta adulta, some 1 colher de sopa de NPK 4-14-8 na adubação de setembro. Pule a adubação de junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Use luva por causa dos espinhos. Olhe o verso das folhas e a junção dos ramos em busca de escamas brancas ou marrons, folhas roídas ou trilhas de formiga subindo o tronco.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera, tire a planta do vaso, corte até 1/5 das raízes enoveladas na volta do torrão e troque o substrato velho por novo. Se o vaso já tem 60 L ou mais, retire só os 10 cm de cima e reponha com substrato novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Firme a muda com um tutor",
+      "mensagem": "O caule do juazeiro jovem é fino e cresce em zigue-zague; o vento balança o torrão e rompe as raízes novas.",
+      "acao_requerida": "Fincar uma estaca de 1 m ao lado da muda, sem ferir o torrão, e amarrar o caule com fita ou tira de pano em forma de 8"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda adaptada",
+      "mensagem": "Com brotos novos aparecendo, a muda já pega adubo sem queimar as raízes.",
+      "acao_requerida": "Conferir se há brotação nova; se não houver, adiar a primeira adubação e rever se o vaso recebe pelo menos 5 horas de sol"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Confira se precisa de vaso maior",
+      "mensagem": "A raiz principal do juazeiro aprofunda rápido e, presa num vaso pequeno, trava o crescimento da copa.",
+      "acao_requerida": "Olhar o fundo do vaso; se houver raízes saindo pelos furos, passar para um vaso de 60 L ou mais sem desmanchar o torrão"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escura e mole; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e nunca deixar água no pratinho. Se aparecer, suspenda a rega, tire a planta do vaso, corte as raízes escuras e replante em substrato novo e arenoso"
+    },
+    {
+      "nome": "Cochonilha (escamas e cochonilha-farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodonosas grudadas nos ramos e no verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com escova de dente macia e água com sabão neutro; em infestação maior, óleo de neem a 0,5% com detergente, no fim da tarde, a cada 7 dias por 3 aplicações"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou ramos desfolhados de um dia para o outro; trilha de formigas no tronco",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida granulada perto dele, longe do alcance de crianças e pets; graxa ou fita adesiva dupla-face em volta do vaso impede a subida"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro e fezes escuras e granuladas sobre as folhas de baixo",
+      "prevencao_tratamento": "Catar à mão com luva; em ataque grande, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Dano por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e brotos novos escurecem, ficam com aspecto cozido e secam depois de uma noite muito fria",
+      "prevencao_tratamento": "Planta do semiárido, sente geada. Nas noites abaixo de 3 °C, levar o vaso para perto de uma parede ou sob cobertura, ou cobrir a copa com TNT. Não pode os ramos queimados até a brotação da primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e atenção à geada",
+      "mensagem": "No frio o juazeiro quase para de crescer e o substrato demora a secar; rega de verão agora apodrece a raiz. Nas regiões mais frias, geada queima os brotos.",
+      "acao_requerida": "Espaçar a rega para cada 8 a 10 dias conferindo com o dedo, e proteger o vaso nas noites abaixo de 3 °C"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Época dos frutos",
+      "mensagem": "Em plantas com mais de 3 anos, os frutinhos redondos ficam amarelos e macios nesta época e caem sozinhos quando passam do ponto.",
+      "acao_requerida": "Colher com luva os frutos amarelos a cada 2 ou 3 dias e recolher os caídos do substrato para não atrair moscas"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno, antes da brotação da primavera, a poda deixa a copa compacta e do tamanho do vaso.",
+      "acao_requerida": "Com luva e tesoura de poda limpa, cortar ramos secos, cruzados e os que passaram da altura desejada, logo acima de uma gema, sem tirar mais de 1/4 da copa"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Floração do juazeiro",
+      "mensagem": "Plantas adultas soltam cachinhos de flores miúdas amarelo-esverdeadas, visitadas por abelhas. Falta de água agora derruba as flores.",
+      "acao_requerida": "Manter a rega regular conferindo o substrato com o dedo e não aplicar inseticida nos dias de flor aberta"
+    }
+  ]
+}

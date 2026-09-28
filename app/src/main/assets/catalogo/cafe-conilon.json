@@ -1,0 +1,239 @@
+{
+  "planta": {
+    "nome_comum": "Café-conilon",
+    "nome_cientifico": "Coffea canephora (variedade Conilon)",
+    "descricao": "Cafeeiro robusto de clima quente, cultivado no Espírito Santo e em Rondônia. Tolera calor e sol forte melhor que o arábica, mas sofre com frio abaixo de 10 °C. Ele é autoincompatível: uma planta sozinha dá flor e pouco fruto, então, para colher de verdade, cultive dois ou três clones diferentes lado a lado.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso ou cimento, com pelo menos 45 cm de diâmetro e 45 cm de profundidade e vários furos no fundo",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita, mais 1 colher de sopa de calcário dolomítico a cada 10 L de mistura (pH entre 5,5 e 6,5)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso e ao sol. Folhas de baixo podem amarelar e cair. A fase termina quando surge um par de folhas novas, brilhantes e bem abertas, na ponta do ramo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido de ramos e folhas. É nesta fase que se formam as 3 ou 4 hastes verticais que vão carregar a produção. Ainda não se espera florada."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "As hastes engrossam e os ramos laterais se alongam. A primeira florada pode vir depois das chuvas de setembro e outubro, mas costuma ser pequena."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: florada branca e perfumada após as primeiras chuvas (setembro e outubro), frutos verdes crescendo no verão, colheita dos frutos vermelhos entre abril e junho e poda depois da colheita. Mantenha a planta com no máximo 1,8 m de altura no vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de café",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda seca antes do resto do vaso, então molhe bem ao redor do caule.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o café",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 50 L). Acima de 32 °C, confira a cada 2 dias. No inverno, espace para a cada 5 a 7 dias. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o café",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na borda do vaso, longe do caule, 1 colher de sopa de NPK 20-05-20 por vaso de 50 L (2 colheres a partir do segundo ano) mais meio litro de húmus, e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "desbrota",
+      "titulo": "Tirar brotos ladrões",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 120,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Arranque com os dedos os brotos verticais novos que nascem no tronco e na base das hastes, deixando só as 3 ou 4 hastes escolhidas. Broto com mais de 10 cm corte com tesoura rente ao tronco.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pó alaranjado (ferrugem), manchas marrons secas com galerias (bicho-mineiro), algodão branco nas axilas (cochonilha) e, com frutos, furinhos na ponta do grão (broca).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Logo após a colheita, tire a planta do vaso, raspe 3 a 5 cm das raízes enoveladas nas laterais, troque pelo menos um terço do substrato por mistura nova e volte ao mesmo vaso ou a um 20% maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "Enterrar o colo abaixo do nível original apodrece o caule do café.",
+      "acao_requerida": "Plantar a muda na mesma altura em que estava no saquinho, sem adubo químico na cova, e regar até encharcar uma vez"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Hora de formar as hastes",
+      "mensagem": "O conilon produz em várias hastes verticais. Formá-las agora define a arquitetura da planta.",
+      "acao_requerida": "Curvar o caule em arco, amarrando a ponta num arame ou estaca, para brotarem hastes novas; quando elas tiverem 20 cm, escolher as 3 ou 4 mais fortes e soltar o arco"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro aniversário",
+      "mensagem": "A planta já está estabelecida e passa a pedir mais adubo.",
+      "acao_requerida": "Dobrar a dose de NPK nas próximas adubações e conferir se o vaso ainda tem espaço para as raízes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por encharcamento",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos livres e sem pratinho cheio; se já começou, suspender a rega e trocar o substrato cortando as raízes podres"
+    },
+    {
+      "nome": "Ferrugem (Hemileia vastatrix)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó alaranjado no verso das folhas e manchas amarelas na face de cima; queda de folhas",
+      "prevencao_tratamento": "Retirar e descartar as folhas atacadas, deixar ventilar a copa; em ataque forte, calda bordalesa ou fungicida cúprico a cada 20 dias no período chuvoso"
+    },
+    {
+      "nome": "Bicho-mineiro (Leucoptera coffeella)",
+      "tipo": "PRAGA",
+      "sintomas": "Manchas marrons secas nas folhas que descascam como papel, com larvas dentro",
+      "prevencao_tratamento": "Arrancar e descartar as folhas minadas; óleo de neem a 0,5% a cada 7 dias na estação seca, quando o ataque é maior"
+    },
+    {
+      "nome": "Broca-do-café (Hypothenemus hampei)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinho na coroa (ponta) do fruto, grão por dentro com galerias e pó",
+      "prevencao_tratamento": "Colher todos os frutos, sem deixar nenhum na planta nem caído no vaso, porque é neles que a broca passa a entressafra"
+    },
+    {
+      "nome": "Cochonilha-da-roseta (Planococcus spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Massas brancas algodonosas nas axilas dos ramos e entre os frutos, com formigas por perto",
+      "prevencao_tratamento": "Remover com cotonete e álcool 70%; óleo mineral ou de neem a 1% a cada 7 dias até sumir"
+    },
+    {
+      "nome": "Ácaro-vermelho (Oligonychus ilicis)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas bronzeadas e sem brilho na face de cima, com pontinhos vermelhos visíveis na lupa",
+      "prevencao_tratamento": "Molhar a copa com jato de água na estação seca; se persistir, enxofre molhável a 0,3% no fim da tarde"
+    },
+    {
+      "nome": "Queima por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e ponteiros escurecidos e secos depois de uma noite fria",
+      "prevencao_tratamento": "Abaixo de 10 °C, levar o vaso para perto de uma parede ou cobrir com TNT à noite; esperar a brotação para podar o que secou"
+    },
+    {
+      "nome": "Falta de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas amarelo-claras por igual e crescimento fraco",
+      "prevencao_tratamento": "Manter a adubação a cada 60 dias na estação quente e completar com húmus ou torta de mamona"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "O café cresce pouco no frio e o conilon sofre com noites abaixo de 10 °C.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender a adubação e proteger o vaso em noites frias"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Florada vem aí",
+      "mensagem": "Depois do período mais seco, uma rega farta faz a planta abrir as flores todas juntas.",
+      "acao_requerida": "Após a primeira chuva forte, ou numa rega farta que encharque o vaso inteiro, voltar à rega normal e não deixar mais secar"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12,
+        1
+      ],
+      "titulo": "Frutos em formação",
+      "mensagem": "Falta de água agora derruba os frutinhos verdes e deixa os grãos chochos.",
+      "acao_requerida": "Conferir a umidade do substrato a cada 2 dias e retomar a adubação com NPK"
+    },
+    {
+      "meses": [
+        4,
+        5,
+        6
+      ],
+      "titulo": "Época da colheita",
+      "mensagem": "Os frutos do conilon amadurecem de forma escalonada, vermelhos ou amarelos conforme o clone.",
+      "acao_requerida": "Colher à mão os frutos maduros a cada semana, sem deixar nenhum na planta ou no chão, e secá-los ao sol em camada fina"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda depois da colheita",
+      "mensagem": "No conilon, ramos que já produziram não produzem de novo no mesmo ponto.",
+      "acao_requerida": "Cortar os ramos laterais secos ou esgotados rente à haste, decotar hastes acima de 1,8 m e, depois de 3 a 4 safras, trocar a haste mais velha por um broto novo"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Falsa-érica",
+    "nome_cientifico": "Cuphea hyssopifolia",
+    "descricao": "Subarbusto compacto de folhas miúdas e brilhantes, coberto de florzinhas lilás, rosa ou brancas durante quase o ano todo. Aguenta sol pleno e calor, atrai abelhas e beija-flores e vive muitos anos em vaso com pouco trabalho.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo; vasos de barro ajudam a não encharcar",
+    "volume_minimo_litros": 7,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; levemente ácido e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda está enraizando no vaso novo. É normal cair algumas folhas e parar de florir por uns dias. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "Os ramos crescem e se ramificam, e a planta volta a florir sem parar. As raízes começam a aparecer pelos furos do vaso por volta do fim desta fase, sinal de que ela ocupou o substrato."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Arbusto denso de 30 a 60 cm. Flore com mais força da primavera ao outono e diminui no inverno frio. Poda de formação no fim do inverno, adubação na estação quente e troca de substrato a cada dois anos mantêm a planta compacta e florida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a falsa-érica",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com as raízes ainda presas no torrão da muda, um dia de substrato seco no sol já murcha a planta. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a falsa-érica",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos só se estiver seco. No verão, em vaso pequeno e sol pleno, pode precisar a cada 1 ou 2 dias; no inverno, a cada 4 a 6 dias. Esvazie o pratinho depois de 30 minutos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a falsa-érica",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de sopa de húmus) por vaso de 7 L, longe do caule, e regue em seguida. De junho a agosto, pule a adubação: a planta cresce pouco no frio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 5,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Sacuda os ramos sobre um papel branco e vire algumas folhas: procure moscas brancas voando, pontinhos pretos ou vermelhos que andam, teias finas e insetos agrupados nos brotos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato ou vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, solte as raízes que estiverem enroladas e corte as mortas. Replante com substrato novo num vaso 5 cm maior, ou no mesmo vaso aparando 3 cm do torrão em volta. Faça de preferência entre agosto e outubro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Passe a muda para o vaso definitivo",
+      "mensagem": "O saquinho ou vaso de viveiro é pequeno demais e seca em horas no sol.",
+      "acao_requerida": "Plantar a muda no vaso com substrato novo, deixando o colo do caule na mesma altura em que estava, e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Belisque as pontas",
+      "mensagem": "Os ramos já cresceram. Cortar as pontas agora faz cada ramo se dividir em dois e deixa o arbusto cheio e redondo.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo com tesoura limpa, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta; folhas amareladas e pegajosas, com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; óleo de neem a 0,5% no verso das folhas, no fim da tarde, a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; pontas retorcidas",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas entre os ramos, piores no tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água nas folhas nos dias secos; óleo de neem a 0,5% no verso das folhas a cada 5 dias; podar ramos muito atacados"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas caem amarelas, base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e usar substrato com areia; em planta atacada, tirar do vaso, cortar raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Queda de folhas por seca",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas ficam secas e crocantes e caem de repente, flores murcham, substrato descolado da parede do vaso",
+      "prevencao_tratamento": "Regar por imersão (vaso num balde de água por 15 minutos) para reidratar o torrão e encurtar o intervalo de rega no calor"
+    },
+    {
+      "nome": "Clorose por substrato alcalino",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes",
+      "prevencao_tratamento": "Evitar calcário e água muito calcária; adubar com fertilizante que tenha ferro e micronutrientes e acrescentar composto ou turfa ao substrato"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja do frio",
+      "mensagem": "A falsa-érica perde folhas e ramos com geada e sofre abaixo de 3 °C.",
+      "acao_requerida": "Nas noites de previsão de geada, levar o vaso para perto da parede ou para baixo de uma cobertura, e regar menos: só com o substrato seco a 4 cm"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno a planta está parada; podar agora gera brotação densa e floração farta na primavera.",
+      "acao_requerida": "Cortar um terço do comprimento dos ramos, arredondando a copa, e remover galhos secos ou cruzados"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: confira a rega",
+      "mensagem": "Em vaso ao sol pleno, o substrato pode secar em um dia no auge do verão.",
+      "acao_requerida": "Conferir o substrato todo dia no fim da tarde e, se possível, dar sombra nas horas mais quentes a vasos pequenos"
+    }
+  ]
+}

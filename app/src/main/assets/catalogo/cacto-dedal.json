@@ -1,0 +1,178 @@
+{
+  "planta": {
+    "nome_comum": "Cacto-dedal",
+    "nome_cientifico": "Mammillaria vetula subsp. gracilis",
+    "descricao": "Cacto mexicano pequeno que forma touceiras de cabecinhas cilíndricas de 1 a 2 cm, cobertas de espinhos brancos e macios. As cabecinhas se soltam com facilidade e enraízam sozinhas. É dos cactos mais fáceis de manter em vaso, e depois de um inverno fresco e seco dá florezinhas creme em coroa. Escolhida a subespécie gracilis, a forma vendida no Brasil como cacto-dedal.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro não esmaltado, raso e largo, com 10 a 14 cm de diâmetro, 8 a 10 cm de profundidade e furo grande no fundo. O barro ajuda o substrato a secar entre as regas. Sem prato com água embaixo.",
+    "volume_minimo_litros": 0.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% areia grossa lavada, 30% pedrisco ou perlita, 20% terra vegetal peneirada, 10% casca de pinus fina. Cubra a superfície com pedrisco para o colo da planta não ficar em contato com terra úmida.",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "O cacto de loja costuma vir em turfa encharcada e de uma estufa com pouca luz. Leve-o ao sol aos poucos: 2 horas de sol da manhã na primeira semana e 4 na segunda. Manchas brancas ou marrons no lado virado para o sol são queimadura e pedem que você recue um passo. Ele está adaptado quando aguenta o sol da manhã inteiro sem mudar de cor."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 120,
+      "descricao": "As raízes se espalham pelo substrato novo. O sinal de que pegou é o surgimento de cabecinhas novas, verde-claras, na base ou entre as antigas, e a planta firme quando você balança o vaso de leve. Cabecinhas que caem sozinhas podem ser deixadas sobre o substrato seco, porque enraízam em 2 a 4 semanas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "A touceira cresce da primavera ao outono com regas espaçadas e adubo fraco. No inverno (junho a agosto) fica em repouso quase seco e fresco, o que induz a floração: coroas de florezinhas creme aparecem entre o fim do inverno e a primavera. Cabecinhas alongadas e verde-pálidas indicam falta de sol."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_cacto",
+      "titulo": "Regar o cacto-dedal",
+      "tipo": "REGA",
+      "frequencia_dias": 12,
+      "dia_inicio_ciclo": 10,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de churrasco até o fundo do vaso e tire: só regue se sair seco e limpo. Molhe o substrato devagar, sem molhar a planta, até escorrer pelo furo, e jogue fora a água que ficar no prato. No verão acima de 30 °C, o intervalo cai para uns 8 dias. De maio a agosto, regue só uma vez por mês, com metade da água.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cacto",
+      "titulo": "Adubar com fertilizante para cactos",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo líquido para cactos, ou NPK 10-10-10, na metade da dose do rótulo e use essa solução na rega em que o substrato já estava seco. Só de setembro a março: de abril a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar entre as cabecinhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os espinhos com um palito e olhe entre as cabecinhas e junto ao substrato. Procure algodãozinho branco (cochonilha), pontinhos avermelhados com teia fina (ácaro) e cabecinhas moles ou escuras na base (podridão).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça isso entre setembro e novembro, com o substrato seco. Tire a touceira segurando com jornal dobrado, limpe as raízes, corte as secas e replante em substrato novo num vaso 2 a 3 cm mais largo, se a touceira já encosta na borda. Espere 7 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Trocar a turfa de loja",
+      "mensagem": "A turfa em que o cacto chega segura água demais e é a principal causa de podridão nos primeiros meses.",
+      "acao_requerida": "Com o substrato seco, tirar a planta do vaso, soltar a turfa das raízes com um palito e replantar no substrato para cactos. Não regar por 7 dias."
+    },
+    {
+      "dia_disparo": 10,
+      "titulo": "Primeira rega depois do replantio",
+      "mensagem": "As raízes machucadas no replantio já cicatrizaram e podem receber água sem apodrecer.",
+      "acao_requerida": "Fazer uma rega completa, até escorrer pelo furo, e deixar secar totalmente antes da próxima"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Cabecinhas da base amolecem, ficam translúcidas ou marrons e se soltam; a touceira balança no vaso; cheiro de mofo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo, nunca deixar água no prato e usar substrato bem drenado. Se aparecer, tire do vaso, corte todo tecido mole até achar tecido firme e verde, deixe cicatrizar à sombra por 5 a 7 dias e replante as cabecinhas sadias em substrato seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta (inclusive a de raiz)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão entre as cabecinhas ou nas raízes; planta amarelada que para de crescer",
+      "prevencao_tratamento": "Retire com cotonete molhado em álcool 70%. Na raiz, lave as raízes, deixe secar 2 dias e replante em substrato novo. Repita a inspeção a cada 7 dias por um mês"
+    },
+    {
+      "nome": "Ácaro-vermelho",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos marrom-alaranjados e manchas cor de ferrugem na pele das cabecinhas, com teia fina entre os espinhos, mais comum em lugar quente, seco e abafado",
+      "prevencao_tratamento": "Manter o vaso em lugar ventilado. Borrife água no fim da tarde por alguns dias e, se persistir, aplique óleo de neem a 0,5% a cada 5 dias, 3 vezes"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Cabecinhas novas finas, compridas, verde-pálidas e tortas na direção da janela",
+      "prevencao_tratamento": "Mude para um local com pelo menos 4 horas de sol direto, aos poucos. A parte estiolada não volta ao normal, mas o crescimento novo sai compacto"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas, bege ou marrons e secas no lado virado para o sol, depois de mudança brusca de lugar ou em tarde muito quente",
+      "prevencao_tratamento": "Acostume ao sol aos poucos e, no verão, prefira o sol da manhã. As manchas ficam como cicatriz, sem prejudicar o resto da planta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Preparar o repouso de inverno",
+      "mensagem": "Com o frio chegando, o cacto-dedal para de crescer. Rega de verão agora apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para uma vez por mês com metade da água e suspender o adubo até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno seco e fresco para florir",
+      "mensagem": "O frio moderado e a secura do inverno são o que induz as flores da primavera.",
+      "acao_requerida": "Deixar em lugar claro e fresco (entre 5 e 15 °C à noite), longe de chuva e sereno. Regar só se as cabecinhas enrugarem"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "A primavera acorda a planta: surgem botões e cabecinhas novas.",
+      "acao_requerida": "Voltar à rega a cada 12 dias com o substrato seco e retomar o adubo mensal na metade da dose"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger do sol da tarde e da chuva",
+      "mensagem": "No auge do verão, o sol da tarde queima e as chuvas seguidas encharcam o vaso.",
+      "acao_requerida": "Deixar onde bata sol da manhã e sombra clara à tarde, sob cobertura nos dias de chuva"
+    }
+  ]
+}

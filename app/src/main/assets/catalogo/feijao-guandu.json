@@ -1,0 +1,202 @@
+{
+  "planta": {
+    "nome_comum": "Feijão-guandu",
+    "nome_cientifico": "Cajanus cajan",
+    "descricao": "Leguminosa arbustiva rústica, resistente à seca, que dá vagens com grãos comidos verdes (como ervilha) ou secos, e ainda enriquece o solo com nitrogênio. Na natureza é um arbusto perene que vive de 3 a 5 anos. Em vaso, o app acompanha o primeiro ciclo, da semeadura ao fim da primeira safra; depois dela, a planta pode ser podada para brotar e produzir de novo.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 210,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou balde grande com pelo menos 40 cm de profundidade e 35 cm de diâmetro, com furos no fundo; raiz pivotante e funda, planta de 1,5 a 2 m",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 20% composto orgânico ou húmus de minhoca, 30% areia grossa; mais 2 colheres de sopa de farinha de ossos por vaso. Nada de esterco fresco nem adubo rico em nitrogênio",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 12,
+      "descricao": "Semeie 3 sementes a 3 cm de profundidade no centro do vaso. As plântulas surgem entre o 5º e o 10º dia, com duas folhas redondas e grossas. Substrato encharcado apodrece a semente."
+    },
+    {
+      "fase_id": "crescimento_inicial",
+      "nome": "Crescimento Inicial",
+      "dia_inicio": 13,
+      "dia_fim": 60,
+      "descricao": "Surgem as folhas de três folíolos alongados e aveludados. O crescimento parece lento no começo, enquanto a raiz desce fundo no vaso; lá pelo 45º dia a planta passa de 50 cm."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 61,
+      "dia_fim": 120,
+      "descricao": "O caule engrossa e fica lenhoso na base, e a planta ramifica e ganha altura rápido. Os ramos laterais que brotam depois do desponte são os que vão dar vagens."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 121,
+      "dia_fim": 160,
+      "descricao": "Aparecem cachos de flores amarelas com estrias avermelhadas nas pontas dos ramos. O guandu floresce quando os dias encurtam, então a data varia algumas semanas com a variedade e o mês da semeadura. Falta de água agora derruba as flores."
+    },
+    {
+      "fase_id": "vagens_colheita",
+      "nome": "Vagens e Colheita",
+      "dia_inicio": 161,
+      "dia_fim": 210,
+      "descricao": "As vagens achatadas, verdes com manchas roxas, enchem de 4 a 6 grãos. Para comer verde, colha quando os grãos marcam a vagem e ela ainda está verde; para grão seco, espere a vagem ficar palha. A colheita vai sendo feita aos poucos, porque as vagens não amadurecem juntas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar a semeadura",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 12,
+      "instrucoes": "Toque a superfície: se os 2 primeiros centímetros estiverem secos, regue devagar com regador de crivo até umedecer, sem deixar poça. Semente em terra seca não germina; em terra encharcada, apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o guandu",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão acima de 30 °C, confira a cada 2 dias; em dias frios e nublados, a cada 5. Na floração, não deixe o vaso secar por completo, ou as flores caem.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o guandu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 165,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca e 1 colher de sopa de farinha de ossos (ou cinza de madeira) em volta do caule, sem encostar nele, e regue em seguida. Não use ureia nem esterco fresco: a planta fixa o próprio nitrogênio, e excesso dele dá muita folha e pouca vagem.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e vagens",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Olhe as pontas dos ramos e o verso das folhas procurando pulgões pretos e cochonilhas. Da floração em diante, procure furos nas vagens, lagartas nas flores e percevejos verdes ou marrons sobre as vagens.",
+      "critica": false
+    },
+    {
+      "id": "colheita_vagens",
+      "titulo": "Colher vagens prontas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 165,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Para guandu verde, colha as vagens ainda verdes em que os grãos já estufam a casca. Para grão seco, colha as vagens cor de palha que chacoalham; deixe secar mais 3 dias à sombra antes de debulhar. Deixe as vagens moles e finas para a próxima passada.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "As sementes germinaram?",
+      "mensagem": "Até o 10º dia as plântulas já deveriam ter aparecido. Se nada surgiu, as sementes provavelmente apodreceram ou eram velhas.",
+      "acao_requerida": "Se não houver nenhuma plântula, semear de novo com sementes novas e regar menos"
+    },
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Um vaso sustenta um único pé de guandu. Com mais de um, os dois ficam finos e produzem pouco.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Despontar o guandu",
+      "mensagem": "Com uns 50 cm, cortar a ponta do caule faz a planta ramificar, ficar mais baixa para o vaso e dar mais vagens.",
+      "acao_requerida": "Cortar os 5 cm da ponta do caule principal, logo acima de uma folha, com tesoura limpa"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Colocar tutor",
+      "mensagem": "A planta está ficando alta e pesada; em vaso, um vento forte a derruba e pode rachar o caule.",
+      "acao_requerida": "Enterrar uma estaca de 1,5 m a 10 cm do caule e amarrá-lo em dois pontos com fita ou barbante frouxo, em forma de 8"
+    },
+    {
+      "dia_disparo": 165,
+      "titulo": "Primeiras vagens prontas",
+      "mensagem": "As primeiras vagens já devem estar cheias. Elas amadurecem aos poucos, então a colheita se estende por semanas.",
+      "acao_requerida": "Conferir as vagens e começar a colheita"
+    },
+    {
+      "dia_disparo": 205,
+      "titulo": "Fim da primeira safra",
+      "mensagem": "A produção está acabando. O guandu é perene: podado, rebrota e floresce de novo no próximo outono.",
+      "acao_requerida": "Colher as últimas vagens e decidir: podar os ramos a 50 cm de altura para uma nova safra ou encerrar o plantio"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas amarelam de baixo para cima e a base do caule escurece",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, vaso com furos e sem pratinho cheio. Planta com caule escurecido não se recupera: descarte com o substrato"
+    },
+    {
+      "nome": "Pulgão-preto (Aphis craccivora)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos nas pontas dos ramos e nas flores; brotos enrolados e pegajosos, às vezes com formigas",
+      "prevencao_tratamento": "Jato de água nas colônias; se persistir, óleo de neem a 0,5% ou calda de sabão neutro no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Lagarta-das-vagens (Helicoverpa armigera)",
+      "tipo": "PRAGA",
+      "sintomas": "Flores roídas e vagens com furos redondos, grãos comidos por dentro",
+      "prevencao_tratamento": "Catar as lagartas à mão nas flores e vagens; nas infestações, pulverizar Bacillus thuringiensis (Bt) no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Percevejos (Nezara viridula, Piezodorus guildinii)",
+      "tipo": "PRAGA",
+      "sintomas": "Percevejos verdes ou marrons sobre as vagens; grãos murchos, manchados ou chochos",
+      "prevencao_tratamento": "Catar de manhã cedo, sacudindo os ramos sobre um balde com água e sabão; colher as vagens no ponto para não acumular praga"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodonosos ou carapaças marrons no caule e nas axilas das folhas; ramos enfraquecidos",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em focos grandes, óleo mineral ou de neem a 1% a cada 7 dias"
+    },
+    {
+      "nome": "Queda de flores por estresse hídrico",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores e vagens recém-formadas caem em quantidade depois de o vaso secar ou de dias muito quentes",
+      "prevencao_tratamento": "Na floração, conferir o substrato a cada 2 dias e não deixar secar por completo; cobrir a superfície com palha para segurar a umidade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o guandu da geada",
+      "mensagem": "O guandu não tolera geada: uma noite abaixo de 2 °C queima folhas, flores e vagens.",
+      "acao_requerida": "Nas noites com previsão de geada, levar o vaso para perto de uma parede ou para baixo de um beiral, ou cobrir a planta com TNT até de manhã"
+    }
+  ]
+}

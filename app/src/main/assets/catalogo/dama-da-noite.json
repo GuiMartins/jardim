@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Dama-da-noite",
+    "nome_cientifico": "Cestrum nocturnum",
+    "descricao": "Arbusto perene das Antilhas, de crescimento rápido, cujas flores tubulares branco-esverdeadas soltam à noite um perfume intenso que alcança vários metros. Floresce em ondas da primavera ao outono e aguenta bem o vaso grande com poda anual. Toda a planta, e principalmente os frutos brancos, é tóxica para pessoas, cães e gatos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; evite cachepô sem saída de água",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; acrescente 1 xícara de farinha de ossos por vaso de 40 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho e se ajusta ao vaso e à nova luz. É normal perder algumas folhas de baixo na primeira semana. A fase termina quando aparecem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e os ramos crescem depressa, às vezes 30 cm em poucas semanas. Se a muda já veio grande e a época for quente, podem surgir os primeiros cachos de botões esverdeados. Ramos longos e finos, tombando para um lado, indicam falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto formado, com 1 a 2 m em vaso. Do fim do inverno à primavera ele rebrota com força depois da poda. Da primavera ao outono floresce em ondas de 1 a 2 semanas, com perfume só depois do anoitecer, e às vezes forma frutinhos brancos em seguida. No inverno cresce pouco e pode perder parte das folhas no frio."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz da muda ainda está só no torrão original, que seca antes do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a dama-da-noite",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão, com a planta grande, pode ser preciso regar a cada 1 ou 2 dias. No inverno, espace para cada 5 a 7 dias e nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a dama-da-noite",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 4-14-8 (ou 1 xícara de húmus mais 1 colher de farinha de ossos) na borda do vaso de 40 L, sem encostar no caule, e regue em seguida. Adubo rico em nitrogênio faz muita folha e pouca flor. Em junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as pontas dos ramos e os cachos de botões: procure bolinhas brancas de algodão ou escamas marrons no caule, insetos verdes ou pretos agrupados, teia fina com pontinhos no verso e mosquinhas brancas que voam quando você mexe na planta.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, corte 3 a 5 cm da massa de raízes nas laterais e no fundo, e replante com substrato novo no mesmo vaso ou num 10 cm maior. Pode 1/3 dos ramos junto, para compensar a raiz cortada, e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Mudas de dama-da-noite crescem rápido e enovelam a raiz no saquinho em poucas semanas.",
+      "acao_requerida": "Transplantar a muda para o vaso de 40 L na mesma altura do torrão, sem enterrar o caule, firmar o substrato e regar até escorrer"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Desponte para encher o arbusto",
+      "mensagem": "Com a raiz firme, a planta tende a soltar poucos ramos longos. Cortar as pontas agora faz brotar ramos laterais e dá mais cachos de flor depois.",
+      "acao_requerida": "Cortar 5 a 10 cm da ponta de cada ramo principal, logo acima de um par de folhas, com tesoura limpa"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Colocar tutor se estiver tombando",
+      "mensagem": "Os ramos novos são flexíveis e, em vaso, a planta costuma pender para o lado do sol ou quebrar com o vento.",
+      "acao_requerida": "Se o arbusto estiver inclinado, cravar uma estaca de 1,2 m perto do caule, sem ferir a raiz, e amarrar o ramo principal com fita macia em forma de oito"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha (farinhenta e de carapaça)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodoado ou pequenas escamas marrons presas aos ramos e nervuras; folhas pegajosas, com fumagina preta e amarelecimento",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia embebida em álcool 70%; depois pulverize óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos ramos e nos botões; brotos enrugados e flores que não abrem",
+      "prevencao_tratamento": "Jato de água nos ramos atacados; se voltar, óleo de neem a 0,5% ou sabão potássico a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teia fina no verso; comum em tempo quente e seco ou perto de parede quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; em infestação, enxofre molhável ou óleo de neem no verso, a cada 5 dias, fora do sol forte"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta; ovos e ninfas no verso das folhas, que ficam amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas amarelando e caindo, base do caule escura e raízes marrons e moles com cheiro ruim",
+      "prevencao_tratamento": "Regue só com o substrato seco a 5 cm, mantenha os furos livres e esvazie o pratinho. Se aparecer, tire a planta, corte as raízes podres, deixe secar 1 dia e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Clorose por falta de nutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com nervuras verdes (falta de ferro) ou folhas velhas amareladas por inteiro (falta de nitrogênio), crescimento fraco",
+      "prevencao_tratamento": "Mantenha a adubação mensal na estação quente e renove o substrato a cada 2 anos; para a falta de ferro, aplique quelato de ferro conforme o rótulo"
+    },
+    {
+      "nome": "Queda de folhas no frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas ou caindo em massa depois de noites abaixo de 5 °C ou de geada; pontas dos ramos secas",
+      "prevencao_tratamento": "Nas noites frias, leve o vaso para perto de uma parede ou sob cobertura e reduza a rega. Espere a rebrota da primavera antes de cortar os ramos secos, para ver até onde estão vivos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "A dama-da-noite quase para de crescer no frio, e substrato encharcado nessa época apodrece a raiz. Geada queima folhas e ramos novos.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender o adubo e, em noites abaixo de 5 °C, abrigar o vaso junto a uma parede ou sob cobertura"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno, antes da rebrota, a poda renova o arbusto e as flores saem nos ramos novos da primavera. Sem ela, a planta fica alta, rala embaixo e floresce só nas pontas.",
+      "acao_requerida": "Cortar todos os ramos em 1/3 a 1/2 do comprimento, logo acima de um par de folhas, e tirar ramos secos, cruzados ou finos demais. Use luvas: a seiva irrita a pele"
+    },
+    {
+      "meses": [
+        3,
+        4,
+        5
+      ],
+      "titulo": "Tirar os frutinhos brancos",
+      "mensagem": "Depois das floradas de verão, a planta pode formar bagas brancas, que são a parte mais tóxica para crianças, cães e gatos.",
+      "acao_requerida": "Cortar os cachos com frutos ou flores secas logo abaixo do cacho e jogar no lixo fechado, fora do alcance de animais"
+    }
+  ]
+}

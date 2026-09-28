@@ -1,0 +1,215 @@
+{
+  "planta": {
+    "nome_comum": "Pimenta-malagueta",
+    "nome_cientifico": "Capsicum frutescens",
+    "descricao": "Arbusto de pimentas pequenas, finas, eretas e muito ardidas, uma das mais cultivadas no Brasil. É perene: em vaso produz por 3 a 5 anos se passar pela poda de fim de inverno, com várias safras por ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo. Semeie antes em copinho ou bandeja de 5 cm e passe para o vaso definitivo depois",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "40% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita, 10% fibra de coco; misture 1 colher de sopa de farinha de ossos a cada 5 L de substrato",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 20,
+      "descricao": "Semeie 2 a 3 sementes por copinho a 0,5 cm de profundidade, em lugar quente (25 a 30 °C). A germinação é lenta e irregular: as plântulas surgem entre o 8º e o 20º dia. Abaixo de 20 °C ela pode travar por semanas."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 21,
+      "dia_fim": 50,
+      "descricao": "Surgem as folhas verdadeiras, lisas e pontudas. A muda cresce devagar no começo; está pronta para o vaso definitivo com 4 a 6 folhas verdadeiras e uns 10 cm de altura."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 51,
+      "dia_fim": 100,
+      "descricao": "A planta ramifica e forma o arbusto. Sol pleno nesta fase dá caule grosso e muitas bifurcações, que é onde nascem as flores. A fase termina quando aparecem os primeiros botões brancos nas forquilhas."
+    },
+    {
+      "fase_id": "floracao_frutificacao",
+      "nome": "Floração e Primeiros Frutos",
+      "dia_inicio": 101,
+      "dia_fim": 150,
+      "descricao": "Flores pequenas, branco-esverdeadas, saem em grupos nas forquilhas e viram pimentas verdes eretas. Calor acima de 35 °C ou substrato seco fazem as flores caírem sem frutificar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Arbusto de 60 cm a 1 m que floresce e frutifica em ondas da primavera ao outono, com as pimentas passando de verde a vermelho vivo em 3 a 4 semanas. No inverno a produção cai e a planta fica quase parada; no fim do inverno recebe a poda de renovação. Troca de substrato a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 20,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato deve ficar úmido como esponja espremida, nunca encharcado nem com crosta seca.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pimenteira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Acima de 30 °C confira todo dia; no inverno, a cada 4 a 5 dias costuma bastar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a pimenteira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca mais 1 colher de chá de farinha de ossos (ou NPK 4-14-8, 1 colher de chá rasa) na borda do vaso, sem encostar no caule, e regue em seguida. Antes do dia 50, use metade. Pule a adubação em junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e os brotos novos: procure pulgões agrupados, pontinhos amarelados com teia fina (ácaro), mosquinhas brancas que voam ao sacudir e folhas novas enroladas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_pimentas",
+      "titulo": "Colher pimentas maduras",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 130,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Colha com tesoura, deixando o cabinho, as pimentas totalmente vermelhas e firmes. Use luvas e não coce os olhos. Colher com frequência estimula novas flores.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e setembro, tire a planta do vaso, raspe 1/3 do torrão pelas laterais e pelo fundo, corte raízes escuras ou enroladas e replante com substrato novo, no mesmo vaso ou num 5 cm maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Com várias mudas no mesmo copinho, elas competem e ficam finas e compridas.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada copinho, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Passar para o vaso definitivo",
+      "mensagem": "A muda já deve ter de 4 a 6 folhas verdadeiras. No copinho, a raiz enrola e a planta para de crescer.",
+      "acao_requerida": "Transplantar para o vaso de 15 L ou mais no fim da tarde, na mesma altura do colo, regar bem e deixar 2 dias em meia-sombra antes de voltar ao sol"
+    },
+    {
+      "dia_disparo": 70,
+      "titulo": "Pensar num tutor",
+      "mensagem": "Carregada de frutos, a pimenteira pode tombar com vento ou chuva forte.",
+      "acao_requerida": "Enterrar uma estaca de bambu de 80 cm a 5 cm do caule e amarrar o tronco principal com fita ou barbante em oito, sem apertar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e no verso das folhas; folhas novas enroladas e pegajosas, às vezes com formigas",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que depois ficam bronzeadas; teia fina no verso e entre os ramos, sobretudo em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas em dias secos; óleo de neem a 0,5% ou enxofre molhável a cada 5 dias, sem aplicar no sol forte"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; folhas amareladas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas deformadas, com manchas prateadas e pontinhos pretos; flores caem",
+      "prevencao_tratamento": "Armadilha adesiva azul; óleo de neem a 0,5% com algumas gotas de sabão neutro nos brotos a cada 5 dias"
+    },
+    {
+      "nome": "Podridão de raiz e colo (Phytophthora capsici)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido, o colo escurece e amolece, e as raízes ficam marrons e moles",
+      "prevencao_tratamento": "Regar só quando os 3 cm de cima secarem, nunca deixar água no pratinho e não enterrar o colo. Planta com colo podre raramente se recupera: descarte com o substrato"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas circulares afundadas e escuras nos frutos, com anéis e pontos alaranjados no centro",
+      "prevencao_tratamento": "Regar no substrato e não nas folhas, retirar e descartar frutos manchados e deixar o vaso em lugar ventilado; calda bordalesa se espalhar"
+    },
+    {
+      "nome": "Queda de flores",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões e flores amarelam e caem sem formar fruto",
+      "prevencao_tratamento": "Causada por calor acima de 35 °C, noites abaixo de 15 °C, substrato seco ou excesso de nitrogênio. Mantenha a rega regular e, no pico do verão, dê sombra nas horas mais quentes"
+    },
+    {
+      "nome": "Podridão apical",
+      "tipo": "DISTURBIO",
+      "sintomas": "Mancha escura e seca na ponta das pimentas",
+      "prevencao_tratamento": "Falta de cálcio causada por rega irregular: evite alternar seca e encharcamento e mantenha a farinha de ossos na adubação"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "No frio a pimenteira quase para de crescer, e o substrato demora mais para secar. Regar como no verão apodrece a raiz.",
+      "acao_requerida": "Regar só quando os 3 cm de cima estiverem secos, suspender a adubação e levar o vaso para perto de uma parede ensolarada nas noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno a pimenteira ainda está quase parada. Podar agora renova a planta e rende mais pimentas na primavera.",
+      "acao_requerida": "Cortar todos os ramos a um terço do comprimento, logo acima de uma forquilha, tirar galhos secos ou cruzados e retomar a adubação em setembro"
+    }
+  ]
+}

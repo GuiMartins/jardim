@@ -1,0 +1,227 @@
+{
+  "planta": {
+    "nome_comum": "Paina-de-seda",
+    "nome_cientifico": "Gomphocarpus physocarpus",
+    "descricao": "Arbusto africano da família das Apocináceas, famoso pelos frutos em forma de balão verde-claro cobertos de cerdas macias, usados em arranjos, e por ser planta hospedeira da borboleta-monarca. É perene de vida curta (2 a 4 anos em vaso) e todas as partes têm látex branco tóxico e irritante.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso definitivo com pelo menos 40 cm de diâmetro e 40 cm de profundidade, pesado ou de base larga (a planta passa de 1,5 m e tomba com os balões), com vários furos no fundo. A semeadura é feita em copos de 200 ml",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa, 25% húmus de minhoca; bem drenado e pouco rico, porque excesso de adubo faz a planta crescer mole e tombar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Semeie 2 a 3 sementes por copo, a 0,5 cm de profundidade, em lugar quente (20 a 28 °C). As plântulas surgem entre o 7º e o 21º dia; abaixo de 18 °C a germinação falha ou atrasa muito."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 22,
+      "dia_fim": 50,
+      "descricao": "Surgem as folhas verdadeiras, estreitas e compridas, opostas no caule. A fase termina quando a muda tem 10 a 15 cm e as raízes aparecem no furo do copo: é hora do vaso definitivo."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 51,
+      "dia_fim": 100,
+      "descricao": "O caule sobe rápido e ramifica, podendo passar de 1 m. Folhas amareladas embaixo e caule fino e tombado indicam falta de sol."
+    },
+    {
+      "fase_id": "floracao_frutificacao",
+      "nome": "Floração e Primeiros Balões",
+      "dia_inicio": 101,
+      "dia_fim": 150,
+      "descricao": "Aparecem cachos pendentes de flores brancas pequenas, visitadas por abelhas e borboletas. As flores polinizadas viram balões verdes que incham até 6 a 8 cm em cerca de um mês."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Floresce e forma balões da primavera ao outono, desacelera no inverno e brota de novo depois da poda de fim de inverno. Quando o balão amarela e fica seco, ele se abre e solta sementes com paina que voam longe. Em vaso a planta enfraquece após 3 ou 4 anos; guarde sementes para renovar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer os copos de semeadura",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode secar por completo nem ficar encharcado, pois a semente apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar a muda",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos. Acima de 30 °C confira todo dia, porque copo e vaso recém-plantado secam rápido.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a paina-de-seda",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelo fundo e esvazie o prato. No verão com sol forte pode precisar a cada 2 dias; no inverno, só quando secar 5 cm (a cada 5 a 7 dias).",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubação leve",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 50,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de farinha de ossos por vaso de 30 L, longe do caule, e regue. Pule a adubação de junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Procurar pulgão-amarelo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as pontas dos ramos, os botões e os balões: procure colônias de pulgões amarelo-alaranjados, teias finas no verso das folhas e cochonilhas brancas nas axilas. Use luvas se mexer na planta.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, logo após a poda, tire a planta do vaso, raspe 1/3 do torrão por fora e pelo fundo e replante com substrato novo. Use luvas e óculos: o látex irrita a pele e os olhos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As plântulas do mesmo copo competem por espaço e luz.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada copo, cortando as outras rente ao substrato com tesoura (não puxe, para não soltar a raiz da que fica)"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Mudar para o vaso definitivo",
+      "mensagem": "A muda já deve ter 10 a 15 cm e raízes aparecendo no furo do copo. A paina-de-seda tem raiz pivotante e não gosta de transplantes repetidos.",
+      "acao_requerida": "Transplantar com o torrão inteiro para o vaso de 30 L, na mesma altura em que estava, e regar bem"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Colocar tutor",
+      "mensagem": "A planta está alta e, com o peso dos balões, o vento pode dobrar ou quebrar o caule.",
+      "acao_requerida": "Enterrar uma estaca de 1,5 m a 10 cm do caule e amarrar com fita macia em oito, sem apertar"
+    },
+    {
+      "dia_disparo": 110,
+      "titulo": "Cuidado com o látex",
+      "mensagem": "A planta floresce e atrai borboletas-monarca, que põem ovos nas folhas. Todas as partes têm látex tóxico, perigoso para crianças e animais que mastigam folhas.",
+      "acao_requerida": "Usar luvas ao podar ou colher, lavar as mãos depois e deixar o vaso fora do alcance de pets e crianças"
+    },
+    {
+      "dia_disparo": 140,
+      "titulo": "Primeiros balões formados",
+      "mensagem": "Os balões verdes estão crescendo. Para arranjos, o melhor ponto é inflado, verde e firme; para sementes, espere amarelar.",
+      "acao_requerida": "Cortar com tesoura os balões verdes que quiser usar em arranjos, deixando 10 cm de haste"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-amarelo-da-oficial (Aphis nerii)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias densas de pulgões amarelo-alaranjados com pernas pretas nas pontas, botões e balões; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Esmagar as colônias com a mão enluvada ou dar jato de água forte; se persistirem, sabão potássico a 1% no fim da tarde a cada 5 dias. Evite inseticida sistêmico se quiser criar monarcas"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas no verso, comuns em calor seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias quentes; em ataque forte, óleo de neem a 0,5% a cada 5 dias, sem sol direto na hora da aplicação"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados nas axilas das folhas e na base dos balões; planta fica fraca e pegajosa",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em ataque forte, óleo mineral a 1% com sabão neutro"
+    },
+    {
+      "nome": "Lagarta da borboleta-monarca (Danaus spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas listradas de preto, branco e amarelo comendo as folhas, às vezes desfolhando ramos inteiros",
+      "prevencao_tratamento": "Normalmente é bem-vinda, porque a planta é cultivada para isso e rebrota. Se a desfolha for total numa muda pequena, mude algumas lagartas para outra planta de Gomphocarpus ou Asclepias"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha com o substrato úmido, folhas de baixo amarelando e base do caule escura e mole",
+      "prevencao_tratamento": "Regar só quando o substrato secar 3 cm, esvaziar o prato e manter a camada de drenagem; planta afetada raramente se recupera, guarde sementes antes"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule fino e comprido que tomba, poucas folhas e nenhuma flor ou balão",
+      "prevencao_tratamento": "Levar o vaso para lugar com pelo menos 6 horas de sol direto e cortar os ramos compridos pela metade para ramificar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "titulo": "Recolher os balões maduros",
+      "mensagem": "Os balões que amarelam e secam se abrem e soltam sementes com paina que voam longe; a espécie se espalha como planta daninha em terrenos próximos.",
+      "acao_requerida": "Cortar os balões amarelados antes de abrirem e guardá-los num saco de papel para tirar as sementes ou descartar no lixo"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Geada queima a parte aérea e pode matar a planta; no frio ela quase para de crescer e o substrato demora a secar.",
+      "acao_requerida": "Nas noites abaixo de 5 °C, levar o vaso para perto de uma parede ou cobrir com tecido; regar só quando o substrato secar 5 cm"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno a planta fica comprida e desfolhada embaixo. Podar agora estimula brotação nova e mais floração na primavera.",
+      "acao_requerida": "De luvas, cortar todos os ramos a 1/3 da altura, logo acima de um par de folhas, e retirar ramos secos ou quebrados"
+    }
+  ]
+}

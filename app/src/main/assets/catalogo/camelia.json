@@ -1,0 +1,210 @@
+{
+  "planta": {
+    "nome_comum": "Camélia",
+    "nome_cientifico": "Camellia japonica",
+    "descricao": "Arbusto perene de folhas verde-escuras brilhantes que floresce no outono e no inverno, quando quase nada mais floresce. Em vaso, vive décadas se tiver substrato ácido, meia sombra e rega regular.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; nunca deixe prato com água parada",
+    "volume_minimo_litros": 25,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% casca de pinus fina compostada, 20% turfa ou fibra de coco, 10% areia grossa; pH entre 5,0 e 6,0, sem calcário nem cinza",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a mudança de luz e de vaso. É normal cair algum botão ou folha velha. A adaptação terminou quando as folhas ficam firmes e brilhantes e param de cair."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes colonizam o substrato novo. Na primavera e no verão surgem brotos de folhas verde-claras nas pontas dos ramos, sinal de que a planta se firmou."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota e cresce da primavera ao verão (setembro a fevereiro), forma botões no fim do verão e no começo do outono e floresce de maio a setembro. Depois da floração vêm a poda e a adubação. O crescimento é lento: 10 a 20 cm por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a camélia (adaptação)",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Use água da chuva ou água de torneira que descansou 24 h. Não deixe água no prato.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a camélia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão, acima de 30 °C, confira a cada 2 dias; no inverno, a cada 4 ou 5 dias. Substrato seco por completo de fevereiro a agosto derruba os botões florais.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e a nervura central: procure escamas marrons ou brancas grudadas (cochonilha), pontinhos amarelados com teia fina (ácaro) e pó preto (fumagina). Confira também os brotos novos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça logo depois da floração (setembro ou outubro), nunca com botões formados. Tire a planta, solte as raízes enoveladas, apare as mais velhas e replante no mesmo nível em substrato ácido novo, num vaso 5 cm maior se as raízes lotaram o antigo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Confira o lugar da camélia",
+      "mensagem": "A camélia queima com o sol forte da tarde e não floresce na sombra fechada. Ela gosta de sol da manhã e de luz clara no resto do dia.",
+      "acao_requerida": "Deixar o vaso onde bata sol direto só até umas 11h, protegido do vento forte"
+    },
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "Se a muda veio em saco plástico ou vaso pequeno, as raízes precisam de espaço e de substrato ácido.",
+      "acao_requerida": "Passar para o vaso de 25 L com substrato ácido, sem enterrar o colo acima do nível original. Se ela estiver cheia de botões, espere a floração acabar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora cinnamomi)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam, murcham mesmo com o substrato úmido e caem; raízes escuras, moles e com cheiro ruim; ramos secam de cima para baixo",
+      "prevencao_tratamento": "Substrato bem drenado, sem prato com água e rega só com o substrato seco nos primeiros 3 cm. Se aparecer, retire a planta, corte as raízes podres, replante em substrato novo e regue menos"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou brancas grudadas no verso das folhas e nos ramos; folhas amareladas e pegajosas, muitas vezes com fumagina",
+      "prevencao_tratamento": "Remova com cotonete ou escova de dentes molhada em água e sabão neutro; em infestação, óleo mineral ou óleo de neem a 1% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Ácaro-vermelho",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto bronzeado e opaco; teia fina no verso em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% ou enxofre molhável, fora do sol forte"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada de pó preto sobre as folhas, que sai ao esfregar",
+      "prevencao_tratamento": "É consequência de cochonilha ou pulgão: controle o inseto e limpe as folhas com pano úmido e sabão neutro"
+    },
+    {
+      "nome": "Mofo-cinzento nas flores (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Pétalas com manchas marrons que apodrecem e ficam cobertas de mofo cinza em tempo úmido e frio",
+      "prevencao_tratamento": "Não molhe as flores ao regar, recolha flores caídas e murchas e deixe o vaso em lugar ventilado"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões florais amarronzados que caem antes de abrir",
+      "prevencao_tratamento": "Mantenha a rega regular de fevereiro a agosto, sem deixar secar por completo nem encharcar, e não mude o vaso de lugar com os botões formados. Excesso de botões também causa queda: deixe um ou dois por ponta de ramo"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras ainda verdes",
+      "prevencao_tratamento": "Sinal de substrato pouco ácido. Regue com quelato de ferro na dose do rótulo, use adubo para plantas acidófilas e evite calcário, cinza e água muito calcária"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrom-claras e secas no meio das folhas mais expostas, surgindo depois de dias quentes",
+      "prevencao_tratamento": "Afaste o vaso do sol da tarde; folhas queimadas não se recuperam, mas a planta sim"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Poda depois da floração",
+      "mensagem": "A floração acabou e a camélia vai brotar. Podar agora não tira as flores do ano que vem, que se formam nos ramos novos do verão.",
+      "acao_requerida": "Cortar os ramos secos, fracos ou cruzados e encurtar os longos logo acima de uma folha, com tesoura limpa. Não pode depois de novembro"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Adubar a camélia",
+      "mensagem": "É a época de crescimento: a adubação agora forma os ramos e os botões das próximas flores.",
+      "acao_requerida": "Espalhar 1 colher de sopa de adubo para plantas acidófilas (ou 2 colheres de torta de mamona) na borda do vaso de 25 L, longe do caule, e regar em seguida"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger do calor",
+      "mensagem": "O sol forte e o calor do verão queimam as folhas e secam o vaso depressa.",
+      "acao_requerida": "Garantir sombra depois das 11h e cobrir o substrato com 3 cm de casca de pinus para segurar a umidade"
+    },
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Raleie os botões",
+      "mensagem": "Os botões florais já estão formados. Muitos juntos competem entre si e acabam caindo ou abrindo pequenos.",
+      "acao_requerida": "Deixar um ou dois botões por ponta de ramo, arrancando os outros com os dedos, e parar de adubar até o fim da floração"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Camélia em flor",
+      "mensagem": "É a época da floração. Flores caídas no vaso apodrecem e espalham fungo para os botões que ainda vão abrir.",
+      "acao_requerida": "Recolher flores murchas e caídas do vaso e do chão toda semana, sem mudar o vaso de lugar"
+    }
+  ]
+}

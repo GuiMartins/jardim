@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Confete",
+    "nome_cientifico": "Hypoestes phyllostachya",
+    "descricao": "Folhagem compacta de Madagascar, de folhas verdes pintadas de rosa, vermelho ou branco, que colore vasos pequenos e jardineiras à meia-sombra. É perene, mas fica desengonçada depois de florescer. Por isso, em casa, costuma-se renovar a planta por estacas a cada um ou dois anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 15 a 18 cm de diâmetro e 15 cm de profundidade, com furos no fundo; jardineira com 15 cm entre mudas",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% substrato para plantas, 30% húmus de minhoca, 20% perlita ou areia grossa; fofo e úmido sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "A muda pode murchar um pouco ou perder uma ou outra folha de baixo com a mudança de luz. A adaptação termina quando os brotos da ponta voltam a crescer com as pintas bem marcadas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 90,
+      "descricao": "Crescimento rápido na primavera e no verão. Com despontes regulares, surgem brotos laterais e a planta vira uma touceira cheia. Caules compridos e pintas desbotando são sinal de pouca luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Touceira de 20 a 40 cm. Cresce forte de setembro a março, lança espigas de florzinhas lilás no outono e desacelera no inverno frio. Depois de florescer, tende a alongar e perder folhas embaixo, e é hora de renovar por estacas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o confete",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Acima de 30 °C, confira a cada 2 dias. No inverno, espere secar 2 cm (cerca de a cada 5 dias).",
+      "critica": true
+    },
+    {
+      "id": "despontar_pontas",
+      "titulo": "Despontar as pontas",
+      "tipo": "PODA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com os dedos ou uma tesoura limpa, retire o último par de folhas de cada ramo, logo acima de um nó. Corte também as espigas de flor que aparecerem, porque, depois de florescer, a planta se esgota. As pontas cortadas enraízam num copo com água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_liquida",
+      "titulo": "Adubar o confete",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo NPK 10-10-10 na metade da dose do rótulo e regue com ele o substrato já úmido. De maio a agosto, pule uma aplicação sim, outra não.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas dos ramos: procure pontinhos brancos que voam, algodãozinho branco, teias finas ou folhas pegajosas.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Trocar de vaso ou renovar por estacas",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Se a planta ainda estiver cheia, passe para um vaso 3 a 5 cm maior, com substrato novo. Se estiver alta e pelada embaixo, enraíze 5 estacas de 8 cm num vaso novo e descarte a planta velha.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "A muda já se acostumou ao lugar. O copinho do viveiro seca rápido demais e aperta a raiz.",
+      "acao_requerida": "Transplantar para o vaso de 15 a 18 cm sem desmanchar o torrão, mantendo o colo no mesmo nível, e regar bem"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Faça estacas de reserva",
+      "mensagem": "O confete vive melhor quando é renovado. Ter mudas prontas garante a cor se a planta-mãe decair depois da floração.",
+      "acao_requerida": "Cortar 3 a 5 pontas de 8 cm, tirar as folhas de baixo e enraizar em água ou substrato úmido à sombra clara"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato molhado; caule escuro e mole na base; raízes marrons que soltam a casca",
+      "prevencao_tratamento": "Regar só quando o primeiro centímetro secar e nunca deixar água no pratinho. Salvar as pontas sadias como estacas e descartar o substrato contaminado"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquitinhos brancos quando a planta é mexida; ovos no verso das folhas; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; óleo de neem a 0,5% no verso das folhas no fim da tarde, a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodoado nas axilas dos ramos e no verso das folhas; folhas pegajosas e com fumagina",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, borrifar água com sabão neutro (1 colher de chá por litro) e repetir após 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros e aspecto empoeirado; teias finíssimas entre as folhas, sobretudo em tempo seco",
+      "prevencao_tratamento": "Aumentar a umidade em volta do vaso e lavar as folhas com jato fino de água; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que depois amarelam",
+      "prevencao_tratamento": "Evitar molhar as folhas à noite e manter ventilação; retirar as folhas atacadas e pulverizar leite diluído em água (1:9) a cada 7 dias"
+    },
+    {
+      "nome": "Pintas desbotadas e caules longos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas quase todas verdes, pintas apagadas, entrenós compridos e planta tombando",
+      "prevencao_tratamento": "Levar para um lugar mais claro, com sol da manhã, e despontar os ramos alongados para rebrotarem compactos"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas e esbranquiçadas ou bordas torradas nas folhas expostas ao sol da tarde",
+      "prevencao_tratamento": "Proteger do sol depois das 10h; cortar as folhas danificadas, que não se recuperam"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Espigas de flor chegando",
+      "mensagem": "Os dias mais curtos do outono induzem a floração. Deixar florescer faz o confete alongar e perder folhas.",
+      "acao_requerida": "Cortar as espigas assim que surgirem e despontar os ramos logo abaixo delas"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "Abaixo de 10 °C o confete sofre e perde folhas; com o crescimento lento, o substrato demora mais a secar.",
+      "acao_requerida": "Regar só quando os 2 primeiros centímetros secarem e, nas noites frias, levar o vaso para perto de uma parede ou para dentro de casa, longe de correntes de vento"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de renovação da primavera",
+      "mensagem": "Com o calor voltando, a planta rebrota com força. É a melhor época para tirar a parte gasta no inverno.",
+      "acao_requerida": "Cortar os ramos pela metade, logo acima de um nó, e aproveitar as pontas como estacas"
+    }
+  ]
+}

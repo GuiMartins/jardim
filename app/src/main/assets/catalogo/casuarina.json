@@ -1,0 +1,179 @@
+{
+  "planta": {
+    "nome_comum": "Casuarina",
+    "nome_cientifico": "Casuarina equisetifolia",
+    "descricao": "Árvore de crescimento rápido, com ramos finos e pendentes que parecem agulhas de pinheiro (as folhas de verdade são escamas minúsculas). Aguenta vento, maresia e solo pobre porque fixa nitrogênio com a ajuda de bactérias nas raízes. Em vaso fica contida com podas anuais e também é muito usada como bonsai.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica ou cimento) com pelo menos 45 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; o peso evita que o vento derrube a planta",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico, 10% casca de pinus fina; bem drenado e pobre, sem excesso de matéria orgânica",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. Alguns ramos podem amarelar e cair nas primeiras semanas, o que é normal. A fase termina quando aparecem ramos novos, verde-claros, nas pontas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido: a muda pode ganhar de 50 cm a 1 m no primeiro ano. As raízes ocupam o vaso e passam a tolerar melhor a falta de água. Se o tronco estiver fino e balançando muito com o vento, amarre-o a um tutor com fita macia."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Árvore formada e resistente à seca, ao vento e à maresia. Cresce forte na primavera e no verão, desacelera no inverno. Em vaso precisa de poda anual de contenção no fim do inverno e de troca de substrato a cada dois anos. As flores são discretas e os frutos parecem pequenas pinhas marrons."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a casuarina recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C ou com vento forte, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a casuarina",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos. No verão quente pode precisar a cada 2 ou 3 dias; no inverno, a cada 7 a 10.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a casuarina",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 4-14-8 ou 3 colheres de farinha de ossos na borda do vaso, longe do tronco, e regue em seguida. Ela fixa o próprio nitrogênio: adubo rico em N só faz ramos moles. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Passe os dedos pelos ramos finos procurando carocinhos brancos ou marrons grudados (cochonilhas) e olhe a base do tronco em busca de casca escura, rachada ou úmida.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e aparar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, corte 1/4 do torrão pelas laterais e pelo fundo, retire o substrato velho solto e replante no mesmo vaso (ou num maior) com substrato novo. Regue bem e deixe 1 semana em meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Casuarina no vaso novo",
+      "mensagem": "A muda precisa de sol pleno desde o início, mas o vaso pequeno em que ela veio tinha raízes enroladas.",
+      "acao_requerida": "Conferir se desfez as raízes enroladas do fundo do torrão ao plantar e colocar o vaso no lugar mais ensolarado, protegido de ventos muito fortes nas primeiras semanas"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Tronco firme?",
+      "mensagem": "A casuarina cresce rápido e o tronco jovem pode entortar com o vento.",
+      "acao_requerida": "Se o tronco balança muito, cravar um tutor ao lado e amarrá-lo com fita macia em forma de oito, sem apertar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Ramos amarelam e secam da base para o topo, substrato sempre úmido, raízes escuras e moles com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e usar substrato com areia grossa; se atacar, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, algodonosos ou marrons presos aos ramos finos; ramos pegajosos e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia embebida em álcool 70%; em infestação maior, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Murcha bacteriana (Ralstonia solanacearum)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha de repente com os ramos ainda verdes e não se recupera com a rega; o lenho cortado solta um líquido leitoso",
+      "prevencao_tratamento": "Não há cura; descarte a planta e o substrato e lave o vaso com água sanitária. Previna usando substrato novo e evitando ferir as raízes"
+    },
+    {
+      "nome": "Cancro do tronco (Phomopsis, Botryosphaeria)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas na casca, às vezes com resina ou rachaduras; os ramos acima da lesão secam",
+      "prevencao_tratamento": "Podar os ramos afetados bem abaixo da lesão com tesoura desinfetada em álcool e evitar ferimentos no tronco"
+    },
+    {
+      "nome": "Amarelecimento por excesso de sombra",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos internos amarelam e caem em grande quantidade, copa rala e ramos compridos e finos",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 6 horas de sol direto; a queda de parte dos ramos internos no inverno é normal"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de contenção",
+      "mensagem": "No fim do inverno a casuarina está quase parada. Podar agora mantém o tamanho compatível com o vaso e estimula uma copa mais cheia na primavera.",
+      "acao_requerida": "Encurtar em até 1/3 os ramos mais longos, cortando logo acima de uma ramificação, e retirar ramos secos ou cruzados"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio e reduzir a rega",
+      "mensagem": "Plantas jovens sofrem com geada abaixo de -2 °C, e no frio o substrato demora mais para secar.",
+      "acao_requerida": "Em noites de geada, cobrir a copa com manta de TNT ou encostar o vaso numa parede protegida; regar só quando o substrato estiver seco a 5 cm"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: vaso seca rápido",
+      "mensagem": "No verão o vaso exposto ao sol perde água muito rápido, principalmente com vento.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e regar no início da manhã ou no fim da tarde; uma camada de 3 cm de casca de pinus na superfície reduz a evaporação"
+    }
+  ]
+}

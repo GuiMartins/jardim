@@ -1,0 +1,187 @@
+{
+  "planta": {
+    "nome_comum": "Avenca-cabelo-de-vênus",
+    "nome_cientifico": "Adiantum capillus-veneris",
+    "descricao": "Samambaia delicada de frondes rendadas em hastes pretas e brilhantes. Ela vive naturalmente em paredões úmidos de calcário. Em vaso, fica linda em ambientes claros e úmidos, mas não perdoa substrato seco nem ar muito seco.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada, que perde menos água que o barro cru, com 15 a 20 cm de diâmetro e de altura e furos no fundo. Use um prato largo com argila expandida e água abaixo do nível das pedras, para dar umidade sem encharcar a raiz",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "40% terra vegetal, 30% fibra de coco ou turfa, 20% húmus de minhoca e 10% perlita ou vermiculita, com 1 colher de chá de calcário dolomítico (ou casca de ovo moída) por litro, porque a avenca gosta de substrato levemente alcalino",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa, onde o ar é muito úmido, e costuma perder algumas frondes, que secam e ficam crespas. Isso é normal enquanto houver brotos novos enrolados (báculos) saindo da base. Deixe-a em luz clara sem sol direto, ou com no máximo 1 hora de sol fraco antes das 9 h, longe de ar-condicionado, aquecedor e corrente de vento. Troque o vaso só depois desta fase."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "Frondes novas abrem verde-claras e sem pontas queimadas: é o sinal de que a luz e a umidade estão certas. Se as frondes novas também secarem, falta água ou umidade no ar, ou o sol está forte demais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Touceira cheia que se renova sempre. Da primavera ao verão (setembro a março) cresce rápido, pede rega frequente e aceita adubo. No inverno cresce pouco, bebe menos e pode perder frondes. O rizoma rasteiro enche o vaso em uns dois anos, e aí é hora de dividir a touceira. A avenca não floresce: ela se reproduz por esporos, que aparecem como pontos marrons na margem dobrada do verso das folhinhas e não são praga."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a avenca",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Toque a superfície do substrato. Se estiver apenas úmida ao toque, ou já seca, regue devagar até escorrer pelos furos e esvazie o prato do vaso depois de 30 minutos (mantenha só a água do prato de argila expandida, abaixo das pedras). O substrato nunca pode secar por completo, mas também não pode ficar encharcado. No verão, acima de 28 °C, confira todo dia; no inverno, a cada 3 ou 4 dias costuma bastar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a avenca",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido equilibrado (NPK 10-10-10 ou próprio para samambaias) a um quarto da dose do rótulo e regue com ele o substrato já úmido, sem molhar as frondes. Pule a adubação de junho a agosto. Adubo forte ou em substrato seco queima as raízes finas.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_frondes",
+      "titulo": "Cortar frondes secas",
+      "tipo": "PODA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte rente ao substrato as hastes cujas frondes estão secas, marrons ou crespas. Elas não voltam a ficar verdes, e tirá-las abre espaço e luz para os brotos novos.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a avenca",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as frondes e olhe as hastes e a base da touceira. Procure pontinhos brancos algodoados ou carapaças marrons grudadas (cochonilha) e teias finas com folhinhas pontilhadas de amarelo (ácaro). Cheire a base: cheiro de mofo ou rizoma mole indicam excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e novembro: se o lembrete cair no inverno, espere a primavera. Tire a planta do vaso, corte o torrão em 2 ou 3 pedaços com faca limpa, cada um com rizomas e frondes, e replante em substrato novo, na mesma altura em que estava. Mantenha à sombra e bem úmida por duas semanas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar certo",
+      "mensagem": "A avenca sofre com sol forte, vento e ar seco. O lugar define se ela vai prosperar.",
+      "acao_requerida": "Colocar perto de uma janela clara sem sol direto (ou só com sol antes das 9 h), longe de ar-condicionado e de corrente de ar, sobre um prato com argila expandida e água abaixo do nível das pedras"
+    },
+    {
+      "dia_disparo": 10,
+      "titulo": "Frondes secando? Confira os brotos",
+      "mensagem": "Na adaptação é comum perder frondes velhas. O que importa é a base.",
+      "acao_requerida": "Afastar as frondes e procurar brotos enrolados saindo do substrato. Se houver, basta cortar as frondes secas e manter a rega; se não houver nenhum e a base estiver mole, reduzir a rega"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora de ver o vaso",
+      "mensagem": "Avencas vendidas em vaso pequeno de estufa costumam estar apertadas.",
+      "acao_requerida": "Olhar os furos do vaso: se houver raízes saindo ou a água escorrer direto sem molhar o torrão, passar para um vaso 4 a 5 cm maior, com o substrato recomendado, sem enterrar o rizoma"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Frondes murcham mesmo com o substrato molhado, a base das hastes escurece e amolece, cheiro de mofo no vaso",
+      "prevencao_tratamento": "Nunca deixar água parada no prato do vaso e usar substrato com perlita e vaso furado. Ao primeiro sinal, cortar as partes moles, deixar a superfície secar um pouco e replantar as partes sadias em substrato novo"
+    },
+    {
+      "nome": "Cochonilha (algodão e escama)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos brancos algodoados ou carapaças marrons nas hastes e na base, folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com cotonete umedecido em álcool 70% e cortar hastes muito atacadas. Evite óleo de neem, óleo mineral e sabão concentrado: a avenca é sensível e queima com eles"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhinhas pontilhadas de amarelo, teias finíssimas entre as hastes, principalmente em ar seco",
+      "prevencao_tratamento": "Aumentar a umidade em volta (prato de argila expandida, agrupar com outras plantas) e cortar as frondes infestadas; a touceira rebrota da base"
+    },
+    {
+      "nome": "Frondes secas e crespas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhinhas encolhem, ficam marrons e quebradiças a partir das pontas, às vezes a fronde inteira de um dia para o outro",
+      "prevencao_tratamento": "Causa típica: o substrato secou uma vez, o ar está seco ou há vento de ar-condicionado. Cortar as frondes secas rente à base, retomar a rega sem deixar secar e mudar a planta para longe de correntes de ar; o rizoma vivo rebrota em 2 a 4 semanas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frondes desbotadas, amarelo-pálidas ou com manchas brancas e secas no lado virado para a janela",
+      "prevencao_tratamento": "Afastar da luz direta da tarde ou filtrar com cortina fina; as frondes queimadas não se recuperam e devem ser cortadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: a avenca desacelera",
+      "mensagem": "Com frio e ar seco, ela cresce pouco e bebe menos, mas ainda não pode ficar com o substrato seco.",
+      "acao_requerida": "Espaçar a rega conforme o toque no substrato, suspender o adubo, manter o prato de umidade cheio e proteger de vento frio e de temperaturas abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Renovação no fim do inverno",
+      "mensagem": "Se a touceira está rala ou cheia de frondes velhas, este é o melhor momento para renovar, pouco antes do crescimento da primavera.",
+      "acao_requerida": "Cortar todas as frondes velhas ou feias rente ao substrato, manter a rega e aguardar os brotos novos, que surgem em 3 a 4 semanas"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor seca o vaso rápido",
+      "mensagem": "Com calor, o vaso pequeno pode secar em um dia, e uma única secada queima as frondes.",
+      "acao_requerida": "Conferir o substrato todo dia, repor a água do prato de umidade e afastar a planta de janelas que recebem sol à tarde"
+    }
+  ]
+}

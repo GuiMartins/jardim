@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Criptoméria",
+    "nome_cientifico": "Cryptomeria japonica",
+    "descricao": "Conífera japonesa de folhagem macia e formato cônico, muito usada em jardins de clima ameno do Sul e Sudeste. Em vaso grande, cresce devagar e vira uma árvore ornamental ou um bonsai por muitos anos. No cultivo 'Elegans', a folhagem fica bronze-arroxeada no inverno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; prefira cores claras, que esquentam menos a raiz no verão",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus, 20% casca de pinus fina, 10% areia grossa; levemente ácido (pH 5,5 a 6,5), que segure umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e de lugar. Pontas amareladas ou algumas agulhas secas no interior da copa são normais. Deixe em meia sombra na primeira semana e depois passe para o sol aos poucos. A fase termina quando surgem pontas novas, verde-claras, nos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso novo e a planta retoma o crescimento, de 15 a 30 cm por ano em vaso. O ponteiro central deve seguir reto. Se ele entortar ou aparecerem dois ponteiros disputando, deixe só o mais forte. Agulhas marrons que começam na ponta e avançam pela copa indicam falta de água ou doença, e não fazem parte do normal."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Árvore estabelecida, com um ano típico assim: crescimento forte na primavera e no começo do outono, pausa no calor intenso do verão e quase parada no inverno, quando o 'Elegans' e alguns outros cultivares ficam bronze e voltam ao verde na primavera. As agulhas internas mais velhas secam e caem aos poucos, principalmente no outono. Em vaso, a planta aceita poda de contenção e se mantém entre 1,5 e 3 m por muitos anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a criptoméria",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda não pode secar por inteiro nesta fase. Molhe também a copa no fim da tarde nos dias quentes.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a criptoméria",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Acima de 30 °C, confira a cada 2 dias. No inverno, confira a cada 5 dias e regue só se estiver seco. Conífera que seca de vez não rebrota as agulhas mortas.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a criptoméria",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 de liberação lenta, ou 1 xícara de húmus por vaso de 40 L, na borda do vaso sem encostar no tronco, e regue em seguida. Pule a adubação de junho a agosto e no auge do calor do verão, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a copa",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra a copa com as mãos e olhe o interior e as pontas. Procure agulhas marrons que avançam da base para a ponta dos ramos, teias finas, pontinhos amarelados (ácaro) e carocinhos brancos ou marrons presos nos ramos (cochonilha). Sacuda um ramo sobre uma folha de papel branco: pontinhos que andam são ácaros.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça no fim do inverno ou no começo da primavera. Tire a planta do vaso, desembarace as raízes que circulam o fundo e corte até 1/5 delas. Passe para um vaso 5 a 10 cm maior ou, se quiser manter o tamanho, volte ao mesmo vaso com substrato novo. Regue bem e mantenha à meia sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Mudas de criptoméria costumam vir em saco plástico, onde a raiz enovela e seca rápido.",
+      "acao_requerida": "Passar a muda para o vaso de 40 L sem desmanchar o torrão, com o colo na mesma altura em que estava, regar até escorrer e deixar à meia sombra por 7 dias"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "Depois da primeira semana, a muda já pode ir para o lugar definitivo. Na sombra, a copa fica rala e o crescimento, torto.",
+      "acao_requerida": "Levar o vaso para um lugar com pelo menos 4 horas de sol direto, de preferência o da manhã"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Conferir o ponteiro",
+      "mensagem": "A forma cônica depende de um único ponteiro central. Dois ponteiros disputando deixam a árvore bifurcada e frágil.",
+      "acao_requerida": "Se houver dois ponteiros, cortar o mais fraco rente ao ramo. Se o único ponteiro estiver torto, amarrá-lo a uma vareta de bambu com fita macia"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Copa amarelando e depois ficando marrom por inteiro, mesmo com o substrato úmido; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Vaso com furos, camada de drenagem e pratinho sempre vazio; não regar com o substrato ainda úmido. Com o problema já instalado, tirar do vaso, cortar as raízes podres, replantar em substrato novo e espaçar as regas"
+    },
+    {
+      "nome": "Queima-das-acículas (Pseudocercospora cryptomeriae)",
+      "tipo": "DOENCA",
+      "sintomas": "Agulhas dos ramos de baixo e do interior ficam marrom-avermelhadas e secam, e a mancha sobe pela copa, principalmente em tempo quente e úmido",
+      "prevencao_tratamento": "Não molhar a copa à noite, deixar o vaso em lugar ventilado e cortar e jogar no lixo os ramos atacados. Em ataque forte, fungicida cúprico ou à base de mancozebe a cada 15 dias, na primavera e no verão"
+    },
+    {
+      "nome": "Ácaro (Oligonychus ununguis e outros)",
+      "tipo": "PRAGA",
+      "sintomas": "Agulhas com pontinhos amarelos que depois ficam acinzentadas ou bronze; teias finas entre os ramos; piora em tempo seco e quente",
+      "prevencao_tratamento": "Jato de água forte na copa uma vez por semana no tempo seco; se persistir, óleo de neem a 0,5% ou enxofre molhável no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, cinzas ou marrons presos nos ramos e na base das agulhas; ramos enfraquecidos e às vezes fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool; em infestação grande, óleo mineral a 1% com detergente neutro, fora das horas de sol"
+    },
+    {
+      "nome": "Seca por falta de água ou calor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas dos ramos marrons e crocantes, primeiro no lado mais exposto ao sol da tarde; as agulhas mortas não voltam a ficar verdes",
+      "prevencao_tratamento": "Não deixar o substrato secar por inteiro, usar vaso claro ou protegido do sol direto nas laterais e cobrir o substrato com casca de pinus. Cortar os ramos secos até a parte verde"
+    },
+    {
+      "nome": "Bronzeamento de inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Copa inteira bronze ou arroxeada no frio, principalmente no 'Elegans', com os ramos flexíveis e as agulhas macias",
+      "prevencao_tratamento": "É normal e volta ao verde na primavera. Só preocupa se as agulhas estiverem secas e quebradiças, e aí é seca"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Poda de formação da criptoméria",
+      "mensagem": "No fim do inverno a planta está saindo do repouso, e a poda agora é coberta rápido pelas brotações da primavera.",
+      "acao_requerida": "Cortar ramos secos, os que cruzam por dentro da copa e as pontas que escapam da forma cônica. Nunca cortar um ramo até a parte sem agulhas, porque a madeira nua não rebrota"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com a seca",
+      "mensagem": "O calor forte seca o vaso muito rápido, e a criptoméria queima as pontas sem aviso.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, proteger o vaso do sol da tarde e molhar a copa no fim do dia em tempo seco"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "No frio a planta quase para de crescer, e o substrato demora mais a secar. Nesta época o excesso de rega apodrece a raiz.",
+      "acao_requerida": "Conferir o substrato a cada 5 dias e regar só quando os 3 primeiros centímetros estiverem secos, sem adubar até setembro"
+    }
+  ]
+}

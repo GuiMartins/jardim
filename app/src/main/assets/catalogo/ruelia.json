@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Ruélia",
+    "nome_cientifico": "Ruellia simplex",
+    "descricao": "Arbusto perene de caules eretos e folhas estreitas, também chamado de petúnia-mexicana, que abre flores roxas em forma de trompete da primavera ao outono. Cada flor dura um só dia, mas surgem novas diariamente, e a planta aceita desde o substrato seco até o encharcado. Em vaso, controle as sementes, porque ela se espalha com facilidade.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 25 cm de diâmetro e 25 cm de profundidade, com furos no fundo e prato raso",
+    "volume_minimo_litros": 10,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; mais 1 colher de sopa de farinha de ossos por vaso de 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda enraíza no vaso novo. É normal que algumas folhas de baixo amareleiem e caiam na primeira semana. A fase termina quando aparecem brotos novos no alto dos caules e a planta para de murchar nas horas mais quentes."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "Os caules crescem e soltam brotações laterais. Os primeiros botões costumam surgir entre 6 e 10 semanas em época quente. A planta está estabelecida quando as raízes aparecem pelos furos do vaso e ela floresce sem parar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Floresce todos os dias da primavera ao outono, com as flores caindo sozinhas no fim da tarde. No inverno cresce pouco, floresce menos e pode perder folhas com frio abaixo de 5 °C, mas rebrota da base. Poda forte no fim do inverno e troca de substrato a cada dois anos mantêm a planta compacta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a ruélia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. O torrão da muda ainda não alcança o substrato novo e seca antes do resto do vaso.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a ruélia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão, com sol pleno, pode precisar de rega a cada 2 dias. De maio a agosto, espace para a cada 5 a 7 dias. Ela tolera o substrato úmido, mas não deixe água parada no prato por mais de um dia.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a ruélia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de sopa de bokashi) por vaso de 10 L, longe do caule, e regue em seguida. De maio a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "poda_capsulas",
+      "titulo": "Tirar cápsulas e aparar pontas",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte as cápsulas de sementes (vagens verdes ou marrons, finas, onde havia flor) antes que estourem e arranque as mudinhas que nasceram no vaso ou no chão ao redor. Encurte em um terço os caules que passarem da altura desejada, cortando logo acima de um par de folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os brotos novos: procure pulgões agrupados, pontinhos brancos que voam ao mexer na planta, teias finas no verso ou folhas roídas nas bordas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e outubro, tire a planta do vaso, remova um terço do substrato velho e corte raízes enroladas no fundo. Divida a touceira se estiver muito densa e replante com substrato novo, no mesmo vaso ou num 5 cm maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora de beliscar as pontas",
+      "mensagem": "A muda já pegou. Cortar a ponta dos caules agora faz a ruélia soltar brotos laterais e virar uma moita cheia, em vez de poucas hastes compridas.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada caule, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Cuidado com as sementes",
+      "mensagem": "Com a planta florindo, as cápsulas começam a se formar e estouram jogando sementes a mais de um metro. A ruélia se espalha fácil por vasos vizinhos e canteiros.",
+      "acao_requerida": "Olhar abaixo das flores e cortar as cápsulas verdes antes que escureçam"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (excesso de água)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas mesmo com o substrato molhado, base do caule escura e mole, cheiro azedo no vaso",
+      "prevencao_tratamento": "Use vaso com furos e esvazie o prato depois da rega. Se aparecer, tire a planta, corte as raízes escuras, replante em substrato novo e seco e só regue quando os 3 cm de cima secarem"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; folhas novas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, por três aplicações"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetinhos brancos ao mexer na planta; folhas amareladas com fumagina (pó preto)",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto empoeirado; teias finas no verso em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; se infestar, calda de sabão neutro (1 colher de sopa por litro) ou neem a cada 4 dias"
+    },
+    {
+      "nome": "Lagarta da borboleta-malaquita (Siproeta stelenes)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro; lagartas pretas com espinhos avermelhados",
+      "prevencao_tratamento": "A ruélia é planta hospedeira dessa borboleta e rebrota rápido; se o dano incomodar, cate as lagartas à mão e leve para outra ruélia ou planta do mesmo grupo"
+    },
+    {
+      "nome": "Queima pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, arroxeadas ou secas depois de noites abaixo de 5 °C",
+      "prevencao_tratamento": "Nas noites de geada, leve o vaso para perto de uma parede ou sob cobertura; não pode as partes queimadas antes do fim do inverno, porque elas protegem a brotação de baixo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual da ruélia",
+      "mensagem": "No fim do inverno a planta está quase parada. Uma poda forte agora renova os caules e prepara uma floração densa na primavera.",
+      "acao_requerida": "Cortar todos os caules a 10 ou 15 cm do substrato, logo acima de um par de gemas, e retirar os galhos secos"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com frio e dias curtos, a ruélia cresce pouco e o substrato demora mais para secar. Rega de verão agora apodrece a raiz.",
+      "acao_requerida": "Regar só quando os 3 cm de cima estiverem secos, suspender o adubo e proteger o vaso nas noites de geada"
+    }
+  ]
+}

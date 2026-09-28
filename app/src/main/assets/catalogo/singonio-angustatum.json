@@ -1,0 +1,209 @@
+{
+  "planta": {
+    "nome_comum": "Singônio-angustatum",
+    "nome_cientifico": "Syngonium angustatum",
+    "descricao": "Trepadeira de folhagem da família das aráceas, nativa do México e da América Central. Pode ser vendida como 'Albolineatum', com nervuras claras. As folhas jovens têm forma de seta, e as adultas se dividem em 3 a 5 folíolos estreitos e recortados. Cresce rápido em luz clara indireta, pode subir num tutor ou ficar pendente, mas a seiva é tóxica para crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 15 a 18 cm de diâmetro e de profundidade, com furos no fundo e sem prato com água parada",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "40% substrato para plantas de folhagem, 30% casca de pinus fina, 20% húmus de minhoca e 10% perlita ou areia grossa. Deve ficar aerado e úmido, sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa do viveiro e estranha a luz e a umidade da casa. É normal cair uma ou duas folhas velhas. Deixe-a num lugar claro, sem sol forte da tarde e longe de ar-condicionado. A fase acabou quando surge a primeira folha nova, que desenrola de dentro do pecíolo da anterior."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "As folhas novas saem uma a cada 1 ou 2 semanas no calor, e os ramos começam a se alongar e a soltar raízes aéreas nos nós. Se as folhas novas saírem pequenas, pálidas e com entrenós longos, a planta precisa de mais luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Da primavera ao fim do verão, cresce rápido e as folhas ficam mais recortadas nos ramos que sobem por um tutor. Os ramos pendentes tendem a voltar à folha em forma de seta. No inverno o crescimento quase para, e ela pede menos água e nenhum adubo. Em vaso, a floração é rara e não faz diferença no cultivo. A cada 2 anos o substrato se decompõe e precisa ser trocado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o singônio",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água que ficar no prato após 15 minutos. Se ainda estiver úmido, não regue. No verão acima de 30 °C, confira a cada 2 ou 3 dias. No inverno, o substrato costuma levar 7 dias para secar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_folhagem",
+      "titulo": "Adubar o singônio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a abril, dissolva 1 g de adubo NPK 10-10-10 (ou adubo líquido para folhagens, na metade da dose do rótulo) em 1 L de água e regue com ele o substrato já úmido. De maio a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire 5 folhas e olhe o verso, as axilas dos pecíolos e os nós. Procure algodãozinho branco (cochonilha), teias finas e pontinhos amarelados (ácaro) ou riscos prateados (trips). Aproveite para passar um pano úmido nas folhas, porque poeira reduz a luz que elas captam.",
+      "critica": false
+    },
+    {
+      "id": "poda_conducao",
+      "titulo": "Conduzir ou aparar ramos longos",
+      "tipo": "PODA",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Prenda ao tutor, com fitilho frouxo, os ramos que passaram de 20 cm soltos. Se preferir a planta compacta, corte os ramos longos 1 cm acima de um nó, com tesoura limpa e usando luvas, porque a seiva irrita a pele. As pontas cortadas enraízam num copo com água em 2 a 3 semanas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, solte 1/3 do substrato velho das raízes e corte as raízes escuras e moles. Replante num vaso 2 a 4 cm maior, com substrato novo na mesma mistura, e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar do singônio",
+      "mensagem": "Ele gosta de muita claridade, mas o sol forte da tarde queima as folhas e desbota as nervuras claras.",
+      "acao_requerida": "Colocar o vaso a até 1,5 m de uma janela clara, com no máximo 1 hora de sol da manhã, longe do ar-condicionado e fora do alcance de crianças e animais"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Confira o vaso do viveiro",
+      "mensagem": "Plantas de viveiro costumam vir em vasos pequenos, com o substrato tomado por raízes, que secam em um dia.",
+      "acao_requerida": "Se as raízes estiverem saindo pelos furos ou se o substrato secar em menos de 2 dias, passar para um vaso de 15 a 18 cm com o substrato recomendado"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora de dar um tutor",
+      "mensagem": "Quando sobe, o singônio forma folhas maiores e mais recortadas. Se ficar pendente, ele continua com as folhas em forma de seta.",
+      "acao_requerida": "Se quiser a planta subindo, enterrar um tutor de fibra de coco ou musgo junto à borda do vaso e amarrar os ramos mais longos nele"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de baixo para cima e murchas, mesmo com o substrato úmido. A base do caule fica escura e mole, e as raízes marrons se desfazem com cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm e nunca deixar água no prato. Se aparecer, tirar a planta do vaso, cortar as raízes podres, replantar em substrato novo e seco e esperar 3 dias para regar. Se o caule estiver podre, fazer estacas das pontas sadias"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas, nos nós e no verso. As folhas ficam pegajosas e amarelam",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Depois, pulverizar óleo de neem a 0,5% com algumas gotas de detergente neutro no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelados que deixam a folha com aspecto pálido e empoeirado, e teias finas no verso, principalmente no ar seco do inverno",
+      "prevencao_tratamento": "Lavar o verso das folhas com jato de água no chuveiro e aumentar a umidade com uma bandeja de pedrinhas molhadas. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Riscos prateados e pontinhos pretos nas folhas, e folhas novas deformadas",
+      "prevencao_tratamento": "Lavar as folhas, isolar a planta e pulverizar óleo de neem a 0,5% a cada 5 dias por 3 semanas. Uma armadilha adesiva azul perto do vaso ajuda a monitorar"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas e translúcidas, com halo amarelo, que escurecem e se espalham rápido pela folha",
+      "prevencao_tratamento": "Regar direto no substrato, sem molhar as folhas, e manter ventilação. Cortar e descartar as folhas atingidas com tesoura desinfetada em álcool"
+    },
+    {
+      "nome": "Pontas e bordas marrons",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas secas e marrons, crocantes ao toque",
+      "prevencao_tratamento": "É ar seco, substrato que secou demais entre as regas ou excesso de adubo. Afastar do ar-condicionado, conferir a rega com mais frequência e lavar o substrato com bastante água a cada 3 meses. Aparar só a parte seca, com tesoura"
+    },
+    {
+      "nome": "Estiolamento e perda do desenho",
+      "tipo": "DISTURBIO",
+      "sintomas": "Entrenós longos, folhas novas pequenas, verde-escuras e sem as nervuras claras",
+      "prevencao_tratamento": "Falta de luz: aproximar da janela ou dar 1 hora de sol da manhã. Podar os ramos compridos acima de um nó para a planta rebrotar mais cheia"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas no meio das folhas voltadas para a janela",
+      "prevencao_tratamento": "Tirar do sol da tarde ou filtrar a luz com cortina fina. As folhas queimadas não se recuperam: cortar quando incomodarem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "O singônio quase para de crescer no frio. Abaixo de 10 °C as folhas escurecem, e substrato frio e úmido apodrece a raiz. O ar seco do inverno também favorece os ácaros.",
+      "acao_requerida": "Regar só com o substrato seco a 3 cm, suspender o adubo, afastar o vaso de vidros frios à noite e de aquecedores, e usar uma bandeja de pedrinhas molhadas sob o vaso"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomada do crescimento",
+      "mensagem": "Com o calor, a planta volta a soltar folhas novas. É a melhor época para podar, fazer estacas e trocar de vaso.",
+      "acao_requerida": "Retomar a adubação mensal, podar os ramos ralos acima de um nó e, se as raízes saírem pelos furos, passar para um vaso maior"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: substrato seca mais rápido",
+      "mensagem": "No calor, o vaso pode secar em 2 dias, e o sol que entra pela janela fica mais forte.",
+      "acao_requerida": "Conferir o substrato a cada 2 ou 3 dias e afastar a planta de qualquer sol direto depois das 10h"
+    }
+  ]
+}

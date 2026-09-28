@@ -1,0 +1,178 @@
+{
+  "planta": {
+    "nome_comum": "Andiroba",
+    "nome_cientifico": "Carapa guianensis",
+    "descricao": "Árvore amazônica da família do mogno, famosa pelo óleo das sementes, usado como repelente e anti-inflamatório. Na natureza passa de 25 m e só frutifica depois de uns 8 a 10 anos, por isso em vaso ela vive como árvore jovem ornamental, de folhas grandes e brilhantes, até ir para o chão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso plástico ou de cimento com pelo menos 40 cm de profundidade e 35 cm de diâmetro, com vários furos no fundo; a raiz pivotante é funda e pede vaso mais alto que largo",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou casca de pinus fina; rico em matéria orgânica e levemente ácido, que segura umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do viveiro, onde cresceu sob sombrite, e sente a troca: algumas folhas velhas podem amarelar e cair. Deixe-a com sol só da manhã. A adaptação terminou quando surge um broto novo, avermelhado ou verde-claro, na ponta do caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e a planta cresce em surtos: solta um lote de folhas compostas grandes de uma vez e depois para algumas semanas. Com calor e umidade, cresce de 40 a 80 cm no primeiro ano; no inverno praticamente para."
+    },
+    {
+      "fase_id": "arvore_jovem",
+      "nome": "Árvore Jovem",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce forte de outubro a março, com vários lotes de folhas, e fica quase parada de junho a agosto. Em vaso não floresce nem dá sementes. A cada dois anos precisa de vaso maior; quando passar de 2 m ou as raízes saírem pelos furos mesmo após a troca, o melhor destino é o plantio no chão, em terreno amplo e longe de construções."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de andiroba",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia: a muda recém-plantada ainda tem pouca raiz e murcha rápido.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a andiroba",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e descarte a água do pratinho depois de 30 minutos. No verão confira a cada 2 dias; de junho a agosto espace para cada 5 a 7 dias, porque a planta quase para e a raiz apodrece em vaso frio e molhado.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a andiroba",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de composto bem curtido sobre o substrato, a 5 cm do caule, e regue em seguida. De setembro a março, some 1 colher de sopa de NPK 10-10-10 dissolvida em 2 L de água. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ponteiro e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o broto da ponta: murcho, seco ou com serragem e furinho indica broca. Vire as folhas e procure carocinhos brancos ou marrons presos às nervuras (cochonilha).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar a andiroba de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, passe para um vaso 10 a 15 cm mais largo e mais fundo, com substrato novo, sem enterrar o colo mais do que estava. Se a planta já passou de 2 m, considere plantá-la no chão em vez de trocar o vaso.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Muda nova: sol só da manhã",
+      "mensagem": "A muda cresceu sob sombrite no viveiro e as folhas queimam se pegarem sol forte de repente.",
+      "acao_requerida": "Colocar o vaso onde bata sol só até umas 10h durante as primeiras semanas"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora de dar mais sol",
+      "mensagem": "Com a muda adaptada e brotando, ela já aguenta mais luz, e com pouca luz o caule estica fino e fraco.",
+      "acao_requerida": "Mudar o vaso aos poucos, ao longo de 2 semanas, para um lugar com pelo menos 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de andiroba",
+      "mensagem": "A árvore cresce rápido e o vaso logo fica pequeno. Vale decidir se ela vai continuar em vaso ou ir para o chão.",
+      "acao_requerida": "Medir a altura e olhar os furos do vaso; se passou de 1,5 m ou há raízes saindo, planejar vaso maior ou plantio no chão para a próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Broca-das-meliáceas (Hypsipyla grandella)",
+      "tipo": "PRAGA",
+      "sintomas": "Broto da ponta murcha e seca; furo no caule novo com serragem e fios de teia na saída; a planta ramifica em vários ponteiros tortos",
+      "prevencao_tratamento": "Corte o ponteiro atacado 5 cm abaixo do furo e descarte longe da planta; deixe só o broto lateral mais vigoroso para virar o novo tronco. Em vaso isolado de outras meliáceas (mogno, cedro) o ataque é raro"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou escudos marrons no verso das folhas e nos ramos novos; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool; em infestação maior, pulverize óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas mesmo com o substrato molhado, amarelecimento geral e queda de folhas; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Deixe secar os primeiros 4 cm antes de regar, nunca deixe água no pratinho e espace a rega no inverno. Se já atacou, retire a planta, corte as raízes podres e replante em substrato novo e vaso limpo"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam com aspecto cozido e caem depois de noites abaixo de 8 °C; ponteiro seca em geada",
+      "prevencao_tratamento": "Levar o vaso para perto de parede ou sob cobertura nas noites frias; com previsão de geada, cobrir com TNT ou pôr dentro de casa. Espere a primavera para podar a parte seca, quando os brotos novos mostram até onde o ramo morreu"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrons secas no meio das folhas voltadas para o sol, logo após a planta mudar de lugar",
+      "prevencao_tratamento": "Fazer a transição da sombra para o sol ao longo de 2 semanas; as folhas queimadas não se recuperam, mas as novas já nascem adaptadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger a andiroba do frio",
+      "mensagem": "Árvore tropical da Amazônia, ela perde folhas abaixo de 8 °C e morre em geada. No inverno quase não cresce e bebe bem menos água.",
+      "acao_requerida": "Deixar o vaso no canto mais quente e protegido do vento, cobrir ou recolher em noites de geada e regar só quando os primeiros 4 cm do substrato estiverem secos"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: conferir a rega",
+      "mensagem": "No auge do verão a andiroba cresce rápido e o vaso seca em um ou dois dias; murcha repetida faz as folhas grandes caírem.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia nos dias acima de 30 °C e regar sempre que os primeiros 4 cm estiverem secos"
+    }
+  ]
+}

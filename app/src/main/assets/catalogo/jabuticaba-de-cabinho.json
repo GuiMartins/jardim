@@ -1,0 +1,212 @@
+{
+  "planta": {
+    "nome_comum": "Jabuticaba-de-cabinho",
+    "nome_cientifico": "Plinia trunciflora",
+    "descricao": "Jabuticabeira nativa do Sul e Sudeste, cujo fruto preso ao tronco tem um pedúnculo curto (o 'cabinho'). Tem porte menor que a jabuticaba-sabará, começa a produzir mais cedo e pode dar mais de uma florada por ano quando não falta água, o que a torna uma das melhores jabuticabeiras para vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cimento ou barro com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; para a planta adulta, passe para 60 cm de diâmetro",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% fibra de coco ou casca de pinus fina; levemente ácido (pH 5,5 a 6,5), sem calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho do viveiro para o vaso definitivo e passa algumas semanas quase parada, formando raiz nova. É normal perder algumas folhas velhas. A fase terminou quando aparecem brotos avermelhados na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento em surtos: a planta solta brotações cor de vinho que depois ficam verdes e duras. A raiz ocupa o vaso ao longo do ano. Se surgirem flores no tronco neste primeiro ano, arranque a maior parte para a planta gastar energia em raiz e galhos."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A copa engrossa e o tronco e os galhos principais ganham casca que descama, onde as flores vão nascer. Mudas enxertadas ou de boa procedência costumam dar as primeiras floradas nesta fase; mudas de semente podem levar mais tempo. Deixe frutificar pouco no começo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: florada principal em agosto e setembro, quando o calor volta, e frutos maduros de 40 a 50 dias depois. Com rega farta e adubação em dia, a jabuticaba-de-cabinho repete a florada no verão e às vezes no outono. No inverno ela desacelera, mas nunca pode secar totalmente. O substrato é renovado a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a jabuticabeira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver só úmido ao toque, regue devagar em volta do tronco até escorrer pelos furos (cerca de 3 L num vaso de 40 L). Em dia nublado e fresco, se ainda estiver molhado, pule. Nunca deixe o torrão da muda secar nesta fase.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a jabuticabeira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos (4 a 6 L num vaso de 40 a 60 L). Acima de 30 °C ou durante a florada e os frutos, confira todo dia: um dia de vaso seco derruba flores e frutinhos. No inverno o intervalo pode passar para 3 ou 4 dias, mas o substrato não pode secar de vez.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a jabuticabeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na borda do vaso, longe do tronco, 1 xícara (cerca de 100 g) de bokashi ou torta de mamona mais 1 colher de sopa (15 g) de NPK 10-10-10, afofe a superfície e regue bem. No primeiro ano use metade. Em junho e julho, com a planta parada, pule uma adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar brotos e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos avermelhados procurando pó amarelo-alaranjado (ferrugem) ou folhas enroladas; passe a mão pelo tronco e pelos galhos atrás de caroços brancos ou marrons (cochonilha); vire algumas folhas e procure pontos pretos ou insetos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera (antes da florada) ou depois da colheita, tire a planta do vaso, raspe 3 a 5 cm do torrão pelos lados e pelo fundo, corte raízes enoveladas e replante com substrato novo, num vaso 10 cm mais largo se ainda couber. Regue bem e mantenha à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A jabuticabeira não gosta de ser mexida depois de pegar. Plantar já no vaso grande evita um transplante no ano que vem.",
+      "acao_requerida": "Plantar a muda com o colo na mesma altura em que estava no saquinho, sem enterrar o enxerto, firmar o substrato com as mãos e regar até escorrer"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de jabuticabeira",
+      "mensagem": "A raiz já deve ter tomado o vaso. Raízes saindo pelos furos ou água escorrendo direto sem molhar o torrão indicam vaso pequeno.",
+      "acao_requerida": "Conferir os furos do vaso e, se houver raiz saindo, passar para um vaso de 60 cm de diâmetro na próxima primavera"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Idade de produzir",
+      "mensagem": "Com três anos no vaso, a jabuticaba-de-cabinho costuma florescer. Se ainda não floresceu, quase sempre falta sol, água na primavera ou adubo.",
+      "acao_requerida": "Garantir pelo menos 6 horas de sol direto e não deixar secar entre agosto e setembro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem com o substrato sempre molhado, raízes escuras e moles com cheiro ruim, casca do colo escurecida",
+      "prevencao_tratamento": "Vaso com vários furos e sem prato cheio d'água; regar pelo teste do dedo, não por calendário. Em caso de ataque, tirar do vaso, cortar as raízes podres e replantar em substrato novo e mais drenado"
+    },
+    {
+      "nome": "Ferrugem-das-mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nos brotos novos, flores e frutinhos, que depois secam e ficam pretos e retorcidos",
+      "prevencao_tratamento": "Boa ventilação e sol; poda de limpeza para arejar a copa; remover e descartar os brotos atacados; calda bordalesa nas brotações em épocas úmidas"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nos frutos, que apodrecem no pé; manchas marrons nas folhas",
+      "prevencao_tratamento": "Colher os frutos assim que maduros, recolher os caídos, evitar molhar a copa ao regar; calda bordalesa antes da florada em anos chuvosos"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Caroços brancos, marrons ou cerosos no tronco, nos galhos e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Raspar com escova macia e água com sabão neutro; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, fora da florada"
+    },
+    {
+      "nome": "Rachadura dos frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos maduros racham e azedam logo depois de chuva forte ou de uma rega farta após o vaso secar",
+      "prevencao_tratamento": "Manter a umidade do substrato constante durante a frutificação e colher os frutos todos os dias assim que ficam pretos"
+    },
+    {
+      "nome": "Queda de flores e frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores ou frutos verdes do tamanho de um grão de ervilha caem em massa poucos dias após a florada",
+      "prevencao_tratamento": "Quase sempre é falta de água: na florada e na frutificação o substrato não pode secar nem um dia. Evitar adubo rico em nitrogênio nessa época"
+    },
+    {
+      "nome": "Clorose (falta de ferro e micronutrientes)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes",
+      "prevencao_tratamento": "Não usar calcário em excesso; aplicar adubo com micronutrientes ou quelato de ferro conforme a embalagem e manter o substrato levemente ácido"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A jabuticabeira adulta aguenta geada leve, mas mudas jovens e brotos novos queimam. No frio ela quase para de crescer e gasta menos água.",
+      "acao_requerida": "Nas noites com previsão de geada, levar o vaso para perto de uma parede ou sob cobertura; espaçar as regas sem deixar o substrato secar totalmente"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Florada da jabuticaba",
+      "mensagem": "Com o calor voltando, o tronco se cobre de botões brancos. A falta de água agora derruba a florada inteira.",
+      "acao_requerida": "Conferir a umidade do vaso todos os dias, não molhar as flores ao regar e não aplicar adubo nitrogenado até os frutinhos firmarem"
+    },
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Colheita das jabuticabas",
+      "mensagem": "Os frutos amadurecem de 40 a 50 dias depois da florada e passam do ponto rápido: racham, azedam e atraem abelhas e moscas.",
+      "acao_requerida": "Passar todo dia e colher os frutos pretos, brilhantes e macios, torcendo de leve; recolher os que caíram"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Poda de limpeza pós-colheita",
+      "mensagem": "Com a colheita principal encerrada, uma poda leve areja a copa e reduz a ferrugem e a antracnose. As flores nascem no tronco e nos galhos grossos, que não devem ser cortados.",
+      "acao_requerida": "Cortar só ramos secos, ladrões que brotam da base, galhos finos que cruzam para dentro da copa e brotos abaixo do enxerto"
+    }
+  ]
+}

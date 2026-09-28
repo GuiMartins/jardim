@@ -1,0 +1,170 @@
+{
+  "planta": {
+    "nome_comum": "Bromélia-imperial",
+    "nome_cientifico": "Alcantarea imperialis",
+    "descricao": "Bromélia gigante nativa dos paredões rochosos da Serra dos Órgãos (RJ), com roseta de folhas largas que pode passar de 1,2 m de diâmetro e fica vinho no sol forte. Aguenta sol pleno, vento e seca curta, e floresce uma única vez, depois de 10 anos ou mais, com uma haste de até 2 m. Depois disso a planta-mãe morre aos poucos e deixa filhotes, por isso aqui ela é tratada como perene de vida longa.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e pesado (cerâmica ou cimento), com pelo menos 40 cm de diâmetro e 30 cm de altura e furos grandes no fundo; a roseta adulta pesa e tomba vasos de plástico leves",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% casca de pinus média, 30% terra vegetal, 20% areia grossa lavada, 10% húmus de minhoca; deve drenar na hora e nunca empapar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está firmando as raízes no vaso novo. Se veio de viveiro com sombrite, aumente o sol aos poucos (meia manhã na primeira semana, manhã inteira na segunda) para não queimar as folhas. A fase termina quando a roseta não balança mais ao ser tocada e surge uma folha nova no centro."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento e constante: uma folha nova a cada 3 ou 4 semanas no calor. No sol pleno as folhas ganham tom avermelhado ou vinho; se ficarem verdes, moles e compridas, falta sol. Retire com a mão as folhas de baixo que secarem por completo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "A roseta cresce na primavera e no verão e quase para no inverno. Depois de muitos anos (em geral 10 ou mais), o centro se alonga numa haste floral de até 2 m, com flores brancas e brácteas vinho; a floração dura meses. A planta-mãe então definha devagar e solta filhotes na base, que podem ser separados quando tiverem um terço do tamanho dela."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "renovar_agua_copo",
+      "titulo": "Trocar a água do copo da bromélia",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Jogue um jato forte de mangueira no centro da roseta até a água velha transbordar e ser trocada por água limpa, ou vire levemente o vaso para esvaziar e encha de novo até a metade do copo. Não pule: água parada por mais de uma semana cria larvas do mosquito da dengue.",
+      "critica": true
+    },
+    {
+      "id": "rega_substrato",
+      "titulo": "Regar o substrato",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 32 °C confira a cada 4 dias; no inverno espace para 10 a 14 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_foliar",
+      "titulo": "Adubar a bromélia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo NPK 10-10-10 na metade da dose do rótulo (cerca de 1 g por litro) e borrife nas folhas e no substrato, nunca dentro do copo. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e copo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base das folhas e o verso delas procurando escamas marrons ou algodão branco (cochonilha), e confira se o centro da roseta está firme e sem cheiro de podre.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta com luvas (as folhas cortam), descarte o substrato velho e replante num vaso 10 cm mais largo, com substrato novo, sem enterrar a base das folhas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Hora de dar mais sol",
+      "mensagem": "A muda já passou a primeira semana. A bromélia-imperial só fica compacta e colorida no sol direto, mas a mudança brusca queima as folhas.",
+      "acao_requerida": "Passar o vaso para um lugar com sol da manhã inteira e, na semana seguinte, para o sol pleno"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Confira o enraizamento",
+      "mensagem": "Com um mês, a roseta já deve estar presa no substrato.",
+      "acao_requerida": "Balançar de leve a base da roseta; se ainda soltar, calçar com pedras no substrato ao redor e manter longe de vento forte por mais duas semanas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do coração (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas centrais amolecem, escurecem na base e soltam com um puxão leve; cheiro de podre no copo",
+      "prevencao_tratamento": "Substrato bem drenado, sem prato com água embaixo do vaso e sem enterrar a base das folhas; retire as folhas podres, esvazie o copo e deixe secar por uma semana. Com o centro todo podre, a planta não se recupera: guarde os filhotes, se houver"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos na base e no verso das folhas; manchas amarelas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Larvas do mosquito da dengue (Aedes aegypti)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas larvas que se contorcem na água do copo da roseta",
+      "prevencao_tratamento": "Trocar a água do copo com jato de mangueira toda semana; não usar produtos no copo além de água limpa"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrom-claras e secas no meio das folhas, logo depois de mudar a planta de lugar",
+      "prevencao_tratamento": "Aumentar o sol aos poucos ao longo de duas semanas; as manchas não somem, mas as folhas novas nascem saudáveis"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas verdes, finas, compridas e caídas, roseta aberta e sem o tom vinho",
+      "prevencao_tratamento": "Levar para um local com pelo menos 4 horas de sol direto, fazendo a transição gradual"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "No frio a bromélia-imperial quase para de crescer e o substrato demora a secar, o que favorece a podridão da base.",
+      "acao_requerida": "Espaçar a rega do substrato para 10 a 14 dias, suspender a adubação e, em noites abaixo de 0 °C, cobrir a roseta com manta ou levá-la para perto de uma parede"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o crescimento",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento e aproveita adubo e água.",
+      "acao_requerida": "Retirar as folhas secas da base, voltar a regar a cada 7 dias e retomar a adubação mensal"
+    }
+  ]
+}

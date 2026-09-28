@@ -1,0 +1,177 @@
+{
+  "planta": {
+    "nome_comum": "Jatrofa",
+    "nome_cientifico": "Jatropha podagrica",
+    "descricao": "Arbusto suculento da América Central com caule engrossado na base, em forma de garrafa, folhas grandes lobadas e cachos de flores vermelho-coral quase o ano todo. Aguenta sol forte e esquecimento de rega, mas todas as partes e o látex são tóxicos: mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 25 cm de diâmetro e 25 cm de profundidade, com vários furos no fundo; o barro ajuda o substrato a secar entre regas",
+    "volume_minimo_litros": 10,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% casca de pinus fina ou perlita, 10% húmus de minhoca; precisa escoar a água em segundos",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Logo após o plantio a muda pode perder algumas folhas: é normal. Deixe em sol da manhã e sombra à tarde. A adaptação terminou quando surgem folhas novas no topo do caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a planta passa a soltar folhas e cachos de flores com regularidade. Já pode ficar em sol pleno. A base do caule começa a engrossar aos poucos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Floresce da primavera ao outono, às vezes o ano todo em lugar quente. No frio ou na seca de inverno pode perder quase todas as folhas e ficar só com o caule: é dormência, não morte. Com a rega reduzida, ela rebrota na primavera. Cresce devagar e raramente passa de 1 m em vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a jatrofa recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Com poucas raízes, a muda murcha rápido no calor, mas encharcar apodrece a base do caule.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a jatrofa",
+      "tipo": "REGA",
+      "frequencia_dias": 6,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o pratinho. No verão acima de 30 °C, confira a cada 4 dias; de maio a agosto, sem folhas, regue no máximo a cada 15 a 20 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a jatrofa",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de húmus) na borda do vaso de 10 L, longe do caule, e regue em seguida. De maio a agosto, com a planta sem folhas, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teia fina (ácaro), algodão branco nas axilas e na base (cochonilha) e mosquinhas brancas que voam ao sacudir. Aperte a base do caule: deve estar firme, nunca mole.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, com luvas: tire a planta, retire o substrato velho das raízes, corte raízes podres e replante em substrato novo, num vaso 5 cm maior se as raízes estiverem enoveladas. Espere 5 dias antes da primeira rega.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Atenção ao látex",
+      "mensagem": "A jatrofa solta um látex tóxico e irritante quando é cortada ou quebrada. As sementes são venenosas se ingeridas.",
+      "acao_requerida": "Usar luvas ao mexer na planta e deixar o vaso fora do alcance de crianças e animais"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Pode ir para o sol pleno",
+      "mensagem": "A muda já se firmou no vaso. Com mais sol, ela floresce mais e o caule fica compacto.",
+      "acao_requerida": "Mudar o vaso para um lugar com pelo menos 6 horas de sol direto, aumentando a exposição ao longo de uma semana para não queimar as folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do caule e da raiz (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole, escura e com cheiro ruim; folhas murcham mesmo com o substrato úmido",
+      "prevencao_tratamento": "Substrato bem drenado, pratinho sempre vazio e rega só com o substrato seco, principalmente no inverno. Se já amoleceu, corte a parte podre com faca limpa até o tecido firme, deixe secar 1 semana e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teia fina no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, três aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto de algodão nas axilas das folhas e na base do caule; planta enfraquece e fica pegajosa",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, calda de sabão neutro com óleo mineral a 1% a cada 7 dias"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenos insetos brancos que voam ao sacudir a planta; folhas amareladas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Queda de folhas no frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem entre maio e agosto até sobrar só o caule, que continua firme",
+      "prevencao_tratamento": "É dormência. Reduza a rega ao mínimo, suspenda o adubo e proteja de temperaturas abaixo de 10 °C; ela rebrota na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Jatrofa entrando em repouso",
+      "mensagem": "Com o frio chegando, a jatrofa pode começar a perder folhas. Rega de verão agora apodrece o caule.",
+      "acao_requerida": "Espaçar a rega para a cada 15 a 20 dias, só com o substrato seco, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger a jatrofa do frio",
+      "mensagem": "Abaixo de 10 °C a jatrofa sofre, e geada mata os ramos. Frio com substrato úmido é a combinação que mais apodrece o caule.",
+      "acao_requerida": "Em noites abaixo de 10 °C, levar o vaso para perto de uma parede abrigada ou para dentro de casa, perto da janela, e manter o substrato seco"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Hora de acordar a jatrofa",
+      "mensagem": "Com o calor voltando, a jatrofa solta folhas novas e se prepara para florescer.",
+      "acao_requerida": "Voltar à rega normal quando surgirem os primeiros brotos, retomar a adubação mensal e devolver o vaso ao sol pleno"
+    }
+  ]
+}

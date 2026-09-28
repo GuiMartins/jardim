@@ -1,0 +1,213 @@
+{
+  "planta": {
+    "nome_comum": "Cebolinha-francesa",
+    "nome_cientifico": "Allium schoenoprasum",
+    "descricao": "Erva perene de touceira, parente da cebola, com folhas finas, ocas e de sabor mais suave que o da cebolinha comum. Rebrota depois de cada corte por anos no mesmo vaso, e as flores lilases da primavera também são comestíveis.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 15 cm de profundidade e 15 cm de diâmetro por touceira, com furos no fundo",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; fértil e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Semeie de 10 a 15 sementes em tufos a cada 10 cm, a 0,5 cm de profundidade, e cubra com substrato peneirado. Entre o 7º e o 14º dia surgem fiozinhos verdes dobrados como um grampo, que depois se endireitam. Semente de cebolinha perde a viabilidade rápido: use pacote do ano."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 15,
+      "dia_fim": 45,
+      "descricao": "As folhas finas como linha engrossam devagar e cada tufo ganha novas folhas no centro. É a fase mais frágil: substrato seco por um dia inteiro mata as plântulas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 46,
+      "dia_fim": 80,
+      "descricao": "Cada tufo vira uma pequena touceira de folhas com 15 a 20 cm e a base começa a formar bulbinhos alongados. A fase termina quando as folhas passam de 20 cm e têm a espessura de um palito de fósforo: aí já dá para colher."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 81,
+      "dia_fim": null,
+      "descricao": "Touceira densa que rebrota em 2 a 3 semanas depois de cada corte. O ano típico: crescimento forte no outono e na primavera, flores lilases em outubro e novembro, desaceleração no calor do verão e, em regiões frias, folhas amarelando no inverno com rebrota em agosto. A touceira se adensa e perde vigor: divida a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode formar crosta seca, porque a semente que secou depois de começar a germinar não se recupera.",
+      "critica": true
+    },
+    {
+      "id": "rega_plantulas",
+      "titulo": "Regar as plântulas",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue devagar pela borda do vaso até escorrer pelos furos, sem jato forte sobre as plântulas. Acima de 28 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cebolinha",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. No verão confira a cada 1 ou 2 dias; no inverno frio, com a planta parada, a cada 5 ou 6 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a cebolinha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por vaso de 3 L sem cobrir a base das touceiras e regue em seguida. Depois de uma colheita forte, a adubação acelera a rebrota. Pule nos meses em que a planta estiver amarelada e parada pelo frio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra a touceira com os dedos e olhe a base das folhas e as folhas mais novas: procure pontinhos pretos ou verdes agrupados, riscos prateados, pó alaranjado ou mofo acinzentado.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher a cebolinha",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 81,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura um terço das folhas mais externas a 3 cm do substrato, nunca rente à base. Cortar a touceira toda de uma vez só se ela tiver mais de 25 cm, e então espere 3 semanas antes do próximo corte.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a touceira do vaso, separe com as mãos ou uma faca em tufos de 8 a 10 bulbinhos com raiz e replante cada tufo em substrato novo, na mesma profundidade. Corte as folhas a 5 cm para diminuir a perda de água e mantenha à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Tufos com muitas plântulas amontoadas crescem finos e fracos.",
+      "acao_requerida": "Deixar de 6 a 8 plântulas por tufo, cortando as mais fracas rente ao substrato com tesoura, sem puxar"
+    },
+    {
+      "dia_disparo": 81,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "As touceiras já têm força para rebrotar depois do corte.",
+      "acao_requerida": "Cortar as folhas externas a 3 cm do substrato, levando no máximo um terço da touceira nesta primeira vez"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da base (excesso de rega, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e tombam a partir da base; bulbinhos moles, marrons e com cheiro azedo; raízes escuras",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, não deixar água no pratinho e usar substrato com areia. Retire os tufos podres com o substrato em volta e reduza a rega"
+    },
+    {
+      "nome": "Tripes (Thrips tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Riscos prateados ou esbranquiçados nas folhas, pontinhos pretos de fezes e folhas retorcidas; insetos alongados minúsculos escondidos na base",
+      "prevencao_tratamento": "Cortar e descartar as folhas mais atacadas, jato de água na base da touceira e óleo de neem a 0,5% no fim da tarde a cada 5 dias; piora no tempo seco e quente"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos ou verdes nas folhas novas e nas hastes florais; folhas pegajosas",
+      "prevencao_tratamento": "Jato de água; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde, lavando as folhas antes de consumir"
+    },
+    {
+      "nome": "Ferrugem (Puccinia allii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas em relevo que soltam pó quando esfregadas; folhas amarelam e secam",
+      "prevencao_tratamento": "Cortar todas as folhas afetadas a 3 cm e descartar fora da compostagem, regar só o substrato e deixar o vaso em local ventilado; a rebrota costuma vir sadia"
+    },
+    {
+      "nome": "Míldio (Peronospora destructor)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelo-pálidas alongadas com mofo cinza-violeta por cima em dias úmidos; pontas das folhas dobram e secam",
+      "prevencao_tratamento": "Evitar molhar as folhas, regar pela manhã e não adensar demais a touceira. Corte as folhas afetadas; em época chuvosa, abrigue o vaso da chuva direta"
+    },
+    {
+      "nome": "Pontas secas e amareladas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas amarelas ou palha, sem manchas nem insetos, em toda a touceira",
+      "prevencao_tratamento": "Costuma ser substrato seco demais no calor ou falta de nitrogênio numa touceira antiga. Regularize a rega, adube com húmus e corte as folhas a 3 cm para renovar; se o vaso estiver tomado de raízes, divida a touceira"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Época das flores",
+      "mensagem": "A cebolinha-francesa floresce na primavera. As hastes florais são duras e, se ficarem, a touceira gasta energia em semente e produz menos folha.",
+      "acao_requerida": "Cortar as hastes florais rente à base assim que os botões aparecerem, ou colher as flores abertas para comer e cortar a haste em seguida"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger do calor",
+      "mensagem": "Acima de 30 °C a cebolinha para de crescer, as pontas secam e o vaso de 3 L seca em um dia.",
+      "acao_requerida": "Deixar o vaso onde receba só o sol da manhã, conferir a umidade do substrato todo dia e colher com menos intensidade até o calor passar"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Frio: menos água",
+      "mensagem": "Em regiões frias do Centro-Sul, as folhas amarelam e a touceira quase para; os bulbinhos continuam vivos e rebrotam em agosto.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm, suspender a adubação e cortar as folhas secas a 3 cm do substrato, sem arrancar a touceira"
+    }
+  ]
+}

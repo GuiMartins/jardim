@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Embaúba-prateada",
+    "nome_cientifico": "Cecropia hololeuca",
+    "descricao": "Árvore pioneira da Mata Atlântica, com folhas enormes em forma de mão, prateadas na face de cima, que dão um efeito escultural em varanda ou quintal. Em vaso grande, o tamanho fica limitado a 2 a 4 m e ela vira uma planta ornamental de crescimento rápido. Como é uma espécie de sol pleno, não serve para dentro de casa.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cimento, cerâmica ou plástico grosso), com pelo menos 50 cm de diâmetro, 50 cm de profundidade e vários furos no fundo. A base precisa ser larga para o vento não derrubar a planta, que tem folhas grandes",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; mais 1 colher de sopa de farinha de ossos por 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. É normal cair uma ou duas folhas de baixo. A fase terminou quando surge, no alto do caule, uma folha nova envolta numa bainha avermelhada."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido: no calor, sai uma folha nova a cada uma ou duas semanas e o caule pode subir de 50 cm a 1 m no primeiro ano. As folhas de baixo secam e caem sozinhas, o que é natural. Retire as folhas secas do vaso para não acumular fungo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Em vaso, a embaúba estabiliza entre 2 e 4 m, com poucos galhos e uma copa de folhas grandes no alto. Cresce bastante de outubro a março, desacelera no inverno e pode perder mais folhas no frio seco. A floração é rara em vaso, porque a planta é dioica e só floresce depois de vários anos. Não corte a ponta do caule: ela quase não ramifica e fica deformada."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a embaúba recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. Não deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a embaúba",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). No verão quente, confira a cada 2 dias. No inverno, espace para cada 5 a 7 dias. Folhas grandes murchas no fim da tarde pedem água no mesmo dia.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a embaúba",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus de minhoca ou 1 colher de sopa de NPK 10-10-10 por vaso de 60 L, longe do caule, e regue em seguida. De maio a agosto, pule a adubação ou use só húmus.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas mais novas e as axilas das folhas. Procure besourinhos amarelados ou larvas raspando a folha, cochonilhas brancas ou marrons presas no caule e manchas escuras encharcadas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar o substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro. Se as raízes saírem pelos furos, passe para um vaso 20 a 30% maior. Se o vaso já estiver no limite, tire o torrão, corte 5 cm de raiz em volta e no fundo, e volte com substrato novo. Regue bem depois.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firme a muda contra o vento",
+      "mensagem": "As folhas grandes funcionam como vela: vento forte balança o caule e arrebenta as raízes novas.",
+      "acao_requerida": "Fincar um tutor de bambu ao lado do caule e amarrar com fita macia em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda estabelecida",
+      "mensagem": "Se já saiu uma folha nova, as raízes pegaram e a planta vai começar a crescer rápido.",
+      "acao_requerida": "Conferir se há folha nova no alto do caule; se sim, pode começar a adubação mensal"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Hora de soltar o tutor",
+      "mensagem": "Com o caule mais grosso, a amarração pode estrangulá-lo à medida que ele engrossa.",
+      "acao_requerida": "Afrouxar a fita do tutor e retirá-lo se a planta já se sustentar sozinha"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (excesso de água)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo em sequência, mesmo com o substrato úmido; base do caule mole e escura; cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e manter os furos desobstruídos. Se aparecer, tirar do vaso, cortar as raízes escuras e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Besouro-da-embaúba (Coelomera spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas raspadas ou rendilhadas, com besouros amarelados ou larvas escuras no verso",
+      "prevencao_tratamento": "Catar besouros e larvas à mão de manhã cedo. Em ataque forte, borrifar óleo de neem a 0,5% no fim da tarde, a cada 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons presas no caule e nas nervuras; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; em infestação, óleo mineral a 1% com neem, repetindo após 10 dias"
+    },
+    {
+      "nome": "Queima pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem e secam de uma vez depois de uma noite fria; ponta do caule murcha",
+      "prevencao_tratamento": "Planta jovem sofre com geada. Encostar o vaso numa parede protegida ou cobrir com TNT nas noites abaixo de 4 °C"
+    },
+    {
+      "nome": "Queda natural de folhas velhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "As folhas mais baixas amarelam, secam e caem, uma de cada vez, enquanto o alto solta folhas novas",
+      "prevencao_tratamento": "É normal nessa espécie. Só preocupa se várias caírem de uma vez ou se o alto parar de brotar: aí confira a rega e a raiz"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Menos água no outono",
+      "mensagem": "Com o frio chegando, a embaúba desacelera e o substrato demora mais a secar. Rega no mesmo ritmo do verão encharca a raiz.",
+      "acao_requerida": "Espaçar a rega para cada 5 a 7 dias, conferindo com o dedo, e suspender o adubo químico até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja do frio",
+      "mensagem": "Embaúba jovem perde folhas e pode ter o broto queimado em noites de geada.",
+      "acao_requerida": "Nas noites com previsão abaixo de 4 °C, encostar o vaso numa parede ou cobrir a copa com TNT, retirando pela manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor, a embaúba retoma o ritmo de uma folha nova por semana e passa a pedir mais água e nutrientes.",
+      "acao_requerida": "Voltar a regar a cada 3 dias e retomar a adubação mensal"
+    }
+  ]
+}

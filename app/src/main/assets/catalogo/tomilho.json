@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Tomilho",
+    "nome_cientifico": "Thymus vulgaris",
+    "descricao": "Subarbusto mediterrâneo aromático, de folhas miúdas e perfumadas, usado fresco ou seco em carnes, molhos e chás. Em vaso ele vive vários anos se tiver sol forte e substrato bem drenado; mata-se muito mais tomilho com excesso de água do que com falta.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou jardineira com pelo menos 15 cm de profundidade e 20 cm de diâmetro, com vários furos no fundo; o barro poroso ajuda o substrato a secar entre as regas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca; opcional 1 colher de sopa de calcário dolomítico por litro, porque o tomilho prefere pH neutro a levemente alcalino",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda sai do saquinho e enraíza no vaso novo. É normal perder algumas folhas de baixo nos primeiros dias. A fase termina quando surgem pontas novas, verde-claras, no alto dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "A planta ramifica e vai formando uma touceira baixa. As raízes começam a aparecer nos furos do vaso. Quando ela estiver com uns 15 cm e bem ramificada, já aguenta colheitas regulares."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Touceira de 20 a 30 cm que dá ramos para colheita o ano todo. Floresce na primavera, com flores lilases ou brancas, e cresce devagar no inverno. Com os anos a base lenhifica; colheitas frequentes e a poda leve de fim de inverno mantêm a planta cheia e evitam que o centro fique seco e pelado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de tomilho",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Se ainda estiver úmido, espere mais um dia: a muda sem raiz formada morre de encharcamento tanto quanto de seca.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o tomilho",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e nunca deixe água no pratinho. No verão quente e seco pode ser a cada 2 ou 3 dias; no inverno ou em semana chuvosa, a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o tomilho",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de húmus de minhoca por vaso de 3 L sobre o substrato, sem encostar no caule, e regue em seguida. Não use adubo rico em nitrogênio: ele faz a planta crescer mole e perder aroma. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "colheita_ramos",
+      "titulo": "Colher ramos de tomilho",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura as pontas dos ramos, uns 5 a 8 cm, sempre acima de um par de folhas verdes. Nunca tire mais de um terço da planta de uma vez nem corte na parte lenhosa sem folhas, que não rebrota. Colher com frequência mantém a touceira compacta.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o tomilho",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos e olhe o centro da touceira e o verso das folhas: procure teias finas e pontinhos amarelados (ácaro), algodão branco nos ramos (cochonilha) e ramos escuros e moles na base (podridão).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato do tomilho",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno ou no outono, tire a planta do vaso, solte as raízes enoveladas, corte as mortas e replante em substrato novo com a mesma mistura drenante, num vaso 2 a 4 cm maior se as raízes tomaram tudo. Regue e deixe 3 dias em meia-sombra antes de voltar ao sol.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante a muda no vaso",
+      "mensagem": "No saquinho o substrato é pouco e retém água demais. O tomilho precisa de espaço e drenagem para enraizar.",
+      "acao_requerida": "Transferir a muda para o vaso com o substrato drenante, sem enterrar o caule além do nível em que estava, regar bem e deixar 2 dias em meia-sombra antes do sol pleno"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "O tomilho já deve estar ramificado e com uns 15 cm. Colher as pontas agora estimula novas brotações.",
+      "acao_requerida": "Cortar as pontas dos ramos mais altos, tirando no máximo um terço da planta"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Phytophthora, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Ramos murcham mesmo com substrato úmido, base do caule escurece e amolece, folhas ficam acinzentadas e caem; raízes marrons e moles",
+      "prevencao_tratamento": "Substrato com areia, vaso com furos, nada de água no pratinho e regar só com o substrato seco. Ao notar, suspenda a rega, corte os ramos podres e replante em substrato novo e seco; se o colo apodreceu, faça estacas das pontas sadias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas entre os ramos, principalmente no calor seco",
+      "prevencao_tratamento": "Borrifar água nas folhas pela manhã em períodos secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nos ramos e no centro da touceira; planta enfraquecida e pegajosa",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, cortar os ramos atacados e aplicar óleo de neem com sabão neutro"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas novas, que ficam enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas pontas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos, compridos e moles, folhas espaçadas, verde-claras e pouco perfumadas",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 a 6 horas de sol direto e cortar os ramos esticados pela metade para a planta rebrotar compacta"
+    },
+    {
+      "nome": "Centro lenhoso e pelado",
+      "tipo": "DISTURBIO",
+      "sintomas": "Base da touceira vira galhos secos sem folhas, com folhagem só nas pontas; comum após 2 ou 3 anos sem poda",
+      "prevencao_tratamento": "Colher com frequência e fazer a poda leve de fim de inverno sem cortar abaixo das folhas; quando a planta já estiver muito lenhosa, renovar por estacas das pontas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda leve de renovação",
+      "mensagem": "No fim do inverno o tomilho está prestes a brotar. Uma poda leve agora deixa a touceira cheia e evita que o centro fique lenhoso.",
+      "acao_requerida": "Aparar toda a planta em cerca de um terço, cortando sempre acima de folhas verdes e nunca na madeira nua; retirar os ramos secos"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Cuidado com as chuvas de verão",
+      "mensagem": "Calor com chuva frequente e ar úmido é a combinação que mais apodrece o tomilho em vaso.",
+      "acao_requerida": "Em semanas chuvosas, levar o vaso para um lugar coberto e ensolarado, esvaziar o pratinho e só regar com o substrato seco a 3 cm"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "No frio o tomilho cresce devagar e o substrato demora mais a secar.",
+      "acao_requerida": "Espaçar as regas para cada 7 a 10 dias, sempre conferindo com o dedo, e não adubar até setembro"
+    }
+  ]
+}

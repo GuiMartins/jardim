@@ -1,0 +1,274 @@
+{
+  "planta": {
+    "nome_comum": "Melão",
+    "nome_cientifico": "Cucumis melo (grupos Cantalupensis e Inodorus; em vaso, prefira cultivares compactas de fruto pequeno, como o melão cantalupe ou o 'Sugar Baby' de melão)",
+    "descricao": "Trepadeira anual da família das abóboras que dá frutos doces e perfumados em cerca de 3 meses e meio. Em vaso, cresce bem na vertical, conduzida numa treliça em varanda bem ensolarada e quente. Prefira cultivares de fruto pequeno (0,5 a 1,5 kg), que a planta consegue sustentar presa na treliça.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 110,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira grande com pelo menos 40 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo e uma treliça ou tela de 1,5 a 1,8 m de altura presa ao vaso ou à parede",
+    "volume_minimo_litros": 35,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% húmus de minhoca ou composto curtido, 20% fibra de coco ou casca de arroz carbonizada, 10% areia grossa; misture 150 g de farinha de ossos e 100 g de calcário dolomítico por vaso de 35 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 8,
+      "descricao": "Semeie 3 sementes a 2 cm de profundidade, no centro do vaso definitivo, porque o melão não gosta de ter a raiz mexida. Entre 25 e 30 °C, as plântulas surgem entre o 4º e o 8º dia. Abaixo de 18 °C, a semente apodrece antes de germinar."
+    },
+    {
+      "fase_id": "mudas",
+      "nome": "Mudas",
+      "dia_inicio": 9,
+      "dia_fim": 25,
+      "descricao": "Abrem as folhas verdadeiras, ásperas e lobadas. A fase termina quando a muda tem 4 a 5 folhas verdadeiras e começa a soltar gavinhas."
+    },
+    {
+      "fase_id": "crescimento_ramas",
+      "nome": "Crescimento das Ramas",
+      "dia_inicio": 26,
+      "dia_fim": 45,
+      "descricao": "A planta cresce rápido e lança ramas laterais. Conduza as ramas pela treliça e retire as que saem da base. Surgem as primeiras flores masculinas, de haste fina e sem bolinha atrás da flor. Elas caem sozinhas, e isso é normal."
+    },
+    {
+      "fase_id": "floracao_polinizacao",
+      "nome": "Floração e Polinização",
+      "dia_inicio": 46,
+      "dia_fim": 65,
+      "descricao": "Aparecem as flores femininas nas ramas laterais: atrás da pétala há um minimelão do tamanho de uma ervilha. Sem abelhas na varanda, poliniza à mão pela manhã. A fase termina quando os frutos fixados passam do tamanho de uma noz e seguem crescendo."
+    },
+    {
+      "fase_id": "desenvolvimento_frutos",
+      "nome": "Desenvolvimento dos Frutos",
+      "dia_inicio": 66,
+      "dia_fim": 95,
+      "descricao": "Os frutos engordam rápido e a planta pede muita água e potássio. Apoie cada fruto numa redinha presa à treliça. A casca do cantalupe começa a formar o rendilhado, e a planta perde algumas folhas velhas da base."
+    },
+    {
+      "fase_id": "maturacao_colheita",
+      "nome": "Maturação e Colheita",
+      "dia_inicio": 96,
+      "dia_fim": 110,
+      "descricao": "Maduro, o fruto muda de verde para amarelado entre os gomos, perfuma no lado do cabinho e, no cantalupe, solta do cabo com um leve toque. Menos água nesta fase concentra o açúcar. A planta declina depois da última colheita."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Manter a cova úmida",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 8,
+      "instrucoes": "Pela manhã, regue devagar só a área da cova até umedecer os 3 primeiros centímetros. O substrato não pode secar na superfície nem ficar encharcado, porque a semente apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar o melão",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 95,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue na base, sem molhar as folhas, até escorrer pelos furos. Com a planta grande e acima de 30 °C, um vaso de 35 L pode pedir 3 a 5 L por dia. Em dias nublados ou de chuva, confira antes de regar. A água irregular racha os frutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Regar pouco na maturação",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 96,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Regue só quando os 5 primeiros centímetros do substrato estiverem secos, com metade da água que a planta vinha recebendo. Pouca água nesta fase deixa o melão mais doce, mas a planta não pode murchar a ponto de as folhas não se recuperarem no fim da tarde.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o melão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Até o dia 45, espalhe 2 colheres de sopa de húmus mais 1 colher de chá de NPK 10-10-10 ao redor do caule, sem encostar nele. A partir da floração, troque por 1 colher de sopa de cinza de madeira peneirada ou 1 colher de chá de sulfato de potássio, que adoçam o fruto. Regue logo depois.",
+      "critica": false
+    },
+    {
+      "id": "conducao_ramas",
+      "titulo": "Amarrar as ramas na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 26,
+      "dia_fim_ciclo": 65,
+      "instrucoes": "Leve as pontas das ramas que cresceram para cima pela treliça e prenda com fita de pano ou barbante frouxo em forma de 8, a cada 20 cm. Não aperte a rama, que é oca e quebra fácil.",
+      "critica": false
+    },
+    {
+      "id": "poda_brotos",
+      "titulo": "Tirar ramas em excesso",
+      "tipo": "PODA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 80,
+      "instrucoes": "Deixe de 3 a 4 ramas laterais principais e corte com tesoura limpa as brotações novas que saem da base e as ramas sem flor feminina. Nas ramas que já seguram um fruto, corte a ponta 2 folhas depois dele.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Vire as folhas e procure insetos no verso, teias finas, pó branco e manchas amareladas angulosas. Nos frutos, procure furos com serragem, sinal da broca.",
+      "critica": false
+    },
+    {
+      "id": "colheita_melao",
+      "titulo": "Conferir melões maduros",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 96,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Colha o fruto quando a casca estiver amarelada entre os gomos, com cheiro doce forte perto do cabinho e, no cantalupe, quando ele soltar do cabo com uma leve torção. O melão de casca lisa não solta: corte quando a gavinha ao lado do fruto secar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "As 3 mudas estão disputando um vaso que só sustenta uma planta de melão.",
+      "acao_requerida": "Deixar só a muda mais vigorosa e cortar as outras rente ao substrato com tesoura, sem puxar"
+    },
+    {
+      "dia_disparo": 24,
+      "titulo": "Instalar a treliça",
+      "mensagem": "As gavinhas estão aparecendo, e a planta vai subir rápido nas próximas semanas.",
+      "acao_requerida": "Fixar uma treliça ou tela de 1,5 a 1,8 m ao lado do vaso e encostar a ponta da planta nela"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Capar a haste principal",
+      "mensagem": "No melão, a flor feminina, que vira fruto, nasce nas ramas laterais.",
+      "acao_requerida": "Cortar a ponta da haste principal logo acima da 5ª folha verdadeira para estimular as ramas laterais"
+    },
+    {
+      "dia_disparo": 46,
+      "titulo": "Polinizar as flores femininas",
+      "mensagem": "As flores femininas, com um minimelão atrás da pétala, devem começar a abrir. Na varanda, sem abelhas, elas caem sem virar fruto.",
+      "acao_requerida": "Entre 7h e 10h, colher uma flor masculina aberta, tirar as pétalas e encostar o pólen no centro da flor feminina. Repetir a cada flor feminina que abrir"
+    },
+    {
+      "dia_disparo": 66,
+      "titulo": "Escolher os frutos e apoiar",
+      "mensagem": "Um vaso de 35 L consegue amadurecer com doçura de 2 a 3 melões pequenos, não mais.",
+      "acao_requerida": "Deixar os 2 ou 3 frutos mais bonitos, arrancar os outros e apoiar cada fruto numa redinha ou meia-calça presa à treliça"
+    },
+    {
+      "dia_disparo": 96,
+      "titulo": "Os melões estão amadurecendo",
+      "mensagem": "Daqui em diante, o fruto pode ficar pronto a qualquer dia. Menos água agora deixa o melão mais doce.",
+      "acao_requerida": "Reduzir a rega à metade e cheirar o cabinho dos frutos a cada 2 dias"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha nas horas quentes mesmo com o substrato úmido, e a base do caule fica escura, mole ou rachada. Com Fusarium, as ramas secam uma a uma",
+      "prevencao_tratamento": "Não regar com o substrato já úmido, usar vaso com bons furos e não amontoar terra no caule. Não há cura: retire a planta e não reaproveite o substrato para cucurbitáceas"
+    },
+    {
+      "nome": "Oídio (Podosphaera xanthii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco na parte de cima das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Boa ventilação e rega sem molhar as folhas. Ao primeiro sinal, pulverizar 1 parte de leite para 9 de água ou bicarbonato de sódio a 0,5% com um pouco de detergente, a cada 7 dias, no fim da tarde"
+    },
+    {
+      "nome": "Míldio (Pseudoperonospora cubensis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas angulosas entre as nervuras e mofo acinzentado no verso das folhas, sobretudo em época chuvosa",
+      "prevencao_tratamento": "Regar só a base pela manhã e retirar as folhas atacadas. Em chuva prolongada, pulverizar calda bordalesa a 1% a cada 7 a 10 dias"
+    },
+    {
+      "nome": "Pulgão (Aphis gossypii)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verde-escuras no verso das folhas e nas pontas das ramas, com folhas encarquilhadas e pegajosas. Transmite viroses",
+      "prevencao_tratamento": "Jato de água forte no verso das folhas. Se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer nas folhas, que ficam amareladas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto da planta e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, que ficam bronzeadas e com teia fina no verso, em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos. Se atacar, enxofre molhável ou óleo de neem a cada 5 dias, nunca no sol forte"
+    },
+    {
+      "nome": "Broca-das-cucurbitáceas (Diaphania nitidalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos nos frutos e nas pontas das ramas com serragem escura saindo, e ponteiros murchos",
+      "prevencao_tratamento": "Retirar e destruir frutos e ponteiros furados. Aplicar Bacillus thuringiensis (Dipel) a cada 7 dias desde a floração"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos nas folhas e flores roídas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo e proteger as mudas novas com tecido TNT até a floração"
+    },
+    {
+      "nome": "Fruto rachado",
+      "tipo": "DISTURBIO",
+      "sintomas": "A casca racha perto da maturação, geralmente depois de uma chuva ou de uma rega farta após um período seco",
+      "prevencao_tratamento": "Regar de forma constante no desenvolvimento dos frutos e reduzir aos poucos na maturação, nunca de uma vez"
+    },
+    {
+      "nome": "Flores caem sem formar fruto",
+      "tipo": "DISTURBIO",
+      "sintomas": "As flores femininas amarelam e caem com o minimelão murcho, ou só aparecem flores masculinas",
+      "prevencao_tratamento": "Polinizar à mão pela manhã, capar a haste principal para forçar as ramas laterais e evitar excesso de adubo nitrogenado"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuvas de verão: atenção ao míldio",
+      "mensagem": "Com calor e umidade alta, o míldio e o oídio se espalham rápido nas folhas do melão, e a chuva no vaso somada à rega encharca a raiz.",
+      "acao_requerida": "Nos dias de chuva, conferir o substrato antes de regar, tirar as folhas velhas da base para ventilar e inspecionar o verso das folhas a cada 2 dias"
+    },
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Noites frias: o melão desacelera",
+      "mensagem": "Abaixo de 15 °C à noite, o melão para de crescer, os frutos amadurecem devagar e perdem doçura.",
+      "acao_requerida": "Levar o vaso para o ponto mais quente e ensolarado, encostado numa parede, e regar só pela manhã, com o substrato seco a 5 cm"
+    }
+  ]
+}

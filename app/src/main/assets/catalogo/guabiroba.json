@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Guabiroba",
+    "nome_cientifico": "Campomanesia xanthocarpa",
+    "descricao": "Árvore frutífera nativa da Mata Atlântica e das matas de araucária do Sul e Sudeste, da família da goiaba e da pitanga. Dá frutos amarelos, perfumados e agridoces no fim da primavera. Em vaso grande e com poda fica entre 1,5 e 2,5 m, tolera geada leve quando adulta e costuma dar os primeiros frutos entre o 3º e o 4º ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 30 a 40 cm na chegada da muda; na troca definitiva, vaso ou tambor com pelo menos 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo e apoiado em pés para escoar",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 15% areia grossa, 10% casca de pinus fina ou carvão vegetal; levemente ácido (pH 5,5 a 6,5) e sem calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas mais velhas. Deixe-a em meia sombra na primeira semana e passe ao sol pleno aos poucos. Brotos novos avermelhados na ponta dos ramos mostram que as raízes pegaram."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento nos primeiros meses e mais rápido na primavera e no verão, em surtos de folhas novas avermelhadas. Escolha o ramo mais vertical como tronco e deixe 3 a 4 ramos laterais bem distribuídos a uns 40 cm do substrato para formar a copa."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A planta forma copa e engrossa o tronco, com casca que começa a descamar. No inverno pode perder parte das folhas, o que é normal para a espécie. Flores isoladas podem aparecer a partir do 2º ou 3º ano; os primeiros frutos costumam ser poucos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: perde parte das folhas no inverno, brota e floresce de setembro a outubro com flores brancas perfumadas, e os frutos amadurecem de novembro a janeiro, passando de verdes a amarelos e macios em cerca de 60 dias. Depois da safra, cresce vegetativamente até o outono. Troque o substrato a cada dois anos para manter a produção."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega",
+      "titulo": "Regar a guabiroba",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. No verão e durante a floração e frutificação (setembro a janeiro), confira todo dia em vasos menores que 60 L. No inverno, espace para a cada 4 ou 5 dias, sempre conferindo com o dedo antes.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a guabiroba",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 a 3 punhados de húmus de minhoca ou composto e 1 colher de sopa de farinha de ossos por vaso de 60 L, sem encostar no tronco, e regue em seguida. Na primavera, antes da floração, troque a farinha de ossos por 1 colher de sopa de NPK 4-14-8. Pule a aplicação de junho a julho, quando a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos procurando pó amarelo (ferrugem) e deformação; vire folhas e confira os ramos atrás de cochonilhas (escamas marrons ou algodão branco) e formigas subindo pelo tronco.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e subir o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, corte 2 a 3 cm das raízes que circundam o torrão e replante com substrato novo num vaso maior, até chegar ao definitivo de 60 L ou mais. Depois do definitivo, troque só o substrato, retirando um terço do velho.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "Passada a primeira semana, a muda já pode começar a receber sol direto.",
+      "acao_requerida": "Mudar o vaso para um lugar com sol da manhã por 1 semana e depois para sol pleno"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Formar a copa",
+      "mensagem": "A muda já tem ramos suficientes para escolher a estrutura da futura árvore.",
+      "acao_requerida": "Cortar a ponta do tronco a cerca de 50 cm do substrato para estimular 3 a 4 ramos laterais e retirar brotos que saem abaixo de 30 cm"
+    },
+    {
+      "dia_disparo": 1000,
+      "titulo": "Primeira safra se aproxima",
+      "mensagem": "A partir do 3º ano a guabiroba costuma florescer e frutificar. Planta em vaso pequeno ou com pouco sol pode atrasar.",
+      "acao_requerida": "Conferir se o vaso já tem pelo menos 60 L e se a planta recebe 6 horas ou mais de sol direto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mosca-das-frutas (Anastrepha fraterculus)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com pontinhos escuros de picada, que amolecem e caem antes da hora; larvas brancas dentro da polpa",
+      "prevencao_tratamento": "Ensacar os frutos ainda verdes com saquinhos de TNT ou papel; recolher e descartar em saco fechado todo fruto caído; armadilha de garrafa PET com suco de fruta fermentado pendurada na copa"
+    },
+    {
+      "nome": "Ferrugem-das-mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado em brotos, folhas novas, flores e frutos verdes, que depois secam e ficam deformados",
+      "prevencao_tratamento": "Manter a copa arejada, regar no substrato sem molhar as folhas e cortar os brotos atacados; em ataque forte, calda bordalesa a 0,5% nos brotos novos a cada 15 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos secam das pontas e as raízes ficam escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, garantir furos livres e vaso sobre pés; nunca deixar água parada no pratinho. Se aparecer, retirar raízes podres e replantar em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou flocos brancos nos ramos e no verso das folhas, folhas pegajosas com fumagina preta e formigas circulando",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; em infestação maior, óleo de neem a 0,5% ou óleo mineral a 1% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Queda de flores e frutos por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores e frutos pequenos caem em massa logo depois de um dia de substrato seco ou calor forte",
+      "prevencao_tratamento": "Não deixar o substrato secar por completo de setembro a janeiro; cobrir o substrato com palha ou casca para segurar a umidade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e cuidado com a geada",
+      "mensagem": "A guabiroba desacelera e pode perder parte das folhas. Adulta tolera geada leve, mas mudas com menos de 2 anos queimam.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm e, em noites de geada, cobrir mudas jovens com TNT ou levar o vaso para perto de uma parede"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "No fim do inverno, antes da brotação, a poda estimula ramos novos, que são os que florescem.",
+      "acao_requerida": "Retirar ramos secos, cruzados e voltados para dentro da copa e encurtar em até um terço os ramos longos para manter a altura"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Floração da guabiroba",
+      "mensagem": "Flores brancas perfumadas aparecem nos ramos novos. Falta de água agora derruba as flores.",
+      "acao_requerida": "Aplicar a adubação de floração (NPK 4-14-8) e conferir a rega todo dia"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Proteger os frutos",
+      "mensagem": "Os frutos verdes estão se formando e é agora que a mosca-das-frutas põe os ovos.",
+      "acao_requerida": "Ensacar os frutos verdes e pendurar a armadilha de garrafa PET na copa"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Colheita das guabirobas",
+      "mensagem": "Os frutos amadurecem em poucos dias e caem logo depois. Maduros, ficam amarelos, macios e perfumados.",
+      "acao_requerida": "Passar pela planta a cada 1 ou 2 dias colhendo os frutos amarelos que se soltam com um toque e recolher os caídos"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Dormideira",
+    "nome_cientifico": "Mimosa pudica",
+    "descricao": "Também chamada de sensitiva ou maria-fecha-a-porta, fecha os folíolos em segundos quando é tocada e à noite, e dá pompons cor-de-rosa no verão. Na natureza é uma perene de vida curta, mas em vaso costuma ser cultivada como anual: nasce na primavera, floresce no verão, solta sementes no outono e perde o vigor no frio. Os ramos têm espinhos pequenos e a planta contém mimosina, levemente tóxica, por isso mantenha longe de crianças pequenas e de animais que mastigam plantas.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 240,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com 15 a 20 cm de diâmetro e de profundidade, com furos no fundo",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% substrato comercial para vasos ou húmus de minhoca, 20% areia grossa ou perlita; leve e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A semente tem casca dura: despeje sobre ela água quase fervendo (cerca de 80 °C) e deixe de molho por 24 horas até inchar. Semeie 3 sementes a 0,5 cm de profundidade no vaso definitivo e mantenha em local quente (25 a 30 °C). As plântulas surgem entre o 7º e o 21º dia, com duas folhas redondas que ainda não reagem ao toque."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 22,
+      "dia_fim": 50,
+      "descricao": "Aparecem as primeiras folhas verdadeiras, divididas em muitos folíolos pequenos, que já se fecham ao toque. A fase termina quando a muda tem uns 8 cm e começa a soltar ramos laterais."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 51,
+      "dia_fim": 100,
+      "descricao": "A planta ramifica, os caules ficam arroxeados e com espinhos, e ela se espalha rente ao vaso ou pende pela borda. Caule longo, fino e com folhas espaçadas indica falta de sol."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 101,
+      "dia_fim": 180,
+      "descricao": "Surgem pompons cor-de-rosa de 1 a 2 cm nas axilas das folhas, cada um durando poucos dias, em sequência pelo verão. Sem pelo menos 4 horas de sol direto, a planta cresce mas quase não floresce."
+    },
+    {
+      "fase_id": "frutificacao_declinio",
+      "nome": "Frutificação e Declínio",
+      "dia_inicio": 181,
+      "dia_fim": 240,
+      "descricao": "Os pompons viram vagens achatadas com cerdas, que secam e ficam marrons com as sementes maduras. Com o frio, a planta cresce menos, amarela e perde folhas; guarde sementes para semear de novo na primavera."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato deve ficar úmido como esponja espremida, nunca encharcado nem com crosta seca.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a dormideira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e descarte a água do pratinho. Acima de 30 °C, confira todo dia. Abaixo de 18 °C, espaçe para cada 4 a 5 dias, porque a raiz apodrece em substrato frio e molhado.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a dormideira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 51,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Dissolva 1 g (meia colher de café) de NPK 4-14-8 em 1 litro de água e regue com o substrato já úmido. Não use adubo rico em nitrogênio: a dormideira é leguminosa, fixa o próprio nitrogênio, e o excesso faz folha e corta as flores.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Olhe o verso dos folíolos e as junções dos ramos à procura de teias finas, pontinhos amarelados, algodões brancos ou insetos agrupados. Folíolos que não reabrem horas depois de tocados também são sinal de estresse.",
+      "critica": false
+    },
+    {
+      "id": "colheita_sementes",
+      "titulo": "Colher vagens secas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Colha as vagens marrons e secas antes que se abram e espalhem sementes pelo vaso e canteiros vizinhos. Use luva por causa dos espinhos, debulhe e guarde as sementes em envelope de papel em lugar seco.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 22,
+      "titulo": "Conferir a germinação",
+      "mensagem": "A maioria das sementes escarificadas já deveria ter nascido. Se nada apareceu, a casca provavelmente não foi amolecida o suficiente.",
+      "acao_requerida": "Se o vaso estiver vazio, repetir o molho em água quente e semear de novo; se nasceram várias, seguir para o desbaste"
+    },
+    {
+      "dia_disparo": 35,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As mudas já têm folhas verdadeiras e começam a competir por espaço num vaso de 3 litros.",
+      "acao_requerida": "Deixar só a muda mais vigorosa, cortando as outras rente ao substrato com tesoura para não mexer na raiz da que fica"
+    },
+    {
+      "dia_disparo": 181,
+      "titulo": "Guardar sementes",
+      "mensagem": "As primeiras vagens devem estar secando. A planta tende a perder vigor com a chegada do frio.",
+      "acao_requerida": "Começar a colher as vagens secas para ter sementes na próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha com substrato úmido, folíolos que param de reagir ao toque, base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, esvaziar o pratinho e reduzir a rega no frio; se a raiz estiver marrom e mole, a planta raramente se recupera: semeie de novo em substrato novo"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, sem encharcar na germinação e com boa ventilação; retire as plântulas afetadas"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontinhos amarelados, teias finas entre os ramos, queda de folhas em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas junções dos ramos e na base do caule; planta enfraquecida",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, óleo de neem com sabão neutro a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos novos, folhas deformadas e pegajosas",
+      "prevencao_tratamento": "Jato de água nos brotos; se voltarem, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules longos e finos, folíolos espaçados, planta tombando e sem flores",
+      "prevencao_tratamento": "Levar para um local com pelo menos 4 horas de sol direto; ramos já estiolados não se recuperam, mas os novos crescem compactos"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folíolos fechados o dia todo, amarelados ou escurecidos, queda de folhas abaixo de 15 °C",
+      "prevencao_tratamento": "Levar o vaso para dentro ou para perto de uma parede ensolarada nas noites frias e reduzir a rega"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger a dormideira do frio",
+      "mensagem": "Abaixo de 15 °C a dormideira para de crescer, fecha as folhas e começa a perder ramos; geada mata a planta.",
+      "acao_requerida": "Nas noites abaixo de 15 °C, colocar o vaso dentro de casa perto de uma janela clara e regar só quando o substrato estiver seco a 3 cm"
+    }
+  ]
+}

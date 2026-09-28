@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Açoita-cavalo",
+    "nome_cientifico": "Luehea divaricata",
+    "descricao": "Árvore nativa do Sul e Sudeste do Brasil, semidecídua, com flores rosa-lilás no verão e casca e folhas de uso medicinal tradicional. Na natureza passa de 15 m, mas em vaso grande fica como arvoreta de 2 a 3 m e aguenta bem frio e geada leve.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cimento ou fibra, com pelo menos 50 cm de profundidade e 45 cm de diâmetro, vários furos no fundo e pesado o bastante para não tombar com vento",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa; misture 1 xícara de farinha de ossos por vaso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saco do viveiro e ajusta a raiz ao vaso novo. Algumas folhas podem amarelar e cair nos primeiros dias. A fase termina quando surgem folhas novas, verde-claras e aveludadas, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido na primavera e no verão, podendo ganhar 50 cm ou mais no ano. O caule engrossa e para de depender do tutor. No inverno ela perde parte das folhas, o que é normal."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota forte de setembro a novembro, floresce em cachos rosa-lilás de dezembro a fevereiro, forma cápsulas lenhosas que amadurecem de maio a agosto e perde parte das folhas no inverno. Em vaso, a copa é controlada com poda anual no fim do inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. Não deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "rega_estabelecimento",
+      "titulo": "Regar o açoita-cavalo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 365,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão quente pode precisar a cada 2 dias; de junho a agosto, com a planta meio sem folhas, espace para a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar o açoita-cavalo",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 366,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue bem até escorrer pelos furos. Folhas murchas no fim da tarde de verão pedem rega a cada 2 ou 3 dias; no inverno, a cada 7 dias basta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o açoita-cavalo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto e 2 colheres de sopa de NPK 10-10-10 na borda do vaso, longe do tronco, e regue em seguida. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folhas cortadas em meia-lua (formiga), placas brancas ou marrons grudadas nos ramos e no verso das folhas (cochonilha) e trilhas de formiga subindo pelo vaso.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, corte com tesoura limpa 3 a 5 cm das raízes que dão volta no torrão e troque um terço do substrato por mistura nova. Se o vaso atual tiver menos de 80 L, passe para um maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Fixe um tutor na muda",
+      "mensagem": "O caule jovem do açoita-cavalo é fino e cresce torto com vento.",
+      "acao_requerida": "Enterrar uma estaca de bambu a 5 cm do caule e amarrar com fita macia em forma de oito, sem apertar"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda adaptada?",
+      "mensagem": "Com um mês no vaso, a muda já deve ter soltado folhas novas na ponta dos ramos.",
+      "acao_requerida": "Conferir se há brotos novos; se não houver e o substrato estiver sempre úmido, espaçar as regas"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Hora de tirar o tutor",
+      "mensagem": "Com um ano, o tronco já deve se sustentar sozinho, e a amarra pode estrangular o caule que engrossou.",
+      "acao_requerida": "Soltar a amarra; se o tronco ainda envergar com vento, recolocar mais frouxa por mais alguns meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e amarelam mesmo com o substrato úmido; raízes escuras, moles e com cheiro ruim; base do tronco escurecida",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e manter os furos desobstruídos; em caso de ataque, cortar as raízes podres e replantar em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou a planta desfolhada numa só noite; trilha de formigas subindo pelo vaso",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida granulada ao lado dele, nunca dentro do vaso; faixa de graxa ou vaselina no pé do vaso impede a subida"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Placas brancas, marrons ou algodonosas grudadas nos ramos e no verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com escova de dente e água com sabão neutro; se persistir, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Folhas queimadas por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas secas e marrons, folhas enroladas e queda fora do inverno, sobretudo em dias quentes e vaso pequeno",
+      "prevencao_tratamento": "Conferir o substrato a cada 2 dias no verão, cobrir a superfície com 3 cm de casca ou palha e trocar para vaso maior se a raiz já tomou o torrão"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, folhas caindo",
+      "mensagem": "O açoita-cavalo perde parte das folhas no frio, o que é normal. Com menos folhas ele bebe menos, e o excesso de rega apodrece a raiz.",
+      "acao_requerida": "Regar só com o substrato seco a 5 cm e suspender a adubação; em muda com menos de 1 ano, cobrir com manta em noites de geada"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno, antes da brotação, a poda controla a altura em vaso e deixa a copa equilibrada.",
+      "acao_requerida": "Cortar ramos secos, cruzados ou voltados para dentro e encurtar em um terço os que passaram da altura desejada, com corte inclinado logo acima de uma gema"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Floração e calor",
+      "mensagem": "É a época das flores rosa-lilás e a de maior consumo de água: vaso de árvore seca rápido no calor.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e regar até escorrer pelos furos sempre que estiver seco a 5 cm"
+    }
+  ]
+}

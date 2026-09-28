@@ -1,0 +1,210 @@
+{
+  "planta": {
+    "nome_comum": "Cravo-francês",
+    "nome_cientifico": "Tagetes patula",
+    "descricao": "Flor compacta, de 20 a 30 cm, com pompons amarelos, laranja ou vermelho-ferrugem, que floresce sem parar por meses a partir de cerca de 50 dias da semeadura. É uma das flores mais fáceis de cultivar a partir de semente e é muito usada ao lado de hortaliças, porque o cheiro forte afasta alguns insetos e as raízes reduzem nematoides no solo. Na natureza vive um pouco mais, mas em vaso é cultivada como anual.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso com pelo menos 15 cm de diâmetro e 15 cm de profundidade, com furos no fundo; em jardineira, deixe 20 cm entre as plantas",
+    "volume_minimo_litros": 2,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% substrato comercial para flores, 20% areia grossa ou perlita; sem excesso de esterco, que faz muita folha e pouca flor",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 7,
+      "descricao": "Semeie de 2 a 3 sementes por vaso, a 0,5 cm de profundidade, e cubra com substrato peneirado. Com 20 a 30 °C, as plântulas aparecem entre o 4º e o 7º dia, com duas folhas estreitas e compridas."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 8,
+      "dia_fim": 25,
+      "descricao": "Surgem as folhas verdadeiras, recortadas como pena e com cheiro forte ao toque. As plântulas ainda são frágeis: caule fino e escuro rente ao substrato é sinal de tombamento."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 26,
+      "dia_fim": 50,
+      "descricao": "A planta ramifica e forma uma moita de 15 a 20 cm. No fim da fase aparecem os primeiros botões fechados nas pontas dos ramos."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 51,
+      "dia_fim": 130,
+      "descricao": "Os botões abrem e a floração segue contínua. Tirar as flores murchas faz a planta abrir novas; sem isso, ela passa a produzir sementes e reduz as flores. Planta com muita folha e poucas flores está com pouco sol ou com adubo rico em nitrogênio."
+    },
+    {
+      "fase_id": "fim_ciclo",
+      "nome": "Fim de Ciclo e Sementes",
+      "dia_inicio": 131,
+      "dia_fim": 150,
+      "descricao": "As flores ficam menores e mais raras, e as folhas de baixo amarelam. As flores deixadas na planta secam e formam sementes pretas e finas, que servem para o próximo plantio."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 7,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode secar nem formar crosta, mas também não pode ficar encharcado, porque a semente apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cravo-francês",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue na base da planta até escorrer pelos furos, sem molhar as flores. Acima de 30 °C, confira todo dia; em dias frios ou nublados, espere secar mais.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florescer",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Espalhe 1 colher de sopa de farinha de ossos ou de NPK 4-14-8 em volta da planta, sem encostar no caule, e regue em seguida. Evite adubo rico em nitrogênio, que faz folha e não flor.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_flores",
+      "titulo": "Tirar as flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 55,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Corte com tesoura ou belisque com a unha as flores secas ou marrons logo abaixo da cabeça, até o primeiro par de folhas. Isso estimula novos botões e evita mofo nas flores velhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e flores",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Vire algumas folhas e procure pontinhos amarelados com teias finas no verso (ácaro), insetos agrupados nas pontas (pulgão) e manchas cinzentas nas flores. Nas plântulas, procure folhas roídas e rastros brilhantes de lesma.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "Com várias plântulas no mesmo vaso, elas competem por luz e ficam altas e fracas.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa de cada vaso, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Desponte para ramificar",
+      "mensagem": "Beliscar a ponta agora faz a planta formar mais ramos e, com eles, muito mais flores.",
+      "acao_requerida": "Cortar com a unha ou tesoura o último 1 cm da ponta do ramo principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 51,
+      "titulo": "Primeiras flores",
+      "mensagem": "Os primeiros botões devem estar abrindo. A partir daqui a planta floresce sem parar enquanto tiver sol e as flores velhas forem retiradas.",
+      "acao_requerida": "Conferir se o vaso recebe pelo menos 6 horas de sol direto e mudar de lugar se necessário"
+    },
+    {
+      "dia_disparo": 130,
+      "titulo": "Guardar sementes",
+      "mensagem": "A planta está no fim do ciclo. As flores que secarem agora formam sementes para o próximo plantio.",
+      "acao_requerida": "Deixar de 3 a 4 flores secarem na planta, colher quando estiverem marrons e quebradiças e guardar as sementes pretas em envelope de papel em lugar seco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; base do caule escura e mole; raízes marrons e sem firmeza",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, garantir furos livres e não deixar água no pratinho. Planta afetada raramente se recupera: descarte e não reutilize o substrato"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem de repente, com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Semear em substrato novo ou peneirado, sem encharcar e com boa ventilação; retire as plântulas caídas"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que depois ficam bronzeadas e secas; teias finas nas pontas, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, e retirar os ramos muito atacados"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos botões e brotos; brotos enrolados e pegajosos",
+      "prevencao_tratamento": "Jato de água nos ramos; se persistir, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Plântulas roídas ou cortadas durante a noite; rastros brilhantes no vaso",
+      "prevencao_tratamento": "Catar à noite com lanterna e espalhar casca de ovo moída ou areia grossa em volta das plântulas"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores com manchas marrons cobertas de pó cinzento, principalmente depois de chuva ou em tempo úmido",
+      "prevencao_tratamento": "Regar na base sem molhar as flores, retirar as flores murchas e tirar o vaso da chuva forte; descarte as partes afetadas"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules longos e tortos, planta tombando e pouca ou nenhuma flor",
+      "prevencao_tratamento": "Levar para um local com pelo menos 6 horas de sol direto e fazer o desponte para a planta ramificar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O cravo-francês não tolera geada: uma noite abaixo de 2 °C queima folhas e flores e pode matar a planta.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para perto de uma parede ou para dentro, ou cobrir com TNT até de manhã"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuvas de verão",
+      "mensagem": "Chuva forte e seguida encharca o vaso, derruba as flores e favorece o mofo-cinzento e a podridão de raiz.",
+      "acao_requerida": "Nas semanas de chuva, tirar o vaso da chuva direta, esvaziar o pratinho e retirar as flores estragadas"
+    }
+  ]
+}

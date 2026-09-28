@@ -1,0 +1,213 @@
+{
+  "planta": {
+    "nome_comum": "Macaúba",
+    "nome_cientifico": "Acrocomia aculeata",
+    "descricao": "Palmeira nativa do Cerrado e da Mata Atlântica, com tronco e folhas cheios de espinhos pretos e longos, muito resistente à seca e ao sol forte. Em vaso cresce devagar e serve como palmeira ornamental por alguns anos. A frutificação, com cachos de cocos amarelos comestíveis, só costuma vir depois de 5 a 7 anos e quase sempre com a planta já no chão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e estável (cimento, barro ou plástico grosso) com pelo menos 50 cm de profundidade e 50 cm de diâmetro, com vários furos no fundo; a raiz é profunda e a planta tomba com vento em vaso leve",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 10,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa, 20% composto orgânico ou húmus de minhoca, 10% casca de pinus fina ou pedrisco; precisa drenar rápido, porque a macaúba aguenta seca mas apodrece no encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante e pode amarelar a ponta de uma folha mais velha, o que é normal. A fase acabou quando a flecha (folha nova enrolada no centro) volta a crescer e abre."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e a planta solta uma folha nova a cada 1 a 3 meses no calor. As folhas passam de inteiras para divididas em folíolos, e os espinhos no pecíolo ficam mais longos e duros."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Palmeira Jovem",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "Forma-se a base do tronco (estipe), com espinhos, e as folhas ficam arqueadas e compridas. Em vaso o crescimento desacelera; se a raiz sair pelos furos e a rega secar em menos de 2 dias, o vaso ficou pequeno."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Palmeira Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "No ano típico, cresce forte de outubro a março, quase para no inverno e perde de 2 a 4 folhas velhas por ano, que secam presas ao tronco. Em vaso raramente floresce; no chão, as flores saem de setembro a dezembro e os cocos amadurecem e caem sozinhos cerca de um ano depois. Nesta fase vale considerar plantá-la em terreno definitivo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de macaúba",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe água parada no pratinho. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a macaúba",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No inverno, espace para a cada 7 a 10 dias; no calor forte de verão, confira a cada 2 ou 3 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_palmeira",
+      "titulo": "Adubar a macaúba",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou adubo para palmeiras, com potássio e magnésio) mais 1 punhado de húmus por vaso de 60 L, longe do caule, e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a macaúba",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas grossas, olhe o verso dos folíolos (cochonilhas, pó fino de ácaros), a flecha central (se murcha ou solta ao puxar de leve, há broca) e procure lagartas ou folíolos roídos.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Retirar folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 180,
+      "dia_inicio_ciclo": 366,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas de couro e óculos, corte com serrote ou tesoura de poda as folhas totalmente secas, a 5 cm do tronco. Não corte folhas ainda verdes ou só amareladas: a palmeira tira nutrientes delas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, passe para um vaso 20 a 30% maior sem enterrar o colo mais fundo do que estava. Se não houver vaso maior, retire os 10 cm de cima do substrato e reponha com a mistura nova. Envolva a planta com um pano grosso para se proteger dos espinhos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado com os espinhos",
+      "mensagem": "A macaúba tem espinhos pretos de vários centímetros nas folhas e no tronco, que furam roupa e pele.",
+      "acao_requerida": "Colocar o vaso em lugar de sol pleno e fora de passagem de pessoas, crianças e animais; manusear sempre com luvas de couro"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda adaptada",
+      "mensagem": "Se a flecha central voltou a crescer, a raiz pegou e a planta pode passar para a rega normal.",
+      "acao_requerida": "Conferir se há folha nova surgindo; se a flecha estiver parada e escura, verificar se o substrato está encharcado"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Pensar no lugar definitivo",
+      "mensagem": "Com 3 anos a macaúba se aproxima do limite do vaso. No chão ela passa de 10 m de altura e só então costuma frutificar.",
+      "acao_requerida": "Decidir entre plantá-la no chão (a pelo menos 4 m de construções e calçadas) ou manter no vaso maior possível, renovando o substrato a cada 2 anos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do olho (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Flecha central escurece, amolece e solta ao puxar; folhas amarelam de uma vez; substrato com cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e não molhar o centro da palmeira no fim do dia. Se a raiz estiver marrom e mole, cortar as podres, trocar todo o substrato e aplicar fungicida cúprico"
+    },
+    {
+      "nome": "Broca-do-olho (Rhynchophorus palmarum)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos na base das folhas com serragem úmida e cheiro de fermentado; flecha central murcha e morre",
+      "prevencao_tratamento": "Não ferir o tronco e retirar folhas cortadas de perto do vaso, pois o cheiro atrai o besouro. Com o olho já comprometido a planta raramente se recupera; retire-a para não infestar outras palmeiras"
+    },
+    {
+      "nome": "Lagarta-das-palmeiras (Brassolis sophorae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos roídos até a nervura; ninhos de folhas presas com seda onde as lagartas se escondem de dia",
+      "prevencao_tratamento": "Com luvas, retirar e destruir os ninhos; em infestação grande, pulverizar Bacillus thuringiensis no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons no verso dos folíolos e no pecíolo; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; se voltar, óleo de neem a 0,5% com detergente a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Ácaro",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontinhos amarelos e aspecto bronzeado, teia fina no verso, em época seca e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; em ataque forte, enxofre molhável ou óleo de neem no fim da tarde"
+    },
+    {
+      "nome": "Mancha foliar (Colletotrichum, Pestalotiopsis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons com borda amarela nos folíolos, que crescem e secam a ponta das folhas",
+      "prevencao_tratamento": "Regar no substrato, não nas folhas; cortar folíolos muito manchados e, se espalhar, aplicar fungicida cúprico"
+    },
+    {
+      "nome": "Deficiência de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas mais velhas com pontas secas e faixas amarelo-alaranjadas ao longo da borda, enquanto o centro do folíolo fica verde",
+      "prevencao_tratamento": "Usar adubo para palmeiras com potássio e magnésio ou somar 1 colher de sopa de sulfato de magnésio por vaso de 60 L a cada 3 meses no período de crescimento"
+    },
+    {
+      "nome": "Dano por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas que ficam cinza-esverdeadas e depois marrons, secas, logo após uma noite muito fria",
+      "prevencao_tratamento": "Levar o vaso para perto de parede ou sob beiral nas noites abaixo de 3 °C. Não cortar as folhas queimadas antes da primavera; se a flecha estiver firme, a planta rebrota"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "No frio a macaúba quase para de crescer: o substrato demora a secar e o excesso de água apodrece a raiz. Mudas jovens sofrem com geada.",
+      "acao_requerida": "Espaçar a rega para a cada 7 a 10 dias, suspender a adubação e abrigar o vaso sob beiral nas noites com previsão abaixo de 3 °C"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: conferir a rega com mais frequência",
+      "mensagem": "No calor e com crescimento forte, o vaso de sol pleno seca rápido, mesmo numa palmeira resistente à seca.",
+      "acao_requerida": "Conferir o substrato a cada 2 ou 3 dias e regar quando estiver seco a 5 cm; nos dias de chuva, verificar se a água escoa pelos furos"
+    }
+  ]
+}

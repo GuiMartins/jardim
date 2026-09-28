@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Monstera-adansonii (costela-de-adão-furada)",
+    "nome_cientifico": "Monstera adansonii",
+    "descricao": "Trepadeira tropical de sub-bosque, de folhas finas cheias de furos ovais, muito vendida em vaso como pendente ou conduzida em tutor. Cresce rápido em luz clara indireta e se multiplica fácil por estaca. É tóxica para cães, gatos e crianças se mastigada (cristais de oxalato de cálcio).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso plástico ou de cerâmica com furos no fundo, 18 a 22 cm de diâmetro e profundidade, só 2 a 4 cm maior que o torrão da muda; cachepô sem furo só por fora, esvaziando a água que acumular",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "40% substrato para plantas, 30% casca de pinus fina, 20% perlita ou vermiculita, 10% húmus de minhoca; leve e aerado, que seca por cima em poucos dias",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai da estufa, com luz e umidade altas, e estranha a casa: uma ou duas folhas velhas podem amarelar e cair. Não troque de vaso nem adube agora. A adaptação terminou quando surge uma folha nova que se abre inteira, sem pontas secas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Folhas novas a cada 2 a 4 semanas no calor, cada uma um pouco maior e mais furada. Os ramos começam a pender e soltam raízes aéreas nos nós: é a hora de decidir entre deixá-la pendente ou conduzi-la num tutor de fibra de coco ou musgo, onde as folhas crescem maiores. Folha nova pequena e distante da anterior indica pouca luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce forte de setembro a março e quase para de junho a agosto, quando a rega diminui e a adubação é suspensa. Na primavera, pode os ramos compridos e ralos e enraíze as pontas na água. A cada dois anos o substrato se decompõe e ela pede vaso novo. Em casa quase nunca floresce."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a monstera",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato: se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato ou o cachepô depois de 15 minutos; se ainda estiver úmido, espere mais 2 dias. No inverno o intervalo costuma passar para 8 a 10 dias. Folhas murchas e enroladas pedem água; folhas amarelas com substrato molhado, o contrário.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a monstera",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a abril, dilua adubo líquido para folhagens (NPK equilibrado, tipo 10-10-10) na metade da dose do rótulo e regue com ele o substrato já úmido. Alternativa: 2 colheres de sopa de húmus espalhadas por cima. De maio a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar e limpar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, as axilas e as folhas novas enroladas: procure algodãozinho branco, teias finas, pontinhos prateados ou manchas escuras. Passe um pano úmido nas duas faces para tirar a poeira, que reduz a luz que a folha aproveita.",
+      "critica": false
+    },
+    {
+      "id": "conducao_ramos",
+      "titulo": "Prender os ramos novos",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Se ela está num tutor, prenda ao tutor os trechos que cresceram soltos no último mês, com fita ou arame encapado frouxo, deixando as raízes aéreas encostadas no tutor. Se é pendente, gire o vaso um quarto de volta para os ramos não crescerem todos para o lado da janela.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 540,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Prefira fazer entre setembro e novembro. Tire a planta, solte as raízes que circulam o fundo, corte as moles e escuras com tesoura limpa e replante num vaso 3 a 5 cm maior, com substrato novo, na mesma altura de antes. Regue uma vez e só volte a regar quando os 3 cm de cima secarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Lugar certo para a monstera",
+      "mensagem": "Ela gosta de muita claridade, mas o sol do meio-dia queima as folhas finas em poucas horas.",
+      "acao_requerida": "Deixar o vaso a até 1,5 m de uma janela clara, com no máximo o sol da manhã até as 9h, longe de ar-condicionado e de corrente de vento"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Pendente ou no tutor?",
+      "mensagem": "Os ramos já começam a se alongar. Conduzida num tutor ela faz folhas maiores e mais furadas; solta, vira uma pendente de folhas menores.",
+      "acao_requerida": "Se quiser tutor, enterrar um tutor de fibra de coco ou musgo até o fundo do vaso, rente ao caule, e prender os ramos a ele"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Raízes saindo pelo fundo?",
+      "mensagem": "Com um ano em casa, muitas monsteras já enchem o vaso de raiz, e o substrato passa a secar em 2 ou 3 dias.",
+      "acao_requerida": "Olhar os furos do fundo: se houver raízes saindo ou a água escorrer direto sem molhar o torrão, trocar para um vaso 3 a 5 cm maior na próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de baixo para cima com o substrato úmido, caule escuro e mole na base, cheiro azedo no vaso; a planta murcha mesmo regada",
+      "prevencao_tratamento": "Regar só com os 3 cm de cima secos e nunca deixar água no prato. Se aparecer, tirar do vaso, cortar as raízes moles, replantar em substrato novo e seco e enraizar na água as pontas sadias como reserva"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodoado nas axilas das folhas e no verso; folhas novas deformadas e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; depois, óleo de neem a 0,5% com uma gota de detergente no fim da tarde, a cada 7 dias, por 3 aplicações. Isolar a planta até sumir"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelados na folha, que fica opaca e desbotada; teias finíssimas no verso, comum em ar seco",
+      "prevencao_tratamento": "Lavar as folhas no chuveiro, frente e verso; aumentar a umidade do ar agrupando plantas; neem a 0,5% a cada 5 dias se persistir"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Manchas prateadas com pontinhos pretos nas folhas; folhas novas que abrem manchadas e retorcidas",
+      "prevencao_tratamento": "Lavar as folhas, cortar as mais atacadas e aplicar neem a 0,5% a cada 5 dias por 3 semanas; armadilha adesiva azul perto do vaso"
+    },
+    {
+      "nome": "Mancha foliar bacteriana (Xanthomonas)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas encharcadas, marrons, com halo amarelo, que se espalham depressa em folhas molhadas",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas à noite; cortar as folhas atingidas com tesoura limpa com álcool e manter o vaso ventilado"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas, esbranquiçadas ou marrom-claras, no meio das folhas voltadas para a janela",
+      "prevencao_tratamento": "Afastar da janela ou filtrar a luz com cortina; a folha queimada não se recupera, corte-a se incomodar"
+    },
+    {
+      "nome": "Pontas e bordas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas marrons e crocantes nas folhas, principalmente no inverno ou perto do ar-condicionado",
+      "prevencao_tratamento": "Não deixar o substrato secar por inteiro, afastar do ar-condicionado e aquecedor e agrupar com outras plantas para subir a umidade"
+    },
+    {
+      "nome": "Estiolamento por pouca luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos compridos com grande espaço entre as folhas, folhas novas pequenas e quase sem furos",
+      "prevencao_tratamento": "Levar para um lugar mais claro; na primavera, podar os trechos ralos para ela rebrotar mais cheia"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com o frio a monstera quase para de crescer e o substrato demora mais a secar; é a época em que mais apodrece raiz.",
+      "acao_requerida": "Esperar os 3 cm de cima secarem antes de regar (em geral a cada 8 a 10 dias), suspender a adubação até setembro e afastar o vaso de janelas frias à noite"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: poda e mudas",
+      "mensagem": "O crescimento volta com força: é o melhor mês para podar, multiplicar e trocar de vaso se já estiver na hora.",
+      "acao_requerida": "Cortar os ramos ralos ou compridos demais logo abaixo de um nó, com tesoura limpa; pôr as pontas com pelo menos um nó e uma folha num copo de água e plantar quando as raízes tiverem 5 cm"
+    }
+  ]
+}

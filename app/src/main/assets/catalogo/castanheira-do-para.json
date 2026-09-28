@@ -1,0 +1,168 @@
+{
+  "planta": {
+    "nome_comum": "Castanheira-do-pará",
+    "nome_cientifico": "Bertholletia excelsa",
+    "descricao": "Árvore amazônica que passa de 50 m de altura e dá a castanha-do-pará. Em vaso, ela vive só a fase de muda e árvore jovem, com um tronco reto e folhas grandes e brilhantes, até ser plantada no chão. Em vaso ela não produz: na natureza, a primeira safra vem depois de 10 a 15 anos, e as flores precisam de abelhas grandes da mata para serem polinizadas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso alto e fundo, com pelo menos 50 cm de profundidade e 35 cm de diâmetro e vários furos no fundo. A raiz pivotante desce reta, e vaso raso a faz enrolar",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; levemente ácido (pH 5 a 6), sem calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho do viveiro para o vaso e pode perder uma ou duas folhas velhas. Uma folha nova e avermelhada na ponta do caule mostra que ela pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "O crescimento é lento no começo: a planta forma raiz antes de subir. Espere de 30 a 60 cm no primeiro ano, com fluxos de folhas novas nos meses quentes e quase nada no inverno."
+    },
+    {
+      "fase_id": "arvore_jovem",
+      "nome": "Árvore Jovem",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Tronco único e reto, que cresce de 50 cm a 1 m por ano no calor e para no inverno. Todo ano segue o mesmo ritmo: brotação e adubação de setembro a abril, repouso de maio a agosto. Com 1,5 a 2 m, o vaso fica pequeno, e o destino dela é o chão, num terreno amplo e longe de casas e muros."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda não se ligou ao substrato novo e seca antes dele. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a castanheira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. De maio a agosto, com o frio, espace para a cada 5 a 7 dias e siga só o teste do dedo.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a castanheira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto sobre o substrato, longe do tronco, e mais 1 colher de sopa de NPK 10-10-10 por vaso de 40 L; regue em seguida. De maio a agosto, pule a adubação química e ponha só o húmus.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folhas cortadas em meia-lua (formiga cortadeira), carocinhos brancos ou marrons no caule e no verso das folhas (cochonilha) e manchas escuras afundadas nas folhas novas. Veja também se há trilha de formigas no chão perto do vaso.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso ou plantar no chão",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Em setembro ou outubro, passe para um vaso 20 cm mais fundo e mais largo, com substrato novo, sem quebrar o torrão nem dobrar a raiz principal. Se a árvore já passou de 1,5 m, plante no chão, a pelo menos 10 m de casas, muros e redes elétricas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Acostume a muda ao sol aos poucos",
+      "mensagem": "Mudas de viveiro crescem sob tela de sombreamento, e sol pleno no primeiro dia queima as folhas.",
+      "acao_requerida": "Deixar o vaso na meia-sombra na primeira semana, 2 a 3 horas de sol da manhã na segunda e sol pleno a partir da terceira"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de castanheira",
+      "mensagem": "A partir de agora ela cresce mais rápido, e a raiz pivotante logo encosta no fundo do vaso.",
+      "acao_requerida": "Medir a altura, olhar se sai raiz pelos furos e escolher o lugar definitivo no chão para os próximos anos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raízes (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; raízes escuras, moles e com cheiro ruim; base do caule escurecida",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e nunca deixar água parada no prato. Se aparecer, tire a planta, corte as raízes podres e replante em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas recortadas em meia-lua ou desaparecidas de uma noite para outra; trilha de formigas carregando pedaços verdes",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida granulada ao lado dela, longe de crianças e animais. Uma faixa de graxa ou fita adesiva dupla-face no pé do vaso barra a subida"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, algodonosos ou marrons no caule e no verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; se voltar, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras e afundadas nas folhas novas, que secam a partir da ponta ou da borda",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e deixar o vaso em lugar ventilado. Retirar as folhas atacadas; em ataque forte, fungicida cúprico conforme o rótulo"
+    },
+    {
+      "nome": "Queima por sol ou por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com áreas esbranquiçadas ou marrons e secas no lado exposto (sol sem aclimatação), ou folhas escurecidas e caídas depois de uma noite abaixo de 10 °C",
+      "prevencao_tratamento": "Aclimatar a muda ao sol aos poucos e, no inverno, levar o vaso para perto de uma parede ou para dentro em noites frias. Geada mata a planta jovem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Frio chegando para uma árvore amazônica",
+      "mensagem": "A castanheira sofre abaixo de 10 °C, e geada mata a planta jovem. Nesta época ela para de crescer e bebe menos.",
+      "acao_requerida": "Encostar o vaso numa parede voltada para o norte, levá-lo para dentro em noites abaixo de 10 °C e espaçar a rega seguindo o teste do dedo"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "A castanheira acorda",
+      "mensagem": "Com o calor, voltam os fluxos de folhas novas, e a planta volta a pedir água e adubo.",
+      "acao_requerida": "Voltar ao sol pleno, retomar a rega a cada 3 dias e aplicar a adubação completa com NPK"
+    }
+  ]
+}

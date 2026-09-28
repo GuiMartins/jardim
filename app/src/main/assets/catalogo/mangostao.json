@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Mangostão",
+    "nome_cientifico": "Garcinia mangostana",
+    "descricao": "Árvore tropical da Malásia, famosa pelo fruto de casca roxa e gomos brancos agridoces, considerado um dos mais saborosos do mundo. É uma das frutíferas mais difíceis de cultivar em casa: cresce muito devagar, não tolera frio abaixo de 10 °C nem substrato seco, e em vaso leva de 7 a 10 anos para frutificar, quando frutifica. Vale como planta ornamental de folhagem brilhante para quem tem ambiente quente e úmido e paciência.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada com pelo menos 35 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; vasos de barro cru secam rápido demais para esta planta",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco, 10% casca de pinus fina; ácido (pH 5,5 a 6,5), rico em matéria orgânica e que retenha umidade sem encharcar. Não use calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a mudança de ambiente e pode perder uma ou duas folhas velhas. Mantenha-a na meia-sombra clara, sem sol forte, e com o substrato sempre úmido. A adaptação terminou quando surge a primeira brotação nova, avermelhada, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "O crescimento é lento: é normal a muda ganhar só 10 a 20 cm no primeiro ano, em surtos de brotação avermelhada que depois fica verde-escura e brilhante. A raiz do mangostão tem poucos pelos absorventes, então um único dia de substrato seco já queima as pontas das folhas."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 2555,
+      "descricao": "A planta forma uma copa cônica e simétrica, com dois ou três surtos de brotação por ano. Pode receber mais sol aos poucos (sol da manhã). Não espere flores nesta fase: o mangostão costuma florescer só depois de 7 anos, com 1,5 m ou mais de altura."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 2556,
+      "dia_fim": null,
+      "descricao": "Árvore de copa densa, que em vaso fica entre 1,5 e 2,5 m. Num ano típico brota na primavera e no verão, pode florescer no fim do inverno depois de algumas semanas de rega um pouco mais espaçada e, quando frutifica, os frutos amadurecem de dezembro a março, de 100 a 120 dias depois da flor. Em vaso a frutificação é irregular: muitas plantas nunca produzem fora de clima equatorial."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de mangostão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato: se estiver apenas úmido ou seco, regue devagar até escorrer pelos furos. O substrato nunca pode secar por completo, mas o pratinho não pode ficar com água parada. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o mangostão",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se a ponta sair seca, regue até escorrer pelos furos e descarte a água do pratinho após 30 minutos. No verão quente a rega pode ser a cada 2 dias; abaixo de 18 °C, espace para 5 dias, sempre conferindo com o dedo. Use água sem cloro sempre que possível (deixe descansar 24 h).",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o mangostão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 300 g de húmus de minhoca) por vaso de 30 L, a 5 cm do caule, e regue em seguida. Entre maio e agosto, pule a adubação se a planta não estiver brotando. Adubo em excesso queima as raízes finas: na dúvida, use menos.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as brotações novas e as axilas dos ramos: procure escamas marrons ou algodãozinho branco (cochonilha), pontinhos amarelados com teia fina (ácaro) e manchas escuras afundadas nas folhas novas (antracnose).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre setembro e novembro, passe para um vaso 10 a 15 cm maior, sem desmanchar o torrão: a raiz do mangostão é frágil e se recupera mal. Se o vaso já estiver no tamanho final (60 a 80 L), retire 5 cm do substrato da superfície e das laterais e reponha com substrato novo. Mantenha na sombra por 2 semanas depois.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante sem desmanchar o torrão",
+      "mensagem": "O mangostão tem raiz sensível e poucos pelos absorventes; mexer no torrão pode fazer a muda secar mesmo com rega.",
+      "acao_requerida": "Plantar a muda com o torrão inteiro, na mesma altura em que estava no saquinho, e deixá-la em meia-sombra clara por 30 dias"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano completo",
+      "mensagem": "A muda já está estabelecida e pode receber um pouco mais de luz para crescer mais rápido.",
+      "acao_requerida": "Passar a planta para um lugar com 3 a 4 horas de sol da manhã, aumentando a exposição ao longo de 2 semanas para não queimar as folhas"
+    },
+    {
+      "dia_disparo": 2556,
+      "titulo": "Idade de florescer",
+      "mensagem": "O mangostão já pode ter idade para dar flores, se estiver com 1,5 m ou mais e bem nutrido.",
+      "acao_requerida": "Garantir 4 a 6 horas de sol da manhã e, no fim do inverno, espaçar um pouco a rega por 3 semanas (sem deixar murchar) para estimular a floração"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; raízes escuras, moles e com cheiro ruim; a planta murcha nas horas quentes",
+      "prevencao_tratamento": "Substrato que drene bem, furos desobstruídos e nada de água parada no pratinho. Ao notar os sintomas, suspenda a rega até os 3 cm de cima secarem e retire as raízes podres com tesoura desinfetada, replantando em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou flocos brancos de algodão nos ramos e no verso das folhas; folhas meladas e com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestações maiores, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto desbotado; teia fina no verso, principalmente em ar seco",
+      "prevencao_tratamento": "Aumente a umidade do ar e lave o verso das folhas com jato de água; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nas folhas novas, que secam e caem; pode atingir flores e frutos",
+      "prevencao_tratamento": "Regue no substrato, sem molhar as folhas no fim do dia, e garanta ventilação. Corte e descarte as partes afetadas; se espalhar, calda bordalesa a 0,5% a cada 10 dias"
+    },
+    {
+      "nome": "Queima por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam com manchas marrom-arroxeadas e caem depois de noites abaixo de 10 °C; abaixo de 5 °C a planta pode morrer",
+      "prevencao_tratamento": "Leve o vaso para dentro de casa ou para local abrigado sempre que a previsão indicar menos de 12 °C; não coloque perto de janela fria nem de ar-condicionado"
+    },
+    {
+      "nome": "Pontas das folhas queimadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas e pontas das folhas secas e marrons, sem manchas no meio; aparece depois de o substrato secar ou em ar muito seco",
+      "prevencao_tratamento": "Não deixe o substrato secar nem uma vez; agrupe o vaso com outras plantas ou deixe-o sobre bandeja com pedrinhas e água (sem encostar no fundo do vaso) para aumentar a umidade"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas grandes, esbranquiçadas ou amarronzadas, nas folhas mais expostas ao sol da tarde",
+      "prevencao_tratamento": "Mudas jovens precisam de sombra parcial; mesmo plantas adultas em vaso preferem sol da manhã. Aumente a exposição ao sol aos poucos, ao longo de semanas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger o mangostão do frio",
+      "mensagem": "O mangostão é estritamente tropical: noites abaixo de 10 °C queimam as folhas e abaixo de 5 °C podem matar a planta. No frio ela também bebe menos água.",
+      "acao_requerida": "Levar o vaso para dentro ou para um local abrigado do vento nas noites abaixo de 12 °C, espaçar a rega conferindo o substrato com o dedo e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Ar seco: aumentar a umidade",
+      "mensagem": "No fim do inverno a umidade do ar cai no Centro-Sul, e o mangostão, que vem de floresta úmida, responde com pontas secas e ácaros.",
+      "acao_requerida": "Borrifar água sem cloro nas folhas pela manhã nos dias de umidade abaixo de 40% e manter o vaso sobre bandeja com pedrinhas e água"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de frutos maduros",
+      "mensagem": "Se a planta adulta floresceu no fim do inverno, os frutos amadurecem agora, de 100 a 120 dias depois da flor.",
+      "acao_requerida": "Colher os frutos quando a casca estiver roxo-escura e cedendo levemente à pressão; frutos verdes ou vermelhos ainda não estão prontos e não amadurecem bem fora do pé"
+    }
+  ]
+}

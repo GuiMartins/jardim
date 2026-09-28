@@ -1,0 +1,202 @@
+{
+  "planta": {
+    "nome_comum": "Torênia",
+    "nome_cientifico": "Torenia fournieri",
+    "descricao": "Flor de origem asiática, com pétalas em tons de azul, violeta, rosa ou branco e garganta amarela, parecida com uma boca-de-leão pequena. É uma das poucas floríferas de verão que florescem bem na meia-sombra e no calor úmido. Em vaso é cultivada como ANUAL, a partir de muda de bandeja: floresce da primavera ao outono e decai com o frio.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 180,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 15 cm de profundidade e 15 cm de diâmetro por muda, com furos no fundo; em jardineira, deixe 20 cm entre as mudas. Também vai bem em cesta suspensa.",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% fibra de coco ou vermiculita, para segurar umidade sem encharcar; misture 1 colher de sopa de farinha de ossos por vaso de 3 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "A muda sai da bandeja e firma as raízes no vaso. É normal perder algumas flores e murchar levemente nas horas quentes nos primeiros dias. A fase termina quando surgem folhas novas nas pontas e a planta não murcha mais ao meio-dia."
+    },
+    {
+      "fase_id": "crescimento",
+      "nome": "Crescimento e Ramificação",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "A planta se espalha e lança ramos laterais, formando uma touceira baixa de 15 a 25 cm. Botões aparecem nas axilas das folhas. Beliscar as pontas nesta fase deixa a touceira mais cheia."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 36,
+      "dia_fim": 165,
+      "descricao": "Floração contínua, com dezenas de flores abertas ao mesmo tempo. As flores velhas caem sozinhas, sem precisar de limpeza. Se os ramos ficarem compridos, com folhas só nas pontas e poucas flores, é hora da poda leve. Murcha rápida no meio da tarde indica falta de água ou sol forte demais."
+    },
+    {
+      "fase_id": "declinio",
+      "nome": "Declínio",
+      "dia_inicio": 166,
+      "dia_fim": 180,
+      "descricao": "Os ramos ficam lenhosos na base, as folhas de baixo amarelam e as flores diminuem, principalmente com noites frias. Fim do ciclo: aproveite para tirar estacas das pontas sadias, se quiser manter a variedade."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a torênia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Toque a superfície do substrato pela manhã: se estiver seca ao toque, regue devagar até escorrer pelos furos. O torrão da muda ainda é pequeno e seca em um dia de calor. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a torênia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos, de preferência de manhã e sem molhar as flores. Acima de 30 °C ou em cesta suspensa, confira todo dia. Com noites abaixo de 15 °C, espace para a cada 3 ou 4 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para flores",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 165,
+      "instrucoes": "Dissolva 1 g (meia colher de café) de adubo NPK 10-10-10 ou 4-14-8 em 1 L de água e regue o vaso de 3 L com o substrato já úmido. Alterne com 1 colher de sopa de húmus espalhado na superfície. Excesso de nitrogênio dá muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "poda_leve",
+      "titulo": "Aparar os ramos compridos",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 66,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Corte com tesoura limpa um terço dos ramos mais compridos e falhados, logo acima de um par de folhas. A planta rebrota em 1 a 2 semanas e volta a florir mais cheia. Não corte todos os ramos de uma vez.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e flores",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Vire as folhas e procure pontinhos brancos que voam ao mexer (mosca-branca), insetos agrupados nas pontas (pulgão), teias finas ou folhas pontilhadas de amarelo (ácaro) e pó branco (oídio). Confira também se a base dos caules está firme e sem escurecimento.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso",
+      "mensagem": "A muda de bandeja tem pouco substrato e seca rápido. Plante hoje, sem enterrar o caule mais fundo do que estava.",
+      "acao_requerida": "Plantar na mesma altura do torrão, firmar o substrato em volta, regar até escorrer e deixar 3 dias à sombra clara antes de ir para o lugar definitivo"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Beliscar as pontas",
+      "mensagem": "Cortar a ponta dos ramos agora faz a torênia ramificar e formar uma touceira cheia, com muito mais flores.",
+      "acao_requerida": "Tirar com os dedos ou com tesoura os 1 a 2 cm da ponta de cada ramo principal, acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 160,
+      "titulo": "Tirar estacas antes do fim",
+      "mensagem": "A planta está no fim do ciclo. Estacas das pontas enraízam fácil e mantêm a mesma cor para a próxima temporada.",
+      "acao_requerida": "Cortar pontas sadias de 8 cm, tirar as folhas de baixo, enfiar 3 cm em substrato úmido e manter à sombra clara até enraizar (2 a 3 semanas)"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido; base do caule escura e mole; raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regar só quando os 2 cm de cima secarem, esvaziar o pratinho e usar vaso com furos. Planta com o colo apodrecido não se recupera: tire estacas das pontas sadias e descarte o resto com o substrato"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco em manchas nas folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Deixar ar circulando entre os vasos e regar sem molhar as folhas. Retire as folhas afetadas e pulverize bicarbonato de sódio (1 colher de chá por litro de água com 1 gota de detergente) a cada 7 dias"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores e folhas com manchas encharcadas cobertas de mofo cinza, comum em tempo úmido e frio",
+      "prevencao_tratamento": "Não molhar a folhagem, afastar os vasos e tirar flores e folhas com mofo assim que aparecerem"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos minúsculos ao mexer na planta; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; óleo de neem a 0,5% no verso das folhas, no fim da tarde, a cada 5 dias por 3 semanas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas e botões; brotos enrugados",
+      "prevencao_tratamento": "Jato de água nas pontas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo, sem brilho, com teias finas no verso; piora em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; óleo de neem a 0,5% a cada 5 dias, sempre no fim da tarde"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com bordas secas e manchas esbranquiçadas; planta murcha todo dia à tarde",
+      "prevencao_tratamento": "Levar para um lugar com sol só da manhã ou luz filtrada; a torênia não tolera sol forte da tarde em vaso"
+    },
+    {
+      "nome": "Estiolamento por pouca luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e finos, folhas espaçadas e quase nenhuma flor",
+      "prevencao_tratamento": "Garantir pelo menos 2 horas de sol direto da manhã ou claridade forte o dia todo; podar os ramos compridos para rebrotar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: proteja a torênia",
+      "mensagem": "No auge do verão, o vaso seca em um dia e o sol da tarde queima as folhas.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia e deixar o vaso onde só bate sol até as 11 h"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Frio: a torênia sofre abaixo de 10 °C",
+      "mensagem": "A torênia vem de clima tropical: com noites frias as folhas arroxeiam, a floração para e a planta pode morrer na geada.",
+      "acao_requerida": "Levar o vaso para perto de uma parede ou para dentro nas noites abaixo de 10 °C, suspender o adubo e regar só quando os 3 cm de cima secarem"
+    }
+  ]
+}

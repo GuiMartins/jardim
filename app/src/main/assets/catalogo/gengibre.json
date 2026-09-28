@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Gengibre",
+    "nome_cientifico": "Zingiber officinale",
+    "descricao": "Erva tropical cultivada pelo rizoma aromático e picante, usado em chás, temperos e conservas. Na natureza é perene, mas em vaso é cultivada como anual: planta-se um pedaço de rizoma na primavera e colhe-se tudo cerca de 9 meses depois, quando as folhas secam no outono e no inverno. Um pedaço da colheita serve de semente para o ano seguinte.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": 270,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo ou jardineira com pelo menos 30 cm de diâmetro e 25 cm de profundidade, com furos no fundo. O rizoma cresce para os lados, então a largura importa mais que a profundidade",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% fibra de coco; fofo, rico em matéria orgânica e sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 35,
+      "descricao": "Escolha um rizoma firme e gordo, com gemas (os 'olhinhos' amarelados). Corte em pedaços de 5 cm com 2 ou 3 gemas cada, deixe secar o corte por 1 dia e enterre deitado a 3–5 cm de profundidade, gemas para cima. Os brotos verdes e pontudos aparecem entre a 2ª e a 5ª semana; antes disso não há nada à vista, e o maior risco é apodrecer o rizoma com rega demais."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento das Folhas",
+      "dia_inicio": 36,
+      "dia_fim": 120,
+      "descricao": "Os pseudocaules sobem até 60–90 cm com folhas longas e estreitas, e surgem novos brotos ao redor do primeiro. É a fase de maior sede e de mais adubação. Se o rizoma aparecer na superfície, cubra com 2 cm de composto para não esverdear nem queimar."
+    },
+    {
+      "fase_id": "engrossamento_rizoma",
+      "nome": "Engrossamento do Rizoma",
+      "dia_inicio": 121,
+      "dia_fim": 210,
+      "descricao": "A planta está cheia e o rizoma engorda embaixo da terra. A partir do dia 150 dá para tirar pedaços de 'gengibre jovem' pela borda do vaso, com casca fina e sabor suave, sem arrancar a planta."
+    },
+    {
+      "fase_id": "maturacao_colheita",
+      "nome": "Maturação e Colheita",
+      "dia_inicio": 211,
+      "dia_fim": 270,
+      "descricao": "Com o frio chegando, as folhas amarelam e secam de baixo para cima: é o sinal de que o rizoma amadureceu, ficou fibroso e mais picante. Colha quando pelo menos dois terços das folhas estiverem amarelos ou secos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar o gengibre (brotação)",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 35,
+      "instrucoes": "Enfie o dedo 3 cm no substrato: regue só se estiver seco, com pouca água, até umedecer sem escorrer muito pelos furos. Sem folhas a planta quase não gasta água, e substrato encharcado apodrece o rizoma.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o gengibre",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, acima de 30 °C, confira a cada 2 dias. Folhas enroladas ao meio-dia pedem água.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Regar pouco (maturação)",
+      "tipo": "REGA",
+      "frequencia_dias": 6,
+      "dia_inicio_ciclo": 211,
+      "dia_fim_ciclo": 265,
+      "instrucoes": "Com as folhas amarelando, regue só quando os 5 cm de cima estiverem secos, com metade da água de antes. Terra úmida e fria nesta fase faz o rizoma pronto apodrecer.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar e cobrir o rizoma",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca ou composto (ou 1 colher de sopa de bokashi) por vaso de 15 L, formando uma camada de 1–2 cm que cubra os rizomas expostos, e regue em seguida. Não use adubo químico concentrado encostado nos brotos.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": 270,
+      "instrucoes": "Vire as folhas procurando pontinhos amarelados e teias finas (ácaro) ou bolinhas brancas e algodoadas (cochonilha). Aperte de leve a base dos caules: base mole, amarronzada ou com cheiro azedo indica podridão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 40,
+      "titulo": "O gengibre já brotou?",
+      "mensagem": "A maioria dos rizomas brota em até 5 semanas. Se ainda não há nenhum broto, vale conferir se ele está vivo.",
+      "acao_requerida": "Afastar a terra com o dedo e apertar o rizoma: firme e com gemas inchadas, cubra de novo e espere até 2 semanas; mole ou escuro, descarte e plante outro pedaço"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Gengibre jovem liberado",
+      "mensagem": "O rizoma já tem tamanho para uma colheita parcial. O gengibre jovem tem casca fina, rosada nas pontas, e sabor mais suave.",
+      "acao_requerida": "Cavar com cuidado na borda do vaso, cortar com faca limpa um pedaço de rizoma com 1 ou 2 caules e cobrir o resto com terra"
+    },
+    {
+      "dia_disparo": 235,
+      "titulo": "Folhas amarelando: fim de ciclo",
+      "mensagem": "O amarelecimento das folhas no outono é natural e indica que o rizoma está amadurecendo. Não é falta de água nem de adubo.",
+      "acao_requerida": "Parar de adubar, reduzir a rega e colher quando dois terços das folhas estiverem secos"
+    },
+    {
+      "dia_disparo": 260,
+      "titulo": "Hora de colher tudo",
+      "mensagem": "O rizoma está maduro. Deixado no vaso úmido durante o inverno, ele tende a apodrecer.",
+      "acao_requerida": "Virar o vaso, soltar os rizomas da terra, cortar os caules a 2 cm, lavar e secar à sombra por 1 dia; guardar um pedaço gordo com gemas em local seco e arejado para replantar em agosto ou setembro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão mole do rizoma (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham de uma vez; a base dos caules fica mole, marrom e se solta com facilidade; o rizoma escurece por dentro e tem cheiro azedo",
+      "prevencao_tratamento": "Substrato bem drenado, sem pratinho com água e sem encharcar, principalmente antes da brotação e no frio. Plante só rizomas firmes. Retire e descarte as partes atacadas junto com o substrato próximo; não reaproveite a terra para gengibre"
+    },
+    {
+      "nome": "Murcha bacteriana (Ralstonia solanacearum)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas enrolam e murcham mesmo com terra úmida, depois amarelam; ao cortar e apertar o caule sai um líquido leitoso",
+      "prevencao_tratamento": "Não tem cura: descarte a planta e o substrato. Use rizomas de origem confiável e substrato novo, e não plante no mesmo vaso onde houve tomate, pimentão ou batata doentes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, que ficam foscas e acinzentadas; teias finas no verso, comum em tempo seco e perto de paredes quentes",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos. Com infestação, óleo de neem a 0,5% ou calda de sabão neutro no fim da tarde a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodoadas na base dos caules e nas axilas das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; depois aplique óleo de neem a 0,5% a cada 7 dias até sumirem"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou palha no meio das folhas, que depois secam, aparecendo em poucos dias de sol forte da tarde",
+      "prevencao_tratamento": "Deixe o vaso onde bata só o sol da manhã ou luz filtrada; o gengibre vive à sombra de árvores na natureza"
+    },
+    {
+      "nome": "Pontas secas das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas marrons e secas, com o resto da folha verde",
+      "prevencao_tratamento": "Sinal de ar seco, vento ou rega irregular. Não deixe o substrato secar por completo no verão, afaste o vaso de vento encanado e ar-condicionado. Pode cortar a ponta seca com tesoura"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Proteger o gengibre do frio",
+      "mensagem": "O gengibre é tropical: abaixo de 10 °C as folhas morrem, e com geada o rizoma pode se perder. Terra fria e molhada é a principal causa de podridão nesta época.",
+      "acao_requerida": "Nas noites abaixo de 10 °C, levar o vaso para perto de uma parede ou para dentro de casa; regar só com o substrato seco a 5 cm de profundidade"
+    }
+  ]
+}

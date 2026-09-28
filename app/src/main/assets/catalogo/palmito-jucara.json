@@ -1,0 +1,199 @@
+{
+  "planta": {
+    "nome_comum": "Palmito-juçara",
+    "nome_cientifico": "Euterpe edulis",
+    "descricao": "Palmeira nativa da Mata Atlântica, esguia e de caule único, ameaçada de extinção pela extração ilegal do palmito. Em vaso é cultivada como ornamental de meia-sombra: como não rebrota, cortar o palmito mata a planta. Os frutos roxos, que alimentam as aves, só aparecem depois de 8 a 10 anos e raramente em vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de plástico ou cerâmica com pelo menos 40 cm de profundidade e 35 cm de diâmetro, com vários furos no fundo; passe para 60 L ou mais quando a palmeira passar de 1,5 m",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco ou casca de pinus fina, 10% areia grossa ou perlita; rico em matéria orgânica, que segura umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e de lugar: uma folha pode amarelar e secar, o que é normal. Ela está adaptada quando a folha nova do centro (a flecha, ainda fechada) volta a crescer."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento: espere de 2 a 4 folhas novas no primeiro ano, quase todas na primavera e no verão. Folhas verde-escuras e brilhantes indicam luz e rega certas; folhas pálidas ou com pontas queimadas pedem menos sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão, quase para no inverno. As folhas mais velhas, de baixo, secam e caem sozinhas; corte só as que estiverem totalmente secas, rente à bainha, sem nunca mexer na flecha do centro, que é o ponto de crescimento único da palmeira."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a juçara recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver só úmido, não molhado, regue devagar até escorrer pelos furos. O torrão da muda não pode secar nesta fase. Esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a juçara",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Acima de 30 °C, confira a cada 2 dias; no inverno, espaçe para 5 a 7 dias. A juçara não aguenta o vaso seco por completo, mas também apodrece com água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a juçara",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 ou 1 xícara de húmus de minhoca por vaso de 30 L, longe do caule, e regue em seguida. Entre junho e agosto, pule a adubação: a planta está parada e o adubo queima a raiz.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e a bainha das folhas procurando pontinhos brancos ou marrons presos (cochonilha), teia fina (ácaro) e manchas marrons. Aperte a base do caule: ele deve estar firme, não mole.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar o substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, passe a palmeira para um vaso 10 cm maior ou troque o terço de cima do substrato se ela já estiver no vaso final. Tire o torrão inteiro, sem desmanchar as raízes, e mantenha o caule na mesma altura de antes: enterrar mais fundo apodrece a base.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso",
+      "mensagem": "Mudas de juçara costumam vir em saquinho e não gostam de raiz mexida.",
+      "acao_requerida": "Cortar o saquinho pela lateral, pôr o torrão inteiro no vaso na mesma altura em que estava, completar com substrato, regar bem e deixar em meia-sombra, longe do sol da tarde"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Juçara adaptada?",
+      "mensagem": "A flecha do centro deve ter voltado a crescer. Se estiver escura ou mole, há excesso de água.",
+      "acao_requerida": "Puxar a flecha de leve: se sair na mão com a base podre, reduzir a rega e conferir se o vaso drena; se estiver firme, seguir a rotina"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de juçara",
+      "mensagem": "Estabelecida, a palmeira aceita um pouco mais de luz, o que deixa o crescimento mais firme.",
+      "acao_requerida": "Aproximar o vaso aos poucos de um lugar com 2 a 3 horas de sol da manhã, ao longo de 2 semanas; se as folhas amarelarem ou queimarem, voltar para a meia-sombra"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da raiz e do caule (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Flecha central escurece e sai na mão; base do caule mole e com cheiro ruim; folhas amarelam de baixo para cima",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e não enterrar o caule. Com a flecha podre, a palmeira não se recupera; no começo, trocar o substrato e tirar raízes pretas pode salvá-la"
+    },
+    {
+      "nome": "Cochonilha (escama e farinha)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos marrons ou tufos brancos presos no verso dos folíolos e nas bainhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em ataque maior, óleo mineral ou de neem a 0,5% com detergente neutro, no fim da tarde, 3 aplicações a cada 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teia fina no verso, principalmente dentro de casa com ar seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos meses secos e lavar a planta com chuveirinho; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mancha foliar (Pestalotiopsis, Bipolaris)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas com halo amarelo nos folíolos, que se juntam e secam a folha",
+      "prevencao_tratamento": "Regar no substrato, não nas folhas ao fim do dia; cortar folíolos muito manchados e manter ventilação. Em avanço, fungicida à base de cobre"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas desbotadas, amareladas ou com áreas esbranquiçadas e secas no lado virado para o sol",
+      "prevencao_tratamento": "A juçara jovem é planta de sub-bosque: evitar sol da tarde e aumentar a luz só aos poucos. Folhas queimadas não se recuperam; as novas saem normais"
+    },
+    {
+      "nome": "Pontas secas por ar seco ou excesso de adubo",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas dos folíolos marrons e secas, com o resto da folha verde",
+      "prevencao_tratamento": "Manter longe de ar-condicionado, borrifar nos meses secos e regar até escorrer bem a cada rega para lavar os sais. Não dobrar a dose de adubo"
+    },
+    {
+      "nome": "Deficiência de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas mais velhas com pontinhos alaranjados ou amarelo nas bordas enquanto o centro continua verde",
+      "prevencao_tratamento": "Usar adubo que tenha potássio e magnésio (NPK com micronutrientes ou adubo para palmeiras) e manter a adubação da primavera ao outono"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "A juçara quase para de crescer no frio, e a juçara jovem sofre com geada e vento gelado.",
+      "acao_requerida": "Espaçar a rega para 5 a 7 dias, conferindo com o dedo, suspender a adubação e, em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou para dentro"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Ar seco: umidade nas folhas",
+      "mensagem": "Agosto e setembro são os meses mais secos do Centro-Sul; ar seco queima as pontas das folhas e favorece ácaros.",
+      "acao_requerida": "Borrifar água nas folhas, principalmente no verso, de manhã, dia sim, dia não, e deixar o vaso longe de ar-condicionado"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e sol forte",
+      "mensagem": "No calor o vaso seca rápido e o sol da tarde queima as folhas da juçara.",
+      "acao_requerida": "Conferir a umidade do substrato a cada 2 dias e garantir que o vaso fique na sombra depois das 11h"
+    }
+  ]
+}

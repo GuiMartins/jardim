@@ -1,0 +1,179 @@
+{
+  "planta": {
+    "nome_comum": "Alho",
+    "nome_cientifico": "Allium sativum",
+    "descricao": "Hortaliça de bulbo plantada a partir dos dentes, no outono. Cada dente vira uma cabeça nova em cerca de 5 meses. No Centro-Sul, o alho 'nobre' (roxo, de dentes graúdos, comum no mercado) só forma cabeça se os dentes passarem 40 a 50 dias na geladeira, a 3–5 °C, antes do plantio. Os tipos 'comuns' ou 'seminobres' (Cateto Roxo, Gigante Roxo) dispensam esse frio e são os mais fáceis em vaso.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": 160,
+    "meses_plantio": [
+      3,
+      4,
+      5
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade e furos no fundo; dentes a 10–12 cm um do outro (uma jardineira de 60 × 20 cm comporta 8 a 10 dentes)",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; solto, sem torrões e sem esterco fresco, que apodrece o dente",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Separe os dentes na hora de plantar, use só os maiores e sem manchas, e enterre cada um com a ponta para cima, a 3–4 cm de profundidade. A folha verde aparece entre o 7º e o 14º dia."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento das Folhas",
+      "dia_inicio": 15,
+      "dia_fim": 75,
+      "descricao": "A planta forma as folhas planas que vão alimentar a cabeça. O tamanho do bulbo depende de quantas folhas saudáveis ela tiver ao fim desta fase: sem sol e sem adubo agora, a cabeça sai pequena."
+    },
+    {
+      "fase_id": "formacao_bulbo",
+      "nome": "Formação da Cabeça",
+      "dia_inicio": 76,
+      "dia_fim": 130,
+      "descricao": "Com os dias mais longos, a base engrossa e os dentes se dividem sob a terra. Afaste um pouco de substrato com o dedo para ver a cabeça inchando. Excesso de água ou de nitrogênio agora faz brotar folhas laterais no lugar dos dentes (superbrotamento)."
+    },
+    {
+      "fase_id": "maturacao",
+      "nome": "Maturação",
+      "dia_inicio": 131,
+      "dia_fim": 150,
+      "descricao": "As folhas de baixo amarelam e secam, e o pescoço amolece e tomba. É sinal de que a cabeça está enchendo a casca. Mantenha o substrato mais seco, para a casca não apodrecer."
+    },
+    {
+      "fase_id": "colheita_cura",
+      "nome": "Colheita e Cura",
+      "dia_inicio": 151,
+      "dia_fim": 160,
+      "descricao": "Colha quando dois terços das folhas estiverem secos. Depois de colhido, o alho cura por 2 a 3 semanas à sombra e com ventilação, pendurado com as folhas, antes de ir para a despensa."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar os dentes plantados",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe o prato com água: o dente sem raiz apodrece no encharcado.",
+      "critica": false
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar o alho",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. Em dias quentes, acima de 28 °C, confira a cada 2 dias; em semanas frias e nubladas, a cada 4 a 5 dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Rega leve de maturação",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 131,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Regue pouco, cerca de um copo por planta, só se o substrato estiver seco a 5 cm. Com as folhas já secando, água em excesso mancha e apodrece a casca da cabeça.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubação de cobertura",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por planta, sem encostar no pescoço, e regue em seguida. Depois do dia 75, troque por 1 colher de chá de cinza de madeira peneirada por planta (potássio), que ajuda a encher a cabeça. Não use adubo rico em nitrogênio na fase de cabeça.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Olhe a base das folhas, onde elas se abraçam, procurando pontinhos amarelos ou pretos que se mexem (tripes). Nas folhas, procure pústulas alaranjadas (ferrugem) ou manchas prateadas. Na base da planta, procure mofo branco.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Os dentes brotaram?",
+      "mensagem": "A esta altura, todo dente saudável já mostra folha. O que não brotou provavelmente apodreceu e pode contaminar o vaso.",
+      "acao_requerida": "Cavar com cuidado onde não brotou e retirar o dente se estiver mole ou mofado"
+    },
+    {
+      "dia_disparo": 100,
+      "titulo": "Olho no pendão floral",
+      "mensagem": "Alguns alhos roxos lançam uma haste central enrolada. Se ela ficar, a planta gasta energia na flor, e não na cabeça.",
+      "acao_requerida": "Se aparecer a haste redonda e lisa no centro, quebrar logo acima da última folha (ela é comestível, refogada)"
+    },
+    {
+      "dia_disparo": 131,
+      "titulo": "Hora de reduzir a rega",
+      "mensagem": "As folhas de baixo começam a secar. Daqui em diante, água demais apodrece a casca e diminui o tempo de guarda.",
+      "acao_requerida": "Espaçar as regas para uma vez por semana e parar a adubação"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Alho pronto para colher",
+      "mensagem": "Com dois terços das folhas secos, a cabeça está formada. Esperar muito mais faz os dentes se separarem e a casca rachar.",
+      "acao_requerida": "Parar de regar 3 dias antes, soltar o substrato com as mãos, puxar a planta inteira e pendurar à sombra e ventilada por 2 a 3 semanas para curar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Tripes (Thrips tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com manchas prateadas ou esbranquiçadas e pontas secas; insetos minúsculos, amarelos ou escuros, escondidos na junção das folhas",
+      "prevencao_tratamento": "Jato de água na base das folhas; se persistir, óleo de neem a 0,5% com uma gota de detergente, no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Ferrugem (Puccinia allii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas em relevo nas folhas, que soltam pó ao passar o dedo; folhas secam antes do tempo",
+      "prevencao_tratamento": "Regar só o substrato, nunca as folhas, e deixar espaço entre os vasos; cortar e jogar no lixo as folhas atacadas; calda de bicarbonato (1 colher de chá por litro) semanal ao primeiro sinal"
+    },
+    {
+      "nome": "Podridão-branca (Sclerotium cepivorum)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam de baixo para cima e a planta tomba; mofo branco com pontinhos pretos na base do bulbo",
+      "prevencao_tratamento": "Não tem cura: retirar a planta com o substrato ao redor e jogar no lixo. Não reaproveitar essa terra para alho, cebola ou cebolinha por anos"
+    },
+    {
+      "nome": "Podridão do dente por excesso de rega (Fusarium, Penicillium)",
+      "tipo": "DOENCA",
+      "sintomas": "Dente que não brota ou broto que amarela cedo; base mole, com cheiro azedo e mofo esverdeado ou rosado",
+      "prevencao_tratamento": "Substrato com areia, furos livres e prato sempre vazio; plantar só dentes firmes e sem manchas; retirar os afetados"
+    },
+    {
+      "nome": "Superbrotamento (pseudoperfilhamento)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas brotam dos lados da planta na fase de cabeça, que sai deformada e com dentes soltos e pequenos",
+      "prevencao_tratamento": "Não adubar com nitrogênio nem regar em excesso depois do dia 75; preferir variedades comuns ou seminobres em vaso"
+    },
+    {
+      "nome": "Cabeça sem dentes (falta de frio)",
+      "tipo": "DISTURBIO",
+      "sintomas": "A planta cresce bem, mas o bulbo fica redondo e inteiriço, como uma cebola pequena, sem se dividir",
+      "prevencao_tratamento": "Plantar entre março e maio; se o alho for nobre, deixar os dentes 40 a 50 dias na gaveta da geladeira antes de plantar"
+    }
+  ],
+  "eventos_sazonais": []
+}

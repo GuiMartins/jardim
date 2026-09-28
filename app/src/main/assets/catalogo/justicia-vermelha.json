@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Justícia-vermelha",
+    "nome_cientifico": "Megaskepasma erythrochlamys",
+    "descricao": "Arbusto tropical da família das acantáceas, nativo da Venezuela e da América Central, também chamado de manto-vermelho. Tem folhas grandes e brilhantes e forma espigas eretas de brácteas vermelho-vivas com flores brancas, que duram semanas do fim do verão ao inverno e atraem beija-flores. Em vaso grande fica com 1,2 a 1,8 m e aceita bem a poda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado, de cerâmica ou plástico grosso, com pelo menos 45 cm de diâmetro e 40 cm de profundidade e vários furos no fundo; a planta é alta e o vaso leve tomba com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% substrato de fibra de coco ou casca de pinus fina, 10% areia grossa ou perlita; rico em matéria orgânica e úmido sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda recém-plantada pode murchar nas horas quentes e perder algumas folhas de baixo. Deixe-a com sol só da manhã e o substrato sempre levemente úmido. A fase acaba quando surgem folhas novas, verde-claras e brilhantes, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a planta cresce rápido, com folhas de até 25 cm. É a fase de formar a copa: beliscar as pontas faz a planta ramificar em vez de subir num caule só. Está estabelecida quando tem vários ramos firmes e não murcha mais no calor da tarde se a rega estiver em dia."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce forte na primavera e no verão, forma as espigas vermelhas do fim do verão ao inverno (em geral de março a agosto no Centro-Sul) e é podada no início da primavera, depois da floração. No frio abaixo de 10 °C para de crescer e pode perder folhas; abaixo de 5 °C queima."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 30 minutos. Acima de 30 °C, confira todo dia: a raiz ainda está só no torrão da muda.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a justícia-vermelha",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 4 a 6 L num vaso de 40 L). As folhas grandes murcham rápido no calor: no verão confira a cada 2 dias; no inverno, com a planta parada, espace para 5 a 7 dias. Nunca deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a justícia-vermelha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de NPK 10-10-10 ou 1 xícara de húmus de minhoca sobre o substrato, a 5 cm do caule, e regue em seguida. De fevereiro a julho troque por NPK 4-14-8, que favorece as flores. Em junho e julho, se fizer frio, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire 5 folhas e olhe os brotos e as espigas: procure bolinhas brancas algodoadas (cochonilha), insetos brancos que voam ao mexer (mosca-branca), pontinhos amarelados com teia fina (ácaro) e folhas pegajosas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera, logo após a poda, tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas no fundo, troque um terço do substrato velho por substrato novo e replante no mesmo vaso ou em um 10 cm maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A justícia-vermelha estranha a mudança de lugar e pode murchar nos primeiros dias.",
+      "acao_requerida": "Plantar na mesma altura do torrão original, firmar o substrato em volta, regar até escorrer e deixar em local com sol só da manhã pelas próximas semanas"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Muda adaptada",
+      "mensagem": "Se já surgiram folhas novas, a raiz pegou e a planta aguenta mais luz.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo, com 3 a 4 horas de sol direto, de preferência da manhã"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Beliscar as pontas",
+      "mensagem": "Sem poda de formação, a justícia-vermelha sobe em poucos caules longos e tomba com o peso das espigas.",
+      "acao_requerida": "Cortar com tesoura limpa a ponta de cada ramo, logo acima do segundo par de folhas, para estimular brotos laterais"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Segunda poda de formação",
+      "mensagem": "Os brotos laterais que nasceram depois da primeira poda já têm alguns pares de folhas.",
+      "acao_requerida": "Beliscar a ponta dos ramos que passaram de 30 cm, para a copa ficar cheia e baixa"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato molhado, folhas amarelam e caem de baixo para cima, base do caule escurece e amolece, cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com os primeiros 4 cm secos e nunca deixar água no prato. Se aparecer, tire a planta do vaso, corte as raízes escuras e moles, replante em substrato novo e seco e só volte a regar quando secar"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodoadas nas axilas das folhas, no verso e entre as brácteas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo de neem a 0,5% com 1 gota de detergente no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos minúsculos que voam ao mexer nas folhas; folhas amareladas e pegajosas no verso",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias até sumirem"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelados nas folhas, que ficam foscas e acinzentadas; teia fina no verso em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos; se persistir, calda de sabão neutro a 1% ou óleo de neem a cada 5 dias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas, marrons ou esbranquiçadas no meio das folhas voltadas para o sol da tarde; bordas enroladas",
+      "prevencao_tratamento": "Proteger do sol forte entre 11h e 16h, principalmente no verão e logo depois de mudar a planta de lugar; folhas queimadas não se recuperam, corte-as rente ao ramo"
+    },
+    {
+      "nome": "Queda de folhas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, murcham e caem depois de noites abaixo de 10 °C; pontas dos ramos ficam pretas depois de geada",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou para dentro nas noites frias e reduzir a rega no inverno; espere a primavera para cortar as partes mortas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Preparar para a floração",
+      "mensagem": "As espigas vermelhas começam a se formar no fim do verão. Um adubo com mais fósforo agora rende mais espigas.",
+      "acao_requerida": "Trocar o adubo de manutenção por NPK 4-14-8 até julho e manter a rega regular, sem deixar o substrato secar por completo"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A justícia-vermelha é tropical: abaixo de 10 °C para de crescer e perde folhas, e a geada queima os ramos.",
+      "acao_requerida": "Nas noites abaixo de 10 °C, levar o vaso para um lugar abrigado ou cobrir com manta; regar só quando o substrato secar a 5 cm e pular a adubação"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda depois da floração",
+      "mensagem": "As espigas já secaram e a planta vai brotar forte com o calor. A poda agora mantém o porte do vaso e garante ramos novos, que são os que florescem.",
+      "acao_requerida": "Cortar as espigas secas e encurtar todos os ramos em um terço a metade, logo acima de um par de folhas; tirar os galhos secos ou queimados pelo frio"
+    }
+  ]
+}

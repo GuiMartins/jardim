@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Resedá-gigante",
+    "nome_cientifico": "Lagerstroemia speciosa",
+    "descricao": "Árvore tropical asiática, parente do resedá comum, com grandes cachos de flores rosa a lilás de pétalas crespas no verão. Na natureza passa de 15 m; em vaso grande e com poda anual fica como arvoreta de 2 a 3 m, que começa a florir 2 a 4 anos depois da muda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica ou cimento com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo; comece com um de 30 a 40 L e passe para o definitivo no primeiro transplante",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou casca de pinus fina; acrescente 1 colher de sopa de calcário dolomítico e 2 de farinha de ossos a cada 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a mudança de vaso e de luz e pode perder algumas folhas mais velhas. A fase termina quando surgem brotos novos avermelhados na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o tronco engrossa. Escolha um tronco principal (ou três, para copa em buquê) e deixe a planta ganhar folhas; floração ainda é rara. Se crescer fina e inclinada, falta sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ciclo anual: brota forte em setembro e outubro, floresce em cachos de dezembro a março nos ramos do ano, as folhas avermelham e parte cai no outono e no inverno seco, e em agosto recebe a poda. As primeiras flores costumam vir entre o 2º e o 4º ano; depois forma cápsulas lenhosas marrons que podem ser retiradas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com as raízes ainda curtas, o torrão da muda seca antes do resto do vaso: acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o resedá-gigante",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos se estiver seco nessa profundidade. No verão a planta adulta pode pedir água a cada 2 dias; de junho a agosto, com a planta meio sem folhas, espace para a cada 7 a 10 dias. Não deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o resedá-gigante",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 xícara de bokashi na superfície de um vaso de 60 L, longe do tronco, e regue em seguida. De setembro a março, junte 1 colher de sopa de NPK 4-14-8 dissolvida em 2 L de água. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos e o verso das folhas: pó branco (oídio), insetos verdes agrupados (pulgão), placas brancas ou marrons nos ramos (cochonilha) e manchas marrons com borda amarela (cercosporiose). Nos dias quentes e úmidos do verão, capriche nos brotos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro, antes da brotação. Tire a planta, corte 3 a 5 cm das raízes enoveladas nas laterais e no fundo e replante com substrato novo no mesmo vaso ou num 10 cm maior. Se o vaso já for grande demais para tirar, raspe e troque os 10 cm de cima. Regue bem e deixe 1 semana à meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso",
+      "mensagem": "A muda vem num saco apertado; quanto antes for para o vaso, melhor ela pega.",
+      "acao_requerida": "Plantar no vaso com o colo do caule no mesmo nível em que estava no saco, sem enterrar o tronco, firmar o substrato e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 3,
+      "titulo": "Colocar um tutor",
+      "mensagem": "A muda de tronco fino tomba com o vento enquanto as raízes não firmam, e o tronco fica torto para sempre.",
+      "acao_requerida": "Cravar uma estaca de bambu ao lado do tronco, sem ferir o torrão, e amarrar em oito com fita ou tira de pano; retirar depois do primeiro ano"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A muda pegou?",
+      "mensagem": "Com um mês, já devem aparecer brotos novos. Se só perdeu folhas e os ramos estão secos e quebradiços, algo deu errado.",
+      "acao_requerida": "Raspar de leve a casca de um ramo com a unha: verde por baixo é sinal de vida; se estiver marrom e seco, cortar o ramo até achar tecido verde e conferir se o substrato não está encharcado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, a planta murcha no calor e as raízes ficam escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Só regar quando os 5 cm de cima estiverem secos, nunca deixar água no pratinho e manter os furos desobstruídos; em caso grave, tirar do vaso, cortar as raízes podres e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Oídio (Erysiphe lagerstroemiae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre brotos, folhas novas e botões; as folhas encarquilham e os cachos não abrem",
+      "prevencao_tratamento": "Sol pleno e copa arejada pela poda; ao primeiro sinal, pulverizar leite de vaca diluído a 10% ou bicarbonato de sódio (1 colher de chá por litro com gotas de detergente neutro) a cada 7 dias, e retirar os brotos muito atacados"
+    },
+    {
+      "nome": "Cercosporiose (Pseudocercospora lythracearum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas com halo amarelo nas folhas mais velhas, que depois amarelam e caem antes da hora",
+      "prevencao_tratamento": "Regar só o substrato, sem molhar as folhas, recolher as folhas caídas e, se a queda for grande, aplicar fungicida à base de cobre conforme o rótulo"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões, folhas enroladas, pegajosas e depois cobertas de fumagina preta",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Placas brancas algodonosas ou escamas marrons grudadas nos ramos e na axila das folhas, com fumagina e formigas subindo pelo tronco",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%; em infestação maior, óleo mineral a 1% com neem, 2 a 3 aplicações com 10 dias de intervalo, fora do sol forte"
+    },
+    {
+      "nome": "Falta de flores",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta com folhagem bonita mas sem cachos no verão",
+      "prevencao_tratamento": "Garantir pelo menos 6 horas de sol direto, podar só em agosto (a flor nasce nos ramos novos) e trocar parte do adubo rico em nitrogênio por um rico em fósforo, como farinha de ossos ou NPK 4-14-8"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O resedá-gigante é tropical: abaixo de 5 °C os ramos novos queimam, e geada mata a parte aérea. Ele perde folhas e bebe bem menos no inverno.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, encostar o vaso numa parede voltada para o norte ou levá-lo para uma varanda coberta, e espaçar a rega para quando os 5 cm de cima estiverem secos"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "A flor nasce na ponta dos ramos do ano. Podar no fim do inverno, antes da brotação, dá ramos novos fortes e cachos maiores no verão, e segura o tamanho da árvore no vaso.",
+      "acao_requerida": "Cortar os ramos finos, secos, cruzados e os que crescem para dentro da copa, encurtar os do ano anterior em um terço acima de uma gema voltada para fora e tirar os brotos que saem da base do tronco"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar rega e adubação",
+      "mensagem": "Com o calor voltando, a planta brota e começa a formar os ramos que vão florir no verão.",
+      "acao_requerida": "Voltar à rega a cada 2 ou 3 dias conforme o dedo no substrato e aplicar adubação com farinha de ossos ou NPK 4-14-8"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Tirar os cachos que já floriram",
+      "mensagem": "Os cachos passados viram cápsulas que puxam energia da planta; cortá-los estimula uma segunda florada em muitos ramos.",
+      "acao_requerida": "Cortar os cachos murchos logo abaixo da base, acima do primeiro par de folhas bem formado"
+    }
+  ]
+}

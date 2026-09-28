@@ -1,0 +1,177 @@
+{
+  "planta": {
+    "nome_comum": "Açucena",
+    "nome_cientifico": "Hippeastrum puniceum",
+    "descricao": "Bulbo nativo do Brasil, parente do amarílis de floricultura, com hastes de 2 a 4 flores em trombeta vermelho-alaranjadas. Floresce na primavera, rebrota todo ano do mesmo bulbo e forma touceira com filhotes, por isso rende muito tempo num vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com 18 a 20 cm de diâmetro e 20 cm de profundidade, com furos no fundo; o vaso deve sobrar só 3 a 5 cm em volta do bulbo, porque vaso grande demais retém água e atrasa a floração",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% casca de pinus fina ou perlita; solto e bem drenado para o bulbo não apodrecer",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Plantio e Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Plante o bulbo com o terço de cima (o pescoço) para fora do substrato e regue uma vez até escorrer. Nas primeiras semanas ele forma raízes e quase nada muda por cima. A fase termina quando a ponta das folhas ou de uma haste aparece e o bulbo fica firme no vaso ao ser empurrado de leve."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 180,
+      "descricao": "As folhas em fita crescem até 40 a 50 cm e alimentam o bulbo. Se o bulbo já era grande (mais de 6 cm), pode florescer ainda no primeiro ano; se era pequeno, só engorda e floresce na primavera seguinte. Folhas de pé e verde-escuras indicam que está enraizado e bem nutrido."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: de maio a julho entra em repouso, com rega reduzida e algumas folhas amarelando; em agosto retoma o crescimento; de setembro a novembro surgem as hastes florais, cada flor durando cerca de uma semana; do verão ao outono as folhas recarregam o bulbo para a floração seguinte. Com o tempo nascem filhotes em volta do bulbo-mãe."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar o bulbo recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; só regue se estiver seco, com meio copo de água pela borda do vaso, sem molhar o pescoço do bulbo. Sem folhas, o bulbo gasta pouca água e o excesso faz ele apodrecer.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a açucena",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue pela borda até escorrer pelos furos e descarte a água do pratinho. No calor acima de 30 °C, confira a cada 2 a 3 dias. De maio a julho, no repouso, regue só a cada 10 a 14 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a açucena",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de chá rasa de NPK 4-14-8 na borda do vaso, longe do bulbo, e regue em seguida. Adubo rico em fósforo e potássio favorece flor; muito nitrogênio só faz folha. Pule esta adubação de maio a julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e bulbo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure manchas vermelhas nas folhas e no pescoço do bulbo, lagartas listradas de preto e amarelo roendo as folhas, e bolinhas brancas de cochonilha na base das folhas. Aperte o pescoço do bulbo: deve estar firme, não mole.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e separar filhotes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre março e junho, depois da floração. Tire o bulbo, corte raízes mortas ou moles, separe os filhotes que já têm raiz própria e replante cada um em substrato novo, com o terço de cima para fora. Use um vaso só 2 a 4 cm maior que o anterior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "O bulbo está firme?",
+      "mensagem": "Nesta fase o bulbo ainda não mostra folhas, e o maior risco é apodrecer por excesso de água.",
+      "acao_requerida": "Apertar o pescoço do bulbo; se estiver mole ou com cheiro azedo, tirar do vaso, cortar a parte podre, deixar secar 2 dias à sombra e replantar em substrato seco"
+    },
+    {
+      "dia_disparo": 22,
+      "titulo": "Raízes formadas",
+      "mensagem": "Com as raízes estabelecidas e as folhas surgindo, a açucena passa a precisar de mais água e de mais luz.",
+      "acao_requerida": "Mudar o vaso para um lugar com pelo menos 3 horas de sol da manhã e seguir a rega padrão"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do bulbo (Fusarium, excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Bulbo mole na base ou no pescoço, escamas marrons e cheiro azedo; folhas amarelam e tombam",
+      "prevencao_tratamento": "Substrato arenoso, sem água no pratinho e rega reduzida no inverno; retire as escamas podres, polvilhe canela em pó no corte, deixe secar 2 dias e replante em substrato novo"
+    },
+    {
+      "nome": "Mancha-vermelha (Stagonosporopsis curtisii)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas e riscos vermelhos nas folhas, na haste e no pescoço do bulbo; flores e hastes tortas",
+      "prevencao_tratamento": "Regar só o substrato, sem molhar folhas e bulbo; cortar as folhas muito manchadas e, se avançar, aplicar fungicida à base de cobre"
+    },
+    {
+      "nome": "Lagarta-da-açucena (Xanthopastis timais)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas pretas com faixas amarelas e brancas roendo as folhas e cavando o bulbo; fezes escuras na base",
+      "prevencao_tratamento": "Catar à mão (use luvas: a planta é tóxica) e esmagar os ovos no verso das folhas; em infestação, Bacillus thuringiensis pulverizado no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados entre as folhas e no pescoço do bulbo; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; se persistir, óleo de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Não floresce",
+      "tipo": "DISTURBIO",
+      "sintomas": "Muitas folhas por anos seguidos, mas nenhuma haste floral",
+      "prevencao_tratamento": "Garantir 3 a 5 horas de sol direto, respeitar o repouso de maio a julho, usar adubo com mais fósforo e não enterrar o bulbo inteiro; vaso grande demais também atrasa a floração"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Começa o repouso",
+      "mensagem": "Com o frio e os dias curtos, a açucena desacelera; água e adubo em excesso agora apodrecem o bulbo.",
+      "acao_requerida": "Espaçar a rega para cada 10 a 14 dias, suspender o adubo até agosto e proteger o vaso da chuva e de geada"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Acordar para a floração",
+      "mensagem": "O fim do inverno é quando o bulbo prepara as hastes florais da primavera.",
+      "acao_requerida": "Voltar à rega padrão, fazer a primeira adubação com NPK 4-14-8 e levar o vaso para o lugar mais ensolarado"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "As hastes crescem para o lado da luz e as flores murchas gastam energia do bulbo se formarem sementes.",
+      "acao_requerida": "Girar o vaso um quarto de volta a cada 3 dias para a haste crescer reta; tirar as flores murchas e, quando a haste secar, cortá-la a 3 cm do bulbo, mantendo as folhas"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "planta": {
+    "nome_comum": "Guanandi",
+    "nome_cientifico": "Calophyllum brasiliense",
+    "descricao": "Árvore nativa da Mata Atlântica e das matas ciliares, de folhas grossas, brilhantes e com nervuras paralelas bem marcadas. Foi a primeira árvore protegida por lei no Brasil (1835). É uma das poucas espécies que aguentam solo encharcado. Na natureza passa de 20 m. Em vaso grande, cresce devagar e forma uma arvoreta ornamental por muitos anos, mas raramente floresce ou frutifica.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 40 cm de diâmetro e 40 cm de profundidade para começar, com furos no fundo, passando depois para 50 a 60 cm. Prefira vasos pesados (cimento, barro) porque a copa densa pega vento e tomba vasos leves",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; rico em matéria orgânica e capaz de segurar umidade",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho do viveiro e se ajusta ao vaso. É comum perder uma ou duas folhas de baixo. Nos primeiros 10 dias, deixe-a em meia-sombra e depois leve ao sol pleno aos poucos. A fase termina quando surge um broto novo avermelhado no ápice."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o crescimento acontece em surtos: a ponta solta um par de folhas novas avermelhadas que depois ficam verde-escuras. No primeiro ano, espere de 30 a 60 cm de altura. Folha nova murcha indica falta de água, e o guanandi jovem sofre mais com seca do que com excesso de umidade."
+    },
+    {
+      "fase_id": "arvoreta_adulta",
+      "nome": "Arvoreta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Copa cônica e densa, com crescimento concentrado na primavera e no verão e quase parado no inverno. A poda de formação no fim do inverno controla a altura. A cada dois anos o vaso pede substrato novo ou um tamanho maior. A floração (flores brancas e perfumadas) é rara em vaso e só acontece em plantas com vários anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de guanandi",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Regue devagar até escorrer pelos furos e mantenha o substrato sempre úmido, como pano torcido. Acima de 30 °C, regue todo dia. A muda recém-plantada não pode secar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o guanandi",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e, se estiver seco, regue até escorrer pelos furos. No verão quente, confira a cada 2 dias. De maio a agosto, a cada 5 ou 6 dias. Ele tolera umidade alta, mas não deixe água parada no pratinho por mais de um dia.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o guanandi",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca (ou 1 xícara de esterco curtido) mais 1 colher de sopa de NPK 10-10-10 por vaso de 30 L, longe do tronco, e regue em seguida. De maio a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure escamas brancas ou marrons presas nas nervuras e nos ramos. Olhe se há folhas cortadas em meia-lua ou trilhas de formigas subindo pelo vaso.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire o torrão do vaso, corte com tesoura limpa as raízes que dão a volta no fundo e troque cerca de um terço do substrato. Se o vaso tiver menos de 50 L, passe para um vaso 10 a 15 cm maior. Faça isso de setembro a novembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Levar ao sol pleno",
+      "mensagem": "A muda passou os primeiros dias na meia-sombra e já pode receber mais luz. Com pouca luz, o guanandi estica e fica ralo.",
+      "acao_requerida": "Deixar o vaso no sol da manhã por uma semana e depois no local definitivo, com pelo menos 4 horas de sol direto"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Conferir as raízes",
+      "mensagem": "Com seis meses no vaso, as raízes podem ter chegado ao fundo. Raiz saindo pelos furos é sinal de que o vaso ficou pequeno.",
+      "acao_requerida": "Olhar os furos de drenagem. Se houver raízes saindo, anotar a troca para um vaso maior na próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escurecida e raízes marrons e moles com cheiro ruim",
+      "prevencao_tratamento": "Ele tolera encharcamento no solo aberto, mas em vaso com água parada as raízes apodrecem. Esvazie o pratinho e mantenha os furos desobstruídos. Se o problema aparecer, tire a planta, corte as raízes podres e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodonosas nas nervuras e ramos novos; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em álcool 70%. Em infestação maior, aplique óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou totalmente desfolhadas de uma noite para outra; trilha de formigas no vaso",
+      "prevencao_tratamento": "Siga a trilha até o formigueiro e use isca formicida granulada perto dela, nunca dentro do vaso. Uma faixa de graxa ou fita adesiva dupla-face no vaso impede que elas subam"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora e outros fungos)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas com borda escura nas folhas mais velhas, que depois amarelam e caem",
+      "prevencao_tratamento": "Evite molhar a copa no fim do dia e retire as folhas afetadas. Se espalhar, aplique fungicida cúprico (calda bordalesa) a cada 10 dias"
+    },
+    {
+      "nome": "Queimadura por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas e pontas dos ramos ficam pretas ou marrons e secas depois de uma noite muito fria",
+      "prevencao_tratamento": "Nos primeiros anos, a planta jovem não aguenta geada. Em noites abaixo de 3 °C, leve o vaso para perto de uma parede ou cubra com TNT. Espere a primavera para cortar as partes queimadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "No inverno o guanandi quase para de crescer, bebe menos água e, enquanto é jovem, pode queimar com geada.",
+      "acao_requerida": "Espaçar as regas para a cada 5 ou 6 dias e, em noites abaixo de 3 °C, cobrir com TNT ou levar o vaso para um lugar abrigado"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno, antes dos brotos da primavera, é a melhor época para controlar a altura e deixar a copa cheia.",
+      "acao_requerida": "Cortar a ponta do ramo principal quando passar da altura desejada e encurtar em um terço os ramos laterais longos, sempre logo acima de um par de folhas. Usar tesoura limpa, com cuidado com o látex amarelo"
+    }
+  ]
+}

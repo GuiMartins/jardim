@@ -1,0 +1,173 @@
+{
+  "planta": {
+    "nome_comum": "Araucária-da-queenslândia",
+    "nome_cientifico": "Araucaria bidwillii",
+    "descricao": "Conífera australiana parente do pinheiro-do-paraná, com folhas duras e pontiagudas em ramos simétricos que formam uma copa de desenho geométrico. Cresce devagar em vaso e fica anos como uma árvore ornamental jovem. No chão ela passa de 30 m e dá pinhas de até 10 kg, o que em vaso não acontece.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de cerâmica, cimento ou plástico grosso, com pelo menos 40 cm de diâmetro e 45 cm de profundidade, vários furos no fundo e base larga para não tombar com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou casca de pinus fina; levemente ácido e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo e à luz da casa. Mantenha em meia sombra ou sol só da manhã nas primeiras duas semanas. É normal não crescer nada; pontas das folhas marrons e secas indicam falta de água ou sol forte cedo demais."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e surge brotação nova, verde-clara, na ponta do tronco principal e dos ramos, principalmente de setembro a março. Leve para o sol pleno aos poucos. Gire o vaso um quarto de volta a cada mês para a copa crescer simétrica; a planta está estabelecida quando solta um novo andar de ramos."
+    },
+    {
+      "fase_id": "planta_jovem",
+      "nome": "Planta Jovem em Vaso",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Cresce de 20 a 40 cm por ano, em surtos na primavera e no verão, e fica quase parada no inverno. Os ramos mais baixos podem secar e cair com o tempo, o que é natural. Em vaso ela não produz pinhas; quando passar de 2 m ou as raízes saírem pelos furos logo depois da troca de vaso, é sinal de que chegou ao limite do recipiente."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de araucária",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. A raiz ainda não saiu do torrão da muda, então ele seca antes do resto do vaso.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a araucária",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 4 a 6 L num vaso de 40 L). Acima de 30 °C, confira a cada 2 ou 3 dias. De junho a agosto, espace para cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Use luvas, porque as folhas furam. Olhe a base das folhas e o encontro dos ramos com o tronco procurando carocinhos brancos ou marrons, teias finas e pontas secando. Confira também se a ponta do tronco principal está verde e firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato ou vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre agosto e outubro, passe para um vaso 10 a 15 cm maior de diâmetro ou, se não houver vaso maior, raspe 5 cm das raízes laterais e troque metade do substrato. A araucária tem raiz pivotante: não corte a raiz central e não afunde o colo além do nível em que estava.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso definitivo",
+      "mensagem": "Muda de araucária vem em saco ou vaso pequeno, e a raiz pivotante enrola se ficar ali.",
+      "acao_requerida": "Passar a muda para o vaso de 40 L sem desmanchar o torrão, com o colo no mesmo nível em que estava, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 7,
+      "titulo": "Nunca corte a ponta",
+      "mensagem": "Se o broto do topo do tronco for cortado ou quebrado, a araucária perde a forma de pirâmide para sempre: ela não refaz um líder novo como outras árvores.",
+      "acao_requerida": "Deixar o vaso longe de passagem e de portas, e só remover ramos baixos já secos"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "A muda já se adaptou. Com pouco sol ela estiola, fica rala e com ramos compridos.",
+      "acao_requerida": "Mudar o vaso para um lugar com pelo menos 6 horas de sol direto, aumentando a exposição ao longo de uma semana"
+    },
+    {
+      "dia_disparo": 1825,
+      "titulo": "Pensar no futuro da árvore",
+      "mensagem": "Depois de uns cinco anos, a araucária costuma estar perto do limite do vaso. No chão ela vira uma árvore enorme, cujas pinhas pesadas podem ferir quem estiver embaixo.",
+      "acao_requerida": "Decidir entre manter no maior vaso possível, com troca de substrato a cada 2 anos, ou plantar em terreno amplo, a pelo menos 10 m de casas e de onde as pessoas passam"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e depois marrons de baixo para cima, substrato sempre úmido e com cheiro azedo, tronco escurecido rente ao substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e nunca deixar água no prato. Se aparecer, tire do vaso, corte as raízes moles e escuras e replante em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, algodonosos ou marrons na base das folhas e nos ramos; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Retire com escova macia e água com sabão neutro; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Ácaro-vermelho",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com aspecto bronzeado ou acinzentado e teias finas entre elas, em tempo quente e seco",
+      "prevencao_tratamento": "Molhar a copa com jato fino nos dias secos; se persistir, enxofre molhável ou óleo de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Queima das pontas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e secas, sem insetos; começa nos ramos mais expostos",
+      "prevencao_tratamento": "É falta de água ou sol forte sem aclimatação. Regar com mais constância no calor e expor ao sol aos poucos; as pontas queimadas não voltam, mas a brotação nova vem sadia"
+    },
+    {
+      "nome": "Clorose por falta de nutriente",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelo-pálidas e crescimento fraco, com o substrato velho e compactado",
+      "prevencao_tratamento": "Seguir a adubação da primavera e do verão e trocar o substrato a cada 2 anos; evitar calcário, porque a planta prefere solo levemente ácido"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        11,
+        1,
+        3
+      ],
+      "titulo": "Adubar a araucária",
+      "mensagem": "Na primavera e no verão a araucária solta os ramos novos e aproveita o adubo; no inverno ele se acumula no vaso e queima a raiz.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de NPK 10-10-10 ou 1 litro de húmus de minhoca na superfície, longe do tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água e cuidado com a geada",
+      "mensagem": "A planta está quase parada e usa pouca água. Mudas jovens sofrem com geada forte, abaixo de -3 °C.",
+      "acao_requerida": "Espaçar as regas para cada 7 a 10 dias, sempre conferindo com o dedo, e nas noites de geada levar o vaso para junto de uma parede ou cobrir com tecido não tecido"
+    }
+  ]
+}

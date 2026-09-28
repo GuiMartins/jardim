@@ -1,0 +1,181 @@
+{
+  "planta": {
+    "nome_comum": "Brilhantina",
+    "nome_cientifico": "Pilea microphylla",
+    "descricao": "Herbácea de folhas minúsculas, suculentas e brilhantes, que forma uma touca verde-clara, ótima para vaso pequeno, cachepô ou forração de jardineira. É perene, mas em poucos anos fica rala e lenhosa, e o jeito é renová-la por estacas. Solta sementes que germinam sozinhas nos vasos vizinhos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou cachepô raso e largo, com 12 a 15 cm de diâmetro, 10 a 12 cm de profundidade e furos no fundo; cerâmica ou plástico",
+    "volume_minimo_litros": 1,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% substrato para plantas ou terra vegetal, 30% húmus de minhoca, 20% perlita ou areia grossa; fofo e que drene rápido, porque os caules suculentos apodrecem em terra encharcada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda sai da estufa e pode perder algumas folhas ou tombar as pontas nos primeiros dias. Deixe em luz clara sem sol forte do meio-dia. A adaptação terminou quando aparecem pontas novas, verde-claras, no alto dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Os ramos se multiplicam e a planta fecha o vaso numa touca densa. Se os ramos ficarem compridos, moles e com folhas espaçadas, falta luz: aproxime da janela ou dê 1 a 2 horas de sol da manhã."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão, quando também solta flores minúsculas que lançam sementes longe. No inverno quase para e bebe menos. Com o tempo a base fica lenhosa e sem folhas; aí é hora de podar forte ou renovar o vaso com estacas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a brilhantina",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue na terra, sem molhar a touca de folhas, até escorrer pelos furos, e esvazie o pratinho. Acima de 30 °C, confira todo dia; no inverno, a cada 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a brilhantina",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Regue com adubo líquido NPK 10-10-10 diluído na metade da dose do rótulo, com o substrato já úmido. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "poda_formacao",
+      "titulo": "Aparar as pontas",
+      "tipo": "PODA",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte 1 a 2 cm das pontas dos ramos mais compridos, logo acima de um par de folhas, para a touca ficar densa. Tire também os ramos secos da base. As pontas cortadas enraízam num copo de água ou no substrato úmido.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a brilhantina",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos e olhe a base dos caules e o substrato: procure tufos brancos de algodão, teias finas, caules pretos e moles ou mosquitinhos voando da terra.",
+      "critica": false
+    },
+    {
+      "id": "renovacao_vaso",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, tire a planta, descarte a parte central lenhosa e replante em substrato novo as touceiras laterais e estacas de 5 cm das pontas, com várias por vaso. Mantenha úmido e à sombra clara por 2 semanas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Trocar o vaso de viveiro",
+      "mensagem": "A muda costuma vir num vasinho plástico com substrato pesado, que segura água demais.",
+      "acao_requerida": "Passar o torrão inteiro para o vaso definitivo com o substrato drenante, sem enterrar a base dos caules mais fundo do que estava"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Guarde umas estacas de reserva",
+      "mensagem": "A brilhantina apodrece rápido quando pega encharcamento ou frio. Ter um vasinho reserva evita perder a planta.",
+      "acao_requerida": "Cortar 4 ou 5 pontas de 5 cm e enterrar 2 cm num copinho de substrato úmido, em luz clara"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do caule e da raiz (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Caules escurecidos, moles e transparentes na base; a touca tomba de uma vez e o substrato cheira mal",
+      "prevencao_tratamento": "Regar só com o primeiro centímetro seco e nunca deixar água no pratinho. Cortar a parte sadia de cima, enraizar como estaca e descartar o substrato velho"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão na base dos caules e entre as folhas; planta pegajosa e amarelada",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, sem brilho, e teias finas entre as pontas; comum em ar seco e quente",
+      "prevencao_tratamento": "Lavar a planta com jato fraco de água no chuveiro e aumentar a umidade em volta; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mosquinha-do-fungo (Bradysia)",
+      "tipo": "PRAGA",
+      "sintomas": "Mosquitinhos pretos voando do substrato; larvas atacam as raízes finas e a planta murcha mesmo úmida",
+      "prevencao_tratamento": "Deixar a superfície secar entre regas, cobrir com 1 cm de areia e usar armadilha adesiva amarela"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos compridos, moles e tombados, com folhas pequenas e espaçadas e cor verde-pálida",
+      "prevencao_tratamento": "Levar para mais perto da janela ou dar 1 a 2 horas de sol da manhã e podar as pontas estioladas para rebrotar compacta"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas avermelhadas, depois secas e esbranquiçadas no alto da touca",
+      "prevencao_tratamento": "Evitar sol direto depois das 10h; mudar para luz clara indireta e aparar as partes queimadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "No frio a brilhantina quase para de crescer, bebe pouco e apodrece fácil. Abaixo de 10 °C sofre, e geada mata.",
+      "acao_requerida": "Espaçar a rega para quando o substrato secar 2 cm, suspender o adubo e recolher o vaso para dentro em noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de primavera",
+      "mensagem": "A planta retoma o crescimento. Uma poda agora renova a touca que ficou rala no inverno.",
+      "acao_requerida": "Cortar os ramos à metade, tirar os secos da base e voltar a adubar no mês seguinte"
+    }
+  ]
+}

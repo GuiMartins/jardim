@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Capim-dos-pampas",
+    "nome_cientifico": "Cortaderia selloana",
+    "descricao": "Gramínea ornamental grande, nativa do Sul do Brasil, da Argentina e do Uruguai, que forma uma touceira de folhas longas e arqueadas e, no fim do verão, plumas prateadas ou rosadas de até 2,5 m. É muito rústica e aguenta sol forte, vento e alguma seca. Em vaso, precisa de recipiente grande e de uma poda anual. As folhas têm bordas cortantes.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica, cimento ou fibra), com no mínimo 50 cm de diâmetro e 45 cm de profundidade e furos grandes no fundo; precisa ser estável, porque a touceira alta pega muito vento",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra de jardim, 25% areia grossa, 20% composto orgânico ou húmus de minhoca, 5% pedrisco ou brita fina; bem drenado e pesado o bastante para firmar o vaso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. As pontas de algumas folhas podem secar nas duas primeiras semanas, o que é normal. A fase termina quando surgem folhas novas no centro da touceira."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "A touceira engrossa e as folhas passam de 1 m. Plantas vindas de muda pequena costumam florescer só no segundo verão. Quando as raízes aparecem pelos furos do vaso e a planta tolera alguns dias sem água, ela está estabelecida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Na primavera, rebrota forte a partir da base. No verão, o crescimento é rápido e pede mais água. De fevereiro a abril saem as plumas, que ficam bonitas até o inverno. No inverno, a planta fica quase parada, com muitas folhas secas por fora. A poda de agosto renova a touceira todo ano. Com o tempo, o vaso se enche de raízes e é preciso dividir a planta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C ou com vento forte, confira todo dia. O vaso não pode ficar encharcado com água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "rega_estabelecimento",
+      "titulo": "Regar o capim-dos-pampas",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos. No inverno, espace para cada 6 ou 7 dias. No verão quente, confira a cada 2 dias.",
+      "critica": false
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a touceira",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue fundo até escorrer pelos furos. Com o vaso cheio de raízes, a água seca mais rápido: no verão, confira a cada 2 ou 3 dias. De junho a agosto, regue só a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o capim-dos-pampas",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus de minhoca ou 1 colher de sopa de NPK 10-10-10 pela superfície de um vaso de 60 L, longe da base da touceira, e regue em seguida. Se cair entre maio e agosto, pule, porque a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a touceira",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas, abra a touceira e olhe a base das folhas e o centro: procure pontinhos brancos algodoados (cochonilha), pústulas alaranjadas nas folhas (ferrugem) e base mole ou com mau cheiro (podridão).",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir ou trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, logo depois da poda: tire a touceira do vaso, corte o torrão em 2 a 4 pedaços com serrote ou pá afiada e replante um pedaço com raízes em substrato novo. Os outros pedaços viram mudas. Se o momento cair no verão, espere até agosto.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado com as folhas cortantes",
+      "mensagem": "As bordas das folhas do capim-dos-pampas têm microsserrilhas que cortam a pele como papel.",
+      "acao_requerida": "Colocar o vaso longe de passagens e de onde crianças e animais brincam, e usar luvas e manga comprida sempre que mexer na planta"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A muda pegou",
+      "mensagem": "Com folhas novas saindo do centro, a muda já enraizou e aguenta regas mais espaçadas.",
+      "acao_requerida": "Conferir se há folhas novas no centro da touceira; se houver, cortar rente à base as folhas que secaram na mudança de vaso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e da coroa (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base da touceira mole e escura, com cheiro ruim; folhas amarelam e secam do centro para fora mesmo com o substrato úmido",
+      "prevencao_tratamento": "Não deixar água parada no prato e regar só com o substrato seco a 5 cm. Se atingir parte da touceira, tire a planta do vaso, corte a parte podre até o tecido firme e replante em substrato novo e arenoso"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados na base das folhas e entre os colmos; folhas amareladas e planta pegajosa",
+      "prevencao_tratamento": "Remover com pincel ou algodão com álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ferrugem (Puccinia spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas ou marrom-avermelhadas no verso das folhas, que soltam um pó quando esfregadas; as folhas secam",
+      "prevencao_tratamento": "Cortar e descartar no lixo as folhas afetadas, regar só no substrato sem molhar as folhas e manter a touceira arejada com a poda anual; em caso grave, fungicida à base de enxofre"
+    },
+    {
+      "nome": "Centro morto da touceira",
+      "tipo": "DISTURBIO",
+      "sintomas": "Miolo da touceira seco, marrom e sem brotos, com folhas verdes só por fora",
+      "prevencao_tratamento": "É acúmulo de palha velha e vaso esgotado. Faça a poda anual de agosto e divida a touceira a cada 2 anos, replantando só as partes vigorosas da borda"
+    },
+    {
+      "nome": "Pontas secas nas folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e secas em muitas folhas ao mesmo tempo, sem manchas nem pragas",
+      "prevencao_tratamento": "Sinal de falta de água no verão ou de vaso pequeno demais para a touceira. Regue fundo com mais frequência no calor e, se as raízes lotaram o vaso, divida a planta. Apare só as pontas secas, se incomodarem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno, a touceira está cheia de folhas secas e plumas velhas. Podar agora abre espaço para uma rebrota verde e vigorosa na primavera.",
+      "acao_requerida": "Com luvas grossas e manga comprida, amarrar as folhas num feixe e cortar tudo a 20 ou 30 cm do substrato com tesoura de poda ou serrote; tirar a palha seca do centro com um ancinho de mão"
+    },
+    {
+      "meses": [
+        3,
+        4
+      ],
+      "titulo": "Cortar as plumas antes das sementes",
+      "mensagem": "As plumas femininas soltam milhares de sementes levadas pelo vento, e o capim-dos-pampas pode virar invasor em terrenos e beiras de estrada.",
+      "acao_requerida": "Cortar as plumas rente à touceira assim que começarem a desfiar; se quiser usá-las em arranjos, corte-as ainda fechadas e borrife laquê"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Menos água no inverno",
+      "mensagem": "No frio, a planta quase para de crescer e o substrato demora a secar. Rega em excesso agora apodrece a base.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, sempre conferindo com o dedo se o substrato está seco a 5 cm"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: vaso seca rápido",
+      "mensagem": "No auge do verão, a touceira em crescimento esvazia o vaso de água em 2 ou 3 dias.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e regar fundo, até escorrer pelos furos, sempre que estiver seco a 5 cm"
+    }
+  ]
+}

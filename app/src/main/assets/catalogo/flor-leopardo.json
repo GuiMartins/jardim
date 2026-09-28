@@ -1,0 +1,193 @@
+{
+  "planta": {
+    "nome_comum": "Flor-leopardo",
+    "nome_cientifico": "Iris domestica (sin. Belamcanda chinensis)",
+    "descricao": "Perene rizomatosa da família das íris, com folhas em leque e flores laranja pintadas de vermelho que duram um dia cada. No verão floresce sem parar. No outono, as cápsulas se abrem e mostram cachos de sementes pretas e brilhantes, que lembram amoras. É rústica, tolera pouca água e se dá bem em vaso ao sol.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 25 a 30 cm de diâmetro e pelo menos 25 cm de profundidade, com furos no fundo; barro ou plástico",
+    "volume_minimo_litros": 8,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca; bem drenado, porque o rizoma apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda se acostuma ao vaso novo e pode perder uma ou duas folhas externas. Ela está adaptada quando surge uma folha nova no centro do leque e a planta fica firme ao ser puxada de leve."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "O rizoma se espalha logo abaixo da superfície e aparecem leques novos ao lado do primeiro. Na primavera e no verão, uma muda bem nutrida já pode lançar a primeira haste floral. Essa fase termina quando o vaso tem dois ou mais leques vigorosos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Brota com força na primavera. Entre dezembro e março, lança hastes de 60 a 90 cm com várias flores, que abrem uma por dia. Em abril e maio, as cápsulas secam e se abrem mostrando as sementes pretas. Nos invernos frios, as folhas amarelam e a planta desacelera, sem morrer. A cada 2 a 3 anos, a touceira enche o vaso e pede divisão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Com sol forte acima de 30 °C, confira todo dia: o rizoma ainda sem raiz nova desidrata rápido.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a flor-leopardo",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e só regue se estiver seco, até escorrer pelos furos. Não deixe água no pratinho. De junho a agosto, espace para cada 7 a 10 dias; no verão, com a planta em flor, pode ser a cada 2 ou 3 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a flor-leopardo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca e 1 colher de chá de NPK 4-14-8 na superfície de um vaso de 8 L, longe dos leques, e regue em seguida. De maio a julho a planta está quase parada: nesse período, pule a adubação e marque como feita.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base dos leques em busca de parte mole ou escura e cheiro ruim. Passe o dedo nas folhas: pontinhos amarelados e teia fina indicam ácaro, e crostas brancas ou marrons indicam cochonilha. Procure também rastros de lesma no vaso.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno (agosto ou setembro), tire a planta do vaso e separe os rizomas com faca limpa, deixando pelo menos um leque e raízes em cada pedaço. Replante com substrato novo, com o rizoma rente à superfície, sem enterrá-lo fundo. Se estiver no meio da floração, adie para o fim do inverno.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A flor-leopardo apodrece se o rizoma ficar enterrado fundo e úmido.",
+      "acao_requerida": "Plantar a muda com o topo do rizoma no nível da superfície do substrato, firmar com os dedos e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Planta estabelecida",
+      "mensagem": "Com raízes firmes, a flor-leopardo tolera bem alguns dias de seca e sofre mais com excesso de água do que com falta.",
+      "acao_requerida": "Passar a regar só quando os 3 cm de cima do substrato estiverem secos e colocar o vaso no ponto mais ensolarado disponível para garantir floração"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pectobacterium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base dos leques mole, escura e com cheiro ruim; folhas amarelam e soltam com facilidade",
+      "prevencao_tratamento": "Regar só com o substrato seco e nunca deixar água no pratinho. Tire a planta do vaso, corte as partes moles com faca limpa até chegar ao tecido firme, deixe secar ao ar por um dia e replante em substrato novo e arenoso"
+    },
+    {
+      "nome": "Mancha foliar (Didymellina, Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ovais com borda amarelada nas folhas, que se juntam e secam as pontas",
+      "prevencao_tratamento": "Regar no substrato, sem molhar os leques, e manter o vaso ventilado. Corte as folhas manchadas e jogue no lixo; se espalhar, aplique fungicida à base de cobre conforme o rótulo"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teia fina no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas no fim da tarde nos dias secos. Se persistir, óleo de neem a 0,5% a cada 5 dias, três aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Crostas brancas ou marrons presas na base das folhas e no rizoma exposto; planta enfraquece",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%. Em infestação maior, pulverize óleo mineral ou neem a 0,5%, repetindo após 7 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas jovens roídas nas bordas e rastro brilhante no vaso, sobretudo após chuva",
+      "prevencao_tratamento": "Cate à noite com lanterna e espalhe casca de ovo triturada ou areia grossa na superfície do substrato"
+    },
+    {
+      "nome": "Sem flores e com leques tombados por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas longas, finas e tombadas para um lado; a planta passa o verão sem lançar haste floral",
+      "prevencao_tratamento": "Mude o vaso para um local com pelo menos 4 horas de sol direto, de preferência 6. Evite adubo rico em nitrogênio, que faz folha e não flor"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Limpeza de primavera",
+      "mensagem": "A flor-leopardo retoma o crescimento com o calor, e as folhas secas do inverno abrigam fungos e cochonilhas.",
+      "acao_requerida": "Cortar rente à base as folhas secas ou manchadas, retirar restos de hastes velhas e aplicar a primeira adubação da estação"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "Cada flor dura só um dia, mas cada haste abre dezenas delas ao longo de semanas. Nesta fase a planta bebe mais.",
+      "acao_requerida": "Conferir o substrato a cada 2 ou 3 dias e deixar as hastes na planta se quiser as sementes de amora no outono; cortar na base as que já pararam de abrir botões, se não quiser sementes"
+    },
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Sementes à mostra",
+      "mensagem": "As cápsulas secas se abrem e mostram os cachos de sementes pretas, decorativos por semanas. A planta também se ressemeia sozinha em vasos vizinhos.",
+      "acao_requerida": "Cortar as hastes com sementes para arranjos secos ou colher as sementes para semear na primavera; tirar as mudinhas que nascerem em outros vasos"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "No frio a planta desacelera, e parte das folhas pode amarelar. Nessa época, rega demais é a principal causa de podridão do rizoma.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, só com o substrato seco a 3 cm, e suspender a adubação até setembro"
+    }
+  ]
+}

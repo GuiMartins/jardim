@@ -1,0 +1,225 @@
+{
+  "planta": {
+    "nome_comum": "Marmeleiro",
+    "nome_cientifico": "Cydonia oblonga",
+    "descricao": "Árvore frutífera de folhas caducas, de onde vem o marmelo da marmelada. Em vaso grande vira uma arvoreta de 1,5 a 2,5 m, com flores rosadas na primavera e frutos perfumados no verão. Precisa de um inverno com algum frio (cerca de 200 a 400 horas abaixo de 7 °C), por isso frutifica bem no Sul, na Serra da Mantiqueira e em outras regiões de altitude, e pouco onde o inverno é quente.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou tambor com pelo menos 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo e apoiado em pés ou num suporte para a água escorrer",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal argilosa, 25% composto orgânico ou húmus de minhoca, 15% areia grossa, 10% casca de pinus fina; mais 200 g de calcário dolomítico e 150 g de farinha de ossos por vaso de 60 L, misturados ao substrato",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. Se ela chegou no inverno sem folhas (raiz nua ou dormente), é normal ficar só com os galhos até a brotação de agosto ou setembro. Para ver se está viva, raspe de leve a casca de um galho com a unha: por baixo, verde quer dizer viva, e marrom e seco quer dizer galho morto. A fase termina quando surgem as primeiras folhas novas, ou quando as gemas incham se a muda chegou dormente."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A muda solta ramos novos e as raízes ocupam o vaso. Se aparecerem flores no primeiro ano, arranque-as para a planta gastar energia na estrutura. No outono as folhas amarelam e caem: é a dormência, não é doença."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "Nas podas de inverno, a copa vai sendo formada em taça, com 3 ou 4 ramos principais. No 3º ano podem vir as primeiras flores e alguns frutos: deixe no máximo 3 a 5 frutos por planta. A fase termina quando a planta segura frutos até a maturação sem perder vigor."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: dorme sem folhas de maio a agosto, com poda em julho. Brota e floresce em setembro e outubro, com flores isoladas na ponta dos ramos novos. Os frutos crescem de novembro a janeiro e amadurecem de janeiro a março, quando a casca passa de verde para amarelo-ouro e perde a penugem. Em vaso de 60 a 100 L, uma planta adulta produz de 10 a 25 marmelos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos do fundo. Muda sem folhas (dormente) gasta pouca água: nesse caso, regue só quando os 5 cm de cima estiverem secos, porque encharcar agora apodrece a raiz.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o marmeleiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos, cerca de 6 a 10 L num vaso de 60 L. De novembro a março, com frutos e calor acima de 30 °C, confira todo dia: faltar água nessa época faz os frutos caírem e racharem. De maio a agosto, sem folhas, espaçe para uma rega a cada 7 a 10 dias.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera e no verão, vire as folhas e procure manchas vermelho-escuras com centro preto (entomosporiose), pulgões nas pontas novas e ponteiros murchos com galeria por dentro (mariposa-oriental). Nos frutos, procure furinhos com mancha mole em volta, sinal de mosca-das-frutas. No inverno, sem folhas, examine a casca dos ramos em busca de cochonilhas (escamas cinzentas ou brancas grudadas).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "O melhor é fazer em julho, com a planta sem folhas. Tire o torrão do vaso, corte 3 a 5 cm de raiz em volta e no fundo com serrote ou faca limpa e replante no mesmo vaso com substrato novo, ou num vaso um pouco maior. Se a planta estiver com folhas, só troque os 5 cm de cima do substrato por composto novo e deixe a troca completa para o inverno.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "O marmeleiro não gosta de trocar de vaso com folhas. Plantado agora no vaso grande, ele fica ali pelos próximos dois anos.",
+      "acao_requerida": "Plantar a muda com o colo (a base do tronco, e o calo do enxerto se houver) 3 a 5 cm acima do substrato, regar até escorrer e cravar um tutor de 1 m amarrado ao tronco com fita macia"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Escolher os ramos da copa",
+      "mensagem": "Com a brotação, a muda mostra quais ramos vão virar a estrutura da árvore.",
+      "acao_requerida": "Deixar de 3 a 4 brotos bem distribuídos em volta do tronco, entre 40 e 60 cm de altura, e arrancar com os dedos os brotos que nascem abaixo disso ou do porta-enxerto"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de marmeleiro",
+      "mensagem": "As raízes já devem ocupar boa parte do vaso. A partir de agora a planta aguenta podas de formação mais firmes no inverno.",
+      "acao_requerida": "Tirar o tutor, se o tronco já se sustenta sozinho, e conferir se a água ainda escorre bem pelos furos do vaso"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Planta pronta para produzir",
+      "mensagem": "Com três anos, o marmeleiro em vaso já pode carregar uma safra completa.",
+      "acao_requerida": "Na próxima floração, deixar os frutos se formarem e fazer o raleio de novembro, deixando um fruto a cada 15 a 20 cm de ramo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Entomosporiose (Diplocarpon mespili)",
+      "tipo": "DOENCA",
+      "sintomas": "Pequenas manchas vermelho-escuras nas folhas, que ficam com o centro preto e se juntam; as folhas amarelam e caem ainda no verão, e os frutos ganham manchas escuras e rachaduras. É a principal doença do marmeleiro no Brasil, pior nos verões chuvosos",
+      "prevencao_tratamento": "Não molhe as folhas ao regar e deixe a copa arejada com a poda. Recolha as folhas caídas e jogue no lixo, não no composto. No aparecimento das manchas, pulverize fungicida cúprico (calda bordalesa a 1%) a cada 10 a 14 dias enquanto chover"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha fraterculus, Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos na casca do fruto com uma área mole e escura em volta; por dentro, larvas brancas e polpa apodrecida. Os frutos atacados caem antes da hora",
+      "prevencao_tratamento": "Ensacar cada fruto com saco de papel ou TNT quando ele tiver 3 cm; pendurar armadilha de garrafa PET com suco de uva a 25% perto da planta; recolher e destruir os frutos caídos"
+    },
+    {
+      "nome": "Mariposa-oriental (Grapholita molesta)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontas dos ramos novos murcham e secam, com goma e serragem no ponto de entrada da lagarta; nos frutos, galerias que chegam até as sementes",
+      "prevencao_tratamento": "Cortar e destruir os ponteiros murchos logo que aparecem, 5 cm abaixo do dano; ensacar os frutos; nos casos fortes, Bacillus thuringiensis no fim da tarde a cada 7 dias durante a primavera"
+    },
+    {
+      "nome": "Pulgão (Aphis spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nas pontas novas e no verso das folhas, que ficam enroladas e pegajosas; formigas sobem pelo tronco",
+      "prevencao_tratamento": "Jato forte de água nas pontas; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha (Quadraspidiotus perniciosus e outras)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas cinzentas ou brancas grudadas na casca dos ramos e do tronco; ramos enfraquecidos, que secam da ponta para trás",
+      "prevencao_tratamento": "No inverno, esfregar os ramos atacados com escova macia e pulverizar óleo mineral a 1% ou calda sulfocálcica com a planta sem folhas"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de água (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; a casca na base do tronco escurece e amolece; o substrato cheira a mofo",
+      "prevencao_tratamento": "Só regar com os 5 cm de cima secos, principalmente na dormência; manter os furos desentupidos e o vaso fora de pratos com água parada. Planta afetada: tirar do vaso, cortar as raízes escuras e moles e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Falta de frio no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Brotação fraca, atrasada e desigual na primavera, com poucos ramos brotando e flores raras ou ausentes, embora a planta esteja sadia",
+      "prevencao_tratamento": "Deixar o vaso no lugar mais frio e aberto da casa de junho a agosto, nunca encostado em parede quente, e não adubar nem forçar rega nessa época. Onde o inverno é quente, prefira cultivares de pouco frio, como a 'Portugal' ou a 'Smyrna'"
+    },
+    {
+      "nome": "Queimadura de sol nos frutos e no tronco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrons e secas no lado do fruto voltado para o sol da tarde; casca do tronco rachada e descolada na face oeste",
+      "prevencao_tratamento": "Manter folhas cobrindo os frutos (não desfolhar na poda de verão) e pintar o tronco com cal hidratada diluída em água na poda de inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Início da dormência",
+      "mensagem": "As folhas do marmeleiro amarelam e caem com o frio. É o descanso natural da planta, e o frio desta época é que garante a floração.",
+      "acao_requerida": "Espaçar a rega para uma vez a cada 7 a 10 dias, parar de adubar e recolher as folhas caídas para cortar o ciclo da entomosporiose"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Hora da poda de inverno",
+      "mensagem": "Sem folhas, dá para ver toda a estrutura da copa. O marmeleiro floresce na ponta dos ramos novos, então a poda estimula a brotação que vai dar frutos.",
+      "acao_requerida": "Tirar os ramos secos, doentes, cruzados e os que crescem para o centro da copa; encurtar em um terço os ramos do ano anterior, com corte inclinado logo acima de uma gema voltada para fora; manter a copa em taça com 3 ou 4 ramos principais"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Tratamento de inverno",
+      "mensagem": "Antes da brotação, a planta ainda sem folhas aguenta produtos que eliminam os ovos de pragas e os esporos de fungo escondidos na casca.",
+      "acao_requerida": "Pulverizar calda sulfocálcica (diluída conforme o rótulo para dormência) em todo o tronco e os ramos, num dia sem chuva, antes de as gemas se abrirem"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Adubação de brotação",
+      "mensagem": "O marmeleiro está brotando e florindo, e o substrato do vaso já gastou os nutrientes do ano anterior.",
+      "acao_requerida": "Espalhar 1 L de húmus de minhoca e 2 colheres de sopa de NPK 10-10-10 sobre o substrato de um vaso de 60 L, longe do tronco, e regar em seguida. Se a muda foi plantada há menos de um mês, pule esta adubação"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Raleio e adubação dos frutos",
+      "mensagem": "Os frutos estão do tamanho de uma noz. Frutos demais num vaso ficam pequenos e esgotam a planta para o ano seguinte.",
+      "acao_requerida": "Deixar um fruto a cada 15 a 20 cm de ramo e tirar os menores e os tortos; ensacar os que ficaram; espalhar 2 colheres de sopa de sulfato de potássio ou 300 g de cinza de madeira peneirada no substrato e regar"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3
+      ],
+      "titulo": "Colheita do marmelo",
+      "mensagem": "Os marmelos amadurecem entre janeiro e março, conforme a região e a cultivar.",
+      "acao_requerida": "Colher os frutos com a casca amarelo-ouro, sem a penugem cinza e com perfume forte, torcendo com cuidado ou cortando o cabinho com tesoura; guardar em lugar fresco e usar em até 3 semanas"
+    }
+  ]
+}

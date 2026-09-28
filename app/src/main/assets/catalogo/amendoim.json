@@ -1,0 +1,203 @@
+{
+  "planta": {
+    "nome_comum": "Amendoim",
+    "nome_cientifico": "Arachis hypogaea",
+    "descricao": "Leguminosa anual que dá flores amarelas acima do solo e enterra os frutos: depois de polinizada, cada flor solta um 'esporão' (ginóforo) que desce e forma a vagem dentro do substrato. Cultivar em vaso é uma forma curiosa de ver esse ciclo. Prefira as variedades de porte ereto e ciclo curto, como a Tatu ou a Valência, que produzem em cerca de 4 meses.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 130,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira larga com pelo menos 30 cm de profundidade e 35 cm de diâmetro, com furos no fundo; a largura importa porque os ginóforos se enterram até 20 cm ao redor da planta",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% fibra de coco; acrescente 1 colher de sopa de calcário dolomítico a cada 10 L. Tem de ficar solto e sem torrões para os ginóforos entrarem",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 12,
+      "descricao": "Descasque os grãos crus (nunca torrados), sem tirar a película, e semeie 2 grãos por cova, a 4 cm de profundidade. As plântulas aparecem entre o 7º e o 12º dia se o substrato estiver acima de 20 °C. Em substrato frio e encharcado, o grão apodrece antes de brotar."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 13,
+      "dia_fim": 35,
+      "descricao": "As folhas de quatro folíolos se abrem de dia e se fecham à noite, e a planta forma ramos rasteiros ao redor do caule central. Folha verde-clara nesta fase é normal: os nódulos das raízes ainda estão começando a fixar nitrogênio."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 36,
+      "dia_fim": 55,
+      "descricao": "Surgem pequenas flores amarelas na base dos ramos, que duram só um dia e se autopolinizam. Não precisa de insetos nem de polinização manual. A fase mudou quando aparecem as primeiras hastes finas apontando para baixo."
+    },
+    {
+      "fase_id": "penetracao_ginoforos",
+      "nome": "Penetração dos Ginóforos",
+      "dia_inicio": 56,
+      "dia_fim": 80,
+      "descricao": "Os ginóforos (esporões) descem e se enterram de 3 a 7 cm no substrato, onde a ponta incha e vira vagem. Não mexa, não afofe e não deixe a superfície secar e formar crosta: ginóforo que não consegue entrar seca e não dá amendoim."
+    },
+    {
+      "fase_id": "enchimento_vagens",
+      "nome": "Enchimento das Vagens",
+      "dia_inicio": 81,
+      "dia_fim": 115,
+      "descricao": "Os grãos crescem dentro das vagens enterradas, e por cima só se vê a folhagem cheia. Nesta fase o cálcio e a água regular definem se a vagem enche ou fica vazia. Perto do fim, as folhas de baixo começam a amarelar."
+    },
+    {
+      "fase_id": "maturacao_colheita",
+      "nome": "Maturação e Colheita",
+      "dia_inicio": 116,
+      "dia_fim": 130,
+      "descricao": "A folhagem amarela e começa a cair. Cave com cuidado na borda do vaso e abra uma vagem: ela está madura quando a parte de dentro da casca escureceu e o grão tem película rosada firme. Passado do ponto, as vagens se soltam da planta e os grãos podem brotar no substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar a semeadura",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 12,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar só até umedecer, sem escorrer muito pelos furos. Substrato encharcado apodrece o grão, e crosta seca impede a plântula de sair.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o amendoim",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue na base até escorrer pelos furos. Não molhe as folhas, porque isso favorece a mancha-preta. Nos dias acima de 30 °C, confira todo dia. Da floração em diante (dia 36), a superfície precisa ficar úmida para os ginóforos entrarem.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Rega reduzida antes da colheita",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 111,
+      "dia_fim_ciclo": 125,
+      "instrucoes": "Regue só quando o substrato estiver seco a 5 cm de profundidade, com metade da água de antes. Substrato úmido nesta fase faz os grãos maduros brotarem ou mofarem dentro da vagem.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_potassio_calcio",
+      "titulo": "Adubar sem nitrogênio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 28,
+      "dia_fim_ciclo": 91,
+      "instrucoes": "Espalhe 1 colher de sopa de farinha de ossos e 1 colher de chá de cinza de madeira peneirada por vaso de 20 L, longe do caule, e regue em seguida. Não use ureia nem adubo rico em nitrogênio: o amendoim fixa o próprio nitrogênio, e o excesso só faz folha.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 115,
+      "instrucoes": "Abra os folíolos novos ainda fechados e procure insetos minúsculos (tripes) ou lagartinhas. Vire as folhas mais velhas e procure manchas marrons ou pretas redondas, ou teias finas no verso (ácaro).",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Com duas plantas na mesma cova, as duas produzem pouco. O vaso de 20 L sustenta uma planta só.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa de cada cova, cortando as outras rente ao substrato com tesoura, sem arrancar"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Cálcio para as vagens",
+      "mensagem": "A floração começou. O cálcio que enche as vagens é absorvido pelas próprias vagens no substrato de cima, não pelas raízes: por isso ele tem que estar na superfície agora.",
+      "acao_requerida": "Espalhar 1 colher de sopa de gesso agrícola por vaso de 20 L num raio de 15 cm ao redor do caule e regar"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Amontoa para os ginóforos",
+      "mensagem": "Os primeiros ginóforos estão descendo. Quanto mais perto do substrato estiverem os ramos, mais deles conseguem se enterrar.",
+      "acao_requerida": "Cobrir a base da planta com 3 a 5 cm de substrato solto (terra com areia), sem enterrar as folhas, e não afofar mais o vaso até a colheita"
+    },
+    {
+      "dia_disparo": 110,
+      "titulo": "Conferir se as vagens estão madurando",
+      "mensagem": "A partir de agora a rega diminui para os grãos secarem dentro da vagem.",
+      "acao_requerida": "Cavar com cuidado na borda do vaso, tirar 2 ou 3 vagens e abrir: se a parte de dentro da casca já escureceu, a colheita está perto"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Colher o amendoim",
+      "mensagem": "Com a maioria das folhas amarelas e as vagens com o interior da casca escuro, é hora de colher tudo de uma vez.",
+      "acao_requerida": "Parar a rega 2 dias antes, virar o vaso ou puxar a planta inteira pela base, sacudir o substrato e deixar a planta com as vagens presas secando à sombra, em lugar ventilado, por 1 a 2 semanas antes de destacar. Descartar vagens mofadas, que podem ter aflatoxina"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e vagem (Sclerotium rolfsii, Rhizoctonia solani)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; base do caule escurecida, às vezes com um mofo branco e bolinhas marrons do tamanho de grão de mostarda; vagens escuras e moles",
+      "prevencao_tratamento": "Não encharcar: regar só com o substrato seco a 3 cm e garantir furos livres. Retirar e descartar a planta afetada com o substrato em volta; não reaproveitar esse substrato para outro amendoim"
+    },
+    {
+      "nome": "Mancha-preta e cercosporiose (Nothopassalora personata, Passalora arachidicola)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas redondas marrons ou pretas nas folhas, às vezes com halo amarelo; folhas de baixo caem antes do tempo",
+      "prevencao_tratamento": "Regar na base sem molhar as folhas e deixar o vaso em local ventilado. Tirar as folhas manchadas assim que aparecerem; se espalhar, calda bordalesa a 1% a cada 10 dias"
+    },
+    {
+      "nome": "Tripes-do-prateamento (Enneothrips flavens)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos novos deformados, enrugados e com aspecto prateado; insetos minúsculos e alongados dentro dos folíolos ainda fechados",
+      "prevencao_tratamento": "Óleo de neem a 0,5% no fim da tarde a cada 5 dias, mirando os brotos; manter o vaso longe de plantas infestadas"
+    },
+    {
+      "nome": "Lagarta-do-pescoço-vermelho (Stegasta bosquella)",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos e folíolos novos furados e secos; lagartinha esverdeada com uma faixa avermelhada atrás da cabeça, escondida nos brotos",
+      "prevencao_tratamento": "Abrir os brotos e catar as lagartas à mão; se houver muitas, Bacillus thuringiensis (Dipel) nas doses do rótulo"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos claros nas folhas, que ficam bronzeadas e secam; teias finas no verso em tempo quente e seco",
+      "prevencao_tratamento": "Jato de água no verso das folhas a cada 3 dias no tempo seco; se persistir, óleo de neem a 0,5% ou enxofre molhável nas doses do rótulo, nunca acima de 30 °C"
+    },
+    {
+      "nome": "Vagens vazias (\"pipocas\") por falta de cálcio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Vagens bem formadas por fora, mas ocas ou com grãos pequenos e escuros; grão com o miolo (embrião) escurecido",
+      "prevencao_tratamento": "Calcário no substrato no plantio e gesso agrícola na superfície no começo da floração; rega regular da floração em diante, porque o cálcio só entra na vagem com o substrato úmido"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        1,
+        2
+      ],
+      "titulo": "Chuvas de verão",
+      "mensagem": "Temporais seguidos encharcam o vaso, apodrecem as vagens e espalham a mancha-preta pelas folhas molhadas.",
+      "acao_requerida": "Nos dias de chuva forte, levar o vaso para um lugar coberto e claro ou suspender a rega até o substrato secar a 3 cm; conferir se a água escorre pelos furos"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Araucária-de-norfolk",
+    "nome_cientifico": "Araucaria heterophylla",
+    "descricao": "Conífera da ilha Norfolk, no Pacífico, de galhos em andares simétricos, muito vendida em vaso como pinheirinho de Natal. No chão chega a dezenas de metros, mas em vaso cresce devagar e vive anos como árvore ornamental de varanda ou quintal.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e estável (cerâmica ou cimento) com pelo menos 35 cm de diâmetro e 35 cm de profundidade, vários furos no fundo; a copa cônica tomba vasos leves com o vento",
+    "volume_minimo_litros": 25,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 25% areia grossa lavada, 20% húmus de minhoca, 15% casca de pinus fina; levemente ácido e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda vinda de viveiro ou de loja se ajusta à nova luz. Se ela estava na sombra, leve-a ao sol aos poucos (1 a 2 horas a mais por semana), senão as agulhas queimam. Pontas amareladas nas primeiras semanas são normais; a fase termina quando surgem pontas novas verde-claras no topo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o broto central (a guia) cresce de 10 a 20 cm por ano, formando um novo andar de galhos. Nunca corte a guia: a araucária não forma outra ponta e perde o formato para sempre. Se a planta começa a inclinar para o lado da luz, é sinal de que falta sol ou giro do vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce da primavera ao fim do verão, quando pede mais água e adubo, e quase para no inverno. Os galhos mais baixos secam aos poucos com a idade e podem ser retirados rente ao tronco quando estiverem totalmente marrons. Troque o substrato a cada dois anos, subindo um número de vaso até o limite que você consegue carregar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a araucária",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar em volta do tronco até escorrer pelos furos e esvazie o prato depois de 30 minutos. A muda recém-trocada de vaso tem pouca raiz e seca rápido nos dias quentes.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar e girar o vaso",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e não deixe água no prato. Aproveite e gire o vaso um quarto de volta para a árvore crescer reta. No verão acima de 30 °C, confira a cada 2 dias; no inverno, a cada 5 a 7 dias. Uma única seca forte faz os galhos de baixo secarem, e eles não rebrotam.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a araucária",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá de NPK 10-10-10 em 1 L de água e regue o substrato já úmido, ou espalhe 2 colheres de sopa de húmus pela superfície de um vaso de 25 L. De junho a agosto, pule esta adubação: a planta está parada e o adubo queima as raízes.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar galhos e agulhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os galhos e olhe junto ao tronco e na base das agulhas: procure bolinhas brancas algodoadas ou escamas marrons (cochonilha), teias finas e pontinhos amarelados (ácaro) e galhos amolecidos. Cheire o substrato: cheiro de podre indica rega em excesso.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e outubro, tire a planta do vaso, solte as raízes que estiverem enroladas e retire cerca de um terço do substrato velho. Replante no mesmo nível de antes, num vaso 5 a 10 cm maior de diâmetro, com substrato novo, e regue bem. Mantenha à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Confira o vaso da loja",
+      "mensagem": "Muitas araucárias são vendidas em vaso plástico pequeno, com várias mudas juntas e as raízes enroladas. Nesse vaso ela seca em um dia.",
+      "acao_requerida": "Passar para um vaso de pelo menos 25 L com substrato novo, sem enterrar o tronco além do nível original; se houver várias mudas, pode manter o torrão inteiro"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Com as pontas novas aparecendo, a araucária já aguenta o sol pleno e começa a aceitar adubo.",
+      "acao_requerida": "Deixar a planta no lugar definitivo, com pelo menos 3 horas de sol direto, e fazer a primeira adubação"
+    },
+    {
+      "dia_disparo": 366,
+      "titulo": "Um ano de araucária",
+      "mensagem": "A planta deve ter ganho um novo andar de galhos. Se as raízes já saem pelos furos, o vaso ficou pequeno antes do prazo.",
+      "acao_requerida": "Olhar o fundo do vaso; se houver raízes saindo pelos furos, antecipar a troca de vaso para a próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Agulhas amarelas e depois marrons em vários galhos ao mesmo tempo, substrato sempre úmido e com cheiro de podre, base do tronco escurecida",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no prato. Se aparecer, tire do vaso, corte as raízes pretas e moles, replante em substrato novo e seco e só regue de novo quando secar"
+    },
+    {
+      "nome": "Cochonilha (algodão e escama)",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodoadas ou escamas marrons grudadas nos galhos e na base das agulhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia molhada em álcool 70%; em infestação grande, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Agulhas com pontinhos amarelados, aspecto opaco e empoeirado, teias finas entre as agulhas; comum em ambiente interno seco",
+      "prevencao_tratamento": "Levar para fora e dar jatos de água na copa a cada 3 dias; se persistir, óleo de neem a 0,5% ou acaricida à base de enxofre, fora das horas de sol forte"
+    },
+    {
+      "nome": "Seca dos galhos inferiores",
+      "tipo": "DISTURBIO",
+      "sintomas": "Os andares de baixo ficam marrons e caem, enquanto o topo segue verde",
+      "prevencao_tratamento": "É normal em poucos galhos com a idade, mas em vários de uma vez indica seca, pouca luz ou vaso apertado. Regar com regularidade, garantir sol e trocar o vaso; corte os galhos secos rente ao tronco, porque eles não rebrotam"
+    },
+    {
+      "nome": "Queimadura de sol e estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Agulhas esbranquiçadas ou marrons no lado do sol depois de mudar a planta de lugar; ou, no escuro, galhos longos, finos e caídos e árvore torta",
+      "prevencao_tratamento": "Mudar a exposição aos poucos, ao longo de 2 a 3 semanas; em ambiente interno, ficar junto à janela mais clara e passar temporadas fora; girar o vaso a cada rega"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e nada de adubo",
+      "mensagem": "No frio a araucária quase para de crescer e o substrato demora a secar, o que favorece a podridão de raiz. Mudas jovens sofrem com geada.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm, suspender a adubação e, em noites com previsão abaixo de 2 °C, levar o vaso para perto de uma parede ou para baixo de cobertura"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com a primavera, a guia e os galhos voltam a crescer e a planta passa a consumir mais água e nutrientes.",
+      "acao_requerida": "Retomar a adubação mensal e voltar a conferir o substrato a cada 3 dias"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Araucária como árvore de Natal",
+      "mensagem": "Enfeites pesados entortam os galhos e luzes incandescentes aquecem e queimam as agulhas. Dentro de casa, longe da janela, ela enfraquece em poucas semanas.",
+      "acao_requerida": "Usar só pisca-pisca de LED e enfeites leves, deixar dentro de casa no máximo 2 semanas, perto da janela mais clara, e depois devolver ao lugar de sol"
+    }
+  ]
+}

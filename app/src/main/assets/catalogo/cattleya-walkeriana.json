@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Cattleya walkeriana",
+    "nome_cientifico": "Cattleya walkeriana",
+    "descricao": "Orquídea compacta e perfumada do Cerrado brasileiro, que cresce sobre rochas e troncos em Goiás, Minas Gerais e São Paulo. É muito procurada pelas flores grandes (lilás, brancas ou em tons de azul) que abrem no outono e no inverno, e por caber em qualquer varanda clara. Floresce bem quando recebe bastante luz e um descanso mais seco depois que o pseudobulbo novo amadurece.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro raso de 10 a 12 cm de diâmetro, com furos no fundo e nas laterais, ou planta amarrada em placa de cortiça ou tronco. Vaso grande demais retém umidade e apodrece as raízes finas.",
+    "volume_minimo_litros": 0.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "70% casca de pinus média (pedaços de 2 a 3 cm), 20% carvão vegetal em pedaços e 10% fibra de coco em cubos; nada de terra nem de musgo compactado, porque as raízes precisam secar entre as regas",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se acostuma à luz e à ventilação do novo lugar. É normal perder uma flor ou um botão. Não troque de vaso nem adube. A fase termina quando as folhas estão firmes, verde-claro a verde-médio, sem manchas de queimadura."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Na primavera e no verão surge um broto novo na base, que forma raízes verdes na ponta e engorda até virar um pseudobulbo com uma ou duas folhas. Folha verde-escura indica luz de menos; folha amarelada ou avermelhada, luz no limite certo. Nesse primeiro ano ela pode ainda não florescer."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota e enraíza de setembro a março, com rega e adubação regulares; o pseudobulbo novo amadurece em março e abril; de maio a julho saem as hastes florais da base e as flores duram de 3 a 4 semanas; no inverno a planta descansa com menos água. Uma touceira saudável ganha 1 ou 2 pseudobulbos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a Cattleya walkeriana",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Pela manhã, enfie um palito de churrasco 3 cm na casca por 1 minuto: se sair seco, molhe o vaso inteiro na torneira até escorrer bastante pelos furos e deixe escorrer bem. Não deixe água parada no prato nem no centro do broto. Acima de 30 °C, confira a cada 2 ou 3 dias; de maio a agosto, com a planta em descanso, só regue quando o palito sair seco e o pseudobulbo começar a enrugar levemente, em geral a cada 7 a 10 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a orquídea",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Regue antes com água pura. Depois, aplique adubo solúvel para orquídeas (NPK 20-20-20) a 0,5 g por litro de água, molhando o substrato e as raízes. Entre junho e agosto, na época de descanso, pule a adubação e só regue.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e raízes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas, a base dos pseudobulbos por baixo da bainha seca e as pontas das raízes. Procure escamas brancas ou marrons (cochonilha), pontas de raiz roídas ou rastro brilhante (lesma) e manchas pretas moles.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "A casca de pinus se decompõe em uns 2 anos e passa a encharcar. Espere o broto novo soltar raízes verdes de 1 a 2 cm (em geral de setembro a novembro), tire toda a casca velha, corte as raízes ocas ou podres com tesoura desinfetada no álcool e replante no mesmo tamanho de vaso, com o lado mais velho encostado na borda. Fique 1 semana sem regar, só borrifando as raízes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, Cattleya!",
+      "mensagem": "A planta vem de viveiro ou loja e precisa se acostumar ao lugar novo. Mudar de vaso agora estressa as raízes.",
+      "acao_requerida": "Colocar num lugar bem claro e ventilado, com sol só da manhã (até as 10h), sem trocar de vaso e sem adubar no primeiro mês"
+    },
+    {
+      "dia_disparo": 14,
+      "titulo": "Confira a cor das folhas",
+      "mensagem": "Duas semanas bastam para ver se a luz está certa. Folha verde-escura pede mais luz; mancha branca ou marrom seca é queimadura de sol.",
+      "acao_requerida": "Aproximar da janela se as folhas estiverem escuras, ou afastar do sol se aparecer mancha de queimadura"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "A planta já se ajustou ao lugar. A partir de agora ela pode receber adubo e, se as folhas estiverem firmes e claras, um pouco mais de sol da manhã.",
+      "acao_requerida": "Começar a adubação quinzenal e aumentar o sol da manhã aos poucos, meia hora por semana"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas brancas, marrons ou algodonosas no verso das folhas e embaixo das bainhas secas dos pseudobulbos; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova as bainhas secas para não servir de esconderijo. Limpe as escamas com cotonete embebido em álcool 70% e depois pulverize óleo de neem a 0,5% com algumas gotas de detergente neutro, no fim da tarde, 3 vezes com 7 dias de intervalo"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Pontas de raiz verdes roídas, botões e hastes florais comidos durante a noite, rastro brilhante no vaso",
+      "prevencao_tratamento": "Procure com lanterna à noite e embaixo do vaso e retire à mão. Deixe o vaso suspenso ou sobre pedrisco, longe de outras plantas encostadas; na época das hastes (maio a julho), confira toda noite"
+    },
+    {
+      "nome": "Podridão de raízes por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Raízes marrons, moles e ocas que soltam a capa ao apertar; pseudobulbos enrugados mesmo com o substrato úmido; folhas moles",
+      "prevencao_tratamento": "Só regue com o substrato seco e use vaso pequeno com casca graúda. Se acontecer, desenvaso, corte as raízes podres com tesoura desinfetada, polvilhe canela em pó nos cortes e replante em casca nova, esperando 7 dias para regar"
+    },
+    {
+      "nome": "Podridão negra (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Mancha preta e mole que começa no broto novo ou na base do pseudobulbo e sobe pela folha em poucos dias, com borda amarelada",
+      "prevencao_tratamento": "Regue de manhã, não deixe água parada no broto e mantenha ventilação. Corte a parte doente com 1 cm de tecido sadio usando lâmina desinfetada, polvilhe canela e aplique fungicida à base de fosetil-alumínio conforme o rótulo; isole a planta até secar"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou amarelas que secam e ficam marrons no meio da folha, na face virada para o sol, depois de uma mudança de lugar ou de um dia muito quente",
+      "prevencao_tratamento": "Evite sol direto depois das 10h e em dias acima de 32 °C. Aumente a luz aos poucos. A mancha não some, mas a planta se recupera se o resto da folha estiver verde"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta de folhas verde-escuras e pseudobulbos saudáveis que não solta hastes no outono e inverno",
+      "prevencao_tratamento": "Quase sempre é pouca luz ou falta de descanso seco. Leve para um lugar com 3 a 4 horas de sol da manhã e, depois que o pseudobulbo novo estiver formado, espace as regas no inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Pseudobulbo formado: menos água",
+      "mensagem": "O pseudobulbo que cresceu no verão está terminando de engordar. Um período mais seco agora ajuda a planta a soltar as hastes florais.",
+      "acao_requerida": "Espaçar as regas para cada 7 a 10 dias, sempre com o substrato seco, sem deixar o pseudobulbo enrugar muito"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Época das flores",
+      "mensagem": "As hastes florais saem da base do pseudobulbo mais novo. Mudar a planta de lugar ou virar o vaso agora pode entortar as hastes ou fazer os botões caírem.",
+      "acao_requerida": "Manter o vaso na mesma posição, procurar lesmas à noite e, com as flores abertas, protegê-las da chuva para durarem mais"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A walkeriana aguenta noites frescas, mas abaixo de 8 °C, com o substrato molhado, as raízes podem apodrecer.",
+      "acao_requerida": "Em noites previstas abaixo de 8 °C, levar o vaso para perto da parede ou para dentro de casa, e regar só pela manhã de dias ensolarados"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor, surgem brotos novos na base e pontas verdes nas raízes. Essa é a época certa para dividir ou trocar de vaso, se precisar.",
+      "acao_requerida": "Voltar a regar a cada 3 ou 4 dias, retomar a adubação quinzenal e, se a casca estiver esfarelando, trocar o substrato quando as raízes novas tiverem 1 a 2 cm"
+    }
+  ]
+}

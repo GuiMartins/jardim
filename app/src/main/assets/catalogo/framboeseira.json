@@ -1,0 +1,222 @@
+{
+  "planta": {
+    "nome_comum": "Framboeseira",
+    "nome_cientifico": "Rubus idaeus 'Heritage'",
+    "descricao": "Arbusto perene de hastes espinhosas que dá framboesas vermelhas, doces e perfumadas, raras e caras no mercado. Foi escolhida a cultivar 'Heritage', remontante (dá fruto nas hastes do próprio ano), a mais plantada no Brasil porque precisa de menos frio e produz bem em vaso no Centro-Sul, sobretudo em regiões de serra e altitude.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo ou floreira com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; a framboeseira espalha a raiz para os lados e solta brotos novos ao redor da haste",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina ou fibra de coco, 10% perlita ou areia grossa; levemente ácido (pH 5,5 a 6,5), sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. Se veio de raiz nua, pode passar semanas sem folhas; raspe de leve a casca da haste com a unha: verde por baixo é sinal de que está viva. A fase termina quando surgem brotos novos na base ou ao longo da haste."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Nascem hastes novas a partir da raiz, que podem passar de 1,2 m no primeiro verão. Na 'Heritage', essas hastes já florescem na ponta no fim do verão e podem dar uma primeira colheita pequena entre janeiro e maio. Amarre as hastes ao tutor conforme crescem. A planta está estabelecida quando atravessa o primeiro inverno e rebrota com várias hastes fortes na primavera."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: no inverno (junho a agosto) a planta perde as folhas e descansa; em julho as hastes que já produziram são cortadas rente ao substrato. Na primavera brotam hastes novas, que se ralam em outubro para ficar só as mais fortes. Florescem no fim do verão e dão frutos de janeiro a maio, amadurecendo aos poucos. A produção cai depois de uns 6 a 8 anos em vaso; aí vale renovar com um broto enraizado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O substrato deve ficar úmido como esponja espremida, nunca encharcado: sem folhas, a muda gasta pouca água e a raiz apodrece fácil.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a framboeseira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 4 a 6 L num vaso de 40 L). A raiz é rasa e não aguenta secar: na frutificação e acima de 30 °C, confira todo dia. No inverno, sem folhas, regue só quando os 5 cm de cima secarem, em geral a cada 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a framboeseira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a abril: espalhe 1 xícara de húmus de minhoca ou 2 colheres de sopa de bokashi pela superfície, longe da base das hastes, e regue em seguida. Da floração em diante, junte 1 colher de sopa de cinza de madeira peneirada ou farinha de ossos. De maio a agosto não adube: a planta está parando e adubo nessa época só queima raiz.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teia fina (ácaro), pústulas laranja (ferrugem) ou pulgões nas pontas. Na frutificação, aperte de leve os frutos maduros: fruto mole com mofo cinza ou furinhos indica mofo-cinzento ou drosófila.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato e dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no inverno, com a planta sem folhas: tire o torrão, corte com faca limpa as raízes velhas e escuras e separe os brotos extras com raiz (viram mudas novas). Replante a parte mais vigorosa no mesmo vaso com substrato novo. Se cair fora do inverno, só troque os 10 cm de cima do substrato por composto e deixe a divisão para julho.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Encurtar a haste da muda",
+      "mensagem": "Muda de raiz nua ou com haste longa precisa de uma poda de plantio para gastar a energia em raízes e brotos novos, e não em segurar uma haste velha.",
+      "acao_requerida": "Cortar a haste a 20 ou 25 cm do substrato, logo acima de uma gema, e cobrir o substrato com 3 cm de casca de pinus ou palha, sem encostar na haste"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora de montar o tutor",
+      "mensagem": "As hastes novas estão crescendo e, carregadas de fruto, tombam e quebram se não tiverem apoio.",
+      "acao_requerida": "Fincar 2 estacas de 1,5 m nas bordas do vaso, esticar 2 fios de barbante entre elas (a 60 cm e a 1,2 m) e amarrar as hastes com amarrilho frouxo"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Controlar os brotos que escapam",
+      "mensagem": "A framboeseira solta brotos pela raiz, e em vaso eles roubam força das hastes principais e deixam a touceira fechada, abafada e cheia de fungo.",
+      "acao_requerida": "Arrancar os brotos finos que nascem colados na borda do vaso ou fora dele, deixando só os que ficam no centro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes murcham e secam mesmo com o substrato úmido; a base fica escura e a raiz, marrom e mole, com casca que solta ao puxar",
+      "prevencao_tratamento": "Substrato bem drenado, vaso com furos livres e nada de prato cheio de água. Regue só quando a camada de cima secar. Planta atacada: corte as hastes doentes, deixe o substrato secar e, se a raiz estiver toda escura, descarte a planta e o substrato"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Frutos maduros ou quase maduros ficam moles e cobertos de pó cinza; flores apodrecem em tempo úmido",
+      "prevencao_tratamento": "Colher a cada 2 dias sem deixar fruto passar do ponto, retirar e descartar todo fruto mofado, ralear as hastes para arejar e regar no substrato, nunca por cima das folhas e frutos"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que viram manchas bronzeadas; teia fina no verso, sobretudo em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias quentes e secos; se persistir, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Drosófila-da-asa-manchada (Drosophila suzukii)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos maduros com furinhos, que amolecem e vazam suco em 1 ou 2 dias; larvas brancas pequenas dentro do fruto",
+      "prevencao_tratamento": "Colher todo fruto maduro a cada 2 dias e enterrar ou jogar fora, em saco fechado, os caídos e passados. Armadilha com garrafa PET furada com vinagre de maçã e uma gota de detergente perto do vaso"
+    },
+    {
+      "nome": "Ferrugem (Phragmidium rubi-idaei)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas laranja no verso das folhas, que amarelam e caem antes do tempo",
+      "prevencao_tratamento": "Retirar e descartar as folhas atacadas, arejar a touceira e recolher as folhas caídas no inverno. Em ataque forte, calda bordalesa a 0,5% no início da primavera"
+    },
+    {
+      "nome": "Clorose por pH alto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes; a planta cresce pouco",
+      "prevencao_tratamento": "Não usar calcário nem cal no substrato. Acidifique com casca de pinus, borra de café ou composto de folhas, e regue com água de chuva quando possível; se não melhorar, aplique quelato de ferro conforme o rótulo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos com lado esbranquiçado e seco; folhas com bordas torradas nos dias muito quentes",
+      "prevencao_tratamento": "Em regiões quentes, coloque o vaso onde pegue sol pela manhã e sombra depois das 14h, ou use tela de sombreamento de 30% no verão, e mantenha a cobertura morta sobre o substrato"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Chegou o descanso de inverno",
+      "mensagem": "Com o frio, a framboeseira perde as folhas e para de crescer. Isso é normal, e o frio ajuda a planta a brotar forte na primavera.",
+      "acao_requerida": "Suspender a adubação até setembro e regar só quando os 5 cm de cima do substrato estiverem secos"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de inverno",
+      "mensagem": "Na 'Heritage', as hastes que já deram fruto não produzem bem de novo. Cortá-las todas agora concentra a força da planta nas hastes novas da primavera, que darão a colheita do verão e outono.",
+      "acao_requerida": "Cortar todas as hastes rente ao substrato com tesoura de poda limpa, descartar os restos e renovar a cobertura morta"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar a adubação",
+      "mensagem": "As gemas da raiz estão acordando e as hastes novas vão crescer rápido nos próximos meses.",
+      "acao_requerida": "Espalhar 2 xícaras de composto ou húmus pela superfície, regar bem e voltar a regar a cada 2 dias"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Ralear as hastes novas",
+      "mensagem": "Hastes demais disputam luz, dão frutos pequenos e deixam a touceira úmida, cheia de fungo.",
+      "acao_requerida": "Deixar de 6 a 8 hastes mais grossas e retas por vaso, cortando as finas rente ao substrato, e amarrá-las ao tutor"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger do calor",
+      "mensagem": "Acima de 30 °C a framboeseira sofre: as folhas queimam, as flores caem e a raiz rasa seca em poucas horas.",
+      "acao_requerida": "Garantir sombra depois das 14h, manter 3 a 5 cm de cobertura morta e conferir a umidade do substrato todo dia"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "titulo": "Temporada de colheita",
+      "mensagem": "As framboesas amadurecem aos poucos e passam do ponto em 1 ou 2 dias, quando mofam ou atraem drosófila.",
+      "acao_requerida": "Passar pela planta a cada 2 dias e colher os frutos vermelho-escuros que se soltam do miolo com um puxão leve; guardar na geladeira sem lavar e consumir em até 3 dias"
+    }
+  ]
+}

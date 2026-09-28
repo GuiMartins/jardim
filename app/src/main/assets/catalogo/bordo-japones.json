@@ -1,0 +1,187 @@
+{
+  "planta": {
+    "nome_comum": "Bordo-japonês",
+    "nome_cientifico": "Acer palmatum",
+    "descricao": "Árvore pequena de folhas recortadas em forma de mão, que ficam vermelhas ou alaranjadas no outono e caem no inverno. Em vaso fica compacta, com 1 a 2 m, e é das poucas árvores de clima temperado que se dão bem no Centro-Sul do Brasil, desde que tenha sombra à tarde.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo de cerâmica ou plástico grosso, com pelo menos 40 cm de diâmetro e 35 cm de profundidade e vários furos no fundo; evite vaso preto ou de metal, que esquenta a raiz no sol",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% casca de pinus fina, 20% areia grossa lavada, 10% húmus de minhoca; levemente ácido (pH 5,5 a 6,5) e sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso novo e ao lugar. É normal perder algumas folhas ou ficar com as pontas secas. Não adube nem pode. A fase terminou quando surgem brotos novos, ou, no inverno, quando os galhos continuam flexíveis e verdes por dentro ao raspar a casca com a unha."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o substrato novo, e a planta passa pelo primeiro ciclo completo: brota em setembro, mantém as folhas no verão, fica colorida no outono e perde as folhas no inverno. Nesta fase só faça podas leves, tirando galhos secos ou quebrados."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "No ano típico, as folhas novas brotam entre setembro e outubro. No verão, o risco é queimar a borda das folhas com o sol da tarde e o vento seco. As cores aparecem entre abril e maio, as folhas caem entre junho e agosto, e o inverno é a época da poda de formação. O substrato deve ser trocado a cada dois anos, com poda de raízes no inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o bordo recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda não pode secar por inteiro, mas também não deixe água parada no pratinho. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o bordo-japonês",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos, de preferência de manhã e sem molhar as folhas no sol. No verão, com mais de 30 °C, confira todo dia. No inverno, sem folhas, regue a cada 5 a 7 dias, só quando os 3 cm estiverem secos.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e galhos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure pulgões nas pontas, teias finas e pontinhos amarelos (ácaro) no verso e escamas brancas ou marrons nos galhos. Sem folhas, confira só os galhos e as gemas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre junho e agosto, com a planta sem folhas; se o lembrete chegar em outra época, espere o próximo inverno. Tire a planta do vaso, desmanche 1/3 do torrão por fora, corte as raízes enroladas e grossas que circundam o vaso e replante com substrato novo, no mesmo nível de antes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar certo",
+      "mensagem": "O bordo-japonês queima as folhas com o sol forte da tarde e com o vento seco. O lugar define metade do sucesso.",
+      "acao_requerida": "Deixar o vaso onde ele receba sol até as 11h e sombra clara depois, longe de correntes de vento e de paredes que refletem calor"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Raízes adaptadas",
+      "mensagem": "Passado o primeiro mês, a planta já aguenta adubação leve nas épocas certas. Adubo forte ainda queima as raízes novas.",
+      "acao_requerida": "Conferir se há brotos novos ou galhos verdes por dentro; se sim, seguir os avisos de adubação de setembro e novembro com meia dose"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, escurecem e caem; raízes marrons, moles e com cheiro ruim; base do tronco escurecida",
+      "prevencao_tratamento": "Regar só com os 3 cm de cima secos, esvaziar o pratinho e manter os furos livres. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Queima marginal das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas e pontas das folhas ficam marrons e secas como papel, principalmente no verão e nas folhas do lado do sol",
+      "prevencao_tratamento": "Sombra à tarde, proteção do vento e rega sem falha no calor; lavar o substrato com bastante água a cada 2 meses para tirar o excesso de sais do adubo. As folhas queimadas não se recuperam, mas as novas vêm sadias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos brotos novos; folhas enrugadas, pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, sem aplicar sob sol"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos ou prateados nas folhas, teias finas no verso e folhas que perdem a cor, em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas no fim da tarde nos dias secos; se infestar, acaricida à base de enxofre ou óleo de neem a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodoadas grudadas nos galhos e nas axilas das folhas; planta enfraquecida",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; no inverno, sem folhas, pincelar os galhos com óleo mineral a 1%"
+    },
+    {
+      "nome": "Verticilose (Verticillium dahliae)",
+      "tipo": "DOENCA",
+      "sintomas": "Um galho inteiro murcha e seca de repente no verão, enquanto o resto da planta continua sadio; madeira com riscas escuras por dentro",
+      "prevencao_tratamento": "Não tem cura. Cortar o galho afetado bem abaixo da parte escura, desinfetar a tesoura com álcool entre cortes e nunca reaproveitar o substrato de planta doente"
+    },
+    {
+      "nome": "Clorose por pH alto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras ainda verdes",
+      "prevencao_tratamento": "Evitar calcário e água muito dura; usar substrato com casca de pinus e, se já apareceu, adubo com ferro quelatado ou regar com água da chuva"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        11
+      ],
+      "titulo": "Adubar o bordo-japonês",
+      "mensagem": "Na brotação e no começo do verão a planta usa nutrientes para formar folhas e galhos. Fora dessas épocas, o adubo sobra e queima a raiz.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de bokashi ou uma dose de adubo de liberação lenta (NPK equilibrado, pouco nitrogênio) por vaso de 30 L, longe do tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger do calor",
+      "mensagem": "No verão, sol da tarde, calor acima de 32 °C e vento seco queimam as folhas em poucos dias.",
+      "acao_requerida": "Garantir sombra depois das 11h (tela sombrite 50% se preciso), conferir a rega todo dia e não deixar o vaso encostado em parede quente"
+    },
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Folhas mudando de cor",
+      "mensagem": "O avermelhamento e a queda das folhas no outono são normais. Não é doença nem falta de água.",
+      "acao_requerida": "Espaçar a rega conforme o substrato demorar mais a secar e parar de adubar até setembro"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Sem folhas, dá para ver a estrutura dos galhos. Podar no fim do inverno, perto da brotação, faz a seiva escorrer pelos cortes.",
+      "acao_requerida": "Tirar galhos secos, cruzados ou voltados para dentro da copa, cortando rente ao galho de onde saem, com tesoura limpa; não remover mais de 1/4 da copa"
+    }
+  ]
+}

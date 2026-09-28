@@ -1,0 +1,199 @@
+{
+  "planta": {
+    "nome_comum": "Murta-de-cheiro",
+    "nome_cientifico": "Murraya paniculata",
+    "descricao": "Arbusto perene de folhas verde-escuras brilhantes e flores brancas com perfume forte de jasmim, que abrem em várias levas da primavera ao outono e depois dão frutinhos vermelhos. Aceita bem a poda e vive muitos anos em vaso, como arbusto isolado ou topiaria. Ela hospeda o psilídeo que transmite o greening (HLB) dos citros, então evite cultivá-la perto de pomares de laranja.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; suba para 50 cm quando a planta passar de 1,2 m",
+    "volume_minimo_litros": 25,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita, mais 1 colher de sopa de farinha de ossos por 10 L; levemente ácido e sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saco do viveiro para o vaso definitivo e passa alguns dias sem crescer. Algumas folhas velhas podem amarelar e cair. A fase termina quando surgem brotos novos, verde-claros e brilhantes, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta solta brotações em ondas, a cada 1 a 2 meses no calor. Mudas pequenas podem dar as primeiras flores já na primavera. Aproveite as brotações para dar forma com podas leves de ponta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arbusto formado, com floradas perfumadas em levas de setembro a março, cada uma durando poucos dias, geralmente depois de uma chuva ou rega farta após um período mais seco. Frutinhos vermelhos aparecem depois das flores. No inverno cresce pouco e pede menos água; em agosto recebe a poda de forma, e a cada dois anos, substrato novo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a murta recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda não se ligou à terra nova e seca antes dela: molhe bem em volta do caule. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a murta",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, vaso ao sol pode pedir água a cada 2 dias; no inverno, espace para 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a murta",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 4-14-8 para puxar flores) por vaso de 25 L, a 5 cm do caule, e regue em seguida. Alterne com 2 punhados de húmus de minhoca. Pule a adubação de junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos e o verso das folhas: procure pulgões, pontinhos brancos de cera (ninfas de psilídeo), cascas marrons coladas nos ramos (cochonilha) e pó preto nas folhas (fumagina).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e setembro, tire a planta do vaso, raspe cerca de 3 cm das raízes enoveladas nas laterais e no fundo e replante com substrato novo, num vaso 5 a 10 cm maior se as raízes estiverem circulando. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Muda de viveiro vem em saco ou vaso pequeno, onde as raízes se enovelam e secam rápido.",
+      "acao_requerida": "Transplantar para o vaso de 25 L com camada de drenagem, deixando o colo do caule no mesmo nível em que estava, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda estabelecida",
+      "mensagem": "Se já apareceram brotos novos, as raízes pegaram no vaso e a planta aguenta adubo.",
+      "acao_requerida": "Conferir se há brotação nova nas pontas; se houver, fazer a primeira adubação leve"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Cortar as pontas agora faz a murta ramificar e ficar cheia desde a base, em vez de crescer como uma vara.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo principal, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Psilídeo-dos-citros (Diaphorina citri)",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos novos enrolados e deformados, com ninfas amareladas e fios de cera branca; adultos pequenos e pardos que ficam inclinados de cabeça para baixo nas folhas",
+      "prevencao_tratamento": "Corte e descarte os brotos infestados; óleo de neem a 0,5% no fim da tarde a cada 7 dias nas brotações. A murta é hospedeira do greening dos citros: não a cultive perto de laranjeiras e respeite restrições locais"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou tufos brancos colados nos ramos e nervuras; folhas amarelando e melado pegajoso",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em álcool; em ataques maiores, óleo mineral a 1% ou calda de sabão neutro com óleo de neem a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos brotos; folhas novas encarquilhadas e pegajosas, com formigas subindo",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada de pó preto sobre as folhas, que sai ao esfregar",
+      "prevencao_tratamento": "É fungo que cresce no melado de cochonilhas e pulgões: controle esses insetos e lave as folhas com água e sabão neutro"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas amarelando e caindo em massa, raízes escuras e moles com cheiro ruim",
+      "prevencao_tratamento": "Nunca deixe água parada no pratinho e só regue com os 4 cm de cima secos. Se aparecer, tire do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Clorose por falta de ferro",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras continuando verdes",
+      "prevencao_tratamento": "Substrato alcalino ou encharcado trava o ferro: evite calcário, melhore a drenagem e aplique quelato de ferro diluído conforme o rótulo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "No frio a murta quase para de crescer, e substrato úmido por muitos dias apodrece a raiz. Ela não tolera geada forte.",
+      "acao_requerida": "Espaçar as regas para quando os 4 cm de cima estiverem secos, suspender a adubação e, em noites abaixo de 3 °C, abrigar o vaso junto a uma parede ou sob cobertura"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda de forma",
+      "mensagem": "Podar no fim do inverno, antes da brotação, mantém o formato e concentra as floradas nos ramos novos da primavera.",
+      "acao_requerida": "Aparar até um terço do volume, tirar ramos secos, cruzados ou voltados para dentro e cortar sempre acima de um par de folhas"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Começa a temporada de flores",
+      "mensagem": "Com o calor voltando, a murta brota e prepara as primeiras floradas perfumadas.",
+      "acao_requerida": "Voltar à rega normal e fazer uma adubação com fórmula rica em fósforo, como 4-14-8"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: confira a rega",
+      "mensagem": "No verão, vaso ao sol pode secar em um dia, e a planta seca derruba botões e flores.",
+      "acao_requerida": "Conferir o substrato todo dia nas semanas mais quentes e regar de manhã cedo quando os 4 cm de cima estiverem secos"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "planta": {
+    "nome_comum": "Léia",
+    "nome_cientifico": "Leea guineensis",
+    "descricao": "Arbusto tropical de folhas compostas e brilhantes, com brotos novos avermelhados ou cor de vinho, muito usado como planta de interior em vaso. Cresce devagar até 1,5 a 2 m dentro de casa e vive muitos anos. Não tolera frio, corrente de ar nem substrato seco por muito tempo.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo e prato sem água parada",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% substrato para plantas de interior, 30% húmus de minhoca, 20% casca de pinus fina ou perlita; rico em matéria orgânica e aerado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Coloque a léia perto de uma janela bem clara, com no máximo sol fraco da manhã, longe de ar-condicionado e de portas com corrente de ar. É normal perder algumas folhas velhas na mudança de ambiente. A fase termina quando surgem brotos novos avermelhados na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "A planta retoma o crescimento e solta folhas novas que começam cor de vinho e ficam verde-escuras e brilhantes. Queda de folhas nesta fase indica rega irregular, frio ou pouca luz; ramos que esticam e ficam com folhas espaçadas pedem um lugar mais claro."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão, quando pede mais água e adubo, e quase para no inverno. Dentro de casa raramente floresce; o valor ornamental está nas folhas. Todo ano, no começo da primavera, uma poda leve de ponteiros mantém a copa cheia."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a léia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. O substrato deve ficar sempre levemente úmido, nunca encharcado. No inverno, espace para a cada 5 a 7 dias, conferindo com o dedo.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a léia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de chá de NPK 10-10-10 por vaso de 15 L, longe do caule, e regue em seguida. De maio a agosto pule a adubação: a planta está quase parada e o adubo acumula no vaso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, as axilas dos folíolos e os brotos novos. Procure tufos brancos de algodão, teias finas, pontinhos amarelados ou escamas marrons grudadas no caule. Passe um pano úmido nas folhas para tirar a poeira.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, solte as raízes que estiverem em círculo e corte as escuras e moles. Replante num vaso 5 cm maior de diâmetro com substrato novo, na mesma altura de antes, e regue bem. Se não trocar agora, faça no próximo setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Conferir o vaso da loja",
+      "mensagem": "Léias costumam vir em vaso plástico de produção, pequeno e com raízes saindo pelos furos. Com a planta já adaptada à casa, é hora de ver se ela precisa de mais espaço.",
+      "acao_requerida": "Se houver raízes saindo pelos furos ou o substrato secar em menos de 2 dias, passar para um vaso de pelo menos 15 L com o substrato recomendado, sem enterrar o caule mais fundo que antes"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Primeira adaptação concluída",
+      "mensagem": "Com dois meses em casa a léia já deveria estar soltando brotos avermelhados. Se só perdeu folhas, algo no lugar não está bom.",
+      "acao_requerida": "Se não houver brotos novos, mudar a planta para um ponto mais claro e longe de correntes de ar e ar-condicionado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (excesso de água)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escurecida e mole; cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o primeiro centímetro seco e nunca deixar água no prato. Se aparecer, tirar do vaso, cortar as raízes escuras e moles e replantar em substrato novo e seco, regando só depois de 3 dias"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e no caule; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com algumas gotas de detergente, no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto desbotado; teias finas no verso, sobretudo em ar seco",
+      "prevencao_tratamento": "Aumentar a umidade do ar em volta da planta e lavar o verso das folhas com jato de água; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou acinzentadas grudadas no caule e nas nervuras; folhas amarelando e melada",
+      "prevencao_tratamento": "Raspar as escamas com escova macia ou cotonete com álcool; depois, óleo mineral ou de neem a 1% a cada 10 dias, até sumirem"
+    },
+    {
+      "nome": "Queda de folhas por choque",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas caem de repente, ainda verdes ou amarelando, depois de mudança de lugar, frio, corrente de ar ou substrato que secou demais",
+      "prevencao_tratamento": "Manter a planta num lugar fixo, entre 18 e 30 °C, longe de ar-condicionado e janelas abertas no inverno, e não deixar o substrato secar por completo. Ela rebrota se a causa for corrigida"
+    },
+    {
+      "nome": "Pontas secas e queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas marrons e secas, ou manchas descoloridas nas folhas voltadas para o sol",
+      "prevencao_tratamento": "Tirar do sol da tarde e aumentar a umidade do ar agrupando plantas ou usando bandeja com pedrinhas e água; cortar só a parte seca, acompanhando o formato da folha"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger a léia do frio",
+      "mensagem": "Abaixo de 12 °C a léia sofre e derruba folhas, e com o crescimento parado o substrato demora mais para secar.",
+      "acao_requerida": "Afastar a planta de janelas frias e portas com corrente de ar, espaçar a rega conferindo com o dedo e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Ar seco: cuidar da umidade",
+      "mensagem": "O fim do inverno é a época mais seca no Centro-Sul, quando aparecem pontas secas e ácaros.",
+      "acao_requerida": "Colocar o vaso sobre uma bandeja com pedrinhas e água, sem o fundo tocar a água, ou agrupar com outras plantas, e conferir o verso das folhas à procura de teias"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda leve de primavera",
+      "mensagem": "Com o calor voltando, a léia retoma o crescimento. Podar agora faz a copa ramificar e ficar mais cheia.",
+      "acao_requerida": "Cortar a ponta dos ramos mais longos ou finos logo acima de uma folha, com tesoura limpa, e retomar a adubação mensal"
+    }
+  ]
+}

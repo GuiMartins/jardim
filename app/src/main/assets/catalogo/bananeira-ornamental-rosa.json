@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Bananeira-ornamental-rosa",
+    "nome_cientifico": "Musa velutina",
+    "descricao": "Bananeira pequena, de 1,2 a 1,8 m, que forma touceira e dá inflorescências eretas com brácteas rosadas e cachos de bananinhas cor-de-rosa aveludadas, que se abrem sozinhas quando maduras. Os frutos são comestíveis, mas cheios de sementes duras, por isso ela é cultivada como ornamental tropical: cresce rápido, floresce já no primeiro ano e tolera frio moderado melhor que as bananeiras comuns.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo de plástico ou cerâmica com pelo menos 45 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; a touceira se espalha para os lados, então prefira vaso mais largo que fundo",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou casca de pinus fina; rico em matéria orgânica, fofo e drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda (filhote com rizoma) na mesma altura em que estava, sem enterrar o pseudocaule. É normal a folha mais velha secar ou rasgar nas primeiras semanas. A fase acaba quando surge a primeira folha nova enrolada no centro e ela abre por completo."
+    },
+    {
+      "fase_id": "crescimento",
+      "nome": "Crescimento e Formação da Touceira",
+      "dia_inicio": 31,
+      "dia_fim": 300,
+      "descricao": "No calor sai uma folha nova a cada 1 a 2 semanas e o pseudocaule engrossa. A partir do 2º ou 3º mês começam a surgir filhotes na base. A fase termina quando o pseudocaule principal passa de 1 m e as folhas novas ficam menores e mais curtas: sinal de que a inflorescência vai sair pelo centro."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 301,
+      "dia_fim": null,
+      "descricao": "Touceira com pseudocaules de idades diferentes. No verão e no outono, os mais velhos lançam a inflorescência rosa e as bananinhas amadurecem em 2 a 3 meses, abrindo-se na ponta. Cada pseudocaule floresce uma vez só e depois morre, substituído pelos filhotes. No inverno o crescimento quase para e, abaixo de 5 °C, as folhas queimam, mas o rizoma rebrota na primavera."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a bananeira-rosa",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, acima de 30 °C, confira todo dia; de junho a agosto espace para cada 5 a 7 dias, só quando os 5 cm de cima estiverem secos.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a bananeira-rosa",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 colher de sopa de NPK 10-10-10 por vaso de 50 L, sem encostar no pseudocaule, e regue em seguida. Folhas pálidas pedem potássio: acrescente 1 colher de chá de cinza de madeira. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas_filhotes",
+      "titulo": "Limpar folhas secas e filhotes",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao pseudocaule, com faca limpa, as folhas amarelas ou secas. Mantenha no máximo 3 a 4 pseudocaules no vaso: arranque ou corte na base os filhotes excedentes, deixando os mais vigorosos, e use-os como mudas se quiser.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teias finas (ácaro) ou carocinhos brancos (cochonilha). Aperte a base do pseudocaule: se estiver mole, escura ou com cheiro azedo, reduza a rega e procure galerias de besouro no rizoma.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a touceira do vaso, separe com faca os filhotes que tenham rizoma e raízes próprias e replante 2 ou 3 no mesmo vaso com substrato novo. Os outros viram mudas em vasos próprios.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 31,
+      "titulo": "Começar a adubação",
+      "mensagem": "A muda já firmou as raízes e está pronta para crescer rápido; bananeiras são muito exigentes em nutrientes.",
+      "acao_requerida": "Fazer a primeira adubação com húmus ou NPK 10-10-10, sem encostar no pseudocaule"
+    },
+    {
+      "dia_disparo": 270,
+      "titulo": "Floração se aproximando",
+      "mensagem": "Quando as folhas novas ficam menores e mais eretas, a inflorescência rosa está para sair pelo topo do pseudocaule.",
+      "acao_requerida": "Manter a planta no local de mais sol e não deixar o substrato secar por completo nas próximas semanas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma por excesso de rega (Fusarium, Erwinia)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do pseudocaule mole, escura e com cheiro azedo; folhas amarelam de baixo para cima e a planta tomba",
+      "prevencao_tratamento": "Regar só com o substrato seco na superfície, nunca deixar água no pratinho e reduzir a rega no inverno; corte os pseudocaules podres até o tecido sadio e replante os filhotes sadios em substrato novo"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam prateadas, teias finas no verso; piora em tempo seco e dentro de casa",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 3 dias; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodonosos ou escamas marrons nas axilas das folhas e na base; folhas meladas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, calda de sabão neutro (1 colher de sopa por litro) mais óleo de neem, a cada 7 dias"
+    },
+    {
+      "nome": "Moleque-da-bananeira (Cosmopolites sordidus)",
+      "tipo": "PRAGA",
+      "sintomas": "Galerias escuras no rizoma e na base do pseudocaule; planta fraca, que tomba com facilidade; besouro preto de 1 cm escondido na base à noite",
+      "prevencao_tratamento": "Usar mudas de origem limpa e retirar restos de pseudocaule cortados; iscas de pedaços de pseudocaule deitadas sobre o substrato atraem os besouros, que devem ser catados a cada 2 dias"
+    },
+    {
+      "nome": "Queimadura de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam translúcidas e secam após noites abaixo de 5 °C ou geada",
+      "prevencao_tratamento": "Levar o vaso para perto de parede ou sob cobertura nas noites frias; não corte o pseudocaule até a primavera, quando se vê o que rebrotou"
+    },
+    {
+      "nome": "Folhas rasgadas e queimadas pelo vento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Lâmina foliar rasgada em tiras e bordas secas",
+      "prevencao_tratamento": "É normal em bananeiras e não prejudica a planta; em varanda com vento forte, coloque o vaso em canto abrigado"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, proteção do frio",
+      "mensagem": "No frio a bananeira-rosa quase para de crescer e o substrato úmido apodrece o rizoma. Geada queima as folhas.",
+      "acao_requerida": "Espaçar a rega para cada 5 a 7 dias, suspender a adubação e abrigar o vaso nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Com a volta do calor a planta retoma o crescimento e precisa de nutrientes e água de novo.",
+      "acao_requerida": "Cortar folhas e pseudocaules queimados pelo frio, voltar à rega normal e fazer uma adubação"
+    },
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Cortar pseudocaules que já frutificaram",
+      "mensagem": "Cada pseudocaule dá flor uma vez só; depois que as bananinhas abrem e secam, ele morre e só rouba espaço dos filhotes.",
+      "acao_requerida": "Cortar rente ao substrato os pseudocaules que já deram cacho e retirar os restos do vaso"
+    }
+  ]
+}

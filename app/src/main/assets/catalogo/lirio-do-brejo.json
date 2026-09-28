@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Lírio-do-brejo",
+    "nome_cientifico": "Hedychium coronarium",
+    "descricao": "Planta rizomatosa da família do gengibre, com hastes de até 2 m e flores brancas muito perfumadas no verão e no outono. Gosta de substrato sempre úmido e aguenta até vaso com prato cheio d'água. É invasora de brejos e margens de rios no Brasil: cultive só em vaso e nunca descarte rizomas ou sementes na natureza.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo de plástico ou cerâmica esmaltada com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com furos no fundo; o rizoma cresce para os lados. Pode ficar com prato, que ajuda a manter a umidade no verão",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% fibra de coco; rico em matéria orgânica e que segure umidade",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "brotacao",
+      "nome": "Brotação do Rizoma",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Enterre o rizoma deitado, a 5 cm de profundidade, com as gemas (pontas rosadas) para cima. Os primeiros brotos, pontudos e enrolados, saem entre a 2ª e a 4ª semana. Até lá, substrato úmido mas não encharcado, porque rizoma sem folhas apodrece em água parada."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 150,
+      "descricao": "As hastes se abrem em folhas longas dispostas em dois lados e novas hastes saem da base. A planta passa a beber muito. Rizomas grandes podem florir já no primeiro verão; os pequenos costumam florir só no segundo ano."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Touceira de hastes de 1,5 a 2 m. Na primavera brotam hastes novas, do verão ao outono (dezembro a maio) cada haste forma na ponta uma espiga de flores brancas perfumadas, e no inverno o crescimento para e as hastes velhas amarelam. Cada haste floresce uma vez só: depois de florir, ela seca e dá lugar às novas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar o rizoma",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos. Enquanto não houver folhas, esvazie o prato depois da rega.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o lírio-do-brejo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Regue até escorrer pelos furos e deixe 1 a 2 cm de água no prato. No verão, acima de 30 °C, confira todo dia: folha enrolada ao meio-dia é sinal de sede. De junho a agosto, regue só quando os 2 primeiros cm estiverem secos e deixe o prato vazio.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o lírio-do-brejo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca mais 1 colher de sopa de farinha de ossos ou NPK 4-14-8 na superfície de um vaso de 30 L, longe das hastes, e regue em seguida. Pule a adubação de junho a agosto, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e hastes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teias finas no verso (ácaro) ou bolinhas brancas ou marrons presas na base das hastes (cochonilha). Aperte a base das hastes: se estiver mole e com cheiro ruim, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de preferência entre agosto e outubro. Tire a touceira do vaso, corte o rizoma com faca limpa em pedaços com pelo menos 2 hastes ou gemas cada e replante um deles em substrato novo. Os pedaços que sobrarem vão para outros vasos ou para doação, nunca para o lixo verde ou para beira de rio.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Já brotou?",
+      "mensagem": "Com um mês, o rizoma já deveria ter soltado pelo menos um broto.",
+      "acao_requerida": "Se nada apareceu, afaste o substrato e aperte o rizoma: se estiver firme, espere mais 2 semanas mantendo pouca rega; se estiver mole e escuro, descarte no lixo comum e replante outro"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Cobrir o substrato",
+      "mensagem": "Com as hastes já formadas, uma cobertura morta segura a umidade que essa planta de brejo adora e diminui as regas no verão.",
+      "acao_requerida": "Espalhar 3 cm de casca de pinus, palha ou folhas secas sobre o substrato, sem encostar nas hastes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Fusarium, Pythium, bactérias)",
+      "tipo": "DOENCA",
+      "sintomas": "Base das hastes mole, escura e com cheiro ruim; hastes tombam e amarelam de baixo para cima, mesmo com substrato úmido",
+      "prevencao_tratamento": "Não deixe água no prato no inverno nem antes da brotação. Corte as hastes afetadas, retire a parte podre do rizoma até aparecer tecido firme e claro, deixe secar 1 dia à sombra e replante em substrato novo"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam acinzentadas; teias finas no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Molhe o verso das folhas com jato de água a cada 2 ou 3 dias no tempo seco; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodonosas ou marrons na base das hastes e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em álcool 70%; em infestação forte, óleo mineral a 1% com detergente neutro, repetido após 10 dias"
+    },
+    {
+      "nome": "Queimadura e pontas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas marrons e secas; folhas enroladas no meio do dia",
+      "prevencao_tratamento": "É falta de água somada a sol forte da tarde. Regue com mais frequência, mantenha água no prato no verão, use cobertura morta ou leve o vaso para onde receba sol só de manhã"
+    },
+    {
+      "nome": "Hastes amarelas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Hastes que já floriram, ou todas as hastes nas regiões frias, amarelam e secam entre junho e agosto",
+      "prevencao_tratamento": "É o repouso natural e não uma doença. Corte as hastes secas rente ao substrato, reduza a rega e suspenda o adubo até a brotação da primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        1,
+        3
+      ],
+      "titulo": "Floração: tire as espigas passadas",
+      "mensagem": "O lírio-do-brejo está florindo. As espigas murchas formam cápsulas com sementes vermelhas que os pássaros espalham, e é assim que ele invade brejos e margens de rio.",
+      "acao_requerida": "Cortar as espigas logo abaixo das flores assim que murcharem e jogar no lixo comum, não na compostagem"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Chegou o repouso de inverno",
+      "mensagem": "Com o frio, o lírio-do-brejo para de crescer e bebe bem menos. Substrato encharcado agora apodrece o rizoma.",
+      "acao_requerida": "Esvaziar o prato, regar só quando os 2 primeiros cm estiverem secos e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Limpeza das hastes velhas",
+      "mensagem": "As hastes que já floriram não vão florir de novo e estão amarelando. Tirá-las abre espaço e luz para as brotações da primavera.",
+      "acao_requerida": "Cortar rente ao substrato, com tesoura limpa, todas as hastes que floriram ou estão amarelas, deixando as verdes que ainda não floresceram"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Com o calor voltando, o rizoma solta hastes novas e volta a precisar de muita água e adubo.",
+      "acao_requerida": "Voltar a manter água no prato, fazer uma adubação reforçada com o dobro da dose de húmus e renovar a cobertura morta"
+    }
+  ]
+}

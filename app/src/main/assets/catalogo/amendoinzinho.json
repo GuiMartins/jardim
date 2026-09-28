@@ -1,0 +1,196 @@
+{
+  "planta": {
+    "nome_comum": "Amendoinzinho",
+    "nome_cientifico": "Arachis repens",
+    "descricao": "Leguminosa rasteira nativa do Brasil, também chamada de grama-amendoim, que forma um tapete verde e denso salpicado de florzinhas amarelas quase o ano todo. Em vaso, fica bonita em jardineiras largas ou transbordando de vasos altos, pede pouca manutenção e ainda fixa nitrogênio no substrato.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso largo e raso, com pelo menos 20 cm de profundidade e furos no fundo; quanto maior a boca, maior o tapete. Plante as mudas a cada 15 a 20 cm",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa; leve e bem drenado, sem adubo nitrogenado forte, porque a planta fixa o próprio nitrogênio",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "As mudas ainda não têm raiz para buscar água mais fundo e dependem de substrato sempre úmido. Algumas folhas podem amarelar e cair nos primeiros dias. A fase acaba quando surgem folhas novas nas pontas e a muda resiste a um puxão leve."
+    },
+    {
+      "fase_id": "cobertura",
+      "nome": "Formação do Tapete",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "Os ramos se alastram pelo substrato e enraízam nos nós que encostam na terra. As primeiras flores amarelas aparecem. A fase acaba quando o tapete cobre toda a superfície da jardineira e começa a transbordar pelas bordas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Tapete Formado",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Tapete denso que floresce da primavera ao outono, com pico no verão. No inverno cresce pouco e pode perder um pouco da cor, sem morrer se não gear. Os ramos que passam da borda do vaso pendem e podem ser aparados. A cada dois anos o substrato se esgota e compacta, e o tapete fica ralo no centro."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar as mudas novas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Regue devagar até escorrer pelos furos, de preferência de manhã. O primeiro centímetro do substrato não pode secar nestas três semanas, mas também não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o amendoinzinho",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão acima de 30 °C, confira a cada 2 dias; no inverno, a cada 5 a 7 dias. Folhas dobradas ao meio no fim da tarde indicam sede.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o amendoinzinho",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por jardineira de 10 L entre os ramos e regue em seguida. Para mais flores, acrescente 1 colher de chá de farinha de ossos. Pule a adubação em junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "aparar_bordas",
+      "titulo": "Aparar os ramos longos",
+      "tipo": "PODA",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte os ramos que passaram mais de 10 cm da borda do vaso e os que ficaram compridos e sem folhas na base. Os pedaços com 10 cm e alguns nós podem virar estacas em outro vaso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o tapete",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos com a mão e olhe o verso das folhas e a base dos caules. Procure folhas roídas, fezes de lagarta, teias finas, pontinhos amarelados ou manchas marrons.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, retire o tapete em placas, troque metade do substrato por mistura nova e replante as placas com os ramos mais vigorosos. Regue todo dia na semana seguinte.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Mudas enraizadas",
+      "mensagem": "Se já há folhas novas nas pontas, as raízes pegaram e a rega diária pode acabar. Regar demais daqui em diante apodrece a base dos ramos.",
+      "acao_requerida": "Puxar levemente uma muda: se resistir, passar a regar só quando os 3 primeiros centímetros do substrato estiverem secos"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Ajudar o tapete a fechar",
+      "mensagem": "Ramos soltos no ar enraízam mais devagar. Encostados no substrato, eles enraízam nos nós e fecham os buracos mais rápido.",
+      "acao_requerida": "Direcionar os ramos compridos para as áreas vazias e prender cada um no substrato com um grampo de arame ou um palito dobrado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Ramos murcham mesmo com o substrato úmido, a base escurece e amolece e o tapete abre clareiras que crescem",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e manter o vaso com furos livres; corte os ramos afetados e deixe o substrato secar antes de voltar a regar"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora, Mycosphaerella)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas redondas, às vezes com halo amarelo, nas folhas; as folhas caem e o tapete fica ralo",
+      "prevencao_tratamento": "Regar o substrato e não as folhas, de manhã, e aparar para arejar o tapete; retire as folhas manchadas e, se espalhar, aplique calda bordalesa a 0,5% a cada 10 dias"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou com furos grandes, bolinhas escuras de fezes entre os ramos",
+      "prevencao_tratamento": "Catar as lagartas no fim da tarde; em infestação maior, pulverizar Bacillus thuringiensis (Bt) conforme o rótulo"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos compridos e finos com folhas espaçadas, tapete ralo e quase nenhuma flor",
+      "prevencao_tratamento": "Mudar o vaso para um lugar com pelo menos 4 horas de sol direto e aparar os ramos esticados para a planta rebrotar mais compacta"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escuras, murchas e quebradiças depois de uma noite muito fria",
+      "prevencao_tratamento": "Nas noites abaixo de 3 °C, levar o vaso para perto da parede ou cobrir com TNT; espere a primavera para cortar a parte queimada, porque a planta rebrota da base"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "Com o frio o amendoinzinho quase para de crescer e bebe bem menos. Rega em excesso agora apodrece a base, e geada queima as folhas.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 3 cm e, nas noites abaixo de 3 °C, levar o vaso para perto da parede ou cobrir com TNT"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Renovação de primavera",
+      "mensagem": "A planta volta a crescer com força. Uma limpeza agora faz o tapete fechar e florir mais no verão.",
+      "acao_requerida": "Cortar os ramos secos ou queimados do inverno, aparar as bordas e espalhar uma camada de 1 cm de húmus entre os ramos"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: conferir a rega mais vezes",
+      "mensagem": "No auge do verão, o substrato de vaso raso seca em um ou dois dias e o tapete murcha nas horas mais quentes.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e regar no início da manhã, nunca no sol forte"
+    }
+  ]
+}

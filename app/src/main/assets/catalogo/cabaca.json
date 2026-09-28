@@ -1,0 +1,264 @@
+{
+  "planta": {
+    "nome_comum": "Cabaça",
+    "nome_cientifico": "Lagenaria siceraria",
+    "descricao": "Trepadeira vigorosa da família das abóboras, de flores brancas que abrem ao entardecer. O fruto novo é comido refogado como abobrinha, e o maduro, depois de seco, vira cuia, porongo de chimarrão, cumbuca ou instrumento. Em vaso precisa de recipiente grande e uma treliça firme, e é cultivada como anual.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso, caixa ou meio tambor com pelo menos 40 cm de profundidade e 50 cm de diâmetro, com vários furos no fundo, junto de uma treliça, cerca ou pérgola de pelo menos 1,8 m de altura e firme o bastante para aguentar frutos de 1 a 3 kg",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou esterco curtido, 20% húmus de minhoca, 10% areia grossa ou perlita, mais 1 xícara de farinha de ossos por vaso de 40 L misturada antes do plantio",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 12,
+      "descricao": "Deixe as sementes de molho em água morna por 24 horas antes de semear, porque a casca é dura. Semeie 3 sementes a 2 cm de profundidade, com a ponta mais estreita para baixo. Elas germinam entre o 6º e o 12º dia; abaixo de 20 °C podem demorar mais ou apodrecer."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 13,
+      "dia_fim": 30,
+      "descricao": "Os cotilédones grandes e ovais abrem e logo aparecem as folhas verdadeiras, arredondadas e aveludadas, com cheiro forte ao toque. A fase termina quando a planta solta a primeira gavinha e começa a se esticar."
+    },
+    {
+      "fase_id": "crescimento_rama",
+      "nome": "Crescimento da Rama",
+      "dia_inicio": 31,
+      "dia_fim": 55,
+      "descricao": "A rama cresce até 10 a 15 cm por dia no calor e se agarra à treliça pelas gavinhas. Aparecem primeiro as flores masculinas, em pedúnculos longos e sem fruto na base. A fase termina quando surge a primeira flor feminina, com um minifruto peludo logo atrás das pétalas."
+    },
+    {
+      "fase_id": "floracao_polinizacao",
+      "nome": "Floração e Polinização",
+      "dia_inicio": 56,
+      "dia_fim": 80,
+      "descricao": "As flores abrem no fim da tarde e duram uma noite só, polinizadas por mariposas. Em varanda e apartamento quase sempre é preciso polinizar à mão. O fruto pegou quando o minifruto cresce a olhos vistos em 2 ou 3 dias; se amarelar e murchar, não foi polinizado."
+    },
+    {
+      "fase_id": "frutificacao",
+      "nome": "Crescimento dos Frutos",
+      "dia_inicio": 81,
+      "dia_fim": 120,
+      "descricao": "Os frutos engordam rápido e consomem muita água. Para comer, colha jovens, com 20 a 30 cm e casca que a unha ainda risca. Para cuia ou artesanato, deixe no pé de 2 a 4 frutos por planta e apoie os mais pesados numa rede ou num pano amarrado à treliça."
+    },
+    {
+      "fase_id": "maturacao_secagem",
+      "nome": "Maturação no Pé",
+      "dia_inicio": 121,
+      "dia_fim": 150,
+      "descricao": "A casca endurece e perde a penugem, e as folhas começam a secar. A cabaça está madura quando o cabinho fica marrom e seco e a unha já não marca a casca. Depois de colhida, ela seca em lugar ventilado e à sombra por 1 a 3 meses, até as sementes chacoalharem por dentro."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar a semeadura",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 12,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue com regador de crivo fino até umedecer, sem encharcar. Semente de cabaça em substrato frio e encharcado apodrece antes de nascer.",
+      "critica": false
+    },
+    {
+      "id": "rega_plantula",
+      "titulo": "Regar a cabaça",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 40,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, sem molhar as folhas. Acima de 30 °C, confira todo dia.",
+      "critica": false
+    },
+    {
+      "id": "rega_producao",
+      "titulo": "Regar a cabaça (produção)",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 41,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Regue na base, de manhã cedo, até escorrer pelos furos: um vaso de 40 L no verão pede de 5 a 10 L por dia. Folhas murchas ao meio-dia de calor são normais; murchas às 8 h da manhã indicam sede. Não molhe as folhas, para evitar oídio.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Regar pouco na maturação",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 121,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue só se estiver seco nessa profundidade, com metade do volume de antes. Menos água ajuda a casca a endurecer.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a cabaça",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Até o dia 55, espalhe 2 punhados de húmus ou 1 colher de sopa de NPK 10-10-10 a 10 cm do caule e regue em seguida. A partir das primeiras flores, troque por 1 colher de sopa de cinza de madeira ou sulfato de potássio mais 1 punhado de farinha de ossos, porque excesso de nitrogênio faz muita folha e pouco fruto.",
+      "critica": false
+    },
+    {
+      "id": "guiar_rama",
+      "titulo": "Guiar a rama na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Amarre as pontas novas à treliça com barbante ou tira de pano em laço frouxo, em forma de 8, e direcione as ramas que estão caindo para fora. Frutos acima de 1 kg precisam de uma rede ou pano amarrado à estrutura para não arrancarem o ramo.",
+      "critica": false
+    },
+    {
+      "id": "poda_ramas",
+      "titulo": "Podar ramas e frutos em excesso",
+      "tipo": "PODA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Quando a rama principal passar do topo da treliça, corte a ponta dela: as ramas laterais que nascem depois dão mais flores femininas. Corte as laterais que já não cabem na estrutura e, se quer cabaças para secar, deixe só de 2 a 4 frutos por planta, retirando os menores e os deformados.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 140,
+      "instrucoes": "Vire as folhas e procure pó branco (oídio), manchas amarelas angulosas (míldio), pulgões, mosca-branca e furos. Nos frutos e nas pontas das ramas, procure furinhos com serragem úmida, sinal de broca.",
+      "critica": false
+    },
+    {
+      "id": "colheita_verde",
+      "titulo": "Colher cabaças novas para comer",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 85,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Colha com tesoura os frutos de 20 a 30 cm cuja casca a unha ainda risca com facilidade; passado disso ficam fibrosos e amargos. Deixe no pé os que você reservou para secar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "Com mais de uma planta no vaso, nenhuma consegue raiz e água suficientes para dar frutos.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa e cortar as outras rente ao substrato com tesoura, sem arrancar"
+    },
+    {
+      "dia_disparo": 25,
+      "titulo": "Instalar a treliça",
+      "mensagem": "A primeira gavinha está chegando, e em poucas semanas a rama passa de 2 metros.",
+      "acao_requerida": "Firmar uma treliça, cerca ou tela de pelo menos 1,8 m junto ao vaso, bem presa à parede ou ao chão, antes que a rama se espalhe pelo piso"
+    },
+    {
+      "dia_disparo": 56,
+      "titulo": "Comece a polinizar à mão",
+      "mensagem": "As flores femininas abrem só uma noite e, sem mariposas por perto, o minifruto murcha em poucos dias.",
+      "acao_requerida": "No fim da tarde, colher uma flor masculina aberta, tirar as pétalas e encostar o miolo cheio de pólen no centro de cada flor feminina aberta"
+    },
+    {
+      "dia_disparo": 121,
+      "titulo": "Deixe as cabaças amadurecerem",
+      "mensagem": "Daqui em diante, os frutos que ficaram no pé endurecem a casca para virar cuia.",
+      "acao_requerida": "Parar de colher os frutos reservados, reduzir a rega e apoiar cada cabaça num pedaço de madeira ou isopor se estiver encostando no chão"
+    },
+    {
+      "dia_disparo": 145,
+      "titulo": "Colher e curar as cabaças",
+      "mensagem": "As cabaças com cabinho marrom e casca dura já podem sair do pé.",
+      "acao_requerida": "Cortar deixando 5 cm de cabinho, lavar com água e um pouco de água sanitária, secar com pano e pendurar em lugar ventilado e à sombra, girando de vez em quando, por 1 a 3 meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo por excesso de rega (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule escura e mole, planta murcha mesmo com substrato úmido; em plântulas, tombamento",
+      "prevencao_tratamento": "Vaso com bons furos e substrato que drena, regar na base só quando o dedo encontrar seco; afastar o substrato do caule. Planta com colo podre não se recupera: descarte o substrato"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco em manchas na face de cima das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Não molhar as folhas e manter a rama arejada com a poda; no início, pulverizar 1 parte de leite para 9 de água ou bicarbonato de sódio a 0,5% a cada 5 dias e remover as folhas muito atacadas"
+    },
+    {
+      "nome": "Míldio (Pseudoperonospora cubensis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas angulosas, limitadas pelas nervuras, com mofo cinza-arroxeado no verso; comum em períodos chuvosos",
+      "prevencao_tratamento": "Regar de manhã e só na base, retirar e descartar as folhas manchadas; em ataque forte, calda bordalesa a 1% a cada 7 dias"
+    },
+    {
+      "nome": "Broca-das-cucurbitáceas (Diaphania nitidalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos com serragem úmida nas pontas das ramas, flores e frutos novos; pontas murcham e frutos apodrecem por dentro",
+      "prevencao_tratamento": "Retirar e destruir as partes brocadas; pulverizar Bacillus thuringiensis (Bt) no fim da tarde a cada 7 dias durante a floração"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos espalhados pelas folhas e flores roídas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo; em ataque forte, óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Pulgão e mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas brotações, ou nuvem de mosquinhas brancas ao mexer nas folhas; folhas enrugadas, pegajosas e com fumagina",
+      "prevencao_tratamento": "Jato de água no verso das folhas; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Queda de frutos novos por falta de polinização",
+      "tipo": "DISTURBIO",
+      "sintomas": "O minifruto atrás da flor feminina amarela, murcha e cai poucos dias depois da flor abrir",
+      "prevencao_tratamento": "Polinizar à mão no fim da tarde em que a flor feminina abre, usando uma flor masculina aberta no mesmo dia"
+    },
+    {
+      "nome": "Frutos deformados ou com ponta fina",
+      "tipo": "DISTURBIO",
+      "sintomas": "Cabaça torta, com um lado murcho ou a ponta afinada",
+      "prevencao_tratamento": "Polinização incompleta ou rega irregular: esfregar bem o pólen em todo o estigma e manter a rega diária sem deixar o vaso secar por completo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        1,
+        2
+      ],
+      "titulo": "Calor forte e temporais",
+      "mensagem": "No auge do verão, vaso de cabaça pode secar em um dia só, e as chuvas de fim de tarde espalham míldio.",
+      "acao_requerida": "Conferir a rega também no fim da tarde nos dias acima de 32 °C e reforçar as amarrações da treliça contra o vento"
+    },
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Colha antes da geada",
+      "mensagem": "A cabaça não suporta geada, e fruto que congela no pé apodrece em vez de secar.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, colher as cabaças com casca dura para curar dentro de casa e descartar os frutos ainda moles"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "planta": {
+    "nome_comum": "Feijão-de-corda",
+    "nome_cientifico": "Vigna unguiculata",
+    "descricao": "Leguminosa de clima quente, também chamada feijão-caupi ou feijão-macassar, muito tolerante a calor e a solo pobre. Em vaso rende o feijão-verde (vagens e grãos colhidos ainda verdes) e, no fim do ciclo, grãos secos. As ramas compridas que dão o nome à planta precisam de um tutor.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 90,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 30 cm de profundidade e 30 cm de diâmetro, com furos no fundo e espaço para fincar um tutor de 1,5 m ou encostar numa tela",
+    "volume_minimo_litros": 10,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou perlita, mais 1 colher de sopa de farinha de ossos por 10 L; sem esterco fresco, que dá excesso de nitrogênio e muita rama sem vagem",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 7,
+      "descricao": "Semeie 3 sementes por cova a 3 cm de profundidade, com 2 covas por vaso de 20 L. Acima de 20 °C as plântulas saem entre o 4º e o 7º dia, com duas folhas grossas e arredondadas (os cotilédones)."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 8,
+      "dia_fim": 35,
+      "descricao": "Surgem as folhas de três folíolos e, a partir da 3ª semana, as ramas começam a se alongar e procurar apoio. Folhas verde-escuras e crescimento rápido indicam que a planta está bem; a fase muda quando aparecem os primeiros cachos de botões na ponta de hastes compridas."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 36,
+      "dia_fim": 50,
+      "descricao": "Abrem flores lilás ou brancas, que duram só uma manhã. É a fase mais sensível à falta de água e ao calor extremo: vaso seco derruba as flores. Os primeiros fiapos de vagem aparecem logo depois da flor murchar."
+    },
+    {
+      "fase_id": "vagens_verdes",
+      "nome": "Vagens e Feijão-Verde",
+      "dia_inicio": 51,
+      "dia_fim": 75,
+      "descricao": "As vagens crescem até 20 a 30 cm. Para feijão-verde, colha quando os grãos já marcam a vagem mas ela ainda está verde e dobra sem quebrar. Colher com frequência estimula novas flores."
+    },
+    {
+      "fase_id": "secagem_grao",
+      "nome": "Secagem e Grão Seco",
+      "dia_inicio": 76,
+      "dia_fim": 90,
+      "descricao": "As vagens restantes amarelam, depois ficam palha e secas, e as folhas começam a cair. O grão está pronto quando a vagem estala ao ser apertada e os grãos soltam dentro dela. Terminada a colheita, a planta pode ser arrancada."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Manter as sementes úmidas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 7,
+      "instrucoes": "Regue de leve pela manhã até umedecer os 3 primeiros centímetros. O substrato não pode secar nem ficar encharcado: semente de feijão encharcada apodrece antes de nascer.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o feijão-de-corda",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, sem molhar as folhas. Acima de 32 °C ou na floração, confira todo dia; em semana de chuva, só regue se o dedo sair seco.",
+      "critica": true
+    },
+    {
+      "id": "rega_secagem",
+      "titulo": "Rega reduzida na secagem",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 76,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Regue só quando o substrato estiver seco a 5 cm de profundidade, com metade da água de costume. Pouca água agora ajuda as vagens a secar e evita que os grãos mofem ou brotem dentro delas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar com fósforo e potássio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 65,
+      "instrucoes": "Espalhe 1 colher de sopa de farinha de ossos e 1 colher de chá de cinza de madeira por vaso de 20 L, longe do caule, e regue em seguida. Não use ureia nem esterco fresco: o feijão fixa o próprio nitrogênio, e o excesso vira rama sem vagem.",
+      "critica": false
+    },
+    {
+      "id": "conduzir_ramas",
+      "titulo": "Enrolar as ramas no tutor",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Pegue as pontas das ramas soltas e enrole no tutor ou na tela no sentido anti-horário, que é o sentido natural da planta. Ramas que chegaram ao topo podem ter a ponta cortada para a planta encher de flores.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e vagens",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Vire as folhas e olhe as pontas das ramas e os cachos de flores: procure pulgões pretos, mosquinhas brancas que voam ao tocar, teias finas, furos nas folhas e vagens com furinhos ou fezes de lagarta.",
+      "critica": false
+    },
+    {
+      "id": "colheita_feijao_verde",
+      "titulo": "Colher feijão-verde",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 51,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Colha as vagens com os grãos já marcados, ainda verdes e que dobram sem quebrar, segurando o cacho com uma mão e puxando a vagem com a outra para não arrancar as flores. Deixe as vagens pequenas para a próxima passada.",
+      "critica": false
+    },
+    {
+      "id": "colheita_grao_seco",
+      "titulo": "Colher vagens secas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 76,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Colha as vagens cor de palha que estalam ao apertar, antes que abram sozinhas ou peguem chuva. Deixe secar mais 3 dias à sombra, debulhe e guarde os grãos em pote fechado no congelador por 3 dias para matar ovos de caruncho.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "As plântulas de cada cova já competem por água e espaço. No vaso, plantas demais produzem pouca vagem.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa de cada cova (2 por vaso de 20 L), cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 16,
+      "titulo": "Colocar o tutor",
+      "mensagem": "Em poucos dias as ramas começam a se esticar. Tutor colocado depois machuca as raízes e deixa a planta deitada no chão.",
+      "acao_requerida": "Fincar um bambu de 1,5 m perto de cada planta, a 5 cm do caule, ou encostar o vaso numa tela ou grade"
+    },
+    {
+      "dia_disparo": 36,
+      "titulo": "Floração chegando",
+      "mensagem": "Os primeiros botões devem aparecer agora. Nesta fase, um único dia de vaso seco ou sol muito forte derruba flores que virariam vagem.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia e, em ondas de calor acima de 35 °C, dar sombra leve no início da tarde"
+    },
+    {
+      "dia_disparo": 76,
+      "titulo": "Deixar as últimas vagens secarem",
+      "mensagem": "A planta está no fim do ciclo. As vagens que ainda estão no pé vão virar grão seco, bom para cozinhar ou guardar como semente.",
+      "acao_requerida": "Parar de colher vagens verdes, reduzir a rega e esperar as vagens ficarem cor de palha"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-preto (Aphis craccivora)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos e brilhantes nas pontas das ramas, nos cachos de flores e nas vagens novas; brotos encarquilhados e melado pegajoso, com formigas subindo",
+      "prevencao_tratamento": "Jato de água nas colônias; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias. Controle as formigas, que protegem os pulgões"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Mosquinhas brancas que levantam voo ao mexer na planta; folhas amareladas com pontinhos e fumagina preta. Transmite vírus",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias; mantenha longe de tomateiros e abóboras infestados"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa, Cerotoma arcuata)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos espalhados pelas folhas, principalmente nas plantas jovens",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo, quando estão lentos; em plântulas muito atacadas, cobrir com tecido fino até a 3ª semana"
+    },
+    {
+      "nome": "Lagarta-das-vagens (Maruca vitrata)",
+      "tipo": "PRAGA",
+      "sintomas": "Flores e vagens grudadas por fios, com furinhos e bolinhas de fezes; grãos comidos dentro da vagem",
+      "prevencao_tratamento": "Abrir os cachos grudados e retirar as lagartas; retirar vagens furadas; se o ataque for grande, Bacillus thuringiensis (Bt) no fim da tarde a cada 7 dias"
+    },
+    {
+      "nome": "Caruncho (Callosobruchus maculatus)",
+      "tipo": "PRAGA",
+      "sintomas": "Grãos guardados com furinhos redondos e pó; besourinhos marrons saindo do pote",
+      "prevencao_tratamento": "Colher as vagens logo que secam, congelar os grãos por 3 dias antes de guardar e manter em pote bem fechado"
+    },
+    {
+      "nome": "Podridão radicular (Fusarium, Rhizoctonia, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas de baixo amarelando e colo do caule escuro e mole",
+      "prevencao_tratamento": "É causada principalmente por excesso de rega e vaso sem drenagem. Regue só com o dedo seco a 3 cm e não deixe água no pratinho; planta com colo podre não se recupera e deve ser descartada com o substrato"
+    },
+    {
+      "nome": "Mosaico do caupi (vírus CPSMV, CABMV)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas com manchas verde-claras e escuras em mosaico, enrugadas e deformadas; planta raquítica e com poucas vagens",
+      "prevencao_tratamento": "Não tem cura. Controle pulgões e vaquinhas, que transmitem o vírus, use sementes de planta sadia e arranque a planta doente"
+    },
+    {
+      "nome": "Queda de flores por calor ou seca",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões e flores caem sem virar vagem, com a planta saudável e cheia de folhas",
+      "prevencao_tratamento": "Não deixe o vaso secar na floração e dê sombra leve no início da tarde em dias acima de 35 °C. Excesso de adubo nitrogenado também causa: suspenda-o"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Frio chegando para o feijão",
+      "mensagem": "O feijão-de-corda para de crescer abaixo de 15 °C e sofre com geada. Plantas semeadas no fim do verão estão chegando nesse período.",
+      "acao_requerida": "Em noites abaixo de 12 °C, levar o vaso para perto de uma parede ou sob cobertura; colher as vagens que já estiverem prontas"
+    }
+  ]
+}

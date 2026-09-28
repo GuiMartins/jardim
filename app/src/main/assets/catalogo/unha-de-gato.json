@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Unha-de-gato",
+    "nome_cientifico": "Ficus pumila",
+    "descricao": "Trepadeira de folhas pequenas em forma de coração que se prende sozinha a muros, treliças e troncos por raízes aéreas, formando uma cobertura verde densa. Em vaso, cresce bem em meia sombra e pode ser conduzida numa treliça ou pendente; a seiva leitosa irrita a pele e é tóxica para cães e gatos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo e uma treliça, tela ou estaca de fibra de coco para a planta subir",
+    "volume_minimo_litros": 8,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% casca de pinus fina ou fibra de coco; fica úmido sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta à nova luz e ao vaso. É normal cair algumas folhas velhas nas duas primeiras semanas. A fase termina quando surgem pontas novas, de folhas menores e verde-claras."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Os ramos se alongam e começam a soltar raízes aéreas que grudam no suporte. Guie os ramos com a mão, prendendo-os com arame encapado sem apertar, até que se fixem sozinhos. A fase termina quando a planta passa a subir pelo suporte sem ajuda."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce rápido da primavera ao fim do verão e quase para no inverno. Ramos mais velhos podem virar a forma adulta, com folhas grandes e coriáceas, que raramente dá frutos em vaso; podá-los mantém a folhagem miúda e decorativa. O substrato se esgota em cerca de dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a unha-de-gato",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. As folhas finas secam e caem sem voltar se o vaso secar por inteiro. No verão acima de 30 °C, confira a cada 2 dias; no inverno, a cada 5 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a unha-de-gato",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por vaso de 8 L sem encostar nos ramos, ou regue com NPK 10-10-10 (1 colher de chá rasa em 1 L de água) sobre o substrato já úmido. De junho a agosto, use metade da dose.",
+      "critica": false
+    },
+    {
+      "id": "poda_conducao",
+      "titulo": "Podar e conduzir os ramos",
+      "tipo": "PODA",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas, corte logo acima de uma folha os ramos que passaram do suporte ou que se soltaram, e retire os ramos de folhas grandes e duras. Prenda as pontas novas no suporte. Limpe a seiva leitosa da tesoura e da pele com água e sabão.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas dos ramos: procure pontinhos brancos algodoados ou marrons presos ao caule, teias finas e folhas pontilhadas de amarelo.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, solte com cuidado as raízes aéreas presas ao suporte, tire o torrão, raspe um terço do substrato velho e replante num vaso 5 cm maior com substrato novo. Se não quiser aumentar o vaso, pode as raízes externas em 2 cm e volte ao mesmo vaso.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o suporte agora",
+      "mensagem": "A unha-de-gato gruda com força em reboco, pedra e madeira, e arrancá-la depois deixa manchas e pode estragar a pintura.",
+      "acao_requerida": "Colocar no vaso uma treliça, tela ou estaca de fibra de coco e manter o vaso a pelo menos 30 cm de paredes que você não quer cobrir"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "Se já há pontas novas, as raízes pegaram no vaso e a planta pode receber adubo.",
+      "acao_requerida": "Conferir se surgiram brotos novos e prender os ramos mais longos ao suporte com arame encapado frouxo"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Planta estabelecida",
+      "mensagem": "Os ramos devem estar subindo sozinhos pelo suporte. A partir daqui, a planta cresce rápido no calor.",
+      "acao_requerida": "Soltar os arames que ainda prendem ramos já fixados, para não estrangular os caules"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base dos ramos escura e mole; cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com os 2 cm de cima secos e nunca deixar água no pratinho. Se aparecer, tire a planta do vaso, corte as raízes pretas e replante em substrato novo e mais arejado"
+    },
+    {
+      "nome": "Cochonilha (algodão e escama)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados ou pequenas escamas marrons presas aos ramos e ao verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos que depois ficam cinza-bronze; teias finas entre folhas, sobretudo em ar seco e dentro de casa",
+      "prevencao_tratamento": "Lavar a folhagem com jato de água, também por baixo, e aumentar a umidade ao redor; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Folhas secas por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas ficam crocantes, marrons e caem em massa depois de o vaso secar por inteiro",
+      "prevencao_tratamento": "Não deixar o torrão secar: nos dias quentes, conferir a rega a cada 2 dias. Corte os ramos que perderam todas as folhas; brotam de novo a partir dos nós vivos"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas nas folhas viradas para o sol da tarde",
+      "prevencao_tratamento": "Manter no máximo sol fraco da manhã; mudar o vaso de lugar e remover as folhas muito danificadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: a planta desacelera",
+      "mensagem": "No frio a unha-de-gato quase para de crescer e bebe bem menos água. Rega em excesso agora apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para quando os 3 cm de cima estiverem secos, usar meia dose de adubo e proteger do vento frio e de geada"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: poda de renovação",
+      "mensagem": "A planta retoma o crescimento. Uma poda mais forte agora estimula brotação cheia de folhas miúdas.",
+      "acao_requerida": "Cortar os ramos ralos e os de folhas grandes e duras, reduzir em um terço os ramos longos e voltar à dose cheia de adubo"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com o vaso seco",
+      "mensagem": "No calor o vaso seca em 1 ou 2 dias e a planta perde folhas rápido se ficar sem água.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e afastar o vaso de sol da tarde e de paredes muito quentes"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Mulungu-do-sertão",
+    "nome_cientifico": "Erythrina velutina",
+    "descricao": "Árvore nativa da Caatinga, de galhos com acúleos, que perde as folhas no inverno seco e então se cobre de flores vermelho-alaranjadas. Em vaso grande vira uma arvoreta ornamental e rústica, que aguenta seca mas não aguenta encharcamento; a floração em vaso costuma levar de 4 a 6 anos. As sementes vermelhas são tóxicas se ingeridas: mantenha-as longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Semeie em copo ou saquinho de 500 ml com furos; aos 2 meses passe para vaso de 10 a 15 L e, com 1 ano, para o vaso definitivo: plástico grosso ou cerâmica com pelo menos 45 cm de diâmetro, 40 cm de profundidade e vários furos no fundo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus, 10% perlita ou brita fina; bem drenante, como o solo arenoso da Caatinga",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 15,
+      "descricao": "Antes de semear, lixe a casca da semente no lado oposto ao 'olho' até aparecer o branco e deixe de molho 12 horas em água à temperatura ambiente. Enterre a 1 a 2 cm, no sol. A plântula surge entre o 5º e o 12º dia, com duas folhas grossas e arredondadas; semente sem casca lixada pode levar meses ou não germinar."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 16,
+      "dia_fim": 60,
+      "descricao": "Aparecem as folhas verdadeiras, compostas de três folíolos. O caule engrossa e a raiz principal cresce rápido para baixo; quando ela sair pelos furos do copo, é hora do primeiro transplante."
+    },
+    {
+      "fase_id": "muda_juvenil",
+      "nome": "Muda Juvenil",
+      "dia_inicio": 61,
+      "dia_fim": 365,
+      "descricao": "Cresce depressa no calor, podendo passar de 60 cm no primeiro ano, e surgem os primeiros acúleos nos ramos. No primeiro inverno ela pode perder parte ou todas as folhas: isso é dormência normal, não morte. Arranhe de leve a casca de um ramo; verde por baixo significa planta viva."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: folhagem cheia de outubro a maio, com crescimento e adubação; queda das folhas de junho a agosto, quando a rega é reduzida; em plantas com alguns anos, floração vermelho-alaranjada nos galhos pelados entre agosto e outubro, seguida de vagens com sementes vermelhas. Em vaso, mantenha a copa entre 1,5 e 3 m com podas anuais."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar a semente do mulungu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Toque a superfície do copo: se o primeiro centímetro estiver seco, regue devagar até escorrer pelos furos. Mantenha úmido, nunca encharcado; semente parada em água apodrece. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_plantula",
+      "titulo": "Regar a muda de mulungu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos. O copo pequeno seca em um dia de sol forte, e a plântula murcha sem voltar se secar por completo.",
+      "critica": true
+    },
+    {
+      "id": "rega_estabelecida",
+      "titulo": "Regar o mulungu",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até a água sair pelos furos, e esvazie o prato. No verão quente e sem chuva pode precisar a cada 2 ou 3 dias; com a planta sem folhas no inverno, regue só a cada 10 a 15 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o mulungu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 xícaras de húmus de minhoca) por vaso de 40 L, na borda, longe do caule, e regue em seguida; no vaso de 10 L use um terço disso. É leguminosa e fixa nitrogênio: evite adubos ricos em N. Com a planta sem folhas (junho a agosto), pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as pontas dos ramos: procure caroços brancos ou marrons grudados (cochonilha), folhas e brotos inchados e deformados (galha da vespa-da-eritrina) e folhas cortadas em meia-lua (formiga).",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, corte com tesoura limpa as raízes que dão volta no fundo (até um quarto do torrão) e replante no mesmo vaso com substrato novo, ou num vaso maior. Faça de preferência em setembro ou outubro, quando a brotação recomeça; se cair no inverno, espere a brotação.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora de sair do copo",
+      "mensagem": "A raiz do mulungu cresce rápido e já deve estar enrolada no copo. Se ficar presa, a muda para de crescer e a raiz principal deforma.",
+      "acao_requerida": "Transplantar para vaso de 10 a 15 L com o substrato recomendado, sem desmanchar o torrão, e regar bem em seguida"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Vaso definitivo",
+      "mensagem": "Com um ano, a muda precisa de espaço para formar tronco e copa. Vaso pequeno demais seca em horas no verão e deixa a árvore tombar com o vento.",
+      "acao_requerida": "Transplantar para o vaso definitivo de pelo menos 40 L; se estiver no inverno sem folhas, esperar a brotação de setembro para fazer isso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora do inverno, base do caule mole e escura, substrato com cheiro azedo; no inverno, a planta sem folhas não rebrota na primavera",
+      "prevencao_tratamento": "Nunca deixar água no prato e regar pouco quando a planta estiver sem folhas. Se aparecer, tirar do vaso, cortar as raízes escuras e moles e replantar em substrato novo e seco, voltando a regar só depois de uma semana"
+    },
+    {
+      "nome": "Vespa-da-galha-da-eritrina (Quadrastichus erythrinae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas, pecíolos e brotos com inchaços e deformações (galhas), crescimento travado e queda de folhas",
+      "prevencao_tratamento": "Cortar e jogar no lixo fechado (não na compostagem) todas as partes com galhas assim que aparecerem; em ataque forte, aplicar inseticida sistêmico conforme o rótulo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos ou marrons grudados nos ramos e no verso das folhas, folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; depois, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Formiga-cortadeira",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e brotos cortados em meia-lua ou desaparecidos de uma noite para outra, trilha de formigas no vaso",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca granulada formicida longe de crianças e pets; barreira de graxa numa fita em volta do tronco"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântula murcha e cai com o caule escuro e fino rente ao substrato nas primeiras semanas",
+      "prevencao_tratamento": "Semear em substrato novo e arenoso, em pleno sol e sem encharcar; retirar as plântulas afetadas"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule fino e comprido, folhas espaçadas e pálidas, planta tombando para o lado da luz",
+      "prevencao_tratamento": "Levar para lugar com pelo menos 6 horas de sol direto; podar a ponta estiolada na próxima primavera para a planta engrossar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Mulungu entrando em dormência",
+      "mensagem": "Com o frio e a seca do inverno, o mulungu perde as folhas; é o ciclo natural dele. O perigo agora é regar como no verão e apodrecer a raiz parada.",
+      "acao_requerida": "Espaçar a rega para a cada 10 a 15 dias, só com o substrato seco a 5 cm, e suspender a adubação até a brotação"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Brotação e poda de formação",
+      "mensagem": "As folhas novas começam a surgir. É a melhor hora para dar forma à copa; em planta que floresceu, as flores já caíram ou estão caindo.",
+      "acao_requerida": "Esperar as últimas flores caírem, cortar com luvas (os ramos têm acúleos) os galhos secos, cruzados e os que passam da altura desejada, logo acima de uma gema; retomar a rega normal e a adubação"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Iresine",
+    "nome_cientifico": "Iresine diffusa f. herbstii (syn. Iresine herbstii)",
+    "descricao": "Folhagem perene de folhas arredondadas vinho com nervuras rosa-choque (há formas verde-amareladas), conhecida também como coração-magoado. Cresce rápido, enraíza com facilidade por estaca e dá cor forte a vasos e jardineiras. As flores são discretas: o valor está nas folhas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 18 cm de diâmetro e 18 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% perlita ou areia grossa; fofo e que retenha alguma umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda pode murchar nos primeiros dias depois do transplante e perder algumas folhas de baixo. Nas horas mais quentes, mantenha-a com sol só de manhã. A fase acaba quando surgem folhas novas brilhantes nas pontas e ela para de murchar à tarde."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Crescimento rápido de ramos novos. Com pouca luz, os entrenós ficam longos e a cor desbota para verde-escuro. Com sol de 4 a 6 horas, as folhas ficam vinho intenso. A fase termina quando a planta forma uma touceira que cobre a borda do vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Arbusto compacto de 30 a 50 cm se for beliscado com regularidade. Cresce forte da primavera ao outono. No inverno do Centro-Sul fica quase parada e sofre abaixo de 10 °C. Perde folhas e pode morrer na geada. Depois de 2 ou 3 anos, fica lenhosa e rala na base: é melhor renová-la com estacas do que insistir na planta velha."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a iresine recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda não se ligou ao substrato novo e seca antes do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a iresine",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 a 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão ao sol, vaso pequeno pode pedir rega a cada 1 ou 2 dias. De junho a agosto, espace para 5 a 7 dias. Folhas murchas com substrato úmido indicam excesso de água, não falta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a iresine",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato úmido, espalhe 2 colheres de sopa de húmus de minhoca na superfície de um vaso de 3 L, ou regue com NPK 10-10-10 diluído (1 g por litro de água). Pule a adubação de junho a agosto, quando a planta quase não cresce.",
+      "critica": false
+    },
+    {
+      "id": "beliscar_pontas",
+      "titulo": "Beliscar as pontas dos ramos",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com os dedos ou tesoura limpa, corte o último par de folhas de cada ramo que passou de 10 cm, logo acima de um nó. Cada corte gera dois ramos novos e deixa a planta cheia. Aproveite as pontas de 8 a 10 cm como estacas: tire as folhas de baixo e ponha em água ou em substrato úmido. As raízes saem em 1 a 2 semanas. Retire também as espigas de flor, que são discretas e gastam energia.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os brotos novos. Procure insetos agrupados, bolinhas brancas de algodão nas axilas, pontinhos claros com teias finas e mosquinhas brancas que voam quando você mexe na planta.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato ou renovar a planta",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, corte 1/3 das raízes enoveladas e replante em substrato novo, num vaso 2 a 4 cm maior. Se a base estiver lenhosa e sem folhas, enraíze 5 ou 6 estacas no substrato novo e descarte a planta velha.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Confira a cor das folhas",
+      "mensagem": "A cor da iresine mostra se a luz está certa: vinho forte é luz boa, verde apagado com caule esticado é pouca luz, e manchas secas e esbranquiçadas são sol forte demais à tarde.",
+      "acao_requerida": "Mudar o vaso para um lugar com 4 a 6 horas de sol, de preferência o da manhã, se a cor estiver fraca ou queimada"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Faça mudas de reserva",
+      "mensagem": "A iresine enraíza muito fácil, e ter mudas de reserva garante a planta se o inverno ou uma podridão levar a principal.",
+      "acao_requerida": "Enraizar 3 estacas de ponta, de 8 a 10 cm, num copo com água ou num vasinho com substrato úmido"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, base do caule escura e mole, raízes marrons que se desfazem, cheiro de mofo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, esvaziar o pratinho e reduzir a rega no inverno. Planta atacada: enraizar as pontas sadias como estacas e descartar o resto com o substrato"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos novos, folhas encarquilhadas e pegajosas",
+      "prevencao_tratamento": "Jato de água nos brotos. Se persistir, sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas axilas das folhas e nos caules, folhas amareladas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Depois, óleo de neem a 0,5% a cada 7 dias por 3 semanas. Podar ramos muito infestados"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de claro e sem brilho, teias finas no verso, comum em tempo quente e seco",
+      "prevencao_tratamento": "Lavar o verso das folhas com jato de água a cada 3 dias e aumentar a umidade em volta. Se persistir, óleo de neem a 0,5% ou enxofre molhável conforme o rótulo, nunca sob sol forte"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta, ovos e ninfas no verso das folhas, folhas amarelando",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento e perda de cor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos compridos e finos, folhas espaçadas, vinho desbotado para verde-escuro",
+      "prevencao_tratamento": "Levar o vaso para um local com pelo menos 3 a 4 horas de sol direto e beliscar os ramos esticados para rebrotar compacta"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, amolecem e caem depois de noites abaixo de 10 °C. Geada mata a parte aérea",
+      "prevencao_tratamento": "Nas noites frias, pôr o vaso junto a uma parede, sob cobertura ou dentro de casa. Manter estacas de reserva em local abrigado"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Prepare a iresine para o frio",
+      "mensagem": "Com o inverno chegando, a iresine desacelera e fica sensível a frio e encharcamento.",
+      "acao_requerida": "Enraizar algumas estacas de reserva e escolher um lugar abrigado e claro para as noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção",
+      "mensagem": "No frio a planta quase não cresce e o substrato demora a secar. Esse é o período de maior risco de podridão e de queima pelo frio.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm, suspender a adubação e recolher o vaso nas noites de frio intenso ou geada"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de renovação na primavera",
+      "mensagem": "A iresine volta a crescer forte agora. Uma poda firme remove os ramos castigados pelo inverno e deixa a touceira cheia.",
+      "acao_requerida": "Cortar todos os ramos pela metade, logo acima de um nó, retirar as partes secas e retomar a adubação mensal"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Palmeira-azul",
+    "nome_cientifico": "Bismarckia nobilis",
+    "descricao": "Palmeira de Madagascar com folhas em leque rígidas, de cor azul-prateada, que se destacam em qualquer jardim ou varanda ensolarada. Cresce devagar em vaso e fica bonita por anos. Quando adulta, aguenta seca e calor forte, mas não gosta que mexam nas raízes.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo e pesado (cimento, fibra ou cerâmica), com pelo menos 50 cm de profundidade e 50 cm de diâmetro e furos grandes no fundo. A raiz principal desce reta, e um vaso raso deixa a planta travada",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca e 10% casca de pinus fina ou perlita, mais 1 colher de sopa de calcário dolomítico para cada 10 L. Tem que drenar rápido e não pode empapar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a mudança de lugar e pode amarelar a ponta de uma ou duas folhas velhas. Isso é normal. A adaptação terminou quando a folha nova do centro (a 'lança', ainda fechada) volta a crescer, o que se vê pela altura dela a cada semana."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta abre uma folha nova a cada 1 ou 2 meses no calor. No inverno ela quase para. As folhas novas saem cada vez mais azuladas e maiores; se saírem pálidas ou menores que as anteriores, falta sol ou adubo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Da primavera ao fim do verão, abre de 4 a 8 folhas por ano e bebe mais água. No inverno, desacelera. Uma folha velha da base morre de tempos em tempos: corte só quando estiver totalmente seca e marrom, rente ao tronco com serrote limpo, porque a folha amarelada ainda repassa potássio para as novas. Em vaso ela fica bem menor que no chão e pode morar nele por muitos anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a palmeira-azul nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar em volta do torrão até a água escorrer pelos furos. Não deixe água parada no prato nem no centro da folha nova. Em dia de chuva, pule a rega.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a palmeira-azul",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e só regue se estiver seco nessa profundidade. Molhe até escorrer pelos furos e esvazie o prato depois de 30 minutos. Acima de 32 °C, confira a cada 2 ou 3 dias. De junho a agosto, espere de 7 a 10 dias entre as regas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_palmeira",
+      "titulo": "Adubar a palmeira-azul",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na superfície, longe do tronco, adubo de liberação lenta para palmeiras (rico em potássio e magnésio, com micronutrientes), cerca de 2 colheres de sopa para um vaso de 60 L. Complete com 1 colher de chá de sulfato de magnésio e regue logo depois. De junho a agosto, não adube.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e a base dos pecíolos. Procure escamas marrons ou brancas grudadas, teia fina, manchas escuras que se espalham e a folha nova do centro mole ou com cheiro ruim. Tire as escamas com um cotonete com álcool 70%.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Passar para um vaso maior",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, passe a palmeira para um vaso 10 a 15 cm mais largo e mais fundo, com substrato novo. Tire o torrão inteiro, sem quebrar nem desembaraçar as raízes, e mantenha o tronco na mesma altura em relação à terra. Regue bem e deixe 2 semanas à meia-sombra antes de voltar ao sol pleno.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Acostume ao sol aos poucos",
+      "mensagem": "Mudas de viveiro às vezes crescem sob sombrite. Jogadas direto ao sol do meio-dia, ficam com as folhas queimadas e esbranquiçadas.",
+      "acao_requerida": "Deixar a palmeira 1 semana onde bate só sol da manhã e depois levar para o lugar definitivo, com sol pleno"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Com a raiz pegando, o intervalo entre as regas pode aumentar. Substrato sempre úmido apodrece a raiz da palmeira.",
+      "acao_requerida": "Conferir se a folha do centro cresceu desde a chegada e passar a regar só quando os 5 cm de cima secarem"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de palmeira-azul",
+      "mensagem": "Raízes saindo pelos furos ou uma planta instável no vaso indicam que ela precisa de mais espaço.",
+      "acao_requerida": "Olhar o fundo do vaso. Se houver muita raiz saindo, antecipar a troca de vaso para a próxima primavera, sem quebrar o torrão"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da raiz e do palmito (Phytophthora, Thielaviopsis)",
+      "tipo": "DOENCA",
+      "sintomas": "Folha nova do centro escurece, amolece e sai inteira ao ser puxada, com cheiro de podre. Folhas amarelam de baixo para cima com o substrato sempre molhado",
+      "prevencao_tratamento": "Substrato bem drenado, sem prato com água e sem regar com o substrato ainda úmido. Aos primeiros sinais, suspenda a rega e aplique fungicida cúprico no centro da planta. Se o palmito estiver podre, a planta não se recupera"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou brancas grudadas nos folíolos e pecíolos, pontos amarelados e às vezes melado com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia com álcool 70%. Em infestação maior, pulverize óleo mineral ou óleo de neem a 1% no fim da tarde, 3 vezes com 10 dias de intervalo"
+    },
+    {
+      "nome": "Ácaro-vermelho",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teia fina no verso, mais comum em tempo seco",
+      "prevencao_tratamento": "Jato de água no verso das folhas uma vez por semana na seca. Se persistir, óleo de neem a 0,5% ou enxofre molhável seguindo a dose da embalagem"
+    },
+    {
+      "nome": "Mancha foliar (Pestalotiopsis, Helminthosporium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas com halo amarelo que crescem e se juntam nos folíolos, principalmente em folhas molhadas por muito tempo",
+      "prevencao_tratamento": "Regar na terra, não sobre as folhas. Cortar folíolos muito atingidos com tesoura desinfetada e aplicar fungicida cúprico se as manchas continuarem aparecendo"
+    },
+    {
+      "nome": "Deficiência de potássio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Nas folhas mais velhas, pintas translúcidas alaranjadas e pontas secas e retorcidas, que pioram de baixo para cima",
+      "prevencao_tratamento": "Adubo para palmeiras rico em potássio a cada 2 meses no calor. Não corte as folhas afetadas enquanto houver verde nelas, porque cortar acelera a falta nas folhas novas"
+    },
+    {
+      "nome": "Deficiência de magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Faixa amarela larga nas bordas das folhas velhas, com o centro do folíolo ainda verde-azulado",
+      "prevencao_tratamento": "1 colher de chá de sulfato de magnésio dissolvida na rega a cada 2 meses no calor, e calcário dolomítico no substrato ao trocar de vaso"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e nada de adubo",
+      "mensagem": "No frio a palmeira-azul quase para de crescer, e substrato frio e molhado é o caminho mais curto para a podridão da raiz. Mudas jovens queimam com geada.",
+      "acao_requerida": "Espaçar a rega para 7 a 10 dias e suspender a adubação. Em noites com previsão abaixo de 3 °C, cobrir a planta com manta de TNT ou levar o vaso para perto de uma parede abrigada"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o ritmo",
+      "mensagem": "Com o calor voltando, ela retoma o crescimento e abre folhas novas.",
+      "acao_requerida": "Cortar rente ao tronco as folhas totalmente secas, voltar a adubar e regar sempre que os 5 cm de cima do substrato secarem"
+    }
+  ]
+}

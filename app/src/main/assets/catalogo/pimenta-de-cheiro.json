@@ -1,0 +1,241 @@
+{
+  "planta": {
+    "nome_comum": "Pimenta-de-cheiro",
+    "nome_cientifico": "Capsicum chinense",
+    "descricao": "Pimenta de aroma frutado e ardência baixa a média, muito usada na cozinha do Norte e do Nordeste para perfumar peixes, feijão e moquecas. É perene de vida curta: em vaso produz bem por 2 a 3 anos, com colheitas contínuas quando está calor, e depois deve ser renovada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Para semear, copinhos ou bandeja de células de 5 cm. Para a planta adulta, vaso de pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 12,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca e 20% areia grossa ou perlita, mais 1 colher de sopa de farinha de ossos por 10 L de mistura. Para semear, use substrato comercial para mudas, fino e sem adubo",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Semeie 2 a 3 sementes por célula, a 0,5 cm de profundidade, e mantenha tudo em lugar quente (25 a 30 °C). A C. chinense é lenta: as plântulas surgem entre o 10º e o 21º dia, e abaixo de 20 °C podem nem nascer. A fase acaba quando as duas folhinhas iniciais se abrem."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 22,
+      "dia_fim": 60,
+      "descricao": "Surgem as folhas verdadeiras, mais largas e brilhantes que as iniciais. Crescimento lento no começo. A muda está pronta para o vaso definitivo quando tem 4 a 6 folhas verdadeiras e 10 a 15 cm de altura."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 61,
+      "dia_fim": 100,
+      "descricao": "Já no vaso definitivo, a planta ganha altura e se ramifica em forma de Y. Folhas amarelando de baixo para cima indicam falta de adubo; folhas murchas ao meio-dia que se recuperam à tarde são normais no calor forte."
+    },
+    {
+      "fase_id": "floracao_frutificacao",
+      "nome": "Floração e Primeiros Frutos",
+      "dia_inicio": 101,
+      "dia_fim": 150,
+      "descricao": "Aparecem flores brancas pequenas nas bifurcações dos ramos, seguidas de frutos verdes enrugados. É normal que parte das primeiras flores caia. Muitas caindo indicam calor acima de 35 °C, rega irregular ou excesso de nitrogênio. Os frutos levam de 40 a 60 dias para amadurecer."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta em Produção",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Os frutos amadurecem e mudam de verde para amarelo, laranja ou vermelho, conforme a variedade. Da primavera ao outono, a planta floresce e produz sem parar. No inverno, desacelera e pode perder folhas. Depois de 2 a 3 anos, a produção cai e vale semear de novo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Borrife a superfície pela manhã até o primeiro centímetro ficar úmido. O substrato não pode secar nem encharcar: seco uma vez, a semente que começou a germinar morre.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar as mudas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Toque o substrato das células. Se a superfície estiver seca, regue devagar até escorrer por baixo. Célula pequena seca em um dia de sol, e a muda murcha sem voltar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pimenteira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos e jogue fora a água do pratinho. No verão acima de 30 °C, confira todo dia. No inverno, a cada 4 ou 5 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_vegetativa",
+      "titulo": "Adubar para crescer",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Até o dia 60, regue com húmus líquido ou NPK 10-10-10 diluído (1 g por litro). Depois do transplante, espalhe 2 colheres de sopa de húmus de minhoca na superfície do vaso, longe do caule, e regue em seguida.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_producao",
+      "titulo": "Adubar para florir e frutificar",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 101,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de farinha de ossos mais 1 de cinza de madeira (ou 1 colher de chá de NPK 4-14-8) na borda do vaso e regue. Evite adubo rico em nitrogênio: ele faz folha e derruba flor. No inverno, adube só a cada 40 dias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os brotos da ponta. Procure insetos agrupados, teias finas, pontinhos brancos que voam ao mexer e folhas novas enroladas ou endurecidas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_pimentas",
+      "titulo": "Colher pimentas maduras",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 151,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura, deixando o cabinho, as pimentas que já mudaram totalmente de cor (amarelo, laranja ou vermelho). Colher com frequência estimula novas flores. No inverno, com poucos frutos, a colheita pode esperar mais uns dias.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 780,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, remova um terço do torrão por fora e pelo fundo, podando as raízes enroladas, e replante com substrato novo, na mesma mistura inicial. Faça de preferência entre setembro e março e deixe a planta 3 dias na meia sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Germinação lenta é normal",
+      "mensagem": "A pimenta-de-cheiro pode levar até 3 semanas para nascer, principalmente se estiver abaixo de 25 °C.",
+      "acao_requerida": "Manter o recipiente no lugar mais quente da casa, com o substrato úmido. Se nada nascer até o dia 21, semear de novo com sementes novas"
+    },
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Mais de uma muda por célula disputam raiz e luz, e todas ficam fracas.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada célula, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Transplantar para o vaso definitivo",
+      "mensagem": "Com 4 a 6 folhas verdadeiras, a muda já precisa de espaço para formar raiz.",
+      "acao_requerida": "Passar a muda para o vaso de 12 L ou mais, no mesmo nível do caule, regar bem e deixar 3 dias na meia sombra antes de voltar ao sol"
+    },
+    {
+      "dia_disparo": 100,
+      "titulo": "Colocar um tutor",
+      "mensagem": "Com os frutos, os galhos ficam pesados e podem rachar na bifurcação, principalmente com vento.",
+      "acao_requerida": "Cravar uma estaca de 60 cm a 5 cm do caule e amarrar o caule principal com fita ou barbante em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Primeiras pimentas quase prontas",
+      "mensagem": "Os primeiros frutos devem estar mudando de cor.",
+      "acao_requerida": "Esperar a cor ficar uniforme e começar a colheita com tesoura"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Ácaro-branco (Polyphagotarsonemus latus)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas estreitas, enroladas para baixo, duras e bronzeadas no verso. O broto para de crescer e as flores caem. O ácaro é invisível a olho nu",
+      "prevencao_tratamento": "Cortar e descartar os brotos deformados. Pulverizar enxofre molhável (2 g/L) ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias, por 3 aplicações. Não use enxofre acima de 30 °C"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e no verso das folhas; folhas enrugadas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Jato de água nos brotos. Se persistir, sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca e tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta, ou riscos prateados e pontos escuros nas folhas e flores; transmitem viroses que deixam as folhas mosqueadas",
+      "prevencao_tratamento": "Armadilha adesiva amarela (mosca-branca) ou azul (tripes) perto do vaso e óleo de neem a 0,5% a cada 5 dias. Arrancar plantas com folhas mosqueadas e deformadas, que não se recuperam"
+    },
+    {
+      "nome": "Podridão de raiz e colo (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido; o caule escurece rente ao substrato e as raízes ficam marrons e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, garantir furos livres e nunca deixar água no pratinho. Planta com o caule já escuro raramente se recupera: descarte o substrato e não reaproveite o vaso sem lavar"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas circulares afundadas e escuras nos frutos, às vezes com anéis alaranjados; os frutos apodrecem no pé",
+      "prevencao_tratamento": "Regar no substrato, sem molhar os frutos. Retirar e jogar fora os frutos manchados e colher os maduros sem demora em época de chuva"
+    },
+    {
+      "nome": "Podridão apical",
+      "tipo": "DISTURBIO",
+      "sintomas": "Mancha escura, seca e afundada na ponta do fruto",
+      "prevencao_tratamento": "É falta de cálcio no fruto, quase sempre causada por rega irregular. Manter a umidade constante, cobrir o substrato com palha e usar a farinha de ossos da adubação"
+    },
+    {
+      "nome": "Queda de flores",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores amarelam e caem sem formar fruto",
+      "prevencao_tratamento": "Acontece com calor acima de 35 °C, frio abaixo de 15 °C, falta de água ou excesso de nitrogênio. No verão, dê sombra leve na hora mais quente e mantenha a rega regular. Balance a planta de leve ao meio-dia para ajudar a polinização"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: proteger a pimenteira",
+      "mensagem": "A pimenta-de-cheiro é tropical: abaixo de 15 °C para de crescer, abaixo de 10 °C perde folhas e a geada a mata.",
+      "acao_requerida": "Levar o vaso para o canto mais ensolarado e protegido do vento, espaçar a rega para quando o substrato estiver seco a 5 cm e, em noite de geada, colocar sob cobertura"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno, uma pimenteira com mais de 8 meses que ficou falhada ou comprida rebrota com mais força e flores se for podada agora.",
+      "acao_requerida": "Cortar os galhos em um terço do comprimento, logo acima de uma bifurcação, e tirar os ramos secos. Não podar plantas jovens nem cheias de frutos"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "planta": {
+    "nome_comum": "Orégano",
+    "nome_cientifico": "Origanum vulgare",
+    "descricao": "Erva aromática perene do Mediterrâneo, rústica e tolerante à seca, com folhas mais perfumadas quando cresce em sol forte e substrato pobre. Uma muda em vaso fornece folhas frescas o ano todo e rende colheitas para secar antes da floração no verão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 20 cm de diâmetro e 15 cm de profundidade, com furos no fundo; o barro ajuda o substrato a secar entre regas",
+    "volume_minimo_litros": 4,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca; solto e bem drenado, sem excesso de matéria orgânica, que deixa as folhas menos aromáticas",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda se recupera do transplante e enraíza no vaso novo. Algumas folhas de baixo podem amarelar. A fase termina quando aparecem brotos novos nas pontas e a planta não murcha mais no calor do meio-dia."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Os ramos se alongam e, depois do primeiro corte das pontas, ramificam. A planta passa a cobrir a superfície do vaso. Está estabelecida quando forma uma touceira cheia, com ramos de 15 a 20 cm."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Touceira que rende colheitas contínuas. No ano típico, cresce com força na primavera, floresce no verão (flores rosadas ou brancas em hastes altas), desacelera no outono e fica quase parada no inverno. Uma poda forte no fim do inverno renova os ramos, e a cada dois anos o substrato precisa ser trocado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de orégano",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Nessa fase a raiz ainda está curta e a muda não aguenta secar por completo. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o orégano",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. Esvazie o pratinho depois de 30 minutos. No verão quente confira a cada 2 ou 3 dias; no inverno, a cada 7 dias basta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_leve",
+      "titulo": "Adubação leve",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca na superfície de um vaso de 4 L, sem encostar nos caules, e regue em seguida. Pule a adubação em junho e julho. Adubo em excesso faz folha grande e sem aroma.",
+      "critica": false
+    },
+    {
+      "id": "colheita_ramos",
+      "titulo": "Colher ramos de orégano",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa os ramos mais altos, 1 cm acima de um par de folhas, deixando pelo menos dois terços da planta. O corte já funciona como poda e faz a touceira ramificar. Colha de manhã, depois que o orvalho secar.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o orégano",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure teias finas, pontinhos claros (ácaro), insetos agrupados nas pontas (pulgão) e pó branco (oídio). Afaste os ramos e confira se a base dos caules está escura ou mole.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, remova metade do substrato velho e corte as raízes que dão voltas no fundo. Se a touceira estiver grande, divida-a em duas com faca limpa e replante em substrato novo, num vaso 5 cm mais largo ou em dois vasos. Faça de preferência em março-abril ou agosto-setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Mudas de viveiro costumam vir de meia sombra. Depois de uma semana de adaptação, o orégano já pode receber sol direto, que é o que concentra o aroma nas folhas.",
+      "acao_requerida": "Mudar o vaso para o lugar com mais sol da casa, com pelo menos 4 horas de sol direto"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Primeiro corte das pontas",
+      "mensagem": "Com os ramos alongando, cortar as pontas agora faz a planta ramificar e virar uma touceira cheia, em vez de ramos finos e caídos.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo, logo acima de um par de folhas; as pontas cortadas já podem ir para a cozinha"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Fusarium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, base dos caules escura e mole, raízes marrons e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e usar substrato com areia. Se aparecer, corte as partes podres, replante em substrato novo e seco, ou refaça a planta por estaca dos ramos sadios"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado ou bronzeado e teias finas entre os ramos, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas em dias secos; em infestação, cortar os ramos mais atacados e aplicar óleo de neem a 0,5% no fim da tarde a cada 5 dias, sem colher por 7 dias depois da aplicação"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos verdes ou pretos nas pontas dos ramos; brotos novos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água nas pontas ou corte dos ramos infestados; se persistir, sabão neutro a 1% em água, enxaguando as folhas antes de consumir"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado na face de cima das folhas, que depois amarelam e caem",
+      "prevencao_tratamento": "Manter o vaso ventilado e ao sol, sem molhar as folhas na rega; retirar as folhas atacadas e, se espalhar, pulverizar leite diluído em água (1 parte para 9) ao sol, uma vez por semana"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos, finos e tombados, com folhas pequenas, espaçadas, verde-claras e pouco perfumadas",
+      "prevencao_tratamento": "Levar o vaso para um lugar com pelo menos 4 horas de sol direto e cortar os ramos estiolados pela metade para a planta rebrotar compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno, os ramos velhos ficam lenhosos e com poucas folhas. Uma poda forte agora faz o orégano rebrotar cheio na primavera.",
+      "acao_requerida": "Cortar todos os ramos a 5 cm do substrato, tirar as folhas secas da base e aplicar a adubação leve em seguida"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Colheita para secar",
+      "mensagem": "Antes da floração, o orégano está no auge do aroma. É a melhor época para colher em quantidade e fazer orégano seco.",
+      "acao_requerida": "Quando aparecerem os primeiros botões, cortar até metade dos ramos, amarrar em maços e secar de cabeça para baixo à sombra, em local ventilado, por 1 a 2 semanas"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "No frio o orégano quase para de crescer e bebe pouco. O substrato úmido por muito tempo é o que mais apodrece a raiz nessa época.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm, em geral a cada 7 dias, suspender a adubação e manter o vaso no lugar mais ensolarado"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "planta": {
+    "nome_comum": "Bucha",
+    "nome_cientifico": "Luffa aegyptiaca",
+    "descricao": "Trepadeira vigorosa da família das abóboras, cultivada pelos frutos: novinhos são comestíveis, e maduros e secos viram a esponja vegetal de banho e de cozinha. Em vaso precisa de um recipiente grande e de uma treliça ou grade de pelo menos 1,8 m. Na natureza pode rebrotar, mas em casa é cultivada como ANUAL.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 180,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou caixa com pelo menos 40 cm de profundidade e 45 cm de diâmetro, com furos no fundo, encostado numa treliça, tela ou grade de 1,8 m ou mais de altura",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita, mais 200 g de farinha de ossos ou torta de mamona curtida misturados no fundo",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Deixe as sementes de molho em água morna por 24 horas e semeie 3 por vaso, a 2 cm de profundidade. A casca é dura, e a germinação leva de 5 a 10 dias com o substrato acima de 20 °C. A fase termina quando as duas folhas ovais (cotilédones) estão abertas."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 11,
+      "dia_fim": 35,
+      "descricao": "Surgem as folhas verdadeiras, grandes e lobadas, e depois as primeiras gavinhas (fios enrolados). Quando as gavinhas aparecem, a planta está pronta para subir na treliça."
+    },
+    {
+      "fase_id": "crescimento_rama",
+      "nome": "Crescimento da Rama",
+      "dia_inicio": 36,
+      "dia_fim": 65,
+      "descricao": "A rama cresce até 10 cm por dia no calor e começa a se espalhar pela treliça. O consumo de água sobe muito. Surgem os primeiros cachos de botões de flor masculina."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 66,
+      "dia_fim": 90,
+      "descricao": "Abrem flores amarelas. As masculinas vêm em cachos, com haste longa. As femininas são solitárias e têm uma buchinha miniatura atrás da flor. Nos primeiros dias só aparecem masculinas, o que é normal. Frutos que amarelam e caem com 3 a 5 cm não foram polinizados."
+    },
+    {
+      "fase_id": "frutificacao",
+      "nome": "Frutificação",
+      "dia_inicio": 91,
+      "dia_fim": 150,
+      "descricao": "Os frutos crescem rápido, chegando a 30 a 60 cm. Para comer, colha com 10 a 15 cm, ainda verdes e macios; depois disso eles ficam fibrosos. Para esponja, deixe os frutos na planta: eles ficam verde-escuros, e depois pesados e firmes."
+    },
+    {
+      "fase_id": "maturacao_secagem",
+      "nome": "Maturação e Secagem",
+      "dia_inicio": 151,
+      "dia_fim": 180,
+      "descricao": "A casca amarela, depois fica marrom e o fruto perde peso. A bucha está pronta quando fica leve, a casca racha fácil e as sementes chacoalham dentro. A rama vai secando junto, e o ciclo termina."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Manter a semente úmida",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Regue com regador de crivo fino até umedecer os primeiros 3 cm. A superfície não pode secar nem virar lama, porque a semente encharcada apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a bucha",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar, no pé e não nas folhas, até escorrer pelos furos. Da floração em diante, com calor acima de 28 °C, confira todo dia: a rama grande murcha no fim da tarde e derruba flores e frutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_secagem",
+      "titulo": "Rega leve na secagem",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 151,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Os frutos precisam secar na planta. Regue só quando o substrato estiver seco a 5 cm, com metade da água de antes.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a bucha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 135,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de torta de mamona curtida em volta do caule, a 5 cm dele, e regue em seguida. A partir do dia 66, troque metade por 1 colher de chá de cinza de madeira ou farinha de ossos, para dar mais flor e fruto.",
+      "critica": false
+    },
+    {
+      "id": "guiar_rama",
+      "titulo": "Guiar a rama na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Leve as pontas soltas até a treliça e prenda com fitilho frouxo, em forma de 8. Frutos pesados pendurados no meio da tela precisam de uma rede ou de um pano amarrado embaixo.",
+      "critica": false
+    },
+    {
+      "id": "poda_laterais",
+      "titulo": "Tirar brotos da base",
+      "tipo": "PODA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Corte com tesoura limpa os brotos laterais que saem nos primeiros 80 cm do caule principal e as folhas amareladas que encostam no substrato. Acima disso, deixe os ramos laterais: é neles que saem mais flores femininas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 170,
+      "instrucoes": "Vire as folhas e procure pó branco, manchas amareladas angulosas, pulgões e besourinhos verde-amarelos. Nos frutos, procure furos com serragem ou pontos de picada escorrendo líquido.",
+      "critica": false
+    },
+    {
+      "id": "colheita_bucha",
+      "titulo": "Colher buchas secas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 151,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Colha os frutos marrons, leves e com sementes chacoalhando. Corte o cabo com tesoura, quebre a casca apertando e descasque debaixo da torneira. Sacuda as sementes, lave a esponja e seque ao sol por 2 dias. Se vier chuva forte, colha antes os frutos já amarelados e termine a secagem à sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Com mais de uma planta no vaso, nenhuma chega a dar frutos bons.",
+      "acao_requerida": "Deixar só a muda mais vigorosa, cortando as outras rente ao substrato com tesoura (arrancar mexe na raiz da que fica)"
+    },
+    {
+      "dia_disparo": 20,
+      "titulo": "Monte a treliça",
+      "mensagem": "As gavinhas estão chegando, e a rama precisa de onde subir antes de começar a se espalhar pelo chão.",
+      "acao_requerida": "Fixar ao lado do vaso uma treliça, tela ou grade firme de pelo menos 1,8 m, capaz de aguentar frutos de 1 kg"
+    },
+    {
+      "dia_disparo": 70,
+      "titulo": "Polinize as flores femininas",
+      "mensagem": "Na varanda ou em apartamento alto, faltam abelhas, e as buchinhas caem sem crescer.",
+      "acao_requerida": "Pela manhã, arrancar uma flor masculina aberta, tirar as pétalas e encostar o pólen no centro de cada flor feminina aberta (a que tem a buchinha atrás). Repetir sempre que abrir uma feminina"
+    },
+    {
+      "dia_disparo": 100,
+      "titulo": "Limite os frutos",
+      "mensagem": "Um vaso de 50 L sustenta bem de 4 a 6 buchas para esponja. Com mais do que isso, todas ficam finas e fracas.",
+      "acao_requerida": "Deixar de 4 a 6 frutos bem formados e colher os outros ainda novos, para comer, ou cortá-los"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Início da secagem",
+      "mensagem": "A partir de agora, os frutos deixados na planta vão secar para virar esponja.",
+      "acao_requerida": "Parar de adubar, reduzir a rega e cortar as flores novas, que já não terão tempo de virar bucha"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Besourinhos verdes com manchas amarelas; furos redondos nas folhas e flores roídas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo, quando estão lentos; em infestação, óleo de neem a 0,5% no fim da tarde, a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão (Aphis gossypii)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos no verso das folhas e nas pontas; folhas enroladas e pegajosas, com formigas",
+      "prevencao_tratamento": "Jato de água forte; se persistir, sabão de coco a 1% ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Broca-das-cucurbitáceas (Diaphania nitidalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos nos frutos novos com serragem saindo; flores e frutos que apodrecem por dentro",
+      "prevencao_tratamento": "Retirar e destruir os frutos furados; inspecionar os ponteiros e esmagar as lagartas; em ataque forte, Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Oídio (Podosphaera xanthii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco como talco na face de cima das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Regar no pé, sem molhar as folhas, e manter a rama arejada; pulverizar leite a 10% em água ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Míldio (Pseudoperonospora cubensis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas angulosas entre as nervuras, com mofo cinza-arroxeado no verso; comum em tempo úmido",
+      "prevencao_tratamento": "Retirar as folhas atacadas, regar pela manhã e só no pé; calda bordalesa a 1% a cada 10 dias em período chuvoso"
+    },
+    {
+      "nome": "Podridão do colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule escura e mole; a planta murcha inteira mesmo com o substrato úmido",
+      "prevencao_tratamento": "Não encharcar, garantir furos e drenagem livres e não amontoar substrato no caule; planta atacada raramente se recupera"
+    },
+    {
+      "nome": "Queda de frutos novos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Buchinhas de 3 a 5 cm amarelam, murcham e caem logo depois da flor",
+      "prevencao_tratamento": "Falta de polinização ou de água no calor: polinizar à mão e não deixar o substrato secar a partir da floração"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Frio chegando",
+      "mensagem": "A bucha para de crescer abaixo de 15 °C, e a geada mata a rama e estraga os frutos que ainda estão secando.",
+      "acao_requerida": "Colher os frutos já amarelados ou marrons e terminar a secagem em lugar coberto e arejado; em noite com previsão de geada, cobrir a planta com TNT"
+    }
+  ]
+}

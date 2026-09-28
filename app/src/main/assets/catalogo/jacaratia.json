@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Jacaratiá",
+    "nome_cientifico": "Jacaratia spinosa",
+    "descricao": "Árvore nativa da Mata Atlântica, parente do mamão, também chamada de mamãozinho-do-mato. Tem tronco grosso e espinhoso que guarda água, perde as folhas no inverno e dá frutos alaranjados e doces. Em vaso fica bem menor que na natureza e é cultivada pelo tronco escultural. Como é dioica, só frutifica se houver uma planta fêmea e um macho por perto.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica ou cimento) com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; o peso evita que a árvore tombe com o vento",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca, 10% perlita ou casca de pinus fina; precisa drenar rápido porque o tronco apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda sem enterrar o colo (a base do tronco fica no nível do substrato). Nas primeiras semanas ela pode perder algumas folhas por causa do transplante. A fase termina quando aparecem folhas novas, palmadas e brilhantes, no topo do caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A muda cresce em altura e a base do tronco começa a engrossar e mostrar os primeiros espinhos cônicos. É normal ela perder quase todas as folhas no outono e no inverno: se o tronco estiver firme ao toque, está viva e dormente."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "O ano típico: rebrota forte na primavera, cresce no verão chuvoso, amarela e derruba as folhas entre maio e julho e fica dormente no inverno. Planta de semente leva de 4 a 6 anos para florescer; flores surgem no fim do inverno e os frutos amadurecem no verão, só em fêmeas com um macho por perto. Tronco mole ou enrugado indica problema na raiz ou falta extrema de água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de jacaratiá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. A raiz ainda não explorou o vaso novo e o torrão da muda seca antes do resto do substrato.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jacaratiá",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade, e nunca deixe água no pratinho. Acima de 32 °C, confira a cada 3 dias. Sem folhas (outono e inverno), regue só a cada 15 a 20 dias, o suficiente para o tronco não enrugar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o jacaratiá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 xícara de húmus de minhoca) na borda do vaso de 50 L, longe do tronco, e regue em seguida. Pule a adubação quando a planta estiver sem folhas, entre maio e agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure teias finas e pontinhos amarelos (ácaro) ou carapaças brancas e grudadas nos pecíolos e no tronco (cochonilha). Aperte a base do tronco com o dedo: ela deve estar firme, nunca mole ou escura.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, antes da brotação, tire a planta do vaso, raspe cerca de um terço do torrão, apare raízes escuras ou moles com tesoura limpa e replante com substrato novo, no mesmo vaso ou num 10 cm maior, sem enterrar o colo. Use luvas: o tronco tem espinhos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio sem enterrar o colo",
+      "mensagem": "O tronco do jacaratiá guarda água e apodrece se ficar coberto por substrato úmido.",
+      "acao_requerida": "Conferir se a base do tronco está no nível do substrato e deixar a muda em meia-sombra na primeira semana"
+    },
+    {
+      "dia_disparo": 10,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "A muda já passou pelo choque do transplante e precisa de sol direto para engrossar o tronco. Na sombra ela estica, fica fina e tomba.",
+      "acao_requerida": "Levar o vaso para um lugar com pelo menos 4 horas de sol direto, de preferência da manhã"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de jacaratiá",
+      "mensagem": "A essa altura as raízes podem já ter tomado o vaso, principalmente se a planta passou de 1,5 m.",
+      "acao_requerida": "Conferir se há raízes saindo pelos furos; se houver, planejar a troca por um vaso maior no fim do próximo inverno"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do colo (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do tronco mole, escura e com cheiro azedo; folhas murcham mesmo com substrato úmido; a planta tomba",
+      "prevencao_tratamento": "Substrato bem drenado, sem pratinho com água e rega quase suspensa no inverno sem folhas. Ao primeiro sinal, tire a planta do vaso, corte as partes moles até o tecido firme, deixe secar 2 dias à sombra e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, cerosas ou marrons grudadas no tronco, nos pecíolos e no verso das folhas; folhas amarelas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em álcool 70%; em infestação maior, pulverize óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo a cada 7 dias por 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso; aparece no calor seco",
+      "prevencao_tratamento": "Jato de água no verso das folhas a cada 3 dias por duas semanas; se persistir, óleo de neem a 0,5% ou enxofre molhável seguindo o rótulo"
+    },
+    {
+      "nome": "Formiga-cortadeira",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou desaparecidas de uma noite para outra, com trilha de formigas no vaso",
+      "prevencao_tratamento": "Siga a trilha até o formigueiro e use isca granulada própria para cortadeiras longe de crianças e animais; enquanto isso, passe graxa ou fita adesiva dupla-face ao redor do vaso"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem todas entre maio e julho, deixando só o tronco",
+      "prevencao_tratamento": "É dormência natural, não doença. Não aduba nem aumenta a rega para tentar reverter: regue pouco e espere a rebrota em setembro. Só preocupa se o tronco estiver mole"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "O jacaratiá vai perder as folhas",
+      "mensagem": "Com o frio e os dias curtos ele entra em dormência e derruba as folhas. Nessa fase quase não bebe água, e rega de verão agora apodrece o tronco.",
+      "acao_requerida": "Espaçar a rega para a cada 15 a 20 dias e suspender a adubação até a rebrota"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio e da geada",
+      "mensagem": "Plantas jovens em vaso sofrem com geada, que queima a ponta do caule e pode abrir o tronco.",
+      "acao_requerida": "Em noites abaixo de 3 °C, levar o vaso para perto de uma parede ou sob uma cobertura, ou cobrir a copa com manta de TNT até o sol aparecer"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Rebrota da primavera",
+      "mensagem": "As gemas no topo dos ramos incham e surgem as folhas novas. A planta volta a beber e a pedir nutrientes.",
+      "acao_requerida": "Voltar à rega normal quando as primeiras folhas abrirem e fazer a primeira adubação da estação"
+    }
+  ]
+}

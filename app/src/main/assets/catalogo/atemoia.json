@@ -1,0 +1,222 @@
+{
+  "planta": {
+    "nome_comum": "Atemoia",
+    "nome_cientifico": "Annona × atemoya (Annona cherimola × Annona squamosa)",
+    "descricao": "Híbrido da cherimólia com a pinha (fruta-do-conde), de polpa branca, muito doce e com menos sementes e gomos que a pinha. Em vaso grande forma uma arvoreta de 2 a 3 m. Comece com muda enxertada, que produz a partir do 2º ou 3º ano. Para vingar bons frutos, a polinização manual na primavera faz muita diferença.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 50 cm de diâmetro e 50 cm de profundidade (ideal 80 a 100 L), de plástico grosso ou cimento, com vários furos no fundo e apoiado em pés para não acumular água embaixo",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina ou perlita; mais 200 g de calcário dolomítico e 300 g de farinha de ossos por 60 L. pH entre 5,5 e 6,5",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o ponto de enxertia (o calombo no caule) pelo menos 5 cm acima do substrato e amarre-a a um tutor. Algumas folhas podem amarelar e cair na primeira semana. A fase termina quando surgem brotos novos, verde-claros e macios, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Copa",
+      "dia_inicio": 31,
+      "dia_fim": 730,
+      "descricao": "A planta cresce em fluxos, com uma leva de folhas novas a cada 1 ou 2 meses no calor. No inverno perde parte das folhas, o que é normal. Pode florescer já no 1º ano, mas os frutos pesam num tronco fino. O objetivo aqui é um tronco firme e 3 ou 4 ramos principais bem distribuídos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Um ano típico: poda e desfolha em agosto, brotação e flores de setembro a dezembro, polinização manual entre outubro e dezembro, frutos crescendo no verão e colheita de março a junho. No inverno a planta fica semidormente e perde parte das folhas. Em vaso de 80 a 100 L, espere de 5 a 15 frutos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar em volta do tronco até a água escorrer pelos furos (cerca de 4 a 6 L). Acima de 30 °C, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a atemoia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue até escorrer pelos furos se estiver seco (8 a 12 L num vaso de 80 L). Da florada até a colheita (setembro a junho), mantenha a umidade constante: seca seguida de encharcamento derruba flores e racha frutos. No inverno, espaçe para cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a atemoia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 L de húmus de minhoca e 2 colheres de sopa de NPK 10-10-10 por vaso de 80 L, a 10 cm do tronco, misture de leve na superfície e regue em seguida. Da florada até a colheita, troque o NPK por 4-14-8 ou por farinha de ossos com cinzas. Em junho e julho, com a planta parada, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure cochonilhas (pontos brancos algodoados ou escamas marrons) e formigas subindo pelo tronco. Nos frutos, procure furinhos com serragem escura. Arranque com a mão qualquer broto que saia abaixo do ponto de enxertia: ele é do cavalo e rouba força da copa.",
+      "critica": false
+    },
+    {
+      "id": "renovar_vaso",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 731,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em agosto, junto com a poda: tire a planta do vaso, corte 3 a 5 cm das raízes enoveladas em volta do torrão e troque um terço do substrato por mistura nova. Se o vaso tiver menos de 80 L, passe para um maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firme a muda no tutor",
+      "mensagem": "Muda enxertada tem tronco fino e raiz ainda curta. O vento balança a copa e rompe as raízes novas.",
+      "acao_requerida": "Cravar uma estaca de 1,2 m ao lado do torrão sem ferir as raízes e amarrar o tronco em dois pontos com fita larga ou tira de pano, em forma de 8"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Poda de formação",
+      "mensagem": "Se a muda passou de 70 cm e só tem uma haste, este é o momento de formar a copa baixa, que é a ideal para vaso.",
+      "acao_requerida": "Cortar a ponta da haste a 50 a 60 cm do substrato, logo acima de uma folha. Das brotações que surgirem, manter 3 ou 4 bem distribuídas em volta do tronco"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Tire os primeiros frutinhos",
+      "mensagem": "Frutos no primeiro ano esgotam a planta e entortam os ramos, que ainda estão finos.",
+      "acao_requerida": "Arrancar com cuidado flores e frutinhos que aparecerem até o fim do 1º ano, deixando no máximo 1 ou 2 se a planta estiver vigorosa"
+    },
+    {
+      "dia_disparo": 731,
+      "titulo": "Sua atemoia está pronta para produzir",
+      "mensagem": "Com dois anos de vaso e copa formada, a planta já aguenta frutos. A primeira safra depende da polinização manual na primavera.",
+      "acao_requerida": "Na próxima florada (outubro a dezembro), polinizar as flores à mão e deixar de 5 a 10 frutos bem distribuídos pela copa"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Broca-do-fruto (Cerconota anonella)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com manchas escuras e furos por onde sai serragem marrom misturada com fezes; a polpa apodrece por dentro e o fruto cai ou seca preso ao ramo",
+      "prevencao_tratamento": "Ensacar os frutos com saco de TNT ou papel-manteiga quando tiverem 3 a 5 cm; recolher e destruir, sem jogar na compostagem, todo fruto atacado ou caído"
+    },
+    {
+      "nome": "Broca-das-sementes (Bephratelloides pomorum)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com vários furinhos redondos de 2 mm na casca, por onde as vespinhas adultas saem; as sementes ficam ocas e o fruto endurece e escurece",
+      "prevencao_tratamento": "O ensacamento precoce dos frutos, feito antes de 3 cm, é a proteção mais eficaz; retire da planta os frutos furados"
+    },
+    {
+      "nome": "Cochonilhas (farinhenta e de escama)",
+      "tipo": "PRAGA",
+      "sintomas": "Massas brancas algodoadas ou escamas marrons em ramos, pedúnculos e frutos; fumagina preta sobre as folhas e formigas circulando",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em infestações maiores, óleo mineral ou de neem a 1% no fim da tarde, repetindo após 10 dias. Barrar as formigas com fita adesiva dupla-face no tronco"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas em flores, frutinhos e folhas novas; flores e frutos novos secam e caem em períodos de chuva e calor",
+      "prevencao_tratamento": "Manter a copa arejada com a poda anual, não molhar as folhas ao regar e retirar partes doentes. Em verão chuvoso, pulverizar calda bordalesa a 0,5% a cada 15 dias, da florada até os frutos chegarem a 5 cm"
+    },
+    {
+      "nome": "Podridão de raiz (excesso de água, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem; a base do tronco escurece e as raízes ficam marrons, moles e com cheiro ruim",
+      "prevencao_tratamento": "Só regar com o substrato seco a 5 cm, nunca deixar água no pratinho e manter o ponto de enxertia acima do substrato. Se a planta murchar com o substrato encharcado, suspenda a rega e troque o substrato por um mais drenante"
+    },
+    {
+      "nome": "Rachadura dos frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos quase maduros racham entre os gomos, escurecem e atraem moscas e fungos",
+      "prevencao_tratamento": "Manter a umidade do substrato constante do fim do verão à colheita, sem deixar secar e depois encharcar; colher assim que os gomos começarem a se afastar"
+    },
+    {
+      "nome": "Queima por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e pontas dos ramos novos escurecem e secam de uma vez depois de uma noite fria; em planta jovem, o tronco pode morrer até a enxertia",
+      "prevencao_tratamento": "Abaixo de 5 °C, levar o vaso para perto de uma parede ou sob uma cobertura e cobrir a copa com TNT à noite; na primavera, cortar só a parte seca, até o tecido verde"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "No inverno a atemoia desacelera e perde parte das folhas, o que é normal. Plantas novas queimam com geada, e substrato frio e encharcado apodrece as raízes.",
+      "acao_requerida": "Espaçar a rega para cada 5 a 7 dias, suspender a adubação e, em noites abaixo de 5 °C, abrigar o vaso junto a uma parede e cobrir a copa com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda e desfolha de produção",
+      "mensagem": "As gemas da atemoia ficam escondidas sob a base das folhas. Podar e tirar as folhas agora faz a planta brotar e florescer junto na primavera.",
+      "acao_requerida": "A partir do 2º ano: encurtar os ramos do ano anterior deixando 20 a 30 cm (4 a 6 gemas), retirar as folhas restantes desses ramos e cortar galhos secos, cruzados ou voltados para dentro. Em planta mais nova, retire só os galhos secos e cruzados"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Polinização manual",
+      "mensagem": "A flor da atemoia fica feminina antes de soltar o pólen, e em vaso quase não há besouros para polinizá-la. Sem ajuda, poucos frutos vingam e muitos saem tortos.",
+      "acao_requerida": "No fim da tarde, colher com um pincel o pó bege das flores bem abertas e guardar num pote fechado na geladeira. Na manhã seguinte, abrir levemente as flores com pétalas ainda meio fechadas e pincelar o pólen no centro delas. Repetir a cada 2 ou 3 dias durante a florada"
+    },
+    {
+      "meses": [
+        1,
+        2
+      ],
+      "titulo": "Raleio e ensacamento dos frutos",
+      "mensagem": "Frutos novos são o alvo das brocas, e frutos demais num vaso ficam pequenos.",
+      "acao_requerida": "Deixar 1 fruto por ramo e no máximo 10 a 15 na planta, tirando os tortos e menores, e ensacar os restantes com TNT ou papel-manteiga quando tiverem 3 a 5 cm"
+    },
+    {
+      "meses": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "Os frutos amadurecem aos poucos. Colhidos cedo demais, ficam duros e sem açúcar. Deixados no pé, racham e atraem brocas e moscas.",
+      "acao_requerida": "Conferir os frutos a cada 2 ou 3 dias e colher os que mudaram de verde-escuro para verde-claro, com os gomos afastados mostrando linhas creme entre eles. Deixar amadurecer de 3 a 5 dias em temperatura ambiente, até ceder à pressão do dedo"
+    }
+  ]
+}

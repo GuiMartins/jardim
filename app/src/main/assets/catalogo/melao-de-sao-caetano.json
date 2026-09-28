@@ -1,0 +1,235 @@
+{
+  "planta": {
+    "nome_comum": "Melão-de-são-caetano",
+    "nome_cientifico": "Momordica charantia",
+    "descricao": "Trepadeira de clima quente da família das abóboras, com folhas recortadas, flores amarelas e frutos verrugosos e amargos, colhidos verdes para refogados e usados na medicina popular. É perene de vida curta em regiões sem geada, mas em vaso é cultivada como anual, com ciclo de cerca de 5 meses. O fruto maduro (laranja, com sementes de arilo vermelho) não deve ser consumido, e gestantes devem evitar a planta.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira funda com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com furos no fundo, encostado numa treliça, tela ou grade de pelo menos 1,8 m de altura",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita, com 1 colher de sopa de calcário dolomítico e 2 colheres de sopa de farinha de ossos a cada 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 12,
+      "descricao": "Deixe as sementes de molho em água morna por 24 horas (a casca é dura) e semeie 2 por cova, a 2 cm de profundidade, com a ponta da semente de lado. Com o substrato acima de 25 °C elas brotam entre o 6º e o 12º dia; no frio podem demorar ou apodrecer."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 13,
+      "dia_fim": 30,
+      "descricao": "Depois das duas folhas redondas de semente surgem as folhas verdadeiras, recortadas como a mão aberta. A fase termina quando aparecem as primeiras gavinhas, os fios enrolados que a planta usa para subir."
+    },
+    {
+      "fase_id": "crescimento_rama",
+      "nome": "Crescimento da Rama",
+      "dia_inicio": 31,
+      "dia_fim": 45,
+      "descricao": "A rama cresce vários centímetros por dia e se agarra sozinha à treliça pelas gavinhas; ajude só os ramos que se soltam ou vão para o lado errado. Folhas amareladas de baixo para cima nesta fase indicam falta de adubo."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 46,
+      "dia_fim": 60,
+      "descricao": "Surgem primeiro as flores masculinas, amarelas e numa haste fina. Uns dias depois vêm as femininas, que têm um minifruto verrugoso atrás da flor. Se os minifrutos amarelam e caem, faltou polinização."
+    },
+    {
+      "fase_id": "frutificacao_colheita",
+      "nome": "Frutificação e Colheita",
+      "dia_inicio": 61,
+      "dia_fim": 150,
+      "descricao": "Os frutos ficam no ponto 8 a 12 dias depois da flor feminina abrir: verde firme, verrugas cheias e 12 a 20 cm de comprimento. Colher sempre estimula novas flores. A produção cai no fim do ciclo, quando as folhas velhas secam e os frutos saem pequenos e tortos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Manter a cova úmida",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 12,
+      "instrucoes": "Toque a superfície do substrato: se o primeiro centímetro estiver seco, regue com regador de crivo fino até umedecer, sem encharcar. Semente de casca dura apodrece em substrato encharcado e frio.",
+      "critica": true
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar o melão-de-são-caetano",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar na base, sem molhar as folhas, até escorrer pelos furos. Em dias acima de 30 °C ou com vento, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_frutificacao",
+      "titulo": "Regar a planta em produção",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Com a rama grande e os frutos crescendo, o vaso seca rápido. Enfie o dedo 3 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, de preferência de manhã. Rama murcha ao meio-dia que não se recupera à tarde indica falta de água.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o melão-de-são-caetano",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 140,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de bokashi por vaso de 30 L, longe do caule, e regue em seguida. Depois do dia 45, acrescente 1 colher de chá de farinha de ossos ou cinza de madeira para ajudar na floração e nos frutos.",
+      "critica": false
+    },
+    {
+      "id": "conducao_rama",
+      "titulo": "Conduzir a rama na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Procure as pontas de rama soltas no ar ou rastejando e enrole-as ou amarre-as com barbante frouxo na treliça, espalhando os ramos para cobrir toda a tela em vez de embolar num ponto só.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Vire as folhas e procure insetos agrupados no verso, pontinhos amarelos com teia fina, pó branco na superfície e furos. Nos frutos, procure furos pequenos com serragem ou pontos moles, sinais de broca e de mosca-das-frutas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_frutos",
+      "titulo": "Colher frutos no ponto",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Corte com tesoura, deixando 1 cm de cabinho, os frutos verdes, firmes e com 12 a 20 cm. Fruto que começou a amarelar na ponta já passou do ponto: fica mais amargo, a polpa amolece e ele se abre em poucos dias. Retire-o mesmo assim, para a planta continuar produzindo.",
+      "critica": true
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Duas plantas no mesmo vaso de 30 L disputam água e adubo e produzem menos que uma sozinha.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa de cada vaso, cortando as outras rente ao substrato com tesoura, sem arrancar"
+    },
+    {
+      "dia_disparo": 18,
+      "titulo": "Instale a treliça agora",
+      "mensagem": "As gavinhas estão para aparecer. Sem apoio, a rama se embola no chão, abafa e os frutos apodrecem em contato com o substrato.",
+      "acao_requerida": "Firmar uma treliça, tela ou grade de pelo menos 1,8 m junto ao vaso e encostar nela a ponta da plântula"
+    },
+    {
+      "dia_disparo": 35,
+      "titulo": "Limpe a base da rama",
+      "mensagem": "Brotos laterais nos primeiros 50 cm do caule deixam a base fechada e úmida, o que favorece fungos, e atrasam a subida da rama principal.",
+      "acao_requerida": "Cortar com tesoura limpa os brotos laterais que saem nos primeiros 50 cm do caule, deixando livres os de cima"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Confira a polinização",
+      "mensagem": "Em varandas altas ou fechadas faltam abelhas, e as flores femininas caem sem formar fruto.",
+      "acao_requerida": "Se os minifrutos estiverem amarelando e caindo, colher de manhã uma flor masculina, tirar as pétalas e encostar o miolo no centro de cada flor feminina aberta"
+    },
+    {
+      "dia_disparo": 61,
+      "titulo": "Primeiros frutos chegando",
+      "mensagem": "Os frutos das primeiras flores femininas devem estar perto do ponto. A partir de agora, um fruto esquecido amarela em 2 ou 3 dias.",
+      "acao_requerida": "Conferir os frutos a cada 2 dias e colher os verdes e firmes com 12 a 20 cm"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas tombam com o caule escuro e fino rente ao substrato; na planta adulta, murcha que não passa com rega e base do caule mole ou rachada",
+      "prevencao_tratamento": "Não regar com o substrato ainda úmido, garantir furos e drenagem, não amontoar terra no caule. Plantas com o colo apodrecido não se recuperam: descarte e troque o substrato"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco como farinha em manchas na parte de cima das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Regar na base, sem molhar as folhas, e deixar a rama arejada. No início, pulverizar leite diluído em água (1 parte para 9) ou bicarbonato de sódio a 0,5% a cada 7 dias e remover as folhas mais atacadas"
+    },
+    {
+      "nome": "Míldio (Pseudoperonospora cubensis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas angulosas, limitadas pelas nervuras, na parte de cima das folhas, com mofo acinzentado no verso em tempo úmido",
+      "prevencao_tratamento": "Evitar molhar as folhas e regar no fim da tarde; remover e jogar no lixo as folhas afetadas; em chuvas longas, calda bordalesa a cada 10 dias"
+    },
+    {
+      "nome": "Broca-das-cucurbitáceas (Diaphania spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas verde-claras nas folhas, brotos e flores; furos nos frutos com fezes parecidas com serragem saindo por eles",
+      "prevencao_tratamento": "Catar as lagartas à mão e destruir frutos furados; pulverizar Bacillus thuringiensis (Bt) no fim da tarde a cada 7 dias enquanto houver ataque"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos escuros na casca do fruto verde, que amolece e apodrece por dentro com larvas brancas",
+      "prevencao_tratamento": "Colher no ponto, sem deixar fruto amadurecer na planta; ensacar os frutos pequenos com saquinho de papel ou TNT; recolher e destruir frutos caídos"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e no verso das folhas; folhas enroladas, pegajosas e brotos deformados",
+      "prevencao_tratamento": "Jato de água forte nas colônias; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias. Controlar cedo, porque o pulgão transmite vírus do mosaico"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Besouros verdes com manchas amarelas; furos redondos espalhados pelas folhas e flores roídas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo, quando estão lentos; proteger as plântulas com tecido TNT até a rama pegar força"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos e aspecto empoeirado; teias finas no verso em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% ou calda de enxofre a cada 5 dias, fora do sol forte"
+    },
+    {
+      "nome": "Queda de flores e minifrutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores femininas abrem, o minifruto amarela e cai em poucos dias sem crescer",
+      "prevencao_tratamento": "É falta de polinização ou calor extremo. Fazer polinização manual de manhã com uma flor masculina e manter a rega regular; acima de 35 °C a queda é normal e passa com o tempo mais ameno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "O frio encerra o melão-de-são-caetano",
+      "mensagem": "A planta é de clima quente: abaixo de 15 °C para de florescer, e a geada mata a rama inteira.",
+      "acao_requerida": "Colher todos os frutos verdes aproveitáveis antes das noites frias; em dia de previsão de geada, cobrir a rama com TNT à noite ou encerrar o plantio"
+    }
+  ]
+}

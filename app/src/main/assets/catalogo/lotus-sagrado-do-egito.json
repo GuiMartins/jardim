@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Lótus-sagrado-do-egito",
+    "nome_cientifico": "Nymphaea lotus",
+    "descricao": "Ninfeia tropical de folhas redondas denteadas, verdes com manchas vinho, que flutuam na água. Dá flores brancas e perfumadas que abrem ao entardecer e fecham no fim da manhã seguinte. Cultivada em bacia ou tina sem furos, é o jeito mais fácil de ter um pequeno espelho d'água na varanda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Tina, bacia ou vaso cachepô SEM furos, com pelo menos 60 cm de diâmetro e 40 cm de profundidade, cheio de água. Dentro dele vai um vaso de plantio baixo e largo (30 a 40 cm de diâmetro, 15 a 20 cm de altura) com a planta, apoiado em tijolos para ajustar a altura da água sobre a coroa",
+    "volume_minimo_litros": 80,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "No vaso de plantio: 80% terra argilosa pesada (terra de barranco, sem adubo orgânico solto nem casca, que flutuam e apodrecem a água) e 20% areia grossa; por cima, 2 a 3 cm de cascalho ou pedrisco lavado para segurar a terra. A tina fica só com água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Plante o rizoma inclinado, com a coroa (ponto de onde saem as folhas) para fora da terra e do cascalho, e deixe só 10 a 15 cm de água sobre ela. As folhas que vieram com a muda costumam amarelar e morrer; a fase termina quando surgem 2 ou 3 folhas novas abertas na superfície."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Com a água já a 20 a 30 cm sobre a coroa, as folhas ficam maiores e cobrem parte da superfície. No calor e com 6 h de sol, os primeiros botões sobem entre a 6ª e a 10ª semana. A fase termina quando a planta mantém de 6 a 10 folhas e floresce seguido."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Da primavera ao outono, floresce sem parar: cada flor abre ao anoitecer por 3 ou 4 noites seguidas e depois afunda. Folhas velhas amarelam toda semana e são trocadas por novas. Com a água abaixo de uns 20 °C (maio a agosto no Centro-Sul), quase para de crescer, perde folhas e não floresce; volta em setembro. Se as folhas se amontoarem e subirem para fora da água, está na hora de dividir o rizoma."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "completar_agua",
+      "titulo": "Completar o nível da água",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Complete a tina até a marca, de preferência com água da chuva ou da torneira descansada por 24 h, despejando devagar na borda para não revirar a terra do vaso. A coroa precisa ficar sempre coberta: se o rizoma ficar exposto num dia de calor, ele resseca e as folhas flutuantes morrem. No verão, acima de 30 °C, confira todo dia; no inverno, a cada 5 a 7 dias basta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_pastilha",
+      "titulo": "Adubar com pastilha no vaso",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enterre 2 pastilhas de adubo para plantas aquáticas (ou um sachê de papel com 1 colher de sopa de NPK 10-10-10) uns 8 cm na terra do vaso, a 5 cm da coroa, e feche o furo com o cascalho. Nunca jogue adubo solto na água, que fica verde de algas. De maio a agosto, com a planta parada, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Tirar folhas amarelas e flores passadas",
+      "tipo": "PODA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura, o mais perto possível da coroa, os pecíolos das folhas amarelas ou furadas e das flores que já afundaram. Deixadas na água, elas apodrecem, turvam a tina e atraem fungos para a coroa.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_agua_pragas",
+      "titulo": "Inspecionar folhas e água",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 3,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a água com atenção: larvas de mosquito se mexem em zigue-zague perto da superfície. Vire algumas folhas e procure pulgões escuros, lagartinhas enroladas em pedaços de folha e ovos gelatinosos de caramujo. Toda semana, sem falta: a água parada é criadouro do Aedes aegypti, que vai de ovo a adulto em 7 a 10 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Proteja a tina do mosquito da dengue",
+      "mensagem": "Água parada ao ar livre vira criadouro de Aedes aegypti em uma semana. Peixinhos comem as larvas e dispensam produto.",
+      "acao_requerida": "Colocar 2 ou 3 lebistes (guppies) ou platis na tina; sem peixes, aplicar larvicida biológico à base de BTi na dose da embalagem"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Hora de afundar o vaso",
+      "mensagem": "Com folhas novas abertas na superfície, a planta já alcança água mais funda, que protege a coroa do calor e do frio.",
+      "acao_requerida": "Tirar um tijolo de baixo do vaso de plantio para deixar 20 a 30 cm de água sobre a coroa"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Larvas de mosquito (Aedes aegypti, Culex)",
+      "tipo": "PRAGA",
+      "sintomas": "Larvinhas finas se mexendo em zigue-zague perto da superfície; pupas em forma de vírgula; mosquitos em volta da tina",
+      "prevencao_tratamento": "Manter peixinhos na tina; sem peixes, larvicida BTi, que não faz mal à planta. Se aparecerem larvas, aplicar BTi no mesmo dia ou trocar metade da água, coando a que sair"
+    },
+    {
+      "nome": "Pulgão-das-ninfeias (Rhopalosiphum nymphaeae)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos marrom-escuros na face de cima das folhas e nos botões; folhas deformadas e botões que não abrem",
+      "prevencao_tratamento": "Afundar as folhas com a mão por alguns segundos, para os peixes comerem os pulgões, ou lavar com jato de água. Não use óleo de neem nem inseticida: são tóxicos para peixes"
+    },
+    {
+      "nome": "Lagarta-das-aquáticas (Elophila, Parapoynx)",
+      "tipo": "PRAGA",
+      "sintomas": "Recortes ovais nas bordas das folhas e lagartinhas escondidas em 'casulos' feitos de pedaços de folha colados, na face de baixo",
+      "prevencao_tratamento": "Virar as folhas, catar os casulos com as lagartas e cortar as folhas muito atacadas"
+    },
+    {
+      "nome": "Caramujos",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas raspadas ou furadas, principalmente as novas; massas de ovos gelatinosas coladas no verso das folhas e nas paredes da tina",
+      "prevencao_tratamento": "Catar os caramujos e as massas de ovos; deixar uma folha de alface na água à noite e retirar de manhã com os caramujos grudados"
+    },
+    {
+      "nome": "Podridão da coroa (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Coroa e rizoma moles, escuros e com cheiro podre; folhas novas nascem pequenas e morrem; água com cheiro ruim",
+      "prevencao_tratamento": "Não usar adubo orgânico solto nem terra de vaso comum no substrato e retirar folhas mortas toda semana. Se aparecer, tirar o rizoma, cortar a parte mole até o tecido firme e claro, deixar secar 1 h à sombra e replantar em terra argilosa nova com água trocada"
+    },
+    {
+      "nome": "Mancha-foliar (Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas nas folhas que crescem, se juntam e fazem a folha apodrecer das bordas para dentro",
+      "prevencao_tratamento": "Cortar as folhas manchadas assim que aparecem e não deixar folhas sobrepostas apodrecendo na superfície; dividir a touceira se estiver apertada"
+    },
+    {
+      "nome": "Folhas pequenas e amarelas por falta de adubo",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas cada vez menores e amarelo-claras, poucas ou nenhuma flor em pleno verão, com a planta sem pragas",
+      "prevencao_tratamento": "Retomar as pastilhas de adubo no vaso de 30 em 30 dias entre setembro e abril; se a planta estiver há mais de um ano no mesmo vaso, trocar a terra na divisão de setembro"
+    },
+    {
+      "nome": "Água verde (excesso de nutrientes na água)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Água turva e verde, algas filamentosas grudadas nos pecíolos, principalmente no começo e depois de adubar",
+      "prevencao_tratamento": "Deixar as folhas cobrirem de 50% a 70% da superfície, enterrar sempre o adubo e nunca jogá-lo na água; retirar as algas filamentosas com um graveto e completar com água da chuva"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Chegando o frio: a ninfeia vai desacelerar",
+      "mensagem": "Com a água abaixo de uns 20 °C, a planta de clima tropical para de florescer e solta menos folhas. Adubo agora não é aproveitado e só esverdeia a água.",
+      "acao_requerida": "Suspender a adubação até setembro e espaçar a limpeza das folhas"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o rizoma do frio",
+      "mensagem": "Geada ou água abaixo de 10 °C mata o rizoma desta ninfeia tropical. Água mais funda esquenta e esfria mais devagar.",
+      "acao_requerida": "Afundar o vaso até 40 cm de água sobre a coroa e levar a tina para o canto mais abrigado; onde gea, tirar o rizoma, limpar e guardar em areia úmida dentro de casa até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Replantar e dividir a ninfeia",
+      "mensagem": "A água esquenta e a planta volta a brotar: é a melhor época para trocar a terra, que se esgota em um ano, e separar as mudas.",
+      "acao_requerida": "Tirar o vaso da tina, lavar o rizoma, separar as mudinhas com raiz, replantar a mais vigorosa em terra argilosa nova com 2 pastilhas de adubo e recomeçar a adubação mensal"
+    }
+  ]
+}

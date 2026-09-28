@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Hemerocale",
+    "nome_cientifico": "Hemerocallis fulva",
+    "descricao": "Perene rizomatosa de folhas em leque e flores alaranjadas em forma de lírio, cada uma aberta por um único dia, mas renovadas por semanas na primavera e no verão. É das plantas de flor mais resistentes que existem: aguenta sol forte, calor e descuido com a rega depois de estabelecida. Em casa, começa pela muda (uma divisão da touceira).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo; as raízes carnosas precisam de profundidade",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; fértil e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com a coroa (onde as folhas saem das raízes) no nível do substrato, nunca enterrada. Pontas de folhas amarelando são normais nas primeiras semanas. A fase termina quando surgem folhas novas no centro do leque."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a touceira ganha novos leques ao lado do original. Pode não florescer no primeiro ano se foi plantada fora da primavera. A planta está estabelecida quando tolera alguns dias sem rega sem murchar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Brota forte a partir de agosto, emite hastes florais de outubro a fevereiro, com uma flor nova a cada dia em cada haste, e desacelera no inverno, quando algumas folhas secam. A cada dois anos a touceira lota o vaso e deve ser dividida; menos flores e folhas apertadas contra a borda são o sinal."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de hemerocale",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Sem raízes firmes, a muda desidrata rápido no sol. Não deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o hemerocale",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos só se estiver seco. Na floração e acima de 30 °C, confira a cada 2 dias; no inverno, espace para cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o hemerocale",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de farinha de ossos mais 3 de húmus) por vaso de 15 L, longe da coroa, e regue em seguida. Suspenda em junho e julho. Excesso de nitrogênio dá muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra o centro dos leques e olhe os botões florais: procure pulgões, estrias prateadas (tripes), teia fina no verso (ácaro) e pústulas alaranjadas que soltam pó ao passar o dedo (ferrugem).",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre março e maio, tire a touceira do vaso, separe com faca limpa em partes de 2 a 3 leques com raízes, corte as folhas a 15 cm e replante uma parte no vaso com substrato novo. Se cair no auge da floração, espere as flores acabarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Coroa na altura certa",
+      "mensagem": "Coroa enterrada é a principal causa de podridão no hemerocale.",
+      "acao_requerida": "Conferir se o ponto de onde saem as folhas está no nível do substrato, sem terra por cima"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda adaptada",
+      "mensagem": "Se já há folhas novas no centro, as raízes pegaram e a rega pode ficar mais espaçada.",
+      "acao_requerida": "Cortar rente à base as folhas que secaram durante a adaptação"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da coroa e das raízes (Erwinia, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas do centro amarelam e se soltam com um puxão leve; base mole, escura e com mau cheiro",
+      "prevencao_tratamento": "Não enterrar a coroa e não deixar água no prato. Retirar a touceira, cortar as partes podres até o tecido firme, deixar secar ao ar por um dia e replantar em substrato novo"
+    },
+    {
+      "nome": "Ferrugem do hemerocale (Puccinia hemerocallidis)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas no verso e na face das folhas que soltam pó ao toque; folhas amarelam a partir da ponta",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter o vaso ventilado. Cortar e descartar no lixo as folhas atacadas; em ataque forte, fungicida à base de enxofre ou cobre"
+    },
+    {
+      "nome": "Estria foliar (Aureobasidium microstictum)",
+      "tipo": "DOENCA",
+      "sintomas": "Faixa amarela ao longo da nervura central com pontos marrons, que avança até secar a folha",
+      "prevencao_tratamento": "Evitar molhar a folhagem e retirar as folhas afetadas; mais comum no verão úmido"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Insetos agrupados no centro dos leques e nos botões; botões deformados e folhas pegajosas",
+      "prevencao_tratamento": "Jato de água forte; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Estrias prateadas nas folhas e pétalas manchadas ou retorcidas; botões que secam sem abrir",
+      "prevencao_tratamento": "Retirar botões atacados e aplicar óleo de neem a 0,5% com sabão neutro a cada 5 dias, atingindo o centro do leque"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos e aspecto empoeirado; teia fina no verso em tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas em dias secos e quentes; em infestação, calda de sabão neutro a 1% ou acaricida à base de enxofre"
+    },
+    {
+      "nome": "Pouca ou nenhuma floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Touceira verde e sadia, mas sem hastes florais na primavera e no verão",
+      "prevencao_tratamento": "Garantir pelo menos 6 horas de sol direto, cortar o adubo nitrogenado e dividir a touceira se estiver lotando o vaso"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Limpeza de fim de inverno",
+      "mensagem": "A brotação da primavera vai começar; folhas secas acumuladas escondem pragas e fungos.",
+      "acao_requerida": "Cortar rente à base todas as folhas secas ou amareladas e retomar a adubação mensal"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Época de flores",
+      "mensagem": "Cada flor dura um só dia; as murchas ficam feias e as hastes esgotadas gastam energia da planta.",
+      "acao_requerida": "Tirar as flores murchas a cada 2 ou 3 dias e cortar rente à base as hastes sem mais botões"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e adubo",
+      "mensagem": "No frio a planta quase para de crescer e o substrato demora a secar, o que favorece podridão.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm e suspender a adubação até agosto"
+    }
+  ]
+}

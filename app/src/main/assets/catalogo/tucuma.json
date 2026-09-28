@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Tucumã",
+    "nome_cientifico": "Astrocaryum aculeatum",
+    "descricao": "Palmeira amazônica de frutos alaranjados e oleosos, ricos em vitamina A, muito consumidos em Manaus. Em vaso ela vive por anos como palmeira jovem ornamental. Não espere frutos: ela só frutifica no chão, com vários metros de altura, depois de 5 a 8 anos. As folhas e o caule têm espinhos pretos e compridos, então manuseie sempre de luvas grossas e deixe o vaso longe de passagem.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo e pesado (cerâmica ou plástico grosso) com pelo menos 45 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo. A palmeira tem raiz pivotante e cresce para baixo antes de crescer para cima",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 25% areia grossa lavada, 20% húmus de minhoca, 15% casca de pinus fina ou fibra de coco; solto e drenado, porque a palmeira gosta de umidade mas apodrece em água parada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho e se ajusta ao vaso novo. Mantenha em meia sombra clara nas primeiras duas semanas. Pode perder a ponta de uma folha velha, e isso é normal. O sinal de que pegou é a flecha central (a folha nova ainda fechada) voltar a crescer."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a palmeira passa a abrir uma folha nova a cada 2 ou 3 meses, cada uma maior que a anterior. Já deve estar no sol pleno. Folhas novas verde-escuras e firmes indicam que o ritmo de rega e adubo está certo."
+    },
+    {
+      "fase_id": "palmeira_jovem",
+      "nome": "Palmeira Jovem",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Em vaso, o tucumã fica anos nesta fase: roseta de folhas espinhosas, sem caule aparente no começo. Cresce bem de setembro a abril e quase para no frio. Corte rente as folhas totalmente secas com serrote ou tesoura de poda, de luvas e óculos, porque os espinhos são duros e soltam. Não corte folhas ainda verdes, pois a palmeira tira nutrientes delas. Quando as raízes saírem pelos furos ou a planta tombar o vaso, é hora de um vaso maior ou do plantio no chão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de tucumã",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água do pratinho. Acima de 32 °C, confira todo dia. A raiz recém-transplantada ainda não busca água no fundo do vaso.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o tucumã",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato. Se estiver seco, regue até escorrer pelos furos (cerca de 4 a 6 L num vaso de 40 L). Não deixe água parada no pratinho. De maio a agosto, regue só quando os 5 primeiros centímetros estiverem secos, o que costuma dar a cada 6 ou 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_palmeira",
+      "titulo": "Adubar o tucumã",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou adubo próprio para palmeiras, com magnésio) mais 1 litro de húmus na superfície, a 10 cm do caule, e regue bem em seguida. De maio a agosto, pule a adubação: a planta está parada e o adubo queima a raiz.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e flecha",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas, olhe o verso dos folíolos e a base das folhas. Procure escamas brancas ou marrons presas, teias finas, manchas marrons com borda amarela e flecha central escurecida ou mole ao toque.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre setembro e novembro, envolva a planta em papelão ou jornal grosso para se proteger dos espinhos e tire-a do vaso. Passe para um vaso 10 a 15 cm maior de diâmetro, com substrato novo e a mesma altura de colo. Se não houver vaso maior, raspe 5 cm do substrato velho das laterais e da superfície e complete com substrato novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de levar ao sol",
+      "mensagem": "A muda já passou do pior da adaptação. O tucumã cresce mais no sol pleno, mas uma mudança brusca queima as folhas.",
+      "acao_requerida": "Deixar 2 horas de sol da manhã por dia na primeira semana e aumentar 2 horas por semana até chegar ao sol pleno"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Confira a folha nova",
+      "mensagem": "A essa altura a flecha central deve ter crescido ou aberto uma folha nova. Se nada mudou e a flecha está mole ou escura, pode ser podridão.",
+      "acao_requerida": "Puxar a flecha de leve: se sair solta e com cheiro ruim, suspender a rega até secar 5 cm e aplicar fungicida cúprico no olho da palmeira"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de tucumã",
+      "mensagem": "No vaso, o tucumã vai continuar como palmeira ornamental. Para ter frutos um dia, ele precisa ir para o chão, num lugar de sol pleno com espaço para 10 metros de altura e longe de onde passam pessoas.",
+      "acao_requerida": "Decidir se a palmeira fica no vaso ou vai para o chão na próxima primavera (setembro a novembro)"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do olho e da raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "A flecha central escurece, amolece e se solta com facilidade; as folhas amarelam da base para cima; o substrato cheira a mofo",
+      "prevencao_tratamento": "Não regar com o substrato ainda úmido, esvaziar o pratinho e não deixar água acumulada no olho da planta. Nos primeiros sinais, suspender a rega e aplicar fungicida à base de cobre no olho e no substrato. Flecha que já soltou raramente se recupera"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodoadas presas no verso dos folíolos e na base das folhas; folhas amareladas e melado pegajoso",
+      "prevencao_tratamento": "Remover com cotonete ou escova com álcool 70%; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo a cada 7 dias por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-vermelho",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado ou bronzeado e teias finas no verso, principalmente em tempo seco ou perto de parede quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, calda de enxofre ou acaricida à base de óleo de neem a cada 5 dias"
+    },
+    {
+      "nome": "Mancha foliar (Pestalotiopsis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou cinzentas com borda amarela nos folíolos, que se juntam e secam a folha",
+      "prevencao_tratamento": "Molhar o substrato, não as folhas; cortar os folíolos muito afetados e aplicar fungicida cúprico se as manchas avançarem para as folhas novas"
+    },
+    {
+      "nome": "Falta de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas mais velhas com pontas e bordas amarelas ou alaranjadas e centro ainda verde; as folhas novas saem menores",
+      "prevencao_tratamento": "Usar adubo para palmeiras com potássio e magnésio; como correção, 1 colher de sopa de sulfato de magnésio diluída em 5 L de água, a cada 30 dias, por 3 meses. As folhas manchadas não voltam a ficar verdes, só as novas saem boas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas bege ou esbranquiçadas e secas no meio dos folíolos, que surgem poucos dias depois de a planta ir da sombra para o sol",
+      "prevencao_tratamento": "Aclimatar aos poucos, aumentando 2 horas de sol por semana; as folhas queimadas ficam marcadas, mas a planta segue normalmente"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "O tucumã vai desacelerar",
+      "mensagem": "Com o frio chegando, a palmeira quase para de crescer e passa a gastar bem menos água. Substrato úmido e frio é a principal causa de podridão.",
+      "acao_requerida": "Espaçar as regas para a cada 6 ou 7 dias, sempre conferindo com o dedo, e não adubar até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o tucumã do frio",
+      "mensagem": "É uma palmeira equatorial: abaixo de 10 °C as folhas manchando e geada mata a flecha central.",
+      "acao_requerida": "Nas noites com previsão abaixo de 10 °C, levar o vaso para perto de uma parede ou para baixo de uma cobertura; com previsão de geada, cobrir com manta de TNT à noite e tirar de manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: o tucumã volta a crescer",
+      "mensagem": "Com o calor, a palmeira retoma o crescimento e a abertura de folhas novas.",
+      "acao_requerida": "Voltar a regar a cada 3 dias conferindo com o dedo, retomar a adubação e cortar as folhas que secaram no inverno"
+    }
+  ]
+}

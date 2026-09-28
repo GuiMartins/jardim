@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Begônia-maculata",
+    "nome_cientifico": "Begonia maculata",
+    "descricao": "Begônia de caule tipo bambu, nativa da Mata Atlântica, com folhas compridas verde-oliva cheias de bolinhas prateadas e o verso vermelho-vinho. É cultivada pela folhagem ornamental e pelos cachos de flores brancas que aparecem da primavera ao outono, e vive muitos anos em vaso dentro de casa ou em varanda sombreada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada com 16 a 20 cm de diâmetro e profundidade, com furos no fundo e sem prato acumulando água; só 2 a 3 cm maior que o torrão da muda, porque vaso grande demais fica encharcado",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "40% substrato comercial para plantas de folhagem, 25% fibra de coco, 20% perlita ou casca de pinus fina, 15% húmus de minhoca; leve, aerado e que retenha umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai da estufa, com umidade alta, e vai para o ar mais seco de casa. É normal perder 1 ou 2 folhas de baixo e as bordas de alguma folha secarem. Não adube nem troque de vaso agora, a não ser que as raízes estejam saindo pelos furos. A fase termina quando aparece uma folha nova abrindo sem manchas no alto de um caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "Os caules engrossam e crescem novos brotos da base. Cada caule solta uma folha nova a cada 2 ou 3 semanas no calor. Beliscar a ponta dos caules mais altos faz a planta ramificar e ficar cheia em vez de alta e pelada. Os primeiros cachos de flores brancas podem aparecer se for primavera ou verão."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Planta formada, com vários caules de 40 a 100 cm. Cresce e floresce da primavera ao outono, desacelera no inverno, quando perde algumas folhas de baixo. Os caules velhos ficam pelados na base com o tempo: a poda no fim do inverno renova a planta, e as pontas cortadas enraízam fácil em água para fazer mudas. Troque de vaso uma vez por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_begonia",
+      "titulo": "Regar a begônia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato: se estiver seco, regue devagar direto no substrato, sem molhar as folhas, até escorrer pelos furos, e esvazie o prato depois de 15 minutos. Se ainda estiver úmido, espere. No calor acima de 28 °C confira a cada 2 dias; no inverno, a cada 5 ou 6 dias. Folhas murchas com substrato molhado são sinal de raiz apodrecendo, não de sede.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_folhagem",
+      "titulo": "Adubar a begônia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo líquido NPK equilibrado (10-10-10 ou similar) na metade da dose do rótulo e regue com ele o substrato já úmido, nunca seco. De maio a agosto, adube só uma vez por mês.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas dos caules: procure tufos brancos de algodão (cochonilha), teias finas com pontinhos (ácaro) e pó branco na face de cima (oídio). Aperte a base dos caules: se estiver mole e escura, é podridão. Remova folhas amarelas ou caídas no substrato.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso_anual",
+      "titulo": "Trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, solte as raízes enroladas e passe para um vaso só 2 a 3 cm maior, com substrato novo. Se a planta já estiver do tamanho desejado, volte ao mesmo vaso trocando metade do substrato. Regue e deixe em sombra clara por 1 semana, sem adubo por 1 mês.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Confira o vaso da muda",
+      "mensagem": "Muitas mudas vêm em vaso pequeno demais, com a raiz tomando todo o torrão, e secam em um dia.",
+      "acao_requerida": "Olhar se há raízes saindo pelos furos do fundo; se houver, passar para um vaso 2 a 3 cm maior com o substrato recomendado, sem enterrar o caule mais fundo que antes"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Belisque as pontas",
+      "mensagem": "A begônia-maculata tende a crescer em poucos caules altos. Tirar a ponta faz brotar ramos laterais e deixa a planta mais cheia.",
+      "acao_requerida": "Cortar com tesoura limpa a ponta dos 2 ou 3 caules mais altos, logo acima de um nó; as pontas com 2 ou 3 folhas enraízam num copo de água em 2 a 4 semanas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato molhado; base do caule fica escura, mole e aguada; substrato com cheiro azedo",
+      "prevencao_tratamento": "Regar só com os 2 cm de cima secos e nunca deixar água no prato. Se aparecer, cortar os caules sadios acima da parte mole e enraizar em água; descartar a parte podre e o substrato, lavar o vaso com água sanitária"
+    },
+    {
+      "nome": "Oídio (Erysiphe)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado na face de cima das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Manter o ar circulando e não molhar as folhas; retirar as folhas atacadas e pulverizar bicarbonato de sódio (1 colher de chá por litro de água com 2 gotas de detergente) a cada 7 dias ou fungicida à base de enxofre"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pequenas encharcadas com halo amarelo, que crescem e ficam marrons e translúcidas",
+      "prevencao_tratamento": "Não borrifar nem molhar as folhas; cortar as folhas afetadas com tesoura desinfetada com álcool e isolar a planta das outras begônias"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e no verso; folhas pegajosas e crescimento travado",
+      "prevencao_tratamento": "Remover com cotonete molhado em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, testando antes numa folha"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos na folha, que fica sem brilho; teias finas no verso e entre as folhas, pior no ar seco do inverno",
+      "prevencao_tratamento": "Limpar o verso das folhas com pano úmido e aumentar a umidade do ambiente (bandeja com pedrisco e água sob o vaso, sem encostar no fundo); se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrom-claras e secas no meio das folhas e cor desbotada, depois de exposição a sol forte",
+      "prevencao_tratamento": "Deixar em luz clara sem sol direto, ou só com sol fraco antes das 9h; as folhas queimadas não se recuperam e podem ser cortadas"
+    },
+    {
+      "nome": "Bordas secas por ar seco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas ficam marrons e crocantes, sem manchas no meio da folha",
+      "prevencao_tratamento": "Afastar a planta de ar-condicionado e aquecedor e usar bandeja com pedrisco e água ou agrupar com outras plantas; não borrifar as folhas, que favorece fungo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "Com o frio a begônia quase para de crescer e bebe bem menos. Abaixo de 12 °C ela sofre, e o substrato frio e molhado apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega, só com o substrato seco a 3 cm de profundidade; adubar uma vez por mês; levar para dentro de casa ou para longe de janela fria nas noites abaixo de 12 °C"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno os caules mais velhos costumam estar pelados na base. Podar agora faz brotar caules novos com a volta do calor.",
+      "acao_requerida": "Cortar 1 ou 2 dos caules mais velhos e pelados a 10 cm do substrato, logo acima de um nó, e encurtar os caules longos demais; enraizar as pontas em água para fazer mudas novas"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Tempo seco: cuidado com ácaros",
+      "mensagem": "No fim do inverno a umidade do ar cai muito no Centro-Sul, e é quando o ácaro-rajado e as bordas secas aparecem.",
+      "acao_requerida": "Pôr o vaso sobre bandeja com pedrisco e água, afastar de ventilador e ar-condicionado e olhar o verso das folhas procurando teias finas"
+    }
+  ]
+}

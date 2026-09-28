@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Guariroba",
+    "nome_cientifico": "Syagrus oleracea",
+    "descricao": "Palmeira nativa do Cerrado, de tronco único e folhas arqueadas, famosa pelo palmito amargo do empadão goiano. Em vaso é cultivada como ornamental por muitos anos: como não perfilha, colher o palmito mata a planta. Começa-se por muda porque a semente leva de 2 a 6 meses para germinar, de forma irregular.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de altura e 45 cm de diâmetro e vários furos no fundo; a raiz é pivotante e o vaso raso deixa a palmeira instável",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 30% composto orgânico ou húmus de minhoca, mais 200 g de farinha de ossos misturados; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está refazendo as raízes no vaso novo. É normal a folha mais velha amarelar ou secar a ponta. Nas duas primeiras semanas ela fica em meia sombra e depois vai para o sol pleno. A adaptação terminou quando a folha nova do centro (a flecha) volta a crescer."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento: espere de 3 a 5 folhas novas no ano, a maioria na estação das chuvas. As folhas novas saem cada vez mais longas e começam a se dividir em folíolos. Se o substrato secar mais rápido e a água escorrer direto pelos furos, as raízes já tomaram o vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Palmeira jovem estabelecida, que cresce da primavera ao fim do verão e quase para no inverno seco. Corte só as folhas totalmente secas, rente ao tronco. Nunca corte a flecha central, que é o único ponto de crescimento. O tronco aparece depois de alguns anos. Em vaso, ela fica bem menor que os 10 a 20 m da natureza, mas depois de uns 5 anos pede um vaso muito grande ou plantio no chão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de guariroba",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Com as raízes ainda curtas, deixar o torrão secar por inteiro no calor queima a muda. Se o prato acumular água, esvazie.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a guariroba",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos. Se ainda estiver úmido, deixe para o próximo lembrete. Acima de 32 °C, confira a cada 2 dias. No inverno seco, espace para a cada 7 a 10 dias: ela tolera seca, mas não tolera encharcamento.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a guariroba",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa (15 g) de NPK 10-10-10 e 1 colher de chá de sulfato de magnésio na borda de um vaso de 60 L, longe do tronco, e regue em seguida. A cada duas adubações, troque o NPK por 2 punhados de húmus. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a palmeira",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e a base das folhas atrás de cochonilhas (pontos brancos ou marrons grudados), teias finas de ácaro e lagartas. Aperte de leve a base da flecha central: ela deve estar firme e sem cheiro de podre.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, retire a palmeira com o torrão inteiro, sem quebrar a raiz principal. Se as raízes estiverem enroladas no fundo, passe para um vaso uns 10 cm mais largo. Se não estiverem, só troque o terço de cima do substrato por mistura nova. Regue bem e deixe em meia sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "A muda passou duas semanas se recuperando na meia sombra. A guariroba é do Cerrado e sem sol direto cresce estiolada e fraca.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo, com pelo menos 5 horas de sol direto. Se a muda veio de viveiro sombreado, fazer isso em 3 dias, começando pelo sol da manhã"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Primeira adubação",
+      "mensagem": "As raízes já se firmaram no vaso e a palmeira pode receber adubo sem risco de queimar a raiz.",
+      "acao_requerida": "Fazer a primeira adubação conforme a tarefa de adubação, com metade da dose"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes e da flecha (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "A flecha central escurece, amolece e sai com um puxão leve. As folhas amarelam de baixo para cima e o substrato cheira a azedo.",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e nunca deixar água no prato. No começo, suspenda a rega, retire as partes moles e aplique fungicida cúprico na coroa. Com a flecha podre, a palmeira não se recupera."
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, marrons ou algodonosas no verso dos folíolos e na base das folhas. A planta fica com melado pegajoso e fumagina preta.",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro. Em infestação maior, aplicar óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias."
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontinhos amarelados e aspecto empoeirado, às vezes com teias finas no verso, sobretudo no inverno seco.",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos. Se persistir, aplicar óleo de neem a 0,5% ou calda de enxofre a cada 7 dias, duas ou três vezes."
+    },
+    {
+      "nome": "Lagarta-das-palmeiras (Brassolis sophorae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos comidos de fora para dentro, a partir das bordas. Durante o dia as lagartas se escondem num ninho de folhas secas e seda.",
+      "prevencao_tratamento": "Procurar e retirar os ninhos com luva. Com muitas lagartas, aplicar Bacillus thuringiensis nas folhas no fim da tarde."
+    },
+    {
+      "nome": "Broca-do-olho (Rhynchophorus palmarum)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos com serragem e líquido escuro na base das folhas ou no tronco. A flecha central murcha e seca de repente.",
+      "prevencao_tratamento": "Não deixar cortes e ferimentos abertos no tronco: corte as folhas secas rente, com tempo seco. Não há como salvar a palmeira com a flecha já morta: descarte-a longe de outras palmeiras."
+    },
+    {
+      "nome": "Deficiência de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "As folhas mais velhas ficam amarelo-alaranjadas nas bordas, com pontos translúcidos ou pontas secas e retorcidas, enquanto o centro continua verde.",
+      "prevencao_tratamento": "Manter a adubação com sulfato de magnésio e um NPK que tenha potássio. Não retire as folhas velhas enquanto ainda tiverem verde, porque a planta está puxando nutrientes delas."
+    },
+    {
+      "nome": "Queimadura de sol na muda",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou palha, secas, no meio dos folíolos expostos, logo depois da muda sair da sombra.",
+      "prevencao_tratamento": "Fazer a mudança para o sol pleno aos poucos. As folhas manchadas não voltam, mas as novas já nascem adaptadas. Corte as queimadas só quando secarem por inteiro."
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno seco: menos água",
+      "mensagem": "Com frio e pouca luz, a guariroba quase para de crescer e o substrato demora mais para secar. Rega em excesso nesta época é a principal causa de podridão.",
+      "acao_requerida": "Regar só com o substrato seco a 5 cm, a cada 7 a 10 dias, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "Palmeiras jovens toleram frio leve, mas uma geada queima as folhas e pode matar a flecha central de mudas pequenas.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, encostar o vaso numa parede ou sob beiral, ou cobrir a planta com TNT até o sol da manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Limpeza e retomada na primavera",
+      "mensagem": "Com o calor e as chuvas voltando, a palmeira retoma o crescimento e aproveita bem o adubo.",
+      "acao_requerida": "Cortar rente ao tronco as folhas totalmente secas, sem ferir a flecha, e retomar a adubação e a rega a cada 4 dias"
+    }
+  ]
+}

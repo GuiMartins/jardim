@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Bananeirinha-de-jardim",
+    "nome_cientifico": "Canna × generalis (Canna × hybrida, híbridos de jardim)",
+    "descricao": "Planta rizomatosa de folhas largas, verdes, bronze ou listradas, e flores vermelhas, laranja, amarelas ou rosa de novembro a abril. Rústica, cresce rápido e floresce muito em vaso grande ao sol pleno. Os híbridos anões (60 a 90 cm) são os melhores para vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; os rizomas se espalham para os lados e lotam vaso pequeno em um ano",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou casca de arroz carbonizada, mais 1 colher de sopa de farinha de ossos por litro de vaso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Enterre o rizoma deitado, a 5 a 8 cm de profundidade, com as gemas (pontas rosadas ou brancas) voltadas para cima; até 3 rizomas por vaso de 30 L. Os primeiros brotos, enrolados como um charuto, aparecem entre o 10º e o 21º dia. Nessa fase o rizoma sem folhas apodrece fácil no substrato encharcado."
+    },
+    {
+      "fase_id": "crescimento_folhas",
+      "nome": "Crescimento das Folhas",
+      "dia_inicio": 22,
+      "dia_fim": 60,
+      "descricao": "As folhas se abrem uma a uma a partir do centro de cada haste e a touceira engrossa depressa. A planta passa a beber bem mais água. A fase termina quando surge o primeiro botão floral no alto de uma haste."
+    },
+    {
+      "fase_id": "primeira_floracao",
+      "nome": "Primeira Floração",
+      "dia_inicio": 61,
+      "dia_fim": 120,
+      "descricao": "Cada haste abre uma espiga de flores que dura 2 a 3 semanas, e novas hastes nascem do rizoma. Quando todas as flores de uma espiga murcharem, corte essa haste rente ao substrato para liberar espaço e estimular novas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: brota forte em setembro, floresce de novembro a abril, desacelera no outono e no inverno fica quase parada; com geada, as folhas queimam, mas o rizoma sobrevive no vaso. A touceira dobra de tamanho a cada ano e precisa ser dividida a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_rizoma",
+      "titulo": "Regar o rizoma plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos. Sem folhas, o rizoma quase não gasta água e apodrece no vaso encharcado. Esvazie o prato depois de 30 minutos.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a bananeirinha",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Ela gosta de substrato sempre úmido, mas nunca de água parada no prato. Acima de 30 °C, confira todo dia. De maio a agosto, com a planta parada, espace para cada 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a bananeirinha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 4-14-8 (ou 1 xícara de húmus mais 1 colher de farinha de ossos) na borda do vaso de 30 L, sem encostar nas hastes, e regue em seguida. De maio a julho, pule a adubação: a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folhas enroladas e presas com fios de seda (lagarta dentro), furos nos brotos ainda fechados, manchas laranja em pó no verso e folhas com riscas amarelas em mosaico.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a touceira do vaso, corte o rizoma com faca limpa em pedaços com 2 ou 3 gemas cada e deixe secar 1 dia. Replante 3 pedaços no vaso com substrato novo e doe ou plante o resto. Se cair entre abril e julho, espere até agosto ou setembro, quando ela volta a brotar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Os brotos já apareceram?",
+      "mensagem": "A maioria dos rizomas brota em até 3 semanas. Se nada saiu, o rizoma pode ter apodrecido ou estar de cabeça para baixo.",
+      "acao_requerida": "Cavar com cuidado ao lado do rizoma e apertá-lo: firme e com gemas inchadas, espere mais 2 semanas; mole e com cheiro ruim, descarte e plante outro"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Os primeiros botões estão chegando",
+      "mensagem": "As hastes mais altas já devem mostrar a espiga floral no topo. Hastes de mais de 1 m podem tombar com o vento.",
+      "acao_requerida": "Se o vaso fica em lugar com vento forte, amarrar as hastes mais altas num tutor de bambu com fita macia, sem apertar"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Limpe as hastes que já floriram",
+      "mensagem": "Haste com todas as flores murchas não floresce de novo e só forma sementes, gastando a energia da planta.",
+      "acao_requerida": "Cortar rente ao substrato as hastes com a espiga toda murcha; daqui em diante, fazer isso sempre que uma espiga terminar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Lagarta-enroladeira (Calpodes ethlius)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas enroladas em tubo e presas com fios de seda, com lagarta verde de cabeça escura dentro; recortes grandes nas bordas das folhas",
+      "prevencao_tratamento": "Desenrolar as folhas e retirar as lagartas à mão; com infestação grande, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde e repetir após 7 dias"
+    },
+    {
+      "nome": "Podridão do rizoma (Erwinia, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes amarelam e tombam pela base; rizoma mole, escuro e com cheiro ruim",
+      "prevencao_tratamento": "Não regar o rizoma recém-plantado sem necessidade e esvaziar o prato; cortar a parte podre até o tecido branco e firme, deixar secar 1 dia e replantar em substrato novo"
+    },
+    {
+      "nome": "Ferrugem (Puccinia thaliae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas pequenas cor de laranja ou ferrugem, em pó, principalmente no verso das folhas; folhas secam das bordas",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas; retirar e descartar no lixo as folhas atacadas; em casos fortes, fungicida à base de cobre a cada 10 dias"
+    },
+    {
+      "nome": "Vírus do mosaico (Canna yellow mottle virus, BYMV)",
+      "tipo": "DOENCA",
+      "sintomas": "Riscas e manchas amarelas em mosaico ao longo das nervuras, folhas deformadas e flores com listras irregulares",
+      "prevencao_tratamento": "Não tem cura: descartar a touceira inteira no lixo e não usar os rizomas dela; controlar pulgões, que transmitem o vírus, e comprar rizomas de origem confiável"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos novos roídos e rastro prateado brilhante no vaso, principalmente depois de chuva",
+      "prevencao_tratamento": "Catar à noite com lanterna; espalhar casca de ovo triturada ou cinza em volta das hastes"
+    },
+    {
+      "nome": "Queima de geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas ficam pretas e moles da noite para o dia após frio intenso",
+      "prevencao_tratamento": "Não cortar logo: as folhas secas protegem o rizoma. Em agosto, cortar tudo rente ao substrato; o rizoma rebrota na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "titulo": "Temporada de flores: limpe as hastes",
+      "mensagem": "Hastes que terminaram de florir não abrem novas flores e roubam energia das que estão nascendo.",
+      "acao_requerida": "Cortar rente ao substrato as hastes com a espiga toda murcha e retirar folhas secas"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "A bananeirinha vai descansar",
+      "mensagem": "Com frio e dias curtos, ela quase para de crescer, e o substrato encharcado apodrece o rizoma parado.",
+      "acao_requerida": "Espaçar a rega para cada 5 a 7 dias, suspender a adubação e, em região com geada, levar o vaso para perto de uma parede ou sob o beiral"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza antes da brotação",
+      "mensagem": "Em agosto os rizomas começam a despertar. Limpar a planta agora faz a brotação nova sair forte e sem doenças.",
+      "acao_requerida": "Cortar a 10 cm do substrato todas as hastes velhas ou queimadas, espalhar 1 xícara de húmus por cima e voltar a regar a cada 2 a 3 dias"
+    }
+  ]
+}

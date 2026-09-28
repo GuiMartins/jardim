@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Chicória-do-pará",
+    "nome_cientifico": "Eryngium foetidum",
+    "descricao": "Erva aromática amazônica, também chamada de coentro-de-pasto ou chicória-de-caboclo. Tem folhas serrilhadas em roseta e um cheiro forte de coentro, e é indispensável no tacacá, no pato no tucupi e nos peixes do Norte. Na natureza é bienal ou perene de vida curta, mas em vaso produz bem por uns 7 meses e depois pendoa. Por isso é cultivada como ANUAL, ressemeando para não ficar sem folhas.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 210,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 20 cm de profundidade, porque a raiz é pivotante, e furos no fundo. Semeie direto no vaso definitivo: a planta sofre com o transplante e pendoa cedo",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% fibra de coco ou areia grossa; rico em matéria orgânica, que segure umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Deixe as sementes de molho em água morna por 24 horas. Espalhe 3 a 4 por cova, a cada 10 cm, e cubra com no máximo 0,5 cm de substrato peneirado. A germinação é lenta e desigual: as primeiras plântulas aparecem entre o 14º e o 30º dia, e só com o substrato sempre úmido e acima de 20 °C."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 31,
+      "dia_fim": 60,
+      "descricao": "As plântulas formam as primeiras folhas verdadeiras, alongadas e serrilhadas, rentes ao substrato. O crescimento é lento no começo. A fase termina quando cada planta tem 4 a 5 folhas."
+    },
+    {
+      "fase_id": "formacao_roseta",
+      "nome": "Formação da Roseta",
+      "dia_inicio": 61,
+      "dia_fim": 80,
+      "descricao": "As folhas se abrem em roseta e passam de 10 cm. Em meia sombra ficam maiores, mais verdes e mais macias do que no sol pleno. Quando as de fora chegam a 15 cm, a planta está pronta para a primeira colheita."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 81,
+      "dia_fim": 210,
+      "descricao": "A roseta produz folhas novas pelo centro continuamente. Calor, sol forte ou falta de água fazem subir hastes florais com flores verde-azuladas espinhosas, e depois disso as folhas ficam duras e amargas. Cortar as hastes assim que surgem prolonga a colheita. Perto do fim do ciclo, a planta pendoa de vez: é hora de já ter uma nova semeadura."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. A semente é pequena e rasa: se a superfície secar um dia inteiro, a germinação para. Nunca deixe empoçar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a chicória-do-pará",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia: a seca faz a planta pendoar e endurecer as folhas. No inverno, espace para cada 3 a 4 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar com húmus",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": 190,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por planta ao redor da roseta, sem cobrir o centro, e regue em seguida. Adubação com nitrogênio mantém a produção de folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Vire as folhas e olhe o verso e o centro da roseta à procura de pulgões, lagartas, teias finas ou manchas escuras. Aperte a base: colo mole e escuro indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas e cortar hastes florais",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 81,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Corte com tesoura, rente à base, as folhas mais externas com mais de 15 cm, e deixe pelo menos 5 folhas no centro. Se houver haste floral subindo do meio da roseta, corte-a na base.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Ainda sem brotos?",
+      "mensagem": "A chicória-do-pará demora e germina de forma desigual. Até o dia 30 ainda é normal aparecerem plântulas.",
+      "acao_requerida": "Manter a superfície úmida e o vaso num lugar quente e com luz clara; se nada surgir até o dia 35, ressemear com sementes deixadas de molho por 24 horas"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "As plântulas de cada cova disputam espaço, e roseta apertada dá folha pequena.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa a cada 10 cm, cortando as outras rente ao substrato com tesoura, sem puxar"
+    },
+    {
+      "dia_disparo": 81,
+      "titulo": "Primeira colheita",
+      "mensagem": "As folhas de fora já devem ter uns 15 cm e o aroma forte da planta adulta.",
+      "acao_requerida": "Colher só as folhas externas, deixando o centro da roseta intacto"
+    },
+    {
+      "dia_disparo": 170,
+      "titulo": "Prepare a próxima semeadura",
+      "mensagem": "A planta está perto do fim do ciclo produtivo em vaso e logo vai pendoar de vez. A nova semeadura leva uns 80 dias até a primeira colheita.",
+      "acao_requerida": "Semear um vaso novo agora, ou deixar uma haste florescer e secar para colher as sementes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e da raiz (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Roseta murcha mesmo com o substrato úmido; base do caule mole e escura; folhas amarelam de fora para dentro",
+      "prevencao_tratamento": "Vaso com furos livres e substrato que drene; regar só quando os 2 cm de cima secarem; retirar as plantas afetadas e não reaproveitar o substrato"
+    },
+    {
+      "nome": "Tombamento",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem de repente com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, sem encharcar na germinação, e boa ventilação; retire as plântulas afetadas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos no centro da roseta e nas hastes florais; folhas novas enrugadas e pegajosas",
+      "prevencao_tratamento": "Jato de água; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, e espere 7 dias antes de colher"
+    },
+    {
+      "nome": "Lagarta-rosca e lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou plântulas cortadas rente ao substrato durante a noite",
+      "prevencao_tratamento": "Revirar levemente o substrato ao redor e catar as lagartas à noite ou de manhã cedo; Bacillus thuringiensis em caso de infestação"
+    },
+    {
+      "nome": "Pendoamento precoce",
+      "tipo": "DISTURBIO",
+      "sintomas": "Hastes florais eretas e espinhosas surgem do centro cedo demais; as folhas ficam pequenas, duras e amargas",
+      "prevencao_tratamento": "Manter a planta em meia sombra, sem deixar o substrato secar, e cortar as hastes assim que aparecem. Evite transplantar, que também dispara o pendoamento"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amareladas ou avermelhadas, com bordas secas e textura coriácea",
+      "prevencao_tratamento": "Sol direto só pela manhã; no verão, tirar do sol da tarde ou usar tela de sombreamento de 50%"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: proteja a chicória",
+      "mensagem": "Calor e sol forte são o maior gatilho de pendoamento, e o vaso seca em um dia.",
+      "acao_requerida": "Deixar o vaso só com sol da manhã, conferir a umidade do substrato todo dia e cortar as hastes florais assim que aparecerem"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Frio: menos água, mais proteção",
+      "mensagem": "Planta tropical, a chicória-do-pará quase para de crescer abaixo de 15 °C e sofre com geada.",
+      "acao_requerida": "Espaçar a rega para quando os 3 cm de cima estiverem secos e levar o vaso para perto de uma parede ou para dentro nas noites abaixo de 10 °C"
+    }
+  ]
+}

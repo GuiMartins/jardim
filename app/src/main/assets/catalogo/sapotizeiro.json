@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Sapotizeiro",
+    "nome_cientifico": "Manilkara zapota",
+    "descricao": "Árvore frutífera tropical de folhas lustrosas e crescimento lento. Dá o sapoti, fruto de polpa marrom, doce e com sabor de açúcar mascavo. Em vaso, a muda enxertada fica compacta e começa a produzir em 3 a 4 anos, enquanto o pé de semente leva de 6 a 8.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cerâmica ou fibra, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, vários furos no fundo e pés ou rodízios para não encostar no chão",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de pinus fina; mais 200 g de farinha de ossos e 100 g de calcário dolomítico por vaso de 60 L, misturados antes do plantio",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda no mesmo nível em que estava no saquinho, com o ponto de enxertia pelo menos 5 cm acima do substrato. Deixe-a 3 a 4 dias em meia-sombra e depois leve ao sol pleno. É normal perder algumas folhas velhas. A fase termina quando aparece a primeira brotação nova, de folhas avermelhadas ou verde-claras na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "O crescimento é lento, com 2 a 4 fluxos de brotação por ano, principalmente no calor. Retire os botões florais que aparecerem neste primeiro ano para a planta investir em raiz e copa. Arranque sempre os brotos que nascem abaixo do enxerto, porque roubam força da copa."
+    },
+    {
+      "fase_id": "formacao_copa",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A árvore engrossa o tronco e ramifica. Dos 2 anos em diante, deixe alguns frutos por ramo forte e tire o excesso ainda do tamanho de uma bolinha de gude. Mantenha a altura em até 1,8 m com podas de ponta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Floresce em vários fluxos durante o ano, e o fruto leva de 4 a 6 meses da flor à colheita. No Centro-Sul, a colheita se concentra entre o fim do verão e o outono. O sapoti está no ponto quando a casca fica marrom-clara e, ao raspar de leve com a unha, aparece pele amarelada, não verde, e quase não sai látex. Colha com um pedaço do cabo e deixe 3 a 7 dias amadurecer em casa, até ceder ao toque. O inverno é de crescimento mais lento."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de sapoti",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda está só no torrão da muda e seca em 1 a 2 dias de calor. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o sapotizeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 6 a 8 L num vaso de 60 L). No verão acima de 30 °C, confira a cada 2 dias. No inverno, espaçe para 5 a 7 dias. Falta de água na floração e na frutificação derruba flores e frutinhos.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o sapotizeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 xícara (cerca de 250 g) de húmus de minhoca ou bokashi e 1 colher de sopa de NPK 10-10-10 na borda do vaso, longe do tronco, e regue em seguida. A partir do 3º ano, troque o NPK por 4-14-8 na época de floração. Em junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e a junção com os ramos atrás de cochonilhas (escamas ou algodãozinho branco) e de pó preto (fumagina). Procure manchas escuras e afundadas nas folhas novas e nos frutos. Arranque qualquer broto que tenha nascido abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso e confira as raízes. Se estiverem enoveladas, apare 3 a 5 cm da lateral e do fundo do torrão com uma faca limpa e replante com substrato novo, ou passe para um vaso 20 a 30% maior. Se não der para tirar, raspe os 10 cm de cima e reponha com composto novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Confira o enxerto",
+      "mensagem": "Mudas enxertadas soltam brotos do porta-enxerto, abaixo da cicatriz do enxerto, que crescem rápido e tomam o lugar da copa boa.",
+      "acao_requerida": "Localizar a cicatriz do enxerto no tronco, arrancar com os dedos os brotos abaixo dela e soltar a fita plástica, se ainda estiver apertando o tronco"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Poda de formação",
+      "mensagem": "Com a muda firme no vaso, é hora de definir a copa baixa e ramificada que cabe em casa.",
+      "acao_requerida": "Se a haste principal passar de 70 cm, cortar a ponta logo acima de uma folha, entre 60 e 70 cm de altura, para forçar 3 a 4 ramos laterais"
+    },
+    {
+      "dia_disparo": 730,
+      "titulo": "Pode deixar frutificar",
+      "mensagem": "A planta já tem raiz e copa para sustentar os primeiros frutos, se florescer.",
+      "acao_requerida": "Parar de retirar os botões florais e, depois que os frutinhos pegarem, deixar no máximo 1 a 2 por ramo forte"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Como saber que o sapoti está maduro",
+      "mensagem": "O sapoti não muda de cor de forma evidente, e colhido verde ele fica cheio de látex e travoso.",
+      "acao_requerida": "Raspar de leve a casca de um fruto com a unha: se aparecer pele amarelada, e não verde, colher com um pedaço do cabo e deixar amadurecer em casa por 3 a 7 dias"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amareladas e murchas mesmo com o substrato úmido, queda de folhas, raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter os furos livres. Se aparecer, tirar a planta, cortar as raízes podres e replantar em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos de algodão presos nos ramos, no verso das folhas e no cabo dos frutos; folhas pegajosas e com pó preto",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%. Em infestação maior, pulverizar óleo mineral ou óleo de neem a 1% com detergente neutro no fim da tarde, repetindo depois de 10 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp., Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenos furos na casca de frutos já grandes, polpa amolecida e com larvas brancas, frutos que caem antes da hora",
+      "prevencao_tratamento": "Ensacar os frutos com saquinho de TNT ou papel quando tiverem uns 3 cm, catar e descartar os frutos caídos e usar armadilha de garrafa PET com suco de fruta e um pouco de açúcar perto do vaso"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nas folhas novas, nas flores e nos frutos; flores e frutinhos secando e caindo, principalmente em época chuvosa",
+      "prevencao_tratamento": "Deixar a copa arejada com poda de limpeza e não molhar as folhas ao regar. Retirar as partes doentes e, se persistir, pulverizar calda bordalesa a 1% no fim do inverno e no início da floração"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada de pó preto sobre as folhas e os frutos, que sai ao esfregar; aparece junto com cochonilhas ou pulgões",
+      "prevencao_tratamento": "Controlar as cochonilhas, que produzem o melado onde o fungo cresce, e lavar as folhas com água e detergente neutro (1 colher de chá por litro)"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas com bordas queimadas e escuras, ramos finos secando da ponta para trás depois de noites abaixo de 5 °C",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede voltada para o norte ou para uma varanda coberta nas noites frias e cobrir com manta de TNT em aviso de geada. Só pode os ramos secos depois que passar o frio"
+    },
+    {
+      "nome": "Queda de flores e frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Muitas flores e frutos pequenos caem sem sinal de praga ou mancha",
+      "prevencao_tratamento": "Manter a rega regular na floração, sem deixar o substrato secar por completo nem encharcar, adubar com fósforo e potássio e não passar de 1 a 2 frutos por ramo em plantas jovens"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja o sapotizeiro do frio",
+      "mensagem": "O sapotizeiro é tropical: abaixo de 5 °C as folhas e os ramos novos queimam, e a geada pode matar a planta jovem. No frio, ele também bebe menos água.",
+      "acao_requerida": "Levar o vaso para um local abrigado do vento e do sereno nas noites frias, cobrir com TNT em aviso de geada, regar só a cada 5 a 7 dias e suspender a adubação"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de limpeza e retomada",
+      "mensagem": "Com o fim do frio, a planta retoma a brotação. É a melhor época para limpar a copa e retomar a adubação.",
+      "acao_requerida": "Cortar os ramos secos, doentes, cruzados ou voltados para dentro da copa, rebaixar pontas acima de 1,8 m e fazer a adubação da tarefa de adubar"
+    }
+  ]
+}

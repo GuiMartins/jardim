@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Copo-de-leite",
+    "nome_cientifico": "Zantedeschia aethiopica",
+    "descricao": "Planta perene de rizoma, nativa de brejos da África do Sul, com folhas grandes em forma de seta e flores brancas (espatas) no inverno e na primavera. Em vaso gosta de muita água e de sol só na parte da manhã. Toda a planta é tóxica se ingerida (cristais de oxalato de cálcio).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo; o prato embaixo pode ficar com um pouco de água nos dias quentes",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 40% composto orgânico ou húmus de minhoca, 20% fibra de coco; rico e que segura umidade, com 1 colher de sopa de farinha de ossos misturada por vaso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o rizoma a 5 a 8 cm abaixo da superfície, na mesma altura em que estava no vaso de origem. É normal amarelar uma ou duas folhas velhas. A fase termina quando surge uma folha nova, enrolada como um canudo, saindo do centro."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "A touceira engrossa e as folhas novas vêm maiores e de um verde mais escuro. Folhas pequenas e hastes compridas e moles indicam falta de luz: aproxime o vaso de um lugar com sol da manhã. Corte rente à base as folhas que amarelarem por inteiro."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "No Centro-Sul, a planta cresce no outono, floresce do inverno até a primavera (junho a novembro) e desacelera no verão, podendo perder parte das folhas no calor forte e rebrotar em março. Cada flor dura de 2 a 4 semanas; corte a haste rente à base quando a espata escurecer. A touceira se multiplica e enche o vaso em uns dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o copo-de-leite",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se não estiver úmido, regue até escorrer pelos furos. Com as raízes ainda se refazendo, a muda murcha rápido e perde as folhas se o torrão secar. Acima de 28 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o copo-de-leite",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se não estiver úmido, regue até escorrer pelos furos. O substrato deve ficar sempre úmido, nunca seco. Se a planta perder as folhas no verão, regue só quando os 5 cm de cima estiverem secos até ela rebrotar. Aproveite para cortar rente à base folhas amarelas e flores escurecidas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o copo-de-leite",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de sopa de farinha de ossos mais 1 xícara de húmus) por vaso de 15 L, longe da base da touceira, e regue em seguida. Pule a adubação se a planta estiver sem folhas no verão. Excesso de nitrogênio dá muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pulgões, teias finas ou pontinhos amarelados. Aperte de leve a base dos pecíolos: se estiver mole, escura ou cheirando mal, é podridão. À noite, procure lesmas e trilhas brilhantes nas folhas.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a touceira do vaso, separe os rizomas com faca limpa deixando cada parte com raízes e pelo menos 2 brotos, descarte partes moles ou escuras e replante em substrato novo. Se a data cair no verão, espere até março ou abril, quando a planta volta a crescer.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Planta tóxica",
+      "mensagem": "Todas as partes do copo-de-leite irritam a boca e a garganta se mastigadas, e a seiva pode irritar a pele.",
+      "acao_requerida": "Deixar o vaso fora do alcance de crianças, cães e gatos, e usar luvas ao cortar folhas e flores"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "Com folhas novas saindo, a muda já aguenta o lugar definitivo.",
+      "acao_requerida": "Colocar o vaso num lugar com 3 a 4 horas de sol da manhã e sombra à tarde"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão-mole bacteriana (Pectobacterium carotovorum)",
+      "tipo": "DOENCA",
+      "sintomas": "Base das folhas e rizoma moles, encharcados e marrons, com cheiro forte e desagradável; as folhas tombam de uma vez",
+      "prevencao_tratamento": "Não enterrar o rizoma além de 8 cm, não deixar água parada no centro da touceira no calor e não ferir o rizoma. Tire a planta do vaso, corte toda parte mole com faca desinfetada com álcool, deixe secar 1 dia e replante em substrato novo; se o rizoma inteiro estiver mole, descarte"
+    },
+    {
+      "nome": "Podridão da raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando a partir das mais velhas mesmo com substrato úmido, raízes escuras que se desfazem ao toque",
+      "prevencao_tratamento": "Mesmo gostando de umidade, o vaso precisa drenar: nada de substrato compactado nem furos entupidos, e no inverno esvazie o prato depois de 30 minutos. Trocar o substrato e cortar as raízes podres"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas folhas novas e nos botões; flores deformadas e folhas pegajosas",
+      "prevencao_tratamento": "Jato de água; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, até sumirem"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto de poeira no verso e teias finas, mais comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água nos dias secos; se infestar, óleo de neem a 0,5% a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Furos irregulares nas folhas e flores, trilhas brilhantes de muco",
+      "prevencao_tratamento": "Catar à noite com lanterna e espalhar casca de ovo moída ou areia grossa sobre o substrato"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas ou marrons e secas no meio das folhas, flores amareladas, depois de sol forte da tarde",
+      "prevencao_tratamento": "Manter só o sol da manhã; corte as folhas muito queimadas e mude o vaso de lugar"
+    },
+    {
+      "nome": "Pontas marrons por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas secas e marrons, flores que murcham antes de abrir",
+      "prevencao_tratamento": "Não deixar o substrato secar; em dias quentes e secos, manter um pouco de água no prato e agrupar com outras plantas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Cuidado com a geada",
+      "mensagem": "O copo-de-leite aguenta frio, mas a geada queima as folhas e as flores, e o rizoma em vaso sente mais que no chão.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, levar o vaso para uma varanda coberta ou para perto de uma parede"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor de verão",
+      "mensagem": "No calor forte a planta desacelera e pode perder parte das folhas. Não é doença: ela rebrota no outono.",
+      "acao_requerida": "Tirar o vaso do sol da tarde, conferir a rega todo dia enquanto houver folhas e suspender o adubo se ela perder as folhas"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Fim da floração",
+      "mensagem": "As últimas flores da temporada estão passando.",
+      "acao_requerida": "Cortar rente à base as hastes com flores escurecidas e as folhas amarelas, para não abrir porta para a podridão"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Alamanda-roxa",
+    "nome_cientifico": "Allamanda blanchetii",
+    "descricao": "Arbusto escandente nativo da Caatinga e do Cerrado baianos, com flores em trombeta rosa-arroxeadas da primavera ao outono. Aguenta calor e alguma seca e fica bem em vaso grande com treliça ou conduzida como arbusto. Todas as partes têm látex tóxico: não é para casas com pets ou crianças que mastigam plantas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; se for conduzir como trepadeira, com treliça ou tutor de 1,2 m",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; bem drenado, porque a raiz apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda recém-plantada pode perder algumas folhas e parar de crescer por umas duas semanas enquanto a raiz se instala. Deixe-a no sol da manhã nos primeiros 7 dias e depois passe ao sol pleno. A fase termina quando surgem brotos novos nas pontas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Os ramos se alongam rápido e começam a procurar apoio. Amarre-os à treliça conforme crescem, ou apare as pontas se quiser um arbusto compacto. As primeiras flores costumam aparecer nesta fase, se for época quente."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Floresce da primavera ao outono (setembro a abril), com mais flores quanto mais sol recebe. No inverno cresce pouco, pode perder folhas com frio abaixo de 10 °C e pede menos água. A poda do fim do inverno renova os ramos que vão florir."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda curta, a muda murcha rápido em dias quentes: acima de 30 °C, confira todo dia. Esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a alamanda",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão quente pode precisar a cada 2 dias; no inverno, espaçe para a cada 5 a 7 dias. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a alamanda",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 (ou 2 colheres de farinha de ossos mais 3 colheres de húmus) na borda do vaso de 30 L, longe do caule, e regue em seguida. De maio a julho, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os brotos e as axilas dos ramos: procure cochonilhas brancas algodonosas, pulgões nos brotos, pontinhos amarelos com teia fina (ácaro) e mosquinhas brancas que voam ao sacudir a planta.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro, tire a planta do vaso, raspe 1/3 do torrão por fora e pelo fundo, corte raízes enoveladas e replante com substrato novo no mesmo vaso ou num 10 cm maior. Use luvas: o látex irrita a pele.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "A primeira semana de adaptação passou. A alamanda só floresce bem com pelo menos 4 horas de sol direto.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo, com sol direto pelo menos da manhã até o início da tarde"
+    },
+    {
+      "dia_disparo": 20,
+      "titulo": "Instalar o suporte",
+      "mensagem": "Os ramos novos vão se alongar nas próximas semanas e tombam sem apoio.",
+      "acao_requerida": "Fincar a treliça ou um tutor de 1,2 m no vaso, sem ferir a raiz, e prender os ramos mais longos com fitilho frouxo; se preferir arbusto, cortar as pontas dos ramos com mais de 40 cm"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escura e mole; raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm e nunca deixar água no pratinho; se já apodreceu, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos nas axilas das folhas e nos ramos; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; brotos retorcidos e botões que caem",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; óleo de neem a 0,5% a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Mosquinhas brancas que voam ao sacudir a planta; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Clorose por falta de ferro ou magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes (ferro) ou folhas velhas amarelando entre as nervuras (magnésio)",
+      "prevencao_tratamento": "Adubo foliar com micronutrientes a cada 15 dias até as folhas novas saírem verdes; manter a adubação mensal e evitar calcário em excesso"
+    },
+    {
+      "nome": "Queda de folhas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, amarelam e caem depois de noites abaixo de 10 °C ou vento frio",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede protegida no inverno; a planta rebrota na primavera se a raiz não apodrecer, então reduza a rega enquanto estiver sem folhas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "A alamanda cresce pouco no frio e a raiz apodrece fácil em substrato frio e molhado.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 4 cm (a cada 5 a 7 dias), suspender a adubação e abrigar o vaso do vento em noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "As flores nascem nos ramos novos: podar no fim do inverno garante uma primavera cheia de flores.",
+      "acao_requerida": "Com luvas, cortar os ramos secos e fracos e encurtar os demais em 1/3, logo acima de um par de folhas; limpar o látex da tesoura depois"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar os cuidados da primavera",
+      "mensagem": "A planta volta a brotar e precisa de nutrientes para florir.",
+      "acao_requerida": "Voltar à rega a cada 3 dias e fazer a primeira adubação da estação com NPK 4-14-8"
+    }
+  ]
+}

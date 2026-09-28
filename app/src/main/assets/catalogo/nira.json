@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Nirá",
+    "nome_cientifico": "Allium tuberosum",
+    "descricao": "Cebolinha-chinesa de folhas chatas com sabor suave de alho, muito usada na culinária oriental. Forma touceiras perenes que rebrotam após cada corte e dão flores brancas comestíveis no fim do verão. A forma mais comum de começar em casa é com uma muda ou um pedaço de touceira dividida.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 15 cm de profundidade e 20 cm de diâmetro, com furos no fundo; uma jardineira de 60 cm comporta 3 touceiras",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; solto e rico em matéria orgânica",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Plante a muda na mesma altura em que estava, sem enterrar a base das folhas. As pontas podem amarelar nos primeiros dias; a muda pegou quando surgem folhas novas e firmes no centro da touceira, em 10 a 20 dias."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 60,
+      "descricao": "A touceira engrossa e lança novos perfilhos. Não corte ainda: as folhas estão alimentando os pequenos bulbos e rizomas. A fase termina quando as folhas passam de 20 cm e a touceira tem vários perfilhos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Touceira produtiva: rebrota em 3 a 4 semanas depois de cada corte na primavera e no verão. Entre janeiro e março lança hastes com flores brancas; no inverno cresce devagar e pode amarelar em regiões frias, rebrotando em setembro. A cada dois anos a touceira fica apertada e precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de nirá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Nas três primeiras semanas a raiz ainda é curta e não pode secar por completo. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o nirá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos se estiver seco, e pule se ainda estiver úmido. No inverno o intervalo passa para 5 a 7 dias; nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a touceira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca (ou 1 de torta de mamona curtida) por vaso de 3 L em volta da touceira, sem cobrir a base das folhas, e regue em seguida. Nos meses de inverno, pule se a planta estiver parada.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Cortar folhas de nirá",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte as folhas com mais de 20 cm a 3 cm da base, sempre deixando alguns perfilhos inteiros se a touceira for pequena. Adube na semana do corte para a rebrota vir forte.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas do nirá",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as folhas contra a luz procurando riscos prateados (tripes), pústulas alaranjadas (ferrugem) e insetos agrupados na base. Aperte a base da touceira: ela deve estar firme, não mole.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a touceira do vaso, separe com as mãos ou uma faca em tufos de 5 a 10 perfilhos, apare as raízes para 5 cm e as folhas para 10 cm, e replante em substrato novo. Prefira fazer em março-abril ou agosto-setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "A muda pegou?",
+      "mensagem": "Com duas semanas, uma muda que pegou já mostra folhas novas e firmes no centro.",
+      "acao_requerida": "Se só houver folhas murchas e amarelas, corte-as a 5 cm da base e mantenha o substrato úmido, sem encharcar, para forçar a rebrota"
+    },
+    {
+      "dia_disparo": 61,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "A touceira está estabelecida e já aguenta cortes regulares.",
+      "acao_requerida": "Fazer o primeiro corte a 3 cm da base, só nas folhas com mais de 20 cm"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e bulbo (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam da ponta para a base e murcham mesmo com o substrato úmido; a base da touceira fica mole e escura, com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, garantir furos e drenagem, esvaziar o pratinho. Retire os perfilhos podres e replante as partes sadias em substrato novo"
+    },
+    {
+      "nome": "Tripes (Thrips tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Riscos prateados ou esbranquiçados nas folhas, pontinhos pretos e folhas retorcidas; insetos minúsculos e alongados escondidos na base",
+      "prevencao_tratamento": "Jato forte de água na base das folhas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, e corte as folhas mais atacadas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos ou verdes na base das folhas e nas hastes florais, com folhas pegajosas",
+      "prevencao_tratamento": "Jato de água ou calda de sabão neutro (1 colher de sopa por litro); retire as hastes florais infestadas"
+    },
+    {
+      "nome": "Ferrugem (Puccinia allii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas pequenas alaranjadas nas folhas, que depois secam e amarelam",
+      "prevencao_tratamento": "Molhar só o substrato, nunca as folhas; boa ventilação. Corte rente as folhas atacadas e descarte fora da composteira"
+    },
+    {
+      "nome": "Pontas secas e amarelas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas secas e palha, com o resto da folha verde",
+      "prevencao_tratamento": "Costuma ser rega irregular, falta de nitrogênio ou vaso com raiz apertada. Regule a rega, adube com húmus e divida a touceira se passou de dois anos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de flores no nirá",
+      "mensagem": "A touceira lança hastes com flores brancas. Deixá-las abrir deixa as folhas mais duras e espalha sementes pelo vaso.",
+      "acao_requerida": "Cortar as hastes florais rente à base assim que aparecerem; os botões e as flores podem ir para a cozinha"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Nirá no ritmo de inverno",
+      "mensagem": "No frio a touceira cresce devagar e pode amarelar; o substrato demora mais para secar.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm, suspender a adubação e fazer cortes mais leves até setembro"
+    }
+  ]
+}

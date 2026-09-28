@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Hibisco-da-síria",
+    "nome_cientifico": "Hibiscus syriacus",
+    "descricao": "Arbusto lenhoso caducifólio, originário da Ásia oriental, que perde as folhas no inverno e dá flores grandes, simples ou dobradas, em branco, rosa, lilás ou azul-arroxeado, do fim da primavera ao fim do verão. Aguenta frio e geada, floresce nos ramos do ano e vive muitos anos num vaso grande e ensolarado.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo. Evite vaso preto fino ao sol pleno, porque aquece e cozinha as raízes",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada e 10% perlita ou casca de pinus fina; pH entre 6 e 7",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saco ou vaso de viveiro e se ajusta ao vaso definitivo. Uma ou outra folha amarela e alguns botões caídos são normais nas primeiras duas semanas. A fase acaba quando surgem folhas novas, de verde-claro brilhante, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o substrato novo e os ramos crescem vários centímetros por mês na estação quente. Pode florescer pouco no primeiro verão. A planta está estabelecida quando o substrato seca mais depressa entre as regas e as brotações são firmes e numerosas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: brota em setembro, forma botões na primavera e floresce de novembro a março (cada flor dura um dia, mas saem muitas por semana). No outono as folhas amarelam e caem, e a planta passa o inverno pelada, só com os galhos. Poda forte no fim do inverno, porque as flores saem nos ramos novos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o hibisco recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos e esvazie o prato depois de 30 minutos. Acima de 30 °C, confira todo dia. Se a muda chegou sem folhas no inverno, regue só quando os 5 cm de cima estiverem secos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o hibisco",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 4 a 6 litros num vaso de 40 L). Na floração com calor forte, confira a cada 1 ou 2 dias: substrato seco nessa época derruba os botões. Sem folhas, no inverno, regue só a cada 7 a 10 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o hibisco",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, espalhe 2 colheres de sopa de NPK 4-14-8 ou 1 punhado de farinha de ossos mais 2 punhados de húmus sobre o substrato, sem encostar no caule, e regue em seguida. De maio a agosto, com a planta sem folhas ou quase, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e olhe os botões: procure pulgões verdes nos brotos, pontos brancos algodoados nas axilas (cochonilha), nuvem branca ao balançar (mosca-branca) e folhas pontilhadas de amarelo com teia fina (ácaro).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, antes da brotação: tire a planta do vaso, corte 3 a 4 cm das raízes que dão voltas na parede, troque um terço do substrato velho por mistura nova e devolva ao mesmo vaso, ou passe para um 10 cm maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Mudas de viveiro vêm em sacos ou vasos pequenos, onde as raízes se enrolam e secam em horas no sol.",
+      "acao_requerida": "Transplantar para o vaso de 40 L com camada de drenagem, deixando o colo da planta na mesma altura em que estava, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Desponte para encorpar",
+      "mensagem": "A planta já pegou e responde bem ao desponte, que faz mais ramos e, portanto, mais flores.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta dos ramos mais compridos, logo acima de uma folha. Se for maio a agosto, deixe para a poda anual de agosto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; base do caule escura e mole; raízes marrons que soltam a casca",
+      "prevencao_tratamento": "Regue só quando o dedo encontrar substrato seco, nunca deixe água no prato e mantenha a camada de drenagem. Com sintoma, tire do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; folhas novas enroladas e pegajosas; formigas subindo pelo caule",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde, a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados nas axilas das folhas e nos ramos; folhas amarelando e fumagina preta por cima",
+      "prevencao_tratamento": "Remova com cotonete ou escova embebidos em álcool 70%; em infestação, óleo mineral a 1% com neem, repetindo após 10 dias"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao balançar a planta; ovos e ninfas no verso das folhas; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo, depois bronzeadas; teias finas no verso, comuns em calor seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos e quentes; com teia, enxofre molhável ou acaricida à base de neem, repetido após 7 dias"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir, geralmente no calor do verão",
+      "prevencao_tratamento": "Causado por substrato que secou demais, rega irregular ou mudança brusca de lugar. Mantenha a umidade constante na floração e não mude o vaso de posição com botões"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes",
+      "prevencao_tratamento": "Substrato alcalino ou encharcado prende o ferro. Corrija a rega e aplique quelato de ferro na dose do rótulo; na troca de substrato, use composto orgânico para baixar o pH"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Chegou o outono: folhas vão cair",
+      "mensagem": "O hibisco-da-síria é caducifólio. Folhas amarelando e caindo agora são normais, não doença, e ele passa o inverno só com os galhos.",
+      "acao_requerida": "Recolher as folhas caídas do vaso, parar de adubar até setembro e espaçar as regas para a cada 7 a 10 dias, sempre conferindo com o dedo"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "As flores nascem nos ramos novos. Podar no fim do inverno, antes da brotação, dá mais ramos e mais flores no verão.",
+      "acao_requerida": "Cortar os ramos do ano anterior deixando 2 a 3 gemas na base de cada um, remover galhos secos, cruzados ou voltados para dentro, com tesoura limpa e corte inclinado acima de uma gema"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Rebrota: voltar a adubar",
+      "mensagem": "Os galhos começam a mostrar gemas inchadas e folhinhas novas. A planta precisa de nutrientes para formar os ramos que vão florir.",
+      "acao_requerida": "Retomar a adubação mensal e voltar a regar a cada 3 dias, conferindo o substrato com o dedo"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Floração no calor",
+      "mensagem": "Com calor e muitos botões, um dia de substrato seco basta para a planta derrubar os botões.",
+      "acao_requerida": "Conferir o substrato todo dia nos dias acima de 30 °C e regar sempre que os 5 cm de cima estiverem secos"
+    }
+  ]
+}

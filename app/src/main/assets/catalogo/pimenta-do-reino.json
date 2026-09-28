@@ -1,0 +1,221 @@
+{
+  "planta": {
+    "nome_comum": "Pimenta-do-reino",
+    "nome_cientifico": "Piper nigrum",
+    "descricao": "Trepadeira perene tropical que se prende ao tutor com raízes aéreas e dá espigas de bagas verdes que ficam vermelhas ao amadurecer. Seca, vira a pimenta-preta; sem a casca, a pimenta-branca. Em vaso grande, com tutor e calor, uma planta produz em casa a partir do segundo ou terceiro ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo e um tutor de 1,5 a 2 m (estaca de madeira, tutor de fibra de coco ou tela) fixado no centro no dia do plantio",
+    "volume_minimo_litros": 40,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco e 10% areia grossa ou perlita, com 1 colher de sopa de calcário dolomítico por 10 L; rico em matéria orgânica, fofo e sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 45,
+      "descricao": "A muda (estaca enraizada) se firma no vaso novo. É normal perder uma ou duas folhas velhas; a fase termina quando surge um broto novo na ponta e as raízes aéreas dos nós começam a se agarrar ao tutor. Nesta fase ela quer sombra clara e substrato sempre levemente úmido."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação e Subida no Tutor",
+      "dia_inicio": 46,
+      "dia_fim": 730,
+      "descricao": "Os ramos principais sobem colados ao tutor, e a partir deles saem ramos laterais horizontais, que são os que florescem. Na primavera e no verão cresce 20 a 40 cm por mês; no inverno quase para. Espigas podem surgir já no primeiro ano, mas a planta só está pronta para produzir quando tem várias laterais e o tutor está coberto até a metade."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Coluna de folhas cobrindo o tutor. O ano típico no Centro-Sul: floração em espigas finas e pendentes de outubro a dezembro, com as chuvas e o calor; as bagas engordam no verão e amadurecem de maio a julho; no inverno o crescimento para e o frio abaixo de 10 °C queima as folhas. Um pé bem cuidado em vaso rende de 200 a 500 g de pimenta seca por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de pimenta",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar em volta da muda até escorrer pelos furos. As raízes da estaca ainda são poucas: o torrão não pode secar, mas o pratinho não pode ficar com água parada. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pimenta-do-reino",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, pode precisar a cada 2 dias; no inverno, a cada 5 a 7. Na floração (outubro a dezembro), não deixe secar: seca nessa época faz as espigas caírem.",
+      "critica": false
+    },
+    {
+      "id": "borrifar_folhas",
+      "titulo": "Borrifar as folhas e o tutor",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Borrife água nas folhas e no tutor pela manhã, molhando as raízes aéreas dos nós para que se agarrem. A planta vem de floresta úmida e sofre com ar seco. Nos dias de chuva ou umidade acima de 70%, pule; no inverno, borrife só se o ar estiver muito seco.",
+      "critica": false
+    },
+    {
+      "id": "amarrar_ramos",
+      "titulo": "Prender os ramos novos no tutor",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 730,
+      "instrucoes": "Encoste as pontas que cresceram soltas no tutor e prenda com fitilho ou tira de pano em forma de 8, sem apertar o caule. Os nós precisam tocar o tutor para enraizar nele. De junho a agosto o crescimento para: se não houver ponta nova, pule.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a pimenta",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de farinha de ossos e meio copo de húmus de minhoca (ou 1 colher de sopa de NPK 10-10-10) sobre o substrato, a 5 cm do caule, e regue em seguida. De junho a agosto, suspenda. Na planta adulta, a partir de setembro, prefira adubo mais rico em potássio (cinza de madeira peneirada, 1 colher de sopa) para encher as espigas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, caule e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos brancos de algodão (cochonilha), teias finas (ácaro) e manchas em mosaico. Olhe a base do caule: escurecida ou mole é sinal de fusariose ou podridão. Folhas amarelando de baixo para cima com substrato úmido indicam raiz sofrendo.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "O substrato se decompõe e compacta em uns dois anos. Sem tirar a planta do tutor, raspe os 10 cm de cima e substitua por substrato novo com húmus; se as raízes estiverem saindo pelos furos, passe para um vaso 10 cm maior levando o tutor junto. Se cair entre maio e agosto, espere até setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Tutor desde o primeiro dia",
+      "mensagem": "A pimenta-do-reino é trepadeira: sem um tutor para escalar, ela se esparrama, não ramifica e quase não floresce. Colocar o tutor depois machuca as raízes.",
+      "acao_requerida": "Fincar um tutor de 1,5 a 2 m no centro do vaso até o fundo, a 5 cm do caule, e amarrar o ramo da muda nele"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Hora da poda de formação",
+      "mensagem": "Com um só ramo subindo, a planta vira uma haste fina. Cortar a ponta agora faz brotar vários ramos pelo tutor, que depois viram a coluna produtiva.",
+      "acao_requerida": "Se o ramo principal passou de 60 cm, cortar a ponta 2 cm acima de um nó, na altura de uns 40 cm, com tesoura limpa, e prender no tutor os brotos que surgirem"
+    },
+    {
+      "dia_disparo": 300,
+      "titulo": "Tire as primeiras espigas",
+      "mensagem": "Espigas que aparecem no primeiro ano gastam a força que a planta precisa para formar ramos e raízes. Colher antes de a planta se formar atrasa as safras boas.",
+      "acao_requerida": "Cortar rente ao ramo as espigas que surgirem até a planta completar cerca de 1 ano e meio"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes por excesso de água (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escura e mole; raízes marrons que se desmancham ao toque",
+      "prevencao_tratamento": "Regar só com o dedo indicando seco, esvaziar o pratinho e usar substrato com fibra de coco e areia. Se aparecer, suspenda a rega até secar 5 cm, corte as partes podres e troque o substrato; planta muito afetada raramente se recupera"
+    },
+    {
+      "nome": "Fusariose (Fusarium solani f. sp. piperis)",
+      "tipo": "DOENCA",
+      "sintomas": "Amarelecimento e murcha de ramos inteiros, queda de folhas e espigas, caule e raízes com manchas escuras e apodrecidas por dentro",
+      "prevencao_tratamento": "É a doença que mais mata pimenteiras no Brasil. Compre muda sadia de viveiro confiável, não reaproveite terra de vaso com planta doente e evite ferir as raízes. Não tem cura: retire os ramos atingidos com ferramenta desinfetada em álcool e, se atingir o caule na base, descarte a planta e o substrato"
+    },
+    {
+      "nome": "Cochonilhas (Planococcus spp. e outras)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos brancos de aspecto de algodão nas axilas das folhas, nas espigas e às vezes nas raízes; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação, pulverize óleo de neem a 0,5% com 1 gota de detergente no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Ácaros",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado ou bronzeado e teias finas no verso, principalmente em ar seco",
+      "prevencao_tratamento": "Borrifar as folhas regularmente e lavar o verso com jato fraco de água; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mosaico (Cucumber mosaic virus)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas com manchas em mosaico verde-claro e escuro, deformadas e menores; internódios curtos e planta atrofiada",
+      "prevencao_tratamento": "Transmitido por pulgões e por estacas de planta doente. Controle pulgões com jato de água ou neem e não tire estaca de planta com sintoma. Não tem cura: ramos muito afetados devem ser cortados"
+    },
+    {
+      "nome": "Queima por frio ou por sol forte",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas e murchas depois de noites abaixo de 10 °C, ou manchas secas amarelo-palha nas folhas voltadas para o sol da tarde",
+      "prevencao_tratamento": "Deixe onde recebe sol da manhã e sombra à tarde; no inverno, aproxime o vaso de uma parede ou cubra com manta nas noites frias. Corte as folhas queimadas só em setembro, quando a planta volta a brotar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteja a pimenta do frio",
+      "mensagem": "Abaixo de 10 °C a pimenta-do-reino queima as folhas, e geada mata os ramos. No inverno ela quase não cresce e bebe bem menos água.",
+      "acao_requerida": "Aproximar o vaso de uma parede ou colocar sob cobertura nas noites frias, espaçar a rega (só com o substrato seco a 3 cm) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Colheita das espigas",
+      "mensagem": "Se a planta floresceu na primavera, as espigas amadurecem nesta época. O ponto é quando uma ou duas bagas de cada espiga ficam vermelhas ou alaranjadas; espiga passada deixa cair as bagas.",
+      "acao_requerida": "Cortar as espigas no ponto ao longo das próximas semanas; para pimenta-preta, debulhar e secar as bagas ao sol por 5 a 7 dias até ficarem pretas, enrugadas e quebradiças"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "O inverno acabou e a planta vai voltar a brotar. Limpar agora concentra a força nos ramos que vão florescer em outubro.",
+      "acao_requerida": "Cortar ramos secos, queimados pelo frio ou doentes e os brotos que saem da base fora do tutor; se passou da altura do tutor, cortar as pontas no topo"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Floração: não deixe secar",
+      "mensagem": "As espigas florescem com o calor e as chuvas. Uma única secada forte do vaso nessa fase faz a planta derrubar flores e espigas pequenas.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, manter sempre levemente úmido e borrifar as folhas nos dias secos, sem molhar as espigas em flor no sol quente"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "planta": {
+    "nome_comum": "Cerejeira-japonesa",
+    "nome_cientifico": "Prunus serrulata",
+    "descricao": "Árvore ornamental caducifólia do Japão, cultivada pela florada rosa ou branca que cobre os galhos sem folhas no fim do inverno. Precisa de inverno frio para florescer, então rende bem em vaso nas serras e no Sul (Curitiba, Campos do Jordão, serra gaúcha) e costuma falhar em cidades quentes, onde a Prunus campanulata floresce com mais facilidade.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico grosso com pelo menos 45 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo e apoiado em pés para a água escorrer",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina; solto e levemente ácido a neutro (pH 6 a 7)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso novo. Algumas folhas amareladas ou caídas são normais; se a muda chegou no inverno, sem folhas, o que importa é os ramos seguirem verdes por dentro (raspe de leve com a unha). A fase termina quando surgem brotos novos ou quando a muda passa um mês sem murchar."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a copa cresce. Arranque todo broto que nascer abaixo da marca do enxerto (o calombo na base do tronco): ele é do porta-enxerto e rouba força da copa. É comum a muda não florir no primeiro inverno."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: perde as folhas entre maio e junho, passa o inverno em repouso acumulando frio, floresce entre julho e setembro nos galhos ainda nus e só depois solta as folhas. Cresce na primavera e no verão, quando pede mais água e adubo, e amarela as folhas no outono. Em vaso, mantém-se com 1,5 a 2,5 m."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a cerejeira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A muda sem folhas (inverno) bebe pouco: se o substrato ainda estiver úmido, não regue, porque encharcar agora apodrece a raiz.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cerejeira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão, acima de 28 °C, confira todo dia. No inverno, sem folhas, basta regar a cada 7 a 10 dias.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e procure pulgões, furinhos redondos e manchas marrons. Olhe o tronco e a base dos galhos atrás de goma âmbar escorrendo ou escamas grudadas. Arranque brotos que nasceram abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "renovar_vaso",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Em junho ou julho (árvore sem folhas), tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas pela borda e replante com substrato novo, no mesmo vaso ou num 10 cm maior. Fora do inverno, só raspe os 5 cm de cima do substrato e reponha com composto novo; a troca completa fica para o próximo inverno.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso definitivo",
+      "mensagem": "Enterrar o calombo do enxerto faz o porta-enxerto brotar e pode apodrecer o tronco.",
+      "acao_requerida": "Plantar na mesma altura em que vinha no saco, com o calombo do enxerto 5 cm acima do substrato, firmar a terra e regar até escorrer"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda adaptada",
+      "mensagem": "Passado o primeiro mês, as raízes já exploram o substrato e a rega pode espaçar.",
+      "acao_requerida": "Conferir se há brotos novos ou ramos verdes por dentro; se tudo estiver seco e quebradiço, a muda não pegou"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano completo",
+      "mensagem": "A cerejeira terminou o estabelecimento. A partir de agora, com inverno frio o bastante, a florada deve vir todo ano.",
+      "acao_requerida": "Conferir se as raízes já saem pelos furos do vaso; se saírem, trocar para um vaso 10 cm maior no próximo inverno"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e amarelam mesmo com o substrato úmido; casca da base do tronco escurece e as raízes ficam marrons e moles",
+      "prevencao_tratamento": "Não deixar água no pratinho e reduzir a rega no inverno. Se atacar, tirar do vaso, cortar as raízes podres e replantar em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Gomose e cancro (Cytospora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Goma âmbar escorrendo do tronco ou dos galhos, casca afundada e galhos que secam de repente",
+      "prevencao_tratamento": "Podar só com tempo seco, logo depois da florada, e com tesoura limpa com álcool. Cortar o galho doente 10 cm abaixo da lesão e evitar ferir o tronco"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias pretas ou verdes nos brotos, folhas novas enroladas e pegajosas, formigas subindo pelo tronco",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha-branca (Pseudaulacaspis pentagona)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas agrupadas no tronco e nos galhos, que perdem vigor e secam",
+      "prevencao_tratamento": "Escovar com escova de dente e água com sabão neutro; no inverno, sem folhas, aplicar óleo mineral a 1% nos galhos"
+    },
+    {
+      "nome": "Mancha-de-chumbinho (Xanthomonas arboricola pv. pruni)",
+      "tipo": "DOENCA",
+      "sintomas": "Pequenas manchas escuras nas folhas que secam e caem, deixando furinhos redondos como de chumbo",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e recolher as folhas caídas. Em ataque forte, calda bordalesa depois da queda das folhas"
+    },
+    {
+      "nome": "Queimadura de folha",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas marrons e secas no verão, principalmente do lado do sol da tarde",
+      "prevencao_tratamento": "Proteger do sol das 13h às 16h nos dias muito quentes, afastar de paredes que refletem calor e não deixar o substrato secar por inteiro"
+    },
+    {
+      "nome": "Falta de florada por falta de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "A árvore brota folhas no fim do inverno, mas não floresce ou abre poucas flores espalhadas",
+      "prevencao_tratamento": "Deixar o vaso ao ar livre em todo o inverno, no lugar mais frio que houver, nunca dentro de casa. Em cidades de inverno quente, a Prunus campanulata é a escolha mais segura"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Repouso de inverno",
+      "mensagem": "A cerejeira está perdendo as folhas e entrando em dormência. Sem folhas, ela usa pouca água e o frio é o que prepara a florada.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, recolher as folhas caídas e deixar o vaso ao ar livre, no lugar mais frio do quintal ou da varanda"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Florada e adubação da primavera",
+      "mensagem": "Os botões estão abrindo ou já abriram. Logo depois vêm as folhas, que precisam de nutrientes para crescer.",
+      "acao_requerida": "Aplicar 3 colheres de sopa de farinha de ossos e 1 litro de húmus de minhoca espalhados na borda do vaso, sem encostar no tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Poda depois da florada",
+      "mensagem": "Com a florada encerrada e o tempo mais seco que no verão, os cortes cicatrizam rápido e a árvore ainda forma os botões do próximo ano.",
+      "acao_requerida": "Cortar galhos secos, cruzados ou voltados para dentro da copa, rente a uma gema voltada para fora, com tesoura limpa com álcool. Nunca podar no inverno nem com chuva"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Adubação de verão",
+      "mensagem": "A árvore está em pleno crescimento e começa a formar as gemas de flor do próximo inverno.",
+      "acao_requerida": "Aplicar 2 colheres de sopa de NPK 4-14-8 espalhadas na borda do vaso e regar bem em seguida"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger do calor",
+      "mensagem": "A cerejeira é de clima frio. Em vaso, o substrato esquenta e seca rápido no verão, queimando raízes e folhas.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia, proteger o vaso do sol da tarde e cobrir o substrato com 3 cm de casca de pinus para segurar a umidade"
+    }
+  ]
+}

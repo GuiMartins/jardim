@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Vinhático",
+    "nome_cientifico": "Plathymenia reticulata",
+    "descricao": "Árvore nativa do Cerrado e da Mata Atlântica, da família das leguminosas, famosa pela madeira amarelo-dourada e pela copa leve de folhas miúdas. Na natureza passa de 15 m, mas em vaso grande cresce devagar e pode ser mantida por alguns anos como árvore jovem antes de ir para o chão. Perde parte das folhas na seca do inverno e dá espigas de flores creme na primavera.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cimento ou fibra com pelo menos 45 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo; evite vaso estreito, porque a raiz pivotante é profunda",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal ou de barranco, 25% areia grossa, 15% húmus de minhoca, 10% casca de pinus fina; solo pobre e bem drenado, sem adubo forte no plantio",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação da Muda",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho do viveiro e se acostuma ao vaso e ao sol. É normal perder algumas folhinhas na primeira semana. Ela se adaptou quando surgem brotos novos, verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e o caule começa a engrossar e lenhificar na base. O crescimento é lento no primeiro ano: 30 a 60 cm já é bom resultado em vaso. Folhas compostas bem verdes e novos lançamentos a cada chuva mostram que ela está firme."
+    },
+    {
+      "fase_id": "arvore_jovem",
+      "nome": "Árvore Jovem",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota forte com as chuvas de setembro a novembro, pode florir em espigas creme a partir dos 4 a 6 anos, cresce no verão e perde boa parte das folhas no inverno seco (junho a agosto), o que é normal. Em vaso ela fica menor que no chão; quando a raiz sair pelos furos ou o vaso tombar com o vento, é hora de passar para um vaso maior ou plantar no solo, longe de muros e canos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de vinhático",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda está só no torrão do viveiro e seca rápido. Em dias acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o vinhático",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão quente, o vaso pode pedir água a cada 2 ou 3 dias; no inverno seco, com a árvore sem folhas, espace para uma vez por semana. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o vinhático",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 litro de húmus de minhoca) na borda do vaso de 40 L, longe do caule, e regue em seguida. Pule a adubação que cair entre junho e agosto, quando a árvore está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folhas cortadas em meia-lua (formiga), carocinhos brancos ou marrons presos nos ramos (cochonilha) e anéis roídos no caule ou ramos (besouro serrador). Olhe também se o substrato cheira a podre.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso ou plantar no chão",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Em setembro ou outubro, tire a árvore do vaso, corte com tesoura limpa as raízes que estiverem enroladas no fundo e passe para um vaso 20 a 30% maior com substrato novo. Se já tiver passado de 2 m ou o vaso não comportar mais, plante no chão a pelo menos 5 m de construções.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantando o vinhático",
+      "mensagem": "A muda de viveiro costuma vir com a raiz enrolada no saquinho. Desfazer essa volta agora evita uma árvore mal ancorada no futuro.",
+      "acao_requerida": "Cortar o saquinho, soltar com os dedos as raízes enroladas no fundo e plantar na mesma altura do colo, sem enterrar o caule"
+    },
+    {
+      "dia_disparo": 7,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Depois de uma semana em meia sombra, a muda já pode ir para o sol o dia todo, que é o que ela precisa para engrossar o caule.",
+      "acao_requerida": "Mudar o vaso para o lugar definitivo, com pelo menos 5 horas de sol direto"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Firmar o caule",
+      "mensagem": "Com o crescimento, a muda pode ficar alta e fina e tombar com o vento, entortando o tronco.",
+      "acao_requerida": "Se o caule balança muito, fincar uma estaca ao lado e amarrar com fita larga em oito, sem apertar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora da época seca, substrato úmido com cheiro ruim, casca escura e mole na base do caule",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, não usar pratinho com água e manter furos desobstruídos; se ocorrer, tirar do vaso, cortar raízes escuras e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Formiga-cortadeira (Atta, Acromyrmex)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas recortadas em meia-lua ou ramos inteiros desfolhados de uma noite para outra, trilha de formigas no vaso",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida granulada ao lado da trilha em dia seco; proteger o caule com cinta de graxa ou cone plástico invertido"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, cerosos ou marrons presos nos ramos e no verso das folhas; fumagina preta e melada",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; em ataque grande, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Besouro serrador (Oncideres spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Ramos cortados em anel perfeito, que secam e caem; besouro cinza de antenas longas no inverno e primavera",
+      "prevencao_tratamento": "Catar os besouros à mão e recolher e queimar ou descartar os ramos cortados caídos, onde estão os ovos"
+    },
+    {
+      "nome": "Raiz enovelada no vaso",
+      "tipo": "DISTURBIO",
+      "sintomas": "Raízes saindo pelos furos, água escorrendo direto sem molhar o torrão, crescimento parado e folhas pequenas mesmo nas chuvas",
+      "prevencao_tratamento": "Trocar para vaso maior ou plantar no chão, podando as raízes que circulam o fundo"
+    },
+    {
+      "nome": "Queda de folhas na seca",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem entre junho e agosto, deixando a árvore rala ou pelada",
+      "prevencao_tratamento": "É o comportamento natural da espécie; não aumente a rega nem adube. Arranhe de leve a casca de um ramo: se estiver verde por baixo, ela está viva e rebrota com as chuvas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Vinhático em repouso",
+      "mensagem": "Na seca do inverno a árvore perde folhas e quase para de beber. Substrato sempre úmido agora apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno, sem folhas, fica fácil ver a estrutura da árvore e a poda estimula brotos fortes nas chuvas.",
+      "acao_requerida": "Cortar ramos secos, cruzados ou que saem da base do tronco, com tesoura limpa, rente ao ramo principal; deixar um único tronco guia"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Volta das chuvas",
+      "mensagem": "A árvore rebrota e é a melhor época para crescer, trocar de vaso ou plantar no chão.",
+      "acao_requerida": "Retomar a rega normal e a adubação, e conferir se as raízes já saem pelos furos do vaso"
+    }
+  ]
+}

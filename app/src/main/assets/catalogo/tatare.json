@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Tataré",
+    "nome_cientifico": "Chloroleucon tortum",
+    "descricao": "Árvore da Mata Atlântica e das restingas do Sudeste, da família das leguminosas, famosa pelo tronco retorcido que descasca em placas e pelas flores brancas em pompom. Em vaso fica pequena e escultural, e é muito usada como pré-bonsai e bonsai. Tolera bem sol forte e alguma seca depois de estabelecida.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; o peso evita que a copa tombe com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca; bem drenado, porque a raiz apodrece em substrato que fica encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está refazendo as raízes no vaso novo. É normal perder alguns folíolos nas duas primeiras semanas. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento de ramos e engrossamento do tronco, mais rápido na primavera e no verão. As raízes começam a ocupar o vaso e a planta passa a aguentar alguns dias a mais sem rega. Ao fim do primeiro ano, os ramos já aceitam a poda de formação."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "No ano típico, a planta brota forte na primavera, floresce com pompons brancos perfumados entre outubro e novembro e forma vagens retorcidas. No inverno seco pode perder parte das folhas, o que é normal. A poda de formação no fim do inverno mantém a copa compacta e realça o tronco retorcido."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de tataré",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos do fundo. A raiz ainda não saiu do torrão da muda, então secar por completo agora a mata. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o tataré",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão quente, o vaso pode pedir água a cada 2 ou 3 dias; no inverno, a cada 7 a 10 dias. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o tataré",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de farinha de ossos e 1 xícara de húmus de minhoca na superfície do vaso, longe do tronco, e regue em seguida. Por ser leguminosa, ela precisa de pouco nitrogênio. Pule a adubação de junho a agosto, quando a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure pontinhos brancos ou marrons grudados nos ramos novos (cochonilha), trilhas de formigas subindo pelo tronco e ramos cortados em anel ou secos de repente. Olhe também a base do tronco, que não pode estar mole nem escura.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, de preferência entre agosto e setembro. Com um garfo, solte e remova cerca de 1/3 do substrato velho, corte as raízes que dão voltas pelo fundo e replante no mesmo vaso (ou num 10 cm maior) com substrato novo. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firme a muda no vaso",
+      "mensagem": "O tataré tem copa larga e caule fino quando jovem; com o vento, a muda balança e rompe as raízes novas.",
+      "acao_requerida": "Cravar um tutor de bambu ao lado do torrão sem ferir as raízes e amarrar o caule com fita em oito, sem apertar"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A muda se adaptou",
+      "mensagem": "Se já há brotos novos nas pontas, a raiz pegou e as regas podem ficar mais espaçadas.",
+      "acao_requerida": "Conferir se surgiram brotos novos e, se sim, passar a regar só quando os 5 cm de cima do substrato estiverem secos"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Hora de soltar o tutor",
+      "mensagem": "Com seis meses, o caule costuma já se sustentar sozinho. A fita deixada por tempo demais estrangula a casca.",
+      "acao_requerida": "Afrouxar ou tirar a amarração; se o caule ainda tombar sem apoio, amarrar de novo mais acima e mais frouxo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do tronco escura ou mole; cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos desentupidos e nunca deixar água no pratinho. Se aparecer, tire do vaso, corte as raízes escuras e moles e replante em substrato novo e arenoso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, farinhentos ou marrons presos nos ramos novos e no verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou cotonete com álcool; em ataque maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Serrador (Oncideres spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Ramo cortado em anel perfeito, que seca e cai; o besouro põe os ovos no pedaço cortado",
+      "prevencao_tratamento": "Recolher e queimar ou jogar fora, em saco fechado, todos os ramos anelados e caídos, para interromper o ciclo. Catar à mão os besouros vistos no tronco no verão"
+    },
+    {
+      "nome": "Formiga cortadeira",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos recortados em meia-lua ou a planta desfolhada de uma noite para outra; trilha de formigas no tronco",
+      "prevencao_tratamento": "Passar uma faixa de graxa ou cola entomológica sobre uma fita no tronco; localizar o formigueiro e usar isca formicida longe de crianças e animais"
+    },
+    {
+      "nome": "Queda de folhas por falta de luz ou excesso de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folíolos amarelam e caem em massa fora do inverno; ramos novos longos, finos e espaçados",
+      "prevencao_tratamento": "Levar para um local com pelo menos 5 horas de sol direto e espaçar as regas; a queda parcial em julho e agosto é normal e não pede nada"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e cuidado com a geada",
+      "mensagem": "No inverno seco, o tataré cresce pouco e pode perder parte das folhas. Com rega de verão, a raiz apodrece. A planta jovem sofre com geada.",
+      "acao_requerida": "Espaçar as regas para cada 7 a 10 dias, com o dedo seco a 5 cm, e, em noite com previsão abaixo de 3 °C, levar o vaso para perto de uma parede ou cobri-lo com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno, antes da brotação, a poda estimula ramos novos mais curtos e densos e deixa à mostra o tronco retorcido.",
+      "acao_requerida": "Cortar os ramos secos, cruzados e os que crescem para dentro da copa; encurtar os ramos longos até 2 ou 3 folhas, com corte limpo acima de uma gema"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Floração do tataré",
+      "mensagem": "Os pompons brancos aparecem entre outubro e novembro. Com falta de água nessa época, os botões caem antes de abrir.",
+      "acao_requerida": "Conferir o substrato a cada 2 ou 3 dias e regar sempre que os 5 cm de cima estiverem secos; não podar até a floração terminar"
+    }
+  ]
+}

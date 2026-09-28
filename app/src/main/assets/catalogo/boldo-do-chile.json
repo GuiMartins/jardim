@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Boldo-do-chile",
+    "nome_cientifico": "Peumus boldus",
+    "descricao": "Árvore perene de folhas duras e aromáticas, nativa do Chile central, usada no chá digestivo. É o boldo verdadeiro, diferente do boldo-brasileiro (Plectranthus barbatus), aquele de folha mole e peluda vendido em vaso. Cresce devagar e, em vaso grande, fica como um arbusto de 1,5 a 2 m.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; comece num de 20 a 30 L e passe para o definitivo na primeira troca",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa lavada ou perlita, 25% composto orgânico ou húmus de minhoca; levemente ácido a neutro, sem calcário, e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. Deixe-a em sol da manhã e sombra à tarde. É normal perder algumas folhas velhas; a fase termina quando aparecem brotos novos, verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento, de 10 a 30 cm no ano, com brotações na primavera e no outono. A raiz ocupa o vaso aos poucos. As folhas ficam mais grossas, ásperas e bem aromáticas quando amassadas: sinal de que já pode ser colhida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arbusto sempre verde de folhagem densa. Brota na primavera e no outono, cresce pouco no inverno e sofre com o calor úmido do verão. Floresce no fim do inverno com florzinhas brancas; a planta é dioica e só dá fruto se for fêmea e houver um macho por perto. Colha folhas o ano todo, sem tirar mais de um quinto da copa por vez."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de boldo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. A raiz da muda ainda está no torrão original e seca antes do resto do vaso.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o boldo",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão acima de 30 °C, confira a cada 2 dias; no inverno, a cada 7. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o boldo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca ou 2 colheres de sopa de farinha de ossos na superfície, longe do tronco, e regue em seguida. De maio a julho pule esta adubação, porque a planta quase não cresce.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas dos ramos: procure escamas marrons ou algodãozinho branco (cochonilha), pó preto (fumagina) e pontinhos amarelos com teia fina (ácaro).",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de boldo",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 366,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa as pontas dos ramos mais compridos, levando as folhas maduras, verde-escuras; nunca mais de um quinto da copa por vez. Seque à sombra em local ventilado e guarde em pote fechado. O chá é forte: não use por muitos dias seguidos nem na gravidez.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, pode 2 a 3 cm das raízes que dão volta no fundo e nas laterais e replante com substrato novo; se o vaso atual for menor que 40 L, passe para um maior. Faça em março-abril ou setembro, nunca no pico do verão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "A muda já deve ter enraizado no vaso e pode receber mais sol.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo, com pelo menos 4 horas de sol direto, de preferência pela manhã"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Despontar para encorpar",
+      "mensagem": "O boldo tende a subir num ramo só. Tirar a ponta agora faz a planta ramificar e virar um arbusto cheio.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta do ramo principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 366,
+      "titulo": "Colheita liberada",
+      "mensagem": "Com um ano no vaso, a planta aguenta colheitas regulares de folhas.",
+      "acao_requerida": "Fazer a primeira colheita leve, só nas pontas dos ramos mais compridos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos murcham de cima para baixo; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, usar substrato com areia e esvaziar o pratinho. Se aparecer, tire do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos de algodão no verso das folhas e nos ramos; folhas pegajosas",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teia fina no verso, em tempo quente e seco",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato fino de água a cada 3 dias; se persistir, óleo de neem a 0,5%"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada de pó preto sobre as folhas, que sai ao esfregar",
+      "prevencao_tratamento": "É um fungo que cresce sobre o melado da cochonilha: controle a cochonilha e limpe as folhas com pano úmido e água com sabão neutro"
+    },
+    {
+      "nome": "Queima das bordas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas e pontas das folhas secas e marrons, principalmente no verão ou após adubação forte",
+      "prevencao_tratamento": "Dar sombra à tarde nos dias acima de 32 °C, não deixar o substrato secar por completo no calor e não exceder a dose de adubo; a cada troca de estação, regue em abundância para lavar sais"
+    },
+    {
+      "nome": "Clorose por substrato alcalino",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amareladas com as nervuras ainda verdes",
+      "prevencao_tratamento": "Não usar calcário nem água muito calcária; incorporar composto orgânico e, se precisar, aplicar quelato de ferro conforme a embalagem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Outono: menos água e sem adubo",
+      "mensagem": "Com o frio, o boldo quase para de crescer e o substrato demora mais a secar; excesso de água agora apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para cada 7 dias ou mais, sempre conferindo com o dedo, e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger das geadas",
+      "mensagem": "O boldo adulto aguenta frio leve, mas em vaso a raiz fica exposta e plantas novas sofrem abaixo de 0 °C.",
+      "acao_requerida": "Nas noites com previsão abaixo de 2 °C, levar o vaso para perto de uma parede ou sob beiral, ou cobrir a copa com manta (TNT) até de manhã"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "Antes da brotação de primavera é a melhor hora de dar forma e arejar a copa.",
+      "acao_requerida": "Tirar ramos secos, cruzados e os que crescem para dentro, e encurtar em até um terço os ramos mais compridos, cortando acima de um par de folhas"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor do verão",
+      "mensagem": "O boldo é de clima mediterrâneo e sofre com sol forte da tarde e calor úmido: queima as folhas e fica mais sujeito a ácaro.",
+      "acao_requerida": "Nos dias acima de 32 °C, dar sombra à tarde e conferir a umidade do substrato a cada 2 dias, sem encharcar"
+    }
+  ]
+}

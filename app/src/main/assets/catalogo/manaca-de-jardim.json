@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Manacá-de-jardim",
+    "nome_cientifico": "Brunfelsia pauciflora",
+    "descricao": "Arbusto nativo da Mata Atlântica cujas flores perfumadas abrem roxas e clareiam para lilás e branco em poucos dias, por isso a mesma planta mostra três cores ao mesmo tempo. Floresce do fim do inverno à primavera e vai bem em vaso grande com sol da manhã. Toda a planta é tóxica, principalmente frutos e sementes: mantenha longe de crianças, cães e gatos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou fibra com pelo menos 40 cm de diâmetro e 40 cm de profundidade e vários furos no fundo; comece num vaso só 5 a 10 cm maior que o torrão da muda",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina, 10% areia grossa; levemente ácido (pH 5,5 a 6,5), sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode derrubar algumas folhas ou botões. Deixe-a em luz clara sem sol forte da tarde. A fase termina quando aparecem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso novo e a planta ramifica. Já pode receber sol direto da manhã. Folhas novas amareladas com nervuras verdes indicam substrato pouco ácido ou falta de ferro. Ao fim do primeiro ano o arbusto deve estar mais cheio e com ramos firmes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce no verão, desacelera no outono, forma botões no fim do inverno e floresce de agosto a novembro, com flores roxas que clareiam até o branco. Depois da florada vem a poda de formação. Em vaso, chega a 1,5 m e vive muitos anos se o substrato for renovado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de manacá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e descarte a água do pratinho. Com as raízes ainda presas ao torrão, a muda murcha rápido e perde os botões se secar. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o manacá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 a 4 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão e durante a floração, confira a cada 2 dias. No inverno, espace para 5 a 7 dias. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o manacá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca mais 1 colher de sopa de NPK 10-10-10 (ou adubo para azaleia) ao redor da planta, longe do caule, e regue em seguida. De abril a junho, use só o húmus. Evite calcário e cinzas, que tiram a acidez do substrato e amarelam as folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os brotos novos: procure pontinhos brancos ou marrons presos nos ramos (cochonilha), insetos agrupados nas pontas (pulgão), teias finas ou folhas pontilhadas de amarelo (ácaro) e folhas roídas (lagarta).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência logo após a floração ou no início do outono, tire a planta do vaso, raspe 3 a 5 cm de raízes enoveladas nas laterais e no fundo e replante com substrato novo, num vaso 5 a 10 cm maior se as raízes estiverem circulando. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Planta tóxica",
+      "mensagem": "Folhas, flores, frutos e principalmente as sementes do manacá são tóxicos para pessoas, cães e gatos.",
+      "acao_requerida": "Colocar o vaso fora do alcance de crianças e animais e recolher flores e frutos caídos"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Pode ir para o sol da manhã",
+      "mensagem": "A muda já se adaptou ao vaso. Sol direto da manhã fortalece os ramos e garante florada farta.",
+      "acao_requerida": "Mudar o vaso para um lugar com 3 a 4 horas de sol da manhã e sombra à tarde"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Desponte para encher o arbusto",
+      "mensagem": "Tirar as pontas dos ramos mais longos faz a planta ramificar e dar mais flores. Se ela estiver com botões, espere a florada terminar.",
+      "acao_requerida": "Cortar com tesoura limpa 2 a 3 cm da ponta dos ramos mais compridos, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelando e caindo, raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e esvaziar o pratinho. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodonosas ou marrons presas nos ramos e no verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia embebidos em álcool 70%; em infestação, pulverizar óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; folhas novas enrugadas e botões que caem",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo, depois bronzeadas, com teias finas no verso; aparece em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos e isolar a planta; aplicar óleo de neem a 0,5% a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras ainda verdes",
+      "prevencao_tratamento": "Substrato pouco ácido ou água muito calcária. Aplicar quelato de ferro conforme o rótulo, cobrir o substrato com casca de pinus e não usar calcário nem cinzas"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir",
+      "prevencao_tratamento": "Causada por seca do substrato, mudança de lugar ou vento frio durante a formação dos botões. Manter a rega regular de julho a novembro e não mudar o vaso de lugar nessa época"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Geada queima folhas e botões do manacá, e substrato encharcado no frio apodrece as raízes.",
+      "acao_requerida": "Em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou sob cobertura, e espaçar a rega para quando o substrato estiver seco a 4 cm"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Preparar a florada",
+      "mensagem": "Os botões estão se formando. Fósforo agora ajuda a planta a florir mais.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de farinha de osso ao redor da planta, longe do caule, e regar"
+    },
+    {
+      "meses": [
+        8,
+        9,
+        10
+      ],
+      "titulo": "Manacá em flor",
+      "mensagem": "As flores abrem roxas e clareiam até o branco em 3 ou 4 dias. Na floração a planta bebe mais, e seca no substrato derruba os botões.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e não mudar o vaso de lugar até a florada terminar"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Poda depois da florada",
+      "mensagem": "Podar logo após a floração dá tempo para os ramos novos amadurecerem e florirem no próximo inverno. Podar depois de março corta os botões do ano seguinte.",
+      "acao_requerida": "Com a florada terminada, encurtar em até um terço os ramos longos e tirar os secos ou cruzados, com tesoura limpa, usando luvas"
+    }
+  ]
+}

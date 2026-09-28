@@ -1,0 +1,201 @@
+{
+  "planta": {
+    "nome_comum": "Poejo",
+    "nome_cientifico": "Mentha pulegium",
+    "descricao": "Hortelã rasteira de folhas miúdas e aroma forte e mentolado, usada em chás caseiros e para afastar formigas e pulgas. Espalha-se por estolões e forma um tapete que floresce em lilás no verão. O óleo essencial (pulegona) é tóxico em dose alta: use só as folhas em chá fraco e nunca durante a gravidez.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira largo e raso, com 15 a 20 cm de profundidade, 25 a 30 cm de diâmetro e furos no fundo; a planta se espalha para os lados, não para baixo. Prato embaixo ajuda a segurar umidade no verão, mas esvazie a água parada depois de 30 minutos",
+    "volume_minimo_litros": 5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% fibra de coco ou vermiculita; rico em matéria orgânica e capaz de reter umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda se acomoda ao vaso novo. Nos primeiros dias é normal algumas folhas de baixo amarelarem; mantenha o vaso com sol só de manhã. A fase acaba quando surgem brotos novos, verde-claros, nas pontas e na base dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Os ramos se alongam e soltam estolões rasteiros que enraízam onde tocam o substrato, fechando o vaso. A partir do dia 45 já dá para colher as pontas. A fase acaba quando a superfície do vaso está quase toda coberta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Touceira densa que rende colheitas a cada duas semanas na primavera e no verão. Floresce em lilás entre dezembro e março; depois da floração, uma poda baixa renova as folhas. No inverno cresce devagar e pode perder a parte aérea com geada, rebrotando na primavera. Em cerca de um ano as raízes tomam o vaso e a touceira precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de poejo",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Toque a superfície do substrato: se o primeiro centímetro estiver seco, regue devagar em volta da muda até escorrer pelos furos. A raiz da muda ainda é curta e o poejo não tolera secar nesta fase. Em dias frios e nublados, se ainda estiver úmido, pule.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o poejo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. O poejo gosta de solo sempre levemente úmido: acima de 30 °C, confira todo dia. No inverno, espace para cada 4 a 5 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o poejo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca (ou 1 colher de sopa de bokashi) na superfície de um vaso de 5 L, sem cobrir os ramos, e regue em seguida. De junho a agosto, com a planta quase parada, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "colheita_ramos",
+      "titulo": "Colher ramos de poejo",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura as pontas dos ramos mais compridos, logo acima de um par de folhas, tirando no máximo 1/3 da planta. A colheita frequente deixa a touceira mais cheia. Use as folhas frescas ou seque-as à sombra. No inverno, colha só o que precisar.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas do poejo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontos alaranjados no verso (ferrugem), pó branco (oídio), insetos agrupados nas pontas (pulgão) e teias finas (ácaro). Olhe também a base dos ramos: caule escuro e mole indica excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire o torrão do vaso, corte-o em 2 a 4 pedaços com uma faca, cada um com raízes e ramos, e replante um deles em substrato novo no mesmo vaso. Os outros viram mudas novas. Se cair no inverno, espere setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "A muda pegou",
+      "mensagem": "Com brotos novos aparecendo, o poejo já aguenta mais luz e passa a crescer mais rápido.",
+      "acao_requerida": "Mudar o vaso para o lugar definitivo, com 4 a 5 horas de sol de manhã e sombra à tarde"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira colheita",
+      "mensagem": "Os ramos já devem ter mais de 10 cm. Colher as pontas agora estimula a planta a ramificar e cobrir o vaso.",
+      "acao_requerida": "Cortar as pontas dos ramos mais longos acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Estolões fora do vaso",
+      "mensagem": "O poejo solta ramos rasteiros que enraízam onde encostam e podem invadir vasos vizinhos.",
+      "acao_requerida": "Cortar os estolões que passaram da borda do vaso e plantar os que tiverem raiz em outro vaso, se quiser mudas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato molhado; base dos ramos escura e mole; cheiro de mofo no vaso",
+      "prevencao_tratamento": "Manter os furos livres e esvaziar o prato; regar só com o substrato seco a 2 cm. Retirar as partes podres e replantar os ramos sadios em substrato novo"
+    },
+    {
+      "nome": "Ferrugem da hortelã (Puccinia menthae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas ou marrons no verso das folhas; folhas amarelam e caem",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter o vaso ventilado. Cortar e descartar no lixo os ramos atacados; em ataque forte, podar tudo a 3 cm do substrato para rebrotar sadio"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que ficam retorcidas",
+      "prevencao_tratamento": "Mais sol da manhã e ventilação; retirar as folhas afetadas e pulverizar leite diluído em água (1 parte para 9) a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos ramos; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água ou água com sabão neutro (1 colher de chá por litro); se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, esperando 7 dias para colher"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto empoeirado; teias finas entre os ramos em tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas em dias secos e quentes; em ataque forte, podar os ramos atacados e aplicar óleo de neem"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos, compridos e moles, com folhas espaçadas e pálidas e pouco aroma",
+      "prevencao_tratamento": "Levar para um local com pelo menos 3 horas de sol direto e podar os ramos esticados para a planta rebrotar compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte no poejo",
+      "mensagem": "No verão o vaso raso seca em poucas horas e o sol da tarde queima as folhas miúdas.",
+      "acao_requerida": "Deixar o vaso com sombra depois das 13h e conferir a umidade do substrato todo dia"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Depois da floração os ramos ficam lenhosos e com poucas folhas. Uma poda baixa agora renova a touceira antes do frio.",
+      "acao_requerida": "Cortar todos os ramos a 5 cm do substrato, retirar as hastes secas de flor e adubar com húmus"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Com geada, a parte aérea do poejo pode queimar. A raiz costuma sobreviver e rebrota na primavera.",
+      "acao_requerida": "Em noites abaixo de 3 °C, levar o vaso para perto de uma parede ou sob cobertura e regar só quando o substrato estiver seco a 2 cm"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Oficial-de-sala",
+    "nome_cientifico": "Asclepias curassavica",
+    "descricao": "Subarbusto perene de flores vermelhas e laranja em buquês, que florescem da primavera ao outono. Muitos cultivam para receber a borboleta-monarca: as lagartas dela se alimentam só de plantas do gênero Asclepias. O látex branco é tóxico e irrita os olhos, então mantenha longe de crianças e animais e lave as mãos depois de mexer na planta.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou barro com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca; solto e bem drenado, porque a raiz apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Semeie 3 sementes a 0,5 cm de profundidade, direto no vaso definitivo, em local quente (21 a 27 °C). As plântulas surgem entre o 7º e o 14º dia, com duas folhas ovais e lisas."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 15,
+      "dia_fim": 45,
+      "descricao": "Surgem as folhas verdadeiras, estreitas e compridas, em pares. A muda é frágil e não aguenta substrato seco. A fase termina quando a planta passa de 15 cm com 4 a 5 pares de folhas."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 46,
+      "dia_fim": 100,
+      "descricao": "O caule engrossa, a planta ramifica e chega a 40 a 60 cm. Os primeiros botões aparecem em cachos na ponta dos ramos entre o 80º e o 100º dia."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 101,
+      "dia_fim": null,
+      "descricao": "Floresce da primavera ao outono, chega a 1 m e forma vagens compridas que se abrem soltando sementes com pluma. No inverno cresce pouco e pode perder folhas com frio; a poda do fim do inverno renova a planta. Lagartas listradas de amarelo, preto e branco são da borboleta-monarca: deixe que comam, porque a planta rebrota."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro do substrato. Ele não pode secar nem formar poça.",
+      "critica": true
+    },
+    {
+      "id": "rega_plantula",
+      "titulo": "Regar a muda",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar o oficial-de-sala",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão, confira a cada 2 dias; no inverno, espace para a cada 5 a 7 dias. Esvazie o pratinho depois de 30 minutos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de chá de NPK 4-14-8 na borda do vaso, sem encostar no caule, e regue em seguida. Pule a adubação de junho a agosto, quando a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as pontas dos ramos, os botões e o verso das folhas. Procure pulgões amarelos agrupados, teias finas ou algodãozinho branco. Lagartas listradas e ovos brancos isolados são da monarca: não mexa neles.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Use luvas por causa do látex. Tire a planta com o torrão, solte as raízes enroladas e replante com substrato novo num vaso 5 cm maior, ou no mesmo vaso depois de aparar 1/4 das raízes. Prefira fazer no fim do inverno, junto com a poda.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Várias mudas no mesmo vaso disputam luz e raiz, e nenhuma cresce bem.",
+      "acao_requerida": "Deixar só a muda mais vigorosa, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Botões chegando",
+      "mensagem": "As primeiras flores estão perto, e com elas as borboletas-monarca e os pulgões-amarelos, que gostam dos botões novos.",
+      "acao_requerida": "Não aplicar inseticida na planta, nem os naturais como neem, porque matam as lagartas da monarca. Contra pulgão, usar só jato de água"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-amarelo (Aphis nerii)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de pulgões amarelo-vivos nas pontas dos ramos, nos botões e nas vagens; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Jato de água forte a cada 2 a 3 dias ou esmagar com os dedos (de luva). Joaninhas controlam os pulgões. Evite inseticida e óleo de neem, que matam as lagartas da monarca"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e no caule; planta amarelada e fraca",
+      "prevencao_tratamento": "Remover com cotonete umedecido em álcool 70%, só nos tufos, e cortar ramos muito infestados"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto de poeira e teias finas no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 2 dias até sumir; manter a planta ao ar livre, não encostada em parede quente"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha com o substrato úmido, folhas amarelando de baixo para cima, base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e esvaziar o pratinho. Se aparecer, tirar do vaso, cortar as raízes escuras e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos e compridos, que tombam; poucas ou nenhuma flor",
+      "prevencao_tratamento": "Levar para um local com pelo menos 6 horas de sol direto e podar os ramos compridos pela metade para ramificar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 5 °C a planta perde as folhas, e a geada queima os ramos.",
+      "acao_requerida": "Nas noites com previsão de frio forte, levar o vaso para perto de uma parede ou para baixo de uma cobertura, e regar menos"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno a planta está velha e desfolhada. A poda estimula brotação nova, forte e com muitas flores na primavera, e tira os esporos de um parasita que enfraquece as monarcas.",
+      "acao_requerida": "De luvas, cortar todos os ramos a 15 ou 20 cm do substrato, logo acima de um par de folhas ou gemas"
+    },
+    {
+      "meses": [
+        2,
+        3,
+        4
+      ],
+      "titulo": "Colher as sementes",
+      "mensagem": "As vagens maduras se abrem e espalham sementes com pluma pelo jardim e pelos vasos vizinhos.",
+      "acao_requerida": "Quando a vagem ficar marrom e começar a rachar, colher, abrir sobre um papel, separar as sementes da pluma e guardá-las num envelope em local seco"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "planta": {
+    "nome_comum": "Abóbora",
+    "nome_cientifico": "Cucurbita moschata (abóbora-de-pescoço, abóbora-menina brasileira)",
+    "descricao": "Trepadeira vigorosa de frutos doces e alaranjados, a abóbora mais plantada nas hortas do Brasil por aguentar bem calor e umidade. Em vaso grande, conduzida numa treliça, produz de 2 a 4 frutos por planta e ainda dá flores e cambuquira (brotos) comestíveis.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 120,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou caixa plástica com pelo menos 40 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo, junto de uma treliça ou tela de 1,5 a 2 m de altura para as ramas subirem",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita, mais 1 xícara de farinha de ossos e 2 colheres de sopa de calcário por vaso de 50 L, misturados 15 dias antes do plantio",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 8,
+      "descricao": "Semeie 3 sementes deitadas a 2–3 cm de profundidade no centro do vaso. Acima de 22 °C, as plântulas surgem entre o 5º e o 8º dia, com duas folhas grossas e ovais (os cotilédones)."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 9,
+      "dia_fim": 40,
+      "descricao": "Surgem as folhas verdadeiras, grandes e lobadas, e a partir da 3ª semana a planta solta ramas com gavinhas. A fase termina quando aparecem os primeiros botões florais amarelos."
+    },
+    {
+      "fase_id": "floracao_polinizacao",
+      "nome": "Floração e Polinização",
+      "dia_inicio": 41,
+      "dia_fim": 65,
+      "descricao": "Primeiro abrem só flores masculinas, de haste fina e comprida. Uma a duas semanas depois vêm as femininas, que têm uma mini abóbora na base da flor. As flores abrem de manhã cedo e fecham ao meio-dia: na varanda, sem abelhas, a polinização precisa ser à mão. Mini abóbora que amarela e cai foi flor não polinizada."
+    },
+    {
+      "fase_id": "desenvolvimento_frutos",
+      "nome": "Desenvolvimento dos Frutos",
+      "dia_inicio": 66,
+      "dia_fim": 105,
+      "descricao": "Os frutos polinizados crescem rápido nas primeiras 3 semanas e depois engrossam a casca. Em vaso, deixe no máximo 3 a 4 frutos por planta. Frutos pendurados na treliça precisam de uma rede ou tecido como apoio a partir do tamanho de uma laranja."
+    },
+    {
+      "fase_id": "maturacao_colheita",
+      "nome": "Maturação e Colheita",
+      "dia_inicio": 106,
+      "dia_fim": 120,
+      "descricao": "A casca fica bege-alaranjada e fosca, e a unha não risca mais a casca. O pedúnculo seca e fica cortiçoso, e as folhas começam a secar. Na colheita, deixe 5 cm de cabo no fruto."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Manter as sementes úmidas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 8,
+      "instrucoes": "Regue de manhã com regador de crivo fino até umedecer os primeiros 5 cm. O substrato não pode secar na superfície nem ficar encharcado, porque a semente apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a abóbora",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 105,
+      "instrucoes": "Enfie o dedo 4 cm no substrato. Se estiver seco, regue direto no pé, sem molhar as folhas, até escorrer pelos furos. Com a planta formada e acima de 28 °C, um vaso de 50 L chega a pedir 3 a 5 L por dia. Folhas murchas ao meio-dia de sol forte são normais, mas se continuarem murchas de manhã cedo, a rega está faltando.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Regar menos na maturação",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 106,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Espace a rega: regue só quando os primeiros 5 cm estiverem secos. Menos água agora concentra o açúcar e ajuda a casca a endurecer.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubação de cobertura",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca ou 2 colheres de sopa de bokashi em volta do pé, a 10 cm do caule, e regue em seguida. Depois do dia 40, acrescente 1 colher de sopa de cinza de madeira ou farinha de ossos para puxar potássio e fósforo, que fazem flor e fruto.",
+      "critica": false
+    },
+    {
+      "id": "conducao_ramas",
+      "titulo": "Conduzir as ramas na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Passe as pontas novas por dentro da treliça e amarre com fita ou barbante frouxo, em forma de 8, a cada 30 cm. Ramas soltas no chão quebram e abrem porta para a broca. A partir do dia 70, apoie cada fruto maior que uma laranja numa rede ou num pano amarrado na treliça.",
+      "critica": false
+    },
+    {
+      "id": "poda_excesso",
+      "titulo": "Tirar o excesso de ramas e flores",
+      "tipo": "PODA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 70,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Quando já houver 3 ou 4 frutos firmes, corte a ponta da rama principal duas folhas depois do último fruto. Retire as flores femininas novas e as ramas secundárias sem fruto, para a planta pôr a energia nos frutos que já estão crescendo.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Vire as folhas e procure pó branco (oídio), manchas amareladas angulosas (míldio), pulgões nos brotos e besouros verde-amarelos. Nas ramas e frutos, procure furinhos com serragem úmida, que indicam broca.",
+      "critica": false
+    },
+    {
+      "id": "colheita_abobora",
+      "titulo": "Colher abóboras maduras",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 106,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Colha os frutos de casca fosca, que a unha não risca, e de pedúnculo seco. Corte com tesoura deixando 5 cm de cabo e nunca carregue o fruto pelo cabo. Deixe-os 10 dias à sombra e em local arejado para curar a casca: assim duram meses.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Três mudas num vaso de 50 L vão disputar água e nenhuma vai produzir bem.",
+      "acao_requerida": "Deixar só a muda mais vigorosa, cortando as outras rente ao substrato com tesoura, sem arrancar, para não mexer na raiz da que fica"
+    },
+    {
+      "dia_disparo": 25,
+      "titulo": "Instalar a treliça",
+      "mensagem": "As ramas estão começando a se alongar. Em vaso, a abóbora precisa subir para ter espaço e ventilação.",
+      "acao_requerida": "Firmar uma treliça ou tela de 1,5 a 2 m junto ao vaso e passar a primeira rama por ela"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Flores femininas chegando: polinize à mão",
+      "mensagem": "As flores femininas, com mini abóbora na base, só ficam abertas uma manhã. Sem abelhas por perto, o fruto aborta.",
+      "acao_requerida": "Entre 7h e 10h, colher uma flor masculina aberta, tirar as pétalas e encostar o pólen no centro da flor feminina aberta. Repetir em cada feminina que abrir nas próximas semanas"
+    },
+    {
+      "dia_disparo": 106,
+      "titulo": "Abóboras quase no ponto",
+      "mensagem": "Os primeiros frutos devem estar com a casca endurecendo e o pedúnculo secando.",
+      "acao_requerida": "Testar a casca com a unha e começar a colheita dos frutos que não riscam"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e da raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido; base do caule escura, mole ou rachada; raízes marrons",
+      "prevencao_tratamento": "Regar só quando os 4 cm de cima secarem, garantir furos livres e não amontoar substrato no caule. Planta com o colo apodrecido não se recupera: descarte-a junto com o substrato"
+    },
+    {
+      "nome": "Oídio (Podosphaera xanthii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco em manchas redondas na face de cima das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Sol pleno, ventilação e rega sem molhar as folhas. No início, borrife leite cru diluído a 10% ou bicarbonato de sódio a 0,5% com um pouco de sabão neutro a cada 5 dias e retire as folhas muito atacadas"
+    },
+    {
+      "nome": "Míldio (Pseudoperonospora cubensis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas angulosas na face de cima da folha, com mofo cinza-arroxeado embaixo, em tempo úmido",
+      "prevencao_tratamento": "Regar de manhã e direto no pé, podar folhas velhas para arejar. Calda bordalesa a 1% nas folhas ao primeiro sinal, repetindo a cada 7 dias em período chuvoso"
+    },
+    {
+      "nome": "Broca-das-cucurbitáceas (Diaphania nitidalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos com serragem úmida nas ramas, brotos murchos e lagartas verdes dentro dos frutos novos",
+      "prevencao_tratamento": "Esmagar lagartas e cortar ramas brocadas abaixo do furo. Pulverizar Bacillus thuringiensis (Dipel) no fim da tarde a cada 7 dias a partir da floração"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Besouros verdes com manchas amarelas; furos redondos nas folhas e flores roídas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo, quando estão lentos. Proteger as mudas jovens com tecido TNT até a 4ª folha"
+    },
+    {
+      "nome": "Pulgão (Aphis gossypii)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes-escuras nos brotos e no verso das folhas, que ficam enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% com sabão neutro no fim da tarde a cada 5 dias. O pulgão transmite viroses, então não deixe a colônia crescer"
+    },
+    {
+      "nome": "Aborto de frutos por falta de polinização",
+      "tipo": "DISTURBIO",
+      "sintomas": "Mini abóboras das flores femininas amarelam, murcham e caem poucos dias depois de a flor abrir",
+      "prevencao_tratamento": "Polinizar à mão entre 7h e 10h. Se ainda não houver flores masculinas, espere: as primeiras femininas costumam abortar e isso é normal"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuva e calor: atenção a fungos",
+      "mensagem": "No auge do verão, as chuvas e a umidade alta favorecem míldio e oídio, que secam as folhas em poucos dias.",
+      "acao_requerida": "Tirar as folhas velhas de baixo para arejar, regar só de manhã e direto no pé, e reforçar a inspeção das folhas"
+    },
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Frio chegando: colha antes da geada",
+      "mensagem": "A abóbora para de crescer abaixo de 12 °C, e uma geada queima folhas e frutos expostos.",
+      "acao_requerida": "Colher os frutos que já têm casca dura e, em noite com previsão de geada, cobrir a planta com TNT ou levar o vaso para perto de uma parede abrigada"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "planta": {
+    "nome_comum": "Calabura",
+    "nome_cientifico": "Muntingia calabura",
+    "descricao": "Arvoreta tropical de crescimento muito rápido, também chamada de pau-de-seda ou cereja-das-antilhas, que dá frutinhas vermelhas e doces com sabor de algodão-doce quase o ano inteiro. Em vaso grande e com poda de contenção fica com 2 a 2,5 m e começa a frutificar poucos meses depois do plantio da muda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cerâmica ou fibra, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo e pratinho sem água parada",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina ou perlita; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. Algumas folhas de baixo podem amarelar e cair nos primeiros dias; a fase termina quando surgem brotos novos, verde-claros e aveludados, na ponta dos galhos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Crescimento acelerado, com galhos longos que se abrem na horizontal em camadas. Pode passar de 1 m nesta fase. Aparecem as primeiras flores brancas, parecidas com as do morango, na axila das folhas; a fase termina quando elas começam a segurar frutinhos verdes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Floresce e frutifica em ondas quase o ano todo, com pico da primavera ao fim do verão e produção menor de junho a agosto. O fruto maduro é vermelho-escuro, macio e se solta com um toque. Pede poda de contenção no fim do inverno e uma leve no verão para caber no vaso, e renovação do substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de calabura",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos (cerca de 4 a 5 L no vaso de 60 L). Acima de 30 °C, confira todo dia. Esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a calabura",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos. No calor com frutos, confira a cada 2 dias; de junho a agosto, espace para a cada 5 ou 6 dias. Folhas murchas ao meio-dia que se recuperam à tarde indicam que a rega está no limite.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a calabura",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus de minhoca ou 1 punhado de bokashi mais 1 colher de sopa de farinha de ossos sobre o substrato, longe do caule, e regue em seguida. Na fase adulta, alterne com 1 colher de sopa de NPK 4-14-8 para favorecer flores e frutos. De junho a agosto, pule uma aplicação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os galhos novos procurando cochonilhas (pontinhos brancos ou marrons presos), fuligem preta e trilhas de formigas. Abra 2 ou 3 frutos: larvas brancas dentro indicam mosca-das-frutas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_frutos",
+      "titulo": "Colher as frutinhas maduras",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Colha as frutinhas vermelho-escuras que se soltam com um toque leve e recolha as caídas no vaso, que atraem mosca-das-frutas. Os passarinhos disputam os frutos: colher em dias alternados no pico da safra garante a sua parte. No inverno, com pouca produção, colha só o que estiver maduro.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato e aparar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro, tire a planta do vaso, corte 3 a 5 cm das raízes em volta do torrão, troque um terço do substrato por mistura nova e devolva ao mesmo vaso. Faça uma poda leve da copa para equilibrar e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firmar a muda",
+      "mensagem": "A calabura cresce rápido e o caule da muda é fino; o vento pode balançar o torrão e quebrar as raízes novas.",
+      "acao_requerida": "Cravar uma estaca de 1 m ao lado do torrão e amarrar o caule com fita ou tira de pano em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Poda de formação",
+      "mensagem": "Cortar a ponta agora faz a planta ramificar baixo e formar uma copa compacta, em vez de um único tronco comprido que tomba no vaso.",
+      "acao_requerida": "Cortar a ponta do caule principal a 60–80 cm de altura, logo acima de uma folha, e deixar 3 ou 4 galhos laterais bem distribuídos"
+    },
+    {
+      "dia_disparo": 181,
+      "titulo": "Primeiros frutos a caminho",
+      "mensagem": "A calabura já deve estar segurando frutinhos verdes. Eles ficam vermelhos em 3 a 4 semanas e atraem mosca-das-frutas e passarinhos.",
+      "acao_requerida": "Tirar a estaca se o caule já se sustenta sozinho e manter o chão do vaso limpo de frutos caídos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, galhos murcham, cheiro de mofo no substrato e raízes escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter a camada de drenagem. Se aparecer, suspenda a rega, retire as raízes podres e replante em substrato novo"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp., Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos, amolecidos antes da hora e com larvas brancas por dentro; muitos frutos caindo",
+      "prevencao_tratamento": "Colher com frequência e recolher os caídos; pendurar armadilha de garrafa PET com furos e isca de suco de fruta com açúcar, trocada toda semana"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodonosas ou marrons presas aos galhos novos e ao verso das folhas; folhas pegajosas e formigas subindo pelo caule",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde a cada 7 dias"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada de fuligem preta sobre as folhas, que sai ao esfregar",
+      "prevencao_tratamento": "É consequência da melada de cochonilhas e pulgões: controle os insetos e lave as folhas com água e sabão neutro (1 colher de sopa por litro)"
+    },
+    {
+      "nome": "Formiga-cortadeira (Atta, Acromyrmex)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua e galhos novos pelados de um dia para o outro",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca granulada formicida longe de crianças e animais; faixa de graxa ou fita adesiva no vaso impede a subida"
+    },
+    {
+      "nome": "Queima e desfolha por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, secas e caindo depois de noites abaixo de 5 °C; ponteiros mortos após geada",
+      "prevencao_tratamento": "Levar o vaso para perto de parede ou sob cobertura nas noites frias; espere a brotação da primavera para cortar só a parte morta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger a calabura do frio",
+      "mensagem": "Planta tropical: sofre abaixo de 5 °C e morre com geada, principalmente nos primeiros anos.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, levar o vaso para junto de uma parede ou sob cobertura, ou cobrir a copa com manta TNT, e regar só pela manhã"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de contenção",
+      "mensagem": "No fim do inverno a planta está mais lenta; podar agora controla o tamanho e a brotação da primavera traz a próxima safra.",
+      "acao_requerida": "Encurtar em um terço os galhos que passaram de 2 m ou saíram do vaso, tirar os secos e os que cruzam para dentro da copa, cortando logo acima de uma folha"
+    },
+    {
+      "meses": [
+        1
+      ],
+      "titulo": "Poda leve de verão",
+      "mensagem": "No calor a calabura cresce muito rápido e os galhos longos pesam, deixando o vaso instável.",
+      "acao_requerida": "Encurtar só os ponteiros mais compridos, sem passar de 20% da copa, para manter o formato sem perder as flores"
+    }
+  ]
+}

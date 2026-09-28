@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Jasmim-café",
+    "nome_cientifico": "Tabernaemontana divaricata",
+    "descricao": "Arbusto perene asiático, muito usado em cercas vivas no Brasil, de folhas verde-escuras brilhantes e flores brancas perfumadas à noite, da primavera ao outono. Aceita bem o vaso grande, onde fica com 1 a 1,5 m, e floresce por meses com pouca exigência. A seiva leitosa é tóxica e irrita a pele: use luvas na poda e mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 35 a 40 cm de diâmetro e pelo menos 35 cm de profundidade, com vários furos no fundo; barro ou plástico grosso, sem prato acumulando água",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; levemente ácido e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso e à nova luz. É normal cair algumas folhas velhas e botões; ela está firmando a raiz. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Crescimento ativo de ramos e folhas, com as primeiras flores brancas nas pontas se for primavera ou verão. As raízes ocupam o vaso aos poucos; quando a planta aguenta 3 dias sem murchar no calor, está estabelecida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto formado. No ano típico, floresce de setembro a abril, com picos no verão, desacelera no inverno e recebe uma poda de formação no fim de agosto. Folhas amarelando em massa indicam rega em excesso ou falta de adubo; murcha ao meio-dia no verão indica vaso pequeno ou rega curta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de jasmim-café",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda curta, a muda não tem reserva: um dia seco no calor a desidrata e ela perde as folhas. Não deixe água no prato.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jasmim-café",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos, cerca de 3 L num vaso de 30 L. Acima de 30 °C, confira a cada 2 dias; de maio a agosto, só regue quando os 5 cm de cima estiverem secos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o jasmim-café",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 4-14-8 (ou 1 xícara de húmus de minhoca) na borda do vaso, longe do caule, e regue em seguida. De maio a agosto, use metade da dose. Folhas novas amareladas com nervuras verdes pedem também uma colher de chá de sulfato de ferro dissolvida em 2 L de água.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas dos ramos: procure bolinhas brancas algodonosas ou carapaças marrons (cochonilha), mosquinhas brancas que voam ao mexer, teias finas ou pontinhos amarelados (ácaro) e fumagina preta.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e outubro, tire o torrão, corte 3 a 5 cm das raízes que enrolam no fundo e nas laterais, e replante em vaso 5 cm maior ou no mesmo vaso com substrato novo. Use luvas por causa da seiva. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Mudas vêm em sacos ou vasos pequenos, que secam em horas e limitam a raiz.",
+      "acao_requerida": "Transplantar para o vaso de 30 L sem desmanchar o torrão, com o colo no mesmo nível de antes, regar bem e deixar à meia-sombra na primeira semana"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Levar para o lugar definitivo",
+      "mensagem": "Depois de uma semana protegida, a muda já aguenta mais luz. Sem pelo menos 3 horas de sol, ela cresce mas quase não floresce.",
+      "acao_requerida": "Mudar o vaso para onde receba de 3 a 5 horas de sol direto, de preferência pela manhã"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Começar a adubação",
+      "mensagem": "A raiz já se firmou e a planta pode aproveitar o adubo sem risco de queimar as raízes novas.",
+      "acao_requerida": "Fazer a primeira adubação conforme a tarefa de adubação"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, planta murcha sem se recuperar com rega, base do caule escura e mole, cheiro azedo no substrato",
+      "prevencao_tratamento": "Só regar com o substrato seco a 3 cm, nunca deixar água no prato e manter os furos desobstruídos. Se aparecer, retirar do vaso, cortar as raízes pretas e moles e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha (farinhenta e de carapaça)",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodonosas ou escamas marrons nas axilas, nervuras e ramos; folhas pegajosas e fumagina preta por cima",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; depois aplicar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer nos ramos; folhas amarelando e pegajosas no verso",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, calda de enxofre ou óleo de neem a cada 5 dias"
+    },
+    {
+      "nome": "Queda de botões e folhas por estresse hídrico",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões caem antes de abrir e folhas amarelas despencam após dias de murcha",
+      "prevencao_tratamento": "Manter a rega regular no calor e vaso de pelo menos 30 L; evitar mudar a planta de lugar em plena floração"
+    },
+    {
+      "nome": "Clorose por falta de ferro",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelo-claras com as nervuras verdes",
+      "prevencao_tratamento": "Usar substrato levemente ácido, evitar água muito calcária e aplicar sulfato de ferro ou quelato de ferro conforme a embalagem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O jasmim-café é tropical: abaixo de 10 °C ele perde folhas, e geada queima os ramos. Com frio, o substrato também demora a secar e a raiz apodrece fácil.",
+      "acao_requerida": "Em noites abaixo de 8 °C, levar o vaso para perto de uma parede ou sob cobertura e espaçar as regas até os 5 cm de cima secarem"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno a planta está quase parada; podar agora estimula ramos novos, que são onde nascem as flores da primavera.",
+      "acao_requerida": "De luvas, cortar ramos secos, cruzados e o que passar do formato desejado, até um terço da copa, logo acima de um par de folhas"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o ritmo de crescimento",
+      "mensagem": "Com o calor voltando, começa a brotação e a floração. A planta volta a pedir água e adubo em dose cheia.",
+      "acao_requerida": "Voltar à dose cheia de adubo e à rega a cada 3 dias, conferindo o substrato com o dedo"
+    }
+  ]
+}

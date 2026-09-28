@@ -1,0 +1,226 @@
+{
+  "planta": {
+    "nome_comum": "Bananeira-nanica",
+    "nome_cientifico": "Musa acuminata 'Dwarf Cavendish' (grupo AAA)",
+    "descricao": "Bananeira de porte baixo (2 a 2,5 m em vaso), a mais indicada para quintal e varanda ampla. Cada pseudocaule dá um único cacho e depois morre, mas a touceira se renova pelos filhos que brotam da base, então a planta vive por anos no mesmo vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, fibra ou cimento, com pelo menos 50 cm de diâmetro e 50 cm de altura, vários furos no fundo e rodinhas ou pés para não apoiar direto no chão",
+    "volume_minimo_litros": 80,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou esterco curtido, 20% húmus de minhoca, 10% areia grossa ou perlita; misture 200 g de farinha de ossos e 100 g de cinza de madeira peneirada por vaso de 80 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda na mesma altura em que estava no saquinho, sem enterrar o pseudocaule, e firme bem o substrato. As folhas mais velhas podem amarelar e secar; o sinal de que pegou é uma folha nova, enrolada como um charuto, saindo do centro entre a 2ª e a 4ª semana."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 270,
+      "descricao": "No calor, a bananeira solta uma folha nova a cada 7 a 10 dias e o pseudocaule engrossa. Os primeiros filhos brotam na base por volta do 3º mês. No inverno o crescimento quase para, e isso é normal. Folhas rasgadas pelo vento não são doença."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta (Floração, Cacho e Renovação)",
+      "dia_inicio": 271,
+      "dia_fim": null,
+      "descricao": "Com cerca de 25 a 30 folhas emitidas (em vaso, de 9 a 15 meses após o plantio, conforme o calor), sai do topo o 'coração', uma flor roxa pendurada. As pencas se formam em 2 a 3 semanas; corte o coração um palmo abaixo da última penca. O cacho fica pronto de 90 a 120 dias depois: colha quando as bananas perderem as quinas e a primeira começar a amarelar, e deixe amadurecer na sombra. Depois da colheita, corte a planta-mãe rente à base em pedaços. O filho escolhido assume e dá o próximo cacho em 8 a 12 meses."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de bananeira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O substrato deve ficar úmido, nunca encharcado: o prato embaixo do vaso não pode acumular água.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a bananeira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (de 5 a 10 L num vaso de 80 L). Acima de 30 °C ou com cacho em formação, confira todo dia. No inverno, regue só quando os 5 cm estiverem secos, o que costuma levar de 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a bananeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 litro de composto ou húmus mais 1 colher de sopa de NPK 10-10-20 (ou 2 colheres de cinza de madeira) em volta do pseudocaule, a 10 cm dele, e regue em seguida. A banana pede muito potássio. De junho a agosto, suspenda.",
+      "critica": false
+    },
+    {
+      "id": "desbaste_filhos",
+      "titulo": "Tirar filhos em excesso",
+      "tipo": "DESBASTE",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 120,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Deixe só a planta-mãe e um filho, o mais vigoroso e de folhas estreitas (filho 'chifre'). Corte os outros rente ao substrato e, com uma faca, arranque o miolo do toco para ele não rebrotar. Com mais de dois pseudocaules, o vaso não sustenta o cacho.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Cortar folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao pseudocaule as folhas totalmente secas, dobradas ou com manchas escuras em mais da metade. Mantenha pelo menos 8 folhas verdes e não corte folhas só rasgadas pelo vento. Pique as folhas cortadas e use como cobertura no vaso, se estiverem sadias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a bananeira",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure pontinhos amarelos ou teia fina no verso (ácaro), bolinhas brancas nas axilas (cochonilha) e colônias escuras na base do pseudocaule (pulgão). Confira se há furos ou serragem úmida no pé do pseudocaule, sinal do moleque.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Logo depois de colher um cacho e cortar a mãe, tire a touceira do vaso, corte o rizoma velho e morto, e replante o filho com substrato novo na mesma mistura do plantio. Se não houver colheita no período, retire os 10 cm de cima do substrato e reponha com composto.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeiros filhos na base",
+      "mensagem": "A bananeira já deve estar soltando brotos em volta do pseudocaule. Deixar todos crescendo divide a força e atrasa o cacho.",
+      "acao_requerida": "Escolher o filho mais vigoroso, de folhas estreitas, para ser o sucessor e cortar os outros rente ao substrato"
+    },
+    {
+      "dia_disparo": 270,
+      "titulo": "Preparar para o cacho",
+      "mensagem": "A planta se aproxima da idade de florescer. Um cacho de nanica pesa de 10 a 20 kg em vaso e pode tombar a planta.",
+      "acao_requerida": "Deixar pronta uma escora de madeira ou bambu em forma de Y para apoiar o pseudocaule do lado em que o cacho pender"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de bananeira",
+      "mensagem": "Se o coração ainda não saiu, a planta pode estar com pouco sol, pouco adubo ou vaso pequeno. Em regiões frias, o cacho só aparece no segundo verão.",
+      "acao_requerida": "Contar as horas de sol direto no vaso e mudá-lo de lugar se forem menos de 6; conferir se a adubação mensal está em dia"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma por encharcamento",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando de baixo para cima, pseudocaule mole e com cheiro azedo na base, planta que tomba com facilidade",
+      "prevencao_tratamento": "Nunca deixe água parada no prato e garanta furos desobstruídos; se a base amolecer, suspenda a rega até secar 5 cm, corte as partes podres e replante o filho sadio em substrato novo"
+    },
+    {
+      "nome": "Sigatoka-amarela (Pseudocercospora musae)",
+      "tipo": "DOENCA",
+      "sintomas": "Riscos amarelo-claros nas folhas que viram manchas alongadas marrons com centro cinza; folhas secam antes do tempo",
+      "prevencao_tratamento": "Corte e descarte as folhas muito atacadas, evite molhar as folhas na rega e mantenha o vaso arejado; em ataque forte, fungicida cúprico nas folhas novas"
+    },
+    {
+      "nome": "Moleque-da-bananeira (Cosmopolites sordidus)",
+      "tipo": "PRAGA",
+      "sintomas": "Galerias escuras no rizoma e na base do pseudocaule, planta que perde vigor e tomba; besouro preto de 1 cm escondido na base",
+      "prevencao_tratamento": "Use mudas limpas e não deixe restos de pseudocaule apodrecendo no vaso; como isca, deixe pedaços de pseudocaule cortados ao meio com a face cortada para baixo perto do vaso e cate os besouros que se abrigarem ali"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos e aspecto empoeirado no verso das folhas, às vezes com teia fina; comum em varanda quente e seca",
+      "prevencao_tratamento": "Jato de água no verso das folhas a cada 3 dias por duas semanas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha e pulgão-da-bananeira",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodoadas nas axilas das folhas ou colônias de insetos escuros na base; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Limpe com algodão embebido em álcool ou água com sabão neutro; em infestação, óleo de neem a 0,5% semanal. Pulgão transmite vírus: planta com folhas em roseta e riscos verde-escuros deve ser descartada"
+    },
+    {
+      "nome": "Dano por frio (chilling)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Abaixo de 10 °C as folhas escurecem e secam em faixas; bananas ficam com casca acinzentada e amadurecem mal; o cacho pode 'engasgar' e não sair do pseudocaule",
+      "prevencao_tratamento": "No inverno, leve o vaso para um canto protegido do vento sul e encostado numa parede que recebe sol; em noites de geada, cubra com TNT"
+    },
+    {
+      "nome": "Falta de potássio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas amarelo-alaranjadas a partir da ponta e das bordas, que secam rápido e se dobram; cacho pequeno e bananas finas",
+      "prevencao_tratamento": "Mantenha a adubação mensal com adubo rico em potássio (NPK 10-10-20 ou cinza de madeira) da primavera ao outono"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Preparar a bananeira para o frio",
+      "mensagem": "A bananeira-nanica sofre abaixo de 10 °C e a geada queima as folhas. Maio é a hora de escolher o lugar de inverno.",
+      "acao_requerida": "Mudar o vaso para um canto ensolarado e protegido do vento, de preferência encostado numa parede voltada para o norte, e separar um TNT para as noites de geada"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com o frio, a bananeira quase para de crescer e bebe muito menos. Substrato frio e encharcado apodrece o rizoma.",
+      "acao_requerida": "Regar só quando os 5 cm de cima estiverem secos e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o ritmo",
+      "mensagem": "Com o calor voltando, a bananeira retoma o crescimento e precisa de nutrientes para formar folhas e cacho.",
+      "acao_requerida": "Retomar a adubação mensal, cortar as folhas queimadas pelo frio e voltar a conferir a rega a cada 2 dias"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: sede máxima",
+      "mensagem": "Folhas grandes no sol forte perdem muita água, e um vaso seca em um dia. Falta de água com cacho em formação dá bananas pequenas.",
+      "acao_requerida": "Conferir o substrato todo dia e cobrir a superfície com 5 cm de folha seca picada ou palha para segurar a umidade"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Grama-amendoim",
+    "nome_cientifico": "Arachis pintoi",
+    "descricao": "Leguminosa rasteira nativa do Brasil que forma um tapete denso de folhas miúdas e flores amarelas quase o ano inteiro. Não precisa de corte como a grama comum e fixa o próprio nitrogênio. Em jardineira, serve de forração pendente ou para cobrir a terra ao pé de plantas maiores.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira larga e rasa, com pelo menos 20 cm de profundidade e 40 cm de comprimento, com furos no fundo. Ela se espalha mais para os lados do que para baixo, então vale mais a área que a altura.",
+    "volume_minimo_litros": 10,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; solto e bem drenado, sem adubo nitrogenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "pegamento",
+      "nome": "Pegamento das Mudas",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Plante as mudas ou pedaços de estolão a cada 15 cm, enterrando 2 a 3 nós. Nos primeiros dias as folhas podem murchar um pouco ao sol forte. O pegamento se confirma quando surgem folhas novas nas pontas e a muda resiste a um puxão leve."
+    },
+    {
+      "fase_id": "cobertura",
+      "nome": "Cobertura da Jardineira",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "Os estolões se alongam rente à terra e enraízam em cada nó que toca o substrato. As primeiras flores amarelas aparecem. A fase termina quando a terra da jardineira fica quase toda coberta e os ramos começam a pender pelas bordas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Tapete Formado",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Tapete denso que floresce da primavera ao outono e só desacelera no inverno, quando pode amarelar com o frio. Na primavera e no verão cresce rápido e precisa ser contido; no inverno quase para. A cada dois anos o substrato se esgota e o tapete fica ralo no centro."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_pegamento",
+      "titulo": "Regar as mudas novas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Regue de manhã até escorrer pelos furos. O substrato precisa ficar úmido nos primeiros 3 cm enquanto as raízes dos nós se formam. Em dia nublado e fresco, se a terra ainda estiver úmida ao toque, pule a rega para não encharcar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a grama-amendoim",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas e enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Acima de 30 °C, confira a cada 2 dias. No inverno, espace para a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_fosforo_potassio",
+      "titulo": "Adubar sem nitrogênio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de farinha de ossos e 1 de cinza de madeira peneirada por jardineira de 10 L sobre o tapete e regue em seguida. Não use adubo rico em nitrogênio: ela fixa o próprio e o excesso só favorece fungo. Pule de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "aparar_estoloes",
+      "titulo": "Aparar os estolões que escapam",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura os ramos que passam 15 cm da borda da jardineira ou que enraizaram em vasos vizinhos. Os pedaços cortados com 3 ou mais nós viram mudas novas. No inverno, quando quase não cresce, pode pular.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o tapete",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas e olhe o centro do tapete e o verso das folhas: procure manchas marrons, teia branca sobre folhas grudadas, lagartas e folhas roídas ou cortadas em meia-lua.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, tire o tapete em placas, descarte o miolo ralo, troque o substrato por um novo e replante as placas mais vigorosas a cada 15 cm. Regue todo dia nas 2 semanas seguintes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Mudas pegaram",
+      "mensagem": "Se já há folhas novas nas pontas, as raízes dos nós estão firmes e a rega diária pode acabar.",
+      "acao_requerida": "Puxar de leve uma muda para conferir se resiste e, a partir de agora, regar só quando os 3 cm de cima secarem"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Ajudar a fechar as falhas",
+      "mensagem": "Os estolões enraízam melhor quando o nó encosta na terra. Ramos soltos no ar demoram a cobrir os buracos.",
+      "acao_requerida": "Deitar os estolões compridos sobre as áreas vazias e prender cada um com um grampo de arame ou um pouco de substrato sobre um nó"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por encharcamento",
+      "tipo": "DOENCA",
+      "sintomas": "Tapete amarelado e murcho em reboleiras mesmo com a terra molhada; estolões escuros e moles na base",
+      "prevencao_tratamento": "Regar só com a superfície seca, manter os furos desobstruídos e nunca deixar prato com água; cortar as partes podres e deixar secar antes de voltar a regar"
+    },
+    {
+      "nome": "Mela ou queima-da-folha (Rhizoctonia solani)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-acinzentadas que se espalham rápido no calor úmido, folhas grudadas entre si por uma teia branca fina no centro do tapete",
+      "prevencao_tratamento": "Regar de manhã e na terra, não por cima das folhas; raleie o tapete muito denso e retire as partes atingidas; se avançar, fungicida à base de cobre"
+    },
+    {
+      "nome": "Mancha-foliar (Cercospora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Pintas redondas marrom-escuras com halo amarelo nas folhas mais velhas, que depois caem",
+      "prevencao_tratamento": "Retirar as folhas manchadas, evitar molhar a folhagem à noite e deixar o ar circular; calda bordalesa em casos fortes"
+    },
+    {
+      "nome": "Lagartas",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas ou só com as nervuras, fezes escuras entre as folhas",
+      "prevencao_tratamento": "Catar à mão ao entardecer; se a infestação for grande, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Formiga-cortadeira",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua e sumindo de um dia para o outro, trilha de formigas até a jardineira",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca granulada própria longe de crianças e animais; barreira de graxa no pé da jardineira elevada"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, secas e crocantes depois de uma noite muito fria",
+      "prevencao_tratamento": "Cobrir a jardineira com tecido nas noites abaixo de 3 °C; não cortar as partes queimadas antes do fim do inverno, porque os estolões rebrotam na primavera"
+    },
+    {
+      "nome": "Tapete ralo e sem flor por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos compridos e finos, folhas espaçadas e quase nenhuma flor amarela",
+      "prevencao_tratamento": "Levar a jardineira para um lugar com pelo menos 3 a 4 horas de sol direto"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "No inverno a grama-amendoim quase para e pode queimar com a geada. Excesso de água no frio apodrece os estolões.",
+      "acao_requerida": "Espaçar a rega para a cada 5 a 7 dias e cobrir a jardineira com tecido nas noites com previsão abaixo de 3 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Limpeza de primavera",
+      "mensagem": "Com o calor, o tapete volta a crescer rápido. Tirar o que secou no inverno abre espaço para a brotação nova.",
+      "acao_requerida": "Cortar as folhas e ramos secos ou queimados pelo frio, cobrir as falhas com estolões deitados e voltar à rega normal"
+    }
+  ]
+}

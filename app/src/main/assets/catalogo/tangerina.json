@@ -1,0 +1,232 @@
+{
+  "planta": {
+    "nome_comum": "Tangerina",
+    "nome_cientifico": "Citrus reticulata 'Ponkan'",
+    "descricao": "Árvore cítrica de frutos doces, fáceis de descascar e ricos em vitamina C. A Ponkan é a tangerina mais cultivada no Brasil e foi a variedade escolhida aqui. Em vaso grande e com muda enxertada, fica com 1,5 a 2 m e começa a produzir no segundo ou terceiro ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, cimento ou fibra com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo. Comece com a muda enxertada de viveiro certificado (saco ou tubete) e deixe o ponto de enxertia 5 cm acima do substrato",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de pinus fina ou perlita, mais 200 g de calcário dolomítico e 100 g de farinha de ossos por vaso de 50 L; pH entre 5,5 e 6,5",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do viveiro e sente a troca de vaso: é normal perder algumas folhas nas duas primeiras semanas. A fase termina quando aparecem brotos novos, verde-claros, na ponta dos ramos. Nos primeiros 7 dias, prefira sol da manhã e sombra à tarde."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a copa ganha 2 a 4 surtos de brotação por ano. Tudo o que brotar abaixo do ponto de enxertia (a cicatriz no tronco) é do porta-enxerto e deve ser cortado rente. Flores que surgirem neste primeiro ano devem ser retiradas para a árvore investir em raiz e galhos."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "A copa se fecha e a árvore começa a florescer de verdade no fim do inverno e na primavera. Deixe poucos frutos (10 a 15) e retire o excesso quando estiverem do tamanho de uma bolinha de gude. Ramos que crescem para dentro da copa ou cruzados saem na poda de agosto."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Árvore produtiva. Ano típico: floração perfumada de agosto a outubro, queda natural de parte dos frutinhos em novembro e dezembro, frutos crescendo no verão e amadurecendo de abril a julho. Depois da colheita vem a poda leve, em agosto, e o ciclo recomeça. Em vaso de 50 a 80 L, espere de 30 a 80 frutos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de tangerina",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda é pequeno e seca antes do resto do vaso: molhe bem em volta do tronco. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a tangerina",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 50 L). No verão, acima de 30 °C, e durante a floração, confira a cada 2 dias. No inverno, com o substrato ainda úmido a 5 cm, espere mais 2 dias. Folhas enroladas no meio do dia pedem água já.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a tangerina",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na borda do vaso, longe do tronco, 1 colher de sopa de NPK 10-10-10 por ano de idade da árvore (máximo 4), mais 2 punhados de húmus, e regue em seguida. A cada 3 meses, pulverize nas folhas um adubo foliar com zinco, manganês e boro. De junho a julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure pulgões, trilhas prateadas em serpentina (minador), lagartas marrom e brancas parecidas com fezes de passarinho e cochonilhas grudadas nos ramos. Confira também o tronco perto do substrato (goma escura escorrendo) e corte os brotos que saírem abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno (agosto), tire a árvore do vaso, raspe 3 a 5 cm das raízes em volta do torrão e corte as que estiverem enroladas no fundo. Volte para um vaso 10 a 20 L maior, ou o mesmo, com substrato novo. Se agora não for agosto, faça só a troca dos 10 cm de cima do substrato por composto novo e deixe a troca completa para agosto.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Confira o enxerto",
+      "mensagem": "A tangerina é enxertada num porta-enxerto rústico (limão-cravo, citrumelo). O que brota abaixo do enxerto é outra planta e rouba a força da copa.",
+      "acao_requerida": "Localizar a cicatriz do enxerto no tronco, garantir que ela está acima do substrato e cortar rente qualquer broto abaixo dela; já pode passar a muda para o sol pleno"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Nada de frutos no primeiro ano",
+      "mensagem": "Uma muda nova que segura frutos para de crescer e pode ficar raquítica por anos.",
+      "acao_requerida": "Retirar com os dedos toda flor ou frutinho que aparecer até a árvore completar um ano no vaso"
+    },
+    {
+      "dia_disparo": 366,
+      "titulo": "Primeira safra liberada",
+      "mensagem": "Com um ano de vaso, a árvore já aguenta alguns frutos.",
+      "acao_requerida": "Na próxima floração, deixar no máximo 10 a 15 frutos, bem espalhados pela copa, e retirar o excesso quando estiverem do tamanho de uma bolinha de gude"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Gomose e podridão de raiz (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Casca do tronco escurecida e rachada perto do substrato, escorrendo goma âmbar; folhas amarelando e caindo; substrato com cheiro azedo",
+      "prevencao_tratamento": "Não enterrar o enxerto nem amontoar substrato no tronco, e nunca deixar água no pratinho. Raspar a casca doente até o tecido sadio e pincelar pasta bordalesa; se as raízes estiverem moles e escuras, cortar as podres e trocar o substrato"
+    },
+    {
+      "nome": "Minador-dos-citros (Phyllocnistis citrella)",
+      "tipo": "PRAGA",
+      "sintomas": "Trilhas prateadas em serpentina dentro das folhas novas, que ficam enroladas e deformadas",
+      "prevencao_tratamento": "Atinge só as brotações novas: pulverizar óleo de neem a 0,5% no fim da tarde a cada 7 dias enquanto a brotação estiver tenra. Folha madura atacada não precisa ser arrancada"
+    },
+    {
+      "nome": "Pulgão-preto-dos-citros (Toxoptera citricida)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos nos brotos novos, folhas encarquilhadas, melado pegajoso e formigas subindo pelo tronco",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% a cada 5 dias. Ele transmite o vírus da tristeza, então não deixe a colônia crescer"
+    },
+    {
+      "nome": "Cochonilhas (escama-farinha, cochonilha-parda)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodonosas grudadas nos ramos e no verso das folhas; fumagina preta sobre o melado",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%; em infestação maior, óleo mineral ou de neem a 1% fora do sol forte, duas aplicações com 10 dias de intervalo"
+    },
+    {
+      "nome": "Lagarta-dos-citros (Papilio spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas comidas pelas bordas; lagartas marrons com manchas brancas, parecidas com fezes de passarinho, que soltam cheiro forte quando tocadas",
+      "prevencao_tratamento": "Catar as lagartas à mão. Numa árvore de vaso, poucas lagartas desfolham uma muda nova em dias"
+    },
+    {
+      "nome": "Verrugose (Elsinoë fawcettii)",
+      "tipo": "DOENCA",
+      "sintomas": "Verrugas salientes, cor de palha a acinzentadas, em folhas novas e na casca dos frutos; a Ponkan é bem suscetível",
+      "prevencao_tratamento": "Manter a copa arejada com a poda de agosto e evitar molhar as folhas ao regar. Pulverizar calda bordalesa ou fungicida cúprico na queda das pétalas e de novo 3 semanas depois"
+    },
+    {
+      "nome": "Clorose por falta de micronutrientes (ferro, zinco, magnésio)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes (ferro, zinco) ou folhas velhas amarelando em V invertido a partir da base (magnésio)",
+      "prevencao_tratamento": "Adubo foliar com micronutrientes a cada 3 meses; para magnésio, 1 colher de sopa de sulfato de magnésio em 5 L de água, regada no vaso. Conferir se o substrato não está encharcado, que também bloqueia a absorção"
+    },
+    {
+      "nome": "Greening / HLB (Candidatus Liberibacter)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas com manchas amarelas assimétricas (mosqueado), frutos pequenos, tortos e amargos; o vetor é o psilídeo, um inseto pequeno que pousa inclinado a 45°",
+      "prevencao_tratamento": "Sem cura. Comprar muda só de viveiro certificado e telado, controlar o psilídeo com óleo de neem nas brotações e, se houver suspeita, avisar a defesa agropecuária do estado e eliminar a planta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "titulo": "Época de colher tangerina",
+      "mensagem": "A Ponkan amadurece do outono ao inverno. Fruto maduro não amadurece mais depois de colhido, e o que passa do ponto fica seco e sem suco.",
+      "acao_requerida": "Colher com tesoura, cortando o cabinho rente ao fruto, quando a casca estiver toda laranja e o fruto ceder levemente ao apertar; provar um antes de colher todos"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "No inverno a tangerina quase para de crescer e bebe menos. Geada queima folhas e ramos novos em vaso.",
+      "acao_requerida": "Espaçar a rega, suspender a adubação e, nas noites com previsão abaixo de 3 °C, levar o vaso para junto de uma parede ou cobrir a copa com manta antigeada"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "Com a colheita encerrada e antes da brotação da primavera, é a hora de arejar a copa.",
+      "acao_requerida": "Cortar galhos secos, doentes, cruzados e os que crescem para dentro da copa, além de brotos abaixo do enxerto; retomar a adubação mensal"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Floração e pegamento dos frutos",
+      "mensagem": "Flor e fruto novo caem com qualquer falta de água. Em novembro e dezembro, uma queda natural de parte dos frutinhos é normal.",
+      "acao_requerida": "Não deixar o substrato secar a 5 cm de profundidade e conferir a rega a cada 2 dias; em árvore jovem, raleie os frutos deixando um a cada 15 a 20 folhas"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte no vaso",
+      "mensagem": "No verão o vaso aquece e seca muito rápido, e os frutos estão crescendo.",
+      "acao_requerida": "Regar de manhã cedo, conferir o substrato todo dia nos dias acima de 30 °C e cobrir a superfície com 3 cm de palha ou casca de pinus"
+    }
+  ]
+}

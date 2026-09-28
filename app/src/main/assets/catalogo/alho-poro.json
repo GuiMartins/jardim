@@ -1,0 +1,173 @@
+{
+  "planta": {
+    "nome_comum": "Alho-poró",
+    "nome_cientifico": "Allium porrum (syn. Allium ampeloprasum var. porrum)",
+    "descricao": "Parente da cebola, com um talo branco e macio de sabor suave, usado em sopas, quiches e refogados. Na natureza é bienal, mas em casa é cultivado como ANUAL a partir de mudas e colhido antes de florescer. Aguenta bem o frio e rende em jardineiras fundas.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 140,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 30 cm de profundidade e furos no fundo; a profundidade permite enterrar o talo para branqueá-lo. Espaçamento de 10 a 12 cm entre plantas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto curtido, 20% areia grossa; reserve um pouco da mistura para as amontoas",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao_muda",
+      "nome": "Pegamento da Muda",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Apare as raízes para 2 a 3 cm e as folhas pela metade, abra covas de 10 a 12 cm de profundidade e plante a muda sem apertar muito, deixando só as folhas de fora. As folhas podem tombar nos primeiros dias; a muda pegou quando surge uma folha nova no centro."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 15,
+      "dia_fim": 70,
+      "descricao": "A planta solta folhas novas em leque, achatadas e azuladas, a cada poucos dias. O talo começa a engrossar e passa da espessura de um lápis."
+    },
+    {
+      "fase_id": "engrossamento_branqueamento",
+      "nome": "Engrossamento e Branqueamento",
+      "dia_inicio": 71,
+      "dia_fim": 119,
+      "descricao": "O talo engrossa rápido. A parte coberta de substrato fica branca e macia; é aqui que as amontoas fazem diferença no tamanho da parte comestível."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 120,
+      "dia_fim": 140,
+      "descricao": "Os talos com 2 a 3 cm de diâmetro já estão no ponto. O alho-poró se conserva bem no vaso, então dá para colher aos poucos, do mais grosso para o mais fino."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_pegamento",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Regue pela manhã até escorrer pelos furos, mantendo o substrato úmido como esponja espremida. Sem raiz firme, um dia seco faz a muda secar e não voltar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o alho-poró",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 140,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 28 °C, confira todo dia; no inverno com tempo nublado, a cada 3 dias costuma bastar. Não deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar e completar o substrato",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca (ou 1 colher de chá de torta de mamona) por planta, sem encostar no talo, e regue em seguida. Se o substrato baixou, complete com a mistura reservada até perto da base das folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e talo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 140,
+      "instrucoes": "Abra o leque de folhas e procure riscos prateados e insetos minúsculos no miolo (tripes), pústulas alaranjadas (ferrugem) e manchas ovais arroxeadas. Aperte a base do talo: ela deve estar firme.",
+      "critica": false
+    },
+    {
+      "id": "colheita_alho_poro",
+      "titulo": "Colher alho-poró",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 120,
+      "dia_fim_ciclo": 140,
+      "instrucoes": "Regue na véspera, afrouxe o substrato ao redor com uma pá estreita e puxe os talos com 2 a 3 cm de diâmetro. Deixe os mais finos para a próxima semana. Corte as raízes e as pontas verde-escuras, que são fibrosas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira amontoa",
+      "mensagem": "O talo já está da grossura de um lápis. Cobrir a base agora deixa a parte branca mais longa e macia.",
+      "acao_requerida": "Chegar substrato ao redor de cada talo até 3 a 5 cm de altura, sem cobrir a forquilha onde as folhas se abrem"
+    },
+    {
+      "dia_disparo": 80,
+      "titulo": "Segunda amontoa",
+      "mensagem": "O talo está engrossando rápido e a parte branca pode crescer mais.",
+      "acao_requerida": "Completar o substrato até logo abaixo da forquilha das folhas; se a jardineira estiver cheia, enrolar um colarinho de papelão ao redor do talo"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Alho-poró pronto para colher",
+      "mensagem": "Os talos mais grossos já devem ter de 2 a 3 cm de diâmetro.",
+      "acao_requerida": "Medir os talos e começar a colheita pelos mais grossos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Tripes (Thrips tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Riscos e manchas prateadas nas folhas, que depois amarelam e secam das pontas; insetos minúsculos e alongados escondidos no miolo do leque",
+      "prevencao_tratamento": "Jato de água forte no miolo; se persistir, óleo de neem a 0,5% ou sabão potássico no fim da tarde a cada 5 dias. Tempo seco e quente favorece o ataque"
+    },
+    {
+      "nome": "Ferrugem (Puccinia allii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas em relevo nas folhas, que soltam pó cor de ferrugem ao passar o dedo",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter espaçamento para ventilar; retirar as folhas atacadas. Evitar excesso de adubo nitrogenado"
+    },
+    {
+      "nome": "Mancha-púrpura (Alternaria porri)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas ovais esbranquiçadas que ficam arroxeadas com halo amarelo; a folha dobra e seca a partir da mancha",
+      "prevencao_tratamento": "Não molhar as folhas ao fim do dia e remover as folhas manchadas; em ataque forte, calda bordalesa a 0,5% a cada 10 dias"
+    },
+    {
+      "nome": "Podridão da base (Fusarium, excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do talo mole, escurecida e com cheiro ruim; folhas amarelam e a planta solta com facilidade ao puxar",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, garantir furos livres e não deixar água no pratinho. Descartar a planta afetada e não reaproveitar o substrato"
+    },
+    {
+      "nome": "Pendoamento precoce",
+      "tipo": "DISTURBIO",
+      "sintomas": "Surge um talo floral duro e redondo no centro do leque; o talo comestível fica fibroso",
+      "prevencao_tratamento": "Acontece quando a planta passa por frio intenso e depois esquenta. Colha assim que o pendão aparecer, antes que o talo endureça"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Atenção ao pendão",
+      "mensagem": "Depois do frio do inverno, a volta do calor induz o alho-poró a florescer, e o talo endurece rápido quando isso acontece.",
+      "acao_requerida": "Olhar o centro do leque a cada rega e colher na hora qualquer planta que mostre um talo floral redondo"
+    }
+  ]
+}

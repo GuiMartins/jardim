@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Framboesa-silvestre",
+    "nome_cientifico": "Rubus rosifolius",
+    "descricao": "Arbusto nativo da Mata Atlântica, também chamado de morango-silvestre ou amora-do-mato, que dá frutinhas vermelhas, ocas e adocicadas na primavera e no verão. É rústica, aguenta meia-sombra e produz bem em vaso grande, mas solta brotos pela raiz e tem hastes com espinhos finos, que pedem contenção.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo de pelo menos 40 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; a planta se espalha por brotos da raiz, então a largura importa mais que a altura",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina, 10% areia grossa; levemente ácido (pH 5,5 a 6,5), rico em matéria orgânica e sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente o transplante e pode perder algumas folhas. Mantenha longe do sol da tarde. A fase termina quando surgem folhas novas, verde-claras, nas pontas ou na base das hastes."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e nascem hastes novas a partir da base e de brotos da raiz. As hastes crescem arqueadas até 1 m ou mais. Podem aparecer as primeiras flores brancas, de cinco pétalas, se a época for primavera."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Touceira de várias hastes. O ano típico: brotação forte em agosto e setembro, flores e frutos de outubro a janeiro, poda das hastes que já frutificaram no fim do verão e crescimento lento no inverno, quando pode perder parte das folhas. Cada haste vive cerca de dois anos: a do primeiro ano cresce, a do segundo frutifica e depois seca."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de framboesa",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. As raízes ainda estão só no torrão da muda, então o substrato não pode secar por inteiro. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a framboesa",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Na floração e na frutificação (outubro a janeiro), com calor, confira a cada 1 ou 2 dias: vaso seco nessa época derruba flores e murcha os frutos. No inverno, espace para a cada 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a framboesa",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca ou 2 colheres de sopa de bokashi ao redor das hastes, sem encostar nelas, e regue em seguida. De junho a julho, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "controle_brotos",
+      "titulo": "Tirar brotos em excesso",
+      "tipo": "PODA",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas, corte rente ao substrato os brotos novos que nascem da raiz, deixando no máximo 6 a 8 hastes fortes no vaso. Arranque também os que saíram pelos furos do fundo. Vaso lotado de hastes finas dá pouca fruta e abafa as folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure teias finas e pontinhos amarelados (ácaro), insetos agrupados nas pontas dos brotos (pulgão) e manchas escuras nas hastes. Na safra, veja se há frutos moles com furinhos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no inverno, tire a touceira do vaso, corte um terço das raízes externas e divida a touceira se estiver muito cheia. Replante em substrato novo; as divisões viram mudas novas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Cobrir o substrato",
+      "mensagem": "A framboesa-silvestre tem raízes rasas e gosta de solo fresco, como no chão da mata.",
+      "acao_requerida": "Cobrir o substrato com 3 cm de folhas secas, palha ou casca de pinus, deixando 3 cm livres ao redor das hastes"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Dar apoio às hastes",
+      "mensagem": "As hastes novas crescem arqueadas e, carregadas de fruta, deitam por cima da borda do vaso.",
+      "acao_requerida": "Cravar 3 ou 4 estacas de 1,2 m na borda do vaso e passar um barbante ao redor, prendendo as hastes por dentro dele"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes murcham mesmo com o substrato úmido, folhas amarelam de baixo para cima e a base das hastes escurece; raízes marrons e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, esvaziar o pratinho e manter os furos desobstruídos; corte as hastes afetadas e troque o substrato, aproveitando só a parte sadia da touceira"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que viram manchas bronzeadas; teias finas no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias quentes; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, três aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nas pontas dos brotos e nos botões florais; folhas novas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água ou calda de sabão neutro (1 colher de sopa por litro); em infestação forte, óleo de neem a 0,5%"
+    },
+    {
+      "nome": "Drosófila-da-asa-manchada (Drosophila suzukii)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos maduros amolecem e murcham com furinhos na casca; larvas pequenas e brancas dentro da fruta",
+      "prevencao_tratamento": "Colher a cada 2 dias, sem deixar fruta madura no pé nem caída no vaso; recolha e descarte em saco fechado os frutos atacados"
+    },
+    {
+      "nome": "Antracnose (Elsinoe veneta)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas arredondadas, cinza no centro e roxas na borda, nas hastes e nas folhas; hastes racham e secam",
+      "prevencao_tratamento": "Regar no substrato, não nas folhas, e manter a touceira arejada tirando o excesso de brotos; corte e descarte as hastes manchadas e, se espalhar, calda bordalesa no inverno"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com bordas secas e marrons e frutos esbranquiçados ou murchos do lado virado para o sol da tarde",
+      "prevencao_tratamento": "Deixar o vaso onde bate sol só de manhã ou usar tela de sombreamento de 30 a 50% no verão; manter a rega em dia nos dias quentes"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Brotação de primavera",
+      "mensagem": "A framboesa-silvestre acorda do inverno e lança as hastes e os botões que vão dar fruta.",
+      "acao_requerida": "Voltar à rega e à adubação normais e cortar rente ao substrato as hastes secas que ficaram do ano anterior"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12,
+        1
+      ],
+      "titulo": "Época de framboesas",
+      "mensagem": "Os frutos amadurecem em poucos dias e estragam rápido no pé.",
+      "acao_requerida": "Passar a cada 2 dias e colher os frutos vermelho-vivo que soltam com um puxão leve; os que resistem ainda não estão maduros"
+    },
+    {
+      "meses": [
+        2,
+        3
+      ],
+      "titulo": "Poda depois da safra",
+      "mensagem": "As hastes que já deram fruta não produzem de novo e só tiram força das novas.",
+      "acao_requerida": "Com luvas, cortar rente ao substrato as hastes que frutificaram (mais grossas, com casca escurecida e restos de cachos) e deixar as hastes verdes do ano"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: planta mais parada",
+      "mensagem": "No frio a framboesa-silvestre cresce pouco e pode perder parte das folhas; isso é normal. Aguenta geada leve, mas o vaso perde calor mais rápido que o chão.",
+      "acao_requerida": "Espaçar as regas, suspender o adubo e, em noite de geada, levar o vaso para perto de uma parede ou cobrir com tecido"
+    }
+  ]
+}

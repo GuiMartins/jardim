@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Cedro-do-líbano",
+    "nome_cientifico": "Cedrus libani",
+    "descricao": "Conífera majestosa das montanhas do Mediterrâneo oriental, de acículas verde-azuladas em tufos e galhos em camadas horizontais. Em vaso cresce devagar e fica compacta por muitos anos, e é muito usada como árvore de varanda ou pré-bonsai. No Brasil vai melhor no Sul e nas serras do Sudeste, porque sofre com calor úmido e com substrato encharcado.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro, cimento ou plástico grosso com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo e elevado do piso por pezinhos para a água escorrer livre",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% casca de pinus fina compostada, 20% areia grossa lavada, 10% perlita ou pedrisco; levemente ácido a neutro e muito drenante, sem terra argilosa pura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho e passa para o vaso definitivo. Nas primeiras semanas ela não cresce e algumas acículas internas podem amarelar e cair, o que é normal. A fase termina quando as pontas dos galhos voltam a ficar firmes e verde-azuladas, sem murchar nas horas quentes."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes colonizam o vaso novo. Na primavera surgem tufos de acículas novas, verde-claras e macias, nas pontas dos galhos e ao longo deles. A guia central cresce de 10 a 30 cm por ano e costuma pender na ponta, o que é típico da espécie quando jovem."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Árvore estabelecida em vaso. O ano típico: brotação forte de setembro a novembro, crescimento mais lento no auge do calor, segundo surto no início do outono e quase parada no inverno, quando a rega diminui. Em vaso raramente produz cones antes de 20 a 30 anos. A cada dois anos precisa de vaso maior ou poda de raízes com troca de substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o cedro recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do tronco; se estiver seco, regue devagar até escorrer pelos furos. O torrão original da muda seca mais rápido que o substrato novo em volta: molhe bem junto ao tronco. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cedro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 a 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e descarte a água do pratinho. Se ainda estiver úmido, espere o próximo lembrete. No verão, acima de 30 °C, confira a cada 2 dias. De junho a agosto costuma bastar uma rega a cada 5 a 7 dias. Conífera não mostra murcha: quando as acículas ficam marrons, a raiz já morreu.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar galhos e acículas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os tufos de acículas e olhe o interior da copa e a parte de baixo dos galhos: procure pulgões escuros agrupados, carapaças brancas ou marrons, teias finas e acículas com pontilhado amarelado. Bata um galho sobre uma folha branca: pontinhos que andam são ácaros.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o cedro de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno (agosto), antes da brotação. Tire a planta, desembarace as raízes que circulam o torrão e corte até 1/4 das mais grossas da borda. Replante num vaso 5 a 10 cm mais largo, ou no mesmo vaso com substrato novo, mantendo o colo na mesma altura de antes. Regue bem e deixe 2 semanas em meia sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Muda de conífera no saquinho de viveiro enrola raízes e seca rápido. O plantio de hoje define como ela vai se firmar.",
+      "acao_requerida": "Transplantar para o vaso com o colo do tronco na mesma altura em que estava, sem enterrar mais fundo, regar até escorrer e deixar 1 semana em meia sombra antes do sol pleno. Não adubar agora"
+    },
+    {
+      "dia_disparo": 20,
+      "titulo": "Tutorar a guia central",
+      "mensagem": "No cedro jovem a ponta da guia central pende naturalmente. Um tutor leve ajuda a formar um tronco reto e uma copa equilibrada.",
+      "acao_requerida": "Cravar uma vareta de bambu ao lado do tronco, sem atravessar as raízes grossas, e prender a guia com fita macia ou arame encapado em 2 ou 3 pontos, sem apertar. Afrouxar se marcar a casca"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano no vaso",
+      "mensagem": "Depois de um ano, as raízes já devem ocupar boa parte do vaso. Se estiverem saindo pelos furos, a planta vai secar rápido demais no próximo verão.",
+      "acao_requerida": "Inclinar o vaso e olhar os furos; se houver muitas raízes saindo, antecipar a troca de vaso para o próximo agosto e conferir se o tutor ainda é necessário"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Acículas amarelam e depois ficam marrom-acinzentadas a partir de galhos inteiros, mesmo com o substrato úmido; casca da base do tronco escura e mole, raízes marrons que se desfazem",
+      "prevencao_tratamento": "É a principal causa de morte do cedro em vaso. Substrato bem drenante, vaso sem pratinho com água parada e rega só com o substrato seco a 3 cm. Nos primeiros sinais, suspenda a rega, tire a planta do vaso, corte as raízes podres e replante em substrato novo; planta com a base do tronco necrosada raramente se recupera"
+    },
+    {
+      "nome": "Pulgão-do-cedro (Cinara cedri)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de pulgões grandes, cinza-escuros, nos ramos jovens; melada pegajosa, fumagina preta e queda de acículas, principalmente no fim do inverno e na primavera",
+      "prevencao_tratamento": "Jato de água forte nos galhos; se persistir, óleo de neem a 0,5% ou sabão potássico no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-vermelho-das-coníferas (Oligonychus ununguis)",
+      "tipo": "PRAGA",
+      "sintomas": "Acículas com pontilhado amarelo e aspecto bronzeado ou empoeirado; teias finas entre as acículas no interior da copa, pior em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água na copa nas manhãs secas e não deixar o vaso encostado em parede quente. Com infestação, óleo mineral ou de neem a 0,5% a cada 5 dias, molhando bem o interior da copa"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas carapaças brancas, cinza ou marrons presas aos ramos e à base das acículas; ramos enfraquecidos e melada",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em infestação maior, óleo mineral a 1% no fim da tarde, repetindo após 15 dias"
+    },
+    {
+      "nome": "Seca do torrão",
+      "tipo": "DISTURBIO",
+      "sintomas": "Acículas ficam marrons e secas de uma vez, começando pelas pontas ou por um lado da copa, dias ou semanas depois de o substrato ter secado por completo",
+      "prevencao_tratamento": "Conífera não murcha para avisar: siga o teste do dedo e nunca deixe o vaso secar até soltar das bordas. Se o torrão secou, mergulhe o vaso num balde com água por 30 minutos. Galhos com acículas totalmente marrons não rebrotam: corte-os rente ao tronco"
+    },
+    {
+      "nome": "Queimadura de calor e sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das acículas marrons e ressecadas do lado virado para o sol da tarde, sobretudo em muda recém-chegada ou em vaso sobre piso ou parede que esquenta",
+      "prevencao_tratamento": "Aclimatar a muda nova em meia sombra por 1 semana, afastar o vaso de superfícies que refletem calor e, no verão de regiões quentes, preferir o sol da manhã com sombra leve à tarde"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        12
+      ],
+      "titulo": "Adubar o cedro",
+      "mensagem": "A brotação da primavera e o crescimento do verão consomem os nutrientes do vaso. No outono e no inverno a planta não precisa de adubo.",
+      "acao_requerida": "Espalhar 1 colher de sopa de adubo de liberação lenta (NPK 14-14-14 ou específico para coníferas) por vaso de 40 L na superfície do substrato, longe do tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Cuidado com o calor úmido",
+      "mensagem": "O cedro-do-líbano sofre com o verão quente e chuvoso: o substrato encharcado nas chuvas de verão é o que mais apodrece raízes.",
+      "acao_requerida": "Confirmar que o vaso escoa rápido e não fica sobre pratinho com água; em períodos de chuva seguida, colocar o vaso sob beiral ou cobertura; nos dias acima de 32 °C, dar sombra leve à tarde"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Menos rega no inverno",
+      "mensagem": "No frio o cedro quase para de crescer e bebe bem menos. Ele aguenta geada, mas não raiz encharcada e fria.",
+      "acao_requerida": "Espaçar as regas para cada 5 a 7 dias, sempre conferindo com o dedo, regar pela manhã e manter o sol pleno"
+    }
+  ]
+}

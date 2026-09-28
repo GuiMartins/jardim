@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Papiro",
+    "nome_cientifico": "Cyperus papyrus",
+    "descricao": "Planta de brejo do Egito, de colmos triangulares com 1,5 a 3 m e um tufo de fios na ponta. Em vaso vive com os pés na água e dá um ar tropical à varanda ou à beira de espelhos d'água. O 'papiro-anão' das floriculturas (Cyperus prolifer ou C. haspan) segue os mesmos cuidados em vaso menor.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de 35 a 40 cm de diâmetro e 30 cm de profundidade, sem furo ou dentro de um cachepô sem furo, para manter 3 a 5 cm de água acima da base; boca larga e fundo largo para não tombar com o vento",
+    "volume_minimo_litros": 25,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "70% terra de jardim argilosa, 30% húmus de minhoca; sem perlita, casca de pinus ou fibra de coco, que boiam e fermentam na água. Cubra a superfície com 2 cm de areia grossa ou cascalho para a terra não sujar a água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda sente a mudança e alguns colmos antigos podem amarelar ou dobrar. É normal enquanto as raízes se firmam no substrato encharcado. A fase termina quando aparece o primeiro broto verde novo saindo da base."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "Os rizomas se espalham e brotam colmos novos a cada poucas semanas, cada um mais alto que o anterior. A planta passa a beber bem mais água; no calor, o nível do cachepô cai visivelmente de um dia para o outro. A touceira está estabelecida quando os colmos novos atingem a altura dos antigos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Da primavera ao outono a touceira cresce sem parar, lança colmos novos e perde os velhos, que secam e precisam ser cortados. No inverno o crescimento quase para e as pontas podem queimar com o frio. Depois de uns dois anos os rizomas ocupam o vaso inteiro e a touceira precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_nivel_agua",
+      "titulo": "Completar a água do papiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Complete a água até ficar 3 a 5 cm acima da superfície do substrato (ou até a borda do cachepô). O substrato nunca pode secar. Acima de 30 °C ou com vento forte, confira todo dia; no inverno, a cada 3 ou 4 dias basta.",
+      "critica": true
+    },
+    {
+      "id": "troca_agua_parada",
+      "titulo": "Renovar a água parada (dengue)",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Despeje água da mangueira ou de um balde até transbordar bem do cachepô, arrastando as larvas de mosquito, e esvazie o excesso inclinando o cachepô. Procure larvas se mexendo na água; o ciclo do Aedes aegypti dura cerca de 7 dias, então não pule semanas. Um peixinho barrigudinho ou lebiste no cachepô grande também come as larvas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_papiro",
+      "titulo": "Adubar o papiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enterre 1 colher de sopa de NPK 10-10-10 (ou 3 colheres de sopa de húmus) na terra, junto à borda do vaso, longe dos rizomas, e complete a água. De maio a agosto, com a planta parada, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_colmos",
+      "titulo": "Cortar os colmos secos",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente à base, com tesoura limpa, todos os colmos amarelos, marrons ou quebrados. Retire da água as folhas e fios caídos, que apodrecem e deixam a água com cheiro ruim.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a touceira",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os fios da ponta e a base dos colmos: procure colônias de pulgão, bolinhas brancas de cochonilha, teias finas de ácaro e pústulas cor de ferrugem. Cheire a água: odor de ovo podre indica matéria orgânica apodrecendo.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a touceira do vaso, corte o bloco de rizomas em 2 a 4 pedaços com faca ou serrote, cada um com pelo menos 5 colmos saudáveis, e replante em substrato novo. Os rizomas velhos e ocos do centro vão para o lixo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Firme o vaso contra o vento",
+      "mensagem": "O papiro é alto e os tufos pegam vento como uma vela. Vaso leve tomba e quebra os colmos.",
+      "acao_requerida": "Colocar o vaso num canto protegido ou encostado na parede, ou pôr pedras no fundo do cachepô para dar peso"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Limpe os colmos da mudança",
+      "mensagem": "Os colmos que amarelaram ou dobraram durante a adaptação não se recuperam e sombreiam os brotos novos.",
+      "acao_requerida": "Cortar rente à base os colmos antigos amarelos ou dobrados, preservando todos os brotos verdes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pontas marrons por seca",
+      "tipo": "DISTURBIO",
+      "sintomas": "Fios do tufo secam e ficam marrons a partir da ponta; colmos dobram e não voltam a ficar em pé",
+      "prevencao_tratamento": "Sinal de que o substrato secou ao menos uma vez ou de ar muito seco dentro de casa. Nunca deixe o nível da água baixar da superfície; corte os colmos dobrados rente à base, porque eles não se endireitam"
+    },
+    {
+      "nome": "Queima de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Colmos e tufos escurecem, ficam moles e depois secam após noites abaixo de 5 °C ou geada",
+      "prevencao_tratamento": "Em noites frias, leve o vaso para perto da parede ou para dentro, e cubra com TNT se houver geada. Os rizomas costumam rebrotar na primavera; corte a parte queimada em setembro"
+    },
+    {
+      "nome": "Água apodrecida",
+      "tipo": "DISTURBIO",
+      "sintomas": "Água escura com cheiro de ovo podre, raízes pretas e moles, colmos novos fracos",
+      "prevencao_tratamento": "Causada por folhas caídas e substrato muito orgânico fermentando. Renove a água toda semana, retire restos vegetais e evite casca de pinus, fibra de coco e excesso de húmus no substrato"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos verdes ou pretos nos fios do tufo e nos brotos; fios pegajosos e deformados",
+      "prevencao_tratamento": "Jato forte de água nos tufos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, sem deixar escorrer muito para a água"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Colmos e fios com pontinhos claros e aspecto desbotado; teias finas entre os fios, mais comum dentro de casa",
+      "prevencao_tratamento": "Levar a planta para fora, no sol e no ar úmido; borrifar água nos tufos. Em infestação forte, cortar os colmos atacados rente à base"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodoadas ou escamas marrons na base dos colmos e entre os fios",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70% e cortar os colmos muito atacados; óleo de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Ferrugem (Puccinia spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas alaranjadas ou marrons nos colmos que soltam um pó cor de ferrugem ao toque",
+      "prevencao_tratamento": "Cortar e jogar no lixo os colmos atacados, sem compostar; não molhar os tufos à noite e deixar a touceira arejada com a limpeza mensal"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja o papiro do frio",
+      "mensagem": "O papiro é tropical: abaixo de 5 °C os colmos queimam e com geada a parte aérea morre.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, levar o vaso para junto da parede ou para dentro e cobrir com TNT se houver geada; manter a água no nível mesmo no frio"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Limpeza de primavera",
+      "mensagem": "Com o calor voltando, a touceira começa a brotar forte. Tirar os colmos castigados pelo inverno abre espaço e luz para os novos.",
+      "acao_requerida": "Cortar rente à base todos os colmos queimados ou secos do inverno e retomar a adubação mensal"
+    }
+  ]
+}

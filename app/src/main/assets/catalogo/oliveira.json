@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Oliveira",
+    "nome_cientifico": "Olea europaea",
+    "descricao": "Árvore mediterrânea de folhas prateadas, longeva e resistente à seca, que em vaso vira uma arvoreta ornamental de 1,5 a 2 m. Para florir e dar azeitonas, ela precisa de umas 300 a 600 horas de frio abaixo de 10 °C no inverno, o que em vaso só costuma acontecer nas serras do Sul e do Sudeste. Nas regiões mais quentes, cultive a oliveira pela folhagem.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, com pelo menos 45 cm de diâmetro e 40 cm de profundidade e vários furos no fundo. O barro deixa a raiz respirar e seca mais rápido que o plástico",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra de jardim, 30% areia grossa lavada, 20% composto orgânico e 10% perlita ou pedrisco. Misture 2 colheres de sopa de calcário dolomítico para cada 10 L, porque a oliveira prefere pH entre 6,5 e 8",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso novo e ao lugar. É normal cair algumas folhas velhas. Quando a ponta dos ramos soltar brotos novos, verde-claros, a raiz já pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e a copa começa a engrossar, com brotações novas na primavera e no fim do verão. A rega passa a seguir o toque no substrato. Se o tronco estiver fino, mantenha o tutor amarrado com fita larga e folgada."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "O ano da oliveira adulta: pausa no inverno, que é também a época do frio que induz a floração; poda leve no fim de agosto; brotação e cachos de florzinhas brancas entre setembro e outubro, onde o inverno foi frio; azeitonas amadurecendo de fevereiro a abril. Azeitona crua é amarga e só se come depois de curtida em salmoura. A cada dois anos, troque o substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a oliveira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até a água escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Nesta fase, o torrão da muda ainda não alcançou o substrato novo e resseca antes do resto do vaso.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a oliveira",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e só regue se estiver seco nessa profundidade. Aí, regue até escorrer pelos furos e nunca deixe água parada no pratinho. No verão quente, confira a cada 3 ou 4 dias; no inverno, a rega costuma espaçar para 10 a 14 dias. A oliveira aguenta seca, mas raiz encharcada mata.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a oliveira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 xícara de húmus de minhoca) na borda do vaso, longe do tronco, e regue em seguida. De maio a julho, com a planta parada, pule esta adubação. Uma vez por ano, na primavera, acrescente 1 g de ácido bórico diluído em 5 L de água: falta de boro faz a flor cair sem virar fruto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure manchas redondas escuras com halo amarelo. Nos ramos, procure carocinhos marrons ou pretos grudados na casca, fuligem preta nas folhas e brotos novos roídos ou presos por teia.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, corte até 3 cm das raízes que circulam o torrão e remova um terço do substrato velho. Replante no mesmo vaso com substrato novo, ou num vaso 10 cm mais largo se as raízes estiverem enoveladas. Evite fazer isso de junho a agosto e regue bem no fim.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Muda de oliveira costuma vir em saco plástico apertado. No vaso grande, a raiz se espalha e a planta firma.",
+      "acao_requerida": "Plantar o torrão no mesmo nível em que estava, sem enterrar o colo; fincar um tutor ao lado e amarrar o tronco com fita larga e folgada; regar até escorrer"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Tirar os brotos da base",
+      "mensagem": "Brotos que nascem no pé do tronco ou abaixo da copa (ladrões) roubam força da planta e deixam a árvore sem forma.",
+      "acao_requerida": "Cortar rente ao tronco, com tesoura limpa, todos os brotos que saem abaixo da altura onde a copa deve começar, e repetir sempre que aparecerem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, ramos secam da ponta para dentro e as raízes ficam marrons, moles e com cheiro ruim",
+      "prevencao_tratamento": "É a principal causa de morte da oliveira em vaso. Regue só com o substrato seco a 5 cm, use substrato arenoso e nunca deixe água no pratinho. Se aparecer, tire a planta do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Olho-de-pavão (Venturia oleaginea)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas redondas escuras na face de cima da folha, rodeadas de um halo amarelado; as folhas afetadas caem em massa, sobretudo depois de semanas úmidas e amenas",
+      "prevencao_tratamento": "Mantenha a copa arejada com a poda e não molhe as folhas ao regar. Retire e descarte as folhas manchadas. Nos meses chuvosos, pulverize calda bordalesa ou oxicloreto de cobre, seguindo o rótulo"
+    },
+    {
+      "nome": "Cochonilha-negra (Saissetia oleae)",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou pretos, do tamanho de um grão de pimenta, grudados nos ramos e no verso das folhas; aparece fumagina, um pó preto sobre as folhas",
+      "prevencao_tratamento": "Remova as cochonilhas com escova macia ou cotonete com álcool. Se houver muitas, pulverize óleo mineral ou óleo de neem a 1% no fim da tarde e repita após 15 dias"
+    },
+    {
+      "nome": "Lagarta-da-oliveira (Palpita forficifera)",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos e folhas novas roídos ou unidos por fios de seda; lagartinhas verdes escondidas nas pontas dos ramos, mais comuns na primavera e no verão",
+      "prevencao_tratamento": "Cate as lagartas e corte as pontas atacadas. Se o ataque for grande, pulverize Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Queda de folhas por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem de dentro da copa para fora e os ramos novos ficam compridos, finos e com folhas espaçadas",
+      "prevencao_tratamento": "Leve o vaso para o lugar mais ensolarado da casa, com pelo menos 6 horas de sol direto. A oliveira não se adapta a ambientes internos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Frio para florir",
+      "mensagem": "O frio do inverno é o que faz a oliveira formar flores na primavera. A planta está parada e bebe pouco.",
+      "acao_requerida": "Deixar o vaso ao ar livre no frio, sem levar para dentro de casa, só protegendo de geada forte abaixo de -5 °C; espaçar as regas para quando o substrato estiver seco a 5 cm; não adubar"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno, antes de a brotação começar, a poda abre a copa para o sol e o ar entrarem, e isso previne o olho-de-pavão.",
+      "acao_requerida": "Cortar os ramos secos, os que cruzam por dentro da copa e os ladrões da base, e encurtar em até um terço os ramos longos demais, com corte logo acima de um par de folhas"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Floração da oliveira",
+      "mensagem": "Se o inverno foi frio, surgem cachos de florzinhas brancas e perfumadas. Rega irregular ou calor seco nesta época fazem as flores caírem sem virar azeitona.",
+      "acao_requerida": "Manter a rega regular, sem deixar o substrato secar por completo; não molhar as flores; não podar até o fim da floração"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão quente e chuvoso",
+      "mensagem": "O vaso seca rápido nos dias quentes, mas as chuvas de verão podem encharcar a raiz e espalhar o olho-de-pavão.",
+      "acao_requerida": "Conferir a umidade do substrato a cada 3 ou 4 dias; em semanas de chuva contínua, conferir se a água escorre pelos furos e tirar o pratinho"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "planta": {
+    "nome_comum": "Folha-da-fortuna",
+    "nome_cientifico": "Kalanchoe pinnata",
+    "descricao": "Suculenta de folhas carnudas e recortadas que formam mudinhas prontas nas bordas: uma folha caída vira planta nova sozinha, por isso é das mais fáceis de multiplicar. Floresce com sinos pendentes rosados no fim do inverno. É tóxica para cães, gatos e aves, e em alguns lugares vira invasora, então não descarte folhas com mudas em terrenos ou matas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 15 cm de diâmetro e 15 cm de profundidade, com furos no fundo; o barro ajuda o substrato a secar entre regas",
+    "volume_minimo_litros": 2,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 40% areia grossa lavada ou perlita, 20% húmus de minhoca; ou substrato pronto para cactos e suculentas",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Plante a mudinha tirada da borda da folha apenas apoiada sobre o substrato, com as raízes encostadas nele, sem enterrar as folhinhas. Nos primeiros dias ela pode ficar um pouco mole. A fase termina quando, ao puxar de leve, a muda resiste: as raízes já seguram no substrato."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "A muda abre pares de folhas novas a cada poucas semanas e o caule começa a subir. Folhas firmes e verde-claras mostram luz e rega certas; caule fino e comprido com folhas espaçadas indica falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Planta de 30 a 80 cm, com caule ereto e folhas grossas que soltam mudinhas nas bordas quando caem ou envelhecem. Cresce mais na primavera e no verão, fica quase parada no inverno e floresce no fim do inverno. Depois de florescer, o caule florido costuma se esgotar e secar; as mudas das folhas renovam o vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 1 cm no substrato ao redor da muda; se estiver seco, regue devagar com pouca água só até umedecer essa camada. A muda ainda não tem reserva: deixar o topo secar por muitos dias seca as raízes novas. Nunca deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a folha-da-fortuna",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; só regue se estiver totalmente seco, até escorrer pelos furos, e esvazie o pratinho depois de 15 minutos. Se ainda estiver úmido, espere a próxima conferida. No inverno a rega costuma cair para uma vez a cada 15 dias; acima de 30 °C em vaso pequeno pode ser a cada 4 ou 5 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a folha-da-fortuna",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de húmus de minhoca por vaso de 2 L sobre o substrato, sem encostar no caule, e regue em seguida; ou use adubo líquido para suculentas na metade da dose do rótulo. Pule a adubação de junho a agosto, quando a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas, as axilas onde a folha encontra o caule e a base do caule. Procure bolinhas brancas de algodão, insetos agrupados nos brotos e manchas moles ou escuras. Recolha as folhas caídas com mudas que não quer manter.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato seco, tire a planta do vaso, solte a terra velha das raízes e corte as que estiverem escuras ou moles. Replante em vaso 1 número maior com substrato novo e espere 5 dias para regar, para os cortes das raízes cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "A muda enraizou",
+      "mensagem": "Com cerca de 3 semanas, a muda já deve estar presa ao substrato e pode passar para a rega espaçada de suculenta.",
+      "acao_requerida": "Puxar a muda de leve para confirmar que resiste e, se resistir, deixar o substrato secar por completo antes da próxima rega"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Desponte para ramificar",
+      "mensagem": "Com um caule só, a folha-da-fortuna cresce alta e tomba. Cortar a ponta agora faz brotar ramos laterais e deixa a planta mais cheia.",
+      "acao_requerida": "Cortar com tesoura limpa os 2 a 3 cm da ponta do caule, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule escura e mole, folhas murchas e translúcidas mesmo com o substrato úmido, cheiro de terra azeda",
+      "prevencao_tratamento": "Regar só com o substrato seco e nunca deixar água no pratinho. Se aparecer, tire a planta, corte as partes moles até o tecido firme, deixe secar 2 dias à sombra e replante em substrato novo e seco; se o caule estiver perdido, plante as mudinhas das folhas sadias"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e no caule; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo de neem a 0,5% com algumas gotas de detergente no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e nas hastes florais, que ficam deformados",
+      "prevencao_tratamento": "Jato de água nos brotos; se voltar, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule fino e alongado, folhas pequenas e espaçadas, planta tombando para o lado da janela",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 3 horas de sol direto, acostumando aos poucos; o trecho estiolado não volta, então corte a ponta e replante-a como estaca"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas nas folhas mais expostas, logo depois de mudar a planta para o sol",
+      "prevencao_tratamento": "Ao sair da sombra para o sol pleno, comece com sol da manhã por 1 a 2 semanas; as folhas queimadas não se recuperam, mas a planta brota folhas novas adaptadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "No frio a folha-da-fortuna quase para de crescer e o substrato demora a secar: é a época em que mais apodrece. Geada queima as folhas e pode matar a planta.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco até o fundo e, em noites abaixo de 5 °C, levar o vaso para dentro ou para baixo de uma cobertura"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Limpar depois da floração",
+      "mensagem": "Passada a floração do fim do inverno, as hastes florais secam e o caule que floresceu costuma enfraquecer.",
+      "acao_requerida": "Cortar as hastes florais secas rente ao caule e plantar algumas mudinhas das folhas para renovar o vaso"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuva de verão: proteger do encharcamento",
+      "mensagem": "Temporadas de chuva seguidas mantêm o substrato molhado por dias e favorecem a podridão da raiz.",
+      "acao_requerida": "Tirar o vaso da chuva direta, conferir se os furos estão desentupidos e não regar enquanto o substrato estiver úmido"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Tuia",
+    "nome_cientifico": "Platycladus orientalis (sin. Thuja orientalis)",
+    "descricao": "Conífera de crescimento lento e ramos em leques verticais, muito usada como tuia-de-vaso em entradas, varandas e decoração de Natal. É rústica e tolera calor e vento, mas em vaso seca rápido, e o ramo que seca não volta a ficar verde.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com furos no fundo; peso na base ajuda contra o tombamento pelo vento",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% substrato comercial para plantas, 15% areia grossa lavada, 10% húmus de minhoca; solto e sem argila compactada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saco ou do vaso de viveiro e as raízes começam a ocupar o substrato novo. É normal perder o brilho e amarelar algumas pontas por dentro. Ela passou da fase quando surgem pontas novas verde-claras nos ramos externos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento e constante, de 10 a 20 cm por ano, com brotação mais forte na primavera e no verão. As raízes se firmam e a planta aguenta melhor um dia de calor sem rega. Já se forma com podas leves nas pontas, nunca no lenho sem folhas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "A tuia cresce da primavera ao outono e quase para no inverno. No fim do verão forma pequenos cones azulados que secam e ficam marrons, o que é normal. Também é normal a parte interna, sombreada, secar e cair em pequena quantidade no outono. O que preocupa é ramo externo marrom, sinal de sede, raiz podre ou ácaro. A cada dois anos o substrato se esgota e o vaso precisa ser renovado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a tuia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do tronco; se estiver seco, regue devagar até escorrer pelos furos. O torrão do viveiro seca antes do substrato em volta, então molhe bem junto ao tronco. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a tuia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 a 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão e com vento, confira a cada 2 dias. No inverno, só regue quando os 5 cm de cima estiverem secos, o que costuma levar 5 a 7 dias. Deixar o torrão secar por completo queima os ramos sem volta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a tuia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 3 colheres de húmus de minhoca) por vaso de 30 L, longe do tronco, e regue em seguida. Entre junho e agosto a planta está quase parada: pule a adubação desses meses.",
+      "critica": false
+    },
+    {
+      "id": "poda_formacao",
+      "titulo": "Aparar as pontas",
+      "tipo": "PODA",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte só as pontas verdes que saíram do formato, tirando no máximo 2 a 3 cm. Nunca corte até a parte marrom sem folhas: a tuia não rebrota do lenho velho. No inverno, só tire ramos secos.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos da tuia",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos e olhe o miolo da planta: procure pontinhos amarelados ou teias finas (ácaro), casulos pendurados feitos de pedacinhos de folha (bicho-do-cesto) e escamas brancas ou marrons presas nos ramos (cochonilha). Bata um ramo sobre um papel branco: pontinhos que andam são ácaros.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso da tuia",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro ou outubro, tire a planta do vaso, raspe 3 a 5 cm do torrão pelas laterais e pelo fundo, desenrole as raízes que dão voltas e replante em vaso 5 a 10 cm maior ou no mesmo vaso com substrato novo, na mesma altura de antes. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da tuia",
+      "mensagem": "Tuia enterrada fundo demais apodrece no colo; torrão enrolado não se espalha no vaso novo.",
+      "acao_requerida": "Soltar as raízes que dão voltas no torrão, plantar com o colo no mesmo nível em que estava no viveiro e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se já há pontas verde-claras nos ramos, a tuia pegou. Pontas externas marrons e secas indicam falta de água ou raiz encharcada.",
+      "acao_requerida": "Conferir se há brotação nova e cheirar o substrato: cheiro de podre pede regas mais espaçadas e pratinho vazio"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Ramos perdem o brilho, ficam acinzentados e depois marrons de uma vez, mesmo com o substrato úmido; casca da base do tronco escura e mole, raízes marrons que se desfazem",
+      "prevencao_tratamento": "Vaso com furos livres, pratinho sempre vazio e rega só com o substrato seco a 3 cm. Se a planta começou a secar com o substrato molhado, corte a rega, tire a planta do vaso, elimine raízes podres e replante em substrato novo; ramos já marrons não voltam"
+    },
+    {
+      "nome": "Ácaro (Oligonychus, Tetranychus)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhagem desbotada, amarelo-bronzeada, com teias finas no miolo; pontinhos que andam num papel branco ao bater o ramo. Pior no tempo quente e seco",
+      "prevencao_tratamento": "Jatos fortes de água no miolo da planta uma vez por semana no tempo seco; se persistir, óleo de neem a 0,5% ou acaricida à base de enxofre no fim da tarde, repetindo a cada 7 dias por três vezes"
+    },
+    {
+      "nome": "Bicho-do-cesto (Oiketicus kirbyi)",
+      "tipo": "PRAGA",
+      "sintomas": "Casulos de 2 a 6 cm pendurados nos ramos, cobertos de pedacinhos de folha seca; ramos roídos e desfolhados",
+      "prevencao_tratamento": "Catar e destruir os casulos à mão assim que aparecem; em infestação grande, Bacillus thuringiensis pulverizado nos ramos enquanto as lagartas ainda são pequenas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, cinza ou marrons presas aos ramos; substância pegajosa e fumagina preta por cima",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; em ataque forte, óleo mineral ou de neem a 0,5% a cada 10 dias"
+    },
+    {
+      "nome": "Queima por seca do torrão",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas externas e ramos inteiros ficam marrons e quebradiços poucos dias depois de um calor forte; substrato duro e descolado da parede do vaso",
+      "prevencao_tratamento": "Não deixar o torrão secar por completo. Torrão seco demais repele água: mergulhe o vaso num balde por 30 minutos. Corte os ramos mortos até a parte verde; o lenho sem folhas não rebrota"
+    },
+    {
+      "nome": "Secamento interno natural",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhagem do miolo, sem luz, fica marrom e cai no outono, enquanto os ramos externos seguem verdes",
+      "prevencao_tratamento": "É normal e não precisa de tratamento. Sacuda a planta ou tire as folhas secas com a mão para ventilar o miolo e não abrigar ácaros"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e nada de adubo",
+      "mensagem": "No frio a tuia quase para de crescer e o substrato demora a secar, então a rega do verão encharca a raiz.",
+      "acao_requerida": "Regar só quando os 5 cm de cima do substrato estiverem secos e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Começo da brotação",
+      "mensagem": "Com o calor voltando, a tuia retoma o crescimento e é a melhor época para podar a forma e renovar o substrato.",
+      "acao_requerida": "Tirar os ramos secos do inverno, aparar as pontas que saíram do formato e retomar a adubação"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com a sede",
+      "mensagem": "Vaso ao sol, com calor e vento, pode secar em um dia, e ramo de tuia que seca não volta a ficar verde.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, regar de manhã cedo e dar jatos de água no miolo contra o ácaro"
+    }
+  ]
+}

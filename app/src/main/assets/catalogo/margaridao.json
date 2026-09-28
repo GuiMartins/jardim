@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Margaridão",
+    "nome_cientifico": "Tithonia diversifolia",
+    "descricao": "Arbusto perene da família do girassol, de crescimento muito rápido, que se cobre de flores amarelas grandes do outono ao inverno e atrai abelhas e borboletas. Enraíza fácil por estaca, e as folhas podadas servem de adubo verde para as outras plantas. No chão passa de 3 m; em vaso grande, com poda anual, fica entre 1,2 e 1,8 m.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (plástico grosso, cimento ou barro) com pelo menos 45 cm de diâmetro e 40 cm de profundidade e furos no fundo; a planta fica alta e o vaso leve tomba com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; acrescente 1 xícara de farinha de ossos por vaso de 40 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Estaca",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante uma estaca de 25 a 30 cm, tirada de ramo semilenhoso, com 3 ou 4 nós, enterrando 2 nós (uns 10 cm) e tirando as folhas da parte enterrada; deixe só 2 ou 3 folhas no topo, cortadas pela metade. Mantenha em meia-sombra nas duas primeiras semanas. As folhas de cima podem murchar nos primeiros dias; brotos novos nas gemas, entre o 10º e o 20º dia, mostram que as raízes pegaram."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "Com as raízes firmes, leve o vaso para o sol pleno. A planta cresce depressa, até 30 cm por mês no calor, e começa a ramificar depois do desponte. Folhas grandes murchando na tarde quente e voltando ao anoitecer são normais; murchas de manhã indicam falta de água."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão cresce e engrossa os ramos; do fim do verão ao outono forma os botões, e a floração vai de abril a julho no Centro-Sul, com flores amarelas de 8 a 12 cm. Depois da floração, em agosto, leva uma poda forte e rebrota com a volta do calor. Com geada, a parte aérea queima, mas a base costuma rebrotar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato perto da estaca; se estiver seco, regue devagar até escorrer pelos furos. O substrato deve ficar úmido, nunca encharcado. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o margaridão",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 L num vaso de 40 L). No verão quente, o vaso adulto pode pedir água a cada 1 ou 2 dias; no inverno, depois da poda, espace para a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o margaridão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto sobre o substrato, sem encostar no caule, e regue em seguida. De março a julho, troque por 2 colheres de sopa de farinha de ossos, que favorece as flores. Pule a adubação de junho e julho se a planta tiver sido podada ou queimada pelo frio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e procure pulgões nos brotos, nuvem de mosquinhas brancas ao sacudir, lagartas pretas e alaranjadas agrupadas no verso ou pó branco nas folhas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Logo depois da poda de agosto, tire a planta do vaso, corte cerca de 1/4 das raízes da borda do torrão e replante no mesmo vaso com substrato novo, ou passe para um vaso 10 cm maior. Regue bem e deixe 1 semana em meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "A estaca pegou?",
+      "mensagem": "Com 3 semanas, a estaca enraizada já mostra brotos novos e resiste a um puxão leve.",
+      "acao_requerida": "Puxar a estaca de leve: se resistir e tiver brotos, passar o vaso para o sol aos poucos (2 horas a mais por dia); se sair solta ou o caule estiver preto e mole, plantar estaca nova"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora do desponte",
+      "mensagem": "Sem desponte, o margaridão sobe numa haste só, fina e fácil de tombar no vaso.",
+      "acao_requerida": "Cortar a ponta do ramo principal, logo acima do 4º ou 5º par de folhas a partir da base, para a planta ramificar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas de baixo amarelando e caindo, base do caule escura e mole, cheiro ruim no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e conferir se os furos não estão entupidos; em planta afetada, cortar as raízes escuras e replantar em substrato novo e seco, ou recomeçar por estaca de um ramo sadio"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos ou verdes nos brotos e botões; brotos retorcidos e melados, com formigas subindo",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, até 3 aplicações"
+    },
+    {
+      "nome": "Lagarta-das-compostas (Chlosyne lacinia)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas pretas com espinhos, às vezes com faixa alaranjada, agrupadas no verso das folhas; folhas raspadas até ficarem só as nervuras",
+      "prevencao_tratamento": "Retirar as folhas com os grupos de ovos ou de lagartas pequenas; em ataque grande, Bacillus thuringiensis na dose do rótulo, no fim da tarde"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; verso das folhas com pontinhos e fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco nas folhas, que depois amarelam e secam; comum no outono, com dias quentes e noites frescas",
+      "prevencao_tratamento": "Deixar o vaso em lugar ventilado e regar o substrato, não as folhas; retirar as folhas atacadas e pulverizar leite diluído (1 parte para 9 de água) ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Tombamento dos ramos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e finos deitam ou quebram com vento e chuva, principalmente com pouco sol ou excesso de nitrogênio",
+      "prevencao_tratamento": "Garantir pelo menos 6 horas de sol, fazer o desponte de verão e usar vaso pesado; em ramos já deitados, cortar acima de uma bifurcação"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        1
+      ],
+      "titulo": "Desponte de verão",
+      "mensagem": "Um corte leve agora deixa a planta mais cheia e com mais pontas para dar flor no outono. Depois de março, cortar as pontas tira os botões.",
+      "acao_requerida": "Cortar 15 a 20 cm da ponta dos ramos mais altos, logo acima de um par de folhas"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Floração chegando",
+      "mensagem": "Os botões estão se formando e a floração vai até julho. Adubo rico em nitrogênio agora faz folha em vez de flor.",
+      "acao_requerida": "Usar farinha de ossos em vez de húmus nas próximas adubações e manter a rega regular"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Cuidado com geada",
+      "mensagem": "O margaridão não tolera geada: folhas e ramos queimam numa noite só.",
+      "acao_requerida": "Em noites com previsão abaixo de 3 °C, encostar o vaso numa parede coberta ou cobrir a planta com TNT; se queimar, não cortar até agosto"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual",
+      "mensagem": "A floração terminou e as flores secas deixam a planta feia e alta. A poda forte agora faz ela rebrotar densa na primavera.",
+      "acao_requerida": "Cortar todos os ramos a 40 ou 50 cm do substrato, logo acima de um nó, e usar as folhas cortadas como cobertura no próprio vaso ou nos outros"
+    }
+  ]
+}

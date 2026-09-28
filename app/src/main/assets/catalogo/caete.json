@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Caeté",
+    "nome_cientifico": "Heliconia farinosa",
+    "descricao": "Helicônia nativa da Mata Atlântica, com touceira de folhas parecidas com as da bananeira e inflorescências eretas de brácteas vermelhas que atraem beija-flores. Cresce por rizomas e forma uma touceira de 1 a 2 m em vaso grande. Cada haste floresce uma vez só e depois seca, enquanto a touceira continua brotando.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de diâmetro e 40 cm de profundidade e vários furos no fundo. Os rizomas se espalham para os lados, então a largura importa mais que a altura",
+    "volume_minimo_litros": 50,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina ou fibra de coco, 10% areia grossa. Rico em matéria orgânica, que segura umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante. Folhas velhas podem amarelar ou rasgar, e isso é normal. Mantenha o substrato úmido, a planta longe do sol forte do meio-dia e sem adubo. A fase termina quando surge um broto novo enrolado saindo do centro ou da base."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 240,
+      "descricao": "Os rizomas colonizam o vaso e surgem novas hastes ao redor da muda. Cada haste nova é mais alta que a anterior. A planta está estabelecida quando tem 3 ou mais hastes firmes e folhas de 60 cm ou mais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 241,
+      "dia_fim": null,
+      "descricao": "A touceira floresce da primavera ao fim do verão (setembro a março): cada haste madura solta uma inflorescência vermelha ereta que dura semanas. Depois ela seca e deve ser cortada rente ao substrato para abrir espaço aos brotos. No inverno o crescimento fica lento e a planta pede menos água e nenhum adubo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o caeté recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. A raiz recém-mexida ainda não busca água no fundo: substrato seco agora faz as folhas enrolarem e queimarem. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o caeté",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato. Se estiver seco, regue até escorrer pelos furos (cerca de 5 L num vaso de 50 L). No verão, acima de 30 °C, confira a cada 2 dias. No inverno, espace para cada 5 a 7 dias. Folhas enroladas ao meio-dia são sinal de sede.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o caeté",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto sobre o substrato, longe da base das hastes, mais 1 colher de sopa de NPK 10-10-10. Regue em seguida. De maio a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_hastes",
+      "titulo": "Cortar hastes e folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 241,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao substrato, com tesoura limpa, as hastes cuja inflorescência já secou e as folhas mais de metade secas. A haste que já floresceu não floresce de novo. Deixe as hastes verdes, mesmo sem flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brácteas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra as folhas novas ainda enroladas e olhe dentro das brácteas e no verso das folhas. Procure cochonilhas brancas ou marrons, teias finas, lagartas e manchas marrons com borda amarela.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Em 2 anos os rizomas tomam o vaso e o substrato se esgota. Na primavera, tire a touceira, separe com faca limpa pedaços de rizoma com 2 ou 3 hastes cada e replante um deles no mesmo vaso com substrato novo. Corte as folhas pela metade para reduzir a perda de água.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Firme a muda no vaso",
+      "mensagem": "As hastes do caeté são altas e as raízes ainda não seguram a planta. Com vento, ela balança e rompe as raízes novas.",
+      "acao_requerida": "Apertar bem o substrato ao redor da base e, se a haste balançar, amarrá-la frouxa a uma estaca de bambu"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se já apareceu um broto novo, a raiz pegou. A partir de agora a planta pode receber adubo e um pouco mais de sol.",
+      "acao_requerida": "Levar o vaso para um lugar com sol da manhã (3 a 5 horas), longe do sol forte do meio-dia"
+    },
+    {
+      "dia_disparo": 241,
+      "titulo": "Touceira pronta para florescer",
+      "mensagem": "Com 3 ou mais hastes grandes, o caeté já pode florescer na próxima primavera ou verão. Pouco sol é a causa mais comum de helicônia que só dá folha.",
+      "acao_requerida": "Conferir se o vaso recebe pelo menos 3 horas de sol direto; se não, mudá-lo para um lugar mais claro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes amarelam da base para cima, ficam moles e tombam; rizoma escuro e com cheiro ruim",
+      "prevencao_tratamento": "Não deixar água no pratinho nem regar substrato ainda úmido, principalmente no inverno. Cortar as hastes afetadas, raspar a parte podre do rizoma até o tecido firme, deixar secar e replantar em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodonosos ou escamas marrons nas axilas das folhas e dentro das brácteas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto empoeirado; teias finas no verso em tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Lagartas (Opsiphanes, Caligo)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pela borda ou com grandes rasgos comidos; lagartas verdes ou marrons grandes no verso",
+      "prevencao_tratamento": "Catar à mão; em ataque forte, Bacillus thuringiensis (Bt) conforme o rótulo"
+    },
+    {
+      "nome": "Mancha foliar (Bipolaris, Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons alongadas com halo amarelo que se juntam e secam a folha",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas no fim do dia; cortar e descartar as folhas muito atacadas; manter ventilação entre as hastes"
+    },
+    {
+      "nome": "Queimadura de sol e de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Sol forte: manchas esbranquiçadas ou palha no meio da folha. Frio abaixo de 10 °C: folhas escurecem e secam em faixas",
+      "prevencao_tratamento": "Evitar o sol do meio-dia, sobretudo logo após o plantio; no inverno, abrigar do vento frio e da geada. As folhas danificadas não se recuperam: corte-as quando surgirem novas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o caeté do frio",
+      "mensagem": "Planta tropical, o caeté sofre abaixo de 10 °C e morre de volta com geada. No inverno ele quase para de crescer e bebe menos.",
+      "acao_requerida": "Encostar o vaso numa parede protegida do vento, cobrir com TNT em noites de geada e espaçar as regas para cada 5 a 7 dias"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Começa a temporada de flores",
+      "mensagem": "Com o calor voltando, a touceira retoma o crescimento e as hastes maduras começam a soltar as inflorescências.",
+      "acao_requerida": "Retomar a adubação mensal, voltar a regar a cada 3 dias e cortar as folhas queimadas pelo inverno"
+    }
+  ]
+}

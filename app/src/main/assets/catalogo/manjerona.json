@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Manjerona",
+    "nome_cientifico": "Origanum majorana",
+    "descricao": "Erva aromática mediterrânea, parente do orégano, de sabor mais doce e delicado, usada fresca ou seca em molhos, carnes e sopas. É perene de vida curta: em vaso rende bem por 2 a 3 anos e depois fica lenhosa e deve ser renovada por estaca. Não aguenta geada nem substrato encharcado.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 20 cm de diâmetro e 18 cm de profundidade, com furos no fundo; o barro ajuda o substrato a secar entre regas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 20% húmus de minhoca, 30% areia grossa ou perlita; solto e bem drenado, sem excesso de matéria orgânica, que deixa o aroma fraco",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda firma a raiz no vaso novo. Pode murchar um pouco nas horas quentes nos primeiros dias; se as pontas voltarem a crescer eretas e verde-claras, a adaptação acabou. Nas duas primeiras semanas, prefira sol da manhã."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 60,
+      "descricao": "A planta ramifica e forma uma touceira de folhas pequenas, ovais e acinzentadas. Depois do desponte, surgem dois ramos novos em cada ponta cortada. A fase termina quando a touceira tem uns 15 cm e muitos ramos laterais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Touceira de 20 a 40 cm, colhida a cada duas semanas. Cresce forte da primavera ao outono, floresce no fim da primavera e no verão com pequenas espigas brancas, e quase para no inverno. Com o tempo a base fica lenhosa e com menos folhas: quando isso acontecer, faça estacas das pontas para renovar a planta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de manjerona",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda curta, a muda não aguenta o torrão seco por completo. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a manjerona",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. Acima de 30 °C, confira a cada 2 dias; no inverno, a cada 5 a 7 dias. Encharcar mata mais manjerona do que a seca.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar com húmus",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca sobre o substrato de um vaso de 3 L, sem encostar no caule, e regue em seguida. Pule a adubação de junho a agosto. Adubo demais, principalmente nitrogenado, deixa a folha grande e sem aroma.",
+      "critica": false
+    },
+    {
+      "id": "colheita_ramos",
+      "titulo": "Colher ramos de manjerona",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa as pontas dos ramos mais altos, uns 5 a 8 cm, logo acima de um par de folhas; nunca tire mais de um terço da planta de uma vez. Colha de manhã, depois que o orvalho secar. No inverno, colha só o necessário.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a manjerona",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e procure pulgões, teias finas ou pontinhos amarelados (ácaro). Afaste a folhagem e olhe a base: caule escuro e mole é sinal de podridão por excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o vaso da manjerona",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, corte um terço das raízes enoveladas e replante em substrato novo. Se a base já estiver lenhosa e pelada, é melhor fazer estacas de 10 cm das pontas verdes, enraizar em areia úmida e recomeçar com elas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Sol aos poucos",
+      "mensagem": "A muda veio de viveiro e pode queimar no sol forte da tarde enquanto a raiz se firma.",
+      "acao_requerida": "Deixar o vaso no sol da manhã até o dia 14 e depois passar para o lugar definitivo, com pelo menos 6 horas de sol"
+    },
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do primeiro desponte",
+      "mensagem": "Cortar as pontas agora faz a manjerona ramificar e virar uma touceira cheia, em vez de uns poucos ramos compridos.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo, logo acima de um par de folhas; as pontas já podem ir para a cozinha"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Manjerona pronta para colher",
+      "mensagem": "A touceira já tem folhas suficientes para colheitas regulares.",
+      "acao_requerida": "Fazer a primeira colheita, cortando as pontas dos ramos mais altos sem passar de um terço da planta"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Fusarium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelando de baixo para cima, base do caule escura e mole, raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, usar vaso furado e substrato arenoso e nunca deixar água no pratinho. Planta atacada raramente se recupera: salve estacas das pontas sadias e descarte o substrato"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas nas pontas, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde, a cada 5 dias, três vezes. Não colher por 7 dias após o neem"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas novas; folhas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água ou cortar as pontas infestadas; se voltar, sabão neutro a 1% ou neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre as folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Manter o vaso em lugar ventilado e ensolarado e regar no substrato, não nas folhas. Retirar as folhas atacadas e pulverizar leite diluído (1 parte para 9 de água) em dia de sol, uma vez por semana"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos e compridos, folhas espaçadas e pálidas, pouco aroma",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 6 horas de sol direto e podar os ramos compridos pela metade para rebrotarem compactos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteja a manjerona do frio",
+      "mensagem": "No inverno a manjerona quase para de crescer e não resiste a geada. Com pouca evaporação, o substrato úmido é o maior risco.",
+      "acao_requerida": "Espaçar a rega (só com o substrato seco a 3 cm), suspender a adubação e, em noite com previsão abaixo de 3 °C, levar o vaso para perto de uma parede ou cobrir com tecido"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Com a volta do calor, uma poda mais forte tira os ramos velhos do inverno e faz a touceira rebrotar cheia.",
+      "acao_requerida": "Cortar todos os ramos em um terço do comprimento, sempre acima de um par de folhas, e retomar a adubação com húmus"
+    },
+    {
+      "meses": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Manjerona começando a florir",
+      "mensagem": "No calor aparecem pequenas espigas de botões brancos nas pontas. O aroma das folhas está no auge logo no início da floração; depois disso, a planta gasta energia nas flores e produz menos folha.",
+      "acao_requerida": "Ao ver os primeiros botões, colher os ramos floridos para secar à sombra e cortar as demais espigas para a planta continuar soltando folhas"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "planta": {
+    "nome_comum": "Tento-carolina",
+    "nome_cientifico": "Adenanthera pavonina",
+    "descricao": "Árvore tropical da família das leguminosas, de folhagem fina e delicada, famosa pelas sementes vermelhas brilhantes em forma de coração, usadas em artesanato. Em vaso grande fica como arvoreta de 2 a 3 m e aceita bem a poda; floresce e dá vagens só depois de uns 4 ou 5 anos, e dificilmente em vaso pequeno. As sementes cruas são tóxicas: mantenha-as longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Comece num copo ou saquinho de muda de 10 cm de diâmetro e 15 cm de altura, com furos. Depois vá para um vaso de plástico ou cerâmica de pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou perlita; para semear, use só substrato comercial para mudas com 30% de areia",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A casca da semente é dura e impermeável: antes de semear, lixe um ponto da borda até aparecer o miolo claro, ou despeje água quase fervendo sobre as sementes e deixe de molho por 24 horas. Semeie a 1 ou 2 cm de profundidade, 1 semente por copo, em local quente e claro. Sementes escarificadas brotam entre o 5º e o 15º dia; as que não incharem até o dia 21 dificilmente germinam."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Abrem as primeiras folhas compostas, finas e recortadas. A muda cresce rápido e chega a 15 ou 25 cm por volta do segundo mês, quando as raízes começam a sair pelos furos do copo e é hora de ir para um vaso maior."
+    },
+    {
+      "fase_id": "muda_jovem",
+      "nome": "Muda Jovem",
+      "dia_inicio": 91,
+      "dia_fim": 365,
+      "descricao": "O caule engrossa e fica lenhoso na base, e a planta pode passar de 1 m no primeiro ano. Com sol direto os entrenós ficam curtos; se o caule ficar fino, comprido e tombando, falta luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arvoreta estabelecida. Cresce forte na primavera e no verão, desacelera no outono e no frio pode perder parte das folhas, que voltam em setembro. Poda de formação no fim do inverno mantém a copa compacta. Em vaso bem adubado e com sol pleno, pode florescer (cachos amarelo-creme) a partir do 4º ou 5º ano, e as vagens torcidas liberam as sementes vermelhas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar a sementeira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Toque a superfície do substrato: se o primeiro centímetro estiver seco, regue com regador de bico fino até escorrer pelo furo. Mantenha úmido, nunca encharcado, porque a semente escarificada apodrece em água parada.",
+      "critica": true
+    },
+    {
+      "id": "rega_plantula",
+      "titulo": "Regar a muda",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos. O copo pequeno seca rápido no sol: acima de 30 °C confira todo dia. Muda murcha no copo seco por um dia inteiro costuma perder a ponta.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o tento-carolina",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão quente, confira a cada 2 dias; de junho a agosto, espace para a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o tento-carolina",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na borda do vaso 2 colheres de sopa de húmus de minhoca ou 1 colher de chá de NPK 10-10-10 por vaso de 40 L (metade da dose na muda em copo), sem encostar no caule, e regue em seguida. De maio a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e as forquilhas dos galhos procurando carapaças brancas ou marrons grudadas, teias finas ou pontinhos amarelos nas folhas. Confira também se há folhas amarelas caindo com o substrato ainda úmido.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o vaso e o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, corte cerca de 3 cm das raízes que dão voltas no fundo e replante com substrato novo, num vaso 10 a 15 cm maior em diâmetro ou no mesmo, se ele já tiver 60 cm. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Sementes que não brotaram",
+      "mensagem": "Sementes escarificadas costumam brotar em até 15 dias. As que ainda estão duras e sem inchar provavelmente não absorveram água.",
+      "acao_requerida": "Desenterrar as sementes que falharam, lixar de novo a borda até ver o miolo claro, deixar 24 horas de molho e semear outra vez"
+    },
+    {
+      "dia_disparo": 70,
+      "titulo": "Hora de ir para um vaso maior",
+      "mensagem": "A muda já deve ter 15 a 25 cm e raízes saindo pelo furo do copo. Presa no copo, ela para de crescer e seca rápido demais.",
+      "acao_requerida": "Passar a muda com o torrão inteiro para um vaso de pelo menos 15 L, no mesmo nível de enterro, e deixar 3 dias à meia-sombra antes de voltar ao sol"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Vaso definitivo",
+      "mensagem": "Com um ano, a arvoreta já ocupa o vaso intermediário. Para crescer bem e um dia florescer, ela precisa de pelo menos 40 L.",
+      "acao_requerida": "Transplantar para um vaso de 40 L ou mais com substrato novo, de preferência entre setembro e novembro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo mesmo com o substrato úmido, caule mole ou escuro na base, cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e manter os furos livres. Planta afetada: tirar do vaso, cortar raízes marrons e moles, replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântula murcha e cai com o caule fino e escuro rente ao substrato",
+      "prevencao_tratamento": "Semear em substrato novo e arejado, sem encharcar e com sol na sementeira; descartar as plântulas afetadas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas algodoadas ou marrons grudadas nos galhos e no verso dos folíolos; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em infestação maior, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontinhos amarelados, aspecto empoeirado e teias finas entre as folhas, sobretudo em tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queda de folhas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folíolos amarelam e caem em massa depois de noites abaixo de 10 °C; ponteiros escurecidos após geada",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou sob beiral nas noites frias e reduzir a rega; a planta rebrota na primavera. Só cortar os ponteiros secos em setembro"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O tento-carolina é tropical: abaixo de 10 °C perde folhas, e geada queima os ponteiros e pode matar mudas jovens. É normal ele ficar mais ralo no inverno.",
+      "acao_requerida": "Nas noites frias, levar o vaso para junto de uma parede ou sob cobertura, espaçar a rega e não adubar até setembro"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno, antes da brotação forte, a poda deixa a copa mais cheia e o tamanho sob controle no vaso.",
+      "acao_requerida": "Cortar os galhos secos e os que cruzam por dentro da copa, e encurtar em até um terço os ramos mais compridos, logo acima de uma folha, com tesoura limpa"
+    }
+  ]
+}

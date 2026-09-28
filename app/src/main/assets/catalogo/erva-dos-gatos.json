@@ -1,0 +1,223 @@
+{
+  "planta": {
+    "nome_comum": "Erva-dos-gatos",
+    "nome_cientifico": "Nepeta cataria",
+    "descricao": "Erva perene da família da hortelã, de folhas acinzentadas e aroma mentolado, famosa porque o nepetalactona das folhas deixa a maioria dos gatos eufóricos. Também serve para chá calmante e atrai abelhas quando floresce. Em vaso vive de 3 a 4 anos antes de perder o vigor; o calor úmido do verão é o que mais a castiga.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 20 cm de profundidade e 20 cm de diâmetro, com furos no fundo; o barro ajuda a secar entre as regas",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa ou perlita, 25% húmus de minhoca; solto e bem drenado, sem adubo forte, que deixa a planta mole e com menos aroma",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 20,
+      "descricao": "Semeie 3 a 4 sementes por vaso, cobertas por no máximo 3 mm de substrato peneirado. Deixar as sementes 5 a 7 dias na geladeira, num papel úmido, antes de semear acelera e uniformiza a germinação. As plântulas aparecem entre o 7º e o 20º dia, com duas folhinhas redondas."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 21,
+      "dia_fim": 45,
+      "descricao": "Surgem as folhas verdadeiras, em formato de coração, serrilhadas e com pelinhos. O caule é quadrado, como o da hortelã. A fase termina quando a muda tem 3 a 4 pares de folhas e uns 8 cm."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 46,
+      "dia_fim": 90,
+      "descricao": "A planta ramifica e forma uma touceira de 20 a 40 cm. O aroma mentolado fica forte ao esfregar uma folha: é o sinal de que já dá para começar a colher ramos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Touceira de 40 a 80 cm. Cresce forte na primavera, floresce em espigas de flores brancas com pintas lilases do fim da primavera ao verão, e depois da floração é podada pela metade para rebrotar. No inverno cresce pouco e pode perder parte das folhas, rebrotando da base na primavera. Com 3 a 4 anos fica lenhosa e rala: renove por semente ou divida a touceira."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 20,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. As sementes estão quase na superfície: se secar um dia inteiro, morrem; se encharcar, apodrecem.",
+      "critica": true
+    },
+    {
+      "id": "rega_plantula",
+      "titulo": "Regar as mudas",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Toque o substrato com o dedo, 1 a 2 cm abaixo da superfície; se estiver seco, regue devagar junto à base até escorrer pelos furos. Não molhe as folhas. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a erva-dos-gatos",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e esvazie o pratinho. Ela tolera seca curta mas apodrece com o pé encharcado. No inverno, espace para cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_leve",
+      "titulo": "Adubação leve",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca na superfície de um vaso de 5 L, sem encostar no caule, e regue em seguida. Não use NPK rico em nitrogênio: a planta cresce mole e perde aroma. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas dos ponteiros e procure pulgões, mosquinhas brancas que voam ao tocar, teias finas ou pó branco. Confira também a base dos caules: escura e mole indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "colheita_ramos",
+      "titulo": "Colher ramos",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 75,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa os ramos mais altos, 1 cm acima de um par de folhas, tirando no máximo um terço da planta. Use fresco para o gato ou seque os ramos à sombra, em maço pendurado, por 7 a 10 dias. A colheita frequente mantém a planta compacta; no inverno, colha só se ela estiver crescendo.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato ou dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no outono, tire a planta do vaso, remova metade do substrato velho e corte raízes escuras. Se a touceira estiver grande, divida-a em 2 ou 3 partes com faca limpa, cada uma com raízes e brotos, e replante em substrato novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Várias mudas no mesmo vaso competem por luz e crescem finas e compridas.",
+      "acao_requerida": "Deixar só a muda mais vigorosa, cortando as outras rente ao substrato com tesoura, ou transplantar as extras para outros vasos"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Proteja do gato",
+      "mensagem": "O gato já sente o cheiro das folhas e costuma deitar, rolar e morder a planta até destruí-la antes de ela se firmar.",
+      "acao_requerida": "Cobrir o vaso com uma gaiola de tela ou colocar num lugar alto até a planta ter uns 20 cm e raiz firme"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Beliscar os ponteiros",
+      "mensagem": "Tirar a ponta do caule principal faz a planta ramificar e virar uma touceira cheia, em vez de uma haste só.",
+      "acao_requerida": "Cortar com a unha ou tesoura o último par de folhas de cada haste principal, logo acima do par seguinte"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; base do caule escura e mole; raízes marrons que se desfazem",
+      "prevencao_tratamento": "Substrato com areia, vaso com furos e sem água parada no pratinho; regar só com o substrato seco a 3 cm. Corte as partes afetadas, replante em substrato novo e seco e, se a base já apodreceu, faça estacas dos ramos sadios em água"
+    },
+    {
+      "nome": "Tombamento",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem de repente com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Semear em substrato novo, borrifar sem encharcar e manter o vaso ventilado; retire as plântulas afetadas"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco nas folhas, que depois amarelam e secam; comum no fim do verão e com pouca ventilação",
+      "prevencao_tratamento": "Manter o vaso ventilado e regar no substrato, não nas folhas; retire as folhas atacadas e pulverize leite diluído a 10% em água ou bicarbonato de sódio a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos ponteiros e no verso das folhas; brotos enrolados e pegajosos",
+      "prevencao_tratamento": "Jato de água nas folhas; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias. Espere 7 dias após o neem antes de dar folhas ao gato"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta; folhas amareladas e com melado",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto de poeira e teias finas no verso, em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água em dias secos e lavar a planta com jato; em infestação forte, poda dos ramos atacados e óleo de neem"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Hastes finas, compridas e caídas, com folhas espaçadas e pálidas e pouco aroma",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 horas de sol direto e podar as hastes esticadas pela metade para rebrotar compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor úmido: cuidado com o pé",
+      "mensagem": "Calor com chuva é a época em que a erva-dos-gatos mais apodrece e pega oídio, e o sol forte da tarde queima as folhas.",
+      "acao_requerida": "Proteger o vaso da chuva direta, regar só com o substrato seco e, acima de 32 °C, dar sombra no período da tarde"
+    },
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Poda depois da floração",
+      "mensagem": "Depois de florescer, as hastes ficam lenhosas e ralas. Uma poda agora faz a planta rebrotar cheia antes do inverno.",
+      "acao_requerida": "Cortar todas as hastes pela metade, acima de um par de folhas, e retirar as espigas de flores secas"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "No frio a planta quase para de crescer e pode perder folhas; a raiz fica sensível ao excesso de água. Ela aguenta geada leve.",
+      "acao_requerida": "Espaçar a rega para cada 5 a 7 dias conforme o toque no substrato, suspender a adubação e não podar forte até a primavera"
+    }
+  ]
+}

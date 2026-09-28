@@ -1,0 +1,181 @@
+{
+  "planta": {
+    "nome_comum": "Planta-fantasma",
+    "nome_cientifico": "Graptopetalum paraguayense",
+    "descricao": "Suculenta de rosetas cinza-azuladas com reflexo rosado, cobertas por um pó branco (pruína) que dá o ar 'fantasma'. Quase indestrutível, pendente com a idade e muito fácil de multiplicar: cada folha que cai costuma virar uma planta nova.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, de 12 a 15 cm de diâmetro e 10 a 12 cm de profundidade, com furo grande no fundo; sem prato com água acumulada",
+    "volume_minimo_litros": 1,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% substrato para cactos e suculentas, 30% areia grossa lavada, 30% perlita ou pedrisco fino; nada de terra de jardim pura, que compacta e retém água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda recém-plantada fica alguns dias sem rega para as raízes machucadas cicatrizarem. As rosetas podem ficar um pouco murchas e mais verdes; é normal. Mantenha em claridade forte, mas sem sol do meio-dia na primeira semana."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "As raízes ocupam o vaso e as folhas voltam a ficar firmes e gordas. Sinal de que enraizou: puxando a roseta de leve, ela resiste. Aumente o sol aos poucos até 5 horas diretas; com mais sol as folhas ganham tom rosado ou lilás."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Os caules alongam e passam a pender pela borda do vaso. Na primavera surgem hastes com flores estreladas brancas com pintas vermelhas. No inverno o crescimento quase para e a rega diminui muito. Folhas que caem podem ser deixadas sobre substrato seco para enraizar e virar mudas novas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Primeiras regas da planta-fantasma",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 4,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie um palito de madeira até o fundo do vaso; se sair limpo e seco, regue devagar até escorrer pelo furo. Se sair úmido, não regue. Não molhe as rosetas: a água tira o pó branco e pode apodrecer o centro.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a planta-fantasma",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Confira com o palito até o fundo do vaso: só regue se o substrato estiver seco por inteiro, e então encharque até escorrer pelo furo, esvaziando o prato depois. Folhas enrugadas pedem água; folhas moles e translúcidas indicam excesso. No verão quente, confira a cada 7 dias; de maio a agosto, regue só a cada 3 ou 4 semanas.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_primavera_verao",
+      "titulo": "Adubar a planta-fantasma",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dilua adubo para cactos e suculentas (ou NPK 10-10-10) na metade da dose do rótulo e use na água de uma rega com o substrato já levemente úmido. De abril a agosto, pule esta adubação: a planta está parada e o adubo acumula sais.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar rosetas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas do centro das rosetas e olhe as axilas e a base do caule: procure tufos brancos de algodão (cochonilha), caule escuro e mole ou folhas translúcidas na base.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato seco, de preferência entre setembro e novembro, tire a planta, solte a terra velha das raízes, corte as raízes secas ou escuras e replante em substrato novo, num vaso só 2 a 3 cm mais largo. Espere 5 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Não regue ainda",
+      "mensagem": "Raízes machucadas no plantio apodrecem fácil se ficarem molhadas. A suculenta aguenta vários dias sem água.",
+      "acao_requerida": "Deixar o substrato seco até o 4º dia e manter o vaso em claridade forte, sem sol do meio-dia"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Já enraizou?",
+      "mensagem": "Com um mês, a muda deve estar firme no vaso e com folhas gordas.",
+      "acao_requerida": "Puxar a roseta de leve: se resistir, passar aos poucos para 5 horas de sol direto; se soltar, manter a claridade forte e regar menos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas da base moles, translúcidas ou pretas; caule escurecido e mole rente ao substrato; rosetas caindo inteiras",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo e nunca deixar água no prato. Se já apodreceu, corte as rosetas sadias com 2 cm de caule firme, deixe cicatrizar 3 a 5 dias à sombra e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas axilas das folhas e na base do caule; folhas amareladas e planta sem vigor",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% no fim da tarde a cada 7 dias, por 3 aplicações. Isole a planta durante o tratamento"
+    },
+    {
+      "nome": "Estiolamento (falta de luz)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules compridos e finos, folhas espaçadas e verdes, rosetas abertas e inclinadas para a janela",
+      "prevencao_tratamento": "Levar para pelo menos 3 a 5 horas de sol direto, aumentando aos poucos. As partes alongadas não voltam: corte as rosetas e replante-as curtas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas bege ou marrons, secas e duras, nas folhas mais expostas logo após mudar a planta de lugar",
+      "prevencao_tratamento": "Aclimatar ao sol forte ao longo de 2 semanas, começando pelo sol da manhã. As manchas não somem, mas a planta repõe as folhas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Chegou o frio: menos água",
+      "mensagem": "No outono e no inverno a planta-fantasma quase para de crescer, e o substrato demora muito mais para secar.",
+      "acao_requerida": "Espaçar a rega para a cada 3 ou 4 semanas até agosto e suspender a adubação"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger de geada e chuva fria",
+      "mensagem": "Ela aguenta frio seco, mas geada forte e substrato encharcado em dia frio causam podridão.",
+      "acao_requerida": "Em noites com previsão de geada ou dias de chuva prolongada, levar o vaso para baixo de uma cobertura, perto de uma parede"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Cuidado com as chuvas de verão",
+      "mensagem": "Semanas de chuva diária deixam o vaso encharcado, justamente quando o calor favorece fungos.",
+      "acao_requerida": "Deixar o vaso sob cobertura em períodos de chuva contínua, mantendo o sol direto, e esvaziar o prato depois de cada chuva"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Replantar rosetas compridas",
+      "mensagem": "A primavera é a melhor época para renovar a planta: caules longos e pelados enraízam de novo rápido agora.",
+      "acao_requerida": "Cortar as rosetas com 3 a 5 cm de caule, deixar cicatrizar 3 dias à sombra e enfiar no mesmo vaso ou em outro, com substrato seco; regar após 5 dias"
+    }
+  ]
+}

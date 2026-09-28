@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Agnocasto",
+    "nome_cientifico": "Vitex agnus-castus",
+    "descricao": "Arbusto mediterrâneo aromático de 2 a 3 m (bem menor em vaso), com folhas palmadas e espigas lilás perfumadas no verão, que atraem abelhas e borboletas. É resistente à seca e ao frio, perde parte das folhas no inverno e floresce nos ramos do ano, por isso a poda de fim de inverno é o cuidado principal. Os frutos têm uso fitoterápico tradicional, mas só devem ser usados com orientação médica.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico grosso com pelo menos 45 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; cerâmica ajuda a secar entre as regas",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra de jardim, 25% areia grossa lavada, 15% composto orgânico ou húmus de minhoca, 10% casca de pinus fina ou perlita; solto e bem drenado, pH de neutro a levemente alcalino (1 colher de sopa de calcário dolomítico por 10 L)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. Pode perder algumas folhas nas primeiras duas semanas; a fase termina quando surgem brotos novos nas pontas dos ramos e as folhas param de murchar no calor da tarde."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Ramos novos crescem rápido e a planta ganha volume. Se o plantio foi na primavera, já pode dar as primeiras espigas no primeiro verão. O substrato passa a secar mais devagar à medida que as raízes ocupam o vaso; o sinal de planta estabelecida é aguentar 3 a 4 dias de sol forte sem murchar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação forte em setembro depois da poda de inverno, espigas lilás de dezembro a março (uma segunda florada se as espigas secas forem cortadas), frutinhos pretos no outono e queda parcial das folhas de junho a agosto, quando o crescimento quase para. Em vaso, mantenha entre 1,2 e 1,8 m de altura com a poda anual."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de agnocasto",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos do vaso. Com as raízes ainda presas ao torrão da muda, deixar secar por completo nesta fase mata a planta. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o agnocasto",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o pratinho depois de 30 minutos. É planta de clima seco: excesso de água apodrece a raiz. Na primavera e no verão isso costuma dar a cada 3 dias; de junho a agosto, com a planta parada, uma vez por semana basta.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as pontas dos brotos e as espigas: procure pulgões agrupados, escamas brancas ou marrons presas aos ramos, melado pegajoso e manchas escuras nas folhas. Confira também a base do caule, que deve estar firme e sem escurecimento.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, junto com a poda: tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas no fundo e nas laterais, retire um terço do substrato velho e complete com mistura nova. Se as raízes já ocupam todo o torrão, passe para um vaso 10 cm mais largo. Regue bem em seguida.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A muda vendida em saco ou vaso pequeno precisa ir logo para o vaso grande, antes de enovelar as raízes.",
+      "acao_requerida": "Plantar a muda na mesma altura em que estava, sem enterrar o colo do caule, firmar o substrato com as mãos e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A muda pegou: espaçar as regas",
+      "mensagem": "A partir de agora o agnocasto prefere secar um pouco entre as regas. Regar demais é a principal causa de morte dele em vaso.",
+      "acao_requerida": "Passar a regar só quando os primeiros 5 cm do substrato estiverem secos"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Desponte para encorpar",
+      "mensagem": "Cortar a ponta dos ramos principais agora faz a planta ramificar e formar uma copa cheia, com mais espigas no verão.",
+      "acao_requerida": "Cortar 3 a 5 cm da ponta de cada ramo principal, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; base do caule escura e mole; raízes marrons e com cheiro ruim",
+      "prevencao_tratamento": "Substrato com areia e vaso bem furado, sem pratinho cheio d'água. Ao notar, pare de regar, tire a planta do vaso, corte as raízes podres com tesoura limpa e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos brotos e nas espigas; folhas novas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se voltar, óleo de neem a 0,5% com algumas gotas de detergente neutro no fim da tarde, a cada 5 dias por 3 aplicações. Evite adubo rico em nitrogênio, que atrai pulgão"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou flocos brancos presos aos ramos e ao verso das folhas; melado pegajoso e fumagina (pó preto) nas folhas",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia molhada em álcool 70%; em infestação maior, óleo mineral ou de neem a 1% a cada 7 dias, sem aplicar sob sol forte"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas com borda escura nas folhas mais velhas, que depois amarelam e caem, sobretudo em verão chuvoso",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter a copa arejada com a poda. Retire e descarte as folhas manchadas; se espalhar, calda bordalesa a 1% a cada 10 dias"
+    },
+    {
+      "nome": "Poucas flores por falta de sol ou poda",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos compridos e finos, folhagem rala e pouquíssimas espigas no verão",
+      "prevencao_tratamento": "Levar para o lugar mais ensolarado da casa (6 horas ou mais de sol direto) e fazer a poda de fim de inverno, pois as flores saem nos ramos novos do ano"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "O agnocasto floresce nos ramos que crescem na primavera. Podar agora, antes da brotação, dá uma planta compacta e cheia de espigas no verão.",
+      "acao_requerida": "Cortar todos os ramos do ano anterior deixando 2 a 3 pares de gemas a partir da base deles, retirar galhos secos, finos ou cruzados e manter a planta com a altura desejada"
+    },
+    {
+      "meses": [
+        9,
+        11,
+        1
+      ],
+      "titulo": "Adubar o agnocasto",
+      "mensagem": "Na estação de crescimento, uma adubação leve sustenta a brotação e a florada. Adubo demais faz muita folha e pouca flor.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de NPK 4-14-8 ou 1 xícara de húmus de minhoca na superfície do vaso de 40 L, longe do caule, e regar em seguida"
+    },
+    {
+      "meses": [
+        1,
+        2
+      ],
+      "titulo": "Cortar as espigas secas",
+      "mensagem": "Tirar as espigas que já murcharam estimula uma segunda florada até o fim do verão.",
+      "acao_requerida": "Cortar cada espiga seca logo acima do primeiro par de folhas abaixo dela"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: planta em repouso",
+      "mensagem": "É normal o agnocasto perder parte das folhas e parar de crescer no frio. Ele aguenta geadas leves, mas em vaso a raiz fica mais exposta.",
+      "acao_requerida": "Espaçar a rega para uma vez por semana, suspender a adubação e, em noites abaixo de 0 °C, encostar o vaso numa parede protegida ou envolver o vaso com juta"
+    }
+  ]
+}

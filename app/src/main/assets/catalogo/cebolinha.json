@@ -1,0 +1,193 @@
+{
+  "planta": {
+    "nome_comum": "Cebolinha",
+    "nome_cientifico": "Allium fistulosum",
+    "descricao": "Erva aromática de folhas tubulares e ocas, indispensável no tempero brasileiro. Forma touceiras que rebrotam depois de cada corte e, em vaso, produz por anos se for dividida de tempos em tempos. Por isso é tratada como perene, começando pela muda ou touceira comprada na feira.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 15 cm de profundidade e furos no fundo; numa jardineira de 60 cm cabem 4 a 5 touceiras, espaçadas 10 a 12 cm",
+    "volume_minimo_litros": 2,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou casca de arroz carbonizada; solto, rico em matéria orgânica e sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Plante a muda ou touceira com a base branca 2 a 3 cm enterrada, na mesma altura em que estava. Pontas amareladas nos primeiros dias são normais. A muda pegou quando aparecem folhas novas, verdes e firmes, saindo do centro."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 11,
+      "dia_fim": 45,
+      "descricao": "A touceira perfilha: cada muda se divide em vários talos e as folhas passam de 20 cm. Não corte ainda, para a planta formar raízes e reservas. A fase termina quando a touceira está cheia, com folhas de 25 a 30 cm."
+    },
+    {
+      "fase_id": "producao",
+      "nome": "Produção",
+      "dia_inicio": 46,
+      "dia_fim": null,
+      "descricao": "Planta adulta, colhida em cortes a cada 3 semanas, mais ou menos. Rebrota o ano todo; cresce mais devagar no frio e pode soltar pendões florais na primavera. Com uns dois anos no mesmo vaso, a touceira fica apertada e as folhas afinam: é hora de dividir."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de cebolinha",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Regue pela manhã até escorrer pelos furos, mantendo o substrato úmido, sem encharcar, enquanto as raízes pegam. Em dia nublado e fresco, enfie o dedo 2 cm no substrato: se ainda estiver úmido, pule.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cebolinha",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Acima de 30 °C, confira todo dia. No inverno, a cada 3 ou 4 dias costuma bastar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a cebolinha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca (ou 1 colher de sopa de bokashi) por vaso de 2 a 3 L, sem encostar nos talos, e regue em seguida. De preferência logo depois de um corte, para ajudar a rebrota.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher cebolinha",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte as folhas mais altas a 3 ou 4 cm da base, deixando o talo branco no vaso. Tire no máximo metade da touceira de cada vez; o resto garante a rebrota. Aproveite para tirar as folhas amarelas ou secas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure manchas prateadas ou esbranquiçadas nas folhas (tripes), insetos agrupados perto da base, manchas arroxeadas ou penugem cinza e pontas secando. Afaste as folhas e olhe também a base dos talos.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir e replantar a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a touceira do vaso, separe com as mãos em tufos de 3 a 5 talos e apare as raízes para uns 5 cm e as folhas para uns 10 cm. Replante com substrato novo, no mesmo vaso ou em outros, e regue bem. Evite fazer isso no pico do verão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "A muda pegou?",
+      "mensagem": "Com 10 dias, as mudas que pegaram já mostram folhas novas saindo do centro. As que continuam amarelas e moles não vão vingar.",
+      "acao_requerida": "Arrancar as mudas mortas e replantar no lugar um tufo novo ou um talo com raiz tirado de uma muda vizinha"
+    },
+    {
+      "dia_disparo": 46,
+      "titulo": "Primeira colheita",
+      "mensagem": "A touceira já está formada e aguenta o primeiro corte. Colher com regularidade estimula a rebrota.",
+      "acao_requerida": "Cortar as folhas mais altas a 3 ou 4 cm da base, tirando no máximo metade da touceira"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Tripes (Thrips tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Manchas prateadas ou esbranquiçadas e raspadas nas folhas, que depois secam da ponta para baixo; insetos minúsculos e alongados escondidos na base das folhas",
+      "prevencao_tratamento": "Jato de água forte nas folhas em tempo seco e quente, quando a praga aparece; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, esperando 7 dias para colher depois da última aplicação"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos ou verdes na base das folhas; folhas pegajosas e retorcidas",
+      "prevencao_tratamento": "Corte as folhas mais atacadas e dê um jato de água; se voltar, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5%"
+    },
+    {
+      "nome": "Podridão da base e das raízes (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Talos amolecem e ficam marrons na base, folhas amarelam e tombam; raízes escuras e com cheiro ruim",
+      "prevencao_tratamento": "Regue só quando os 2 cm de cima estiverem secos e nunca deixe água no pratinho; arranque os talos afetados e, se a touceira toda apodreceu, replante tufos sadios em substrato novo"
+    },
+    {
+      "nome": "Míldio (Peronospora destructor)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas alongadas verde-pálidas nas folhas, cobertas por uma penugem cinza-arroxeada em manhãs úmidas; pontas secam e dobram",
+      "prevencao_tratamento": "Regue no substrato, não nas folhas, e deixe o vaso em lugar arejado; corte e descarte as folhas manchadas; nos casos fortes, calda bordalesa a 0,5% seguindo o rótulo"
+    },
+    {
+      "nome": "Mancha-púrpura (Alternaria porri)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas ovais com centro arroxeado e borda amarela, que crescem e secam a folha a partir do ponto atingido",
+      "prevencao_tratamento": "Evite molhar as folhas e o excesso de umidade; corte as folhas afetadas; adubação equilibrada deixa a planta mais resistente"
+    },
+    {
+      "nome": "Pontas amarelas e secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam por igual ou secam na ponta, sem manchas nem insetos",
+      "prevencao_tratamento": "Amarelo por igual em planta antiga costuma ser falta de nitrogênio: adube com húmus. Pontas secas com substrato seco indicam rega curta ou calor; confira a rega. Touceira com mais de dois anos no mesmo vaso: divida."
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Época de pendões florais",
+      "mensagem": "Na primavera, a cebolinha solta hastes duras com uma bola de flores na ponta. Enquanto floresce, gasta energia e as folhas ficam fibrosas.",
+      "acao_requerida": "Cortar rente à base as hastes florais que aparecerem, a não ser que queira colher sementes"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e chuva",
+      "mensagem": "Calor forte seca o vaso num dia só, e as chuvas de verão encharcam o substrato e favorecem a podridão e o míldio.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia, dar sombra na hora mais quente se as pontas queimarem e tirar o vaso da chuva contínua"
+    }
+  ]
+}

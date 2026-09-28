@@ -1,0 +1,221 @@
+{
+  "planta": {
+    "nome_comum": "Flor-da-lua",
+    "nome_cientifico": "Ipomoea alba",
+    "descricao": "Trepadeira vigorosa, parente da ipomeia, cujas flores brancas de até 15 cm se abrem ao entardecer, perfumam a noite e se fecham na manhã seguinte. É perene nos trópicos, mas em vaso no Centro-Sul o frio do inverno a enfraquece. Por isso é cultivada como anual: semeie de novo a cada primavera com as sementes colhidas.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 270,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 30 cm de profundidade e 30 cm de diâmetro, furos no fundo, junto de uma treliça, tela ou grade de 1,8 a 2,5 m de altura",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; evite esterco fresco, que força folhas e atrasa as flores",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Lixe levemente a casca dura de cada semente (ou faça um pequeno corte com alicate de unha, longe do olho) e deixe de molho em água morna por 8 a 12 horas. Semeie 2 sementes por cova, a 1,5 cm de profundidade, direto no vaso definitivo, porque a raiz não gosta de transplante. Acima de 21 °C as plântulas surgem entre o 5º e o 10º dia, com duas folhas em forma de borboleta."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 11,
+      "dia_fim": 35,
+      "descricao": "Surgem as folhas verdadeiras, em formato de coração, e a ponta do caule começa a girar procurando apoio. A fase termina quando a muda já se enrola sozinha na treliça."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 36,
+      "dia_fim": 100,
+      "descricao": "A trepadeira cresce depressa, até 20 cm por semana no calor, e pode passar de 3 m. As folhas ficam grandes e o consumo de água sobe muito. Aparecem os primeiros botões, compridos e em espiral, no fim da fase."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 101,
+      "dia_fim": 240,
+      "descricao": "Os botões incham durante o dia e se abrem em poucos minutos ao anoitecer. Cada flor dura uma noite só, mas a planta abre várias por noite no auge do verão. Falta de água nesta fase faz os botões caírem antes de abrir."
+    },
+    {
+      "fase_id": "sementes_declinio",
+      "nome": "Sementes e Declínio",
+      "dia_inicio": 241,
+      "dia_fim": 270,
+      "descricao": "Com o outono e as noites frias, a floração diminui, as folhas amarelam e as cápsulas das flores polinizadas secam e ficam marrons. Colha as sementes para semear na próxima primavera. Abaixo de 10 °C a planta para, e a geada a mata."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Manter as sementes úmidas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Toque a superfície do substrato: se o primeiro centímetro estiver seco, regue devagar com regador de bico fino até umedecer, sem encharcar. Semente inchada que seca antes de brotar morre.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a flor-da-lua",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 270,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Acima de 30 °C, com a planta grande, confira todo dia. No outono, quando a planta desacelera, a cada 3 ou 4 dias costuma bastar.",
+      "critica": true
+    },
+    {
+      "id": "tutorar_ramos",
+      "titulo": "Guiar os ramos na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Pegue as pontas que ficaram soltas ou caídas e enrole-as na treliça no sentido anti-horário, que é o sentido natural da planta. Se algum ramo passou do topo, desça-o e espalhe-o para os lados para cobrir a tela.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a trepadeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": 230,
+      "instrucoes": "Até o dia 100, espalhe 2 colheres de sopa de húmus ou 1 colher de chá de NPK 10-10-10 por vaso de 20 L, longe do caule, e regue em seguida. A partir dos primeiros botões, troque por adubo rico em fósforo (NPK 4-14-8 ou farinha de ossos, mesma dose). Nitrogênio em excesso faz muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 270,
+      "instrucoes": "Vire 5 ou 6 folhas e olhe as pontas novas: procure pulgões agrupados, teias finas com pontinhos amarelos (ácaro), nuvem branca ao balançar (mosca-branca) e folhas roídas.",
+      "critica": false
+    },
+    {
+      "id": "colher_sementes",
+      "titulo": "Colher sementes secas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 241,
+      "dia_fim_ciclo": 270,
+      "instrucoes": "Colha as cápsulas marrons e secas, que chacoalham ao balançar. Deixe secar mais uma semana dentro de casa, tire as sementes e guarde num pote fechado, em lugar fresco e escuro. Não ingira as sementes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Duas trepadeiras na mesma cova disputam água e se embolam na treliça.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada cova, cortando a outra rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 18,
+      "titulo": "Treliça no lugar",
+      "mensagem": "A ponta do caule já começou a girar procurando apoio. Sem ele, os ramos se enrolam uns nos outros e quebram.",
+      "acao_requerida": "Instalar a treliça ou tela bem firme no vaso ou na parede e enrolar a ponta da muda na base dela"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Desponte para encher",
+      "mensagem": "Cortar a ponta do ramo principal agora faz a planta soltar ramos laterais e cobrir mais a treliça.",
+      "acao_requerida": "Cortar os 5 cm da ponta do ramo principal logo acima de uma folha, se ele estiver com um caule só"
+    },
+    {
+      "dia_disparo": 100,
+      "titulo": "Primeiras flores à vista",
+      "mensagem": "Os botões compridos e retorcidos se abrem ao entardecer, em poucos minutos, e perfumam a noite.",
+      "acao_requerida": "Observar a planta entre 18h e 20h num dia de botão bem inchado para ver a flor abrir"
+    },
+    {
+      "dia_disparo": 240,
+      "titulo": "Deixe as sementes formarem",
+      "mensagem": "No fim do ciclo, as flores polinizadas viram cápsulas que garantem a próxima safra.",
+      "acao_requerida": "Parar de adubar e deixar as cápsulas verdes na planta até ficarem marrons e secas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelando de baixo para cima e base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e manter os furos livres. Planta com o caule podre não se recupera; semeie de novo em substrato novo"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem de repente com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Usar substrato novo, não encharcar na germinação e retirar as plântulas afetadas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas e botões; brotos enrugados e pegajosos, com formigas subindo",
+      "prevencao_tratamento": "Jato de água nas pontas; se persistir, óleo de neem a 0,5% no fim da tarde, a cada 5 dias, até sumir"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, depois bronzeadas e secas; teias finas no verso, comum em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos e lavar as folhas atacadas; em infestação forte, óleo de neem ou calda de sabão neutro a 1% a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos que voam ao balançar a planta; folhas amareladas e melado no verso",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Muita folha e nenhuma flor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Trepadeira enorme e verde-escura que passa do dia 120 sem botões",
+      "prevencao_tratamento": "Suspender adubo nitrogenado e esterco, passar a adubo rico em fósforo e garantir pelo menos 4 horas de sol direto"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir, geralmente depois de um dia de murcha",
+      "prevencao_tratamento": "Não deixar o vaso secar por completo no verão; nos dias acima de 30 °C, conferir a rega todo dia"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        1,
+        2
+      ],
+      "titulo": "Calor forte: vigie a rega",
+      "mensagem": "No auge do verão, a flor-da-lua grande transpira muito e um vaso de 20 L pode secar em um dia. Murcha repetida derruba os botões.",
+      "acao_requerida": "Conferir o substrato todo fim de tarde e, se possível, cobrir a superfície com 2 cm de palha ou casca de pinus"
+    },
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "O frio encerra a floração",
+      "mensagem": "Com noites abaixo de 12 °C, a planta para de florescer e as folhas amarelam. A geada mata a trepadeira.",
+      "acao_requerida": "Colher todas as cápsulas secas antes da primeira geada e reduzir a rega para quando o substrato estiver seco a 5 cm"
+    }
+  ]
+}

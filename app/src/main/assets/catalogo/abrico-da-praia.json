@@ -1,0 +1,185 @@
+{
+  "planta": {
+    "nome_comum": "Abricó-da-praia",
+    "nome_cientifico": "Mimusops coriacea",
+    "descricao": "Árvore da família das sapotáceas, nativa de Madagascar e muito plantada na orla do Rio de Janeiro e de outras cidades litorâneas: aguenta vento, maresia e solo arenoso. As folhas são grossas e brilhantes e os frutos amarelo-alaranjados são comestíveis. Em vaso grande vira uma arvoreta de crescimento lento, e costuma levar vários anos para dar fruto.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e estável (cimento, barro ou plástico grosso) com pelo menos 50 cm de diâmetro e 50 cm de profundidade e vários furos no fundo; em área de vento, prefira vaso largo na base para não tombar",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca, 10% casca de pinus fina; bem drenante, como o solo arenoso de restinga de onde a planta vem",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo. É normal cair uma ou duas folhas velhas. Se ela veio de viveiro sombreado, aumente o sol aos poucos ao longo de duas semanas para as folhas não queimarem. A fase termina quando surgem brotos novos, verde-claros ou avermelhados, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o crescimento vem em surtos de folhas novas, sobretudo na primavera e no verão. O ritmo é lento: 20 a 40 cm por ano é o esperado. Quando a planta passa a brotar sem murchar nos dias quentes, está estabelecida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arvoreta de copa densa e folhas coriáceas. No Centro-Sul, cresce na primavera e no verão, pode florescer entre outubro e dezembro (flores pequenas, brancas e perfumadas) e amadurece os frutos no verão, se já tiver idade para isso, o que em vaso raramente acontece antes do 4º ou 5º ano. No inverno quase para de crescer e pede menos água. Os galhos soltam látex branco quando cortados, o que é normal."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_estabelecimento",
+      "titulo": "Regar o abricó-da-praia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos. Nos primeiros meses a raiz ainda não alcança o fundo do vaso e a muda murcha rápido no calor. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar o abricó-da-praia",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão, em vaso pequeno para o porte ou com muito vento, pode precisar a cada 2 ou 3 dias; no inverno, espace para a cada 6 a 7 dias. A planta tolera um pouco de seca, mas não substrato encharcado.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o abricó-da-praia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto e 1 colher de sopa de NPK 10-10-10 na superfície de um vaso de 60 L, longe do tronco, e regue em seguida. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as nervuras, os brotos novos e a base dos ramos. Procure escamas marrons ou brancas grudadas, tufos brancos de algodão, formigas subindo e descendo o tronco ou pó preto sobre as folhas (fumagina).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e checar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera (setembro a novembro), tire a planta do vaso. Se as raízes estiverem enoveladas, passe para um vaso 10 a 15 cm maior de diâmetro; se o vaso já for o maior possível, corte 3 a 5 cm de raiz em volta do torrão. Troque o substrato velho pela mistura recomendada e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A muda deve ir para o vaso definitivo no mesmo nível em que estava no saquinho. Enterrar o colo apodrece a base do tronco.",
+      "acao_requerida": "Plantar sem enterrar o colo, firmar o substrato em volta com as mãos e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Depois de duas semanas de adaptação, a muda já aguenta sol direto o dia todo. Com menos de 5 horas de sol, o abricó cresce ralo e não floresce.",
+      "acao_requerida": "Mudar o vaso para o lugar mais ensolarado disponível, de preferência com sol da manhã e da tarde"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de abricó",
+      "mensagem": "A planta deve estar firme no vaso. Raízes saindo pelos furos do fundo indicam que o vaso ficou pequeno antes do previsto.",
+      "acao_requerida": "Olhar os furos do fundo do vaso e, se houver raízes saindo, antecipar a troca de vaso para a próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos murcham; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e usar substrato com areia grossa. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos no verso das folhas e nos ramos; folhas pegajosas e formigas circulando",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; em infestação maior, óleo mineral ou óleo de neem a 0,5% com detergente neutro no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada de pó preto sobre as folhas que sai ao esfregar; aparece junto com cochonilha ou pulgão",
+      "prevencao_tratamento": "Controlar os insetos sugadores que soltam o melado. Depois, lavar as folhas com água e sabão neutro"
+    },
+    {
+      "nome": "Queimadura de sol na muda",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas, bege ou marrons e secas no meio das folhas voltadas para o sol, logo após a mudança de lugar",
+      "prevencao_tratamento": "Aumentar o sol aos poucos nas duas primeiras semanas. As folhas queimadas não se recuperam, mas as novas já nascem adaptadas"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam com aspecto cozido e caem depois de noites abaixo de 5 °C ou de geada",
+      "prevencao_tratamento": "Em regiões de inverno rigoroso, levar o vaso para perto de uma parede ou sob a cobertura nas noites frias e cobrir com manta de TNT se houver previsão de geada"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, cuidado com o frio",
+      "mensagem": "No frio o abricó-da-praia quase para de crescer. Substrato úmido por muito tempo nessa época é a principal causa de podridão de raiz. É uma planta tropical que sofre com geada.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, não adubar e proteger o vaso nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "O fim do inverno, antes da brotação da primavera, é a melhor hora para dar forma à copa e manter a planta num tamanho que o vaso aguenta.",
+      "acao_requerida": "Cortar ramos secos, cruzados ou que crescem para dentro da copa e encurtar em até um terço os ramos mais longos, com tesoura limpa; o látex branco que escorre seca sozinho"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época dos frutos",
+      "mensagem": "Se o seu abricó já frutifica, os frutos amadurecem no verão: ficam amarelo-alaranjados e soltam do ramo com um leve toque.",
+      "acao_requerida": "Colher os frutos maduros a cada poucos dias e recolher os caídos do vaso, que fermentam e atraem moscas"
+    }
+  ]
+}

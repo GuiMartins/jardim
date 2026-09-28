@@ -1,0 +1,179 @@
+{
+  "planta": {
+    "nome_comum": "Terramicina",
+    "nome_cientifico": "Alternanthera brasiliana",
+    "descricao": "Erva perene nativa do Brasil, de folhas roxo-avermelhadas e pequenas flores brancas em espiga, cultivada como ornamental e na medicina popular. Enraíza fácil por estaca, cresce rápido e fica mais colorida quanto mais sol recebe.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 25 cm de diâmetro e 20 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 7,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; para enraizar a estaca, metade areia e metade substrato",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Enterre 2 a 3 nós de uma estaca de 10 a 15 cm sem as folhas de baixo, em local claro sem sol forte. As raízes aparecem entre o 10º e o 20º dia; a estaca enraizou quando brotam folhas novas na ponta e ela resiste a um puxão leve."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Leve aos poucos para o sol direto. A planta ramifica e as folhas ganham o tom roxo; folhas verdes e ramos compridos e finos indicam falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Arbusto baixo de 40 a 80 cm, que cresce forte na primavera e no verão e desacelera no inverno. Floresce em espigas brancas pequenas, principalmente no outono e inverno. Com podas regulares fica compacta; sem poda, os ramos deitam e a base fica pelada."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Toque a superfície do substrato: ele deve estar sempre úmido, como esponja torcida, mas sem água parada no pratinho. Regue devagar ao redor da estaca se o primeiro centímetro estiver seco.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a terramicina",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão ao sol pode precisar todo dia; no inverno, a cada 4 a 5 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a terramicina",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de chá de NPK 10-10-10 por vaso de 7 L, longe do caule, e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "poda_pontas",
+      "titulo": "Podar as pontas",
+      "tipo": "PODA",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa 3 a 5 cm da ponta de cada ramo, logo acima de um par de folhas. Isso faz a planta ramificar e ficar cheia. As pontas cortadas servem de estaca para novas mudas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as pontas novas e as axilas dos ramos: procure bolinhas brancas algodoadas, insetos agrupados, teias finas ou folhas roídas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, corte 1/3 do torrão das raízes externas, troque o substrato e, se as raízes davam voltas no vaso, passe para um vaso 5 cm maior. Pode os ramos pela metade para compensar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "A estaca pegou?",
+      "mensagem": "Com cerca de três semanas a estaca já deve ter raízes e folhas novas.",
+      "acao_requerida": "Puxar a estaca de leve: se resistir e houver brotos, passar a regar só quando o substrato secar em cima e começar a levar ao sol; se estiver mole ou escura na base, fazer uma estaca nova"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Primeira desponta",
+      "mensagem": "Tirar a ponta agora faz a muda soltar ramos laterais e virar uma touceira cheia, em vez de uma haste só.",
+      "acao_requerida": "Cortar 2 cm da ponta do ramo principal, acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, base do caule escura e mole, folhas de baixo amarelas caindo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, nunca deixar água no pratinho e usar substrato com areia. Corte ramos sadios e refaça por estaca; descarte o substrato contaminado"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados nas axilas das folhas e nas pontas; folhas pegajosas e crescimento travado",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos verdes ou pretos nas pontas novas, folhas enroladas e melado",
+      "prevencao_tratamento": "Jato de água nas pontas; se voltar, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto desbotado e teias finas no verso, em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos e isole a planta; se persistir, calda de sabão neutro a 1% ou neem a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas verdes em vez de roxas, ramos longos e finos com espaço grande entre as folhas, planta tombando",
+      "prevencao_tratamento": "Mudar para local com pelo menos 4 horas de sol direto e podar os ramos compridos pela metade para rebrotar compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A terramicina é tropical: geada queima e mata os ramos, e abaixo de 5 °C as folhas escurecem. No frio ela quase não cresce e bebe menos.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, levar o vaso para perto da parede ou para dentro; espaçar as regas até o substrato secar a 3 cm"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Com a volta do calor a planta rebrota forte. Uma poda mais firme agora renova os ramos cansados do inverno.",
+      "acao_requerida": "Cortar todos os ramos pela metade, retirar os secos ou queimados de frio e adubar em seguida"
+    }
+  ]
+}

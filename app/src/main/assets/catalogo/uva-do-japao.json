@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Uva-do-japão",
+    "nome_cientifico": "Hovenia dulcis",
+    "descricao": "Árvore caducifólia asiática, muito rústica ao frio, cujos pedúnculos carnosos e retorcidos são doces e comestíveis, com gosto de passa. Em vaso grande fica bem menor que os 10 a 15 m que alcança no chão e frutifica a partir do 4º ou 5º ano. No Sul e no Sudeste ela é considerada invasora de matas nativas, então cultive em vaso, longe de mata, e colha todos os frutos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cimento ou fibra com pelo menos 45 cm de diâmetro e 45 cm de profundidade, vários furos no fundo e pés para a água escoar",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou casca de pinus fina; mais 1 xícara de farinha de ossos a cada 50 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho e se acomoda ao vaso. Algumas folhas podem amarelar e cair; brotos novos na ponta dos ramos mostram que as raízes pegaram."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido na primavera e no verão, com ramos novos de 30 a 60 cm. No outono as folhas amarelam e caem; isso é dormência normal, não doença. O caule fica verde e flexível quando raspado de leve com a unha."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Árvore Jovem",
+      "dia_inicio": 366,
+      "dia_fim": 1460,
+      "descricao": "A árvore forma a copa e engrossa o tronco. Ainda não costuma florescer. As podas de inverno definem a altura; sem elas, ela passa de 3 m mesmo em vaso."
+    },
+    {
+      "fase_id": "adulta_producao",
+      "nome": "Árvore Adulta",
+      "dia_inicio": 1461,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota em agosto e setembro, floresce em cachos pequenos de flores brancas entre outubro e dezembro, os pedúnculos engrossam no verão e ficam marrons e doces entre abril e julho, e as folhas caem no inverno. Em vaso, a produção é de algumas centenas de gramas a poucos quilos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe água parada no prato. Em dias acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a uva-do-japão",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 50 L). No verão, com a árvore cheia de folhas, pode precisar a cada 1 ou 2 dias. Sem folhas, no inverno, regue só quando os 5 cm estiverem secos, o que costuma levar 7 a 10 dias.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os brotos novos e a base dos ramos à procura de pulgões, carapaças brancas ou marrons de cochonilha, trilhas de formiga e folhas cortadas em meia-lua.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de preferência entre junho e agosto, com a árvore sem folhas. Tire o torrão do vaso, corte 5 cm das raízes em volta e no fundo com serrote ou faca limpa, troque um terço do substrato por mistura nova e volte ao mesmo vaso. Regue bem em seguida.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso",
+      "mensagem": "Plantar fundo demais apodrece o colo; raízes enroladas no saquinho estrangulam a árvore anos depois.",
+      "acao_requerida": "Desfazer as raízes enroladas com os dedos e deixar o colo da muda no mesmo nível do substrato, sem enterrar o caule"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se já aparecem brotos novos, a muda pegou e a rega pode ficar mais espaçada.",
+      "acao_requerida": "Conferir se há brotos verdes nas pontas; se a muda estiver sem folhas fora do inverno, raspar o caule com a unha para ver se está verde por dentro"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Escolher o tronco principal",
+      "mensagem": "Com dois ramos disputando a ponta, a árvore forma um garfo fraco que racha com o vento.",
+      "acao_requerida": "Deixar o ramo mais reto e vigoroso como guia e encurtar o concorrente pela metade"
+    },
+    {
+      "dia_disparo": 1460,
+      "titulo": "Idade de dar frutos",
+      "mensagem": "A partir do 4º ano a árvore costuma começar a florescer entre outubro e dezembro. Se não florescer, a causa mais comum é pouco sol.",
+      "acao_requerida": "Conferir se o vaso recebe pelo menos 6 horas de sol direto e mudá-lo de lugar se não receber"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem; raízes escuras e moles, com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, principalmente no inverno sem folhas; nunca deixar água no prato. Se atacar, tirar do vaso, cortar as raízes podres e replantar em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, marrons ou algodonosas grudadas nos ramos e no verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; em ataque grande, óleo mineral ou de neem a 1% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos novos na primavera; folhas novas enrugadas",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou árvore desfolhada de uma noite para outra, com trilha de formigas",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida granulada no caminho; passar graxa ou fita adesiva dupla-face em volta do vaso"
+    },
+    {
+      "nome": "Mancha foliar (fungos)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas nas folhas no verão chuvoso, com queda antecipada",
+      "prevencao_tratamento": "Regar no substrato, não nas folhas; recolher as folhas caídas; em ataque forte, calda bordalesa a 1%"
+    },
+    {
+      "nome": "Raízes enoveladas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Água escorre direto sem molhar o torrão, raízes saem pelos furos, a árvore murcha rápido no calor e cresce pouco",
+      "prevencao_tratamento": "Renovar o substrato e podar as raízes a cada 2 anos, no inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        11,
+        1,
+        3
+      ],
+      "titulo": "Adubar a uva-do-japão",
+      "mensagem": "A árvore está crescendo e formando os frutos; é a época de adubar.",
+      "acao_requerida": "Espalhar 2 xícaras de húmus de minhoca e 1 colher de sopa de NPK 10-10-10 por vaso de 50 L, longe do tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "titulo": "Colher a uva-do-japão",
+      "mensagem": "Os pedúnculos maduros ficam marrons, macios e doces e caem sozinhos. Colher tudo evita que as sementes se espalhem, porque a espécie é invasora de matas.",
+      "acao_requerida": "Colher os cachos marrons, recolher os caídos a cada 2 ou 3 dias e jogar as sementes no lixo comum, não no quintal"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de inverno",
+      "mensagem": "Sem folhas, a árvore está parada e aceita bem a poda. É ela que mantém a copa no tamanho do vaso.",
+      "acao_requerida": "Cortar ramos secos, cruzados e voltados para dentro, e encurtar em um terço os ramos que passaram da altura desejada, com corte inclinado acima de uma gema"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: rega mais frequente",
+      "mensagem": "Com a copa cheia e temperatura alta, um vaso de 50 L pode secar em um dia.",
+      "acao_requerida": "Conferir o substrato todo dia de manhã e regar sempre que os 5 cm de cima estiverem secos"
+    }
+  ]
+}

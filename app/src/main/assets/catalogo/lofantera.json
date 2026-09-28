@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Lofantera",
+    "nome_cientifico": "Lophanthera lactescens",
+    "descricao": "Árvore amazônica da família das acerolas, conhecida como chuva-de-ouro pelos cachos pendentes de flores amarelas que cobrem a copa na primavera e no verão. Na natureza passa de 15 m, mas em vaso grande fica como arvoreta de 2 a 4 m. A partir de muda, costuma levar de 2 a 4 anos para a primeira florada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica, concreto ou plástico grosso), com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo. Em vaso menor, a árvore tomba com o vento e seca rápido demais",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; misture 200 g de farinha de ossos por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas mais velhas. A adaptação terminou quando surgem brotos novos, avermelhados ou verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o tronco engrossa. Espere brotações em surtos durante os meses quentes e crescimento quase parado no inverno. Ainda não floresce; o foco é formar um tronco firme e uma copa equilibrada."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Brota forte de setembro a março e perde parte das folhas no frio. Quando a planta amadurece, entre a primavera e o verão os cachos amarelos pendem da copa por semanas. Florada fraca costuma indicar pouco sol ou falta de adubo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a lofantera recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a lofantera",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). No verão, com sol pleno, pode precisar a cada 2 dias; de junho a agosto, espace para 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a lofantera",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 ou 1 xícara de bokashi na borda do vaso, longe do tronco, e regue em seguida. A partir do segundo ano, troque por NPK 4-14-8 na primavera para favorecer a florada. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas, as brotações novas e as axilas dos ramos. Procure escamas brancas ou marrons, insetos agrupados, folhas pegajosas ou pó preto por cima delas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera, tire a planta do vaso, corte até 5 cm das raízes que circulam o torrão e troque ao menos um terço do substrato. Se o vaso tiver menos de 80 L, passe para um 20 a 30 cm maior de diâmetro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Coloque um tutor",
+      "mensagem": "A lofantera jovem tem tronco fino e copa alta, e o vento inclina o tronco ou solta o torrão dentro do vaso.",
+      "acao_requerida": "Cravar uma estaca firme ao lado do tronco, sem ferir o torrão, e amarrar o tronco com fita macia em forma de oito"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Confira o amarrio do tutor",
+      "mensagem": "O tronco engrossou, e um amarrio apertado estrangula a casca e marca a árvore para sempre.",
+      "acao_requerida": "Afrouxar ou refazer as amarras e retirar o tutor se o tronco já se sustentar sozinho sem balançar o torrão"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos murcham; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter os furos desentupidos. Se aparecer, tire do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodonosas nos ramos e no verso das folhas; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool; em infestação maior, aplicar óleo mineral a 1% ou óleo de neem a 0,5% com detergente neutro no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos nas brotações e nos cachos de flores; brotos novos enrolados e deformados",
+      "prevencao_tratamento": "Jato de água forte nas brotações; se persistir, óleo de neem a 0,5% a cada 5 dias, no fim da tarde"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Pó preto que sai ao esfregar a folha, sobre a mela deixada por cochonilhas e pulgões",
+      "prevencao_tratamento": "Controlar os insetos que produzem a mela; depois lavar as folhas com água e sabão neutro"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, secas nas bordas ou que caem de uma vez após noites abaixo de 5 °C; pontas dos ramos secas",
+      "prevencao_tratamento": "Nas noites frias, levar o vaso para perto de uma parede ou sob cobertura; esperar a brotação da primavera para cortar só o que realmente secou"
+    },
+    {
+      "nome": "Clorose por falta de nutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amareladas com as nervuras verdes, crescimento lento e florada fraca",
+      "prevencao_tratamento": "Manter a adubação a cada 2 meses na estação quente e renovar o substrato a cada 2 anos; um adubo com micronutrientes corrige em poucas semanas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "A lofantera é tropical: quase para de crescer no frio e sofre com geada e vento gelado. O substrato também demora mais para secar.",
+      "acao_requerida": "Espaçar as regas para cada 5 a 7 dias, suspender o adubo e, em noites abaixo de 5 °C, abrigar o vaso junto a uma parede ou sob cobertura"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o ritmo",
+      "mensagem": "A planta volta a brotar e prepara a florada. É a hora de devolver água e nutrientes.",
+      "acao_requerida": "Voltar à rega a cada 3 dias e aplicar a primeira adubação da estação, com NPK 4-14-8 se a planta já tiver mais de um ano"
+    },
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Poda leve depois da florada",
+      "mensagem": "Com o fim da florada e antes do frio, uma poda leve mantém a copa compacta e proporcional ao vaso.",
+      "acao_requerida": "Retirar os cachos secos, ramos secos ou cruzados e encurtar em até um terço os ramos que desequilibram a copa, sempre acima de uma folha"
+    }
+  ]
+}

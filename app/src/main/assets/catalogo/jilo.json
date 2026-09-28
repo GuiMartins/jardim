@@ -1,0 +1,187 @@
+{
+  "planta": {
+    "nome_comum": "Jiló",
+    "nome_cientifico": "Solanum aethiopicum (grupo Gilo)",
+    "descricao": "Parente da berinjela, de frutos verdes e amargos colhidos ainda imaturos, muito usado na cozinha mineira e goiana. Na natureza vive alguns anos, mas em vaso é cultivado como anual: produz por 3 a 4 meses e depois perde vigor. Aguenta bem o calor e produz muito num vaso grande e ensolarado.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": 200,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 35 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; prefira cor clara ou barro para a raiz não esquentar demais",
+    "volume_minimo_litros": 25,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto curtido, 20% areia grossa ou perlita; misture 2 colheres de sopa de farinha de ossos e 1 colher de sopa de calcário dolomítico por vaso de 25 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "pegamento",
+      "nome": "Pegamento da Muda",
+      "dia_inicio": 1,
+      "dia_fim": 15,
+      "descricao": "Plante a muda com 4 a 6 folhas no mesmo nível em que estava no copinho e firme o substrato ao redor. Nos primeiros dias as folhas podem murchar nas horas quentes; a muda pegou quando voltam a ficar firmes o dia todo e surge folha nova no topo."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 16,
+      "dia_fim": 50,
+      "descricao": "A planta ganha altura e se ramifica, formando uma forquilha a uns 20 a 30 cm do substrato. Folhas grandes e verde-escuras indicam boa nutrição; caule fino e comprido indica falta de sol. Amarre os ramos ao tutor com barbante em laço frouxo (formando um 8) a cada 15 cm de crescimento, aproveitando a rega."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 51,
+      "dia_fim": 75,
+      "descricao": "Surgem flores lilases em pequenos cachos nas axilas das folhas. Cada flor fecundada vira um fruto verde que engrossa em 15 a 25 dias. Queda de muitas flores costuma indicar rega irregular ou calor acima de 35 °C."
+    },
+    {
+      "fase_id": "frutificacao_colheita",
+      "nome": "Frutificação e Colheita",
+      "dia_inicio": 76,
+      "dia_fim": 200,
+      "descricao": "Os frutos atingem o ponto com 3 a 5 cm, verde-claros, brilhantes e ainda firmes. Colhendo sempre, a planta continua florescendo por 3 a 4 meses. Quando a produção cai a poucos frutos pequenos e as folhas de baixo amarelam em massa, o ciclo acabou: renove o substrato e plante nova muda."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_pegamento",
+      "titulo": "Regar a muda de jiló",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Regue pela manhã ao redor do caule até escorrer pelos furos. O substrato deve ficar úmido nos primeiros 5 cm, sem poça na superfície. Em dias acima de 32 °C, confira de novo no fim da tarde.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jiló",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 200,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos, sem molhar as folhas. Com a planta carregada de frutos e calor acima de 30 °C, confira todo dia; em dias frios e nublados, pode passar para cada 3 ou 4 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o jiló",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Espalhe meia xícara de húmus de minhoca e 1 colher de sopa de bokashi (ou farinha de ossos) na borda do vaso, a 5 cm do caule, misture de leve na superfície e regue em seguida. A partir da floração, acrescente 1 colher de chá de cinza de madeira peneirada para dar potássio aos frutos.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 200,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teia fina (ácaro), insetos brancos que voam ao mexer (mosca-branca) e colônias de pulgão nos brotos. Nos frutos, procure furinhos escuros de entrada de lagarta e manchas afundadas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_jilo",
+      "titulo": "Colher jilós no ponto",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 80,
+      "dia_fim_ciclo": 200,
+      "instrucoes": "Corte com tesoura, deixando 1 cm de cabinho, os frutos verde-claros e brilhantes com 3 a 5 cm. Retire também os que começaram a amarelar ou avermelhar: já passaram do ponto, ficam com sementes duras e fazem a planta produzir menos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Hora de pôr o tutor",
+      "mensagem": "Carregado de frutos, o jiló chega a 1 m e os galhos quebram com vento e peso.",
+      "acao_requerida": "Cravar uma estaca de 1,2 m a 8 cm do caule, sem ferir a raiz, e amarrar o caule com barbante em laço frouxo formando um 8"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Desbrota da base",
+      "mensagem": "Brotos que nascem abaixo da primeira forquilha tiram força da planta e deixam a base abafada, favorecendo fungos.",
+      "acao_requerida": "Tirar com os dedos ou tesoura limpa os brotos e as folhas que ficam abaixo da primeira forquilha e as que encostam no substrato"
+    },
+    {
+      "dia_disparo": 75,
+      "titulo": "Primeiros jilós quase prontos",
+      "mensagem": "Os primeiros frutos devem estar com 3 a 5 cm, verde-claros e brilhantes.",
+      "acao_requerida": "Conferir o tamanho dos frutos e começar a colher antes que amarelem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas de baixo amarelando e base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com os 3 cm de cima secos e garantir furos desobstruídos; se ocorrer, suspenda a rega até o substrato secar e retire as partes podres. Planta com caule mole na base raramente se recupera"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que viram bronzeado, teia fina no verso, principalmente no tempo quente e seco",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água no fim da tarde nos dias secos; se persistir, aplicar calda de enxofre ou óleo de neem a 0,5% a cada 5 dias, no fim da tarde"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos ao mexer na planta, folhas pegajosas e com fumagina preta; pode transmitir vírus",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias; retire folhas muito infestadas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e no verso das folhas novas, que ficam enrugadas",
+      "prevencao_tratamento": "Jato de água forte nas colônias; se voltar, sabão neutro a 1% ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Broca-pequena-do-fruto (Neoleucinodes elegantalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos com bordas escuras nos frutos e galerias com lagarta rosada dentro",
+      "prevencao_tratamento": "Colher no ponto, recolher e descartar em saco fechado todo fruto furado ou caído; em infestação, Bacillus thuringiensis (Bt) nos frutos novos a cada 7 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas redondas, afundadas e escuras nos frutos, às vezes com pontos alaranjados no centro, em tempo quente e chuvoso",
+      "prevencao_tratamento": "Regar sem molhar folhas e frutos, manter a base arejada com a desbrota e retirar frutos manchados; em época chuvosa, calda bordalesa a 1% a cada 10 dias"
+    },
+    {
+      "nome": "Queda de flores",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores amarelam e caem sem formar fruto",
+      "prevencao_tratamento": "Manter a rega regular, sem deixar o vaso secar por completo, e evitar excesso de adubo nitrogenado; em ondas de calor acima de 35 °C, sombrear nas horas mais quentes"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Frio chegando para o jiló",
+      "mensagem": "Abaixo de 15 °C o jiló para de florescer e os frutos param de crescer; geada mata a planta.",
+      "acao_requerida": "Levar o vaso para o lugar mais ensolarado e protegido do vento, espaçar a rega conforme o dedo indicar e cobrir com TNT nas noites de previsão de geada"
+    }
+  ]
+}

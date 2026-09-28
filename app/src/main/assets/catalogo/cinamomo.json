@@ -1,0 +1,210 @@
+{
+  "planta": {
+    "nome_comum": "Cinamomo",
+    "nome_cientifico": "Melia azedarach",
+    "descricao": "Árvore caducifólia de crescimento rápido, com flores lilases muito perfumadas na primavera e folhagem rendada que dá sombra leve no verão. Em vaso grande fica bem menor e pode ser mantida com 2 a 3 m de altura com poda anual. Os frutos amarelos são tóxicos para pessoas, cães e gatos. A espécie também é invasora no Sul do Brasil, por isso os cachos de frutos devem ser recolhidos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado, de cimento, fibra ou plástico grosso, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, vários furos no fundo e base larga, para não tombar com o vento",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou pedrisco fino; acrescente 1 xícara de farinha de ossos por vaso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso e ao sol. Umas poucas folhas amarelas e caídas são normais. A fase termina quando aparecem brotos novos, verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido: a muda pode ganhar 50 cm a 1 m na primavera e no verão. Nesta fase ela forma o tronco e os primeiros ramos da copa. No primeiro outono e inverno ela perde as folhas, o que é normal. Raspe a casca de um ramo com a unha: se estiver verde por baixo, a planta está viva e dormente."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: as folhas amarelam e caem entre maio e julho, e a planta fica pelada no inverno, com cachos de frutos amarelos. É a época da poda. Em setembro e outubro vêm as folhas novas e a floração lilás perfumada. No verão ela cresce rápido e pede mais água. Os frutos se formam no fim do verão e amadurecem no outono."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_estabelecimento",
+      "titulo": "Regar a muda de cinamomo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos (cerca de 5 L num vaso de 60 L). Acima de 30 °C, confira todo dia. Não deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar o cinamomo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos. No verão quente, confira a cada 2 dias. No inverno, sem folhas, regue só quando os 5 cm de cima estiverem secos, cerca de 1 vez por semana.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o cinamomo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto e 2 colheres de sopa de NPK 10-10-10 pela borda do vaso, longe do tronco, e regue em seguida. Se a planta estiver sem folhas (junho a agosto), pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os ramos novos. Procure escamas brancas ou marrons grudadas, insetos agrupados, lagartas, folhas roídas ou pó preto sobre as folhas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, antes da brotação: tire a planta do vaso, corte 3 a 5 cm das raízes em volta do torrão e as que estiverem enroladas no fundo, e replante no mesmo vaso com substrato novo (ou num vaso 20% maior). Regue bem e deixe à meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firme a muda com um tutor",
+      "mensagem": "O cinamomo cresce rápido e tem tronco fino quando jovem. Com vento, a muda tomba e as raízes novas se soltam.",
+      "acao_requerida": "Cravar uma estaca de 1 m ao lado da muda, sem ferir o torrão, e amarrar o tronco com fita ou tira de pano em forma de 8"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Defina a altura da copa",
+      "mensagem": "Em vaso, a copa deve começar baixa para a árvore ficar compacta e não virar com o vento.",
+      "acao_requerida": "Quando o tronco passar de 1,2 a 1,5 m, cortar a ponta principal logo acima de uma gema, para forçar a saída de 3 ou 4 ramos laterais"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Pode tirar o tutor",
+      "mensagem": "Com um ano, o tronco já deve ter engrossado o bastante para se sustentar sozinho.",
+      "acao_requerida": "Soltar a amarração e balançar o tronco de leve: se ficar firme, retirar a estaca; se ainda tombar, amarrar de novo por mais uns meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e amarelam mesmo com o substrato úmido, a base do tronco escurece e as raízes ficam marrons, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco nos primeiros centímetros, principalmente no inverno sem folhas, manter os furos desentupidos e nunca deixar água no prato. Em caso de ataque, tirar do vaso, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodonosas grudadas nos ramos e no verso das folhas; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Raspar com escova macia e sabão neutro; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada de pó preto sobre as folhas, que sai ao esfregar; aparece junto com cochonilhas ou pulgões",
+      "prevencao_tratamento": "Controlar os insetos que soltam o melado e lavar as folhas com água e sabão neutro"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro ou só com as nervuras, e bolinhas escuras de fezes no substrato",
+      "prevencao_tratamento": "Catar à mão; se forem muitas, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Raízes enoveladas",
+      "tipo": "DISTURBIO",
+      "sintomas": "O crescimento para, as folhas ficam menores e a água escorre rápido sem molhar o torrão; raízes saem pelos furos do vaso",
+      "prevencao_tratamento": "Renovar o substrato e podar as raízes a cada 2 anos, como na tarefa de troca de substrato"
+    },
+    {
+      "nome": "Queda de folhas por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem em pleno verão, fora da época normal de queda (maio a julho)",
+      "prevencao_tratamento": "Conferir a rega a cada 2 dias no calor; regar devagar até escorrer, para molhar o torrão inteiro, e cobrir o substrato com casca de pinus para reter umidade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Frutos tóxicos amadurecendo",
+      "mensagem": "Os frutos amarelos do cinamomo são venenosos para crianças, cães e gatos. Os pássaros espalham as sementes, e a espécie é invasora em matas do Sul.",
+      "acao_requerida": "Cortar os cachos de frutos com tesoura de poda e recolher os que caíram no chão, descartando no lixo comum"
+    },
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Queda de folhas é normal",
+      "mensagem": "O cinamomo perde as folhas no outono e no inverno. Sem folhas, ele gasta pouca água, e o excesso apodrece as raízes.",
+      "acao_requerida": "Espaçar a rega para cerca de 1 vez por semana, só com os 5 cm de cima do substrato secos, e varrer as folhas caídas"
+    },
+    {
+      "meses": [
+        7,
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "Com a árvore dormente e sem folhas, a poda cicatriza bem e controla o tamanho da copa no vaso.",
+      "acao_requerida": "Encurtar os ramos do ano em 1/3 a 1/2, acima de uma gema voltada para fora; retirar ramos secos, cruzados e brotos da base do tronco, e cortar os cachos de frutos que restarem"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Brotação e floração",
+      "mensagem": "As folhas novas e as flores lilases perfumadas estão chegando, e a planta volta a pedir água e nutrientes.",
+      "acao_requerida": "Voltar à rega normal (a cada 3 dias, conferindo com o dedo) e fazer uma adubação com húmus e NPK 10-10-10"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: confira a rega",
+      "mensagem": "No auge do verão, uma árvore de copa cheia num vaso seca o substrato em 1 ou 2 dias.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, regar até escorrer pelos furos e cobrir a superfície com 3 cm de casca de pinus"
+    }
+  ]
+}

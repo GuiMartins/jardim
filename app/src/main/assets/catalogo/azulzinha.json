@@ -1,0 +1,201 @@
+{
+  "planta": {
+    "nome_comum": "Azulzinha",
+    "nome_cientifico": "Evolvulus glomeratus",
+    "descricao": "Subarbusto brasileiro, rasteiro e ramificado, de folhas prateadas e pequenas flores azul-celeste que abrem de manhã e fecham à tarde. Floresce quase o ano todo no sol pleno, tolera bem a seca e fica muito bonita pendendo de vasos e jardineiras.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso, cuia ou jardineira de pelo menos 20 cm de diâmetro e 15 cm de profundidade, com vários furos no fundo. Vaso de barro ajuda o substrato a secar entre as regas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% perlita ou casca de arroz carbonizada; solto e bem drenado, porque a raiz apodrece em substrato que segura água",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda está enraizando no vaso novo. Pode perder algumas folhas e dar poucas flores nas primeiras semanas. Quando aparecerem pontas novas de folhas prateadas nos ramos, a raiz pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Os ramos se alongam e se espalham pela borda do vaso, e a floração fica diária em dias de sol. Beliscar as pontas nesta fase deixa a planta cheia em vez de comprida e rala. A fase termina quando os ramos já cobrem a superfície do vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Touceira densa que floresce da primavera ao outono e diminui no frio. Aguenta alguns dias de substrato seco, mas não encharcamento. No fim do inverno recebe uma poda de renovação; a cada dois anos, substrato novo. Com menos de 4 horas de sol, os ramos esticam e as flores somem."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a azulzinha recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Com a raiz ainda curta, a muda murcha rápido no sol forte. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a azulzinha",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; só regue se estiver seco, até escorrer pelos furos, e não deixe água no pratinho. No inverno, espace para a cada 5 a 7 dias. Folhas levemente murchas no fim da tarde de verão são normais e voltam de noite.",
+      "critica": false
+    },
+    {
+      "id": "beliscar_pontas",
+      "titulo": "Beliscar as pontas dos ramos",
+      "tipo": "PODA",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Com os dedos ou tesoura limpa, tire 1 a 2 cm da ponta dos ramos mais compridos, logo acima de um par de folhas. Cada corte faz o ramo se dividir em dois e deixa a planta mais cheia de flores.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a azulzinha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de húmus de minhoca ou 1 colher de chá de NPK 4-14-8 na borda do vaso de 3 L, sem encostar no caule, e regue em seguida. No inverno (junho a agosto), pule a adubação. Nitrogênio demais faz muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire algumas folhas e olhe o verso e as pontas dos ramos: procure pontinhos amarelados com teia fina (ácaro), bolinhas brancas algodonosas (cochonilha) ou colônias de insetos verdes (pulgão). Confira também se a base do caule está firme e clara, sem escurecer.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência na primavera: tire a planta do vaso, solte as raízes de fora e corte as escuras ou moles. Replante no mesmo vaso com substrato novo ou num vaso 5 cm maior. Regue e deixe 3 dias em meia sombra antes de voltar ao sol pleno.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso",
+      "mensagem": "Muda deixada no saquinho ou no copinho seca rápido e enrola a raiz.",
+      "acao_requerida": "Plantar no vaso definitivo, na mesma altura em que estava, sem enterrar o caule; regar bem e deixar os primeiros 3 dias em meia sombra antes do sol pleno"
+    },
+    {
+      "dia_disparo": 4,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Depois dos primeiros dias de adaptação, a azulzinha precisa de sol direto para florescer.",
+      "acao_requerida": "Mudar o vaso para o lugar mais ensolarado, com pelo menos 4 a 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 91,
+      "titulo": "Azulzinha estabelecida",
+      "mensagem": "A raiz já ocupa o vaso e a planta tolera melhor alguns dias sem água. Regar demais agora é o maior risco.",
+      "acao_requerida": "Regar só quando os 3 cm de cima do substrato estiverem secos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, base do caule escura e mole, folhas amarelando e ramos secando do centro para fora",
+      "prevencao_tratamento": "Substrato arenoso, vaso com furos e sem pratinho cheio; regar só com o substrato seco. Na primeira murcha com terra úmida, suspenda a rega, tire a planta, corte raízes escuras e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas entre as pontas dos ramos, comum no tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodonosas nas axilas das folhas e na base dos ramos; ramos enfraquecidos e pegajosos",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, calda de sabão neutro com óleo de neem a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas novas; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água ou beliscar as pontas atacadas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e ralos, folhas espaçadas e quase nenhuma flor",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 a 6 horas de sol direto e podar os ramos esticados para rebrotarem compactos"
+    },
+    {
+      "nome": "Dano por frio ou geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e pontas escurecidas ou secas depois de noites abaixo de 5 °C",
+      "prevencao_tratamento": "Nas noites frias, levar o vaso para perto de uma parede ou para baixo de uma cobertura; cortar só as partes secas quando o frio passar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Frio: proteja e regue menos",
+      "mensagem": "No inverno a azulzinha quase para de crescer e floresce pouco. Substrato frio e úmido apodrece a raiz, e geada queima os ramos.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm, suspender o adubo e abrigar o vaso nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "Antes da primavera, a poda tira os ramos velhos e lenhosos e faz a planta rebrotar cheia e florir mais.",
+      "acao_requerida": "Cortar todos os ramos pela metade ou até um terço do comprimento, retirando os secos, e retomar a adubação mensal em setembro"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuvas de verão",
+      "mensagem": "Vários dias de chuva seguidos encharcam o vaso e são a principal causa de podridão da raiz.",
+      "acao_requerida": "Em semanas chuvosas, esvaziar o pratinho, não regar se o substrato estiver úmido e, se possível, tirar o vaso da chuva direta"
+    }
+  ]
+}

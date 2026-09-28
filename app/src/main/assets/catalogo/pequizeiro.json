@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Pequizeiro",
+    "nome_cientifico": "Caryocar brasiliense",
+    "descricao": "Árvore símbolo do Cerrado, de raiz pivotante profunda. Dá o pequi, fruto de polpa amarela e perfumada. Em vaso, cresce devagar e rende pouco fruto, porque na natureza passa de 10 m e depende de morcegos para polinizar. Vale como planta de coleção e para conservar a espécie. Comece com muda enxertada, que pode frutificar em 3 a 4 anos (a de semente leva de 6 a 8).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso alto, de pelo menos 50 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo. Prefira barro ou tambor cortado: a raiz pivotante precisa descer, e vaso raso a enrola e trava o crescimento.",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 9,
+    "substrato_recomendado": "40% terra de barranco ou de subsolo, 30% areia grossa lavada, 20% húmus de minhoca e 10% casca de pinus fina. Deve ficar ácido (pH entre 5 e 6): não misture calcário além de 1 colher de sopa por vaso de 60 L.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o torrão inteiro, no mesmo nível em que estava no saquinho, sem desfazer nem apertar a raiz. Nas duas primeiras semanas é normal que ela perca uma ou duas folhas velhas. Na terceira ou quarta semana, brotos avermelhados na ponta dos ramos mostram que a raiz pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "O crescimento é lento: a parte aérea ganha de 20 a 40 cm no ano, porque a planta põe energia na raiz pivotante. As brotações vêm em surtos na estação chuvosa, com folhas de três folíolos, avermelhadas quando novas. Na seca a planta pode parar e soltar parte das folhas. Isso não é doença."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1460,
+      "descricao": "O tronco engrossa e a copa se forma. A muda enxertada pode dar as primeiras flores, grandes, amarelo-claras e com muitos estames, entre agosto e outubro a partir do 3º ano. Na primeira florada, poucas flores viram fruto: é normal."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1461,
+      "dia_fim": null,
+      "descricao": "O ano típico do adulto: perde parte das folhas e renova a copa no fim da seca (julho a setembro), floresce de agosto a outubro e amadurece os frutos de novembro a fevereiro. Em vaso, a copa fica em 2 a 3 m se for podada, e a produção é pequena: um punhado de frutos por safra. Ter outro pequizeiro por perto melhora o pegamento."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de pequi",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos (uns 4 a 6 L num vaso de 60 L). Se estiver úmido, espere mais um dia: a raiz nova apodrece no encharcado.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o pequizeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. Acima de 32 °C, confira a cada 2 ou 3 dias. De junho a setembro, estique para 6 ou 7 dias: é o repouso da seca.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure lagartas escuras ou folhas roídas. Confira os ramos e as axilas das folhas: escamas brancas ou marrons grudadas são cochonilhas. Folha com manchas escuras e afundadas é antracnose.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre outubro e dezembro, com as chuvas. Enquanto houver vaso maior, passe o torrão inteiro para um de 20 a 40 L a mais, até uns 150 L, sem desmanchar a raiz. No vaso final, tire um terço do substrato velho das laterais e da superfície e complete com mistura nova. Nunca corte a raiz pivotante central.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "A muda pegou?",
+      "mensagem": "Com um mês, o pequizeiro deve mostrar brotos novos avermelhados na ponta dos ramos.",
+      "acao_requerida": "Arranhe de leve a casca de um ramo com a unha. Verde por baixo é sinal de muda viva, que só está lenta: mantenha a rega. Marrom e seco em todos os ramos, com as folhas caídas, indica raiz podre ou muda perdida: confira se o vaso drena."
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Primeiras flores à vista",
+      "mensagem": "A partir do 3º ano, a muda enxertada pode florescer entre agosto e outubro. Uma planta jovem que segura muitos frutos para de crescer.",
+      "acao_requerida": "Na primeira safra, deixe no máximo 3 a 5 frutos e tire os outros ainda pequenos, com tesoura limpa"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; a base do tronco escurece e o substrato cheira a mofo",
+      "prevencao_tratamento": "Regue só com o substrato seco a 5 cm, esvazie o prato e mantenha os furos desentupidos. Se aparecer, suspenda a rega até secar bem e troque o substrato encharcado sem mexer no torrão central"
+    },
+    {
+      "nome": "Lagarta-desfolhadora do pequizeiro (Eunica bechina)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas roídas até a nervura; lagartas escuras e espinhosas no verso das folhas",
+      "prevencao_tratamento": "Catar as lagartas com luva; em infestação grande, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas ou marrons presas nos ramos e nas axilas das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Retirar com escova macia e água com sabão neutro; se persistir, óleo mineral a 1% ou óleo de neem a 0,5%, a cada 7 dias, fora do sol forte"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nas folhas novas e nas flores; flores e frutinhos caem pretos",
+      "prevencao_tratamento": "Regar no substrato, sem molhar a copa; remover e descartar as partes atacadas; em época muito chuvosa, calda bordalesa a 1% nas brotações"
+    },
+    {
+      "nome": "Clorose por excesso de calcário",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelo-claras com as nervuras verdes; crescimento parado",
+      "prevencao_tratamento": "O pequizeiro é do solo ácido do Cerrado: não adube com calcário nem cinza. Corrija com substrato novo ácido (terra de subsolo com casca de pinus) e rega com água de chuva quando possível"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Chegou a seca",
+      "mensagem": "Até setembro, o pequizeiro entra em repouso e pode soltar parte das folhas, como no Cerrado.",
+      "acao_requerida": "Espaçar a rega para 6 ou 7 dias, conferindo com o dedo a 5 cm, e não adubar até outubro"
+    },
+    {
+      "meses": [
+        10,
+        12,
+        2
+      ],
+      "titulo": "Adubar o pequizeiro",
+      "mensagem": "Na estação chuvosa, a planta brota e forma os frutos: é quando aproveita o adubo.",
+      "acao_requerida": "Espalhar na borda do vaso 1 xícara de húmus de minhoca e 1 colher de sopa de farinha de ossos (ou 2 colheres de sopa de NPK 4-14-8), longe do tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "No fim da seca, antes da brotação, a planta aceita bem uma poda leve.",
+      "acao_requerida": "Cortar os galhos secos, os que se cruzam e os brotos que nascem abaixo da marca do enxerto; na copa, não tirar mais de um quinto dos ramos"
+    },
+    {
+      "meses": [
+        11,
+        12,
+        1
+      ],
+      "titulo": "Safra do pequi",
+      "mensagem": "Se a planta frutificou, os pequis amadurecem e caem sozinhos; fruto arrancado verde não amadurece.",
+      "acao_requerida": "Recolher do chão todo dia os frutos caídos e consumir em até 3 dias. Nunca morder o caroço: por baixo da polpa ele tem espinhos finos"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Beladona",
+    "nome_cientifico": "Amaryllis belladonna",
+    "descricao": "Bulbosa sul-africana que no fim do verão solta hastes nuas de 50 a 80 cm com cachos de flores rosadas e perfumadas, antes de aparecerem as folhas (por isso também é chamada de 'dama-nua'). Cresce no outono e no inverno e dorme seca no verão. Todas as partes são tóxicas se ingeridas, principalmente o bulbo: mantenha longe de crianças e animais e use luvas ao manusear.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 20 cm de diâmetro e 25 cm de profundidade para um bulbo, com furos no fundo; o bulbo fica com o pescoço (a ponta) no nível do substrato ou um pouco acima",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% casca de pinus fina ou perlita, 10% húmus de minhoca; precisa drenar rápido, porque o bulbo apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_enraizamento",
+      "nome": "Plantio e Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 45,
+      "descricao": "Plante o bulbo firme e sem manchas moles, com o pescoço aparente e só a base e os lados enterrados. As raízes se formam em 3 a 6 semanas sem sinal visível. Se o plantio foi em fevereiro ou março, uma haste floral pode surgir já nesta fase, porque a flor se formou dentro do bulbo no ano anterior. A fase termina quando aparecem as primeiras folhas em fita ou a haste floral."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 46,
+      "dia_fim": 730,
+      "descricao": "Nos dois primeiros anos a beladona se acostuma ao vaso: folhas verdes em fita do outono ao fim do inverno, que amarelam na primavera, e dormência sem folhas no verão. É comum não florescer no primeiro ano depois do plantio, porque ela sente muito ser mudada de lugar. Folhas largas e verdes o inverno todo mostram que o bulbo está acumulando reserva para florir."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: em fevereiro e março, hastes roxas e nuas sobem de repente e abrem de 6 a 12 flores em trombeta; de abril a setembro, folhas em fita alimentam o bulbo; em outubro e novembro, as folhas amarelam e secam; de dezembro a janeiro, o bulbo dorme seco. Com os anos, formam-se bulbos-filhos que enchem o vaso e aumentam a floração."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar o bulbo recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 28,
+      "instrucoes": "No dia 1, regue até escorrer pelos furos para assentar o substrato em volta do bulbo. Depois, enfie o dedo 3 cm no substrato: se estiver seco, regue em volta do bulbo, sem molhar o pescoço, até escorrer; se estiver úmido, não regue. Sem essa umidade as raízes novas secam, e com excesso o bulbo apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_regular",
+      "titulo": "Regar a beladona",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 29,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com folhas ou haste floral (fevereiro a outubro): enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Sem folhas (dormência, dezembro e janeiro): não regue, só um copo de água a cada 3 a 4 semanas se o substrato estiver esfarelando, e proteja o vaso da chuva de verão.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e bulbo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure lagartas listradas de preto e amarelo roendo folhas ou hastes, manchas vermelhas nas folhas e flores e tufos brancos de cochonilha no pescoço do bulbo. Aperte de leve o pescoço: se estiver mole, confira se o bulbo está apodrecendo.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e dividir touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça só com a planta dormente e sem folhas (dezembro ou janeiro); se o lembrete chegar com folhas ou flores, espere até a dormência. Tire o torrão, separe com cuidado os bulbos-filhos que já soltam sozinhos e replante cada um em substrato novo, com o pescoço aparente. Use luvas: a seiva do bulbo irrita a pele.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 45,
+      "titulo": "Paciência com a primeira floração",
+      "mensagem": "A beladona costuma pular a floração no ano em que é plantada. Isso é normal e não indica problema, desde que ela solte folhas verdes no outono.",
+      "acao_requerida": "Manter o vaso no sol pleno e não tirar o bulbo do lugar para 'ver como está'"
+    },
+    {
+      "dia_disparo": 400,
+      "titulo": "Um ano de beladona",
+      "mensagem": "Se ainda não floresceu, as causas mais comuns são bulbo enterrado fundo demais, pouco sol ou folhas cortadas ainda verdes.",
+      "acao_requerida": "Conferir se o pescoço do bulbo está no nível do substrato e se o vaso recebe pelo menos 4 horas de sol direto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do bulbo (Fusarium e excesso de água)",
+      "tipo": "DOENCA",
+      "sintomas": "Pescoço do bulbo mole e escuro, cheiro azedo, folhas que amarelam fora de época e se soltam da base",
+      "prevencao_tratamento": "Substrato arenoso, vaso furado e sem pratinho cheio; não regue na dormência nem deixe o vaso na chuva de verão. Se pegar, tire o bulbo, corte a parte mole até o tecido firme, deixe secar 2 dias à sombra e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Lagarta-das-amarílidas (Xanthopastis timais)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas pretas com faixas amarelas comendo folhas e hastes, que às vezes entram no pescoço do bulbo; montinhos de fezes escuras",
+      "prevencao_tratamento": "Catar as lagartas com luva e procurar grupos de ovos no verso das folhas; em infestação grande, Bacillus thuringiensis (Bt) conforme o rótulo, no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha-algodão",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos cerosos entre as escamas do pescoço e na base das folhas; folhas pegajosas e fracas",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; repetir a cada 7 dias até sumir. Óleo de neem a 0,5% nos casos persistentes"
+    },
+    {
+      "nome": "Mancha-vermelha (Stagonospora curtisii)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas avermelhadas alongadas em folhas, hastes e pétalas; hastes que tortam para o lado da mancha",
+      "prevencao_tratamento": "Regar no substrato, sem molhar folhas; tirar e jogar fora as folhas manchadas; em ataque forte, fungicida cúprico conforme o rótulo"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Anos seguidos de folhas saudáveis sem nenhuma haste floral",
+      "prevencao_tratamento": "Pescoço do bulbo no nível do substrato, sol pleno, folhas mantidas até secarem sozinhas e dormência seca no verão. Evite mudar de vaso sem necessidade: cada mudança pode custar uma floração"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Hastes florais a caminho",
+      "mensagem": "É a época em que as hastes roxas e nuas sobem do bulbo, às vezes 10 cm em poucos dias.",
+      "acao_requerida": "Assim que a haste aparecer, retomar a rega semanal e girar o vaso a cada 3 dias para ela crescer reta"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Tirar as hastes secas",
+      "mensagem": "As flores já passaram e as folhas estão saindo. Deixar as sementes amadurecerem gasta a reserva do bulbo.",
+      "acao_requerida": "Cortar as hastes florais secas rente ao pescoço do bulbo, com tesoura limpa, sem ferir as folhas novas"
+    },
+    {
+      "meses": [
+        4,
+        6,
+        8
+      ],
+      "titulo": "Adubar a beladona",
+      "mensagem": "Com as folhas verdes, o bulbo está guardando a reserva para a próxima floração.",
+      "acao_requerida": "Regar com adubo líquido para floração (tipo NPK 4-14-8) na metade da dose do rótulo, com o substrato já úmido; pular se a planta estiver sem folhas"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "O bulbo aguenta o frio, mas geada queima as folhas, e sem folhas o bulbo não acumula reserva.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, levar o vaso para perto de uma parede ou sob uma cobertura"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Folhas amarelando: menos água",
+      "mensagem": "A beladona começa a entrar em dormência. As folhas amarelas ainda estão devolvendo nutrientes para o bulbo.",
+      "acao_requerida": "Espaçar as regas para a cada 10 a 14 dias e só tirar as folhas quando estiverem totalmente secas e soltarem com um puxão leve"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Dormência de verão",
+      "mensagem": "Sem folhas, o bulbo descansa. É no calor seco que ele forma a flor do ano seguinte; chuva no vaso agora pode apodrecê-lo.",
+      "acao_requerida": "Suspender a rega, manter o vaso no sol e colocá-lo sob uma cobertura nos dias de chuva até as hastes aparecerem"
+    }
+  ]
+}

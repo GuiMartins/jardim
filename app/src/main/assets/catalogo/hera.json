@@ -1,0 +1,201 @@
+{
+  "planta": {
+    "nome_comum": "Hera",
+    "nome_cientifico": "Hedera helix",
+    "descricao": "Trepadeira perene de folhas lobadas, verdes ou variegadas, que cobre treliças, muros e cai bonita de vasos suspensos. Tolera pouca luz e é fácil de manter, mas prefere clima ameno e sofre com calor forte e ar seco. Toda a planta é tóxica se ingerida: mantenha longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou cachepô suspenso com pelo menos 20 cm de diâmetro e 18 cm de profundidade, com furos no fundo; para cobrir treliça, jardineira de 40 cm com uma muda a cada 20 cm",
+    "volume_minimo_litros": 4,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% terra vegetal, 30% substrato à base de fibra de coco ou casca de pinus fina, 20% perlita ou areia grossa; misture 1 colher de sopa de farinha de ossos por litro",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao novo vaso e à nova luz. É normal perder algumas folhas velhas da base. A fase termina quando surgem folhas novas, menores e mais claras, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Os ramos se alongam de 2 a 5 cm por semana na primavera e no verão e começam a soltar raízes aéreas nos nós, que grudam em superfícies ásperas. Guie os ramos para o suporte enquanto ainda estão flexíveis."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "A hera cresce forte da primavera ao outono e quase para no inverno. Pede poda de condução regular para não ficar com ramos longos e pelados na base. Em vaso raramente floresce; se as folhas ficarem pequenas e amareladas com raízes saindo pelos furos, é hora de trocar de vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a hera recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. As raízes novas ainda não alcançam o fundo do vaso, então não deixe a superfície secar por completo.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a hera",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e nunca deixe água parada no pratinho. Acima de 28 °C ou em vaso suspenso ao vento, confira a cada 3 dias; no inverno, a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a hera",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g de NPK 10-10-10 por litro de água (ou use adubo líquido para folhagens na metade da dose do rótulo) e regue com o substrato já úmido. Suspenda de junho a agosto, quando a planta está parada. Hera variegada adubada demais perde as manchas claras.",
+      "critica": false
+    },
+    {
+      "id": "poda_conducao",
+      "titulo": "Podar e guiar os ramos",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa as pontas dos ramos mais compridos logo acima de uma folha, para forçar brotação lateral e deixar a planta cheia. Prenda os ramos novos ao suporte com arame encapado frouxo e retire folhas secas ou amareladas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e do miolo contra a luz. Procure pontinhos amarelados e teias finas (ácaro), escamas marrons ou algodãozinho branco nos caules (cochonilha) e manchas escuras com halo amarelo.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no outono, tire a planta do vaso, solte as raízes enoveladas e corte as pretas ou moles. Replante em vaso 5 cm maior de diâmetro com substrato novo na mesma receita e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Mudas de hera costumam vir em vasinhos de 11 cm com raízes já apertadas. No vaso maior ela cresce muito mais rápido.",
+      "acao_requerida": "Transplantar a muda para o vaso definitivo na mesma altura em que estava, firmar o substrato e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Hora de dar um suporte",
+      "mensagem": "Os ramos já estão se alongando. Guiados agora, eles se fixam onde você quiser; soltos, embaraçam e quebram.",
+      "acao_requerida": "Instalar treliça, arame ou tutor de fibra de coco no vaso (ou decidir deixar os ramos pendentes, se o vaso for suspenso) e prender os ramos mais longos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; raízes pretas, moles e com cheiro ruim; base dos ramos escurece",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no pratinho. Se aparecer, tirar do vaso, cortar as raízes podres, replantar em substrato novo e seco e só regar de novo após 3 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que viram manchas bronzeadas; teias finas entre folhas e caules, sobretudo em ar seco e calor",
+      "prevencao_tratamento": "Lavar as folhas com jato de água dos dois lados e aumentar a umidade ao redor; se persistir, óleo de neem a 0,5% com gota de detergente no fim da tarde a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons grudadas nos caules e nervuras, ou tufos brancos como algodão nas axilas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação, pulverizar óleo mineral a 1% ou calda de sabão neutro a cada 7 dias até sumir"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nas pontas novas; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água ou cortar as pontas infestadas; se voltar, óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas hortorum pv. hederae)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pequenas, encharcadas e verde-escuras que ficam pretas com halo amarelo; podem rachar o caule",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter o ar circulando. Cortar e jogar no lixo as partes afetadas, desinfetando a tesoura com álcool entre cortes"
+    },
+    {
+      "nome": "Pontas e bordas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas marrons e crocantes, principalmente nas folhas mais expostas",
+      "prevencao_tratamento": "Causado por sol forte da tarde, ar seco de ar-condicionado ou falta de rega no calor. Mudar para luz filtrada, afastar do ar-condicionado e conferir a rega com mais frequência no verão"
+    },
+    {
+      "nome": "Perda de variegação e ramos estiolados",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas de hera variegada ficam todas verdes; ramos finos com grandes espaços entre as folhas",
+      "prevencao_tratamento": "Falta de luz. Levar para perto de uma janela clara com 1 a 2 horas de sol da manhã e podar os ramos compridos e ralos para rebrotar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: hera em repouso",
+      "mensagem": "Com o frio, a hera quase para de crescer e bebe bem menos. Excesso de água agora é a principal causa de podridão de raiz.",
+      "acao_requerida": "Espaçar as regas para cada 7 a 10 dias, sempre conferindo com o dedo, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de primavera",
+      "mensagem": "A hera retoma o crescimento. Uma poda mais firme agora renova os ramos pelados e deixa a planta cheia para a estação.",
+      "acao_requerida": "Cortar pela metade os ramos longos e sem folhas na base, retirar os secos e voltar a adubar no mês seguinte"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: proteja a hera",
+      "mensagem": "Acima de 30 °C e com ar seco, a hera queima as bordas das folhas e fica vulnerável ao ácaro-rajado.",
+      "acao_requerida": "Tirar do sol da tarde, conferir a rega a cada 2 ou 3 dias e borrifar água ao redor da planta (não nas folhas ao sol) nos dias mais secos"
+    }
+  ]
+}

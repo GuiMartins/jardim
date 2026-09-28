@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Dente-de-leão",
+    "nome_cientifico": "Taraxacum officinale",
+    "descricao": "Erva perene de roseta e raiz pivotante, conhecida como mato de jardim, mas cultivada como hortaliça: folhas amargas para salada e refogado, flores comestíveis e raiz usada em chá. Em vaso, rende folhas por anos se as flores forem cortadas antes de virarem 'bolinhas' de sementes.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de profundidade (a raiz pivotante desce reto) e furos no fundo; uma planta a cada 15 cm",
+    "volume_minimo_litros": 4,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa; fofo e sem pedras para a raiz crescer reta",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "As sementes precisam de luz para germinar: espalhe-as sobre o substrato e só pressione, sem cobrir, ou cubra com no máximo 0,5 cm de substrato peneirado. Entre 15 e 25 °C, os primeiros brotos aparecem do 7º ao 14º dia, com duas folhinhas ovais."
+    },
+    {
+      "fase_id": "roseta_jovem",
+      "nome": "Roseta Jovem",
+      "dia_inicio": 15,
+      "dia_fim": 60,
+      "descricao": "Surgem as folhas recortadas típicas, dispostas em roseta rente ao substrato, enquanto a raiz aprofunda. A fase termina quando a roseta tem 8 a 10 folhas de uns 10 cm, o ponto da primeira colheita."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Roseta cheia que rebrota do centro depois de cada colheita. Floresce principalmente na primavera, mas pode soltar flores o ano todo; as folhas ficam mais amargas no calor e depois da floração. A raiz engrossa a cada ano e pode ser colhida no segundo ano, mas isso encerra a planta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife a superfície pela manhã até ela ficar escura e úmida. As sementes ficam quase descobertas e morrem se a superfície secar por um dia inteiro; não encharque a ponto de empoçar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o dente-de-leão",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Acima de 30 °C, confira a cada 2 dias; no inverno, a cada 4 ou 5. Planta adulta tolera seca, mas folha de planta com sede fica dura e amarga.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar com húmus",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por vaso de 4 L, sem cobrir o centro da roseta, e regue em seguida. Adubo nitrogenado demais deixa as folhas moles e aguadas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a roseta",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas e olhe o centro da roseta e o verso das folhas: pulgões agrupados, pó branco, pústulas alaranjadas ou folhas roídas com rastro brilhante (lesma).",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura as folhas externas maiores, rente à base, e deixe pelo menos 5 folhas do centro para a planta rebrotar. Aproveite para cortar botões e flores abertas antes que virem bolas de sementes.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Retire a planta com o torrão inteiro, sem quebrar a raiz principal (se quebrar, ela rebrota do pedaço). Troque o substrato velho por mistura nova e replante na mesma altura, com o centro da roseta acima da superfície.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As mudas já têm folhas verdadeiras e competem pelo espaço. Raiz apertada vira roseta pequena e folha fina.",
+      "acao_requerida": "Deixar uma muda a cada 15 cm (uma por vaso de 4 L), cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 61,
+      "titulo": "Primeira colheita",
+      "mensagem": "A roseta deve ter 8 a 10 folhas de uns 10 cm. Folhas jovens são as menos amargas.",
+      "acao_requerida": "Colher só as folhas externas, preservando o centro da roseta"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da raiz (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas e amareladas mesmo com o substrato úmido; raiz escura, mole e com cheiro ruim; o centro da roseta apodrece",
+      "prevencao_tratamento": "Só regar com os 3 cm de cima secos, garantir furos desentupidos e nunca deixar água parada no pratinho. Planta com raiz mole raramente se recupera: descarte e ressemeie em substrato novo"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas no centro da roseta, nos botões e no verso das folhas; folhas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, esperando 7 dias após a última aplicação para colher"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou com buracos irregulares, rastro prateado brilhante, estragos de madrugada",
+      "prevencao_tratamento": "Catar à noite com lanterna, espalhar casca de ovo triturada ao redor da roseta e afastar o vaso do chão úmido"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco farinhento sobre as folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Mais sol e ventilação, regar o substrato e não as folhas; retirar as folhas atacadas e pulverizar leite diluído em água (1:9) a cada 7 dias"
+    },
+    {
+      "nome": "Folhas amargas demais",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas duras, fibrosas e muito amargas, geralmente no calor, com a planta em flor ou depois de dias de sede",
+      "prevencao_tratamento": "Cortar as flores, manter a rega regular e dar sombra à tarde no verão. Para suavizar, cubra a roseta com um vaso virado por 3 a 5 dias antes de colher (branqueamento)"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Floração do dente-de-leão",
+      "mensagem": "Na primavera a planta solta muitas flores amarelas. Cada flor vira em poucos dias uma bola de sementes que se espalha pelo bairro, e a floração deixa as folhas mais amargas.",
+      "acao_requerida": "Cortar botões e flores rente à base a cada colheita; as flores abertas podem ir para salada ou chá"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor do verão",
+      "mensagem": "Acima de 30 °C a roseta sofre com o sol forte da tarde: folhas murcham, endurecem e amargam.",
+      "acao_requerida": "Mudar o vaso para um lugar com sol só de manhã e conferir a rega a cada 2 dias"
+    }
+  ]
+}

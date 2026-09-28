@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Jequitibá-rosa",
+    "nome_cientifico": "Cariniana legalis",
+    "descricao": "Árvore gigante da Mata Atlântica, uma das maiores do Brasil, que passa dos 40 m de altura e vive séculos. Em vaso, a muda fica pequena e decorativa por alguns anos, com folhas que brotam avermelhadas na primavera. O objetivo final é plantá-la no chão, em área ampla e longe de construções.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo ou saco de cultivo com pelo menos 45 cm de altura e 40 cm de diâmetro, com vários furos no fundo. A raiz pivotante precisa de profundidade mais do que de largura",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal argilosa, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; misture 100 g de farinha de ossos por vaso de 50 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho do viveiro e se ajusta ao vaso. Pode perder algumas folhas velhas e ficar parada. Deixe-a com sol só da manhã nas duas primeiras semanas. A fase acaba quando aparecem folhas novas, de cor rosada ou avermelhada, na ponta do ramo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o caule começa a engrossar e lignificar. O crescimento vem em surtos: vários pares de folhas avermelhadas de uma vez e depois semanas parado. Com tudo certo, a muda cresce de 40 a 80 cm no primeiro ano."
+    },
+    {
+      "fase_id": "arvore_jovem",
+      "nome": "Árvore Jovem em Vaso",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arvoreta de tronco único e copa estreita. No ano típico, cresce muito de outubro a março, perde parte das folhas no inverno seco (junho a setembro) e rebrota vermelha na primavera. Em vaso, ela não chega a florescer: a floração só vem com décadas e no chão. Quando as raízes saírem pelos furos ou a planta passar de 2 m, é hora de levá-la para o solo definitivo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de jequitibá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda não se ligou ao substrato novo e seca antes do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jequitibá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. De junho a setembro, com a planta semidesfolhada, espace para 5 a 7 dias. No verão quente, confira a cada 2 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o jequitibá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca ou 2 colheres de sopa de bokashi pela superfície do vaso de 50 L, longe do caule, e regue em seguida. Entre junho e agosto, pule esta adubação: a planta está parada e o adubo se acumula no vaso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure cochonilhas brancas ou marrons no verso e nos ramos. Veja se há folhas cortadas em meia-lua (formiga cortadeira) e manchas escuras. Aperte a base do caule: ela deve estar firme, sem cheiro de podre.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar o vaso ou plantar no chão",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso. Se as raízes estiverem enoveladas, desembarace as de fora e corte as que giram em círculo. Passe para um vaso 30% maior com substrato novo ou, melhor, plante no chão, a pelo menos 10 m de casas, muros e canos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de mais sol",
+      "mensagem": "A muda passou pelos primeiros dias no vaso. Agora ela precisa de sol direto para engrossar o caule e não crescer fina e torta.",
+      "acao_requerida": "Mudar o vaso aos poucos para um local com pelo menos 4 a 6 horas de sol direto, aumentando uma hora por dia ao longo de uma semana"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Conferir se o caule está reto",
+      "mensagem": "Mudas de jequitibá em vaso às vezes tombam para o lado da luz ou com o vento e ficam tortas para sempre.",
+      "acao_requerida": "Se o caule estiver inclinado, cravar uma estaca de bambu a 5 cm dele e amarrar com fita macia em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de jequitibá: planeje o destino",
+      "mensagem": "Esta árvore vive séculos e fica enorme. Em vaso, ela aguenta alguns anos, mas precisa de um lugar definitivo no chão para se desenvolver.",
+      "acao_requerida": "Escolher o local definitivo (área aberta, longe de construções e redes elétricas) ou procurar um projeto de reflorestamento que receba a muda"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, a base do caule escurece e amolece, e o vaso cheira a mofo",
+      "prevencao_tratamento": "Regue só com o substrato seco a 5 cm e nunca deixe água no pratinho, principalmente no inverno. Se aparecer, tire a planta, corte as raízes escuras e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou a muda desfolhada de uma noite para outra; trilha de formigas carregando pedaços verdes",
+      "prevencao_tratamento": "Siga a trilha até o formigueiro e use isca formicida granulada na trilha, longe de crianças e animais. Uma faixa de graxa ou uma saia plástica no caule impede a subida"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodonosos ou escamas marrons nos ramos e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%. Em infestação maior, aplique óleo mineral ou óleo de neem a 1% com detergente neutro no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Manchas foliares fúngicas",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas arredondadas, às vezes com halo amarelo, que aumentam nos períodos chuvosos e abafados",
+      "prevencao_tratamento": "Regue no substrato, sem molhar as folhas, e deixe o vaso em local ventilado. Retire as folhas muito manchadas. Se espalhar, use calda bordalesa a 1% a cada 10 dias"
+    },
+    {
+      "nome": "Raiz enovelada",
+      "tipo": "DISTURBIO",
+      "sintomas": "O crescimento para mesmo na primavera, as raízes saem pelos furos, a água escorre direto sem molhar o torrão e a planta murcha logo depois da rega",
+      "prevencao_tratamento": "Troque de vaso a cada 2 anos ou plante no chão. Na troca, corte as raízes que giram em círculo para que cresçam para fora"
+    },
+    {
+      "nome": "Queda de folhas por estresse hídrico",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas secam pelas bordas e caem fora do inverno, depois de um dia de vaso muito seco ou de sol forte recém-introduzido",
+      "prevencao_tratamento": "Mantenha a rega regular no verão e aumente o sol aos poucos. A planta rebrota se o caule continuar verde ao ser raspado com a unha"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno seco: o jequitibá descansa",
+      "mensagem": "O jequitibá é semidecíduo. No inverno perde parte das folhas e quase para de crescer, e isso é normal. Mudas jovens sofrem com geada.",
+      "acao_requerida": "Espaçar a rega para 5 a 7 dias, suspender a adubação e, em noite com previsão de geada, levar o vaso para perto de uma parede ou cobri-lo com TNT"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Logo antes da rebrota da primavera é a melhor época para corrigir a forma da árvore jovem, que deve ter um tronco único.",
+      "acao_requerida": "Cortar rente ao tronco os ramos baixos que disputam com o ramo principal e os ramos secos, usando tesoura limpa com álcool. Não cortar a ponta do ramo principal"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: vaso seca rápido",
+      "mensagem": "No auge do crescimento e do calor, o substrato de um vaso de 50 L pode secar em dois dias e as folhas novas murcham.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, regar de manhã cedo ou no fim da tarde e cobrir a superfície com 3 cm de casca de pinus ou palha"
+    }
+  ]
+}

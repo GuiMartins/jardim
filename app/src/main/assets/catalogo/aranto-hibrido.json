@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Aranto-híbrido",
+    "nome_cientifico": "Kalanchoe × houghtonii",
+    "descricao": "Suculenta híbrida de Kalanchoe daigremontiana com K. tubiflora. Forma dezenas de mudinhas nas bordas das folhas e dá cachos de flores em sino, rosa-alaranjados, no inverno. É quase indestrutível ao sol, mas toda a planta é tóxica para cães, gatos e crianças. Também é invasora: nunca jogue mudinhas no quintal ou no mato.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro com 15 cm de diâmetro e 15 cm de profundidade, com furo no fundo. O barro ajuda o substrato a secar e dá peso para a planta alta não tombar",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% substrato para cactos e suculentas, 30% areia grossa lavada, 20% perlita ou casca de arroz carbonizada",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Mudinha",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Apoie a mudinha deitada sobre o substrato, com as raízes encostando nele, sem enterrar. As raízes aparecem em poucos dias. A mudinha está firme quando resiste a um puxão leve, entre a 2ª e a 3ª semana."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "O caule sobe e surgem folhas estreitas, manchadas de roxo e com as bordas serrilhadas. Nas bordas das folhas maiores começam a aparecer as primeiras mudinhas. Folhas espaçadas e caule pálido pedem mais sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Caule ereto de 40 a 90 cm, com mudinhas soltando das folhas o ano todo. No fim do outono ou no inverno sai a haste de flores no topo. Depois da floração aquela roseta vai definhando, e uma das mudinhas assume o lugar dela. Rega escassa, sol forte e pouco adubo mantêm a planta compacta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a mudinha",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Toque a superfície: se o primeiro centímetro estiver seco, molhe em volta da mudinha com uma colher ou um borrifador até umedecer uns 2 cm. Não encharque. Nesta fase fique em meia-sombra clara; o sol forte da tarde resseca a mudinha antes de ela ter raiz.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o aranto",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito até o fundo do vaso. Se ele sair seco e limpo, regue até escorrer pelo furo e esvazie o pratinho. Se sair úmido, espere. No verão quente pode chegar a cada 5 dias; no inverno, a cada 15 a 20.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o aranto",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre setembro e março, dilua adubo líquido para cactos e suculentas na metade da dose do rótulo e aplique no substrato já úmido. De abril a agosto, pule a adubação. Excesso de adubo faz caule mole e tombado.",
+      "critica": false
+    },
+    {
+      "id": "recolher_mudinhas",
+      "titulo": "Recolher mudinhas caídas",
+      "tipo": "PODA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 121,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Cate as mudinhas que caíram no vaso, no pratinho e nos vasos vizinhos. Guarde as que quiser plantar e descarte o resto no lixo comum, bem fechado, e nunca na terra do quintal: elas enraízam em qualquer lugar e competem com as outras plantas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure tufos brancos de algodão nas axilas das folhas e na base do caule, insetos agrupados nos botões florais e partes do caule escuras e moles perto do substrato.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, com o substrato seco, tire a planta, solte a terra velha das raízes e replante em substrato novo, num vaso 2 a 3 cm maior. Espere 5 dias para regar. Se o caule estiver muito alto e pelado, corte o topo, deixe o corte secar 3 dias e plante como uma nova muda.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Planta tóxica: escolha bem o lugar",
+      "mensagem": "Folhas, caule, flores e mudinhas contêm bufadienolídeos, que são tóxicos para o coração de cães, gatos e crianças.",
+      "acao_requerida": "Deixar o vaso fora do alcance de pets e crianças e lavar as mãos depois de mexer na planta"
+    },
+    {
+      "dia_disparo": 22,
+      "titulo": "Mudinha enraizada",
+      "mensagem": "As raízes já seguram a planta. A partir de agora, regar demais é o maior risco.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo, com pelo menos 3 horas de sol direto, e só regar quando o substrato secar até o fundo"
+    },
+    {
+      "dia_disparo": 121,
+      "titulo": "Começaram as mudinhas",
+      "mensagem": "As folhas adultas vão soltar mudinhas o tempo todo, e elas enraízam nos vasos vizinhos.",
+      "acao_requerida": "Afastar o aranto uns 50 cm dos outros vasos, ou colocar um pratinho largo embaixo para aparar as mudinhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule escura, mole e com cheiro ruim; folhas murchas e translúcidas mesmo com o substrato úmido; a planta tomba",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo e nunca deixar água no pratinho. Em planta atacada, corte o topo sadio acima da parte escura, deixe secar 3 dias e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e na base; folhas amareladas e melado pegajoso",
+      "prevencao_tratamento": "Retire com um cotonete embebido em álcool 70%. Se voltar, pulverize óleo de neem a 0,5% no fim da tarde a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Insetos verdes ou pretos agrupados nos botões e na haste floral; flores deformadas",
+      "prevencao_tratamento": "Jato de água forte na haste. Se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule fino e pálido, folhas pequenas e muito espaçadas, planta tombando para o lado da janela",
+      "prevencao_tratamento": "Levar para um lugar com mais sol direto, aos poucos, durante uma semana. O trecho estiolado não se recupera: corte o topo e replante"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escuras, encharcadas e moles depois de noites abaixo de 3 °C; em seguida secam",
+      "prevencao_tratamento": "Nas noites de geada, recolha o vaso para dentro ou para baixo de uma cobertura e deixe o substrato seco. Corte as partes mortas quando o frio passar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com a geada",
+      "mensagem": "No frio a planta quase para de crescer, e substrato úmido com noite fria é o caminho da podridão.",
+      "acao_requerida": "Espaçar a rega para a cada 15 a 20 dias e recolher o vaso para um local coberto nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Cortar as hastes que floresceram",
+      "mensagem": "A roseta que deu flor no inverno começa a definhar, e as hastes secas só tiram a força da planta.",
+      "acao_requerida": "Cortar as hastes florais secas rente às folhas e, se a roseta estiver murchando, plantar uma mudinha no lugar dela"
+    }
+  ]
+}

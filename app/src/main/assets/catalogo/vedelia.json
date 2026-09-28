@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Vedélia",
+    "nome_cientifico": "Sphagneticola trilobata",
+    "descricao": "Forração perene nativa do Brasil, com folhas carnudas de três lobos e margaridas amarelas quase o ano todo. Em vaso ou jardineira pendente, cobre o substrato e transborda pelas bordas. Cresce rápido e enraíza onde os ramos encostam no chão, por isso é invasora: não descarte restos de poda em terrenos ou matas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso largo e raso, com pelo menos 15 cm de profundidade e 25 cm de largura, com furos no fundo; vaso suspenso também serve, porque os ramos pendem",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda firma as raízes no substrato novo. Pode murchar um pouco nas horas mais quentes nos primeiros dias; se as pontas voltarem a ficar firmes de manhã e surgirem folhas novas, ela pegou."
+    },
+    {
+      "fase_id": "cobertura",
+      "nome": "Cobertura do Vaso",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Os ramos se espalham rente ao substrato e começam a enraizar nos nós. As flores amarelas aparecem com 4 a 8 semanas. A fase termina quando a folhagem cobre toda a superfície e os ramos passam da borda do vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Floresce da primavera ao outono e diminui no inverno. Cresce muito no verão e pede podas de contenção. Com o tempo o centro fica lenhoso e ralo, sinal de que é hora de renovar com estacas. Geada queima a folhagem, mas a planta costuma rebrotar da base."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de vedélia",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Regue pela manhã até escorrer pelos furos, mantendo o substrato úmido sem encharcar. A raiz ainda está restrita ao torrão da muda e seca em um dia de sol.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a vedélia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos. Acima de 30 °C, confira todo dia; no inverno, a cada 4 ou 5 dias basta. Não deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a vedélia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 ou 2 colheres de húmus por vaso de 5 L, sem encostar nas folhas, e regue em seguida. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "poda_contencao",
+      "titulo": "Podar os ramos que escapam",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura limpa os ramos que passaram 20 cm da borda do vaso ou encostaram no chão, logo acima de um par de folhas. Tire também as flores secas. Jogue os restos no lixo orgânico, nunca no jardim.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste a folhagem e olhe o verso das folhas e as pontas dos ramos, procurando insetos agrupados, pó branco ou folhas roídas. Veja também se a base dos ramos está mole ou escura.",
+      "critica": false
+    },
+    {
+      "id": "renovacao_estacas",
+      "titulo": "Renovar a vedélia com estacas",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte estacas de 10 a 15 cm das pontas saudáveis, tire as folhas de baixo, troque todo o substrato do vaso e enterre as estacas 5 cm, com 10 cm entre elas. Mantenha úmido por 2 semanas até pegarem. Faça de setembro a março.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Beliscar as pontas",
+      "mensagem": "A muda pegou. Cortar as pontas agora faz cada ramo se dividir em dois e o vaso fecha mais rápido e mais cheio.",
+      "acao_requerida": "Cortar 2 cm da ponta de cada ramo com a unha ou tesoura"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Preencher as falhas",
+      "mensagem": "Se ainda houver buracos na cobertura do vaso, os ramos compridos podem ser usados para cobri-los: a vedélia enraíza nos nós em contato com o substrato.",
+      "acao_requerida": "Deitar um ramo comprido sobre a falha e prender um nó no substrato com um grampo de arame, ou enterrar ali uma estaca de 10 cm"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Ramos murcham mesmo com o substrato úmido; base dos ramos mole, escura e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm e nunca deixar água no pratinho. Cortar os ramos afetados, deixar secar e, se sobrar pouco, refazer com estacas sadias em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodonosos ou escamas marrons nos ramos e no verso das folhas; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos nas pontas e botões; brotos novos enrugados",
+      "prevencao_tratamento": "Jato de água forte nas pontas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Lagartas",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas, fezes escuras sobre a folhagem",
+      "prevencao_tratamento": "Catar à mão no fim da tarde; em ataque forte, Bacillus thuringiensis conforme o rótulo"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre as folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Mais sol e ventilação, regar o substrato e não as folhas; retirar as folhas afetadas e pulverizar bicarbonato de sódio (1 colher de chá por litro de água) a cada 7 dias"
+    },
+    {
+      "nome": "Estiolamento por pouca luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e finos com folhas espaçadas, quase sem flores",
+      "prevencao_tratamento": "Levar para onde receba pelo menos 4 horas de sol direto e podar os ramos compridos para rebrotar compacta"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhagem escurecida e murcha depois de noite muito fria",
+      "prevencao_tratamento": "Proteger nas noites abaixo de 5 °C; depois do frio, cortar as partes queimadas e esperar a rebrota da base"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "No inverno a vedélia cresce pouco e a geada queima a folhagem. O substrato também demora mais para secar.",
+      "acao_requerida": "Espaçar a rega para a cada 4 ou 5 dias e, nas noites abaixo de 5 °C, levar o vaso para perto de uma parede ou cobrir com tecido"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno, uma poda mais forte tira as partes queimadas e ralas e faz a planta rebrotar cheia para florir na primavera.",
+      "acao_requerida": "Cortar todos os ramos deixando 5 a 10 cm acima do substrato e retomar a adubação em setembro"
+    }
+  ]
+}

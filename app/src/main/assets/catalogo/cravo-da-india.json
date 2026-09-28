@@ -1,0 +1,177 @@
+{
+  "planta": {
+    "nome_comum": "Cravo-da-índia",
+    "nome_cientifico": "Syzygium aromaticum",
+    "descricao": "Árvore tropical da família da pitanga e da jabuticaba, nativa das Ilhas Molucas. Os botões florais secos são o cravo usado na cozinha. Em vaso ela cresce devagar e fica com folhas brilhantes e aromáticas, mas raramente floresce antes dos 5 a 7 anos. No Centro-Sul, o maior desafio é o frio: abaixo de 10 °C ela sofre.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 35 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo. Com o passar dos anos, vá trocando por vasos maiores até chegar a 60–80 L",
+    "volume_minimo_litros": 25,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco e 10% areia grossa ou perlita. Deve ser levemente ácido (pH 5,5–6,5), rico em matéria orgânica, reter umidade e ainda assim não encharcar; não use calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está se acostumando com o vaso e com a luz nova. Deixe-a com sol só da manhã e protegida do vento. É normal perder uma ou duas folhas velhas. Folhas novas avermelhadas surgindo na ponta mostram que ela pegou."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 31,
+      "dia_fim": 1460,
+      "descricao": "A planta cresce devagar, entre 20 e 40 cm por ano, em forma de cone. As brotações saem em surtos, com folhas rosadas que depois ficam verde-escuras e brilhantes. Ela pode receber mais sol aos poucos, mas o sol forte do meio-dia do verão ainda queima as folhas novas. Cresce nos meses quentes e quase para no inverno."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1461,
+      "dia_fim": null,
+      "descricao": "Com 1 a 2 metros, a copa fica densa e aguenta de 4 a 6 horas de sol. Em vaso, a floração é rara e costuma começar só depois dos 5 a 7 anos, na primavera e no verão. Se surgirem cachos de botões na ponta dos ramos, colha-os quando a base passar de verde para rosa-avermelhada, antes de abrirem, e seque-os à sombra por 4 a 5 dias. No ano típico, a planta brota na primavera, cresce no verão e descansa no inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de cravo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até a água escorrer pelos furos. O torrão da muda não pode secar nem ficar encharcado. Esvazie o pratinho 30 minutos depois da rega.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cravo-da-índia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos. Se ainda estiver úmido, espere. Nos dias acima de 30 °C, confira a cada 2 dias. No inverno, de junho a agosto, deixe secar até 4 a 5 cm de profundidade antes de regar. Folhas com bordas secas e queimadas indicam que o substrato secou demais.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o cravo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 colher de sopa de torta de mamona curtida por 25 L de vaso, sem encostar no caule, e regue em seguida. Na primavera e no verão, pode trocar uma das adubações por NPK 10-10-10 (1 colher de chá dissolvida em 1 L de água). Não adube de junho a agosto, porque a planta está parada e o adubo queima as raízes.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e passe o dedo nos ramos novos. Procure escamas marrons ou brancas grudadas, pontinhos brancos de algodão, teias finas ou manchas escuras e afundadas nas folhas. Confira também se o pratinho está com água parada.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e novembro. Tire a planta com o torrão inteiro e passe para um vaso 10 cm mais largo, com substrato novo, sem enterrar o colo mais fundo do que estava. Se ela já estiver no vaso final (60–80 L), raspe 5 cm da superfície e da lateral do torrão e complete com substrato novo. Mantenha à sombra clara por 2 semanas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Passe a muda para o vaso definitivo",
+      "mensagem": "A maioria das mudas vem em saquinho plástico, onde a raiz enrola e seca rápido. As raízes do cravo são sensíveis e não gostam de ser mexidas.",
+      "acao_requerida": "Cortar o saquinho sem desmanchar o torrão, plantar no vaso de 25 L com o colo no mesmo nível de antes, regar bem e deixar em sombra clara por uma semana"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "A muda pegou: pode ganhar mais luz",
+      "mensagem": "Passado o primeiro mês, a planta já aguenta mais sol, desde que você aumente aos poucos.",
+      "acao_requerida": "Aproximar o vaso de um lugar com 4 a 5 horas de sol da manhã, evitando o sol direto entre 11h e 15h no verão"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, a planta murcha no calor, o colo fica escuro e o substrato cheira a mofo",
+      "prevencao_tratamento": "Só regue com os primeiros centímetros secos, nunca deixe água no pratinho e use substrato que drene. Se aparecer, tire a planta, corte as raízes marrons e moles, replante em substrato novo e espace as regas"
+    },
+    {
+      "nome": "Cochonilha-de-escama e cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos parecidos com algodão nos ramos novos e no verso das folhas; folhas pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Retire com cotonete ou escova macia molhados em álcool 70%. Depois, aplique óleo mineral a 1% com detergente neutro ou óleo de neem a 0,5% no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto empoeirado, teias finas no verso, principalmente com ar seco no inverno",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos. Se a infestação persistir, aplique óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras e afundadas nas folhas e nas pontas dos ramos novos, que podem secar a partir da ponta",
+      "prevencao_tratamento": "Evite molhar a folhagem à noite e mantenha o ar circulando. Corte as partes afetadas com tesoura desinfetada e, se avançar, aplique calda bordalesa a 1%"
+    },
+    {
+      "nome": "Queima por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Depois de noites abaixo de 10 °C, as folhas ficam escurecidas, arroxeadas ou secas, e os ramos novos murcham",
+      "prevencao_tratamento": "Nas noites frias, leve o vaso para perto da parede da casa, sob cobertura, ou para dentro. Não pode antes da primavera: espere a brotação para ver o que secou de verdade"
+    },
+    {
+      "nome": "Queimadura de sol e ar seco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons no meio das folhas expostas ao sol da tarde, e bordas secas e crocantes",
+      "prevencao_tratamento": "Dê sol da manhã e sombra à tarde, principalmente para plantas jovens. Em dias com umidade abaixo de 40%, agrupe os vasos e borrife água nas folhas pela manhã"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteja o cravo do frio",
+      "mensagem": "O cravo-da-índia é tropical: abaixo de 10 °C as folhas queimam, e a geada mata. No frio ele quase não cresce e bebe menos água.",
+      "acao_requerida": "Deixar o vaso num lugar protegido do vento, perto da parede e sob cobertura, levar para dentro nas noites abaixo de 10 °C, espaçar as regas e suspender o adubo até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: o cravo volta a crescer",
+      "mensagem": "Com o calor voltando, a planta começa a soltar folhas novas avermelhadas. É o melhor momento para os cuidados de retomada.",
+      "acao_requerida": "Tirar as folhas e pontas secas pelo frio, voltar a adubar e devolver o vaso ao lugar com sol da manhã"
+    }
+  ]
+}

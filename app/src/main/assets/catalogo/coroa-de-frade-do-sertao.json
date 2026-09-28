@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Coroa-de-frade-do-sertão",
+    "nome_cientifico": "Melocactus zehntneri",
+    "descricao": "Cacto globoso da Caatinga, do Nordeste do Brasil, que na fase adulta forma no topo o cefálio, uma coroa lanosa de onde saem flores rosadas e frutinhos vermelhos. Depois que o cefálio aparece, o corpo verde quase para de crescer, e a coroa segue aumentando devagar por décadas. Compre só de viveiro legalizado: a coleta na natureza é proibida e ameaça as populações nativas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro sem esmalte, 3 a 5 cm mais largo que o corpo do cacto (15 a 18 cm de diâmetro para uma planta de 12 cm), com 12 a 15 cm de profundidade e furo grande no fundo. Evite cachepô e prato com água parada",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% areia grossa lavada, 30% pedrisco ou brita fina (ou perlita), 20% terra vegetal peneirada, 10% húmus de minhoca, e 1 colher de sopa de calcário dolomítico por litro. Cubra a superfície com pedrisco para o colo da planta não ficar em contato com terra úmida",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "O cacto sente a mudança de luz e, se foi replantado, está com as raízes machucadas. Nas duas primeiras semanas, deixe onde bata o sol da manhã; depois passe para sol pleno. Manchas brancas ou amareladas no lado virado para o sol são queimadura: volte um passo na aclimatação. A fase termina quando o corpo continua firme e sem rugas depois das primeiras regas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes novas tomam o vaso. Sinais de que pegou: o corpo fica túrgido e brilhante poucos dias depois de cada rega, e o cefálio solta lã nova e clara no centro. Se a planta murcha ou enruga mesmo com o substrato úmido, as raízes apodreceram: tire do vaso e confira."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão, o cefálio produz pequenas flores rosadas que abrem à tarde e, semanas depois, frutinhos vermelhos em forma de dedo, com sementes pretas. No outono e no inverno a planta quase para: rega espaçada e nada de adubo. O corpo verde fica do mesmo tamanho; quem cresce é o cefálio, alguns milímetros por ano. Uma planta sadia vive décadas no mesmo vaso, trocando só o substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a coroa-de-frade",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de madeira até o fundo do vaso e espere 1 minuto. Se sair seco e limpo, regue devagar em volta do cacto, sem molhar o cefálio, até escorrer pelo furo, e esvazie o prato. Se sair úmido ou com terra grudada, não regue e marque 'Conferi, não precisou'. De maio a agosto, e sempre abaixo de 15 °C, regue no máximo a cada 3 ou 4 semanas.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o cefálio e a base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste a lã do cefálio com um palito e procure bolinhas algodonosas brancas (cochonilha). Aperte de leve a base do corpo: ela tem de estar dura. Base mole, escura ou com cheiro azedo é podridão e pede ação no mesmo dia.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato seco e luvas grossas (ou uma tira de papelão dobrado em volta do corpo), tire o cacto, solte a terra velha das raízes e corte as secas ou escuras. Deixe secar à sombra por 3 dias, plante em substrato novo seco e só regue depois de 7 dias. Faça entre setembro e março; se cair no inverno, adie para setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Confira o vaso da chegada",
+      "mensagem": "Cactos costumam vir de viveiro em turfa ou terra preta que segura água, e é daí que vem a maioria das podridões.",
+      "acao_requerida": "Aperte o substrato: se for escuro, fofo e úmido, replante hoje no substrato recomendado, com as raízes secas, e não regue por 7 dias. Deixe o vaso onde bata só o sol da manhã."
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Depois de duas semanas com sol da manhã, a coroa-de-frade já aguenta o sol forte que ela precisa para manter a cor e florescer.",
+      "acao_requerida": "Passe o vaso para o lugar mais ensolarado da casa (pelo menos 6 horas de sol direto). Nos 3 primeiros dias, olhe o lado virado para o sol à tarde: se aparecer mancha branca, recue meio dia de sol por mais uma semana."
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e da raiz (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do corpo mole, marrom ou preta, que avança de baixo para cima; a planta tomba ou afunda no vaso; cheiro azedo no substrato",
+      "prevencao_tratamento": "É a principal causa de morte em vaso. Regue só com o substrato totalmente seco, nunca no frio, e mantenha pedrisco na superfície. Se aparecer, tire do vaso, corte com faca limpa todo o tecido escuro até sobrar só polpa verde-clara, polvilhe canela em pó e deixe cicatrizar à sombra por 1 a 2 semanas antes de replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta (Pseudococcidae)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos escondidos na lã do cefálio e entre as costelas; formigas subindo no vaso",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%. Se voltar, pulverize óleo de neem a 0,5% no fim da tarde a cada 7 dias, 3 vezes, longe do sol forte"
+    },
+    {
+      "nome": "Cochonilha-de-raiz (Rhizoecus)",
+      "tipo": "PRAGA",
+      "sintomas": "Planta para de crescer e enruga mesmo sendo regada; na troca de vaso, pó branco entre as raízes e na parede do vaso",
+      "prevencao_tratamento": "Lave as raízes, corte as mais atacadas, deixe secar 3 dias e replante em vaso e substrato novos. Não reaproveite o substrato velho"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Mancha branca, amarelada ou marrom, seca e dura, no lado virado para o sol; aparece de uma semana para a outra após mudar a planta de lugar",
+      "prevencao_tratamento": "Aclimate ao sol aos poucos, em 2 semanas, sempre que a planta vier da sombra. A cicatriz não some, mas não se espalha"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas translúcidas ou escuras que amolecem depois de uma noite fria, sobretudo com o substrato úmido",
+      "prevencao_tratamento": "Espécie do sertão, sofre abaixo de 10 °C. Em noites frias, leve o vaso para dentro ou para perto de uma parede que recebeu sol, e mantenha o substrato seco no inverno"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Corpo afina e alonga para um lado, verde-claro e com espinhos mais espaçados; a planta não floresce",
+      "prevencao_tratamento": "Falta de sol. Leve para sol pleno aos poucos. A parte alongada não volta ao formato, mas o crescimento novo sai normal"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Espaçar as regas",
+      "mensagem": "Com o frio chegando, a coroa-de-frade entra em repouso e quase não usa água. Substrato úmido no frio é o caminho mais curto para a podridão.",
+      "acao_requerida": "Até o fim de agosto, regue no máximo a cada 3 ou 4 semanas, só com o substrato seco até o fundo e numa manhã de dia quente. Nas outras vezes, marque 'Conferi, não precisou'"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Esse cacto vem do sertão e sofre abaixo de 10 °C, principalmente se o vaso estiver úmido.",
+      "acao_requerida": "Olhe a previsão: nas noites abaixo de 10 °C, leve o vaso para dentro ou para um canto abrigado do vento, e devolva ao sol pela manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Voltar à rega normal",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento e o cefálio se prepara para florescer.",
+      "acao_requerida": "Volte a regar a cada 10 dias, sempre que o palito sair seco do fundo do vaso"
+    },
+    {
+      "meses": [
+        10,
+        12,
+        2
+      ],
+      "titulo": "Adubar a coroa-de-frade",
+      "mensagem": "Na estação de crescimento, uma adubação fraca sustenta a floração do cefálio sem amolecer o corpo.",
+      "acao_requerida": "Dissolva adubo para cactos (ou NPK 10-10-10 a um quarto da dose do rótulo) na água de uma rega normal, com o substrato já seco. Nunca adube com o substrato úmido nem no inverno"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Cuidado com chuva contínua",
+      "mensagem": "No verão, dias seguidos de chuva deixam o vaso encharcado por semanas, e é aí que a base apodrece.",
+      "acao_requerida": "Nos períodos de chuva, leve o vaso para debaixo de uma cobertura que ainda receba sol, e esvazie o prato depois de cada chuva"
+    }
+  ]
+}

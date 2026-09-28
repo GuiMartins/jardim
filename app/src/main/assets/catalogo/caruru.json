@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Caruru",
+    "nome_cientifico": "Amaranthus viridis",
+    "descricao": "Hortaliça não convencional (PANC) de folhas macias e nutritivas, ricas em ferro e cálcio, que se come refogada como espinafre. Cresce rápido no calor, aguenta sol forte e rende várias colheitas de ponteiros antes de florescer.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 90,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 20 cm de profundidade e furos no fundo; numa jardineira de 60 cm cabem 3 plantas a 20 cm uma da outra",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; rico em matéria orgânica, que é o que deixa as folhas grandes e macias",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "As sementes são minúsculas: espalhe algumas por cova e cubra com no máximo 0,5 cm de substrato peneirado. As plântulas, com duas folhinhas estreitas e às vezes avermelhadas, surgem entre o 4º e o 10º dia, desde que faça mais de 20 °C."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 11,
+      "dia_fim": 30,
+      "descricao": "Surgem as folhas verdadeiras, em forma de losango arredondado, e a planta acelera no calor. A fase termina quando ela passa de 20 cm de altura, com 8 a 10 folhas bem formadas."
+    },
+    {
+      "fase_id": "colheita_folhas",
+      "nome": "Colheita de Folhas",
+      "dia_inicio": 31,
+      "dia_fim": 70,
+      "descricao": "Fase mais produtiva: cada corte de ponteiro faz a planta ramificar e soltar mais folhas. Os primeiros cachos de flores verdes no alto dos ramos avisam que as folhas vão começar a endurecer e amargar."
+    },
+    {
+      "fase_id": "floracao_sementes",
+      "nome": "Floração e Sementes",
+      "dia_inicio": 71,
+      "dia_fim": 90,
+      "descricao": "A planta forma espigas verdes e para de produzir folhas novas; as que restam ficam fibrosas. As sementes pretas e brilhantes amadurecem quando a espiga seca e fica palha. Depois disso a planta se encerra."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes do caruru",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro, sem jato forte, que desenterra as sementes. O substrato não pode formar crosta seca: acima de 30 °C, borrife de novo no fim da tarde.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o caruru",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Nos dias acima de 30 °C, confira todo dia. Falta de água faz a planta florescer antes da hora e endurece as folhas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o caruru",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 65,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de torta de mamona por vaso de 5 L, sem encostar no caule, e regue em seguida. O nitrogênio aqui é bem-vindo: é ele que faz folha.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas do caruru",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Vire as folhas e procure lagartas verdes, folhas unidas por teia, furos redondos, colônias de pulgão nos ponteiros e pústulas brancas no verso.",
+      "critica": false
+    },
+    {
+      "id": "colheita_ponteiros",
+      "titulo": "Colher ponteiros do caruru",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 35,
+      "dia_fim_ciclo": 70,
+      "instrucoes": "Corte com tesoura os 10 a 15 cm de cima de cada ramo, logo acima de um par de folhas, deixando sempre pelo menos metade da planta. Se aparecer cacho de flor no ponteiro, corte-o junto: isso adia a floração e prolonga a colheita.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "Várias plantinhas na mesma cova disputam espaço e ficam finas e compridas, com folhas pequenas.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada cova, cortando as outras rente ao substrato com tesoura; as mudinhas cortadas podem ir para a salada"
+    },
+    {
+      "dia_disparo": 35,
+      "titulo": "Primeira colheita do caruru",
+      "mensagem": "A planta já deve estar com mais de 25 cm. O primeiro corte do ponteiro principal faz ela ramificar e render muito mais.",
+      "acao_requerida": "Cortar o ponteiro principal logo acima do 5º ou 6º par de folhas, contando de baixo"
+    },
+    {
+      "dia_disparo": 70,
+      "titulo": "O caruru vai florescer",
+      "mensagem": "Daqui em diante as folhas ficam duras e amargas. Se deixar as sementes caírem, o caruru nasce sozinho no vaso e nos canteiros vizinhos.",
+      "acao_requerida": "Fazer uma última colheita das folhas macias e decidir: arrancar a planta ou guardar 1 espiga, cobrindo-a com saquinho de papel até secar para colher as sementes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Lagarta-enroladeira (Herpetogramma bipunctalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas unidas ou dobradas por fios de teia, com lagartas verde-claras dentro e partes da folha raspadas até ficar transparente",
+      "prevencao_tratamento": "Abrir as folhas enroladas e retirar as lagartas à mão; em infestação, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos espalhados pelas folhas e besouros verde-amarelados sobre a planta",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo, quando estão lentos; manter o vaso longe de canteiros infestados"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos ponteiros e no verso das folhas; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água nos ponteiros ou colher os ponteiros atacados; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ferrugem-branca (Wilsoniana bliti)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas amarelas na face de cima da folha e pústulas brancas, como pó de giz, no verso",
+      "prevencao_tratamento": "Regar só o substrato, sem molhar as folhas, e deixar as plantas espaçadas; arrancar e descartar no lixo as folhas atacadas"
+    },
+    {
+      "nome": "Tombamento e podridão de raiz (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem com o caule escuro e fino rente ao substrato; planta adulta murcha mesmo com o substrato úmido",
+      "prevencao_tratamento": "Substrato novo, vaso com furos livres e rega só quando os 2 cm de cima secarem; retirar as plantas afetadas"
+    },
+    {
+      "nome": "Floração precoce",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta pequena, com menos de 20 cm, já soltando espigas de flor e folhas miúdas e duras",
+      "prevencao_tratamento": "Causada por vaso pequeno, falta de água ou semeadura tardia, com dias já curtos; usar pelo menos 5 L por planta, não deixar secar e semear entre setembro e fevereiro"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Frio chegando para o caruru",
+      "mensagem": "O caruru é planta de calor: abaixo de 10 °C para de crescer e a geada o mata numa noite.",
+      "acao_requerida": "Nas noites com previsão abaixo de 8 °C, levar o vaso para perto de uma parede ou para dentro; se a planta já estiver florindo, colher as últimas folhas e encerrar o plantio"
+    }
+  ]
+}

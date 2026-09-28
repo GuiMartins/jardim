@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Cipó-de-são-joão",
+    "nome_cientifico": "Pyrostegia venusta",
+    "descricao": "Trepadeira nativa do Brasil, vigorosa e rústica, que cobre treliças, grades e pérgolas com cachos de flores tubulares laranja no inverno, perto das festas de São João. Atrai beija-flores e floresce melhor quanto mais sol recebe. Em vaso, a primeira floração forte costuma vir no segundo inverno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande ou jardineira funda, com pelo menos 45 cm de diâmetro e 45 cm de profundidade, furos no fundo, junto a uma treliça, grade ou tela de pelo menos 2 m de altura",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, mais 1 colher de sopa de farinha de ossos por 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. Pode perder algumas folhas nos primeiros dias; a fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido dos ramos, que se prendem ao suporte por gavinhas de três pontas. Conduza os ramos para cobrir a treliça por igual. Se a muda for pequena, a primeira floração pode ser fraca ou não vir neste primeiro inverno."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce forte na primavera e no verão, forma botões no fim do outono e floresce de junho a setembro, cobrindo o suporte de laranja. Depois da floração, recebe uma poda de limpeza e volta a brotar com as chuvas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda do cipó",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe água parada no pratinho. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cipó-de-são-joão",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão quente pode precisar a cada 2 dias; no inverno, com a planta florida, a cada 4 ou 5 dias costuma bastar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o cipó",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 4-14-8 (ou 1 xícara de húmus mais 1 colher de farinha de ossos) na borda do vaso de 40 L, longe do caule, e regue em seguida. Evite adubo rico em nitrogênio, que dá muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "conduzir_ramos",
+      "titulo": "Conduzir os ramos no suporte",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 365,
+      "instrucoes": "Enrole os ramos novos soltos na treliça ou prenda-os com fita de amarrio sem apertar, espalhando-os na horizontal para cobrir o suporte. Ramos deitados na horizontal florescem mais.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire folhas das pontas e do meio da planta e olhe os brotos novos: procure insetos agrupados, bolinhas brancas ou marrons presas nos ramos, teias finas e pontinhos amarelos nas folhas.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Fora da floração, de preferência na primavera: tire a planta do vaso, corte 3 a 5 cm das raízes enoveladas nas laterais e no fundo e replante com substrato novo, no mesmo vaso ou em um maior. Pode os ramos em um terço para compensar as raízes cortadas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Instale o suporte",
+      "mensagem": "O cipó cresce muito rápido e precisa de algo onde se prender antes que os ramos se enrosquem uns nos outros.",
+      "acao_requerida": "Fixar treliça, tela ou arame de pelo menos 2 m junto ao vaso e apoiar nele os ramos da muda"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Despontar os ramos principais agora faz a planta ramificar desde baixo, em vez de formar só um fio longo e pelado na base.",
+      "acao_requerida": "Cortar a ponta (5 a 10 cm) de cada ramo principal logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escura e mole; cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só quando o substrato estiver seco a 5 cm, manter os furos livres e não deixar água no pratinho. Se acontecer, suspenda a rega, retire raízes podres e replante em substrato novo e arenoso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas algodonosas ou escamas marrons presas nos ramos e no verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com água e sabão neutro; em infestação, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; brotos novos enrugados",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, que ficam foscas e acinzentadas; teias finas no verso em tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; em infestação, óleo de neem a 0,5% ou calda de enxofre, a cada 5 dias"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta verde e vigorosa, com muitos ramos, mas sem botões no inverno",
+      "prevencao_tratamento": "Garantir pelo menos 4 a 6 horas de sol direto, trocar adubo nitrogenado por um rico em fósforo e não podar entre março e setembro, quando os ramos preparam os botões"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Chegou a época dos botões",
+      "mensagem": "A partir de agora os ramos formam os botões da floração de inverno. Poda nessa época corta as flores.",
+      "acao_requerida": "Não podar até o fim da floração e trocar qualquer adubo nitrogenado pelo NPK 4-14-8"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Floração e risco de geada",
+      "mensagem": "O cipó está no auge da floração. Plantas adultas aguentam frio leve, mas geada queima as pontas e as flores, e mudas novas podem morrer.",
+      "acao_requerida": "Em noites com previsão de geada, levar o vaso para perto de uma parede ou cobrir a planta com tecido leve (TNT) até de manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda pós-floração",
+      "mensagem": "As flores estão acabando. A poda agora limpa a planta e estimula ramos novos, que vão florir no próximo inverno.",
+      "acao_requerida": "Retirar cachos secos, ramos secos e emaranhados, e encurtar em até um terço os ramos que saíram do suporte"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: vaso seca rápido",
+      "mensagem": "No verão o cipó cresce muito e o vaso de sol pleno seca em um ou dois dias.",
+      "acao_requerida": "Conferir o substrato todo dia nas semanas acima de 30 °C e regar de manhã cedo ou no fim da tarde"
+    }
+  ]
+}

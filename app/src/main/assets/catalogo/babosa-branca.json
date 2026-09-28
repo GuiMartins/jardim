@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Babosa-branca",
+    "nome_cientifico": "Cordia superba",
+    "descricao": "Árvore nativa da Mata Atlântica e do Cerrado, de copa arredondada, que no calor se cobre de flores brancas em forma de funil, muito visitadas por abelhas e borboletas. O nome vem da polpa pegajosa dos frutos brancos. Em vaso grande fica como arvoreta de 2 a 3 m, rústica e de crescimento rápido.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de cerâmica, cimento ou plástico grosso, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo e pesado o bastante para não tombar com o vento",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; misture 200 g de farinha de ossos no volume todo",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. É normal perder algumas folhas velhas na primeira semana. A adaptação terminou quando aparecem folhas novas, verde-claras e ásperas, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido de ramos e raízes: a muda pode ganhar 50 cm a 1 m no primeiro verão. É a fase de formar o tronco único e a copa. Mudas de viveiro com mais de 1 m costumam dar as primeiras flores já no primeiro verão."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arvoreta formada. O ano típico: brotação forte na primavera, floração branca e abundante do fim da primavera ao fim do verão (novembro a março), frutos brancos e pegajosos no fim do verão e no outono, e crescimento lento com perda parcial de folhas no inverno seco."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda não saiu do torrão da muda e seca rápido. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a babosa-branca",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 8 a 10 L num vaso de 60 L). No verão, com calor forte, confira a cada 2 dias. No inverno seco, espace para a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a babosa-branca",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto e 2 colheres de sopa de farinha de ossos sobre o substrato, a 10 cm do tronco, e regue em seguida. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas dos ramos novos e procure cochonilhas (pontinhos brancos ou marrons presos), pulgões, lagartas ou crosta preta de fumagina. Olhe também as axilas dos ramos e o tronco.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera, tire a planta do vaso, corte 3 a 5 cm das raízes em volta e embaixo do torrão, retire um terço do substrato velho e replante com substrato novo no mesmo vaso ou num vaso um pouco maior. Regue bem e deixe à meia-sombra por uma semana. Se o dia cair no inverno ou em plena floração, espere a próxima primavera.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firme a muda com um tutor",
+      "mensagem": "A babosa-branca cresce rápido e o tronco jovem é fino: com vento, a muda balança e quebra as raízes novas.",
+      "acao_requerida": "Cravar uma estaca de 1,2 m ao lado do torrão, sem ferir as raízes, e amarrar o tronco em oito com fita de tecido ou borracha, sem apertar"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de formação",
+      "mensagem": "Para virar uma arvoreta com tronco limpo, é hora de escolher o ramo principal e tirar os brotos baixos.",
+      "acao_requerida": "Cortar rente ao tronco os brotos que saem abaixo de 50 cm de altura e, se houver dois ramos disputando a ponta, deixar só o mais reto"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Retirar o tutor",
+      "mensagem": "Com um ano, o tronco já deve se sustentar sozinho, e a amarração começa a estrangular a casca.",
+      "acao_requerida": "Soltar a fita e retirar a estaca; se a planta ainda tombar com o vento, amarrar de novo mais frouxo e só por mais alguns meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos murcham; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regue só com o substrato seco a 5 cm, mantenha os furos desobstruídos e não deixe prato com água parada. Se aparecer, tire do vaso, corte as raízes podres e replante em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos brancos, cerosos ou em forma de escama marrom presos nos ramos novos e no verso das folhas; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia com álcool; em infestação maior, pulverize óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos ramos e nos botões; brotos novos enrugados",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% ou calda de sabão neutro a cada 5 dias"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas comidas a partir da borda ou só as nervuras sobrando; bolinhas escuras de fezes nas folhas de baixo",
+      "prevencao_tratamento": "Cate as lagartas à mão; em ataque grande, pulverize Bacillus thuringiensis (Bt) no fim da tarde"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada preta como fuligem sobre as folhas, que se solta ao esfregar",
+      "prevencao_tratamento": "É um fungo que cresce sobre o melado de cochonilhas e pulgões: controle esses insetos e lave as folhas com água e sabão neutro"
+    },
+    {
+      "nome": "Raiz enovelada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Crescimento para, folhas pequenas e amareladas, a água escorre pelos furos logo depois da rega e raízes saem pelo fundo do vaso",
+      "prevencao_tratamento": "Renove o substrato e pode as raízes a cada dois anos; enquanto isso, adube com regularidade e regue mais vezes no verão"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No inverno seco a babosa-branca cresce pouco e pode perder parte das folhas; é normal. Mudas com menos de dois anos sofrem com geada.",
+      "acao_requerida": "Espaçar a rega para a cada 7 a 10 dias, suspender a adubação e, em noite com previsão de geada, levar o vaso para perto de uma parede ou cobri-lo com tecido"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "No fim do inverno, antes da brotação, a poda estimula ramos novos, que são os que dão flor no verão.",
+      "acao_requerida": "Cortar ramos secos, cruzados ou que crescem para dentro da copa, e encurtar em até um terço os ramos longos demais, com tesoura limpa e corte logo acima de uma folha ou gema"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Adubação de primavera",
+      "mensagem": "A brotação e a floração do verão dependem da reserva que a planta faz agora.",
+      "acao_requerida": "Retomar a adubação: espalhar 2 xícaras de húmus e 2 colheres de sopa de farinha de ossos em volta do tronco e regar bem"
+    },
+    {
+      "meses": [
+        2,
+        3,
+        4
+      ],
+      "titulo": "Frutos caindo",
+      "mensagem": "Os frutos brancos maduros caem e soltam uma polpa pegajosa que suja o piso e atrai moscas e fungos no substrato.",
+      "acao_requerida": "Recolher os frutos caídos do vaso e do chão a cada poucos dias; se quiser mudas, lavar as sementes e semear logo, que perdem a viabilidade rápido"
+    }
+  ]
+}

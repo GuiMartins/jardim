@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Plátano",
+    "nome_cientifico": "Platanus × hispanica",
+    "descricao": "Árvore caducifólia de rua e praça, híbrido de Platanus orientalis com P. occidentalis, de folhas grandes como as do bordo e casca que se solta em placas e deixa o tronco manchado. Em vaso grande fica contida a poucos metros, se podada todo inverno, e marca bem as estações: brota na primavera e amarela no outono. As folhas novas e os frutos soltam pelos que irritam os olhos e a garganta, por isso não é boa ideia para varanda fechada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica, cimento ou plástico grosso com pelo menos 55 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo e apoiado em pés para a água escorrer; em terraço, prenda o vaso ou use base larga, porque a copa pega vento",
+    "volume_minimo_litros": 80,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; acrescente 1 xícara de calcário dolomítico por 80 L se a terra for ácida",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente o transplante e pode derrubar algumas folhas ou ficar parada. Se foi plantada dormente, no inverno, continua sem folhas até setembro. A fase termina quando surgem gemas inchadas ou folhas novas nas pontas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e os ramos alongam bastante na primavera e no verão. Escolha o ramo mais reto como tronco principal. A planta está estabelecida quando passa por um ciclo completo de brotação e queda de folhas sem murchar entre as regas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota em setembro, cresce forte até março, amarela e derruba as folhas entre abril e junho e fica dormente de junho a agosto. A poda de julho mantém a altura; a renovação do substrato em agosto mantém o vigor. No calor, a copa cheia bebe muito, e o vaso pode precisar de água todo dia."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda não pode secar nesta fase. Se ela estiver dormente e sem folhas, regue só quando os 5 cm secarem.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o plátano",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 10 L num vaso de 80 L). Com a copa cheia e acima de 30 °C, confira todo dia. Sem folhas, de junho a agosto, a água dura cerca de uma semana: confira e só regue se estiver seco.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pó branco, teias finas, pontinhos amarelados ou manchas marrons ao longo das nervuras. Sem folhas, no inverno, passe a mão nos ramos e na casca procurando cochonilhas e ramos escurecidos e secos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "A muda pegou?",
+      "mensagem": "Com três semanas, os ramos vivos já mostram gemas inchadas ou folhas novas, se não for inverno.",
+      "acao_requerida": "Raspar de leve a casca da ponta de cada ramo com a unha: verde por baixo está vivo; marrom e seco, cortar o ramo até o ponto em que aparece verde"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Defina o tronco principal",
+      "mensagem": "A muda já tem ramos suficientes para você escolher o formato. Brotos que saem da base e do tronco baixo roubam força da copa.",
+      "acao_requerida": "Escolher o ramo mais reto como líder e cortar rente os brotos que saem da base e do terço inferior do tronco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e amarelam mesmo com o substrato molhado, cheiro azedo no vaso, raízes escuras e moles; no inverno, a planta não brota em setembro",
+      "prevencao_tratamento": "Regar só com os 5 cm de cima secos, principalmente na dormência, e manter os furos livres com o vaso sobre pés. Se acontecer, retirar a planta, cortar as raízes podres e replantar em substrato novo"
+    },
+    {
+      "nome": "Antracnose do plátano (Apiognomonia veneta)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons que seguem as nervuras das folhas novas, folhas que caem logo depois de brotar em primavera chuvosa, ramos finos secos com pequenos cancros",
+      "prevencao_tratamento": "Recolher e descartar as folhas caídas, podar os ramos secos até a madeira sadia no inverno e, se foi grave no ano anterior, aplicar calda bordalesa quando as gemas abrirem"
+    },
+    {
+      "nome": "Oídio (Erysiphe platani)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco nas folhas e brotos novos, que ficam enrugados e retorcidos, comum no fim do verão seco",
+      "prevencao_tratamento": "Deixar a copa arejada e não molhar as folhas no fim do dia. Nos primeiros sinais, pulverizar enxofre molhável ou bicarbonato de sódio a 0,5% com uma gota de detergente, a cada 7 dias, fora do sol forte"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo que ficam cor de bronze, teias finas no verso, mais em tempo quente e seco",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 3 dias por duas semanas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou brancos presos nos ramos e no verso das folhas, folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; no inverno, sem folhas, pincelar óleo mineral a 1% nos ramos atacados"
+    },
+    {
+      "nome": "Queimadura das bordas das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas secas e marrons no verão, começando pelas folhas mais expostas ao sol e ao vento",
+      "prevencao_tratamento": "Sinal de que a raiz não repõe a água que a copa perde: regar com mais frequência no calor, cobrir o substrato com 3 cm de casca de pinus e renovar o substrato se as raízes já tomaram o vaso"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        11,
+        1
+      ],
+      "titulo": "Hora de adubar o plátano",
+      "mensagem": "Na estação de crescimento, o substrato do vaso se esgota rápido com o crescimento forte dos ramos.",
+      "acao_requerida": "Espalhar 1 litro de húmus de minhoca e 2 colheres de sopa de NPK 10-10-10 sobre o substrato de um vaso de 80 L, longe do tronco, e regar em seguida; pular se a muda foi plantada há menos de 2 meses"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: a copa bebe muito",
+      "mensagem": "Com folhas grandes e o vaso ao sol, o substrato pode secar em um dia; bordas queimadas nas folhas são o primeiro sinal.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia e cobrir a superfície com 3 cm de casca de pinus para segurar a água"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Folhas caindo: é o outono",
+      "mensagem": "Amarelar e perder as folhas agora é normal, não é doença. As folhas caídas guardam os esporos da antracnose.",
+      "acao_requerida": "Recolher e descartar as folhas caídas no vaso e ao redor, e passar a regar só quando os 5 cm de cima do substrato secarem"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de inverno",
+      "mensagem": "Dormente e sem folhas, o plátano aceita podas fortes e rebrota vigoroso em setembro. É a poda que mantém a árvore do tamanho do vaso.",
+      "acao_requerida": "Cortar os ramos do ano deixando 2 a 3 gemas, remover os ramos secos, cruzados ou com cancro e passar pasta cicatrizante nos cortes com mais de 2 cm"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Renovar o substrato",
+      "mensagem": "Antes da brotação, as raízes aceitam ser mexidas. No vaso, o substrato compacta e se esgota com os anos.",
+      "acao_requerida": "Tirar os 5 cm de cima do substrato e repor com composto novo. A cada 2 anos, retirar a árvore, cortar 5 cm das raízes que circulam o torrão e replantar no mesmo vaso com substrato novo"
+    }
+  ]
+}

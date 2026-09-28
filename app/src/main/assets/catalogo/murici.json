@@ -1,0 +1,220 @@
+{
+  "planta": {
+    "nome_comum": "Murici",
+    "nome_cientifico": "Byrsonima crassifolia",
+    "descricao": "Arvoreta nativa do Cerrado e da Amazônia, de flores amarelas em cachos e frutinhos amarelos, perfumados e de sabor forte, usados em sucos, doces e sorvetes. Tolera solo pobre e ácido e aguenta seca, e em vaso grande fica com 2 a 3 m se for podada. Começa de muda, porque a semente germina mal e demora meses.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, fibra ou cimento com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo; comece num de 40 L e passe para um de 80 a 100 L quando a raiz ocupar o vaso",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca, 10% casca de pinus fina; sem calcário, porque o murici gosta de solo ácido (pH 4,5 a 6)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda no vaso definitivo no mesmo nível do torrão, sem enterrar o colo, e deixe-a em meia-sombra na primeira semana, passando depois para o sol pleno. Algumas folhas velhas podem amarelar e cair; a fase acaba quando surgem brotos novos de folhas avermelhadas ou verde-claras na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e a planta solta levas de brotação nas épocas quentes. O crescimento é lento no começo (20 a 40 cm no primeiro ano). Ao fim da fase, o caule está lenhoso na base e a planta já não murcha em dias quentes se a rega estiver em dia."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A planta forma a copa. Conduza um tronco único até 50 a 70 cm e deixe 3 ou 4 ramos principais a partir daí. Mudas de semente costumam dar as primeiras flores no fim desta fase; mudas enxertadas podem florescer já no segundo ano. Tire as primeiras flores se a planta tiver menos de 1 m, para ela investir em raiz e copa."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: fica mais parada e com menos água no inverno seco (maio a agosto), recebe a poda leve em agosto, floresce em cachos amarelos que ficam alaranjados de setembro a dezembro e amadurece os frutos de dezembro a março. O fruto maduro cai sozinho: é o ponto de colher. Em vaso, espere de algumas centenas de gramas a poucos quilos de frutos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o murici recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos. Com a raiz ainda restrita ao torrão da muda, deixar secar por inteiro faz as folhas queimarem e caírem. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o murici",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão e na floração, confira a cada 2 ou 3 dias; no inverno seco, a cada 6 ou 7 dias. Não deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o murici",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto e 1 colher de sopa de NPK 10-10-10 por vaso de 60 L, em círculo a 10 cm do tronco, misture de leve na superfície e regue. De junho a agosto, pule a adubação. Não use calcário nem cinza em excesso, que sobem o pH.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire folhas novas e velhas e olhe os ramos finos: procure cochonilhas (escamas ou algodão branco), manchas escuras afundadas nas folhas e frutos e brotos deformados.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera, tire a planta do vaso, raspe 3 a 5 cm de raízes enoveladas nas laterais e no fundo, e replante em substrato novo, num vaso maior se a planta tiver crescido. Se o vaso for grande demais para tirar, troque os 10 cm de cima por substrato novo com composto.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de ir para o sol pleno",
+      "mensagem": "A muda passou a primeira semana na meia-sombra. O murici é planta de Cerrado e só floresce e frutifica com muito sol.",
+      "acao_requerida": "Mudar o vaso para o lugar definitivo, com pelo menos 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Definir o tronco",
+      "mensagem": "Galhos baixos agora roubam força da copa e atrapalham a condução em vaso.",
+      "acao_requerida": "Tirar os brotos que saem do tronco abaixo de 40 cm e, se a planta passar de 70 cm sem ramificar, cortar a ponta para ela abrir ramos"
+    },
+    {
+      "dia_disparo": 730,
+      "titulo": "Primeiras flores podem aparecer",
+      "mensagem": "Mudas enxertadas costumam florescer no segundo ano; as de semente, entre o terceiro e o quinto.",
+      "acao_requerida": "Se a planta tiver menos de 1 m de altura, tirar os cachos de flores para ela crescer mais antes de frutificar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, ramos secam da ponta para baixo e a base do tronco escurece; raízes marrons e moles com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos livres e nunca deixar água no pratinho; se aparecer, parar a rega, tirar a planta, cortar as raízes podres e replantar em substrato novo e arenoso"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nas folhas novas, flores e frutos, que caem antes de amadurecer; pior em épocas de chuva e calor",
+      "prevencao_tratamento": "Regar no substrato, sem molhar a copa, abrir o miolo da copa na poda para ventilar e recolher folhas e frutos caídos; em ataque forte, calda bordalesa a 1% na brotação e no início da floração"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou tufos brancos de algodão nos ramos finos e no verso das folhas, folhas pegajosas e fumagina (mofo preto) por cima",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia molhada em água com sabão neutro; em infestação, óleo mineral ou óleo de neem a 1% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos, polpa mole e larvas brancas dentro; caem antes do tempo",
+      "prevencao_tratamento": "Recolher todo dia os frutos caídos e descartar os bichados em saco fechado; armadilha de garrafa PET com suco de fruta fermentado perto do vaso na época dos frutos"
+    },
+    {
+      "nome": "Clorose por solo alcalino",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes, crescimento travado, sem sinal de praga",
+      "prevencao_tratamento": "Não usar calcário, cinza em excesso nem água muito calcária; adubar com composto e, se persistir, aplicar ferro quelatado e renovar o substrato com casca de pinus ou turfa, que acidificam"
+    },
+    {
+      "nome": "Dano de geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e brotos ficam escuros e secos de um dia para o outro após noite muito fria",
+      "prevencao_tratamento": "Nas noites abaixo de 5 °C, levar o vaso para perto de uma parede ou sob cobertura, ou cobrir a copa com manta; cortar os ramos queimados só no fim do inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Estação seca: menos água",
+      "mensagem": "No frio e na seca o murici quase para de crescer e pode perder parte das folhas. Substrato encharcado agora apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (cerca de uma vez por semana) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O murici é tropical e sofre com geada, principalmente enquanto é jovem.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, abrigar o vaso junto a uma parede ou cobrir a copa com manta ou TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda leve de fim de inverno",
+      "mensagem": "Podar antes da brotação da primavera mantém a planta do tamanho do vaso e estimula ramos novos, que são os que florescem.",
+      "acao_requerida": "Tirar galhos secos, cruzados e voltados para dentro da copa e encurtar em até um terço os ramos que passaram da altura desejada"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Floração: água em dia",
+      "mensagem": "Os cachos amarelos estão se abrindo. Falta de água agora faz as flores e os frutinhos caírem.",
+      "acao_requerida": "Conferir o substrato a cada 2 ou 3 dias e regar sempre que estiver seco a 5 cm, sem molhar as flores"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época dos frutos",
+      "mensagem": "Os frutos amadurecem amarelos e caem sozinhos quando estão no ponto; no chão, estragam e atraem mosca-das-frutas em um ou dois dias.",
+      "acao_requerida": "Recolher os frutos caídos todo dia (uma tela ou pano sob a copa ajuda) e guardar na geladeira ou congelar a polpa"
+    }
+  ]
+}

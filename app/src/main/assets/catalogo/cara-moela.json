@@ -1,0 +1,203 @@
+{
+  "planta": {
+    "nome_comum": "Cará-moela",
+    "nome_cientifico": "Dioscorea bulbifera",
+    "descricao": "Trepadeira tuberosa que produz carás aéreos (bulbilhos) nas axilas das folhas, com casca parda e formato que lembra uma moela; é hortaliça tradicional (PANC) no Brasil, comida sempre cozida. Use só bulbilhos de plantas cultivadas para comer, de sabor suave: formas silvestres amargas são tóxicas. A rama seca todo inverno e rebrota na primavera a partir do tubérculo, por isso é tratada como perene.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande ou tambor cortado com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com furos no fundo e espaço para uma treliça ou tutor de 2 m ao lado",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 30% areia grossa; solto para o tubérculo crescer sem deformar, com 1 colher de sopa de farinha de ossos a cada 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "brotacao",
+      "nome": "Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 35,
+      "descricao": "Enterre o bulbilho deitado a 5 cm de profundidade, com o substrato só úmido. O broto é um fio fino e arroxeado que surge entre 2 e 5 semanas; bulbilho que amolece ou mofa apodreceu por excesso de água."
+    },
+    {
+      "fase_id": "crescimento_rama",
+      "nome": "Crescimento da Rama",
+      "dia_inicio": 36,
+      "dia_fim": 120,
+      "descricao": "A rama cresce rápido, até 10 cm por dia no calor, e se enrola no suporte no sentido anti-horário. As folhas são grandes e em forma de coração. A fase termina quando surgem as primeiras bolinhas verdes nas axilas das folhas."
+    },
+    {
+      "fase_id": "formacao_bulbilhos",
+      "nome": "Formação dos Bulbilhos",
+      "dia_inicio": 121,
+      "dia_fim": 210,
+      "descricao": "Os bulbilhos engrossam nas axilas e ficam pardos. Estão maduros quando se soltam com um toque leve ou quando a rama começa a amarelar, geralmente entre março e maio."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 211,
+      "dia_fim": null,
+      "descricao": "Ano típico: rebrota do tubérculo em setembro, rama cheia no verão, bulbilhos maduros no outono, rama seca e dormência de junho a agosto. O tubérculo no vaso engrossa a cada ano e garante a rebrota."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar o bulbilho plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 35,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, com cerca de 1 L. Antes de brotar a planta não tem folhas para gastar água, e o encharcamento apodrece o bulbilho.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cará-moela",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. De junho a agosto, com a rama seca, regue só um copo quando o substrato estiver seco a 10 cm.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o cará-moela",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca ou 1 colher de sopa de torta de mamona por vaso de 40 L, afastado 5 cm da rama, e regue em seguida. Adube só de setembro a março; na dormência, pule.",
+      "critica": false
+    },
+    {
+      "id": "guiar_rama",
+      "titulo": "Enrolar a rama no suporte",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Enrole as pontas soltas no tutor ou na treliça no sentido anti-horário e amarre com barbante frouxo onde escorregar. Pontas que já passaram do topo podem ser dobradas para baixo ou cortadas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e rama",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos amarelados com teia fina (ácaro), escamas brancas no caule (cochonilha) e manchas escuras afundadas (antracnose).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça em julho ou agosto, com a planta dormente: tire o tubérculo, corte partes moles ou escuras, deixe secar 1 dia e replante em substrato novo na mesma profundidade.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora de pôr o suporte",
+      "mensagem": "A rama vai começar a subir e precisa de onde se enrolar; sem suporte ela se emaranha no chão e produz menos.",
+      "acao_requerida": "Fincar um tutor ou treliça de pelo menos 2 m no vaso, a 10 cm da rama, sem ferir o bulbilho"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Bulbilhos à vista",
+      "mensagem": "Os carás aéreos já devem estar engrossando nas axilas das folhas. O ponto é quando ficam pardos e se soltam com um toque.",
+      "acao_requerida": "Conferir os bulbilhos e colher os que se soltarem fácil; cozinhe sempre antes de comer"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do tubérculo (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Bulbilho plantado que não brota e fica mole ou com cheiro azedo; na planta formada, rama que murcha mesmo com o substrato úmido",
+      "prevencao_tratamento": "Plante só bulbilhos firmes, não regue antes de brotar se o substrato estiver úmido e reduza a rega na dormência; descarte tubérculos podres e o substrato afetado"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pardas a pretas, afundadas, nas folhas e na rama, que crescem com a chuva e causam queda de folhas",
+      "prevencao_tratamento": "Regue no substrato, não nas folhas; retire e descarte as folhas manchadas; em ataque forte, calda bordalesa a 1% a cada 10 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto empoeirado, teia fina no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Jato de água no verso das folhas a cada 3 dias; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas ou bolinhas brancas grudadas na rama e nas axilas, às vezes com formigas e fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete com álcool 70%; em infestação, óleo mineral a 1% ou neem a cada 7 dias"
+    },
+    {
+      "nome": "Queima das bordas por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com bordas secas e marrons e bulbilhos pequenos, depois de dias quentes com o vaso seco",
+      "prevencao_tratamento": "Mantenha a rega regular no verão e cubra o substrato com 3 cm de palha para segurar a umidade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3,
+        4,
+        5
+      ],
+      "titulo": "Época de colher os carás aéreos",
+      "mensagem": "No outono os bulbilhos amadurecem e começam a cair sozinhos. Os que caem e ficam no vaso rebrotam e lotam o espaço.",
+      "acao_requerida": "Passar a cada semana colhendo os bulbilhos pardos que se soltam com um toque; guardar os maiores em local seco e arejado e separar alguns para plantar em setembro"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Rama secando: começa a dormência",
+      "mensagem": "A rama amarela e seca no frio; é normal, o tubérculo continua vivo no vaso.",
+      "acao_requerida": "Cortar a rama seca rente ao substrato, suspender a adubação e regar só um copo quando o substrato estiver seco a 10 cm"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Rebrota da primavera",
+      "mensagem": "Com o calor o tubérculo volta a brotar. É também a hora de plantar os bulbilhos guardados.",
+      "acao_requerida": "Espalhar 3 colheres de sopa de húmus no vaso, voltar à rega normal quando surgir o broto e conferir se o suporte está firme"
+    },
+    {
+      "meses": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "titulo": "Não descarte bulbilhos na natureza",
+      "mensagem": "O cará-moela é invasor em matas: bulbilhos jogados em terreno baldio viram trepadeiras que abafam árvores.",
+      "acao_requerida": "Descartar bulbilhos estragados cozidos ou no lixo orgânico fechado, nunca em terrenos ou encostas"
+    }
+  ]
+}

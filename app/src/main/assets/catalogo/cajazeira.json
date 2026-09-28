@@ -1,0 +1,202 @@
+{
+  "planta": {
+    "nome_comum": "Cajazeira",
+    "nome_cientifico": "Spondias mombin",
+    "descricao": "Árvore frutífera nativa do Brasil que dá o cajá, fruto amarelo, perfumado e ácido, ótimo para sucos, polpas e sorvetes. Na natureza passa de 20 m, mas em vaso grande, com poda anual de contenção, fica com 2 a 3 m e frutifica. Planta de muda enxertada ou de estaca começa a produzir em 2 a 4 anos; de semente, pode levar mais de 6.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande ou meia-bombona com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo; comece com uns 60 L e passe para 80 a 100 L na primeira troca",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal ou de barranco peneirada, 25% composto orgânico ou húmus de minhoca, 25% areia grossa; misture 200 g de farinha de ossos e 100 g de calcário dolomítico para cada 50 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. Pode perder algumas folhas velhas na primeira semana; o sinal de que pegou é a brotação nova, avermelhada, na ponta dos ramos. Mantenha sol pleno, mas proteja do vento forte até firmar."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido de ramos e folhas compostas. É a fase de formar a copa: quando o tronco passar de 80 cm a 1 m, a poda de inverno corta a ponta para ramificar baixo. No inverno as folhas amarelam e caem; é dormência normal, não doença."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A árvore engrossa o tronco e define 3 a 4 ramos principais. Mudas enxertadas ou de estaca podem dar as primeiras flores, pequenas e brancas em cachos na ponta dos ramos, logo depois da brotação da primavera. Poucos frutos nos primeiros anos é o esperado."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: perde as folhas no inverno seco, rebrota e floresce na primavera junto com as folhas novas, e os frutos amadurecem do verão ao outono (janeiro a abril no Centro-Sul). O cajá maduro cai sozinho quando fica amarelo-alaranjado. A poda anual no fim do inverno mantém a altura que o vaso aguenta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos (cerca de 6 L num vaso de 60 L). Não deixe prato com água parada embaixo.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cajazeira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (8 a 10 L num vaso de 80 L). No verão acima de 30 °C, confira a cada 2 dias. No inverno, sem folhas, regue só a cada 7 a 10 dias, quando o substrato estiver seco a 5 cm.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a cajazeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 L de composto ou húmus de minhoca e 1 colher de sopa de NPK 10-10-10 por vaso de 60 a 80 L, longe do tronco, e regue em seguida. Na planta adulta, troque o NPK por 4-14-8 a partir de setembro para favorecer flores e frutos. Não adube em junho e julho, com a planta sem folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e olhe os ramos finos: procure cochonilhas (escamas brancas ou marrons grudadas), pulgões nas brotações e manchas escuras nas folhas. Na época de frutos, abra alguns caídos e veja se há larvas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça no fim do inverno, antes da brotação. Tire a planta, corte 3 a 5 cm das raízes que circulam a borda do torrão e volte para um vaso um pouco maior (até uns 100 L) ou para o mesmo, trocando um terço do substrato por mistura nova. Regue bem e deixe 1 semana à meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Confira se a muda firmou",
+      "mensagem": "Na primeira semana a raiz ainda não segura a planta, e o vento balança o torrão e rompe as raízes novas.",
+      "acao_requerida": "Se a muda passar de 1 m, amarrar o tronco a um tutor de bambu com fita de tecido em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Retire brotos abaixo do enxerto",
+      "mensagem": "Se a muda for enxertada, brotos que nascem abaixo da emenda são do cavalo e roubam força da copa.",
+      "acao_requerida": "Cortar rente ao tronco todo broto que surgir abaixo da marca do enxerto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e murchas mesmo com substrato molhado, cheiro azedo no vaso, raízes escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, principalmente no inverno sem folhas; furos desobstruídos e nada de prato com água. Se ocorrer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e arenoso"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp., Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos, polpa amolecida e larvas brancas dentro; caem antes de amadurecer",
+      "prevencao_tratamento": "Recolher e descartar em saco fechado todo fruto caído, todos os dias na safra; armadilha de garrafa PET com suco de fruta ou proteína hidrolisada pendurada na copa a partir da floração"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodonosas grudadas em ramos e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool; em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas em folhas, flores e frutos; flores secam e frutos caem com podridão preta",
+      "prevencao_tratamento": "Não molhar a copa ao regar, podar para arejar o centro e recolher folhas e frutos doentes; em época chuvosa, calda bordalesa a 1% na floração"
+    },
+    {
+      "nome": "Dano por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos novos e ponteiros escurecidos e secos depois de uma noite muito fria",
+      "prevencao_tratamento": "A planta jovem não tolera geada: em noites abaixo de 3 °C, encostar o vaso numa parede ou cobrir com TNT. Esperar a brotação da primavera para cortar só o que ficou seco"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem todas entre maio e agosto; ramos ficam pelados",
+      "prevencao_tratamento": "É dormência natural da espécie, não doença. Reduzir a rega e suspender a adubação até a brotação nova aparecer"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Cajazeira entrando em repouso",
+      "mensagem": "Com o frio e o tempo seco, a cajazeira perde as folhas e quase para de beber água. Rega de verão agora apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (7 a 10 dias), suspender o adubo e proteger do frio nas noites abaixo de 3 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno, antes de brotar, a cajazeira aceita bem a poda. Em vaso ela precisa ser contida, senão cresce além do que a raiz sustenta.",
+      "acao_requerida": "Cortar ramos secos, cruzados e voltados para dentro, e encurtar em um terço os ramos que passaram da altura desejada (2 a 3 m), com tesoura limpa e corte inclinado acima de uma gema"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Brotação e floração",
+      "mensagem": "Folhas novas e cachos de flores brancas aparecem juntos. A planta volta a precisar de água e adubo.",
+      "acao_requerida": "Voltar à rega a cada 3 dias, fazer a adubação com NPK 4-14-8 e pendurar a armadilha para mosca-das-frutas na copa"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "titulo": "Safra de cajá",
+      "mensagem": "Os frutos amadurecem e caem sozinhos quando ficam amarelo-alaranjados e perfumados. Fruto esquecido no chão atrai mosca-das-frutas.",
+      "acao_requerida": "Recolher os cajás caídos todo dia, aproveitar os sãos logo ou congelar a polpa, e descartar em saco fechado os furados ou podres"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Cosmos-amarelo",
+    "nome_cientifico": "Cosmos sulphureus",
+    "descricao": "Flor anual rústica, de pétalas amarelas, laranja ou vermelhas, que floresce sem parar do fim da primavera ao outono e atrai abelhas e borboletas. Cresce rápido a partir da semente e prefere solo pobre: adubo em excesso faz folha e não flor. Em vaso, prefira as variedades anãs, de 30 a 60 cm, que dispensam tutor.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 120,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 20 cm de profundidade e 20 cm de diâmetro por planta, com furos no fundo",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra de jardim, 30% areia grossa, 20% húmus de minhoca; sem esterco fresco nem adubo rico em nitrogênio",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Semeie a 0,5 cm de profundidade, 2 a 3 sementes por cova, e cubra com uma camada fina de substrato. As plântulas surgem entre o 5º e o 10º dia com dois cotilédones estreitos."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 11,
+      "dia_fim": 45,
+      "descricao": "Surgem as folhas verdadeiras, finamente recortadas, e a planta ramifica. Caule fino e comprido, tombando para um lado, indica falta de sol. A fase termina quando aparecem os primeiros botões redondos nas pontas dos ramos."
+    },
+    {
+      "fase_id": "inicio_floracao",
+      "nome": "Início da Floração",
+      "dia_inicio": 46,
+      "dia_fim": 60,
+      "descricao": "Os botões abrem nas pontas dos ramos principais. A partir daqui, cada flor dura de 5 a 7 dias. Se a planta passar de 60 cm e começar a tombar, amarre o caule a uma vareta com barbante frouxo."
+    },
+    {
+      "fase_id": "floracao_plena",
+      "nome": "Floração Plena",
+      "dia_inicio": 61,
+      "dia_fim": 110,
+      "descricao": "Os ramos laterais florescem em sequência e a planta fica coberta de flores. Retirar as flores murchas mantém a produção de botões novos; deixadas na planta, elas viram sementes e a floração diminui."
+    },
+    {
+      "fase_id": "senescencia_sementes",
+      "nome": "Fim do Ciclo e Sementes",
+      "dia_inicio": 111,
+      "dia_fim": 120,
+      "descricao": "Surgem menos botões, as folhas de baixo amarelam e os capítulos secos ficam cheios de sementes escuras e alongadas. Depois de colher as sementes, arranque a planta e renove o substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode secar nem formar crosta, mas também não pode ficar encharcado.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cosmos",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Se estiver úmido, espere. Acima de 30 °C confira a cada 2 dias; em dias nublados e frescos, a cada 4 ou 5. O cosmos tolera seca curta, mas apodrece com o vaso sempre molhado.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubação leve para flores",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Espalhe 1 colher de sopa de farinha de ossos ou de NPK 4-14-8 por vaso de 5 L, longe do caule, e regue em seguida. Não use adubo rico em nitrogênio (ureia, esterco fresco): a planta cresce muito e floresce pouco.",
+      "critica": false
+    },
+    {
+      "id": "retirar_flores_murchas",
+      "titulo": "Tirar as flores murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 50,
+      "dia_fim_ciclo": 105,
+      "instrucoes": "Corte com tesoura as flores com pétalas caídas ou secas logo acima do primeiro par de folhas abaixo delas. Isso estimula novos botões e prolonga a floração.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Olhe as pontas dos ramos e os botões à procura de pulgões agrupados, vire algumas folhas para ver teias finas ou pontinhos amarelados (ácaro) e procure pó branco sobre as folhas (oídio).",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "As plântulas já têm folhas verdadeiras e estão disputando espaço. Mudas amontoadas ficam finas, tombam e florescem pouco.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada cova, cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Desponte para ramificar",
+      "mensagem": "Tirar a ponta do caule agora faz a planta soltar ramos laterais: fica mais baixa, mais firme no vaso e com muito mais flores.",
+      "acao_requerida": "Beliscar ou cortar os 2 a 3 cm da ponta do caule principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Primeiras flores chegando",
+      "mensagem": "Os primeiros botões devem estar abrindo. A partir de agora a remoção das flores murchas é o que mantém a floração.",
+      "acao_requerida": "Conferir se o vaso recebe pelo menos 6 horas de sol direto; se não, mudá-lo para um lugar mais ensolarado"
+    },
+    {
+      "dia_disparo": 105,
+      "titulo": "Guardar sementes para o próximo plantio",
+      "mensagem": "A floração está no fim. Deixando algumas flores secarem na planta, você colhe sementes para semear de novo.",
+      "acao_requerida": "Parar de cortar 3 ou 4 flores; quando o capítulo estiver marrom e seco, retirar as sementes escuras e guardá-las em envelope de papel em local seco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas de baixo amarelando e base do caule escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e usar substrato com areia; planta com caule mole dificilmente se recupera e deve ser descartada com o substrato"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas murcham e caem com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, sem encharcar na germinação e com boa ventilação; retire as plântulas afetadas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos ou verdes nas pontas dos ramos e nos botões; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água forte nas colônias; se persistir, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias quentes e secos; em infestação, óleo de neem a 0,5% a cada 5 dias, alcançando o verso"
+    },
+    {
+      "nome": "Oídio (Golovinomyces cichoracearum)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre as folhas e caules, que depois amarelam e secam",
+      "prevencao_tratamento": "Manter as plantas espaçadas e regar o substrato, não as folhas; retirar as folhas atingidas e pulverizar leite diluído em água (1:9) uma vez por semana"
+    },
+    {
+      "nome": "Excesso de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta alta, verde-escura, cheia de folhas e com poucas ou nenhuma flor",
+      "prevencao_tratamento": "Suspender adubos com ureia, esterco ou húmus em excesso; usar só fonte de fósforo (farinha de ossos) na adubação"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules finos e compridos que tombam, espaço grande entre as folhas e floração fraca",
+      "prevencao_tratamento": "Colocar o vaso onde receba pelo menos 6 horas de sol direto e fazer o desponte aos 30 dias"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Risco de geada",
+      "mensagem": "O cosmos não resiste a geada: uma noite abaixo de 2 °C queima folhas e flores e pode matar a planta.",
+      "acao_requerida": "Nas noites com previsão de frio intenso, levar o vaso para perto de uma parede ou para baixo de uma cobertura"
+    }
+  ]
+}

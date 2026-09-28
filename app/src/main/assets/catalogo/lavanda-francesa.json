@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Lavanda-francesa",
+    "nome_cientifico": "Lavandula dentata",
+    "descricao": "Arbusto aromático de folhas recortadas e acinzentadas, com espigas lilás coroadas por brácteas roxas. É a lavanda que melhor aguenta o calor e a umidade do Brasil e floresce em boa parte do ano. Em vaso vive vários anos se tiver sol forte e substrato que drena rápido.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica sem esmalte, com pelo menos 25 cm de diâmetro e 25 cm de profundidade e vários furos no fundo. Evite prato com água parada embaixo",
+    "volume_minimo_litros": 8,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% perlita ou pedrisco fino, 10% húmus de minhoca, mais 1 colher de sopa de calcário dolomítico para cada 5 L. Ela prefere solo pobre e levemente alcalino",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda sai do saquinho para o vaso definitivo e as raízes começam a ocupar o substrato novo. É normal que algumas folhas de baixo amarelem e que as flores da loja murchem. A fase termina quando surgem brotos novos, cinza-esverdeados, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "A planta ramifica e engrossa a base. Mantenha as podas leves de formação para ela ficar compacta e não abrir no meio. As raízes chegando aos furos do vaso e a planta aguentando 3 a 4 dias sem regar sem murchar mostram que ela está estabelecida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Arbusto de 40 a 60 cm que floresce do outono à primavera e dá menos flores no auge do verão. O ano típico: floração forte de abril a novembro, poda de limpeza depois do pico da floração, mais cuidado com a chuva e a umidade no verão, e troca de substrato a cada dois anos. A base fica lenhosa com o tempo; por volta do 4º ou 5º ano, renove a planta por estaca."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de lavanda",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue na base até escorrer pelos furos, sem molhar as folhas. Se ainda estiver úmido, espere mais um dia. Acima de 30 °C, confira todo dia: a raiz ainda está no torrão da muda e seca rápido.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a lavanda",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato. Regue só se estiver seco nessa profundidade, na base e até escorrer pelos furos. Esvazie o prato depois. No inverno ou em semana chuvosa, o intervalo passa facilmente de 7 dias. Folha murcha com o substrato úmido é excesso de água, não falta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_leve",
+      "titulo": "Adubar a lavanda",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca na superfície de um vaso de 8 L, ou use NPK 4-14-8 na dose da embalagem, e regue em seguida. Não use adubo rico em nitrogênio: a planta faz muita folha mole, perde o aroma e floresce menos.",
+      "critica": false
+    },
+    {
+      "id": "poda_espigas",
+      "titulo": "Cortar espigas secas e colher flores",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte as espigas murchas e as abertas que quiser usar logo abaixo da espiga, 1 a 2 cm acima do primeiro par de folhas. Aproveite para encurtar em 2 cm os ramos que escaparam do formato. Nunca corte a parte lenhosa sem folhas, porque ela não rebrota.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a lavanda",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos e olhe o miolo e a base do caule, procurando espuma branca, algodão branco, folhas escurecidas ou ramos secos de repente. Cheire a base: cheiro de mofo indica umidade em excesso.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato da lavanda",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, solte 1/3 do torrão velho com os dedos e corte as raízes escuras ou moles. Replante no mesmo vaso limpo ou num de 5 cm a mais de diâmetro, com substrato novo e calcário. Faça em março, abril, agosto ou setembro, fora do calor mais forte.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Passar a muda para o vaso definitivo",
+      "mensagem": "No saquinho da loja, o substrato retém água demais e apodrece a raiz da lavanda.",
+      "acao_requerida": "Transplantar a muda para o vaso definitivo sem enterrar o colo acima do nível do torrão, regar uma vez até escorrer e deixar em sol pleno"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Beliscar as pontas agora faz a lavanda ramificar desde a base e ficar compacta, em vez de alta e aberta.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo com tesoura limpa, sempre acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Lavanda estabelecida",
+      "mensagem": "As raízes já ocupam o vaso e a planta aguenta bem mais tempo sem água. Regar demais é o que mais mata lavanda adulta.",
+      "acao_requerida": "Passar a regar só quando o substrato estiver seco a 4 cm de profundidade"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; ramos inteiros secam e ficam acinzentados; base do caule escura e mole; raízes marrons que se desfazem",
+      "prevencao_tratamento": "Substrato arenoso, vaso de barro, sem prato com água e rega só com o substrato seco. Na planta afetada, corte as raízes podres e replante em substrato novo e seco. Se o colo já estiver mole, faça estacas dos ramos sadios"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Mofo cinza e felpudo nas espigas e no miolo da planta; folhas internas escurecidas, em tempo úmido e abafado",
+      "prevencao_tratamento": "Não molhe as folhas, raleie o miolo com a poda para ventilar e retire espigas secas. Corte as partes afetadas e jogue no lixo, não na compostagem"
+    },
+    {
+      "nome": "Cigarrinha-espumosa (Philaenus spumarius)",
+      "tipo": "PRAGA",
+      "sintomas": "Bolas de espuma branca nas axilas dos ramos, com uma ninfa verde dentro; brotos deformados",
+      "prevencao_tratamento": "Remova a espuma com jato de água ou com os dedos. Em infestação grande, óleo de neem a 0,5% no fim da tarde, repetindo a cada 7 dias"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodonoso na base dos ramos e nas axilas; folhas pegajosas e planta enfraquecida",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%. Em seguida, óleo de neem com uma gota de detergente neutro a cada 7 dias, até sumir"
+    },
+    {
+      "nome": "Base lenhosa e pelada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos com folhas só nas pontas e o meio da planta seco e sem brotos",
+      "prevencao_tratamento": "Não tem conserto por poda, porque madeira sem folha não rebrota. Previna com as podas leves de formação e de limpeza. Numa planta velha, faça estacas de 10 cm das pontas e recomece"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos, compridos e moles que tombam; folhas mais verdes que cinza; pouca ou nenhuma flor e aroma fraco",
+      "prevencao_tratamento": "Leve o vaso para um lugar com pelo menos 5 horas de sol direto. Depois de 2 semanas no sol, encurte os ramos estiolados em 1/3"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Calcário e adubo de primavera",
+      "mensagem": "A lavanda vai entrar no pico de floração, e as regas do ano deixaram o substrato mais ácido.",
+      "acao_requerida": "Espalhar 1 colher de sopa de calcário dolomítico na superfície do vaso de 8 L, junto com a adubação do mês, e regar"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Poda de limpeza pós-floração",
+      "mensagem": "A grande floração acabou. Uma poda agora renova a planta para o verão e mantém a base cheia de folhas.",
+      "acao_requerida": "Encurtar todos os ramos em cerca de 1/3, sempre deixando folhas abaixo do corte e sem chegar à madeira pelada"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Verão chuvoso: cuidado com o excesso de água",
+      "mensagem": "Chuva frequente e calor úmido são a principal causa de morte da lavanda em vaso no Centro-Sul.",
+      "acao_requerida": "Tirar o vaso da chuva direta em semanas muito chuvosas, esvaziar o prato e regar só com o substrato seco a 4 cm"
+    }
+  ]
+}

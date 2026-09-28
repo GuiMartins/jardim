@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Pau-mulato",
+    "nome_cientifico": "Calycophyllum spruceanum",
+    "descricao": "Árvore amazônica das várzeas, famosa pelo tronco liso que troca de casca e fica verde-bronze e brilhante. Cresce rápido e, em vaso grande, vira uma arvoreta ornamental de 2 a 3 m. É uma boa escolha para quem quer uma árvore de tronco escultural na varanda ensolarada ou no quintal.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica, cimento ou plástico grosso, com pelo menos 50 cm de diâmetro e 45 cm de profundidade e vários furos no fundo. O peso ajuda a árvore a não tombar com o vento.",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou casca de arroz carbonizada; acrescente 100 g de farinha de ossos por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está se ajustando ao vaso novo e ao sol. Pode perder algumas folhas de baixo nos primeiros dias, e isso é normal. A fase termina quando brotam folhas novas, verde-claras e brilhantes, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e o crescimento acelera: na estação quente, a muda pode ganhar de 30 a 60 cm. O caule ainda é fino e flexível. A planta está estabelecida quando segue brotando sem murchar entre as regas, mesmo nos dias quentes."
+    },
+    {
+      "fase_id": "arvoreta_adulta",
+      "nome": "Arvoreta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "A árvore cresce com força da primavera ao outono e desacelera no inverno. Os ramos mais velhos começam a soltar a casca em placas finas, avermelhadas ou marrons, revelando o tronco verde e liso. É natural, não arranque à força. Plantas com alguns anos podem dar cachos de florzinhas brancas e perfumadas no fim do inverno e na primavera. Em vaso, a altura fica controlada com a poda anual e a renovação do substrato."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de pau-mulato",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Regue devagar até a água escorrer pelos furos, mantendo o substrato sempre úmido. Enfie o dedo 3 cm no substrato: se estiver seco, regue na hora. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o pau-mulato",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). É árvore de várzea e gosta de umidade, mas esvazie o pratinho 30 minutos depois. No inverno, espace para a cada 4 ou 5 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o pau-mulato",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 mais 1 L de húmus de minhoca na borda do vaso, longe do tronco, e regue em seguida. Pule a adubação de junho a agosto, quando a árvore quase para de crescer.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontos brancos ou marrons grudados (cochonilha), folhas cortadas em meia-lua (formiga-cortadeira) e manchas escuras. Olhe também a base do tronco e o substrato em busca de trilhas de formiga.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato e aparar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a árvore do vaso, corte 3 a 5 cm das raízes que formam uma manta em volta do torrão e troque um terço do substrato por mistura nova. Se quiser que ela cresça mais, passe para um vaso uns 10 cm maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante e fixe um tutor",
+      "mensagem": "O caule jovem do pau-mulato cresce rápido e fino, e o vento pode entortá-lo ou soltar a raiz recém-plantada.",
+      "acao_requerida": "Plantar a muda na mesma altura em que estava no saquinho, sem enterrar o colo, e amarrar o caule a um tutor de bambu com fita larga, em forma de 8"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A muda pegou?",
+      "mensagem": "Depois de um mês, a muda já deve ter folhas novas nas pontas. Se não brotou nada e as folhas estão caindo, a raiz pode ter sofrido no plantio.",
+      "acao_requerida": "Conferir as pontas dos ramos: sem brotação, raspar levemente o caule com a unha; se estiver verde por baixo, manter a rega e esperar mais duas semanas"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Afrouxar o tutor",
+      "mensagem": "Com um ano, o tronco já deve se sustentar sozinho, e a amarração antiga pode estrangular o caule que engrossou.",
+      "acao_requerida": "Soltar a fita e, se o tronco ficar firme ao balançar, retirar o tutor"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raízes (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; raízes marrons, moles e com cheiro ruim",
+      "prevencao_tratamento": "Nunca deixar água parada no pratinho, principalmente no inverno, e usar vaso com bons furos. Nas plantas afetadas, cortar as raízes podres, trocar o substrato e espaçar as regas"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva e quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou ramos desfolhados de uma noite para outra; trilhas de formiga até o vaso",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e aplicar isca formicida granulada ao lado dela, nunca em cima; proteger o vaso com fita adesiva dupla-face ou graxa em volta do tronco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas ou marrons grudadas nos ramos novos e no verso das folhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool 70%; em infestação maior, pulverizar óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo depois de 7 dias"
+    },
+    {
+      "nome": "Manchas foliares fúngicas",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas, arredondadas, às vezes com halo amarelo, que se espalham em tempo úmido e abafado",
+      "prevencao_tratamento": "Regar o substrato, não as folhas; manter a copa arejada com a poda anual; retirar as folhas manchadas e, se avançar, aplicar calda bordalesa"
+    },
+    {
+      "nome": "Dano por frio e geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem e secam de uma vez depois de uma noite fria; pontas dos ramos murcham e ficam pretas",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou sob a cobertura nas noites abaixo de 8 °C; não podar os ramos queimados antes de setembro, porque eles protegem o resto da planta"
+    },
+    {
+      "nome": "Raízes presas no vaso",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas menores e amareladas, crescimento parado no verão e substrato que seca em menos de um dia; raízes saindo pelos furos",
+      "prevencao_tratamento": "Renovar o substrato e aparar as raízes a cada dois anos, ou passar para um vaso maior"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja o pau-mulato do frio",
+      "mensagem": "Árvore tropical da Amazônia: noites abaixo de 8 °C queimam as folhas, e a geada pode matar os ramos jovens. No frio, ela também bebe bem menos água.",
+      "acao_requerida": "Mover o vaso para perto de uma parede ou sob cobertura nas noites frias, espaçar a rega para a cada 4 ou 5 dias e suspender a adubação"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno a árvore está quase parada; podar agora dá brotação forte na primavera e mantém a copa num tamanho que o vaso aguenta.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que crescem para dentro da copa, e encurtar em um terço os ramos mais longos, logo acima de um par de folhas, com tesoura limpa"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar a adubação e a rega",
+      "mensagem": "Com o calor voltando, o pau-mulato recomeça a crescer rápido e precisa de mais água e nutrientes.",
+      "acao_requerida": "Voltar a regar a cada 2 dias, conferindo com o dedo, e fazer uma adubação com NPK 10-10-10 e húmus"
+    }
+  ]
+}

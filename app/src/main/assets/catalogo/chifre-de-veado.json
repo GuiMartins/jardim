@@ -1,0 +1,155 @@
+{
+  "planta": {
+    "nome_comum": "Chifre-de-veado",
+    "nome_cientifico": "Platycerium bifurcatum",
+    "descricao": "Samambaia epífita da Austrália e Nova Guiné, com dois tipos de fronde: as frondes-escudo, redondas, que abraçam o suporte e ficam marrons com o tempo, e as frondes férteis, pendentes e bifurcadas como galhadas. Fica bonita montada em placa na parede ou em cesto suspenso, é resistente e perdoa esquecimentos de rega melhor que a maioria das samambaias.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Placa de madeira ou cortiça de 30 x 30 cm com musgo, ou cesto de orquídea ou vaso raso com muitos furos, de 20 a 25 cm de diâmetro, pendurado ou preso na parede",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "50% musgo esfagno, 30% casca de pinus média, 20% fibra de coco em lascas; sem terra, que encharca e apodrece a base",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se acostuma à luz e à umidade da casa. Algumas frondes férteis podem amarelar nas pontas. Pendure-a em lugar claro, sem sol forte depois das 10h. Termina quando surge uma fronde nova, clara e aveludada."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Nascem frondes-escudo novas, verde-claras, que crescem sobre o musgo e depois secam e ficam marrons. Isso é normal: não as arranque, porque protegem as raízes e guardam água. A planta está firme quando não balança mais ao tocar no suporte."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Da primavera ao outono lança frondes férteis novas e uma camada de escudos por ano. No verso das pontas das frondes maduras aparece um feltro marrom: são os esporos, não uma doença. Com o tempo nascem filhotes em volta, que podem ser separados. No inverno cresce pouco e pede menos água."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_chifre",
+      "titulo": "Regar o chifre-de-veado",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Toque no musgo atrás ou por baixo das frondes-escudo; se estiver seco a 2 cm, regue. Na placa, mergulhe-a num balde com água por 10 a 15 minutos e deixe escorrer antes de pendurar. No cesto, regue devagar sobre o musgo até escorrer. Não molhe o centro com as frondes novas encharcadas. No verão acima de 30 °C, confira a cada 3 dias; no inverno, a cada 7 a 10.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o chifre-de-veado",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo NPK 20-20-20 a meia dose (1 g por litro) e use na água da rega ou do mergulho. De junho a agosto, pule esta tarefa.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as frondes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das frondes férteis e a junção com os escudos. Procure carapaças marrons ou brancas presas à fronde e manchas escuras e moles na base. Não esfregue as frondes: a penugem branca é natural e protege a planta.",
+      "critica": false
+    },
+    {
+      "id": "renovar_suporte",
+      "titulo": "Renovar o musgo ou aumentar o suporte",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, se os escudos já cobrem toda a placa ou o musgo está desfeito, prenda a planta com suporte e tudo sobre uma placa maior, com uma camada nova de esfagno entre as duas. Não arranque os escudos velhos. No cesto, complete com esfagno novo por baixo dos escudos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Não arranque as folhas marrons da base",
+      "mensagem": "As frondes redondas e secas atrás da planta são os escudos. Eles protegem as raízes e guardam água e nutrientes, e não estão mortos à toa.",
+      "acao_requerida": "Deixar os escudos marrons no lugar e só cortar frondes férteis totalmente secas"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Confira a fixação",
+      "mensagem": "Se a planta veio num vaso de plástico, ou se balança no suporte, as raízes custam a se firmar.",
+      "acao_requerida": "Prender a planta numa placa ou cesto com musgo, amarrando por cima dos escudos com linha de nylon, sem apertar as frondes novas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da base (Rhizoctonia, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pretas e moles no centro da planta e nos escudos novos; frondes novas escurecem e caem antes de abrir",
+      "prevencao_tratamento": "Regar só com o musgo seco a 2 cm e nunca deixar a placa ou o cesto dentro de água parada. Corte as partes moles, deixe secar bem e aplique fungicida à base de cobre. Principal causa de morte em casa"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas carapaças marrons ou brancas e cerosas presas ao verso das frondes, perto das nervuras; frondes amareladas e pegajosas",
+      "prevencao_tratamento": "Retirar uma por uma com a ponta de uma pinça ou cotonete com álcool, sem esfregar a penugem. Se a infestação for grande, use inseticida sistêmico em grânulos no musgo. Evite óleos, que tapam a penugem e manchando a fronde"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelas a cor de palha, secas, na face das frondes voltada para o sol",
+      "prevencao_tratamento": "Sol direto só até as 9h ou 10h. Afaste a planta de janelas com sol da tarde; as frondes queimadas não se recuperam, mas as novas nascem sadias"
+    },
+    {
+      "nome": "Pontas secas por ar seco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das frondes férteis marrons e quebradiças, sem o feltro de esporos",
+      "prevencao_tratamento": "Nos meses secos, borrife água em volta da planta de manhã e afaste-a do ar-condicionado. Não confunda com o feltro marrom de esporos no verso das pontas, que é normal"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e nada de adubo",
+      "mensagem": "No frio o chifre-de-veado quase para de crescer, e o musgo molhado por muito tempo apodrece a base. Abaixo de 5 °C, as frondes queimam.",
+      "acao_requerida": "Espaçar as regas para cada 7 a 10 dias, suspender a adubação e levar a planta para dentro ou para baixo de uma cobertura nas noites de frio intenso"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Ar seco do fim do inverno",
+      "mensagem": "A umidade do ar cai muito nestes meses no Centro-Sul, e as pontas das frondes secam.",
+      "acao_requerida": "Borrifar água ao redor da planta pela manhã em dias com umidade abaixo de 40% e retomar a adubação em setembro"
+    }
+  ]
+}

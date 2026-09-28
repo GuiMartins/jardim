@@ -1,0 +1,213 @@
+{
+  "planta": {
+    "nome_comum": "Mangabeira",
+    "nome_cientifico": "Hancornia speciosa",
+    "descricao": "Árvore frutífera nativa do Cerrado e das restingas do Nordeste, da família da espirradeira, que solta látex branco quando ferida. Em vaso grande fica com 2 a 3 m e dá a mangaba, fruta doce e perfumada que quase não se acha à venda. Comece por muda, porque a semente perde a capacidade de germinar em poucos dias fora do fruto.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso ou barro com pelo menos 50 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo; comece num de 30 L e passe para o definitivo depois do primeiro ano",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% areia grossa lavada, 30% terra vegetal, 20% composto orgânico curtido, 10% casca de pinus fina; solo ácido (pH 5 a 5,5), sem calcário além de 1 colher de sopa por 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas de baixo. Ela se firmou quando surgem brotos novos, avermelhados, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento, com surtos de folhas novas na época das chuvas e quase parada no inverno seco. A raiz principal é funda: o caule engrossa antes de a copa crescer. Uma muda de 30 cm costuma chegar a 60 a 80 cm no fim do primeiro ano."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1460,
+      "descricao": "A planta forma a copa com ramos finos e pendentes. Em vaso, ainda não floresce ou dá poucas flores que caem sem vingar. Sinal de que está pronta: ramos com mais de 1 cm de espessura e copa cheia de folhas brilhantes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1461,
+      "dia_fim": null,
+      "descricao": "No ano típico, perde parte das folhas no inverno seco, floresce de agosto a outubro com flores brancas perfumadas em forma de tubo e amadurece os frutos de outubro a janeiro. Em vaso, espere de algumas dezenas a uma centena de frutos por ano. Mudas enxertadas podem produzir a partir do 3º ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda presa ao torrão da muda, um dia de substrato seco sob sol forte murcha as folhas novas e mata os brotos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a mangabeira",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão acima de 32 °C, confira a cada 2 dias. De junho a agosto, espace para cada 7 a 10 dias. Nunca deixe água parada no pratinho: a raiz apodrece com facilidade.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a mangabeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 xícara de composto curtido mais 1 colher de farinha de ossos) por vaso de 60 L, a 10 cm do caule, e regue em seguida. De junho a agosto use metade da dose. Na planta adulta, troque por NPK 4-14-8 a partir de julho para favorecer a floração.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as pontas dos ramos: procure escamas brancas ou marrons presas ao caule, lagartas comendo as folhas novas e manchas escuras afundadas nas folhas ou frutos.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No começo das chuvas (setembro a novembro), tire a planta do vaso. Se ainda estiver no de 30 L, passe para o de 60 L ou mais. Se já estiver no definitivo, raspe 5 cm das laterais do torrão, corte as raízes enroladas no fundo e complete com substrato novo. Regue bem e deixe à meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A mangabeira não tolera o colo enterrado nem raiz dobrada.",
+      "acao_requerida": "Plante com o colo (onde o caule encontra o torrão) no nível do substrato, sem desmanchar o torrão, e regue até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A muda pegou?",
+      "mensagem": "Com um mês, a muda firme já mostra brotos novos na ponta dos ramos.",
+      "acao_requerida": "Conferir se há brotos; se as folhas estão amarelas e o substrato fica úmido por dias, reduzir a rega e verificar se os furos estão livres"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Poda de formação",
+      "mensagem": "Cortar a ponta do caule principal faz a mangabeira ramificar e formar uma copa baixa, que cabe no vaso e produz mais.",
+      "acao_requerida": "Se a muda passou de 60 cm, cortar a ponta do caule principal logo acima de uma folha, a uns 50 cm do substrato, com tesoura limpa. Vai escorrer látex: é normal"
+    },
+    {
+      "dia_disparo": 1461,
+      "titulo": "Idade de florescer",
+      "mensagem": "A mangabeira de semente começa a florescer por volta do 4º ano. Ela precisa de sol pleno e de uma estação seca para induzir flores.",
+      "acao_requerida": "Garantir pelo menos 6 h de sol direto e manter a rega espaçada no inverno para estimular a floração"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem de baixo para cima, a planta murcha mesmo com o substrato úmido e a base do caule escurece",
+      "prevencao_tratamento": "Substrato arenoso, furos desobstruídos e nada de água no pratinho. Ao primeiro sinal, suspenda a rega até secar 5 cm e, se as raízes estiverem pretas e moles, replante em substrato novo cortando as partes podres"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nas folhas novas, nas flores e nos frutos, que apodrecem ainda verdes",
+      "prevencao_tratamento": "Molhar só o substrato, não a copa; tirar e descartar folhas e frutos manchados. Em ataque forte, calda bordalesa a 1% a cada 15 dias na época das chuvas"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodoadas presas aos ramos e ao verso das folhas; fumagina preta e formigas subindo pelo caule",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com álcool 70%; em infestação, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas roídas pelas bordas ou reduzidas à nervura, com fezes escuras em grânulos nas folhas de baixo",
+      "prevencao_tratamento": "Catar as lagartas à mão (use luvas: algumas queimam). Em ataque grande, Bacillus thuringiensis pulverizado no fim da tarde"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com pontinhos de picada, amolecendo e caindo antes da hora, com larvas brancas dentro",
+      "prevencao_tratamento": "Recolher e descartar em saco fechado todos os frutos caídos e bichados; na frutificação, armadilha de garrafa PET com suco de fruta fermentado pendurada na copa"
+    },
+    {
+      "nome": "Clorose por excesso de calcário",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelo-claras com as nervuras verdes, crescimento parado",
+      "prevencao_tratamento": "A mangabeira é de solo ácido: não calcarie além da dose do substrato e não use água de cal. Corrija com adubo ácido (sulfato de amônio em pequena dose) ou quelato de ferro foliar e, na troca de substrato, aumente a proporção de casca de pinus"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Frio e estação seca",
+      "mensagem": "No inverno a mangabeira cresce pouco e perde parte das folhas, o que é normal. Mudas jovens sofrem com geada.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias e, em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou cobrir a copa com manta antigeada"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "Se a planta já tem idade para florescer, as flores brancas perfumadas aparecem agora. Falta d'água na floração derruba as flores.",
+      "acao_requerida": "Voltar a regar com regularidade assim que surgirem botões e não podar nem mudar o vaso de lugar até os frutos vingarem"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12,
+        1
+      ],
+      "titulo": "Época de colher mangaba",
+      "mensagem": "A mangaba madura cai sozinha e estraga em 1 ou 2 dias. Colhida no pé ainda verde, ela não amadurece.",
+      "acao_requerida": "Se houver frutos, recolher os caídos todo dia, ou colher os que ficaram amarelados com manchas avermelhadas e cedem de leve ao toque, deixando-os 2 a 3 dias embrulhados em jornal para amolecer"
+    },
+    {
+      "meses": [
+        2,
+        3
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "Depois da colheita é a hora de arejar a copa, antes de a planta preparar a florada seguinte.",
+      "acao_requerida": "Cortar ramos secos, doentes e os que cruzam o meio da copa, com tesoura limpa; limitar a altura a 2,5 m cortando as pontas mais altas"
+    }
+  ]
+}

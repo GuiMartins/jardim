@@ -1,0 +1,224 @@
+{
+  "planta": {
+    "nome_comum": "Pera-nashi",
+    "nome_cientifico": "Pyrus pyrifolia (cultivares de baixa exigência em frio, como 'Housui' e 'Kousui', enxertadas em Pyrus calleryana)",
+    "descricao": "Pereira asiática de fruto redondo, crocante e muito suculento, que perde as folhas no inverno. Em vaso ela vira uma árvore de 2 a 2,5 m, mas só floresce bem com algumas centenas de horas de frio no inverno. Quase todas as cultivares precisam de outra cultivar florindo por perto para o pólen, e a muda enxertada costuma dar os primeiros frutos entre o 3º e o 4º ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cerâmica ou meia-bombona, com pelo menos 45 cm de diâmetro e 40 cm de profundidade e vários furos no fundo; apoie sobre pés ou tijolos para a água escorrer",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa e 10% casca de arroz carbonizada, com 200 g de calcário dolomítico e 150 g de farinha de ossos a cada 50 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda plantada no inverno costuma estar sem folhas, e isso é normal: arranhe de leve a casca de um ramo com a unha e, se estiver verde por baixo, ela está viva. Mantenha o substrato só úmido, porque raiz parada apodrece com excesso de água. A fase termina quando as gemas incham e aparecem as primeiras folhas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Os brotos crescem de 30 a 80 cm na primavera e no verão, e as raízes ocupam o vaso. Deixe crescer 3 ou 4 ramos bem distribuídos, que serão a estrutura da copa, e arranque qualquer broto que nascer abaixo da marca do enxerto. Se aparecerem flores no primeiro ano, retire-as para a planta investir em raiz e ramos."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A copa ganha forma de taça ou de líder central com as podas de inverno. Surgem os esporões (ramos curtos e grossos de 2 a 5 cm) que carregam as gemas de flor. As primeiras flores e alguns frutos podem aparecer no 2º ou 3º ano; deixe no máximo 3 a 5 frutos até a árvore engrossar."
+    },
+    {
+      "fase_id": "producao",
+      "nome": "Planta Adulta em Produção",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: as folhas amarelam e caem entre abril e junho; a árvore dorme e é podada em julho; floresce em agosto e setembro, junto com a brotação; os frutos são raleados em outubro e colhidos de dezembro a março, conforme a cultivar. Em vaso de 50 a 80 L, uma árvore adulta produz bem de 15 a 30 frutos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Conferir a umidade da muda",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco nessa profundidade, regue devagar até escorrer pelos furos; se estiver úmido, espere. Sem folhas, a muda gasta pouca água e encharcar apodrece a raiz.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pereira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até a água sair pelos furos (cerca de 5 a 8 L num vaso de 50 L). No verão acima de 30 °C, com a árvore em folha e fruto, confira todo dia. Sem folhas (de maio a julho), regue só a cada 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure manchas marrons com halo vermelho, pulgões nos brotos novos e escamas cinzentas grudadas nos ramos. Confira as pontas dos ramos murchas (grafolita) e arranque os brotos que nascem abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato e podar a raiz",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Se a árvore estiver sem folhas (maio a agosto), tire-a do vaso, corte 3 a 5 cm de raiz em toda a volta do torrão e replante com 30% de substrato novo. Se estiver em folha, raspe só os 5 cm de cima do substrato, troque por composto novo e deixe a poda de raiz para o próximo inverno.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Tutore a muda",
+      "mensagem": "O vento balança a muda recém-plantada e rompe as raízes novas antes de elas firmarem no substrato.",
+      "acao_requerida": "Cravar uma estaca de 1,5 m a 10 cm do tronco e amarrar em oito com fita elástica ou tira de pano, sem apertar a casca"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Brotos do porta-enxerto",
+      "mensagem": "Com a brotação, podem nascer ramos abaixo da cicatriz do enxerto. Eles são do porta-enxerto, não dão nashi e roubam a força da muda.",
+      "acao_requerida": "Localizar a cicatriz do enxerto no tronco e arrancar com os dedos todo broto abaixo dela"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeiro ano da pereira",
+      "mensagem": "A árvore já deve ter enraizado o vaso todo. Raízes saindo pelos furos ou água que escorre direto sem molhar o torrão indicam que o vaso ficou pequeno.",
+      "acao_requerida": "Levantar o vaso e conferir os furos; se houver raízes enroladas saindo, planejar a troca para um vaso de 70 a 80 L no próximo inverno"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e murchas mesmo com o substrato molhado; casca escura e mole na base do tronco; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, sobretudo no inverno, e nunca deixar água parada no pratinho. Se aparecer, suspenda a rega, retire o substrato encharcado e replante em substrato novo e arejado"
+    },
+    {
+      "nome": "Entomosporiose (Entomosporium mespili)",
+      "tipo": "DOENCA",
+      "sintomas": "Pequenas manchas vermelhas nas folhas que viram círculos marrons com halo arroxeado; queda precoce de folhas no verão",
+      "prevencao_tratamento": "Recolher e descartar as folhas caídas, não molhar a copa ao regar e manter a copa arejada com a poda. Em ataques fortes, pulverizar calda bordalesa a 1% na brotação e a cada 15 dias em períodos chuvosos"
+    },
+    {
+      "nome": "Mancha-preta (Alternaria alternata)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pretas arredondadas nas folhas novas e rachaduras escuras na casca dos frutos",
+      "prevencao_tratamento": "Ensacar os frutos depois do raleio, retirar folhas e frutos afetados e aplicar calda bordalesa a 1% no início da brotação"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha fraterculus)",
+      "tipo": "PRAGA",
+      "sintomas": "Picadas escuras na casca, polpa amolecida e com larvas brancas; frutos caindo antes da hora",
+      "prevencao_tratamento": "Ensacar cada fruto com saco de papel ou TNT quando estiver do tamanho de uma bolinha de gude e recolher todo fruto caído. Armadilha com suco de uva a 25% em garrafa PET furada ajuda a monitorar"
+    },
+    {
+      "nome": "Mariposa-oriental (Grapholita molesta)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontas dos ramos novos murcham e secam; galerias com serragem nos frutos",
+      "prevencao_tratamento": "Cortar e descartar as pontas murchas assim que aparecerem e ensacar os frutos cedo"
+    },
+    {
+      "nome": "Cochonilha-de-são-josé (Diaspidiotus perniciosus)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas cinzentas e redondas grudadas nos ramos, que ficam ásperos; pontos vermelhos nos frutos",
+      "prevencao_tratamento": "Esfregar os ramos com escova macia e água com sabão neutro. No inverno, sem folhas, pulverizar óleo mineral a 1%"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos novos; folhas enroladas e pegajosas; formigas subindo o tronco",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Abortamento de gemas por falta de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Na primavera as gemas de flor secam e caem sem abrir, a brotação sai fraca e desigual e a árvore floresce pouco",
+      "prevencao_tratamento": "Escolher cultivar de baixa exigência em frio para a sua região e deixar o vaso no lugar mais frio e aberto do quintal no inverno. Em regiões de inverno quente, a quebra de dormência com óleo mineral no fim de julho ajuda, mas não substitui o frio"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "A pereira vai dormir",
+      "mensagem": "As folhas amarelam e caem com o frio. É o começo da dormência, não doença, e a árvore agora gasta muito menos água.",
+      "acao_requerida": "Reduzir a rega para uma vez a cada 5 a 7 dias, sempre conferindo com o dedo, e recolher as folhas caídas para não guardar fungos"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de inverno",
+      "mensagem": "Sem folhas, dá para ver a estrutura da árvore. Podar agora organiza a copa e estimula esporões, que é onde nascem as flores.",
+      "acao_requerida": "Tirar ramos secos, cruzados e os que crescem para dentro da copa; encurtar em um terço os ramos do ano, cortando acima de uma gema voltada para fora; não cortar os esporões curtos e grossos"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Florada: ajude a polinização",
+      "mensagem": "A pera-nashi quase não se autopoliniza. Sem pólen de outra cultivar, as flores caem sem formar fruto.",
+      "acao_requerida": "Com a outra cultivar florida por perto, passar um pincel macio de flor em flor entre as duas árvores, em dias secos, pela manhã"
+    },
+    {
+      "meses": [
+        9,
+        11,
+        2
+      ],
+      "titulo": "Adubar a pereira",
+      "mensagem": "A árvore precisa de nutrientes na brotação, no enchimento dos frutos e depois da colheita, para formar as gemas do ano seguinte.",
+      "acao_requerida": "Espalhar 1 litro de húmus de minhoca e 1 colher de sopa de NPK 10-10-10 por vaso de 50 L, longe do tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Ralear e ensacar os frutos",
+      "mensagem": "A pereira segura muito mais frutos do que consegue encher. Sem raleio, eles ficam pequenos e sem doçura e a árvore se esgota.",
+      "acao_requerida": "Deixar só o fruto mais bonito de cada cacho, com 15 a 20 cm entre um e outro, e ensacar cada fruto com saco de papel ou TNT preso no cabo"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de colher pera-nashi",
+      "mensagem": "Conforme a cultivar, os frutos amadurecem entre dezembro e março. A nashi amadurece na árvore: colhida verde, não adoça depois.",
+      "acao_requerida": "Abrir um saco e conferir: a casca passa de verde a dourada ou bronzeada e o fruto se solta com uma leve torção para cima; colher esses a cada 2 ou 3 dias e guardar na geladeira"
+    }
+  ]
+}

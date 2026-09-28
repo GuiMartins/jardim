@@ -1,0 +1,196 @@
+{
+  "planta": {
+    "nome_comum": "Pândano",
+    "nome_cientifico": "Pandanus utilis",
+    "descricao": "Árvore de Madagascar com folhas longas em espiral, de margem serrilhada com espinhos avermelhados, e raízes aéreas que escoram o tronco. No chão passa de 10 m, mas em vaso fica com 1,5 a 3 m e vira uma planta escultural, que aguenta sol forte, vento e maresia.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica ou concreto, com pelo menos 45 cm de diâmetro e 45 cm de profundidade e furos no fundo. Vaso leve de plástico tomba com o vento quando a copa cresce",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca, 10% casca de pinus média ou perlita; precisa drenar rápido, porque raiz encharcada apodrece",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está firmando as raízes no vaso novo. É normal uma ou duas folhas de baixo amarelarem. Quando a roseta começa a soltar uma folha nova pelo centro, a adaptação terminou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A roseta cresce em espiral, com uma folha nova a cada 2 ou 3 semanas no verão e quase nenhuma no inverno. A base do tronco começa a soltar as primeiras raízes aéreas, grossas e voltadas para baixo: não corte, elas escoram a planta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Tronco formado, com raízes-escora na base e as folhas velhas secando embaixo. Cresce de setembro a março e quase para de maio a agosto, quando pede menos água e nenhum adubo. Em vaso raramente floresce ou dá fruto. Troque o substrato a cada 2 anos e vire o vaso de vez em quando para a copa não crescer torta para o lado do sol."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o pândano novo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe água parada no pratinho nem no centro da roseta.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o pândano",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão acima de 30 °C, confira a cada 3 dias; de maio a agosto, espere até 10 dias entre regas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o pândano",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 ou 1 litro de húmus de minhoca na borda do vaso, longe do tronco, e regue em seguida. De maio a agosto a planta está parada: marque como feito sem adubar.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas_secas",
+      "titulo": "Tirar as folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De luvas grossas e mangas compridas, porque as margens têm espinhos, corte rente ao tronco as folhas de baixo que estão secas ou mais da metade amarelas. Não corte folhas verdes nem as raízes aéreas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base das folhas, onde elas se encaixam no tronco, e o verso delas: procure bolinhas brancas de algodão, escamas marrons presas à folha ou manchas escuras encharcadas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato ou vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre setembro e novembro, tire a planta com ajuda de outra pessoa e luvas, raspe 1/3 do substrato velho e replante em vaso 10 cm maior, ou no mesmo vaso com substrato novo. Mantenha o tronco na mesma altura de antes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Pândano no vaso novo",
+      "mensagem": "Nos primeiros dias a muda sente a troca. Sol forte do meio-dia pode queimar as folhas antes de a raiz se firmar.",
+      "acao_requerida": "Deixar o vaso em meia-sombra ou só com o sol da manhã na primeira semana e depois levar para o sol pleno"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "A raiz já firmou. Daqui em diante o pândano prefere secar um pouco entre as regas.",
+      "acao_requerida": "Conferir se saiu folha nova pelo centro da roseta e passar a regar só quando o substrato secar 5 cm"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de pândano",
+      "mensagem": "Com a copa maior, o vaso fica pesado em cima e pode tombar com o vento, e as raízes podem estar saindo pelos furos.",
+      "acao_requerida": "Olhar os furos do fundo e a firmeza do vaso; se ele balança ou as raízes saem por baixo, encostar numa parede ou trocar por um vaso mais largo na primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas do centro amarelam e soltam com facilidade, base do tronco mole e escura, cheiro azedo no substrato",
+      "prevencao_tratamento": "Substrato arenoso, vaso com furos e nada de água no pratinho. Se aparecer, suspenda a rega, tire a planta, corte as raízes moles e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecendo algodão na base das folhas e nas axilas da roseta; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, borrife óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou brancas grudadas no verso das folhas, que amarelam em pontos",
+      "prevencao_tratamento": "Raspe com escova macia e água com sabão neutro; depois, óleo mineral ou óleo de neem a cada 10 dias até sumirem"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros e aspecto desbotado, teias finas no verso, principalmente no tempo seco",
+      "prevencao_tratamento": "Jato de água no verso das folhas uma vez por semana no inverno seco; se persistir, acaricida à base de enxofre ou óleo de neem"
+    },
+    {
+      "nome": "Mancha-foliar (Colletotrichum, Phyllosticta)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas alongadas com borda amarela, que se juntam e secam a folha",
+      "prevencao_tratamento": "Regue no substrato, sem molhar a roseta, e corte as folhas muito manchadas. Se as manchas se espalharem, aplique fungicida cúprico a cada 10 dias"
+    },
+    {
+      "nome": "Queimadura de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com trechos pálidos ou marrons e ressecados depois de noites abaixo de 5 °C ou de geada",
+      "prevencao_tratamento": "Nas noites frias, leve o vaso para perto de uma parede ou sob uma cobertura. Corte só as folhas que secarem por inteiro, na primavera"
+    },
+    {
+      "nome": "Pontas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e secas, avançando alguns centímetros",
+      "prevencao_tratamento": "Costuma ser rega irregular, acúmulo de sal do adubo ou vaso pequeno. Regue fundo até escorrer, lave o substrato com bastante água a cada 3 meses e apare só a parte seca"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: proteger do frio",
+      "mensagem": "O pândano tolera pouco frio. Geada e noites abaixo de 5 °C queimam as folhas, e substrato frio e molhado apodrece a raiz.",
+      "acao_requerida": "Encostar o vaso numa parede protegida ou levar para baixo de uma cobertura nas noites de frio e regar só quando o substrato secar 5 cm até agosto"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomada do crescimento",
+      "mensagem": "Com o calor, a roseta volta a soltar folhas e a planta passa a pedir mais água e adubo.",
+      "acao_requerida": "Voltar a regar a cada 5 dias, fazer a primeira adubação da estação e virar o vaso meia volta para a copa crescer por igual"
+    }
+  ]
+}

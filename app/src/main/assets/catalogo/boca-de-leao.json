@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Boca-de-leão",
+    "nome_cientifico": "Antirrhinum majus",
+    "descricao": "Flor de clima ameno com espigas de flores que se abrem como uma boca quando apertadas dos lados, em quase todas as cores menos azul. Na natureza é uma perene de vida curta, mas em vaso é cultivada como anual: floresce do fim do outono até a primavera e perde o vigor no calor do verão.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 180,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 18 a 20 cm de diâmetro e pelo menos 20 cm de profundidade, com furos no fundo; em jardineira, deixe 20 cm entre plantas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; peneire a camada de cima para as sementes, que são finas como pó",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Espalhe 5 a 6 sementes sobre o substrato úmido e só pressione com o dedo, sem cobrir: elas precisam de luz para germinar. Com 18 a 22 °C, as plântulas surgem entre o 7º e o 14º dia, bem pequenas e com duas folhinhas redondas."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "Aparecem as folhas verdadeiras, estreitas e alongadas. O crescimento é lento nesta fase; a fase termina quando a planta tem 3 a 4 pares de folhas."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 36,
+      "dia_fim": 80,
+      "descricao": "A planta ramifica depois do desponte e forma uma touceira. Variedades altas passam de 50 cm e podem precisar de tutor. A fase muda quando surgem as pontas das espigas com botões fechados no alto dos ramos."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 81,
+      "dia_fim": 165,
+      "descricao": "As espigas abrem de baixo para cima, e cada uma dura 2 a 3 semanas. Cortar as espigas murchas faz nascer novas hastes laterais e mantém a floração por meses. Com calor acima de 30 °C, a produção de flores cai."
+    },
+    {
+      "fase_id": "fim_ciclo",
+      "nome": "Fim de Ciclo",
+      "dia_inicio": 166,
+      "dia_fim": 180,
+      "descricao": "As espigas novas saem curtas e com poucas flores, e as folhas de baixo amarelam. Dá para deixar algumas espigas formarem cápsulas secas para colher sementes e depois renovar o vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. As sementes ficam descobertas e morrem se a superfície secar um único dia; não use regador, que arrasta as sementes.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a boca-de-leão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, sem molhar as folhas (a folha molhada favorece a ferrugem). No inverno o intervalo costuma passar para 3 a 4 dias; acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a boca-de-leão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 165,
+      "instrucoes": "Até o dia 80, espalhe 1 colher de sopa de húmus por vaso de 3 L. Na floração, dissolva 1 colher de chá rasa de NPK 4-14-8 em 1 L de água e regue com o substrato já úmido. Evite adubo rico em nitrogênio, que faz folha e poucas flores.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_flores",
+      "titulo": "Cortar espigas murchas",
+      "tipo": "PODA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 85,
+      "dia_fim_ciclo": 165,
+      "instrucoes": "Corte as espigas com mais da metade das flores murchas logo acima do primeiro par de folhas saudáveis. Dali saem as novas hastes floridas. Recolha as flores caídas no substrato, porque elas mofam.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Vire as folhas e procure pústulas marrons no verso (ferrugem), teias finas com pontos claros (ácaro) e insetos agrupados nas pontas e nos botões (pulgão).",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Várias plântulas no mesmo vaso vão competir, e nenhuma floresce bem.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa em cada vaso de 3 L, cortando as outras rente ao substrato com tesoura ou transplantando-as com cuidado para outros vasos"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Despontar a boca-de-leão",
+      "mensagem": "Com 3 a 4 pares de folhas, tirar a ponta faz a planta ramificar e dar várias espigas em vez de uma só.",
+      "acao_requerida": "Cortar a ponta do caule principal logo acima do terceiro par de folhas, com tesoura limpa"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Variedade alta? Coloque um tutor",
+      "mensagem": "Variedades de corte passam de 50 cm e as espigas carregadas tombam com vento ou chuva.",
+      "acao_requerida": "Se a planta já passou de 30 cm, fincar uma vareta de 60 cm a 3 cm do caule e amarrar frouxo com barbante em forma de 8; variedades anãs dispensam"
+    },
+    {
+      "dia_disparo": 80,
+      "titulo": "Os primeiros botões chegaram",
+      "mensagem": "As espigas estão se formando no alto dos ramos. A partir de agora, a planta precisa de mais sol e de adubo de floração.",
+      "acao_requerida": "Garantir pelo menos 6 horas de sol direto e passar para o adubo NPK 4-14-8"
+    },
+    {
+      "dia_disparo": 166,
+      "titulo": "Fim de ciclo à vista",
+      "mensagem": "A planta está esgotando e as espigas novas saem fracas.",
+      "acao_requerida": "Deixar 2 ou 3 espigas secarem na planta para colher sementes das cápsulas marrons e planejar a nova semeadura para o outono"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Ferrugem (Puccinia antirrhini)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas marrom-alaranjadas e pulverulentas no verso das folhas, com manchas amarelas na face de cima; as folhas secam de baixo para cima",
+      "prevencao_tratamento": "Regar só na base, de manhã, e manter espaço para o ar circular. Retire e descarte as folhas afetadas (sem compostar); se espalhar, calda bordalesa ou fungicida à base de enxofre a cada 7 dias"
+    },
+    {
+      "nome": "Podridão das raízes e do colo (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido, e o caule escurece e amolece rente ao substrato",
+      "prevencao_tratamento": "Não regar com o substrato ainda úmido, conferir se os furos estão livres e nunca deixar água parada no pratinho. Planta com o colo podre não se recupera: descarte com o substrato"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas murcham e caem com o caule fino e escurecido na base",
+      "prevencao_tratamento": "Usar substrato novo, borrifar sem encharcar e deixar o vaso em local ventilado; retire as plântulas afetadas"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores e botões com manchas marrons que se cobrem de um mofo cinza em tempo úmido",
+      "prevencao_tratamento": "Cortar as espigas murchas em dia, recolher flores caídas e não molhar as flores ao regar"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas e nos botões; brotos deformados e pegajosos",
+      "prevencao_tratamento": "Jato de água nas partes atacadas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas no verso, comum no tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; óleo de neem a 0,5% ou sabão potássico a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Hastes finas e poucas flores por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules compridos, fracos e tortos na direção da luz; espigas curtas ou ausentes",
+      "prevencao_tratamento": "Mudar para um local com pelo menos 6 horas de sol direto e não exagerar no nitrogênio; os ramos já estiolados podem ser cortados à metade para rebrotar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor derruba a floração",
+      "mensagem": "A boca-de-leão gosta de clima ameno. Acima de 30 °C, ela para de formar flores e o vaso seca muito rápido.",
+      "acao_requerida": "Levar o vaso para um lugar com sol só de manhã e sombra à tarde, conferir a rega todo dia e cortar as espigas passadas à metade para rebrotar no outono"
+    }
+  ]
+}

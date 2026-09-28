@@ -1,0 +1,196 @@
+{
+  "planta": {
+    "nome_comum": "Maracujá-azul",
+    "nome_cientifico": "Passiflora caerulea",
+    "descricao": "Trepadeira perene nativa do Sul do Brasil, de flores azuis e brancas muito perfumadas, que atrai abelhas e borboletas. Aguenta frio e geadas leves melhor que qualquer outro maracujá, e em vaso com treliça cobre uma grade ou parede de varanda em um ou dois anos. Os frutos alaranjados são comestíveis, mas de sabor fraco: cultiva-se pela flor.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira funda com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com furos no fundo e uma treliça, grade ou fios de pelo menos 1,5 m de altura para a trepadeira se enrolar",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita, mais 1 colher de sopa de farinha de ossos por 10 L de mistura",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo e pode perder algumas folhas de baixo. A fase acabou quando brotos verdes novos saem das axilas e as primeiras gavinhas começam a se enrolar na treliça."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 150,
+      "descricao": "Os ramos crescem depressa, de 10 a 20 cm por semana no calor. Amarre as pontas soltas na treliça para ocupar a estrutura por igual. Os primeiros botões costumam aparecer no fim desta fase, se for primavera ou verão."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Ano típico: floresce sem parar de outubro a março, com cada flor durando um dia; os frutos amadurecem de verde a laranja de 60 a 80 dias depois. No inverno cresce pouco e pode perder parte das folhas no frio. Poda forte em agosto renova os ramos e faz florescer mais no verão seguinte."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de maracujá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda está só no torrão da muda e seca antes do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o maracujá-azul",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão com a planta cheia de folhas, o vaso pode pedir água a cada 1 ou 2 dias; no inverno, a cada 5 a 7.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o maracujá-azul",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 4-14-8 ou 1 xícara de húmus de minhoca na borda do vaso de 40 L, longe do caule, e regue em seguida. De maio a julho pule esta adubação. Excesso de nitrogênio dá muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "conducao_ramos",
+      "titulo": "Amarrar ramos na treliça",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Pegue os ramos que cresceram soltos ou para fora e prenda-os na treliça com barbante ou fita de amarrar, em laço frouxo. Espalhe os ramos em leque em vez de deixar todos subirem juntos.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure lagartas laranja com espinhos pretos e folhas roídas até a nervura, pontinhos amarelados ou teias finas no verso das folhas (ácaro) e insetos agrupados nos brotos (pulgão).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, logo depois da poda, tire a planta do vaso, corte um terço das raízes que enrolam no fundo e nas bordas e replante com substrato novo, no mesmo vaso ou num 10 cm maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Instale a treliça agora",
+      "mensagem": "O maracujá-azul sobe se enrolando pelas gavinhas e cresce rápido. Colocar o suporte depois machuca as raízes e embaraça os ramos.",
+      "acao_requerida": "Fixar uma treliça, grade ou fios de pelo menos 1,5 m junto ao vaso e encostar a ponta da muda nela"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Estimular ramos laterais",
+      "mensagem": "Se a muda subiu num fio só, ela vai florescer apenas no topo.",
+      "acao_requerida": "Cortar a ponta do ramo principal logo acima de uma folha, a uns 60 cm de altura, para ele soltar dois ou três ramos laterais"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; base do caule escura e mole; cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e manter os furos livres. Se aparecer, suspenda a rega, retire as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Lagarta-do-maracujá (Agraulis vanillae, Dione juno)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas laranja com espinhos pretos, às vezes em grupo; folhas roídas até sobrar só a nervura em poucos dias",
+      "prevencao_tratamento": "Catar as lagartas e os ovos amarelos no verso das folhas à mão; em infestação grande, Bacillus thuringiensis (Dipel) no fim da tarde, que só afeta lagartas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros que ficam bronzeadas e secam; teias finas no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias quentes e secos; se persistir, óleo de neem a 0,5% a cada 5 dias no fim da tarde"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; folhas novas enrugadas e pegajosas",
+      "prevencao_tratamento": "Jato de água nos brotos; se voltar, sabão neutro a 1% ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Fusariose (Fusarium oxysporum f. sp. passiflorae)",
+      "tipo": "DOENCA",
+      "sintomas": "Um ramo ou a planta inteira murcha de repente e não se recupera com rega; ao cortar a base do caule, o interior está marrom",
+      "prevencao_tratamento": "Usar substrato novo e muda sadia, sem ferir o colo da planta. Não tem cura: descarte a planta e o substrato e lave o vaso com água sanitária"
+    },
+    {
+      "nome": "Clorose por falta de nutriente",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com nervuras verdes, ou folhas velhas amarelando por inteiro, sem sinal de praga",
+      "prevencao_tratamento": "Retomar a adubação mensal na primavera e no verão; se a folha nova amarelar entre as nervuras, aplicar quelato de ferro conforme a embalagem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e cuidado com a geada",
+      "mensagem": "Com o frio, o maracujá-azul quase para de crescer e pode perder folhas. Isso é normal. Substrato encharcado no frio apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm e, em noite de geada, cobrir a planta com TNT ou levar o vaso para perto da parede"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "As flores saem nos ramos do ano. Podar no fim do inverno, antes da brotação, renova a planta e faz florescer muito mais no verão.",
+      "acao_requerida": "Cortar todos os ramos laterais deixando 2 ou 3 gemas cada, tirar os ramos secos ou embaraçados e manter só a estrutura principal presa na treliça"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: rega e lagartas",
+      "mensagem": "No calor forte a planta cheia de folhas esvazia o vaso depressa, e é a época das lagartas-do-maracujá.",
+      "acao_requerida": "Conferir o substrato todo dia e virar as folhas procurando lagartas laranja e ovos amarelos"
+    }
+  ]
+}

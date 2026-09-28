@@ -1,0 +1,203 @@
+{
+  "planta": {
+    "nome_comum": "Jasmim-árabe",
+    "nome_cientifico": "Jasminum sambac",
+    "descricao": "Arbusto semitrepador tropical de folhas brilhantes e flores brancas, dobradas ou simples, de perfume intenso, usadas no chá de jasmim e em colares na Ásia. Em vaso e ao sol, floresce em ondas da primavera ao outono, e o perfume fica mais forte ao anoitecer.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com vários furos no fundo; prato raso sem água parada",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita, mais 1 colher de sopa de farinha de ossos por 10 L; levemente ácido (pH 5,5 a 6,5)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo e à luz da casa. É normal cair alguns botões e amarelar uma ou outra folha velha. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e os ramos se alongam. Os ramos novos tendem a se enrolar e pedir apoio; conduza-os numa treliça ou num tutor. Se a muda veio florida, pode dar novas flores já nesta fase, nas pontas dos ramos novos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Floresce em ondas de setembro a abril, sempre nas pontas dos ramos novos: despontar depois de cada onda faz vir a próxima. No inverno cresce pouco e quase não floresce; abaixo de 10 °C perde folhas e geada mata os ramos. Poda principal no fim do inverno e troca de substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o jasmim recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. O torrão da muda ainda não se ligou ao substrato novo e seca antes dele: não deixe secar por completo.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jasmim",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o prato. Em dias acima de 30 °C, confira a cada 2 dias; de junho a agosto, espaçe para a cada 5 a 7 dias, sempre com o dedo como guia. Folhas moles e caídas pedem água; folhas amarelando com o substrato úmido indicam excesso.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar o jasmim",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato úmido, espalhe 2 colheres de sopa de NPK 4-14-8 (ou 1 xícara de húmus mais 1 colher de sopa de farinha de ossos) por vaso de 20 L, longe do caule, e regue em seguida. Entre maio e agosto, pule esta adubação. Evite adubo rico em nitrogênio, que faz folha e não flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, as axilas e os botões: procure bolinhas brancas de algodão ou escamas marrons (cochonilha), insetos verdes agrupados nos brotos (pulgão), pontinhos amarelos com teia fina (ácaro) e mosquinhas brancas que voam ao sacudir o ramo.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e setembro, tire a planta do vaso, raspe cerca de um terço do torrão por fora e corte raízes enroladas ou escuras. Replante com substrato novo num vaso 5 cm maior (ou no mesmo, se quiser conter o tamanho) e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Vaso definitivo",
+      "mensagem": "Se a muda ainda está no saquinho ou no vaso plástico do viveiro, as raízes vão se enrolar e a planta para de crescer.",
+      "acao_requerida": "Transplantar para o vaso de pelo menos 20 L com o substrato recomendado, sem enterrar o colo da planta mais fundo do que estava"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Dar apoio aos ramos",
+      "mensagem": "O jasmim-árabe solta ramos longos e flexíveis que tombam sem apoio e quebram com o vento.",
+      "acao_requerida": "Fincar uma treliça ou tutor de 1 m no vaso e prender os ramos mais longos com barbante, em laço frouxo"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeiro desponte",
+      "mensagem": "As flores nascem nas pontas dos ramos novos: quanto mais pontas, mais flores.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo principal, logo acima de um par de folhas, para ramificar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos murcham; raízes marrons, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no prato e manter os furos desobstruídos. Se aparecer, tire do vaso, corte as raízes podres, deixe secar algumas horas e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha (farinhenta e de carapaça)",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas de algodão ou escamas marrons nas axilas e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação, pulverizar óleo mineral ou óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões; brotos novos retorcidos",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto desbotado e teia fina no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; lavar a planta com água e sabão neutro ou aplicar óleo de neem a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir os ramos; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Clorose por falta de ferro",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes",
+      "prevencao_tratamento": "Substrato levemente ácido e sem calcário; aplicar quelato de ferro conforme a embalagem e usar composto ou húmus nas adubações"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir",
+      "prevencao_tratamento": "Evitar que o substrato seque por completo durante a floração, não mudar o vaso de lugar com botões e garantir pelo menos 4 horas de sol direto"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Preparar o jasmim para o inverno",
+      "mensagem": "Com os dias mais curtos e frios, a planta desacelera e para de florescer. Adubo agora vira broto mole, que o frio queima.",
+      "acao_requerida": "Suspender a adubação até agosto e espaçar as regas, sempre conferindo o substrato com o dedo"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O jasmim-árabe é tropical: abaixo de 10 °C perde folhas, e geada mata os ramos.",
+      "acao_requerida": "Nas noites abaixo de 10 °C, levar o vaso para junto de uma parede ou para a varanda coberta; com previsão de geada, cobrir com tecido não tecido ou levar para dentro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual",
+      "mensagem": "No fim do inverno, antes de brotar, a poda renova os ramos que vão dar as flores da primavera.",
+      "acao_requerida": "Tirar os ramos secos, finos e cruzados e encurtar os demais em até um terço, cortando logo acima de um par de folhas; retomar a adubação no mês seguinte"
+    },
+    {
+      "meses": [
+        1
+      ],
+      "titulo": "Desponte de verão",
+      "mensagem": "A primeira onda de flores já passou. Despontar agora faz a planta ramificar e dar uma segunda onda até o outono.",
+      "acao_requerida": "Cortar as pontas que já floresceram 3 a 5 cm abaixo das flores secas, logo acima de um par de folhas"
+    }
+  ]
+}

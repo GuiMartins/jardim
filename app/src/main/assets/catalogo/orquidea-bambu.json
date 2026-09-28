@@ -1,0 +1,211 @@
+{
+  "planta": {
+    "nome_comum": "Orquídea-bambu",
+    "nome_cientifico": "Arundina graminifolia",
+    "descricao": "Orquídea terrestre de hastes finas e eretas como bambu, com 1 a 2 m de altura, e flores lilás e brancas parecidas com as da Cattleya. É das poucas orquídeas que gostam de sol pleno e crescem em terra. Floresce por meses seguidos no calor e é uma das orquídeas mais fáceis para quem está começando.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico pesado com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com vários furos no fundo. As hastes altas tombam vasos leves com o vento",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% casca de pinus média, 20% fibra de coco em lascas, 10% areia grossa, mais 1 colher de sopa de farinha de ossos por litro. Deve ficar solto e úmido, mas nunca encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do viveiro, geralmente com meia-sombra, e precisa se acostumar ao sol aos poucos: na primeira semana, só sol da manhã, e depois aumente até 6 horas. Pontas amareladas ou manchas brancas nas folhas indicam sol demais cedo demais. A fase termina quando surgem raízes novas e brancas na superfície ou um broto novo na base."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 240,
+      "descricao": "Os brotos novos da base crescem mais altos e grossos que as hastes da muda. A touceira se adensa, com 3 a 6 hastes novas. A primeira floração costuma vir nas hastes crescidas nesta fase, no primeiro verão."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 241,
+      "dia_fim": null,
+      "descricao": "Touceira formada, com hastes de 1 a 2 m. Da primavera ao outono, cada haste madura solta flores pela ponta, uma ou duas por vez, durante semanas. Depois da floração, a ponta pode formar mudinhas (keikis). No inverno o crescimento desacelera. Hastes velhas amarelam e secam aos poucos: é normal, desde que surjam brotos novos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a orquídea-bambu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Com raiz recém-mexida e sol aumentando, deixar secar por completo queima a muda. Não deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a orquídea-bambu",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos. No verão com sol pleno, confira a cada 2 dias. No inverno, espere o substrato secar 3 cm antes de regar, o que costuma levar 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a orquídea-bambu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá de adubo NPK 10-10-10 (ou adubo para orquídeas) em 1 L de água e regue o substrato já úmido. De junho a agosto, adube só uma vez por mês.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar hastes e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, as bainhas junto às hastes e os botões florais. Procure cascas brancas ou marrons grudadas, teias finas, pontinhos amarelados e colônias de pulgões nos botões.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato e dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no início da primavera, tire a touceira do vaso, retire o substrato velho e corte as raízes podres (escuras e moles). Divida em grupos de pelo menos 3 hastes e replante cada grupo em substrato novo, na mesma altura em que estava.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Passar para o vaso definitivo",
+      "mensagem": "Mudas de viveiro vêm em saquinhos ou vasos pequenos, que secam em horas no sol e não seguram hastes de 1,5 m.",
+      "acao_requerida": "Transplantar para o vaso de 15 L ou mais com o substrato recomendado, sem enterrar a base das hastes mais fundo do que estava, e deixar na meia-sombra por 7 dias"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de aumentar o sol",
+      "mensagem": "A muda já teve uma semana para se recuperar do transplante. Sem sol direto ela não floresce.",
+      "acao_requerida": "Mover o vaso para um lugar com sol da manhã e, ao longo de 3 semanas, chegar a 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Hastes altas precisam de apoio",
+      "mensagem": "As hastes novas já devem passar de 1 m e tombam com vento e chuva forte, quebrando junto à base.",
+      "acao_requerida": "Cravar uma ou duas estacas de bambu no vaso e prender as hastes com barbante ou fita de amarrar, com laço frouxo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes amarelando de baixo para cima, base mole e escura, raízes marrons e ocas que soltam a casca ao puxar, cheiro azedo no substrato",
+      "prevencao_tratamento": "Só regue com o substrato seco a 2 ou 3 cm e nunca deixe água no prato. Se aparecer, tire do vaso, corte raízes e hastes podres, polvilhe canela em pó nos cortes e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas cascas brancas, algodoadas ou marrons grudadas nas bainhas e no verso das folhas; folhas amarelando e melado pegajoso",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em álcool 70% e depois aplique óleo de neem a 0,5% com algumas gotas de detergente neutro, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos ou prateados, aspecto empoeirado e teias finas no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos. Se infestar, lave as folhas e aplique óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos ou verdes nos botões e hastes florais; botões deformados que caem sem abrir",
+      "prevencao_tratamento": "Jato de água nos botões ou algodão com água e sabão neutro. Se persistir, óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos novos e pontas de raiz roídos, rastros brilhantes no vaso pela manhã",
+      "prevencao_tratamento": "Cate à noite ou cedo, após a chuva. Espalhe casca de ovo triturada na superfície do substrato e não deixe o vaso encostado no chão úmido"
+    },
+    {
+      "nome": "Mancha foliar fúngica (Cercospora, Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas, às vezes com halo amarelo, que crescem nas folhas em época de chuva",
+      "prevencao_tratamento": "Regue no substrato, não nas folhas, e deixe espaço para o ar circular entre as hastes. Corte as folhas manchadas e, se espalhar, aplique fungicida à base de cobre"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas, secas ou amarelo-palha no meio das folhas, logo depois de a muda ir para o sol pleno",
+      "prevencao_tratamento": "Aumente o sol aos poucos ao longo de 3 semanas. As folhas queimadas não se recuperam, mas as novas crescem já adaptadas"
+    },
+    {
+      "nome": "Folhas amarelas por falta de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas inteiras amarelo-claras por igual, crescimento fraco e hastes finas, sem sinal de praga ou podridão",
+      "prevencao_tratamento": "Retome a adubação quinzenal no período de crescimento e troque o substrato se ele tiver mais de 2 anos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Preparar para a floração",
+      "mensagem": "Com o calor, a orquídea-bambu começa a crescer forte e prepara as flores do verão.",
+      "acao_requerida": "Voltar à adubação quinzenal completa e conferir se a planta recebe pelo menos 6 horas de sol direto"
+    },
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Separar as mudinhas (keikis)",
+      "mensagem": "Depois da floração, algumas pontas de haste formam mudinhas com folhas e raízes aéreas.",
+      "acao_requerida": "Quando o keiki tiver 3 raízes de 3 a 5 cm, cortar a haste 2 cm abaixo dele e plantá-lo num vaso pequeno com o mesmo substrato"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e adubo",
+      "mensagem": "No frio a planta quase para de crescer, e o substrato demora mais para secar. Abaixo de 10 °C, as folhas podem manchar.",
+      "acao_requerida": "Regar só com o substrato seco a 3 cm, adubar uma vez por mês e, em noites abaixo de 10 °C, encostar o vaso numa parede abrigada ou cobrir com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Limpar hastes velhas",
+      "mensagem": "Hastes que já floresceram e secaram só tiram espaço e luz dos brotos novos da primavera.",
+      "acao_requerida": "Cortar rente ao substrato, com tesoura limpa, as hastes totalmente amarelas ou secas, sem mexer nas que ainda estão verdes"
+    }
+  ]
+}

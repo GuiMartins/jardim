@@ -1,0 +1,210 @@
+{
+  "planta": {
+    "nome_comum": "Ipê-verde",
+    "nome_cientifico": "Cybistax antisyphilitica",
+    "descricao": "Árvore do Cerrado, da família dos ipês, com flores verde-claras em cachos. É uma das poucas árvores de flor verde, e isso a torna rara em jardins. Na natureza passa de 6 m; em vaso grande fica compacta, entre 2 e 3 m. Perde as folhas no inverno seco e, depois de estabelecida, aguenta bem a seca.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cimento, fibra ou plástico grosso, com pelo menos 50 cm de diâmetro e 50 cm de profundidade e vários furos no fundo. Comece num vaso de 30 a 40 L e passe para 80 a 100 L na primeira troca",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, mais 1 colher de sopa de calcário dolomítico a cada 10 L; solto e drenante como o solo do Cerrado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma a raiz no vaso novo. É normal que ela perca algumas folhas na primeira semana. A fase acaba quando aparecem folhas novas, compostas e de um verde vivo, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "O crescimento é rápido na estação das chuvas e para no inverno, quando a planta pode perder todas as folhas. Folha caindo em junho e julho é normal, e não quer dizer que a planta morreu: raspe a casca de um ramo com a unha e, se estiver verde por baixo, ela está viva. Raízes saindo pelos furos mostram que a planta já tomou o vaso."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "O tronco engrossa e a copa se forma. A planta pode ainda não florescer. A poda de formação no fim do inverno define a altura em que a copa se abre."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: perde as folhas no inverno seco (junho a agosto), rebrota em setembro e floresce entre outubro e dezembro, com cachos verde-claros já com folhas. As vagens alongadas amadurecem no inverno seguinte e liberam sementes aladas. Em vaso, pede substrato novo a cada dois anos e uma poda leve de condução."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, ou com vento, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o ipê-verde",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e só regue se estiver seco nessa profundidade. Aí regue até escorrer pelos furos. No verão quente, o vaso pode pedir água a cada 2 ou 3 dias; sem folhas, no inverno, regue só a cada 10 a 15 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o ipê-verde",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus de minhoca e 1 colher de sopa de NPK 10-10-10 por vaso de 40 L na borda do vaso, longe do tronco, e regue em seguida. De maio a agosto, com a planta parada ou sem folhas, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as axilas dos ramos em busca de cochonilhas (pontos brancos ou marrons grudados), lagartas e folhas recortadas por formigas. Confira também se a base do tronco está firme e seca.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato ou passar para vaso maior",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e setembro, antes da rebrota, tire a planta do vaso e corte até 1/4 das raízes que dão voltas no fundo. Replante em substrato novo, num vaso 20 a 30% maior se ele ainda couber no espaço. Regue bem e deixe em meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Confira o plantio da muda",
+      "mensagem": "Muda enterrada fundo demais apodrece o colo; muda solta balança com o vento e rasga as raízes novas.",
+      "acao_requerida": "Confirmar que o colo (onde o tronco vira raiz) está no nível do substrato e firmar a muda com uma estaca de bambu amarrada em oito com fita macia"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "Se já há folhas novas na ponta dos ramos, a raiz pegou e a rega pode ficar mais espaçada.",
+      "acao_requerida": "Conferir se há brotos novos; se ainda não houver nenhum, manter o substrato levemente úmido e o vaso no sol"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Retire o tutor",
+      "mensagem": "Com o tronco mais grosso, o tutor passa a atrapalhar: a amarra estrangula a casca e o tronco não se fortalece com o vento.",
+      "acao_requerida": "Soltar a amarra; se a muda ficar firme sozinha, tirar a estaca de bambu"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de ipê-verde",
+      "mensagem": "Raízes saindo pelos furos ou água escorrendo direto sem molhar o substrato indicam que o vaso ficou pequeno.",
+      "acao_requerida": "Olhar os furos do fundo; se houver raízes grossas saindo, planejar a troca para um vaso maior em agosto ou setembro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam e caem fora do inverno. A base do tronco escurece e amolece, e as raízes ficam marrons e com cheiro ruim",
+      "prevencao_tratamento": "Nunca deixe água no pratinho e só regue com o substrato seco a 5 cm. Se aparecer, tire a planta do vaso, corte as raízes podres, replante em substrato novo e arenoso e espace bem a rega"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodoadas ou marrons grudadas nos ramos novos e no verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em álcool 70%. Se a infestação for grande, pulverize óleo de neem a 0,5% com detergente neutro no fim da tarde, 3 aplicações a cada 7 dias"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas recortadas em meia-lua e ramos pelados de uma noite para outra, com trilha de formigas no vaso",
+      "prevencao_tratamento": "Siga a trilha até o formigueiro e use isca formicida granulada perto dele, nunca dentro do vaso. Fita adesiva dupla-face ou graxa numa volta do vaso barra a subida"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro, bolinhas escuras de fezes nas folhas de baixo",
+      "prevencao_tratamento": "Cate as lagartas com luva. Se forem muitas, use Bacillus thuringiensis (Dipel) conforme o rótulo, no fim da tarde"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos e compridos que tombam, folhas pequenas e espaçadas, planta que nunca floresce",
+      "prevencao_tratamento": "O ipê-verde é de cerrado aberto: leve o vaso para um lugar com pelo menos 5 horas de sol direto e, no fim do inverno, pode os ramos estiolados"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Entre junho e agosto, as folhas amarelam e caem todas, e a planta fica pelada",
+      "prevencao_tratamento": "É o comportamento natural da espécie (caducifólia), e não pede tratamento. Não adube nesse período e reduza a rega. A casca verde sob a unha confirma que a planta está viva"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Ipê-verde em repouso",
+      "mensagem": "No inverno seco a planta perde as folhas e quase não bebe água. Regar como no verão encharca o vaso e apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para cada 10 a 15 dias, sempre conferindo o substrato a 5 cm, e suspender a adubação"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Podado agora, antes da rebrota, o ipê-verde fecha o corte depressa e brota mais ramos na primavera.",
+      "acao_requerida": "Cortar ramos secos, cruzados ou que crescem para dentro da copa, e encurtar em até 1/3 os que passam do tamanho desejado. O corte vai inclinado, logo acima de uma gema"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Rebrota da primavera",
+      "mensagem": "Com o calor e as primeiras chuvas, os brotos novos voltam e a planta volta a pedir água e nutrientes.",
+      "acao_requerida": "Voltar à rega normal, conferindo o substrato a cada 3 ou 4 dias, e fazer a primeira adubação da estação"
+    },
+    {
+      "meses": [
+        10,
+        11,
+        12
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "Planta adulta costuma soltar agora os cachos de flores verde-claras. Falta de água nessa época derruba os botões.",
+      "acao_requerida": "Não deixar o substrato secar por completo enquanto houver botões e manter o vaso no sol pleno"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Beterraba",
+    "nome_cientifico": "Beta vulgaris subsp. vulgaris (grupo Conditiva)",
+    "descricao": "Hortaliça de raiz arroxeada e doce, rica em ferro e folato, que também dá folhas comestíveis. É bienal por natureza (só floresce no segundo ano, depois do frio), mas em casa é cultivada como anual e colhida antes disso. Cada 'semente' é um glomérulo com 2 a 4 sementes, por isso o desbaste é obrigatório.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 80,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de profundidade e furos no fundo; numa jardineira de 60 cm cabem 5 a 6 beterrabas, uma a cada 10 cm",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal peneirada, 30% húmus de minhoca, 20% areia grossa; solto, sem pedras nem torrões, para a raiz engrossar redonda. pH entre 6,0 e 6,8 (1 colher de sopa de calcário dolomítico a cada 10 L, misturada 15 dias antes de semear)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Deixe os glomérulos de molho em água por 12 horas e semeie a 1,5 cm de profundidade, um a cada 10 cm. As plântulas, de caule avermelhado, surgem entre o 5º e o 10º dia; de cada glomérulo nascem de 2 a 4."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula e Folhas Verdadeiras",
+      "dia_inicio": 11,
+      "dia_fim": 30,
+      "descricao": "Os cotilédones estreitos dão lugar às folhas verdadeiras, largas e com nervura vermelha. Quando cada tufo tem 3 a 4 folhas, é hora do desbaste; sem ele, as raízes se estrangulam e não engrossam."
+    },
+    {
+      "fase_id": "formacao_raiz",
+      "nome": "Formação da Raiz",
+      "dia_inicio": 31,
+      "dia_fim": 60,
+      "descricao": "A base do caule incha e o 'ombro' roxo começa a aparecer na superfície. Rega irregular nesta fase racha a raiz e forma anéis brancos por dentro; o ombro exposto ao sol é normal e não precisa ser coberto."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 61,
+      "dia_fim": 80,
+      "descricao": "As raízes atingem 5 a 8 cm de diâmetro. Colha aos poucos, sempre as maiores. Depois de 8 cm ou do dia 80, a beterraba fica fibrosa e lenhosa."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar a semeadura",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer os 2 primeiros centímetros. O glomérulo tem casca dura: se secar uma vez depois de embebido, a germinação falha. Não deixe formar crosta nem encharcar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a beterraba",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 80,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Mantenha a umidade constante: seca seguida de encharcada racha a raiz. Acima de 28 °C, confira todo dia; no inverno, a cada 3 dias costuma bastar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubação de cobertura",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 55,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca e 1 colher de chá de farinha de ossos por planta, sem encostar no caule, e regue em seguida. Na primeira adubação, dissolva 1 g de ácido bórico em 5 L de água e regue com ela: a beterraba precisa de boro para não formar o miolo preto. Evite adubo rico em nitrogênio, que faz folha e não raiz.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 80,
+      "instrucoes": "Vire as folhas e procure manchas circulares com centro claro e borda roxa, furos, túneis claros dentro da folha ou insetos agrupados no verso e nos brotos novos.",
+      "critica": false
+    },
+    {
+      "id": "colheita_beterraba",
+      "titulo": "Colher beterrabas prontas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": 80,
+      "instrucoes": "Afaste o substrato e meça o ombro: com 5 a 8 cm de diâmetro, puxe pela base das folhas. Torça as folhas a 3 cm da raiz em vez de cortar, para a beterraba não sangrar. Deixe as menores para a próxima passada.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "Cada glomérulo gerou um tufo de 2 a 4 mudas. Se continuarem juntas, nenhuma forma raiz boa.",
+      "acao_requerida": "Deixar só a muda mais vigorosa a cada 10 cm, cortando as outras rente ao substrato com tesoura (puxar abala a raiz da que fica). As folhinhas cortadas vão bem em salada"
+    },
+    {
+      "dia_disparo": 61,
+      "titulo": "Primeiras beterrabas prontas",
+      "mensagem": "As raízes maiores já devem estar com 5 cm de diâmetro ou mais.",
+      "acao_requerida": "Afastar o substrato em volta do ombro, medir e começar a colheita pelas maiores"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cercosporiose (Cercospora beticola)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas circulares pequenas, de centro cinza-claro e borda arroxeada, que se juntam e secam as folhas mais velhas",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e pela manhã; retirar e descartar as folhas manchadas; se avançar, calda bordalesa a 0,5% a cada 10 dias"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas murcham e caem com o caule escuro e fino rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, sem encharcar na germinação e com boa ventilação; retirar as plântulas afetadas"
+    },
+    {
+      "nome": "Podridão da raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas mesmo com o substrato molhado; raiz mole, escura e com cheiro azedo",
+      "prevencao_tratamento": "Regar só com os 3 cm de cima secos, garantir furos desobstruídos e nunca deixar água parada no pratinho"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos no verso das folhas e nos brotos; folhas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas folhas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Vaquinha e lagartas",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos ou bordas roídas nas folhas; fezes escuras nas axilas",
+      "prevencao_tratamento": "Catar os insetos de manhã cedo; para lagartas, Bacillus thuringiensis pulverizado no fim da tarde"
+    },
+    {
+      "nome": "Coração-negro (falta de boro)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas pequenas, retorcidas e escuras; raiz com manchas pretas e secas no miolo, às vezes rachada",
+      "prevencao_tratamento": "Rega com ácido bórico diluído (1 g em 5 L) na primeira adubação; calcário em excesso também trava o boro, então não passe da dose"
+    },
+    {
+      "nome": "Anéis brancos e raiz rachada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ao cortar, a raiz mostra anéis claros alternados com os roxos; rachaduras na casca",
+      "prevencao_tratamento": "Os anéis vêm do calor forte, acima de 28 °C, e as rachaduras da rega irregular: semear nos meses indicados e manter a umidade constante"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        11,
+        12,
+        1
+      ],
+      "titulo": "Calor forte para a beterraba",
+      "mensagem": "Acima de 28 °C a raiz perde cor, forma anéis brancos e o substrato do vaso seca em horas.",
+      "acao_requerida": "Mover o vaso para um lugar com sol só de manhã, cobrir o substrato com palha seca e conferir a rega todo dia"
+    }
+  ]
+}

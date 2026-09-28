@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Rosa-louca",
+    "nome_cientifico": "Hibiscus mutabilis",
+    "descricao": "Arbusto da família do hibisco, famoso porque cada flor abre branca de manhã, fica rosa à tarde e vermelha à noite, antes de cair. Cresce rápido, floresce muito no outono e aguenta bem o vaso grande com poda anual.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado (cerâmica ou cimento) com pelo menos 45 cm de diâmetro e 40 cm de profundidade, com furos no fundo; o peso evita que o arbusto tombe com o vento",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita, mais 1 xícara de farinha de ossos por vaso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode perder algumas folhas de baixo e ficar parada nas primeiras duas semanas. A fase termina quando aparecem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Crescimento rápido de ramos e folhas grandes em formato de coração com 5 lobos. As raízes ocupam o vaso; quando a planta passa a pedir água com mais frequência, está estabelecida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce forte na primavera e no verão, floresce do fim do verão ao outono (março a junho) com flores que mudam de cor no mesmo dia, pode perder parte das folhas no inverno frio e é podada no fim do inverno para brotar de novo. Em vaso, fica bem entre 1,5 e 2 m de altura com a poda anual."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a rosa-louca",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. No verão acima de 30 °C, confira todo dia; no inverno, espace para a cada 4 ou 5 dias. Folhas grandes murchas no meio da tarde de calor sem o substrato seco não pedem água: elas voltam à noite.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a rosa-louca",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de NPK 4-14-8 (ou 1 xícara de húmus com 1 colher de farinha de ossos) na borda do vaso de 40 L, longe do caule, e regue em seguida. Entre maio e agosto, pule a adubação: a planta está florindo no fim ou parada no frio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, os brotos e a base dos botões. Procure pontinhos brancos que voam (mosca-branca), placas brancas ou marrons presas ao caule (cochonilha), teias finas (ácaro) e colônias de pulgão nas pontas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, junto com a poda: tire a planta do vaso, corte 3 a 5 cm das raízes enoveladas em volta do torrão e replante em substrato novo, no mesmo vaso ou num 10 cm mais largo. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firme a muda no vaso",
+      "mensagem": "A rosa-louca cresce rápido e tem folhas grandes, que pegam vento. Muda balançando não enraíza.",
+      "acao_requerida": "Cravar um tutor de bambu a 5 cm do caule e amarrar o ramo principal com fita ou barbante em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora da poda de formação",
+      "mensagem": "Com a muda já pegando, cortar as pontas faz a planta ramificar da base e virar um arbusto cheio, com mais pontas para dar flor.",
+      "acao_requerida": "Cortar 5 a 10 cm da ponta de cada ramo principal, logo acima de uma folha, com tesoura limpa"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Pode tirar o tutor",
+      "mensagem": "O caule deve estar lenhoso e firme a esta altura.",
+      "acao_requerida": "Soltar o tutor e empurrar o caule de leve; se ele ficar firme, retire o tutor, senão mantenha mais 2 meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; a planta murcha de uma vez; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água parada no pratinho. Se aparecer, tire do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetinhos brancos ao mexer na planta; folhas amareladas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas, no fim da tarde, a cada 5 dias por 3 semanas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Placas brancas algodonosas ou escamas marrons presas aos ramos e ao verso das folhas; ramos enfraquecidos",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em infestação forte, óleo mineral a 1% com detergente neutro, a cada 7 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e botões; folhas novas enrugadas e botões deformados",
+      "prevencao_tratamento": "Jato forte de água nas pontas; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso, principalmente em tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos e quentes; em infestação, calda de enxofre ou acaricida específico"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir",
+      "prevencao_tratamento": "Causado por rega irregular (seca seguida de encharcamento) ou mudança brusca de lugar durante a floração. Manter a rega constante e não mudar o vaso de posição entre março e junho"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Prepare a floração",
+      "mensagem": "A rosa-louca vai começar a formar botões para florir no outono.",
+      "acao_requerida": "Aplicar 1 colher de sopa de farinha de ossos ou NPK 4-14-8 extra na borda do vaso e manter a rega bem regular daqui até junho"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Menos água no frio",
+      "mensagem": "No inverno a planta cresce pouco e pode perder folhas; é normal. Substrato úmido no frio apodrece a raiz.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 5 cm e proteger de geada, se houver, levando o vaso para perto de uma parede"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "A rosa-louca floresce nos ramos novos: uma poda forte no fim do inverno garante brotação vigorosa e muitas flores no outono.",
+      "acao_requerida": "Cortar todos os ramos pela metade ou até um terço do comprimento, logo acima de uma gema, e tirar ramos secos, finos ou cruzados"
+    }
+  ]
+}

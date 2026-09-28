@@ -1,0 +1,187 @@
+{
+  "planta": {
+    "nome_comum": "Sansão-do-campo",
+    "nome_cientifico": "Mimosa caesalpiniifolia",
+    "descricao": "Árvore pequena e espinhenta da Caatinga, também chamada de sabiá, de crescimento muito rápido. Fixa nitrogênio no solo, aguenta seca e é a cerca viva clássica do Brasil. Em vaso grande, com poda, fica como um arbusto denso com espigas de flores brancas e perfumadas na primavera e no verão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica, cimento ou plástico grosso, com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo. Deixe longe de passagem, porque os ramos têm espinhos.",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa, 20% composto orgânico ou húmus de minhoca. Drenante e pobre, porque adubo em excesso faz muita folha e ramo mole.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está enraizando no vaso novo. Algumas folhinhas podem amarelar e cair na primeira semana, e isso é normal. A fase termina quando surgem brotos novos, verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido, que pode passar de 1 m no primeiro ano. É a hora de escolher a forma: um tronco só (arvoreta) ou vários ramos desde a base (arbusto). Se o caule tombar com o vento, amarre-o com fita larga a um tutor, sem apertar. A fase termina quando o caule fica lenhoso e marrom até a metade da altura."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "No ano típico, ela brota forte na primavera, floresce em espigas brancas entre setembro e fevereiro e forma vagens achatadas que secam e se abrem. No inverno cresce pouco e pode perder parte das folhas se fizer frio ou seca. Pede podas para manter o tamanho e trocar o substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de sansão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. Nunca deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o sansão-do-campo",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue só se estiver seco, até escorrer pelos furos. Ela tolera seca, mas não encharcamento. No inverno, espace para a cada 7 a 10 dias. Em onda de calor no verão, confira a cada 2 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o sansão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus de minhoca ou composto sobre o substrato, longe do caule, e regue em seguida. Dispense adubo nitrogenado, porque ela fixa o próprio nitrogênio. De maio a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "poda_manutencao",
+      "titulo": "Podar pontas do sansão",
+      "tipo": "PODA",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 120,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Use luvas grossas. Com tesoura de poda, encurte em um terço os ramos que passaram do formato desejado, cortando logo acima de uma folha. Tire também os ramos secos e os que cruzam para dentro da copa.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folhas cortadas em meia-lua e trilhas de formigas, placas brancas ou marrons presas nos ramos (cochonilha) e ramos com um anel roído na casca que murcham de repente (serrador).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso usando luvas. Corte com serrote ou tesoura as raízes que dão voltas no fundo, cerca de 1/4 do torrão, e replante com substrato novo no mesmo vaso ou num 10 cm maior. Pode os ramos na mesma proporção para compensar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado com os espinhos",
+      "mensagem": "Os ramos do sansão têm espinhos curvos e firmes, que prendem na roupa e ferem a pele.",
+      "acao_requerida": "Deixar o vaso longe de passagens e de onde crianças e animais brincam, e separar um par de luvas grossas para mexer na planta"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Defina o formato da planta",
+      "mensagem": "A muda já pegou e vai crescer rápido. Escolher agora entre arvoreta e arbusto evita cortes grandes depois.",
+      "acao_requerida": "Para arvoreta, deixar o caule mais forte e tirar os brotos laterais até 60 cm de altura. Para arbusto, cortar a ponta principal a 40 cm para ela ramificar desde baixo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem em massa com o substrato úmido, a base do caule escurece e as raízes ficam moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter os furos desobstruídos e nunca usar pratinho com água. Se acontecer, suspender a rega, cortar as raízes podres e replantar em substrato novo e arenoso"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhinhas cortadas em meia-lua ou desfolha total numa noite; trilha de formigas carregando pedaços verdes",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e aplicar isca granulada própria ao lado do carreiro, em dia seco. Uma fita adesiva invertida ou graxa no vaso ajuda a barrar a subida"
+    },
+    {
+      "nome": "Serrador (Oncideres spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Um ramo murcha e seca de repente, com um anel perfeito roído na casca, e às vezes cai inteiro no chão",
+      "prevencao_tratamento": "Recolher e queimar ou jogar no lixo fechado os ramos cortados, porque os ovos estão neles. Podar abaixo do anel os ramos atacados que ainda estão presos"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Placas brancas algodonosas ou escamas marrons presas nos ramos jovens, com folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; em infestação grande, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Dano por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e pontas dos ramos escurecem e secam de um dia para o outro após noite de frio intenso",
+      "prevencao_tratamento": "Em noites abaixo de 3 °C, levar o vaso para perto de uma parede ou cobrir com manta de TNT. Esperar a brotação da primavera para podar só a parte que ficou seca"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja do frio",
+      "mensagem": "Espécie do semiárido, ela sofre com geada, e a planta jovem pode perder toda a parte aérea.",
+      "acao_requerida": "Em noites com previsão abaixo de 3 °C, encostar o vaso numa parede voltada para o norte ou cobrir a copa com TNT, e espaçar as regas para a cada 7 a 10 dias"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação anual",
+      "mensagem": "No fim do inverno a planta está quase parada; podar agora gera brotação densa e mais espigas de flor na primavera.",
+      "acao_requerida": "Com luvas, reduzir a copa em até um terço, tirar ramos secos, cruzados e os danificados pelo frio, cortando acima de uma gema"
+    },
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Recolha as vagens",
+      "mensagem": "As vagens secas se abrem e espalham sementes, que brotam fácil em vasos e canteiros vizinhos.",
+      "acao_requerida": "Cortar os cachos de vagens que já estão marrons antes que se abram, e guardar algumas sementes se quiser fazer mudas"
+    }
+  ]
+}

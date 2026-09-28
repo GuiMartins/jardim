@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Cheflera-grande",
+    "nome_cientifico": "Heptapleurum actinophyllum (sin. Schefflera actinophylla)",
+    "descricao": "Árvore australiana de folhas compostas em forma de guarda-chuva, cultivada em vaso como planta ornamental grande para sala clara, varanda ou área externa sombreada. Em vaso ela fica entre 1,5 e 3 m, raramente floresce e aceita poda para controlar a altura. As folhas são tóxicas para cães e gatos se mastigadas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado (cerâmica ou cimento) com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com furos no fundo; o peso evita que a planta alta tombe com vento",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina ou perlita; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao novo lugar e ao vaso. É normal cair 1 a 3 folhas de baixo nas primeiras semanas. Não mude o vaso de lugar nem adube. A fase termina quando surge uma folha nova no topo, ainda enrolada e verde-clara."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso novo e a planta passa a soltar uma folha nova a cada 2 a 4 semanas na estação quente. Se o caule crescer fino e inclinado para a janela, falta luz: aproxime-a da claridade e gire o vaso um quarto de volta a cada rega."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce forte de setembro a março e quase para de maio a agosto, quando bebe bem menos água. Folhas de baixo caem aos poucos com a idade, o que é normal. Poda de formação na primavera mantém a altura e deixa a copa cheia; troca de substrato a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a cheflera recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. Se ainda estiver úmido, não regue. A raiz recém-mexida não aguenta secar por completo nem ficar encharcada.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cheflera",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o prato. No verão costuma pedir água a cada 4 a 5 dias; de maio a agosto, a cada 8 a 10. Folhas amarelando e caindo com o substrato úmido indicam excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a cheflera",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 2 xícaras de húmus de minhoca) na borda do vaso de 30 L, longe do caule, e regue em seguida. De maio a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar e limpar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire 5 ou 6 folhas e olhe o verso e os pecíolos: procure carocinhos brancos ou marrons (cochonilha), teias finas e pontinhos amarelos (ácaro) ou manchas pretas grudentas (fumagina). Passe um pano úmido nas folhas para tirar a poeira, que atrapalha a fotossíntese.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, solte as raízes que dão voltas no fundo e corte as escuras e moles. Replante em vaso 5 a 10 cm maior (ou no mesmo, aparando 1/4 do torrão) com substrato novo e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Confira o vaso da muda",
+      "mensagem": "Chefleras de loja costumam vir em vaso plástico pequeno, com raízes saindo pelos furos. Nesse vaso ela seca em um dia e para de crescer.",
+      "acao_requerida": "Se houver raízes saindo pelos furos ou o vaso tiver menos de 30 L, transplantar hoje para o vaso definitivo sem desmanchar o torrão e regar bem"
+    },
+    {
+      "dia_disparo": 14,
+      "titulo": "Folhas caindo é normal agora",
+      "mensagem": "Na adaptação, a cheflera costuma soltar algumas folhas de baixo por causa da mudança de luz. O que não é normal é o caule ficar mole ou escuro na base.",
+      "acao_requerida": "Manter a planta no mesmo lugar, apertar a base do caule para ver se está firme e só regar com o substrato seco a 3 cm"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem em quantidade mesmo com o substrato úmido; base do caule escurece e amolece; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm e nunca deixar água no prato. Se aparecer, tire a planta do vaso, corte as raízes marrons e moles, replante em substrato novo e seco e espere 5 dias para regar"
+    },
+    {
+      "nome": "Cochonilha (de carapaça e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou tufos brancos no verso das folhas e nos pecíolos; folhas pegajosas e fuligem preta (fumagina) por cima",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo mineral a 1% ou óleo de neem a 0,5% com algumas gotas de detergente no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto desbotado e teias finas no verso, principalmente em ambiente interno seco",
+      "prevencao_tratamento": "Lave o verso das folhas com jato de água no chuveiro e aumente a umidade ao redor; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras encharcadas com halo amarelo nas folhas, que depois secam e caem",
+      "prevencao_tratamento": "Evite molhar as folhas ao regar e mantenha o ar circulando; corte e descarte as folhas afetadas e desinfete a tesoura com álcool"
+    },
+    {
+      "nome": "Queda de folhas por mudança ou corrente de ar",
+      "tipo": "DISTURBIO",
+      "sintomas": "Várias folhas verdes ou amareladas caem de uma vez logo após mudar a planta de lugar ou perto de ar-condicionado",
+      "prevencao_tratamento": "Escolha um lugar claro e fixo, longe da saída do ar-condicionado e de portas com vento; a planta se recupera em algumas semanas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas, esbranquiçadas ou marrons no centro das folhas viradas para o sol da tarde",
+      "prevencao_tratamento": "Dê sol só pela manhã; ao levar uma planta de dentro de casa para fora, faça a transição ao longo de 2 semanas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Hora da poda de formação",
+      "mensagem": "Na primavera a cheflera volta a crescer, e os cortes brotam rápido. Podar agora controla a altura e faz a copa encher em vez de virar um caule comprido.",
+      "acao_requerida": "Cortar os caules mais altos logo acima de um nó (a marca onde saía uma folha), no máximo 1/3 da altura, e usar luvas porque a seiva irrita a pele"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "Com frio e dias curtos a cheflera quase para de crescer e bebe bem menos. Abaixo de 10 °C as folhas escurecem e caem.",
+      "acao_requerida": "Espaçar as regas para cada 8 a 10 dias conferindo com o dedo, suspender a adubação e levar para dentro ou para perto da parede nas noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: confira a rega",
+      "mensagem": "No auge do verão o vaso seca mais rápido, e o sol da tarde pode queimar as folhas.",
+      "acao_requerida": "Conferir o substrato a cada 3 ou 4 dias e, se a planta estiver fora, garantir sombra depois das 11h"
+    }
+  ]
+}

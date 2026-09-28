@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Abacaxi-roxo",
+    "nome_cientifico": "Tradescantia spathacea (sin. Rhoeo spathacea)",
+    "descricao": "Planta ornamental de folhas em roseta, verdes por cima e roxas por baixo, muito resistente ao calor e à seca. Cresce bem em vasos e jardineiras e forma touceiras com brotos laterais. A seiva irrita a pele e a planta é tóxica para cães e gatos, então use luvas na poda e deixe o vaso longe dos pets.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 15 cm de profundidade e 18 cm de diâmetro, com furos no fundo; o vaso de barro ajuda o substrato a secar entre as regas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 20% húmus de minhoca, 30% areia grossa ou perlita; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está formando raízes no vaso novo. É normal perder 1 ou 2 folhas de baixo. Quando surgirem folhas novas firmes no centro da roseta, ela pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "A roseta cresce e o roxo do verso das folhas fica mais intenso com luz forte. Começam a aparecer brotos laterais na base, sinal de que as raízes já ocupam o vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Touceira formada, com várias rosetas. Cresce mais da primavera ao outono e quase para no inverno. Solta pequenas flores brancas dentro de brácteas em forma de barco, sobretudo no verão. Com pouca luz, as folhas ficam verdes e o caule se alonga; com sol forte do meio-dia, as pontas queimam."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de abacaxi-roxo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe água parada no centro da roseta nem no pratinho. Acima de 30 °C, confira a cada 2 dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o abacaxi-roxo",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o pratinho. No inverno, espaçe para a cada 10 dias. As folhas são carnudas e aguentam uma semana de atraso, mas o encharcamento apodrece a base.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o abacaxi-roxo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca na superfície de um vaso de 3 L, ou use NPK 10-10-10 diluído (1 g por litro de água), e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Tirar folhas secas da base",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas, puxe para baixo ou corte rente ao caule as folhas de baixo que estiverem secas ou amarelas. Folha seca acumulada na base segura umidade e abriga cochonilha.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra a roseta e olhe as axilas das folhas e o verso roxo. Procure tufos brancos de algodão, teias finas ou pontinhos claros nas folhas, e aperte a base: ela deve estar firme, não mole.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato e dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, separe as rosetas com raiz própria e replante a principal com substrato novo num vaso 5 cm maior. As rosetas separadas viram mudas novas. Regue e deixe 1 semana na meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, muda nova!",
+      "mensagem": "Nos primeiros dias a muda precisa de luz clara sem sol forte para enraizar sem desidratar.",
+      "acao_requerida": "Deixar o vaso 1 semana num local com luz clara e sol só no começo da manhã; depois, levar para onde bata de 3 a 4 horas de sol"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A muda pegou?",
+      "mensagem": "Com 1 mês, a roseta deve ter folhas novas no centro e estar firme no vaso.",
+      "acao_requerida": "Puxar a planta de leve pela base: se resistir, as raízes pegaram e a rega passa a ser mais espaçada; se sair solta ou estiver mole, conferir se há podridão na base"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Brotos laterais para novas mudas",
+      "mensagem": "A touceira já deve ter brotos na base, que podem virar plantas novas.",
+      "acao_requerida": "Separar com faca limpa os brotos com 3 ou mais folhas e plantar cada um num vaso pequeno com o mesmo substrato, ou deixá-los para encher o vaso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da base e das raízes (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base da roseta mole e escura, folhas caindo com um leve puxão, cheiro de podre no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no pratinho; cortar a parte sã acima da podridão, deixar secar 2 dias e replantar em substrato novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e na base da roseta; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos claros nas folhas, teias finas no verso, folhas opacas; comum em tempo seco e quente",
+      "prevencao_tratamento": "Lavar o verso das folhas com jato de água; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas pardas e secas no meio das folhas ou pontas torradas depois de sol forte do meio-dia",
+      "prevencao_tratamento": "Proteger do sol das 11h às 15h, sobretudo no verão e logo após o plantio; as folhas queimadas não se recuperam, mas as novas nascem boas"
+    },
+    {
+      "nome": "Estiolamento por falta de luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas verdes, sem o roxo, finas e moles; caule alongado e roseta aberta",
+      "prevencao_tratamento": "Levar para um local com 3 a 4 horas de sol direto, de preferência da manhã; a cor volta nas folhas novas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "No frio o abacaxi-roxo quase para de crescer e o substrato demora a secar. Abaixo de 5 °C e com geada, as folhas queimam.",
+      "acao_requerida": "Espaçar a rega para a cada 10 dias, suspender o adubo e levar o vaso para perto da parede ou para dentro nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: hora de renovar",
+      "mensagem": "A planta volta a crescer. É a melhor época para limpar a touceira e fazer mudas.",
+      "acao_requerida": "Retomar a rega a cada 5 dias e a adubação, retirar as folhas estragadas pelo inverno e separar brotos para novas mudas, se quiser"
+    }
+  ]
+}

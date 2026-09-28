@@ -1,0 +1,214 @@
+{
+  "planta": {
+    "nome_comum": "Abiu",
+    "nome_cientifico": "Pouteria caimito",
+    "descricao": "Frutífera amazônica da família do sapoti. O fruto amarelo tem polpa branca, gelatinosa e muito doce, que lembra um caramelo de leite. Em vaso grande e com poda, a árvore fica com 2 a 2,5 m, e a muda enxertada começa a produzir por volta do 2º ou 3º ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso plástico ou de fibra com pelo menos 45 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo; na troca de vaso, suba até 100 L. Se o vaso ficar no chão, apoie sobre pés ou tijolos para a água escorrer",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa e 10% casca de pinus fina ou perlita; levemente ácido (pH 5,5 a 6,5). Misture 150 g de farinha de ossos por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a mudança de vaso e pode perder algumas folhas velhas. Deixe-a na primeira semana num lugar com sol só de manhã. A fase acaba quando surgem brotos novos, cor de cobre ou verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta solta brotações em ondas, com folhas novas a cada 1 ou 2 meses no calor. No inverno ela quase para. Muda enxertada pode florescer já neste ano: tire as flores para a energia ir para raiz e galhos."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "O tronco engrossa e a copa se ramifica depois da poda de formação. Ainda não deixe frutificar à vontade: no máximo 3 ou 4 frutos, se a planta estiver vigorosa. Planta que brota bem e tem folhas verde-escuras está pronta para produzir."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação e floração da primavera (setembro a novembro), com flores pequenas e esverdeadas nas axilas das folhas. Os frutos amadurecem cerca de 4 meses depois, de janeiro a abril. No inverno o crescimento para e a rega diminui. A poda leve em agosto mantém a copa em 2 a 2,5 m."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de abiu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A muda recém-plantada não tem raiz fora do torrão e murcha sem voltar se o torrão secar. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o abiu",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (uns 5 a 8 L num vaso de 60 L). No verão com frutos, confira a cada 2 dias: a falta de água derruba os frutos. De junho a agosto, regue só quando os 5 cm estiverem secos, em geral a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o abiu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 litro de húmus de minhoca e 1 colher de sopa (15 g) de NPK 10-10-10 por vaso de 60 L, a 10 cm do tronco, e regue em seguida. A partir do 3º ano, de setembro a março, troque o NPK por 4-14-8 para favorecer flor e fruto. De junho a agosto, use metade da dose.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, os ramos novos e o tronco: procure carocinhos brancos ou marrons presos (cochonilha), formigas subindo e manchas escuras afundadas nas folhas ou frutos. Nos frutos, procure furinhos com uma mancha mole em volta.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar vaso ou renovar substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro ou outubro. Se o vaso tem menos de 100 L, passe para um de 100 L. Se já tem 100 L, tire a planta, corte 3 a 4 cm das raízes em volta e no fundo do torrão com uma faca limpa, troque um terço do substrato por mistura nova e devolva ao mesmo vaso. Regue bem e deixe em meia sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de levar ao sol pleno",
+      "mensagem": "Passada a primeira semana, a muda já aguenta mais luz. Sem sol direto, o abiu cresce fino e quase não floresce.",
+      "acao_requerida": "Mudar o vaso para o lugar definitivo, com pelo menos 5 horas de sol direto por dia; se as folhas queimarem nas bordas, voltar à meia sombra por mais uma semana"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Tirar as flores do primeiro ano",
+      "mensagem": "Muda enxertada costuma florescer cedo. Segurar frutos agora gasta a energia que a planta precisa para formar raiz e copa.",
+      "acao_requerida": "Arrancar com os dedos todas as flores e frutinhos que aparecerem até o fim do primeiro ano"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Poda de formação",
+      "mensagem": "Uma copa baixa e ramificada produz mais e cabe no vaso. Sem essa poda, o abiu sobe num tronco único.",
+      "acao_requerida": "Se a planta passou de 80 cm, cortar a ponta do ramo principal a 70 cm do substrato, logo acima de uma folha; depois, deixar só 3 ou 4 brotos laterais bem distribuídos e tirar os outros"
+    },
+    {
+      "dia_disparo": 730,
+      "titulo": "Liberado para frutificar",
+      "mensagem": "A planta já tem estrutura para carregar frutos. Carga demais no vaso deixa os frutos pequenos e a planta fraca no ano seguinte.",
+      "acao_requerida": "A partir desta florada, deixar os frutos crescerem e, quando estiverem do tamanho de uma azeitona, manter no máximo 1 fruto a cada 20 cm de galho"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, a base do tronco escurece e as raízes ficam marrons, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só quando os 5 cm de cima estiverem secos, nunca deixar água parada no pratinho e manter o vaso elevado. Com a planta doente, suspender a rega até o substrato secar, tirar raízes podres e replantar em substrato novo"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos na casca com uma mancha mole em volta; o fruto amadurece antes da hora, apodrece por dentro e tem larvas brancas",
+      "prevencao_tratamento": "Ensacar os frutos com saco de TNT ou papel quando estiverem do tamanho de uma azeitona; recolher e jogar no lixo fechado os frutos caídos; armadilha com suco de fruta fermentado pendurada na copa"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos (algodoados) ou marrons (escamas) presos no verso das folhas e nos ramos, com melado pegajoso, fumagina preta e formigas subindo",
+      "prevencao_tratamento": "Esfregar com cotonete ou escova macia com álcool 70%; para infestação grande, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 10 dias. Controlar as formigas"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nas folhas novas e nos frutos, que racham e apodrecem; comum em época quente e chuvosa",
+      "prevencao_tratamento": "Não molhar as folhas ao regar, podar para arejar a copa e recolher folhas e frutos doentes. Se avançar, calda bordalesa a 1% nas folhas e frutos pequenos a cada 15 dias na época das chuvas"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas ficam escuras, com aspecto cozido, e depois secam; ramos novos morrem da ponta para trás depois de noites abaixo de 5 °C ou de geada",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou sob uma cobertura nas noites frias e cobrir com TNT se vier geada. Só podar os ramos secos em setembro, quando der para ver onde a planta volta a brotar"
+    },
+    {
+      "nome": "Queda e rachadura de frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos verdes caem em quantidade ou racham na planta, em geral depois de dias secos seguidos de rega ou chuva forte",
+      "prevencao_tratamento": "Manter a rega regular enquanto houver frutos e cobrir o substrato com 3 cm de casca de pinus ou palha para a umidade não oscilar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o abiu do frio",
+      "mensagem": "O abiu é tropical: abaixo de 5 °C as folhas queimam e a geada mata ramos. Nesta época ele também para de crescer e bebe menos água.",
+      "acao_requerida": "Nas noites abaixo de 8 °C, encostar o vaso numa parede ao abrigo do vento ou pôr sob cobertura e cobrir com TNT se houver previsão de geada; regar só quando os 5 cm de cima estiverem secos"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda leve antes da florada",
+      "mensagem": "A florada de primavera sai nos ramos novos. Uma poda leve agora mantém a copa do tamanho do vaso e estimula brotação forte.",
+      "acao_requerida": "Tirar ramos secos, doentes ou que cruzam para dentro da copa e encurtar em um terço os que passaram de 2,5 m de altura; na planta com menos de 1 ano, só tirar os brotos que saem abaixo do enxerto"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Ensacar os frutinhos",
+      "mensagem": "Os frutos novos são o alvo da mosca-das-frutas, que põe ovos por baixo da casca.",
+      "acao_requerida": "Ensacar com saco de TNT ou papel os frutos do tamanho de uma azeitona, amarrando a boca no cabinho; na planta com menos de 2 anos, tirar os frutos em vez de ensacar"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "titulo": "Época de colher abiu",
+      "mensagem": "O abiu amadurece de janeiro a abril. Verde, ele solta um látex grudento e amarga; maduro, estraga em 2 ou 3 dias fora da geladeira.",
+      "acao_requerida": "A cada 2 ou 3 dias, colher os frutos com a casca amarela e que cedem levemente ao toque, torcendo com cuidado ou cortando o cabinho; frutos amarelo-esverdeados terminam de amadurecer em 1 a 2 dias fora da planta"
+    }
+  ]
+}

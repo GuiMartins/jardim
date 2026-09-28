@@ -1,0 +1,196 @@
+{
+  "planta": {
+    "nome_comum": "Aspargo-pluma",
+    "nome_cientifico": "Asparagus densiflorus 'Myersii'",
+    "descricao": "Planta ornamental sul-africana, parente do aspargo comestível. Forma hastes eretas e fofas cobertas de folhinhas em forma de agulha (cladódios), que lembram um rabo de raposa. Guarda água em raízes tuberosas, por isso aguenta esquecimentos de rega e cresce bem em vaso por muitos anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso ou cerâmica com pelo menos 25 cm de diâmetro e 25 cm de profundidade, com furos no fundo. Evite vaso de boca estreita: as raízes tuberosas engrossam, podem rachar vaso fino e prendem a planta na hora de trocar de vaso",
+    "volume_minimo_litros": 10,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; solto e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do vaso de viveiro para o vaso definitivo e pode perder algumas folhinhas ou amarelar a ponta de uma haste. A fase acaba quando surgem brotos novos na base, parecidos com pontas de aspargo saindo do substrato."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes tuberosas ocupam o vaso e a touceira engrossa com novas hastes. Hastes longas, finas e pálidas pedem mais luz; hastes amareladas ou com pontas queimadas pedem menos sol da tarde."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Touceira cheia, com hastes de 30 a 60 cm. Cresce forte da primavera ao outono, dá florzinhas brancas perfumadas no verão e frutinhos verdes que ficam vermelhos no outono e no inverno, quando o crescimento quase para. Hastes velhas secam de vez em quando e são cortadas rente à base. A cada dois anos as raízes enchem o vaso e o substrato precisa ser trocado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. A muda ainda tem poucas raízes e murcha rápido no calor. Acima de 30 °C, confira a cada 2 dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o aspargo-pluma",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 a 4 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e nunca deixe água parada no pratinho. As raízes tuberosas guardam água, e excesso apodrece mais que falta. No inverno, espace para cada 8 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o aspargo-pluma",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de chá de NPK 10-10-10 pela superfície de um vaso de 10 L, sem encostar nas hastes, e regue em seguida. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as hastes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra a touceira com as mãos e olhe a base das hastes e o meio da folhagem: procure pontinhos brancos de algodão (cochonilha), teias finas com folhinhas amareladas e salpicadas (ácaro) e insetos agrupados nas pontas novas (pulgão).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato e dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno ou na primavera. Tire a planta do vaso, solte o substrato velho e corte as raízes podres ou moles. Se as raízes tuberosas tomaram o vaso, passe para um vaso 5 cm maior ou divida a touceira com faca limpa em partes que tenham hastes e raízes. Replante com substrato novo e deixe à sombra clara por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Passar para o vaso definitivo",
+      "mensagem": "Muda de viveiro costuma vir em saquinho ou vaso pequeno, com as raízes tuberosas já apertadas. Quanto antes ganhar espaço, mais rápido ela engrossa.",
+      "acao_requerida": "Transplantar para o vaso de 10 L com o torrão inteiro, na mesma altura em que estava, firmar o substrato e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Conferir se a luz está certa",
+      "mensagem": "Com dois meses já dá para ver como a planta respondeu ao lugar. Hastes compridas, moles e esparsas indicam pouca luz; hastes amareladas ou pontas marrons indicam sol forte demais.",
+      "acao_requerida": "Mudar o vaso de lugar se precisar: o ideal é sol direto da manhã e claridade no resto do dia, sem sol das 11h às 16h no verão"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes amarelam e tombam a partir da base mesmo com o substrato úmido; raízes tuberosas moles, escuras e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no pratinho. Se aparecer, tirar a planta do vaso, cortar as raízes podres até o tecido firme e claro, deixar secar 1 dia e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão na base das hastes e entre os cladódios; folhagem pegajosa e amarelada",
+      "prevencao_tratamento": "Remover com cotonete molhado em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com 1 gota de detergente no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Cladódios salpicados de pontinhos claros, que depois amarelam e caem; teias finas entre as hastes, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Dar um banho de chuveiro na folhagem, lavando bem por dentro da touceira; em dias secos, manter o vaso longe de parede quente. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetinhos verdes ou pretos nas pontas dos brotos novos, que ficam tortos e melados",
+      "prevencao_tratamento": "Jato de água nas pontas; se voltar, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Amarelecimento e queda dos cladódios",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhinhas amarelam e se soltam ao tocar a haste, deixando-a pelada, sem sinal de praga",
+      "prevencao_tratamento": "Costuma ser rega muito irregular (seca total seguida de encharque) ou pouca luz. Regar pela regra do dedo, levar para mais claridade e cortar rente à base as hastes que ficaram peladas: brotam outras"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Hastes do lado virado para o sol ficam amarelo-palha ou esbranquiçadas e secas nas pontas",
+      "prevencao_tratamento": "Proteger do sol da tarde no verão, principalmente atrás de vidro; cortar as hastes queimadas na base"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com geada",
+      "mensagem": "No frio a planta quase para de crescer e as raízes bebem pouco. O substrato úmido demais por semanas é o que mais apodrece aspargo-pluma nessa época, e geada queima as hastes.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 4 cm, suspender a adubação e, em noites abaixo de 3 °C, levar o vaso para um lugar coberto"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Limpeza de fim de inverno",
+      "mensagem": "A primavera vai trazer uma leva de brotos novos. Tirar as hastes velhas agora abre espaço e luz para eles.",
+      "acao_requerida": "Cortar rente ao substrato, com tesoura limpa, as hastes secas, amareladas ou peladas, e retomar a adubação mensal"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: conferir a rega mais vezes",
+      "mensagem": "Com calor forte, o vaso seca bem antes do intervalo normal e o sol da tarde queima a folhagem.",
+      "acao_requerida": "Conferir o substrato a cada 3 dias nos dias acima de 30 °C e deixar o vaso fora do sol entre 11h e 16h"
+    },
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Frutinhos vermelhos são tóxicos",
+      "mensagem": "As bolinhas vermelhas que aparecem no outono têm saponinas e fazem mal a cães, gatos e crianças se forem comidas. A seiva também pode irritar a pele.",
+      "acao_requerida": "Se houver pets ou crianças em casa, retirar os frutinhos com a mão protegida por luva ou deixar o vaso fora do alcance"
+    }
+  ]
+}

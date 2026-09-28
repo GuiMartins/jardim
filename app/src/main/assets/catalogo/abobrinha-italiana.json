@@ -1,0 +1,230 @@
+{
+  "planta": {
+    "nome_comum": "Abobrinha-italiana",
+    "nome_cientifico": "Cucurbita pepo (grupo Zucchini, ex.: cv. Caserta)",
+    "descricao": "Hortaliça de fruto de porte arbustivo, sem ramas longas, que cabe num vaso grande de varanda ou quintal ensolarado. Começa a produzir em cerca de 50 dias e, colhida nova a cada dois dias, rende frutos por mais de um mês. Em vaso, quase sempre precisa de polinização manual, porque há poucas abelhas.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 100,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou caixa com pelo menos 45 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo; uma planta por vaso",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou esterco bovino curtido, 20% húmus de minhoca, 10% areia grossa; misture 2 colheres de sopa de calcário dolomítico e 2 de farinha de ossos a cada 40 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 8,
+      "descricao": "Semeie 2 ou 3 sementes deitadas, a 2 cm de profundidade, no centro do vaso. Os cotilédones, grandes e arredondados, surgem entre o 5º e o 8º dia se o tempo estiver acima de 20 °C; no frio, a semente apodrece antes de nascer."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 9,
+      "dia_fim": 21,
+      "descricao": "Aparecem as primeiras folhas verdadeiras, ásperas e lobadas. A fase termina quando a planta tem 3 a 4 folhas verdadeiras e o caule engrossa na base."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 22,
+      "dia_fim": 38,
+      "descricao": "A planta forma uma touceira de folhas grandes, que pode passar de 80 cm de diâmetro. Folhas murchas no sol do meio-dia que se recuperam no fim da tarde são normais; murchas de manhã cedo indicam falta de água. A fase termina quando aparecem os primeiros botões florais no centro."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 39,
+      "dia_fim": 47,
+      "descricao": "Primeiro abrem só flores masculinas, de haste longa e fina, que caem no mesmo dia: é normal. Dias depois surgem as femininas, com uma abobrinha miniatura na base. As flores abrem de manhã cedo e fecham antes do almoço; em vaso, confira a cada manhã se há feminina aberta e poliníze à mão."
+    },
+    {
+      "fase_id": "producao",
+      "nome": "Produção",
+      "dia_inicio": 48,
+      "dia_fim": 100,
+      "descricao": "Cada fruto polinizado chega a 15–20 cm em 4 a 7 dias. Continue polinizando as femininas que abrirem. Colher sempre novo estimula mais flores; um fruto esquecido que vira abobrão faz a planta parar de produzir. A produção cai perto do fim do ciclo, quando as folhas velhas pegam oídio."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer a cova das sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 8,
+      "instrucoes": "Regue devagar só a área das sementes até umedecer os primeiros 5 cm. O substrato deve ficar úmido como esponja espremida, nunca encharcado, senão a semente apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar a abobrinha",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue na base da planta até escorrer pelos furos. Não molhe as folhas. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_producao",
+      "titulo": "Regar a abobrinha",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Regue de manhã, na base, até escorrer pelos furos (cerca de 4 a 6 L num vaso de 40 L no verão). Antes, enfie o dedo 3 cm: se ainda estiver úmido, pule. Rega irregular nesta fase causa aborto de frutos e podridão na ponta.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a abobrinha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": 85,
+      "instrucoes": "Espalhe 1 xícara de húmus ou composto e 1 colher de sopa de farinha de ossos (ou 1 colher de sopa de NPK 4-14-8) em volta da planta, a 10 cm do caule, e regue em seguida. A partir da floração, prefira adubo com mais fósforo e potássio do que nitrogênio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Vire as folhas e procure pó branco (oídio), insetos pequenos no verso (pulgão, mosca-branca) e furos com serragem nos frutos, flores ou ponteiro (broca). Remova à mão o que achar e trate conforme os problemas comuns.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Tirar folhas velhas da base",
+      "tipo": "PODA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 50,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Corte rente ao caule, com tesoura limpa, as folhas de baixo que estiverem amarelas, secas ou com manchas de oídio. Tire no máximo 3 por vez e jogue fora, longe do vaso. Isso areja a planta e reduz fungos.",
+      "critica": false
+    },
+    {
+      "id": "colheita_abobrinha",
+      "titulo": "Colher abobrinhas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 48,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Colha os frutos com 15 a 20 cm, casca brilhante e firme, cortando o cabinho com faca ou tesoura. Não deixe nenhum passar de 25 cm: fruto grande endurece e faz a planta parar de florescer.",
+      "critica": true
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "Com mais de uma planta no vaso, nenhuma produz bem: a abobrinha precisa de todo o espaço e nutriente de um vaso de 40 L.",
+      "acao_requerida": "Deixar só a plântula mais vigorosa, cortando as outras rente ao substrato com tesoura (não puxe, para não mexer na raiz da que fica)"
+    },
+    {
+      "dia_disparo": 38,
+      "titulo": "Flores chegando: prepare a polinização",
+      "mensagem": "Em vaso quase não há abelhas, e sem polinização a abobrinha pequena da flor feminina amarela e cai. As flores abrem só de manhã cedo.",
+      "acao_requerida": "Nas manhãs com flor feminina aberta (com fruto miniatura na base), colher uma masculina, tirar as pétalas e encostar o pólen no centro da feminina"
+    },
+    {
+      "dia_disparo": 48,
+      "titulo": "Primeiras abobrinhas",
+      "mensagem": "Os primeiros frutos polinizados crescem muito rápido, até 3 a 4 cm por dia.",
+      "acao_requerida": "Conferir o tamanho dos frutos e colher os que tiverem 15 a 20 cm"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Oídio (Podosphaera xanthii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco como talco nas folhas, começando pelas mais velhas; as folhas amarelam e secam",
+      "prevencao_tratamento": "Regar só na base, espaçar a planta de paredes e retirar folhas atacadas; pulverizar leite diluído (1 parte para 9 de água) ou bicarbonato de sódio (1 colher de chá por litro com gotas de detergente) a cada 7 dias em dia de sol"
+    },
+    {
+      "nome": "Broca-das-cucurbitáceas (Diaphania nitidalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos com fezes parecidas com serragem em frutos, flores e ponteiros; frutos apodrecem por dentro",
+      "prevencao_tratamento": "Retirar e destruir frutos e ponteiros furados; inspecionar flores; aplicar Bacillus thuringiensis (Dipel) no fim da tarde a cada 7 dias durante a floração"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos no verso das folhas e no ponteiro; folhas enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água no verso das folhas; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; folhas com pontinhos amarelos e fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos redondos nas folhas e flores; plântulas novas podem ser destruídas",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo; proteger as plântulas com tecido fino (TNT) até a 3ª folha"
+    },
+    {
+      "nome": "Podridão do colo e da raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido; base do caule escura e mole",
+      "prevencao_tratamento": "Não encharcar, garantir furos desobstruídos e não amontoar terra encostada no caule; planta com o colo podre não se recupera e deve ser descartada com o substrato"
+    },
+    {
+      "nome": "Aborto de frutos por falta de polinização",
+      "tipo": "DISTURBIO",
+      "sintomas": "Abobrinhas pequenas amarelam, murcham pela ponta e caem poucos dias depois da flor",
+      "prevencao_tratamento": "Polinizar à mão de manhã cedo, passando pólen de flor masculina recém-aberta no centro da feminina"
+    },
+    {
+      "nome": "Podridão apical",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ponta do fruto escurece, amolece e apodrece, sem furos de inseto",
+      "prevencao_tratamento": "Manter rega regular, sem alternar seco e encharcado, e usar calcário no preparo do substrato; retirar os frutos afetados"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor e chuva: atenção ao oídio",
+      "mensagem": "No verão a planta perde muita água à tarde, e o abafamento das chuvas favorece o oídio.",
+      "acao_requerida": "Conferir a rega todo dia no fim da tarde em dias acima de 30 °C, afastar o vaso da parede para ventilar e retirar folhas com pó branco"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Risco de geada",
+      "mensagem": "A abobrinha não tolera geada: abaixo de 5 °C as folhas queimam e a planta morre.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, levar o vaso para perto da parede sob cobertura ou cobrir a planta com TNT até a manhã"
+    }
+  ]
+}

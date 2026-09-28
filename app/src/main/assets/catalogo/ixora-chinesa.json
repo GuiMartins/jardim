@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Ixora-chinesa",
+    "nome_cientifico": "Ixora chinensis",
+    "descricao": "Arbusto tropical de folhas coriáceas e brilhantes que forma buquês densos de flores vermelhas, laranja, rosa ou amarelas da primavera ao outono. Em vaso vive muitos anos se tiver sol forte, substrato ácido e rega regular. Folhas amareladas são o sinal mais comum de solo pouco ácido.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 25 cm de diâmetro e 25 cm de profundidade, com vários furos no fundo; evite cachepô sem furo, que acumula água",
+    "volume_minimo_litros": 12,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% substrato para plantas ácidas (azaleia) ou turfa, 20% húmus de minhoca, 10% casca de pinus fina ou perlita; pH entre 5 e 6, sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e de luz: é normal cair algumas folhas de baixo e os botões abortarem. Mantenha em sol da manhã nas duas primeiras semanas. A fase termina quando surgem brotos novos avermelhados nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a planta emite ramos novos. Os primeiros buquês aparecem nas pontas dos ramos maduros. Ao perceber que o vaso seca em menos de 2 dias no calor, a planta está pronta para a vida adulta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Floresce em ondas de setembro a abril; cada buquê dura 3 a 6 semanas. Corte os buquês secos logo abaixo da inflorescência para estimular novos. No inverno cresce pouco e pode perder algumas folhas com frio abaixo de 10 °C. Poda de formação no início da primavera e troca de substrato a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a ixora",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho após 15 minutos. A raiz recém-plantada ainda não busca água no fundo do vaso: não deixe secar por completo.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a ixora",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos se estiver seco. Acima de 30 °C confira a cada 2 dias; no inverno, a cada 5 a 7 dias. Prefira água de chuva ou filtrada: água muito calcária amarela as folhas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_acida",
+      "titulo": "Adubar a ixora",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com o substrato úmido, espalhe 1 colher de sopa de NPK 10-10-10 ou adubo para azaleia por vaso de 12 L, longe do caule, e regue. A cada dois meses acrescente 1 colher de chá de sulfato de ferro dissolvido em 1 L de água. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as axilas dos ramos e a base dos buquês: procure bolinhas brancas algodonosas, escamas marrons, teias finas ou pontinhos amarelados. Aproveite para cortar os buquês já secos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, remova um terço do torrão velho e raízes escuras ou moles, e replante com substrato ácido novo, num vaso 5 cm maior se as raízes estiverem enoveladas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora de dar mais sol",
+      "mensagem": "A muda já se recuperou do transplante e agora precisa de sol pleno para florescer.",
+      "acao_requerida": "Mudar o vaso para um lugar com pelo menos 4 a 6 horas de sol direto, de preferência incluindo a manhã"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Começar a adubação",
+      "mensagem": "As raízes já firmaram no vaso e aguentam adubo sem queimar.",
+      "acao_requerida": "Fazer a primeira adubação com adubo para plantas ácidas, na metade da dose do rótulo"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Conferir o tamanho do vaso",
+      "mensagem": "Depois de um ano, a ixora costuma ter enchido o vaso de raízes, o que faz secar rápido e reduz a floração.",
+      "acao_requerida": "Se saírem raízes pelos furos ou o vaso secar em menos de 2 dias, passar para um vaso 5 cm maior com substrato ácido novo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha-farinhenta e cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos ou escamas marrons nas axilas das folhas e nos ramos; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool; em infestação maior, pulverize óleo mineral ou óleo de neem a 0,5% com detergente neutro no fim da tarde, repetindo a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos novos e botões; brotos enrolados e deformados",
+      "prevencao_tratamento": "Jato de água forte; se voltar, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos e aspecto empoeirado, teias finas no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Molhe o verso das folhas em dias secos; aplique óleo de neem ou calda de enxofre a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada preta fuliginosa sobre as folhas, sempre associada a cochonilha ou pulgão",
+      "prevencao_tratamento": "Controle o inseto que produz a melada; depois limpe as folhas com pano úmido e água com sabão neutro"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas amarelando e caindo de baixo para cima, raízes marrons e moles",
+      "prevencao_tratamento": "Regue só com o substrato seco no topo, nunca deixe água no pratinho; em caso avançado, retire do vaso, corte as raízes podres e replante em substrato novo"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes, floração fraca",
+      "prevencao_tratamento": "Substrato ácido e água sem calcário; regue com sulfato de ferro (1 colher de chá por litro) ou quelato de ferro a cada 30 dias até as folhas novas voltarem ao verde"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir",
+      "prevencao_tratamento": "Evite mudar o vaso de lugar durante a floração e não deixe o substrato secar por completo; costuma acontecer após seca ou frio súbito"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger a ixora do frio",
+      "mensagem": "A ixora sofre abaixo de 10 °C: as folhas avermelham e caem. No inverno ela cresce pouco e usa menos água e adubo.",
+      "acao_requerida": "Encostar o vaso numa parede ensolarada ou abrigá-lo em noites abaixo de 10 °C, espaçar a rega para quando o substrato estiver seco a 3 cm e suspender a adubação"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No começo da primavera a ixora retoma o crescimento. Podar agora gera mais ramos, e cada ponta de ramo vira um buquê de flores.",
+      "acao_requerida": "Cortar ramos secos e desalinhados e encurtar os mais longos em até um terço, logo acima de um par de folhas; retomar a adubação mensal"
+    }
+  ]
+}

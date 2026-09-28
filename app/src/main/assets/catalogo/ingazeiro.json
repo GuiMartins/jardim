@@ -1,0 +1,213 @@
+{
+  "planta": {
+    "nome_comum": "Ingazeiro",
+    "nome_cientifico": "Inga edulis",
+    "descricao": "Árvore amazônica da família das leguminosas, famosa pelas vagens longas cheias de polpa branca, doce e algodoada. Na natureza passa de 15 m, mas em vaso grande e com poda anual fica entre 2,5 e 3,5 m e frutifica a partir do 3º ano. Como fixa nitrogênio no solo, precisa de pouco adubo nitrogenado.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico, fibra ou alvenaria com pelo menos 60 cm de diâmetro e 60 cm de altura, com vários furos no fundo e sobre rodízios ou pés para não empoçar",
+    "volume_minimo_litros": 100,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de pinus fina ou fibra de coco; misture 300 g de farinha de ossos a cada 100 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saco e se instala no vaso. É normal perder algumas folhas velhas na primeira semana. A fase termina quando aparecem brotos novos, avermelhados ou verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o crescimento acelera, com folhas compostas de 4 a 6 pares de folíolos e a nervura central alada. Espere de 60 cm a 1 m de crescimento no primeiro ano. Formigas nas glândulas entre os folíolos são normais: a planta produz néctar para elas."
+    },
+    {
+      "fase_id": "formacao_copa",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "O tronco engrossa e os ramos laterais formam a copa. A altura é controlada pelas podas anuais. Pode surgir alguma florada no 2º ano, geralmente sem vingar frutos. A fase termina quando a planta mantém uma copa densa e passa a florescer todos os anos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico no Centro-Sul: floração em pompons brancos e perfumados entre setembro e novembro, vagens prontas de dezembro a março, poda de contenção em abril e crescimento lento no inverno, quando a rega e a adubação diminuem. Em vaso, espere algumas dezenas de vagens por ano, menos que no chão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de ingá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do torrão da muda; se estiver seco, regue devagar até escorrer pelos furos. O torrão pequeno ainda não alcança a umidade do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o ingazeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 10 a 15 L num vaso de 100 L). No verão com planta adulta pode ser preciso regar a cada 2 dias; no inverno, espaçar para 5 a 7 dias. Folhas murchas ao meio-dia que se recuperam à tarde indicam que a rega está no limite.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o ingazeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 L de húmus de minhoca mais 2 colheres de sopa de farinha de ossos (ou 50 g de NPK 4-14-8) na borda do vaso, longe do tronco, afofe a superfície e regue em seguida. Evite adubo rico em nitrogênio: o ingá já fixa o próprio e o excesso faz folha no lugar de flor. Pule a adubação de junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire os folíolos e examine os brotos novos e a casca dos ramos: procure lagartas e folhas roídas, escamas brancas ou marrons presas aos ramos, manchas escuras nas folhas e vagens. Formigas pretas pequenas no néctar das glândulas são inofensivas; saúvas cortando folhas não.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera, deite o vaso e tire o torrão. Corte com serrote ou faca 3 a 5 cm das raízes em volta e no fundo, troque um terço do substrato por mistura nova com farinha de ossos e replante no mesmo vaso ou num maior. Regue bem e deixe em meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Mudas criadas em viveiro sombreado queimam se forem direto para o sol forte. Duas semanas de transição evitam folhas manchadas.",
+      "acao_requerida": "Se a muda ficou em meia-sombra até agora, levá-la para o local definitivo com pelo menos 5 horas de sol direto"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Desponte para formar a copa",
+      "mensagem": "Sem controle, o ingazeiro sobe numa haste só e fica alto demais para o vaso. Cortar a ponta agora faz ele ramificar baixo.",
+      "acao_requerida": "Se o caule principal passou de 80 cm, cortar a ponta 5 cm acima de uma folha a cerca de 70 cm de altura e deixar 3 ou 4 ramos laterais bem distribuídos"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Idade de frutificar",
+      "mensagem": "O ingazeiro chega à idade de produzir. As flores aparecem de setembro a novembro e as vagens ficam prontas cerca de 3 meses depois.",
+      "acao_requerida": "Na próxima primavera, trocar uma das adubações por 50 g de NPK 4-14-8 para favorecer a floração"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos secam da ponta para baixo; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter o vaso erguido do chão. Com sintomas, suspender a rega, cortar as raízes podres e replantar em substrato novo"
+    },
+    {
+      "nome": "Larva das vagens (mosca-das-frutas e mariposas)",
+      "tipo": "PRAGA",
+      "sintomas": "Vagens com furos pequenos ou manchas escuras; polpa escurecida com larvas brancas dentro",
+      "prevencao_tratamento": "Colher as vagens assim que ficarem no ponto e recolher as caídas no mesmo dia, descartando as bichadas em saco fechado. Armadilha com suco de fruta e vinagre pendurada na copa durante a frutificação"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos roídos pela borda ou reduzidos à nervura, fezes escuras nas folhas de baixo",
+      "prevencao_tratamento": "Catar as lagartas à mão; em infestação grande, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas, marrons ou algodonosas presas aos ramos e ao verso das folhas; fumagina preta por cima",
+      "prevencao_tratamento": "Remover com escova ou algodão com álcool; em muitos pontos, pulverizar óleo mineral a 1% com sabão neutro, repetindo em 10 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nas folhas, flores e vagens, que apodrecem antes de amadurecer, sobretudo em verão chuvoso",
+      "prevencao_tratamento": "Poda de limpeza para arejar a copa, retirar folhas e vagens doentes e não molhar a folhagem na rega. Se recorrente, calda bordalesa no início da floração"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e brotos escurecidos e secos depois de noites abaixo de 2 °C; plantas jovens podem morrer até o colo",
+      "prevencao_tratamento": "Levar o vaso para perto de parede ou sob cobertura nas noites frias e cobrir a copa com manta TNT. Só podar a parte queimada em setembro, quando a brotação mostrar o que ficou vivo"
+    },
+    {
+      "nome": "Excesso de nitrogênio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Muita folha verde-escura e brotos longos, mas poucas ou nenhuma flor na planta adulta",
+      "prevencao_tratamento": "Suspender adubos nitrogenados (ureia, esterco fresco) e adubar com fósforo e potássio (farinha de ossos, cinza de madeira, NPK 4-14-8)"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O ingazeiro é tropical: abaixo de 5 °C as folhas sofrem, e a geada mata plantas jovens. No frio ele quase para de crescer e bebe menos.",
+      "acao_requerida": "Espaçar a rega para quando o substrato secar a 5 cm, suspender a adubação e, com previsão de geada, abrigar o vaso ou cobrir a copa com TNT à noite"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Preparar para a floração",
+      "mensagem": "Com o fim do inverno, o ingazeiro retoma o crescimento e forma os botões que abrem na primavera.",
+      "acao_requerida": "Retomar a rega normal e fazer uma adubação com 2 colheres de sopa de farinha de ossos e 1 colher de sopa de cinza de madeira por vaso de 100 L"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de colher ingá",
+      "mensagem": "As vagens estão prontas quando ficam cheias e firmes, com a casca levemente amarelada e sem brilho. Verdes demais, a polpa fica fina e sem doce.",
+      "acao_requerida": "Colher as vagens no ponto a cada 2 ou 3 dias, torcendo o pedúnculo, e recolher as caídas no chão para não atrair moscas"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Poda de contenção",
+      "mensagem": "Depois da colheita é a melhor hora para controlar o tamanho da copa em vaso. A planta ainda tem calor para cicatrizar antes do inverno.",
+      "acao_requerida": "Encurtar em um terço os ramos que passaram da altura desejada, tirar ramos secos, cruzados e voltados para dentro da copa, com corte logo acima de uma folha. Em plantas com menos de 1 ano, cortar só ramos secos"
+    }
+  ]
+}

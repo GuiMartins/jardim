@@ -1,0 +1,174 @@
+{
+  "planta": {
+    "nome_comum": "Grevílea-anã",
+    "nome_cientifico": "Grevillea banksii",
+    "descricao": "Arbusto australiano de folhas recortadas e prateadas no verso, com flores vermelhas em escova que atraem beija-flores durante boa parte do ano, com pico no inverno e na primavera. Em vaso fica entre 1,5 e 2,5 m e tolera seca depois de estabelecida, mas não aceita adubo rico em fósforo nem substrato encharcado. A seiva e as flores podem irritar a pele: use luvas ao podar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; evite prato com água parada",
+    "volume_minimo_litros": 35,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% casca de pinus fina, 10% fibra de coco; levemente ácido (pH 5,5 a 6,5), sem calcário, esterco ou farinha de osso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas velhas. Ela está pegando quando aparecem pontas novas de folhas avermelhadas ou acobreadas, sinal de raiz ativa."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 240,
+      "descricao": "Crescimento vegetativo firme, com ramos novos a cada mês na estação quente. As raízes proteoides se espalham pelo vaso; a planta passa a aguentar alguns dias de substrato seco. Pode dar as primeiras flores no fim desta fase."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 241,
+      "dia_fim": null,
+      "descricao": "Floresce em ondas quase o ano todo, com pico de junho a outubro. Cresce mais na primavera e no verão, desacelera no inverno. Depois da floração principal, uma poda leve mantém o formato compacto; a cada dois anos o substrato precisa ser renovado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a grevílea recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Se ainda estiver úmido, espere o dia seguinte: raiz encharcada apodrece. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a grevílea",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No inverno, espace para 7 a 10 dias. Descarte a água que ficar no prato.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_baixo_fosforo",
+      "titulo": "Adubar sem fósforo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Use adubo com fósforo baixo (P abaixo de 3, como NPK 10-0-10 ou adubo próprio para plantas australianas/azaleias) na metade da dose do rótulo, espalhado na borda do vaso, e regue em seguida. Nunca use farinha de osso, NPK 4-14-8 ou adubo de floração. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as pontas novas procurando cochonilhas (pontos brancos ou marrons presos ao ramo), folhas amareladas entre as nervuras ou pontas queimadas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No outono ou no fim do inverno, tire a planta do vaso, remova com cuidado 1/3 do substrato velho sem desmanchar o torrão central e replante num vaso 10 cm maior (ou no mesmo, se já tiver 60 cm) com substrato novo. Regue bem e mantenha em meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio sem adubo com fósforo",
+      "mensagem": "Grevíleas têm raízes especializadas que absorvem fósforo demais; adubo comum de plantio ou farinha de osso queima as folhas e pode matar a muda.",
+      "acao_requerida": "Conferir que o substrato não leva esterco, farinha de osso nem NPK com fósforo alto e plantar a muda na mesma altura em que estava, sem enterrar o colo"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "Se já surgiram pontas novas acobreadas, a muda pegou e pode ficar mais tempo entre regas.",
+      "acao_requerida": "Conferir as pontas novas e passar a regar só quando os primeiros 5 cm do substrato estiverem secos"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Despontar os ramos agora faz a grevílea ramificar e ficar compacta, em vez de um caule comprido e ralo.",
+      "acao_requerida": "Com luvas, cortar 2 a 3 cm da ponta dos ramos principais, logo acima de uma folha"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido, folhas amarelando e secando de repente, base do caule escura e raízes marrons e moles",
+      "prevencao_tratamento": "Substrato bem drenante, sem prato com água e regas só com o substrato seco a 5 cm. Com sintomas, pare de regar, retire as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Toxicidade de fósforo",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amareladas, bordas e pontas escurecendo e secando, queda de folhas depois de uma adubação",
+      "prevencao_tratamento": "Usar só adubo com fósforo baixo. Se acontecer, lave o substrato com bastante água três vezes em uma semana e suspenda a adubação por 3 meses"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com nervuras verdes",
+      "prevencao_tratamento": "Substrato alcalino ou água muito calcária. Não use calcário; regue com água de chuva quando der e aplique quelato de ferro conforme o rótulo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos cerosos ou carapaças marrons presas aos ramos e ao verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, óleo mineral ou de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Lagarta-desfolhadora",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas nas bordas ou pontas novas comidas, com fezes escuras nos ramos",
+      "prevencao_tratamento": "Catar as lagartas à mão, com luvas; em ataque forte, Bacillus thuringiensis conforme o rótulo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Poda pós-floração",
+      "mensagem": "Passou o pico de floração do inverno e da primavera. Podar agora renova os ramos, que vão florir na próxima estação.",
+      "acao_requerida": "Com luvas, cortar as flores secas e encurtar em até 1/3 os ramos compridos, sempre logo acima de um grupo de folhas; não corte em madeira velha sem folhas"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "A grevílea aguenta frio leve, mas geada queima as pontas novas e os botões de flor.",
+      "acao_requerida": "Em noites com previsão abaixo de 3 °C, levar o vaso para perto de uma parede ou sob beiral, ou cobrir com manta antigeada, e reduzir a rega"
+    }
+  ]
+}

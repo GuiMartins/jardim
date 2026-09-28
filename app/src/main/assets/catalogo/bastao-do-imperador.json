@@ -1,0 +1,199 @@
+{
+  "planta": {
+    "nome_comum": "Bastão-do-imperador",
+    "nome_cientifico": "Etlingera elatior",
+    "descricao": "Zingiberácea tropical de rizoma, parente do gengibre, que forma touceiras de folhagem alta e lança do chão hastes com inflorescências vermelhas ou rosadas em forma de tocha, ótimas como flor de corte. Em vaso grande fica com 1,5 a 2,5 m e costuma florescer pela primeira vez 12 a 18 meses depois do plantio da muda.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e largo, de pelo menos 50 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; o rizoma se espalha para os lados, então a largura importa mais que a altura. Prefira plástico grosso ou fibra, pesados o bastante para não tombar com o vento",
+    "volume_minimo_litros": 60,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco ou casca de pinus fina, 10% areia grossa; rico em matéria orgânica, que segure umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o rizoma no mesmo nível em que estava, sem enterrar mais os caules. Algumas folhas podem amarelar ou queimar nas pontas nas primeiras semanas; corte-as só quando secarem por completo. A fase termina quando surge uma folha nova desenrolada e firme."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento e perfilhamento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "O rizoma se espalha e lança novos caules (perfilhos) ao redor do original; cada caule adulto tem 1,5 a 2 m. É a fase de crescer em volume: rega regular e adubação mensal na estação quente. Termina quando a touceira tem 5 ou mais caules adultos, sinal de que já pode florescer."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Touceira formada que floresce principalmente da primavera ao outono. As hastes florais saem direto do rizoma, rente ao substrato e separadas das folhas, e levam de 3 a 5 semanas para abrir a tocha; cada flor dura 2 a 3 semanas na planta ou 1 a 2 semanas cortada. No inverno o crescimento quase para. A cada dois anos a touceira lota o vaso e precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda em adaptação",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda curta, o torrão da muda seca antes do resto do vaso: molhe bem em volta da base. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o bastão-do-imperador",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos (num vaso de 60 L, uns 5 a 8 L). No verão acima de 30 °C, confira a cada 2 dias. De junho a agosto, espace para a cada 6 a 7 dias e só regue com o substrato seco a 4 cm, porque o rizoma parado apodrece no frio úmido.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a touceira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 colher de sopa cheia de NPK 10-10-10 por vaso de 60 L, longe dos caules, e regue em seguida. A partir do primeiro ano, alterne com NPK 4-14-8 para estimular a floração. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_caules",
+      "titulo": "Limpar caules e flores velhas",
+      "tipo": "PODA",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente ao substrato, com tesoura de poda limpa, os caules com mais da metade das folhas secas e as hastes florais já murchas ou escurecidas. Retire também as folhas totalmente secas. Isso abre espaço para perfilhos novos e evita fungos na base.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire algumas folhas e procure pontinhos brancos ou marrons grudados (cochonilha), teias finas e folhas pontilhadas de amarelo (ácaro). Aperte levemente a base dos caules: caule mole ou com cheiro azedo indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de preferência entre setembro e novembro. Tire a touceira do vaso, corte o rizoma com faca limpa em pedaços de 3 a 4 caules com raízes e replante um deles no mesmo vaso com substrato novo. Os outros pedaços viram mudas. Regue bem e deixe à meia-sombra por 2 semanas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora da primeira adubação",
+      "mensagem": "A muda já firmou as raízes no vaso e pode receber adubo sem risco de queimá-las.",
+      "acao_requerida": "Espalhar húmus de minhoca ao redor dos caules, sem encostar neles, e regar em seguida"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Touceira em formação",
+      "mensagem": "Os perfilhos novos devem estar surgindo em volta do caule original. Se nenhum apareceu, a planta está recebendo pouca luz ou pouco adubo.",
+      "acao_requerida": "Conferir se há brotos novos na base; se não houver, mudar o vaso para um lugar com mais horas de sol da manhã"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Fique de olho nas hastes florais",
+      "mensagem": "A planta pode começar a florescer. As hastes florais saem do chão, separadas das folhas, e são fáceis de quebrar ou confundir com brotos.",
+      "acao_requerida": "Não mexer no substrato perto da base e não cortar os brotos grossos em forma de lança que surgirem ao lado da touceira"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Caules amarelando de baixo para cima, base mole e escurecida, cheiro azedo no substrato; os caules tombam com facilidade",
+      "prevencao_tratamento": "Não regar com o substrato ainda úmido, sobretudo no inverno, e nunca deixar água no pratinho. Se aparecer, tire a planta do vaso, corte as partes moles do rizoma até o tecido firme, deixe secar ao ar por um dia e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos brancos algodonosos ou escamas marrons no verso das folhas e na base dos caules; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia embebidos em álcool 70%; em infestação maior, óleo de neem a 0,5% com algumas gotas de detergente, no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontilhado amarelado, aspecto empoeirado e teias finas no verso, mais comum em tempo seco e local abafado",
+      "prevencao_tratamento": "Jato de água no verso das folhas a cada 3 dias nos períodos secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora, Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ovais ou irregulares nas folhas, às vezes com halo amarelo, que crescem e se juntam",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas à noite; cortar e descartar as folhas atacadas e manter espaço para o ar circular entre os caules"
+    },
+    {
+      "nome": "Queimadura de sol e vento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons secas no meio das folhas e folhas rasgadas em tiras",
+      "prevencao_tratamento": "Evitar sol direto do meio da tarde e locais de corredor de vento, como sacadas altas; o sol da manhã é o ideal"
+    },
+    {
+      "nome": "Pontas secas por ar seco",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas marrons e secas, sem manchas no meio da folha",
+      "prevencao_tratamento": "Manter a rega regular e, em épocas de umidade abaixo de 40%, agrupar com outras plantas ou borrifar água ao redor no início da manhã; aparar as pontas secas acompanhando o formato da folha"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Proteja do frio",
+      "mensagem": "O bastão-do-imperador é tropical: abaixo de 10 °C as folhas escurecem, e a geada mata a parte aérea.",
+      "acao_requerida": "Levar o vaso para perto de uma parede ou sob uma cobertura; em noites com previsão de geada, cobrir a planta com manta de TNT"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio o crescimento quase para, e o substrato úmido por muito tempo apodrece o rizoma.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 4 cm de profundidade e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar os cuidados da primavera",
+      "mensagem": "Com o calor voltando, a touceira retoma o crescimento e prepara a floração.",
+      "acao_requerida": "Cortar rente ao substrato os caules danificados pelo frio, espalhar húmus de minhoca e voltar à rega a cada 3 dias"
+    }
+  ]
+}

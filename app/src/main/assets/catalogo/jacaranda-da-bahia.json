@@ -1,0 +1,194 @@
+{
+  "planta": {
+    "nome_comum": "Jacarandá-da-bahia",
+    "nome_cientifico": "Dalbergia nigra",
+    "descricao": "Árvore nativa da Mata Atlântica, de madeira nobre (pau-rosa brasileiro), ameaçada de extinção e protegida pela CITES (Apêndice I). Por isso, compre só mudas de viveiro legalizado, com nota. Na natureza passa de 20 m, então o vaso serve para os primeiros anos: com poda de condução, a muda fica anos como arvoreta de varanda até ir para o chão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso ou cerâmica com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo. Evite vaso estreito e alto, porque a raiz pivotante se enrola",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou perlita; solto, levemente ácido (pH 5,5 a 6,5) e sem argila compactada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de recipiente e de luz. É normal perder algumas folhinhas nas duas primeiras semanas. A fase acaba quando aparecem brotos novos, de um verde-claro brilhante, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "crescimento_inicial",
+      "nome": "Crescimento Inicial",
+      "dia_inicio": 31,
+      "dia_fim": 540,
+      "descricao": "A muda cresce de 40 a 80 cm por ano na primavera e no verão, com folhas compostas de muitos folíolos pequenos. O caule ainda é fino e pode tombar com vento: se passar de 1 m sem firmeza, amarre-o frouxo a um tutor. A raiz ocupa o vaso inteiro ao fim desta fase."
+    },
+    {
+      "fase_id": "arvoreta_em_vaso",
+      "nome": "Arvoreta em Vaso",
+      "dia_inicio": 541,
+      "dia_fim": null,
+      "descricao": "Ano típico da planta adulta em vaso: brota forte de setembro a março, desacelera no outono e perde parte das folhas no inverno seco (é semidecídua, isso não é doença). A altura é controlada pela poda de fim de inverno. Em vaso, a floração (pequenas flores branco-amareladas em outubro e novembro) é rara e só aparece depois de muitos anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de jacarandá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda ainda é pequeno e seca antes do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o jacarandá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o prato depois de 30 minutos. No verão quente pode precisar a cada 2 dias; no inverno, quando está sem folhas, espace para a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o jacarandá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados de húmus de minhoca ou 1 colher de sopa de NPK 4-14-8 na borda do vaso, longe do caule, e regue em seguida. É uma leguminosa e fixa nitrogênio: adubo rico em N (ureia, 20-5-20) só faz folha mole. Pule a adubação de maio a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folíolos cortados em meia-lua (formiga cortadeira), carocinhos brancos ou marrons nos ramos e no verso das folhas (cochonilha) e trilhas de formigas subindo pelo vaso.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso ou passar para o chão",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso no fim do inverno. Se as raízes deram voltas no fundo, corte as enroladas, remova um terço do substrato velho e replante num vaso 10 cm mais largo com substrato novo. Se o vaso já passou de 100 L, é hora de plantar no chão, a pelo menos 5 m de construções.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante a muda no vaso definitivo",
+      "mensagem": "O saquinho do viveiro sufoca a raiz pivotante do jacarandá. Quanto antes ela tiver espaço, mais firme a árvore fica.",
+      "acao_requerida": "Cortar o saquinho sem desmanchar o torrão, plantar na mesma altura em que estava (sem enterrar o caule) e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "A muda deve estar soltando brotos novos nas pontas. Se ainda estiver parada e perdendo folhas, pode ser falta de sol ou excesso de água.",
+      "acao_requerida": "Conferir se há brotos novos e se o vaso recebe pelo menos 4 horas de sol direto; se não, mudar de lugar"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Planeje o destino do jacarandá",
+      "mensagem": "Um ano depois, a muda já mostra o vigor de uma árvore que chega a 20 m. O vaso segura por alguns anos com poda, mas não para sempre.",
+      "acao_requerida": "Decidir se vai mantê-la em vaso com poda anual ou plantá-la no chão (sítio, calçada com licença, reflorestamento) nos próximos 1 a 3 anos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, a base do caule escurece e o substrato cheira a mofo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e garantir furos desentupidos; em caso avançado, tirar do vaso, cortar as raízes escuras e moles e replantar em substrato novo"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos cortados em meia-lua ou muda desfolhada de uma noite para a outra; trilha de formigas carregando pedaços verdes",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida granulada perto dele (não sobre o vaso); proteger o tronco com anel de graxa ou fita adesiva dupla-face virada para fora"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, cerosas ou marrons grudadas nos ramos e no verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia embebidos em álcool 70%; em infestação maior, óleo mineral ou de neem a 1% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Queimadura por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e brotos ficam escuros, como cozidos, depois de uma noite muito fria",
+      "prevencao_tratamento": "Nas noites abaixo de 3 °C, levar o vaso para perto da parede ou cobrir com TNT; esperar a primavera para podar as partes secas, porque os ramos costumam rebrotar"
+    },
+    {
+      "nome": "Queda de folhas por estresse",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folíolos amarelam e caem de uma vez fora do inverno, logo depois de mudar a planta de lugar ou de um período de rega irregular",
+      "prevencao_tratamento": "Manter a planta no mesmo lugar e a rega constante; ela rebrota em 2 a 4 semanas se a raiz estiver sadia (confira o cheiro do substrato)"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno seco: menos água",
+      "mensagem": "O jacarandá-da-bahia é semidecíduo e perde parte das folhas no inverno. Com menos folhas, ele bebe muito menos e o encharcamento apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (em geral a cada 7 a 10 dias) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteja a muda da geada",
+      "mensagem": "Mudas jovens de jacarandá queimam com geada, e o vaso esfria mais que o chão.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, encostar o vaso numa parede protegida ou cobrir a copa com TNT até de manhã"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de condução",
+      "mensagem": "No fim do inverno a árvore está quase parada. Podar agora controla a altura no vaso e forma uma copa equilibrada antes da brotação de setembro.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que crescem para dentro; encurtar em um terço os ramos mais longos, com corte inclinado logo acima de uma gema. Não tire mais de 30% da copa num ano"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Recomeço da brotação",
+      "mensagem": "Com a volta do calor e das chuvas, o jacarandá solta folhas novas e volta a crescer rápido.",
+      "acao_requerida": "Retomar a rega normal e fazer a primeira adubação da temporada"
+    }
+  ]
+}

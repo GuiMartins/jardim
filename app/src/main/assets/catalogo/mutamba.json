@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Mutamba",
+    "nome_cientifico": "Guazuma ulmifolia",
+    "descricao": "Árvore nativa do Cerrado e da Mata Atlântica, pioneira, rústica e de crescimento rápido. Dá flores amarelas pequenas e perfumadas na primavera e frutos pretos e rugosos, adocicados, que atraem pássaros. Em vaso grande fica como arvoreta de 2 a 3 m se for podada todo ano.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado ou caixa de plantio com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo; comece num vaso de 30 a 40 L e passe para o definitivo no segundo ano",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa; misture 100 g de farinha de osso por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente o transplante e pode perder algumas folhas velhas. A fase termina quando surgem brotos novos, verde-claros e peludos, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido: a muda pode ganhar de 50 cm a 1 m no primeiro ano. Forme a copa com desponte e escolha um tronco único. Ao fim da fase, as raízes começam a aparecer nos furos do vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota forte com as chuvas de setembro e outubro, floresce de setembro a dezembro, perde parte das folhas no inverno seco e amadurece os frutos pretos entre julho e outubro. Em vaso, a primeira floração costuma vir entre o 2º e o 4º ano. A poda anual de inverno mantém o tamanho."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de mutamba",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Regue devagar até a água escorrer pelos furos. Antes, enfie o dedo 3 cm no substrato: se ainda estiver úmido, espere mais um dia. Acima de 30 °C, confira todo dia; a raiz ainda não saiu do torrão e seca rápido.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a mutamba",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 8 a 10 L num vaso de 60 L). No verão quente pode precisar a cada 2 dias; no inverno, com a planta meio pelada, a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a mutamba",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto (ou 1 colher de sopa de NPK 10-10-10 por vaso de 60 L) na borda do vaso, longe do tronco, e regue em seguida. Pule a adubação de junho a agosto, quando a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas dos brotos novos e procure lagartas, folhas roídas, carreiros de formiga, pontos brancos algodonosos nos ramos (cochonilha) ou pó branco nas folhas (oídio).",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso de preferência entre agosto e setembro, corte 3 a 5 cm das raízes em volta do torrão, desembarace as que circulam o fundo e replante com substrato novo no mesmo vaso ou num maior. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "A muda está firme?",
+      "mensagem": "Com vento, a muda recém-plantada balança e rompe as raízes novas.",
+      "acao_requerida": "Se o tronco balançar no vaso, cravar um tutor ao lado e amarrar o caule com fita de tecido em forma de oito, sem apertar"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora do desponte",
+      "mensagem": "A mutamba tende a crescer como vara fina e alta. Cortar a ponta agora faz a copa ramificar mais baixo.",
+      "acao_requerida": "Quando o tronco passar de 80 cm a 1 m, cortar os 5 cm da ponta logo acima de uma folha e deixar 3 ou 4 ramos laterais bem distribuídos"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "A mutamba completou um ano",
+      "mensagem": "As raízes provavelmente já ocupam todo o vaso de início.",
+      "acao_requerida": "Se as raízes saírem pelos furos, passar a planta para o vaso definitivo de 60 L ou mais, de preferência entre agosto e outubro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos murcham; raízes escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água parada no pratinho e manter os furos desentupidos. Em caso de ataque, tirar do vaso, cortar as raízes podres e replantar em substrato novo e arenoso"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro ou só com as nervuras, fezes escuras no substrato, geralmente nos brotos de primavera",
+      "prevencao_tratamento": "Catar à mão; em infestação grande, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde e repetir após 7 dias"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua, às vezes a copa inteira pelada numa noite; carreiro de formigas subindo pelo tronco",
+      "prevencao_tratamento": "Seguir o carreiro até o ninho e aplicar isca formicida granulada ao lado dele; no tronco, uma faixa de graxa ou um cone de plástico impede a subida"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodonosos ou escamas marrons nos ramos e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool; em infestação, pulverizar óleo mineral ou óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 10 dias, 3 vezes"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco na face de cima das folhas novas, que depois ficam deformadas e caem; comum no outono seco com noites úmidas",
+      "prevencao_tratamento": "Deixar a copa ventilada e não molhar as folhas no fim do dia; pulverizar leite diluído (1 parte para 9 de água) ou bicarbonato de sódio (1 colher de chá por litro) a cada 7 dias"
+    },
+    {
+      "nome": "Queda de folhas na seca",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem entre junho e setembro, com ramos firmes e gemas verdes",
+      "prevencao_tratamento": "É o comportamento natural da mutamba, que é semidecídua. Raspe de leve um ramo com a unha: se estiver verde por dentro, está viva. Reduza a rega e não adube; as folhas voltam com o calor e as chuvas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno seco: rega menor",
+      "mensagem": "No frio e na seca a mutamba cresce pouco e pode perder parte das folhas. Com menos folhas, ela gasta menos água, e o excesso apodrece as raízes.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (cerca de uma vez por semana) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno a mutamba está quase parada. Podar agora mantém o tamanho do vaso e estimula brotação forte com as chuvas.",
+      "acao_requerida": "Encurtar em até um terço os ramos que passaram do tamanho desejado, cortando logo acima de uma gema, e remover ramos secos, cruzados ou que brotam da base do tronco"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor e as primeiras chuvas a mutamba brota com força e começa a florescer. É quando mais precisa de água e nutriente.",
+      "acao_requerida": "Voltar à rega a cada 2 ou 3 dias, fazer a primeira adubação da estação e conferir se há lagartas nos brotos novos"
+    }
+  ]
+}

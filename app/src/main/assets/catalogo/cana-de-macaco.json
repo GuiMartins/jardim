@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Cana-de-macaco",
+    "nome_cientifico": "Costus atlanticus",
+    "descricao": "Planta rizomatosa nativa da Mata Atlântica, com caules que crescem em espiral e folhas grandes e brilhantes. No verão e no outono, a ponta de cada caule forma uma espiga de brácteas avermelhadas com flores tubulares, que atrai beija-flores. Forma touceiras vistosas em vaso grande à meia-sombra e pede pouco cuidado além de substrato sempre úmido.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo de plástico ou cerâmica com pelo menos 35 cm de diâmetro e 30 cm de profundidade, com furos no fundo. Os rizomas se espalham para os lados, então a largura importa mais que a altura",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco e 10% areia grossa. Deve reter umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda pode perder uma ou duas folhas velhas enquanto as raízes se firmam no vaso novo. Mantenha à meia-sombra clara, sem sol forte da tarde. A fase termina quando as folhas do topo voltam a ficar firmes e aparece a ponta de um broto novo no substrato, junto à base."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 150,
+      "descricao": "Os rizomas se espalham e soltam novos caules, que sobem em espiral. Cada caule novo costuma sair mais alto e mais grosso que o anterior. A planta está estabelecida quando tem 3 ou mais caules e a touceira já não tomba ao ser regada."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Touceira de 1 a 2 m em vaso. Cresce forte da primavera ao outono. As espigas de brácteas avermelhadas surgem na ponta dos caules maduros, do verão ao outono, e duram semanas. No inverno o crescimento para, e alguns caules velhos amarelam e secam, o que é normal. Cada caule vive 2 a 3 anos e é substituído por brotos novos do rizoma. Com o tempo, a touceira enche o vaso e precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda curta, a muda não aguenta o vaso secar por inteiro. Esvazie o pratinho 30 minutos depois de regar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cana-de-macaco",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato e regue até escorrer pelos furos se estiver seco. Ela gosta de substrato sempre levemente úmido, nunca encharcado. Acima de 30 °C, confira a cada 2 dias. De junho a agosto, regue só quando os 5 cm de cima estiverem secos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a touceira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca ou 1 colher de sopa de farinha de ossos com torta de mamona por vaso de 30 L, na borda e sem encostar nos caules, e regue em seguida. De junho a agosto, pule a adubação: a planta está parada e o adubo acumula sais.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos brancos algodoados ou escamas marrons na nervura e na junção da folha com o caule, além de teias finas no verso. Olhe os brotos novos na base atrás de lesmas e de trilhas brilhantes de muco.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a touceira do vaso e corte o rizoma com faca limpa em pedaços com 2 ou 3 caules e raízes cada. Replante um pedaço no mesmo vaso com substrato novo e doe ou plante os outros. Se estiver em outra época, espere a primavera.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A cana-de-macaco sofre com o sol forte da tarde enquanto a raiz não pega.",
+      "acao_requerida": "Plantar na mesma altura em que a muda estava, com o rizoma coberto por 2 a 3 cm de substrato, regar bem e deixar em local de luz clara sem sol da tarde"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda firme no vaso",
+      "mensagem": "Se já apareceu broto novo na base, as raízes pegaram e a planta aguenta mais luz.",
+      "acao_requerida": "Mudar para o lugar definitivo, com sol da manhã, e passar a regar conferindo o substrato a cada 3 dias"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Touceira estabelecida",
+      "mensagem": "A planta já tem caules suficientes para florescer no próximo verão ou outono.",
+      "acao_requerida": "Conferir se a touceira tem 3 ou mais caules e, se algum estiver tombando, amarrá-lo frouxo a um tutor de bambu"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Caules amarelando a partir da base, que ficam moles e escuros rente ao substrato. Cheiro azedo no vaso",
+      "prevencao_tratamento": "Não deixar água no pratinho nem regar com o substrato ainda úmido, principalmente no inverno. Cortar os caules podres rente ao rizoma, remover as partes moles do rizoma e replantar em substrato novo e mais drenante"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodoados ou escamas marrons nas nervuras, nas axilas das folhas e na base dos caules. Folhas pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Se persistir, aplicar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto de poeira no verso e teias finas, comuns em ar seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos e lavar a planta com jato de água. Se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos novos e folhas jovens roídos, com trilhas brilhantes de muco",
+      "prevencao_tratamento": "Catar à noite com lanterna e cercar a base com casca de ovo moída ou borra de café seca"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas no meio das folhas voltadas para o sol da tarde",
+      "prevencao_tratamento": "Levar para local com sol só até as 10h ou para luz filtrada. As folhas queimadas não se recuperam; corte-as quando secarem"
+    },
+    {
+      "nome": "Pontas e bordas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e secas, que avançam para as bordas",
+      "prevencao_tratamento": "Evitar deixar o substrato secar por completo e afastar o vaso do ar-condicionado. Se o vaso tiver crosta branca, lavar o substrato com bastante água e espaçar a adubação"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: planta em repouso",
+      "mensagem": "No frio a cana-de-macaco quase para de crescer, e o substrato úmido demais apodrece o rizoma. Abaixo de 10 °C as folhas queimam.",
+      "acao_requerida": "Regar só quando os 5 cm de cima do substrato estiverem secos, suspender a adubação e, nas noites abaixo de 10 °C, levar o vaso para perto de uma parede ou para dentro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Limpeza dos caules velhos",
+      "mensagem": "Com a volta do calor, a touceira brota. Tirar os caules que secaram abre espaço e luz para os novos.",
+      "acao_requerida": "Cortar rente ao substrato os caules amarelados, secos ou que já floriram e murcharam, e retomar a adubação mensal"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: atenção à rega",
+      "mensagem": "No verão o vaso seca rápido, e as folhas grandes perdem muita água. Folhas enroladas no meio do dia são sinal de sede.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, regar de manhã cedo e proteger do sol direto depois das 10h"
+    }
+  ]
+}

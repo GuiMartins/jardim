@@ -1,0 +1,215 @@
+{
+  "planta": {
+    "nome_comum": "Cambucá",
+    "nome_cientifico": "Plinia edulis",
+    "descricao": "Árvore frutífera da Mata Atlântica fluminense e paulista, parente da jabuticaba, hoje rara na natureza. Dá frutos amarelo-alaranjados, muito suculentos e agridoces, que nascem direto no tronco e nos galhos grossos. Cresce devagar e em vaso leva de 6 a 10 anos da muda até frutificar, por isso é cultivada por quem quer preservar uma espécie ameaçada e tem paciência.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cerâmica ou fibra, com vários furos no fundo. Muda: 30 cm de diâmetro e 30 cm de profundidade. Vaso definitivo: pelo menos 50 cm de diâmetro e 45 cm de profundidade",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina ou fibra de coco, 10% areia grossa. Levemente ácido (pH 5,5 a 6,5) e sem calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante. Mantenha-a na meia sombra ou só com sol da manhã, porque as folhas novas queimam fácil. Pode perder algumas folhas velhas. A adaptação terminou quando aparecem brotos avermelhados na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta solta de 2 a 4 fluxos de brotação por ano, sempre com folhas novas cor de vinho que depois ficam verdes. Aumente o sol direto aos poucos, uma hora a mais a cada duas semanas, até chegar a 6 horas. O crescimento é lento: de 20 a 40 cm no primeiro ano é normal."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 2920,
+      "descricao": "A árvore forma o tronco e a copa e ainda não floresce. As podas de formação no inverno definem a altura. O tronco engrossa e começa a descascar em placas, como o da goiabeira. A fase acaba quando surgem os primeiros botões brancos no tronco ou nos galhos grossos, em geral entre o 6º e o 10º ano."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 2921,
+      "dia_fim": null,
+      "descricao": "No ano típico, a árvore brota na primavera, floresce entre setembro e novembro com flores brancas presas ao tronco e amadurece os frutos cerca de 60 a 90 dias depois, entre dezembro e março. No inverno cresce pouco e pede menos água. Em vaso, a produção é modesta, algumas dezenas de frutos, e cai muito se faltar água durante a floração."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de cambucá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda não pode secar por completo, mas não deixe água parada no pratinho. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cambucá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão e na floração, confira a cada 1 ou 2 dias, porque a planta derruba flores e frutos se secar. De junho a agosto, espace para cada 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o cambucá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na borda do vaso, longe do tronco, 1 xícara de húmus de minhoca ou 2 colheres de sopa de bokashi por vaso de até 30 L. No vaso definitivo, use o dobro, mais 1 colher de sopa de NPK 10-10-10. Regue em seguida. De junho a agosto, pule a adubação com NPK e deixe só o orgânico.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as brotações novas dos dois lados procurando pó amarelo-alaranjado (ferrugem) e folhas enroladas. Passe o dedo nos ramos e no tronco atrás de cochonilhas: carocinhos brancos ou marrons que soltam com a unha.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno (agosto ou setembro), tire a planta do vaso, raspe cerca de 5 cm da lateral e do fundo do torrão e corte as raízes que circulam o vaso. Volte a planta ao mesmo vaso ou a um 10 cm maior, com substrato novo. Deixe-a 2 semanas na meia sombra depois da troca.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Como está a muda?",
+      "mensagem": "Na primeira semana, folhas queimadas ou murchas indicam sol forte demais ou torrão seco.",
+      "acao_requerida": "Se houver folhas com manchas marrons secas, levar a muda para um lugar com só sol da manhã"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Hora de pegar mais sol",
+      "mensagem": "A muda já se adaptou. O cambucá precisa de sol direto para engrossar o tronco e, no futuro, florescer.",
+      "acao_requerida": "Aumentar o sol direto em 1 hora a cada 2 semanas, até chegar a 6 horas por dia"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Vaso definitivo",
+      "mensagem": "Depois de um ano, as raízes já tomaram o vaso da muda e o crescimento vai travar se ela continuar ali.",
+      "acao_requerida": "Transplantar para um vaso de pelo menos 60 L, sem enterrar o colo da planta mais fundo do que estava, e regar bem"
+    },
+    {
+      "dia_disparo": 2190,
+      "titulo": "Primeiras flores podem chegar",
+      "mensagem": "A partir do 6º ano, o cambucá pode florescer. As flores são brancas e nascem coladas ao tronco e aos galhos grossos.",
+      "acao_requerida": "Na primavera, procurar botões no tronco e, se aparecerem, nunca deixar o vaso secar até os frutos amadurecerem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; a planta murcha nas horas quentes; as raízes ficam escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só depois do teste do dedo, manter os furos livres e nunca deixar água no pratinho. Se aparecer, tirar a planta do vaso, cortar as raízes podres e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Ferrugem das mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nas folhas e brotos novos, que depois secam, ficam retorcidos e escurecem",
+      "prevencao_tratamento": "Deixar a planta em local arejado e não molhar a copa. Cortar e jogar no lixo os brotos atacados; em ataque forte, pulverizar calda bordalesa a 1% a cada 15 dias nas brotações"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, algodonosos ou marrons nos ramos, no tronco e no verso das folhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%. Em infestação, óleo de neem a 0,5% com detergente neutro no fim da tarde, repetido a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos maduros com furinhos, polpa amolecida e larvas brancas dentro",
+      "prevencao_tratamento": "Colher os frutos assim que mudam de cor e recolher todos os que caem. Ensacar os frutos verdes com saquinhos de TNT ou pendurar armadilha com suco de fruta fermentado perto da planta"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrom-claras, secas e quebradiças no meio das folhas voltadas para o sol, logo depois de mudar a planta de lugar",
+      "prevencao_tratamento": "Acostumar a muda ao sol aos poucos. As folhas queimadas não se recuperam, mas a brotação seguinte vem adaptada"
+    },
+    {
+      "nome": "Clorose por pH alto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes; crescimento parado",
+      "prevencao_tratamento": "Evitar calcário e cinza no substrato. Adubar com composto orgânico e aplicar quelato de ferro conforme a embalagem; na troca de substrato, acrescentar casca de pinus para acidificar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O cambucá jovem não tolera geada e sofre com vento frio abaixo de 5 °C.",
+      "acao_requerida": "Nas noites de previsão abaixo de 5 °C, levar o vaso para junto de uma parede ou cobrir a copa com TNT, retirando pela manhã"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação e limpeza",
+      "mensagem": "No fim do inverno a planta está quase parada, e a poda estimula a brotação da primavera. As flores nascem no tronco e nos galhos grossos, então essa poda não reduz a produção.",
+      "acao_requerida": "Cortar galhos secos, cruzados e brotos que saem da base do tronco; se passar de 2 m, encurtar os ramos mais altos em até um terço"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "Plantas adultas florescem nesta época. Falta de água agora derruba as flores e os frutinhos recém-formados.",
+      "acao_requerida": "Conferir o substrato a cada 1 ou 2 dias e não deixar o torrão secar até os frutos amadurecerem"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "Os frutos de plantas adultas amadurecem nesta época. Eles estragam em 2 ou 3 dias depois de colhidos e atraem mosca-das-frutas.",
+      "acao_requerida": "Colher os frutos quando ficarem amarelo-alaranjados e cederem levemente à pressão do dedo, e recolher os que caírem no vaso"
+    }
+  ]
+}

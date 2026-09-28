@@ -1,0 +1,179 @@
+{
+  "planta": {
+    "nome_comum": "Candelabro-africano",
+    "nome_cientifico": "Euphorbia ingens",
+    "descricao": "Suculenta arbórea do sul da África, com ramos verdes de quatro ou cinco quinas que sobem como um candelabro. Em vaso cresce devagar e aguenta sol forte e esquecimento de rega. O látex branco é tóxico e irrita pele e olhos, então exige luvas e cuidado com crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro pesado, com pelo menos 25 cm de diâmetro e 25 cm de profundidade e furos largos no fundo. O barro seca mais rápido e o peso segura a planta, que tem a copa pesada e tomba em vaso de plástico leve",
+    "volume_minimo_litros": 8,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 30% pedrisco fino ou perlita; ou substrato pronto para cactos e suculentas com mais 1/3 de areia grossa. Sem húmus em excesso, que segura água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Depois do plantio, as raízes machucadas cicatrizam em substrato seco. Por isso a primeira rega só vem uma semana depois. A planta pode ficar opaca e parada. Ela está adaptada quando a ponta dos ramos volta a ficar verde-viva e firme."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e, na estação quente, surgem pontas novas verde-claras no alto dos ramos. Ramos que ficam finos e inclinados para um lado indicam falta de sol. Ramo mole ou enrugado com o substrato úmido é sinal de podridão, não de sede."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Cresce de setembro a março, cerca de 10 a 20 cm por ano em vaso, e fica quase parada no inverno. Com a idade, a base do tronco fica marrom e com aspecto de cortiça, o que é normal se ela estiver dura. Ramos laterais aparecem sozinhos e formam o candelabro. Troque o substrato a cada 2 anos e o vaso quando a planta ficar mais alta que três vezes o diâmetro dele."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o candelabro",
+      "tipo": "REGA",
+      "frequencia_dias": 12,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de madeira até o fundo do vaso. Se sair limpo e seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Se sair úmido, espere mais uns dias. De maio a agosto, regue só a cada 3 a 4 semanas, e nada em dia abaixo de 10 °C.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o candelabro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dilua adubo para cactos e suculentas (ou NPK 10-10-10) na metade da dose do rótulo e aplique no lugar de uma rega, com o substrato já úmido. De abril a agosto, não adube: marque como feito e siga em frente.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as quinas e o encontro dos ramos à procura de tufos brancos de algodão ou escamas marrons. Aperte de leve a base do tronco com luvas: ela deve estar dura. Base mole ou escura e úmida é podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Em setembro ou outubro, com luvas, óculos e a planta enrolada em jornal dobrado, tire o torrão com o substrato seco. Solte o substrato velho, corte raízes podres e replante em mistura nova, num vaso 5 cm maior se as raízes davam a volta. Espere 7 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado com o látex",
+      "mensagem": "Qualquer corte ou ramo quebrado solta um látex branco que queima a pele e pode cegar se atingir os olhos.",
+      "acao_requerida": "Manusear só com luvas, lavar as mãos depois e deixar o vaso fora do alcance de crianças e animais"
+    },
+    {
+      "dia_disparo": 1,
+      "titulo": "Acostumar ao sol aos poucos",
+      "mensagem": "Mudas de viveiro costumam vir da sombra e queimam se forem direto para o sol do meio-dia.",
+      "acao_requerida": "Deixar só com sol da manhã nas duas primeiras semanas e passar para sol pleno a partir do dia 15"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Primeira rega",
+      "mensagem": "As raízes já cicatrizaram do plantio e podem receber água sem apodrecer.",
+      "acao_requerida": "Regar até escorrer pelos furos e esvaziar o pratinho"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do tronco mole, escura ou translúcida; ramos amolecem e tombam mesmo com o substrato úmido",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo e nunca deixar água no pratinho. Se aparecer, corte com faca limpa acima da parte podre até o tecido sair verde e limpo, deixe cicatrizar à sombra por 2 semanas e replante em substrato seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas quinas, no encontro dos ramos e na raiz; planta pegajosa e amarelada",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%. Se persistir, óleo de neem a 0,5% com detergente neutro, a cada 7 dias, no fim da tarde e fora do sol"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou brancas grudadas nos ramos, que saem com a unha",
+      "prevencao_tratamento": "Raspar com escova de dente macia e álcool 70%; repetir o óleo de neem semanalmente até sumir"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas, amarelas ou marrons secas no lado virado para o sol, logo após mudar a planta de lugar",
+      "prevencao_tratamento": "Aumentar o sol aos poucos ao longo de duas semanas. As manchas não somem, mas o crescimento novo nasce sadio"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas novas finas, verde-claras e inclinadas para a janela",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 horas de sol direto; a parte fina não engrossa depois, mas o crescimento seguinte volta ao normal"
+    },
+    {
+      "nome": "Suberização (cortiça na base)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Base do tronco marrom e áspera, com aspecto de casca",
+      "prevencao_tratamento": "É o envelhecimento natural e não precisa de tratamento enquanto estiver dura e seca. Se estiver mole, trate como podridão"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Reduzir a rega para o inverno",
+      "mensagem": "Com o frio, o candelabro para de crescer e o substrato demora a secar. Rega no ritmo do verão apodrece a raiz.",
+      "acao_requerida": "Regar só a cada 3 a 4 semanas e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 5 °C, e principalmente com geada, os ramos ficam com manchas escuras e podem morrer.",
+      "acao_requerida": "Em noites de previsão abaixo de 5 °C, levar o vaso para perto de uma parede ou para baixo de uma cobertura, com o substrato seco"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor, surgem pontas novas no alto dos ramos e a planta volta a beber.",
+      "acao_requerida": "Voltar à rega a cada 12 dias e retomar a adubação mensal"
+    }
+  ]
+}

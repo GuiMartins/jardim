@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Lágrima-de-cristo",
+    "nome_cientifico": "Clerodendrum thomsoniae",
+    "descricao": "Trepadeira semi-lenhosa da África Ocidental, de folhas verde-escuras e cachos de flores com cálice branco e corola vermelha, que parecem gotas. Em vaso com treliça, forma uma coluna florida da primavera ao fim do verão, e floresce melhor com sol da manhã e calor.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo e uma treliça, arco ou tutor de 1 a 1,5 m fixado no próprio vaso",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% casca de pinus fina ou perlita; rico em matéria orgânica, que retenha umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma com a nova luz e pode perder alguns botões ou folhas nos primeiros dias; é normal. A fase termina quando aparecem brotos novos, de folhas verde-claras, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Os ramos se alongam e começam a se enrolar no apoio. A cada rega, confira as pontas novas e enrole ou amarre com fita macia as que estiverem soltas. A planta está estabelecida quando cobre boa parte da treliça e forma os primeiros cachos de botões."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação forte e floração da primavera ao fim do verão (setembro a março), com cachos que duram semanas; no outono o crescimento desacelera, e no inverno a planta fica quase parada e pode perder parte das folhas se fizer menos de 10 °C. A poda do fim do inverno renova os ramos, e é nos ramos novos que nascem as flores."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a lágrima-de-cristo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. Nas primeiras semanas a raiz ainda não explora o vaso novo e a muda murcha rápido se secar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a lágrima-de-cristo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão acima de 30 °C, confira a cada 2 dias: substrato seco faz a planta derrubar os botões. De maio a agosto, regue só quando os 3 primeiros cm estiverem secos, o que costuma dar a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a lágrima-de-cristo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dissolva 1 colher de chá de NPK 4-14-8 em 1 litro de água e regue o substrato já úmido, ou espalhe 2 colheres de sopa de farinha de ossos com húmus na superfície e regue. De abril a agosto, pule esta adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as axilas dos ramos e os cachos de botões: procure pontos brancos algodoados (cochonilha), mosquinhas brancas que voam ao sacudir a planta, teias finas com pontinhos amarelados (ácaro) ou colônias de pulgão nas pontas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre agosto e outubro. Retire a planta com o torrão, desembarace e corte com tesoura limpa as raízes escuras ou enroladas no fundo, e replante em substrato novo num vaso 5 cm maior de diâmetro, ou no mesmo vaso com 1/3 do substrato renovado. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Hora do vaso definitivo e da treliça",
+      "mensagem": "Depois de uma semana de adaptação, a muda já pode ir para o vaso final. Colocar o apoio agora evita ferir raízes depois.",
+      "acao_requerida": "Transplantar a muda para o vaso de pelo menos 15 L com substrato novo, fincar a treliça ou tutor junto à borda e enrolar os ramos maiores nele, prendendo com fita macia sem apertar"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Poda de formação",
+      "mensagem": "Beliscar as pontas agora faz a planta ramificar desde a base e dá mais pontas para florescer.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo principal, logo acima de um par de folhas, e conduzir os brotos laterais que surgirem pela treliça"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; base do caule escura e mole; raízes marrons que se desfazem ao toque",
+      "prevencao_tratamento": "Regar só quando o substrato secar na superfície, nunca deixar água no pratinho e reduzir a rega no inverno. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e mais drenante"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados nas axilas das folhas, nos ramos e entre os botões; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; folhas amareladas e pegajosas no verso",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e jato de água no verso das folhas; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teias finas no verso, principalmente em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos e lavar a planta com jato fraco; se persistir, óleo de neem ou enxofre molhável seguindo o rótulo"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões e flores caem antes de abrir, sem sinal de praga",
+      "prevencao_tratamento": "Causado por substrato que secou, mudança brusca de lugar ou vento frio. Manter a umidade regular na floração e não mudar o vaso de lugar enquanto houver botões"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas, esbranquiçadas ou marrons nas folhas mais expostas, depois de dias de sol forte da tarde",
+      "prevencao_tratamento": "Dar sol só da manhã ou luz filtrada à tarde; ao mudar de um lugar sombreado para um mais claro, fazer a transição aos poucos, em uma a duas semanas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Outono: menos água e sem adubo",
+      "mensagem": "Com os dias mais curtos e frios, a lágrima-de-cristo desacelera e a raiz apodrece fácil em substrato molhado.",
+      "acao_requerida": "Espaçar as regas para quando os 3 primeiros cm estiverem secos e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 10 °C a planta perde folhas, e geada mata os ramos.",
+      "acao_requerida": "Nas noites frias, levar o vaso para perto de uma parede ou para dentro de casa, longe de vento e corrente de ar. Folhas que caírem voltam na primavera"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "As flores nascem nos ramos novos. Podar no fim do inverno garante brotação forte e muitos cachos na primavera.",
+      "acao_requerida": "Cortar os ramos secos ou fracos rente à base e encurtar os demais em cerca de 1/3, com corte logo acima de um par de folhas; enrolar de novo os ramos que ficaram no apoio"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar os cuidados de primavera",
+      "mensagem": "A planta volta a brotar, e é agora que ela precisa de água e nutrientes para formar os botões.",
+      "acao_requerida": "Voltar a regar a cada 3 dias conferindo o substrato, retomar a adubação a cada 20 dias e conduzir os brotos novos pela treliça"
+    }
+  ]
+}

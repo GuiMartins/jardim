@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Almeirão",
+    "nome_cientifico": "Cichorium intybus",
+    "descricao": "Hortaliça de folhas amargas, parente da chicória, rica em fibras e muito usada refogada ou crua em saladas. É perene na natureza, mas em vaso é cultivada como ANUAL: rende colheitas sucessivas de folhas por uns três meses, até pendoar e amargar demais.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de profundidade (a raiz é pivotante) e furos no fundo; numa jardineira de 60 cm cabem 3 plantas",
+    "volume_minimo_litros": 4,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou fibra de coco; solto e fundo, sem torrões, para a raiz descer",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Semeie 3 a 4 sementes por cova, a 0,5 cm de profundidade, com covas a 20 cm uma da outra. As plântulas surgem entre o 5º e o 10º dia, com duas folhinhas ovais."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 11,
+      "dia_fim": 30,
+      "descricao": "Aparecem as primeiras folhas verdadeiras, alongadas e levemente denteadas. A fase termina quando cada planta tem 4 a 5 folhas e já foi desbastada."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 60,
+      "descricao": "A planta forma uma roseta de folhas que crescem rápido. Rega irregular e falta de nitrogênio nesta fase deixam as folhas duras e mais amargas."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 61,
+      "dia_fim": 150,
+      "descricao": "As folhas externas passam de 20 cm e podem ser colhidas a cada 10 dias, enquanto o miolo continua brotando. O ciclo acaba quando surge uma haste central alta (o pendão), que traz flores azuis e deixa as folhas duras e muito amargas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. A semente é rasa: se o substrato formar crosta seca, ela não germina.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o almeirão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar junto à base até escorrer pelos furos, sem molhar as folhas. Acima de 28 °C, confira todo dia: secar o vaso deixa a folha amarga e apressa o pendoamento.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubação de cobertura",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 135,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca (ou 1 de bokashi) por planta, sem encostar no colo, e regue em seguida. Na fase de colheita, faça logo depois de um corte para a rebrota vir mais rápida.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Vire as folhas e procure pulgões no verso e no miolo, furos irregulares de lagarta, rastros brilhantes de lesma e pó branco na superfície.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de almeirão",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Corte com faca ou tesoura as folhas externas com mais de 20 cm, rente à base, deixando pelo menos 5 folhas do miolo para a planta rebrotar. Colha pela manhã, quando a folha está mais firme e menos amarga.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "As mudas da mesma cova estão disputando espaço. Sem desbaste, as plantas ficam finas e pendoam cedo.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada cova, cortando as outras rente ao substrato com tesoura (as retiradas podem ir para a salada)"
+    },
+    {
+      "dia_disparo": 61,
+      "titulo": "Primeira colheita",
+      "mensagem": "As folhas externas já devem ter passado de 20 cm.",
+      "acao_requerida": "Medir as folhas maiores e fazer o primeiro corte, preservando o miolo"
+    },
+    {
+      "dia_disparo": 140,
+      "titulo": "Fim do ciclo chegando",
+      "mensagem": "Em poucos dias as folhas ficam duras e muito amargas, sobretudo se o pendão já apareceu.",
+      "acao_requerida": "Colher todas as folhas aproveitáveis e ressemear em outro vaso para não ficar sem almeirão"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos no verso das folhas e no miolo; folhas encarquilhadas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas folhas; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Lagartas (Spodoptera spp., Trichoplusia ni)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos irregulares e folhas roídas pelas bordas, com fezes escuras entre as folhas",
+      "prevencao_tratamento": "Catar as lagartas à mão ao entardecer; em infestação, Bacillus thuringiensis (Dipel) conforme o rótulo"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas roídas durante a noite e rastros prateados no substrato e no vaso",
+      "prevencao_tratamento": "Catar à noite com lanterna, espalhar casca de ovo triturada ao redor da planta e não deixar o pratinho com água"
+    },
+    {
+      "nome": "Podridão do colo (Sclerotinia, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base da planta mole e escura, às vezes com mofo branco algodoado; a planta murcha inteira mesmo com o substrato úmido",
+      "prevencao_tratamento": "Regar só quando os 2 cm de cima secarem, sem encharcar nem molhar o colo; retirar a planta atacada com o substrato ao redor"
+    },
+    {
+      "nome": "Oídio (Golovinomyces cichoracearum)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado na face de cima das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Deixar o vaso em local ventilado e ensolarado; retirar as folhas atacadas e pulverizar leite diluído em água (1:9) a cada 7 dias"
+    },
+    {
+      "nome": "Mancha-de-cercospora (Cercospora cichorii)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pequenas e circulares, de centro claro e borda escura, que se juntam e secam a folha",
+      "prevencao_tratamento": "Não molhar as folhas ao regar e retirar as folhas manchadas; calda bordalesa a 0,5% se avançar"
+    },
+    {
+      "nome": "Pendoamento precoce e amargor excessivo",
+      "tipo": "DISTURBIO",
+      "sintomas": "Surge uma haste central alta antes do tempo; as folhas ficam duras, pequenas e muito amargas",
+      "prevencao_tratamento": "Evitar semear no verão, não deixar o vaso secar e colher com regularidade; quando o pendão subir, colher tudo e ressemear"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor apressa o pendoamento",
+      "mensagem": "No verão, dias longos e calor forte fazem o almeirão pendoar e amargar mais cedo, e o vaso seca em poucas horas.",
+      "acao_requerida": "Mudar o vaso para um lugar com sol só de manhã, conferir a umidade todo dia e colher as folhas grandes sem esperar"
+    }
+  ]
+}

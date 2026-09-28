@@ -1,0 +1,195 @@
+{
+  "planta": {
+    "nome_comum": "Iúca",
+    "nome_cientifico": "Yucca gigantea (sin. Yucca elephantipes)",
+    "descricao": "Planta de tronco grosso e roseta de folhas longas e firmes, também chamada de iúca-elefante ou iuca-mansa. Aguenta sol forte, vento e esquecimento de rega, e por isso é uma das plantas estruturais mais fáceis para varanda e área externa. Em vaso fica entre 1 e 2,5 m e cresce devagar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica, barro ou cimento, com pelo menos 35 cm de diâmetro e 35 cm de profundidade e furos no fundo. A planta tem muito peso em cima: um vaso plástico leve tomba com o vento.",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% casca de pinus fina ou perlita, 10% húmus de minhoca. Precisa drenar rápido e não pode ficar compactado.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se ajusta à nova luz e ao vaso. Se ela veio de loja ou estufa, as folhas não estão acostumadas ao sol pleno: comece com sol da manhã e aumente aos poucos. Algumas folhas de baixo amarelando é normal. A fase termina quando surgem folhas novas no centro da roseta."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso novo e a roseta volta a crescer. As folhas novas saem firmes e verde-escuras. Folhas moles ou tronco macio na base indicam excesso de água, não falta. A partir daqui a planta aguenta sol pleno o dia todo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce da primavera ao outono e quase para no inverno. As folhas de baixo secam e caem aos poucos, formando o tronco. Em plantas maduras e com bastante sol pode sair, no verão, uma haste de flores brancas em forma de sino. Se ficar alta demais, dá para cortar o tronco na primavera: ele rebrota em várias cabeças."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a iúca (adaptação)",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 4 cm no substrato. Se estiver seco, regue devagar até a água escorrer pelos furos e esvazie o pratinho depois de 15 minutos. Se ainda estiver úmido, não regue: a raiz recém-mexida apodrece fácil.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a iúca",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Regue só se estiver seco, até escorrer pelos furos, e nunca deixe água parada no pratinho. No inverno ou com tempo nublado, a rega costuma ser a cada 20 a 30 dias. Na dúvida, espere mais uns dias: falta de água a iúca tolera, excesso não.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base das folhas no centro da roseta e o verso das folhas mais baixas. Procure bolinhas brancas de algodão ou escamas marrons (cochonilha), pontinhos amarelados com teia fina (ácaro) e manchas marrons com borda amarela. Aperte a base do tronco: tem que estar firme.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas_secas",
+      "titulo": "Retirar folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Puxe para baixo as folhas de baixo que já estão secas e marrons, ou corte com tesoura limpa rente ao tronco. Não corte folhas verdes. Use luvas: as pontas das folhas são duras e cortam.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso ou o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro. Tire a planta do vaso, solte as raízes que estão enroladas e retire as podres (moles e escuras). Replante num vaso 5 a 10 cm maior, ou no mesmo vaso com substrato novo, e espere 5 dias antes da primeira rega para as raízes machucadas cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, iúca!",
+      "mensagem": "A planta que vem de loja costuma estar num vaso plástico apertado, com substrato que retém água e sem costume de sol forte.",
+      "acao_requerida": "Se o vaso for leve ou as raízes saírem pelos furos, passar para o vaso definitivo agora, com o substrato drenante. Nas duas primeiras semanas, deixar só no sol da manhã."
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de pegar mais sol",
+      "mensagem": "Depois de duas semanas, as folhas já aguentam mais luz. Sol pleno de repente queima as folhas, que ficam com manchas bege.",
+      "acao_requerida": "Aumentar a exposição aos poucos, uma ou duas horas por semana, até chegar a 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Iúca estabelecida",
+      "mensagem": "A planta já se firmou no vaso e entrou na rotina de adulta: rega espaçada, adubo só na estação quente e limpeza das folhas secas de vez em quando.",
+      "acao_requerida": "Girar o vaso um quarto de volta para o tronco crescer reto e conferir se ele está firme e sem balançar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do tronco (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando a partir do centro, roseta que se solta com facilidade, base do tronco mole e escura e cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e usar substrato com areia. Se aparecer: tirar do vaso, cortar tudo que estiver mole até chegar em tecido firme e claro, deixar secar 2 a 3 dias à sombra e replantar em substrato novo e seco. Tronco podre de cima a baixo não tem volta. Nesse caso, dá para enraizar a cabeça sadia como estaca."
+    },
+    {
+      "nome": "Cochonilha (algodão e escama)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecendo algodão na base das folhas ou escamas marrons grudadas nas folhas, folhas pegajosas e às vezes fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia molhada em álcool 70%. Depois, pulverizar óleo de neem a 0,5% com algumas gotas de detergente neutro, no fim da tarde, a cada 7 dias, três vezes."
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto empoeirado, teias finas entre as folhas, mais comum com tempo seco e quente",
+      "prevencao_tratamento": "Lavar as folhas com jato de água, dos dois lados. Se continuar, óleo de neem a 0,5% a cada 5 dias, três vezes."
+    },
+    {
+      "nome": "Mancha foliar (Cercospora, Coniothyrium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou cinza, arredondadas, com borda amarela, que começam nas folhas de baixo",
+      "prevencao_tratamento": "Regar o substrato, não as folhas, e deixar a planta num lugar arejado. Cortar as folhas muito manchadas e jogar no lixo. Nos casos fortes, fungicida à base de cobre, conforme o rótulo."
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas bege ou esbranquiçadas, secas, no meio das folhas voltadas para o sol, logo depois de mudar a planta de lugar",
+      "prevencao_tratamento": "Levar para o sol pleno aos poucos, ao longo de 3 a 4 semanas. As manchas não somem, mas as folhas novas já saem adaptadas."
+    },
+    {
+      "nome": "Estiolamento por falta de luz",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas finas, compridas, verde-claras e caídas, com a roseta aberta e o tronco inclinado para a janela",
+      "prevencao_tratamento": "Mudar para um lugar com pelo menos 4 horas de sol direto. As folhas moles não voltam a ficar firmes, mas as novas saem normais."
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Adubar a iúca",
+      "mensagem": "É a estação de crescimento: um pouco de adubo deixa as folhas firmes e escuras. Adubo demais faz folha mole, que abre a planta para a cochonilha.",
+      "acao_requerida": "Com o substrato úmido, diluir NPK 10-10-10 na metade da dose do rótulo (1 g por litro de água) e regar com a solução, ou espalhar 2 colheres de sopa de farinha de ossos e húmus pela borda do vaso"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "No frio a iúca quase para de crescer e o substrato demora muito mais para secar. Rega no ritmo do verão é a principal causa de podridão nessa época.",
+      "acao_requerida": "Espaçar a rega para a cada 20 a 30 dias, sempre conferindo 5 cm de substrato seco. Em noites abaixo de 2 °C, levar o vaso para perto de uma parede ou para debaixo de um beiral."
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Época de podar e trocar de vaso",
+      "mensagem": "A primavera é a melhor época para qualquer corte ou replantio: a planta volta a crescer e cicatriza rápido.",
+      "acao_requerida": "Se a iúca estiver alta demais ou torta, cortar o tronco na altura desejada, com serrote limpo, e selar o corte com pasta cicatrizante ou canela em pó. A parte de cima pode ser plantada como estaca em areia úmida."
+    }
+  ]
+}

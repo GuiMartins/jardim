@@ -1,0 +1,194 @@
+{
+  "planta": {
+    "nome_comum": "Flor-de-são-miguel",
+    "nome_cientifico": "Petrea volubilis",
+    "descricao": "Trepadeira lenhosa nativa das Américas tropicais, também chamada de viuvinha ou flor-de-viúva, que cobre a planta de cachos pendentes de estrelas roxo-azuladas no fim do inverno e na primavera. Em vaso grande, com suporte firme, forma um arco ou cobre uma treliça e floresce por anos seguidos. As folhas são ásperas como lixa, o que lhe dá o apelido de lixa-vegetal.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira pesada (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de diâmetro e 45 cm de profundidade, furos no fundo e espaço para fixar uma treliça ou arco firme de 1,5 a 2 m",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina ou perlita; pH levemente ácido a neutro (6,0 a 7,0) e 100 g de farinha de ossos por vaso misturados ao substrato",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está refazendo as raízes no vaso novo. É normal perder algumas folhas velhas e flores que já vieram abertas. A fase terminou quando surgem brotos novos, de um verde mais claro, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Os ramos se alongam e começam a se enrolar no suporte. O crescimento é moderado: conte com 50 cm a 1 m de ramos no primeiro ano. A primeira floração farta costuma vir no segundo ou terceiro ano; se a muda floresceu logo, é sinal de que já era adulta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: no inverno o crescimento desacelera e a rega diminui; de agosto a outubro vem a grande floração, com cachos roxos que duram semanas (as sépalas ficam na planta e desbotam para cinza-azulado depois que a flor cai); após a floração, uma poda leve de limpeza e condução; no verão, crescimento forte de ramos novos, às vezes com uma segunda floração mais discreta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a flor-de-são-miguel",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. As raízes novas ainda não chegaram ao fundo do vaso e secam rápido no sol. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a flor-de-são-miguel",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão, pode precisar a cada 2 dias; de maio a julho, espace para a cada 5 a 7 dias. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a flor-de-são-miguel",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 4-14-8 (ou 1 xícara de húmus com 1 colher de farinha de ossos) na borda do vaso, sem encostar no caule, e regue em seguida. Adubo rico em nitrogênio faz muita folha e pouca flor. Em junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "conduzir_ramos",
+      "titulo": "Conduzir os ramos no suporte",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enrole os ramos novos no suporte e prenda os soltos com fitilho ou tira de pano, em laço frouxo (cabe um dedo), para não estrangular o caule. Distribua os ramos na horizontal: ramo deitado floresce mais que ramo que sobe reto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, as axilas e os ramos novos. Procure bolinhas brancas de algodão ou escamas marrons (cochonilha), insetos verdes agrupados nas pontas (pulgão) e manchas pretas de fuligem nas folhas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, logo após a floração: tire a planta do vaso, raspe 5 cm de raízes da lateral e do fundo do torrão, e replante com substrato novo no mesmo vaso ou num 10 cm maior. Se a planta estiver presa ao suporte e não sair, troque só os 10 cm de cima do substrato.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Instale o suporte",
+      "mensagem": "A flor-de-são-miguel é uma trepadeira pesada quando adulta. Instalar o suporte agora evita ferir as raízes depois.",
+      "acao_requerida": "Fixar uma treliça, arco ou tutor firme de 1,5 a 2 m no vaso ou na parede ao lado, e amarrar o ramo principal nele com laço frouxo"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Fim da adaptação",
+      "mensagem": "Se já apareceram brotos novos, a muda pegou. Daqui em diante a rega pode ficar mais espaçada.",
+      "acao_requerida": "Conferir se há brotos novos nas pontas; se a planta estava na meia-sombra para se adaptar, levá-la para o sol pleno"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos murcham, base do caule escurece e o substrato cheira a mofo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, esvaziar o pratinho e manter a camada de drenagem. Com a planta doente, suspenda a rega, retire raízes pretas e moles e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas de aspecto de algodão ou escamas marrons coladas no verso das folhas e nos ramos; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em álcool 70%; em infestação maior, borrife óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos ramos e nos botões; brotos novos enrugados",
+      "prevencao_tratamento": "Jato de água nos ramos atacados; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada preta como fuligem sobre as folhas, que sai ao esfregar; sempre acompanha cochonilha ou pulgão",
+      "prevencao_tratamento": "Controlar o inseto que solta o melado; depois lavar as folhas com pano úmido e água com detergente neutro"
+    },
+    {
+      "nome": "Clorose por falta de ferro",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras bem verdes",
+      "prevencao_tratamento": "Acontece em substrato alcalino ou com calcário demais. Regue com quelato de ferro na dose da embalagem e evite pôr cal ou cinza no vaso"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta adulta cheia de folhas e ramos longos, mas sem cachos de flor na primavera",
+      "prevencao_tratamento": "As causas mais comuns são menos de 4 horas de sol direto, adubo rico em nitrogênio e poda feita no inverno, que corta os ramos que dariam flor. Leve para o sol, use adubo com mais fósforo e pode só depois da floração"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a planta quase para de crescer. Um período mais seco agora ajuda a induzir a floração de agosto a outubro.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender a adubação e, em noite com previsão de geada, cobrir a planta com TNT ou levar o vaso para perto de uma parede abrigada"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Botões chegando",
+      "mensagem": "Os cachos de flor se formam nas pontas dos ramos. Falta de água agora faz os botões caírem.",
+      "acao_requerida": "Voltar à rega normal da estação de crescimento e retomar a adubação com NPK 4-14-8"
+    },
+    {
+      "meses": [
+        11,
+        12
+      ],
+      "titulo": "Poda depois da floração",
+      "mensagem": "Com as flores já desbotadas, é a hora certa de podar: os ramos novos do verão é que vão florescer no ano que vem.",
+      "acao_requerida": "Cortar os cachos secos, os ramos secos ou cruzados e encurtar em até um terço os ramos longos demais, logo acima de um par de folhas; não podar de março em diante"
+    }
+  ]
+}

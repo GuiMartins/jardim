@@ -1,0 +1,168 @@
+{
+  "planta": {
+    "nome_comum": "Cacto-rabo-de-macaco",
+    "nome_cientifico": "Cleistocactus colademononis",
+    "descricao": "Cacto boliviano de caules pendentes cobertos de pelos brancos e macios, que chegam a mais de 1 m e dão flores tubulares vermelhas na primavera e no verão. É ótimo em vaso suspenso, pede pouca rega e aguenta bem o esquecimento, desde que não fique encharcado.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso suspenso ou alto, de barro ou plástico, com 18 a 25 cm de diâmetro e furos grandes no fundo, pendurado ou sobre um suporte para os caules caírem livres",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% substrato para cactos ou terra vegetal peneirada, 30% areia grossa lavada, 30% pedrisco fino, perlita ou casca de arroz carbonizada; deve escorrer a água na hora",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se acostuma com a luz e a ventilação novas. Se ela vinha de viveiro sombreado, a ponta dos caules pode amarelar ou avermelhar com o sol forte: aumente a exposição aos poucos. A fase termina quando surgem pontas novas, claras e cheias de pelos, nas extremidades dos caules."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e os caules crescem alguns centímetros por mês na estação quente. Caules firmes, pelos brancos e brotos novos na base mostram que ela se firmou. Caules finos e esticados em direção à janela indicam falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce e recebe água e adubo de setembro a abril, floresce na primavera e no verão com tubos vermelhos saindo dos lados dos caules e fica quase parada, com pouca rega, de maio a agosto. Um frio seco no inverno ajuda a florescer no ano seguinte. Caules velhos e secos na base podem ser cortados rente."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o rabo-de-macaco",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de churrasco até o fundo do vaso: se sair seco e limpo, regue no substrato, sem molhar os pelos, até escorrer pelos furos, e esvazie o pratinho. Se sair úmido, não regue. De maio a agosto, regue só a cada 3 ou 4 semanas; abaixo de 10 °C, não regue.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o cacto",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a abril, dilua adubo para cactos ou NPK 10-10-10 a metade da dose do rótulo (cerca de 1 g por litro) e use na rega, com o substrato já úmido. De maio a agosto, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar entre os pelos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os pelos com um palito e olhe a base dos caules e o encontro com o substrato. Procure bolinhas de algodão diferentes dos pelos, teias finas, pontos marrons ou caules moles e escuros.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, com o substrato seco, embrulhe os caules em jornal para não arrancar os pelos, tire a planta, solte a terra velha e passe para um vaso 3 a 5 cm maior com substrato novo. Espere 7 dias para regar, para as raízes feridas cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vindo, rabo-de-macaco!",
+      "mensagem": "Ele chega do viveiro sensível ao sol forte e ao encharcamento. Não regue na primeira semana e confira se o vaso tem furo.",
+      "acao_requerida": "Pendurar num lugar com sol da manhã e muita claridade, e trocar para um vaso furado se o de origem não tiver furo"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Hora de mais sol",
+      "mensagem": "Adaptado, ele precisa de sol direto para os caules ficarem grossos e florescerem.",
+      "acao_requerida": "Passar para um lugar com 4 a 5 horas de sol direto, de preferência pela manhã, e observar se as pontas queimam"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão por excesso de rega (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole, escura e translúcida, com cheiro azedo; caules que se soltam com um toque",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo e nunca deixar água no pratinho. Se aparecer, corte o caule acima da parte podre com faca limpa, deixe secar 1 semana à sombra e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos de algodão branco e grudento escondidos entre os pelos e na base dos caules; crescimento parado",
+      "prevencao_tratamento": "Tocar cada tufo com cotonete embebido em álcool 70%; se houver muitos, óleo de neem a 0,5% com gotas de detergente no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos marrons ou cor de ferrugem na superfície do caule e teias finas entre os pelos, em tempo seco e quente",
+      "prevencao_tratamento": "Deixar o vaso em lugar ventilado, borrifar água ao redor em dias muito secos e aplicar óleo de neem ou enxofre a cada 7 dias até sumirem"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas finas, verde-claras e com pelos ralos, curvadas em direção à luz; não floresce",
+      "prevencao_tratamento": "Levar aos poucos para um lugar com pelo menos 4 horas de sol direto. A parte fina não volta a engrossar, mas pode ser cortada e enraizada como estaca"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas bege ou amareladas, secas, no lado dos caules voltado para o sol, logo depois de uma mudança de lugar",
+      "prevencao_tratamento": "Aumentar a exposição ao sol aos poucos, ao longo de 2 a 3 semanas, e evitar o sol da tarde de verão atrás de vidro"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Entrando no repouso de inverno",
+      "mensagem": "Com o frio, ele quase para de crescer e as raízes bebem pouco. Um inverno seco e fresco é o que faz aparecerem as flores na primavera.",
+      "acao_requerida": "Espaçar as regas para a cada 3 ou 4 semanas e parar de adubar até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "Ele aguenta frio seco perto de 0 °C por pouco tempo, mas geada e frio com substrato úmido matam os caules.",
+      "acao_requerida": "Nas noites abaixo de 3 °C, levar o vaso para baixo de um beiral ou para dentro, e não regar nos dias frios"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "Com o calor, surgem pontas novas e os primeiros botões vermelhos nos lados dos caules.",
+      "acao_requerida": "Voltar à rega a cada 10 dias com o substrato seco e retomar a adubação mensal"
+    }
+  ]
+}

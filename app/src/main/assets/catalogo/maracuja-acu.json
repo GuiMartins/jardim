@@ -1,0 +1,227 @@
+{
+  "planta": {
+    "nome_comum": "Maracujá-açu",
+    "nome_cientifico": "Passiflora quadrangularis",
+    "descricao": "Também chamado de maracujá-gigante ou maracujá-melão, é uma trepadeira tropical vigorosa que dá o maior fruto do gênero: de 1 a 3 kg e até 30 cm. Tanto a polpa quanto a parte branca e grossa da casca, usada em doces e refogados, são comestíveis. Em vaso grande e com espaldeira, rende uma cobertura verde bonita e alguns frutos por safra, desde que as flores sejam polinizadas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou caixa de pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo, junto a uma espaldeira, pérgola ou tela de 2 m ou mais de altura, presa com firmeza porque a planta adulta com frutos fica muito pesada",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de arroz carbonizada, mais 200 g de calcário dolomítico e 300 g de farinha de ossos a cada 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma a raiz no vaso novo. Folhas mais baixas podem amarelar e cair na primeira semana, e isso é normal. A fase acabou quando surgem folhas novas de caule quadrado, com as bordas aladas típicas da espécie, e as primeiras gavinhas começam a se enrolar no suporte."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento e Condução",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "A trepadeira pode crescer de 20 a 40 cm por semana no calor. Conduza um único ramo principal até o topo do suporte, tirando os brotos laterais que saem abaixo dele. Depois de despontado no topo, deixe crescerem 2 a 4 ramos laterais ao longo da espaldeira: é neles que as flores vão sair. A fase termina quando a espaldeira está coberta e os laterais já passam de 1 m."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: brotação forte a partir de setembro. De novembro a fevereiro abrem as flores grandes e perfumadas, sempre em ramos do ano. Os frutos amadurecem entre março e maio, cerca de 80 a 100 dias depois da polinização. De junho a agosto o crescimento quase para e a planta sofre abaixo de 10 °C. Em vaso, costuma produzir bem por 4 a 6 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de maracujá-açu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto da muda. Se estiver seco, regue devagar até escorrer pelos furos (cerca de 3 a 4 L no vaso de 60 L). Se estiver úmido, não regue: raiz nova apodrece fácil em substrato encharcado.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o maracujá-açu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos (6 a 10 L num vaso de 60 L). No verão, com a planta coberta de folhas e frutos, pode ser preciso regar todo dia. De junho a agosto, espere secar os 5 cm antes de regar, o que costuma levar de 4 a 6 dias. Falta de água na floração derruba as flores e os frutos pequenos.",
+      "critica": true
+    },
+    {
+      "id": "tutoragem_ramos",
+      "titulo": "Conduzir os ramos na espaldeira",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Prenda com fitilho ou tira de pano as pontas que se soltaram do suporte, sem apertar o caule. Enquanto o ramo principal não chegar ao topo, arranque com os dedos os brotos laterais que saem abaixo dele. Espalhe os laterais de cima em leque para cobrir a espaldeira, em vez de deixá-los embolar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o maracujá-açu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Espalhe 1 xícara (cerca de 200 g) de húmus de minhoca e 1 colher de sopa rasa de NPK 10-10-10 pela superfície, a 10 cm do caule, misture de leve e regue em seguida.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_producao",
+      "titulo": "Adubar o maracujá-açu adulto",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a abril, espalhe 2 xícaras de húmus ou esterco curtido e 1 colher de sopa de NPK 4-14-8 (mais fósforo e potássio, para flores e frutos) a 15 cm do caule, e regue em seguida. De maio a agosto, use só o húmus, em meia dose.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, flores e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure lagartas alaranjadas com espinhos pretos comendo as folhas, percevejos nos botões e frutos novos, e pontos amarelados com teia fina no verso das folhas. Olhe também a base do caule, onde manchas escuras e casca mole indicam podridão.",
+      "critica": false
+    },
+    {
+      "id": "renovacao_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno (agosto), antes da brotação, raspe os 10 a 15 cm de cima do substrato e troque por substrato novo com a mesma receita. Se as raízes estiverem saindo pelos furos, passe para um vaso 20 L maior, cortando até um terço das raízes enoveladas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Suporte firme desde o início",
+      "mensagem": "A planta adulta com frutos de 2 a 3 kg pesa muito. Montar o suporte depois estraga raízes e ramos.",
+      "acao_requerida": "Instalar agora uma espaldeira, tela ou pérgola de pelo menos 2 m, bem presa na parede ou no chão, e amarrar a muda nela com um tutor de bambu"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Despontar o ramo principal",
+      "mensagem": "Quando o ramo principal chega ao topo do suporte, cortar a ponta faz nascerem os ramos laterais, que são os que dão flor.",
+      "acao_requerida": "Se o ramo principal já alcançou o topo, cortar os 5 cm da ponta com tesoura limpa. Se ainda não chegou, fazer o corte assim que chegar"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Preparar para a primeira florada",
+      "mensagem": "A planta está perto da idade de florir. Na próxima estação quente, as flores vão abrir de manhã e durar só um dia.",
+      "acao_requerida": "Separar um pincel macio para a polinização manual e conferir se o suporte aguenta o peso dos frutos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e das raízes (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Murcha da planta toda mesmo com o substrato úmido, casca escura e mole na base do caule, raízes marrons e desmanchando",
+      "prevencao_tratamento": "Regar só com os 5 cm de cima secos, garantir que os furos escoam e não deixar água no pratinho. Não amontoar substrato nem cobertura encostado no caule. A planta com o colo tomado raramente se recupera: descarte o substrato"
+    },
+    {
+      "nome": "Lagarta-do-maracujazeiro (Agraulis vanillae, Dione juno)",
+      "tipo": "PRAGA",
+      "sintomas": "Lagartas alaranjadas ou pretas com espinhos, muitas vezes em grupo, que comem as folhas até deixar só as nervuras",
+      "prevencao_tratamento": "Catar à mão (use luvas: os espinhos irritam a pele) e procurar os ovos amarelos no verso das folhas e nas gavinhas. Com muitas lagartas, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Percevejos (Diactor bilineatus, Holymenia clavigera)",
+      "tipo": "PRAGA",
+      "sintomas": "Botões florais e frutos novos que murcham, enrugam e caem; frutos maiores com pontos escuros e endurecidos",
+      "prevencao_tratamento": "Catar os percevejos de manhã cedo, quando estão lentos, derrubando-os num pote com água e sabão. Se persistir, óleo de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Ácaros (rajado e branco)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto bronzeado ou enrugado, e teia fina no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 3 dias. Se persistir, enxofre molhável ou óleo de neem a 0,5% no fim da tarde, nunca acima de 30 °C"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e encharcadas nas folhas e ramos novos, e manchas fundas e marrons nos frutos, que apodrecem",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter a copa arejada com a poda de agosto. Retirar e descartar folhas e frutos manchados. Em ataque forte, calda bordalesa a 1%"
+    },
+    {
+      "nome": "Endurecimento dos frutos (vírus CABMV)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas com mosaico verde-claro e verde-escuro, enrugadas; frutos deformados, com casca dura e pouca polpa",
+      "prevencao_tratamento": "Não tem cura. O vírus é levado por pulgões e em tesouras sujas: controle os pulgões, limpe a tesoura com álcool entre uma planta e outra e comece de muda sadia. A planta muito afetada deve ser substituída"
+    },
+    {
+      "nome": "Flores caem sem formar fruto",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores abrem normalmente, mas caem em 2 ou 3 dias junto com a base, sem engrossar",
+      "prevencao_tratamento": "Falta de polinização: o maracujá-açu depende de abelhas grandes (mamangavas), raras em varanda e apartamento. Polinize à mão pela manhã e mantenha a rega regular na floração, porque falta de água também derruba flores"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "As flores saem nos ramos novos. Podar no fim do inverno, antes da brotação, garante florada farta e copa arejada.",
+      "acao_requerida": "Cortar os ramos secos e doentes e encurtar para 2 ou 3 gemas os laterais que já produziram, mantendo o ramo principal e a estrutura na espaldeira"
+    },
+    {
+      "meses": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Floração: polinize e apoie os frutos",
+      "mensagem": "Cada flor fica aberta só um dia. Sem mamangavas por perto, só vira fruto se for polinizada à mão.",
+      "acao_requerida": "Nas manhãs com flores abertas, passar um pincel macio nas anteras (as 5 partes com pó amarelo) e depois nas 3 pontas do estigma, acima delas. Apoiar os frutos com mais de 1 kg numa rede ou saco de pano amarrado ao suporte"
+    },
+    {
+      "meses": [
+        3,
+        4,
+        5
+      ],
+      "titulo": "Época de colher o maracujá-açu",
+      "mensagem": "Os frutos amadurecem de 80 a 100 dias depois da flor. Maduro, o fruto muda de verde para verde-amarelado e cede um pouco ao apertar.",
+      "acao_requerida": "Conferir a cor dos frutos. Colher os que amarelaram cortando o cabo com tesoura e deixar 2 ou 3 dias à sombra para terminarem de amadurecer"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O maracujá-açu é bem tropical: abaixo de 10 °C as folhas queimam, e a geada pode matar a planta.",
+      "acao_requerida": "Nas noites com previsão abaixo de 10 °C, cobrir a copa com manta de TNT ou encostar o vaso numa parede protegida. Regar só com os 5 cm de cima secos e suspender o NPK até agosto"
+    }
+  ]
+}

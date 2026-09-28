@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Araruta",
+    "nome_cientifico": "Maranta arundinacea",
+    "descricao": "Planta tropical de rizomas brancos e compridos, dos quais se extrai o polvilho de araruta, sem glúten e muito digestivo. É perene na natureza, mas em vaso é cultivada como ANUAL: planta-se um pedaço de rizoma na primavera e colhe-se tudo cerca de 10 meses depois, quando a folhagem seca. Parte dos rizomas colhidos serve para plantar de novo.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": 300,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo ou jardineira funda com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com furos no fundo. Os rizomas crescem para os lados e para baixo, e vaso estreito dá rizomas tortos e finos",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; fofo e sem torrões para os rizomas engrossarem",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 25,
+      "descricao": "Plante pedaços de rizoma de 5 a 8 cm, com 2 a 4 gemas, deitados a 6 cm de profundidade e a 15 cm um do outro (3 pedaços num vaso de 30 L). Os primeiros brotos pontudos saem entre o 10º e o 20º dia. O substrato deve ficar úmido, nunca encharcado, porque o rizoma sem raiz apodrece fácil."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 26,
+      "dia_fim": 150,
+      "descricao": "A planta perfilha e forma uma touceira de hastes com folhas largas, chegando a 80 cm a 1,2 m. É a fase de mais sede e mais adubo. Folhas enroladas no meio do dia indicam falta de água."
+    },
+    {
+      "fase_id": "floracao_engorda",
+      "nome": "Floração e Engorda dos Rizomas",
+      "dia_inicio": 151,
+      "dia_fim": 240,
+      "descricao": "Surgem flores brancas pequenas no alto das hastes, e embaixo da terra os rizomas engrossam e se alongam. Se algum rizoma aparecer na superfície, cubra-o com substrato: exposto à luz ele fica verde e fibroso."
+    },
+    {
+      "fase_id": "maturacao",
+      "nome": "Maturação",
+      "dia_inicio": 241,
+      "dia_fim": 285,
+      "descricao": "As folhas amarelam e secam de baixo para cima; é o sinal de que o amido está se concentrando nos rizomas. Reduza a rega. Quando quase toda a folhagem estiver seca, os rizomas estão prontos."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 286,
+      "dia_fim": 300,
+      "descricao": "Vire o vaso sobre uma lona e separe os rizomas: brancos, firmes, de 15 a 30 cm. Colhidos muito tarde, ficam fibrosos e começam a rebrotar, perdendo amido."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar os rizomas plantados",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 25,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Se ainda estiver úmido, não regue: rizoma sem broto apodrece com excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar a araruta",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 26,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C ou com folhas enroladas, confira todo dia. Um vaso de 30 L com a touceira formada seca num dia quente, e a seca nesta fase deixa os rizomas finos e fibrosos.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Rega leve na maturação",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 241,
+      "dia_fim_ciclo": 285,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue pouco, só se estiver seco nessa profundidade. Substrato encharcado com a folhagem secando apodrece os rizomas prontos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar e cobrir os rizomas",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 210,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto por vaso de 30 L sobre o substrato, afastado 3 cm das hastes, e regue em seguida. Aproveite para cobrir com essa camada qualquer rizoma que esteja aparecendo na superfície.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 26,
+      "dia_fim_ciclo": 285,
+      "instrucoes": "Procure folhas enroladas e presas com fios de seda (lagarta dentro), pontinhos amarelados com teia fina no verso (ácaro) e carapaças brancas ou marrons nas hastes (cochonilha).",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "A araruta brotou?",
+      "mensagem": "A maioria dos rizomas já deve ter soltado brotos pontudos.",
+      "acao_requerida": "Se algum ponto do vaso não brotou, afaste a terra com cuidado: rizoma mole e escuro está podre e deve ser retirado; rizoma firme só precisa de mais uns dias"
+    },
+    {
+      "dia_disparo": 241,
+      "titulo": "Folhas amarelando: é a maturação",
+      "mensagem": "O amarelecimento agora é natural e mostra que o amido está indo para os rizomas. A rega passa a ser bem mais espaçada.",
+      "acao_requerida": "Deixar de regar a cada 2 dias e seguir a rega leve, sem adubar mais"
+    },
+    {
+      "dia_disparo": 286,
+      "titulo": "Hora de colher a araruta",
+      "mensagem": "Com a folhagem quase toda seca, os rizomas atingiram o máximo de amido.",
+      "acao_requerida": "Virar o vaso sobre uma lona, soltar os rizomas sem quebrar e separar os mais grossos para consumo e alguns pedaços com gemas para replantar"
+    },
+    {
+      "dia_disparo": 300,
+      "titulo": "Guardar rizomas para replantar",
+      "mensagem": "Os rizomas para o próximo plantio precisam passar o inverno sem secar nem apodrecer.",
+      "acao_requerida": "Guardar os pedaços com gemas em caixa com areia levemente úmida ou serragem, em lugar fresco e escuro, até a primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Brotos que não saem ou murcham; rizomas moles, escuros e com cheiro ruim; base das hastes amolecida",
+      "prevencao_tratamento": "Substrato com areia e vaso com furos livres; regar só com o substrato seco a 3 cm; plantar só rizomas firmes; retirar e descartar as partes podres"
+    },
+    {
+      "nome": "Lagarta-enroladeira (Calpodes ethlius)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas enroladas em tubo presas com fios de seda, com uma lagarta verde de cabeça escura dentro; folhas comidas pelas bordas",
+      "prevencao_tratamento": "Abrir as folhas enroladas e retirar as lagartas à mão; em infestação grande, Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto opaco e teia fina no verso; piora com calor e ar seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodonosas ou marrons nas hastes e no verso das folhas; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Retirar com cotonete com álcool; em muitas, calda de sabão neutro com óleo de neem a cada 7 dias"
+    },
+    {
+      "nome": "Queima das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas pardas e secas no meio das folhas ou pontas queimadas, nas folhas mais expostas",
+      "prevencao_tratamento": "Evitar sol forte depois das 11h no verão; mover o vaso para meia-sombra e manter a rega em dia"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger a araruta do frio",
+      "mensagem": "A araruta é tropical: geada queima as folhas e frio com terra molhada apodrece os rizomas.",
+      "acao_requerida": "Nas noites abaixo de 8 °C, levar o vaso para perto de uma parede ou para dentro de casa e não regar à noite"
+    }
+  ]
+}

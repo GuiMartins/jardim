@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Castanha-do-maranhão",
+    "nome_cientifico": "Pachira glabra",
+    "descricao": "Árvore nativa da Mata Atlântica, de caule verde e engrossado na base, que em vaso vira uma planta ornamental resistente para varanda ou para perto de janela bem iluminada. É vendida como 'money tree', às vezes com os caules trançados. Em vaso grande, ao sol, pode florescer depois de 3 ou 4 anos e dar castanhas comestíveis depois de torradas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, barro ou fibra com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com vários furos no fundo; prato sem água parada",
+    "volume_minimo_litros": 20,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa ou perlita, 20% casca de pinus fina, 10% húmus de minhoca; precisa escorrer a água em segundos",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma com o vaso novo e com a luz da casa. É normal cair de 2 a 5 folhas velhas nas primeiras semanas. A fase acaba quando surge uma folha nova, clara e brilhante, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes tomam o vaso e a planta solta folhas novas a cada poucas semanas na primavera e no verão. O caule engrossa aos poucos na base. Se os ramos ficarem compridos e com folhas espaçadas, falta luz: aproxime o vaso da janela."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Cresce com força de setembro a março e quase para no inverno, quando pode perder algumas folhas. A poda de formação é feita no começo da primavera. Com sol da manhã e vaso grande, pode dar flores brancas de estames longos no verão, seguidas de frutos com castanhas. Troque o substrato a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. O torrão da muda ainda é pequeno e seca antes do resto do vaso.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a castanha-do-maranhão",
+      "tipo": "REGA",
+      "frequencia_dias": 6,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o prato. No verão, acima de 30 °C, confira a cada 4 dias; no inverno, a cada 10 a 12 dias. Na dúvida, espere: o caule guarda água, e o excesso apodrece a raiz.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 3 colheres de sopa de húmus de minhoca) por vaso de 20 L, longe do caule, e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas dos ramos: procure bolinhas brancas de algodão, escamas marrons, teias finas ou pontinhos amarelados. Aperte a base do caule: ele precisa estar firme, não mole.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro. Tire a planta do vaso, solte um terço do substrato velho, corte raízes pretas ou moles e replante com substrato novo, num vaso 5 cm maior se as raízes estiverem enroladas. Não enterre o caule mais fundo que antes e só volte a regar depois de 2 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Folhas caindo? Calma",
+      "mensagem": "Na adaptação é comum cair algumas folhas velhas. Só é problema se as folhas novas também caírem ou se o caule ficar mole.",
+      "acao_requerida": "Não mudar o vaso de lugar nem aumentar a rega; apertar a base do caule para conferir se está firme"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Gire o vaso",
+      "mensagem": "A castanha-do-maranhão entorta em direção à luz. Com a muda já firme, dá para começar o hábito de girar o vaso.",
+      "acao_requerida": "Girar o vaso um quarto de volta a cada rega daqui em diante"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de planta",
+      "mensagem": "As raízes já devem ocupar o vaso. Raiz saindo pelos furos ou água escorrendo direto sem molhar o torrão pedem vaso maior.",
+      "acao_requerida": "Olhar os furos do fundo; se houver raiz saindo, trocar para um vaso 5 cm maior na próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo com o substrato úmido; base do caule mole, enrugada ou escura; cheiro azedo no vaso",
+      "prevencao_tratamento": "Só regar com o substrato seco a 5 cm e nunca deixar água no prato. Se o caule amolecer, tire do vaso, corte raízes e partes moles até o tecido firme, deixe secar 1 dia e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas axilas das folhas e no verso; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; depois, óleo de neem a 0,5% com detergente neutro a cada 7 dias, por 3 aplicações, no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons e duras grudadas no caule e nas nervuras; folhas amareladas",
+      "prevencao_tratamento": "Raspe com escova de dente macia e água com sabão neutro; em seguida, óleo mineral a 1% a cada 10 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, aspecto empoeirado e teias finas no verso, principalmente em ambiente seco",
+      "prevencao_tratamento": "Lave o verso das folhas com jato de água e aumente a umidade em volta; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrons secas ou folhas esbranquiçadas no lado virado para o sol, logo depois de mudar de lugar",
+      "prevencao_tratamento": "Acostume ao sol aos poucos, começando com 1 hora de sol da manhã e aumentando ao longo de 2 semanas; evite sol das 11h às 15h no verão"
+    },
+    {
+      "nome": "Queda de folhas por frio ou mudança de ambiente",
+      "tipo": "DISTURBIO",
+      "sintomas": "Muitas folhas amarelam e caem de uma vez após frente fria, vento ou troca de lugar, com o caule firme",
+      "prevencao_tratamento": "Mantenha longe de correntes de ar, ar-condicionado e temperaturas abaixo de 10 °C; reduza a rega até brotar de novo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteger e regar menos",
+      "mensagem": "Com o frio, a castanha-do-maranhão quase para de crescer e bebe pouca água. Abaixo de 10 °C as folhas queimam, e substrato frio e molhado apodrece a raiz.",
+      "acao_requerida": "Levar o vaso para dentro ou para perto de uma parede nas noites abaixo de 10 °C, espaçar a rega para cada 10 a 12 dias e não adubar até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No começo da primavera a planta volta a brotar com força, e é a melhor época para dar forma à copa e deixá-la mais cheia.",
+      "acao_requerida": "Cortar com tesoura limpa os ramos compridos e sem folhas logo acima de um nó, tirando no máximo um terço da copa, e retomar a adubação"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: conferir a rega mais vezes",
+      "mensagem": "No calor, o vaso seca bem mais rápido e as folhas novas podem murchar à tarde.",
+      "acao_requerida": "Conferir o substrato a cada 4 dias e, ao sol, proteger o vaso do sol forte depois das 11h"
+    }
+  ]
+}

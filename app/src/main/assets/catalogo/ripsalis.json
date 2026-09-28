@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Ripsális",
+    "nome_cientifico": "Rhipsalis baccifera",
+    "descricao": "Cacto epífito das matas úmidas, nativo inclusive do Brasil, que vive sobre troncos e forma cascatas de ramos finos e cilíndricos, por isso também é chamado de cacto-macarrão. Não tem espinhos, tolera a luz filtrada de dentro de casa e dá flores brancas miúdas seguidas de bagas brancas translúcidas. Diferente dos cactos de deserto, gosta de umidade e não suporta sol forte o dia inteiro.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pendente de plástico ou cerâmica com 15 a 20 cm de diâmetro e 12 a 15 cm de altura, com furos no fundo; também vai bem em cachepô de fibra de coco ou preso em tronco",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% casca de pinus fina (tipo orquídea), 40% substrato para plantas com fibra de coco, 20% perlita ou carvão vegetal picado; leve, aerado e que seque em poucos dias",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se acostuma à nova luz e umidade. É normal cair um ou outro segmento solto ou os ramos ficarem um pouco mais claros. Não troque de vaso nem adube agora, a não ser que o substrato esteja encharcado e com cheiro azedo. A fase termina quando surgem pontas novas verde-claras na extremidade dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "Ramos novos se alongam e se ramificam em tufos na ponta. Se eles saem finos, compridos e verde-pálidos, falta luz: aproxime o vaso de uma janela clara. Se ficam avermelhados ou amarelados, há sol demais. A fase termina quando a planta cresce de forma contínua, sem perder segmentos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão, desacelera no inverno. No fim do inverno e começo da primavera surgem flores brancas de 5 mm ao longo dos ramos, seguidas de bagas brancas que ficam por semanas. Ramos com mais de 1 m podem ser aparados; os pedaços de 10 cm enraízam fácil em substrato úmido e viram mudas novas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a ripsális",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. Se ainda estiver úmido, espere mais 2 dias. No inverno espace para cada 8 a 10 dias; no verão acima de 30 °C, confira a cada 3 dias. Ramos murchos e enrugados indicam sede.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a ripsális",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido para orquídeas ou NPK 10-10-10 na metade da dose do rótulo (cerca de 1 g por litro) e regue com ele o substrato já úmido. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar os ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os tufos de ramos e olhe as junções e a base perto do substrato. Procure bolinhas brancas algodonosas, escamas marrons grudadas, ramos moles e escuros na base ou trilhas de lesma.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, solte com cuidado o substrato velho e esfarelado, corte raízes pretas ou moles e replante no mesmo vaso (ou num 2 a 3 cm mais largo) com substrato novo. Espere 5 dias para voltar a regar normalmente.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar da ripsális",
+      "mensagem": "Ela gosta de luz clara e indireta ou só de sol da manhã, como sob uma árvore na mata. Sol da tarde queima os ramos.",
+      "acao_requerida": "Pendurar o vaso perto de uma janela clara ou numa varanda com no máximo 2 horas de sol da manhã e sem vento forte"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Adaptação concluída",
+      "mensagem": "A planta já se ajustou ao lugar. A partir de agora ela pode receber adubo leve na época de crescimento.",
+      "acao_requerida": "Conferir se há pontas novas verde-claras; se não houver nenhuma, aproximar o vaso de uma fonte de luz mais forte"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e da base (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Ramos amolecem, ficam translúcidos ou escuros na base e se soltam com facilidade; substrato com cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco nos 2 cm de cima e nunca deixar água no prato. Se aparecer, tire a planta, corte as partes moles, deixe secar 2 dias e replante em substrato novo; salve ramos sadios como estacas"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos nas junções dos ramos e perto do substrato; ramos amarelados e crescimento parado",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com algumas gotas de detergente a cada 7 dias, 3 vezes, à sombra"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou brancas grudadas nos ramos, que saem raspando com a unha",
+      "prevencao_tratamento": "Raspar com escova de dente macia e água com sabão neutro; repetir o óleo de neem a 0,5% semanalmente até sumirem"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Ramos roídos nas pontas e trilhas brilhantes no vaso, sobretudo em plantas na varanda ou encostadas em outros vasos",
+      "prevencao_tratamento": "Catar à noite com lanterna, manter o vaso suspenso e afastado de outros vasos no chão"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos avermelhados, amarelos ou com manchas esbranquiçadas e secas no lado virado para o sol",
+      "prevencao_tratamento": "Mudar para um lugar com luz filtrada ou só sol da manhã; os ramos manchados não recuperam, mas os novos saem verdes"
+    },
+    {
+      "nome": "Falta de luz (estiolamento)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos novos finos, compridos, verde-pálidos e sem ramificar; nunca floresce",
+      "prevencao_tratamento": "Levar para mais perto de uma janela clara ou para um lugar com 1 a 2 horas de sol da manhã"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a ripsális quase para de crescer e o substrato demora mais a secar. Excesso de água agora é a principal causa de podridão.",
+      "acao_requerida": "Espaçar a rega para cada 8 a 10 dias conferindo com o dedo, suspender o adubo e proteger de temperaturas abaixo de 5 °C levando o vaso para dentro"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "Surgem botões e flores brancas miúdas ao longo dos ramos, seguidas de bagas brancas. Mudar a planta de lugar ou virar o vaso agora faz os botões caírem.",
+      "acao_requerida": "Manter o vaso no mesmo lugar e na mesma posição até as flores abrirem"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e ar seco",
+      "mensagem": "Com calor forte o substrato seca rápido e o sol da tarde queima os ramos.",
+      "acao_requerida": "Conferir a rega a cada 3 dias, tirar o vaso de qualquer sol da tarde e, em dias muito secos, borrifar água nos ramos pela manhã"
+    }
+  ]
+}

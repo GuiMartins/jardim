@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Helicônia-papagaio",
+    "nome_cientifico": "Heliconia psittacorum",
+    "descricao": "Helicônia de porte pequeno (0,6 a 1,5 m), nativa do Brasil, com brácteas laranja, vermelhas ou amarelas de ponta verde que lembram o bico de um papagaio. É a helicônia que melhor se adapta a vaso: forma touceira pelo rizoma, floresce da primavera ao outono e atrai beija-flores.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo, com pelo menos 35 cm de diâmetro e 30 cm de profundidade, com vários furos no fundo; a touceira cresce para os lados, então prefira vaso mais largo que alto",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% fibra de coco, 10% areia grossa ou perlita; rico em matéria orgânica, que segure umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o rizoma a 3 a 5 cm abaixo da superfície, sem enterrar a base dos pseudocaules. Folhas velhas podem amarelar e secar nas pontas. A fase termina quando surge um broto novo, enrolado como um charuto, saindo do substrato ao lado da muda."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "O rizoma se espalha pelo vaso e lança novos pseudocaules a cada poucas semanas; as folhas ficam maiores e mais firmes. Com sol e calor, os primeiros pendões florais podem aparecer no fim desta fase, saindo do topo de pseudocaules com 5 a 6 folhas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Touceira formada que floresce de setembro a maio, com pico no verão; cada pendão dura semanas. Cada pseudocaule floresce uma única vez e depois seca: corte-o rente ao substrato para dar espaço aos novos. No inverno o crescimento para quase por completo e as folhas podem rasgar ou queimar com o frio. A cada dois anos a touceira ocupa o vaso todo e precisa ser dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de helicônia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver só levemente úmido ou seco, regue devagar até escorrer pelos furos. Nesta fase as raízes ainda não exploram o vaso e o torrão da muda seca rápido. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a helicônia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão, com sol pleno, confira a cada 2 dias: folhas enroladas no meio do dia pedem água. No inverno espace para a cada 5 a 7 dias, porque substrato frio e encharcado apodrece o rizoma.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a helicônia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 ou meio copo de bokashi ou húmus por vaso de 20 L, longe da base dos caules, e regue em seguida. De junho a agosto, suspenda: a planta está parada e o adubo só salga o substrato.",
+      "critica": false
+    },
+    {
+      "id": "poda_limpeza",
+      "titulo": "Limpar a touceira",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte rente ao substrato os pseudocaules cujo pendão já secou e as folhas secas ou rasgadas mais de pela metade. Deixe as folhas saudáveis: são elas que alimentam o rizoma para a próxima floração.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brácteas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e a nervura central à procura de pontinhos brancos ou marrons presos (cochonilha) e teias finas com folha pontilhada de amarelo (ácaro). Abra levemente as brácteas das flores e veja se há insetos ou água parada escurecendo o interior. Aperte a base dos caules: mole e com cheiro ruim é podridão.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro: tire a planta do vaso, corte o rizoma com faca limpa em pedaços com 2 ou 3 pseudocaules e raízes cada um, descarte partes moles ou escuras e replante uma divisão no vaso com substrato novo. As outras viram mudas para outros vasos.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Acostumar ao sol pleno",
+      "mensagem": "Mudas de viveiro costumam vir da meia-sombra; ir direto para o sol forte queima as folhas em manchas brancas.",
+      "acao_requerida": "Se a muda ainda está na sombra, passe a dar sol da manhã por uma semana e só então mude para o local de sol pleno"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Primeiros brotos: começar a adubar",
+      "mensagem": "A muda já deve ter enraizado e soltado um broto novo. Agora ela aproveita adubo para formar a touceira.",
+      "acao_requerida": "Conferir se há broto novo saindo do substrato e fazer a primeira adubação; sem broto, espere mais 15 dias antes de adubar"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Época das primeiras flores",
+      "mensagem": "Com 5 a 6 folhas por pseudocaule e sol de pelo menos 4 horas, os primeiros pendões costumam surgir por agora. Se não aparecerem na estação quente, falta luz.",
+      "acao_requerida": "Conferir o topo dos pseudocaules mais altos e, se não houver pendão e for primavera ou verão, mover o vaso para um local com mais sol direto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base dos pseudocaules mole, escura e com cheiro ruim; folhas amarelam de baixo para cima e o caule tomba",
+      "prevencao_tratamento": "Não regar com o substrato ainda úmido, sobretudo no inverno, e não deixar água no pratinho. Tire a planta do vaso, corte as partes podres do rizoma até chegar em tecido firme e claro, deixe secar à sombra por um dia e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha (Pinnaspis, Coccus)",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças pequenas brancas ou marrons presas no verso das folhas e nas bainhas; folhas pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em água com sabão neutro; se voltar, pulverize óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, 3 vezes com intervalo de 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos que depois ficam prateadas e secas; teias finas no verso, comum em varanda coberta e tempo seco",
+      "prevencao_tratamento": "Molhe o verso das folhas com jato fino nos dias secos; se persistir, óleo de neem a 0,5% a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Mancha foliar (Bipolaris, Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ovais com borda amarelada nas folhas, que crescem e se juntam em tempo quente e úmido",
+      "prevencao_tratamento": "Regue no substrato, sem molhar as folhas à noite, e corte as folhas muito manchadas; em ataque forte, fungicida à base de cobre conforme o rótulo"
+    },
+    {
+      "nome": "Queima por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com manchas encharcadas que escurecem e secam depois de noites abaixo de 10 °C; em geada, o pseudocaule inteiro morre",
+      "prevencao_tratamento": "No inverno, encoste o vaso numa parede voltada para o norte ou leve para área coberta nas noites frias. Corte só na primavera o que secou: o rizoma costuma rebrotar"
+    },
+    {
+      "nome": "Folhas enroladas e bordas secas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas se enrolam como um tubo no meio do dia e as bordas ficam marrons e quebradiças",
+      "prevencao_tratamento": "Sinal de falta de água ou vento forte: regue mais vezes no verão, confira o dedo no substrato a cada 2 dias e afaste o vaso de corredores de vento"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: helicônia em repouso",
+      "mensagem": "Com o frio a helicônia quase para de crescer. Água e adubo em excesso agora apodrecem o rizoma, e noites abaixo de 10 °C queimam as folhas.",
+      "acao_requerida": "Espaçar a rega para quando os 3 cm de cima estiverem secos, suspender a adubação até setembro e proteger o vaso do frio nas noites geladas"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o crescimento",
+      "mensagem": "O calor volta e a touceira começa a brotar e preparar as flores da estação.",
+      "acao_requerida": "Cortar rente ao substrato os caules e folhas queimados pelo frio, espalhar uma camada de 2 cm de composto e voltar a adubar e regar no ritmo normal"
+    }
+  ]
+}

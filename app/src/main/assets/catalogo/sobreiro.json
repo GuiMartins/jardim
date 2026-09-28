@@ -1,0 +1,204 @@
+{
+  "planta": {
+    "nome_comum": "Sobreiro",
+    "nome_cientifico": "Quercus suber",
+    "descricao": "Carvalho perene do Mediterrâneo. A cortiça sai da casca dele, que é grossa e esponjosa. No chão vira árvore de 15 a 20 m e vive séculos. No vaso cresce devagar, aguenta bem a seca e pode ser conduzido como arvoreta ou bonsai. O que mais mata o sobreiro em vaso é substrato encharcado ou calcário.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de cerâmica ou plástico grosso, com pelo menos 40 cm de profundidade e 40 cm de diâmetro e vários furos no fundo. A raiz pivotante precisa de profundidade.",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% casca de pinus fina e 10% húmus de minhoca. Deve ficar levemente ácido (pH 5,5 a 6,5), sem calcário e sem cinza.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante e pode perder algumas folhas velhas. Isso é normal enquanto as pontas continuarem verdes e flexíveis. A fase termina quando surgem folhas novas, claras e macias, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a muda solta de 1 a 3 fluxos de brotação, sobretudo na primavera. As folhas maduras ficam verde-escuras em cima e acinzentadas e felpudas embaixo. O caule começa a engrossar e a ficar áspero."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A planta cresce de 15 a 30 cm por ano e forma a copa. Esta é a época das podas de formação, feitas no fim do inverno. A casca do tronco começa a ficar esponjosa: é a cortiça se formando."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "O sobreiro fica sempre verde e renova parte das folhas na primavera. Brota forte de setembro a novembro e desacelera no calor úmido do verão e no inverno. Em vaso, pode florescer em amentos discretos na primavera, mas dificilmente dá bolotas. A cortiça engrossa ano a ano. Nunca descasque o tronco."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de sobreiro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 15 minutos. Se ainda estiver úmido, não regue. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o sobreiro",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Regue até escorrer pelos furos só se estiver seco nessa profundidade e nunca deixe água parada no pratinho. No inverno e em semanas de chuva, o intervalo pode passar de 7 dias. No calor seco, de 2 a 3 dias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e procure pó branco, carocinhos grudados nos ramos, insetos agrupados ou folhas roídas. Olhe também a base do tronco: casca mole ou escura rente ao substrato indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato ou o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso. Se as raízes estiverem enoveladas, passe para um vaso 5 a 10 cm maior. Se ela já estiver no tamanho final, apare 1/4 da periferia da raiz e volte para o mesmo vaso. Use substrato novo e ácido, sem enterrar o colo mais fundo do que estava.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Confira a drenagem",
+      "mensagem": "O sobreiro tolera seca, mas morre com a raiz encharcada. Água que demora a sumir depois da rega é o primeiro sinal de problema.",
+      "acao_requerida": "Regar e ver se a água escorre pelos furos em até 1 minuto. Se empoçar na superfície, desentupir os furos ou refazer o substrato com mais areia grossa"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Muda firme, sem adubo forte",
+      "mensagem": "As raízes novas já se espalharam. A partir de agora, a adubação segue os lembretes da estação de crescimento.",
+      "acao_requerida": "Não usar adubo químico concentrado nem calcário. Só adubar quando chegar o lembrete sazonal"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de sobreiro",
+      "mensagem": "A planta completou o estabelecimento e entra na fase de formar a copa.",
+      "acao_requerida": "Conferir se há raízes saindo pelos furos do fundo e escolher o ramo mais forte e reto para ser o líder do tronco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão radicular (Phytophthora cinnamomi)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e secam de cima para baixo mesmo com o substrato úmido. Raízes escuras e moles, que soltam a casca ao puxar. Mancha escura na base do tronco.",
+      "prevencao_tratamento": "Substrato bem drenado, sem pratinho com água e regas só com o substrato seco a 5 cm. Aos primeiros sinais, tire do vaso, corte as raízes podres, replante em substrato novo e seco e regue pouco por 2 semanas"
+    },
+    {
+      "nome": "Oídio (Erysiphe alphitoides)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco nas folhas novas, que ficam retorcidas e depois escurecem",
+      "prevencao_tratamento": "Sol pleno e boa ventilação, sem molhar as folhas ao regar. Retire as folhas muito atacadas e aplique bicarbonato de sódio a 0,5% com algumas gotas de detergente neutro a cada 7 dias, no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou algodão branco grudados nos ramos e no verso das folhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%. Em infestação maior, aplique óleo mineral a 1% ou óleo de neem a 0,5% a cada 7 dias, 3 vezes, fora do sol forte"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nas brotações novas, que ficam enroladas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas brotações; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas, fezes escuras em grânulos sobre as folhas de baixo",
+      "prevencao_tratamento": "Catar à mão; em ataque forte, Bacillus thuringiensis (Dipel) conforme o rótulo"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes",
+      "prevencao_tratamento": "Substrato alcalino ou com calcário bloqueia o ferro. Troque por substrato ácido e aplique quelato de ferro conforme o rótulo; evite água muito calcária e nunca use calcário no vaso"
+    },
+    {
+      "nome": "Queimadura por seca no vaso",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas secas e marrons, folhas caindo em massa depois de um calorão",
+      "prevencao_tratamento": "Mesmo resistente à seca, o sobreiro em vaso esgota a água mais rápido que no chão. No calor, confira o substrato a cada 2 dias. Vaso de cor clara ou protegido do sol direto na lateral esquenta menos a raiz"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        11,
+        1
+      ],
+      "titulo": "Adubar o sobreiro",
+      "mensagem": "É a estação de crescimento: a planta aproveita o adubo para as brotações novas.",
+      "acao_requerida": "Espalhar 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de adubo de liberação lenta (tipo Osmocote) por vaso de 40 L sobre o substrato, longe do tronco, e regar em seguida"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno a planta está quase parada e cicatriza bem antes da brotação da primavera.",
+      "acao_requerida": "Tirar os ramos secos, cruzados e os que brotam no tronco abaixo da copa, com tesoura limpa, cortando rente a uma gema. Nunca remover mais de 1/4 da copa por ano nem ferir a casca do tronco"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Menos água no inverno",
+      "mensagem": "Com frio e dias curtos, o sobreiro quase não cresce e o substrato demora a secar.",
+      "acao_requerida": "Espaçar as regas: regar só quando o substrato estiver seco a 5 cm, o que pode levar mais de uma semana"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Cuidado com o encharcamento no verão",
+      "mensagem": "O calor úmido e as chuvas de verão favorecem a podridão da raiz, principal causa de morte do sobreiro fora do Mediterrâneo.",
+      "acao_requerida": "Tirar o pratinho ou esvaziá-lo depois de cada chuva e não regar se o substrato ainda estiver úmido a 5 cm"
+    }
+  ]
+}

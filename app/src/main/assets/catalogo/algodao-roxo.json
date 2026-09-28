@@ -1,0 +1,225 @@
+{
+  "planta": {
+    "nome_comum": "Algodão-roxo",
+    "nome_cientifico": "Gossypium barbadense (forma de folhas arroxeadas)",
+    "descricao": "Arbusto perene de folhas e flores tingidas de vinho, cultivado nos quintais brasileiros como planta medicinal e ornamental. Em vaso fica com 1,5 a 2 m e dá capulhos de algodão branco depois da floração amarela com centro roxo. Folhas e sementes contêm gossipol: não faça chá sem orientação e mantenha longe de crianças, animais e gestantes.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Semeie em copo ou saquinho de 500 mL com furos; depois transplante para vaso definitivo com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% húmus de minhoca, 25% areia grossa ou perlita, com 1 colher de sopa de calcário dolomítico para cada 10 L; o algodoeiro não tolera solo ácido nem encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Deixe as sementes de molho em água morna por 12 horas e semeie 2 por copo, a 2 cm de profundidade. Com mais de 22 °C, as plântulas saem entre o 5º e o 10º dia, com dois cotilédones largos em forma de rim."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 11,
+      "dia_fim": 35,
+      "descricao": "Surgem as primeiras folhas verdadeiras, lobadas e já arroxeadas nas nervuras. A fase termina quando a muda tem 4 a 5 folhas e as raízes aparecem nos furos do copo."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 36,
+      "dia_fim": 90,
+      "descricao": "Depois do transplante, o caule engrossa e a planta ramifica. A cor roxa fica mais intensa quanto mais sol a planta recebe; folhas verdes demais indicam falta de luz."
+    },
+    {
+      "fase_id": "floracao_frutificacao",
+      "nome": "Primeira Floração e Frutificação",
+      "dia_inicio": 91,
+      "dia_fim": 180,
+      "descricao": "Aparecem os botões protegidos por brácteas franjadas e as flores amarelas com mancha roxa na base, que duram um dia e escurecem. Cerca de 50 a 60 dias depois de cada flor, a maçã seca, abre e mostra o algodão."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto lenhoso que cresce e floresce da primavera ao outono, desacelera no inverno e rebrota depois da poda de fim de inverno. As folhas podem ser colhidas em qualquer época, tirando no máximo um terço da copa de cada vez."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Manter as sementes úmidas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Toque a superfície do copo: se o primeiro centímetro estiver seco, regue com borrifador ou em fio fino até umedecer. Substrato encharcado apodrece a semente, então não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar a muda no copo",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 35,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue até escorrer pelos furos. O copo pequeno seca em um dia de sol e a muda murcha sem se recuperar.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o algodão-roxo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão acima de 30 °C, confira a cada 2 dias; no inverno, a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar o algodão-roxo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou 1 colher de sopa de NPK 10-10-10 por vaso de 30 L, longe do caule, e regue em seguida. Na floração, prefira farinha de ossos ou NPK 4-14-8. Suspenda de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pulgões, mosquinhas brancas que levantam voo, teias finas ou pontos amarelados. Abra alguns botões florais caídos e veja se há furos ou larvas dentro.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, corte 3 a 4 cm das raízes enoveladas em volta do torrão e replante em substrato novo, num vaso do mesmo tamanho ou até 10 cm maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Se as duas sementes germinaram, elas vão disputar o copo e as duas enfraquecem.",
+      "acao_requerida": "Cortar rente ao substrato a plântula mais fraca de cada copo, com tesoura, sem arrancar"
+    },
+    {
+      "dia_disparo": 36,
+      "titulo": "Transplantar para o vaso definitivo",
+      "mensagem": "A muda já ocupa o copo todo; esperar mais deixa a raiz enovelada e atrasa o crescimento.",
+      "acao_requerida": "Passar a muda com o torrão inteiro para o vaso de pelo menos 30 L, na mesma altura do caule, e regar bem"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Despontar para ramificar",
+      "mensagem": "Em vaso, cortar a ponta do ramo principal faz a planta ficar mais baixa e cheia de galhos, com mais flores.",
+      "acao_requerida": "Cortar os 3 a 5 cm da ponta do caule principal, logo acima de uma folha, se a planta passar de 50 cm"
+    },
+    {
+      "dia_disparo": 91,
+      "titulo": "Chegam os primeiros botões",
+      "mensagem": "A planta entra na floração e precisa de rega mais regular: seca forte agora derruba botões e maçãs.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e mudar a adubação para uma fórmula rica em fósforo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas mesmo com substrato úmido, amarelecendo de baixo para cima; base do caule escura e mole; cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm e nunca deixar água no pratinho. Se aparecer, suspenda a rega, corte as raízes escuras e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Pulgão-do-algodoeiro (Aphis gossypii)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verde-escuras no verso das folhas novas e nos brotos; folhas enroladas, pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Jato de água forte no verso das folhas; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, teias finas no verso e folhas que secam e caem, mais comum no calor seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; enxofre molhável ou neem a cada 7 dias se a infestação crescer"
+    },
+    {
+      "nome": "Bicudo (Anthonomus grandis)",
+      "tipo": "PRAGA",
+      "sintomas": "Botões florais amarelados com as brácteas abertas, que caem com um furo e uma larva branca dentro",
+      "prevencao_tratamento": "Recolher e descartar em saco fechado todos os botões caídos; catar os besouros de manhã"
+    },
+    {
+      "nome": "Mancha-de-ramulária (Ramularia areola)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas angulares brancas e pulverulentas no verso das folhas, que amarelam e caem",
+      "prevencao_tratamento": "Regar no substrato sem molhar as folhas, manter a copa arejada e retirar as folhas afetadas; em casos fortes, calda bordalesa"
+    },
+    {
+      "nome": "Queda de botões e maçãs",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões e frutos jovens amarelam e caem sem furo nem larva",
+      "prevencao_tratamento": "Causada por seca, sol insuficiente ou excesso de nitrogênio. Mantenha a rega regular na floração, garanta 6 horas ou mais de sol e reduza o adubo nitrogenado"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O algodoeiro perde folhas abaixo de 10 °C e a geada queima os ramos.",
+      "acao_requerida": "Nas noites abaixo de 8 °C, levar o vaso para perto de uma parede ou sob uma cobertura, e espaçar a rega para quando o substrato estiver seco a 5 cm"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de fim de inverno",
+      "mensagem": "Antes da brotação da primavera, a poda renova a copa e mantém o arbusto no tamanho do vaso.",
+      "acao_requerida": "Cortar os ramos a um terço do comprimento, acima de uma gema, e retirar galhos secos, cruzados ou fracos"
+    },
+    {
+      "meses": [
+        3,
+        4,
+        5
+      ],
+      "titulo": "Colher os capulhos",
+      "mensagem": "As maçãs formadas no verão abrem no outono e o algodão molha e mofa se ficar na planta com chuva.",
+      "acao_requerida": "Puxar o algodão das maçãs já abertas e secas, separar as sementes se quiser semear e descartar as maçãs escurecidas"
+    }
+  ]
+}

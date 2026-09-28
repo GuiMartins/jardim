@@ -1,0 +1,208 @@
+{
+  "planta": {
+    "nome_comum": "Cenoura",
+    "nome_cientifico": "Daucus carota subsp. sativus (grupo Brasília)",
+    "descricao": "Hortaliça de raiz doce e crocante, rica em betacaroteno. Esta ficha segue as cenouras do grupo Brasília, as mais vendidas no Brasil, porque aguentam calor e resistem à queima-das-folhas. Na natureza a cenoura é bienal, mas em casa ela é colhida no primeiro ano e cultivada como anual.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 100,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira ou vaso com pelo menos 30 cm de profundidade livre de substrato e vários furos no fundo; raiz que bate no fundo entorta ou bifurca",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal peneirada, 30% areia grossa lavada, 20% húmus de minhoca; sem pedras, torrões ou esterco fresco, que fazem a raiz bifurcar e ficar peluda",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Semeie em sulcos de 1 cm de profundidade, espaçados 10 cm, e cubra com uma camada fina de substrato peneirado. A cenoura é lenta: as plântulas, finas como fios de cabelo, surgem entre o 7º e o 14º dia. Se a superfície secar nesse período, a germinação falha."
+    },
+    {
+      "fase_id": "plantulas",
+      "nome": "Plântulas",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "Aparecem as primeiras folhas verdadeiras, recortadas como as da salsinha. É a fase dos desbastes: plantas apertadas não formam raiz."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 36,
+      "dia_fim": 70,
+      "descricao": "A folhagem fica cheia, com 20 a 30 cm, e a raiz cresce em comprimento, ainda fina. Se o topo da raiz aparecer fora do substrato, cubra-o com um pouco de substrato para não esverdear."
+    },
+    {
+      "fase_id": "engrossamento_raiz",
+      "nome": "Engrossamento da Raiz",
+      "dia_inicio": 71,
+      "dia_fim": 90,
+      "descricao": "A raiz ganha diâmetro e cor laranja intensa. Nesta fase, a rega irregular (secar muito e depois encharcar) racha a raiz no sentido do comprimento."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 91,
+      "dia_fim": 100,
+      "descricao": "O ombro da raiz, visível rente ao substrato, tem de 3 a 4 cm de diâmetro. Passado do ponto, a cenoura fica lenhosa e pode rachar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife ou regue com regador de crivo fino pela manhã até umedecer os 2 primeiros centímetros. A superfície não pode formar crosta seca. Em dias acima de 28 °C, confira de novo no fim da tarde.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cenoura",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Enfie o dedo 3 cm no substrato: se estiver seco, regue devagar até escorrer pelos furos. Mantenha a umidade constante, sem encharcar. No inverno, com o substrato ainda úmido, pule a rega; acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubação de cobertura",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 80,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca e 1 colher de chá de cinza de madeira peneirada (potássio) a cada 10 L de vaso, entre as fileiras e sem encostar nas folhas, e regue em seguida. Não use adubo rico em nitrogênio: ele faz folha e raiz peluda.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Procure manchas marrons com halo amarelo nas folhas mais velhas, pulgões no miolo da touceira e folhas amareladas ou retorcidas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_cenoura",
+      "titulo": "Colher cenouras prontas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": 100,
+      "instrucoes": "Regue na véspera para soltar o substrato. Afaste a terra do ombro: se tiver de 3 a 4 cm de diâmetro, puxe firme pela base das folhas. Deixe as mais finas para a próxima passada.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Primeiro desbaste",
+      "mensagem": "As plântulas estão amontoadas. Sem espaço, nenhuma raiz engrossa.",
+      "acao_requerida": "Deixar uma plântula a cada 2 ou 3 cm na fileira, cortando as outras rente ao substrato com tesoura, sem puxar, para não mexer nas raízes vizinhas"
+    },
+    {
+      "dia_disparo": 35,
+      "titulo": "Desbaste final",
+      "mensagem": "As cenouras precisam de espaço para o diâmetro final. As retiradas agora já podem ir para a salada como minicenouras.",
+      "acao_requerida": "Deixar uma planta a cada 5 a 7 cm, tirando as menos vigorosas, e apertar o substrato em volta das que ficaram"
+    },
+    {
+      "dia_disparo": 91,
+      "titulo": "Primeiras cenouras prontas",
+      "mensagem": "As raízes mais adiantadas já devem estar no ponto.",
+      "acao_requerida": "Afastar o substrato do ombro de algumas plantas, conferir o diâmetro e começar a colheita"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Queima-das-folhas (Alternaria dauci)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras com halo amarelo nas folhas velhas, que secam de fora para dentro; em calor com chuva, a folhagem inteira queima",
+      "prevencao_tratamento": "Regar só o substrato, de manhã; retirar e descartar as folhas atacadas; manter o vaso ventilado. Nos casos fortes, calda bordalesa a 1% a cada 7 dias"
+    },
+    {
+      "nome": "Mancha de cercospora (Cercospora carotae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pequenas manchas circulares claras com borda escura, mais nas folhas novas, que depois se enrolam",
+      "prevencao_tratamento": "Mesmo manejo da queima-das-folhas: folhas secas, ventilação e retirada das folhas afetadas"
+    },
+    {
+      "nome": "Podridão da raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e murchas com o substrato úmido; raiz mole, escura e com cheiro ruim",
+      "prevencao_tratamento": "Vaso com furos livres e substrato arenoso; regar só com os 3 primeiros centímetros secos. Retirar as plantas afetadas"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas recém-nascidas caem com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Substrato novo ou peneirado, sem encharcar na germinação; semear menos denso e retirar as plântulas afetadas"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou acinzentadas no miolo e nos talos; folhas retorcidas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas folhas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Nematoide-das-galhas (Meloidogyne spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Raiz bifurcada e cheia de caroços e raízes finas; plantas atrasadas que murcham no calor mesmo com rega",
+      "prevencao_tratamento": "Usar substrato novo, nunca terra de canteiro com histórico; descartar a terra do vaso atacado e não replantar cenoura nela"
+    },
+    {
+      "nome": "Raiz rachada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Fendas longitudinais na raiz, às vezes até o miolo",
+      "prevencao_tratamento": "Rega constante, sem deixar o substrato secar por completo e depois encharcar; colher no ponto"
+    },
+    {
+      "nome": "Raiz bifurcada ou torta",
+      "tipo": "DISTURBIO",
+      "sintomas": "Raiz com duas ou mais pernas, curta ou retorcida",
+      "prevencao_tratamento": "Substrato solto e peneirado, vaso com pelo menos 30 cm de profundidade, sem esterco fresco nem pedras; semear direto no vaso, porque a cenoura não aceita transplante"
+    },
+    {
+      "nome": "Ombro verde",
+      "tipo": "DISTURBIO",
+      "sintomas": "Topo da raiz verde e amargo",
+      "prevencao_tratamento": "Cobrir com substrato o topo da raiz que ficar exposto ao sol"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor e chuva: atenção às folhas",
+      "mensagem": "No verão, o calor úmido favorece a queima-das-folhas, e as chuvas fortes encharcam o vaso.",
+      "acao_requerida": "Tirar o vaso da chuva direta em dias de temporal, conferir se os furos escoam e retirar as folhas com manchas marrons"
+    }
+  ]
+}

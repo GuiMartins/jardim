@@ -1,0 +1,229 @@
+{
+  "planta": {
+    "nome_comum": "Feijão",
+    "nome_cientifico": "Phaseolus vulgaris (cultivares de porte arbustivo, tipo carioca ou preto)",
+    "descricao": "Leguminosa básica da mesa brasileira. Escolhemos as cultivares de porte arbustivo (crescimento determinado), que cabem em vaso sem tutor e produzem grão seco em cerca de 90 dias. As raízes se associam a bactérias que fixam nitrogênio do ar, então a planta pede pouco adubo nitrogenado.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 90,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de profundidade e 30 cm de diâmetro (cerca de 10 L para 2 plantas), com furos no fundo",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 7,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou casca de arroz carbonizada, mais 1 colher de sopa de calcário dolomítico a cada 10 L (pH 6 a 6,5); solto, porque o feijão não tolera raiz encharcada",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 8,
+      "descricao": "Semeie 3 sementes por cova, a 3 cm de profundidade, com 2 covas por vaso de 10 L. Não deixe as sementes de molho antes: incham demais e apodrecem. O broto sai curvado, puxando as duas folhas grossas (cotilédones) para fora da terra entre o 5º e o 8º dia."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 9,
+      "dia_fim": 35,
+      "descricao": "Abrem as duas folhas simples em formato de coração e, depois, as folhas de três folíolos (trifólios). A planta ramifica e forma uma moita de 30 a 50 cm. Nódulos rosados nas raízes são sinal de fixação de nitrogênio funcionando."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 36,
+      "dia_fim": 50,
+      "descricao": "Surgem flores brancas, lilases ou roxas nas axilas das folhas. É a fase mais sensível: falta de água ou calor acima de 32 °C fazem as flores caírem sem formar vagem. A fase termina quando as primeiras flores dão lugar a vagens finas."
+    },
+    {
+      "fase_id": "formacao_vagens",
+      "nome": "Formação e Enchimento das Vagens",
+      "dia_inicio": 51,
+      "dia_fim": 70,
+      "descricao": "As vagens crescem até 10 a 15 cm e os grãos incham por dentro. Aperte uma vagem de leve: dá para sentir os grãos formados. Ainda precisa de rega regular para os grãos encherem."
+    },
+    {
+      "fase_id": "maturacao_colheita",
+      "nome": "Maturação e Colheita",
+      "dia_inicio": 71,
+      "dia_fim": 90,
+      "descricao": "As folhas amarelam e caem, e as vagens passam de verde para amarelo-palha e depois ficam secas e quebradiças, com os grãos chacoalhando dentro. Colha as vagens secas conforme amadurecem e, no fim, arranque a planta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as covas do feijão",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 8,
+      "instrucoes": "Toque a superfície: se o primeiro centímetro estiver seco, regue com regador de crivo fino só até umedecer, sem empoçar. Semente de feijão encharcada apodrece antes de nascer; seca, não germina.",
+      "critica": true
+    },
+    {
+      "id": "rega_vegetativa",
+      "titulo": "Regar o feijão",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 35,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue na base da planta até escorrer pelos furos, sem molhar as folhas. Acima de 30 °C, confira todo dia; em dias frios e nublados, pode esperar 3 dias.",
+      "critica": false
+    },
+    {
+      "id": "rega_floracao_vagens",
+      "titulo": "Regar o feijão (floração e vagens)",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 36,
+      "dia_fim_ciclo": 70,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, de preferência de manhã. Uma única murcha nesta fase derruba flores e deixa vagens chochas. Se estiver úmido, não regue: raiz encharcada apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Rega leve na maturação",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 71,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Regue só quando o substrato estiver seco a 5 cm de profundidade, com metade da água de antes. Menos água agora ajuda as vagens a secarem na planta; não precisa manter úmido.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o feijão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 50,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca e 1 colher de chá de cinza de madeira (fonte de potássio) por vaso de 10 L, sem encostar no caule, e regue em seguida. Não use ureia nem adubo rico em nitrogênio: vira folha em vez de vagem.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas do feijão",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 9,
+      "dia_fim_ciclo": 80,
+      "instrucoes": "Sacuda a planta de leve e veja se sobe uma nuvem de mosquinhas brancas; vire as folhas e procure ovos, teias finas, furos redondos, pontos cor de ferrugem ou pó branco. Retire folhas muito atacadas e jogue no lixo.",
+      "critica": false
+    },
+    {
+      "id": "colheita_vagens_secas",
+      "titulo": "Colher vagens secas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 75,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Colha as vagens cor de palha que estalam ao apertar e têm grãos chacoalhando dentro; deixe as ainda amareladas para a próxima passada. Espalhe as vagens à sombra por 3 a 5 dias, debulhe e guarde os grãos em pote fechado.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 12,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Com 3 plantas por cova, elas competem por água e luz e produzem menos vagens.",
+      "acao_requerida": "Deixar as 2 plantas mais vigorosas de cada cova (4 por vaso de 10 L no máximo), cortando as outras rente ao substrato com tesoura, sem arrancar"
+    },
+    {
+      "dia_disparo": 36,
+      "titulo": "Floração começando",
+      "mensagem": "As primeiras flores devem aparecer nos próximos dias. Daqui até as vagens encherem, a rega não pode falhar.",
+      "acao_requerida": "Conferir se o vaso pega pelo menos 5 horas de sol e, em dias acima de 32 °C, levá-lo para sombra no começo da tarde"
+    },
+    {
+      "dia_disparo": 86,
+      "titulo": "Fim do ciclo do feijão",
+      "mensagem": "A maioria das vagens já deve estar seca e as folhas caídas.",
+      "acao_requerida": "Arrancar as plantas com as vagens restantes, pendurá-las de cabeça para baixo à sombra por uma semana e debulhar; guardar algumas sementes para a próxima semeadura"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir a planta; ninfas achatadas no verso das folhas; transmite o mosaico-dourado",
+      "prevencao_tratamento": "Armadilha adesiva amarela ao lado do vaso; óleo de neem a 0,5% com algumas gotas de detergente neutro no verso das folhas, no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Besouros verdes com manchas amarelas; furos redondos espalhados nas folhas, graves nas plantas jovens",
+      "prevencao_tratamento": "Catar os besouros de manhã cedo, quando estão lentos; manter o vaso longe de canteiros infestados"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, que ficam bronzeadas; teias finas no verso em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas em dias secos; se persistir, calda de enxofre ou óleo de neem a cada 5 dias"
+    },
+    {
+      "nome": "Mosaico-dourado (Bean golden mosaic virus)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas com mosaico amarelo-ouro brilhante, enrugadas; planta raquítica que quase não forma vagem",
+      "prevencao_tratamento": "Sem cura: arrancar e descartar a planta doente; o controle é evitar a mosca-branca, que transmite o vírus"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum lindemuthianum)",
+      "tipo": "DOENCA",
+      "sintomas": "Nervuras escurecidas no verso das folhas; manchas afundadas, escuras e com borda avermelhada nas vagens",
+      "prevencao_tratamento": "Regar só na base, sem molhar as folhas; usar sementes de planta sadia; retirar partes atacadas e aplicar calda bordalesa se espalhar"
+    },
+    {
+      "nome": "Ferrugem (Uromyces appendiculatus)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas pequenas cor de ferrugem no verso das folhas, que soltam pó marrom ao passar o dedo",
+      "prevencao_tratamento": "Evitar molhar as folhas e deixar espaço entre as plantas; retirar folhas atacadas; calda de enxofre ou bordalesa nos casos fortes"
+    },
+    {
+      "nome": "Podridão radicular (Fusarium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; colo e raízes escurecidos e moles; folhas amarelam de baixo para cima",
+      "prevencao_tratamento": "Substrato bem drenado, vaso com furos livres e rega só quando os 3 cm de cima secarem; descartar a planta atacada e o substrato"
+    },
+    {
+      "nome": "Queda de flores por calor ou falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores caem murchas ou sem formar vagem; poucas vagens apesar de muita flor",
+      "prevencao_tratamento": "Manter a rega regular na floração e proteger o vaso do sol da tarde em dias acima de 32 °C"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor de verão no feijão",
+      "mensagem": "Acima de 32 °C o feijão derruba flores e vagens novas, e o vaso seca em poucas horas.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia e, nas tardes mais quentes, deixar o vaso na sombra das 13h às 16h"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Risco de geada",
+      "mensagem": "O feijão morre com geada e para de crescer abaixo de 10 °C.",
+      "acao_requerida": "Em noites com previsão abaixo de 5 °C, levar o vaso para perto da parede ou para dentro, ou cobri-lo com TNT até o sol da manhã"
+    }
+  ]
+}

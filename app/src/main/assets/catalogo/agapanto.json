@@ -1,0 +1,181 @@
+{
+  "planta": {
+    "nome_comum": "Agapanto",
+    "nome_cientifico": "Agapanthus praecox",
+    "descricao": "Perene de touceira, com raízes carnosas e folhas em fita, que dá hastes altas com bolas de flores azuis ou brancas entre novembro e fevereiro. Aguenta sol forte, vento e alguma seca, e floresce melhor quando as raízes já ocupam o vaso inteiro. Por isso a troca de vaso é rara.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 30 a 35 cm de diâmetro e 25 a 30 cm de profundidade, com furos no fundo. Prefira vaso pesado (cerâmica ou cimento), porque as hastes floridas tombam vasos leves com o vento",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; firme o substrato em volta da muda sem compactar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com a base das folhas (a coroa) na altura da superfície, sem enterrar, para não apodrecer. Algumas folhas externas podem amarelar e secar nesta fase. Isso é normal. A fase termina quando aparecem folhas novas no centro da touceira."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes carnosas se espalham pelo vaso e a touceira ganha folhas. Muda recém-dividida muitas vezes não floresce no primeiro verão: é esperado. Ela está pronta quando as raízes começam a aparecer pelos furos do vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota forte de setembro em diante, lança as hastes florais em outubro e novembro e floresce de novembro a fevereiro. No outono cresce pouco, e no inverno fica quase parada, pedindo pouca água. Com a touceira apertada no vaso, floresce mais. Divida só quando as flores diminuírem ou o vaso começar a rachar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de agapanto",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda não alcançou o vaso inteiro, e o torrão da muda seca antes do resto. Acima de 30 °C, confira a cada 2 dias. Nunca deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o agapanto",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e só regue se estiver seco nessa profundidade. Depois, molhe até escorrer pelos furos. De setembro a março a rega costuma ser a cada 3 a 4 dias. De maio a agosto, espace para a cada 7 a 10 dias: as raízes carnosas guardam água e apodrecem com o substrato frio e encharcado.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra a touceira com as mãos e olhe a base das folhas, onde se escondem cochonilhas (pontos brancos ou marrons fixos). Procure folhas raspadas ou com rastro prateado de lesma. Aperte a base: se estiver mole e com cheiro ruim, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça no outono (março a maio), depois da floração. Tire a planta do vaso e corte o torrão com faca limpa em pedaços de pelo menos 3 a 4 brotos cada. Replante um pedaço no mesmo vaso, com substrato novo, e doe ou plante os outros. Se a planta ainda floresce bem e o vaso está inteiro, pode esperar mais um ano.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda enraizada",
+      "mensagem": "Depois de um mês, o agapanto já deve estar firme no vaso e soltando folhas novas no centro. A partir de agora ele aguenta regas mais espaçadas.",
+      "acao_requerida": "Puxar a touceira de leve pela base: se resistir, está enraizada. Se ela se soltar, manter a rega a cada 3 dias por mais duas semanas"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de agapanto",
+      "mensagem": "Com um ano de vaso, a touceira deve estar pronta para florescer no próximo verão. Se não floresceu até agora, a causa mais comum é pouco sol ou adubo com muito nitrogênio.",
+      "acao_requerida": "Conferir se o vaso recebe pelo menos 4 horas de sol direto e, se não receber, mudá-lo de lugar. Não troque de vaso: raiz apertada ajuda a florescer"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes e da coroa (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam a partir da base e se soltam com facilidade. A base fica mole, escura e com cheiro ruim, e as raízes ficam marrons e ocas",
+      "prevencao_tratamento": "Não enterre a coroa, use substrato com areia e não regue com o substrato ainda úmido, principalmente no inverno. Se acontecer, tire a planta do vaso, corte as partes moles até o tecido branco e firme, deixe secar um dia à sombra e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodoados ou escamas marrons na base das folhas e entre elas. As folhas ficam amareladas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em álcool 70%. Em infestação grande, pulverize óleo mineral ou óleo de neem a 0,5% no fim da tarde, 3 aplicações a cada 7 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e botões florais raspados ou comidos nas bordas, com rastro prateado brilhante. O dano aparece de manhã, depois de noites úmidas",
+      "prevencao_tratamento": "Cate os bichos à noite ou de manhã cedo e tire folhas secas acumuladas na base, onde eles se escondem. Uma armadilha de cerveja num pote raso enterrado rente ao substrato também funciona"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Touceira saudável e cheia de folhas, mas sem hastes florais no verão",
+      "prevencao_tratamento": "Garanta pelo menos 4 a 6 horas de sol direto. Use adubo rico em fósforo (NPK 4-14-8) em vez de adubo de folhagem, e evite dividir ou trocar de vaso com frequência, porque a planta leva de 1 a 2 anos para voltar a florescer depois de mexida"
+    },
+    {
+      "nome": "Pontas das folhas queimadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas secas e marrons, às vezes com a borda amarelada",
+      "prevencao_tratamento": "Costuma ser seca prolongada no verão, excesso de adubo ou geada. Regue bem até escorrer pelos furos para lavar o excesso de sais, respeite a dose do adubo e corte só a parte seca com tesoura limpa"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "titulo": "Adubação do mês",
+      "mensagem": "Da primavera ao fim do verão o agapanto está crescendo e formando flores. É quando o adubo faz diferença.",
+      "acao_requerida": "Espalhar 1 colher de sopa de NPK 4-14-8 na borda de um vaso de 15 L, longe da base das folhas, e regar em seguida. Com o substrato seco, regue antes de adubar"
+    },
+    {
+      "meses": [
+        2,
+        3
+      ],
+      "titulo": "Cortar as hastes florais secas",
+      "mensagem": "As flores que já murcharam gastam energia da planta formando sementes.",
+      "acao_requerida": "Cortar cada haste seca rente à base da touceira com tesoura limpa. Deixe as hastes só se quiser colher as sementes, quando as cápsulas ficarem marrons"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água e cuidado com a geada",
+      "mensagem": "No frio o agapanto quase para de crescer, e o substrato úmido e gelado é o que mais apodrece suas raízes. Em vaso, a raiz sofre com geada forte.",
+      "acao_requerida": "Espaçar a rega para a cada 7 a 10 dias, sempre conferindo com o dedo. Em noites com previsão abaixo de 0 °C, encostar o vaso numa parede ou colocá-lo sob cobertura"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Limpeza antes da brotação",
+      "mensagem": "A brotação de primavera começa em setembro. Folhas velhas e secas acumuladas na base abrigam lesmas e fungos.",
+      "acao_requerida": "Puxar ou cortar rente à base as folhas amarelas e secas, e retirar do substrato as folhas caídas"
+    }
+  ]
+}

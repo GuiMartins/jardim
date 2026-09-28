@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Angico-branco",
+    "nome_cientifico": "Anadenanthera colubrina",
+    "descricao": "Árvore nativa da Caatinga, do Cerrado e da Mata Atlântica, de crescimento rápido, com folhas finamente recortadas e flores em pompons branco-creme. Em vaso é cultivada como árvore jovem ou pré-bonsai e perde as folhas no inverno seco. As sementes e a casca são tóxicas: mantenha as vagens longe de crianças e animais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Semeie em copo ou saquinho de muda de 500 mL com furos; depois passe para vaso definitivo de pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa, 20% húmus de minhoca; bem drenado, sem argila compacta",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Semeie 2 sementes por copo, deitadas, a 1 cm de profundidade. Não precisa quebrar dormência: a germinação vem entre o 3º e o 7º dia. Sementes com mais de 6 meses perdem a viabilidade rapidamente; use sementes do ano."
+    },
+    {
+      "fase_id": "muda",
+      "nome": "Muda",
+      "dia_inicio": 11,
+      "dia_fim": 90,
+      "descricao": "Surgem as folhas compostas, divididas em muitos folíolos miúdos. A muda chega a 15 a 25 cm em 2 a 3 meses; raízes saindo pelos furos do copo indicam que está pronta para o vaso definitivo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 91,
+      "dia_fim": 730,
+      "descricao": "Crescimento rápido no vaso grande, podendo passar de 1 m no primeiro ano. O caule engrossa e a casca começa a ficar áspera. No primeiro inverno ela já perde parte das folhas: é normal, não é doença."
+    },
+    {
+      "fase_id": "arvore_jovem",
+      "nome": "Árvore Jovem",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico em vaso: folhagem cheia de outubro a maio, queda das folhas entre julho e setembro e rebrota com as primeiras chuvas. Em vaso, a floração em pompons brancos costuma começar só depois do 3º ao 5º ano, entre setembro e novembro, seguida de vagens achatadas que amadurecem no inverno seguinte. A altura se controla com a poda de fim de inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Regue devagar até umedecer todo o copo, sem encharcar. O primeiro centímetro não pode secar nem formar crosta até as plântulas surgirem.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar a muda",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos. Copo pequeno seca rápido: acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_arvore",
+      "titulo": "Regar o angico",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e esvazie o pratinho. No verão quente, confira a cada 2 ou 3 dias. Quando estiver sem folhas no inverno, regue só a cada 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o angico",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca e 1 colher de sopa de farinha de ossos por vaso de 40 L, longe do caule, e regue em seguida. Não adube de junho a agosto, quando ela está sem folhas. Dispense adubo rico em nitrogênio: como leguminosa, ela fixa parte do próprio nitrogênio.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure folíolos cortados em meia-lua (formiga), crostas brancas ou marrons nos ramos (cochonilha) e ramos anelados ou secos na ponta (serra-pau).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 731,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, corte cerca de 15% das raízes mais grossas e enroladas na borda do torrão e replante com substrato novo, no mesmo vaso ou num maior. Faça de preferência em agosto ou setembro, antes da rebrota.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 10,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Se as duas sementes do copo germinaram, elas vão disputar a raiz.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada copo, cortando a outra rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "A muda já ocupa todo o copo. Quanto mais esperar, mais a raiz principal se enrola.",
+      "acao_requerida": "Transplantar para o vaso de 40 L sem desmanchar o torrão, na mesma altura do colo, e regar bem em seguida"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora da época seca, substrato sempre úmido e cheiro de mofo; raízes escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e reduzir a rega no inverno; se atingir, retire as raízes podres e replante em substrato novo e arenoso"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas murcham e tombam com o caule escuro e estrangulado rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, copo com furos e sem encharcar na germinação; descarte as plântulas afetadas"
+    },
+    {
+      "nome": "Formiga-cortadeira (Atta, Acromyrmex)",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos cortados em meia-lua; mudas desfolhadas da noite para o dia",
+      "prevencao_tratamento": "Siga a trilha até o formigueiro e use isca formicida granulada; em mudas, uma faixa de graxa ou cone plástico no caule impede a subida"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Crostas brancas, marrons ou algodonosas nos ramos e no verso das folhas; ramos enfraquecidos e fumagina preta",
+      "prevencao_tratamento": "Remova com escova macia e água com sabão neutro; em infestação forte, óleo mineral ou de neem a 0,5% no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Serra-pau (Oncideres spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Ramo cortado em anel perfeito, que seca e cai; besouro cinza de antenas longas no verão",
+      "prevencao_tratamento": "Cate os besouros e recolha e queime os ramos caídos, onde ficam os ovos"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule fino e comprido, folhas espaçadas e pálidas, planta tombando para a luz",
+      "prevencao_tratamento": "Levar para um local com pelo menos 5 horas de sol direto e podar a ponta estiolada na poda de fim de inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Chegou a estação seca",
+      "mensagem": "O angico vai perder as folhas entre julho e setembro. Sem folhas, ele quase não gasta água, e rega em excesso apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, só com o substrato seco, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Com a planta parada e sem folhas, é o melhor momento para controlar a altura e dar forma à copa.",
+      "acao_requerida": "Cortar os ramos secos, cruzados e os mais altos, logo acima de uma gema, com tesoura limpa e de luvas por causa da seiva e das sementes"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Rebrota e floração",
+      "mensagem": "Com o calor e as primeiras chuvas, o angico rebrota e, se já for adulto, floresce até novembro.",
+      "acao_requerida": "Voltar à rega normal e retomar a adubação orgânica"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "planta": {
+    "nome_comum": "Araçá-do-campo",
+    "nome_cientifico": "Psidium guineense",
+    "descricao": "Arbusto nativo do Brasil, parente da goiabeira, com frutos amarelos pequenos, azedinhos e muito perfumados, bons para comer frescos, fazer suco, doce e geleia. Aguenta sol forte, solo pobre e alguma seca, e em vaso grande fica com 1,5 a 2 m. Uma muda costuma dar os primeiros frutos entre 1,5 e 3 anos depois do plantio.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 45 a 50 cm de diâmetro e pelo menos 40 cm de profundidade, de plástico grosso, cerâmica ou meia bombona, com vários furos no fundo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa; mais 100 g de calcário dolomítico e 150 g de farinha de ossos por vaso de 40 L, bem misturados",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho para o vaso definitivo e pode perder algumas folhas nos primeiros dias. A fase termina quando surgem brotos novos, avermelhados, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 540,
+      "descricao": "A raiz ocupa o vaso e a planta cresce em altura e ramifica. É a hora de formar a copa com poda. A fase termina quando aparecem os primeiros botões florais, brancos e com muitos estames, nas axilas dos ramos novos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 541,
+      "dia_fim": null,
+      "descricao": "Arbusto formado, com 1,5 a 2 m em vaso. No ano típico, floresce na primavera, com a volta do calor e da chuva, frutifica no verão e desacelera no inverno. Em lugares quentes e com rega regular, pode dar uma segunda florada menor no outono."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de araçá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do torrão da muda; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda está só no torrão e seca rápido: acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o araçá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão e com frutos se formando, confira a cada 2 dias; no inverno, espaçe para a cada 5 a 7 dias. Não deixe água parada no prato.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o araçá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus de minhoca ou esterco curtido e 1 colher de sopa de NPK 10-10-10 na borda do vaso, longe do caule, e regue em seguida. De junho a agosto, pule a adubação se a planta estiver parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure pó amarelo de ferrugem, manchas escuras, cochonilhas brancas nos ramos e formigas subindo pelo caule. Com frutos, procure furinhos ou manchas moles na casca.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, corte com tesoura limpa 3 a 4 cm das raízes que dão voltas no fundo e nas laterais, e replante com substrato novo na mesma receita. Se o vaso já tiver menos de 50 L, passe para um maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A muda vem num saquinho pequeno demais. Plantada no vaso grande logo de início, ela não sofre com trocas repetidas.",
+      "acao_requerida": "Cortar o saquinho sem desmanchar o torrão, plantar na mesma altura em que estava, firmar o substrato e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Poda de formação",
+      "mensagem": "Com a muda já pegando, uma desponta faz o araçá ramificar baixo e formar copa, em vez de subir num caule só.",
+      "acao_requerida": "Se a muda passar de 50 cm, cortar a ponta do ramo principal a 40–50 cm do substrato e deixar crescer 3 ou 4 ramos laterais bem distribuídos"
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "Primeiras flores podem aparecer",
+      "mensagem": "Plantas bem cuidadas começam a florir por volta do segundo ano. As primeiras floradas às vezes caem sem segurar fruto, e isso é normal.",
+      "acao_requerida": "Manter a rega regular durante a florada e conferir se a planta recebe pelo menos 6 horas de sol direto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escura e raízes marrons e moles com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e conferir se os furos não estão entupidos. Com a planta afetada, suspenda a rega até secar bem e replante em substrato novo, cortando as raízes podres"
+    },
+    {
+      "nome": "Ferrugem-das-mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nas folhas novas, brotos e frutos pequenos, que depois secam e ficam retorcidos",
+      "prevencao_tratamento": "Deixar o vaso em lugar arejado e molhar só o substrato, nunca as folhas. Cortar e jogar no lixo os brotos atacados; em ataque forte, calda bordalesa a 1% nas brotações a cada 15 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nos frutos, que apodrecem no pé; manchas marrons nas bordas das folhas em época de chuva",
+      "prevencao_tratamento": "Recolher frutos caídos e doentes, podar o miolo da copa para ventilar e, nas chuvas, aplicar calda bordalesa a 1% a cada 15 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos na casca, manchas moles e larvas brancas dentro da polpa",
+      "prevencao_tratamento": "Ensacar os frutos ainda verdes com saquinhos de TNT ou papel, recolher todo fruto caído e usar armadilha com suco de fruta fermentado perto do vaso"
+    },
+    {
+      "nome": "Gorgulho-da-goiaba (Conotrachelus psidii)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos endurecem, deformam e caem verdes; dentro há larvas brancas sem pernas",
+      "prevencao_tratamento": "Ensacar os frutos pequenos e destruir os frutos caídos antes que as larvas desçam para o substrato"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos brancos ou carapaças marrons grudados nos ramos e no verso das folhas; folhas pegajosas com fumagina preta e formigas",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; se persistir, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza do araçá",
+      "mensagem": "No fim do inverno a planta ainda está parada. Podar agora estimula ramos novos, que são os que dão flor e fruto na primavera.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que crescem para o miolo da copa, e encurtar em um terço os ramos longos demais"
+    },
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Ensacar os frutos novos",
+      "mensagem": "Os frutinhos verdes começam a se formar e são a porta de entrada da mosca-das-frutas e do gorgulho.",
+      "acao_requerida": "Quando os frutos tiverem 1 a 2 cm, cobrir cada um ou cada cacho com saquinho de TNT ou papel, amarrado no ramo"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "Os frutos maduros ficam amarelos, macios e perfumados e caem sozinhos em poucos dias; no chão, estragam e atraem mosca.",
+      "acao_requerida": "Passar a cada 2 dias colhendo os frutos amarelos que soltam com um leve giro e recolher os caídos"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos rega e cuidado com geada",
+      "mensagem": "No frio a planta cresce pouco e o substrato demora a secar. Muda nova sofre com geada.",
+      "acao_requerida": "Regar só com o substrato seco a 5 cm e, em noites com previsão de geada, levar o vaso para perto de uma parede ou cobrir com TNT"
+    }
+  ]
+}

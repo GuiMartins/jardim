@@ -1,0 +1,169 @@
+{
+  "planta": {
+    "nome_comum": "Calistemo",
+    "nome_cientifico": "Melaleuca citrina (sin. Callistemon citrinus)",
+    "descricao": "Arbusto australiano conhecido como escova-de-garrafa, com espigas de flores vermelhas que atraem beija-flores e abelhas. É rústico, aguenta calor, vento e um pouco de geada, e floresce bem em vaso grande a pleno sol.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; o vaso precisa ser pesado para a planta não tombar com o vento",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 25% substrato comercial para plantas ou casca de pinus fina, 20% areia grossa lavada, 15% húmus de minhoca; levemente ácido, sem calcário nem cinza",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho para o vaso definitivo e pode perder algumas folhas ou ficar parada. Ela se adaptou quando aparecem brotos novos, avermelhados ou verde-claros, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a planta ramifica. Mudas de viveiro já com porte costumam florescer na primeira primavera; mudas pequenas podem levar até um ano. Brotação longa e sem ramificação indica falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "O ano típico: floração forte na primavera (setembro a novembro), às vezes uma segunda floração menor no verão ou outono, poda leve logo após a floração principal e crescimento lento no inverno. As flores velhas viram cápsulas lenhosas presas ao ramo, que podem ficar por anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de calistemo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Regue devagar até escorrer pelos furos do vaso. O torrão da muda ainda não alcançou o substrato novo e seca antes dele: acima de 30 °C, enfie o dedo 3 cm junto ao caule e regue também nos dias intermediários se estiver seco.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar o calistemo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. No verão quente pode precisar a cada 2 dias; de junho a agosto, espaçe para a cada 5 ou 6 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o calistemo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 2 punhados de húmus de minhoca) na borda de um vaso de 30 L, longe do caule, e regue em seguida. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os ramos finos e a base das folhas em busca de pontos brancos ou marrons grudados (cochonilha) e de pó preto nas folhas (fumagina). Confira também se as folhas novas estão amareladas com nervuras verdes.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, solte as raízes que estiverem enroladas no fundo e passe para um vaso 10 cm mais largo; se já estiver no tamanho máximo, corte 3 cm das raízes externas e troque um terço do substrato. Faça de março a abril ou de agosto a setembro, nunca em plena floração.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "A muda vendida no saquinho está com as raízes apertadas e seca rápido. No vaso grande ela cresce e floresce.",
+      "acao_requerida": "Plantar a muda no vaso definitivo com o colo (onde o caule encontra a raiz) no mesmo nível do substrato, firmar com as mãos e regar até escorrer"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Poda de formação",
+      "mensagem": "Desponte os ramos agora para a planta encher por dentro em vez de virar varas compridas e peladas na base.",
+      "acao_requerida": "Cortar 3 a 5 cm da ponta dos ramos mais compridos, logo acima de uma folha; se a planta estiver em flor, esperar as flores secarem para cortar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, marrons ou algodonosas presas aos ramos finos e à base das folhas; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remova com cotonete ou escova de dentes molhada em álcool 70%; em infestação maior, pulverize óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada de pó preto sobre as folhas e ramos, que sai ao esfregar com o dedo",
+      "prevencao_tratamento": "É um fungo que cresce sobre o melado de cochonilhas e pulgões: controle o inseto e lave as folhas com água e sabão neutro (1 colher de chá por litro)"
+    },
+    {
+      "nome": "Podridão das raízes (Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelando e caindo, raízes escuras e moles com cheiro ruim",
+      "prevencao_tratamento": "Só regue com os 3 cm de cima secos, nunca deixe água no pratinho e mantenha os furos desobstruídos; se acontecer, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes; brotação fraca",
+      "prevencao_tratamento": "O calistemo prefere solo levemente ácido: não use calcário nem cinza no substrato; aplique quelato de ferro conforme a embalagem e, na próxima troca, acrescente casca de pinus fina ao substrato"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta verde e saudável que não forma as espigas vermelhas na primavera",
+      "prevencao_tratamento": "Garanta pelo menos 6 horas de sol direto, evite adubo muito rico em nitrogênio e não pode entre o outono e o inverno, quando os botões da primavera já estão se formando nas pontas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Poda pós-floração",
+      "mensagem": "A floração principal da primavera terminou. Podar agora faz a planta ramificar e formar mais pontas para florir no ano que vem.",
+      "acao_requerida": "Cortar cada ramo que floresceu logo abaixo das flores secas (cápsulas), acima de uma folha, e encurtar os ramos que desequilibram a copa"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Cuidados no frio",
+      "mensagem": "No inverno o calistemo cresce pouco e bebe menos. A planta adulta aguenta geada leve, mas em vaso a raiz fica exposta ao frio.",
+      "acao_requerida": "Espaçar as regas para quando os 3 cm de cima estiverem secos e, em noites de geada, encostar o vaso numa parede ou cobrir a planta com TNT"
+    }
+  ]
+}

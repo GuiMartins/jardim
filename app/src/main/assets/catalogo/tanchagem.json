@@ -1,0 +1,194 @@
+{
+  "planta": {
+    "nome_comum": "Tanchagem",
+    "nome_cientifico": "Plantago major",
+    "descricao": "Erva perene em roseta, rústica e medicinal, de folhas largas com nervuras paralelas bem marcadas, usadas em chá, compressa e, quando novas, cruas em salada. Cresce em quase qualquer vaso, aguenta frio e seca curta e rende folhas o ano todo. Em vaso costuma viver 2 a 3 anos antes de perder vigor.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 20 cm de profundidade e 18 cm de diâmetro por planta, com furos no fundo; a raiz é fibrosa e desce bastante",
+    "volume_minimo_litros": 3,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; aceita solo pobre, mas folhas macias pedem substrato fértil",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Espalhe 4 a 6 sementes na superfície e cubra com no máximo 2 mm de substrato peneirado: a luz ajuda a germinar. As plântulas surgem entre o 7º e o 14º dia, com duas folhinhas estreitas."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "Surgem as primeiras folhas verdadeiras, ovais e com nervuras paralelas visíveis. A fase termina quando cada muda tem 4 a 5 folhas formando uma rosetinha rente ao substrato."
+    },
+    {
+      "fase_id": "crescimento_roseta",
+      "nome": "Crescimento da Roseta",
+      "dia_inicio": 36,
+      "dia_fim": 70,
+      "descricao": "A roseta se abre e as folhas passam de 10 cm. Não colha ainda: a planta está formando raiz. Quando a roseta tiver 8 ou mais folhas grandes, está pronta para a primeira colheita."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 71,
+      "dia_fim": null,
+      "descricao": "Roseta cheia que rebrota do centro depois de cada colheita. Na primavera e no verão lança espigas finas de flores miúdas; corte-as para manter as folhas macias e evitar que ela se espalhe por outros vasos. No inverno cresce devagar mas não morre com geada leve. Depois de 2 a 3 anos o centro endurece e é hora de renovar com sementes da própria planta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. As sementes ficam quase expostas e morrem se a superfície secar por um dia inteiro; também não encharque.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a tanchagem",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão acima de 30 °C confira a cada 2 dias; no inverno, a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_humus",
+      "titulo": "Adubar com húmus",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 40,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por vaso de 3 L em volta da roseta, sem cobrir o centro, e regue em seguida. De junho a agosto pule uma adubação.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de tanchagem",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 71,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte rente à base as folhas de fora, as maiores, deixando pelo menos 5 folhas do centro. Tire também folhas amareladas ou manchadas. Nunca corte o miolo, de onde a planta rebrota.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pulgões no verso e no miolo, pó branco na face de cima, manchas marrons com borda escura e rastros brilhantes de lesma.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, corte um terço das raízes velhas e replante em substrato novo na mesma altura, sem enterrar o miolo. Se a roseta estiver dura e lenhosa, semeie de novo com sementes das espigas secas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desbaste!",
+      "mensagem": "As mudinhas estão disputando espaço. Uma roseta por vaso de 3 L cresce muito mais do que várias apertadas.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada vaso (ou uma a cada 15 cm na jardineira), cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 71,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "A roseta já tem raiz para aguentar cortes. A partir de agora colha sempre as folhas de fora.",
+      "acao_requerida": "Colher 2 ou 3 folhas externas grandes e conferir se a roseta tem ao menos 8 folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, amarelam de fora para dentro e o miolo escurece e amolece",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e garantir furos livres; retirar a planta afetada e replantar sementes em substrato novo"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos no miolo, no verso das folhas e nas espigas; folhas encurvadas e pegajosas",
+      "prevencao_tratamento": "Jato de água ou esfregar com pano úmido; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias, esperando 7 dias antes de colher para consumo"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Buracos irregulares nas folhas, bordas roídas e rastros brilhantes, principalmente depois de chuva",
+      "prevencao_tratamento": "Catar à noite com lanterna, afastar o vaso do chão e de folhas caídas e espalhar casca de ovo moída ou areia grossa em volta da roseta"
+    },
+    {
+      "nome": "Oídio (Podosphaera spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado na face de cima das folhas, que depois amarelam e secam",
+      "prevencao_tratamento": "Mais sol e ventilação, regar o substrato e não as folhas; remover as folhas atingidas e pulverizar leite diluído a 10% em água uma vez por semana"
+    },
+    {
+      "nome": "Mancha foliar (Septoria plantaginis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas com borda escura e centro claro, que se juntam e secam a folha",
+      "prevencao_tratamento": "Colher e descartar as folhas manchadas, evitar molhar as folhas e não deixar a roseta adensada com folhas velhas"
+    },
+    {
+      "nome": "Espigamento precoce e folhas duras",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta pequena que lança muitas espigas e tem folhas estreitas, fibrosas e amargas",
+      "prevencao_tratamento": "Sinal de vaso pequeno, seca repetida ou falta de adubo: passar para vaso de pelo menos 3 L, regar com regularidade, adubar e cortar as espigas assim que surgirem"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        10,
+        11,
+        12,
+        1
+      ],
+      "titulo": "Cortar as espigas de flor",
+      "mensagem": "No calor a tanchagem lança espigas finas. Elas endurecem as folhas e soltam centenas de sementes que brotam em todos os vasos vizinhos.",
+      "acao_requerida": "Cortar todas as espigas rente à base; se quiser sementes para renovar a planta, deixar uma só secar e colher antes de abrir"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: crescimento lento",
+      "mensagem": "Com o frio a roseta cresce devagar e bebe menos água. Ela aguenta geada leve e não precisa de proteção.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 3 cm e colher menos folhas até setembro"
+    }
+  ]
+}

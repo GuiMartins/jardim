@@ -1,0 +1,217 @@
+{
+  "planta": {
+    "nome_comum": "Morango-silvestre",
+    "nome_cientifico": "Fragaria vesca",
+    "descricao": "Morangueiro europeu de frutos pequenos, muito perfumados e doces, que produz em pequenas levas da primavera ao outono. As variedades alpinas (como 'Alexandria' e 'Mignonette') quase não soltam estolhões e ficam compactas no vaso. É perene, mas em vaso perde vigor depois de 2 a 3 anos e deve ser renovada por divisão ou por uma muda nova.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 15 cm de profundidade e 18 cm de diâmetro por planta, com furos no fundo; em jardineira, deixe 25 cm entre plantas",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% casca de arroz carbonizada ou perlita; levemente ácido (pH 5,5 a 6,5), fofo e sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 20,
+      "descricao": "Plante com a coroa (o ponto de onde saem as folhas) exatamente no nível do substrato: enterrada ela apodrece, alta demais ela seca. Nos primeiros dias algumas folhas velhas podem amarelar. A fase termina quando surgem folhas novas, trifoliadas e bem verdes, no centro da coroa."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 21,
+      "dia_fim": 60,
+      "descricao": "A planta forma raízes e engrossa a touceira. Aparecem as primeiras flores brancas de cinco pétalas; se a planta ainda tiver menos de 6 folhas, retire essas flores para ela ganhar força. Estolhões (ramos finos que rastejam e formam mudinhas) devem ser cortados rente à base."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Floresce e frutifica em levas contínuas da primavera ao outono, com pausa ou produção menor no frio mais forte e no pico do calor. Cada fruto amadurece 25 a 30 dias depois da flor. Rende bem por 2 a 3 anos; depois a touceira fica lenhosa, produz menos e deve ser dividida ou substituída por uma muda de estolhão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 20,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, sem molhar a coroa nem as folhas. As raízes ainda são poucas e a muda murcha em um dia de sol sem água.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o morango-silvestre",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, de preferência pela manhã. Acima de 28 °C confira todo dia; no inverno, a cada 3 ou 4 dias. Esvazie o pratinho depois de 30 minutos: raiz encharcada apodrece.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o morango",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de bokashi por vaso de 3 L, longe da coroa, e regue em seguida. Na floração, prefira adubo rico em potássio (1 colher de chá de cinza de madeira peneirada). No inverno, adube uma vez por mês.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_estolhoes",
+      "titulo": "Tirar folhas secas e estolhões",
+      "tipo": "PODA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte rente à base as folhas secas, manchadas ou amareladas e os estolhões. Se quiser uma muda nova, deixe um estolhão enraizar num vasinho ao lado e corte-o da mãe depois de 3 semanas.",
+      "critica": false
+    },
+    {
+      "id": "colheita_frutos",
+      "titulo": "Colher morangos maduros",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Colha os frutos inteiramente vermelhos, macios e perfumados, que se soltam com um leve puxão junto com o cálice. Fruto maduro esquecido amolece, mofa e atrai lesmas e pássaros. No frio forte a produção para: aproveite a passada para retirar frutos secos ou mofados.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos claros e teias finas (ácaro), insetos agrupados (pulgão) e manchas roxas com centro claro. Olhe os frutos em busca de mofo cinzento e mordidas com rastro brilhante (lesma).",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No outono ou no fim do inverno, tire a planta do vaso, descarte a parte central lenhosa e replante as coroas laterais mais novas, cada uma com raízes, em substrato novo. Mantenha a coroa no nível do substrato e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora da cobertura morta",
+      "mensagem": "Fruto encostado no substrato úmido apodrece e fica sujo. Uma cobertura também segura a umidade do vaso.",
+      "acao_requerida": "Cobrir o substrato com uma camada de 2 cm de palha seca ou casca de pinus fina, deixando a coroa descoberta"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeiras flores",
+      "mensagem": "As flores devem estar abrindo. Em varanda fechada, sem abelhas, os frutos saem pequenos e tortos.",
+      "acao_requerida": "Se houver poucos insetos visitando, passar um pincel macio no centro de cada flor aberta, de flor em flor, pela manhã"
+    },
+    {
+      "dia_disparo": 70,
+      "titulo": "Primeiros morangos",
+      "mensagem": "Os frutos das primeiras flores devem estar amadurecendo. Eles passam do ponto em 2 ou 3 dias.",
+      "acao_requerida": "Conferir a cor e colher os frutos inteiramente vermelhos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da coroa e da raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com substrato úmido; coroa marrom e mole por dentro ao ser cortada; raízes escuras",
+      "prevencao_tratamento": "Não enterrar a coroa, não deixar água no pratinho e regar só com o substrato seco a 2 cm. Planta afetada raramente se recupera: descarte e troque o substrato"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Frutos com manchas marrons moles cobertas por pó cinzento; flores apodrecidas",
+      "prevencao_tratamento": "Regar na base, sem molhar frutos; colher em dia; retirar e descartar no lixo todo fruto afetado; manter o vaso ventilado"
+    },
+    {
+      "nome": "Mancha-de-micosferela (Mycosphaerella fragariae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pequenas manchas arredondadas roxas com centro branco-acinzentado nas folhas",
+      "prevencao_tratamento": "Cortar as folhas manchadas, evitar molhar as folhas e aplicar calda bordalesa a 0,5% se as manchas se espalharem"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto bronzeado e teias finas no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas no fim da tarde; se persistir, óleo de neem a 0,5% a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos em brotos novos e no verso das folhas; folhas enrugadas e pegajosas",
+      "prevencao_tratamento": "Jato de água nas folhas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos e folhas roídos com buracos irregulares e rastro brilhante, mais à noite e depois da chuva",
+      "prevencao_tratamento": "Catar à noite com lanterna; espalhar casca de ovo triturada em volta da coroa; manter o vaso elevado do chão"
+    },
+    {
+      "nome": "Queima das folhas por calor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas secas e marrons, planta murcha à tarde e sem flores no verão",
+      "prevencao_tratamento": "Proteger do sol da tarde no verão, manter cobertura morta e conferir a rega todo dia acima de 28 °C"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger do calor do verão",
+      "mensagem": "O morango-silvestre é planta de clima ameno: no calor forte ele para de florir, os frutos saem pequenos e as folhas queimam.",
+      "acao_requerida": "Mudar o vaso para um lugar com sol só de manhã e sombra à tarde, conferir a rega todo dia e renovar a cobertura morta"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Menos água no inverno",
+      "mensagem": "No frio a planta cresce devagar e o substrato demora mais a secar; excesso de água agora apodrece a coroa. Ela aguenta geada leve, mas em vaso as raízes ficam expostas.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 2 cm e, em noite com previsão de geada, encostar o vaso numa parede ou cobrir com tecido"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Preparar para a primavera",
+      "mensagem": "No fim do inverno a planta retoma o crescimento; uma limpeza agora dá brotação forte e as primeiras flores da temporada.",
+      "acao_requerida": "Cortar todas as folhas velhas e manchadas rente à coroa, deixando as novas do centro, e cobrir o substrato com 1 cm de húmus de minhoca"
+    }
+  ]
+}

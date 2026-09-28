@@ -1,0 +1,174 @@
+{
+  "planta": {
+    "nome_comum": "Pinhão-roxo",
+    "nome_cientifico": "Jatropha gossypiifolia",
+    "descricao": "Arbusto tropical de 1 a 2 m, com folhas recortadas vinho-arroxeadas e pequenas flores vermelhas quase o ano todo. É rústico e aguenta seca, e muita gente o cultiva na entrada de casa pela tradição popular. Toda a planta é tóxica: o látex irrita a pele e os olhos, e as sementes podem ser fatais se ingeridas. Mantenha-o longe de crianças e animais e manuseie com luvas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 35 cm de diâmetro e 35 cm de profundidade, com furos no fundo. Prefira vaso pesado, porque a planta fica alta e tomba com o vento",
+    "volume_minimo_litros": 25,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca. Deve ser bem drenado, porque a raiz apodrece em substrato encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acomoda ao vaso novo. É normal cair uma ou duas folhas velhas na primeira semana. A fase termina quando surgem folhas novas, arroxeadas e brilhantes, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e o crescimento acelera, com os primeiros cachos de flores vermelhas na ponta dos ramos. Quanto mais sol, mais roxa a folhagem. Se as folhas ficarem verdes e os ramos compridos e finos, falta luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto formado, que floresce da primavera ao outono e forma cápsulas de três sementes que estouram ao secar e espalham mudas pelos vasos vizinhos. No inverno cresce pouco e pode perder parte das folhas no frio. A poda anual é no fim do inverno e a troca de substrato, a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. A raiz ainda não alcançou o vaso todo, e secar por completo agora mata a muda.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o pinhão-roxo",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato e só regue se estiver seco. Nesse caso, molhe até escorrer pelos furos. Acima de 30 °C, confira a cada 2 dias. De junho a agosto, espace para cada 7 a 10 dias. Folhas amarelas e caule mole na base indicam excesso de água, não falta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o pinhão-roxo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 4-14-8 (ou 1 xícara de húmus de minhoca com 1 colher de farinha de ossos) na borda do vaso de 25 L, sem encostar no caule, e regue em seguida. Pule de junho a agosto, quando a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Use luvas. Vire as folhas das pontas e procure pontinhos brancos de algodão (cochonilha), folhas novas enroladas e endurecidas (ácaro-branco) ou percevejos redondos e coloridos nos frutos.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro. Com luvas e óculos, tire a planta do vaso, raspe 1/3 do torrão velho e corte as raízes enroladas no fundo. Replante com substrato novo no mesmo vaso ou num 10 cm maior. Regue a cada 2 dias nas 2 semanas seguintes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 35,
+      "titulo": "Poda de formação",
+      "mensagem": "A muda pegou. Cortar agora as pontas faz o pinhão-roxo ramificar e virar um arbusto cheio, em vez de uma vara comprida.",
+      "acao_requerida": "De luvas, cortar 3 a 5 cm da ponta de cada ramo logo acima de uma folha, lavar a tesoura e deixar o látex secar sem encostar nele"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Cuidado com os frutos",
+      "mensagem": "Já devem aparecer cápsulas verdes de três gomos. Ao secar, elas estouram, lançam sementes tóxicas a até 2 m e fazem brotar mudas nos vasos ao redor.",
+      "acao_requerida": "Se houver crianças, animais ou vasos próximos, arrancar de luvas as cápsulas ainda verdes e descartá-las no lixo fechado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido. A base do caule fica escura e mole, e as raízes ficam marrons e desmancham",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água no pratinho e usar substrato com areia. Se a base já estiver mole, cortar um ramo sadio e enraizar como estaca, pois a planta raramente se recupera"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodoado nas axilas das folhas e nos brotos, folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Se houver muitas, pulverizar óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-branco (Polyphagotarsonemus latus)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas novas pequenas, enroladas para baixo, duras e com brilho bronzeado; brotos deformados",
+      "prevencao_tratamento": "Cortar as pontas deformadas e pulverizar enxofre molhável (2 g/L) ou óleo de neem a 0,5% a cada 5 dias. O ataque piora em tempo quente e seco, e borrifar água em volta ajuda"
+    },
+    {
+      "nome": "Percevejo-do-pinhão (Pachycoris torridus)",
+      "tipo": "PRAGA",
+      "sintomas": "Percevejos redondos, amarelos com manchas pretas (ou azul-metálicos quando jovens), agrupados nos frutos. Os frutos ficam chochos e caem",
+      "prevencao_tratamento": "Catar com luvas e jogar em água com sabão. Retirar os ovos agrupados no verso das folhas e remover os frutos atacados"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco na face de cima das folhas, que depois amarelam e caem",
+      "prevencao_tratamento": "Deixar o vaso em local ventilado e ensolarado e não molhar as folhas à noite. Pulverizar bicarbonato de sódio (1 colher de chá por litro, com gotas de detergente) a cada 7 dias"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas verdes em vez de roxas, ramos longos e finos, poucas flores",
+      "prevencao_tratamento": "Levar o vaso para local com pelo menos 4 horas de sol direto e podar os ramos compridos para a planta rebrotar mais compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "O pinhão-roxo cresce pouco no frio e pode perder folhas. Abaixo de 5 °C, e principalmente com geada, os ramos queimam. Substrato frio e molhado apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para cada 7 a 10 dias, suspender a adubação até setembro e, em noites de geada, levar o vaso para perto de uma parede ou cobri-lo com TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual",
+      "mensagem": "No fim do inverno a planta está quase parada. Podar agora faz ela rebrotar cheia e florir bem na primavera.",
+      "acao_requerida": "De luvas e óculos, cortar os ramos secos ou queimados pelo frio e encurtar os demais em 1/3, sempre logo acima de uma gema. Lavar as ferramentas depois"
+    }
+  ]
+}

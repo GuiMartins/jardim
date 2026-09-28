@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Rabo-de-burro",
+    "nome_cientifico": "Sedum morganianum",
+    "descricao": "Suculenta pendente do México, com ramos longos cobertos de folhinhas carnudas verde-azuladas que chegam a 60 cm ou mais. É ótima para vaso suspenso e aguenta bem a seca, mas as folhas soltam ao menor toque: escolha o lugar dela uma vez e mexa o mínimo possível.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso suspenso ou cachepô de barro ou plástico com 15 a 20 cm de diâmetro e 12 a 15 cm de profundidade, com furos no fundo. A raiz é rasa, então vaso fundo só acumula água",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% substrato para cactos e suculentas, 30% areia grossa lavada, 20% perlita ou casca de arroz carbonizada; nada de terra pura, que compacta e segura água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda se acostuma à luz e ao ar da casa nova. É normal soltar algumas folhas por causa do transporte. Se as pontas dos ramos continuarem firmes e com folhas bem cheias, a adaptação terminou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "As raízes ocupam o vaso e as pontas dos ramos voltam a crescer, 1 a 2 cm por mês na primavera e no verão. Folhas novas mais claras e espaçadas indicam pouca luz: aproxime da janela aos poucos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Os ramos se alongam da primavera ao outono e quase param no inverno, quando a rega fica bem mais espaçada. Pode dar pequenas flores rosadas nas pontas no fim da primavera, mas isso é raro dentro de casa. As folhas que caem enraízam fácil deitadas sobre substrato seco: são mudas de graça."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_rabo_de_burro",
+      "titulo": "Regar o rabo-de-burro",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de madeira até o fundo do vaso: só regue se ele sair seco e limpo. Regue devagar, direto no substrato e sem molhar as folhas, até escorrer pelos furos, e esvazie o prato depois de 15 minutos. Folhas enrugadas pedem água; folhas moles e translúcidas indicam excesso. De junho a agosto, regue só a cada 20 a 30 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_suculenta",
+      "titulo": "Adubar com fórmula para suculentas",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo líquido para cactos e suculentas (ou NPK 10-10-10) na metade da dose do rótulo e aplique no lugar de uma rega, com o substrato úmido. Só de setembro a março; de abril a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Sem mexer nos ramos, olhe a base dos caules, a borda do vaso e as axilas das folhas. Procure tufos brancos de algodão (cochonilha), insetos verdes nas pontas (pulgão) e caules escuros e moles rente ao substrato (podridão).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 1095,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, com o substrato seco, tombe o vaso sobre um jornal segurando a planta pela base e passe o torrão inteiro para um vaso 3 a 5 cm mais largo, com substrato novo. Espere 7 dias para regar. Guarde as folhas que caírem para fazer mudas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Escolha o lugar definitivo",
+      "mensagem": "O rabo-de-burro solta folhas a cada vez que é mexido ou esbarrado. Se já chegar num lugar fixo, os ramos compridos ficam cheios.",
+      "acao_requerida": "Pendurar perto de uma janela com sol da manhã ou luz forte, fora da passagem de pessoas e de vento forte, e não regar na primeira semana"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Confira a luz",
+      "mensagem": "Depois de três semanas já dá para ver se a luz está certa. Ramos que se esticam para um lado e folhas pálidas ou espaçadas indicam pouca luz.",
+      "acao_requerida": "Se estiver estiolando, aproximar da janela aos poucos, uns 50 cm por semana, para as folhas não queimarem"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Planta estabelecida",
+      "mensagem": "O rabo-de-burro já enraizou no vaso. As folhas que caírem daqui em diante viram mudas.",
+      "acao_requerida": "Deixar as folhas caídas secando por 2 dias e depois deitá-las sobre substrato de suculenta seco, borrifando quando aparecerem raízes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da raiz e do caule (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas moles, translúcidas ou amareladas que caem em massa; base do caule escura e mole; substrato com cheiro azedo",
+      "prevencao_tratamento": "Só regar com o substrato seco até o fundo e nunca deixar água no prato. Se aparecer, corte os ramos sadios, deixe cicatrizar por 3 dias e replante em substrato novo e seco, descartando a parte podre"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de algodão entre as folhas e na base dos ramos; folhas murchas e pegajosas",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação maior, borrifar óleo de neem a 0,5% com algumas gotas de detergente neutro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenos insetos verdes ou pretos agrupados nas pontas dos ramos e nos botões florais",
+      "prevencao_tratamento": "Limpar com pincel macio ou cotonete com água e sabão neutro; evitar jato forte, que derruba as folhas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrons, brancas ou avermelhadas e secas nas folhas do lado virado para o sol",
+      "prevencao_tratamento": "Evitar sol direto entre 10h e 16h no verão; ao mudar para um lugar mais claro, fazer a transição aos poucos, em 2 a 3 semanas"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos e compridos, folhas pequenas, pálidas e espaçadas, crescendo para o lado da luz",
+      "prevencao_tratamento": "Levar para um lugar mais claro, com pelo menos 2 horas de sol direto brando. Os trechos estiolados não voltam: corte-os e use como estaca"
+    },
+    {
+      "nome": "Folhas enrugadas por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas murchas, enrugadas e opacas, mas firmes na base",
+      "prevencao_tratamento": "Regar a fundo até escorrer; elas voltam a encher em 2 a 3 dias. No verão, confira o substrato com mais frequência"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "Com frio, o rabo-de-burro quase para de crescer e o substrato demora muito mais para secar. É nesta época que ele mais apodrece.",
+      "acao_requerida": "Espaçar a rega para cada 20 a 30 dias, suspender a adubação e recolher o vaso para dentro nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta do crescimento",
+      "mensagem": "A primavera reativa a planta: as pontas dos ramos voltam a crescer.",
+      "acao_requerida": "Voltar a regar a cada 10 dias com o substrato seco e retomar a adubação mensal"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com o sol forte",
+      "mensagem": "O sol do meio-dia no verão queima as folhas, principalmente atrás de vidro.",
+      "acao_requerida": "Deixar só com sol da manhã ou atrás de tela de sombreamento de 30 a 50% entre 10h e 16h"
+    }
+  ]
+}

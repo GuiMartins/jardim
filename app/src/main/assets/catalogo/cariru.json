@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Cariru",
+    "nome_cientifico": "Talinum fruticosum (sin. Talinum triangulare)",
+    "descricao": "Hortaliça folhosa perene da Amazônia, de folhas carnudas e macias, muito usada no Norte do Brasil refogada, em sopas e em lugar do espinafre. É uma PANC rústica que brota de estaca com facilidade e aguenta calor e alguma estiagem. As folhas têm oxalato, por isso devem ser consumidas cozidas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 25 cm de profundidade e 30 cm de diâmetro, com furos no fundo",
+    "volume_minimo_litros": 10,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou casca de arroz carbonizada; fértil e bem drenado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Estaca",
+      "dia_inicio": 1,
+      "dia_fim": 20,
+      "descricao": "Enterre um terço de uma estaca de 15 a 20 cm, tirada de um ramo firme, e deixe só 2 ou 3 folhas no topo. Mantenha à meia-sombra. Folhas novas no topo, entre o 10º e o 20º dia, mostram que as raízes pegaram."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 21,
+      "dia_fim": 50,
+      "descricao": "A planta passa para o sol, ramifica e engrossa o caule. Folhas murchas ao meio-dia no sol forte são normais nos primeiros dias; se murcharem de manhã, falta água. Por volta do 45º dia a touceira passa de 25 cm e já dá para colher."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 51,
+      "dia_fim": null,
+      "descricao": "Touceira de 40 a 80 cm que produz folhas o ano todo no calor, com colheitas semanais. Floresce sem parar, com florzinhas rosadas que abrem à tarde, e se ressemeia sozinha nos vasos vizinhos. No inverno do Centro-Sul quase para de crescer e pode perder folhas com o frio. Depois de um ou dois anos, o caule fica lenhoso e a produção cai: é a hora de renovar por estaca."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca de cariru",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 20,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos. O substrato deve ficar úmido, nunca encharcado: estaca parada em lama apodrece na base.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cariru",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 21,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão acima de 30 °C, confira a cada 2 dias. No inverno, espace para 5 a 7 dias. A planta aguenta secar um pouco, mas as folhas ficam duras e amargas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o cariru",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca ou 1 colher de sopa de bokashi num vaso de 10 L, longe do caule, e regue em seguida. Folhas pequenas e muita flor pedem adubo. Pule a adubação em junho e julho, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher ponteiros de cariru",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte os ponteiros de 10 a 15 cm logo acima de um par de folhas e deixe sempre ao menos metade da folhagem. Aproveite e tire as hastes florais: a planta se ramifica e continua produzindo folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os ponteiros novos. Procure pulgões agrupados, cochonilhas brancas nas axilas, furos de lagarta e base do caule escura ou mole.",
+      "critica": false
+    },
+    {
+      "id": "renovacao_vaso",
+      "titulo": "Renovar o cariru por estaca",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire 2 ou 3 estacas de 15 a 20 cm dos ramos mais novos, troque todo o substrato do vaso e plante as estacas como no primeiro dia. A planta velha, lenhosa, pode ir para a compostagem. Faça entre setembro e março; no inverno, adie para a primavera.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "A estaca enraizou?",
+      "mensagem": "Folhas novas no topo da estaca indicam que as raízes já se formaram.",
+      "acao_requerida": "Puxar a estaca de leve: se resistir, está enraizada. Se sair solta com a base preta, plantar uma estaca nova"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A estaca já tem raízes e agora precisa de sol para ramificar e engrossar as folhas.",
+      "acao_requerida": "Levar o vaso para um local com pelo menos 3 horas de sol direto, de preferência pela manhã, aumentando a exposição ao longo de uma semana"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira colheita de cariru",
+      "mensagem": "A touceira já deve ter 25 cm ou mais e vários ramos.",
+      "acao_requerida": "Colher os primeiros ponteiros de 10 cm, deixando a maior parte das folhas na planta"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do caule e da raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule escura e mole, folhas murchas mesmo com o substrato molhado e mau cheiro na terra",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e usar vaso com furos e substrato drenante. Cortar os ramos sadios e enraizá-los em substrato novo, e descartar a parte podre"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos ponteiros e no verso das folhas; brotos enrolados e pegajosos",
+      "prevencao_tratamento": "Jato de água ou colher os ponteiros atacados; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, respeitando 7 dias antes de colher"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos e algodonosos nas axilas das folhas e no caule; planta fraca e amarelada",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70% e podar os ramos muito infestados; óleo de neem a 0,5% semanal até sumir"
+    },
+    {
+      "nome": "Lagartas e vaquinhas",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou furos redondos; fezes escuras sobre as folhas",
+      "prevencao_tratamento": "Catar à mão pela manhã cedo; para lagartas, Bacillus thuringiensis (Bt) conforme o rótulo"
+    },
+    {
+      "nome": "Nematoide-das-galhas (Meloidogyne)",
+      "tipo": "PRAGA",
+      "sintomas": "Planta raquítica que murcha no calor; raízes com caroços e engrossamentos",
+      "prevencao_tratamento": "Usar substrato novo ou solarizado e não reaproveitar terra de vaso infestado; renovar com estaca em substrato limpo"
+    },
+    {
+      "nome": "Folhas pequenas e florada excessiva",
+      "tipo": "DISTURBIO",
+      "sintomas": "Muitas hastes florais, folhas miúdas, duras e amargas",
+      "prevencao_tratamento": "Sinal de falta de adubo, de água ou de colheita. Adubar, manter a rega regular e cortar as hastes florais a cada colheita"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, moles e translúcidas depois de noites abaixo de 8 °C",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou para dentro nas noites frias e cortar as folhas queimadas só na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Cariru no frio",
+      "mensagem": "O cariru é tropical: abaixo de 15 °C para de crescer e com geada morre a parte aérea.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender a adubação e proteger o vaso nas noites abaixo de 8 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de primavera",
+      "mensagem": "Com o calor voltando, uma poda forte faz o cariru rebrotar cheio de folhas novas.",
+      "acao_requerida": "Cortar os ramos a 15 cm da base, acima de um nó, retirar as folhas estragadas pelo frio e adubar em seguida"
+    }
+  ]
+}

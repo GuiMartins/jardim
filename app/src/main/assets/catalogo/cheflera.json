@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Cheflera",
+    "nome_cientifico": "Heptapleurum arboricola (sin. Schefflera arboricola)",
+    "descricao": "Arbusto de folhas em forma de mão aberta, muito resistente e das plantas de interior mais fáceis de manter. Aguenta alguns esquecimentos de rega e a meia-luz, mas morre por excesso de água. As folhas são tóxicas para cães e gatos (oxalato de cálcio).",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 20 cm de diâmetro e 20 cm de profundidade, com furos no fundo. O prato não pode ficar com água parada",
+    "volume_minimo_litros": 5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% terra vegetal, 25% casca de pinus fina ou fibra de coco, 15% húmus de minhoca e 10% areia grossa ou perlita. Solto, para escorrer rápido",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa do viveiro para um lugar com menos luz e ar mais seco. Perder de 2 a 5 folhas de baixo, que amarelam e caem, é normal nesse período. Escolha o lugar definitivo logo no começo: perto de uma janela clara, com no máximo sol da manhã, longe do vento do ar-condicionado. Mudar a planta de lugar toda semana prolonga a queda de folhas. Não troque de vaso nem adube agora. A fase terminou quando as folhas param de cair e aparece um broto novo, verde-claro e brilhante, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Com a planta adaptada, os ramos voltam a crescer e soltam uma folha nova a cada 1 ou 2 semanas na primavera e no verão. Gire o vaso um quarto de volta sempre que regar, para ela não entortar em direção à janela. Ramos compridos e com folhas muito espaçadas indicam pouca luz: aproxime o vaso da janela. Nesta fase começa a adubação mensal."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "O ano típico: cresce bem de setembro a março, quando pede adubo mensal e rega mais frequente, e fica quase parada de junho a agosto, quando a rega fica mais espaçada e o adubo é suspenso. A poda de formação é feita em setembro. Dentro de casa ela raramente floresce. A cada 2 anos o substrato se decompõe e as raízes enchem o vaso, e é hora de trocá-lo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_cheflera",
+      "titulo": "Conferir e regar a cheflera",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato depois de 15 minutos. Se ainda estiver úmido, não regue. Folhas murchas e caídas com o substrato seco pedem água na hora. No inverno o substrato leva de 7 a 10 dias para secar, e no verão, em vaso pequeno perto da janela, pode secar em 3.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a cheflera",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 g (meia colher de chá rasa) de adubo NPK 10-10-10 ou 20-20-20 em 1 L de água e regue com a solução sobre o substrato já úmido, nunca seco. Outra opção é espalhar 2 colheres de sopa de húmus de minhoca na superfície de um vaso de 5 L. De junho a agosto pule a adubação, porque a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_limpeza_folhas",
+      "titulo": "Inspecionar e limpar as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire 5 ou 6 folhas e olhe o verso e a junção com o talo: procure bolinhas marrons ou brancas grudadas (cochonilha), pontinhos amarelados com teia fina (ácaro) ou manchas escuras encharcadas. Depois passe um pano úmido nas folhas para tirar a poeira, que bloqueia a luz.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar de vaso e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Se for entre maio e agosto, espere até setembro. Tire a planta do vaso, solte com os dedos as raízes que estão enroladas em volta do torrão e corte as escuras e moles. Replante num vaso de 3 a 5 cm mais largo com substrato novo, na mesma altura em que estava, e regue até escorrer. Para manter o tamanho, volte ao mesmo vaso aparando 3 cm das raízes em volta do torrão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Confira o vaso do viveiro",
+      "mensagem": "Muitas chefleras vêm num vaso sem furo dentro de um cachepô, ou com o furo tampado. Água parada no fundo apodrece a raiz em poucas semanas.",
+      "acao_requerida": "Levantar o vaso e ver se há furos livres no fundo. Se não houver, passar a planta para um vaso com furos, mexendo o mínimo no torrão"
+    },
+    {
+      "dia_disparo": 10,
+      "titulo": "Folhas caindo? Não mude a rega",
+      "mensagem": "Folhas de baixo amarelando e caindo nas primeiras semanas são reação à mudança de ambiente, e não falta de água. Regar mais nessa hora é o que mata a planta.",
+      "acao_requerida": "Manter a planta no mesmo lugar e continuar regando só quando os 3 cm de cima do substrato estiverem secos"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Veja se as raízes cabem no vaso",
+      "mensagem": "Plantas de viveiro costumam vir com a raiz já apertada. Se o vaso estiver pequeno demais, a água escorre direto e a planta seca rápido.",
+      "acao_requerida": "Olhar o furo do fundo. Se houver raízes saindo por ele ou se o substrato secar em menos de 3 dias, trocar para um vaso 5 cm mais largo em setembro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e murchas mesmo com o substrato úmido, queda de muitas folhas de uma vez, base do caule escura e raízes marrons, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco e nunca deixar água no prato. Se aparecer, tirar a planta do vaso, cortar todas as raízes podres com tesoura limpa e replantar em substrato novo e seco, sem regar por 3 dias"
+    },
+    {
+      "nome": "Cochonilha (cochonilha-de-carapaça e cochonilha-farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças marrons grudadas nos talos e nervuras ou tufos brancos como algodão nas axilas das folhas. As folhas ficam pegajosas e com fuligem preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%. Em infestação maior, pulverizar óleo mineral a 1% ou óleo de neem a 0,5% com algumas gotas de detergente, no fim da tarde, a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que depois ficam opacas e bronzeadas, e teia muito fina no verso e nas pontas dos ramos. É pior no ar seco, com ar-condicionado ou no fim do inverno",
+      "prevencao_tratamento": "Lavar o verso das folhas com jato de água no chuveiro e aumentar a umidade do ambiente. Se persistir, óleo de neem a 0,5% a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Mancha bacteriana (Pseudomonas cichorii)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pequenas, escuras e encharcadas que crescem, ficam pretas e fazem a folha cair",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e deixar o ar circular. Cortar e jogar no lixo as folhas afetadas e limpar a tesoura com álcool entre um corte e outro"
+    },
+    {
+      "nome": "Queda de folhas por mudança de ambiente ou corrente de ar",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas verdes ou amareladas caem em quantidade logo depois de mudar a planta de lugar ou perto do ar-condicionado, de um aquecedor ou de uma porta com vento",
+      "prevencao_tratamento": "Deixar a planta num lugar fixo, com luz clara e longe do vento direto. Ela rebrota em algumas semanas sem nenhum tratamento"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrom-claras, secas e esbranquiçadas no meio das folhas voltadas para a janela, depois de sol forte da tarde",
+      "prevencao_tratamento": "Evitar o sol direto depois das 10h, principalmente através do vidro. As folhas queimadas não se recuperam e podem ser cortadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água e sem adubo",
+      "mensagem": "Com o frio, a cheflera quase para de crescer e o substrato demora muito mais para secar. É a época em que mais se perde a planta por excesso de rega.",
+      "acao_requerida": "Espaçar a rega para quando os 3 cm de cima estiverem secos (em geral a cada 7 a 10 dias), suspender o adubo até setembro e, se o vaso ficar fora de casa numa região com geada, levá-lo para dentro nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de formação e volta do adubo",
+      "mensagem": "No começo da primavera a planta retoma o crescimento. Podar agora faz brotar ramos laterais e deixa a cheflera mais cheia.",
+      "acao_requerida": "Cortar os ramos compridos ou sem folha logo acima de um nó, com tesoura limpa, retirando no máximo um terço da planta. Voltar à adubação mensal"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Ar seco: fique de olho no ácaro",
+      "mensagem": "O fim do inverno é a época mais seca no Centro-Sul, e é quando o ácaro-rajado se multiplica nas folhas da cheflera.",
+      "acao_requerida": "Lavar o verso das folhas no chuveiro uma vez por semana durante o mês e procurar teias finas nas pontas dos ramos"
+    }
+  ]
+}

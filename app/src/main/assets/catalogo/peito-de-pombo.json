@@ -1,0 +1,174 @@
+{
+  "planta": {
+    "nome_comum": "Peito-de-pombo",
+    "nome_cientifico": "Tapirira guianensis",
+    "descricao": "Árvore nativa do Brasil (também chamada de pau-pombo ou tatapiririca), da família do cajueiro. Cresce rápido e dá cachos de frutinhos roxos que atraem sabiás e outras aves. Em vaso grande e com poda anual ela fica como uma arvoreta de 2 a 3 m. Por ser pioneira, aguenta sol forte, mas a muda jovem sofre com geada e com substrato seco no calor.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico, cimento ou fibra, com pelo menos 50 cm de diâmetro e 50 cm de profundidade e vários furos no fundo. Pode começar num vaso de 30 litros e passar para o definitivo no segundo ano",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca e 20% areia grossa, mais 1 colher de sopa de farinha de ossos para cada 10 litros",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda está refazendo as raízes no vaso novo. Na primeira semana é normal que ela perca uma ou duas folhas velhas. A fase termina quando aparecem brotos avermelhados na ponta dos ramos e as folhas ficam firmes no sol da tarde."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A planta cresce rápido: na estação quente ela pode ganhar de 50 cm a 1 m no ano. Deixe um ramo principal guiar a copa e, se algum ramo lateral disputar com ele, encurte esse ramo. A fase termina quando o tronco engrossa e a muda passa a se sustentar sem tutor."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "O ano típico: cresce da primavera ao verão e desacelera no inverno, quando pode perder parte das folhas. A partir do terceiro ou quarto ano, e com sol pleno, pode dar flores miúdas e esbranquiçadas entre agosto e novembro. Os frutos, verdes que ficam roxo-escuros, amadurecem do verão ao outono. A espécie tem plantas masculinas e femininas, por isso nem toda planta frutifica. Em vaso, a altura é controlada pela poda de fim de inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até a água escorrer pelos furos. Acima de 30 °C, confira todo dia. Mantenha o substrato úmido, mas sem água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o peito-de-pombo",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue só se estiver seco nessa profundidade, até escorrer pelos furos. No verão pode ser preciso regar a cada 2 dias. Entre junho e agosto espace para a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o vaso",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 500 g) de húmus de minhoca ou composto sobre o substrato, sem encostar no tronco, e regue em seguida. Uma alternativa é 1 colher de sopa de NPK 10-10-10 para cada 30 litros de vaso. Entre junho e agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as axilas dos ramos novos à procura de cochonilhas (escamas ou bolinhas brancas), folhas cortadas em meia-lua (formiga cortadeira) e manchas escuras nas folhas.",
+      "critica": false
+    },
+    {
+      "id": "renovacao_substrato",
+      "titulo": "Renovar o substrato e as raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro: tire a planta do vaso e corte 3 a 5 cm das raízes que estiverem enroladas nas laterais e no fundo. Troque um terço do substrato por mistura nova e volte a planta para o mesmo vaso, ou para um maior se ainda não chegou aos 60 litros. Regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso",
+      "mensagem": "Enterrar o colo da muda abaixo do nível em que ela estava favorece a podridão do tronco.",
+      "acao_requerida": "Plantar mantendo o torrão no mesmo nível em que estava no saquinho, firmar o substrato em volta e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A muda pegou",
+      "mensagem": "Se já apareceram brotos novos, as raízes se firmaram e a rega pode ficar mais espaçada.",
+      "acao_requerida": "Conferir se há brotação nova nas pontas dos ramos e deixar o vaso em sol pleno, se ainda estiver na meia-sombra"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de peito-de-pombo",
+      "mensagem": "Se o vaso ainda for menor que 60 litros, as raízes já devem estar ocupando o vaso todo.",
+      "acao_requerida": "Passar a planta para o vaso definitivo de pelo menos 60 litros, completando com substrato novo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou bolinhas brancas algodoadas nos ramos novos e no verso das folhas. As folhas ficam pegajosas e surge um mofo preto (fumagina) por cima delas",
+      "prevencao_tratamento": "Remover com uma escova macia ou um algodão com álcool. Em infestação grande, aplicar óleo mineral ou óleo de neem a 1% no fim da tarde e repetir após 7 dias"
+    },
+    {
+      "nome": "Formiga cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou ramos desfolhados de um dia para o outro, com uma trilha de formigas até o vaso",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida granulada nas trilhas, longe de crianças e animais. Uma barreira de graxa ao redor do tronco ou do pé do vaso impede a subida"
+    },
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelas e murchas mesmo com o substrato úmido, raízes escuras e moles e cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter os furos desentupidos. Se já apareceu, cortar as raízes podres e replantar em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras de borda irregular nas folhas, que secam e caem, principalmente no verão chuvoso",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e retirar e descartar as folhas atacadas. Se as manchas se espalharem, pulverizar calda bordalesa a 1%"
+    },
+    {
+      "nome": "Raízes enoveladas no vaso",
+      "tipo": "DISTURBIO",
+      "sintomas": "Crescimento parado, folhas pequenas e amareladas, substrato que seca em poucas horas e raízes saindo pelos furos",
+      "prevencao_tratamento": "Renovar o substrato e podar as raízes a cada 2 anos. Ao mudar de vaso, abrir com a mão as raízes que estiverem enroladas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Nos três primeiros anos a planta é sensível a geada, e no inverno ela gasta pouca água: substrato encharcado no frio apodrece as raízes.",
+      "acao_requerida": "Em noites de geada, levar o vaso para perto de uma parede ou sob a cobertura, ou cobrir a copa com TNT. Espaçar a rega até o substrato secar a 5 cm"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação e de altura",
+      "mensagem": "No fim do inverno, pouco antes da brotação, a poda cicatriza rápido e estimula uma copa mais cheia.",
+      "acao_requerida": "Tirar os ramos secos, cruzados e os que brotam da base do tronco. Encurtar em até um terço os ramos que passaram da altura desejada, cortando logo acima de uma folha"
+    }
+  ]
+}

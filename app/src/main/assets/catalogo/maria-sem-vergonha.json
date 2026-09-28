@@ -1,0 +1,215 @@
+{
+  "planta": {
+    "nome_comum": "Maria-sem-vergonha",
+    "nome_cientifico": "Impatiens walleriana",
+    "descricao": "Planta florífera de origem africana que floresce quase o ano todo na meia-sombra, com flores rosa, vermelhas, brancas ou lilases. O nome vem das cápsulas de semente, que estouram ao toque e lançam as sementes longe. É perene e em vaso vive vários anos, mas depois de um ou dois anos os ramos ficam compridos e ralos, e o costume é renová-la por estacas. Em áreas de mata úmida ela se espalha sozinha, então não descarte restos perto de mato.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada com 15 a 20 cm de diâmetro e 15 cm de profundidade, com furos no fundo; em jardineira, deixe 20 cm entre mudas. O barro cru seca rápido demais para ela",
+    "volume_minimo_litros": 2,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% fibra de coco ou casca de arroz carbonizada; fofo, que segure umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "A muda sai da bandeja com pouca raiz e murcha fácil. É normal cair algumas flores e botões nos primeiros dias. Mantenha-a em luz clara sem sol direto. A fase acaba quando as pontas voltam a crescer e a planta para de murchar nas horas quentes."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 45,
+      "descricao": "As raízes tomam o vaso e surgem ramos laterais e novos botões. Os caules são suculentos e quebradiços, então evite deixar o vaso onde bate vento ou onde passa gente. Quando a planta forma uma touceira cheia e floresce sem parar, ela já está estabelecida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 46,
+      "dia_fim": null,
+      "descricao": "Floresce da primavera ao outono sem pausa, desde que tenha água constante e sombra à tarde. No inverno frio ela para de crescer e floresce pouco. Abaixo de 5 °C, pode perder as folhas ou morrer. As flores murchas caem sozinhas, então não precisa limpar uma por uma. Com um ou dois anos, os ramos ficam compridos, lenhosos embaixo e com poucas folhas, e aí é hora de renovar por estacas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a maria-sem-vergonha",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Toque a superfície do substrato. Se o primeiro centímetro estiver seco, regue devagar na base, sem molhar as flores, até escorrer pelos furos. Se ela murchar na hora mais quente mas o substrato estiver úmido, não regue de novo, porque ela se recupera no fim da tarde.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a maria-sem-vergonha",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue na base até escorrer pelos furos e jogue fora a água do pratinho depois de 30 minutos. Acima de 30 °C, confira todo dia. No inverno, só regue quando os 2 cm estiverem secos, o que costuma levar de 3 a 4 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido para flores (NPK 4-14-8 ou parecido) na metade da dose do rótulo e regue com ele o substrato já úmido. Não aplique com o substrato seco, porque queima a raiz. De junho a agosto, espace para cada 30 dias ou pule.",
+      "critica": false
+    },
+    {
+      "id": "desponte_ramos",
+      "titulo": "Beliscar as pontas dos ramos",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com os dedos ou uma tesoura limpa, retire 1 a 2 cm da ponta dos ramos mais compridos, logo acima de um par de folhas. Isso faz a planta ramificar e ficar compacta. Corte também os ramos quebrados ou amarelados rente ao ramo principal.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos claros com teia fina (ácaro), insetos verdes nos brotos (pulgão), mosquinhas brancas que voam ao balançar o vaso e pó branco no verso das folhas (míldio). Confira também se a base dos caules está firme e sem manchas escuras.",
+      "critica": false
+    },
+    {
+      "id": "renovacao_estacas",
+      "titulo": "Renovar a planta por estacas",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte 4 a 6 pontas saudáveis de 8 a 10 cm, tire as folhas de baixo e as flores e enterre 3 cm em substrato novo úmido. Elas enraízam em 10 a 15 dias na sombra clara (também enraízam num copo de água). Depois de pegarem, descarte a planta velha, ou pode a velha pela metade e troque o substrato do vaso.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar sem apertar",
+      "mensagem": "Os caules da maria-sem-vergonha são suculentos e quebram fácil, e a muda chega com pouca raiz.",
+      "acao_requerida": "Plantar a muda na mesma altura em que estava na bandeja, firmar o substrato de leve com os dedos, regar bem e deixar o vaso em lugar claro sem sol direto por uma semana"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Pode ir para o lugar definitivo",
+      "mensagem": "A muda já deve ter parado de murchar. Agora ela aguenta sol fraco da manhã, que aumenta a floração.",
+      "acao_requerida": "Mudar o vaso para um lugar com até 2 horas de sol antes das 10h e sombra no resto do dia"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Primeiro desponte",
+      "mensagem": "Beliscar as pontas agora faz a planta abrir em vários ramos e formar uma touceira cheia de flores, em vez de subir fina.",
+      "acao_requerida": "Retirar 1 cm da ponta de cada ramo principal, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato molhado; base do caule escura, mole e aguada; raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regar só quando os 2 cm de cima secarem e nunca deixar água no pratinho. Se já pegou, tire estacas das pontas sadias para salvar a planta e descarte o resto com o substrato"
+    },
+    {
+      "nome": "Míldio do impatiens (Plasmopara obducens)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelo-claras que se enrolam para baixo, com pó branco no verso; em poucos dias a planta perde folhas e flores e fica só com os talos",
+      "prevencao_tratamento": "Regar na base, sem molhar as folhas, e manter espaço para o ar circular. Retire e descarte no lixo, não na compostagem, as plantas afetadas, porque o fungo fica no substrato; não replante impatiens no mesmo substrato"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores e folhas caídas sobre a planta apodrecem com um mofo cinza felpudo que se espalha para os caules",
+      "prevencao_tratamento": "Tirar as flores caídas que ficam presas na folhagem, evitar molhar a planta à noite e melhorar a ventilação"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros que ficam amareladas e secas; teia fina no verso e nos brotos, pior em tempo seco e quente",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se infestar, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Pulgão e mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos e botões deformados e pegajosos, com colônias de insetos verdes ou mosquinhas brancas que levantam voo ao mexer na planta",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, sabão potássico ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e flores roídas com bordas irregulares durante a noite, com rastro brilhante no vaso",
+      "prevencao_tratamento": "Catar à noite com lanterna e deixar o vaso suspenso ou sobre pés, longe do chão úmido"
+    },
+    {
+      "nome": "Murcha e queima por sol forte",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta desaba ao meio-dia e folhas ficam com manchas pálidas ou bordas secas e marrons; flores desbotadas e poucas",
+      "prevencao_tratamento": "Tirar do sol depois das 10h. Se ela murcha todo dia mesmo com o substrato úmido, o problema é luz demais, e mais água só apodrece a raiz"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir",
+      "prevencao_tratamento": "Costuma vir de o substrato secar entre regas, de mudança brusca de lugar ou de frio abaixo de 12 °C. Mantenha a umidade constante e evite mudar o vaso de lugar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: proteja do sol da tarde",
+      "mensagem": "No calor, o vaso pequeno seca em um dia e o sol da tarde queima as folhas da maria-sem-vergonha.",
+      "acao_requerida": "Deixar o vaso em sombra depois das 10h e conferir a umidade do substrato todos os dias"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "Com frio ela quase para de crescer, e substrato encharcado apodrece a raiz. Abaixo de 5 °C, as folhas queimam.",
+      "acao_requerida": "Regar só quando os 2 cm de cima estiverem secos, suspender ou espaçar a adubação e levar o vaso para perto de uma parede ou para dentro nas noites abaixo de 8 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de primavera",
+      "mensagem": "Depois do inverno a planta costuma estar rala e com ramos compridos. Uma poda agora renova a touceira para florir o verão todo.",
+      "acao_requerida": "Cortar todos os ramos pela metade, logo acima de um par de folhas, retomar a adubação a cada 15 dias e aproveitar as pontas cortadas como estacas"
+    }
+  ]
+}

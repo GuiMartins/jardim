@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Cagaiteira",
+    "nome_cientifico": "Eugenia dysenterica",
+    "descricao": "Árvore frutífera nativa do Cerrado, da família da pitanga e da jabuticaba, que perde parte das folhas na seca e floresce em agosto e setembro, antes das chuvas. Dá frutos amarelo-claros, azedinhos e muito aromáticos, bons para suco, sorvete e geleia. Em vaso grande fica com 2 a 3 m. Uma muda de semente leva de 4 a 5 anos para dar os primeiros frutos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cerâmica ou fibra, com pelo menos 50 cm de diâmetro e 50 cm de profundidade (a raiz principal é funda), com vários furos no fundo. Comece com um de 40 L e passe para o definitivo no segundo ano",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca, 10% casca de arroz carbonizada; solo levemente ácido (pH 5 a 6), sem calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho e vai para o vaso. É normal perder algumas folhas mais velhas na primeira semana. A fase termina quando surgem brotos novos, avermelhados, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e o caule engrossa. Cresce devagar, com brotações em surtos na época das chuvas. Na seca pode perder parte das folhas sem estar doente: confira se os ramos continuam verdes por dentro raspando a casca com a unha."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1460,
+      "descricao": "A árvore forma a copa e a casca fica grossa e rugosa, com aspecto de cortiça. Ainda não floresce, ou dá poucas flores que caem. A planta passa à fase adulta quando floresce em peso entre agosto e setembro."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1461,
+      "dia_fim": null,
+      "descricao": "O ano típico: em julho e agosto perde boa parte das folhas; em agosto e setembro solta folhas novas junto com flores brancas; os frutos amadurecem cerca de 30 a 40 dias depois, entre setembro e novembro, e caem sozinhos quando maduros. Nas chuvas a planta cresce e acumula reservas para o ano seguinte."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda no torrão da muda, deixar secar por completo mata a planta; encharcar também, então esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cagaiteira",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). No verão acima de 30 °C, confira a cada 2 ou 3 dias. De maio a julho, com a planta sem folhas, espace para a cada 7 dias, mas não deixe secar por semanas. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a cagaiteira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de composto orgânico ou húmus pela superfície, longe do caule, mais 1 colher de sopa de NPK 10-10-10 por vaso de 60 L, e regue em seguida. Na planta adulta, troque o NPK pela fórmula 4-14-8 na adubação de julho ou agosto, para ajudar a florada. Não adube com o substrato seco.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas novas procurando pó amarelo-alaranjado (ferrugem) e os ramos procurando escamas brancas ou marrons presas à casca (cochonilha). Na época dos frutos, procure frutos com furinhos e partes moles (mosca-das-frutas).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre outubro e dezembro, tire a planta do vaso, desmanche um terço do torrão por fora, corte as raízes enroladas e replante com substrato novo, num vaso maior se ainda estiver abaixo de 80 L. Se já estiver no definitivo, raspe os 10 cm de cima e reponha com composto novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso",
+      "mensagem": "A cagaiteira cria uma raiz principal funda, que se enrola e trava o crescimento se ficar no saquinho.",
+      "acao_requerida": "Cortar o saquinho sem desmanchar o torrão e plantar na mesma altura em que estava, sem enterrar o colo do caule; regar bem e deixar em meia-sombra por 7 dias antes do sol pleno"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Depois de uma semana de adaptação, a muda já aguenta sol direto, que ela precisa para crescer forte.",
+      "acao_requerida": "Mudar o vaso para o lugar definitivo, com pelo menos 6 horas de sol direto por dia"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Poda de formação",
+      "mensagem": "Um caule único e comprido fica frágil no vaso. Podar a ponta faz a planta ramificar e formar copa baixa.",
+      "acao_requerida": "Se a muda tiver mais de 60 cm sem galhos, cortar a ponta do caule principal a 50 cm do substrato, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 1461,
+      "titulo": "Idade de florescer",
+      "mensagem": "A cagaiteira já tem idade para dar frutos. A florada vem entre agosto e setembro, junto com as folhas novas.",
+      "acao_requerida": "Manter a rega regular a partir de agosto e não podar os ramos do ano, onde nascem as flores"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem fora da época seca, ramos secam de cima para baixo, substrato fica sempre úmido e com cheiro azedo; raízes escuras e moles",
+      "prevencao_tratamento": "Planta de Cerrado não tolera encharcamento: substrato com areia, furos livres e pratinho vazio. Se aparecer, tire do vaso, corte as raízes podres e replante em substrato novo e seco, regando só quando secar 5 cm"
+    },
+    {
+      "nome": "Ferrugem-das-mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado no verso de folhas novas, brotos e flores, que depois ficam retorcidos e secam",
+      "prevencao_tratamento": "Retirar e jogar no lixo as partes atacadas, evitar molhar a copa na rega e manter a planta ventilada; em ataque forte, calda bordalesa a 1% nas brotações a cada 10 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos, partes moles e larvas brancas dentro; caem antes de amadurecer",
+      "prevencao_tratamento": "Recolher todo dia os frutos caídos, ensacar os frutos pequenos com saquinho de TNT e pendurar armadilha de garrafa PET com suco de fruta fermentado perto da planta"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas ou marrons presas aos ramos e ao verso das folhas; folhas pegajosas, às vezes com fumagina preta e formigas subindo",
+      "prevencao_tratamento": "Remover com escova de dente e água com sabão neutro; em infestação, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Queda de flores e frutos por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "A planta floresce bem, mas flores e frutinhos verdes caem em massa poucos dias depois",
+      "prevencao_tratamento": "No chão a cagaiteira puxa água de camadas fundas na seca; no vaso não. Mantenha a rega regular de agosto a outubro, mesmo com a planta ainda sem folhas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Queda de folhas na seca",
+      "mensagem": "É normal a cagaiteira perder boa parte das folhas agora: é o repouso dela antes da florada.",
+      "acao_requerida": "Espaçar a rega para uma vez por semana, sem deixar o substrato secar de todo, e não adubar com nitrogênio até as folhas novas surgirem"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Florada da cagaiteira",
+      "mensagem": "As flores brancas saem junto com as folhas novas. Sem água agora, elas caem sem virar fruto.",
+      "acao_requerida": "Voltar a regar a cada 3 ou 4 dias, conferindo o substrato, e ensacar os frutinhos quando chegarem ao tamanho de uma ervilha"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Hora de colher cagaita",
+      "mensagem": "Os frutos ficam amarelo-claros e caem sozinhos quando maduros. Estragam em 2 ou 3 dias e fermentam rápido no calor.",
+      "acao_requerida": "Recolher os frutos caídos todo dia de manhã e consumir ou congelar a polpa no mesmo dia; não comer frutos aquecidos pelo sol ou fermentados, nem em grande quantidade, porque são laxantes"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Poda de limpeza pós-colheita",
+      "mensagem": "Com a colheita encerrada e as chuvas começando, a planta rebrota rápido.",
+      "acao_requerida": "Cortar ramos secos, doentes e os que crescem para dentro da copa, rente ao ramo de onde saem, sem tirar mais de um quinto da copa"
+    }
+  ]
+}

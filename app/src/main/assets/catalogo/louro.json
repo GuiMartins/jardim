@@ -1,0 +1,203 @@
+{
+  "planta": {
+    "nome_comum": "Louro",
+    "nome_cientifico": "Laurus nobilis",
+    "descricao": "Arbusto aromático do Mediterrâneo cujas folhas secas temperam feijão, carnes e molhos. Em vaso cresce devagar, fica como arbusto de 1 a 2 m e dá folhas o ano todo por décadas, desde que não fique encharcado.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com vários furos no fundo; suba para 40 cm na primeira troca",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada ou perlita, 20% húmus de minhoca; bem drenante, porque raiz encharcada é o que mais mata o louro",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante e pode perder algumas folhas velhas, o que é normal. A fase termina quando aparecem brotos novos, verde-claros e brilhantes, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a planta passa a soltar brotações em surtos, na primavera e no verão. O crescimento é lento: 10 a 20 cm neste período é bom. Evite colher folhas até ela ter uns 40 cm e ramos firmes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto formado, que tolera alguns dias sem rega e fornece folhas o ano todo. Brota forte de setembro a março, desacelera no outono e quase para no inverno, quando pede menos água e nenhum adubo. Pode dar pequenas flores amarelo-creme no fim do inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de louro",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho depois de 30 minutos. Se ainda estiver úmido, espere o dia seguinte.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o louro",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão acima de 30 °C, confira a cada 2 ou 3 dias; no inverno, a cada 7. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o louro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca e 1 colher de sopa de farinha de ossos na superfície de um vaso de 20 L, longe do tronco, e regue em seguida. De maio a agosto, pule a adubação: a planta está parada e o adubo só acumula sal.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe a nervura central e os ramos finos: procure escamas marrons grudadas, algodãozinho branco, folhas com a borda enrolada e amarelada ou pó preto na superfície.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher folhas de louro",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Colha folhas maduras, verde-escuras, da parte de baixo dos ramos, cortando o pecíolo com tesoura; nunca tire mais de um quarto da folhagem de uma vez. Seque à sombra, em lugar ventilado, por 1 a 2 semanas e guarde em pote fechado.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no outono, tire a planta do vaso, raspe 3 a 4 cm do torrão pelos lados e por baixo e replante em substrato novo, num vaso 5 a 10 cm maior. Se não quiser um vaso maior, apare as raízes e volte para o mesmo. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Acostumar ao sol pleno",
+      "mensagem": "Mudas de viveiro costumam vir da sombra; sol forte de repente queima as folhas.",
+      "acao_requerida": "Deixar o vaso com sol da manhã por uma semana e depois levá-lo para o lugar definitivo com 6 horas de sol"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Despontar para ramificar",
+      "mensagem": "Cortar as pontas agora faz o louro soltar ramos laterais e virar um arbusto cheio, em vez de uma haste fina.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo principal, logo acima de um par de folhas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão radicular (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem de baixo para cima, a planta murcha com o substrato molhado, raízes marrons e moles com cheiro ruim",
+      "prevencao_tratamento": "Substrato drenante, furos desobstruídos e pratinho sempre vazio; regar só com o substrato seco a 4 cm. Se aparecer, tire do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça (Coccus hesperidum)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons e ovais grudadas na nervura e nos ramos; folhas pegajosas e amareladas",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; depois, óleo mineral ou de neem a 0,5% no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Cochonilha-farinhenta (Pseudococcidae)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas axilas das folhas e na base dos ramos",
+      "prevencao_tratamento": "Retirar com cotonete com álcool 70% e aplicar sabão potássico ou óleo de neem a 0,5% semanalmente até sumir"
+    },
+    {
+      "nome": "Psilídeo-do-louro (Lauritrioza alacris)",
+      "tipo": "PRAGA",
+      "sintomas": "Bordas das folhas novas enroladas, grossas e amareladas, com ninfas cobertas de cera branca dentro",
+      "prevencao_tratamento": "Cortar e descartar as folhas enroladas assim que aparecem; óleo de neem a 0,5% nas brotações novas na primavera"
+    },
+    {
+      "nome": "Fumagina",
+      "tipo": "DOENCA",
+      "sintomas": "Camada de pó preto sobre as folhas, que sai ao esfregar",
+      "prevencao_tratamento": "Consequência de cochonilha ou psilídeo: controle a praga e limpe as folhas com pano úmido e água com sabão neutro"
+    },
+    {
+      "nome": "Queimadura de sol ou de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas marrons e secas no meio ou nas bordas das folhas mais expostas",
+      "prevencao_tratamento": "Aclimatar mudas ao sol aos poucos e, em noites de geada, encostar o vaso numa parede ou cobrir com TNT; as folhas atingidas não se recuperam, mas a planta rebrota"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Menos água no frio",
+      "mensagem": "Com o frio, o louro quase para de crescer e o substrato demora mais para secar. Rega de verão agora apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para cerca de uma vez por semana, sempre conferindo com o dedo, e suspender o adubo até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio intenso",
+      "mensagem": "O louro aguenta frio, mas em vaso a raiz fica exposta e geada forte queima as folhas.",
+      "acao_requerida": "Em noites com previsão abaixo de 0 °C, encostar o vaso numa parede protegida ou cobrir a copa com TNT até de manhã"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno, antes da brotação, a poda dá forma à planta e estimula ramos novos e folhas tenras.",
+      "acao_requerida": "Tirar ramos secos, cruzados e para dentro e encurtar em até um terço os ramos longos, cortando logo acima de uma folha. Aproveite as folhas podadas para secar"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: vaso seca mais rápido",
+      "mensagem": "No verão a planta está em plena brotação e o vaso ao sol pode secar em 2 dias. Calor seco também favorece cochonilha.",
+      "acao_requerida": "Conferir o substrato a cada 2 ou 3 dias e olhar o verso das folhas novas com mais atenção"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Mussaenda-branca",
+    "nome_cientifico": "Mussaenda philippica 'Aurora'",
+    "descricao": "Arbusto tropical das Filipinas, cultivado pelas sépalas brancas e grandes que envolvem flores pequenas e amarelas. Floresce da primavera ao outono e fica bem em vaso grande, em varanda ou quintal ensolarado. Não aguenta geada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; de cerâmica ou plástico grosso, porque um vaso leve tomba com o arbusto carregado",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina, 10% areia grossa; levemente ácido (pH 5,5 a 6,5), sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso novo. É normal cair uma ou outra folha e as flores existentes murcharem. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e os ramos crescem rápido. Desponte as pontas para a planta ramificar e ficar cheia, em vez de subir com poucos galhos compridos. Nos meses quentes, as primeiras sépalas brancas aparecem nas pontas dos ramos novos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto formado, de 1 a 2 m em vaso. Floresce da primavera ao outono (outubro a abril), sempre nos ramos do ano. No inverno cresce pouco, pode perder folhas com o frio e bebe menos água. A poda do fim do inverno define o formato e o volume de flores da estação seguinte."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a mussaenda (adaptação)",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Esvazie o pratinho depois de 30 minutos. O torrão da muda ainda não se ligou ao substrato novo e seca antes dele.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a mussaenda",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 a 4 cm no substrato; regue até escorrer pelos furos se estiver seco. No verão, acima de 30 °C, confira todo dia; no inverno, espaçe para a cada 5 a 7 dias. Folhas murchas à tarde que se recuperam à noite indicam calor, não falta de água: confira o substrato antes de regar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a mussaenda",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca ou 2 colheres de sopa de farinha de ossos com torta de mamona sobre o substrato, sem encostar no caule, e regue em seguida. Na floração, prefira NPK 4-14-8 (1 colher de sopa diluída em 1 L de água). Em junho e julho pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e procure pontinhos brancos algodonosos ou cascas marrons coladas no caule (cochonilha), teias finas (ácaro) e insetinhos brancos que voam ao mexer (mosca-branca). Confira também se as folhas novas estão amarelas com nervuras verdes.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, junto com a poda: tire a planta do vaso, corte 3 a 5 cm das raízes enoveladas em volta do torrão e replante no mesmo vaso (ou num 10 cm maior) com substrato novo. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da mussaenda",
+      "mensagem": "A muda de saquinho costuma vir com o torrão enovelado e precisa ser acomodada com cuidado no vaso definitivo.",
+      "acao_requerida": "Soltar levemente as raízes enroladas do torrão, plantar na mesma altura em que estava, firmar o substrato em volta e regar até escorrer"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora de despontar",
+      "mensagem": "Os ramos novos já estão firmes. Cortar as pontas agora faz cada ramo abrir dois ou três laterais, e cada ponta nova é uma flor a mais.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo principal, logo acima de um par de folhas, com tesoura limpa"
+    },
+    {
+      "dia_disparo": 181,
+      "titulo": "Mussaenda estabelecida",
+      "mensagem": "A planta está adulta: dali em diante o ritmo é o das estações, com poda no fim do inverno e flores da primavera ao outono.",
+      "acao_requerida": "Conferir se o vaso não tomba com vento e, se o arbusto passar de 1,5 m, prender a um tutor firme"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; base do caule escura e mole; raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e garantir furos desobstruídos. Na planta afetada, retire do vaso, corte as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha (algodonosa e de carapaça)",
+      "tipo": "PRAGA",
+      "sintomas": "Flocos brancos algodonosos nas axilas das folhas ou cascas marrons coladas no caule; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 2 ou 3 dias no tempo seco; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca e pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Insetinhos brancos que voam ao tocar a planta ou colônias verdes nos brotos; brotos deformados e melados",
+      "prevencao_tratamento": "Jato de água nos brotos e armadilha adesiva amarela perto do vaso; sabão neutro a 1% ou neem a 0,5% se voltar"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras verdes; a planta cresce pouco e floresce menos",
+      "prevencao_tratamento": "Evitar calcário e água muito calcária; adubar com quelato de ferro conforme o rótulo e acrescentar composto orgânico para acidificar o substrato"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, com manchas marrons ou queda em massa após noites abaixo de 10 °C",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou sob cobertura nas noites frias; não podar os ramos danificados até o fim do inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "A mussaenda quase para de crescer no frio e pode perder folhas. Substrato encharcado no inverno apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 4 cm, suspender a adubação e abrigar o vaso nas noites abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual da mussaenda",
+      "mensagem": "As flores saem nos ramos novos do ano. A poda no fim do inverno gera muitos ramos novos e, com eles, uma floração farta.",
+      "acao_requerida": "Cortar os ramos pela metade ou até 1/3 do comprimento, acima de um par de gemas, e retirar galhos secos, fracos ou cruzados"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar a adubação",
+      "mensagem": "Com o calor voltando, a planta brota forte e prepara a floração da primavera.",
+      "acao_requerida": "Aplicar adubo orgânico e voltar a regar no ritmo normal, conferindo o substrato a cada 3 dias"
+    }
+  ]
+}

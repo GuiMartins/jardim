@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Manacá-de-cheiro",
+    "nome_cientifico": "Brunfelsia uniflora",
+    "descricao": "Arbusto nativo da Mata Atlântica, famoso pelas flores perfumadas que abrem roxas e vão clareando até o branco, com as três cores juntas no mesmo pé. Floresce em peso na primavera e se dá bem em vaso grande na varanda. Todas as partes, principalmente frutos e sementes, são tóxicas para cães, gatos e crianças.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica ou plástico com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 30,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina, 10% areia grossa; levemente ácido (pH 5,5 a 6,5), sem calcário",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo e à luz da casa. É normal cair algumas folhas e botões nas duas primeiras semanas. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 240,
+      "descricao": "As raízes ocupam o vaso e a planta ramifica. Folhas verde-escuras e brilhantes indicam boa adaptação; folhas amareladas com nervuras verdes indicam substrato alcalino. Ao fim da fase o arbusto já sustenta a primeira floração farta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 241,
+      "dia_fim": null,
+      "descricao": "Arbusto formado, de 1 a 2 m em vaso. Floresce intensamente de setembro a novembro, às vezes com uma segunda florada menor no verão. Depois da florada vem a poda de limpeza; no inverno o crescimento desacelera e a planta pede menos água e nenhum adubo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de manacá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda não saiu do torrão da muda, que seca antes do resto do vaso. Esvazie o pratinho meia hora depois.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o manacá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue até escorrer pelos furos só se estiver seco. No verão acima de 30 °C, confira a cada 2 dias; no inverno, espace para a cada 5 a 7 dias. Folhas murchas com substrato úmido indicam excesso de água, não falta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o manacá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 4-14-8 mais 1 xícara de húmus de minhoca na borda do vaso, longe do caule, e regue em seguida. De junho a agosto, pule a adubação. Se as folhas novas vierem amareladas com nervuras verdes, acrescente sulfato ferroso (1 colher de café diluída em 1 L de água).",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos brancos ou marrons presos aos ramos (cochonilha), teias finas no verso (ácaro) ou nuvem branca ao balançar a planta (mosca-branca).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Renovar substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Preferencialmente em setembro, depois da florada ou no fim do inverno, tire a planta, desembarace as raízes que circulam o fundo, corte até um quarto das mais velhas e replante com substrato novo, num vaso 5 cm maior se as raízes tomaram o torrão.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Muda de saquinho ou vaso pequeno seca rápido e entorta a raiz. O plantio no vaso definitivo deve ser no primeiro dia.",
+      "acao_requerida": "Plantar no vaso de 30 L com camada de drenagem, deixando o colo da muda no mesmo nível em que estava, e regar bem; manter à meia-sombra clara na primeira semana"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda adaptada",
+      "mensagem": "Com brotos novos aparecendo, a planta aguenta a posição definitiva.",
+      "acao_requerida": "Levar o vaso para o local com sol da manhã (3 a 4 horas) e sombra à tarde"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e amarelam mesmo com o substrato úmido; base do caule escurecida e raízes marrons e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no pratinho. Se aparecer, retirar a planta, cortar as raízes podres e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças marrons ou flocos brancos presos aos ramos e ao verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia embebida em álcool 70%; se persistir, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto bronzeado e teias finas no verso, principalmente em tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; óleo de neem a 0,5% a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos ao mexer a planta; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas no fim da tarde"
+    },
+    {
+      "nome": "Clorose férrica",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras bem verdes; crescimento fraco e poucas flores",
+      "prevencao_tratamento": "Substrato levemente ácido, sem calcário nem cinza; regar com sulfato ferroso diluído (1 colher de café por litro) uma vez por mês até as folhas novas saírem verdes"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões caem antes de abrir, logo no início da florada",
+      "prevencao_tratamento": "Evitar mudar o vaso de lugar durante a formação dos botões e manter a rega regular, sem deixar secar de todo nem encharcar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio o manacá cresce pouco e a raiz apodrece fácil no substrato úmido. Geada queima as folhas e os ramos.",
+      "acao_requerida": "Espaçar a rega para quando o substrato secar a 3 cm, suspender o adubo até agosto e, em noite com previsão abaixo de 3 °C, levar o vaso para perto da parede ou para dentro da varanda"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Preparar a florada",
+      "mensagem": "Os botões da primavera começam a se formar agora.",
+      "acao_requerida": "Retomar a adubação com NPK 4-14-8, voltar à rega normal e não mudar o vaso de lugar até a florada acabar"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Poda de limpeza pós-florada",
+      "mensagem": "Com a florada principal encerrada, uma poda leve adensa o arbusto e estimula os ramos que darão flores no ano seguinte.",
+      "acao_requerida": "Cortar pontas de ramos compridos acima de uma folha, tirar galhos secos e cruzados e remover os frutinhos verdes, que são tóxicos; use luvas"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Amoreira-branca",
+    "nome_cientifico": "Morus alba",
+    "descricao": "Árvore frutífera de origem asiática, rústica e de crescimento rápido. Os frutos podem ser brancos, rosados ou roxos e são doces, e as folhas alimentam o bicho-da-seda. Em vaso grande e com poda anual, fica como arbusto de 1,5 a 2 m e dá frutos já no primeiro ou no segundo ano a partir de muda de estaca.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 45 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; prefira barro ou plástico grosso de cor clara, que esquenta menos a raiz",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa, 10% casca de arroz carbonizada, mais 1 xícara de farinha de ossos misturada por vaso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho e vai para o vaso definitivo. Algumas folhas podem amarelar e cair nos primeiros dias, o que é normal. A fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido de ramos e raízes: a muda pode ganhar 50 cm ou mais em poucos meses. É a fase de formar a copa com 3 ou 4 ramos principais. Mudas de estaca costumam florescer já na primeira primavera. As flores são pequenos cachos verdes que viram frutos em cerca de 45 dias."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: floresce no fim do inverno (agosto), os frutos amadurecem de setembro a novembro e, logo depois da colheita, vem a poda de contenção. No verão cresce muito e bebe muita água. No inverno desacelera e, onde faz frio, perde parte das folhas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até a água escorrer pelos furos. A raiz ainda não saiu do torrão da muda, então concentre a água perto do caule. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a amoreira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 L num vaso de 40 L). No verão e durante a frutificação, confira a cada 1 ou 2 dias, porque a falta de água derruba os frutos verdes. No inverno, espace para cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a amoreira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto e 2 colheres de sopa de farinha de ossos na borda do vaso, longe do caule, afofe de leve e regue em seguida. Pule a adubação em junho e julho, quando a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar ramos e folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure crostas brancas ou acinzentadas grudadas nos ramos e no tronco (cochonilha), manchas marrons com borda escura nas folhas e teias finas no verso delas. Na época dos frutos, veja se há frutos moles com furinhos (mosca-das-frutas).",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato e podar a raiz",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça no fim do inverno. Tire a planta do vaso, corte 3 a 5 cm de raiz em volta e no fundo do torrão com uma faca limpa e volte a plantar com um terço de substrato novo. Pode a copa na mesma proporção, para equilibrar com a raiz reduzida.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Muda que fica no saquinho enovela a raiz e para de crescer.",
+      "acao_requerida": "Cortar o saquinho sem desmanchar o torrão, plantar na mesma altura em que estava, firmar o substrato em volta e regar bem"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Poda de formação",
+      "mensagem": "Cortar a ponta do ramo principal faz a muda soltar ramos laterais e formar uma copa baixa, que cabe no vaso e produz mais.",
+      "acao_requerida": "Cortar o ramo principal a 50 ou 60 cm do substrato, logo acima de uma gema, com tesoura limpa"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Escolher os ramos da copa",
+      "mensagem": "Depois da poda de formação saem vários brotos laterais. Ficar com poucos e bem distribuídos evita uma copa fechada, que abafa e junta cochonilha.",
+      "acao_requerida": "Deixar 3 ou 4 ramos fortes, voltados para lados diferentes, e cortar rente os outros e os brotos que saem da base do tronco"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Cochonilha-branca (Pseudaulacaspis pentagona)",
+      "tipo": "PRAGA",
+      "sintomas": "Crostas brancas ou acinzentadas grudadas nos ramos e no tronco; os ramos atacados secam da ponta para a base",
+      "prevencao_tratamento": "Esfregar as crostas com escova macia e água com sabão neutro; se voltarem, pulverizar óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 15 dias. Podar e descartar os ramos muito infestados"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp., Ceratitis capitata)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos moles, com furinhos e larvas brancas dentro; caem antes de amadurecer",
+      "prevencao_tratamento": "Colher os frutos logo que ficam maduros e recolher os caídos todo dia; armadilha de garrafa PET com suco de fruta fermentado pendurada perto da planta"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto de poeira no verso e teias finas; piora em tempo seco e quente",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 3 dias no período seco; se persistir, óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Mancha-foliar (Cercospora moricola)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas com borda escura nas folhas, que amarelam e caem antes do tempo",
+      "prevencao_tratamento": "Regar no substrato sem molhar as folhas, manter a copa arejada com poda e recolher as folhas caídas; em ataque forte, calda bordalesa a 1%"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido, folhas amarelando por inteiro e cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, nunca deixar água parada no pratinho e manter os furos desobstruídos. Se a raiz estiver escura e mole, corte as partes podres e troque o substrato"
+    },
+    {
+      "nome": "Queda de frutos verdes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos pequenos e verdes caem em grande quantidade logo depois da floração",
+      "prevencao_tratamento": "É quase sempre falta de água durante a frutificação. De agosto a novembro, confira o substrato a cada 1 ou 2 dias e não deixe o vaso secar por completo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "A amoreira vai florescer",
+      "mensagem": "Com o fim do inverno surgem os brotos e os cachinhos verdes de flor, que viram amoras em cerca de 45 dias. A falta de água agora derruba os frutos.",
+      "acao_requerida": "Voltar a regar a cada 1 ou 2 dias, fazer uma adubação com húmus e farinha de ossos e, se houver pássaros por perto, preparar uma tela para cobrir a copa"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Época das amoras",
+      "mensagem": "Os frutos amadurecem aos poucos, e cada fruta maduro dura só 2 ou 3 dias no pé antes de cair ou atrair moscas.",
+      "acao_requerida": "Colher a cada 2 dias os frutos que se soltam com um toque leve e recolher os caídos no vaso"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Poda depois da colheita",
+      "mensagem": "A amoreira frutifica nos brotos novos. Podar logo depois da colheita mantém o tamanho certo para o vaso e prepara os ramos da próxima safra.",
+      "acao_requerida": "Encurtar pela metade os ramos que produziram, cortar os secos, os cruzados e os que crescem para dentro da copa, mantendo a altura em até 2 m"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: planta em repouso",
+      "mensagem": "No frio a amoreira desacelera e pode perder parte das folhas. Isso é normal, não é sinal de doença.",
+      "acao_requerida": "Espaçar a rega para cada 5 a 7 dias, suspender a adubação e retirar ramos secos ou quebrados"
+    }
+  ]
+}

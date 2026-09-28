@@ -1,0 +1,220 @@
+{
+  "planta": {
+    "nome_comum": "Mata-fome",
+    "nome_cientifico": "Pithecellobium dulce",
+    "descricao": "Árvore espinhenta da família das leguminosas, originária do México e da América Central e muito plantada no Nordeste como cerca-viva e árvore de sombra. As vagens torcidas se abrem quando maduras e mostram uma polpa branca ou rosada, doce e comestível. Em vaso grande, com poda constante, vira uma arvoreta densa e resistente à seca, e também é muito usada como bonsai.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de profundidade e 45 cm de diâmetro, vários furos no fundo; comece com uns 40 L e passe para 80 a 100 L quando a copa passar de 1,5 m",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca; acrescente 1 colher de sopa de calcário por 10 L se a terra for ácida",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho para o vaso e pode perder algumas folhas nos primeiros dias. A adaptação terminou quando brotam folhinhas novas, pequenas e verde-claras, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o crescimento acelera na primavera e no verão, com ramos novos de 30 a 50 cm por estação. Os espinhos aparecem aos pares na base de cada folha: use luvas em qualquer manuseio. É a hora de definir o tronco principal e a altura da copa."
+    },
+    {
+      "fase_id": "formacao_copa",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "Com podas de ponteiro, a copa fica fechada e ramificada. O tronco engrossa e a casca fica acinzentada. Em vaso, a planta costuma ficar entre 1,5 e 2,5 m se for podada; sem poda, dispara para cima e tomba com o vento."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "A partir do terceiro ou quarto ano a planta pode florir no fim do inverno e na primavera, com pompons branco-esverdeados e perfumados. As vagens amadurecem no fim da primavera e no verão, ficam rosadas e se abrem sozinhas. No inverno cresce pouco e pode perder parte das folhas com frio; volta a brotar forte em setembro. Em vaso, a frutificação é menor que no chão e depende de sol pleno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de mata-fome",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda está só no torrão da muda e seca rápido: acima de 30 °C, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_regular",
+      "titulo": "Regar o mata-fome",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco, até escorrer pelos furos. A planta aguenta seca, mas não encharcamento. No verão quente, em vaso de 40 L, pode precisar a cada 2 ou 3 dias; de junho a agosto, espace para 7 a 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o mata-fome",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus ou composto por vaso de 40 L, ou 20 g de NPK 10-10-10, a 10 cm do tronco, e regue em seguida. Nos meses de junho a agosto use metade da dose. Na planta adulta, prefira fórmula com mais fósforo e potássio (4-14-8) para florir e frutificar.",
+      "critica": false
+    },
+    {
+      "id": "poda_ponteiros",
+      "titulo": "Podar ponteiros do mata-fome",
+      "tipo": "PODA",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 120,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De luvas, corte com tesoura limpa as pontas dos ramos que passaram do contorno da copa, logo acima de uma folha. Retire brotos que saem do tronco abaixo da copa e da base, e ramos que crescem para dentro. Isso adensa a copa e segura o tamanho para o vaso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos, o verso das folhas e as axilas dos espinhos: procure carocinhos brancos ou marrons (cochonilha), pontinhos agrupados (pulgão), folhas roídas ou saquinhos de folha seca pendurados (lagarta-de-cesto).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, corte 3 a 5 cm das raízes que dão volta no torrão e troque um terço do substrato por mistura nova. Se as raízes tomaram todo o vaso, passe para um 20 a 30 L maior. Faça uma poda leve da copa no mesmo dia para compensar a raiz cortada.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Firme a muda no vaso",
+      "mensagem": "A muda recém-plantada balança com o vento e isso rompe as raízes novas.",
+      "acao_requerida": "Enterrar um tutor de bambu a 5 cm do caule e amarrar com fita macia em forma de oito, sem apertar"
+    },
+    {
+      "dia_disparo": 25,
+      "titulo": "A muda pegou?",
+      "mensagem": "Folhas novas nas pontas mostram que as raízes já estão saindo do torrão.",
+      "acao_requerida": "Conferir se há brotação nova; se não houver e as folhas estiverem secando, verificar se o substrato está encharcado ou seco demais"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Cortar a ponta do ramo principal faz a planta ramificar e formar copa em vez de crescer como uma vara.",
+      "acao_requerida": "Com a muda entre 60 e 80 cm, cortar a ponta do caule principal na altura em que quer a copa e deixar 3 ou 4 ramos laterais bem distribuídos"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Tirar o tutor",
+      "mensagem": "Com um ano, o tronco já deve se sustentar sozinho, e o amarrilho pode estrangular o caule que engrossou.",
+      "acao_requerida": "Soltar a fita e testar se a planta fica em pé sem apoio; se ainda tombar, afrouxar a amarração e manter mais alguns meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com substrato úmido; base do tronco escurecida e raízes marrons, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter furos desentupidos e nunca deixar água no pratinho. Planta atacada: tirar do vaso, cortar raízes podres e replantar em substrato novo e arenoso"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, algodoados ou marrons presos nos ramos e nas axilas dos espinhos; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova com álcool 70%; em infestação, calda de sabão neutro com óleo mineral (1%) no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos novos, que ficam enrugados e retorcidos; formigas subindo pelo tronco",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% a cada 5 dias no fim da tarde"
+    },
+    {
+      "nome": "Lagarta-de-cesto e lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos roídos ou ramos desfolhados; saquinhos de pedaços de folha seca pendurados nos galhos",
+      "prevencao_tratamento": "Catar e destruir os cestos e lagartas à mão, de luvas; em ataque grande, Bacillus thuringiensis conforme o rótulo"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco sobre as folhas novas, que amarelam e caem, geralmente no outono seco",
+      "prevencao_tratamento": "Deixar a copa arejada com poda e evitar molhar as folhas à noite; tratar com bicarbonato de sódio (1 colher de chá por litro com gotas de detergente) semanalmente"
+    },
+    {
+      "nome": "Queda de folhas por frio ou geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem em massa no inverno; ponteiros queimados e escuros depois de geada",
+      "prevencao_tratamento": "Proteger a planta jovem em noites abaixo de 3 °C. Queda de folhas no frio é normal e a planta rebrota na primavera; corte os ponteiros secos só em setembro"
+    },
+    {
+      "nome": "Clorose por vaso esgotado",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas pequenas e verde-amareladas com nervuras verdes; crescimento parado na estação quente",
+      "prevencao_tratamento": "Retomar a adubação e, se o substrato tiver mais de 2 anos ou as raízes estiverem enoveladas, renovar substrato e vaso"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio e regar menos",
+      "mensagem": "O mata-fome é tropical: geada queima os ramos, e no frio a raiz quase não bebe água, o que facilita a podridão.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm e, nas noites com previsão abaixo de 3 °C, levar o vaso para perto de uma parede ou cobrir a copa com manta TNT"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual de limpeza",
+      "mensagem": "No fim do inverno, antes da brotação, a planta aceita bem uma poda mais forte e rebrota cheia na primavera.",
+      "acao_requerida": "De luvas, cortar ramos secos, cruzados e queimados pelo frio, e reduzir em até um terço os ramos que passaram do tamanho desejado"
+    },
+    {
+      "meses": [
+        11,
+        12,
+        1
+      ],
+      "titulo": "Vagens amadurecendo",
+      "mensagem": "Nas plantas que floriram, as vagens torcidas ficam rosadas e começam a se abrir, mostrando a polpa branca ou rosada.",
+      "acao_requerida": "Colher as vagens que estão rosadas e começando a abrir, antes que os pássaros cheguem; comer só a polpa e descartar as sementes pretas"
+    }
+  ]
+}

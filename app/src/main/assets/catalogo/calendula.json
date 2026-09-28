@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Calêndula",
+    "nome_cientifico": "Calendula officinalis",
+    "descricao": "Flor laranja ou amarela, comestível e medicinal, usada em chás, pomadas e saladas, que também atrai joaninhas e outros predadores de pulgão para a horta. É perene de vida curta na natureza, mas em vaso é cultivada como anual: floresce bem nos meses frescos e declina com o calor do verão.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 20 cm de diâmetro e 20 cm de profundidade por planta, ou jardineira com 25 cm entre plantas, com furos no fundo",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; solo muito rico em nitrogênio dá muita folha e poucas flores",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 10,
+      "descricao": "Semeie 2 a 3 sementes (curvas e rugosas) a 1 cm de profundidade no centro do vaso e cubra, porque elas germinam melhor no escuro. As plântulas surgem entre o 5º e o 10º dia, com duas folhas ovais e carnudas."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 11,
+      "dia_fim": 30,
+      "descricao": "Surgem as folhas verdadeiras, alongadas, levemente pegajosas e com cheiro resinoso. A fase termina quando a muda forma uma roseta com 6 a 8 folhas."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento e Ramificação",
+      "dia_inicio": 31,
+      "dia_fim": 55,
+      "descricao": "A planta ramifica e chega a 25-40 cm. No fim da fase aparecem botões verdes e arredondados na ponta dos ramos. Folhas amareladas embaixo e caule comprido e mole indicam falta de sol."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 56,
+      "dia_fim": 150,
+      "descricao": "As flores se abrem de manhã e fecham à tarde ou em dias nublados. Colhendo sempre, a planta emite botões novos por meses. Com o calor forte ela fica rala, as flores diminuem e o oídio aumenta: é o fim natural do ciclo. Deixe algumas flores secarem na planta se quiser guardar sementes para o próximo outono."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 10,
+      "instrucoes": "Borrife ou regue com regador de crivo fino pela manhã até umedecer os 2 primeiros centímetros. A superfície não pode secar nem encharcar, porque sementes secas nesse ponto não germinam mais.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a calêndula",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue na base da planta até escorrer pelos furos, sem molhar as folhas (a folha molhada favorece o oídio). No inverno o intervalo pode passar para 3 ou 4 dias; acima de 28 °C, confira todo dia.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar a calêndula",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 25,
+      "dia_fim_ciclo": 130,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de farinha de ossos ao redor da planta, sem encostar no caule, e regue em seguida. Evite adubos ricos em nitrogênio como esterco fresco e ureia.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 11,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Olhe as pontas dos ramos e os botões à procura de pulgões agrupados, vire as folhas procurando mosca-branca e confira se há pó branco (oídio) nas folhas de baixo.",
+      "critica": false
+    },
+    {
+      "id": "colheita_flores",
+      "titulo": "Colher as flores abertas",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 56,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "De manhã, depois que o orvalho secar, corte com a unha ou tesoura as flores totalmente abertas logo abaixo da cabeça. Retire também as flores murchas antes de formarem sementes: isso mantém a planta florescendo. Para chá ou pomada, seque as pétalas à sombra, espalhadas em papel.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 18,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As mudas já têm folhas verdadeiras e estão disputando o mesmo vaso. Com mais de uma planta por 5 litros, todas ficam fracas e florescem pouco.",
+      "acao_requerida": "Deixar só a muda mais vigorosa do vaso, cortando as outras rente ao substrato com tesoura (ou transplantá-las com cuidado para outro vaso)"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Despontar para ramificar",
+      "mensagem": "Com 6 a 8 folhas, tirar a ponta do caule principal faz a planta abrir em vários ramos, e cada ramo dará flores.",
+      "acao_requerida": "Beliscar com as unhas a ponta do caule principal, logo acima do último par de folhas"
+    },
+    {
+      "dia_disparo": 56,
+      "titulo": "Primeiras flores",
+      "mensagem": "Os primeiros botões devem estar abrindo. A partir de agora, quanto mais você colhe, mais a calêndula floresce.",
+      "acao_requerida": "Conferir os botões abertos e começar a colheita a cada 3 dias"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pretos ou verdes nas pontas dos ramos e sob os botões; brotos retorcidos e pegajosos, às vezes com formigas",
+      "prevencao_tratamento": "Jato de água forte nos ramos afetados; se persistir, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenos insetos brancos que voam quando a planta é mexida; folhas amareladas com pontinhos claros no verso",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Lagarta e lesma",
+      "tipo": "PRAGA",
+      "sintomas": "Pétalas e folhas roídas, buracos grandes; rastro brilhante no vaso quando é lesma",
+      "prevencao_tratamento": "Catar à noite ou de manhã cedo; para lesmas, anel de casca de ovo moída ou borra de café em volta do caule"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco como talco nas folhas, começando pelas de baixo; folhas secam e a floração cai",
+      "prevencao_tratamento": "Regar só na base, manter o vaso em local ventilado e ao sol; retirar as folhas afetadas e pulverizar leite diluído (1 parte de leite para 9 de água) ou bicarbonato (1 colher de chá por litro, com algumas gotas de detergente) a cada 7 dias"
+    },
+    {
+      "nome": "Podridão do colo e da raiz (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; caule escuro e mole rente ao substrato; nas plântulas, tombamento",
+      "prevencao_tratamento": "Substrato bem drenado e vaso com furos, sem prato com água parada; só regar quando os 3 cm de cima estiverem secos. Plantas atingidas raramente se recuperam: descarte-as junto com o substrato"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules longos, finos e tombados, folhas espaçadas, poucos botões e flores pequenas",
+      "prevencao_tratamento": "Mudar o vaso para um local com pelo menos 4 horas de sol direto; despontar os ramos compridos para a planta rebrotar mais compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor: proteja a calêndula",
+      "mensagem": "Acima de 30 °C a calêndula floresce menos, as flores ficam pequenas e o oídio se espalha. É o sinal de que o ciclo está chegando ao fim.",
+      "acao_requerida": "Mudar o vaso para um local com sombra à tarde, regar logo cedo e colher todas as flores abertas; deixar 2 ou 3 secarem na planta para guardar sementes para o outono"
+    }
+  ]
+}

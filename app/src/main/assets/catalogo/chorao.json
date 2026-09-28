@@ -1,0 +1,227 @@
+{
+  "planta": {
+    "nome_comum": "Chorão",
+    "nome_cientifico": "Salix babylonica",
+    "descricao": "Árvore de ramos longos e pendentes que perde as folhas no inverno e brota verde-claro na primavera. Em vaso grande, com poda anual, fica como arvoreta ornamental ou bonsai. É das plantas mais fáceis de pegar por estaca, mas bebe muita água: em vaso, a falta de rega é o que mais a mata.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Comece a estaca num vaso de 5 L com furos. A partir do segundo ano, passe para um vaso definitivo de pelo menos 50 cm de diâmetro e 45 cm de profundidade, pesado (cerâmica ou cimento) para não tombar com o vento, com vários furos no fundo",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa. Precisa reter umidade sem virar lama",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Use uma estaca de 20 a 30 cm, da grossura de um lápis, tirada de um ramo do ano anterior. Enterre dois terços dela no substrato úmido, com as gemas voltadas para cima. As gemas incham e soltam as primeiras folhinhas entre o 7º e o 14º dia. Se puxar de leve e sentir resistência, as raízes já pegaram."
+    },
+    {
+      "fase_id": "brotacao",
+      "nome": "Brotação e Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "Os brotos crescem rápido, até vários centímetros por semana. Aqui se escolhe o ramo principal, que vai formar o tronco. A fase acaba quando a raiz começa a aparecer pelos furos do vaso de 5 L."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 121,
+      "dia_fim": 365,
+      "descricao": "O tronco engrossa e os ramos laterais começam a pender. No primeiro inverno a planta perde as folhas: isso é dormência, não morte. Se arranhar a casca de um ramo com a unha e ele estiver verde por baixo, está vivo."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Já no vaso definitivo. O ano típico: brota em agosto e setembro, cresce com força de outubro a março (quando pede rega diária), amarela e derruba as folhas entre maio e junho e fica dormente no inverno, quando se faz a poda principal. Sem poda, em poucos anos fica grande demais para o vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Manter a estaca úmida",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Toque o substrato: ele deve estar sempre úmido, como esponja torcida. Se o primeiro centímetro estiver seco, regue devagar até escorrer pelos furos. Sem raiz, a estaca desidrata e morre em um ou dois dias de substrato seco.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o chorão",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer bastante pelos furos. De outubro a março, em dias acima de 30 °C, regue de manhã e confira de novo no fim da tarde. No inverno, sem folhas, basta regar quando os 3 cm de cima secarem, a cada 3 a 4 dias. Não deixe água parada no prato: além de apodrecer a raiz, cria mosquito da dengue.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o chorão",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou 1 xícara de húmus de minhoca) por 60 L de vaso, longe do tronco, e regue em seguida. Na planta jovem, use metade da dose. De junho a agosto, com a planta sem folhas, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas dos ramos e procure insetos agrupados, pó alaranjado, manchas escuras ou folhas roídas. Passe o dedo nos ramos jovens para ver se há escamas ou melado pegajoso.",
+      "critica": false
+    },
+    {
+      "id": "poda_conducao",
+      "titulo": "Podar ramos longos",
+      "tipo": "PODA",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 180,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, encurte os ramos pendentes que já estiverem encostando no chão, cortando logo acima de uma folha. Tire também os brotos que nascem no tronco abaixo da copa. De junho a agosto, pule esta tarefa: a poda de inverno é o evento sazonal.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Podar raízes e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 1095,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, corte com serrote ou faca um quinto do torrão pelas laterais e pelo fundo e remova as raízes enroladas. Devolva ao mesmo vaso com substrato novo e regue bem. Se a data cair no verão, adie para agosto.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "A estaca pegou?",
+      "mensagem": "Por volta de duas semanas, as gemas já devem estar soltando folhas.",
+      "acao_requerida": "Puxar a estaca de leve. Se resistir, as raízes pegaram. Se sair solta e a casca estiver preta ou murcha, fazer uma estaca nova"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Escolha o tronco",
+      "mensagem": "Vários brotos disputam a estaca. Com um só ramo principal, a planta forma um tronco reto.",
+      "acao_requerida": "Deixar o broto mais forte e mais reto, cortar os outros rente à estaca e prender o escolhido num tutor com fita macia"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Hora do vaso maior",
+      "mensagem": "Agora as raízes já devem estar aparecendo pelos furos do vaso pequeno.",
+      "acao_requerida": "Passar o torrão inteiro, sem desmanchar, para um vaso de 20 a 30 L com substrato novo, e regar bem"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Vaso definitivo",
+      "mensagem": "Com um ano, o chorão precisa do vaso grande para continuar crescendo sem murchar todo dia.",
+      "acao_requerida": "Transplantar para o vaso de pelo menos 60 L, de preferência no fim do inverno, e retirar o tutor se o tronco já se sustentar sozinho"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos nas pontas dos ramos novos, folhas enroladas e melado pegajoso, às vezes com formigas subindo pelo tronco",
+      "prevencao_tratamento": "Jato forte de água nos ramos. Se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, por três aplicações"
+    },
+    {
+      "nome": "Lagartas e besouros desfolhadores",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou reduzidas às nervuras, fezes escuras nas folhas de baixo",
+      "prevencao_tratamento": "Catar à mão. Em infestação grande, Bacillus thuringiensis (Dipel) pulverizado no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas brancas ou marrons grudadas nos ramos, ramos que secam da ponta para trás",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro. Nos casos persistentes, óleo mineral a 1% no inverno, com a planta sem folhas"
+    },
+    {
+      "nome": "Ferrugem (Melampsora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Pústulas de pó amarelo-alaranjado no verso das folhas, que amarelam e caem antes do outono",
+      "prevencao_tratamento": "Recolher e descartar as folhas caídas e regar no substrato, não na copa. Em ataque forte, fungicida cúprico a cada 10 dias"
+    },
+    {
+      "nome": "Antracnose (Marssonina salicis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pequenas e escuras nas folhas e lesões nos ramos novos, desfolha na primavera chuvosa",
+      "prevencao_tratamento": "Podar os ramos lesionados no inverno, limpar as folhas caídas e manter a copa arejada. Calda bordalesa na brotação, se a doença se repetir"
+    },
+    {
+      "nome": "Queima das folhas por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas secas e marrons, folhas murchas no meio do dia e queda de folhas verdes no verão",
+      "prevencao_tratamento": "Nunca deixar o substrato secar na estação quente e aumentar para duas regas diárias nos dias de calor. Se o vaso secar em menos de um dia, passar para um maior"
+    },
+    {
+      "nome": "Podridão de raiz",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato encharcado, cheiro azedo no vaso e raízes escuras e moles",
+      "prevencao_tratamento": "Manter os furos desobstruídos e esvaziar o prato depois da rega. Cortar as raízes podres e replantar em substrato novo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Folhas caindo é normal",
+      "mensagem": "O chorão perde as folhas no outono e passa o inverno dormente. Com a planta sem folhas, ela bebe bem menos.",
+      "acao_requerida": "Recolher as folhas caídas do vaso, suspender a adubação e espaçar a rega para quando os 3 cm de cima do substrato secarem"
+    },
+    {
+      "meses": [
+        7
+      ],
+      "titulo": "Poda de inverno",
+      "mensagem": "Sem folhas, dá para ver a estrutura da copa. Podar antes da brotação faz os ramos novos nascerem fortes e pendentes.",
+      "acao_requerida": "Cortar os ramos secos, cruzados e doentes e encurtar os pendentes para a altura desejada, logo acima de uma gema. Podar sempre a partir da base da copa"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Brotação: volta a rega e o adubo",
+      "mensagem": "As gemas estão abrindo. Com as folhas novas, o consumo de água sobe rápido.",
+      "acao_requerida": "Voltar à rega diária de conferência e fazer a primeira adubação da temporada"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: o chorão pede muita água",
+      "mensagem": "No verão, um vaso de chorão pode secar em meio dia de sol.",
+      "acao_requerida": "Conferir o substrato de manhã e no fim da tarde, regar até escorrer pelos furos e, se o vaso estiver em lugar muito quente, pôr uma camada de 3 cm de casca de pinus na superfície"
+    }
+  ]
+}

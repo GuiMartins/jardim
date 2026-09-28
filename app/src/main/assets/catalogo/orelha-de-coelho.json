@@ -1,0 +1,186 @@
+{
+  "planta": {
+    "nome_comum": "Orelha-de-coelho",
+    "nome_cientifico": "Opuntia microdasys",
+    "descricao": "Cacto mexicano de artículos achatados e ovais, cobertos de tufos de gloquídios (espinhos finos como pelo) amarelos ou brancos. É compacto, cresce devagar e aguenta muito bem sol forte e esquecimento, desde que não fique encharcado. Os gloquídios soltam com um toque e grudam na pele: manuseie sempre com pinça, luva grossa ou jornal dobrado.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro (cerâmica sem esmalte) de 15 a 20 cm de diâmetro e 12 a 15 cm de profundidade, com furo grande no fundo; o barro perde água pelas paredes e evita o encharcamento. Sem prato com água acumulada",
+    "volume_minimo_litros": 2,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal peneirada, 30% areia grossa lavada, 30% perlita ou pedrisco fino (ou substrato pronto para cactos e suculentas); nada de húmus em excesso nem terra argilosa, que retêm água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda troca de vaso e de luz. Na primeira semana fica sem rega, para que as raízes quebradas no replantio cicatrizem, e em meia sombra clara. Depois vai para o sol aos poucos. Os artículos podem murchar e enrugar levemente no começo; a fase termina quando eles voltam a ficar firmes e lisos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso novo e surgem os primeiros artículos novos, pequenos e verde-claros, nas bordas dos antigos. A planta está estabelecida quando segura firme no vaso ao ser empurrada de leve com uma pinça e já tem pelo menos um artículo novo do tamanho de uma moeda."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão, soltando novos artículos em pares que lembram orelhas; no outono e no inverno quase para e precisa de bem menos água. Artículos compridos, finos e verde-pálidos indicam falta de sol. Em vaso, raramente floresce; quando floresce, as flores amarelas saem na borda dos artículos no fim da primavera. Troca de vaso a cada 2 anos, ou antes se as raízes saírem pelo furo."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a orelha-de-coelho",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de churrasco até o fundo do vaso e tire: só regue se sair totalmente seco e limpo. Regue pela terra, sem molhar os artículos, até escorrer pelo furo, e jogue fora a água que ficar no prato. Se o palito sair úmido, pule esta rega. De maio a agosto, regue só uma vez a cada três lembretes (cerca de 1 vez por mês) e não regue com frio abaixo de 10 °C.",
+      "critica": true
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Procurar cochonilhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com lanterna, olhe entre os tufos de gloquídios, na junção dos artículos e na base do caule: procure bolinhas de algodão branco, escamas brancas ou marrons coladas na pele e manchas amolecidas ou escuras. Aperte a base do caule com uma pinça: deve estar firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e março, com o substrato seco. Enrole a planta em jornal dobrado várias vezes e use luva grossa. Solte o torrão, retire a terra velha, corte raízes pretas ou moles e passe para um vaso 2 a 4 cm maior, com substrato novo e seco. Espere 7 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante sem regar",
+      "mensagem": "Raiz machucada no replantio e terra molhada são a receita da podridão. O cacto aguenta tranquilo uma semana sem água. Os gloquídios soltam com um toque e grudam na pele.",
+      "acao_requerida": "Plantar com substrato seco, segurando a planta com jornal dobrado ou pinça, e deixar em meia sombra clara, sem regar por 7 dias"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Primeira rega",
+      "mensagem": "As raízes já cicatrizaram e podem receber água.",
+      "acao_requerida": "Regar pela terra até escorrer pelo furo e começar a levar o vaso para 1 a 2 horas de sol da manhã"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Ir direto da loja para o sol forte da tarde queima os artículos, que ficam com manchas bege ou amareladas que não somem.",
+      "acao_requerida": "Aumentar o sol direto em cerca de 1 hora a cada 3 dias até chegar a 6 horas, começando pelo sol da manhã"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do colo (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule escura, mole e com cheiro ruim; artículos amarelando, murchando ou tombando mesmo com a terra úmida",
+      "prevencao_tratamento": "Regar só com o substrato seco até o fundo, usar vaso de barro com furo e nunca deixar água no prato. Se já apareceu, tire a planta, corte com faca limpa toda a parte mole até o tecido verde e firme, deixe o corte secar 7 a 10 dias à sombra e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-algodão (Pseudococcidae)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão entre os gloquídios, na junção dos artículos e nas raízes; planta pegajosa e fraca",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo de neem a 0,5% com uma gota de detergente no fim da tarde, a cada 7 dias, por 3 aplicações. Confira também as raízes ao trocar de vaso"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça (Diaspis echinocacti)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas pequenas, brancas ou marrons, grudadas na superfície dos artículos, deixando manchas amareladas embaixo",
+      "prevencao_tratamento": "Raspe com escova de dente macia ou cotonete com álcool 70%; repita a cada 7 dias até sumir. Isole o vaso para não passar para outros cactos"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas bege, brancas ou amarelo-alaranjadas, secas, na face dos artículos voltada para o sol, que surgem depois de mudar a planta de lugar",
+      "prevencao_tratamento": "Aclimatar ao sol pleno aos poucos, ao longo de 2 semanas. A mancha não some, mas a planta se recupera; artículos novos nascem normais"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Artículos novos compridos, finos, pontudos e verde-pálidos, inclinados na direção da janela",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 horas de sol direto. A parte estiolada não volta ao formato; corte-a na junção e use como estaca, se quiser"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Outono: menos água",
+      "mensagem": "Com o frio chegando, a orelha-de-coelho para de crescer e gasta muito pouca água. Terra úmida no frio é a principal causa de podridão.",
+      "acao_requerida": "Espaçar as regas até cerca de 1 vez por mês e parar de adubar até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Ela aguenta frio seco até uns 5 °C, mas geada e frio com terra molhada matam os artículos, que ficam transparentes e moles.",
+      "acao_requerida": "Em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou para dentro, perto da janela, e não regar nos dias frios"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o ritmo",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento e passa a pedir água com mais frequência.",
+      "acao_requerida": "Voltar à rega a cada 10 dias com a checagem do palito e, se as raízes saírem pelo furo, trocar de vaso agora"
+    },
+    {
+      "meses": [
+        9,
+        11,
+        1,
+        3
+      ],
+      "titulo": "Adubar o cacto",
+      "mensagem": "Na estação de crescimento, uma adubação leve a cada dois meses mantém os artículos firmes e de cor boa. Adubo demais faz artículos moles e sujeitos a podridão.",
+      "acao_requerida": "Dissolver adubo para cactos (ou NPK 4-14-8) na metade da dose do rótulo e regar com essa solução num dia em que o substrato já estaria seco"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuva de verão",
+      "mensagem": "Semanas de chuva seguidas deixam o substrato encharcado, e o cacto apodrece mesmo no calor.",
+      "acao_requerida": "Em semanas chuvosas, colocar o vaso sob uma cobertura com sol, sem prato, e pular as regas"
+    }
+  ]
+}

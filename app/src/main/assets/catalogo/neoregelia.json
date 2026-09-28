@@ -1,0 +1,173 @@
+{
+  "planta": {
+    "nome_comum": "Neoregélia",
+    "nome_cientifico": "Neoregelia carolinae e híbridos (Neoregelia spp.)",
+    "descricao": "Bromélia brasileira em roseta de folhas largas que forma um copo central de água; a N. carolinae e seus híbridos são as neoregélias mais vendidas no Brasil, por isso servem de base para estas instruções. O centro fica vermelho ou rosado quando a planta vai florescer e a cor dura meses. Depois de florescer, a planta-mãe solta filhotes e morre aos poucos, mas a touceira continua por anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso raso e pesado (barro ou cerâmica), com 12 a 15 cm de diâmetro, 10 a 12 cm de altura e furos grandes no fundo; a roseta pesa em cima e tomba vasos plásticos leves",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% casca de pinus média, 30% fibra ou chips de coco, 20% substrato para orquídeas ou terra vegetal peneirada; bem aerado, sem terra de jardim compactada",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa, onde a luz e a umidade eram controladas. Folhas firmes e o copo segurando água indicam que ela se adaptou. Pontas marrons ou manchas claras e secas no meio das folhas indicam sol forte demais: afaste-a da janela."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes se prendem ao substrato: a planta deixa de balançar quando você a empurra de leve. Com luz boa, as folhas ficam firmes e com a cor viva. Folhas longas, moles e esverdeadas indicam falta de luz."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cada roseta floresce uma vez só: o centro fica vermelho e pequenas flores lilases abrem dentro do copo. Depois da floração, a planta-mãe solta de 2 a 5 filhotes na base e definha ao longo de 1 a 2 anos. Os filhotes podem ser separados quando tiverem entre um terço e metade do tamanho da mãe. Na primavera e no verão a planta cresce, e no inverno quase para."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "renovar_agua_copo",
+      "titulo": "Renovar a água do copo",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Despeje água no centro da roseta até transbordar pelas folhas, empurrando para fora toda a água velha, as folhas caídas e as larvas. Deixe o copo com 1 a 2 cm de água. Depois enfie o dedo 2 cm no substrato: se estiver seco, regue até escorrer pelos furos. Com frio abaixo de 15 °C, deixe o copo quase vazio e molhe só o substrato.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_foliar",
+      "titulo": "Adubar as folhas",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo NPK equilibrado (10-10-10 ou adubo de orquídea) em um quarto da dose do rótulo e borrife nas folhas e no substrato, nunca dentro do copo, porque o adubo acumula ali e queima o centro. Pule a adubação de junho a agosto. Adubo demais, principalmente com muito nitrogênio, deixa a planta verde e sem cor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e copo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure escamas marrons ou algodãozinho branco na base e no verso das folhas. Olhe o fundo do copo: larvas se mexendo, cheiro podre ou folhas centrais que soltam ao puxar de leve são sinais de problema.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato_filhotes",
+      "titulo": "Renovar substrato e separar filhotes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, tire a touceira do vaso e troque o substrato, que a esta altura já se decompôs. Separe com faca limpa os filhotes que tiverem pelo menos um terço do tamanho da mãe, cada um com um pedaço da base. Plante cada filhote raso, só com a base enterrada, e prenda com um palito se balançar. Descarte a mãe se estiver seca. Se a touceira ainda for pequena, só renove o substrato.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, neoregélia!",
+      "mensagem": "Plantas de loja costumam chegar com água parada no copo e num vaso plástico leve que tomba com o peso da roseta.",
+      "acao_requerida": "Esvaziar o copo, virando a planta de lado, e enchê-lo com água limpa. Colocar o vaso plástico dentro de um cachepô pesado, ou firmar a base com pedras, num lugar de luz clara com sol só pela manhã"
+    },
+    {
+      "dia_disparo": 21,
+      "titulo": "Como está a cor?",
+      "mensagem": "Em três semanas, a luz do lugar já aparece nas folhas: esverdeadas e moles pedem mais luz, e manchas secas ou amareladas pedem menos.",
+      "acao_requerida": "Aproximar a planta da janela se as folhas estiverem desbotadas, ou afastar do sol da tarde se aparecerem manchas queimadas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do coração (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "As folhas centrais escurecem, ficam moles e se soltam ao puxar; a água do copo cheira mal. A base da roseta fica marrom e aguada",
+      "prevencao_tratamento": "Não deixar água parada no copo no frio nem o substrato encharcado; usar substrato aerado. No começo, esvazie o copo, corte as partes moles e deixe secar. Com o coração todo podre, a roseta não se recupera: aproveite os filhotes sadios. Nunca use fungicida à base de cobre, que é tóxico para bromélias"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons e ovais ou tufos brancos parecidos com algodão na base e no verso das folhas; manchas amareladas em volta e folhas pegajosas",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70% diluído em água, meio a meio. Em infestação maior, borrife óleo de neem a 0,5% no fim da tarde a cada 7 dias, 3 vezes, sem deixar a calda no copo"
+    },
+    {
+      "nome": "Mosquito da dengue (Aedes aegypti) no copo",
+      "tipo": "PRAGA",
+      "sintomas": "Larvas finas se mexendo na água do copo ou nas axilas das folhas",
+      "prevencao_tratamento": "Renovar a água do copo a cada 5 dias, esguichando até transbordar; o ciclo do ovo ao mosquito leva cerca de 7 dias no calor. Nunca use areia ou produtos no copo: basta a troca da água"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou amarelas, depois secas e marrons, no meio das folhas voltadas para o sol",
+      "prevencao_tratamento": "Dar sol só pela manhã ou luz filtrada. As manchas não somem: as folhas novas saem sadias depois que a planta muda de lugar"
+    },
+    {
+      "nome": "Perda de cor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas verdes, alongadas e moles, sem as manchas ou o centro colorido da variedade",
+      "prevencao_tratamento": "Aumentar a luz aos poucos, com 2 a 4 horas de sol da manhã, e cortar o adubo com muito nitrogênio. A cor volta nas folhas novas"
+    },
+    {
+      "nome": "Planta-mãe definhando depois da floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Meses depois da floração, as folhas externas secam da ponta para a base e a roseta perde a firmeza, enquanto filhotes surgem na base",
+      "prevencao_tratamento": "É o ciclo natural da neoregélia, não doença. Continue cuidando da mãe, que alimenta os filhotes. Corte as folhas secas e separe os filhotes quando tiverem um terço do tamanho dela"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Frio: menos água no copo",
+      "mensagem": "No inverno a neoregélia quase para de crescer. Água fria parada no centro, em noites abaixo de 10 °C, é a principal causa de podridão do coração.",
+      "acao_requerida": "Deixar o copo com pouca água ou vazio nas semanas frias, molhar o substrato só quando estiver seco, suspender a adubação e abrigar a planta se a noite passar de 5 °C para baixo"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com o sol da tarde",
+      "mensagem": "O sol forte do verão queima as folhas em poucas horas, principalmente depois das 11h, e a água do copo evapora mais depressa.",
+      "acao_requerida": "Tirar a planta do sol direto depois das 10h e conferir o nível do copo a cada 2 ou 3 dias, completando com água limpa"
+    }
+  ]
+}

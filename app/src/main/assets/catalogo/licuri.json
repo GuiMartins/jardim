@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Licuri",
+    "nome_cientifico": "Syagrus coronata",
+    "descricao": "Palmeira nativa da Caatinga e do Cerrado baiano. As folhas saem em cinco fileiras espiraladas ao redor do caule, formando a 'coroa' que dá nome à espécie. Os cocos são comestíveis e alimentam a arara-azul-de-lear. Aguenta seca e sol forte, mas em vaso cresce devagar e raramente frutifica antes de muitos anos. Por isso se começa por muda: a semente pode levar de 3 a 12 meses para germinar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de barro ou plástico grosso com pelo menos 40 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo. A raiz da palmeira desce reta, então prefira vasos mais fundos que largos",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca e 10% cascalho fino ou argila expandida miúda. Deve drenar rápido e nunca empoçar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante. É normal a ponta de uma folha velha secar. A adaptação terminou quando a flecha (a folha nova, ainda fechada, no centro) volta a crescer e dá para ver que ela subiu."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a palmeira solta de 3 a 5 folhas novas por ano, cada uma um pouco maior que a anterior. Folhas novas com a cor verde-acinzentada típica mostram que a planta está firme. Quando a folha mais velha secar por inteiro, corte-a rente ao caule, sem puxar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão e quase para no inverno seco. Solta folhas novas pelo centro e perde as mais velhas embaixo, cuja base fica presa ao caule e forma o desenho espiralado. Em vaso, a floração (cachos amarelados entre as folhas) pode levar muitos anos ou não acontecer. Troque o substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de licuri",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Sem raízes firmes, a muda desidrata rápido no sol, mas não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o licuri",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Com mais de 32 °C e sol pleno, confira a cada 3 dias. No inverno, só regue quando o substrato estiver seco a 8 cm, o que costuma levar de 10 a 14 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o licuri",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 e 2 xícaras de húmus de minhoca na superfície de um vaso de 50 L, a 10 cm do caule. Depois regue. Se as folhas velhas tiverem manchas amarelo-alaranjadas, acrescente 1 colher de chá de sulfato de potássio. Pule de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e flecha",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos e as bainhas atrás de pontos brancos ou marrons grudados (cochonilhas). Puxe de leve a flecha central: se sair fácil ou cheirar a podre, é sinal de podridão ou de broca. Corte rente ao caule as folhas que já secaram por inteiro.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso ou o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no verão, tire a palmeira com o torrão inteiro, raspe só 3 a 5 cm do substrato velho das laterais e passe para um vaso 10 cm maior, com substrato novo. Não quebre nem pode as raízes grossas: palmeiras regeneram raiz devagar. Deixe o colo na mesma altura de antes e regue bem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar no vaso definitivo",
+      "mensagem": "Muda de palmeira não gosta de ser mexida várias vezes. Vale ir direto para o vaso grande.",
+      "acao_requerida": "Transplantar a muda com o torrão inteiro para o vaso de 50 L, com o colo na mesma altura do vaso original e sem enterrar o caule, e regar até escorrer"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "As raízes já devem estar entrando no substrato novo. A partir de agora a rega fica mais espaçada.",
+      "acao_requerida": "Conferir se a flecha central voltou a crescer e, se a muda estiver à meia-sombra, levá-la aos poucos para o sol pleno ao longo de 2 semanas"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de licuri",
+      "mensagem": "A palmeira está estabelecida e deve ter soltado de 3 a 5 folhas novas no ano.",
+      "acao_requerida": "Contar as folhas novas desde o plantio; menos de 2 indica pouco sol ou pouco adubo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da raiz e do olho (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "A flecha central amarela, escurece e sai com um puxão leve, com cheiro de podre. O substrato fica sempre úmido e a base do caule, mole",
+      "prevencao_tratamento": "Substrato arenoso, vaso com furos e pratinho sempre vazio. Nunca molhe o olho da palmeira no frio. No início, suspenda a rega, retire as partes podres e aplique fungicida cúprico no centro. Com o caule mole, a planta raramente se recupera"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos, marrons ou algodoados grudados no verso dos folíolos e nas bainhas; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia com água e sabão neutro. Se persistir, aplique óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, 3 vezes com intervalo de 7 dias"
+    },
+    {
+      "nome": "Broca-do-olho (Rhynchophorus palmarum)",
+      "tipo": "PRAGA",
+      "sintomas": "Galerias e serragem úmida na base das folhas, cheiro de fermentado, flecha central murcha",
+      "prevencao_tratamento": "Não deixe cortes e ferimentos abertos no caule; ao podar folhas, corte limpo e longe do olho. Com galerias já presentes no centro, a planta costuma se perder; descarte-a para não atrair o besouro para outras palmeiras"
+    },
+    {
+      "nome": "Lixa e manchas foliares (Phyllachora, Pestalotiopsis)",
+      "tipo": "DOENCA",
+      "sintomas": "Pontos pretos ásperos ou manchas marrons com borda amarela nos folíolos, mais comuns em lugar úmido e abafado",
+      "prevencao_tratamento": "Mantenha o vaso em lugar ventilado e ensolarado e regue o substrato, não as folhas. Corte os folíolos muito atacados e aplique fungicida cúprico se a mancha avançar"
+    },
+    {
+      "nome": "Deficiência de potássio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelo-alaranjadas translúcidas nas folhas mais velhas, que depois secam nas pontas; as folhas novas saem menores",
+      "prevencao_tratamento": "Adubação regular com potássio (sulfato de potássio ou NPK com K alto). Não corte a folha velha ainda meio verde, porque a planta está retirando nutrientes dela"
+    },
+    {
+      "nome": "Queimadura por frio ou geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folíolos com manchas marrom-claras secas depois de noites abaixo de 5 °C",
+      "prevencao_tratamento": "Nas noites de geada, leve o vaso para perto de uma parede ou sob uma cobertura. Não corte as folhas queimadas antes da primavera, porque elas protegem a flecha"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "O licuri quase para de crescer no frio e na seca. Substrato úmido e frio é o que mais apodrece a raiz nesta época.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 8 cm, suspender a adubação e proteger o vaso nas noites com previsão de menos de 5 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Com o calor voltando, a palmeira volta a soltar folhas e precisa de nutrientes.",
+      "acao_requerida": "Voltar à rega normal, fazer a primeira adubação da temporada e cortar rente ao caule as folhas que secaram por inteiro no inverno"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Alface-d'água",
+    "nome_cientifico": "Pistia stratiotes",
+    "descricao": "Planta aquática flutuante que forma rosetas verde-claras e aveludadas, parecidas com um pé de alface, com raízes pendentes que filtram a água. Cultivada em bacias, vasos sem furo e pequenos lagos, se multiplica sozinha por brotos laterais. É invasora: nunca descarte o excesso em rios, lagos ou bueiros.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Bacia, cachepô ou vaso SEM furos, com pelo menos 30 cm de diâmetro e 15 cm de profundidade de água; boca larga para a roseta flutuar e a água trocar gases",
+    "volume_minimo_litros": 10,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "Não usa substrato: flutua em água sem cloro (água de chuva ou de torneira descansada 24 horas). Opcional: 2 a 3 cm de terra argilosa coberta por areia grossa no fundo, que libera nutrientes aos poucos",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Coloque as rosetas com cuidado, com as folhas para cima e as raízes na água, sem molhar a parte de cima das folhas. É normal perder 1 ou 2 folhas externas, que amarelam ou derretem. A fase termina quando surge uma folha nova no centro e as raízes ficam mais longas e claras."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 45,
+      "descricao": "As rosetas crescem e soltam estolões curtos com filhotes nas pontas. Folhas firmes, verde-claras e sem manchas indicam luz e nutrientes na medida. Folhas amareladas e pequenas pedem mais luz ou adubo; bordas marrons e secas indicam sol forte demais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 46,
+      "dia_fim": null,
+      "descricao": "Na primavera e no verão multiplica rápido e pode cobrir a superfície em poucas semanas; é preciso tirar o excesso para sempre sobrar pelo menos um terço da água descoberta. No inverno cresce pouco, as rosetas ficam menores e algumas morrem abaixo de 10 °C; volta a brotar em setembro."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "completar_agua",
+      "titulo": "Completar a água",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Veja a marca do nível: se baixou mais de 2 cm, complete com água de chuva ou de torneira descansada 24 horas, despejando pela borda para não molhar o topo das folhas. No verão com sol, confira a cada 2 dias; se a água acabar, as raízes secam em poucas horas.",
+      "critica": true
+    },
+    {
+      "id": "troca_parcial_agua",
+      "titulo": "Trocar parte da água",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Retire cerca de 30% da água com uma caneca pelo fundo, jogue no ralo ou no jardim, e reponha com água sem cloro. A troca semanal interrompe o ciclo das larvas do mosquito da dengue (7 a 10 dias) e evita água turva com cheiro.",
+      "critica": false
+    },
+    {
+      "id": "retirar_excesso",
+      "titulo": "Retirar filhotes e folhas velhas",
+      "tipo": "PODA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire as rosetas excedentes até cobrirem no máximo dois terços da superfície e remova folhas amarelas ou moles pela base. Descarte na composteira ou no lixo orgânico, nunca em rio, lago ou bueiro. No inverno, basta tirar as folhas mortas.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_liquida",
+      "titulo": "Adubar a água",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Pingue adubo líquido para plantas aquáticas na dose do rótulo para o volume de água (ou 1 ml de NPK 10-10-10 líquido a cada 20 L). Pule em junho, julho e agosto e se a água estiver com algas verdes: adubo demais alimenta as algas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e água",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base das folhas e o miolo das rosetas em busca de pulgões escuros, lagartas ou folhas roídas, e procure na água larvas finas que se contorcem perto da superfície.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Como está a adaptação?",
+      "mensagem": "Na primeira semana algumas folhas externas amarelam e derretem; se ficarem na água, apodrecem e turvam tudo.",
+      "acao_requerida": "Retirar as folhas moles ou transparentes pela base e conferir se o centro da roseta está firme e verde"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Primeiros filhotes",
+      "mensagem": "As rosetas devem estar soltando estolões com plantinhas nas pontas. Com o filhote do tamanho de uma moeda ele já vive sozinho.",
+      "acao_requerida": "Separar os filhotes maiores cortando o estolão com tesoura e deixá-los flutuando ou passá-los para outro recipiente"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Pulgão-das-aquáticas (Rhopalosiphum nymphaeae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos marrom-escuros agrupados na base e no verso das folhas; folhas deformadas e amareladas",
+      "prevencao_tratamento": "Afunde a roseta na água por alguns segundos ou lave com jato suave para os pulgões caírem e serem comidos por peixes; retire as folhas mais atacadas. Não use inseticida nem óleo de neem na água"
+    },
+    {
+      "nome": "Lagarta-da-alface-d'água (Samea multiplicalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas e com túneis, teias finas unindo as folhas no miolo, rosetas que murcham e escurecem",
+      "prevencao_tratamento": "Abra o miolo, cate as lagartas e descarte as rosetas muito danificadas; o restante rebrota"
+    },
+    {
+      "nome": "Larvas de mosquito (Aedes aegypti e pernilongo)",
+      "tipo": "PRAGA",
+      "sintomas": "Larvas finas que se contorcem e sobem à superfície para respirar; mosquitos em volta do recipiente",
+      "prevencao_tratamento": "Trocar parte da água toda semana e, se possível, colocar 2 ou 3 peixes pequenos (guppy, lebiste) que comem as larvas. Larvicida biológico com Bti é seguro para a planta"
+    },
+    {
+      "nome": "Podridão da roseta",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas centrais moles, translúcidas ou pretas, com cheiro ruim; a roseta afunda e se desmancha",
+      "prevencao_tratamento": "Favorecida por água parada e quente com folhas mortas e pouca luz. Retire as rosetas podres na hora, troque metade da água e deixe um terço da superfície livre"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com bordas marrons e secas ou manchas esbranquiçadas depois de dias de sol forte à tarde",
+      "prevencao_tratamento": "Mude para um lugar com sol só de manhã ou use tela de sombreamento de 50% no verão; água rasa e quente agrava o problema"
+    },
+    {
+      "nome": "Clorose por falta de nutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Rosetas pequenas, folhas amarelo-pálidas e raízes muito longas e finas",
+      "prevencao_tratamento": "Retome a adubação mensal e troque parte da água; em recipientes sem terra no fundo a água esgota os nutrientes em poucas semanas"
+    },
+    {
+      "nome": "Excesso de algas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Água verde e turva ou fios verdes enroscados nas raízes",
+      "prevencao_tratamento": "Reduza o adubo, troque 50% da água e deixe as rosetas cobrirem pelo menos metade da superfície, fazendo sombra na água"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 15 °C a alface-d'água para de crescer, e em noites abaixo de 10 °C as rosetas podem morrer.",
+      "acao_requerida": "Levar o recipiente para um canto abrigado do vento ou para dentro perto de uma janela clara, parar a adubação e retirar as folhas mortas"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Cuidado com o sol e o calor",
+      "mensagem": "No verão a água evapora rápido e esquenta, e o sol da tarde queima as folhas. É também quando o mosquito da dengue mais se reproduz.",
+      "acao_requerida": "Deixar o recipiente com sol só de manhã, conferir o nível da água a cada 2 dias e manter a troca parcial semanal"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "planta": {
+    "nome_comum": "Algodão-bravo",
+    "nome_cientifico": "Ipomoea carnea subsp. fistulosa",
+    "descricao": "Arbusto tropical da família das ipomeias, de crescimento rápido, com flores cor-de-rosa em forma de funil durante quase o ano todo e muito procurado por abelhas. É tóxico para cães, gatos e animais de criação, e a seiva leitosa irrita a pele: cultive longe de pets e use luvas ao podar. Enraíza com facilidade por estaca, que é o jeito mais comum de começar em casa.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico, fibra ou cerâmica, com pelo menos 40 cm de diâmetro e 40 cm de profundidade e vários furos no fundo; a estaca pode enraizar antes num vaso de 3 a 5 L",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto orgânico, 20% areia grossa; para a estaca, 50% substrato comercial e 50% areia grossa ou vermiculita",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Estaca",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Enterre um terço de uma estaca de 25 a 30 cm, tirada de ramo semilenhoso e sem folhas na parte que vai para o substrato. Deixe em luz clara, sem sol forte à tarde. Em 10 a 20 dias surgem brotos nas gemas; a estaca enraizou quando, puxada de leve, resiste."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "Já no vaso definitivo e em sol pleno, os ramos crescem rápido, até 30 cm por mês no calor. Folhas grandes em forma de coração e caule oco. As primeiras flores podem aparecer no fim desta fase se o sol for forte."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Arbusto de 1,5 a 2,5 m em vaso, florindo da primavera ao outono e, em lugar quente, quase o ano todo. No inverno do Centro-Sul cresce pouco, perde parte das folhas com frio abaixo de 8 °C e rebrota em setembro. Uma poda forte no fim do inverno mantém o porte e a floração."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A estaca ainda não tem raiz para buscar água: se o substrato secar por inteiro, ela murcha e não enraíza. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o algodão-bravo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. É planta de beira de brejo e gosta de umidade constante: no verão, vaso grande ao sol pode pedir rega diária. De junho a agosto, espace para cada 4 a 5 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o algodão-bravo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de NPK 4-14-8 (ou 1 xícara de húmus com 1 colher de farinha de ossos) na borda do vaso de 40 L, sem encostar no caule, e regue em seguida. Pule a adubação de junho a agosto, quando a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as pontas dos ramos: procure colônias de pulgão, moscas brancas que voam ao balançar a planta, pontos algodonosos de cochonilha e folhas roídas por lagartas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, logo após a poda, tire a planta do vaso, corte cerca de 5 cm das raízes que dão volta no fundo e nas laterais e replante com substrato novo, no mesmo vaso ou num 10 cm maior. Regue bem e deixe 5 dias fora do sol da tarde.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Estaca enraizada?",
+      "mensagem": "Com brotos novos e resistência ao puxar de leve, a estaca já tem raízes para ir ao vaso definitivo.",
+      "acao_requerida": "Transplantar para o vaso de 40 L com o torrão inteiro e passar a deixar em sol pleno, aumentando a exposição ao longo de uma semana"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora de despontar",
+      "mensagem": "Sem desponte, o algodão-bravo cresce em poucas hastes compridas que tombam com o vento.",
+      "acao_requerida": "Cortar com tesoura limpa, e usando luvas, os 5 cm da ponta de cada ramo principal, logo acima de um par de folhas, para ramificar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com substrato úmido; base do caule escura e mole; cheiro azedo no vaso",
+      "prevencao_tratamento": "Mesmo gostando de umidade, a planta em vaso precisa de furos livres: nunca deixe água parada no prato. Na estaca, é a causa mais comum de perda. Corte raízes escuras e replante em substrato novo"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nas pontas dos ramos e botões; brotos retorcidos e pegajosos",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenos insetos brancos que voam ao mexer na planta; folhas amareladas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem a 0,5% no verso das folhas a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodonosos ou escamas marrons nos ramos e nas axilas das folhas",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação, óleo mineral a 1% com sabão neutro"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro, fezes escuras sobre as folhas de baixo",
+      "prevencao_tratamento": "Catar as lagartas à mão com luvas; em ataque forte, Bacillus thuringiensis conforme o rótulo"
+    },
+    {
+      "nome": "Queda de folhas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem em massa no inverno, após noites abaixo de 8 °C; ramos ficam pelados",
+      "prevencao_tratamento": "Não é doença: reduza a rega e aguarde. Encoste o vaso numa parede voltada ao norte nas noites frias e evite geada, que queima os ramos novos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "Com frio a planta cresce pouco e o substrato demora a secar; encharcado e frio, apodrece a raiz. Geada queima os ramos.",
+      "acao_requerida": "Espaçar a rega para quando os 3 cm de cima estiverem secos, suspender a adubação e levar o vaso para perto de uma parede ou sob beiral nas noites com previsão abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual do algodão-bravo",
+      "mensagem": "No fim do inverno a poda renova a planta, controla o porte e garante muitos ramos novos, que são os que florescem.",
+      "acao_requerida": "De luvas, cortar todos os ramos a 40 a 60 cm da base, logo acima de uma gema, e retirar galhos secos ou cruzados; lavar a tesoura depois por causa da seiva"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: conferir a rega todo dia",
+      "mensagem": "No calor, uma planta grande em vaso ao sol pode secar o substrato em um dia e murchar as flores.",
+      "acao_requerida": "Conferir o substrato todas as manhãs e regar até escorrer pelos furos sempre que os 3 cm de cima estiverem secos"
+    }
+  ]
+}

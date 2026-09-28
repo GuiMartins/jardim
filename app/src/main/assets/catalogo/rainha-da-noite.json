@@ -1,0 +1,205 @@
+{
+  "planta": {
+    "nome_comum": "Rainha-da-noite",
+    "nome_cientifico": "Epiphyllum oxypetalum",
+    "descricao": "Cacto epífito das florestas tropicais, de ramos achatados como folhas (cladódios), famoso pelas flores brancas enormes e perfumadas que abrem numa única noite. Pega fácil de estaca e pede pouco cuidado; a primeira florada costuma vir entre o 2º e o 4º ano depois da estaca.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com furos grandes no fundo, 15 a 18 cm de diâmetro para a estaca; depois vaso ou cesta suspensa de 25 a 30 cm. Ela floresce melhor com a raiz um pouco apertada, então não exagere no tamanho",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "40% casca de pinus fina, 30% substrato para cactos ou terra vegetal, 20% perlita ou areia grossa, 10% húmus de minhoca; bem aerado, como para orquídea terrestre",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Use um cladódio de 15 a 25 cm, cortado e deixado 5 a 7 dias à sombra até a ponta secar e formar calo. Enterre 3 a 5 cm, em pé, e firme o substrato. As raízes saem em 3 a 4 semanas: a estaca fica firme quando puxada de leve. Estaca que amolece ou escurece na base apodreceu."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Surgem os primeiros brotos novos, finos e às vezes cilíndricos, que depois se achatam. Os ramos ficam compridos e pesados e precisam de tutor para não tombar. Ramos novos muito finos e pálidos indicam falta de luz."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A planta engrossa e ramifica. Estacas grandes podem florescer já no 2º verão; o mais comum é no 3º. Botões aparecem nas bordas dos cladódios mais velhos e maduros, a partir da primavera."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: repouso fresco e mais seco no inverno, que induz os botões; retomada de rega e adubo na primavera; botões de outubro a março, cada um levando 2 a 3 semanas para abrir. Poucos dias antes, o botão se curva para cima; a flor abre por volta das 21h e murcha ao amanhecer. Depois da florada, poda de limpeza."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue pouco, só até umedecer, sem deixar escorrer muita água. Encharcar agora apodrece a base da estaca antes de ela ter raiz.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a rainha-da-noite",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão com botões, não deixe secar por completo: seca forte faz os botões caírem. No inverno, espace para a cada 12 a 15 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo NPK 10-10-10 em metade da dose do rótulo e regue com ele o substrato já úmido. De setembro a fevereiro, troque por fórmula para flores, rica em fósforo (ex.: 4-14-8). De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar cladódios",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as bordas e as nervuras dos cladódios e a base dos ramos: procure tufos brancos de algodão, escamas marrons coladas, manchas moles ou marcas de mordida com rastro brilhante.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera ou no começo do verão, fora da época de botões, tire o torrão, solte a casca velha que virou pó e replante em substrato novo, num vaso só 1 tamanho maior (3 a 5 cm a mais de diâmetro). Espere 5 dias para regar, para as raízes feridas cicatrizarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "A estaca enraizou?",
+      "mensagem": "Com cerca de 3 semanas, a estaca costuma estar enraizada.",
+      "acao_requerida": "Puxar a estaca de leve: se resistir, está enraizada; se sair solta mas firme e verde, aguarde mais 2 semanas; se a base estiver mole ou preta, cortar acima da parte podre, deixar cicatrizar e replantar"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Hora de colocar tutor",
+      "mensagem": "Os ramos novos já estão ficando compridos e tendem a tombar e quebrar com o próprio peso.",
+      "acao_requerida": "Cravar um tutor de bambu ou treliça de 60 a 80 cm junto à borda do vaso e prender os ramos com fita ou barbante macio, sem apertar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e da base (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base dos ramos escurecida e mole, cladódios murchos mesmo com o substrato úmido, cheiro ruim no vaso",
+      "prevencao_tratamento": "Substrato aerado, vaso com furos e regar só com o substrato seco a 3 cm; nunca deixar água no pratinho. Se aparecer, cortar a parte sã acima da podridão, deixar cicatrizar 7 dias e reenraizar como estaca em substrato novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodoado nas bordas e na base dos cladódios; ramos amarelados e pegajosos",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com algumas gotas de detergente neutro a cada 7 dias, no fim da tarde, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-de-carapaça",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou esbranquiçadas presas à superfície dos cladódios, que saem raspando com a unha",
+      "prevencao_tratamento": "Raspar com escova de dentes macia e água com sabão neutro; depois aplicar óleo mineral ou de neem a 0,5% a cada 7 dias até sumir"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Brotos novos e bordas dos cladódios roídos durante a noite, com rastro prateado de muco",
+      "prevencao_tratamento": "Catar à noite com lanterna, sobretudo depois de chuva; manter o vaso suspenso ou elevado e cercar a base com casca de ovo moída"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Cladódios amarelados, avermelhados ou com manchas brancas e secas na face voltada para o sol",
+      "prevencao_tratamento": "Deixar só sol da manhã ou luz filtrada; mudar de lugar aos poucos. As manchas não voltam ao verde, mas os brotos novos saem sadios"
+    },
+    {
+      "nome": "Queda de botões",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões amarelam e caem antes de abrir",
+      "prevencao_tratamento": "Não girar nem mudar o vaso de lugar enquanto houver botões, manter a rega regular e não trocar o vaso nessa época"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos novos finos, compridos, pálidos e cilíndricos; planta adulta que não floresce",
+      "prevencao_tratamento": "Levar para um lugar com mais luz clara e 2 a 3 horas de sol da manhã; cortar os ramos estiolados para estimular brotos mais fortes"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Repouso de inverno",
+      "mensagem": "O frio moderado e a rega mais espaçada nesta época são o que faz a rainha-da-noite formar botões na primavera. Abaixo de 5 °C, porém, os ramos sofrem com o frio.",
+      "acao_requerida": "Espaçar a rega para a cada 12 a 15 dias, suspender o adubo e, nas noites abaixo de 5 °C, levar o vaso para dentro ou para baixo de uma cobertura"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Com o calor voltando, a planta retoma o crescimento e começa a preparar os botões.",
+      "acao_requerida": "Voltar à rega semanal e retomar a adubação mensal com fórmula para flores, rica em fósforo (ex.: 4-14-8)"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Época de botões",
+      "mensagem": "Os botões surgem nas bordas dos cladódios e levam 2 a 3 semanas para abrir. A flor dura uma única noite: abre por volta das 21h e murcha ao amanhecer.",
+      "acao_requerida": "Deixar o vaso fixo no mesmo lugar e na mesma posição até o fim da florada e, quando o botão se curvar para cima, ficar de olho à noite para ver a flor abrir"
+    },
+    {
+      "meses": [
+        4
+      ],
+      "titulo": "Poda depois da florada",
+      "mensagem": "Terminada a florada, a planta aceita bem a poda de limpeza, e os pedaços cortados viram novas estacas.",
+      "acao_requerida": "Cortar rente à base os cladódios secos, enrugados, estiolados ou em excesso, com tesoura limpa; guardar os pedaços sadios de 15 a 25 cm para fazer estacas na primavera"
+    }
+  ]
+}

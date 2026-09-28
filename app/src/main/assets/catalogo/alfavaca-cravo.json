@@ -1,0 +1,201 @@
+{
+  "planta": {
+    "nome_comum": "Alfavaca-cravo",
+    "nome_cientifico": "Ocimum gratissimum",
+    "descricao": "Subarbusto aromático da família do manjericão, com folhas grandes e perfume forte de cravo por causa do eugenol. Usada em chás, temperos e como planta medicinal popular. Em vaso vive de 2 a 4 anos com podas de renovação e é mais rústica que o manjericão comum. A forma mais usada em casa é a muda, comprada ou feita de estaca.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; mais 1 colher de sopa de farinha de ossos a cada 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "A muda firma as raízes no vaso novo. Uma leve murcha nas horas quentes dos primeiros dias é normal. Se estiver muito quente, deixe à meia-sombra nos 3 primeiros dias. A fase acaba quando surgem folhas novas no topo e a planta não murcha mais ao meio-dia."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 15,
+      "dia_fim": 60,
+      "descricao": "Crescimento rápido dos ramos laterais. Depois do desponte, a planta ramifica e fica mais cheia. As primeiras espigas de flor podem aparecer. A fase acaba quando a planta passa de 40 cm e tem vários ramos com folhas grandes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 61,
+      "dia_fim": null,
+      "descricao": "Arbusto de 60 cm a 1,2 m em vaso. Cresce e floresce muito entre a primavera e o outono. Colha e tire as espigas florais com frequência, porque isso segura as folhas tenras e perfumadas. No inverno o crescimento para e algumas folhas caem. No fim do inverno, uma poda forte renova a planta. Depois de 3 ou 4 anos o caule fica lenhoso e a produção cai: é hora de fazer estacas e recomeçar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. Regue de manhã e não deixe água parada no pratinho. Nos dias frios e nublados, pule a rega se o substrato ainda estiver úmido.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a alfavaca-cravo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos. Acima de 30 °C, confira todo dia. No inverno o intervalo sobe para 4 a 5 dias: regue só quando os 3 cm estiverem secos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a alfavaca-cravo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca (ou 1 colher de sopa de torta de mamona curtida) sobre o substrato, a 5 cm do caule, e regue em seguida. Em junho e julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "colheita_desponte",
+      "titulo": "Colher ramos e tirar as espigas florais",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte a ponta dos ramos mais altos logo acima de um par de folhas, com tesoura limpa, e colha no máximo 1/3 da folhagem por vez. Tire todas as espigas de flor que encontrar. Se deixar as flores, a planta endurece e produz menos folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso e as axilas dos ramos. Procure insetos brancos que voam ao sacudir a planta, algodão branco nas axilas, pontinhos amarelos com teia fina e manchas escuras. Veja também se o caule está escuro e mole na base.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro, tire a planta do vaso e desfaça 1/3 do torrão por baixo e pelas laterais. Replante com substrato novo, num vaso do mesmo tamanho ou maior, e pode 1/3 dos ramos para compensar a perda de raiz.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "Hora do primeiro desponte",
+      "mensagem": "A muda já firmou. Cortar a ponta agora faz a planta ramificar e ficar cheia em vez de subir num caule só.",
+      "acao_requerida": "Cortar os 3 a 5 cm do topo do ramo principal logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Primeira colheita liberada",
+      "mensagem": "A planta já tem folhagem para aguentar colheitas regulares.",
+      "acao_requerida": "Colher as pontas dos ramos mais altos e aproveitar para fazer estacas de 10 cm, que enraízam fácil num copo com água"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido, a base do caule fica escura e mole, e as folhas amarelam de baixo para cima",
+      "prevencao_tratamento": "Regue só com os 3 cm de cima secos, esvazie o pratinho e use substrato com areia. Se aparecer, corte os ramos sadios para fazer estacas e descarte a planta e o substrato"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos pequenos ao sacudir a planta, folhas amareladas e pegajosas, às vezes com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso. Pulverize o verso das folhas com sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias, por 3 aplicações. Não colha por 7 dias depois do neem"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e nos ramos novos, que ficam deformados",
+      "prevencao_tratamento": "Remova os tufos com cotonete e álcool 70%. Em infestações maiores, pode os ramos atacados e pulverize óleo de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto de poeira, teia fina no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos. Se persistir, use enxofre molhável ou óleo de neem a 0,5% a cada 5 dias, fora do sol forte"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora, Alternaria)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas arredondadas, com halo amarelo, nas folhas mais velhas",
+      "prevencao_tratamento": "Regue no substrato, sem molhar as folhas, e deixe ventilar. Tire e descarte as folhas manchadas; não use essas folhas no chá"
+    },
+    {
+      "nome": "Queima pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecidas, murchas e com aspecto de cozidas depois de noites abaixo de 5 °C; pontas dos ramos secam",
+      "prevencao_tratamento": "Em noites de frio forte, leve o vaso para um lugar coberto e junto à parede. Só pode as partes queimadas no fim de agosto, quando o frio passar"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e finos, folhas pequenas e espaçadas, perfume fraco",
+      "prevencao_tratamento": "Leve para um lugar com pelo menos 4 horas de sol direto e pode os ramos compridos pela metade para rebrotar compacta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: proteger do frio",
+      "mensagem": "A alfavaca-cravo é tropical e sofre abaixo de 10 °C. Com geada, morre. O crescimento para e ela gasta pouca água.",
+      "acao_requerida": "Deixar o vaso em local ensolarado e protegido do vento, recolher em noites abaixo de 5 °C, regar só com o substrato seco a 3 cm e não adubar"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno, uma poda forte tira os ramos lenhosos e queimados e faz a planta brotar cheia na primavera.",
+      "acao_requerida": "Cortar todos os ramos pela metade, sempre acima de um par de brotos, retirar galhos secos e retomar a adubação no mês seguinte"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e floração intensa",
+      "mensagem": "No calor, o vaso seca em um dia e a planta solta espigas florais sem parar.",
+      "acao_requerida": "Conferir a umidade do substrato todo dia, regar de manhã e tirar as espigas florais toda semana"
+    }
+  ]
+}

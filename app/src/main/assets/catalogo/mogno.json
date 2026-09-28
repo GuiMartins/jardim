@@ -1,0 +1,204 @@
+{
+  "planta": {
+    "nome_comum": "Mogno",
+    "nome_cientifico": "Swietenia macrophylla",
+    "descricao": "Árvore amazônica de madeira nobre, ameaçada de extinção e protegida pela CITES. Na natureza passa de 30 m de altura, mas em vaso grande cresce devagar e fica como arvoreta ornamental de copa densa e folhas lustrosas. Começa-se com muda de viveiro legalizado e, com podas de formação, pode ser mantida por muitos anos em vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico grosso, cimento ou fibra com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo; suba para 80 a 100 L conforme a árvore crescer",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 15% areia grossa, 10% casca de pinus fina ou perlita; acrescente 1 colher de sopa de calcário dolomítico a cada 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho do viveiro para o vaso definitivo e pode perder algumas folhas de baixo nas primeiras duas semanas. A fase termina quando surge um broto novo, avermelhado ou verde-claro, na ponta do caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a muda cresce de 30 a 80 cm no ano, em surtos de folhas novas. O caule ainda é fino e verde embaixo; mantenha o tutor até ele ficar marrom e firme. É a fase em que a broca-do-ponteiro mais estraga, porque mata a gema de cima e deixa a árvore torta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Árvore em Vaso",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Com tronco lenhoso, o mogno em vaso segue um ano típico: brotação forte de setembro a março com sol e calor, crescimento lento no outono e perda parcial de folhas no inverno seco, quando fica semi-decíduo. A altura é controlada pela poda anual no fim do inverno e pelo tamanho do vaso. Floração e frutos são raros em vaso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de mogno",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda recém-plantada seca antes do resto do vaso: molhe bem em volta do caule. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o mogno",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 30 minutos. No verão quente o vaso de 50 L pode pedir água a cada 2 dias; no inverno, quando a árvore perde folhas, espace para 6 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o mogno",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 L de húmus de minhoca ou composto sobre o substrato, sem encostar no tronco, mais 1 colher de sopa de NPK 10-10-10 para cada 20 L de vaso, e regue em seguida. De maio a agosto pule esta adubação: a árvore está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_ponteiro",
+      "titulo": "Inspecionar o broto de cima e as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a ponta do caule principal e dos galhos: serragem, resina escorrendo ou broto murcho e escuro indicam broca-do-ponteiro. Vire as folhas procurando cochonilhas brancas ou marrons e pontinhos amarelados de ácaro.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato ou subir de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro ou outubro: tire a árvore do vaso, corte com tesoura limpa as raízes que dão volta no torrão e reduza 3 a 5 cm das laterais. Volte ao mesmo vaso com substrato novo ou passe para um vaso 20 a 30 L maior. Regue bem e deixe à meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso definitivo",
+      "mensagem": "O saquinho do viveiro já limita as raízes. Quanto antes a muda for para o vaso grande, mais rápido ela pega.",
+      "acao_requerida": "Cortar o saquinho sem desmanchar o torrão, plantar na mesma altura em que estava, cravar um tutor de bambu a 5 cm do caule, amarrar com fita em oito solta e regar até escorrer"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Começa a adubação",
+      "mensagem": "A muda já soltou raízes no substrato novo e aguenta adubo sem queimar.",
+      "acao_requerida": "Fazer a primeira adubação leve com húmus e NPK, como descrito na tarefa de adubação"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de mogno: conferir o vaso",
+      "mensagem": "Se as raízes já saem pelos furos ou a água escorre direto sem molhar o torrão, o vaso ficou pequeno.",
+      "acao_requerida": "Olhar os furos do fundo; se houver raízes saindo, passar para um vaso 20 a 30 L maior na próxima primavera e retirar o tutor se o tronco já estiver marrom e firme"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Broca-do-ponteiro (Hypsipyla grandella)",
+      "tipo": "PRAGA",
+      "sintomas": "Broto terminal murcho e escurecido, com furo, serragem e resina na ponta; a árvore perde o ponteiro e solta vários galhos laterais, ficando torta",
+      "prevencao_tratamento": "Inspecionar o ponteiro toda semana nos meses quentes; cortar o broto atacado 2 cm abaixo do furo e descartar longe do vaso. Depois, deixar só o broto lateral mais forte e vertical para virar o novo ponteiro. Em ataques repetidos, borrifar óleo de neem a 0,5% nas pontas a cada 7 dias de outubro a março"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, cerosas ou marrons presas aos ramos novos e ao verso das folhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhados em álcool 70%; em infestação maior, óleo mineral a 1% ou óleo de neem a cada 7 dias até sumir"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que ficam bronzeadas, teias finas no verso; comum em tempo seco e quente",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 2 dias nos períodos secos; se persistir, calda de sabão neutro ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, base do caule escura e mole, raízes marrons que se desfazem e cheiro azedo",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e manter os furos desobstruídos; se já houver podridão, tirar do vaso, cortar as raízes podres e replantar em substrato novo"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons irregulares com borda escura nas folhas novas, que secam e caem; aparece em verões muito chuvosos",
+      "prevencao_tratamento": "Evitar molhar a copa no fim do tarde, remover e descartar folhas manchadas; em ataque forte, calda bordalesa a 1% a cada 10 dias"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e ponteiros escurecem e secam de uma vez depois de uma noite muito fria",
+      "prevencao_tratamento": "Levar o vaso para perto de uma parede ou sob cobertura nas noites abaixo de 5 °C; não podar as partes queimadas antes de setembro, porque protegem os brotos de baixo"
+    },
+    {
+      "nome": "Clorose por falta de nutrientes",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelo-pálidas com nervuras verdes, crescimento parado no verão",
+      "prevencao_tratamento": "Retomar a adubação a cada 60 dias na estação quente e aplicar 1 colher de sopa de calcário dolomítico por 10 L de vaso se o substrato tiver mais de um ano"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger o mogno do frio",
+      "mensagem": "O mogno é tropical e sofre com geada: ponteiros e folhas queimam em noites abaixo de 5 °C.",
+      "acao_requerida": "Nas previsões de noite fria, encostar o vaso numa parede ou colocar sob cobertura e cobrir a copa com TNT à noite"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio e na seca o mogno cresce pouco e perde parte das folhas. É normal e não é doença.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm (em geral a cada 6 ou 7 dias) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "No fim do inverno, pouco antes da brotação, a poda controla a altura e deixa a copa mais cheia.",
+      "acao_requerida": "Cortar com tesoura limpa os galhos secos, cruzados ou quebrados e encurtar em até um terço os ramos que passaram da altura desejada, sempre logo acima de uma folha ou gema"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Brotação: retomar os cuidados",
+      "mensagem": "Com o calor voltando, o mogno solta folhas novas avermelhadas e volta a crescer rápido. É também quando começa a temporada da broca-do-ponteiro.",
+      "acao_requerida": "Voltar à rega a cada 2 ou 3 dias, fazer uma adubação com húmus e NPK e redobrar a atenção aos ponteiros"
+    }
+  ]
+}

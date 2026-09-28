@@ -1,0 +1,181 @@
+{
+  "planta": {
+    "nome_comum": "Babaçu",
+    "nome_cientifico": "Attalea speciosa",
+    "descricao": "Palmeira nativa das matas de cocais do Maranhão, Piauí e Tocantins, de folhas enormes e arqueadas. Em vaso cresce devagar e fica anos na fase jovem, só com folhas: é cultivada como palmeira ornamental e não chega a dar cocos, o que em solo leva de 8 a 10 anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de plástico grosso ou fibrocimento, com pelo menos 45 cm de profundidade e 35 cm de diâmetro e vários furos no fundo. A raiz do babaçu desce antes de se espalhar, então profundidade importa mais que largura",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca e 10% fibra de coco ou casca de pinus fina; solto e com boa drenagem",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do viveiro, geralmente sombreado, e se acostuma ao vaso e ao sol. É normal a ponta de uma folha velha secar. Se surgir uma folha nova ainda fechada, em forma de lança, no centro, a raiz pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A palmeira abre de 2 a 4 folhas por ano, as primeiras ainda inteiras ou pouco divididas. Não há caule visível: o ponto de crescimento fica enterrado. Folha nova amarelada e mole indica excesso de água."
+    },
+    {
+      "fase_id": "palmeira_jovem",
+      "nome": "Palmeira Jovem",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "As folhas passam a sair divididas em folíolos, como as da palmeira adulta. Cresce bem de setembro a abril e quase para no inverno do Centro-Sul. Corte rente à base só as folhas totalmente secas; folha ainda meio verde alimenta a planta. Em vaso não floresce nem dá cocos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de babaçu",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com a raiz ainda sem pegar, um substrato seco por completo faz a muda perder folhas. Esvazie o pratinho depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o babaçu",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão acima de 30 °C, confira a cada 2 dias. De maio a agosto, a cada 5 a 7 dias. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_palmeira",
+      "titulo": "Adubar o babaçu",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 (ou adubo próprio para palmeiras, com magnésio) mais 1 xícara de húmus sobre o substrato, a 10 cm da base, e regue em seguida. Pule a adubação de maio a agosto, quando a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso dos folíolos procurando escamas marrons ou pontinhos e teias finas. Aperte de leve a folha central: se estiver mole ou soltar com cheiro ruim, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o babaçu de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Entre setembro e novembro, passe para um vaso 10 a 15 L maior e mais fundo, com substrato novo. Mantenha a planta na mesma altura de antes, sem enterrar mais a base, e não desmanche o torrão: palmeira sofre quando as raízes se partem. Se o vaso já for o maior possível, troque só os 10 cm de cima do substrato.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Acostume ao sol aos poucos",
+      "mensagem": "Mudas de viveiro crescem sob sombrite. Sol pleno de uma vez queima as folhas, deixando manchas brancas ou marrons.",
+      "acao_requerida": "Deixar o vaso em meia-sombra na primeira semana e aumentar 1 a 2 horas de sol direto a cada 3 dias"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "Depois de duas semanas de adaptação, o babaçu precisa de pelo menos 4 horas de sol direto para não estiolar.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo, com 6 a 8 horas de sol direto"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Conferir as raízes",
+      "mensagem": "No primeiro ano, a raiz desce até o fundo do vaso. Se já estiver saindo pelos furos, o vaso ficou pequeno antes da hora.",
+      "acao_requerida": "Olhar os furos do fundo; se houver raízes grossas saindo, trocar de vaso na próxima primavera"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do olho e das raízes (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folha central amarelada, mole, que se solta com um puxão leve e tem cheiro de podre; substrato sempre molhado",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, esvaziar o pratinho e não molhar o centro da planta. Com a folha central já solta, o broto morreu e a palmeira não se recupera; no começo, suspender a rega e aplicar fungicida cúprico no centro"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou brancas presas no verso dos folíolos e na base das folhas; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia com água e sabão neutro; em infestação, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Ácaro-vermelho",
+      "tipo": "PRAGA",
+      "sintomas": "Folíolos com pontinhos claros, aspecto bronzeado e teias finas no verso, pior em tempo seco",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água a cada 3 dias na estação seca; se persistir, enxofre molhável ou óleo de neem"
+    },
+    {
+      "nome": "Mancha foliar (Pestalotiopsis, Bipolaris)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ou pretas com halo amarelo nos folíolos, que se juntam e secam partes da folha",
+      "prevencao_tratamento": "Cortar os folíolos muito atacados, regar o substrato sem molhar as folhas e manter a adubação em dia; plantas bem nutridas resistem mais"
+    },
+    {
+      "nome": "Deficiência de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas velhas com as bordas e pontas amarelas ou alaranjadas e pintas translúcidas, enquanto o centro continua verde",
+      "prevencao_tratamento": "Usar adubo para palmeiras com potássio e magnésio ou juntar 1 colher de sopa de sulfato de magnésio à adubação; as folhas afetadas não voltam, mas as novas saem verdes"
+    },
+    {
+      "nome": "Queimadura de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folíolos com manchas marrom-claras ou esbranquiçadas depois de noites abaixo de 5 °C",
+      "prevencao_tratamento": "Nas noites frias, levar o vaso para perto de uma parede ou sob uma cobertura; cortar só o que secar por completo na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Babaçu no inverno",
+      "mensagem": "Palmeira de clima tropical, o babaçu quase para de crescer no frio e sofre com geada e com substrato frio e molhado.",
+      "acao_requerida": "Espaçar a rega para quando o substrato estiver seco a 5 cm, suspender o adubo e abrigar o vaso nas noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Babaçu volta a crescer",
+      "mensagem": "Com o calor e as chuvas, a palmeira retoma o crescimento e começa a abrir folhas novas.",
+      "acao_requerida": "Voltar à rega normal, retomar a adubação e cortar rente à base as folhas que secaram no inverno"
+    }
+  ]
+}

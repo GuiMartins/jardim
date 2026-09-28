@@ -1,0 +1,216 @@
+{
+  "planta": {
+    "nome_comum": "Margarida-do-campo",
+    "nome_cientifico": "Leucanthemum vulgare",
+    "descricao": "Margarida rústica de flores brancas com miolo amarelo, perene de vida curta que forma touceiras e floresce da primavera ao verão. Cresce fácil a partir de sementes e aguenta frio e geadas leves. Não confundir com o margaridão (Leucanthemum × superbum), que é maior. Em vaso, a touceira se renova por divisão a cada dois anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 20 cm de profundidade e 20 cm de diâmetro, com furos no fundo; na jardineira, uma planta a cada 25 cm",
+    "volume_minimo_litros": 5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca ou composto, 20% areia grossa ou perlita; fértil sem exagero, porque excesso de adubo faz folha e tomba as hastes",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Semeie em sementeira ou direto no vaso, apenas pressionando as sementes sobre o substrato ou cobrindo com no máximo 2 mm de terra peneirada, porque elas precisam de luz para germinar. Com 15 a 22 °C, as plântulas aparecem entre o 7º e o 21º dia."
+    },
+    {
+      "fase_id": "mudas",
+      "nome": "Mudas",
+      "dia_inicio": 22,
+      "dia_fim": 60,
+      "descricao": "Surgem as folhas verdadeiras, espatuladas e com bordas dentadas, em roseta rente ao substrato. A fase termina quando cada muda tem de 4 a 6 folhas e cerca de 5 cm."
+    },
+    {
+      "fase_id": "roseta_estabelecimento",
+      "nome": "Roseta e Estabelecimento",
+      "dia_inicio": 61,
+      "dia_fim": 150,
+      "descricao": "A roseta se alarga e forma touceira no vaso definitivo. As hastes florais só sobem depois do frio e dos dias mais longos da primavera; semeada no outono, floresce na primeira primavera; semeada na primavera, a floração do primeiro ano é fraca ou fica para o ano seguinte."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Touceira perene. Floresce de setembro a janeiro com hastes de 40 a 60 cm; tirar as flores murchas prolonga a floração. Depois do verão, pode as hastes secas e deixa só a roseta, que atravessa o inverno verde. Em vaso, perde vigor após 2 ou 3 anos se não for dividida."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro, sem desenterrar as sementes. O substrato não pode secar nem encharcar; acima de 28 °C, borrife também no fim da tarde.",
+      "critica": true
+    },
+    {
+      "id": "rega_mudas",
+      "titulo": "Regar as mudas",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Enfie o dedo 1 cm no substrato; se estiver seco, regue com regador de bico fino na base, sem molhar as folhas, até escorrer pelos furos. Mudas pequenas murcham rápido em dia quente.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a margarida",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Na floração e acima de 30 °C, confira a cada 1 ou 2 dias; no inverno, a cada 4 ou 5 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a margarida",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca por vaso de 5 L, sem encostar na roseta, e regue em seguida. Da primavera ao fim da floração, prefira NPK 4-14-8 (1 colher de chá dissolvida em 1 L de água). Pule a adubação em junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os botões florais: procure pulgões agrupados, teias finas, pó branco ou manchas marrons com borda escura. Confira também a base da roseta à procura de lesmas ou apodrecimento.",
+      "critica": false
+    },
+    {
+      "id": "dividir_touceira",
+      "titulo": "Dividir a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, separe a touceira com as mãos ou faca limpa em partes com raízes e 3 a 5 rosetas cada, descarte o centro velho e replante em substrato novo. Se cair em plena floração ou no calor, adie para março a maio.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 25,
+      "titulo": "Hora do desbaste",
+      "mensagem": "As plântulas estão amontoadas e disputam luz; mudas apertadas ficam finas e tombam.",
+      "acao_requerida": "Deixar uma muda a cada 5 cm na sementeira (ou a mais forte de cada ponto no vaso), cortando as outras rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 50,
+      "titulo": "Mudar para o vaso definitivo",
+      "mensagem": "Com 4 a 6 folhas, as mudas já aguentam o transplante e precisam de espaço para formar touceira.",
+      "acao_requerida": "Transplantar cada muda para um vaso de pelo menos 5 L com o torrão inteiro, na mesma altura em que estava, e regar bem; deixar 2 dias à meia-sombra antes de voltar ao sol"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da raiz e do colo (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Roseta murcha mesmo com o substrato úmido, folhas amarelando de baixo para cima e base escura e mole",
+      "prevencao_tratamento": "Regar só com o substrato seco a 2 cm, esvaziar o pratinho e não enterrar a roseta. Plantas afetadas raramente se recuperam: salve as partes sadias da touceira em substrato novo"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos botões e hastes novas; botões deformados que não abrem",
+      "prevencao_tratamento": "Jato de água ou esfregar com os dedos; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas pontilhadas de amarelo, com aspecto empoeirado e teias finas no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água nos dias secos; óleo de neem a 0,5% a cada 5 dias até sumir"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco nas folhas e hastes, que depois amarelam e secam",
+      "prevencao_tratamento": "Não molhar as folhas, manter o vaso ventilado e ao sol; retirar as folhas atacadas e pulverizar leite diluído a 10% ou bicarbonato (1 colher de chá por litro) semanalmente"
+    },
+    {
+      "nome": "Mancha-foliar (Septoria leucanthemi)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons a pretas, redondas, com halo amarelo, começando nas folhas de baixo em tempo chuvoso",
+      "prevencao_tratamento": "Tirar e descartar as folhas manchadas, regar só na base e não deixar folhas mortas sobre o substrato"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas da roseta roídas nas bordas, com rastro brilhante; mudas cortadas rente ao chão",
+      "prevencao_tratamento": "Catar à noite ou cedo; espalhar casca de ovo triturada ou areia grossa em volta da roseta"
+    },
+    {
+      "nome": "Estiolamento e hastes tombadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Hastes finas e compridas que deitam, poucas flores e folhas verde-claras",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 4 a 6 horas de sol direto e cortar o nitrogênio; hastes já tombadas podem ser amarradas frouxamente a um arame"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Margaridas em flor",
+      "mensagem": "É a época de floração. Tirar as flores murchas antes que formem sementes mantém a planta florindo por mais tempo.",
+      "acao_requerida": "A cada visita, cortar as flores murchas rente à primeira folha abaixo delas"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Calor forte no vaso",
+      "mensagem": "Em dias acima de 30 °C, o vaso seca em um dia e a margarida murcha e encerra a floração mais cedo.",
+      "acao_requerida": "Conferir o substrato todo dia e regar pela manhã; se as folhas murcharem à tarde, dar meia-sombra nas horas mais quentes"
+    },
+    {
+      "meses": [
+        2,
+        3
+      ],
+      "titulo": "Poda de limpeza pós-floração",
+      "mensagem": "A floração acabou e as hastes secas só gastam energia e abrigam fungos.",
+      "acao_requerida": "Cortar todas as hastes florais rente à roseta de folhas e retirar folhas secas ou manchadas da base"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "No frio a margarida fica só em roseta e cresce pouco; substrato úmido demais nessa época apodrece a base.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 3 cm e suspender a adubação até agosto"
+    }
+  ]
+}

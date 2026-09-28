@@ -1,0 +1,185 @@
+{
+  "planta": {
+    "nome_comum": "Falsa-mirra",
+    "nome_cientifico": "Tetradenia riparia",
+    "descricao": "Arbusto aromático africano da família da hortelã, também chamado de incenso ou limonete, com folhas aveludadas de cheiro forte e resinoso. No inverno perde parte das folhas e se cobre de plumas de florzinhas lilás-claras, justo quando quase nada floresce. Aguenta bem a seca e rende muito em vaso grande ao sol.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico pesado com pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; a planta passa de 1,5 m e precisa de base estável contra o vento",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% perlita ou casca de arroz carbonizada; precisa drenar rápido, porque os caules são semissuculentos e apodrecem no encharcamento",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma as raízes no vaso novo. É normal murchar um pouco nas horas mais quentes dos primeiros dias e perder uma ou duas folhas de baixo. A fase terminou quando surgem folhas novas na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Crescimento rápido em altura, com caules grossos e macios e folhas aveludadas cada vez maiores. A raiz ocupa o vaso e a planta passa a aguentar vários dias sem água. A fase terminou quando a planta tem vários ramos lenhosos na base e passa de 80 cm."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Da primavera ao outono cresce e engrossa a folhagem. No fim do outono e no inverno (maio a agosto) perde boa parte das folhas e floresce em plumas lilás-claras perfumadas nas pontas dos ramos. Depois da floração, em setembro, recebe a poda e rebrota com força na primavera. A troca de substrato a cada dois anos mantém o vigor."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de falsa-mirra",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. Acima de 30 °C, confira todo dia. Com o substrato ainda úmido, não regue.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a falsa-mirra",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No inverno, com a planta sem folhas, espace para cada 10 a 14 dias. Folhas murchas pela manhã pedem água; caule mole e escurecido na base é excesso de água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a falsa-mirra",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 ou 1 xícara de húmus de minhoca pela borda do vaso de 30 L, sem encostar no caule, e regue em seguida. Pule a adubação de maio a julho, quando a planta está parada no inverno.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos brancos algodonosos nas axilas e no verso (cochonilha), teia fina com folha pontilhada de amarelo (ácaro) e pó branco na face das folhas (oídio). Aperte a base do caule: tem que estar firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, solte com os dedos um terço do torrão, corte as raízes enroladas e podres e replante com substrato novo no mesmo vaso ou em um 10 cm mais largo. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora da poda de formação",
+      "mensagem": "A muda já pegou e está crescendo em altura. Cortar as pontas agora faz a planta ramificar e ficar cheia em vez de virar uma haste única que tomba.",
+      "acao_requerida": "Cortar 3 a 5 cm da ponta de cada ramo principal, logo acima de um par de folhas, com tesoura limpa"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Conferir a firmeza no vaso",
+      "mensagem": "A planta cresceu rápido e os caules são macios e pesados no topo; vento forte pode tombar o vaso ou quebrar ramos.",
+      "acao_requerida": "Encostar o vaso numa parede ou colocar um tutor de bambu amarrado frouxo ao caule principal se ele estiver inclinando"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule escurecida e mole, folhas murchas mesmo com o substrato úmido, cheiro azedo no torrão",
+      "prevencao_tratamento": "Substrato arenoso, vaso com furos e sem pratinho cheio; só regar com o substrato seco a 5 cm. Se aparecer, corte as raízes podres, deixe secar e replante em substrato novo; ramos sadios podem virar estacas para salvar a planta"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodonosos nas axilas das folhas e nos ramos novos, folhas amareladas e pegajosas, formigas subindo pelo caule",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelos, aspecto empoeirado e teia fina no verso, comum em tempo seco e quente",
+      "prevencao_tratamento": "Jato de água no verso das folhas a cada 3 dias; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco na face das folhas, que depois amarelam e caem, principalmente no outono com noites úmidas",
+      "prevencao_tratamento": "Mantenha ao sol e com ar circulando, sem molhar as folhas na rega; pulverize leite diluído a 10% em água ou bicarbonato de sódio (1 colher de chá por litro) semanalmente"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos finos, compridos e tombando, folhas pequenas e espaçadas, pouca ou nenhuma floração no inverno",
+      "prevencao_tratamento": "Leve para um lugar com pelo menos 4 horas de sol direto e pode os ramos estiolados pela metade na primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Reduzir a rega para o inverno",
+      "mensagem": "Com o frio a falsa-mirra desacelera e começa a perder folhas; o substrato demora muito mais para secar e o risco de apodrecer a raiz aumenta.",
+      "acao_requerida": "Espaçar a rega para cada 10 a 14 dias, sempre conferindo o substrato seco a 5 cm, e suspender a adubação até agosto"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Floração de inverno",
+      "mensagem": "É normal a planta ficar quase sem folhas agora: é quando ela solta as plumas de flores lilás-claras e perfumadas nas pontas dos ramos. Não é sinal de doença.",
+      "acao_requerida": "Não podar nem adubar durante a floração; retirar as folhas secas caídas no vaso para não abrigar fungos"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "A falsa-mirra é tropical e a geada queima os ramos macios; abaixo de 3 °C os ponteiros escurecem e morrem.",
+      "acao_requerida": "Nas noites com previsão de geada, levar o vaso para junto de uma parede ou sob uma cobertura, ou cobrir a planta com tecido não tecido (TNT), retirando pela manhã"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda depois da floração",
+      "mensagem": "As flores secaram e a planta vai rebrotar com a primavera. Podar agora deixa o arbusto compacto e garante mais ramos para florir no próximo inverno.",
+      "acao_requerida": "Cortar as hastes das flores secas e encurtar os ramos em um terço, logo acima de um par de gemas, removendo os ramos secos ou queimados pela geada; os pedaços sadios de 15 cm enraízam como estacas"
+    }
+  ]
+}

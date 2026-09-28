@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Agave-azul",
+    "nome_cientifico": "Agave tequilana 'Azul'",
+    "descricao": "Suculenta mexicana de rosetas azul-acinzentadas e folhas rígidas com espinho na ponta. É a planta do tequila. Em vaso cresce devagar, aguenta sol forte e esquecimento de rega. É monocárpica: depois de 6 a 12 anos pode soltar uma haste floral enorme e morrer, deixando filhotes na base, mas em vaso isso raramente acontece.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro (cerâmica sem esmalte) com pelo menos 30 cm de diâmetro e 25 cm de profundidade e furos largos no fundo. O barro perde umidade pelas paredes e reduz o risco de podridão. Evite cachepô sem furo.",
+    "volume_minimo_litros": 15,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% areia grossa lavada, 30% terra vegetal, 20% pedrisco fino ou perlita e 10% húmus de minhoca. Deve escorrer a água em segundos, sem formar poça.",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao_enraizamento",
+      "nome": "Adaptação e Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda (filhote destacado da planta-mãe) forma raízes novas no substrato seco. Nas duas primeiras semanas deixe o vaso em meia-sombra luminosa e depois passe para o sol pleno. A fase acaba quando a roseta resiste a um puxão leve e a folha central volta a crescer, com a ponta verde-clara."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento lento: de 1 a 2 folhas novas por mês no calor e quase nenhuma no inverno. As folhas ficam firmes e azuladas, cobertas por um pó ceroso (pruína). Não esfregue esse pó, porque ele protege do sol. Folha mole ou enrugada indica sede; base amolecida indica excesso de água."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Roseta formada que cresce na primavera e no verão e fica quase parada de maio a agosto. As folhas de baixo secam aos poucos (é normal) e podem surgir filhotes na base, que servem de mudas novas. Se um dia sair uma haste central grossa como um aspargo gigante, a planta está florescendo e vai morrer depois: guarde os filhotes."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a muda de agave",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Regue devagar até a água escorrer pelos furos, sem molhar o centro da roseta. Se o substrato ainda estiver úmido a 3 cm de profundidade, espere mais 2 dias.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o agave",
+      "tipo": "REGA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito de churrasco até o fundo do vaso e tire: se sair seco e limpo, regue até escorrer pelos furos e esvazie o prato. Se sair úmido, adie uma semana. De maio a agosto, regue só a cada 3 ou 4 semanas; em semana de chuva sobre o vaso, pule.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a roseta",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas com uma pinça longa (cuidado com os espinhos) e procure algodãozinho branco entre as folhas, furos ou manchas escuras na base e cheiro de podre. Aperte a base da roseta: ela tem que estar dura.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar substrato e vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, com luvas grossas, tire a planta, remova o substrato velho e raízes secas, destaque os filhotes da base e replante em vaso 5 a 10 cm mais largo com substrato novo. Espere 7 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante seco e com luvas",
+      "mensagem": "A muda enraíza melhor em substrato seco: água agora apodrece o corte da base. O espinho da ponta fura fundo e a seiva irrita a pele.",
+      "acao_requerida": "Plantar com luvas grossas, sem enterrar a base das folhas, e não regar nos primeiros 7 dias. Se houver crianças ou pets por perto, cortar só a ponta do espinho terminal com alicate"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora do sol pleno",
+      "mensagem": "As raízes novas já começaram. Mudança brusca da sombra para o sol forte queima as folhas.",
+      "acao_requerida": "Passar o vaso para sol direto só de manhã por uma semana e depois para o sol pleno"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do coração e da raiz (Fusarium, Erwinia)",
+      "tipo": "DOENCA",
+      "sintomas": "Base da roseta mole e escura, folhas centrais que se soltam ao puxar, cheiro azedo",
+      "prevencao_tratamento": "Regar só com substrato seco até o fundo, nunca deixar água no prato nem no centro da roseta. No início, tirar do vaso, cortar o tecido podre até achar polpa firme, deixar secar à sombra por 1 semana e replantar em substrato seco"
+    },
+    {
+      "nome": "Bicudo-do-agave (Scyphophorus acupunctatus)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos na base das folhas, roseta que tomba e apodrece de repente, larvas brancas sem pernas dentro do miolo",
+      "prevencao_tratamento": "Não comprar mudas com furos na base. Planta atacada raramente se recupera: descartar longe de outros agaves e sisais"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão entre as folhas e nas raízes, folhas amareladas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; se persistir, óleo de neem a 0,5% com detergente neutro a cada 7 dias, no fim da tarde"
+    },
+    {
+      "nome": "Mancha-anelar (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons em anéis concêntricos nas folhas, mais comuns no verão chuvoso",
+      "prevencao_tratamento": "Evitar molhar as folhas e manter o vaso ventilado; cortar folhas muito manchadas na base com faca limpa"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Placas esbranquiçadas ou bege, secas, na face das folhas voltada para o sol, logo após mudança de lugar",
+      "prevencao_tratamento": "Aclimatar aos poucos ao sol pleno. As manchas não somem, mas as folhas novas nascem normais"
+    },
+    {
+      "nome": "Dano por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com áreas translúcidas e encharcadas depois de noite abaixo de 0 °C, que depois ficam pretas",
+      "prevencao_tratamento": "Em noites com previsão abaixo de 0 °C, levar para baixo de beiral ou cobrir com TNT. Cortar as folhas danificadas só depois do inverno"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Estação seca e fria: menos água",
+      "mensagem": "De maio a agosto o agave quase para de crescer. Substrato úmido no frio é a principal causa de podridão.",
+      "acao_requerida": "Espaçar as regas para a cada 3 ou 4 semanas, sempre com o substrato seco até o fundo"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Risco de geada",
+      "mensagem": "Blue agave aguenta frio seco até perto de -2 °C, mas folha molhada com geada queima.",
+      "acao_requerida": "Nas noites com previsão abaixo de 0 °C, colocar o vaso sob beiral ou cobrir com TNT e não regar na véspera"
+    },
+    {
+      "meses": [
+        9,
+        11,
+        1
+      ],
+      "titulo": "Adubação leve do agave",
+      "mensagem": "Na estação quente o agave aproveita um pouco de adubo. Adubo em excesso deixa as folhas moles e mais sujeitas a pragas.",
+      "acao_requerida": "Espalhar 1 colher de sopa de farinha de ossos ou 1 colher de chá de NPK 10-10-10 por vaso de 15 L na borda do vaso e regar em seguida"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Temporada de chuvas",
+      "mensagem": "Semanas seguidas de chuva de verão encharcam o vaso e apodrecem a base.",
+      "acao_requerida": "Se o vaso fica exposto à chuva, levantar do chão com pés de vaso, tirar o prato e, nas semanas de chuva contínua, levar para baixo de cobertura com sol"
+    }
+  ]
+}

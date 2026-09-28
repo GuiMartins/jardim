@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Palmeira-de-salão",
+    "nome_cientifico": "Chamaedorea elegans",
+    "descricao": "Palmeira pequena do sub-bosque das florestas do México e da Guatemala. Em vaso passa pouco de 1,2 m e cresce devagar. É das poucas palmeiras que aguentam a luz de dentro de casa, e por isso é vendida em touceiras de várias mudas no mesmo vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou barro com pelo menos 22 cm de diâmetro e 20 cm de profundidade, com furos no fundo. Se ficar dentro de um cachepô, esvazie a água que juntar no fundo dele.",
+    "volume_minimo_litros": 5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "50% terra vegetal, 30% fibra de coco ou turfa, 20% perlita ou casca de pinus fina. Deve ser fofo, reter umidade e escorrer bem.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A palmeira sai da estufa, que tem luz e umidade altas, e vai para a casa. É normal perder 1 ou 2 folhas de baixo, que amarelam. Deixe-a a até 1,5 m de uma janela clara, sem sol do meio-dia, e não troque de vaso nem adube agora. A fase termina quando surge uma folha nova, ainda fechada como uma lança no centro da touceira."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "As raízes ocupam o substrato novo e as folhas novas abrem num verde escuro uniforme. Folha nova menor ou mais clara que as anteriores indica pouca luz: aproxime o vaso da janela."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Da primavera ao fim do verão ela solta de 3 a 6 folhas novas por ano. No inverno quase para de crescer e bebe bem menos água. Plantas adultas podem soltar cachos de florzinhas amarelas em hastes eretas: não prejudicam a planta, e dá para cortá-los se incomodarem. Corte rente ao caule as folhas que secarem por inteiro."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a palmeira (adaptação)",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e esvazie o prato ou o cachepô depois de 15 minutos. O torrão de turfa da floricultura, se secar por completo, passa a repelir a água, e as pontas das folhas queimam sem voltar. Se estiver úmido, não regue.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a palmeira",
+      "tipo": "REGA",
+      "frequencia_dias": 6,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue até escorrer pelos furos e esvazie o prato depois de 15 minutos. Se estiver úmido, espere mais 2 dias. No verão acima de 30 °C, confira a cada 4 dias. De maio a agosto, o intervalo passa para uns 10 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a palmeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido para folhagens (NPK 10-10-10 ou similar) na metade da dose do rótulo e aplique com o substrato já úmido, nunca seco. De maio a agosto, pule a adubação. Palmeira de vaso sofre com o acúmulo de sais: crosta branca na borda do vaso pede uma rega farta, só com água, para lavar o substrato.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e limpar",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire 3 ou 4 folhas e olhe o verso com luz forte. Teias finas ou pontinhos claros são ácaro; carocinhos marrons ou algodão branco na junção das folhas são cochonilha. Passe um pano úmido nos dois lados das folhas para tirar o pó, e corte rente as folhas totalmente secas.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e fevereiro. Tire a touceira inteira, solte só o substrato velho das bordas sem desmanchar as raízes e plante num vaso 4 a 5 cm maior de diâmetro, na mesma altura de antes. Não enterre o colo. Regue bem e deixe à sombra clara por 1 semana. Se estiver no inverno, espere setembro.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Confira o cachepô",
+      "mensagem": "Muitas palmeiras vêm em vaso de plástico dentro de um cachepô sem furo. A água parada no fundo apodrece as raízes em poucas semanas.",
+      "acao_requerida": "Tirar o vaso do cachepô, conferir se tem furos e se não há água acumulada; se houver, esvaziar e passar a esvaziar após cada rega"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora de avaliar o vaso",
+      "mensagem": "Passada a adaptação, dá para mudar a palmeira do vasinho da floricultura para um definitivo, se ele estiver pequeno.",
+      "acao_requerida": "Se saírem raízes pelos furos ou o vaso tiver menos de 20 cm de diâmetro, plantar a touceira inteira, sem dividir, num vaso com os requisitos indicados e o substrato recomendado"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas de baixo amarelam em série, a base dos caules escurece e amolece, o substrato cheira a mofo e a planta murcha mesmo com a terra molhada",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm e nunca deixar água no prato. Se aparecer, tire a planta, corte as raízes marrons e moles, replante em substrato novo e seco e só volte a regar depois de 5 dias. Caules podres na base não se recuperam: retire-os da touceira"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontilhado amarelado ou acinzentado, teias finas no verso e nas junções; aparece em ambiente seco, com ar-condicionado ou no inverno",
+      "prevencao_tratamento": "Lavar as folhas no chuveiro, frente e verso, e aumentar a umidade do ar. Se persistir, aplicar óleo de neem a 0,5% no verso das folhas a cada 5 dias, 3 vezes, longe do sol"
+    },
+    {
+      "nome": "Cochonilha (de carapaça e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou tufos de algodão branco no verso das folhas e na base dos caules; folhas meladas e às vezes com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%. Em infestação maior, pulverizar óleo mineral ou de neem a 1% com gotas de detergente neutro, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Pontas marrons",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas secas e marrons, com a folha verde no restante",
+      "prevencao_tratamento": "Causas: ar muito seco, substrato que secou por completo, acúmulo de sais do adubo ou flúor da água da torneira. Mantenha a rega regular, lave o substrato com água farta a cada 3 meses e use água filtrada ou de chuva se persistir. A parte seca não volta: apare só o marrom com tesoura, deixando uma faixa fina seca para não ferir o verde"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas palha ou esbranquiçadas no meio das folhas voltadas para a janela, surgindo em poucos dias",
+      "prevencao_tratamento": "Tirar do sol direto do meio-dia e da tarde; atrás de vidro o dano é ainda mais rápido. Folhas manchadas não recuperam a cor, mas a planta segue saudável"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Inverno chegando: menos água, sem adubo",
+      "mensagem": "Com o frio a palmeira quase para de crescer. A mesma rega do verão encharca o substrato e apodrece as raízes, e o adubo não é aproveitado.",
+      "acao_requerida": "Espaçar a rega para cerca de 10 dias, sempre conferindo o substrato, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger do frio e do ar seco",
+      "mensagem": "Abaixo de 10 °C as folhas ficam com manchas escuras, e o ar seco do inverno do Centro-Sul favorece o ácaro.",
+      "acao_requerida": "Afastar o vaso de janelas frias à noite, de correntes de ar e de aquecedores; se a umidade estiver baixa, agrupar com outras plantas ou deixar sobre um prato com pedrinhas e água sem encostar no fundo do vaso"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: voltar a adubar",
+      "mensagem": "A palmeira retoma o crescimento e começa a soltar folhas novas. É a melhor época para trocar de vaso, se estiver na hora.",
+      "acao_requerida": "Voltar à rega de cerca de 6 dias e retomar a adubação mensal na metade da dose"
+    }
+  ]
+}

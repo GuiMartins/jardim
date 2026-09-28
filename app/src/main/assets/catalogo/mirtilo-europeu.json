@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Mirtilo-europeu",
+    "nome_cientifico": "Vaccinium myrtillus",
+    "descricao": "Arbusto baixo (20 a 60 cm) das florestas e charnecas frias da Europa. Dá frutinhas azul-escuras, com a polpa também roxa, mais aromáticas que as do mirtilo comercial (Vaccinium corymbosum). Precisa de substrato bem ácido e de um inverno frio de verdade, então no Brasil só frutifica bem nas serras do Sul e nas regiões de altitude; em lugar quente, a planta vegeta mas quase não floresce.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e raso, com pelo menos 35 cm de diâmetro e 25 cm de profundidade, de plástico ou cerâmica esmaltada (o cimento solta cal e sobe o pH), com vários furos no fundo",
+    "volume_minimo_litros": 20,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% turfa de sphagnum ou fibra de coco lavada, 30% casca de pinus compostada fina, 20% perlita; ou substrato pronto para azaleias. O pH precisa ficar entre 4,5 e 5,5. Não use calcário, cinza, terra comum nem húmus alcalino",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma ao vaso e ao substrato ácido. As raízes são finas, rasas e sem pelos absorventes, então a planta murcha fácil se o substrato seca. Algumas folhas podem cair, mas ela está bem se aparecerem brotos novos avermelhados nas pontas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 730,
+      "descricao": "Os caules verdes e angulosos se multiplicam a partir de rizomas e a touceira engrossa. Nos dois primeiros anos, arranque as flores que aparecerem na primavera, para a planta gastar energia em raiz e ramos. A fase termina quando a touceira ocupa boa parte do vaso e tem vários caules com mais de 20 cm."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: no outono (abril e maio) as folhas ficam vermelhas e caem, e a planta dorme no inverno, quando precisa de 800 a 1200 horas abaixo de 7 °C. Brota em setembro, solta flores pequenas em forma de sininho rosado entre setembro e outubro, e os frutos amadurecem entre dezembro e fevereiro, nos ramos do ano anterior. Uma touceira em vaso rende de 100 a 300 g por safra."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_mirtilo",
+      "titulo": "Regar o mirtilo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato. Se estiver apenas úmido ou já seco, regue devagar até escorrer pelos furos. Use água da chuva ou água filtrada: a água da torneira tem cálcio e, com o tempo, sobe o pH. Acima de 28 °C, confira todo dia. Na dormência (junho a agosto), confira a cada 4 dias. Não deixe água parada no prato.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_acidofila",
+      "titulo": "Adubar com adubo para acidófilas",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março: dissolva meia dose do adubo para azaleias ou camélias num litro de água da chuva e regue com o substrato já úmido. Uma alternativa é 1 colher de chá de sulfato de amônio espalhada na borda do vaso. Nunca use ureia em excesso, nitrato de cálcio nem esterco fresco. De abril a agosto a planta está parada: pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure teias finas e pontinhos claros (ácaro), carapaças brancas ou marrons presas nos caules (cochonilha) e folhas novas amarelas com as nervuras verdes (sinal de pH alto). Aperte a base dos caules: mole ou escura indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Trocar o substrato ácido",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça durante a dormência, de junho a agosto. Tire a touceira do vaso, solte com os dedos um terço do substrato velho das bordas e do fundo, corte as raízes escuras e replante com substrato ácido novo. Se as raízes contornam todo o vaso, passe para um vaso 5 cm mais largo. Se preferir multiplicar, divida a touceira em duas com uma faca limpa.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda de mirtilo",
+      "mensagem": "O mirtilo morre em substrato comum: o pH alto trava a absorção de ferro e a raiz apodrece se ficar compactada.",
+      "acao_requerida": "Plantar no substrato ácido na mesma altura em que a muda estava, sem enterrar o colo, e regar com água da chuva até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 3,
+      "titulo": "Cobrir o substrato",
+      "mensagem": "As raízes ficam nos primeiros 10 cm e sofrem com o calor e a secagem da superfície.",
+      "acao_requerida": "Cobrir o substrato com 3 a 5 cm de casca de pinus ou acícula de pinheiro, deixando 2 cm livres em volta dos caules"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de mirtilo",
+      "mensagem": "Se as folhas novas estão verdes e a touceira ganhou caules, o substrato está no ponto. Folhas amareladas com nervuras verdes indicam que o pH subiu.",
+      "acao_requerida": "Se houver clorose, regar com 1 g de enxofre em pó ou 1 colher de chá de vinagre por litro de água da chuva, uma vez por mês, até as folhas novas saírem verdes"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, excesso de água)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido, as folhas avermelham fora do outono e a base dos caules fica escura e mole",
+      "prevencao_tratamento": "Substrato arejado com perlita, furos desentupidos e nada de água parada no prato. Nos casos leves, tire a planta, corte as raízes podres e replante em substrato novo; os casos avançados raramente se recuperam"
+    },
+    {
+      "nome": "Clorose por pH alto",
+      "tipo": "DISTURBIO",
+      "sintomas": "As folhas novas ficam amarelo-claras com as nervuras verdes, o crescimento para e as pontas dos ramos secam",
+      "prevencao_tratamento": "Regar só com água da chuva ou filtrada e adubar com adubo para acidófilas. Para corrigir, use enxofre em pó (1 g por litro de substrato, misturado na superfície) ou quelato de ferro (Fe-EDDHA) na dose da embalagem"
+    },
+    {
+      "nome": "Queima por calor e sol forte",
+      "tipo": "DISTURBIO",
+      "sintomas": "As bordas das folhas ficam marrons e secas, e as folhas se enrolam nas tardes quentes",
+      "prevencao_tratamento": "Deixar só com o sol da manhã, cobrir o substrato e, acima de 28 °C, colocar o vaso dentro de outro maior ou encapar a lateral para as raízes não esquentarem"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos claros nas folhas, que ficam bronzeadas, e teias finas no verso, principalmente no tempo seco e quente",
+      "prevencao_tratamento": "Borrifar o verso das folhas com água da chuva nos dias secos. Se persistir, usar óleo de neem a 0,5% no fim da tarde a cada 5 dias, 3 aplicações, sem aplicar na floração"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, cerosas ou marrons presas nos caules, folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%. Em infestação maior, pulverizar óleo mineral ou de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Mofo-cinzento (Botrytis cinerea)",
+      "tipo": "DOENCA",
+      "sintomas": "Flores e frutos ficam marrons e moles, cobertos de um pó cinzento, principalmente em semanas chuvosas",
+      "prevencao_tratamento": "Não molhar flores e frutos na rega, manter o vaso num lugar ventilado e retirar logo os frutos atacados"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Mirtilo entrando em dormência",
+      "mensagem": "As folhas avermelham e caem: é normal. O frio do inverno é o que faz a planta florir na primavera.",
+      "acao_requerida": "Suspender a adubação até setembro, deixar o vaso ao ar livre no frio (geada não faz mal) e espaçar as regas, sem deixar o substrato secar por completo"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de inverno do mirtilo",
+      "mensagem": "Os frutos nascem nos ramos do ano anterior. Tirar só os caules velhos renova a touceira sem perder a safra.",
+      "acao_requerida": "Cortar rente ao substrato os caules com mais de 4 anos (grossos, acinzentados e com poucas brotações), além dos secos e quebrados. Não encurtar os ramos jovens"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Brotação e floração",
+      "mensagem": "A planta acorda, e os sininhos rosados que aparecem agora são a safra do verão.",
+      "acao_requerida": "Voltar a adubar com adubo para acidófilas, deixar o vaso onde as abelhas cheguem e, com geada prevista, cobrir a planta à noite com TNT"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Colheita dos mirtilos",
+      "mensagem": "Os frutos amadurecem aos poucos. Maduros, ficam azul-escuros, foscos e se soltam com um toque. Os sabiás adoram.",
+      "acao_requerida": "A cada 2 ou 3 dias, colher os frutos que se soltam sozinhos, cobrir a planta com tela antipássaro e consumir ou congelar em até 3 dias"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "titulo": "Proteger o mirtilo do calor",
+      "mensagem": "É uma planta de clima frio: raiz quente e sol da tarde queimam as folhas e secam o vaso em horas.",
+      "acao_requerida": "Deixar o vaso só com o sol da manhã, renovar a cobertura de casca de pinus e conferir a rega todo dia"
+    }
+  ]
+}

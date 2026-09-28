@@ -1,0 +1,210 @@
+{
+  "planta": {
+    "nome_comum": "Cabeludinha",
+    "nome_cientifico": "Myrciaria glazioviana",
+    "descricao": "Arbusto frutífero nativo da Mata Atlântica, parente da jabuticaba, que dá frutos amarelos cobertos de pelos finos, doces e levemente ácidos. Fica compacto (1,5 a 2,5 m em vaso), aceita bem a poda e começa a frutificar cedo, por isso é uma das melhores frutíferas nativas para varanda ou quintal pequeno.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; comece num vaso de 30 L e passe para 60 L ou mais quando a planta passar de 1,2 m",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa e 10% casca de pinus fina; levemente ácido (pH 5,5 a 6,5), sem calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho para o vaso definitivo e pode perder algumas folhas ou parar de crescer por umas semanas. A fase termina quando surgem brotos novos avermelhados nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e a planta solta brotações em surtos, com folhas novas cor de cobre que depois ficam verde-escuras. Muda bem formada pode florir já no primeiro ano, mas poucos frutos são o normal aqui."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação da Copa",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "A copa engrossa e ramifica. As flores brancas, pequenas e perfumadas, aparecem em grupos ao longo dos ramos na primavera, e a primeira safra de verdade costuma vir nesta fase."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: descanso relativo no inverno, floração entre setembro e outubro, frutos maduros de novembro a janeiro (às vezes uma segunda florada menor no verão), poda leve depois da colheita. O substrato se esgota em uns dois anos e pede renovação."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a cabeludinha recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda está restrita ao torrão da muda e seca rápido: acima de 30 °C, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a cabeludinha",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 a 4 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão e durante a floração e a frutificação, confira a cada 2 dias: falta de água derruba flores e frutos. No inverno, espace para a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a cabeludinha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de bokashi ou 1 xícara de húmus de minhoca por vaso de 40 L, afastado do tronco, e regue em seguida. Em junho e julho pule esta adubação. Planta adulta: some 1 colher de sopa de farinha de ossos na adubação de agosto para apoiar a floração.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos procurando pó amarelo-alaranjado (ferrugem), vire as folhas e passe o dedo nos ramos procurando carocinhos brancos ou marrons (cochonilha) e folhas grudentas.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno (agosto), antes da floração. Tire a planta, apare 2 a 3 cm das raízes que dão a volta no torrão e replante num vaso um número maior com substrato novo; se já estiver no vaso final, troque um terço do substrato. Regue bem e deixe à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso definitivo",
+      "mensagem": "Muda de saquinho fica com a raiz enovelada e seca em horas no sol.",
+      "acao_requerida": "Transplantar para o vaso com substrato, sem enterrar o colo acima do nível em que estava, regar até escorrer e deixar 1 semana à meia-sombra antes do sol pleno"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Com brotos novos aparecendo, a raiz já pegou e a planta aguenta sol pleno e adubo.",
+      "acao_requerida": "Levar para o local com pelo menos 4 horas de sol direto e fazer a primeira adubação leve"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Poda de formação",
+      "mensagem": "Cortar a ponta do ramo principal força a planta a ramificar e formar uma copa baixa e cheia, que dá mais frutos em vaso.",
+      "acao_requerida": "Se a muda passou de 70 cm, cortar a ponta do ramo principal logo acima de um par de folhas, com tesoura limpa; se ainda estiver menor, esperar a próxima brotação"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelando e caindo com o substrato úmido, murcha que não melhora com rega, cheiro azedo no substrato e raízes escuras e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 3 cm, nunca deixar água no pratinho e manter os furos desentupidos; se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Ferrugem-das-mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nos brotos, folhas novas, flores e frutinhos, que depois secam e ficam retorcidos",
+      "prevencao_tratamento": "Deixar a copa arejada, regar sem molhar as folhas e cortar e descartar no lixo as partes atacadas; em surto, calda bordalesa a 0,5% nos brotos a cada 10 dias"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos (algodoados) ou escudos marrons presos aos ramos e ao verso das folhas; folhas grudentas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhados em álcool 70% e aplicar óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos, amolecendo antes da hora e com larvas brancas dentro",
+      "prevencao_tratamento": "Colher os frutos assim que amadurecerem, recolher os caídos do chão e usar armadilha de garrafa PET com suco de fruta fermentado perto do vaso na época da frutificação"
+    },
+    {
+      "nome": "Queda de flores e frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores e frutos verdes caem aos montes poucos dias depois da floração",
+      "prevencao_tratamento": "Quase sempre é falta de água ou calor forte com substrato seco: regar sem falhas da floração à colheita e cobrir o substrato com palha ou casca de pinus para segurar a umidade"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Preparar para a floração",
+      "mensagem": "A cabeludinha acorda do inverno e forma os botões nas próximas semanas.",
+      "acao_requerida": "Voltar a regar a cada 2 a 3 dias e fazer a adubação com farinha de ossos; evitar adubo rico em nitrogênio, que faz folha em vez de flor"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "As flores brancas aparecem em grupos ao longo dos ramos. Nesta fase qualquer secura do vaso derruba as flores.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, regar sem molhar as flores e não podar nem trocar de vaso até a colheita"
+    },
+    {
+      "meses": [
+        11,
+        12,
+        1
+      ],
+      "titulo": "Época de colheita",
+      "mensagem": "Os frutos amadurecem cerca de 40 a 60 dias depois da florada e passam rápido do ponto.",
+      "acao_requerida": "Colher a cada 2 dias os frutos totalmente amarelos e macios ao toque, que se soltam com um leve giro; recolher os que caíram"
+    },
+    {
+      "meses": [
+        2,
+        3
+      ],
+      "titulo": "Poda leve pós-colheita",
+      "mensagem": "Logo depois da safra a planta brota com força, e os ramos novos são os que florescem na próxima primavera.",
+      "acao_requerida": "Cortar ramos secos, cruzados ou voltados para dentro da copa e encurtar em um terço os que passaram da altura desejada"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Cuidados no frio",
+      "mensagem": "No inverno a planta quase para de crescer e bebe menos. Adulta aguenta geada fraca, mas plantas com menos de 2 anos queimam.",
+      "acao_requerida": "Espaçar a rega para a cada 5 a 7 dias, suspender a adubação e, em noite com previsão de geada, levar o vaso para perto de uma parede ou sob cobertura"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "planta": {
+    "nome_comum": "Aroeira-do-sertão",
+    "nome_cientifico": "Myracrodruon urundeuva",
+    "descricao": "Árvore nativa da Caatinga e do Cerrado, de madeira duríssima, que perde todas as folhas na seca e floresce ainda sem folhas, em cachos miúdos e perfumados. Em vaso grande, ela fica como uma arvoreta de 1,5 a 2,5 m, resistente à seca e ao calor. A seiva pode irritar a pele de pessoas sensíveis: use luvas ao podar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado (cerâmica ou cimento) com pelo menos 45 cm de profundidade e 45 cm de diâmetro, com vários furos no fundo; a raiz pivotante precisa de profundidade e o peso evita que o vento derrube a árvore",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, 10% perlita ou pedrisco; bem drenado e pobre em matéria orgânica, como o solo de origem",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda no mesmo nível em que estava no saquinho, sem enterrar o colo, e amarre o caule a um tutor com fita macia, porque as mudas costumam ser finas e altas. Algumas folhas amarelam e caem nas primeiras semanas. A fase termina quando surgem brotos novos, avermelhados, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A raiz ocupa o vaso e o caule engrossa. A aroeira cresce rápido nas chuvas e para na seca. Se a muda chegar ao primeiro inverno, é normal que perca todas as folhas: raspe de leve a casca de um ramo com a unha; se estiver verde por baixo, ela está viva. Quando o caule se sustentar sozinho, retire o tutor."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: folhagem cheia de outubro a abril; em maio e junho as folhas ficam avermelhadas e caem; de julho a setembro, sem folhas, ela pode florescer (a espécie tem pé macho e pé fêmea, e em vaso a floração é irregular); em setembro e outubro volta a brotar. A cada dois anos precisa de substrato novo ou de um vaso maior."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de aroeira",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe água no pratinho. Acima de 32 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a aroeira",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos. Com a árvore sem folhas (junho a setembro), regue no máximo a cada 12 a 15 dias: ela está em repouso, e a água parada apodrece a raiz.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a aroeira",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as pontas dos brotos em busca de cochonilhas (pontos brancos ou marrons presos) e pulgões. Procure folhas cortadas em meia-lua e trilhas de formiga no vaso. Confira se a base do caule está firme e sem manchas escuras.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça em setembro ou outubro, no começo da brotação; se o lembrete chegar em outra época, espere até lá. Tire a planta, corte com tesoura limpa as raízes que dão voltas no fundo (até um terço do torrão) e replante com substrato novo no mesmo vaso ou num 10 cm maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "A muda pegou?",
+      "mensagem": "Com três semanas, a aroeira já deveria mostrar brotos novos na ponta dos ramos.",
+      "acao_requerida": "Procurar brotos avermelhados; se não houver e o caule estiver enrugado, conferir se o substrato está encharcado e espaçar as regas"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Hora de dar forma à copa",
+      "mensagem": "Sem pinçar a ponta, a aroeira sobe num tronco único, fino e alto demais para o vaso.",
+      "acao_requerida": "Se o caule passou de 60 cm, cortar os 3 cm da ponta logo acima de uma folha, com luvas, para forçar ramos laterais"
+    },
+    {
+      "dia_disparo": 300,
+      "titulo": "Retirar o tutor",
+      "mensagem": "O caule já deve ter engrossado o suficiente para ficar em pé sozinho.",
+      "acao_requerida": "Soltar a amarração e observar por uma semana; se o caule tombar com o vento, amarrar de novo por mais três meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e caem fora da época seca mesmo com o substrato úmido; base do caule escura e mole; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm e nunca deixar água no pratinho; na suspeita, retirar do vaso, cortar as raízes pretas e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos cerosos ou carapaças marrons presos aos ramos e ao verso das folhas; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; se persistir, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Formiga-cortadeira (saúva, quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou brotos inteiros sumindo de um dia para o outro; trilha de formigas subindo pelo vaso",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca granulada própria longe de crianças e animais; como barreira, passar graxa ou fita adesiva dupla-face na parede externa do vaso"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos nas brotações novas, que ficam enroladas e deformadas",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se voltar, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5%"
+    },
+    {
+      "nome": "Raízes enoveladas",
+      "tipo": "DISTURBIO",
+      "sintomas": "A planta para de crescer na época das chuvas, o substrato seca em um ou dois dias e raízes saem pelos furos do vaso",
+      "prevencao_tratamento": "Podar as raízes e renovar o substrato em setembro ou outubro, ou passar para um vaso maior"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "A aroeira vai perder as folhas",
+      "mensagem": "Com a chegada da seca, as folhas avermelham e caem. É o repouso natural da espécie, não doença.",
+      "acao_requerida": "Espaçar as regas para cada 12 a 15 dias e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Sem folhas, dá para ver a estrutura dos galhos, e a poda cicatriza antes da brotação.",
+      "acao_requerida": "Com luvas e tesoura limpa, cortar ramos secos, cruzados ou voltados para dentro, e encurtar em até um terço os que passam do tamanho desejado"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Fim do repouso",
+      "mensagem": "Os dias esquentam e a aroeira se prepara para brotar.",
+      "acao_requerida": "Voltar a regar conforme o teste do dedo e espalhar 3 colheres de sopa de húmus de minhoca mais 1 colher de sopa de farinha de ossos na superfície, regando em seguida"
+    },
+    {
+      "meses": [
+        11,
+        1,
+        3
+      ],
+      "titulo": "Adubar a aroeira",
+      "mensagem": "Na época das chuvas ela cresce rápido e esgota o substrato do vaso.",
+      "acao_requerida": "Espalhar 3 colheres de sopa de húmus de minhoca ou 1 colher de sopa de NPK 10-10-10 na borda do vaso, sem encostar no caule, e regar em seguida"
+    }
+  ]
+}

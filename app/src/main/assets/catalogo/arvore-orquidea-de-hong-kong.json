@@ -1,0 +1,216 @@
+{
+  "planta": {
+    "nome_comum": "Árvore-orquídea-de-hong-kong",
+    "nome_cientifico": "Bauhinia × blakeana",
+    "descricao": "Híbrido estéril de pata-de-vaca, símbolo de Hong Kong, com flores grandes magenta-púrpura e perfumadas que lembram orquídeas e aparecem do outono ao inverno. Como não produz sementes, só se multiplica por enxertia ou alporquia. Por isso o cultivo começa com uma muda enxertada. Em vaso grande vira uma arvoreta de 2 a 3 m que floresce por meses.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo (cerâmica, cimento ou plástico grosso) com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo. A base larga evita que o vento tombe a copa",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou perlita; levemente ácido a neutro (pH 6 a 7)",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enxertada se recupera do transplante. É normal cair algumas folhas nos primeiros dias. A fase termina quando surgem brotos novos com folhas bilobadas (em forma de pata de vaca) de cor verde-clara."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a copa começa a se formar. Nessa fase, deixe 3 a 4 ramos principais bem distribuídos e retire qualquer broto que nascer abaixo do ponto de enxertia (a cicatriz no tronco). Mudas enxertadas podem dar as primeiras flores já no primeiro outono, mas a floração forte vem a partir do segundo ano."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Arvoreta com copa formada. No ano típico, cresce na primavera e no verão, forma botões no fim do verão e floresce de abril a agosto. Em setembro recebe a poda leve. Como é um híbrido estéril, não forma vagens, e a energia vai toda para as flores. No frio pode perder parte das folhas, que voltam na primavera."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 60,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até a água escorrer pelos furos. Com a raiz ainda restrita ao torrão da muda, deixar secar por inteiro faz a planta murchar e perder a enxertia. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a árvore-orquídea",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato. Se estiver seco, regue até escorrer pelos furos (cerca de 8 a 10 L num vaso de 60 L). No verão quente, confira a cada 2 dias. Nos meses frios, a cada 5 a 7 dias, porque encharcar no frio apodrece a raiz. Esvazie o pratinho depois de 30 minutos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_periodica",
+      "titulo": "Adubar a árvore-orquídea",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus ou esterco curtido na superfície, sem encostar no tronco, mais 1 colher de sopa de NPK 10-10-10 dissolvida em 5 L de água. Regue antes e depois. De março a agosto, troque o NPK por 4-14-8 para favorecer as flores. Em junho e julho, pule a adubação se a planta estiver parada.",
+      "critica": false
+    },
+    {
+      "id": "ajuste_tutor",
+      "titulo": "Afrouxar o amarrio do tutor",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": 365,
+      "instrucoes": "Desamarre a fita que prende o tronco ao tutor e amarre de novo mais frouxa, em forma de 8, 5 cm acima ou abaixo do ponto anterior. O tronco engrossa rápido e o amarrio apertado estrangula a casca.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e enxerto",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure cochonilhas (pontinhos brancos ou marrons presos aos ramos), pulgões nos brotos, lagartas e manchas escuras. Olhe também o tronco abaixo da cicatriz do enxerto e corte rente qualquer broto que tenha nascido ali.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato ou subir de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno (agosto ou setembro), tire o torrão, corte 3 a 5 cm das raízes que dão voltas no fundo e nas laterais e replante com substrato novo, no mesmo vaso ou num 10 a 20 cm mais largo. Regue bem e deixe à meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plante com tutor e sem enterrar o enxerto",
+      "mensagem": "A muda tem o tronco fino e a copa pesada, e o vento quebra a planta no ponto de enxertia. Enterrar a cicatriz do enxerto faz a copa apodrecer ou o porta-enxerto dominar.",
+      "acao_requerida": "Plantar com o colo na mesma altura do torrão original, fincar um tutor de bambu a 5 cm do tronco antes de fechar a cova e amarrar com fita macia em forma de 8"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Formar a copa",
+      "mensagem": "Os brotos novos já definem a estrutura da árvore. Escolher os ramos agora evita cortes grandes depois.",
+      "acao_requerida": "Deixar 3 a 4 ramos bem distribuídos em volta do tronco e cortar os que cruzam para dentro ou crescem muito juntos, rente ao ramo principal"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano: tirar o tutor?",
+      "mensagem": "Com um ano, o tronco costuma sustentar a copa sozinho. O tutor mantido por tempo demais deixa o tronco fraco.",
+      "acao_requerida": "Soltar o amarrio e empurrar a copa de leve. Se o tronco voltar sem tombar, retirar o tutor. Se entortar, manter por mais 3 meses"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, ramos murcham e a base do tronco escurece. Raízes marrons e moles, com cheiro ruim",
+      "prevencao_tratamento": "Regar só com os 5 cm de cima secos, nunca deixar água no pratinho e reduzir a rega no inverno. Se aparecer, tirar do vaso, cortar as raízes podres e replantar em substrato novo e bem drenado"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, algodonosas ou marrons presas aos ramos e às nervuras, folhas pegajosas e fumagina preta por cima",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro. Em infestação maior, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e botões florais, folhas novas enroladas e botões que caem antes de abrir",
+      "prevencao_tratamento": "Jato de água nos brotos. Se persistir, óleo de neem a 0,5% a cada 5 dias, sempre no fim da tarde"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas pelas bordas ou com grandes buracos, fezes escuras em grânulos sobre as folhas de baixo",
+      "prevencao_tratamento": "Catar as lagartas à mão. Em ataque forte, pulverizar Bacillus thuringiensis (Dipel) no fim da tarde"
+    },
+    {
+      "nome": "Mancha foliar (Cercospora)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons arredondadas com halo amarelo nas folhas mais velhas, que depois amarelam e caem",
+      "prevencao_tratamento": "Regar no substrato sem molhar a copa, retirar e descartar as folhas atacadas e manter a copa arejada com a poda. Em casos persistentes, fungicida à base de cobre"
+    },
+    {
+      "nome": "Clorose por falta de ferro e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com as nervuras ainda verdes, crescimento fraco e poucas flores",
+      "prevencao_tratamento": "Evitar calcário em excesso e água muito dura. Aplicar quelato de ferro e 1 colher de chá de sulfato de magnésio em 5 L de água, e renovar o substrato se ele estiver compactado"
+    },
+    {
+      "nome": "Queda de botões por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Muitas folhas e ramos longos e finos, mas pouca ou nenhuma flor no outono, ou botões que secam e caem",
+      "prevencao_tratamento": "Levar o vaso para um lugar com pelo menos 6 horas de sol direto e reduzir o nitrogênio a partir de março"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        3,
+        4
+      ],
+      "titulo": "Preparar para a floração",
+      "mensagem": "A árvore-orquídea começa a formar botões para florescer do outono ao inverno. Excesso de nitrogênio agora vira folha em vez de flor.",
+      "acao_requerida": "Trocar o adubo por um rico em fósforo e potássio (NPK 4-14-8) e garantir o máximo de sol direto ao vaso"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A planta tolera frio leve, mas geada queima folhas, flores e ramos novos, e substrato frio e encharcado apodrece a raiz.",
+      "acao_requerida": "Nas noites abaixo de 5 °C, encostar o vaso numa parede abrigada ou cobrir a copa com manta antigeada, e espaçar as regas para a cada 5 a 7 dias"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda pós-floração",
+      "mensagem": "A floração terminou. A planta floresce nos ramos do ano, então podar agora estimula brotação nova que dará flores no próximo outono.",
+      "acao_requerida": "Cortar flores secas e ramos secos, cruzados ou voltados para dentro, e encurtar em até um terço os ramos longos, logo acima de uma gema"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: vigiar a rega",
+      "mensagem": "No auge do verão, um vaso grande ao sol pode secar em 1 ou 2 dias, e a planta derruba folhas quando passa sede.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, regar de manhã cedo e cobrir a superfície com 3 cm de casca de pinus para segurar a umidade"
+    }
+  ]
+}

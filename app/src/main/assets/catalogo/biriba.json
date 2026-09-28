@@ -1,0 +1,223 @@
+{
+  "planta": {
+    "nome_comum": "Biribá",
+    "nome_cientifico": "Annona mucosa (sin. Rollinia mucosa)",
+    "descricao": "Árvore frutífera amazônica da família da graviola e da pinha, de folhas grandes e fruto amarelo coberto de pontas moles, com polpa branca, doce e cremosa. Em vaso de 60 L ou mais fica com 2 a 3 m de altura e costuma frutificar a partir do terceiro ano quando vem de muda enxertada. Não tolera geada.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, fibra ou cimento, com pelo menos 45 cm de altura e 50 cm de diâmetro, vários furos no fundo e pés ou rodízios para não apoiar direto no chão",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina ou fibra de coco; acrescente 200 g de calcário dolomítico e 300 g de farinha de ossos por vaso de 60 L e misture bem",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do saquinho para o vaso e passa algumas semanas quase parada, formando raiz nova. É normal perder uma ou duas folhas velhas. A fase terminou quando surgem brotos novos, verde-claros e cobertos de pelos ferrugíneos, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento vegetativo em surtos na primavera e no verão, com folhas grandes de até 25 cm. Quando o tronco passar de 70 a 80 cm, corte a ponta para a planta ramificar baixo e caber no vaso. No inverno o crescimento para e algumas folhas amarelam e caem."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Planta Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A copa se forma com 3 a 5 ramos principais. Mudas enxertadas podem dar as primeiras flores no segundo ou terceiro ano: são carnosas, amarelo-esverdeadas, com três pétalas grossas, e nascem no ramo velho. Os primeiros frutos costumam cair pequenos; é normal enquanto a planta amadurece."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ciclo anual típico no Centro-Sul: repouso parcial no inverno com queda de parte das folhas, brotação e floração de setembro a novembro, frutos crescendo no verão e amadurecendo de janeiro a abril. Um pé em vaso bem cuidado produz de 5 a 20 frutos por ano, de 0,5 a 1,5 kg cada."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de biribá",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato perto do torrão da muda; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda está só no torrão original e seca rápido. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o biribá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 8 a 12 L num vaso de 60 L). No verão e com frutos, confira a cada 1 ou 2 dias: a falta de água derruba flores e frutinhos. De junho a agosto, espace para a cada 5 a 7 dias e só regue com o substrato seco.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o biribá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 litro de húmus de minhoca ou esterco curtido mais 2 colheres de sopa de NPK 10-10-10 sobre o substrato, a 10 cm do tronco, e regue em seguida. Na floração e com frutos (setembro a março), troque o NPK por 4-14-8. Pule a adubação de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, ramos e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure cochonilhas brancas ou marrons, ácaros e manchas escuras. Nos frutos, procure furinhos com serragem escura ou manchas pretas afundadas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato e podar raízes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno (agosto), tire a planta do vaso, corte 3 a 5 cm das raízes em volta e no fundo do torrão com serrote limpo, e volte ao vaso com substrato novo na mesma receita. Se ainda estiver num vaso menor que 100 L, passe para um maior. Regue bem e mantenha à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio da muda",
+      "mensagem": "A muda de biribá é sensível a raiz dobrada e a encharcamento. O colo (ou o enxerto) não pode ficar enterrado.",
+      "acao_requerida": "Cortar o saquinho sem desmanchar o torrão, plantar com o colo 2 cm acima do substrato, regar bem e deixar 3 a 5 dias à meia-sombra antes de ir para o sol pleno"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de ir para o sol pleno",
+      "mensagem": "A muda já passou pelo choque do plantio e precisa de sol para crescer.",
+      "acao_requerida": "Levar o vaso para o local definitivo com 6 a 8 horas de sol direto, de preferência protegido de vento forte, que rasga as folhas grandes"
+    },
+    {
+      "dia_disparo": 240,
+      "titulo": "Conferir a altura para a poda de formação",
+      "mensagem": "Biribá sem poda cresce em haste única e fica alto demais para o vaso.",
+      "acao_requerida": "Se o tronco passou de 70 a 80 cm, cortar a ponta 5 mm acima de uma folha; se ainda não chegou, fazer o corte quando chegar"
+    },
+    {
+      "dia_disparo": 400,
+      "titulo": "Escolher os ramos principais",
+      "mensagem": "Depois do desponte a planta soltou vários brotos laterais. Deixar todos cria uma copa fechada e sombreada por dentro.",
+      "acao_requerida": "Manter 3 a 5 ramos bem distribuídos em volta do tronco e cortar rente os outros, inclusive brotos que saiam abaixo do enxerto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com substrato úmido, amarelam e caem; base do tronco escurecida e raízes marrons e moles com cheiro ruim",
+      "prevencao_tratamento": "Só regar com o substrato seco a 5 cm, manter os furos livres e o vaso fora de pratinho com água. Em caso inicial, suspender a rega e raspar a terra do colo; com raiz podre, replantar em substrato novo cortando as partes moles"
+    },
+    {
+      "nome": "Broca-do-fruto (Cerconota anonella)",
+      "tipo": "PRAGA",
+      "sintomas": "Furos no fruto com serragem escura saindo, polpa escurecida e fruto que apodrece ou cai antes de amadurecer",
+      "prevencao_tratamento": "Ensacar os frutos com saco de TNT ou papel quando tiverem 3 a 5 cm; recolher e destruir frutos furados ou caídos"
+    },
+    {
+      "nome": "Broca-da-semente (Bephratelloides pomorum)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com vários furinhos redondos por onde saíram pequenas vespas; sementes ocas e polpa manchada",
+      "prevencao_tratamento": "Ensacamento precoce dos frutos e destruição dos frutos atacados, que abrigam a próxima geração"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou flocos brancos nos ramos e no verso das folhas, folhas pegajosas e fumagina preta por cima",
+      "prevencao_tratamento": "Retirar com cotonete ou escova macia com água e sabão neutro; se persistir, óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas nos frutos, flores que escurecem e caem, manchas pardas nas folhas novas em época chuvosa",
+      "prevencao_tratamento": "Poda de limpeza para arejar a copa, recolher partes doentes e evitar molhar a copa na rega; em ataque forte, calda bordalesa na brotação e após a formação dos frutinhos"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem e secam de uma vez após noite abaixo de 5 °C; com geada, ramos novos morrem de cima para baixo",
+      "prevencao_tratamento": "Nas noites frias, levar o vaso para perto de uma parede ou sob cobertura, ou cobrir a copa com TNT; esperar a brotação da primavera antes de podar os ramos secos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "titulo": "Proteger o biribá do frio",
+      "mensagem": "O biribá é tropical: abaixo de 10 °C ele sofre e a geada pode matar os ramos. No inverno também bebe menos água.",
+      "acao_requerida": "Nas noites com previsão abaixo de 8 °C, colocar o vaso encostado numa parede ou sob cobertura e cobrir a copa com TNT; espaçar a rega para a cada 5 a 7 dias"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "No fim do inverno a planta está quase parada, e o fruto nasce nos ramos novos que saem na primavera.",
+      "acao_requerida": "Cortar ramos secos, doentes, cruzados e voltados para dentro, e encurtar em um terço os que passaram da altura desejada, sempre acima de uma gema"
+    },
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Floração: ajude a polinização",
+      "mensagem": "A flor do biribá abre primeiro a parte feminina e só depois libera pólen, por isso muitas flores caem sem virar fruto quando não há besouros polinizadores por perto.",
+      "acao_requerida": "Nas flores bem abertas com pólen solto, coletar o pólen num potinho de manhã e passar com pincel macio no centro das flores recém-abertas ainda sem pólen"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Ensacar os frutos",
+      "mensagem": "Os frutinhos novos são o alvo das brocas, que estragam o fruto por dentro.",
+      "acao_requerida": "Envolver cada fruto de 3 a 5 cm num saco de TNT ou de papel amarrado no pedúnculo, e tirar os frutos deformados ou em excesso, deixando no máximo 1 por ramo"
+    },
+    {
+      "meses": [
+        2,
+        3,
+        4
+      ],
+      "titulo": "Época de colher biribá",
+      "mensagem": "O fruto maduro é muito perecível: amolece e escurece em 2 ou 3 dias depois do ponto.",
+      "acao_requerida": "Conferir os frutos a cada 2 dias e colher os que passaram de verde a amarelo, com as pontas escurecendo e cedendo levemente ao apertar; consumir em até 2 dias"
+    }
+  ]
+}

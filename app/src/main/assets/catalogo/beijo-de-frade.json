@@ -1,0 +1,202 @@
+{
+  "planta": {
+    "nome_comum": "Beijo-de-frade",
+    "nome_cientifico": "Impatiens balsamina",
+    "descricao": "Anual de caule suculento e flores em rosa, vermelho, lilás ou branco, simples ou dobradas, que se abrem junto ao caule, entre as folhas. Cresce rápido a partir da semente e floresce por meses no calor. As cápsulas maduras estouram ao toque e lançam as sementes para o próximo ano.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": 150,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de 18 a 20 cm de diâmetro e pelo menos 15 cm de profundidade por planta, ou jardineira com 25 cm entre plantas, sempre com furos no fundo. Para semear, use copinhos ou bandeja de células com furos",
+    "volume_minimo_litros": 3,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% fibra de coco ou vermiculita; fofo, rico em matéria orgânica e que retenha umidade sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 12,
+      "descricao": "Semeie 2 sementes por copinho a 0,5 cm de profundidade, em local claro e quente (21 a 27 °C). As plântulas surgem entre o 5º e o 12º dia, com duas folhas arredondadas e caule translúcido."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 13,
+      "dia_fim": 30,
+      "descricao": "Surgem as folhas verdadeiras, estreitas e serrilhadas. A fase termina quando a muda tem 4 a 6 folhas e uns 8 cm, pronta para o vaso definitivo. O caule é frágil e tomba fácil se o substrato ficar encharcado."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 55,
+      "descricao": "O caule engrossa, fica suculento e às vezes avermelhado, e a planta ramifica. Os primeiros botões aparecem nas axilas das folhas do topo, quase escondidos pela folhagem: é o sinal de que a floração começa."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 56,
+      "dia_fim": 130,
+      "descricao": "Flores se abrem sem parar ao longo do caule, de baixo para cima. Com rega regular e sol da manhã, a planta chega a 40 a 60 cm, coberta de flores. Seca no substrato derruba os botões em um ou dois dias."
+    },
+    {
+      "fase_id": "sementes_declinio",
+      "nome": "Sementes e Declínio",
+      "dia_inicio": 131,
+      "dia_fim": 150,
+      "descricao": "A floração diminui, as folhas de baixo amarelam e as cápsulas peludas incham. Quando ficam amarelo-esverdeadas, estouram ao toque. Terminado o ciclo, arranque a planta e guarde as sementes para a próxima primavera."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Borrifar a semeadura",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 12,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode secar nem formar poça: semente seca não germina, e encharcada apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o beijo-de-frade",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue na base até escorrer pelos furos, sem molhar as folhas. Acima de 30 °C ou em vaso pequeno, confira todo dia. Folhas murchas ao meio-dia que se recuperam à tarde indicam calor, não sede; murchas de manhã indicam falta de água.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_floracao",
+      "titulo": "Adubar para florir",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 35,
+      "dia_fim_ciclo": 120,
+      "instrucoes": "Dissolva 1 colher de chá de NPK 4-14-8 em 1 L de água e regue o substrato já úmido, 250 ml por vaso de 3 L. Ou espalhe 2 colheres de sopa de húmus mais 1 de farinha de ossos sem encostar no caule. Evite adubo rico em nitrogênio, que faz folha e esconde as flores.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 13,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Vire as folhas do meio e do topo: procure pontinhos amarelos com teia fina (ácaro), insetos agrupados nos brotos (pulgão) ou pó branco (oídio). Aperte levemente a base do caule: mole ou escura é sinal de podridão.",
+      "critica": false
+    },
+    {
+      "id": "colheita_sementes",
+      "titulo": "Colher sementes maduras",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 100,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Envolva com a mão as cápsulas gordas e amarelo-esverdeadas e aperte de leve: elas estouram e soltam as sementes marrons. Seque as sementes à sombra por uma semana e guarde num envelope de papel em local seco.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Duas mudas no mesmo copinho competem e ficam fracas e compridas.",
+      "acao_requerida": "Deixar só a muda mais vigorosa de cada copinho, cortando a outra rente ao substrato com tesoura"
+    },
+    {
+      "dia_disparo": 28,
+      "titulo": "Mudar para o vaso definitivo",
+      "mensagem": "Com 4 a 6 folhas verdadeiras, a muda já precisa de espaço para ramificar e florir.",
+      "acao_requerida": "Transplantar com o torrão inteiro para o vaso de 3 L, na mesma altura em que estava, e regar bem; deixar 2 dias na sombra clara antes de voltar ao sol da manhã"
+    },
+    {
+      "dia_disparo": 40,
+      "titulo": "Desponte para ramificar",
+      "mensagem": "Cortar a ponta do caule principal agora faz a planta abrir em vários ramos e dar muito mais flores.",
+      "acao_requerida": "Beliscar com as unhas os 2 cm da ponta do caule principal, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 56,
+      "titulo": "Primeiras flores",
+      "mensagem": "As flores do beijo-de-frade se abrem junto ao caule, meio escondidas entre as folhas.",
+      "acao_requerida": "Afastar as folhas do topo para conferir os botões e manter a rega sem falhas daqui em diante"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e da raiz (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule escurece, amolece e fica translúcida; a planta tomba mesmo com o substrato úmido. Nas plântulas, tombamento repentino",
+      "prevencao_tratamento": "Regar só quando os 2 cm de cima secarem, usar vaso com furos e substrato novo. Retirar e descartar a planta afetada com o substrato; não reaproveitar a terra"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, depois bronzeadas e secas; teia fina no verso e nas axilas, sobretudo em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e botões; folhas novas enrugadas e pegajosas, botões que caem sem abrir",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco nas folhas, que depois amarelam e caem, principalmente no fim do ciclo e em noites frescas",
+      "prevencao_tratamento": "Não molhar as folhas e manter o vaso ventilado; remover as folhas atacadas e pulverizar leite diluído em água (1:9) uma vez por semana"
+    },
+    {
+      "nome": "Queda de botões por estresse hídrico",
+      "tipo": "DISTURBIO",
+      "sintomas": "Botões e flores caem em massa um ou dois dias depois de a planta murchar por falta de água ou calor forte",
+      "prevencao_tratamento": "Manter o substrato úmido de forma constante, cobrir a superfície com casca de pinus ou palha e dar sombra à tarde nos dias acima de 32 °C"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule comprido, fino e tombando, folhas espaçadas e poucas flores",
+      "prevencao_tratamento": "Garantir pelo menos 3 horas de sol direto, de preferência pela manhã; mudas estioladas podem ser transplantadas mais fundo, enterrando parte do caule"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Proteger do sol forte da tarde",
+      "mensagem": "No auge do verão, o sol da tarde murcha o beijo-de-frade e derruba os botões, mesmo com o substrato úmido.",
+      "acao_requerida": "Deixar o vaso onde bata sol só até as 11h ou colocar sombrite 50% à tarde, e conferir a rega todo dia"
+    },
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Frio encerra o ciclo",
+      "mensagem": "Abaixo de 10 °C a planta para de florir, e a geada a mata. Esta é a hora de garantir as sementes.",
+      "acao_requerida": "Colher todas as cápsulas maduras que restarem e, nas noites de frio forte, levar o vaso para perto da parede ou para dentro de casa"
+    }
+  ]
+}

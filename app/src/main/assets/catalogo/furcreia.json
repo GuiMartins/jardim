@@ -1,0 +1,193 @@
+{
+  "planta": {
+    "nome_comum": "Furcreia",
+    "nome_cientifico": "Furcraea foetida 'Mediopicta'",
+    "descricao": "Suculenta de roseta parecida com um agave, de folhas largas e compridas; a forma mais cultivada no Brasil é a variegada 'Mediopicta', com faixa creme no centro da folha. Aguenta sol forte, vento e esquecimento na rega, e em vaso fica escultural por muitos anos. Floresce uma só vez, depois de 10 anos ou mais, e então morre deixando centenas de mudinhas (bulbilhos) na haste floral.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado de cerâmica ou cimento, com no mínimo 35 cm de diâmetro e 30 cm de profundidade e furos grandes no fundo; a roseta adulta passa de 1 m de largura e tomba vasos leves",
+    "volume_minimo_litros": 25,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% pedrisco ou brita fina, 10% húmus de minhoca; precisa escorrer a água na hora",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. Plante com o colo (a base da roseta) no nível do substrato, nunca enterrado. Nas primeiras semanas as folhas de fora podem murchar ou amarelar um pouco; a fase termina quando a roseta fica firme e não balança ao ser tocada."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Com a raiz firme, surgem folhas novas no centro da roseta, mais largas e com a variegação bem marcada. A rega passa a ser espaçada: nesta fase o risco maior é regar demais, não de menos."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão e quase para no inverno. As folhas mais velhas da base secam aos poucos e devem ser retiradas. Depois de muitos anos, a roseta lança uma haste floral de vários metros cheia de bulbilhos e morre depois de florescer; os bulbilhos plantados em vasinhos viram novas mudas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a furcreia recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue em volta da base até escorrer pelos furos, sem molhar o centro da roseta. Se ainda estiver úmido, espere mais um dia e confira de novo.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a furcreia",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; só regue se estiver completamente seco, e então molhe até escorrer pelos furos. Esvazie o pratinho. Não deixe água parada no centro da roseta. No inverno, regue a cada 20 a 30 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a furcreia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva 1 colher de chá de NPK 10-10-10 em 1 L de água e regue o substrato já úmido, sem molhar as folhas. De maio a agosto não adube: a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Retirar folhas secas da base",
+      "tipo": "PODA",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas (a seiva irrita a pele e a ponta da folha fura), corte rente ao tronco as folhas da base que estiverem secas ou mais da metade amarelas, usando tesoura de poda limpa. Não corte folhas verdes.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a roseta",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base das folhas e o encaixe entre elas procurando algodãozinho branco (cochonilha), manchas escuras moles ou furos na base da roseta. Aperte de leve o colo: deve estar duro.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato ou o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, com luvas, tire a planta do vaso, solte as raízes velhas e replante no mesmo nível em substrato novo, num vaso 5 a 10 cm maior se as raízes estiverem enroladas. Aproveite para separar os filhotes da base. Espere 5 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantio sem enterrar o colo",
+      "mensagem": "A base da roseta enterrada fica úmida e apodrece. Na primeira semana, sol pleno de uma vez queima as folhas variegadas de uma muda que vinha da sombra do viveiro.",
+      "acao_requerida": "Conferir se o colo está no nível do substrato e deixar a planta em meia sombra por 7 dias antes de ir para o sol pleno"
+    },
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A muda já se acostumou ao vaso. Sem pelo menos 4 horas de sol direto, as folhas ficam moles, compridas e perdem a variegação.",
+      "acao_requerida": "Levar o vaso para o lugar definitivo, com pelo menos 4 horas de sol direto"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Rega passa a ser espaçada",
+      "mensagem": "A raiz já firmou. De agora em diante, a furcreia aguenta bem a seca e sofre com o excesso de água.",
+      "acao_requerida": "Regar só quando os 5 primeiros centímetros do substrato estiverem totalmente secos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do colo e da raiz (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Base da roseta mole e escura, folhas centrais que se soltam ao puxar, cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco, esvaziar o pratinho e nunca enterrar o colo. No início, tire a planta do vaso, corte as partes moles até o tecido firme, deixe secar 3 dias à sombra e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão na base e no encaixe das folhas; folhas pegajosas ou com fumagina preta",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com algumas gotas de detergente no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Gorgulho-do-agave (Scyphophorus acupunctatus)",
+      "tipo": "PRAGA",
+      "sintomas": "Roseta murcha de repente e se solta da base; furos e larvas brancas sem pernas no tronco apodrecido",
+      "prevencao_tratamento": "Não há cura para a planta atacada: descarte-a e o substrato longe de outras suculentas. Previna com planta vigorosa e sem ferimentos na base"
+    },
+    {
+      "nome": "Mancha foliar (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons afundadas, às vezes com anéis, que crescem nas folhas em épocas quentes e úmidas",
+      "prevencao_tratamento": "Não molhar as folhas ao regar e deixar o vaso ventilado; corte as folhas muito atingidas e, se espalhar, aplique fungicida cúprico conforme o rótulo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Placas esbranquiçadas ou marrons e secas na face de cima das folhas, principalmente na faixa creme, logo depois de mudar a planta de lugar",
+      "prevencao_tratamento": "Passar da sombra para o sol pleno aos poucos, em uma a duas semanas. As manchas não somem, mas as folhas novas nascem sem elas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Inverno chegando: menos água",
+      "mensagem": "Com o frio a furcreia quase para de crescer, e o substrato demora muito mais a secar. Regar no ritmo do verão é o jeito mais comum de apodrecer a raiz.",
+      "acao_requerida": "Espaçar a rega para a cada 20 a 30 dias e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger das geadas",
+      "mensagem": "A furcreia tolera frio até perto de 0 °C, mas a geada queima as folhas e pode matar a roseta.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, levar o vaso para perto de uma parede ou para baixo de uma cobertura"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar o crescimento",
+      "mensagem": "Com o calor voltando, a planta volta a crescer e aproveita água e adubo.",
+      "acao_requerida": "Voltar a regar a cada 10 dias, conferindo o substrato, e retomar a adubação"
+    }
+  ]
+}

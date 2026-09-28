@@ -1,0 +1,183 @@
+{
+  "planta": {
+    "nome_comum": "Pata-de-vaca-de-espinho",
+    "nome_cientifico": "Bauhinia forficata",
+    "descricao": "Árvore nativa do Sul e Sudeste do Brasil, com folhas bilobadas em forma de pata de vaca, espinhos pareados nos ramos e flores brancas, grandes e perfumadas na primavera e no verão. Em vaso grande fica como arvoreta de 2 a 3 m, e as folhas são tradicionalmente usadas em chá caseiro. É semicaducifólia: perder parte das folhas no inverno é normal.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com furos no fundo; comece com um de 40 L e passe para 60 a 80 L quando a raiz ocupar o vaso",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; tolera solo pobre, mas não encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda firma a raiz no vaso novo. Algumas folhas velhas podem amarelar e cair nos primeiros dias; a fase termina quando surgem brotos novos, verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "Crescimento rápido de ramos na primavera e no verão, desacelerando no inverno. É a fase de formar a copa: escolha um tronco principal e tire os brotos que nascem baixos. Ainda é raro florescer."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota forte de setembro a novembro, floresce da primavera ao fim do verão (flores brancas que abrem à tarde e duram um ou dois dias), forma vagens achatadas que se abrem sozinhas e perde parte das folhas no inverno. As folhas para chá podem ser colhidas maduras e verdes, sem tirar mais de um terço da copa de uma vez. Use luvas: os espinhos ficam na base de cada folha."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz ainda não alcança o fundo do vaso, e secar por completo agora mata a muda. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pata-de-vaca",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão quente pode precisar a cada 2 dias; de junho a agosto, com a planta perdendo folhas, espace para a cada 6 ou 7 dias. Esvazie o pratinho depois de 30 minutos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar com composto",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto (ou 1 colher de sopa de NPK 10-10-10 para vaso de 40 L) na borda do vaso, longe do tronco, e regue em seguida. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os ramos novos: procure carocinhos brancos ou marrons presos ao caule, lagartas e folhas recortadas em meia-lua. Confira também se há trilha de formigas subindo pelo tronco.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno (agosto). Tire a planta do vaso, desfaça as raízes que circulam o torrão e corte um quarto das mais grossas. Passe para um vaso 10 a 20 L maior ou devolva ao mesmo vaso com substrato novo. Regue bem e mantenha à meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Posicione longe da passagem",
+      "mensagem": "A pata-de-vaca-de-espinho tem espinhos pareados e afiados em todos os ramos, que crescem rápido.",
+      "acao_requerida": "Deixar o vaso fora de corredores e longe de onde crianças e animais brincam, com pelo menos 6 horas de sol direto"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Hora da poda de formação",
+      "mensagem": "A muda já pegou e começa a ramificar. Definir o tronco agora dá uma arvoreta equilibrada, que não tomba no vaso.",
+      "acao_requerida": "Com luvas, escolher o ramo mais reto como tronco, cortar rente os brotos que nascem nos 40 cm de baixo e prender o tronco num tutor se estiver inclinado"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de pata-de-vaca",
+      "mensagem": "A planta entra na fase adulta. A floração costuma começar entre o segundo e o terceiro ano em vaso.",
+      "acao_requerida": "Conferir se as raízes já saem pelos furos do vaso; se saírem, planejar a troca para um vaso maior em agosto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo fora do inverno, substrato sempre úmido e com cheiro azedo, base do tronco escurecida",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no pratinho e manter os furos livres. Se ocorrer, tirar do vaso, cortar as raízes pretas e moles e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos (farinhentos) ou marrons (escama) grudados nos ramos novos e no verso das folhas; folhas meladas e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool 70%; em ataques maiores, pulverizar óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo após 7 dias"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas recortadas ou comidas até a nervura, fezes escuras sobre as folhas de baixo",
+      "prevencao_tratamento": "Catar as lagartas à mão com luvas; em infestação grande, pulverizar Bacillus thuringiensis (Bt) conforme o rótulo"
+    },
+    {
+      "nome": "Formiga-cortadeira",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua e desaparecendo de uma noite para outra, trilha de formigas no tronco",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e usar isca formicida longe de crianças e animais; uma faixa de graxa ou fita adesiva dupla em volta do vaso barra a subida"
+    },
+    {
+      "nome": "Queda de folhas no inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem de junho a agosto, com ramos firmes e gemas verdes",
+      "prevencao_tratamento": "É o comportamento natural da espécie semicaducifólia. Reduzir a rega, não adubar e esperar a brotação de setembro; só preocupe se os ramos ficarem secos e quebradiços"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água",
+      "mensagem": "A pata-de-vaca desacelera e perde parte das folhas no frio. Com menos folhas, o substrato demora mais para secar e a raiz apodrece fácil.",
+      "acao_requerida": "Regar só com o substrato seco a 5 cm (em geral a cada 6 ou 7 dias) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "No fim do inverno a planta está quase parada; podar agora estimula brotação forte e flores na primavera, que nascem nos ramos novos.",
+      "acao_requerida": "Com luvas, tirar ramos secos, cruzados e os que crescem para dentro da copa, e encurtar em até um terço os ramos longos, cortando logo acima de uma gema"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomada da brotação",
+      "mensagem": "Com o calor voltando, a planta brota e prepara a floração. É quando mais precisa de água e nutriente.",
+      "acao_requerida": "Voltar à rega a cada 3 dias com o teste do dedo e aplicar a adubação de composto"
+    }
+  ]
+}

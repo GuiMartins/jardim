@@ -1,0 +1,198 @@
+{
+  "planta": {
+    "nome_comum": "Barriguda-branca",
+    "nome_cientifico": "Ceiba glaziovii",
+    "descricao": "Árvore nativa da Caatinga, da família das paineiras, de tronco verde e espinhento que engorda em forma de barril para guardar água. Em vaso ela vira uma planta escultural de crescimento lento, muito resistente à seca, que perde as folhas no inverno. Em vaso não chega a florir: as flores brancas e a paina só aparecem em árvores adultas plantadas no chão, com mais de 8 a 10 anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Semeie em saquinho de muda ou copo com furos (500 mL a 1 L). O vaso definitivo precisa de pelo menos 40 cm de diâmetro e 40 cm de profundidade, pesado (cerâmica ou cimento) para não tombar, com vários furos no fundo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca; deve escorrer rápido e nunca empoçar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "germinacao",
+      "nome": "Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 15,
+      "descricao": "Separe as sementes da paina e deixe de molho em água morna por 12 horas. Semeie 2 sementes por recipiente a 1 cm de profundidade. As plântulas surgem entre o 5º e o 15º dia, com duas folhas arredondadas."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 16,
+      "dia_fim": 90,
+      "descricao": "Aparecem as folhas verdadeiras, divididas em 5 a 7 folíolos como os dedos de uma mão. O caule ainda é fino e verde; a base começa a engrossar perto do fim da fase."
+    },
+    {
+      "fase_id": "crescimento_inicial",
+      "nome": "Crescimento Inicial",
+      "dia_inicio": 91,
+      "dia_fim": 730,
+      "descricao": "O tronco engrossa e surgem os primeiros espinhos cônicos. A planta cresce na primavera e no verão e pode perder todas as folhas no inverno, o que é normal: o tronco deve continuar firme e verde. Tronco mole ou enrugado indica podridão ou sede extrema."
+    },
+    {
+      "fase_id": "planta_jovem_estabelecida",
+      "nome": "Planta Jovem Estabelecida",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Em vaso ela fica como uma árvore jovem de 1 a 2 m, com o tronco em forma de garrafa. O ano típico: brota em setembro, cresce e é adubada até março, amarela e perde as folhas entre maio e agosto, quando quase não precisa de água. Troca de vaso ou substrato a cada 2 anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Umedecer as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 15,
+      "instrucoes": "Borrife a superfície pela manhã até umedecer o primeiro centímetro. O substrato não pode secar nem encharcar; se a água empoçar, espere secar um pouco.",
+      "critica": true
+    },
+    {
+      "id": "rega_plantula",
+      "titulo": "Regar a muda de barriguda",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; regue só se estiver seco, até escorrer pelo furo. Acima de 30 °C, confira a cada 2 dias. Excesso de água apodrece o caule rente ao substrato.",
+      "critica": false
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a barriguda",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e esvazie o pratinho. Sem folhas no inverno, regue apenas a cada 20 a 30 dias, o suficiente para o tronco não enrugar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a barriguda",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, espalhe 2 colheres de sopa de húmus ou 1 colher de chá de NPK 10-10-10 por vaso de 40 L, longe do tronco, e regue em seguida. Pule a adubação entre abril e agosto e quando a planta estiver sem folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 16,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pontinhos brancos, teias finas ou insetos. Aperte levemente a base do tronco: deve estar dura; mole ou escura indica podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar de vaso ou renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 731,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em setembro, na brotação. Use luvas grossas por causa dos espinhos, retire o torrão, corte raízes enoveladas e passe para um vaso 10 cm mais largo ou troque um terço do substrato. Espere 5 dias para regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Hora do desbaste",
+      "mensagem": "Se nasceram duas mudas no mesmo recipiente, elas vão disputar espaço e raiz.",
+      "acao_requerida": "Cortar rente ao substrato a muda mais fraca, deixando só a mais vigorosa"
+    },
+    {
+      "dia_disparo": 75,
+      "titulo": "Passar para um vaso maior",
+      "mensagem": "A raiz já deve estar saindo pelo furo do saquinho. Esperar demais deforma a raiz principal.",
+      "acao_requerida": "Transplantar com o torrão inteiro para um vaso de 10 a 15 L com o mesmo substrato e manter à meia-sombra por 5 dias antes de voltar ao sol"
+    },
+    {
+      "dia_disparo": 400,
+      "titulo": "Vaso definitivo",
+      "mensagem": "Com o tronco engrossando, a planta fica pesada no alto e pode tombar num vaso pequeno.",
+      "acao_requerida": "Transplantar em setembro ou outubro para o vaso de pelo menos 40 L, pesado e com boa drenagem, usando luvas por causa dos espinhos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e do colo (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do tronco mole, escura ou enrugada; folhas murcham mesmo com o substrato úmido; cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco, principalmente no inverno sem folhas, e nunca deixar água no pratinho. Se aparecer, retire do vaso, corte as partes moles, deixe secar 2 dias e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Tombamento (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Plântulas caem com o caule fino e escurecido rente ao substrato",
+      "prevencao_tratamento": "Substrato novo, sem encharcar na germinação e com sol logo que as plântulas surgirem; retire as afetadas"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodoados ou escamas marrons no caule e no verso das folhas; folhas pegajosas",
+      "prevencao_tratamento": "Remover com cotonete com álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas no verso, comuns em tempo seco e quente",
+      "prevencao_tratamento": "Jato de água no verso das folhas; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Queda de folhas fora de época",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam e caem na primavera ou verão, com o tronco ainda firme",
+      "prevencao_tratamento": "Costuma ser falta de sol, mudança brusca de lugar ou seca prolongada. Leve para o sol pleno aos poucos e regue quando o substrato secar; a planta rebrota em algumas semanas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "A barriguda vai perder as folhas",
+      "mensagem": "Com o frio e os dias curtos, ela amarela e fica sem folhas até agosto. Isso é normal e não significa que morreu.",
+      "acao_requerida": "Espaçar a rega para a cada 20 a 30 dias, suspender a adubação e manter o vaso no lugar mais ensolarado"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Plantas jovens da Caatinga sofrem com geada e com substrato frio e úmido.",
+      "acao_requerida": "Em noites abaixo de 5 °C, levar o vaso para perto de uma parede ou para dentro, e não regar antes de noites frias"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Brotação da primavera",
+      "mensagem": "Quando as primeiras folhas novas aparecem, a planta volta a crescer e a beber mais.",
+      "acao_requerida": "Voltar à rega semanal com o teste do dedo e retomar a adubação; é também a melhor época para trocar de vaso"
+    }
+  ]
+}

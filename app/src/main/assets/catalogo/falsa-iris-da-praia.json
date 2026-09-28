@@ -1,0 +1,185 @@
+{
+  "planta": {
+    "nome_comum": "Falsa-íris-da-praia",
+    "nome_cientifico": "Trimezia northiana (sin. Neomarica northiana)",
+    "descricao": "Planta rizomatosa da Mata Atlântica, com leque de folhas largas em forma de espada de 60 a 90 cm e flores grandes, perfumadas, brancas com centro violeta, que duram um dia só. Depois da floração, as hastes formam mudinhas na ponta que se curvam até o chão e enraízam (por isso também é chamada de íris-caminhante). É rústica, gosta de meia-sombra e floresce bem em vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      2,
+      3,
+      4,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo de pelo menos 30 cm de diâmetro e 25 cm de profundidade, com furos no fundo; o rizoma se espalha para os lados, então diâmetro vale mais que profundidade",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou perlita; fértil, rico em matéria orgânica e que não encharque",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o rizoma rente à superfície, sem enterrar a base do leque de folhas. Mantenha em meia-sombra clara, sem sol forte da tarde. Uma ou duas folhas velhas podem amarelar; a fase termina quando surge uma folha nova no centro do leque."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "O rizoma se ramifica e aparecem novos leques ao lado do primeiro. Já tolera sol da manhã. A planta está estabelecida quando a touceira tem três ou mais leques firmes e o vaso começa a encher."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Touceira formada. Emite hastes florais achatadas, parecidas com folhas, principalmente de setembro a dezembro; cada flor abre por um dia, mas a mesma haste solta várias em sequência. No verão, as mudinhas na ponta das hastes podem ser enraizadas. No inverno o crescimento desacelera e a rega diminui. A cada dois anos a touceira lota o vaso e pede divisão."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de falsa-íris",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O substrato deve ficar úmido, nunca encharcado nem com água parada no pratinho. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a falsa-íris",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. No verão e na floração ela gosta de substrato sempre levemente úmido; de maio a agosto, regue só quando os 3 cm estiverem secos, o que costuma levar 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a falsa-íris",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de sopa de farinha de ossos (ou 1 colher de chá de NPK 4-14-8) na borda do vaso de 15 L, sem encostar no rizoma, e regue em seguida. De maio a julho, use metade da dose.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra o leque e olhe a base das folhas e o encaixe no rizoma: procure pontos brancos ou marrons grudados (cochonilha), manchas marrons com halo amarelo, rizoma mole ou com cheiro azedo e trilhas brilhantes de lesma. Retire folhas secas ou manchadas rente à base.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira e trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a touceira do vaso, corte o rizoma com faca limpa em pedaços com 2 ou 3 leques e raízes cada, descarte as partes velhas e ocas e replante no mesmo vaso com substrato novo, rizoma rente à superfície. Faça de preferência entre fevereiro e abril ou em agosto; se cair no auge da floração, espere as flores acabarem.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 20,
+      "titulo": "Folha nova no centro?",
+      "mensagem": "Até o fim do primeiro mês a muda deve lançar uma folha nova no meio do leque. Sem ela, e com a base amolecendo, o problema costuma ser excesso de água.",
+      "acao_requerida": "Conferir o centro do leque; se a base estiver mole, espaçar as regas e checar se os furos do vaso estão livres"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Muda adaptada",
+      "mensagem": "A falsa-íris já pode receber sol da manhã, que estimula a floração. A rega passa a ser a cada 3 dias.",
+      "acao_requerida": "Levar o vaso para um lugar com 3 a 4 horas de sol da manhã e sombra à tarde"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Pythium, Erwinia)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do leque mole, escurecida e com cheiro azedo; folhas amarelam e se soltam com facilidade do rizoma",
+      "prevencao_tratamento": "Não enterre o rizoma, não deixe água no pratinho e regue só com o substrato seco na superfície. Corte as partes moles até o tecido firme, deixe secar ao ar por um dia e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodoados ou escamas marrons na base e no verso das folhas; folhas amarelam e ficam pegajosas",
+      "prevencao_tratamento": "Limpe com cotonete ou escova macia embebidos em álcool 70% ou água com sabão neutro; se persistir, óleo de neem a 0,5% no fim da tarde a cada 7 dias, três aplicações"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas e botões roídos nas bordas, com rastro prateado brilhante",
+      "prevencao_tratamento": "Catar à noite ou de manhã cedo; espalhar casca de ovo triturada ou areia grossa em volta do rizoma"
+    },
+    {
+      "nome": "Mancha-foliar fúngica",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons ovais com halo amarelo nas folhas, que aumentam em tempo úmido e secam a ponta",
+      "prevencao_tratamento": "Regar no substrato, sem molhar as folhas, e manter ventilação; remova as folhas atingidas e, em surto, aplique fungicida à base de cobre"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas desbotadas, amareladas ou com placas bege e secas na face voltada para o sol",
+      "prevencao_tratamento": "Evitar sol direto da tarde; mantenha só sol da manhã ou luz filtrada"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Preparar para a floração",
+      "mensagem": "A falsa-íris começa a lançar hastes florais na primavera. Retomar a rega e dar um reforço de fósforo agora aumenta o número de flores.",
+      "acao_requerida": "Voltar à rega a cada 3 dias e aplicar 1 colher de sopa de farinha de ossos na borda do vaso"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Enraizar as mudinhas das hastes",
+      "mensagem": "Depois da floração, as hastes formam pequenas mudas na ponta. Elas enraízam fácil e viram plantas novas.",
+      "acao_requerida": "Curvar a haste até um vaso pequeno com substrato úmido e prender a mudinha com um grampo; cortar a haste quando surgirem raízes, em 3 a 4 semanas"
+    },
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Limpar hastes velhas",
+      "mensagem": "As hastes que já floriram e soltaram as mudinhas secam e só roubam energia da touceira.",
+      "acao_requerida": "Cortar rente à base as hastes florais secas ou amarelas e as folhas mortas"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Menos água no frio",
+      "mensagem": "Com o frio a planta cresce pouco, e o substrato úmido por muito tempo favorece a podridão do rizoma.",
+      "acao_requerida": "Espaçar a rega até os 3 cm de cima do substrato secarem e suspender o adubo até agosto"
+    }
+  ]
+}

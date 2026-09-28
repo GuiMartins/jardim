@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Leucofilo",
+    "nome_cientifico": "Leucophyllum frutescens",
+    "descricao": "Arbusto do Texas e do norte do México, de folhas prateadas e aveludadas, que se cobre de flores lilás a roxas depois de chuvas ou de um aumento de umidade. Resiste muito à seca e aceita poda de formação. Em vaso vira uma bola prateada para varanda ou terraço de sol pleno, contanto que a água não fique parada no vaso.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com pelo menos 40 cm de diâmetro e 35 cm de profundidade, com vários furos no fundo. Sem prato com água acumulada.",
+    "volume_minimo_litros": 30,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% areia grossa lavada, 20% pedrisco ou casca de pinus fina e 10% húmus de minhoca, mais 1 colher de sopa de calcário dolomítico para cada 10 L. A mistura deve ser pobre e drenar rápido.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo e ao sol. Folhas de baixo amarelando e caindo nas duas primeiras semanas é normal. Quando surgirem brotos prateados novos nas pontas, as raízes já pegaram."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 240,
+      "descricao": "As raízes ocupam o vaso e os ramos se alongam. Despontar as pontas deixa a copa densa. A planta está estabelecida quando aguenta vários dias sem água sem murchar e as folhas ficam bem cinzentas ao sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 241,
+      "dia_fim": null,
+      "descricao": "Arbusto compacto e prateado que floresce em ondas da primavera ao fim do verão, quase sempre poucos dias depois de uma chuva forte ou de tempo abafado. Cada florada dura uma ou duas semanas. No inverno quase não cresce e pede pouca água. Faça uma poda de forma no fim do inverno e dê uma aparada leve depois das floradas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de leucofilo",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos e jogue fora a água do prato. Se ainda estiver úmido, não regue. Nesta fase a raiz ainda está no torrão da muda e seca antes do resto do vaso.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o leucofilo",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue só se estiver seco nessa profundidade, até escorrer pelos furos. No verão quente e sem chuva, confira a cada 3 ou 4 dias. No inverno, a cada 10 a 14 dias. Excesso de água mata mais leucofilo do que a seca.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o leucofilo",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 2 colheres de sopa de farinha de ossos) na borda de um vaso de 30 L, longe do caule, e regue em seguida. Pule a adubação de junho a agosto. Adubo demais deixa a planta verde, estiolada e com poucas flores.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o leucofilo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os ramos e olhe o interior da copa e as axilas das folhas atrás de cochonilhas brancas e de teias finas de ácaro. Veja também se há folhas amarelas caindo por dentro com o substrato úmido, porque isso indica excesso de rega.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No fim do inverno, tire a planta do vaso, raspe 3 a 5 cm do torrão pelos lados e pelo fundo e retire as raízes escuras ou moles. Replante com substrato novo no mesmo vaso ou num 10 cm mais largo. Regue uma vez e espere o substrato secar antes de regar de novo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Plantar a muda no vaso definitivo",
+      "mensagem": "A muda costuma vir num saquinho com terra pesada que segura água demais. Ela precisa ir logo para um vaso grande com substrato drenante.",
+      "acao_requerida": "Soltar levemente as raízes do fundo do torrão, plantar na mesma altura em que estava, sem enterrar o caule, e regar até escorrer pelos furos"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Despontar para adensar",
+      "mensagem": "Os ramos novos estão compridos. Cortar as pontas agora faz a planta ramificar e fechar a copa.",
+      "acao_requerida": "Cortar 3 a 5 cm da ponta de cada ramo com mais de 15 cm, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 240,
+      "titulo": "O leucofilo está estabelecido",
+      "mensagem": "A partir de agora ele aguenta bem a seca, e o maior risco passa a ser o excesso de água.",
+      "acao_requerida": "Passar a regar só quando os 5 cm de cima do substrato estiverem secos e nunca deixar água parada no prato"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem por dentro da copa, ramos murcham mesmo com o substrato úmido, a base do caule escurece e as raízes ficam marrons e moles",
+      "prevencao_tratamento": "Substrato arenoso, vaso com furos, nunca deixar água no prato e regar só com o substrato seco. Se aparecer, tire a planta do vaso, corte as raízes podres, replante em substrato novo e seco e só regue depois de uma semana"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos e algodonosos nas axilas das folhas e nos ramos internos; folhas pegajosas e brotos fracos",
+      "prevencao_tratamento": "Retire os tufos com cotonete embebido em álcool 70%. Em infestações maiores, pulverize óleo de neem a 0,5% com algumas gotas de detergente no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto bronzeado e teias finas entre os ramos, sobretudo em tempo seco e quente ou em varanda coberta",
+      "prevencao_tratamento": "Lave a copa com jato de água no fim da tarde. Se persistir, óleo de neem a 0,5% ou enxofre molhável a cada 7 dias, fora do sol forte"
+    },
+    {
+      "nome": "Mancha foliar por umidade (Cercospora e outros fungos)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras nas folhas e queda de folhas no verão chuvoso, em copa muito fechada e sem ventilação",
+      "prevencao_tratamento": "Regue no substrato, sem molhar a copa, e desbaste ramos internos para o ar circular. Retire as folhas manchadas caídas no vaso"
+    },
+    {
+      "nome": "Estiolamento por falta de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos longos e ralos, folhas mais verdes que prateadas e quase nenhuma flor",
+      "prevencao_tratamento": "Mude o vaso para um lugar com pelo menos 6 horas de sol direto, pode as pontas para reformar a copa e reduza o adubo"
+    },
+    {
+      "nome": "Clorose por encharcamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amareladas com nervuras verdes, crescimento parado e substrato que continua molhado dias depois da rega",
+      "prevencao_tratamento": "Espace as regas, confira se os furos do vaso estão livres e, se o substrato estiver compactado, troque por uma mistura com mais areia e pedrisco"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de forma do leucofilo",
+      "mensagem": "No fim do inverno a planta está quase parada. Podar agora faz brotar denso para as floradas da primavera.",
+      "acao_requerida": "Encurtar os ramos em até um terço, seguindo a forma arredondada, cortar ramos secos e cruzados do interior e evitar cortes rentes em madeira velha sem folhas"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Menos água no inverno",
+      "mensagem": "Com frio e dias curtos o leucofilo quase não bebe água, e o substrato úmido por muito tempo apodrece as raízes.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 5 cm, em geral a cada 10 a 14 dias, pela manhã"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Chuvas de verão e floradas",
+      "mensagem": "As chuvas fortes provocam as floradas, mas encharcam o vaso. Depois de cada florada, uma aparada leve prepara a próxima.",
+      "acao_requerida": "Esvaziar o prato depois de cada chuva, não regar se o substrato estiver úmido e, quando as flores secarem, aparar só as pontas dos ramos que floriram"
+    }
+  ]
+}

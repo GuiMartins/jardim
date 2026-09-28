@@ -1,0 +1,192 @@
+{
+  "planta": {
+    "nome_comum": "Chichá-fedorento",
+    "nome_cientifico": "Sterculia foetida",
+    "descricao": "Árvore tropical de grande porte, originária da Ásia e da África, com folhas palmadas, flores avermelhadas de cheiro forte e desagradável e grandes frutos lenhosos vermelhos em forma de estrela. Em vaso cresce devagar e fica como arvoreta ornamental por alguns anos; as sementes só devem ser comidas torradas e com moderação.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "SEMENTE",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Começar em saquinho ou copo de 10 cm de profundidade com furos; depois vaso de pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus, 25% areia grossa ou perlita; bem drenado, pois a raiz apodrece em solo encharcado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "semeadura_germinacao",
+      "nome": "Semeadura e Germinação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Semeie a semente fresca deitada a 2 cm de profundidade, uma por copo. A germinação ocorre entre o 7º e o 21º dia; sementes velhas germinam pouco. A fase acaba quando o caule sai com as duas folhas carnosas."
+    },
+    {
+      "fase_id": "plantula",
+      "nome": "Plântula",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Surgem as primeiras folhas verdadeiras, simples, e depois as palmadas típicas. A muda está pronta para o vaso definitivo quando tiver 20 a 30 cm e raízes aparecendo nos furos do copo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 91,
+      "dia_fim": 730,
+      "descricao": "A arvoreta forma tronco reto e cresce rápido no calor, podendo passar de 1 m no primeiro ano. No inverno do Centro-Sul perde parte ou todas as folhas e para de crescer; é normal."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Árvore em vaso contida pela poda. No ano típico perde as folhas no inverno seco, rebrota na primavera e cresce forte no verão. Em vaso raramente floresce; quando floresce, é no fim do inverno e início da primavera, com cheiro forte que atrai moscas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_germinacao",
+      "titulo": "Regar as sementes",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Regue até umedecer o substrato por inteiro, sem deixar água parada no pratinho. A superfície deve ficar úmida, nunca encharcada, ou a semente apodrece.",
+      "critica": true
+    },
+    {
+      "id": "rega_muda",
+      "titulo": "Regar a muda",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": 90,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue até escorrer pelos furos. Copo pequeno seca rápido: acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o chichá",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 91,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão pode precisar a cada 2 a 3 dias. Sem folhas, no inverno, regue só a cada 10 a 15 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o chichá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 3 colheres de farinha de ossos com húmus) por vaso de 60 L, longe do tronco, e regue em seguida. Pule a adubação de maio a agosto, quando a planta está sem folhas ou parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe os ramos novos: procure pontos brancos de cochonilha, pulgões nas brotações e folhas com teias finas ou pontilhado amarelo de ácaro.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a árvore do vaso, apare até um quarto das raízes externas e as que dão voltas, e replante com substrato novo no mesmo vaso ou em um maior. Faça de preferência em setembro ou outubro, antes da brotação.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 75,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "A muda já deve ter raízes aparecendo pelos furos do copo. Esperar muito enrola a raiz e atrasa o crescimento.",
+      "acao_requerida": "Passar a muda com o torrão inteiro para o vaso de 60 L, na mesma altura em que estava, e regar bem"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Sem poda, o chichá cresce como uma haste única alta demais para o vaso.",
+      "acao_requerida": "Cortar o ponteiro na altura desejada (1,2 a 1,5 m) logo acima de uma folha, para estimular ramos laterais"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham e amarelam mesmo com substrato úmido; base do tronco escura e mole; cheiro azedo no vaso",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, principalmente no inverno sem folhas; nunca deixar água no pratinho. Se aparecer, tirar do vaso, cortar raízes podres e replantar em substrato seco e arenoso"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pontos brancos algodoados ou escamas marrons nos ramos e no verso das folhas; melado e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova e álcool 70%; em infestação, óleo mineral ou óleo de neem a 1% a cada 7 dias, no fim da tarde"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos pequenos nas brotações novas, que ficam retorcidas e pegajosas",
+      "prevencao_tratamento": "Jato de água; se persistir, sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontilhado amarelado, teias finas no verso e queda de folhas em tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas em dias secos; tratar com óleo de neem a 0,5% ou acaricida à base de enxofre"
+    },
+    {
+      "nome": "Queda de folhas por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, secam e caem de uma vez após noites abaixo de 10 °C; ramos novos podem secar da ponta",
+      "prevencao_tratamento": "Levar o vaso para local abrigado do vento e da geada no inverno; não adubar nem regar demais enquanto a planta estiver sem folhas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Chegando a estação de repouso",
+      "mensagem": "Com o frio e a seca, o chichá perde as folhas e para de crescer. É normal, não é doença.",
+      "acao_requerida": "Espaçar as regas para a cada 10 a 15 dias e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Planta tropical: noites abaixo de 5 °C e geada queimam ramos e podem matar mudas jovens.",
+      "acao_requerida": "Nas noites frias, levar o vaso para perto de uma parede ou sob cobertura, longe do vento"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar os cuidados",
+      "mensagem": "A brotação volta com o calor. É a melhor hora para podar e trocar o substrato.",
+      "acao_requerida": "Podar ramos secos ou mal posicionados, voltar à rega normal e retomar a adubação"
+    }
+  ]
+}

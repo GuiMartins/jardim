@@ -1,0 +1,180 @@
+{
+  "planta": {
+    "nome_comum": "Aechmea",
+    "nome_cientifico": "Aechmea fasciata",
+    "descricao": "Bromélia de folhas prateadas em roseta que forma um copo central (cisterna). Dá uma inflorescência rosa que dura meses. Cada roseta floresce uma vez só, depois solta filhotes na base e aos poucos morre. É fácil de manter dentro de casa, desde que a água da cisterna seja trocada toda semana para não criar o mosquito da dengue.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou cerâmica pesada, de 12 a 15 cm de diâmetro e 12 cm de profundidade, com furos no fundo. A raiz é pequena e serve mais para fixar a planta, mas a roseta pesa e tomba vaso plástico leve",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% casca de pinus média, 30% chips de fibra de coco, 20% substrato universal para plantas, 10% carvão vegetal em pedaços. Arejado e sem terra de jardim compactada",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta costuma chegar florida, com a inflorescência rosa no centro. Deixe-a num lugar de luz clara, perto de uma janela com no máximo o sol da manhã, e encha o copo central com água até a metade. Se as folhas perderem o pó prateado ou ganharem manchas amareladas queimadas, está pegando sol forte demais."
+    },
+    {
+      "fase_id": "fim_da_floracao",
+      "nome": "Fim da Floração",
+      "dia_inicio": 31,
+      "dia_fim": 150,
+      "descricao": "As brácteas rosas seguem bonitas por 3 a 6 meses, e as florzinhas azul-arroxeadas surgem entre elas e duram poucos dias. A fase termina quando a inflorescência desbota, fica parda e começa a secar. A roseta não floresce de novo depois disso: é normal e não indica erro de cultivo."
+    },
+    {
+      "fase_id": "formacao_filhotes",
+      "nome": "Formação dos Filhotes",
+      "dia_inicio": 151,
+      "dia_fim": 365,
+      "descricao": "Um a três filhotes brotam na base da planta-mãe, que para de crescer e vai amarelando das pontas para dentro. Continue regando a mãe: ela alimenta os filhotes. A fase termina quando os filhotes têm um terço a metade do tamanho da mãe e as próprias raízes."
+    },
+    {
+      "fase_id": "touceira_adulta",
+      "nome": "Touceira Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Os filhotes viram rosetas adultas e florescem com 2 a 3 anos, geralmente no fim da primavera e no verão. Aí o ciclo se repete: flor, filhotes, a mãe seca. Para adiantar a floração de uma roseta adulta que não florece, esvazie o copo e deixe-a 10 dias num saco plástico transparente fechado junto com uma maçã madura, longe do sol direto. O etileno da fruta induz a flor, que aparece em 2 a 4 meses."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_cisterna",
+      "titulo": "Trocar a água do copo da bromélia",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire o vaso com cuidado sobre a pia para esvaziar o copo central, ou tire a água com uma seringa. Encha de novo até a metade com água de chuva, filtrada ou de torneira que descansou 24 h. Depois enfie o dedo 2 cm no substrato: se estiver seco, regue até escorrer pelos furos. Água parada por mais de 7 dias já pode ter larva do mosquito da dengue.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_foliar",
+      "titulo": "Adubar a bromélia pelas folhas",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo NPK 10-10-10 ou adubo foliar para bromélias num quarto da dose do rótulo, cerca de 1 g por litro. Borrife as folhas dos dois lados e o substrato no fim da tarde. Não coloque adubo dentro do copo, porque ele apodrece o centro da planta. Suspenda de junho a agosto.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a base das folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste as folhas externas e procure escamas marrons ou brancas grudadas na base e no verso das folhas, e manchas moles ou mau cheiro no centro da roseta. Olhe também a água do copo para ver se há larvas se mexendo.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Separar a touceira e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a touceira do vaso, descarte as rosetas-mães secas e separe as rosetas adultas, cada uma com um pedaço de raiz. Plante cada uma em vaso de 12 a 15 cm com substrato novo, na mesma altura em que estava, sem enterrar a base das folhas. Espere 5 dias para regar o substrato, mantendo só o copo com água.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 120,
+      "titulo": "Hora de cortar a flor seca",
+      "mensagem": "A inflorescência já deve estar desbotando. Parda e seca, ela só gasta energia e pode apodrecer dentro do copo.",
+      "acao_requerida": "Quando a haste estiver marrom e seca, cortá-la com tesoura limpa o mais fundo possível dentro da roseta, sem ferir as folhas"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Filhotes na base",
+      "mensagem": "Os filhotes que nasceram na base crescem melhor com vaso próprio quando chegam a um terço do tamanho da mãe.",
+      "acao_requerida": "Conferir o tamanho dos filhotes; se já tiverem um terço da mãe e raízes próprias, separá-los com faca limpa rente à mãe e plantar cada um num vaso de 12 cm com o mesmo substrato. Se ainda forem pequenos, deixar mais dois meses"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "A planta-mãe está no fim",
+      "mensagem": "Um ano depois da floração, a roseta-mãe costuma estar amarela e murcha. Isso é o ciclo natural da bromélia.",
+      "acao_requerida": "Quando a mãe estiver mais seca que verde, cortá-la rente ao substrato e deixar os filhotes ocuparem o vaso"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do olho (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Centro da roseta escurecido e mole, folhas centrais saem com um puxão leve, cheiro de podre",
+      "prevencao_tratamento": "Trocar a água do copo toda semana, não deixar água no copo em dias abaixo de 10 °C e não encharcar o substrato. Folhas centrais já soltas não voltam: salve os filhotes, separando-os da mãe"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas marrons ou brancas grudadas na base e no verso das folhas; manchas amarelas em volta delas",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em água com detergente neutro (1 colher de chá por litro). Se persistir, óleo mineral a 1% a cada 10 dias, fora do sol"
+    },
+    {
+      "nome": "Larva do mosquito da dengue (Aedes aegypti)",
+      "tipo": "PRAGA",
+      "sintomas": "Larvinhas que se mexem em zigue-zague na água do copo e das axilas das folhas",
+      "prevencao_tratamento": "Trocar toda a água do copo a cada 7 dias, inclusive a das axilas das folhas, esguichando água limpa até transbordar. Nunca deixe o pratinho do vaso com água"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelas ou pardas e secas no meio das folhas, perda do pó prateado",
+      "prevencao_tratamento": "Proteger do sol das 10 h às 16 h; as folhas queimadas não se recuperam, mas as novas crescem normais"
+    },
+    {
+      "nome": "Intoxicação por cobre",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem e apodrecem depois de pulverização com fungicida ou de regar com água de recipiente de cobre",
+      "prevencao_tratamento": "Nunca usar calda bordalesa, oxicloreto de cobre nem regador de cobre em bromélias. Se aconteceu, esvazie e enxágue o copo várias vezes"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água no copo",
+      "mensagem": "Com frio, a água parada no centro da roseta demora a secar e pode apodrecer o olho da planta. Nesta época ela também não cresce e não precisa de adubo.",
+      "acao_requerida": "Manter só um dedo de água no copo e esvaziá-lo nos dias abaixo de 10 °C; regar o substrato só quando estiver seco a 3 cm; suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com sol e mosquito",
+      "mensagem": "No calor, o sol da tarde queima as folhas prateadas e o copo seca mais rápido. É também a época de maior circulação da dengue.",
+      "acao_requerida": "Tirar a planta de qualquer ponto que receba sol depois das 10 h, conferir o nível do copo no meio da semana e não pular a troca semanal da água"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "planta": {
+    "nome_comum": "Yacon",
+    "nome_cientifico": "Smallanthus sonchifolius",
+    "descricao": "Planta andina da família do girassol que forma raízes tuberosas doces e crocantes, ricas em FOS (frutooligossacarídeos), comidas cruas como fruta ou em saladas. É perene na natureza, mas em vaso é cultivada como anual: planta-se um pedaço da coroa com gemas na primavera e colhe-se tudo quando a folhagem seca, cerca de 8 meses depois.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": 240,
+    "meses_plantio": [
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande ou saco de cultivo com pelo menos 45 cm de profundidade e 40 cm de diâmetro, com vários furos no fundo; as raízes tuberosas crescem para os lados e para baixo",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; fofo e profundo, sem torrões, para as raízes engrossarem sem deformar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "brotacao",
+      "nome": "Plantio e Brotação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Enterre o pedaço da coroa (rizoma avermelhado com 2 a 4 gemas) a 5 cm de profundidade, com as gemas para cima. Os brotos arroxeados aparecem entre a 2ª e a 4ª semana. Até lá o substrato deve ficar só úmido: encharcado, o pedaço apodrece."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "As hastes crescem rápido e as folhas ficam grandes, triangulares e aveludadas. Em vaso, a planta chega a 1 a 1,5 m. É a fase de maior consumo de água: folhas murchas no meio da tarde mostram que o vaso secou demais."
+    },
+    {
+      "fase_id": "tuberizacao",
+      "nome": "Engrossamento das Raízes",
+      "dia_inicio": 121,
+      "dia_fim": 200,
+      "descricao": "As raízes tuberosas começam a engrossar abaixo da coroa, e no fim do verão ou outono podem surgir pequenas flores amarelas no topo. Raízes aparecendo na superfície devem ser cobertas com substrato, senão esverdeiam e racham."
+    },
+    {
+      "fase_id": "maturacao",
+      "nome": "Maturação",
+      "dia_inicio": 201,
+      "dia_fim": 225,
+      "descricao": "As folhas de baixo amarelam e a folhagem começa a secar de cima para baixo. É o sinal de que as raízes pararam de crescer e estão acumulando açúcar. Reduza a rega."
+    },
+    {
+      "fase_id": "colheita",
+      "nome": "Colheita",
+      "dia_inicio": 226,
+      "dia_fim": 240,
+      "descricao": "Com as hastes secas ou quase secas, tire a planta inteira do vaso. As raízes tuberosas ficam presas à coroa e quebram fácil. Guarde a coroa para replantar na próxima primavera."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_brotacao",
+      "titulo": "Regar o yacon recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue com cerca de 1 litro. Sem folhas, a planta quase não gasta água, e o excesso apodrece a coroa enterrada.",
+      "critica": false
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar o yacon",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 200,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos (3 a 5 litros num vaso de 40 L). Nos dias acima de 30 °C, confira todo dia. Evite alternar seca forte com encharcamento, que racha as raízes.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Rega leve na maturação",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 201,
+      "dia_fim_ciclo": 240,
+      "instrucoes": "Com a folhagem secando, regue só quando o substrato estiver seco a 5 cm de profundidade, com cerca de 2 litros. Substrato encharcado nesta fase faz as raízes maduras apodrecerem.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_cobertura",
+      "titulo": "Adubar o yacon",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 180,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto sobre o substrato, sem encostar nas hastes, mais 1 colher de sopa de cinza de madeira ou farinha de ossos a partir do dia 120. Regue em seguida. Evite adubo muito nitrogenado, que faz folha e não raiz.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas do yacon",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": 225,
+      "instrucoes": "Vire as folhas de baixo e do meio e procure pontinhos amarelados com teia fina (ácaro), insetos brancos que voam ao mexer (mosca-branca), colônias de pulgão nos brotos e folhas roídas por lagartas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 45,
+      "titulo": "Amontoar e tutorar",
+      "mensagem": "As hastes já passaram de 30 cm. Com as folhas grandes, o vento tomba a planta, e a base precisa de mais substrato para as raízes terem espaço.",
+      "acao_requerida": "Chegar 3 a 5 cm de substrato com composto junto à base das hastes e fincar um tutor de 1,2 m perto da borda do vaso, amarrando as hastes com fita macia em 8"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "As raízes começam a engrossar",
+      "mensagem": "A partir de agora as raízes tuberosas crescem rápido e podem empurrar o substrato ou aparecer na superfície.",
+      "acao_requerida": "Completar o vaso com substrato até 2 cm da borda, cobrindo qualquer raiz exposta"
+    },
+    {
+      "dia_disparo": 200,
+      "titulo": "Hora de reduzir a rega",
+      "mensagem": "A planta entra em maturação: as folhas vão amarelar e secar, e isso é normal.",
+      "acao_requerida": "Passar a regar só quando o substrato estiver seco a 5 cm e parar de adubar"
+    },
+    {
+      "dia_disparo": 226,
+      "titulo": "Colheita do yacon",
+      "mensagem": "Com as hastes secas ou quase secas, as raízes estão prontas. Esperar demais com o vaso úmido favorece podridão.",
+      "acao_requerida": "Cortar as hastes a 10 cm da base, virar o vaso sobre uma lona e soltar as raízes com as mãos, sem ferramenta, para não quebrá-las; separar as raízes tuberosas da coroa"
+    },
+    {
+      "dia_disparo": 228,
+      "titulo": "Adoçar as raízes e guardar a coroa",
+      "mensagem": "Recém-colhido, o yacon é pouco doce. Alguns dias ao sol convertem parte dos FOS em açúcares simples e deixam a raiz mais doce.",
+      "acao_requerida": "Deixar as raízes sem lavar em local arejado, com sol da manhã, por 3 a 7 dias até a casca enrugar levemente; guardar a coroa com gemas em caixa com areia seca, à sombra, para replantar em agosto ou setembro"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da coroa e das raízes (Fusarium, Rhizoctonia, Sclerotinia)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes murcham mesmo com o substrato úmido, base escura e mole; raízes com manchas marrons e cheiro azedo",
+      "prevencao_tratamento": "Substrato bem drenado, sem encharcar, principalmente na brotação e na maturação; plantar só pedaços de coroa firmes e sem manchas; descartar plantas afetadas e não reaproveitar o substrato"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que evoluem para bronzeado, teia fina no verso, principalmente em tempo quente e seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, óleo de neem a 0,5% ou calda de enxofre no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de insetos brancos ao mexer nas folhas; folhas amareladas, pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso; óleo de neem a 0,5% no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e no verso das folhas novas; brotos retorcidos",
+      "prevencao_tratamento": "Jato de água nos brotos; se persistir, sabão neutro a 1% ou óleo de neem a 0,5% no fim da tarde"
+    },
+    {
+      "nome": "Lagartas e vaquinha (Diabrotica speciosa)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas a partir das bordas (lagarta) ou com furos redondos espalhados (vaquinha)",
+      "prevencao_tratamento": "Catar à mão de manhã cedo; para lagartas, Bacillus thuringiensis (Bt) no fim da tarde"
+    },
+    {
+      "nome": "Raízes rachadas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Raízes tuberosas com fendas longitudinais, às vezes com podridão entrando pela rachadura",
+      "prevencao_tratamento": "Manter a umidade do substrato constante durante o engrossamento, sem deixar secar muito e depois regar em excesso"
+    },
+    {
+      "nome": "Queima e murcha das folhas por calor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas murcham no meio da tarde e ficam com bordas secas e marrons nos dias muito quentes",
+      "prevencao_tratamento": "Vaso claro ou encapado, cobertura de palha no substrato e sombra nas horas mais quentes quando passar de 32 °C"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: proteja o yacon do calor",
+      "mensagem": "O yacon é de clima ameno e sofre com o sol forte da tarde no vaso: o substrato esquenta e as folhas grandes murcham.",
+      "acao_requerida": "Cobrir o substrato com 3 cm de palha, conferir a umidade todo dia e, se possível, deixar o vaso com sol da manhã e sombra depois das 14h"
+    },
+    {
+      "meses": [
+        5,
+        6
+      ],
+      "titulo": "Risco de geada",
+      "mensagem": "A geada queima a folhagem do yacon. As raízes aguentam uma geada leve, mas o frio forte pode estragá-las no vaso.",
+      "acao_requerida": "Nas noites com previsão de geada, cobrir a planta com tecido (TNT) ou levar o vaso para perto de uma parede abrigada; se a folhagem queimar e a planta já passou de 200 dias, fazer a colheita"
+    }
+  ]
+}

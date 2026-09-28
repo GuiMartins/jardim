@@ -1,0 +1,199 @@
+{
+  "planta": {
+    "nome_comum": "Mãe-de-milhares-manchada",
+    "nome_cientifico": "Kalanchoe daigremontiana",
+    "descricao": "Suculenta de Madagascar com folhas longas manchadas de roxo no verso, cujas bordas produzem dezenas de mudinhas que caem e enraízam sozinhas. Quase impossível de matar por descuido, mas é tóxica para cães, gatos e crianças (contém bufadienolídeos) e invade vasos vizinhos se as mudinhas não forem recolhidas. Floresce no inverno depois de 2 a 3 anos, e a planta-mãe costuma morrer após a floração, deixando as filhas.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou plástico com 12 a 15 cm de diâmetro e de profundidade, com furos no fundo; o barro ajuda o substrato a secar entre regas. Várias mudinhas podem começar juntas num vaso raso e ser separadas depois",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "Substrato para cactos e suculentas, ou 40% terra vegetal, 40% areia grossa lavada, 20% perlita ou casca de pinus fina; deve escorrer a água em segundos",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Apoie a mudinha deitada ou com a base levemente enterrada (0,5 cm) no substrato úmido, sem cobrir as folhinhas. As raízes finas já vêm prontas e se fixam em 1 a 2 semanas. Sabe-se que enraizou quando, ao puxar de leve, a mudinha resiste e começa a abrir um novo par de folhas no centro."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "A planta forma um caule curto e folhas cada vez mais longas, verde-acinzentadas com manchas roxas no verso. Cresce rápido no calor e quase para no frio. Folhas finas, pálidas e caule esticado em direção à janela indicam falta de sol."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Caule ereto de 30 a 60 cm, com folhas de 10 a 20 cm cujas bordas produzem mudinhas o ano todo, principalmente no verão. Da primavera ao outono cresce e se reproduz; no inverno reduz o ritmo. Depois de 2 a 3 anos, no inverno, pode lançar uma haste com cachos de flores rosadas em forma de sino; após florescer a planta-mãe declina e morre, e o cultivo continua por uma das mudinhas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Umedecer a mudinha",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Toque a superfície do substrato: se o primeiro centímetro estiver seco, borrife ou regue com colher até umedecer só a camada de cima, sem encharcar. Sem raiz, a mudinha não alcança a umidade do fundo e resseca em poucos dias de substrato seco ao sol.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a mãe-de-milhares",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver totalmente seco, regue até escorrer pelos furos e esvazie o pratinho. Se ainda houver umidade, espere mais alguns dias. No inverno, espace para a cada 15 a 20 dias; folhas murchas e enrugadas pedem água, folhas moles e translúcidas indicam excesso.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_suculenta",
+      "titulo": "Adubar a suculenta",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo para cactos e suculentas (ou NPK 10-10-10) na metade da dose do rótulo e aplique no substrato já úmido. De maio a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caule",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as axilas das folhas, o verso e a base do caule em busca de tufos brancos algodoados (cochonilha) ou insetos agrupados nos brotos. Aperte a base do caule: ela deve estar firme, não mole nem escura.",
+      "critica": false
+    },
+    {
+      "id": "recolher_mudinhas",
+      "titulo": "Recolher mudinhas caídas",
+      "tipo": "PODA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 121,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Retire as mudinhas que caíram no próprio vaso, nos vasos vizinhos e no chão ao redor, e descarte no lixo comum (não no composto, onde elas enraízam). Aproveite para tirar folhas secas da base do caule. Guarde só as que quiser plantar.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, sacuda o substrato velho e replante em substrato novo para suculentas, num vaso 2 a 3 cm maior se as raízes estiverem circulando o fundo. Espere 5 dias para regar, para cicatrizar raízes quebradas. Se a planta estiver alta e torta, é melhor recomeçar com uma mudinha.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "A mudinha pegou?",
+      "mensagem": "Com duas semanas a mudinha costuma estar presa ao substrato por raízes próprias.",
+      "acao_requerida": "Puxar a mudinha de leve: se resistir, está enraizada; se sair solta, apoiar de novo sobre o substrato úmido com as raízes para baixo"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Separar as mudinhas",
+      "mensagem": "Se você começou com várias mudinhas no mesmo vaso, elas já estão disputando espaço e luz.",
+      "acao_requerida": "Transplantar cada planta para um vaso de 12 a 15 cm, ou deixar só a mais vigorosa e descartar as outras no lixo comum"
+    },
+    {
+      "dia_disparo": 121,
+      "titulo": "Começam as mudinhas nas folhas",
+      "mensagem": "A planta adulta passa a produzir mudinhas nas bordas das folhas, que caem e enraízam em qualquer vaso próximo. Ela é tóxica para pets e crianças.",
+      "acao_requerida": "Deixar o vaso longe de outras plantas e fora do alcance de cães, gatos e crianças"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e caule (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base do caule mole, escura e com cheiro ruim; folhas amolecem, ficam translúcidas e caem mesmo com o substrato úmido",
+      "prevencao_tratamento": "Regar só com o substrato seco, sem pratinho com água parada e com substrato bem drenante. Se a base apodreceu, descarte a planta e recomece com uma mudinha sadia em substrato novo"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos algodoados nas axilas das folhas e na base do caule; folhas amareladas e crescimento parado",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, três vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos e na haste floral; flores deformadas e folhas pegajosas",
+      "prevencao_tratamento": "Jato de água ou pano úmido nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caule fino e comprido inclinado para a luz, folhas espaçadas, pálidas e sem manchas roxas",
+      "prevencao_tratamento": "Levar para um local com pelo menos 3 a 5 horas de sol direto, aumentando a exposição aos poucos para não queimar. A parte esticada não volta: recomece com uma mudinha se ficar feio"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas brancas, marrons ou secas no lado das folhas voltado para o sol, geralmente após mudança brusca de local",
+      "prevencao_tratamento": "Aclimatar ao sol pleno ao longo de 2 semanas; no verão, preferir sol da manhã e sombra leve nas horas mais quentes"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Abaixo de 5 °C e com geada, as folhas carnudas congelam e apodrecem. Substrato molhado no frio também favorece a podridão.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para dentro ou para baixo de uma cobertura, e regar só a cada 15 a 20 dias com o substrato seco"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "Plantas com 2 anos ou mais podem lançar uma haste alta com flores rosadas em sino. Depois de florescer, a planta-mãe definha e morre: é o ciclo natural dela.",
+      "acao_requerida": "Se aparecer a haste floral, separar agora 1 ou 2 mudinhas das folhas e plantar num vaso novo para continuar o cultivo"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão chuvoso",
+      "mensagem": "Chuva seguida por vários dias encharca o substrato e é a principal causa de podridão na suculenta.",
+      "acao_requerida": "Deixar o vaso sob cobertura ou beiral nas semanas de chuva e não regar se o substrato ainda estiver úmido a 3 cm"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "planta": {
+    "nome_comum": "Ipê-amarelo-do-brejo",
+    "nome_cientifico": "Handroanthus umbellatus",
+    "descricao": "Ipê nativo da Mata Atlântica que cresce em várzeas e beiras de rio, por isso aguenta substrato úmido melhor que os outros ipês. Perde as folhas no inverno e cobre os galhos de flores amarelas no fim do inverno. Em vaso fica como arvoreta de 2 a 3 m, ou como muda de formação até ir para o chão.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, fibra ou cimento, com pelo menos 45 cm de diâmetro e 45 cm de profundidade e vários furos no fundo; comece num de 40 L e passe para um de 80 a 100 L conforme a árvore cresce",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; mais 1 colher de sopa de farinha de ossos a cada 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se recupera do transplante. Algumas folhas podem amarelar e cair nas duas primeiras semanas. A fase termina quando surgem brotos novos, verde-claros, na ponta do caule."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes tomam o vaso e o caule engrossa e cresce rápido na estação quente, até 1 m por ano. Mantenha um tronco principal preso a um tutor. No primeiro inverno a muda pode perder as folhas: é normal se os ramos continuam verdes por dentro ao raspar a casca com a unha."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "O ano típico é: folhas cheias de outubro a abril, queda das folhas entre junho e julho e floração amarela nos galhos pelados em agosto e setembro, antes das folhas novas. Em vaso, a primeira floração costuma vir entre o 3º e o 5º ano. Depois das flores aparecem vagens compridas que se abrem e soltam sementes aladas em outubro e novembro."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de ipê",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Regue devagar até escorrer pelos furos do vaso. O substrato deve ficar úmido o tempo todo nesta fase: enfie o dedo 3 cm e, se estiver seco, a raiz nova já está sofrendo. Em dias de chuva forte, pule a rega.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o ipê",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (uns 5 L num vaso de 40 L). É uma espécie de brejo e prefere o vaso sempre úmido na estação quente; acima de 30 °C confira todo dia. Sem folhas, no inverno, espace para uma vez por semana.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o ipê",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 200 g) de húmus de minhoca ou composto na superfície, sem encostar no tronco, mais 1 colher de sopa de NPK 10-10-10 por vaso de 40 L, e regue em seguida. De maio a julho, com a árvore sem folhas, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e tronco",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pó alaranjado no verso, lagartas ou folhas roídas; passe o dedo pelos ramos jovens procurando cochonilhas (bolinhas brancas ou marrons). Olhe também o chão em volta do vaso: trilha de formiga cortadeira pede ação no mesmo dia.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o ipê de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça entre setembro e novembro, com as folhas brotando. Tire a planta, corte um terço das raízes que dão voltas no fundo e replante num vaso 10 a 15 cm maior de diâmetro com substrato novo. Se o vaso já estiver no maior tamanho possível, só renove o substrato e apare as raízes. Regue todo dia nas duas semanas seguintes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Coloque um tutor",
+      "mensagem": "Muda de ipê cresce fina e alta, e o vento tomba ou entorta o tronco dentro do vaso.",
+      "acao_requerida": "Cravar um bambu ou estaca de 1,2 m a 5 cm do caule, sem ferir o torrão, e amarrar o tronco em dois pontos com fita ou borracha macia em forma de 8"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se já apareceram brotos novos, a raiz pegou no vaso e a rega pode ficar mais espaçada.",
+      "acao_requerida": "Confirmar os brotos novos na ponta do caule e, se a muda estava em meia-sombra, levá-la para o local de sol pleno"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Primeira poda de formação",
+      "mensagem": "Galhos laterais nascendo baixo roubam força do tronco principal e deixam a árvore sem forma.",
+      "acao_requerida": "Cortar rente ao tronco, com tesoura limpa, os brotos laterais do terço de baixo do caule, mantendo um único ponteiro"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de ipê",
+      "mensagem": "A árvore já pode estar grande para o vaso. É a hora de decidir se ela fica em vaso ou vai para o chão.",
+      "acao_requerida": "Medir a altura e ver se há raízes saindo pelos furos; se for para o chão, planejar o plantio para setembro ou outubro, a pelo menos 4 m de muros e canos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Formiga cortadeira (saúva e quenquém)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas cortadas em meia-lua ou árvore pelada numa só noite; trilha de formigas carregando pedaços verdes",
+      "prevencao_tratamento": "Seguir a trilha até o formigueiro e aplicar isca formicida granulada ao lado dela, longe da chuva; no vaso, passar graxa ou fita adesiva dupla-face em volta do tronco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, algodoados ou marrons presos aos ramos novos; folhas amarelas e fumagina preta por cima",
+      "prevencao_tratamento": "Remover com cotonete ou escova com álcool 70%; em infestação maior, pulverizar óleo mineral ou de neem a 1% no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro, bolinhas escuras de fezes no substrato",
+      "prevencao_tratamento": "Catar à mão; em ataque grande, pulverizar Bacillus thuringiensis (Dipel) nas folhas no fim da tarde"
+    },
+    {
+      "nome": "Ferrugem do ipê (Prospodium spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó alaranjado ou marrom no verso das folhas, manchas amareladas por cima e queda precoce de folhas",
+      "prevencao_tratamento": "Retirar e descartar as folhas atacadas, recolher as caídas do substrato e não molhar as folhas ao regar; em ataque forte, pulverizar calda bordalesa ou fungicida cúprico a cada 15 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato molhado, raízes marrons e moles com cheiro ruim, casca da base escurecida",
+      "prevencao_tratamento": "Apesar de ser planta de brejo, em vaso a água parada no prato e sem sol apodrece a raiz, principalmente no inverno sem folhas. Esvaziar o prato depois da rega, manter os furos livres e espaçar a rega no inverno; se atacar, cortar as raízes podres e replantar em substrato novo"
+    },
+    {
+      "nome": "Queima das bordas por falta de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas secas e marrons, folhas enroladas e caindo no meio do verão",
+      "prevencao_tratamento": "Regar com mais frequência nos dias quentes, cobrir o substrato com 3 cm de casca de pinus ou palha e, se o vaso for escuro e pegar sol no costado, protegê-lo com outro vaso ou tábua"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "O ipê vai perder as folhas",
+      "mensagem": "Folhas amarelando e caindo a partir de agora é o ciclo normal do ipê, não doença nem falta de água.",
+      "acao_requerida": "Varrer as folhas caídas do substrato, suspender a adubação até agosto e espaçar a rega para uma vez por semana quando a árvore estiver pelada"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "Plantas jovens em vaso sofrem com geada, que queima os ramos novos.",
+      "acao_requerida": "Em noite com previsão abaixo de 3 °C, encostar o vaso numa parede protegida ou cobrir a copa com manta de TNT, tirando de manhã"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Época de floração",
+      "mensagem": "Com os galhos pelados, o ipê abre os cachos de flores amarelas, se já tiver idade para florescer.",
+      "acao_requerida": "Voltar a regar a cada 2 dias até escorrer pelos furos para as flores durarem, e retomar a adubação quando surgirem as folhas novas"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "Passada a floração, a árvore brota com força e cicatriza rápido os cortes.",
+      "acao_requerida": "Cortar as vagens se não quiser sementes, remover ramos secos, cruzados ou que nascem para dentro da copa e encurtar em até um terço os ramos que desequilibram a forma"
+    }
+  ]
+}

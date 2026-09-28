@@ -1,0 +1,194 @@
+{
+  "planta": {
+    "nome_comum": "Pacová",
+    "nome_cientifico": "Philodendron martianum",
+    "descricao": "Filodendro nativo da Mata Atlântica, que cresce em roseta compacta, sem caule aparente, com folhas lustrosas e pecíolos grossos e esponjosos que guardam água. É robusto, tolera meia-sombra e alguma falta de rega, e fica bem em vasos grandes de varanda e sala clara. A seiva tem oxalato de cálcio e é tóxica para cães, gatos e crianças.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e pesado (cerâmica ou cimento), com pelo menos 35 cm de diâmetro e 30 cm de profundidade, com furos no fundo. A roseta pesa para os lados e tomba vasos plásticos leves",
+    "volume_minimo_litros": 20,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% terra vegetal, 30% casca de pinus média, 20% húmus de minhoca, 10% perlita ou areia grossa; aerado para a raiz grossa não apodrecer",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sai do viveiro e se acostuma à nova luz. É normal perder 1 ou 2 folhas velhas de baixo, que amarelam por inteiro. A fase termina quando surge uma folha nova, enrolada como um charuto, no centro da roseta."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e as folhas novas vêm maiores que as da muda, com pecíolo mais grosso. Nesta fase ela cresce bem com adubação mensal na estação quente. Está estabelecida quando solta uma folha nova a cada 3 ou 4 semanas no verão e a roseta fica firme no vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Roseta com 60 cm a 1 m de largura. Da primavera ao fim do verão ela solta folhas novas com frequência e pede rega e adubo regulares. No inverno quase para, e a rega fica mais espaçada. As folhas mais velhas de baixo amarelam e secam aos poucos, o que é normal. Pode lançar brotos laterais na base, que viram mudas."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a pacová recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar em volta da roseta até escorrer pelos furos, sem deixar água parada no centro. Com a raiz ainda sem pegar, deixar o torrão secar por inteiro faz a muda perder folhas.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pacová",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato. Regue até escorrer pelos furos só se estiver seco nessa profundidade, e esvazie o pratinho depois de 30 minutos. No inverno o substrato leva o dobro do tempo para secar: confira do mesmo jeito e regue bem menos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_mensal",
+      "titulo": "Adubar a pacová",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 10-10-10 por vaso de 20 L, longe da base, ou 1 xícara de húmus de minhoca, e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Limpar folhas e tirar as velhas",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Passe um pano úmido nas duas faces das folhas para tirar a poeira, que rouba luz. Corte rente à base, com tesoura limpa, as folhas mais de metade amarelas ou secas. Use luvas, porque a seiva irrita a pele.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a pacová",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e as axilas dos pecíolos no centro da roseta. Procure bolinhas brancas algodonosas ou carapaças marrons (cochonilha), pontinhos amarelados com teia fina (ácaro) e manchas encharcadas com borda amarela (bactéria).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, solte as raízes enoveladas e corte as moles e escuras. Replante num vaso 5 a 10 cm mais largo, com substrato novo, na mesma altura de antes. Separe os brotos laterais com raiz própria, se quiser novas mudas.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 7,
+      "titulo": "Como a pacová está se adaptando?",
+      "mensagem": "Na primeira semana dá para ver se a luz está boa. Folhas com manchas secas e esbranquiçadas indicam sol forte demais; pecíolos esticados e moles, sombra demais.",
+      "acao_requerida": "Conferir as folhas e mudar o vaso de lugar se aparecer queimadura ou estiolamento"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Primeira adubação",
+      "mensagem": "A raiz já pegou e a planta pode receber adubo sem risco de queimar as raízes novas.",
+      "acao_requerida": "Fazer a primeira adubação leve e seguir o lembrete mensal"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Pecíolos amolecem e escurecem na base, a roseta tomba e o substrato cheira a mofo; folhas amarelam mesmo com o substrato úmido",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, esvaziar o pratinho e não deixar água parada no centro da roseta. Se já começou, tire do vaso, corte as partes moles, deixe secar algumas horas e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha (algodonosa e de carapaça)",
+      "tipo": "PRAGA",
+      "sintomas": "Bolinhas brancas algodonosas ou escamas marrons nas axilas e no verso das folhas; melado pegajoso e fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%; em infestação maior, óleo de neem a 0,5% com detergente neutro no fim da tarde, a cada 7 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto desbotado; teia fina no verso, mais comum em ar seco e calor",
+      "prevencao_tratamento": "Lavar o verso das folhas com jato de água e aumentar a umidade em volta; se persistir, óleo de neem a 0,5% a cada 5 dias"
+    },
+    {
+      "nome": "Mancha bacteriana (Xanthomonas, Pectobacterium)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas de aspecto encharcado, que crescem rápido, com halo amarelo; podem apodrecer e cheirar mal",
+      "prevencao_tratamento": "Não molhar as folhas ao regar e manter o ar circulando; cortar a folha afetada com tesoura desinfetada em álcool e descartá-la no lixo"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas secas, esbranquiçadas ou marrons, no meio das folhas voltadas para o sol, sobretudo depois de uma mudança de lugar",
+      "prevencao_tratamento": "Deixar a planta só com sol da manhã ou luz filtrada; as folhas queimadas não se recuperam e podem ser cortadas quando saírem folhas novas"
+    },
+    {
+      "nome": "Folhas amareladas por excesso de água",
+      "tipo": "DISTURBIO",
+      "sintomas": "Várias folhas amarelam ao mesmo tempo, inclusive as novas, e o substrato fica úmido por dias",
+      "prevencao_tratamento": "Espaçar a rega, conferindo com o dedo; checar se os furos do vaso estão desentupidos. Uma única folha velha de baixo amarelando é normal"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com o frio a pacová quase para de crescer e o substrato demora a secar. Rega no ritmo do verão apodrece a raiz.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 4 cm, suspender a adubação até setembro e proteger de vento frio e de temperaturas abaixo de 10 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: a pacová volta a crescer",
+      "mensagem": "Com os dias mais quentes surgem folhas novas. É a melhor época para adubar, trocar de vaso ou separar brotos.",
+      "acao_requerida": "Retomar a adubação mensal e, se as raízes saírem pelos furos, trocar para um vaso maior"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com o sol da tarde",
+      "mensagem": "No calor forte o sol direto da tarde queima as folhas, e o vaso seca bem mais rápido.",
+      "acao_requerida": "Manter a planta longe do sol depois das 10h e conferir o substrato a cada 2 ou 3 dias"
+    }
+  ]
+}

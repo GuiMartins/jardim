@@ -1,0 +1,184 @@
+{
+  "planta": {
+    "nome_comum": "Moreia-grande",
+    "nome_cientifico": "Dietes grandiflora",
+    "descricao": "Planta perene rizomatosa da África do Sul que forma touceiras de folhas longas e rígidas, com cerca de 1 m de altura. Do fim do inverno ao verão dá flores brancas de 8 a 10 cm, com manchas amarelas e estilete violeta. Cada flor dura uns 3 dias, mas as hastes florescem de novo por vários anos. É muito rústica, aguenta seca e esquecimento, e é ótima para vaso grande ao sol.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico, cerâmica ou cimento com pelo menos 30 cm de diâmetro e 30 cm de profundidade, com furos no fundo. A touceira cresce para os lados, então prefira vaso largo a vaso fundo e estreito.",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 25% areia grossa ou perlita. Precisa drenar bem, porque rizoma encharcado apodrece.",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda na mesma altura em que estava no vaso de origem, sem enterrar a base das folhas. Deixe-a na meia-sombra na primeira semana e depois passe ao sol. Uma ou duas folhas externas podem amarelar. A fase termina quando surge uma folha nova no centro do leque."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "As raízes ocupam o vaso e a touceira abre novos leques de folhas ao lado dos primeiros. Nesta fase a planta passa a tolerar alguns dias sem água. Mudas pequenas podem não florescer no primeiro ano, e isso é normal."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Touceira formada, com vários leques de folhas. No ano típico ela floresce em ondas do fim do inverno ao fim do verão, com o pico na primavera. Cresce devagar no inverno e pede menos água. A cada dois anos, mais ou menos, a touceira toma o vaso e precisa de divisão ou de um vaso maior. As hastes florais são perenes e voltam a florescer: não as corte enquanto estiverem verdes."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de moreia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até a água escorrer pelos furos. As raízes ainda não saíram do torrão original, que seca antes do resto do vaso. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a moreia",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato e regue até escorrer pelos furos só se estiver seco nessa profundidade. Esvazie o prato depois de 30 minutos. No inverno, o intervalo passa a uns 7 dias; em calor forte acima de 32 °C, confira a cada 2 ou 3 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a moreia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 colher de sopa de NPK 10-10-10 (ou 1 xícara de húmus de minhoca) por vaso de 20 L, longe da base das folhas, e regue em seguida. De junho a julho, pule a adubação: a planta está quase parada. Excesso de nitrogênio dá muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe a base dos leques e a parte interna das folhas procurando escamas brancas ou marrons (cochonilha), manchas escuras alongadas e base mole ou com cheiro ruim. De manhã cedo, procure rastros brilhantes de lesma.",
+      "critica": false
+    },
+    {
+      "id": "divisao_touceira",
+      "titulo": "Dividir a touceira ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça isso de março a maio ou em agosto. Tire a touceira do vaso, separe com faca limpa em partes de 3 a 5 leques com raízes e replante cada parte em substrato novo, na mesma altura de antes. Nas 3 semanas seguintes, regue como na adaptação. Se preferir não dividir, passe a planta para um vaso 10 cm mais largo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A muda já passou a primeira semana de adaptação. Sem sol direto, a moreia fica com folhas moles e floresce pouco.",
+      "acao_requerida": "Mudar o vaso para um lugar com pelo menos 4 horas de sol direto, de preferência pela manhã"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Muda estabelecida",
+      "mensagem": "As raízes começam a ocupar o vaso, e a planta já aguenta intervalos maiores entre as regas.",
+      "acao_requerida": "Conferir se saiu uma folha nova no centro do leque e passar a regar só quando os 4 primeiros centímetros do substrato estiverem secos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do rizoma (Fusarium, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Base dos leques mole, escura e com cheiro ruim; folhas amarelam a partir do centro e se soltam com um puxão leve",
+      "prevencao_tratamento": "Substrato bem drenado, sem água parada no prato, e rega só com o substrato seco a 4 cm. Se aparecer, tire a planta, corte as partes moles do rizoma com faca limpa, deixe secar 1 dia à sombra e replante em substrato novo"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas escamas brancas, marrons ou algodonosas na base e na parte interna das folhas; folhas pegajosas ou com fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete ou escova macia molhada em água com detergente neutro (1 colher de chá por litro). Se voltar, aplique óleo de neem a 0,5% com 1 gota de detergente no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Bordas das folhas e pétalas roídas de forma irregular, com rastros brilhantes pela manhã",
+      "prevencao_tratamento": "Cate os bichos à noite ou de manhã cedo e mantenha o vaso longe de folhas caídas e lugares sempre úmidos. Uma faixa de casca de ovo moída ao redor da base ajuda a afastá-los"
+    },
+    {
+      "nome": "Mancha foliar (Heterosporium, Alternaria)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas ovais marrons ou arroxeadas nas folhas, às vezes com halo amarelo, mais comuns em tempo úmido",
+      "prevencao_tratamento": "Regue no substrato, sem molhar as folhas, e deixe espaço para o ar circular. Corte as folhas muito manchadas rente à base e jogue fora, sem pôr na compostagem"
+    },
+    {
+      "nome": "Falta de floração",
+      "tipo": "DISTURBIO",
+      "sintomas": "Touceira verde e saudável, mas sem hastes florais na primavera",
+      "prevencao_tratamento": "Quase sempre é falta de sol: garanta pelo menos 4 horas de sol direto. Evite adubo rico em nitrogênio e não corte as hastes florais velhas, porque são elas que florescem de novo"
+    },
+    {
+      "nome": "Pontas secas nas folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e secas, sem manchas no resto da folha",
+      "prevencao_tratamento": "É sinal de rega muito espaçada no calor ou de sal acumulado pelo adubo. Uma vez por mês, regue em abundância, deixando escorrer bastante pelos furos. Se incomodar, apare as pontas secas acompanhando o formato da folha"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "Com o frio, a moreia cresce devagar e o substrato demora mais para secar. Rega em excesso agora é a principal causa de podridão do rizoma.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 4 cm, o que costuma levar uma semana, e pular a adubação até agosto"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Limpeza antes da floração",
+      "mensagem": "No fim do inverno, a touceira acumula folhas secas e amareladas que escondem pragas e atrapalham a brotação nova.",
+      "acao_requerida": "Cortar rente à base as folhas secas ou muito manchadas. Não corte as hastes florais verdes, que vão florescer de novo"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Começo da floração",
+      "mensagem": "Na primavera, a moreia abre flores em ondas. Cada flor dura uns 3 dias, e novas flores saem das mesmas hastes por semanas.",
+      "acao_requerida": "Manter o vaso com pelo menos 4 horas de sol direto e não cortar as hastes depois que as flores murcharem. Só remova uma haste quando ela secar por inteiro"
+    }
+  ]
+}

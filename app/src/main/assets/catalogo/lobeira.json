@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Lobeira",
+    "nome_cientifico": "Solanum lycocarpum",
+    "descricao": "Arbusto ou arvoreta nativa do Cerrado, da família do tomate, com flores roxas vistosas, folhas prateadas e aveludadas e frutos grandes, do tamanho de uma laranja, que alimentam o lobo-guará. É rústica, tolera seca e solo pobre e cresce rápido em vaso grande a pleno sol. Os ramos têm espinhos, e o fruto só deve ser consumido maduro e cozido (doce ou farinha), porque o verde tem alcaloides.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo; a planta fica alta e o vaso leve tomba com o vento",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra de jardim ou terra vermelha, 30% areia grossa lavada, 20% composto orgânico ou húmus de minhoca; solo pobre e bem drenado, sem turfa ou fibra de coco em excesso, que retêm água demais",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo. É normal perder algumas folhas baixas na primeira semana. A fase terminou quando surgem folhas novas prateadas na ponta dos ramos."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 31,
+      "dia_fim": 540,
+      "descricao": "Crescimento rápido em altura, com folhas grandes e aveludadas e ramos com espinhos. A raiz aprofunda e a planta passa a aguentar vários dias sem água. Pode dar as primeiras flores roxas no fim desta fase."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 541,
+      "dia_fim": null,
+      "descricao": "Floresce boa parte do ano, com pico na primavera e no verão chuvoso, em cachos de flores roxas com miolo amarelo polinizados por abelhas grandes. Os frutos levam cerca de 4 meses para amadurecer e ficam prontos principalmente no outono e no inverno. Em vaso, mantenha com 1,5 a 2,5 m com uma poda anual no fim do inverno."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a lobeira recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Não deixe prato com água embaixo do vaso. Acima de 32 °C ou com vento forte, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a lobeira",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos. No verão chuvoso, pule a rega se choveu; na seca (junho a agosto), espace para a cada 6 ou 7 dias. Folhas murchas no fim da tarde que se recuperam de manhã são normais; murchas de manhã pedem água.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a lobeira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus de minhoca ou composto na superfície, afastado 5 cm do tronco, e regue em seguida. A partir do segundo ano, junte 1 colher de sopa de farinha de ossos para estimular flores e frutos. De junho a agosto, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas, flores e frutos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Use luvas por causa dos espinhos. Vire as folhas e procure pontinhos amarelados e teias finas (ácaro), lagartas ou folhas roídas, e furos pequenos nos frutos verdes (broca). Retire à mão o que encontrar.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No início da primavera, tire a planta do vaso (com luvas grossas), corte até um terço das raízes que circulam pelas bordas e replante com substrato novo, no mesmo vaso ou num 20% maior. Pode cerca de um terço da copa para compensar a raiz perdida.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Cuidado com os espinhos",
+      "mensagem": "Os ramos e as nervuras das folhas da lobeira têm espinhos curtos e afiados.",
+      "acao_requerida": "Colocar o vaso longe de passagem de crianças e animais e usar luvas grossas em toda poda ou manuseio"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "A lobeira já deve ter folhas novas e raízes no vaso. A partir de agora ela prefere rega mais espaçada.",
+      "acao_requerida": "Conferir se há brotos novos e passar a regar só quando o substrato estiver seco a 5 cm"
+    },
+    {
+      "dia_disparo": 540,
+      "titulo": "Lobeira adulta",
+      "mensagem": "Com cerca de um ano e meio, a lobeira costuma começar a florescer e frutificar. Sem abelhas grandes por perto, as flores podem cair sem formar fruto.",
+      "acao_requerida": "Deixar o vaso em local acessível a abelhas e evitar qualquer inseticida durante a floração"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; base do caule escura e mole; cheiro azedo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, nunca deixar água no prato e usar substrato arenoso. Se aparecer, suspenda a rega, retire as raízes podres e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados que evoluem para bronzeado; teias finas no verso, principalmente na seca",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; se persistir, calda de sabão neutro (1 colher de sopa por litro) ou óleo de neem a 0,5% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Broca-pequena-do-fruto (Neoleucinodes elegantalis)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos na casca dos frutos verdes, com fezes escuras; o fruto apodrece por dentro e cai antes de amadurecer",
+      "prevencao_tratamento": "Retirar e descartar em saco fechado os frutos furados; ensacar os frutos pequenos com saquinho de TNT ou organza"
+    },
+    {
+      "nome": "Lagartas desfolhadoras",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro, às vezes até a nervura; bolinhas escuras de fezes nas folhas de baixo",
+      "prevencao_tratamento": "Catar à mão (com luvas); em infestação grande, Bacillus thuringiensis (Dipel) conforme o rótulo, no fim da tarde"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que depois amarelam e caem; comum no outono com dias secos e noites úmidas",
+      "prevencao_tratamento": "Não molhar as folhas ao regar e manter o vaso ventilado e a pleno sol; remover folhas atacadas e aplicar leite diluído (1 parte para 9 de água) ou bicarbonato (1 colher de chá por litro) semanalmente"
+    },
+    {
+      "nome": "Queda de flores sem frutificação",
+      "tipo": "DISTURBIO",
+      "sintomas": "Muitas flores abrem e caem sem formar fruto",
+      "prevencao_tratamento": "Falta de polinizadores (abelhas mamangavas) ou de sol. Garantir 6 horas ou mais de sol direto, evitar inseticidas na floração e, se não houver abelhas, sacudir de leve os cachos floridos pela manhã"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Estação seca: menos água",
+      "mensagem": "No inverno seco a lobeira cresce pouco e pode perder parte das folhas; é o comportamento natural dela no Cerrado. Substrato úmido nesse período apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para a cada 6 ou 7 dias, sempre conferindo o substrato seco a 5 cm, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda anual da lobeira",
+      "mensagem": "No fim do inverno a planta está quase parada; podar agora controla a altura no vaso e estimula ramos novos que vão florir na primavera.",
+      "acao_requerida": "Com luvas grossas, cortar ramos secos, cruzados e os que passam da altura desejada, logo acima de uma gema, tirando no máximo um terço da copa"
+    },
+    {
+      "meses": [
+        5,
+        6,
+        7
+      ],
+      "titulo": "Época dos frutos maduros",
+      "mensagem": "A maioria dos frutos amadurece no outono e no inverno. O fruto maduro fica verde-amarelado, cede um pouco ao apertar e tem aroma adocicado forte.",
+      "acao_requerida": "Colher os frutos macios e perfumados e usar só cozidos (doce ou farinha); descartar os verdes e duros, que têm alcaloides"
+    }
+  ]
+}

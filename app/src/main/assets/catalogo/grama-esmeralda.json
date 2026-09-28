@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Grama-esmeralda",
+    "nome_cientifico": "Zoysia japonica",
+    "descricao": "A grama mais usada em jardins no Brasil: folha fina, verde-esmeralda, macia e resistente a pisoteio. Em vaso ou jardineira forma um tapete denso que precisa de pouco corte, porque cresce devagar.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Jardineira larga ou vaso raso e largo, com pelo menos 15 cm de profundidade de substrato e vários furos no fundo; a grama vai em placas ou pedaços de placa (plugs)",
+    "volume_minimo_litros": 10,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia média lavada, 20% húmus de minhoca ou composto; nivelado e firmado, 1 a 2 cm abaixo da borda para receber a placa",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento das Placas",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "Assente as placas bem encostadas umas nas outras, pressione para colar no substrato e regue até encharcar na primeira vez. As raízes descem para o substrato em 2 a 3 semanas; as pontas da placa amarelarem um pouco é normal. Quando você puxa a ponta de uma placa e ela resiste, a fase acabou."
+    },
+    {
+      "fase_id": "fechamento",
+      "nome": "Fechamento dos Vãos",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "Os estolões avançam sobre as emendas e os vãos entre os plugs, devagar, porque a esmeralda cresce pouco. A cor fica uniforme e o tapete para de mostrar as linhas das placas. A fase termina quando não se vê mais substrato entre as mudas."
+    },
+    {
+      "fase_id": "gramado_formado",
+      "nome": "Gramado Formado",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Tapete fechado. Cresce e fica mais verde de outubro a março; no inverno quase para e pode amarelar ou ficar cor de palha com geada e frio, voltando a esverdear na primavera. Corte regular a 2 ou 3 cm de altura mantém o gramado denso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar as placas novas",
+      "tipo": "REGA",
+      "frequencia_dias": 1,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Regue de manhã até a água escorrer pelos furos: a placa e os 5 cm de substrato embaixo dela precisam ficar úmidos. Placa que seca nessas semanas encolhe, abre frestas e não pega. Em dia de chuva forte, pule.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a grama",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato entre as folhas; se estiver seco, regue devagar até escorrer pelos furos. No verão, acima de 30 °C, confira a cada 2 dias; no inverno, a cada 5 a 7 dias. Folha enrolada e acinzentada é sinal de sede.",
+      "critica": false
+    },
+    {
+      "id": "corte_grama",
+      "titulo": "Aparar a grama",
+      "tipo": "PODA",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura de grama bem afiada, corte deixando 2 a 3 cm de altura e nunca tire mais de 1/3 da folha de uma vez. Recolha as aparas. No inverno, quando a grama quase não cresce, corte só se passar de 5 cm.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar o gramado",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Abra a grama com os dedos e procure lagartas, folhas roídas, manchas marrons circulares ou pó alaranjado nas folhas. Veja também se algum trecho se solta ao puxar, sinal de raiz comida ou apodrecida.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 21,
+      "titulo": "A grama pegou?",
+      "mensagem": "Com três semanas, as raízes já devem ter descido para o substrato.",
+      "acao_requerida": "Puxar de leve a ponta de uma placa: se resistir, passar para a rega a cada 3 dias; se soltar, manter a rega diária por mais uma semana"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Preencher as emendas",
+      "mensagem": "Frestas e desníveis entre as placas atrasam o fechamento e acumulam água.",
+      "acao_requerida": "Espalhar uma camada fina (até 0,5 cm) de areia misturada com terra peneirada, 1:1, sobre as emendas, empurrar com a mão para dentro dos vãos e regar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Lagarta-dos-gramados (Mocis latipes, Spodoptera frugiperda)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas até o talo em manchas que crescem de um dia para o outro; lagartas verdes ou pardas escondidas na base da grama, ativas à noite",
+      "prevencao_tratamento": "Regue com água e sabão neutro (1 colher de sopa por litro) para fazer as lagartas subirem e cate-as; em infestação, aplique Bacillus thuringiensis no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha-das-raízes / percevejo-castanho",
+      "tipo": "PRAGA",
+      "sintomas": "Trechos amarelados que secam mesmo com rega e se soltam fácil ao puxar; insetos pequenos nas raízes",
+      "prevencao_tratamento": "Evite excesso de adubo nitrogenado; retire o trecho afetado com o substrato, troque por substrato novo e replante um pedaço sadio"
+    },
+    {
+      "nome": "Mancha-marrom (Rhizoctonia solani)",
+      "tipo": "DOENCA",
+      "sintomas": "Círculos marrom-avermelhados de 10 cm ou mais, com borda alaranjada, em épocas úmidas e amenas (outono e primavera)",
+      "prevencao_tratamento": "Regue só de manhã, nunca à noite, e não encharque; não adube com nitrogênio no outono; em caso grave, use fungicida à base de azoxistrobina"
+    },
+    {
+      "nome": "Ferrugem (Puccinia zoysiae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó alaranjado que suja o dedo ao passar nas folhas; gramado com tom amarelado",
+      "prevencao_tratamento": "Mais sol e ventilação, corte regular com recolhimento das aparas e adubação equilibrada; costuma sumir com o calor"
+    },
+    {
+      "nome": "Podridão por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Base da grama escura e mole, cheiro de mofo, substrato sempre molhado e trechos que morrem do centro para fora",
+      "prevencao_tratamento": "Confira se os furos da jardineira não estão entupidos, respeite o teste do dedo e reduza a rega no inverno"
+    },
+    {
+      "nome": "Amarelecimento de inverno",
+      "tipo": "DISTURBIO",
+      "sintomas": "Gramado todo cor de palha ou amarelado de junho a agosto, sem manchas definidas",
+      "prevencao_tratamento": "É dormência pelo frio, não doença: não adube nem regue a mais para tentar curar. A cor volta com o calor da primavera"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Adubação de primavera",
+      "mensagem": "A grama está saindo do inverno e voltando a crescer: é a adubação mais importante do ano.",
+      "acao_requerida": "Espalhar 1 colher de chá rasa de NPK 10-10-10 por jardineira de 60 cm (cerca de 1 colher de sopa por m²) sobre a grama seca e regar bem em seguida"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Nivelar e renovar a superfície",
+      "mensagem": "Com a grama crescendo, uma camada fina de terra ajuda a fechar falhas e a nivelar.",
+      "acao_requerida": "Aparar curto (2 cm), espalhar até 0,5 cm de areia com terra peneirada (1:1), empurrar para dentro da grama e regar"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Adubação de verão",
+      "mensagem": "No pico do crescimento, a grama esgota os nutrientes da jardineira.",
+      "acao_requerida": "Repetir a dose de NPK 10-10-10 ou usar 2 colheres de sopa de húmus por jardineira, regando em seguida"
+    },
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Última adubação do ano",
+      "mensagem": "Adubar agora fortalece a grama para atravessar o inverno; depois disso, adubo com nitrogênio favorece a mancha-marrom.",
+      "acao_requerida": "Aplicar meia dose de NPK 10-10-10 ou de húmus e não adubar mais até setembro"
+    },
+    {
+      "meses": [
+        6
+      ],
+      "titulo": "Grama entrando em repouso",
+      "mensagem": "Com o frio, a esmeralda para de crescer e pode amarelar. Rega e corte em excesso agora só fazem mal.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 3 cm, subir a altura do corte para 4 a 5 cm e não adubar até setembro"
+    }
+  ]
+}

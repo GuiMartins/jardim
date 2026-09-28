@@ -1,0 +1,210 @@
+{
+  "planta": {
+    "nome_comum": "Sete-léguas",
+    "nome_cientifico": "Podranea ricasoliana",
+    "descricao": "Trepadeira lenhosa sul-africana, muito vigorosa, que cobre caramanchões e grades com cachos de flores rosa-lilás em forma de trombeta da primavera ao outono. Em vaso grande, com poda anual, fica controlada e floresce bem em varandas e muros ensolarados.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira pesada de pelo menos 45 cm de diâmetro e 45 cm de profundidade, com furos no fundo, junto a uma grade, treliça ou caramanchão firme",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa; misture 1 xícara de farinha de ossos por vaso de 50 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda enraíza no vaso novo e pode perder algumas folhas nos primeiros dias. A fase acaba quando surgem brotos novos, verde-claros, nas pontas e nas axilas das folhas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 240,
+      "descricao": "Os ramos crescem rápido, até 30 cm por mês no calor, e começam a se enrolar no suporte. Conduza os mais fortes para cima e para os lados. As primeiras flores podem vir ainda nesta fase, na primavera ou no verão."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 241,
+      "dia_fim": null,
+      "descricao": "Floresce de setembro a março em cachos nas pontas dos ramos do ano. No inverno cresce pouco e pode perder parte das folhas no frio; é a hora da poda forte, em agosto. Geada queima os ramos, mas a planta costuma rebrotar da base."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. A raiz ainda não saiu do torrão da muda e seca rápido.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a sete-léguas",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; regue até escorrer pelos furos só se estiver seco nessa profundidade. No verão, com o vaso cheio de raiz, pode precisar de rega a cada 1 ou 2 dias; no inverno, a cada 5 a 7. Nunca deixe água parada no pratinho.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a sete-léguas",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de NPK 4-14-8 (ou 1 xícara de húmus com 1 colher de farinha de ossos) na borda do vaso, longe do caule, e regue em seguida. De maio a julho, pule a adubação: a planta está quase parada. Evite adubo rico em nitrogênio, que faz muita folha e pouca flor.",
+      "critica": false
+    },
+    {
+      "id": "conduzir_ramos",
+      "titulo": "Conduzir os ramos no suporte",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enrole os ramos novos no suporte e prenda com fitilho ou tiras de meia, sem apertar. Corte os ramos que saíram para o chão, para o corredor ou entraram em calhas e janelas, logo acima de uma folha.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe as pontas dos ramos, os botões e o verso das folhas. Procure insetos agrupados, carocinhos brancos ou marrons presos no caule, teias finas e pontinhos amarelados nas folhas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência em agosto, junto com a poda: tire a planta do vaso, corte 3 a 5 cm das raízes enoveladas em volta do torrão e replante no mesmo vaso com substrato novo, ou num vaso um tamanho acima.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Instale o suporte agora",
+      "mensagem": "A sete-léguas é trepadeira pesada e cresce rápido. Pôr o suporte depois machuca a raiz e quebra os ramos já enrolados.",
+      "acao_requerida": "Firmar uma treliça, grade ou fios de arame junto ao vaso e amarrar o ramo principal da muda nele"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Hora de formar a planta",
+      "mensagem": "Os brotos novos já devem estar crescendo. Despontar agora faz a planta ramificar e cobrir o suporte por igual.",
+      "acao_requerida": "Cortar a ponta dos 2 ou 3 ramos mais compridos, 1 cm acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Comece a adubar",
+      "mensagem": "A muda já enraizou no vaso e aguenta adubo sem queimar a raiz.",
+      "acao_requerida": "Fazer a primeira adubação na borda do vaso e regar em seguida"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; ramos murcham; base do caule escura e mole; cheiro ruim no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter furos desentupidos e nunca deixar água no pratinho. Se aparecer, suspenda a rega até secar bem e troque o substrato, cortando as raízes escuras"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nas pontas dos ramos e nos botões; brotos enrugados e pegajosos",
+      "prevencao_tratamento": "Jato de água forte nas pontas; se persistir, óleo de neem a 0,5% ou sabão neutro a 1% no fim da tarde, a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos algodoados ou escamas marrons presos nos ramos e no verso das folhas; fumagina preta por cima",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em álcool; pulverizar óleo mineral ou óleo de neem a 1% a cada 7 dias até sumir"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas no verso, principalmente no calor seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias quentes e secos; se infestar, óleo de neem a 0,5% a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Poucas flores (sombra ou excesso de nitrogênio)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Planta cheia de folhas e ramos longos, mas com pouca ou nenhuma floração",
+      "prevencao_tratamento": "Garantir pelo menos 5 horas de sol direto, trocar o adubo por um rico em fósforo e fazer a poda anual em agosto, que estimula os ramos novos onde nascem as flores"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas e pontas dos ramos escurecem e secam depois de uma noite muito fria",
+      "prevencao_tratamento": "Em noites com previsão de geada, cobrir com manta ou levar o vaso para perto de uma parede abrigada; não podar os ramos queimados até agosto, pois eles protegem a planta"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Hora da poda anual",
+      "mensagem": "A sete-léguas floresce nos ramos novos. Podar no fim do inverno, antes de brotar, garante muitos cachos de flores na primavera e mantém a planta do tamanho do vaso.",
+      "acao_requerida": "Cortar os ramos laterais deixando 2 a 3 gemas, tirar ramos secos, queimados ou cruzados e reduzir em até um terço o comprimento dos ramos principais"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água e cuidado com a geada",
+      "mensagem": "No frio a planta cresce pouco e pode perder folhas. O substrato demora mais a secar e o excesso de rega apodrece a raiz.",
+      "acao_requerida": "Espaçar as regas para quando o substrato estiver seco a 5 cm, suspender a adubação e proteger o vaso nas noites com previsão de geada"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Começo da floração",
+      "mensagem": "Com o calor voltando, a planta brota forte e forma os primeiros botões.",
+      "acao_requerida": "Retomar a adubação mensal com adubo rico em fósforo e voltar a conferir a rega a cada 2 ou 3 dias"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: confira a rega",
+      "mensagem": "Em pleno verão, um vaso cheio de raiz e folhas seca em um dia e a planta derruba botões se murchar.",
+      "acao_requerida": "Conferir o substrato todo dia e regar de manhã cedo ou no fim da tarde, até escorrer pelos furos"
+    }
+  ]
+}

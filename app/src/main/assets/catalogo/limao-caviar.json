@@ -1,0 +1,218 @@
+{
+  "planta": {
+    "nome_comum": "Limão-caviar",
+    "nome_cientifico": "Citrus australasica",
+    "descricao": "Arbusto cítrico espinhoso das florestas úmidas da Austrália, com frutos em forma de dedo cheios de vesículas que estouram na boca como caviar, de sabor ácido e perfumado. Cresce devagar e aceita bem o vaso, por isso é o cítrico gourmet mais cultivado em varandas. Comece com muda enxertada, que frutifica em 2 a 3 anos; a de semente pode levar mais de 5.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de pelo menos 40 cm de diâmetro e 40 cm de profundidade, com vários furos no fundo; comece num vaso de 20 a 30 L e passe para o definitivo quando as raízes tomarem o torrão",
+    "volume_minimo_litros": 40,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 25% composto orgânico ou húmus de minhoca, 20% casca de pinus fina, 15% areia grossa ou perlita; pH levemente ácido (5,5 a 6,5), sem calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda com o ponto do enxerto (a cicatriz no caule) 5 cm acima do substrato, sem enterrar. Pode perder algumas folhas nas primeiras semanas; o sinal de que pegou são brotos novos, avermelhados ou verde-claros, nas pontas dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A planta solta fluxos de brotação em ondas, com pausas entre elas. Os ramos são finos e cheios de espinhos. Qualquer broto que saia abaixo do enxerto é do cavalo e deve ser cortado rente ao caule quando aparecer. Flores que surgirem neste primeiro ano devem ser tiradas para a energia ir para raiz e galhos."
+    },
+    {
+      "fase_id": "formacao",
+      "nome": "Formação",
+      "dia_inicio": 366,
+      "dia_fim": 730,
+      "descricao": "A copa engrossa e ganha forma. Surgem as primeiras flores brancas ou rosadas na primavera; deixe só alguns frutos, no máximo 5 a 10, para não esgotar a planta. A fase termina quando a planta passa de 60 a 80 cm e aguenta uma frutificação cheia."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 731,
+      "dia_fim": null,
+      "descricao": "Ano típico: floração principal de setembro a novembro (às vezes uma segunda menor no verão), frutos crescendo no verão e maduros de março a junho, cerca de 5 a 6 meses depois da flor. No inverno cresce pouco e pede menos água e nada de adubo. Troca de vaso ou de substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos e esvazie o pratinho. A raiz ainda está só no torrão da muda e seca rápido. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o limão-caviar",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 a 5 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e não deixe água parada no pratinho. No verão a conferência pode pedir água a cada 2 dias; no inverno, a cada 5 a 7. Seca total na floração derruba flores e frutinhos.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_citrus",
+      "titulo": "Adubar o limão-caviar",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe na borda do vaso, longe do caule, 1 colher de sopa de adubo para cítricos (NPK com micronutrientes, como 10-10-10 ou formulado para citros) por vaso de 40 L, ou 2 xícaras de húmus de minhoca, e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Use luvas por causa dos espinhos. Vire as folhas novas e procure trilhas prateadas em zigue-zague (minador), pontinhos brancos ou marrons presos no caule (cochonilha), teias finas (ácaro) e insetos agrupados nos brotos (pulgão). Corte também brotos que saíram abaixo do enxerto.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, raspe 3 a 5 cm de substrato velho da lateral e do fundo do torrão, corte raízes enoveladas ou escuras e replante em substrato novo, num vaso 10 cm maior se o atual estiver tomado de raízes.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 2,
+      "titulo": "Confira o enxerto",
+      "mensagem": "Muda de limão-caviar quase sempre vem enxertada. Se o ponto do enxerto ficar enterrado, a copa pode soltar raiz própria e o tronco apodrecer.",
+      "acao_requerida": "Afastar o substrato para que a cicatriz do enxerto fique pelo menos 5 cm acima da superfície e tirar a fita plástica do enxerto se ainda estiver apertando o caule"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Tire as flores do primeiro ano",
+      "mensagem": "Muda jovem que frutifica gasta a energia que iria para raízes e galhos e fica raquítica por anos.",
+      "acao_requerida": "Arrancar com os dedos os botões florais e frutinhos que aparecerem até a planta completar um ano"
+    },
+    {
+      "dia_disparo": 366,
+      "titulo": "Pode deixar alguns frutos",
+      "mensagem": "Com um ano de vaso a planta já aguenta uma frutificação pequena.",
+      "acao_requerida": "Na próxima florada, deixar só 5 a 10 frutinhos espalhados pela copa e tirar o excesso quando estiverem do tamanho de um grão de arroz"
+    },
+    {
+      "dia_disparo": 731,
+      "titulo": "Planta adulta",
+      "mensagem": "A partir de agora o limão-caviar pode frutificar à vontade, desde que a adubação e a rega acompanhem.",
+      "acao_requerida": "Parar de tirar frutinhos e acompanhar a colheita a partir de março"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e gomose (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem sem motivo aparente, substrato cheira a mofo, casca da base do tronco escurece, racha e solta uma goma âmbar",
+      "prevencao_tratamento": "Regar só quando os 4 cm de cima secarem, nunca deixar água no pratinho e manter o enxerto fora do substrato; raspe a casca doente até o tecido verde, pincele pasta bordalesa e troque o substrato encharcado"
+    },
+    {
+      "nome": "Minador-dos-citros (Phyllocnistis citrella)",
+      "tipo": "PRAGA",
+      "sintomas": "Trilhas prateadas em zigue-zague dentro das folhas novas, que ficam retorcidas e enroladas",
+      "prevencao_tratamento": "Retire e descarte as folhas muito atacadas; óleo de neem a 0,5% nas brotações novas a cada 7 dias durante os fluxos de brotação, no fim da tarde"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos marrons ou tufos brancos presos em ramos e no verso das folhas; folhas pegajosas com fumagina preta e formigas subindo",
+      "prevencao_tratamento": "Remover com cotonete com álcool 70% ou escova macia; em infestação, calda de sabão neutro (1 colher de sopa por litro) com óleo mineral a 1%, repetida a cada 7 dias por 3 semanas"
+    },
+    {
+      "nome": "Ácaro-rajado e ácaro-da-ferrugem",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados e aspecto empoeirado, teias finas no verso; frutos com casca bronzeada ou áspera",
+      "prevencao_tratamento": "Aparecem com ar seco e calor: borrife água no verso das folhas nos dias quentes; se persistir, enxofre molhável ou óleo de neem a cada 5 dias, nunca acima de 30 °C"
+    },
+    {
+      "nome": "Pulgão-preto-dos-citros (Toxoptera citricida)",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias pretas nos brotos novos, que ficam encarquilhados e melados",
+      "prevencao_tratamento": "Jato de água nos brotos; se voltar, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Clorose por falta de ferro ou magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas novas amarelas com nervuras verdes (ferro) ou folhas velhas amareladas em forma de V invertido a partir da base (magnésio)",
+      "prevencao_tratamento": "Use adubo para citros com micronutrientes e substrato levemente ácido; corrija com quelato de ferro ou 1 colher de chá de sulfato de magnésio por litro de água, aplicado uma vez por mês"
+    },
+    {
+      "nome": "Queda de flores e frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Flores e frutos pequenos amarelam no cabo e caem em massa",
+      "prevencao_tratamento": "Causada por seca, encharcamento ou calor extremo na florada; mantenha o substrato uniformemente úmido e proteja do sol da tarde acima de 35 °C. Alguma queda é natural"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O limão-caviar adulto aguenta geada leve, mas plantas jovens e brotos novos queimam abaixo de 0 °C. No inverno ele quase para de crescer e bebe pouco.",
+      "acao_requerida": "Em noites com previsão abaixo de 3 °C, levar o vaso para perto da parede ou sob cobertura, ou cobrir com TNT; espaçar a rega e não adubar até agosto"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza",
+      "mensagem": "No fim do inverno, antes da brotação, a poda estimula ramos novos, que são os que dão flor.",
+      "acao_requerida": "Com luvas grossas, cortar ramos secos, cruzados ou voltados para dentro da copa e encurtar em até um terço os galhos muito compridos; tirar brotos abaixo do enxerto"
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Época de florada",
+      "mensagem": "A florada principal chega na primavera. Seca ou encharcamento agora derrubam as flores e a safra do ano.",
+      "acao_requerida": "Retomar a adubação mensal e conferir a umidade do substrato a cada 2 dias, mantendo-o úmido sem encharcar"
+    },
+    {
+      "meses": [
+        3,
+        4,
+        5
+      ],
+      "titulo": "Hora de colher",
+      "mensagem": "Os frutos amadurecem cerca de 5 a 6 meses depois da flor e não amadurecem depois de colhidos.",
+      "acao_requerida": "Colher os frutos que soltam com um leve giro e estão firmes, com a cor final da variedade (verde-escura, roxa, rosada ou amarela); os que resistem ainda não estão prontos"
+    }
+  ]
+}

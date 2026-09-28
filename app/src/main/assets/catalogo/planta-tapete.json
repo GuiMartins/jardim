@@ -1,0 +1,191 @@
+{
+  "planta": {
+    "nome_comum": "Planta-tapete",
+    "nome_cientifico": "Episcia cupreata",
+    "descricao": "Gesneriácea rasteira da América do Sul tropical, parente da violeta-africana. Tem folhas aveludadas cor de cobre com nervuras prateadas e flores vermelho-alaranjadas nos meses quentes. Solta estolões que pendem do vaso, por isso fica ótima em vaso suspenso perto de janela clara.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso raso e largo ou cuia suspensa, com 15 a 20 cm de diâmetro e 10 a 12 cm de altura, com furos no fundo. A raiz é curta e apodrece em vaso fundo.",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "40% substrato para violeta-africana (ou turfa), 30% perlita ou vermiculita, 30% fibra de coco; leve, fofo e que fique úmido sem encharcar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se acostuma à luz e à umidade da casa. É normal perder uma ou duas folhas velhas da base. Não troque de vaso nem adube agora. A fase terminou quando surgem folhas novas no centro, com a cor firme."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 120,
+      "descricao": "A roseta engrossa e aparecem os primeiros estolões, ramos finos com uma plantinha na ponta. Folhas novas pequenas ou verde-claras indicam pouca luz; manchas marrons secas, sol demais."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Roseta cheia e estolões pendendo pela borda. Floresce da primavera ao outono, em temperatura acima de 20 °C e com boa umidade no ar. No inverno quase não cresce: pede menos água e nada de adubo. Com uns dois anos, a base fica pelada e vale refazer o vaso com os estolões enraizados."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a planta-tapete",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Toque a superfície do substrato: se o primeiro centímetro estiver seco, regue com água em temperatura ambiente, pela borda do vaso e sem molhar as folhas, até escorrer pelos furos. Esvazie o pratinho depois de 15 minutos. Se ainda estiver úmido, espere o próximo lembrete. No inverno o substrato demora mais a secar; confira antes de regar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar com adubo para violeta",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua o adubo líquido para violeta-africana (NPK tipo 10-30-20) na metade da dose do rótulo e aplique no substrato já úmido, nunca seco. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e base",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe o verso, as axilas e o encontro do caule com o substrato. Procure algodãozinho branco (cochonilha), teias finas, pontinhos claros nas folhas ou base mole e escura.",
+      "critica": false
+    },
+    {
+      "id": "poda_limpeza",
+      "titulo": "Limpar folhas e aparar estolões",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com tesoura limpa, corte rente as folhas secas ou amareladas e as flores murchas. Apare os estolões mais longos, que puxam força da roseta. As pontas com plantinha podem ser enraizadas em outro vaso.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta do vaso, solte a maior parte do substrato velho e replante no mesmo vaso raso (ou um só 2 cm maior) com substrato novo, na mesma altura de antes. Se a base estiver pelada, replante junto os estolões enraizados para encher o vaso. Deixe na sombra clara por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Confira o lugar da planta",
+      "mensagem": "A planta-tapete queima no sol forte e perde a cor no escuro. Precisa de muita claridade sem sol direto nas folhas depois das 9h.",
+      "acao_requerida": "Deixar o vaso a até 1 m de uma janela clara, protegido do sol da tarde, longe do vento do ar-condicionado e de correntes de ar frio"
+    },
+    {
+      "dia_disparo": 10,
+      "titulo": "Aumente a umidade do ar",
+      "mensagem": "Ela vem de mata úmida. Com ar seco, as bordas das folhas ficam marrons e ela não floresce.",
+      "acao_requerida": "Pôr o vaso sobre um prato com pedrinhas e água, sem o fundo do vaso tocar a água, ou agrupar com outras plantas. Não borrife as folhas aveludadas, porque mancham"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Hora de multiplicar",
+      "mensagem": "Os primeiros estolões já devem ter plantinhas com raízes na ponta. Enraizá-las enche o vaso e garante uma reserva se a planta-mãe sofrer.",
+      "acao_requerida": "Encostar a plantinha da ponta de um estolão no substrato de um copinho ao lado, prender com um grampo e cortar da planta-mãe quando ela firmar, em 2 a 3 semanas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e coroa (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Planta murcha mesmo com o substrato úmido; base do caule mole e escura; folhas caem ao toque",
+      "prevencao_tratamento": "Regar só com a superfície seca, usar vaso raso e substrato aerado e nunca deixar água no pratinho. Se aparecer, corte as partes moles, enraíze as pontas saudáveis dos estolões em substrato novo e descarte o resto"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas, no verso e na raiz; folhas amarelando e sem vigor",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%, sem encharcar as folhas. Repita a cada 5 dias por 3 semanas e isole o vaso das outras plantas"
+    },
+    {
+      "nome": "Ácaro e tripes",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos claros ou prateados nas folhas, teias finas no verso, folhas novas deformadas e flores manchadas",
+      "prevencao_tratamento": "Manter a umidade do ar alta, porque ácaro gosta de ar seco. Se infestar, aplique óleo de neem a 0,5% no verso das folhas no fim da tarde, a cada 5 dias por 3 aplicações"
+    },
+    {
+      "nome": "Mancha de água fria",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas claras, amareladas ou esbranquiçadas nas folhas, onde caiu água fria ou gotas ficaram paradas",
+      "prevencao_tratamento": "Regar só no substrato, com água em temperatura ambiente. As folhas manchadas não se recuperam; retire-as quando houver folhas novas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas desbotadas, acinzentadas ou com placas marrons secas no lado virado para a janela",
+      "prevencao_tratamento": "Tirar do sol direto do meio do dia e da tarde; uma cortina fina já resolve"
+    },
+    {
+      "nome": "Dano por frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, ficam moles ou translúcidas e caem depois de noites abaixo de 12 °C ou de corrente de ar frio",
+      "prevencao_tratamento": "Manter acima de 15 °C, longe de vidraça fria à noite e de porta aberta. Nos dias frios, reduza a rega"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteja do frio",
+      "mensagem": "Abaixo de 15 °C a planta-tapete para de crescer, e o substrato frio e molhado apodrece a raiz.",
+      "acao_requerida": "Afastar o vaso da vidraça à noite, espaçar as regas até a superfície secar bem e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Ar seco no fim do inverno",
+      "mensagem": "No fim do inverno a umidade do ar cai muito no Centro-Sul, e as bordas das folhas queimam.",
+      "acao_requerida": "Completar a água do prato com pedrinhas sob o vaso a cada 2 dias e agrupar com outras plantas"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Recomeço da primavera",
+      "mensagem": "Com o calor voltando, ela retoma o crescimento. É a melhor época para renovar a planta.",
+      "acao_requerida": "Cortar folhas danificadas pelo frio, retomar a adubação quinzenal e enraizar estolões para preencher falhas no vaso"
+    }
+  ]
+}

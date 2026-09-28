@@ -1,0 +1,217 @@
+{
+  "planta": {
+    "nome_comum": "Lichia",
+    "nome_cientifico": "Litchi chinensis",
+    "descricao": "Árvore frutífera subtropical de origem chinesa, de folhagem brilhante e cachos de frutos vermelhos de polpa branca e perfumada. Em vaso grande, uma muda de alporquia pode frutificar a partir do 3º ou 4º ano, desde que passe um inverno fresco e mais seco, que é o que induz a floração.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso com pelo menos 45 cm de diâmetro e 45 cm de profundidade, com vários furos no fundo. Comece com 40 L na chegada da muda e passe para 80 a 100 L quando a planta for adulta",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa lavada, 10% casca de pinus fina; levemente ácido (pH 5,5 a 6,5), sem calcário em excesso. Misture 200 g de farinha de ossos por vaso de 60 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda de alporquia tem poucas raízes e sente a mudança de vaso: folhas velhas podem amarelar e cair. Mantenha em meia-sombra na primeira semana e vá levando ao sol pleno aos poucos. A fase termina quando surgem brotos novos, avermelhados ou cor de bronze, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A planta cresce em surtos: um lote de folhas avermelhadas surge, amadurece para verde-escuro e só então vem o próximo. Não adube enquanto as folhas novas estiverem moles e vermelhas, porque queimam fácil. Se aparecerem cachos de flor neste primeiro ano, corte-os: a planta ainda não tem raiz para segurar frutos."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "A copa se forma e o tronco engrossa. Continue removendo flores no 2º ano para que a energia vá para a estrutura. Ao fim desta fase a planta deve ter copa densa com 1 a 1,5 m e raízes ocupando todo o vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: repouso de maio a julho com rega reduzida e frio abaixo de 20 °C, que induz a floração; flores em agosto e setembro; frutos crescendo de outubro a novembro; colheita em dezembro e janeiro; poda leve e adubação após a colheita, seguida de um ou dois surtos de folhas no verão. Anos de safra fraca alternando com anos de safra boa são normais na lichia."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de lichia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A raiz nova da alporquia morre se secar por completo, mas também apodrece se ficar encharcada: esvazie o prato depois de 30 minutos.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a lichia",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). No verão acima de 30 °C confira a cada 2 dias. De maio a julho, na planta adulta, deixe secar até 6 cm antes de regar, para induzir a floração. Nunca deixe secar de vez durante a floração e o crescimento dos frutos.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a lichia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 61,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 xícara de húmus de minhoca ou composto mais 1 colher de sopa de NPK 10-10-10 por vaso de 60 L, longe do tronco, e regue em seguida. Dobre a dose do NPK depois do 3º ano. De maio a julho, troque o NPK por 2 colheres de sopa de farinha de ossos, sem nitrogênio, para não provocar brotação no lugar das flores. Não adube quando as folhas novas estiverem vermelhas e moles.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas novas e procure feltro marrom-avermelhado no verso (erinose), escamas ou algodão branco nos ramos (cochonilha) e manchas escuras afundadas nas folhas e frutos (antracnose).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e março. Tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas no fundo e nas laterais, troque um terço do substrato por mistura nova e volte para um vaso 20% maior (até 100 L). Regue bem e deixe em meia-sombra por uma semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 90,
+      "titulo": "Hora da poda de formação",
+      "mensagem": "Uma copa baixa e aberta com 3 ou 4 ramos principais aguenta o peso dos cachos e cabe na varanda.",
+      "acao_requerida": "Cortar o ramo principal a 50 ou 60 cm de altura, logo acima de uma folha, e depois deixar só os 3 ou 4 brotos mais fortes e bem distribuídos"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "A lichia já pode frutificar",
+      "mensagem": "Com 3 anos no vaso a planta tem estrutura para segurar frutos. A partir de agora, não corte mais os cachos de flor.",
+      "acao_requerida": "Parar de remover as flores e seguir os avisos de repouso de inverno para induzir a floração"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Ácaro-da-erinose (Aceria litchii)",
+      "tipo": "PRAGA",
+      "sintomas": "Feltro aveludado, primeiro esbranquiçado e depois marrom-avermelhado, no verso das folhas novas; folhas encarquilhadas e bolhas na face de cima; flores e frutos deformados",
+      "prevencao_tratamento": "Comprar muda sem sintoma. Cortar e jogar no lixo (não na compostagem) os ramos atacados; pulverizar enxofre molhável (3 g/L) nos brotos novos a cada 15 dias, fora das horas de calor"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Escamas marrons ou massas brancas de aspecto de algodão nos ramos e no verso das folhas; fumagina preta e formigas subindo pelo tronco",
+      "prevencao_tratamento": "Retirar com cotonete e álcool; nos casos maiores, óleo mineral ou de neem a 1% com detergente neutro, no fim da tarde, repetindo após 10 dias"
+    },
+    {
+      "nome": "Podridão de raiz (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas mesmo com substrato úmido, amarelando e caindo; raízes escuras e moles com cheiro ruim; base do tronco escurecida",
+      "prevencao_tratamento": "Regar só depois do teste do dedo, nunca deixar água no prato e manter os furos desobstruídos. Nos primeiros sinais, suspender a rega, trocar o substrato e cortar as raízes podres"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum gloeosporioides)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras irregulares nas folhas novas, flores queimadas e frutos com manchas pretas afundadas que apodrecem",
+      "prevencao_tratamento": "Manter a copa arejada com poda, não molhar as folhas ao regar e recolher frutos e folhas caídos; se necessário, calda bordalesa a 1% antes da floração"
+    },
+    {
+      "nome": "Rachadura dos frutos",
+      "tipo": "DISTURBIO",
+      "sintomas": "Frutos com a casca aberta, azedando e atraindo moscas e vespas",
+      "prevencao_tratamento": "Causada por rega irregular (seca seguida de encharcamento) e falta de cálcio. Manter a rega constante de outubro a janeiro e usar farinha de ossos ou gesso agrícola na adubação"
+    },
+    {
+      "nome": "Queima das pontas das folhas",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas e bordas das folhas secas e marrons, sobretudo nas folhas novas",
+      "prevencao_tratamento": "A lichia é sensível a sal: excesso de adubo químico, água com cloro guardada no prato ou substrato seco por muito tempo. Regar em abundância uma vez por mês para lavar os sais e não exceder a dose de adubo"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Início do repouso de inverno",
+      "mensagem": "A lichia só floresce depois de algumas semanas de frio (abaixo de 20 °C) com o substrato mais seco. Sem esse repouso, ela brota folhas em vez de flores.",
+      "acao_requerida": "Espaçar a rega, deixando secar até 6 cm de profundidade, parar o adubo com nitrogênio e manter o vaso ao ar livre, sem trazê-lo para dentro de casa aquecida"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio forte",
+      "mensagem": "A planta jovem sofre com geada; a adulta tolera frio leve, mas temperaturas abaixo de 0 °C queimam folhas e brotos.",
+      "acao_requerida": "Em noites com previsão de geada, cobrir a copa com manta TNT ou levar o vaso para junto de uma parede, sob beiral"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Floração da lichia",
+      "mensagem": "Surgem cachos longos de flores miúdas amarelo-esverdeadas. A partir de agora a falta de água derruba flores e frutinhos.",
+      "acao_requerida": "Voltar à rega normal (secou 4 cm, regou), aplicar uma colher de sopa de sulfato de potássio ou cinza de madeira por vaso de 60 L e não pulverizar nada nas flores abertas"
+    },
+    {
+      "meses": [
+        10,
+        11
+      ],
+      "titulo": "Frutos em crescimento",
+      "mensagem": "Os frutos engordam rápido e racham se o substrato alternar entre seco e encharcado. É normal parte dos frutinhos cair.",
+      "acao_requerida": "Manter a rega constante e, se houver pássaros ou morcegos, ensacar os cachos com saco de TNT ou tela fina"
+    },
+    {
+      "meses": [
+        12,
+        1
+      ],
+      "titulo": "Colheita da lichia",
+      "mensagem": "O fruto está pronto quando a casca fica toda vermelha e as saliências se achatam um pouco. Ela não amadurece depois de colhida.",
+      "acao_requerida": "Colher o cacho inteiro cortando o ramo com tesoura cerca de 15 cm abaixo dele, o que já serve de poda; conferir os cachos a cada 2 ou 3 dias, porque o fruto passa do ponto e racha no pé"
+    },
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Poda e adubação pós-colheita",
+      "mensagem": "Os brotos que surgem agora serão os ramos que florescem no próximo inverno.",
+      "acao_requerida": "Cortar ramos secos, cruzados e voltados para dentro da copa, e aplicar a adubação completa (húmus mais NPK 10-10-10) para estimular um surto de folhas forte"
+    }
+  ]
+}

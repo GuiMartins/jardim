@@ -1,0 +1,231 @@
+{
+  "planta": {
+    "nome_comum": "Baunilha",
+    "nome_cientifico": "Vanilla planifolia",
+    "descricao": "Orquídea trepadeira nativa das matas tropicais das Américas, cuja fava curada é a baunilha verdadeira. Em vaso, com um tutor alto e meia-sombra, ela forma um cipó verde e carnudo decorativo. Começa a florescer depois de 3 a 4 anos, e cada flor precisa ser polinizada à mão para virar fava.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo de plástico ou cerâmica com pelo menos 30 cm de diâmetro e 25 cm de profundidade, com vários furos no fundo, e um tutor firme de 1,5 a 2 m (estaca revestida de fibra de coco ou de musgo) fincado no centro",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 2,
+    "substrato_recomendado": "40% casca de pinus média, 30% fibra de coco, 20% húmus de minhoca ou composto de folhas, 10% carvão vegetal picado; solto, aerado e rico em matéria orgânica, como o chão de mata",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Estaca",
+      "dia_inicio": 1,
+      "dia_fim": 45,
+      "descricao": "Use uma estaca de 60 a 100 cm com 6 a 8 nós, deixada 5 a 7 dias à sombra para o corte cicatrizar. Tire as folhas dos 2 nós de baixo, deite esses nós sobre o substrato cobertos de leve e amarre o resto da estaca ao tutor. Raízes brancas surgem nos nós entre a 3ª e a 6ª semana; a estaca pode enrugar um pouco nesse período. Um broto novo na ponta ou numa axila indica que pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 46,
+      "dia_fim": 365,
+      "descricao": "O cipó volta a crescer e lança raízes aéreas em cada nó, que se agarram ao tutor. Em boa temperatura cresce de 50 cm a 1 m no primeiro ano. Folhas grossas e verde-escuras indicam boa saúde; folhas amarelas e moles, excesso de água ou frio."
+    },
+    {
+      "fase_id": "crescimento_vegetativo",
+      "nome": "Crescimento Vegetativo",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "Fase de ganhar comprimento e grossura no caule. Quando a ponta passar do alto do tutor, curve o cipó para baixo e deixe-o pendurado ou enrole em volta do tutor: o ramo que desce acumula reservas e é onde a planta costuma florescer. Não corte a ponta sem necessidade."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Com 3 m ou mais de cipó e caule da grossura de um lápis, a planta pode florescer. O ano típico: cresce no verão, desacelera no inverno, emite cachos de botões no fim do inverno e floresce na primavera (setembro a novembro). Cada flor abre uma única manhã e precisa ser polinizada à mão. As favas levam de 8 a 9 meses para amadurecer e passam por cura antes do uso."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca da baunilha",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 45,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar só até umedecer, sem deixar água parada no pratinho. Borrife também a estaca e o tutor. A estaca sem raiz perde água e morre se o substrato secar por completo, mas apodrece se ficar encharcada.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a baunilha",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho. Molhe também o tutor de fibra para as raízes aéreas. No inverno ou abaixo de 18 °C, espace para a cada 7 a 10 dias; em dias quentes e secos, borrife as folhas pela manhã.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_foliar",
+      "titulo": "Adubar a baunilha",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo para orquídeas NPK 20-20-20 na metade da dose do rótulo (cerca de 0,5 g por litro) e regue o substrato úmido e borrife o tutor. Da planta adulta, a partir de julho, troque por uma fórmula com mais fósforo (10-30-20) para favorecer a floração. Suspenda de maio a agosto se a temperatura ficar abaixo de 18 °C.",
+      "critica": false
+    },
+    {
+      "id": "amarrar_cipo",
+      "titulo": "Guiar o cipó no tutor",
+      "tipo": "TUTORAGEM",
+      "frequencia_dias": 21,
+      "dia_inicio_ciclo": 46,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Amarre com fita macia ou barbante de algodão os nós novos que cresceram soltos, encostando as raízes aéreas no tutor. Se a ponta já passou do alto, curve-a para baixo em vez de deixá-la solta no ar.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar cipó e raízes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure manchas marrons e moles no caule perto do substrato, raízes escuras e murchas, bolinhas brancas ou marrons no verso das folhas e brotos roídos. Aperte o caule na base: deve estar firme.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso sem soltar o cipó do tutor, remova o substrato velho e raízes podres e replante no substrato novo, em vaso 5 cm maior se as raízes tomaram o vaso. A casca de pinus se decompõe em uns 2 anos e passa a reter água demais.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 35,
+      "titulo": "A estaca pegou?",
+      "mensagem": "Por volta da 5ª semana, os nós enterrados devem ter raízes brancas e firmes.",
+      "acao_requerida": "Afastar o substrato de um nó com cuidado e olhar; se o nó estiver preto e mole, cortar a parte podre e replantar o restante da estaca"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de baunilha",
+      "mensagem": "O cipó deve estar perto do alto do tutor. A baunilha floresce melhor em ramos que descem.",
+      "acao_requerida": "Medir o cipó; se passou do tutor, curvar a ponta para baixo e prendê-la pendurada ou enrolada"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Idade de florescer",
+      "mensagem": "Com 3 anos e 3 m ou mais de cipó, a baunilha pode dar os primeiros cachos de botões no fim do inverno.",
+      "acao_requerida": "Conferir se o caule tem a grossura de um lápis e se há ramos pendentes; manter a planta com mais luz filtrada, sem sol forte do meio-dia"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão por excesso de rega (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Caule amolece e escurece a partir da base; raízes marrons que se desfazem ao toque; folhas amarelas e murchas mesmo com o substrato úmido",
+      "prevencao_tratamento": "Só regar com o substrato seco a 3 cm, nunca deixar água no pratinho e manter o substrato aerado. Cortar a parte podre com tesoura limpa, polvilhar canela ou carvão no corte e replantar a parte sadia como nova estaca"
+    },
+    {
+      "nome": "Fusariose da baunilha (Fusarium oxysporum f. sp. vanillae)",
+      "tipo": "DOENCA",
+      "sintomas": "Raízes e caule com lesões marrons secas que avançam; o cipó murcha a partir de um ponto e seca em partes",
+      "prevencao_tratamento": "Usar estacas de planta sadia, ferramentas desinfetadas com álcool e substrato novo; remover e descartar o trecho doente com margem de um nó sadio"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras e afundadas em folhas, caule e favas, às vezes com anéis rosados em tempo úmido",
+      "prevencao_tratamento": "Molhar o substrato, não as folhas, no fim da tarde; boa ventilação; retirar folhas manchadas e aplicar fungicida cúprico se espalhar"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças marrons ou flocos brancos no verso das folhas e nas axilas; folhas amarelando e melado pegajoso",
+      "prevencao_tratamento": "Remover com cotonete com álcool 70%; em infestação, óleo de neem a 0,5% com detergente neutro no fim da tarde a cada 7 dias, 3 aplicações"
+    },
+    {
+      "nome": "Lesmas e caracóis",
+      "tipo": "PRAGA",
+      "sintomas": "Pontas de brotos e raízes aéreas roídas; trilhas brilhantes no vaso e no tutor",
+      "prevencao_tratamento": "Catar à noite com lanterna, espalhar casca de ovo moída ou borra de café na superfície do substrato e manter o vaso afastado do chão"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas amarelo-esbranquiçadas ou marrons e secas nas folhas do lado que recebe sol forte",
+      "prevencao_tratamento": "Deixar só sol da manhã ou luz filtrada (50 a 70% de sombra); aclimatar aos poucos ao mudar de lugar"
+    },
+    {
+      "nome": "Dano de frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com áreas translúcidas que depois escurecem; pontas do cipó murcham após noite fria",
+      "prevencao_tratamento": "Abaixo de 15 °C, levar o vaso para dentro de casa perto de uma janela clara e reduzir a rega"
+    },
+    {
+      "nome": "Queda de favas jovens",
+      "tipo": "DISTURBIO",
+      "sintomas": "Favas amarelam e caem nas primeiras semanas após a polinização",
+      "prevencao_tratamento": "Não deixar mais de 8 a 10 favas por cacho nem mais de 10 cachos por planta; manter a rega regular e a adubação durante a formação"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "O frio está chegando",
+      "mensagem": "A baunilha é tropical: abaixo de 15 °C para de crescer e abaixo de 10 °C as folhas se danificam.",
+      "acao_requerida": "Deixar o vaso num canto abrigado do vento; nas noites com previsão abaixo de 15 °C, levar para dentro de casa perto de uma janela clara"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio a planta quase para de crescer e as raízes apodrecem com facilidade em substrato úmido. Numa planta adulta, a secura moderada deste período ajuda a induzir os botões.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 4 cm (cerca de a cada 7 a 10 dias) e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Época de flores: polinize à mão",
+      "mensagem": "Numa planta adulta, os cachos abrem uma ou duas flores por dia, e cada flor dura só uma manhã. Sem polinização manual não se forma fava, porque a abelha que poliniza a baunilha não vive aqui.",
+      "acao_requerida": "Se houver flores abertas, pela manhã levantar com um palito a lingueta (rostelo) que separa as partes da flor e encostar o pólen na parte feminina com o dedo; marcar com um fio as flores polinizadas"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Hora de colher as favas",
+      "mensagem": "As favas polinizadas na primavera amadurecem de 8 a 9 meses depois; ainda verdes, não têm aroma algum.",
+      "acao_requerida": "Se houver favas, colher uma a uma quando a ponta ficar amarela e começar a abrir; escaldar em água a 65 °C por 3 minutos e alternar sol ao dia com enrolar num pano à noite por 2 semanas, depois secar à sombra por 1 a 2 meses"
+    }
+  ]
+}

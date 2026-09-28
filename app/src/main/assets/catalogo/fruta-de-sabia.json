@@ -1,0 +1,200 @@
+{
+  "planta": {
+    "nome_comum": "Fruta-de-sabiá",
+    "nome_cientifico": "Iochroma arborescens (sin. Acnistus arborescens)",
+    "descricao": "Arvoreta nativa da Mata Atlântica, da família do tomate, de crescimento muito rápido, com cachos de flores tubulares branco-esverdeadas presos direto nos galhos e frutinhos alaranjados que atraem sabiás, sanhaços e outros pássaros. Em vaso grande e com poda anual fica como um arbusto de 1,5 a 2,5 m. Os frutos são para os pássaros: como em outras solanáceas, não recomende o consumo.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e pesado (cerâmica, cimento ou plástico grosso) com pelo menos 45 cm de diâmetro e 45 cm de profundidade e vários furos no fundo; a planta cresce rápido e tomba em vaso leve com vento",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% areia grossa ou casca de pinus fina; mais 1 colher de sopa de farinha de ossos por 10 L",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo. Pode murchar nas horas quentes e perder algumas folhas de baixo nos primeiros dias. A fase acabou quando surgem folhas novas, grandes e firmes, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Crescimento acelerado: a planta pode ganhar 50 cm ou mais em poucos meses e as folhas ficam bem grandes. Com cerca de 1 m faça a poda de formação para ramificar. Se o caule inclinar com o peso da copa, prenda num tutor de bambu com fita larga, sem apertar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Arbusto formado. No ano típico, desacelera e perde parte das folhas no inverno, floresce do fim do inverno à primavera (flores nos galhos, não só nas pontas) e frutifica da primavera ao verão, quando os pássaros começam a visitar. Depois da frutificação vem a poda anual para controlar a altura, e a cada dois anos o substrato é renovado."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda recém-plantada",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Acima de 30 °C, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a fruta-de-sabiá",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão, com a planta grande, pode precisar de rega diária; folhas murchas no fim da tarde que se recuperam à noite indicam que está no limite. No inverno, espace para a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a fruta-de-sabiá",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 xícaras de húmus de minhoca ou composto mais 1 colher de sopa de farinha de ossos pela superfície de um vaso de 50 L, longe do caule, e regue em seguida. De maio a julho, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e brotos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas das pontas e procure moscas-brancas que voam ao sacudir, pulgões nos brotos, teias finas de ácaro, cochonilhas nos galhos e folhas roídas por lagartas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, corte 3 a 5 cm das raízes que dão voltas no fundo, troque um terço do substrato por mistura nova e reduza a copa em um terço para compensar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Firme a muda",
+      "mensagem": "A fruta-de-sabiá cresce rápido e tem folhas grandes que fazem vela com o vento; em vaso, ela tomba antes de enraizar.",
+      "acao_requerida": "Enterrar um tutor de bambu ao lado do caule, sem ferir o torrão, e amarrar com fita larga em forma de 8"
+    },
+    {
+      "dia_disparo": 90,
+      "titulo": "Poda de formação",
+      "mensagem": "Se a muda passou de 1 m com uma haste só, é hora de fazê-la ramificar, senão vira uma vara fina e alta.",
+      "acao_requerida": "Cortar a ponta da haste principal logo acima de uma folha, na altura em que quer a copa (cerca de 1 m); deixar 3 a 4 brotos laterais se desenvolverem"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; base do caule escura e mole; cheiro de mofo no substrato",
+      "prevencao_tratamento": "Regar só com o substrato seco a 4 cm, esvaziar o pratinho e manter os furos livres. Planta afetada: tirar do vaso, cortar raízes escuras e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Mosca-branca (Bemisia tabaci)",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao sacudir os galhos; folhas pegajosas, amareladas e com fumagina preta",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto da planta; óleo de neem a 0,5% com detergente neutro no verso das folhas no fim da tarde, a cada 5 dias, 3 aplicações"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias verdes ou pretas nos brotos e botões; folhas novas enroladas",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se voltar, calda de sabão neutro a 1% ou óleo de neem a 0,5%"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos claros, aspecto empoeirado e teias finas no verso, principalmente em tempo seco",
+      "prevencao_tratamento": "Borrifar água no verso das folhas nos dias secos; enxofre molhável ou óleo de neem a cada 7 dias até sumir"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos ou marrons presos nos galhos e na nervura das folhas; formigas sobem e descem",
+      "prevencao_tratamento": "Remover com escova macia ou algodão com álcool; em infestação, óleo mineral a 1% com sabão neutro"
+    },
+    {
+      "nome": "Lagartas",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro, bolinhas escuras de fezes nas folhas de baixo",
+      "prevencao_tratamento": "Catar à mão no fim da tarde; em ataque grande, Bacillus thuringiensis (Dipel) nas folhas"
+    },
+    {
+      "nome": "Queda de folhas por falta de água ou frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas grandes amarelam e caem em massa após um dia de murcha forte ou uma noite fria",
+      "prevencao_tratamento": "Não deixar o vaso secar por completo no calor; no inverno a queda parcial é normal e a planta rebrota na primavera, sem precisar adubar para compensar"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada",
+      "mensagem": "A fruta-de-sabiá é tropical: geada queima folhas e ponteiros, e planta em vaso sofre mais que no chão.",
+      "acao_requerida": "Nas noites com previsão abaixo de 5 °C, levar o vaso para perto de uma parede ou sob beiral, ou cobrir a copa com TNT, retirando pela manhã"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Reduzir a rega no inverno",
+      "mensagem": "A planta cresce pouco e perde parte das folhas; o substrato demora mais para secar e a raiz apodrece fácil.",
+      "acao_requerida": "Regar só quando o substrato estiver seco a 5 cm, cerca de uma vez por semana, e suspender a adubação"
+    },
+    {
+      "meses": [
+        8,
+        9
+      ],
+      "titulo": "Começo da floração",
+      "mensagem": "Os cachos de flores tubulares começam a surgir ao longo dos galhos. É a fase em que a planta mais precisa de água e sol.",
+      "acao_requerida": "Voltar à rega normal, retomar a adubação e não podar agora, para não cortar os ramos com botões"
+    },
+    {
+      "meses": [
+        3
+      ],
+      "titulo": "Poda anual",
+      "mensagem": "Com os frutos já comidos pelos pássaros, a poda controla a altura no vaso e estimula ramos novos, que florescem no próximo ciclo.",
+      "acao_requerida": "Encurtar os galhos em um terço a metade, cortando acima de um nó, e retirar ramos secos, cruzados e os que crescem para dentro da copa"
+    }
+  ]
+}

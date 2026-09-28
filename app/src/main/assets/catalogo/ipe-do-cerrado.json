@@ -1,0 +1,197 @@
+{
+  "planta": {
+    "nome_comum": "Ipê-do-cerrado",
+    "nome_cientifico": "Handroanthus ochraceus",
+    "descricao": "Árvore nativa do Cerrado que perde as folhas na seca e se cobre de flores amarelas no fim do inverno. Em vaso grande fica bem menor que na natureza e costuma florescer só a partir do 3º ao 5º ano, mas aguenta bem a seca e o sol forte de varandas e terraços.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de cerâmica, cimento ou plástico grosso, com pelo menos 45 cm de diâmetro e 45 cm de profundidade, pesado para não tombar com o vento e com vários furos no fundo",
+    "volume_minimo_litros": 50,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 5,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% areia grossa lavada, 15% húmus de minhoca, 10% casca de pinus fina ou perlita; mistura bem drenada e pouco rica, parecida com o solo arenoso do Cerrado",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda se ajusta ao vaso novo. Algumas folhas podem amarelar e cair nos primeiros dias. A fase acabou quando surgirem folhas novas, verde-claras e aveludadas, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e o caule engrossa. O crescimento é lento: 20 a 40 cm no primeiro ano. Na seca (maio a setembro) a muda pode perder quase todas as folhas, e isso é normal. Confira se o caule continua verde ao raspar de leve com a unha."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1460,
+      "descricao": "A árvore forma a copa e o tronco engrossa até ficar lenhoso. Troca as folhas todo ano na seca. As primeiras flores costumam aparecer a partir do 3º ano, em julho ou agosto, nos galhos sem folhas."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1461,
+      "dia_fim": null,
+      "descricao": "Ano típico: folhas e crescimento de outubro a abril, com as chuvas. De maio a julho as folhas caem. Em julho e agosto vem a floração amarela, que dura de 1 a 2 semanas. Em setembro saem as vagens com sementes aladas, e em seguida brotam as folhas novas. Em vaso, a árvore fica entre 1,5 e 3 m."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar o ipê recém-plantado",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda não pode secar por completo neste mês, mas também não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o ipê",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e só regue se estiver seco. Nesse caso, molhe até escorrer pelos furos. Com calor acima de 32 °C, confira a cada 2 dias. Sem folhas, na seca, regue só a cada 7 a 10 dias: a árvore está em repouso e o excesso apodrece a raiz.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o ipê",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 3 colheres de sopa de húmus de minhoca e 1 colher de sopa de farinha de ossos na borda do vaso de 50 L, sem encostar no caule, e regue em seguida. De maio a agosto, com a árvore sem folhas ou em floração, pule esta adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pó alaranjado (ferrugem), lagartas ou folhas roídas, e pontos brancos ou marrons grudados nos ramos (cochonilha). Olhe também a base do caule, que deve estar firme e sem manchas escuras e moles.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e outubro, antes de brotar. Tire a árvore do vaso, corte 3 a 5 cm das raízes que dão volta no fundo e nas laterais e replante no mesmo vaso ou num 20% maior, com substrato novo. Regue bem e deixe em meia-sombra por 1 semana.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Firmar a muda",
+      "mensagem": "Muda de ipê tem caule fino e balança com o vento, e isso rompe as raízes novas.",
+      "acao_requerida": "Enterrar um tutor de bambu a 5 cm do caule e amarrar a muda com fita de pano em forma de 8, sem apertar"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Adaptação concluída",
+      "mensagem": "Se já saíram folhas novas, a muda pegou. A partir de agora a rega fica mais espaçada.",
+      "acao_requerida": "Conferir se há brotação nova nas pontas dos ramos e começar a regar só quando o substrato estiver seco a 5 cm"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de ipê",
+      "mensagem": "O caule já deve estar lenhoso e firme o bastante para ficar sem apoio.",
+      "acao_requerida": "Tirar o tutor e a amarração, que já podem estar estrangulando o caule"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, a base do caule fica escura e mole, e o substrato cheira a mofo",
+      "prevencao_tratamento": "Só regue com o substrato seco a 5 cm e nunca deixe água no pratinho, sobretudo na seca, quando a árvore está sem folhas. Se já apareceu, tire do vaso, corte as raízes escuras e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Ferrugem do ipê (Prospodium spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó alaranjado no verso das folhas e manchas amareladas na face de cima; as folhas caem antes da hora",
+      "prevencao_tratamento": "Deixe o vaso em local ventilado e molhe só o substrato, não as folhas. Retire e descarte as folhas atacadas. Se espalhar, pulverize calda bordalesa a 1% a cada 15 dias"
+    },
+    {
+      "nome": "Lagarta desfolhadora",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas roídas das bordas para dentro, às vezes só com a nervura, e bolinhas escuras de fezes no vaso",
+      "prevencao_tratamento": "Cate as lagartas à mão. Em infestação grande, pulverize Bacillus thuringiensis no fim da tarde e repita após 7 dias"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças brancas, cinzas ou marrons grudadas nos ramos e no verso das folhas; brotação fraca e folhas pegajosas",
+      "prevencao_tratamento": "Remova com escova macia ou algodão com álcool 70%. Depois pulverize óleo de neem a 0,5% com detergente neutro a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Raiz enovelada (vaso pequeno)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Raízes saindo pelos furos, a água escorre logo sem molhar o torrão, a árvore para de crescer e seca rápido entre as regas",
+      "prevencao_tratamento": "Use vaso de pelo menos 50 L e renove o substrato a cada 2 anos, podando as raízes que dão volta no vaso"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Chegou a seca: o ipê vai perder as folhas",
+      "mensagem": "É normal a árvore amarelar e ficar pelada até agosto. Ela entra em repouso e precisa de pouca água; regar como no verão apodrece a raiz.",
+      "acao_requerida": "Espaçar a rega para a cada 7 a 10 dias, com o substrato seco a 5 cm, e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        7,
+        8
+      ],
+      "titulo": "Época de floração do ipê",
+      "mensagem": "Árvores com 3 anos ou mais costumam florescer agora, nos galhos sem folhas. Em plantas mais novas é comum não sair flor.",
+      "acao_requerida": "Manter o vaso no sol pleno e dar uma rega a mais na semana em que os botões abrirem, sem encharcar"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Poda de formação",
+      "mensagem": "Depois da floração e antes das folhas novas é a hora certa de ajustar a copa, porque a árvore cicatriza rápido com a brotação que vem.",
+      "acao_requerida": "Cortar ramos secos, cruzados ou que crescem para dentro, rente à base, e encurtar em até um terço os galhos longos demais para o vaso"
+    },
+    {
+      "meses": [
+        10
+      ],
+      "titulo": "Voltaram as chuvas: hora de retomar",
+      "mensagem": "Com o calor e as folhas novas, o ipê volta a crescer e a gastar água.",
+      "acao_requerida": "Voltar à rega a cada 3 a 4 dias, conferindo o substrato, e retomar a adubação"
+    }
+  ]
+}

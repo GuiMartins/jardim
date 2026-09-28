@@ -1,0 +1,202 @@
+{
+  "planta": {
+    "nome_comum": "Abre-caminho",
+    "nome_cientifico": "Justicia gendarussa",
+    "descricao": "Arbusto perene de folhas estreitas e verde-escuras, com caules arroxeados e pequenas flores brancas pintadas de roxo na primavera e no verão. É muito cultivado em vaso na porta de casa por tradição popular e religiosa, e é resistente, pega fácil de estaca e aceita poda para ficar compacto.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica com pelo menos 30 cm de diâmetro e 25 cm de profundidade, com furos no fundo; a estaca pode ser enraizada direto nele",
+    "volume_minimo_litros": 15,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 2,
+    "horas_sol_diarias_recomendadas": 4,
+    "substrato_recomendado": "50% terra vegetal, 30% húmus de minhoca, 20% areia grossa ou perlita; para enraizar a estaca, use por cima uma camada de 5 cm de areia grossa misturada meio a meio com substrato",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento da Estaca",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Enterre 5 cm de uma estaca de 15 a 20 cm, tirada de ramo semilenhoso, deixando só 2 a 4 folhas cortadas pela metade. Mantenha em luz clara sem sol direto. Folhas novas na ponta entre a 3ª e a 4ª semana indicam que as raízes se formaram; a estaca murcha e preta indica que apodreceu."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 150,
+      "descricao": "A planta passa a soltar brotos laterais e os caules ganham a cor arroxeada. Aos poucos, leve o vaso para um lugar com sol da manhã. Despontar as pontas nesta fase forma uma touceira cheia em vez de uma vara comprida."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "Arbusto de 60 cm a 1,2 m em vaso. Cresce e floresce da primavera ao fim do verão, desacelera no outono e fica quase parado no inverno, quando pode perder algumas folhas com o frio. Pede poda de renovação no fim do inverno e troca de substrato a cada dois anos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar a estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Toque a superfície: se o primeiro centímetro estiver seco, regue devagar até escorrer pelos furos. Sem raiz, a estaca não consegue buscar água e seca em um ou dois dias. Acima de 28 °C, confira todo dia. Não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o abre-caminho",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue até escorrer pelos furos. Folhas caídas e moles são sinal de sede. No verão quente, confira a cada 2 dias; no inverno, espace para a cada 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar o abre-caminho",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca ou 1 colher de chá de NPK 10-10-10 sobre o substrato de um vaso de 15 L, longe do caule, e regue em seguida. De maio a julho, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "desponte_formacao",
+      "titulo": "Despontar os ramos",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": 150,
+      "instrucoes": "Com tesoura limpa ou com os dedos, corte a ponta de cada ramo com mais de 15 cm, logo acima de um par de folhas. Cada corte solta dois brotos novos e deixa a planta mais cheia. As pontas cortadas podem virar novas estacas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e caules",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e olhe as axilas e os brotos novos. Procure bolinhas brancas de algodão (cochonilha), insetos verdes agrupados (pulgão), mosquinhas brancas que voam quando você mexe e pontinhos amarelados com teia fina no verso (ácaro).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Tire a planta do vaso, solte com os dedos e retire cerca de um terço do substrato velho e das raízes enroladas no fundo. Replante com substrato novo, no mesmo vaso ou num 5 cm maior. Prefira fazer isso entre agosto e setembro e deixe o vaso 1 semana à meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "A estaca enraizou?",
+      "mensagem": "Com cerca de um mês, a estaca costuma estar enraizada. A partir de agora ela aguenta mais luz e regas mais espaçadas.",
+      "acao_requerida": "Puxar a estaca de leve: se ela resistir, está enraizada; se não houver folhas novas e ela soltar fácil, faça outra estaca"
+    },
+    {
+      "dia_disparo": 150,
+      "titulo": "Planta formada",
+      "mensagem": "A touceira já está formada e não precisa mais de desponte todo mês. Daqui em diante, a poda é uma vez por ano, no fim do inverno.",
+      "acao_requerida": "Deixar o vaso no lugar definitivo, com 3 a 4 horas de sol da manhã"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz (Pythium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido; base do caule escura e mole; raízes marrons que se desfazem",
+      "prevencao_tratamento": "Regue só com o substrato seco a 3 cm de profundidade, esvazie o pratinho e mantenha os furos desentupidos. Na planta afetada, corte as raízes podres e replante em substrato novo; salve pontas sadias como estacas"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de aspecto algodoado nas axilas das folhas e nos caules; folhas pegajosas e fumagina preta",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo de neem a 0,5% com algumas gotas de detergente neutro no fim da tarde, a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos nos brotos novos, que ficam enrugados e deformados",
+      "prevencao_tratamento": "Jato de água forte nos brotos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Mosca-branca",
+      "tipo": "PRAGA",
+      "sintomas": "Nuvem de mosquinhas brancas ao mexer na planta; folhas amareladas e pegajosas",
+      "prevencao_tratamento": "Armadilha adesiva amarela perto do vaso e óleo de neem no verso das folhas a cada 5 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teia fina no verso; comum em lugar quente, seco e abafado",
+      "prevencao_tratamento": "Borrife água no verso das folhas nos dias secos e lave a planta com água; se persistir, óleo de neem ou calda de enxofre, sem aplicar sob sol"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas nas folhas viradas para o sol, principalmente depois de mudar o vaso de lugar",
+      "prevencao_tratamento": "Dê preferência ao sol da manhã e faça a mudança para um lugar mais claro aos poucos, ao longo de 1 a 2 semanas"
+    },
+    {
+      "nome": "Queda de folhas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas amarelam, escurecem e caem em noites abaixo de 10 °C; pontas dos ramos secam com geada",
+      "prevencao_tratamento": "Nos meses frios, leve o vaso para perto de uma parede ou para debaixo de uma cobertura e reduza a rega; os ramos secos são retirados na poda de agosto"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "A planta está quase parada e sente noites abaixo de 10 °C. Substrato encharcado no frio é a principal causa de podridão.",
+      "acao_requerida": "Encostar o vaso numa parede protegida ou debaixo de uma cobertura, espaçar a rega para a cada 5 a 7 dias e suspender a adubação"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de renovação",
+      "mensagem": "No fim do inverno, uma poda firme faz a planta brotar cheia e compacta na primavera e florescer mais.",
+      "acao_requerida": "Cortar todos os ramos a um terço ou metade da altura, logo acima de um par de folhas, e retirar os galhos secos ou finos demais"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Calor forte: regas mais frequentes",
+      "mensagem": "No auge do verão, o vaso seca rápido e a planta murcha à tarde se faltar água.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e proteger o vaso do sol da tarde"
+    }
+  ]
+}

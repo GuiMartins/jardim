@@ -1,0 +1,189 @@
+{
+  "planta": {
+    "nome_comum": "Planta-alumínio",
+    "nome_cientifico": "Pilea cadierei",
+    "descricao": "Folhagem de origem vietnamita, com folhas verde-escuras marcadas por faixas prateadas em relevo que parecem pintadas com alumínio. Cresce rápido e é fácil de cuidar em ambiente interno claro, mas com dois ou três anos fica comprida e sem folhas na base. Por isso vale renová-la por estacas de tempos em tempos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico ou cerâmica esmaltada com 14 a 16 cm de diâmetro e 12 a 15 cm de profundidade, com furos no fundo; a raiz é rasa e vaso grande demais fica encharcado",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "50% substrato comercial para plantas, 20% húmus de minhoca, 30% perlita ou casca de pinus fina; deve ficar fofo e úmido sem empapar",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda sai da estufa e estranha a casa: algumas folhas de baixo podem amarelar e cair. Deixe-a perto de uma janela clara, sem sol forte da tarde e longe de vento de ar-condicionado. A fase termina quando surgem folhas novas prateadas nas pontas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 90,
+      "descricao": "Já no vaso definitivo, a planta enraíza e lança hastes novas. Belisque as pontas para ela ramificar desde cedo; sem isso, forma poucas hastes compridas. A fase termina quando a touceira fica cheia e as raízes ocupam o vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 91,
+      "dia_fim": null,
+      "descricao": "Cresce bastante da primavera ao outono e quase para no inverno, quando pede menos água e nenhum adubo. Pode soltar pequenas flores rosadas sem valor ornamental no verão. Com dois ou três anos, as hastes perdem as folhas da base, e o melhor é enraizar estacas e recomeçar."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a planta-alumínio",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 1 a 2 cm no substrato; se estiver seco, regue até escorrer pelos furos e esvazie o pratinho após 15 minutos. Nos dias acima de 30 °C, confira a cada 2 dias. De junho a agosto, espere secar 3 cm (cerca de a cada 5 a 7 dias). Folhas murchas e caídas indicam falta de água; base das hastes escura e mole indica excesso.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a planta-alumínio",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dilua adubo líquido NPK equilibrado (ex.: 10-10-10) na metade da dose do rótulo e regue com ele o substrato já úmido. Outra opção é espalhar 1 colher de sopa de húmus na superfície. De junho a agosto, pule a adubação, porque a planta está parada.",
+      "critica": false
+    },
+    {
+      "id": "beliscar_pontas",
+      "titulo": "Beliscar as pontas",
+      "tipo": "PODA",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com os dedos ou uma tesoura limpa, corte o último par de folhas das hastes mais compridas, logo acima de um nó. Assim ela brota dos lados e fica compacta. As pontas cortadas enraízam num copo com água em 2 a 3 semanas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e hastes",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire algumas folhas e procure teias finas e pontinhos amarelos (ácaro), algodãozinho branco nas axilas (cochonilha) e a base das hastes escura ou mole (podridão).",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar o substrato ou renovar a planta",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência entre setembro e novembro, tire a planta, solte as raízes enoveladas e replante com substrato novo num vaso até 2 cm maior. Se as hastes estiverem sem folhas na base, faça estacas de 8 a 10 cm e plante 4 a 5 delas juntas no lugar da planta velha.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 14,
+      "titulo": "Hora do vaso definitivo",
+      "mensagem": "A muda já se acostumou à casa. O vasinho de viveiro costuma estar cheio de raiz e seca rápido demais.",
+      "acao_requerida": "Transplantar para um vaso de 14 a 16 cm com furos, camada de drenagem e o substrato recomendado, sem enterrar as hastes mais fundo do que estavam, e regar em seguida"
+    },
+    {
+      "dia_disparo": 120,
+      "titulo": "Faça uma reserva por estacas",
+      "mensagem": "A planta-alumínio envelhece rápido e é sensível ao frio. Ter algumas estacas enraizadas garante uma planta nova se a principal decair.",
+      "acao_requerida": "Cortar 3 pontas de 8 cm, tirar as folhas de baixo e enraizá-las em água ou substrato úmido, na sombra clara"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Rhizoctonia)",
+      "tipo": "DOENCA",
+      "sintomas": "Hastes escurecem e amolecem rente ao substrato, folhas murcham mesmo com a terra úmida e o substrato tem cheiro azedo",
+      "prevencao_tratamento": "Regar só com a superfície seca, nunca deixar água no pratinho e usar vaso com furos. Se aparecer, cortar e enraizar as pontas sadias e descartar a base podre com o substrato"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos amarelos nas folhas, que perdem o prateado e ficam foscas; teias finas no verso e entre as hastes, sobretudo em ar seco",
+      "prevencao_tratamento": "Aumentar a umidade ao redor (bandeja com pedras e água) e lavar as folhas com jato fraco no chuveiro. Se persistir, aplicar óleo de neem a 0,5% no verso das folhas a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos parecidos com algodão nas axilas das folhas e na base das hastes; folhas pegajosas e amarelando",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70% e repetir semanalmente; em infestação forte, óleo de neem com uma gota de detergente neutro"
+    },
+    {
+      "nome": "Queda de folhas pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas escurecem, murcham e caem de uma vez depois de noites abaixo de 10 °C ou de corrente de ar frio",
+      "prevencao_tratamento": "No inverno, manter dentro de casa, longe de vidro gelado à noite e de ar-condicionado; cortar as hastes secas e esperar a rebrota na primavera"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Hastes compridas e finas, com espaço grande entre as folhas, que ficam menores e com menos prateado",
+      "prevencao_tratamento": "Aproximar de uma janela clara ou dar 1 a 2 horas de sol da manhã e beliscar as pontas; se a planta já estiver muito comprida, renovar por estacas"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas pardas e secas no centro das folhas e perda do desenho prateado depois de sol forte",
+      "prevencao_tratamento": "Evitar sol direto depois das 10 h; cortar as folhas muito queimadas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteja do frio",
+      "mensagem": "Abaixo de 10 °C a planta-alumínio perde as folhas e pode apodrecer. No frio ela quase para de crescer e bebe pouco.",
+      "acao_requerida": "Deixar dentro de casa, longe de janelas frias à noite, espaçar as regas até secarem 3 cm do substrato e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: poda de renovação",
+      "mensagem": "Agora a planta volta a crescer. É a melhor época para limpar os estragos do inverno e deixá-la cheia de novo.",
+      "acao_requerida": "Cortar as hastes peladas pela metade, logo acima de um nó, usar as pontas como estacas e retomar a adubação mensal"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: cuidado com ar seco e sol",
+      "mensagem": "Calor e ar-condicionado favorecem o ácaro, e o sol da tarde queima as folhas.",
+      "acao_requerida": "Afastar do sol depois das 10 h, pôr o vaso sobre bandeja com pedras e água e conferir o verso das folhas procurando teias"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "planta": {
+    "nome_comum": "Chuva-de-ouro",
+    "nome_cientifico": "Oncidium spp. (híbridos, ex.: Oncidium Gower Ramsey e Oncidium Sweet Sugar)",
+    "descricao": "Orquídea epífita que dá hastes longas e ramificadas com dezenas de flores amarelas pequenas, lembrando uma chuva dourada. Descreve os híbridos amarelos vendidos em floriculturas e supermercados, os mais cultivados em casa no Brasil. As raízes são finas e desidratam mais rápido que as da catleia, por isso a planta pede regas mais frequentes.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou de plástico com furos no fundo e nas laterais, de 12 a 15 cm de diâmetro e 10 a 12 cm de altura. Deve caber só as raízes mais 2 a 3 cm de folga para os novos pseudobulbos",
+    "volume_minimo_litros": 1,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 1,
+    "horas_sol_diarias_recomendadas": 3,
+    "substrato_recomendado": "60% casca de pinus média (1 a 2 cm), 20% carvão vegetal em pedaços, 20% chips de coco. Deve ser solto e arejado, e as raízes precisam secar entre uma rega e outra. Não use terra",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta se ajusta à luz e à umidade da casa. Alguns botões ou flores podem cair com a mudança de ambiente. Não troque o vaso nem adube agora. A fase terminou quando as folhas continuam firmes e as pontas das raízes aparecem verdes ou prateadas, sem manchas escuras."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Surge um broto novo na base do pseudobulbo mais recente e depois engorda até virar um pseudobulbo novo. Folhas verde-claras indicam luz boa. Verde-escuras indicam pouca luz, e amareladas ou com manchas bege indicam sol demais. A fase terminou quando o pseudobulbo novo está do tamanho dos anteriores."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Todo ano forma um ou dois pseudobulbos novos, e de cada pseudobulbo maduro sai uma haste floral. A floração dos híbridos costuma cair entre o outono e a primavera e dura de 3 a 6 semanas. Quando a haste começar a crescer, prenda-a a um tutor e não mude o vaso de lugar, senão as flores se viram para o outro lado. Quando todas as flores caírem, corte a haste rente à base. Pseudobulbos velhos e enrugados, sem folhas, ainda alimentam a planta: não os corte."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a chuva-de-ouro",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm entre as cascas. Se estiver seco, leve o vaso à pia e deixe a água correr pelo substrato por 1 minuto, até escorrer pelos furos. Escorra bem antes de devolver ao lugar e nunca deixe água no pratinho. Regue pela manhã e não deixe água parada no centro do broto novo. No verão acima de 30 °C, confira a cada 2 dias. No inverno, espace para 5 a 7 dias.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_foliar",
+      "titulo": "Adubar a orquídea",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Regue antes com água pura. Depois dissolva adubo para orquídeas NPK 20-20-20 na metade da dose do rótulo (em geral 0,5 g por litro) e aplique no substrato e no verso das folhas, pela manhã. Enquanto a haste floral estiver se formando, troque por um NPK 10-30-20. De junho a agosto, adube a cada 30 dias.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e pseudobulbos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas contra a luz e procure pontinhos prateados ou teias finas (ácaro), placas brancas ou marrons presas à folha (cochonilha) e insetos agrupados na haste floral (pulgão). Aperte de leve a base dos pseudobulbos: se estiver mole ou escura, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e o vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "A casca de pinus se decompõe em uns 2 anos, retém água demais e apodrece as raízes. De preferência, troque quando um broto novo tiver de 3 a 5 cm, com as raízes novas começando a sair. Tire todo o substrato velho e corte com tesoura esterilizada as raízes moles ou ocas. Plante com o pseudobulbo mais velho encostado na borda e o broto voltado para o centro. Espere 5 dias para voltar a regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Bem-vinda, chuva-de-ouro",
+      "mensagem": "Plantas de floricultura costumam vir num vaso apertado com musgo compactado, que retém água demais para as raízes finas do Oncidium.",
+      "acao_requerida": "Escolher um lugar com luz forte e sol só da manhã, perto de uma janela a leste. Enfiar o dedo no substrato: se estiver encharcado ou compactado, anotar para trocar o vaso quando a floração acabar."
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "Início da adubação",
+      "mensagem": "A planta já se adaptou à casa e começa a formar brotos novos, que precisam de nutrientes.",
+      "acao_requerida": "Começar a adubação quinzenal com meia dose de adubo para orquídeas"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Hora de tirar o musgo compactado",
+      "mensagem": "Se ela veio em musgo ou em substrato que fica úmido por mais de 4 dias, as raízes começam a apodrecer por baixo, mesmo com a planta parecendo bem.",
+      "acao_requerida": "Se não houver flores abertas, trocar para casca de pinus com carvão num vaso de 12 a 15 cm, cortando as raízes moles. Com flores abertas, esperar a floração terminar."
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz por excesso de rega (Pythium, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "Raízes marrons, moles e ocas, cuja casca solta ao puxar. Folhas amolecem e enrugam mesmo com o substrato úmido. A base do pseudobulbo escurece",
+      "prevencao_tratamento": "Regar só quando os 2 cm de cima estiverem secos e nunca deixar água no pratinho. Tirar do vaso, cortar as raízes podres com tesoura esterilizada, polvilhar canela em pó nos cortes e replantar em casca de pinus nova"
+    },
+    {
+      "nome": "Podridão-negra (Phytophthora, Pythium)",
+      "tipo": "DOENCA",
+      "sintomas": "Mancha preta e encharcada que começa na base do broto novo ou da folha e sobe rápido, com cheiro ruim",
+      "prevencao_tratamento": "Regar pela manhã, sem deixar água parada no centro dos brotos, e manter boa ventilação. Cortar a parte afetada com margem de 1 cm de tecido sadio e aplicar fungicida à base de cobre. Isolar a planta das outras"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos prateados ou amarelados no verso das folhas, que depois ficam opacas e acinzentadas. Às vezes aparecem teias finas",
+      "prevencao_tratamento": "Aparece em ar seco e quente. Aumentar a umidade com uma bandeja de pedrisco molhado sob o vaso. Lavar o verso das folhas com jato de água e aplicar óleo de neem a 0,5% a cada 5 dias, 3 vezes"
+    },
+    {
+      "nome": "Cochonilha (escama e farinhenta)",
+      "tipo": "PRAGA",
+      "sintomas": "Placas marrons ou tufos brancos de algodão presos às folhas, à base dos pseudobulbos e às bainhas secas. As folhas ficam pegajosas",
+      "prevencao_tratamento": "Remover com cotonete embebido em álcool 70%, inclusive sob as bainhas secas do pseudobulbo. Depois aplicar óleo mineral ou de neem a 0,5% a cada 7 dias, 3 vezes"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Insetos verdes ou pretos agrupados na haste floral e nos botões. Os botões ficam deformados e caem sem abrir",
+      "prevencao_tratamento": "Jato de água ou pincel com água e sabão neutro. Se voltar, óleo de neem a 0,5% no fim da tarde, sem molhar as flores abertas"
+    },
+    {
+      "nome": "Pseudobulbos enrugados por desidratação",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pseudobulbos murchos e enrugados no sentido do comprimento, com as folhas moles. As raízes estão secas ou foram perdidas por podridão",
+      "prevencao_tratamento": "Se as raízes estiverem firmes, regar com mais frequência. Se estiverem podres, a causa é excesso de água: tratar como podridão de raiz. Um pseudobulbo que já enrugou não volta a ficar liso. Julgue pela firmeza dos pseudobulbos novos"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas bege ou esbranquiçadas, secas e depois pretas, no meio das folhas voltadas para o sol",
+      "prevencao_tratamento": "Evitar o sol direto depois das 10h e mudar a planta de lugar aos poucos. A folha queimada não se recupera, mas não precisa ser cortada enquanto tiver partes verdes"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e proteção do frio",
+      "mensagem": "No frio a planta cresce devagar e o substrato demora mais para secar. Abaixo de 10 °C, raiz úmida apodrece.",
+      "acao_requerida": "Espaçar as regas para cada 5 a 7 dias, sempre pela manhã, e adubar só uma vez por mês. Em noites abaixo de 10 °C, levar o vaso para dentro de casa, longe da janela."
+    },
+    {
+      "meses": [
+        9,
+        10
+      ],
+      "titulo": "Primavera: brotação nova",
+      "mensagem": "Com o calor voltando, a planta solta brotos novos na base. É a melhor época para trocar o vaso, se ele estiver apertado ou com o substrato esfarelando.",
+      "acao_requerida": "Voltar a regar a cada 3 dias e adubar a cada 14. Se o substrato estiver esfarelando, trocar o vaso quando o broto novo tiver de 3 a 5 cm."
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e ar seco",
+      "mensagem": "Acima de 30 °C as raízes finas do Oncidium desidratam em dois dias, e o ar seco atrai ácaros.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias, pôr uma bandeja com pedrisco molhado sob o vaso e proteger do sol da tarde."
+    }
+  ]
+}

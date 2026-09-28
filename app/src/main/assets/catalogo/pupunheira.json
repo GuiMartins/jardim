@@ -1,0 +1,204 @@
+{
+  "planta": {
+    "nome_comum": "Pupunheira",
+    "nome_cientifico": "Bactris gasipaes",
+    "descricao": "Palmeira amazônica de tronco espinhento (há variedades sem espinho, as mais usadas para palmito), cultivada pelos frutos cozidos e pelo palmito. Em vaso é cultivada como palmeira ornamental jovem: raramente frutifica antes de ir para o chão, onde produz a partir do 3º ou 4º ano e passa de 10 m.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso fundo de plástico grosso, fibra ou cimento com pelo menos 45 cm de diâmetro e 45 cm de altura, com vários furos no fundo; comece com 40 a 60 L e passe para 100 L ou mais no segundo transplante",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "50% terra vegetal, 25% composto orgânico ou húmus de minhoca, 15% areia grossa, 10% casca de pinus fina ou fibra de coco; rico em matéria orgânica, solto e que não empoce",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode amarelar a ponta de uma ou duas folhas velhas. Mantenha em meia-sombra na primeira semana e depois leve ao sol pleno aos poucos. A fase termina quando a folha central (a 'flecha', ainda fechada) volta a crescer."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a palmeira abre uma folha nova a cada 1 a 2 meses no calor, cada uma maior que a anterior. No inverno o crescimento quase para. Brotos laterais (perfilhos) podem surgir na base; é normal nessa espécie."
+    },
+    {
+      "fase_id": "planta_adulta_vaso",
+      "nome": "Palmeira Jovem em Vaso",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce forte de setembro a abril, abrindo várias folhas, e fica quase parada de junho a agosto. Folhas velhas secam e devem ser retiradas. Em vaso raramente floresce; quando o estipe engrossar e as raízes saírem pelos furos mesmo após o transplante, o ideal é levá-la para o chão se quiser frutos."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de pupunha",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. O torrão da muda nova não pode secar por inteiro, mas o prato não deve ficar com água parada.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a pupunheira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos (cerca de 5 a 8 L num vaso de 60 L). Acima de 30 °C, confira a cada 2 dias. De junho a agosto, regue só quando os 5 cm estiverem secos, o que costuma levar 5 a 7 dias.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar a pupunheira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 punhados (cerca de 300 g) de húmus ou esterco curtido e 1 colher de sopa de NPK 10-10-10 (ou adubo para palmeiras com magnésio) na borda do vaso, longe do tronco, e regue em seguida. De junho a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e flecha",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 15,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Use luvas por causa dos espinhos. Puxe de leve a flecha central: ela deve estar firme. Olhe o verso das folhas e as bainhas procurando cochonilhas, teias finas, manchas escuras ou furos, e cheire a base: odor de fermentado indica broca ou podridão.",
+      "critica": false
+    },
+    {
+      "id": "limpeza_folhas",
+      "titulo": "Retirar folhas secas",
+      "tipo": "PODA",
+      "frequencia_dias": 90,
+      "dia_inicio_ciclo": 181,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Com luvas grossas e tesoura de poda limpa, corte rente ao tronco só as folhas totalmente secas ou mais de metade amarelas. Nunca corte folhas verdes nem mexa na flecha central; ferida grande atrai a broca.",
+      "critica": false
+    },
+    {
+      "id": "troca_vaso",
+      "titulo": "Trocar vaso e substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a novembro, tire a palmeira com o torrão, solte as raízes que circulam o fundo e replante num vaso 30% a 50% maior com substrato novo, na mesma altura de antes. Não enterre o colo. Deixe 1 semana em meia-sombra.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 8,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "A primeira semana em meia-sombra reduz o choque do transplante. Agora a pupunheira precisa de sol pleno para crescer.",
+      "acao_requerida": "Levar o vaso para o local de sol direto aos poucos: 3 dias com sol só da manhã e depois sol o dia todo"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A flecha está crescendo?",
+      "mensagem": "Ao fim da adaptação, a folha central já deve ter crescido alguns centímetros. Flecha mole, escura ou que sai ao puxar é sinal de podridão-do-coração.",
+      "acao_requerida": "Conferir a flecha e, se estiver mole, reduzir a rega e seguir o tratamento de podridão-do-coração em Problemas comuns"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de pupunheira",
+      "mensagem": "Se as raízes já saem pelos furos, o vaso ficou pequeno antes do previsto. Pupunheira contida demais amarela e para de crescer.",
+      "acao_requerida": "Olhar o fundo do vaso e antecipar a troca para a próxima primavera se as raízes estiverem saindo"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão radicular por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam de baixo para cima e murcham mesmo com o substrato úmido; cheiro azedo no vaso; raízes escuras e moles",
+      "prevencao_tratamento": "Regar só com os 5 cm de cima secos, esvaziar o prato e garantir os furos livres. Se acontecer, retire do vaso, corte as raízes podres e replante em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Podridão-do-coração (Phytophthora palmivora)",
+      "tipo": "DOENCA",
+      "sintomas": "Flecha central escurece, amolece e se solta ao ser puxada, com cheiro de podre; as folhas novas param de sair",
+      "prevencao_tratamento": "Não molhar o miolo da palmeira ao regar e evitar lugar abafado. No início, retire a parte podre e aplique fungicida cúprico (oxicloreto de cobre) no miolo; se o meristema morrer, a haste principal não se recupera, mas perfilhos da base podem assumir"
+    },
+    {
+      "nome": "Broca-do-olho (Rhynchophorus palmarum)",
+      "tipo": "PRAGA",
+      "sintomas": "Galerias e serragem úmida na base das folhas, cheiro de fermentado, folha central amarelando e caindo",
+      "prevencao_tratamento": "Evitar ferimentos no tronco e cortar folhas secas rente, sem rasgar. Retirar e destruir larvas encontradas; planta com o miolo tomado deve ser descartada para não virar foco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carapaças marrons ou flocos brancos no verso das folhas e nas bainhas; folhas pegajosas com fumagina preta",
+      "prevencao_tratamento": "Remover com escova macia e água com sabão neutro; se persistir, óleo mineral ou óleo de neem a 0,5% no fim da tarde, repetindo em 10 dias"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto empoeirado e teias finas no verso, sobretudo em tempo seco",
+      "prevencao_tratamento": "Molhar o verso das folhas com jato de água semanalmente no tempo seco; se persistir, óleo de neem a 0,5% a cada 7 dias"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons com borda amarela nos folíolos, que se juntam e secam a folha",
+      "prevencao_tratamento": "Retirar folíolos muito manchados, evitar molhar as folhas à noite e manter ventilação; em ataque forte, fungicida cúprico"
+    },
+    {
+      "nome": "Queima pelo frio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas com áreas marrons e secas após noites abaixo de 10 °C; geada mata a flecha",
+      "prevencao_tratamento": "No inverno, deixar o vaso encostado numa parede ao norte ou sob cobertura; em noites de geada, cobrir com manta ou levar para dentro"
+    },
+    {
+      "nome": "Deficiência de potássio e magnésio",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas mais velhas com pontas e bordas amarelo-alaranjadas ou pintas translúcidas, enquanto as novas seguem verdes",
+      "prevencao_tratamento": "Usar adubo para palmeiras com magnésio ou acrescentar 1 colher de chá de sulfato de magnésio e 1 de cloreto de potássio na adubação, regando bem em seguida"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: proteger a pupunheira",
+      "mensagem": "Palmeira tropical: abaixo de 10 °C as folhas queimam e geada mata a flecha. No frio ela quase para de crescer e bebe menos água.",
+      "acao_requerida": "Levar o vaso para um canto protegido do vento, cobrir em noites de geada, espaçar a rega para quando os 5 cm de cima estiverem secos e suspender a adubação até setembro"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Primavera: retomar o ritmo",
+      "mensagem": "Com o calor voltando, a pupunheira retoma o crescimento e precisa de mais água e nutrientes.",
+      "acao_requerida": "Voltar a conferir a rega a cada 3 dias, fazer a adubação do mês e retirar as folhas queimadas pelo frio"
+    }
+  ]
+}

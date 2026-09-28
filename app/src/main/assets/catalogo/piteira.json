@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Piteira",
+    "nome_cientifico": "Agave americana",
+    "descricao": "Suculenta de rosetas grandes, folhas grossas cinza-azuladas com espinhos na margem e na ponta; a variegada 'Marginata', de borda amarela, é a mais vendida. Aguenta sol forte, calor e esquecimento, mas a seiva irrita a pele e os espinhos ferem, então fique longe de passagens e crianças. Floresce uma vez só, depois de 10 a 30 anos, e a roseta morre deixando os filhotes da base.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso pesado e largo, de barro ou cimento, com pelo menos 35 cm de diâmetro e 30 cm de altura, vários furos no fundo e sem prato com água parada; a roseta adulta pesa e tomba vasos leves",
+    "volume_minimo_litros": 20,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra de jardim, 30% areia grossa lavada, 30% pedrisco fino ou brita nº 0; sem húmus em excesso, que segura água",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "O filhote ou a muda forma raízes novas no substrato seco. As folhas podem murchar um pouco e ficar opacas; é normal. A fase termina quando a roseta fica firme ao ser balançada de leve e o miolo mostra uma folha nova se abrindo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A roseta solta uma folha nova a cada 3 ou 4 semanas no calor e quase para no inverno. Folhas compridas, finas e tombadas indicam pouca luz; manchas bege ou marrons na face virada para o sol, queimadura por mudança brusca de lugar."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 366,
+      "dia_fim": null,
+      "descricao": "Cresce na primavera e no verão, fica quase parada no inverno. As folhas de baixo secam e podem ser retiradas; filhotes (rebentos) surgem ao redor da base e podem ser separados. Depois de muitos anos a planta solta uma haste floral de vários metros e a roseta-mãe morre; os filhotes continuam."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_estabelecimento",
+      "titulo": "Regar a piteira jovem",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 365,
+      "instrucoes": "Enfie o dedo 5 cm no substrato: só regue se estiver totalmente seco. Molhe devagar só o substrato, sem encher o miolo da roseta, até escorrer pelos furos, e esvazie o prato. De maio a agosto, regue a cada 20 a 30 dias; com chuva recente, pule.",
+      "critica": true
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a piteira",
+      "tipo": "REGA",
+      "frequencia_dias": 20,
+      "dia_inicio_ciclo": 366,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue só se estiver seco, molhando até escorrer pelos furos, sem deixar água no miolo nem no prato. Folhas enrugadas pedem água; folhas moles e translúcidas na base indicam excesso. No inverno, uma rega por mês basta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar a piteira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 90,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dissolva adubo para cactos e suculentas (ou NPK 10-10-10) na metade da dose do rótulo e aplique na rega, com o substrato já úmido. De abril a agosto, pule: adubo no frio só amolece as folhas.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a base e as folhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De luvas grossas, olhe entre as folhas da base e no verso: procure tufos brancos de algodão (cochonilha), furos com serragem escura ou cheiro de podre no coração da roseta (gorgulho) e folhas moles na base.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato e separar filhotes",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, de luvas e mangas compridas, enrole a roseta num pano ou jornal dobrado e tire do vaso. Solte o substrato velho, corte raízes podres e separe os filhotes com raiz própria. Replante no mesmo vaso ou num 5 cm mais largo, com substrato novo, e espere 7 dias antes de regar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Não regue ainda",
+      "mensagem": "As raízes machucadas no plantio apodrecem se encontrarem substrato molhado. A piteira aguenta semanas sem água.",
+      "acao_requerida": "Plantar em substrato seco, deixar em luz clara sem sol forte nesta primeira semana e só regar a partir do 8º dia"
+    },
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de ir para o sol pleno",
+      "mensagem": "Com as raízes começando a pegar, a piteira já pode receber sol direto, mas a mudança brusca queima as folhas.",
+      "acao_requerida": "Mover para o lugar definitivo com sol direto, aumentando a exposição ao longo de uma semana (manhã primeiro, depois o dia todo)"
+    },
+    {
+      "dia_disparo": 180,
+      "titulo": "Cuidado com os espinhos",
+      "mensagem": "As folhas novas já vêm com a ponta dura e afiada, que fere olhos e pernas quando o vaso fica perto de passagem.",
+      "acao_requerida": "Se o vaso estiver perto de corredor, porta ou onde brincam crianças e animais, cortar só a pontinha do espinho terminal de cada folha com alicate de unha, ou mudar o vaso de lugar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da base e das raízes (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas de baixo amolecem, ficam translúcidas ou marrons, a roseta balança solta e o substrato cheira a podre",
+      "prevencao_tratamento": "Substrato arenoso, vaso sem prato com água e rega só com o substrato seco. Na primeira folha mole, tire do vaso, corte a parte podre até o tecido firme, polvilhe canela em pó, deixe cicatrizar 7 dias à sombra e replante em substrato seco"
+    },
+    {
+      "nome": "Gorgulho-do-agave (Scyphophorus acupunctatus)",
+      "tipo": "PRAGA",
+      "sintomas": "Besouro preto de focinho comprido; larvas brancas cavam o coração da roseta, que murcha e cai de repente com serragem escura e cheiro fermentado",
+      "prevencao_tratamento": "Não ferir a base das folhas e tirar folhas secas que dão abrigo. Se achar larvas, retire a planta, raspe o tecido atacado e isole; roseta com o coração comido não se recupera, então salve os filhotes sadios"
+    },
+    {
+      "nome": "Cochonilha-farinhenta e cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos de algodão ou pontinhos marrons grudados entre as folhas da base; manchas amareladas onde sugam",
+      "prevencao_tratamento": "Remova com cotonete embebido em álcool 70%; em infestação maior, pulverize óleo de neem a 0,5% com uma gota de detergente no fim da tarde, a cada 7 dias, por três aplicações"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrons afundadas e ovais nas folhas, com anéis escuros, que se espalham em tempo úmido",
+      "prevencao_tratamento": "Não molhar as folhas na rega e manter em lugar ventilado. Corte as folhas muito manchadas rente à base com faca limpa e aplique fungicida à base de cobre se novas manchas aparecerem"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Placas bege, esbranquiçadas ou marrons e secas na face das folhas virada para o sol, logo depois de mudar a planta de lugar",
+      "prevencao_tratamento": "Aumente a exposição ao sol aos poucos ao longo de uma a duas semanas. As manchas não somem, mas as folhas novas vêm sadias"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Folhas finas, compridas, mais verdes que cinza e tombadas; a roseta perde a forma compacta",
+      "prevencao_tratamento": "Mude para um lugar com pelo menos 6 horas de sol direto. As folhas deformadas não voltam; a roseta se refaz com as novas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Menos água no frio",
+      "mensagem": "Com o frio a piteira quase para de crescer, e substrato molhado em dias frios é a principal causa de podridão.",
+      "acao_requerida": "Espaçar as regas para uma a cada 20 a 30 dias até agosto, sempre conferindo se o substrato está seco a 5 cm"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger da geada e da chuva fria",
+      "mensagem": "A piteira aguenta frio seco, mas geada forte com substrato encharcado mancha as folhas e apodrece a base.",
+      "acao_requerida": "Em noites com previsão de geada ou em semanas de chuva fria, levar o vaso para baixo de uma cobertura ou beiral, mantendo o máximo de luz"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Limpeza de primavera",
+      "mensagem": "É o começo da estação de crescimento, a melhor época para tirar folhas secas e filhotes.",
+      "acao_requerida": "De luvas, cortar rente ao caule as folhas de baixo secas e separar os filhotes que já tenham raiz, plantando cada um em vaso próprio com substrato seco"
+    }
+  ]
+}

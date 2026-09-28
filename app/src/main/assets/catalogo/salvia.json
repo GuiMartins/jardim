@@ -1,0 +1,187 @@
+{
+  "planta": {
+    "nome_comum": "Sálvia",
+    "nome_cientifico": "Salvia officinalis",
+    "descricao": "Erva aromática mediterrânea de folhas acinzentadas e aveludadas, usada em carnes, massas e chás. É um subarbusto perene que gosta de sol forte e substrato seco, e sofre mais com o excesso de água e o verão úmido do que com a falta de rega. Começa melhor por muda, porque a semente é lenta e irregular.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de barro ou jardineira com pelo menos 25 cm de profundidade e 30 cm de diâmetro, com vários furos no fundo; o barro ajuda o substrato a secar entre as regas",
+    "volume_minimo_litros": 10,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca, mais 1 colher de sopa de calcário dolomítico por 10 L; solto e drenante, sem turfa ou terra argilosa que retenha água",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 21,
+      "descricao": "A muda recém-plantada pode murchar um pouco nas horas mais quentes e perder algumas folhas de baixo. A fase termina quando aparecem folhas novas no topo dos ramos: sinal de que a raiz pegou no substrato novo."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 22,
+      "dia_fim": 120,
+      "descricao": "A planta ramifica e engrossa. As folhas ficam maiores e mais aromáticas, e a base dos ramos começa a endurecer. Colha pouco e sempre das pontas, para ela encher em vez de subir fina."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 121,
+      "dia_fim": null,
+      "descricao": "Moita cheia de 30 a 60 cm, com a base lenhosa. Cresce forte no outono e na primavera, desacelera no inverno e sofre no verão chuvoso e abafado, quando pede menos água e mais ventilação. Em regiões de inverno frio pode florir em espigas lilases na primavera. Com 3 a 4 anos o centro costuma ficar lenhoso e pelado, e o melhor é renovar por estaca."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de sálvia",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 21,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue devagar na base até escorrer pelos furos, sem molhar as folhas. Se ainda estiver úmido, espere mais um dia. Acima de 30 °C, confira todo dia.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar a sálvia",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 22,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 4 cm no substrato; regue só se estiver seco nessa profundidade, até escorrer pelos furos, e esvazie o pratinho depois. No inverno e em semanas chuvosas o intervalo pode passar de 7 dias. Folhas murchas com substrato úmido indicam excesso de água, não falta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_leve",
+      "titulo": "Adubar a sálvia",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 45,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 2 colheres de sopa de húmus de minhoca na superfície de um vaso de 10 L, sem encostar no caule, e regue em seguida. Não use adubo nitrogenado forte: ele deixa a folha grande, mole e com menos aroma. Pule a adubação em junho e julho.",
+      "critica": false
+    },
+    {
+      "id": "colheita_folhas",
+      "titulo": "Colher e despontar a sálvia",
+      "tipo": "COLHEITA",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Corte com tesoura as pontas dos ramos mais altos, 5 a 8 cm, logo acima de um par de folhas. Nunca tire mais de um terço da planta de uma vez nem corte na parte lenhosa sem folhas, que não rebrota. Colha de manhã, depois que o orvalho secar, quando o aroma é mais forte.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar a sálvia",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 7,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pó branco (oídio), pontinhos amarelados com teia fina (ácaro), algodão branco nas axilas (cochonilha) ou folhas de baixo escurecidas e moles perto do substrato (excesso de água).",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato da sálvia",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "No outono ou no começo da primavera, tire a planta do vaso, corte com tesoura as raízes escuras ou enroladas no fundo e replante com substrato novo na mesma receita, num vaso igual ou 5 cm maior. Regue bem e deixe 3 dias à meia-sombra antes de voltar ao sol.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Primeiro desponte",
+      "mensagem": "A muda já pegou. Cortar agora as pontas dos ramos faz a sálvia brotar dos lados e formar uma moita cheia, em vez de uma haste comprida.",
+      "acao_requerida": "Cortar 2 a 3 cm da ponta de cada ramo com mais de 15 cm, logo acima de um par de folhas"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Hora de renovar a sálvia",
+      "mensagem": "Com uns 3 anos, a sálvia em vaso costuma ficar lenhosa no centro e produzir menos folhas. Estacas tiradas dela viram plantas novas e vigorosas.",
+      "acao_requerida": "Cortar 3 a 4 ramos não lenhosos de 10 cm, tirar as folhas da metade de baixo e enterrar essa metade em substrato arenoso úmido, à meia-sombra, até brotarem folhas novas"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Pythium, Phytophthora, Fusarium)",
+      "tipo": "DOENCA",
+      "sintomas": "A planta murcha mesmo com o substrato úmido; folhas de baixo amarelam e escurecem, e a base do caule fica escura e mole",
+      "prevencao_tratamento": "Substrato arenoso, vaso com furos, nada de pratinho com água e rega só com o substrato seco a 4 cm. Se aparecer, pare a rega, corte as partes podres e tire estacas dos ramos sadios, porque a planta afetada raramente se recupera"
+    },
+    {
+      "nome": "Oídio",
+      "tipo": "DOENCA",
+      "sintomas": "Pó branco acinzentado sobre as folhas, que depois amarelam e secam; comum no calor úmido e com pouca ventilação",
+      "prevencao_tratamento": "Deixe o vaso em local ventilado e regue sem molhar as folhas. Retire as folhas afetadas e pulverize leite diluído em água (1 parte para 9) ou bicarbonato de sódio a 0,5% no fim da tarde, a cada 7 dias"
+    },
+    {
+      "nome": "Ácaro-rajado (Tetranychus urticae)",
+      "tipo": "PRAGA",
+      "sintomas": "Folhas com pontinhos amarelados, aspecto de poeira e teias finas entre folhas e ramos, em tempo seco e quente",
+      "prevencao_tratamento": "Borrife água no verso das folhas de manhã cedo em dias secos; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, por 3 aplicações"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas axilas das folhas e na base dos ramos; folhas pegajosas e planta fraca",
+      "prevencao_tratamento": "Retire com cotonete embebido em álcool 70%; em ataques maiores, pulverize óleo de neem a 0,5% com algumas gotas de detergente neutro a cada 7 dias"
+    },
+    {
+      "nome": "Centro lenhoso e pelado",
+      "tipo": "DISTURBIO",
+      "sintomas": "Ramos grossos e sem folhas na parte de baixo, com folhas só nas pontas; a moita abre ao meio",
+      "prevencao_tratamento": "Despontar e colher sempre as pontas desde cedo e fazer a poda de limpeza no fim do inverno. Cortes em madeira velha sem folhas não rebrotam: quando o centro já estiver pelado, renove por estaca"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão úmido: cuidado com o excesso de água",
+      "mensagem": "Calor com chuva e ar abafado é a época em que a sálvia mais morre, de podridão de raiz e oídio.",
+      "acao_requerida": "Tirar o vaso da chuva direta, esvaziar o pratinho, espaçar as regas e desbastar ramos internos para o ar circular"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de limpeza da sálvia",
+      "mensagem": "No fim do inverno a planta está para brotar; uma poda leve agora renova a folhagem e segura o crescimento lenhoso.",
+      "acao_requerida": "Cortar até um terço de cada ramo, sempre acima de um par de folhas vivas, e retirar os galhos secos; não cortar na madeira velha sem folhas"
+    },
+    {
+      "meses": [
+        11
+      ],
+      "titulo": "Cortar as hastes florais",
+      "mensagem": "Se a sálvia floriu na primavera, as espigas que já murcharam gastam energia da planta sem render folha.",
+      "acao_requerida": "Cortar as hastes florais secas logo abaixo da espiga, junto com 2 a 3 cm de folhagem; as flores frescas são comestíveis"
+    }
+  ]
+}

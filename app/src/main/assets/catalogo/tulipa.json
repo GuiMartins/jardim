@@ -1,0 +1,179 @@
+{
+  "planta": {
+    "nome_comum": "Tulipa",
+    "nome_cientifico": "Tulipa spp. (híbridos de Tulipa gesneriana)",
+    "descricao": "Bulbo de flor de clima temperado, com uma flor em taça por haste; aqui descritos os híbridos comerciais vendidos em pacote de bulbos. É perene na natureza, mas no Centro-Sul do Brasil o inverno não tem frio suficiente para ela florescer de novo, então em vaso é cultivada como ANUAL, a partir de bulbos já pré-resfriados. Rende uma florada de inverno de 1 a 2 semanas e é fácil se o bulbo chegou bem resfriado.",
+    "tipo_ciclo": "ANUAL",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "BULBO",
+    "duracao_ciclo_dias": 110,
+    "meses_plantio": [
+      4,
+      5,
+      6
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso ou jardineira com pelo menos 20 cm de profundidade e furos no fundo; num vaso de 25 cm de diâmetro cabem de 5 a 7 bulbos, a 3 a 5 cm um do outro",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "50% terra vegetal, 30% areia grossa lavada, 20% húmus de minhoca; bem solto, porque o bulbo apodrece em terra que retém água",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "plantio_enraizamento",
+      "nome": "Plantio e Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 14,
+      "descricao": "Use bulbos pré-resfriados (vendidos assim ou guardados de 6 a 8 semanas na gaveta de verduras da geladeira, longe de frutas, que soltam etileno e matam o botão). Plante com a ponta para cima, coberta por 5 a 8 cm de substrato. Nada aparece acima da terra: o bulbo está soltando raízes."
+    },
+    {
+      "fase_id": "brotacao",
+      "nome": "Brotação",
+      "dia_inicio": 15,
+      "dia_fim": 35,
+      "descricao": "Surgem pontas verdes e grossas, que se abrem em duas ou três folhas largas e acinzentadas. Se não houver nenhum broto até o dia 30, desenterre um bulbo: se estiver mole ou mofado, apodreceu."
+    },
+    {
+      "fase_id": "formacao_botao",
+      "nome": "Formação do Botão",
+      "dia_inicio": 36,
+      "dia_fim": 55,
+      "descricao": "A haste sobe do meio das folhas com o botão verde, que vai ganhando cor. Calor acima de 25 °C ou falta de água nesta fase fazem o botão secar sem abrir."
+    },
+    {
+      "fase_id": "floracao",
+      "nome": "Floração",
+      "dia_inicio": 56,
+      "dia_fim": 75,
+      "descricao": "As flores abrem de dia e fecham à noite. Duram de 7 a 14 dias; ficam mais em lugar fresco e sem sol da tarde. A haste pode curvar em direção à luz: gire o vaso a cada dois dias para ela ficar reta."
+    },
+    {
+      "fase_id": "maturacao_bulbo",
+      "nome": "Maturação do Bulbo",
+      "dia_inicio": 76,
+      "dia_fim": 110,
+      "descricao": "Depois da flor, as folhas continuam verdes e alimentam o bulbo; aos poucos amarelam e secam. O ciclo termina quando as folhas secam por completo. No clima do Centro-Sul, o bulbo raramente floresce de novo; para tentar, ele precisa de novo resfriamento na geladeira antes do próximo plantio."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Regar os bulbos",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 14,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; regue só se estiver seco, até escorrer pelos furos, e esvazie o prato. Sem folhas, o bulbo gasta pouca água e apodrece se ficar encharcado.",
+      "critica": false
+    },
+    {
+      "id": "rega_crescimento",
+      "titulo": "Regar a tulipa",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Enfie o dedo 2 cm no substrato; se estiver seco, regue na terra, sem molhar folhas e flores, até escorrer pelos furos, e esvazie o prato. Em dias secos acima de 25 °C, confira a cada 2 dias: murchar com o botão formado faz ele secar.",
+      "critica": true
+    },
+    {
+      "id": "rega_maturacao",
+      "titulo": "Regar pouco a tulipa",
+      "tipo": "REGA",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 76,
+      "dia_fim_ciclo": 110,
+      "instrucoes": "Regue só quando os 3 cm de cima estiverem secos, com metade da água de antes. Quando as folhas estiverem mais amarelas que verdes, pare de regar.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_brotacao",
+      "titulo": "Adubar a tulipa",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 20,
+      "dia_fim_ciclo": 50,
+      "instrucoes": "Dissolva 1 g (1/4 de colher de chá) de adubo NPK 4-14-8 ou de adubo para flores em 1 L de água e regue o substrato úmido. Evite adubo rico em nitrogênio, que estica as folhas e deixa a haste fraca.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e botões",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 5,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": 75,
+      "instrucoes": "Olhe entre as folhas e no botão procurando pulgões agrupados, e nas folhas procurando manchas marrons com mofo cinza. Aperte a base de um broto: base mole indica podridão do bulbo.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 30,
+      "titulo": "Os brotos já saíram?",
+      "mensagem": "Nesta altura todo bulbo sadio já tem folhas acima da terra.",
+      "acao_requerida": "Cavar com cuidado onde não brotou; bulbo mole ou mofado vai para o lixo, não para a composteira"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Botões a caminho: proteja do calor",
+      "mensagem": "Calor e sol forte da tarde fazem o botão secar sem abrir ou a flor durar só alguns dias.",
+      "acao_requerida": "Deixar o vaso onde bate sol da manhã e sombra depois das 13h"
+    },
+    {
+      "dia_disparo": 76,
+      "titulo": "Cortar as flores murchas",
+      "mensagem": "A flor passou. Se ela formar sementes, gasta a reserva do bulbo.",
+      "acao_requerida": "Cortar a flor murcha logo abaixo dela, deixando a haste e todas as folhas até secarem"
+    },
+    {
+      "dia_disparo": 110,
+      "titulo": "Fim do ciclo da tulipa",
+      "mensagem": "As folhas secaram e o bulbo entrou em dormência.",
+      "acao_requerida": "Desenterrar os bulbos, limpar a terra e secá-los à sombra; guardar num saco de papel e pôr na geladeira de 6 a 8 semanas antes de replantar, ou descartar e comprar bulbos novos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão do bulbo por excesso de rega (Pythium, Rhizopus)",
+      "tipo": "DOENCA",
+      "sintomas": "Bulbo que não brota, ou broto amarelo e fraco que se solta com facilidade; bulbo mole, com cheiro ruim",
+      "prevencao_tratamento": "Substrato com areia, vaso com furos, prato sempre vazio e rega só com a terra seca; descarte bulbos moles e o substrato em volta"
+    },
+    {
+      "nome": "Podridão basal (Fusarium oxysporum f. sp. tulipae)",
+      "tipo": "DOENCA",
+      "sintomas": "Bulbo com mancha marrom na base e mofo esbranquiçado ou rosado; planta amarela e murcha antes da hora",
+      "prevencao_tratamento": "Na compra, descarte bulbos com manchas, feridas ou partes moles; não reaproveite o substrato de um vaso com bulbo doente"
+    },
+    {
+      "nome": "Fogo da tulipa (Botrytis tulipae)",
+      "tipo": "DOENCA",
+      "sintomas": "Pintas pequenas e amareladas nas folhas e pétalas que viram manchas marrons, depois cobertas de mofo cinza; folhas retorcidas",
+      "prevencao_tratamento": "Regar só na terra, deixar o vaso em lugar ventilado e tirar folhas e flores atacadas; se se espalhar, descarte a planta inteira"
+    },
+    {
+      "nome": "Pulgão",
+      "tipo": "PRAGA",
+      "sintomas": "Colônias de insetos verdes ou pretos entre as folhas e no botão; folhas enroladas e flor deformada",
+      "prevencao_tratamento": "Jato de água ou algodão com água e sabão neutro; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias, sem atingir flores abertas"
+    },
+    {
+      "nome": "Botão que seca sem abrir (queima do botão)",
+      "tipo": "DISTURBIO",
+      "sintomas": "O botão fica pequeno, esbranquiçado ou marrom e seca sem abrir; às vezes nem forma haste, só folhas",
+      "prevencao_tratamento": "Comprar bulbos pré-resfriados ou resfriá-los de 6 a 8 semanas na geladeira antes de plantar, plantar entre abril e junho e não deixar o substrato secar na formação do botão"
+    },
+    {
+      "nome": "Haste comprida e tombada (estiolamento)",
+      "tipo": "DISTURBIO",
+      "sintomas": "Haste fina e muito alta que se curva ou tomba com o peso da flor",
+      "prevencao_tratamento": "Garantir pelo menos 4 horas de sol direto, girar o vaso a cada 2 dias e evitar adubo com muito nitrogênio"
+    }
+  ],
+  "eventos_sazonais": []
+}

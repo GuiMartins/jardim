@@ -1,0 +1,206 @@
+{
+  "planta": {
+    "nome_comum": "Umbuzeiro",
+    "nome_cientifico": "Spondias tuberosa",
+    "descricao": "Árvore frutífera nativa da Caatinga. Guarda água em raízes engrossadas (xilopódios, as 'batatas do umbu') e por isso aguenta meses de seca. Em vaso grande e com poda, vira uma árvore baixa e ornamental que dá o umbu, fruto azedinho de comer ao natural, em suco ou na umbuzada. Muda enxertada frutifica em 3 a 4 anos; muda de semente pode levar 8 anos ou mais.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso largo e fundo de barro, cimento ou plástico grosso, com pelo menos 45 cm de profundidade e 50 cm de diâmetro e vários furos no fundo. Os xilopódios crescem para os lados e para baixo, então vaso raso limita a planta",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 40% areia grossa lavada, 20% húmus de minhoca, mais 1 colher de sopa de calcário por 10 L. Tem que ser arenoso e drenar rápido: substrato que retém água apodrece os xilopódios",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "Plante a muda na mesma altura em que estava no saquinho, sem enterrar o ponto de enxerto (a cicatriz no caule). Nas primeiras semanas ela pode perder algumas folhas. Quando surgirem brotos novos, a raiz pegou."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "A muda cresce devagar por cima, porque a energia vai para os xilopódios. É normal ela perder todas as folhas no inverno e parecer morta. Para saber se está viva, raspe de leve a casca de um galho com a unha: se estiver verde por baixo, está."
+    },
+    {
+      "fase_id": "juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1095,
+      "descricao": "Forma tronco e copa. Com as podas de inverno, a copa fica baixa e aberta. Muda de semente ainda não floresce nessa fase; muda enxertada pode dar as primeiras flores no fim dela."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1096,
+      "dia_fim": null,
+      "descricao": "Ano típico: perde as folhas entre maio e agosto e fica parada no inverno. Floresce entre setembro e novembro, com flores brancas pequenas e perfumadas, muitas vezes antes de soltar as folhas novas. Os frutos amadurecem entre janeiro e março. Em vaso, a produção é menor que no chão: espere de algumas dezenas a poucas centenas de frutos por ano."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda nova",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato. Se estiver seco, regue devagar até escorrer pelos furos; se ainda estiver úmido, espere mais um dia. A raiz ainda não saiu do torrão da muda, então secar por completo agora mata a planta.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o umbuzeiro",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato e regue só se estiver seco nessa profundidade, até escorrer pelos furos. Com a planta pelada no inverno, regue no máximo uma vez a cada 3 ou 4 semanas, só para os xilopódios não murcharem. O que mata umbuzeiro em vaso é excesso de água, não falta.",
+      "critica": false
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar o umbuzeiro",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Só com folhas, de setembro a março. Espalhe 2 xícaras de húmus de minhoca e 1 colher de sopa de NPK 4-14-8 por vaso de 60 L, na borda e longe do tronco, e regue em seguida. De abril a agosto, pule a adubação: planta parada não absorve, e o adubo acumula sal no vaso.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e galhos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Procure no verso das folhas e nos galhos novos por cochonilhas (bolinhas brancas ou marrons presas), manchas escuras afundadas nas folhas e frutos e sinais de podridão na base do tronco (casca mole ou escura). Aperte de leve a base do caule: tem que estar firme.",
+      "critica": false
+    },
+    {
+      "id": "renovar_substrato",
+      "titulo": "Renovar o substrato ou trocar de vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça no fim do inverno (agosto ou setembro), antes da brotação. Tire a planta, solte o substrato velho e troque por um vaso 20 a 30% maior; se já estiver no maior vaso possível, renove 1/3 do substrato pelas bordas. Não corte os xilopódios. Se ficar fora dessa época, espere agosto.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Muda plantada: não encharque",
+      "mensagem": "O umbuzeiro guarda água nas raízes e apodrece fácil. Pratinho com água parada embaixo do vaso mata a planta.",
+      "acao_requerida": "Tirar o pratinho ou esvaziá-lo sempre depois da rega e deixar o vaso em pé sobre calços"
+    },
+    {
+      "dia_disparo": 31,
+      "titulo": "A muda pegou: espace a rega",
+      "mensagem": "A partir de agora a raiz já explora o vaso e a rega passa a ser semanal, sempre conferindo com o dedo.",
+      "acao_requerida": "Conferir se há brotos novos. Se a muda estiver sem nenhum broto e com o caule enrugado, raspar a casca para ver se ainda está verde"
+    },
+    {
+      "dia_disparo": 1096,
+      "titulo": "Idade de frutificar",
+      "mensagem": "Muda enxertada costuma dar as primeiras flores a partir do 3º ou 4º ano. Muda de semente pode demorar bem mais.",
+      "acao_requerida": "Na próxima primavera, manter o vaso no sol mais forte da casa e não deixar faltar água durante a floração"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão das raízes e do xilopódio (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murcham mesmo com o substrato úmido, a base do tronco fica mole ou escura e o substrato cheira a podre",
+      "prevencao_tratamento": "Substrato arenoso, vaso com muitos furos, sem pratinho com água e rega mínima no inverno. Se acontecer, tire a planta do vaso, corte as partes moles até o tecido firme, deixe secar à sombra por 2 dias e replante em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, cerosos ou marrons presos nos galhos e no verso das folhas; folhas meladas, às vezes com fumagina preta por cima",
+      "prevencao_tratamento": "Retire com escova macia ou algodão com álcool 70%. Em infestação maior, pulverize óleo mineral a 1% ou óleo de neem a 0,5% no fim da tarde, repetindo em 7 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Frutos com furinhos e manchas moles, que caem antes da hora e têm larvas brancas por dentro",
+      "prevencao_tratamento": "Recolha e descarte em saco fechado os frutos caídos ou bichados. Pendure armadilha de garrafa PET com suco de fruta ou proteína hidrolisada na copa a partir da floração"
+    },
+    {
+      "nome": "Antracnose (Colletotrichum)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas escuras, afundadas e arredondadas nas folhas, nos ramos novos e nos frutos, mais comuns em verões chuvosos",
+      "prevencao_tratamento": "Mantenha a copa aberta com a poda de inverno e não molhe as folhas na rega. Retire as partes atacadas e, se for grave, pulverize calda bordalesa a 1% na brotação"
+    },
+    {
+      "nome": "Queima por geada",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas dos ramos escuras e secas depois de uma noite muito fria; na primavera, esses galhos não brotam",
+      "prevencao_tratamento": "Nas noites com previsão abaixo de 3 °C, leve o vaso para perto de uma parede ou sob uma cobertura. Espere a brotação de setembro para ver o que morreu e só então pode os ramos secos"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "O umbuzeiro vai perder as folhas",
+      "mensagem": "Com o frio e os dias curtos, as folhas amarelam e caem. É a dormência natural dele, não doença.",
+      "acao_requerida": "Espaçar a rega para uma vez a cada 3 a 4 semanas e parar a adubação até setembro"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Proteger do frio",
+      "mensagem": "O umbuzeiro é do sertão e não suporta geada, principalmente enquanto é novo.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, encostar o vaso numa parede ou colocá-lo sob uma cobertura, sem tirá-lo do sol durante o dia"
+    },
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação e limpeza",
+      "mensagem": "Sem folhas, dá para ver a estrutura da copa. Podar agora mantém a árvore baixa e proporcional ao vaso.",
+      "acao_requerida": "Cortar os galhos secos, cruzados e os que crescem para dentro, e encurtar em 1/3 os ramos que passaram do tamanho desejado, com tesoura limpa. No primeiro ano, só tirar os secos"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Volta da brotação",
+      "mensagem": "Com o calor, o umbuzeiro floresce e solta as folhas novas. A partir daqui ele volta a precisar de água e adubo.",
+      "acao_requerida": "Voltar à rega semanal conferindo com o dedo, fazer a primeira adubação da temporada e não deixar o substrato secar por completo enquanto houver flores"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época dos umbus",
+      "mensagem": "Os frutos amadurecem de janeiro a março. Maduros, ficam amarelo-esverdeados, macios ao toque e se soltam fácil do galho.",
+      "acao_requerida": "Colher a cada 2 ou 3 dias os frutos que se soltam com um giro leve e recolher os caídos no vaso para não atrair mosca-das-frutas"
+    }
+  ]
+}

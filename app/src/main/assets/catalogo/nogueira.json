@@ -1,0 +1,190 @@
+{
+  "planta": {
+    "nome_comum": "Nogueira",
+    "nome_cientifico": "Juglans regia",
+    "descricao": "Árvore de folhas caducas que produz a noz comum. Na natureza passa de 20 m; em vaso fica como arvoreta de 2 a 3 m, com a raiz contida, e raramente dá muitas nozes. Precisa de inverno frio (cerca de 500 a 1000 horas abaixo de 7 °C) para brotar e florescer bem, por isso vai melhor no Sul e nas serras do Sudeste.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "DIFICIL",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande e fundo, de pelo menos 50 cm de diâmetro e 50 cm de profundidade, com vários furos no fundo e apoiado em pés para a água escorrer; a nogueira forma raiz pivotante longa",
+    "volume_minimo_litros": 80,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 6,
+    "horas_sol_diarias_recomendadas": 8,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico curtido, 20% areia grossa, 10% perlita ou casca de arroz carbonizada, mais 1 colher de sopa de calcário dolomítico a cada 10 L; pH entre 6,5 e 7,5",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 60,
+      "descricao": "A muda se recupera do transplante. Se chegou no inverno, sem folhas, o normal é ficar parada até a brotação de setembro; arranhe de leve a casca de um galho com a unha: verde por baixo significa viva. A fase termina quando surgem folhas novas bem abertas."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 61,
+      "dia_fim": 1460,
+      "descricao": "A árvore forma tronco e copa, crescendo de 30 a 80 cm por ano na primavera e no verão. Perde as folhas no outono e dorme no inverno. Mantenha um ramo central (líder) e 3 a 5 galhos laterais bem distribuídos. Ainda não produz nozes."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1461,
+      "dia_fim": null,
+      "descricao": "Ano típico: brota em setembro, floresce em setembro e outubro (amentilhos masculinos pendentes e flores femininas pequenas na ponta dos ramos novos), as nozes crescem até fevereiro e amadurecem entre fevereiro e abril, quando a casca verde racha. As folhas amarelam e caem em maio, e a árvore dorme até agosto. Em vaso, a produção é pequena e irregular; mudas enxertadas (Chandler, Chico) produzem antes das de semente."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_nogueira",
+      "titulo": "Regar a nogueira",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. Com folhas e calor acima de 28 °C, confira a cada 2 dias. De maio a agosto, sem folhas, regue só quando os 5 cm estiverem secos, em geral a cada 7 a 10 dias. Nunca deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a nogueira",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 45,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, espalhe 2 punhados de húmus de minhoca ou 1 colher de sopa de NPK 10-10-10 por vaso de 80 L, longe do tronco, e regue em seguida. De abril a agosto, a árvore está parando ou dormindo: troque o adubo por uma camada de 2 cm de composto na superfície, que se decompõe devagar.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Vire as folhas e procure pulgões amarelados no verso, manchas escuras angulosas ou redondas, cochonilhas no tronco e ramos que secam da ponta para trás.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Podar raízes e renovar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Faça de preferência entre junho e agosto, com a árvore sem folhas. Tire a planta do vaso, corte 3 a 5 cm das raízes em volta e embaixo do torrão com serrote limpo, remova um terço do substrato velho e reponha com mistura nova. Se o torrão estiver tomado de raízes, passe para um vaso 20 a 30% maior.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 3,
+      "titulo": "Firme a muda",
+      "mensagem": "Vento balançando a muda recém-plantada rompe as raízes novas e atrasa o pegamento.",
+      "acao_requerida": "Fincar um tutor de 1,2 m ao lado do torrão, sem atravessá-lo, e amarrar o caule com fita macia em forma de oito"
+    },
+    {
+      "dia_disparo": 45,
+      "titulo": "Confira a região do enxerto",
+      "mensagem": "Em mudas enxertadas, o cavalo pode brotar abaixo do enxerto e roubar força da copa.",
+      "acao_requerida": "Arrancar com a mão ou cortar rente ao tronco todo broto que surgir abaixo da cicatriz do enxerto"
+    },
+    {
+      "dia_disparo": 400,
+      "titulo": "Hora de formar a copa",
+      "mensagem": "Com um ano no vaso, a estrutura definida agora é a que a árvore vai carregar pela vida toda.",
+      "acao_requerida": "Escolher 3 a 5 galhos laterais bem espaçados em volta do líder central, a partir de 60 cm do substrato, e retirar os que cruzam ou crescem para dentro, no final do verão"
+    },
+    {
+      "dia_disparo": 1461,
+      "titulo": "Primeiras flores possíveis",
+      "mensagem": "A nogueira pode começar a florescer. As flores masculinas e femininas da mesma árvore muitas vezes não abrem juntas, e aí não há nozes.",
+      "acao_requerida": "Na floração, sacudir os amentilhos maduros sobre as flores femininas ou cultivar uma segunda nogueira de outra variedade por perto"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raiz e colo (Phytophthora spp.)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e murcham mesmo com o substrato úmido; casca escura e úmida na base do tronco; raízes marrons e moles",
+      "prevencao_tratamento": "Regar só com o substrato seco a 5 cm, manter furos livres e vaso elevado; não enterrar o colo. Em caso inicial, suspender a rega e trocar o substrato encharcado; com o tronco anelado de podridão, a planta raramente se recupera"
+    },
+    {
+      "nome": "Antracnose da nogueira (Ophiognomonia leptostyla)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas marrom-escuras arredondadas nas folhas e nos frutos verdes, folhas caindo antes do tempo em verões chuvosos",
+      "prevencao_tratamento": "Recolher e descartar as folhas caídas no outono; na brotação, aplicar calda bordalesa a 1% e repetir a cada 15 dias em primavera chuvosa"
+    },
+    {
+      "nome": "Bacteriose (Xanthomonas arboricola pv. juglandis)",
+      "tipo": "DOENCA",
+      "sintomas": "Manchas pretas encharcadas e angulosas nas folhas, brotos novos enegrecidos e nozes pequenas com mancha preta que apodrece por dentro",
+      "prevencao_tratamento": "Não molhar a copa ao regar; podar ramos atingidos com tesoura desinfetada em álcool; cobre (calda bordalesa ou oxicloreto) na brotação e na floração"
+    },
+    {
+      "nome": "Pulgão-da-nogueira (Chromaphis juglandicola)",
+      "tipo": "PRAGA",
+      "sintomas": "Pulgões amarelo-claros no verso das folhas, folhas pegajosas e fumagina preta por cima",
+      "prevencao_tratamento": "Jato de água no verso das folhas; se persistir, óleo de neem a 0,5% no fim da tarde a cada 5 dias"
+    },
+    {
+      "nome": "Cochonilha-de-escama",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenos escudos marrons ou cinzentos presos ao tronco e aos ramos, ramos enfraquecidos",
+      "prevencao_tratamento": "Esfregar com escova macia e água com sabão neutro; no inverno, sem folhas, aplicar óleo mineral a 1% nos ramos"
+    },
+    {
+      "nome": "Queima das folhas por calor",
+      "tipo": "DISTURBIO",
+      "sintomas": "Bordas das folhas secas e marrons, em crosta, nos dias mais quentes, principalmente no lado do sol da tarde",
+      "prevencao_tratamento": "Não deixar o vaso secar por completo no verão; proteger o vaso (não a copa) do sol da tarde com outro vaso, caixa ou sombreamento lateral, porque a raiz aquecida é a causa"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        2
+      ],
+      "titulo": "Poda de verão",
+      "mensagem": "A nogueira sangra muita seiva se for podada no fim do inverno. No fim do verão o corte cicatriza melhor e sem perda de seiva.",
+      "acao_requerida": "Retirar ramos secos, doentes, que cruzam ou crescem para dentro, cortando rente ao colar do galho; encurtar ramos longos demais para o tamanho do vaso"
+    },
+    {
+      "meses": [
+        5
+      ],
+      "titulo": "Folhas caindo: começa a dormência",
+      "mensagem": "Folhas amarelando e caindo em maio é normal. A árvore está entrando em repouso e bebe bem menos.",
+      "acao_requerida": "Recolher e descartar as folhas caídas e espaçar a rega para quando os 5 cm do substrato estiverem secos"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Deixe a nogueira pegar frio",
+      "mensagem": "Sem horas de frio no inverno, a brotação da primavera sai fraca e irregular, e a árvore não floresce.",
+      "acao_requerida": "Manter o vaso ao ar livre no ponto mais frio do quintal ou da varanda, sem levá-lo para dentro de casa; proteger só o vaso se houver geada forte, enrolando-o em juta ou papelão"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Brotação: cuidado com geada tardia",
+      "mensagem": "Os brotos novos da nogueira queimam com geada, e com eles vão as flores do ano.",
+      "acao_requerida": "Nas noites com previsão abaixo de 3 °C, cobrir a copa com manta de TNT ou encostar o vaso numa parede abrigada; retomar a adubação quando as folhas abrirem"
+    }
+  ]
+}

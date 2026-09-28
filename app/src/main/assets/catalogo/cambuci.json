@@ -1,0 +1,210 @@
+{
+  "planta": {
+    "nome_comum": "Cambuci",
+    "nome_cientifico": "Campomanesia phaea",
+    "descricao": "Árvore frutífera da Mata Atlântica paulista, da família da goiaba e da pitanga, que dá frutos verdes em forma de disco voador, muito aromáticos e ácidos, ótimos para sucos, geleias e cachaça. Em vaso grande, ela vira uma arvoreta de 2 a 3 m. A muda começa a dar frutos em 3 a 5 anos.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "MUDA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso grande de plástico grosso, cimento ou tambor cortado, com pelo menos 50 cm de diâmetro e 50 cm de profundidade e vários furos no fundo. Comece num vaso de 30 a 40 L e passe para o definitivo quando as raízes tomarem o torrão",
+    "volume_minimo_litros": 60,
+    "luminosidade": "SOL_DIRETO",
+    "horas_sol_minimas": 4,
+    "horas_sol_diarias_recomendadas": 6,
+    "substrato_recomendado": "40% terra vegetal, 30% composto orgânico ou húmus de minhoca, 20% casca de pinus fina ou fibra de coco, 10% areia grossa, mais 1 colher de sopa de farinha de ossos por 10 L. Substrato levemente ácido (pH 5,5 a 6,5) e rico em matéria orgânica, como o solo de mata de onde ela vem; não use calcário em excesso",
+    "camada_drenagem": true
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A muda sente a troca de vaso e pode perder algumas folhas. Deixe-a em meia-sombra nas duas primeiras semanas e depois leve ao sol aos poucos. A fase termina quando surgem brotos novos, avermelhados, na ponta dos ramos."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 365,
+      "descricao": "As raízes ocupam o vaso e a muda cresce em fluxos de brotação avermelhada, principalmente na primavera e no verão. Nesta fase, a planta já aguenta o sol pleno. Ela está estabelecida quando as raízes começam a aparecer nos furos do fundo."
+    },
+    {
+      "fase_id": "crescimento_juvenil",
+      "nome": "Crescimento Juvenil",
+      "dia_inicio": 366,
+      "dia_fim": 1460,
+      "descricao": "A arvoreta ganha altura e copa. Pode florescer a partir do terceiro ano, com flores brancas de muitos estames na primavera, mas as primeiras floradas costumam abortar os frutos. Uma poda de formação no inverno deixa a copa baixa e cheia, do tamanho do vaso."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 1461,
+      "dia_fim": null,
+      "descricao": "Arvoreta de 2 a 3 m que floresce de setembro a novembro e amadurece os frutos de janeiro a março. O fruto maduro fica verde-amarelado, perfumado e cai sozinho. No inverno ela cresce pouco e bebe menos água. A cada dois anos precisa de substrato novo, porque o velho se decompõe e compacta."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_adaptacao",
+      "titulo": "Regar a muda de cambuci",
+      "tipo": "REGA",
+      "frequencia_dias": 2,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": 30,
+      "instrucoes": "Enfie o dedo 3 cm no substrato; se estiver seco, regue devagar até escorrer pelos furos. A muda recém-plantada tem pouca raiz e murcha rápido: não deixe o torrão secar, mas também não deixe água parada no pratinho.",
+      "critica": true
+    },
+    {
+      "id": "rega_padrao",
+      "titulo": "Regar o cambuci",
+      "tipo": "REGA",
+      "frequencia_dias": 3,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 5 cm no substrato; se estiver seco, regue até escorrer pelos furos. No verão e com a planta florida ou carregada de frutos, confira a cada 2 dias. No inverno, a cada 5 a 7 dias. Seca prolongada na florada derruba as flores e os frutinhos.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_organica",
+      "titulo": "Adubar o cambuci",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 60,
+      "dia_inicio_ciclo": 31,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Espalhe 1 L de húmus de minhoca ou composto e 2 colheres de sopa de torta de mamona por vaso de 60 L, a 5 cm do tronco, misture de leve na superfície e regue em seguida. De junho a agosto, pule a adubação: a planta está quase parada.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e ramos",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe os brotos novos e o verso das folhas procurando pó alaranjado (ferrugem), cochonilhas brancas ou marrons presas nos ramos e folhas enroladas. Na época dos frutos, confira se há furinhos na casca, sinal de mosca-das-frutas.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Renovar o substrato do vaso",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De preferência no fim do inverno, tire a planta do vaso, raspe 3 a 5 cm de raízes enoveladas nas laterais e no fundo e replante com substrato novo, no mesmo vaso ou num maior. Se o vaso for grande demais para tirar, troque os 10 cm de cima por substrato novo com composto.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 15,
+      "titulo": "Hora de ir para o sol",
+      "mensagem": "Depois de duas semanas na meia-sombra, a muda já pode começar a receber sol direto. Sem sol, o cambuci cresce fino e não floresce.",
+      "acao_requerida": "Levar o vaso para um lugar com sol da manhã por uma semana e depois para o local definitivo, com pelo menos 6 horas de sol"
+    },
+    {
+      "dia_disparo": 365,
+      "titulo": "Um ano de cambuci",
+      "mensagem": "A muda deve ter dobrado de tamanho. Se ainda está no vaso inicial e as raízes saem pelos furos, ela precisa de mais espaço para crescer.",
+      "acao_requerida": "Conferir as raízes no fundo do vaso e, se estiverem enoveladas, passar para o vaso definitivo de pelo menos 60 L"
+    },
+    {
+      "dia_disparo": 1095,
+      "titulo": "Primeiras flores podem vir",
+      "mensagem": "Com cerca de três anos, o cambuci pode dar a primeira florada na primavera. É normal que os primeiros frutos caiam ainda pequenos.",
+      "acao_requerida": "Manter a rega regular na primavera, sem deixar o substrato secar, para a planta segurar os frutos"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão de raízes (excesso de rega)",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas amarelam e caem mesmo com o substrato úmido, a planta murcha no calor e as raízes ficam escuras, moles e com cheiro ruim",
+      "prevencao_tratamento": "Regar só quando os 5 cm de cima estiverem secos, manter os furos desentupidos e nunca deixar água no pratinho. Se aparecer, tire a planta, corte as raízes podres e replante em substrato novo e mais arenoso"
+    },
+    {
+      "nome": "Ferrugem-das-mirtáceas (Austropuccinia psidii)",
+      "tipo": "DOENCA",
+      "sintomas": "Pó amarelo-alaranjado nos brotos novos, folhas jovens, flores e frutinhos, que depois ficam retorcidos, escuros e secam",
+      "prevencao_tratamento": "Deixar a planta em local ventilado e ensolarado e evitar molhar as folhas no fim da tarde. Corte e jogue no lixo os brotos atacados. Em ataque forte, pulverize calda bordalesa nos brotos novos a cada 15 dias"
+    },
+    {
+      "nome": "Mosca-das-frutas (Anastrepha spp.)",
+      "tipo": "PRAGA",
+      "sintomas": "Furinhos na casca dos frutos, que amolecem, apodrecem por dentro e caem antes da hora com larvas brancas na polpa",
+      "prevencao_tratamento": "Ensacar os frutos com saquinhos de TNT ou papel quando estiverem do tamanho de uma bola de gude, recolher todo fruto caído e usar armadilha de garrafa PET com isca de suco de fruta fermentado"
+    },
+    {
+      "nome": "Cochonilhas",
+      "tipo": "PRAGA",
+      "sintomas": "Carocinhos brancos, farinhentos ou marrons, grudados nos ramos e no verso das folhas; folhas pegajosas e com fumagina preta",
+      "prevencao_tratamento": "Remover com cotonete ou escova macia molhada em água com sabão neutro. Se persistir, pulverize óleo de neem a 0,5% com algumas gotas de detergente, no fim da tarde, a cada 7 dias por três semanas"
+    },
+    {
+      "nome": "Queda de flores e frutinhos",
+      "tipo": "DISTURBIO",
+      "sintomas": "A planta floresce bem, mas as flores e os frutos pequenos caem em poucos dias",
+      "prevencao_tratamento": "É normal nas primeiras floradas. Em planta adulta, costuma ser falta de água ou calor seco na florada: mantenha o substrato úmido de setembro a dezembro e não adube com muito nitrogênio nessa época"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        8
+      ],
+      "titulo": "Poda de formação do cambuci",
+      "mensagem": "No fim do inverno a planta está quase parada, e a poda agora estimula brotação forte que vai florescer na primavera.",
+      "acao_requerida": "Cortar ramos secos, cruzados e os que crescem para dentro da copa, e encurtar os ramos mais altos para manter a copa baixa e do tamanho do vaso"
+    },
+    {
+      "meses": [
+        9,
+        10,
+        11
+      ],
+      "titulo": "Florada do cambuci",
+      "mensagem": "É época de flores. Falta de água agora derruba as flores e os frutinhos.",
+      "acao_requerida": "Conferir o substrato a cada 2 dias e regar sempre que os 5 cm de cima estiverem secos"
+    },
+    {
+      "meses": [
+        12
+      ],
+      "titulo": "Proteger os frutos da mosca",
+      "mensagem": "Os frutinhos estão crescendo e a mosca-das-frutas começa a atacar na virada para o verão.",
+      "acao_requerida": "Ensacar os frutos do tamanho de uma bola de gude com saquinhos de TNT ou papel e pendurar uma armadilha de garrafa PET com isca"
+    },
+    {
+      "meses": [
+        1,
+        2,
+        3
+      ],
+      "titulo": "Época de colher cambuci",
+      "mensagem": "Os frutos maduros ficam verde-amarelados, perfumados e caem sozinhos. Fruto caído no chão estraga em um ou dois dias e atrai mosca.",
+      "acao_requerida": "Recolher os frutos caídos e colher os que se soltam com um toque leve todos os dias; congelar a polpa se não for usar logo"
+    },
+    {
+      "meses": [
+        6,
+        7
+      ],
+      "titulo": "Inverno: menos água, sem adubo",
+      "mensagem": "No frio o cambuci cresce pouco e bebe menos. Substrato encharcado no inverno apodrece as raízes.",
+      "acao_requerida": "Espaçar a rega para a cada 5 a 7 dias, só com o substrato seco a 5 cm, e não adubar até setembro"
+    }
+  ]
+}

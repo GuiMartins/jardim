@@ -1,0 +1,182 @@
+{
+  "planta": {
+    "nome_comum": "Orbea",
+    "nome_cientifico": "Orbea variegata",
+    "descricao": "Suculenta sul-africana de caules carnudos e dentados, também chamada de flor-estrela ou cacto-estrela, embora não seja cacto. Dá flores em estrela, creme com manchas vinho, que cheiram a carniça para atrair moscas; é muito fácil de multiplicar por estaca e aguenta bem a falta de rega.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "FACIL",
+    "forma_inicio": "ESTACA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso raso e largo de barro, com 15 a 20 cm de diâmetro e 10 a 12 cm de altura, com furo grande no fundo; os caules se espalham para os lados e a raiz é curta",
+    "volume_minimo_litros": 1.5,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 3,
+    "horas_sol_diarias_recomendadas": 5,
+    "substrato_recomendado": "40% substrato para cactos e suculentas ou terra vegetal, 30% areia grossa lavada, 30% pedrisco fino ou perlita; cubra a superfície com uma camada de pedrisco para a base dos caules não ficar em contato com terra úmida",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "enraizamento",
+      "nome": "Enraizamento",
+      "dia_inicio": 1,
+      "dia_fim": 28,
+      "descricao": "Plante a estaca já cicatrizada (deixe o corte secar 3 a 5 dias à sombra antes) apenas apoiada 1 cm no substrato seco. Na primeira semana não regue. As raízes surgem entre a 2ª e a 4ª semana; a estaca pode murchar um pouco e enrugar até lá, o que é normal."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 29,
+      "dia_fim": 150,
+      "descricao": "A estaca fica firme no vaso, os caules voltam a ficar túrgidos e surgem brotos novos na base. Quando um puxão leve encontra resistência, a raiz está formada e a rega passa a ser a da planta adulta."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 151,
+      "dia_fim": null,
+      "descricao": "A touceira se espalha e cobre o vaso. Cresce e floresce da primavera ao outono, com flores principalmente entre dezembro e abril; no inverno quase para e quer pouca água. Caules avermelhados indicam sol forte ou frio, sem problema; caules finos, compridos e verde-claros indicam falta de luz."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega_enraizamento",
+      "titulo": "Rega leve da estaca",
+      "tipo": "REGA",
+      "frequencia_dias": 7,
+      "dia_inicio_ciclo": 8,
+      "dia_fim_ciclo": 28,
+      "instrucoes": "Molhe só o substrato em volta da estaca com cerca de meio copo de água, sem encharcar e sem molhar a base do caule. Se o substrato ainda estiver úmido a 2 cm de profundidade, pule esta rega.",
+      "critica": false
+    },
+    {
+      "id": "rega_adulta",
+      "titulo": "Regar a orbea",
+      "tipo": "REGA",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 29,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie um palito até o fundo do vaso: só regue se sair totalmente seco. Aí regue de uma vez até escorrer pelo furo e esvazie o prato em 15 minutos. No calor acima de 30 °C, confira a cada 7 dias; de junho a agosto, espace para uma rega leve a cada 3 ou 4 semanas.",
+      "critica": true
+    },
+    {
+      "id": "adubacao_crescimento",
+      "titulo": "Adubar a orbea",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 30,
+      "dia_inicio_ciclo": 60,
+      "dia_fim_ciclo": null,
+      "instrucoes": "De setembro a março, dilua adubo líquido para cactos e suculentas (ou NPK 4-14-8) na metade da dose do rótulo e aplique no lugar de uma rega, com o substrato já úmido. De abril a agosto, pule a adubação.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_cochonilha",
+      "titulo": "Procurar cochonilhas",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 15,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Afaste os caules e olhe a base deles, entre os dentes e onde encostam no substrato, procurando tufos brancos de algodão. Aperte a base de alguns caules: se estiver mole ou preta, é podridão.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar substrato e dividir a touceira",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 730,
+      "dia_inicio_ciclo": 730,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Na primavera, tire a planta do vaso, descarte os caules velhos e lenhosos do centro, que param de brotar, e confira se há cochonilha branca nas raízes. Replante as partes jovens em substrato novo, seco, e só regue depois de 5 a 7 dias.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 8,
+      "titulo": "Primeira rega da estaca",
+      "mensagem": "O corte já teve uma semana para cicatrizar dentro do vaso. Agora uma rega leve ajuda as raízes a aparecer.",
+      "acao_requerida": "Regar com cerca de meio copo de água em volta da estaca, sem encharcar"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "A estaca enraizou?",
+      "mensagem": "Com um mês, a maioria das estacas de orbea já tem raiz. Estaca que continua solta e enrugada pode ter apodrecido na base.",
+      "acao_requerida": "Puxar a estaca de leve: se resistir, está enraizada; se sair, conferir a base, cortar a parte mole ou escura e deixar secar 5 dias antes de replantar"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão da base (Fusarium, Phytophthora)",
+      "tipo": "DOENCA",
+      "sintomas": "Caules amolecem, escurecem e ficam translúcidos a partir da base, com cheiro azedo; a touceira se desmancha em poucos dias",
+      "prevencao_tratamento": "Regar só com o substrato totalmente seco, usar vaso de barro e pedrisco na superfície e quase não regar no inverno. Ao ver sinais, tirar do vaso, cortar tudo o que estiver mole com lâmina limpa, deixar os pedaços sadios secarem 5 dias e replantar em substrato novo e seco"
+    },
+    {
+      "nome": "Cochonilha-farinhenta (Pseudococcidae)",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão na base dos caules, entre os dentes e nas raízes; caules amarelados e sem crescimento",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; em infestação maior, pulverizar óleo de neem a 0,5% com algumas gotas de detergente a cada 7 dias, três vezes. Cochonilha de raiz exige tirar do vaso, lavar as raízes e trocar o substrato"
+    },
+    {
+      "nome": "Larvas de mosca nas flores",
+      "tipo": "PRAGA",
+      "sintomas": "Pequenas larvas brancas dentro das flores murchas; o cheiro de carniça faz as moscas porem ovos nelas",
+      "prevencao_tratamento": "Retirar as flores assim que murcharem e jogar no lixo fechado; as larvas não atacam a planta, mas apodrecem sobre os caules se as flores ficarem no vaso"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas na face dos caules virada para o sol, geralmente após mudança de lugar ou no verão",
+      "prevencao_tratamento": "Preferir sol da manhã e sombra clara à tarde no verão; ao levar para um lugar mais claro, fazer a mudança aos poucos ao longo de duas semanas"
+    },
+    {
+      "nome": "Estiolamento",
+      "tipo": "DISTURBIO",
+      "sintomas": "Caules finos, compridos, verde-claros e tombados, sem flores",
+      "prevencao_tratamento": "Levar para um lugar com pelo menos 3 horas de sol direto; os trechos estiolados não voltam ao normal e podem ser cortados para virar estacas"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: orbea em repouso",
+      "mensagem": "No frio a orbea quase para de crescer, e substrato úmido com temperatura baixa é a principal causa de podridão.",
+      "acao_requerida": "Espaçar a rega para uma rega leve a cada 3 ou 4 semanas, suspender o adubo e abrigar o vaso da chuva e de noites abaixo de 5 °C"
+    },
+    {
+      "meses": [
+        9
+      ],
+      "titulo": "Retomar os cuidados",
+      "mensagem": "Com o calor voltando, a orbea recomeça a brotar e é a melhor época para fazer estacas e mudas.",
+      "acao_requerida": "Voltar à rega a cada 10 dias com substrato seco, retomar a adubação mensal e cortar estacas dos caules mais compridos se quiser multiplicar"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "titulo": "Época das flores",
+      "mensagem": "É o período de floração: os botões aparecem na base dos caules novos e as flores cheiram a carniça por alguns dias para atrair moscas.",
+      "acao_requerida": "Não mudar o vaso de lugar quando houver botões, que caem com a mudança, e retirar as flores assim que murcharem"
+    }
+  ]
+}

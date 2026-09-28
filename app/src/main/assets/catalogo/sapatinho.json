@@ -1,0 +1,188 @@
+{
+  "planta": {
+    "nome_comum": "Sapatinho",
+    "nome_cientifico": "Paphiopedilum spp. (híbridos, grupo insigne e Maudiae)",
+    "descricao": "Orquídea terrestre asiática, chamada de sapatinho pelo labelo em forma de bolsa. Os híbridos dos grupos insigne e Maudiae são os mais vendidos no Brasil, gostam de pouca luz e florescem bem dentro de casa. Não tem pseudobulbo para guardar água, por isso nunca pode secar de todo.",
+    "tipo_ciclo": "PERENE",
+    "dificuldade": "MEDIA",
+    "forma_inicio": "PLANTA_ADULTA",
+    "duracao_ciclo_dias": null,
+    "meses_plantio": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "requisitos_iniciais": {
+    "tipo_vaso_ou_solo": "Vaso de plástico com 10 a 12 cm de diâmetro e 10 cm de altura, com vários furos no fundo e nas laterais baixas; o plástico segura a umidade que a raiz pede",
+    "volume_minimo_litros": 0.6,
+    "luminosidade": "MEIA_SOMBRA",
+    "horas_sol_minimas": 0,
+    "horas_sol_diarias_recomendadas": 1,
+    "substrato_recomendado": "50% casca de pinus fina (0,5 a 1 cm), 20% perlita, 20% esfagno picado, 10% carvão vegetal miúdo; úmido e muito arejado, sem terra",
+    "camada_drenagem": false
+  },
+  "fases_ciclo_vida": [
+    {
+      "fase_id": "adaptacao",
+      "nome": "Adaptação",
+      "dia_inicio": 1,
+      "dia_fim": 30,
+      "descricao": "A planta sai da estufa e estranha a luz e o ar mais seco da casa. Pode perder a flor antes da hora ou amarelar uma folha velha, o que é normal. Deixe-a perto de uma janela clara, sem sol depois das 9h, e não troque de vaso agora. Terminou a adaptação quando as folhas ficam firmes e sem manchas novas."
+    },
+    {
+      "fase_id": "estabelecimento",
+      "nome": "Estabelecimento",
+      "dia_inicio": 31,
+      "dia_fim": 180,
+      "descricao": "Surge um broto novo (leque de folhas) na base, ao lado da haste antiga. As folhas devem ficar verde-médio: verde-escuro e mole indica pouca luz; amarelado e com manchas secas indica sol demais. Cada leque floresce uma vez só, quando está maduro."
+    },
+    {
+      "fase_id": "planta_adulta",
+      "nome": "Planta Adulta",
+      "dia_inicio": 181,
+      "dia_fim": null,
+      "descricao": "Ano típico: cresce folhas na primavera e no verão, forma a haste floral no outono e floresce do fim do outono à primavera, com flores que duram 6 a 10 semanas. Depois da flor, corte a haste rente às folhas. A touceira aumenta um ou dois leques por ano e o substrato precisa de troca anual."
+    }
+  ],
+  "tarefas_agendadas": [
+    {
+      "id": "rega",
+      "titulo": "Regar o sapatinho",
+      "tipo": "REGA",
+      "frequencia_dias": 4,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Enfie o dedo 2 cm no substrato: se estiver só levemente úmido, regue com água sem cloro (filtrada ou da chuva) até escorrer pelos furos. Regue pela manhã e não deixe água parada no centro do leque; se cair, seque com papel. No calor acima de 28 °C confira a cada 3 dias; no inverno o substrato demora mais a secar.",
+      "critica": true
+    },
+    {
+      "id": "adubacao",
+      "titulo": "Adubar com dose fraca",
+      "tipo": "ADUBACAO",
+      "frequencia_dias": 14,
+      "dia_inicio_ciclo": 30,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Dissolva adubo para orquídeas NPK 20-20-20 a um quarto da dose do rótulo (cerca de 0,25 g por litro) e regue com ele o substrato já úmido. Uma vez por mês, na rega seguinte à adubação, passe água pura em volume de duas vezes o vaso para lavar os sais, que queimam as raízes.",
+      "critica": false
+    },
+    {
+      "id": "inspecao_pragas",
+      "titulo": "Inspecionar folhas e colo",
+      "tipo": "PRAGA_CHECK",
+      "frequencia_dias": 10,
+      "dia_inicio_ciclo": 1,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Olhe o verso das folhas e a base onde elas se juntam: procure algodãozinho branco, pontinhos marrons grudados, teias finas ou manchas moles e escuras com cheiro ruim no colo.",
+      "critica": false
+    },
+    {
+      "id": "troca_substrato",
+      "titulo": "Trocar o substrato",
+      "tipo": "TRANSPLANTE",
+      "frequencia_dias": 365,
+      "dia_inicio_ciclo": 365,
+      "dia_fim_ciclo": null,
+      "instrucoes": "Logo depois da floração, tire a planta do vaso, descarte todo o substrato velho e corte com tesoura esterilizada as raízes moles ou ocas (as boas são peludas e firmes). Replante no mesmo tamanho de vaso, ou um número acima se a touceira encostar na borda, com o colo na mesma altura de antes. Fique 5 dias sem adubar.",
+      "critica": false
+    }
+  ],
+  "alertas_fase": [
+    {
+      "dia_disparo": 1,
+      "titulo": "Sapatinho chegou em casa",
+      "mensagem": "O sapatinho vive com pouca luz, mas não no escuro. Sol forte queima a folha em uma tarde.",
+      "acao_requerida": "Colocar a até 1 metro de uma janela clara, com no máximo o sol fraco da manhã, e manter no vaso em que veio"
+    },
+    {
+      "dia_disparo": 30,
+      "titulo": "Hora de começar a adubar",
+      "mensagem": "A planta já se adaptou e pode receber adubo fraco para formar o próximo leque.",
+      "acao_requerida": "Comprar adubo para orquídeas 20-20-20 e usar a um quarto da dose do rótulo"
+    },
+    {
+      "dia_disparo": 60,
+      "titulo": "Confira o substrato de fábrica",
+      "mensagem": "Muitos sapatinhos vêm em esfagno puro e compacto, que fica encharcado e apodrece a raiz.",
+      "acao_requerida": "Apertar o substrato com o dedo: se estiver empapado e sem ar, trocar pela mistura de pinus, perlita e esfagno assim que a flor cair"
+    }
+  ],
+  "pragas_comuns": [
+    {
+      "nome": "Podridão-mole do colo (Erwinia, Pectobacterium)",
+      "tipo": "DOENCA",
+      "sintomas": "Mancha translúcida e depois marrom e mole na base das folhas ou no centro do leque, que se espalha em poucos dias e cheira mal",
+      "prevencao_tratamento": "Nunca deixar água parada no centro do leque e regar pela manhã. Ao ver a mancha, cortar o tecido doente com lâmina esterilizada até o tecido firme, polvilhar canela em pó ou pasta de fungicida cúprico e deixar a planta mais seca e ventilada"
+    },
+    {
+      "nome": "Podridão de raiz por excesso de água",
+      "tipo": "DOENCA",
+      "sintomas": "Folhas murchas e enrugadas mesmo com o substrato úmido; raízes escuras, moles e sem pelos",
+      "prevencao_tratamento": "Trocar todo o substrato, cortar as raízes podres e replantar em mistura arejada; regar só quando os 2 cm de cima estiverem quase secos"
+    },
+    {
+      "nome": "Cochonilha-farinhenta",
+      "tipo": "PRAGA",
+      "sintomas": "Tufos brancos como algodão nas axilas das folhas, no verso e nas raízes",
+      "prevencao_tratamento": "Retirar com cotonete embebido em álcool 70%; depois, óleo de neem a 0,5% com uma gota de detergente a cada 7 dias, três aplicações"
+    },
+    {
+      "nome": "Ácaro-rajado",
+      "tipo": "PRAGA",
+      "sintomas": "Pontinhos prateados no verso das folhas, que ficam foscas; teia fina em ar seco",
+      "prevencao_tratamento": "Limpar as folhas com pano úmido dos dois lados e aumentar a umidade do ar com bandeja de pedrinhas e água sob o vaso"
+    },
+    {
+      "nome": "Queimadura de sol",
+      "tipo": "DISTURBIO",
+      "sintomas": "Manchas esbranquiçadas ou marrons e secas no meio da folha, surgidas de um dia para o outro",
+      "prevencao_tratamento": "Afastar da janela ou filtrar a luz com cortina; a mancha não some, mas as folhas novas vêm sadias"
+    },
+    {
+      "nome": "Excesso de sais",
+      "tipo": "DISTURBIO",
+      "sintomas": "Pontas das folhas marrons e secas, crosta branca no substrato ou na borda do vaso",
+      "prevencao_tratamento": "Regar com água sem cloro, manter o adubo a um quarto da dose e lavar o substrato com água pura uma vez por mês"
+    }
+  ],
+  "eventos_sazonais": [
+    {
+      "meses": [
+        4,
+        5
+      ],
+      "titulo": "Noites frescas para florir",
+      "mensagem": "A diferença de 5 a 8 °C entre dia e noite no outono ajuda a formar a haste floral.",
+      "acao_requerida": "Deixar a planta num lugar arejado que esfrie à noite, como perto de uma janela, e não num cômodo aquecido"
+    },
+    {
+      "meses": [
+        6,
+        7,
+        8
+      ],
+      "titulo": "Inverno: menos água e cuidado com o frio",
+      "mensagem": "No frio o substrato demora a secar e a raiz apodrece com facilidade; abaixo de 10 °C a planta sofre.",
+      "acao_requerida": "Espaçar a rega para quando os 2 cm de cima estiverem quase secos, regar só de manhã e afastar a planta do vidro gelado nas noites frias"
+    },
+    {
+      "meses": [
+        12,
+        1,
+        2
+      ],
+      "titulo": "Verão: calor e umidade",
+      "mensagem": "Acima de 30 °C, com o ar parado, o sapatinho desidrata e a podridão do colo se espalha.",
+      "acao_requerida": "Conferir a rega a cada 3 dias, manter o ambiente ventilado e usar bandeja de pedrinhas com água sob o vaso"
+    }
+  ]
+}
