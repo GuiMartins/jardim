@@ -13,6 +13,8 @@
 #              as ferramentas do Compose, mas é 3 a 4 vezes mais lento
 #   logs       segue o logcat do processo do app (precisa estar rodando)
 #   print X    salva um print da tela ligada em X.png (o Fold tem duas telas)
+#   release    testa, builda o release, cria a tag vX.Y.Z (do versionName) e
+#              publica a release no GitHub com o APK
 set -euo pipefail
 
 # Sem isso o Git Bash reescreve caminhos do aparelho (/sdcard -> C:/Program Files/Git/sdcard).
@@ -77,8 +79,29 @@ case "$comando" in
         "$ADB" exec-out screencap -p -d "$tela" > "${2:-print}.png"
         echo "salvo em ${2:-print}.png"
         ;;
+    release)
+        # O APK sai deste PC, não do CI: só a chave de debug daqui instala por
+        # cima do que está no celular sem apagar o banco.
+        cd "$SCRIPT_DIR"
+        versao=$(grep -o 'versionName = "[^"]*"' app/build.gradle.kts | cut -d'"' -f2)
+        tag="v$versao"
+        if [ -n "$(git status --porcelain)" ]; then
+            echo "Há mudanças sem commit: a release tem que sair igual ao que está na tag."
+            exit 1
+        fi
+        if git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
+            echo "A tag $tag já existe: suba versionName e versionCode em app/build.gradle.kts."
+            exit 1
+        fi
+        ./gradlew :motor:test :app:testDebugUnitTest assembleRelease
+        apk="app/build/outputs/apk/release/jardim-$tag.apk"
+        cp app/build/outputs/apk/release/app-release.apk "$apk"
+        git tag -a "$tag" -m "Jardim $versao"
+        git push origin HEAD "$tag"
+        gh release create "$tag" "$apk" --title "Jardim $versao" --generate-notes
+        ;;
     *)
-        echo "Uso: ./dev.sh [emulator|test|build|install|start|run|run-debug|logs|print]"
+        echo "Uso: ./dev.sh [emulator|test|build|install|start|run|run-debug|logs|print|release]"
         exit 1
         ;;
 esac

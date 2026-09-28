@@ -83,6 +83,8 @@ Depois da etapa 5 (2026-09-25):
 - `./gradlew :app:testDebugUnitTest`: testes JVM do app (formatação).
 - `./dev.sh run`: build **release**, instala e abre no aparelho conectado. `./dev.sh run-debug` faz o mesmo em debug: é o único em que `run-as com.jardim` lê o banco, mas é 3 a 4 vezes mais lento. Não meça desempenho em debug.
 - Depois de mexer em serialização, Room, WorkManager ou nos receivers, confira os fluxos no release (Hoje, linha do tempo, "Testar agora"), porque o R8 só quebra essas coisas em tempo de execução.
+- `./dev.sh release`: roda os testes, builda o release, cria a tag `vX.Y.Z` (lida do `versionName`) e publica a release no GitHub com o APK. Exige árvore limpa. Antes de cada release, suba `versionName` e `versionCode` em `app/build.gradle.kts`. O APK sai deste PC, nunca do CI, porque só a chave de debug daqui instala por cima do que está no celular.
+- CI (`.github/workflows/testes.yml`): `:motor:test` e `:app:testDebugUnitTest` a cada push.
 - `./dev.sh print nome`: print da tela ligada. O aparelho de teste é o celular do usuário, um **Galaxy Z Fold7 (SM-F966B, Android 16)** via USB. Ele tem duas telas, e `screencap` sem `-d` pode pegar a desligada.
 - No Git Bash, `adb shell` com caminho do aparelho precisa de `MSYS_NO_PATHCONV=1` (o `dev.sh` já exporta).
 - Para testar tocando na tela: `uiautomator dump` + `input tap` no centro do elemento pelo texto. A barra de notificações tem notificações pessoais de outros apps: não toque nem descreva nada lá, e peça ao usuário para tocar nos botões da notificação. Conceder permissão no aparelho também é com ele.
