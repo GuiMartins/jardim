@@ -14,6 +14,15 @@ O formato é o da skill `planta-cultivo-json`, versionada em `.claude/skills/pla
 
 `temperatura_minima_c` e `temperatura_maxima_c` (em `planta`, 2026-09-27) são os limites dos avisos do tempo. As espécies geradas antes deles foram preenchidas por `dados/temperaturas.py`, que manda ao claude só as frases sobre temperatura, em lotes (US$ 2,47 pelas 627, contra uns US$ 200 de rodar a skill de novo). Onde o texto já fixa o número ("com previsão abaixo de 5 °C, abrigue"), vale o texto: é a regra 9 da skill, e o claude bateu com ele em 96% dos casos (nos outros, ficou o texto).
 
+## Revisão do conteúdo (2026-09-27)
+
+O `validar.py` confere a forma; a skill `revisar-planta` (`.claude/skills/revisar-planta/`) confere o conteúdo contra fontes na web e devolve achados em JSON (`campo`, `atual`, `proposto`, `gravidade`, `fontes`). Sem fonte aberta, não há achado. `dados/revisar_catalogo.py` roda a skill em lote, com Sonnet (outro modelo que não o da geração, para não herdar os mesmos enganos), numa cópia do JSON em `dados/cache/revisao/<planta>/`:
+
+- `--calibrar` revisa cópias com os erros de `evals/erros_plantados.json` (todos passam no `validar.py`, senão o validador entregaria a resposta) e mede quantos a skill acha. Primeira rodada: 9 de 10. As cópias ficam em `revisao-b/`, e não "calibracao", porque o claude vê o nome da pasta.
+- `--amostra N` sorteia por categoria (uma por categoria, o resto proporcional) e o relatório pondera cada categoria pelo tamanho dela no catálogo. Os achados vão para `dados/cache/revisao/relatorio.md` em checklist: o usuário aprova um por um, nada muda o catálogo sozinho.
+- Custa ~US$ 0,60 por planta (as páginas abertas pesam): o dobro da geração. O catálogo inteiro sairia uns US$ 400; por isso primeiro se mede numa amostra.
+- O Sonnet exagera a gravidade (marca ALTA o que a régua diz MEDIA): decida pela taxa de "ALTA ou MEDIA".
+
 O **girassol** (`catalogo/girassol.json`) é o JSON de referência do projeto, fornecido pelo usuário: os testes de cenário real, os exemplos e as decisões de tela e notificação partem dele.
 
 ## Regras de produto

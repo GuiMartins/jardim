@@ -1,0 +1,70 @@
+[
+  {
+    "arquivo": "girassol.json",
+    "erro": "girassol semeado no inverno",
+    "gravidade": "ALTA",
+    "trocas": { "planta.meses_plantio": [5, 6, 7] }
+  },
+  {
+    "arquivo": "alecrim.json",
+    "erro": "mínima de 12 °C num alecrim, que aguenta geada",
+    "gravidade": "MEDIA",
+    "trocas": { "planta.temperatura_minima_c": 12 }
+  },
+  {
+    "arquivo": "babosa.json",
+    "erro": "babosa regada todo dia",
+    "gravidade": "ALTA",
+    "trocas": { "tarefas_agendadas[rega_padrao].frequencia_dias": 1 }
+  },
+  {
+    "arquivo": "jabuticabeira.json",
+    "erro": "nome científico da pitangueira na jabuticabeira",
+    "gravidade": "ALTA",
+    "trocas": { "planta.nome_cientifico": "Eugenia uniflora" }
+  },
+  {
+    "arquivo": "manjericao.json",
+    "erro": "óleo de neem a 15%",
+    "gravidade": "ALTA",
+    "trocas": { "pragas_comuns[4].prevencao_tratamento": { "de": "0,5%", "para": "15%" } }
+  },
+  {
+    "arquivo": "orquidea-borboleta.json",
+    "erro": "Phalaenopsis no sol direto",
+    "gravidade": "ALTA",
+    "trocas": {
+      "requisitos_iniciais.luminosidade": "SOL_DIRETO",
+      "requisitos_iniciais.horas_sol_minimas": 6,
+      "requisitos_iniciais.horas_sol_diarias_recomendadas": 8
+    }
+  },
+  {
+    "arquivo": "hortela.json",
+    "erro": "hortelã regada a cada 10 dias",
+    "gravidade": "ALTA",
+    "trocas": { "tarefas_agendadas[rega_padrao].frequencia_dias": 10 }
+  },
+  {
+    "arquivo": "alface.json",
+    "erro": "colheita da alface aos 15 dias",
+    "gravidade": "MEDIA",
+    "trocas": { "tarefas_agendadas[colheita_folhas].dia_inicio_ciclo": 15 }
+  },
+  {
+    "arquivo": "lavanda.json",
+    "erro": "lavanda na meia-sombra",
+    "gravidade": "MEDIA",
+    "trocas": {
+      "requisitos_iniciais.luminosidade": "MEIA_SOMBRA",
+      "requisitos_iniciais.horas_sol_minimas": 1,
+      "requisitos_iniciais.horas_sol_diarias_recomendadas": 2
+    }
+  },
+  {
+    "arquivo": "morangueiro.json",
+    "erro": "máxima de 42 °C no morangueiro",
+    "gravidade": "MEDIA",
+    "trocas": { "planta.temperatura_maxima_c": 42 }
+  }
+]
