@@ -1,0 +1,5 @@
+# Decisões da revisão das fotos do catálogo (lidas por fotos.py).
+# Uma linha por espécie revisada; espécie sem linha ainda não foi revisada. Vale a última linha.
+# foto: inat:<id da foto no iNaturalist> (uma das candidatas da página de revisão) | SEM_FOTO
+# As linhas saem prontas da página dados/cache/fotos/revisao.html.
+arquivo;foto;nota

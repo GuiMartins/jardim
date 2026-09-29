@@ -27,6 +27,11 @@ data class ItemCatalogo(
     val tipoCiclo: TipoCiclo,
     val duracaoCicloDias: Int?,
     val mesesPlantio: List<Int>,
+    /**
+     * Miniatura da espécie no iNaturalist (240 px), de dados/fotos.json. O app
+     * baixa quando a linha aparece; null = sem foto boa, a lista mostra o emoji.
+     */
+    val foto: String? = null,
 )
 
 object IndiceCatalogo {

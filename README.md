@@ -72,7 +72,9 @@ simula o ciclo inteiro para garantir isso.
 - **Nova planta**: busca com autocomplete, que filtra a cada letra, sem ligar
   para acento, pelo começo de qualquer palavra do nome, pelos outros nomes
   ("língua de sogra") e pelo científico, tolerando um erro de digitação
-  ("girasol"). Com a busca vazia, as mais populares vêm primeiro. Depois,
+  ("girasol"). Com a busca vazia, as mais populares vêm primeiro. Cada
+  planta tem uma foto do iNaturalist, para conferir que é ela antes de tocar.
+  Depois,
   um resumo da planta (luz, vaso, temperatura, época) e a pergunta: **já
   semeou** (apelido, dia 1 e onde ela fica) ou **vai semear**? Quem vai
   semear vê o que juntar antes (semente ou muda, vaso, substrato, drenagem,
@@ -135,6 +137,20 @@ Brasil sem ficar lento:
 - Medido com 1000 plantas: o índice tem 253 KB (37 KB comprimido no APK) e
   cada letra digitada custa ~1,3 ms na JVM. O catálogo inteiro soma uns
   5 MB ao APK.
+
+### Fotos
+
+As fotos vêm do [iNaturalist](https://www.inaturalist.org) e não estão no APK:
+o índice guarda o endereço da miniatura, e o app baixa cada uma quando a linha
+aparece na busca e a guarda em 160 px (~5 KB). Sem internet, as que nunca
+apareceram mostram o emoji da categoria (🥬 🌸 🌵 🌴…).
+
+`python dados/fotos.py` escolhe a foto de cada espécie entre as da página dela e
+as de exemplares cultivados no Brasil, só com licença que permite recortar (CC0,
+BY, BY-SA, BY-NC, BY-NC-SA), e guarda autor e licença em `dados/fotos.json`. A
+escolha automática confere o nome científico, mas é revisada à mão numa página
+com todas as miniaturas (`dados/cache/fotos/revisao.html`); as decisões ficam em
+`dados/fotos.csv`.
 
 Para testar volume sem pôr nada no repositório:
 `./gradlew assembleDebug -PcatalogoExtra=<pasta com catalogo/*.json>`.

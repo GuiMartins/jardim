@@ -76,6 +76,15 @@ Depois da etapa 5 (2026-09-25):
 - **Aviso de época**: o resumo da manhã publica "Começou a época: X" uma vez por começo de época (`avisarEpoca`), fora do grupo das pendências e sem botão "Feito". Planejar dentro da época não avisa; se o dia 1 passar sem aviso, sai no primeiro resumo depois. `epocaAvisadaEm` só é gravado se a notificação saiu. "Testar agora" não gasta o aviso. Fora do Centro-Sul, não há aviso.
 - Fotos das espécies ficaram para uma frente separada (o catálogo não tem imagem nenhuma).
 
+## Fotos da busca (2026-09-29)
+
+- Cada espécie tem uma foto do iNaturalist na busca (`MiniaturaPlanta`, 56 dp). **Não vão no APK** (decisão do usuário, contra a recomendação de embutir ~5 MB): o índice leva o endereço da miniatura `small` (240 px, ~33 KB, ~0,6 s para chegar) e `Miniaturas` baixa quando a linha aparece, recorta o centro em 160 px e guarda em `files/miniaturas` (WebP, ~5 KB). Só as que aparecem na tela, nunca todas de uma vez (também decisão do usuário). Sem internet, as nunca vistas mostram o emoji da categoria (`emojiDaCategoria`), igual à espécie sem foto boa.
+- `dados/fotos.py` escolhe a foto e grava `dados/fotos.json`, que a task `gerarIndiceCatalogo` lê. O táxon vem do nome científico do JSON (a busca do iNaturalist aceita sinônimo), não só do levantamento: Begônia descreve a begônia-de-cera, não o gênero. Candidatas: fotos do táxon e de exemplares **cultivados no Brasil** (mostram a planta como é vendida: o pingo-de-ouro dourado, o filodendro no vaso). Licenças: CC0, BY, BY-SA, BY-NC, BY-NC-SA; ND fica fora, porque recortar pode contar como obra derivada. Autor e licença ficam no `fotos.json`.
+- A Wikipedia foi descartada como fonte: gravuras antigas, uma bandeira e espécies trocadas (crisântemo com *Glebionis*, beterraba com acelga).
+- Conferir o nome científico garante a botânica, não o reconhecimento: a foto padrão costuma ser flor ou fruto na natureza. Por isso a revisão é **da grade inteira**, à mão, em `dados/cache/fotos/revisao.html` (marcadas primeiro: gênero, cultivar, híbridos, sinônimo, nome que não bate). A página gera as linhas de `dados/fotos.csv` (`arquivo;inat:<id da foto>|SEM_FOTO;nota`); espécie sem linha ainda não foi revisada. Espécie nova no catálogo: rode `python dados/fotos.py` e revise as que aparecerem.
+- **Compose 1.7.2 + `SharedTransitionLayout`**: pôr ou tirar um filho de um nó de tamanho fixo quando um estado assíncrono muda (a foto chegando) derruba o app com "Placement happened before lookahead", só em tempo de execução. `MiniaturaPlanta` desenha a foto com `drawWithContent` e mantém o mesmo `Text`; `Crossfade` também caía.
+- Medido no emulador (a mesma densidade do Fold, 420 dpi), a rolagem com fotos ficou igual à de antes, dentro do ruído; a medida que vale, a do Fold, ainda não foi feita.
+
 ## Catálogo e busca (2026-09-25)
 
 - O catálogo vai chegar a ~1000 espécies, geradas por outra frente do projeto (`dados/`: levantamento das plantas populares e `gerar_catalogo.py`), que grava direto em `app/src/main/assets/catalogo/`. **Não ponha arquivos temporários nessa pasta.** Para testar volume, use `-PcatalogoExtra=<pasta fora do repo>`.

@@ -130,6 +130,27 @@ fun categoria(codigo: String): String = when (codigo) {
     else -> codigo.lowercase().replace('_', ' ').replaceFirstChar { it.uppercase() }
 }
 
+/** O que a lista mostra no lugar da foto que não há (ou que não baixou). */
+fun emojiDaCategoria(codigo: String?): String = when (codigo) {
+    "HORTALICA" -> "🥬"
+    "ERVA_AROMATICA" -> "🌿"
+    "MEDICINAL" -> "🍵"
+    "FRUTIFERA" -> "🍊"
+    "FLOR" -> "🌸"
+    "FOLHAGEM" -> "🍃"
+    "SUCULENTA" -> "🌵"
+    "ORQUIDEA" -> "🌺"
+    "BROMELIA" -> "🍍"
+    "SAMAMBAIA" -> "🌿"
+    "PALMEIRA" -> "🌴"
+    "ARBUSTO" -> "🌳"
+    "ARVORE" -> "🌳"
+    "TREPADEIRA" -> "🍇"
+    "FORRACAO" -> "🍀"
+    "AQUATICA" -> "🪷"
+    else -> "🌱"
+}
+
 fun luminosidade(l: Luminosidade): String = when (l) {
     Luminosidade.SOL_DIRETO -> "Sol direto"
     Luminosidade.MEIA_SOMBRA -> "Meia-sombra"

@@ -48,8 +48,10 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.jardim.dados.Miniaturas
 import com.jardim.motor.agenda.foraDeEpoca
 import com.jardim.motor.catalogo.ResultadoBusca
+import com.jardim.ui.MiniaturaPlanta
 import com.jardim.ui.categoria
 import com.jardim.ui.resumo
 import java.time.LocalDate
@@ -137,7 +139,7 @@ fun CatalogoTela(
                     contentPadding = PaddingValues(bottom = 16.dp),
                 ) {
                     items(pronto.resultados, key = { it.item.arquivo }) { resultado ->
-                        ItemDoCatalogo(resultado, hoje, calendarioVale, onClick = { aoEscolher(resultado.item.arquivo) })
+                        ItemDoCatalogo(resultado, hoje, calendarioVale, viewModel.miniaturas, onClick = { aoEscolher(resultado.item.arquivo) })
                     }
                 }
             }
@@ -146,13 +148,21 @@ fun CatalogoTela(
 }
 
 @Composable
-private fun ItemDoCatalogo(resultado: ResultadoBusca, hoje: LocalDate, calendarioVale: Boolean, onClick: () -> Unit) {
+private fun ItemDoCatalogo(
+    resultado: ResultadoBusca,
+    hoje: LocalDate,
+    calendarioVale: Boolean,
+    miniaturas: Miniaturas,
+    onClick: () -> Unit,
+) {
     val item = resultado.item
     val cores = MaterialTheme.colorScheme
     val destaque = SpanStyle(fontWeight = FontWeight.Bold, color = cores.primary)
     val fora = calendarioVale && foraDeEpoca(item.mesesPlantio, hoje)
 
     ListItem(
+        // A foto é para conferir que é a planta certa antes de tocar.
+        leadingContent = { MiniaturaPlanta(item.foto, item.categoria, miniaturas) },
         headlineContent = { Text(realcar(item.nomeComum, resultado.destaquesNome, destaque)) },
         supportingContent = {
             Column {

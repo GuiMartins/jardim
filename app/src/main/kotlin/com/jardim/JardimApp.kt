@@ -7,11 +7,13 @@ import com.jardim.avisos.Preferencias
 import com.jardim.dados.Catalogo
 import com.jardim.dados.JardimDatabase
 import com.jardim.dados.JardimRepositorio
+import com.jardim.dados.Miniaturas
 import com.jardim.tempo.Previsoes
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
+import java.io.File
 
 /** Injeção de dependência manual: as poucas peças do app moram aqui. */
 class JardimApp : Application() {
@@ -19,6 +21,7 @@ class JardimApp : Application() {
     val escopo = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
     val catalogo by lazy { Catalogo(assets) }
+    val miniaturas by lazy { Miniaturas(File(filesDir, "miniaturas")) }
     val preferencias by lazy { Preferencias(this) }
     val repositorio by lazy { JardimRepositorio(JardimDatabase.criar(this).dao(), preferencias.previsao) }
     val previsoes by lazy { Previsoes(this, preferencias) }

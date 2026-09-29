@@ -10,6 +10,7 @@ import com.jardim.avisos.Preferencias
 import com.jardim.dados.Catalogo
 import com.jardim.dados.Especie
 import com.jardim.dados.JardimRepositorio
+import com.jardim.dados.Miniaturas
 import com.jardim.dados.Planejado
 import com.jardim.motor.agenda.ItemPreparo
 import com.jardim.motor.agenda.Local
@@ -41,6 +42,7 @@ class NovaPlantaViewModel(
     private val catalogo: Catalogo,
     private val repositorio: JardimRepositorio,
     preferencias: Preferencias,
+    val miniaturas: Miniaturas,
 ) : ViewModel() {
 
     /**
@@ -106,7 +108,7 @@ class NovaPlantaViewModel(
         val Factory = viewModelFactory {
             initializer {
                 val app = this[APPLICATION_KEY] as JardimApp
-                NovaPlantaViewModel(app.catalogo, app.repositorio, app.preferencias)
+                NovaPlantaViewModel(app.catalogo, app.repositorio, app.preferencias, app.miniaturas)
             }
         }
     }

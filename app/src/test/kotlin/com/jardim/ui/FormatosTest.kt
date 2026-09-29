@@ -4,6 +4,7 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertNotEquals
 
 class FormatosTest {
 
@@ -43,5 +44,14 @@ class FormatosTest {
     fun `data do DatePicker vai e volta sem perder um dia`() {
         val data = LocalDate.of(2026, 10, 1)
         assertEquals(data, data.emMillisUtc().comoDataUtc())
+    }
+
+    @Test
+    fun `toda categoria do levantamento tem emoji próprio no lugar da foto`() {
+        val categorias = listOf(
+            "HORTALICA", "ERVA_AROMATICA", "MEDICINAL", "FRUTIFERA", "FLOR", "FOLHAGEM", "SUCULENTA", "ORQUIDEA",
+            "BROMELIA", "SAMAMBAIA", "PALMEIRA", "ARBUSTO", "ARVORE", "TREPADEIRA", "FORRACAO", "AQUATICA",
+        )
+        categorias.forEach { assertNotEquals(emojiDaCategoria(null), emojiDaCategoria(it), it) }
     }
 }

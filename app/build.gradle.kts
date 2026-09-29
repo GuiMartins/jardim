@@ -68,6 +68,8 @@ val gerarIndiceCatalogo = tasks.register<GerarIndiceCatalogo>("gerarIndiceCatalo
     // Da outra frente do projeto (levantamento das plantas populares): se existir,
     // o índice ganha sinônimos, categoria e ranking de popularidade.
     levantamento.from(rootProject.file("dados/plantas-populares.json"))
+    // A foto de cada espécie (dados/fotos.py): o índice leva só o endereço, o app baixa.
+    fotos.from(rootProject.file("dados/fotos.json"))
 }
 
 androidComponents {
@@ -129,6 +131,10 @@ abstract class GerarIndiceCatalogo : DefaultTask() {
     @get:PathSensitive(PathSensitivity.NAME_ONLY)
     abstract val levantamento: ConfigurableFileCollection
 
+    @get:InputFiles
+    @get:PathSensitive(PathSensitivity.NAME_ONLY)
+    abstract val fotos: ConfigurableFileCollection
+
     @get:OutputDirectory
     abstract val saida: DirectoryProperty
 
@@ -138,6 +144,9 @@ abstract class GerarIndiceCatalogo : DefaultTask() {
         val doLevantamento: Map<String?, Map<*, *>> = levantamento.files.filter { it.exists() }
             .flatMap { arquivo -> ((leitor.parse(arquivo, "UTF-8") as Map<*, *>)["plantas"] as List<*>).map { it as Map<*, *> } }
             .associateBy { it["arquivo_catalogo"] as String? }
+        val fotoDe: Map<*, *> = fotos.files.filter { it.exists() }
+            .map { (leitor.parse(it, "UTF-8") as Map<*, *>)["especies"] as Map<*, *> }
+            .firstOrNull() ?: emptyMap<Any, Any>()
 
         val itens = plantas.files.sortedBy { it.name }.map { arquivo ->
             val planta = (leitor.parse(arquivo, "UTF-8") as Map<*, *>)["planta"] as Map<*, *>
@@ -159,12 +168,13 @@ abstract class GerarIndiceCatalogo : DefaultTask() {
                 "tipo_ciclo" to planta["tipo_ciclo"],
                 "duracao_ciclo_dias" to planta["duracao_ciclo_dias"],
                 "meses_plantio" to planta["meses_plantio"],
+                "foto" to ((fotoDe[arquivo.name] as Map<*, *>?)?.get("foto") as Map<*, *>?)?.get("url"),
             )
         }
 
         val destino = saida.get().file("catalogo/indice.json").asFile
         destino.parentFile.mkdirs()
         destino.writeText(JsonGenerator.Options().disableUnicodeEscaping().build().toJson(itens), Charsets.UTF_8)
-        logger.lifecycle("Índice do catálogo: ${itens.size} plantas, ${destino.length() / 1024} KB")
+        logger.lifecycle("Índice do catálogo: ${itens.size} plantas (${itens.count { it["foto"] != null }} com foto), ${destino.length() / 1024} KB")
     }
 }

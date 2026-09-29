@@ -171,13 +171,14 @@ class BuscaCatalogoTest {
     }
 
     @Test
-    fun `lê o índice gerado no build, com os campos do levantamento opcionais`() {
+    fun `lê o índice gerado no build, com os campos do levantamento e a foto opcionais`() {
         val itens = IndiceCatalogo.ler(
             """
             [
               {"arquivo":"girassol.json","nome_comum":"Girassol","nome_cientifico":"Helianthus annuus",
                "outros_nomes":[],"categoria":"FLOR","posicao":3,"dificuldade":"FACIL","tipo_ciclo":"ANUAL",
-               "duracao_ciclo_dias":105,"meses_plantio":[9,10,11,12,1,2]},
+               "duracao_ciclo_dias":105,"meses_plantio":[9,10,11,12,1,2],
+               "foto":"https://inaturalist-open-data.s3.amazonaws.com/photos/1/small.jpg"},
               {"arquivo":"rabanete.json","nome_comum":"Rabanete","nome_cientifico":"Raphanus sativus",
                "dificuldade":"FACIL","tipo_ciclo":"ANUAL","duracao_ciclo_dias":35,"meses_plantio":[3,4]}
             ]
@@ -186,6 +187,7 @@ class BuscaCatalogoTest {
         assertEquals(listOf(3, null), itens.map { it.posicao })
         assertEquals(listOf("FLOR", null), itens.map { it.categoria })
         assertEquals(emptyList(), itens[1].outrosNomes)
+        assertEquals(listOf("https://inaturalist-open-data.s3.amazonaws.com/photos/1/small.jpg", null), itens.map { it.foto })
     }
 
     @Test
