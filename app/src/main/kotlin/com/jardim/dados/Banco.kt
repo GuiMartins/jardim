@@ -12,13 +12,16 @@ import androidx.room.PrimaryKey
 import androidx.room.Query
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.Transaction
 import androidx.room.TypeConverter
 import androidx.room.TypeConverters
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
+import com.jardim.motor.agenda.ItemPreparo
 import com.jardim.motor.agenda.Local
 import com.jardim.motor.agenda.StatusAcao
 import com.jardim.motor.leitura.Migracoes
+import com.jardim.motor.modelo.FormaInicio
 import kotlinx.coroutines.flow.Flow
 import java.time.LocalDate
 import java.time.LocalDateTime
@@ -39,6 +42,32 @@ data class PlantioEntity(
     val encerradoEm: LocalDate? = null,
     /** Onde o vaso fica; null nos plantios de antes da pergunta (sem avisos do tempo até responder). */
     val local: Local? = null,
+)
+
+/**
+ * Uma planta que ainda vai ser plantada. Fica fora de `plantio` de propósito:
+ * tudo o que lê `plantio` (Cronograma, avisos, linha do tempo) supõe que existe
+ * um dia 1. Ao plantar, vira um `plantio` e sai daqui. A cópia do JSON só é
+ * feita nessa hora, com o catálogo do dia.
+ */
+@Entity(tableName = "planejado")
+data class PlanejadoEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    /** Arquivo do catálogo (girassol.json). */
+    val especie: String,
+    /** O nome comum no dia do planejamento, para a tela Hoje não ler o JSON. */
+    val nome: String,
+    /** Pelo nome do enum: diz se o item de início é semente, muda, bulbo... */
+    val formaInicio: FormaInicio,
+    /** `meses_plantio` como texto ("9,10,11,12,1,2"), para o aviso de época. */
+    val mesesPlantio: String,
+    val planejadoEm: LocalDate,
+    /** Pode ficar sem resposta até a hora de plantar. */
+    val local: Local? = null,
+    /** Os [ItemPreparo] ainda não marcados, pelo nome ("VASO,SUBSTRATO"). */
+    val faltam: String,
+    /** O último aviso de "começou a época": um por época. */
+    val epocaAvisadaEm: LocalDate? = null,
 )
 
 @Entity(
@@ -90,6 +119,28 @@ interface JardimDao {
 
     @Query("UPDATE plantio SET local = :local WHERE id = :id")
     suspend fun mudarLocal(id: Long, local: Local)
+
+    @Query("SELECT * FROM planejado ORDER BY planejadoEm, id")
+    fun planejados(): Flow<List<PlanejadoEntity>>
+
+    @Insert
+    suspend fun inserirPlanejado(planejado: PlanejadoEntity): Long
+
+    @Query("UPDATE planejado SET faltam = :faltam, local = :local WHERE id = :id")
+    suspend fun mudarPreparo(id: Long, faltam: String, local: Local?)
+
+    @Query("UPDATE planejado SET epocaAvisadaEm = :data WHERE id = :id")
+    suspend fun marcarEpocaAvisada(id: Long, data: LocalDate)
+
+    @Query("DELETE FROM planejado WHERE id = :id")
+    suspend fun apagarPlanejado(id: Long)
+
+    @Transaction
+    suspend fun plantarPlanejado(plantio: PlantioEntity, planejadoId: Long): Long {
+        val id = inserirPlantio(plantio)
+        apagarPlanejado(planejadoId)
+        return id
+    }
 }
 
 /** Datas em texto ISO (2026-10-01): legível no banco e ordena certo no ORDER BY. */
@@ -107,7 +158,7 @@ class Conversores {
     fun paraDataHora(dataHora: LocalDateTime?): String? = dataHora?.toString()
 }
 
-@Database(entities = [PlantioEntity::class, RegistroAcaoEntity::class], version = 2, exportSchema = true)
+@Database(entities = [PlantioEntity::class, RegistroAcaoEntity::class, PlanejadoEntity::class], version = 3, exportSchema = true)
 @TypeConverters(Conversores::class)
 abstract class JardimDatabase : RoomDatabase() {
     abstract fun dao(): JardimDao
@@ -115,7 +166,7 @@ abstract class JardimDatabase : RoomDatabase() {
     companion object {
         fun criar(context: Context): JardimDatabase =
             Room.databaseBuilder(context, JardimDatabase::class.java, "jardim.db")
-                .addMigrations(migracao1para2(context.assets))
+                .addMigrations(migracao1para2(context.assets), MIGRACAO_2_PARA_3)
                 .build()
     }
 }
@@ -137,5 +188,16 @@ private fun migracao1para2(assets: AssetManager) = object : Migration(1, 2) {
                 db.execSQL("UPDATE plantio SET cultivoJson = ? WHERE id = ?", arrayOf<Any>(completa, cursor.getLong(0)))
             }
         }
+    }
+}
+
+/** Versão 3 (2026-09-28): a tabela `planejado`, das plantas que ainda vão ser plantadas. */
+private val MIGRACAO_2_PARA_3 = object : Migration(2, 3) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `planejado` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                "`especie` TEXT NOT NULL, `nome` TEXT NOT NULL, `formaInicio` TEXT NOT NULL, `mesesPlantio` TEXT NOT NULL, `planejadoEm` TEXT NOT NULL, " +
+                "`local` TEXT, `faltam` TEXT NOT NULL, `epocaAvisadaEm` TEXT)",
+        )
     }
 }

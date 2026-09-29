@@ -12,7 +12,14 @@ import androidx.lifecycle.viewmodel.viewModelFactory
 import com.jardim.JardimApp
 import com.jardim.avisos.Avisos
 import com.jardim.dados.JardimRepositorio
+import com.jardim.dados.Planejado
 import com.jardim.dados.PlantioAtivo
+import com.jardim.motor.agenda.ItemPreparo
+import com.jardim.motor.agenda.foraDeEpoca
+import com.jardim.motor.agenda.proximoInicioDaEpoca
+import com.jardim.motor.tempo.noCentroSul
+import com.jardim.ui.mesPorExtenso
+import com.jardim.ui.nomeDoItem
 import com.jardim.motor.agenda.Pendencia
 import com.jardim.motor.agenda.StatusAcao
 import com.jardim.motor.modelo.FormaInicio
@@ -40,6 +47,17 @@ data class CartaoPlantio(
     val pendencias: List<Pendencia>,
 )
 
+/** Uma planta que ainda vai ser plantada, na seção "Para plantar". */
+data class CartaoPlanejado(
+    val id: Long,
+    val arquivo: String,
+    val nome: String,
+    /** "Falta: vaso e substrato", ou "Tudo pronto". */
+    val preparo: String,
+    /** "Está na época", "A época começa em setembro"; null fora do Centro-Sul ou se dá o ano todo. */
+    val epoca: String?,
+)
+
 /** Uma ação recém-registrada, que a snackbar oferece desfazer. */
 data class AcaoRegistrada(val registroId: Long, val mensagem: String)
 
@@ -64,6 +82,14 @@ class HojeViewModel(
     val cartoes: StateFlow<List<CartaoPlantio>?> =
         combine(repositorio.plantiosAtivos, hoje) { plantios, dia -> plantios.map { it.cartao(dia) } }
             .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
+
+    /** null enquanto o banco não respondeu, como [cartoes]. */
+    val planejados: StateFlow<List<CartaoPlanejado>?> =
+        combine(repositorio.planejados, hoje, preferencias.cidade) { lista, dia, cidade ->
+            // Os meses do catálogo são do Centro-Sul; sem cidade, vale o padrão.
+            val calendarioVale = cidade == null || noCentroSul(cidade)
+            lista.map { it.cartao(dia, calendarioVale) }
+        }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
     private val registradas = Channel<AcaoRegistrada>(Channel.BUFFERED)
     val acoesRegistradas: Flow<AcaoRegistrada> = registradas.receiveAsFlow()
@@ -112,6 +138,26 @@ class HojeViewModel(
             pendencias = cronograma.pendenciasEm(dia),
         )
     }
+
+    private fun Planejado.cartao(dia: LocalDate, calendarioVale: Boolean): CartaoPlanejado {
+        val nomes = ItemPreparo.entries.filter { it in faltam }.map { nomeDoItem(it, formaInicio) }
+        val epoca = when {
+            !calendarioVale || mesesPlantio.size == 12 -> null
+            !foraDeEpoca(mesesPlantio, dia) -> "Está na época"
+            else -> proximoInicioDaEpoca(mesesPlantio, dia)?.let { "A época começa em ${mesPorExtenso(it)}" }
+        }
+        return CartaoPlanejado(
+            id = id,
+            arquivo = arquivo,
+            nome = nome,
+            preparo = if (nomes.isEmpty()) "Tudo pronto" else "Falta: ${lista(nomes)}",
+            epoca = epoca,
+        )
+    }
+
+    /** "vaso", "vaso e substrato", "muda, vaso e substrato" */
+    private fun lista(nomes: List<String>) =
+        if (nomes.size == 1) nomes[0] else nomes.dropLast(1).joinToString(", ") + " e " + nomes.last()
 
     companion object {
         val Factory = viewModelFactory {

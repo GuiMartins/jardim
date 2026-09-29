@@ -66,6 +66,16 @@ Depois da etapa 5 (2026-09-25):
 - As boas-vindas aparecem uma vez (flag no DataStore), por cima da navegação e embaixo da semente: explicam e pedem notificação e cidade, e perguntam onde fica cada planta antiga. Tudo é opcional.
 - Banco v2: coluna `local`, e as cópias do JSON dos plantios completadas com as temperaturas do catálogo atual (`Migracoes.comTemperaturas`; espécie que saiu do catálogo leva 5 e 30 °C, a mediana).
 
+## Nova planta em etapas e "Para plantar" (2026-09-28)
+
+- Busca → **resumo** (`ResumoTela`: descrição, luz, vaso, temperatura, época) com dois botões: "Já semeei/plantei" vai direto aos dados do plantio (`PlantarTela`: apelido, dia 1, local), como antes; "Vou semear/plantar" vai ao **preparo** (`PrepararTela`). O verbo segue a `forma_inicio`: só 13% do catálogo começa por semente.
+- O preparo é uma lista de caixas tirada dos campos que já existem (`itensDePreparo` no motor: início pela `forma_inicio`, vaso, substrato, drenagem só se `camada_drenagem`, lugar com luz). Extrair materiais mais finos do JSON (tutor, tela, adubo) ficou para depois, se a lista se mostrar útil.
+- Salvar é **explícito** ("Salvar para depois"), nunca efeito de marcar uma caixa (decisão do usuário). Depois de salva, cada toque no preparo grava na hora. A lixeira do preparo tira a planta da lista.
+- A planta salva fica na tabela `planejado`, fora de `plantio`, porque tudo o que lê `plantio` supõe um dia 1. Ao plantar, `plantarPlanejado` insere o plantio e apaga o planejamento na mesma transação. A cópia do JSON é feita só nessa hora, com o catálogo do dia.
+- "Para plantar" fica no fim da tela Hoje, com o que falta e a época ("Está na época", "A época começa em março").
+- **Aviso de época**: o resumo da manhã publica "Começou a época: X" uma vez por começo de época (`avisarEpoca`), fora do grupo das pendências e sem botão "Feito". Planejar dentro da época não avisa; se o dia 1 passar sem aviso, sai no primeiro resumo depois. `epocaAvisadaEm` só é gravado se a notificação saiu. "Testar agora" não gasta o aviso. Fora do Centro-Sul, não há aviso.
+- Fotos das espécies ficaram para uma frente separada (o catálogo não tem imagem nenhuma).
+
 ## Catálogo e busca (2026-09-25)
 
 - O catálogo vai chegar a ~1000 espécies, geradas por outra frente do projeto (`dados/`: levantamento das plantas populares e `gerar_catalogo.py`), que grava direto em `app/src/main/assets/catalogo/`. **Não ponha arquivos temporários nessa pasta.** Para testar volume, use `-PcatalogoExtra=<pasta fora do repo>`.
@@ -96,8 +106,8 @@ Depois da etapa 5 (2026-09-25):
 
 ## Banco (Room)
 
-- Duas tabelas: `plantio` (com a cópia do JSON da espécie no dia do plantio) e `registro_acao`. Datas em texto ISO.
-- Enums (`StatusAcao`) são gravados pelo nome: renomear exige migração.
+- Três tabelas: `plantio` (com a cópia do JSON da espécie no dia do plantio), `registro_acao` e `planejado` (v3, as plantas de "Para plantar"). Datas em texto ISO.
+- Enums (`StatusAcao`, `Local`, `FormaInicio`, `ItemPreparo` em `planejado.faltam`) são gravados pelo nome: renomear exige migração.
 - Esquemas exportados em `app/schemas/`. Ao mudar uma entidade, suba a `version` e escreva a migração; não use `fallbackToDestructiveMigration`, porque apagaria o histórico do usuário.
 
 ## Comandos

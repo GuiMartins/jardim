@@ -38,7 +38,10 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.ListItem
+import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.OutlinedCard
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarDuration
 import androidx.compose.material3.SnackbarHost
@@ -57,6 +60,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
@@ -80,11 +84,13 @@ import kotlinx.coroutines.flow.collectLatest
 @Composable
 fun HojeTela(
     aoAdicionar: () -> Unit,
+    aoAbrirPlanejado: (arquivo: String, planejadoId: Long) -> Unit,
     aoConfigurar: () -> Unit,
     aoAbrirPlanta: (plantioId: Long) -> Unit,
     viewModel: HojeViewModel = viewModel(factory = HojeViewModel.Factory),
 ) {
     val cartoes by viewModel.cartoes.collectAsStateWithLifecycle()
+    val planejados by viewModel.planejados.collectAsStateWithLifecycle()
     val hoje by viewModel.dataDeHoje.collectAsStateWithLifecycle()
     val tempo by viewModel.tempoDeHoje.collectAsStateWithLifecycle()
     val snackbar = remember { SnackbarHostState() }
@@ -140,7 +146,8 @@ fun HojeTela(
         snackbarHost = { SnackbarHost(snackbar) },
     ) { padding ->
         val lista = cartoes ?: return@Scaffold
-        if (lista.isEmpty()) {
+        val paraPlantar = planejados ?: return@Scaffold
+        if (lista.isEmpty() && paraPlantar.isEmpty()) {
             SemPlantas(aoAdicionar, Modifier.padding(padding))
         } else {
             LazyColumn(
@@ -168,8 +175,46 @@ fun HojeTela(
                         aoAbrir = { aoAbrirPlanta(cartao.id) },
                     )
                 }
+                // Embaixo das plantas: o Hoje é antes de tudo o que fazer hoje.
+                if (paraPlantar.isNotEmpty()) {
+                    item(key = "para-plantar") {
+                        Text(
+                            "Para plantar",
+                            style = MaterialTheme.typography.titleMedium,
+                            modifier = Modifier.padding(top = 8.dp),
+                        )
+                    }
+                    items(paraPlantar, key = { "planejado-${it.id}" }) { planejado ->
+                        CartaoPlanejadoView(planejado, aoAbrir = { aoAbrirPlanejado(planejado.arquivo, planejado.id) })
+                    }
+                }
             }
         }
+    }
+}
+
+@Composable
+private fun CartaoPlanejadoView(cartao: CartaoPlanejado, aoAbrir: () -> Unit) {
+    OutlinedCard(onClick = aoAbrir, modifier = Modifier.fillMaxWidth()) {
+        ListItem(
+            headlineContent = { Text(cartao.nome, style = MaterialTheme.typography.titleMedium) },
+            supportingContent = {
+                Column {
+                    Text(cartao.preparo)
+                    cartao.epoca?.let {
+                        Text(it, color = MaterialTheme.colorScheme.onSurfaceVariant, style = MaterialTheme.typography.bodySmall)
+                    }
+                }
+            },
+            trailingContent = {
+                Icon(
+                    Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            },
+            colors = ListItemDefaults.colors(containerColor = Color.Transparent),
+        )
     }
 }
 

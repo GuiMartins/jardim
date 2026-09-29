@@ -1,11 +1,14 @@
 package com.jardim.ui
 
+import com.jardim.motor.agenda.ItemPreparo
 import com.jardim.motor.agenda.Origem
 import com.jardim.motor.agenda.Pendencia
 import com.jardim.motor.agenda.Risco
 import com.jardim.motor.modelo.Dificuldade
+import com.jardim.motor.modelo.FormaInicio
 import com.jardim.motor.modelo.Luminosidade
 import com.jardim.motor.modelo.Planta
+import com.jardim.motor.modelo.RequisitosIniciais
 import com.jardim.motor.modelo.TipoPraga
 import com.jardim.motor.modelo.TipoTarefa
 import java.time.Instant
@@ -49,6 +52,40 @@ fun tipoPraga(tipo: TipoPraga): String = when (tipo) {
 /** [9, 10, 11] → "set, out, nov" */
 fun meses(meses: List<Int>): String =
     meses.joinToString(", ") { Month.of(it).getDisplayName(TextStyle.SHORT, ptBr).removeSuffix(".") }
+
+/** 2026-09-01 → "setembro" */
+fun mesPorExtenso(data: LocalDate): String = data.month.getDisplayName(TextStyle.FULL, ptBr)
+
+/** "Sol direto: de 6 a 8 horas de sol direto por dia." */
+fun luzDoDia(r: RequisitosIniciais): String = if (r.horasSolDiariasRecomendadas == 0.0) {
+    "${luminosidade(r.luminosidade)}, sem sol direto."
+} else if (r.horasSolMinimas == 0.0) {
+    // Meia-sombra que aguenta ficar sem sol: "de 0 a 2 horas" soa estranho.
+    "${luminosidade(r.luminosidade)}: até ${numero(r.horasSolDiariasRecomendadas)} horas de sol direto por dia."
+} else {
+    "${luminosidade(r.luminosidade)}: de ${numero(r.horasSolMinimas)} a ${numero(r.horasSolDiariasRecomendadas)} horas de sol direto por dia."
+}
+
+/** "Semear" para semente, "plantar" para o resto: o verbo dos botões. */
+fun verboInicio(forma: FormaInicio): String = if (forma == FormaInicio.SEMENTE) "semear" else "plantar"
+
+/** "Semeei" ou "Plantei" */
+fun feitoInicio(forma: FormaInicio): String = if (forma == FormaInicio.SEMENTE) "Semeei" else "Plantei"
+
+/** Nome curto de um item do preparo, para "Falta: vaso, substrato". */
+fun nomeDoItem(item: ItemPreparo, forma: FormaInicio): String = when (item) {
+    ItemPreparo.INICIO -> when (forma) {
+        FormaInicio.SEMENTE -> "sementes"
+        FormaInicio.MUDA -> "muda"
+        FormaInicio.ESTACA -> "estaca"
+        FormaInicio.BULBO -> "bulbo"
+        FormaInicio.PLANTA_ADULTA -> "a planta"
+    }
+    ItemPreparo.VASO -> "vaso"
+    ItemPreparo.SUBSTRATO -> "substrato"
+    ItemPreparo.DRENAGEM -> "drenagem"
+    ItemPreparo.LUGAR -> "lugar com luz"
+}
 
 fun atraso(dias: Int): String = when (dias) {
     0 -> "Para hoje"

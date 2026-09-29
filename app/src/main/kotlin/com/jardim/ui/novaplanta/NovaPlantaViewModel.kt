@@ -10,11 +10,14 @@ import com.jardim.avisos.Preferencias
 import com.jardim.dados.Catalogo
 import com.jardim.dados.Especie
 import com.jardim.dados.JardimRepositorio
+import com.jardim.dados.Planejado
+import com.jardim.motor.agenda.ItemPreparo
 import com.jardim.motor.agenda.Local
 import com.jardim.motor.catalogo.ResultadoBusca
 import com.jardim.motor.tempo.noCentroSul
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -69,10 +72,32 @@ class NovaPlantaViewModel(
 
     suspend fun carregar(arquivo: String): Especie? = withContext(Dispatchers.IO) { catalogo.especie(arquivo) }
 
-    /** Grava no viewModelScope: sair da tela no meio não cancela o plantio. */
-    fun plantar(especie: Especie, apelido: String, dataPlantio: LocalDate, local: Local, depois: () -> Unit) {
+    fun planejado(id: Long): Flow<Planejado?> = repositorio.planejados.map { lista -> lista.firstOrNull { it.id == id } }
+
+    // As gravações rodam no viewModelScope: sair da tela no meio não as cancela.
+
+    fun plantar(especie: Especie, apelido: String, dataPlantio: LocalDate, local: Local, planejadoId: Long?, depois: () -> Unit) {
         viewModelScope.launch {
-            repositorio.plantar(especie, apelido.trim().ifEmpty { especie.cultivo.planta.nomeComum }, dataPlantio, local)
+            val nome = apelido.trim().ifEmpty { especie.cultivo.planta.nomeComum }
+            repositorio.plantar(especie, nome, dataPlantio, local, planejadoId)
+            depois()
+        }
+    }
+
+    fun planejar(especie: Especie, faltam: Set<ItemPreparo>, local: Local?, depois: () -> Unit) {
+        viewModelScope.launch {
+            repositorio.planejar(especie, faltam, local, LocalDate.now())
+            depois()
+        }
+    }
+
+    fun mudarPreparo(planejadoId: Long, faltam: Set<ItemPreparo>, local: Local?) {
+        viewModelScope.launch { repositorio.mudarPreparo(planejadoId, faltam, local) }
+    }
+
+    fun desistir(planejadoId: Long, depois: () -> Unit) {
+        viewModelScope.launch {
+            repositorio.desistir(planejadoId)
             depois()
         }
     }

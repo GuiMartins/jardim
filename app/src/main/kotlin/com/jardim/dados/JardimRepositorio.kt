@@ -2,6 +2,7 @@ package com.jardim.dados
 
 import com.jardim.motor.agenda.Cronograma
 import com.jardim.motor.agenda.DiaDoTempo
+import com.jardim.motor.agenda.ItemPreparo
 import com.jardim.motor.agenda.Local
 import com.jardim.motor.agenda.Pendencia
 import com.jardim.motor.agenda.RegistroAcao
@@ -9,10 +10,12 @@ import com.jardim.motor.agenda.StatusAcao
 import com.jardim.motor.agenda.Tempo
 import com.jardim.motor.leitura.LeitorCultivo
 import com.jardim.motor.leitura.ResultadoLeitura
+import com.jardim.motor.modelo.FormaInicio
 import com.jardim.motor.modelo.PlantaCultivo
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import java.time.LocalDate
@@ -32,6 +35,19 @@ data class PlantioAtivo(
 ) {
     fun cronograma() = Cronograma(cultivo, dataPlantio, registros, tempo)
 }
+
+/** Uma planta que ainda vai ser plantada, como as telas usam. */
+data class Planejado(
+    val id: Long,
+    val arquivo: String,
+    val nome: String,
+    val formaInicio: FormaInicio,
+    val mesesPlantio: List<Int>,
+    val planejadoEm: LocalDate,
+    val local: Local?,
+    val faltam: Set<ItemPreparo>,
+    val epocaAvisadaEm: LocalDate?,
+)
 
 /**
  * [previsao] é a última previsão da cidade do usuário: entra no fluxo dos
@@ -60,16 +76,57 @@ class JardimRepositorio(private val dao: JardimDao, previsao: Flow<List<DiaDoTem
             }
         }
 
-    suspend fun plantar(especie: Especie, apelido: String, dataPlantio: LocalDate, local: Local): Long =
-        dao.inserirPlantio(
-            PlantioEntity(
+    val planejados: Flow<List<Planejado>> = dao.planejados().map { lista ->
+        lista.map { p ->
+            Planejado(
+                id = p.id,
+                arquivo = p.especie,
+                nome = p.nome,
+                formaInicio = p.formaInicio,
+                mesesPlantio = p.mesesPlantio.split(',').filter(String::isNotBlank).map(String::toInt),
+                planejadoEm = p.planejadoEm,
+                local = p.local,
+                // Um item que saiu do enum numa versão nova some sem quebrar a leitura.
+                faltam = p.faltam.split(',').mapNotNull { nome -> ItemPreparo.entries.firstOrNull { it.name == nome } }.toSet(),
+                epocaAvisadaEm = p.epocaAvisadaEm,
+            )
+        }
+    }
+
+    /** [planejadoId] é o planejamento de onde a planta veio: some junto, na mesma transação. */
+    suspend fun plantar(especie: Especie, apelido: String, dataPlantio: LocalDate, local: Local, planejadoId: Long? = null): Long {
+        val plantio = PlantioEntity(
+            especie = especie.arquivo,
+            apelido = apelido,
+            dataPlantio = dataPlantio,
+            cultivoJson = especie.json,
+            local = local,
+        )
+        return if (planejadoId == null) dao.inserirPlantio(plantio) else dao.plantarPlanejado(plantio, planejadoId)
+    }
+
+    suspend fun planejar(especie: Especie, faltam: Set<ItemPreparo>, local: Local?, hoje: LocalDate): Long =
+        dao.inserirPlanejado(
+            PlanejadoEntity(
                 especie = especie.arquivo,
-                apelido = apelido,
-                dataPlantio = dataPlantio,
-                cultivoJson = especie.json,
+                nome = especie.cultivo.planta.nomeComum,
+                formaInicio = especie.cultivo.planta.formaInicio,
+                mesesPlantio = especie.cultivo.planta.mesesPlantio.joinToString(","),
+                planejadoEm = hoje,
                 local = local,
+                faltam = comoTexto(faltam),
             ),
         )
+
+    suspend fun mudarPreparo(planejadoId: Long, faltam: Set<ItemPreparo>, local: Local?) =
+        dao.mudarPreparo(planejadoId, comoTexto(faltam), local)
+
+    suspend fun marcarEpocaAvisada(planejadoId: Long, hoje: LocalDate) = dao.marcarEpocaAvisada(planejadoId, hoje)
+
+    suspend fun desistir(planejadoId: Long) = dao.apagarPlanejado(planejadoId)
+
+    // Na ordem do enum, para o banco não mudar só porque o Set veio em outra ordem.
+    private fun comoTexto(itens: Set<ItemPreparo>) = itens.sortedBy { it.ordinal }.joinToString(",") { it.name }
 
     suspend fun mudarLocal(plantioId: Long, local: Local) = dao.mudarLocal(plantioId, local)
 

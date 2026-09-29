@@ -72,9 +72,14 @@ simula o ciclo inteiro para garantir isso.
 - **Nova planta**: busca com autocomplete, que filtra a cada letra, sem ligar
   para acento, pelo começo de qualquer palavra do nome, pelos outros nomes
   ("língua de sogra") e pelo científico, tolerando um erro de digitação
-  ("girasol"). Com a busca vazia, as mais populares vêm primeiro. Depois:
-  apelido, data do dia 1 e o que preparar antes (vaso, luz, substrato,
-  drenagem).
+  ("girasol"). Com a busca vazia, as mais populares vêm primeiro. Depois,
+  um resumo da planta (luz, vaso, temperatura, época) e a pergunta: **já
+  semeou** (apelido, dia 1 e onde ela fica) ou **vai semear**? Quem vai
+  semear vê o que juntar antes (semente ou muda, vaso, substrato, drenagem,
+  lugar com luz), marca o que já tem e pode **salvar para depois**.
+- **Para plantar** (no fim da tela Hoje): as plantas salvas para depois, com
+  o que ainda falta e a época. Quando a época de uma delas começa, o resumo
+  da manhã avisa uma vez ("Começou a época: Girassol").
 - **Planta** (toque no nome dela na tela Hoje): a linha do tempo, com "Dia 16
   de 105", barra de progresso e a fase atual; o que vem nos próximos 7 dias;
   as fases com datas; problemas comuns (sintomas e tratamento) e o histórico
@@ -201,3 +206,4 @@ desenvolvimento desta máquina. Medido no Galaxy Z Fold7, com 1000 plantas:
 - [x] **Etapa 4**: notificações (resumo da manhã, lembrete da noite, botões na notificação)
 - [x] **Etapa 5**: linha do tempo da planta (agora, próximos dias, fases, problemas, histórico)
 - [x] **Etapa 6**: avisos do tempo (geada, calor, vento e chuva pela previsão da cidade e pelo lugar de cada vaso)
+- [x] **Etapa 7**: nova planta em etapas (resumo, preparo com o que juntar, "Para plantar" e aviso de começo da época)

@@ -72,6 +72,25 @@ class Avisos(private val context: Context) {
         gerenciador.notify(ID_RESUMO, resumo(modo, itens, canal))
     }
 
+    /**
+     * "Começou a época" de uma planta em Para plantar. Fica fora do grupo das
+     * pendências: não tem "Feito", porque o que resolve é plantar. Devolve se
+     * publicou, para o aviso só contar como dado quando chegou a sair.
+     */
+    @SuppressLint("MissingPermission") // conferido em ligadas()
+    fun publicarEpoca(planejadoId: Long, nome: String, falta: String?): Boolean {
+        if (!ligadas()) return false
+        val texto = falta?.let { "Ainda falta: $it." } ?: "Está tudo pronto para começar."
+        gerenciador.notify(
+            "planejado|$planejadoId".hashCode(),
+            base(CANAL_RESUMO)
+                .setContentTitle("🌱 Começou a época: $nome")
+                .setContentText(texto)
+                .build(),
+        )
+        return true
+    }
+
     /** A pendência foi marcada (no app ou no botão da notificação): some com a notificação dela. */
     fun cancelar(plantioId: Long, chave: String) {
         val id = idDe(plantioId, chave)

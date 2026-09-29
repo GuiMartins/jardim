@@ -23,7 +23,6 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.ListItem
-import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedCard
 import androidx.compose.material3.OutlinedTextField
@@ -53,32 +52,35 @@ import com.jardim.motor.agenda.Local
 import com.jardim.ui.EscolherLocal
 import com.jardim.motor.agenda.foraDeEpoca
 import com.jardim.motor.modelo.FormaInicio
-import com.jardim.motor.modelo.RequisitosIniciais
 import com.jardim.ui.comoDataUtc
 import com.jardim.ui.dataCompleta
 import com.jardim.ui.emMillisUtc
-import com.jardim.ui.luminosidade
 import com.jardim.ui.meses
-import com.jardim.ui.numero
 import java.time.LocalDate
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PlantarTela(
     arquivo: String,
+    /** O planejamento de onde a planta veio, se veio de um: some ao plantar. */
+    planejadoId: Long?,
+    /** O lugar já escolhido no preparo, se foi. */
+    localInicial: Local?,
     aoVoltar: () -> Unit,
     aoPlantar: () -> Unit,
     viewModel: NovaPlantaViewModel = viewModel(factory = NovaPlantaViewModel.Factory),
 ) {
     // O JSON inteiro da espécie só é lido agora, fora da main thread.
     val especie by produceState<Especie?>(null, arquivo) { value = viewModel.carregar(arquivo) }
-    especie?.let { PlantarConteudo(it, aoVoltar, aoPlantar, viewModel) }
+    especie?.let { PlantarConteudo(it, planejadoId, localInicial, aoVoltar, aoPlantar, viewModel) }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun PlantarConteudo(
     especie: Especie,
+    planejadoId: Long?,
+    localInicial: Local?,
     aoVoltar: () -> Unit,
     aoPlantar: () -> Unit,
     viewModel: NovaPlantaViewModel,
@@ -88,7 +90,7 @@ private fun PlantarConteudo(
 
     var apelido by rememberSaveable { mutableStateOf(planta.nomeComum) }
     var dataPlantio by rememberSaveable { mutableStateOf(LocalDate.now()) }
-    var local by rememberSaveable { mutableStateOf<Local?>(null) }
+    var local by rememberSaveable { mutableStateOf(localInicial) }
     var escolhendoData by remember { mutableStateOf(false) }
     var salvando by remember { mutableStateOf(false) }
     val calendarioVale by viewModel.calendarioVale.collectAsStateWithLifecycle()
@@ -96,7 +98,7 @@ private fun PlantarConteudo(
     val contexto = LocalContext.current
     val plantar = {
         salvando = true
-        viewModel.plantar(especie, apelido, dataPlantio, checkNotNull(local), aoPlantar)
+        viewModel.plantar(especie, apelido, dataPlantio, checkNotNull(local), planejadoId, aoPlantar)
     }
     // A permissão de notificação (Android 13+) é pedida aqui, no momento em que
     // ela faz sentido: a planta acabou de ganhar uma agenda. Planta mesmo se a
@@ -142,8 +144,6 @@ private fun PlantarConteudo(
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
-            Text(planta.descricao, style = MaterialTheme.typography.bodyLarge)
-
             OutlinedTextField(
                 value = apelido,
                 onValueChange = { apelido = it },
@@ -181,9 +181,6 @@ private fun PlantarConteudo(
                 )
                 EscolherLocal(local, aoEscolher = { local = it })
             }
-
-            Text("Antes de começar", style = MaterialTheme.typography.titleMedium)
-            Requisitos(especie.cultivo.requisitosIniciais)
         }
     }
 
@@ -206,37 +203,5 @@ private fun PlantarConteudo(
             },
             dismissButton = { TextButton(onClick = { escolhendoData = false }) { Text("Cancelar") } },
         ) { DatePicker(estado) }
-    }
-}
-
-@Composable
-private fun Requisitos(r: RequisitosIniciais) {
-    val luz = if (r.horasSolDiariasRecomendadas == 0.0) {
-        "${luminosidade(r.luminosidade)}, sem sol direto."
-    } else if (r.horasSolMinimas == 0.0) {
-        // Meia-sombra que aguenta ficar sem sol: "de 0 a 2 horas" soa estranho.
-        "${luminosidade(r.luminosidade)}: até ${numero(r.horasSolDiariasRecomendadas)} horas de sol direto por dia."
-    } else {
-        "${luminosidade(r.luminosidade)}: de ${numero(r.horasSolMinimas)} a ${numero(r.horasSolDiariasRecomendadas)} horas de sol direto por dia."
-    }
-    val itens = listOf(
-        // O girassol termina a frase com ponto; quase todo o resto do catálogo, não.
-        "🪴 Vaso" to "${r.tipoVasoOuSolo.trimEnd().let { if (it.endsWith('.')) it else "$it." }} Mínimo de ${numero(r.volumeMinimoLitros)} L por planta.",
-        "☀️ Luz" to luz,
-        "🟫 Substrato" to r.substratoRecomendado,
-        "💧 Drenagem" to if (r.camadaDrenagem) {
-            "Faça uma camada de drenagem no fundo do vaso."
-        } else {
-            "Sem camada de drenagem: o substrato já drena sozinho."
-        },
-    )
-    Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainer)) {
-        itens.forEach { (titulo, texto) ->
-            ListItem(
-                headlineContent = { Text(titulo, style = MaterialTheme.typography.titleSmall) },
-                supportingContent = { Text(texto) },
-                colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surfaceContainer),
-            )
-        }
     }
 }
