@@ -1,5 +1,9 @@
 package com.jardim.ui
 
+import com.jardim.motor.catalogo.ItemCatalogo
+import com.jardim.motor.modelo.Dificuldade
+import com.jardim.motor.modelo.Luminosidade
+import com.jardim.motor.modelo.TipoCiclo
 import java.time.LocalDate
 import java.time.LocalDateTime
 import kotlin.test.Test
@@ -53,5 +57,18 @@ class FormatosTest {
             "BROMELIA", "SAMAMBAIA", "PALMEIRA", "ARBUSTO", "ARVORE", "TREPADEIRA", "FORRACAO", "AQUATICA",
         )
         categorias.forEach { assertNotEquals(emojiDaCategoria(null), emojiDaCategoria(it), it) }
+    }
+
+    @Test
+    fun `o que a planta pede do lugar, na descoberta`() {
+        fun item(luz: Luminosidade, minimo: Double, recomendadas: Double, litros: Double) = ItemCatalogo(
+            arquivo = "x.json", nomeComum = "X", nomeCientifico = "X", dificuldade = Dificuldade.FACIL,
+            tipoCiclo = TipoCiclo.PERENE, duracaoCicloDias = null, mesesPlantio = emptyList(),
+            luminosidade = luz, horasSolMinimas = minimo, horasSolDiariasRecomendadas = recomendadas, volumeMinimoLitros = litros,
+        )
+        assertEquals("6 h de sol ou mais · vaso de 12 L", pedeDoLugar(item(Luminosidade.SOL_DIRETO, 6.0, 8.0, 12.0)))
+        assertEquals("Até 2 h de sol · vaso de 5 L", pedeDoLugar(item(Luminosidade.MEIA_SOMBRA, 0.0, 2.0, 5.0)))
+        assertEquals("3 a 5 h de sol · vaso de 40 L", pedeDoLugar(item(Luminosidade.MEIA_SOMBRA, 3.0, 5.0, 40.0)))
+        assertEquals("Sem sol direto · vaso de 0,5 L", pedeDoLugar(item(Luminosidade.SOMBRA, 0.0, 0.0, 0.5)))
     }
 }

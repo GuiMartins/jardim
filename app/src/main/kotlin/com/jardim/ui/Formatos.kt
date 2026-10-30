@@ -4,6 +4,9 @@ import com.jardim.motor.agenda.ItemPreparo
 import com.jardim.motor.agenda.Origem
 import com.jardim.motor.agenda.Pendencia
 import com.jardim.motor.agenda.Risco
+import com.jardim.motor.catalogo.ItemCatalogo
+import com.jardim.motor.catalogo.Sol
+import com.jardim.motor.catalogo.Vaso
 import com.jardim.motor.modelo.Dificuldade
 import com.jardim.motor.modelo.FormaInicio
 import com.jardim.motor.modelo.Luminosidade
@@ -64,6 +67,36 @@ fun luzDoDia(r: RequisitosIniciais): String = if (r.horasSolDiariasRecomendadas 
     "${luminosidade(r.luminosidade)}: até ${numero(r.horasSolDiariasRecomendadas)} horas de sol direto por dia."
 } else {
     "${luminosidade(r.luminosidade)}: de ${numero(r.horasSolMinimas)} a ${numero(r.horasSolDiariasRecomendadas)} horas de sol direto por dia."
+}
+
+/** As faixas de sol da descoberta, como aparecem nos chips. */
+fun faixaDeSol(sol: Sol): String = when (sol) {
+    Sol.NENHUM -> "Sem sol direto"
+    Sol.POUCO -> "1 a 3 h"
+    Sol.MEIO -> "4 a 5 h"
+    Sol.MUITO -> "6 h ou mais"
+}
+
+fun tamanhoDeVaso(vaso: Vaso): String = when (vaso) {
+    Vaso.PEQUENO -> "Pequeno, até 3 L"
+    Vaso.MEDIO -> "Médio, até 10 L"
+    Vaso.GRANDE -> "Grande, até 30 L"
+    Vaso.CANTEIRO -> "Canteiro ou vasão"
+}
+
+/** "6 h de sol ou mais · vaso de 12 L": o que a planta pede do lugar, na descoberta. */
+fun pedeDoLugar(item: ItemCatalogo): String {
+    val minimo = item.horasSolMinimas
+    val recomendadas = item.horasSolDiariasRecomendadas ?: minimo
+    val sol = when {
+        minimo == null || recomendadas == null -> null
+        recomendadas == 0.0 -> "Sem sol direto"
+        item.luminosidade == Luminosidade.SOL_DIRETO -> "${numero(minimo)} h de sol ou mais"
+        minimo == 0.0 -> "Até ${numero(recomendadas)} h de sol"
+        else -> "${numero(minimo)} a ${numero(recomendadas)} h de sol"
+    }
+    val vaso = item.volumeMinimoLitros?.let { "vaso de ${numero(it)} L" }
+    return listOfNotNull(sol, vaso).joinToString(" · ").replaceFirstChar { it.uppercase(ptBr) }
 }
 
 /** "Semear" para semente, "plantar" para o resto: o verbo dos botões. */

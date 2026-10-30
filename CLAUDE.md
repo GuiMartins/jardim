@@ -76,6 +76,15 @@ Depois da etapa 5 (2026-09-25):
 - **Aviso de época**: o resumo da manhã publica "Começou a época: X" uma vez por começo de época (`avisarEpoca`), fora do grupo das pendências e sem botão "Feito". Planejar dentro da época não avisa; se o dia 1 passar sem aviso, sai no primeiro resumo depois. `epocaAvisadaEm` só é gravado se a notificação saiu. "Testar agora" não gasta o aviso. Fora do Centro-Sul, não há aviso.
 - Fotos das espécies ficaram para uma frente separada (o catálogo não tem imagem nenhuma).
 
+## O que plantar (2026-10-30)
+
+- "Não sei o que plantar" é o primeiro item da busca vazia (item da `LazyColumn`, e não botão fixo, pelo crash do `SharedTransitionLayout` descrito em Fotos da busca) e abre `DescobrirTela`. Tocar numa planta leva ao `ResumoTela`, e daí o fluxo é o de sempre.
+- Perguntas: sol direto no lugar (`Sol`: nenhum, 1 a 3 h, 4 a 5 h, 6 h ou mais) e maior vaso (`Vaso`: 3, 10, 30 L ou canteiro), mais "Só as fáceis", "Dá para começar agora" (some fora do Centro-Sul) e o tipo de planta (`categoria` do levantamento, com contagem). Tocar de novo num chip desmarca. Tudo é opcional.
+- A regra mora em `motor/catalogo/Descoberta.kt` (`DescobertaTest`): cabe no sol se `horas_sol_minimas` ≤ o fim da faixa e, se não for `SOL_DIRETO`, `horas_sol_diarias_recomendadas` + 1 ≥ o começo da faixa (samambaia não vai para o sol da tarde). Cabe no vaso se `volume_minimo_litros` ≤ o limite. Ordem: popularidade. `luminosidade` sozinha não serve: quase tudo é sol direto ou meia-sombra.
+- O índice ganhou `luminosidade`, `horas_sol_minimas`, `horas_sol_diarias_recomendadas` e `volume_minimo_litros`.
+- Sol, vaso, fáceis e época ficam no DataStore (`Preferencias.descoberta`), para a tela abrir já filtrada; as categorias não, porque são da procura do momento.
+- Ficaram para depois, se o filtro pegar: lugares salvos ("varanda: 4 h de sol") e o clima da cidade (precisaria de climatologia, e a Open-Meteo que o app usa só dá previsão).
+
 ## Fotos da busca (2026-09-29)
 
 - Cada espécie tem uma foto do iNaturalist na busca (`MiniaturaPlanta`, 56 dp). **Não vão no APK** (decisão do usuário, contra a recomendação de embutir ~5 MB): o índice leva o endereço da miniatura `small` (240 px, ~33 KB, ~0,6 s para chegar) e `Miniaturas` baixa quando a linha aparece, recorta o centro em 160 px e guarda em `files/miniaturas` (WebP, ~5 KB). Só as que aparecem na tela, nunca todas de uma vez (também decisão do usuário). Sem internet, as nunca vistas mostram o emoji da categoria (`emojiDaCategoria`), igual à espécie sem foto boa.

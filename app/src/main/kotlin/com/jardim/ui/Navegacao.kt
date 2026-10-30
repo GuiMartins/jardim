@@ -25,6 +25,7 @@ import com.jardim.motor.agenda.Local
 import com.jardim.ui.configuracoes.ConfiguracoesTela
 import com.jardim.ui.hoje.HojeTela
 import com.jardim.ui.novaplanta.CatalogoTela
+import com.jardim.ui.novaplanta.DescobrirTela
 import com.jardim.ui.novaplanta.PlantarTela
 import com.jardim.ui.novaplanta.PrepararTela
 import com.jardim.ui.novaplanta.ResumoTela
@@ -63,8 +64,15 @@ fun JardimNavegacao() {
                 }
                 tela("catalogo") {
                     Box(Modifier.fillMaxSize().container(CHAVE_NOVA_PLANTA, FloatingActionButtonDefaults.extendedFabShape)) {
-                        CatalogoTela(aoEscolher = { arquivo -> nav.navigate("especie/$arquivo") }, aoVoltar = { nav.popBackStack() })
+                        CatalogoTela(
+                            aoEscolher = { arquivo -> nav.navigate("especie/$arquivo") },
+                            aoDescobrir = { nav.navigate("descobrir") },
+                            aoVoltar = { nav.popBackStack() },
+                        )
                     }
+                }
+                tela("descobrir") {
+                    DescobrirTela(aoEscolher = { arquivo -> nav.navigate("especie/$arquivo") }, aoVoltar = { nav.popBackStack() })
                 }
                 tela("especie/{arquivo}") { entrada ->
                     val arquivo = checkNotNull(entrada.arguments?.getString("arquivo"))

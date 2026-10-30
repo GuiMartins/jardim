@@ -1,12 +1,14 @@
 package com.jardim.ui.novaplanta
 
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
@@ -15,6 +17,7 @@ import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -33,6 +36,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
@@ -46,6 +50,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.jardim.dados.Miniaturas
@@ -60,6 +65,7 @@ import java.time.LocalDate
 @Composable
 fun CatalogoTela(
     aoEscolher: (arquivo: String) -> Unit,
+    aoDescobrir: () -> Unit,
     aoVoltar: () -> Unit,
     viewModel: NovaPlantaViewModel = viewModel(factory = NovaPlantaViewModel.Factory),
 ) {
@@ -138,6 +144,22 @@ fun CatalogoTela(
                     modifier = Modifier.fillMaxSize(),
                     contentPadding = PaddingValues(bottom = 16.dp),
                 ) {
+                    // Item da lista, e não botão fixo embaixo do campo: pôr e tirar um
+                    // filho fora da LazyColumn dentro do container transform é o que
+                    // derrubava o app no Compose 1.7 (ver Miniatura.kt).
+                    if (consulta.isBlank()) {
+                        item(key = "descobrir") {
+                            ListItem(
+                                leadingContent = {
+                                    Box(Modifier.size(56.dp), contentAlignment = Alignment.Center) { Text("🧭", fontSize = 28.sp) }
+                                },
+                                headlineContent = { Text("Não sei o que plantar") },
+                                supportingContent = { Text("Veja o que cabe no sol e no espaço que você tem") },
+                                trailingContent = { Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null) },
+                                modifier = Modifier.clickable(onClick = aoDescobrir),
+                            )
+                        }
+                    }
                     items(pronto.resultados, key = { it.item.arquivo }) { resultado ->
                         ItemDoCatalogo(resultado, hoje, calendarioVale, viewModel.miniaturas, onClick = { aoEscolher(resultado.item.arquivo) })
                     }

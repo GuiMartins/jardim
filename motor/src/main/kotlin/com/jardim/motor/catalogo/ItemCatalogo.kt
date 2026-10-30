@@ -2,6 +2,7 @@ package com.jardim.motor.catalogo
 
 import com.jardim.motor.leitura.jsonJardim
 import com.jardim.motor.modelo.Dificuldade
+import com.jardim.motor.modelo.Luminosidade
 import com.jardim.motor.modelo.TipoCiclo
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.ListSerializer
@@ -27,6 +28,12 @@ data class ItemCatalogo(
     val tipoCiclo: TipoCiclo,
     val duracaoCicloDias: Int?,
     val mesesPlantio: List<Int>,
+    // Os requisitos que a descoberta (Descoberta.kt) cruza com o lugar da pessoa.
+    // Null só nos testes que não precisam deles: a planta passa em qualquer filtro.
+    val luminosidade: Luminosidade? = null,
+    val horasSolMinimas: Double? = null,
+    val horasSolDiariasRecomendadas: Double? = null,
+    val volumeMinimoLitros: Double? = null,
     /**
      * Miniatura da espécie no iNaturalist (240 px), de dados/fotos.json. O app
      * baixa quando a linha aparece; null = sem foto boa, a lista mostra o emoji.
