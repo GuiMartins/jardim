@@ -5,6 +5,7 @@ import android.os.SystemClock
 import android.util.Log
 import com.jardim.motor.catalogo.BuscaCatalogo
 import com.jardim.motor.catalogo.IndiceCatalogo
+import com.jardim.motor.catalogo.ItemCatalogo
 import com.jardim.motor.leitura.LeitorCultivo
 import com.jardim.motor.leitura.ResultadoLeitura
 import com.jardim.motor.modelo.PlantaCultivo
@@ -21,13 +22,14 @@ data class Especie(val arquivo: String, val json: String, val cultivo: PlantaCul
  */
 class Catalogo(private val assets: AssetManager) {
 
-    val busca: BuscaCatalogo by lazy {
+    val itens: List<ItemCatalogo> by lazy {
         val inicio = SystemClock.elapsedRealtime()
-        val itens = assets.open("$PASTA/indice.json").bufferedReader().use { IndiceCatalogo.ler(it.readText()) }
-        BuscaCatalogo(itens).also {
-            Log.d("Catalogo", "índice: ${itens.size} plantas em ${SystemClock.elapsedRealtime() - inicio} ms")
+        assets.open("$PASTA/indice.json").bufferedReader().use { IndiceCatalogo.ler(it.readText()) }.also {
+            Log.d("Catalogo", "índice: ${it.size} plantas em ${SystemClock.elapsedRealtime() - inicio} ms")
         }
     }
+
+    val busca: BuscaCatalogo by lazy { BuscaCatalogo(itens) }
 
     private val especies = ConcurrentHashMap<String, Especie>()
 

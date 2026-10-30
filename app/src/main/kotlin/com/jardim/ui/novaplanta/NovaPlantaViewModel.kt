@@ -15,7 +15,6 @@ import com.jardim.dados.Planejado
 import com.jardim.motor.agenda.ItemPreparo
 import com.jardim.motor.agenda.Local
 import com.jardim.motor.catalogo.ResultadoBusca
-import com.jardim.motor.tempo.noCentroSul
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
@@ -45,13 +44,8 @@ class NovaPlantaViewModel(
     val miniaturas: Miniaturas,
 ) : ViewModel() {
 
-    /**
-     * Os meses de plantio do catálogo foram pensados para o Centro-Sul. Fora
-     * dele, "fora de época" estaria errado, então a tela não diz nada. Sem
-     * cidade escolhida, vale o Centro-Sul, que é o padrão do catálogo.
-     */
-    val calendarioVale: StateFlow<Boolean> = preferencias.cidade
-        .map { it == null || noCentroSul(it) }
+    /** Fora do Centro-Sul, a tela não diz "fora de época" (Preferencias.calendarioVale). */
+    val calendarioVale: StateFlow<Boolean> = preferencias.calendarioVale
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), true)
 
     private val consulta = MutableStateFlow("")

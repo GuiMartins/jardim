@@ -7,8 +7,12 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.jardim.motor.agenda.DiaDoTempo
 import com.jardim.motor.agenda.ModoAviso
+import com.jardim.motor.catalogo.FiltroDescoberta
+import com.jardim.motor.catalogo.Sol
+import com.jardim.motor.catalogo.Vaso
 import com.jardim.motor.tempo.Cidade
 import com.jardim.motor.tempo.OpenMeteo
+import com.jardim.motor.tempo.noCentroSul
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.first
@@ -48,6 +52,35 @@ class Preferencias(private val context: Context) {
         }
     }
 
+    /**
+     * Os meses de plantio do catálogo foram pensados para o Centro-Sul. Fora
+     * dele, "fora de época" estaria errado, então as telas não dizem nada. Sem
+     * cidade escolhida, vale o Centro-Sul, que é o padrão do catálogo.
+     */
+    val calendarioVale: Flow<Boolean> = cidade.map { it == null || noCentroSul(it) }.distinctUntilChanged()
+
+    /**
+     * As respostas da descoberta ("O que plantar"), para a tela abrir já
+     * filtrada. As categorias não ficam: são da procura do momento.
+     */
+    val descoberta: Flow<FiltroDescoberta> = context.dataStore.data.map { prefs ->
+        FiltroDescoberta(
+            sol = prefs[DESCOBERTA_SOL]?.let { nome -> Sol.entries.firstOrNull { it.name == nome } },
+            vaso = prefs[DESCOBERTA_VASO]?.let { nome -> Vaso.entries.firstOrNull { it.name == nome } },
+            soFaceis = prefs[DESCOBERTA_FACEIS] ?: false,
+            soNaEpoca = prefs[DESCOBERTA_EPOCA] ?: false,
+        )
+    }.distinctUntilChanged()
+
+    suspend fun guardarDescoberta(filtro: FiltroDescoberta) {
+        context.dataStore.edit { prefs ->
+            filtro.sol?.let { prefs[DESCOBERTA_SOL] = it.name } ?: prefs.remove(DESCOBERTA_SOL)
+            filtro.vaso?.let { prefs[DESCOBERTA_VASO] = it.name } ?: prefs.remove(DESCOBERTA_VASO)
+            prefs[DESCOBERTA_FACEIS] = filtro.soFaceis
+            prefs[DESCOBERTA_EPOCA] = filtro.soNaEpoca
+        }
+    }
+
     /** A tela de boas-vindas aparece uma vez: na primeira abertura, ou na primeira depois desta versão. */
     val boasVindasVista: Flow<Boolean> = context.dataStore.data.map { it[BOAS_VINDAS] ?: false }.distinctUntilChanged()
 
@@ -82,5 +115,9 @@ class Preferencias(private val context: Context) {
         val BOAS_VINDAS = booleanPreferencesKey("boas_vindas_vista")
         val PREVISAO = stringPreferencesKey("previsao")
         val PREVISAO_EM = stringPreferencesKey("previsao_em")
+        val DESCOBERTA_SOL = stringPreferencesKey("descoberta_sol")
+        val DESCOBERTA_VASO = stringPreferencesKey("descoberta_vaso")
+        val DESCOBERTA_FACEIS = booleanPreferencesKey("descoberta_faceis")
+        val DESCOBERTA_EPOCA = booleanPreferencesKey("descoberta_epoca")
     }
 }

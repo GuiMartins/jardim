@@ -79,6 +79,11 @@ simula o ciclo inteiro para garantir isso.
   semeou** (apelido, dia 1 e onde ela fica) ou **vai semear**? Quem vai
   semear vê o que juntar antes (semente ou muda, vaso, substrato, drenagem,
   lugar com luz), marca o que já tem e pode **salvar para depois**.
+- **O que plantar** ("Não sei o que plantar", no topo da busca vazia): diga
+  quanto sol direto bate no lugar e o maior vaso que cabe lá, e veja o que dá
+  para plantar, das mais populares às menos, com o que cada uma pede ("4 h de
+  sol ou mais · vaso de 5 L"). Dá para ficar só com as fáceis, só com o que
+  está na época e escolher o tipo de planta. As respostas ficam guardadas.
 - **Para plantar** (no fim da tela Hoje): as plantas salvas para depois, com
   o que ainda falta e a época. Quando a época de uma delas começa, o resumo
   da manhã avisa uma vez ("Começou a época: Girassol").
@@ -223,3 +228,4 @@ desenvolvimento desta máquina. Medido no Galaxy Z Fold7, com 1000 plantas:
 - [x] **Etapa 5**: linha do tempo da planta (agora, próximos dias, fases, problemas, histórico)
 - [x] **Etapa 6**: avisos do tempo (geada, calor, vento e chuva pela previsão da cidade e pelo lugar de cada vaso)
 - [x] **Etapa 7**: nova planta em etapas (resumo, preparo com o que juntar, "Para plantar" e aviso de começo da época)
+- [x] **Etapa 8**: "O que plantar", a descoberta pelo sol e pelo espaço que a pessoa tem

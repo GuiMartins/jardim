@@ -149,7 +149,9 @@ abstract class GerarIndiceCatalogo : DefaultTask() {
             .firstOrNull() ?: emptyMap<Any, Any>()
 
         val itens = plantas.files.sortedBy { it.name }.map { arquivo ->
-            val planta = (leitor.parse(arquivo, "UTF-8") as Map<*, *>)["planta"] as Map<*, *>
+            val json = leitor.parse(arquivo, "UTF-8") as Map<*, *>
+            val planta = json["planta"] as Map<*, *>
+            val requisitos = json["requisitos_iniciais"] as Map<*, *>
             val extra = doLevantamento[arquivo.name]
             val nome = planta["nome_comum"] as String
             // O nome do levantamento também busca, se for diferente do da espécie.
@@ -168,6 +170,10 @@ abstract class GerarIndiceCatalogo : DefaultTask() {
                 "tipo_ciclo" to planta["tipo_ciclo"],
                 "duracao_ciclo_dias" to planta["duracao_ciclo_dias"],
                 "meses_plantio" to planta["meses_plantio"],
+                "luminosidade" to requisitos["luminosidade"],
+                "horas_sol_minimas" to requisitos["horas_sol_minimas"],
+                "horas_sol_diarias_recomendadas" to requisitos["horas_sol_diarias_recomendadas"],
+                "volume_minimo_litros" to requisitos["volume_minimo_litros"],
                 "foto" to ((fotoDe[arquivo.name] as Map<*, *>?)?.get("foto") as Map<*, *>?)?.get("url"),
             )
         }
