@@ -49,6 +49,8 @@ import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.SnackbarResult
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
+import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -59,6 +61,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import android.net.Uri
+import com.jardim.atualizacao.EstadoInstalacao
+import com.jardim.motor.atualizacao.Atualizacao
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
@@ -97,12 +102,24 @@ fun HojeTela(
     val snackbar = remember { SnackbarHostState() }
     val contexto = LocalContext.current
     var notificacoesLigadas by remember { mutableStateOf(true) }
+    val atualizacao by viewModel.atualizacao.collectAsStateWithLifecycle()
+    val instalacao by viewModel.instalacao.collectAsStateWithLifecycle()
+    val rolagem = rememberLazyListState()
+    // A consulta ao GitHub responde com a lista já na tela, e a LazyColumn segura
+    // a rolagem no primeiro cartão: sem isso, o aviso nascia escondido acima dele.
+    LaunchedEffect(atualizacao != null) {
+        if (atualizacao != null && rolagem.firstVisibleItemIndex <= 1) rolagem.scrollToItem(0)
+    }
 
     // No resume: o dia pode ter virado, e a pessoa pode ter voltado das
     // configurações do Android depois de ligar as notificações.
     LifecycleEventEffect(Lifecycle.Event.ON_RESUME) {
         viewModel.atualizarDia()
         notificacoesLigadas = viewModel.notificacoesLigadas()
+        // Voltando das configurações com a permissão dada, o botão "Atualizar" volta.
+        if (instalacao == EstadoInstalacao.PrecisaPermissao && contexto.packageManager.canRequestPackageInstalls()) {
+            viewModel.limparErroDaAtualizacao()
+        }
     }
 
     // collectLatest: marcar outra coisa troca a snackbar em vez de enfileirar.
@@ -152,11 +169,27 @@ fun HojeTela(
             SemPlantas(aoAdicionar, Modifier.padding(padding))
         } else {
             LazyColumn(
+                state = rolagem,
                 modifier = Modifier.padding(padding),
                 // Espaço embaixo para o último cartão não ficar atrás do botão.
                 contentPadding = PaddingValues(start = 16.dp, top = 8.dp, end = 16.dp, bottom = 96.dp),
                 verticalArrangement = Arrangement.spacedBy(16.dp),
             ) {
+                atualizacao?.let { nova ->
+                    item(key = "atualizacao") {
+                        CartaoAtualizacao(
+                            nova = nova,
+                            instalada = viewModel.versaoInstalada,
+                            estado = instalacao,
+                            aoAtualizar = { viewModel.atualizar(nova) },
+                            aoPermitir = {
+                                contexto.startActivity(
+                                    Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, Uri.parse("package:${contexto.packageName}")),
+                                )
+                            },
+                        )
+                    }
+                }
                 if (!notificacoesLigadas) {
                     item(key = "notificacoes") {
                         NotificacoesDesligadas(aoAtivar = {
@@ -255,6 +288,45 @@ private fun NotificacoesDesligadas(aoAtivar: () -> Unit) {
             )
             Spacer(Modifier.height(8.dp))
             FilledTonalButton(onClick = aoAtivar) { Text("Ativar") }
+        }
+    }
+}
+
+@Composable
+private fun CartaoAtualizacao(
+    nova: Atualizacao,
+    instalada: String,
+    estado: EstadoInstalacao,
+    aoAtualizar: () -> Unit,
+    aoPermitir: () -> Unit,
+) {
+    val cor = MaterialTheme.colorScheme.onPrimaryContainer
+    Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+        Column(Modifier.padding(16.dp)) {
+            Text("Versão ${nova.versao} disponível", style = MaterialTheme.typography.titleMedium, color = cor)
+            when (estado) {
+                EstadoInstalacao.Parado -> Text("Você está na $instalada. O histórico das plantas fica como está.", color = cor)
+                EstadoInstalacao.PrecisaPermissao ->
+                    Text("O Android pede, uma vez só, que você libere o Jardim para instalar as próprias atualizações.", color = cor)
+                is EstadoInstalacao.Baixando -> {
+                    Text("Baixando…", color = cor)
+                    Spacer(Modifier.height(8.dp))
+                    LinearProgressIndicator(progress = { estado.fracao }, modifier = Modifier.fillMaxWidth())
+                }
+                EstadoInstalacao.Instalando -> Text("Instalando. O app fecha sozinho quando terminar; é só abrir de novo.", color = cor)
+                is EstadoInstalacao.Erro -> Text(estado.mensagem, color = cor)
+            }
+            when (estado) {
+                EstadoInstalacao.Parado, is EstadoInstalacao.Erro -> {
+                    Spacer(Modifier.height(8.dp))
+                    FilledTonalButton(onClick = aoAtualizar) { Text(if (estado is EstadoInstalacao.Erro) "Tentar de novo" else "Atualizar") }
+                }
+                EstadoInstalacao.PrecisaPermissao -> {
+                    Spacer(Modifier.height(8.dp))
+                    FilledTonalButton(onClick = aoPermitir) { Text("Liberar") }
+                }
+                else -> Unit
+            }
         }
     }
 }

@@ -96,6 +96,10 @@ simula o ciclo inteiro para garantir isso.
   do que foi feito.
 - **Notificações**: horário do resumo (8h) e do lembrete da noite (19h), e um
   botão para testar na hora.
+- **Atualização**: quando sai uma release nova no GitHub, a tela Hoje mostra
+  um cartão "Versão X disponível"; um toque baixa e instala por cima, sem
+  perder o histórico. Na primeira vez o Android pede para liberar o Jardim
+  como fonte de instalação.
 
 ## Notificações
 
