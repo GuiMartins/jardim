@@ -1,0 +1,88 @@
+# Publica a release com o APK. Dispara pelo botão "Run workflow" no GitHub
+# (Actions > release), de qualquer lugar, ou pelo `./dev.sh release`.
+# A versão vem do versionName em app/build.gradle.kts.
+#
+# O APK é assinado com a chave de debug do PC Windows, guardada no secret
+# DEBUG_KEYSTORE (base64): só ela instala por cima do que está no celular sem
+# apagar o banco. O AGP usa ~/.android/debug.keystore sozinho, se o arquivo existir.
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      ensaio:
+        description: "Ensaio: testa, builda e confere a assinatura, sem publicar"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency: release
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Versão
+        id: versao
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "::error::A release sai do main (disparado em $GITHUB_REF)."
+            exit 1
+          fi
+          versao=$(grep -o 'versionName = "[^"]*"' app/build.gradle.kts | cut -d'"' -f2)
+          echo "versao=$versao" >> "$GITHUB_OUTPUT"
+          if [ "${{ inputs.ensaio }}" = "true" ]; then exit 0; fi
+          if gh release view "v$versao" >/dev/null 2>&1 || git ls-remote --exit-code --tags origin "v$versao" >/dev/null; then
+            echo "::error::A tag v$versao já existe: suba versionName e versionCode em app/build.gradle.kts."
+            exit 1
+          fi
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Chave
+        env:
+          DEBUG_KEYSTORE: ${{ secrets.DEBUG_KEYSTORE }}
+        run: |
+          mkdir -p ~/.android
+          echo "$DEBUG_KEYSTORE" | base64 -d > ~/.android/debug.keystore
+
+      - name: Testes e build
+        run: ./gradlew :motor:test :app:testDebugUnitTest assembleRelease --console=plain
+
+      # Um APK com outra chave não instalaria por cima: para aqui, antes de publicar.
+      - name: Confere a assinatura
+        run: |
+          apksigner=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)apksigner
+          "$apksigner" verify --print-certs app/build/outputs/apk/release/app-release.apk | tee assinatura.txt
+          grep -q "SHA-256 digest: 260b21e1b7311530d143d5efba3bb8717ec8b7e517fb6766d723746167b38a2d" assinatura.txt
+
+      - name: Publica
+        if: ${{ !inputs.ensaio }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSAO: ${{ steps.versao.outputs.versao }}
+        run: |
+          apk="jardim-v$VERSAO.apk"
+          cp app/build/outputs/apk/release/app-release.apk "$apk"
+          gh release create "v$VERSAO" "$apk" --target "$GITHUB_SHA" --title "Jardim $VERSAO" --generate-notes
+
+      - name: Relatório dos testes
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-testes
+          path: |
+            motor/build/reports/tests/
+            app/build/reports/tests/

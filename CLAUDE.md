@@ -91,7 +91,7 @@ Depois da etapa 5 (2026-09-25):
 - `Atualizador` consulta `/releases/latest` ao abrir o app e ao voltar para o Hoje, no máximo a cada 6 h (a linha "Versão" em Configurações força a consulta). Se a tag (`vX.Y.Z`, só números: `maisNova` no motor) for mais nova que o `versionName` instalado, o Hoje mostra um cartão com "Atualizar". A tela rola ao topo quando o cartão chega, porque a `LazyColumn` segura a rolagem no primeiro cartão e o aviso nascia escondido.
 - "Atualizar" baixa o primeiro `.apk` da release direto para uma sessão do `PackageInstaller`; a resposta chega no `InstalacaoReceiver`. Sem `canRequestPackageInstalls()`, o cartão pede "Liberar" (abre a tela do Android). Na primeira vez o Android pede confirmação (o instalador foi o adb); depois, com `USER_ACTION_NOT_REQUIRED` (Android 12+), pode instalar sem pergunta, se o Samsung deixar.
 - Sem atualização em segundo plano, sem toque: instalar fecha o app no meio do uso.
-- Só funciona se a release vier do PC (`./dev.sh release`), com a chave que está no celular, e com `versionCode` maior. Release de outra máquina dá "assinada em outro computador" no cartão.
+- Só funciona se o APK vier com a chave que está no celular e com `versionCode` maior. O workflow de release garante a chave; um APK assinado com outra dá "assinada em outro computador" no cartão.
 - Testado no emulador do Mac até o fim do fluxo, com um build 0.1.9 contra a v0.2.0: a instalação em si recusou (downgrade de versionCode, e a chave do Mac é outra), então o primeiro "Atualizar" de verdade será no Fold.
 
 ## Minha despensa e lista de compras (2026-10-30)
@@ -152,7 +152,8 @@ Depois da etapa 5 (2026-09-25):
 - `./gradlew :app:testDebugUnitTest`: testes JVM do app (formatação).
 - `./dev.sh run`: build **release**, instala e abre no aparelho conectado. `./dev.sh run-debug` faz o mesmo em debug: é o único em que `run-as com.jardim` lê o banco, mas é 3 a 4 vezes mais lento. Não meça desempenho em debug.
 - Depois de mexer em serialização, Room, WorkManager ou nos receivers, confira os fluxos no release (Hoje, linha do tempo, "Testar agora"), porque o R8 só quebra essas coisas em tempo de execução.
-- `./dev.sh release`: roda os testes, builda o release, cria a tag `vX.Y.Z` (lida do `versionName`) e publica a release no GitHub com o APK. Exige árvore limpa. Antes de cada release, suba `versionName` e `versionCode` em `app/build.gradle.kts`. O APK sai deste PC, nunca do CI, porque só a chave de debug daqui instala por cima do que está no celular.
+- `./dev.sh release`: exige o main limpo, envia o main e dispara `.github/workflows/release.yml` (também dá pelo botão "Run workflow" no GitHub, de qualquer lugar), que roda os testes, builda, assina, confere a impressão SHA-256 da chave e publica a `vX.Y.Z` (lida do `versionName`) com o APK. Com `ensaio` marcado, faz tudo menos publicar. Antes de cada release, suba `versionName` e `versionCode` em `app/build.gradle.kts`.
+- A chave é o `~/.android/debug.keystore` do PC Windows, a que está no celular desde a primeira instalação, guardada em base64 no secret `DEBUG_KEYSTORE` (2026-10-31). Perder esse arquivo obriga a desinstalar o app (e apagar o histórico) na próxima atualização. O `./dev.sh run` em outra máquina assina com a chave de debug dela e não instala por cima: lá, copie a chave para `~/.android/` ou atualize pelo cartão do app.
 - CI (`.github/workflows/testes.yml`): `:motor:test` e `:app:testDebugUnitTest` a cada push.
 - `./dev.sh print nome`: print da tela ligada. O aparelho de teste é o celular do usuário, um **Galaxy Z Fold7 (SM-F966B, Android 16)** via USB. Ele tem duas telas, e `screencap` sem `-d` pode pegar a desligada.
 - No Git Bash, `adb shell` com caminho do aparelho precisa de `MSYS_NO_PATHCONV=1` (o `dev.sh` já exporta).

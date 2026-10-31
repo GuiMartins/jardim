@@ -1,7 +1,6 @@
 # Roda os testes a cada push e em cada PR. O :motor:test também valida todo
 # JSON do catálogo: uma espécie quebrada derruba o CI, não o celular.
-# O APK não sai daqui: o release é assinado com a chave de debug do PC, e um
-# APK assinado no CI não instalaria por cima do que está no celular.
+# O APK da release sai do release.yml, disparado à mão.
 name: testes
 
 on:

@@ -206,12 +206,15 @@ nomes, categorias e exclusões ficam em `dados/curadoria.csv`.
 ./dev.sh run        # build release + instala + abre no celular conectado
 ./dev.sh run-debug  # o mesmo em debug (inspecionar o banco, ferramentas do Compose)
 ./dev.sh print hoje # print da tela ligada do celular (funciona no dobrável)
-./dev.sh release    # testes + tag vX.Y.Z + release no GitHub com o APK
+./dev.sh release    # dispara o workflow que publica a vX.Y.Z no GitHub com o APK
 ```
 
 Cada versão instalada no celular vira uma [release](https://github.com/GuiMartins/jardim/releases),
 com a tag tirada do `versionName` de `app/build.gradle.kts` (suba ele e o
-`versionCode` antes). Os testes rodam no GitHub Actions a cada push.
+`versionCode` antes). Quem builda e publica é o GitHub Actions
+(`.github/workflows/release.yml`), com a chave do celular guardada num secret:
+dá para soltar uma versão de qualquer máquina, ou pelo botão "Run workflow" em
+Actions > release. Os testes rodam a cada push.
 
 Precisa do JDK 17 e do Android SDK (`local.properties` com `sdk.dir`). O
 banco é Room, com o esquema de cada versão em `app/schemas/`.

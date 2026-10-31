@@ -13,8 +13,8 @@
 #              as ferramentas do Compose, mas é 3 a 4 vezes mais lento
 #   logs       segue o logcat do processo do app (precisa estar rodando)
 #   print X    salva um print da tela ligada em X.png (o Fold tem duas telas)
-#   release    testa, builda o release, cria a tag vX.Y.Z (do versionName) e
-#              publica a release no GitHub com o APK
+#   release    envia o main e dispara o workflow de release no GitHub, que
+#              testa, builda, assina e publica a vX.Y.Z (do versionName) com o APK
 set -euo pipefail
 
 # Sem isso o Git Bash reescreve caminhos do aparelho (/sdcard -> C:/Program Files/Git/sdcard).
@@ -22,7 +22,10 @@ export MSYS_NO_PATHCONV=1
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-export JAVA_HOME="${JAVA_HOME:-/c/Program Files/Microsoft/jdk-17.0.19.10-hotspot}"
+# Padrões do PC Windows; em outra máquina, valem os do ambiente.
+if [ -z "${JAVA_HOME:-}" ] && [ -d "/c/Program Files/Microsoft/jdk-17.0.19.10-hotspot" ]; then
+    export JAVA_HOME="/c/Program Files/Microsoft/jdk-17.0.19.10-hotspot"
+fi
 ANDROID_HOME="${ANDROID_HOME:-/c/Users/guilh/AndroidSdk}"
 
 ADB="$ANDROID_HOME/platform-tools/adb.exe"
@@ -80,25 +83,31 @@ case "$comando" in
         echo "salvo em ${2:-print}.png"
         ;;
     release)
-        # O APK sai deste PC, não do CI: só a chave de debug daqui instala por
-        # cima do que está no celular sem apagar o banco.
+        # O APK sai do CI (.github/workflows/release.yml), assinado com a chave
+        # de debug do PC Windows guardada no secret DEBUG_KEYSTORE: dá para
+        # disparar de qualquer máquina, ou pelo botão "Run workflow" no GitHub.
         cd "$SCRIPT_DIR"
         versao=$(grep -o 'versionName = "[^"]*"' app/build.gradle.kts | cut -d'"' -f2)
         tag="v$versao"
-        if [ -n "$(git status --porcelain)" ]; then
-            echo "Há mudanças sem commit: a release tem que sair igual ao que está na tag."
+        if [ "$(git branch --show-current)" != "main" ]; then
+            echo "A release sai do main."
             exit 1
         fi
-        if git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
+        if [ -n "$(git status --porcelain)" ]; then
+            echo "Há mudanças sem commit: a release tem que sair igual ao que está no main."
+            exit 1
+        fi
+        if git ls-remote --exit-code --tags origin "$tag" >/dev/null; then
             echo "A tag $tag já existe: suba versionName e versionCode em app/build.gradle.kts."
             exit 1
         fi
-        ./gradlew :motor:test :app:testDebugUnitTest assembleRelease
-        apk="app/build/outputs/apk/release/jardim-$tag.apk"
-        cp app/build/outputs/apk/release/app-release.apk "$apk"
-        git tag -a "$tag" -m "Jardim $versao"
-        git push origin HEAD "$tag"
-        gh release create "$tag" "$apk" --title "Jardim $versao" --generate-notes
+        git push origin main
+        gh workflow run release.yml --ref main
+        echo "Workflow disparado para $tag; acompanhando..."
+        sleep 5
+        id=$(gh run list --workflow release.yml --limit 1 --json databaseId --jq '.[0].databaseId')
+        gh run watch "$id" --exit-status
+        gh release view "$tag" --json url --jq .url
         ;;
     *)
         echo "Uso: ./dev.sh [emulator|test|build|install|start|run|run-debug|logs|print|release]"
