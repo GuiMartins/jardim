@@ -30,6 +30,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.produceState
@@ -44,13 +45,21 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.jardim.dados.Especie
 import com.jardim.dados.Planejado
+import com.jardim.motor.agenda.INSUMOS_DE_DRENAGEM
+import com.jardim.motor.agenda.Insumo
 import com.jardim.motor.agenda.ItemPreparo
+import com.jardim.motor.agenda.Receita
+import com.jardim.motor.agenda.faltaNoSubstrato
+import com.jardim.motor.agenda.resolvidosPelaDespensa
 import com.jardim.motor.agenda.Local
 import com.jardim.motor.agenda.foraDeEpoca
 import com.jardim.motor.agenda.itensDePreparo
 import com.jardim.motor.agenda.proximoInicioDaEpoca
 import com.jardim.motor.modelo.FormaInicio
 import com.jardim.ui.EscolherLocal
+import com.jardim.ui.faltaDoSubstrato
+import com.jardim.ui.inicioDe
+import com.jardim.ui.nomeDoInsumo
 import com.jardim.ui.luzDoDia
 import com.jardim.ui.meses
 import com.jardim.ui.mesPorExtenso
@@ -71,15 +80,19 @@ fun PrepararTela(
     aoVoltar: () -> Unit,
     aoPlantarAgora: (local: Local?) -> Unit,
     aoSair: () -> Unit,
+    aoAbrirDespensa: () -> Unit,
     viewModel: NovaPlantaViewModel = viewModel(factory = NovaPlantaViewModel.Factory),
 ) {
     val especie by produceState<Especie?>(null, arquivo) { value = viewModel.carregar(arquivo) }
+    val substrato by produceState<List<Receita>?>(null, arquivo) { value = viewModel.substrato(arquivo) }
+    val despensa by viewModel.despensa.collectAsStateWithLifecycle()
     val calendarioVale by viewModel.calendarioVale.collectAsStateWithLifecycle()
     val planejado by remember(planejadoId) { viewModel.planejado(planejadoId ?: -1) }.collectAsStateWithLifecycle(null)
     // Com planejamento, espera o banco, para as caixas não piscarem vazias.
     if (planejadoId != null && planejado == null) return
+    val tenho = despensa ?: return
     especie?.let {
-        PrepararConteudo(it, planejado, calendarioVale, viewModel, aoVoltar, aoPlantarAgora, aoSair)
+        PrepararConteudo(it, planejado, substrato, tenho, calendarioVale, viewModel, aoVoltar, aoPlantarAgora, aoSair, aoAbrirDespensa)
     }
 }
 
@@ -88,24 +101,42 @@ fun PrepararTela(
 private fun PrepararConteudo(
     especie: Especie,
     planejado: Planejado?,
+    substrato: List<Receita>?,
+    tenho: Set<Insumo>,
     calendarioVale: Boolean,
     viewModel: NovaPlantaViewModel,
     aoVoltar: () -> Unit,
     aoPlantarAgora: (local: Local?) -> Unit,
     aoSair: () -> Unit,
+    aoAbrirDespensa: () -> Unit,
 ) {
     val planta = especie.cultivo.planta
     val itens = remember(especie) { itensDePreparo(especie.cultivo) }
-    // Sem planejamento, começa tudo desmarcado: quem abre o preparo ainda não conferiu nada.
-    var faltam by rememberSaveable { mutableStateOf(planejado?.faltam ?: itens.toSet()) }
-    var local by rememberSaveable { mutableStateOf(planejado?.local) }
+    // Sem planejamento, começa desmarcado o que a despensa não resolve: quem
+    // abre o preparo ainda não conferiu nada.
+    var faltamAntesDeSalvar by rememberSaveable { mutableStateOf(itens.toSet()) }
+    var localAntesDeSalvar by rememberSaveable { mutableStateOf<Local?>(null) }
+    // Voltando da despensa com um insumo novo, o substrato se marca sozinho;
+    // desmarcar na despensa não desmarca aqui (Despensa.mudar faz igual).
+    LaunchedEffect(tenho, substrato) {
+        faltamAntesDeSalvar = faltamAntesDeSalvar - resolvidosPelaDespensa(substrato, especie.cultivo.requisitosIniciais.camadaDrenagem, tenho)
+    }
+    // Salva, a planta lê do banco: a despensa pode ter mudado o que falta enquanto
+    // a tela estava por baixo, e um estado local velho desfaria isso no próximo toque.
+    val faltam = planejado?.faltam ?: faltamAntesDeSalvar
+    val local = if (planejado != null) planejado.local else localAntesDeSalvar
     var desistindo by remember { mutableStateOf(false) }
     var salvando by remember { mutableStateOf(false) }
     val hoje = remember { LocalDate.now() }
     val verbo = verboInicio(planta.formaInicio)
 
-    fun mudou() {
-        planejado?.let { viewModel.mudarPreparo(it.id, faltam, local) }
+    fun mudar(novoFaltam: Set<ItemPreparo> = faltam, novoLocal: Local? = local) {
+        if (planejado != null) {
+            viewModel.mudarPreparo(planejado.id, novoFaltam, novoLocal)
+        } else {
+            faltamAntesDeSalvar = novoFaltam
+            localAntesDeSalvar = novoLocal
+        }
     }
 
     Scaffold(
@@ -182,19 +213,27 @@ private fun PrepararConteudo(
             Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainer)) {
                 itens.forEach { item ->
                     val (titulo, detalhe) = textoDoItem(item, especie)
+                    val naDespensa = naDespensa(item, substrato, tenho)
                     val tem = item !in faltam
                     ListItem(
                         leadingContent = { Checkbox(checked = tem, onCheckedChange = null) },
                         headlineContent = { Text(titulo, style = MaterialTheme.typography.titleSmall) },
-                        supportingContent = detalhe?.let { { Text(it) } },
+                        supportingContent = if (detalhe == null && naDespensa == null) null else {
+                            {
+                                Column {
+                                    detalhe?.let { Text(it) }
+                                    naDespensa?.let { Text(it, color = MaterialTheme.colorScheme.primary) }
+                                }
+                            }
+                        },
                         colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surfaceContainer),
                         modifier = Modifier.toggleable(value = tem, role = Role.Checkbox) { marcado ->
-                            faltam = if (marcado) faltam - item else faltam + item
-                            mudou()
+                            mudar(novoFaltam = if (marcado) faltam - item else faltam + item)
                         },
                     )
                 }
             }
+            TextButton(onClick = aoAbrirDespensa) { Text("Minha despensa") }
 
             Column {
                 Text("Onde ela vai ficar?", style = MaterialTheme.typography.titleMedium)
@@ -203,10 +242,7 @@ private fun PrepararConteudo(
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
-                EscolherLocal(local, aoEscolher = {
-                    local = it
-                    mudou()
-                })
+                EscolherLocal(local, aoEscolher = { mudar(novoLocal = it) })
             }
         }
     }
@@ -227,18 +263,24 @@ private fun PrepararConteudo(
     }
 }
 
+/** O que a despensa diz do item: "Na despensa: tem tudo", "Falta na despensa: perlita". */
+private fun naDespensa(item: ItemPreparo, substrato: List<Receita>?, tenho: Set<Insumo>): String? = when (item) {
+    ItemPreparo.SUBSTRATO -> faltaNoSubstrato(substrato, tenho)?.let { falta ->
+        if (falta.isEmpty()) "Na despensa: tem tudo." else "Falta na despensa: ${faltaDoSubstrato(falta)}."
+    }
+    ItemPreparo.DRENAGEM -> INSUMOS_DE_DRENAGEM.firstOrNull { it in tenho }?.let { "Na despensa: ${nomeDoInsumo(it).lowercase()}." }
+    else -> null
+}
+
 /** Título e explicação de cada item, tirados do JSON da espécie. */
 private fun textoDoItem(item: ItemPreparo, especie: Especie): Pair<String, String?> {
     val planta = especie.cultivo.planta
     val r = especie.cultivo.requisitosIniciais
-    val nome = planta.nomeComum.replaceFirstChar { it.lowercase() }
     return when (item) {
-        ItemPreparo.INICIO -> when (planta.formaInicio) {
-            FormaInicio.SEMENTE -> "Sementes de $nome" to null
-            FormaInicio.MUDA -> "Muda de $nome" to null
-            FormaInicio.ESTACA -> "Estaca de $nome" to "Um galho cortado de uma planta adulta."
-            FormaInicio.BULBO -> "Bulbo de $nome" to null
-            FormaInicio.PLANTA_ADULTA -> "${planta.nomeComum} já formada" to "Comprada pronta, para ir para o vaso."
+        ItemPreparo.INICIO -> inicioDe(planta.formaInicio, planta.nomeComum) to when (planta.formaInicio) {
+            FormaInicio.ESTACA -> "Um galho cortado de uma planta adulta."
+            FormaInicio.PLANTA_ADULTA -> "Comprada pronta, para ir para o vaso."
+            else -> null
         }
         // O girassol termina a frase com ponto; quase todo o resto do catálogo, não.
         ItemPreparo.VASO -> "Vaso de ${numero(r.volumeMinimoLitros)} L ou mais" to r.tipoVasoOuSolo.trimEnd().let { if (it.endsWith('.')) it else "$it." }

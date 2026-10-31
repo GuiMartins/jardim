@@ -70,6 +70,8 @@ val gerarIndiceCatalogo = tasks.register<GerarIndiceCatalogo>("gerarIndiceCatalo
     levantamento.from(rootProject.file("dados/plantas-populares.json"))
     // A foto de cada espécie (dados/fotos.py): o índice leva só o endereço, o app baixa.
     fotos.from(rootProject.file("dados/fotos.json"))
+    // Os insumos do substrato (dados/insumos.py), para o preparo e a lista de compras.
+    insumos.from(rootProject.file("dados/insumos.json"))
 }
 
 androidComponents {
@@ -135,6 +137,10 @@ abstract class GerarIndiceCatalogo : DefaultTask() {
     @get:PathSensitive(PathSensitivity.NAME_ONLY)
     abstract val fotos: ConfigurableFileCollection
 
+    @get:InputFiles
+    @get:PathSensitive(PathSensitivity.NAME_ONLY)
+    abstract val insumos: ConfigurableFileCollection
+
     @get:OutputDirectory
     abstract val saida: DirectoryProperty
 
@@ -147,6 +153,10 @@ abstract class GerarIndiceCatalogo : DefaultTask() {
         val fotoDe: Map<*, *> = fotos.files.filter { it.exists() }
             .map { (leitor.parse(it, "UTF-8") as Map<*, *>)["especies"] as Map<*, *> }
             .firstOrNull() ?: emptyMap<Any, Any>()
+        val insumosDe: Map<*, *> = insumos.files.filter { it.exists() }
+            .map { (leitor.parse(it, "UTF-8") as Map<*, *>)["especies"] as Map<*, *> }
+            .firstOrNull() ?: emptyMap<Any, Any>()
+        val desatualizados = mutableListOf<String>()
 
         val itens = plantas.files.sortedBy { it.name }.map { arquivo ->
             val json = leitor.parse(arquivo, "UTF-8") as Map<*, *>
@@ -174,6 +184,10 @@ abstract class GerarIndiceCatalogo : DefaultTask() {
                 "horas_sol_minimas" to requisitos["horas_sol_minimas"],
                 "horas_sol_diarias_recomendadas" to requisitos["horas_sol_diarias_recomendadas"],
                 "volume_minimo_litros" to requisitos["volume_minimo_litros"],
+                // Só vale se o texto é o mesmo de quando o insumos.py rodou.
+                "substrato" to (insumosDe[arquivo.name] as Map<*, *>?)?.let { extraido ->
+                    if (extraido["substrato"] == requisitos["substrato_recomendado"]) extraido["receitas"] else null.also { desatualizados += arquivo.name }
+                },
                 "foto" to ((fotoDe[arquivo.name] as Map<*, *>?)?.get("foto") as Map<*, *>?)?.get("url"),
             )
         }
@@ -181,6 +195,7 @@ abstract class GerarIndiceCatalogo : DefaultTask() {
         val destino = saida.get().file("catalogo/indice.json").asFile
         destino.parentFile.mkdirs()
         destino.writeText(JsonGenerator.Options().disableUnicodeEscaping().build().toJson(itens), Charsets.UTF_8)
-        logger.lifecycle("Índice do catálogo: ${itens.size} plantas (${itens.count { it["foto"] != null }} com foto), ${destino.length() / 1024} KB")
+        logger.lifecycle("Índice do catálogo: ${itens.size} plantas (${itens.count { it["foto"] != null }} com foto, ${itens.count { it["substrato"] != null }} com insumos), ${destino.length() / 1024} KB")
+        if (desatualizados.isNotEmpty()) logger.warn("Substrato mudou desde o insumos.py (rode python3 dados/insumos.py): ${desatualizados.joinToString()}")
     }
 }

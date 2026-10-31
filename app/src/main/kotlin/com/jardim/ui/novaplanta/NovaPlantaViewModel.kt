@@ -8,11 +8,14 @@ import androidx.lifecycle.viewmodel.viewModelFactory
 import com.jardim.JardimApp
 import com.jardim.avisos.Preferencias
 import com.jardim.dados.Catalogo
+import com.jardim.dados.Despensa
 import com.jardim.dados.Especie
 import com.jardim.dados.JardimRepositorio
 import com.jardim.dados.Miniaturas
 import com.jardim.dados.Planejado
+import com.jardim.motor.agenda.Insumo
 import com.jardim.motor.agenda.ItemPreparo
+import com.jardim.motor.agenda.Receita
 import com.jardim.motor.agenda.Local
 import com.jardim.motor.catalogo.ResultadoBusca
 import kotlinx.coroutines.Dispatchers
@@ -42,7 +45,11 @@ class NovaPlantaViewModel(
     private val repositorio: JardimRepositorio,
     preferencias: Preferencias,
     val miniaturas: Miniaturas,
+    despensa: Despensa,
 ) : ViewModel() {
+
+    /** null enquanto o DataStore não respondeu. */
+    val despensa: StateFlow<Set<Insumo>?> = despensa.itens.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
     /** Fora do Centro-Sul, a tela não diz "fora de época" (Preferencias.calendarioVale). */
     val calendarioVale: StateFlow<Boolean> = preferencias.calendarioVale
@@ -67,6 +74,9 @@ class NovaPlantaViewModel(
     }
 
     suspend fun carregar(arquivo: String): Especie? = withContext(Dispatchers.IO) { catalogo.especie(arquivo) }
+
+    /** As receitas de substrato da espécie, do índice; null se ela não tem. */
+    suspend fun substrato(arquivo: String): List<Receita>? = withContext(Dispatchers.IO) { catalogo.item(arquivo)?.substrato }
 
     fun planejado(id: Long): Flow<Planejado?> = repositorio.planejados.map { lista -> lista.firstOrNull { it.id == id } }
 
@@ -102,7 +112,7 @@ class NovaPlantaViewModel(
         val Factory = viewModelFactory {
             initializer {
                 val app = this[APPLICATION_KEY] as JardimApp
-                NovaPlantaViewModel(app.catalogo, app.repositorio, app.preferencias, app.miniaturas)
+                NovaPlantaViewModel(app.catalogo, app.repositorio, app.preferencias, app.miniaturas, app.despensa)
             }
         }
     }

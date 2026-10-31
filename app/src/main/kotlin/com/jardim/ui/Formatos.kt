@@ -1,5 +1,6 @@
 package com.jardim.ui
 
+import com.jardim.motor.agenda.Insumo
 import com.jardim.motor.agenda.ItemPreparo
 import com.jardim.motor.agenda.Origem
 import com.jardim.motor.agenda.Pendencia
@@ -118,6 +119,67 @@ fun nomeDoItem(item: ItemPreparo, forma: FormaInicio): String = when (item) {
     ItemPreparo.SUBSTRATO -> "substrato"
     ItemPreparo.DRENAGEM -> "drenagem"
     ItemPreparo.LUGAR -> "lugar com luz"
+}
+
+/** "Sementes de girassol", "Muda de manjericão": o primeiro item do preparo e da lista de compras. */
+fun inicioDe(forma: FormaInicio, nomeComum: String): String {
+    val nome = nomeComum.replaceFirstChar { it.lowercase() }
+    return when (forma) {
+        FormaInicio.SEMENTE -> "Sementes de $nome"
+        FormaInicio.MUDA -> "Muda de $nome"
+        FormaInicio.ESTACA -> "Estaca de $nome"
+        FormaInicio.BULBO -> "Bulbo de $nome"
+        FormaInicio.PLANTA_ADULTA -> "$nomeComum já formada"
+    }
+}
+
+fun nomeDoInsumo(insumo: Insumo): String = when (insumo) {
+    Insumo.SUBSTRATO_CACTOS -> "Substrato para cactos e suculentas"
+    Insumo.SUBSTRATO_ORQUIDEAS -> "Substrato para orquídeas"
+    Insumo.SUBSTRATO_ACIDO -> "Substrato para azaleias (ácido)"
+    Insumo.SUBSTRATO_COMERCIAL -> "Substrato comercial para plantas"
+    Insumo.TERRA_VEGETAL -> "Terra vegetal"
+    Insumo.HUMUS -> "Húmus de minhoca"
+    Insumo.COMPOSTO -> "Composto orgânico"
+    Insumo.ESTERCO -> "Esterco curtido"
+    Insumo.TURFA -> "Turfa"
+    Insumo.MUSGO_ESFAGNO -> "Musgo esfagno"
+    Insumo.FIBRA_DE_COCO -> "Fibra de coco"
+    Insumo.CASCA_DE_PINUS -> "Casca de pinus"
+    Insumo.CASCA_DE_ARROZ -> "Casca de arroz carbonizada"
+    Insumo.CARVAO -> "Carvão vegetal"
+    Insumo.PERLITA -> "Perlita"
+    Insumo.VERMICULITA -> "Vermiculita"
+    Insumo.AREIA -> "Areia grossa"
+    Insumo.ARGILA_EXPANDIDA -> "Argila expandida"
+    Insumo.PEDRISCO -> "Pedrisco ou brita"
+    Insumo.CALCARIO -> "Calcário dolomítico"
+    Insumo.FARINHA_DE_OSSO -> "Farinha de osso"
+    Insumo.TORTA_DE_MAMONA -> "Torta de mamona"
+    Insumo.BOKASHI -> "Bokashi"
+    Insumo.CINZA -> "Cinza de madeira"
+    Insumo.ADUBO_LIBERACAO_LENTA -> "Adubo de liberação lenta"
+}
+
+/** A despensa em grupos, na ordem em que aparecem na tela. */
+val GRUPOS_DA_DESPENSA: List<Pair<String, List<Insumo>>> = listOf(
+    "Terra e substratos prontos" to listOf(
+        Insumo.TERRA_VEGETAL, Insumo.SUBSTRATO_COMERCIAL, Insumo.SUBSTRATO_CACTOS, Insumo.SUBSTRATO_ORQUIDEAS, Insumo.SUBSTRATO_ACIDO,
+    ),
+    "Matéria orgânica" to listOf(Insumo.HUMUS, Insumo.COMPOSTO, Insumo.ESTERCO, Insumo.TURFA, Insumo.FIBRA_DE_COCO, Insumo.MUSGO_ESFAGNO),
+    "Para drenar e arejar" to listOf(
+        Insumo.AREIA, Insumo.PERLITA, Insumo.VERMICULITA, Insumo.CASCA_DE_PINUS, Insumo.CASCA_DE_ARROZ, Insumo.CARVAO,
+        Insumo.PEDRISCO, Insumo.ARGILA_EXPANDIDA,
+    ),
+    "Adubos e corretivos" to listOf(
+        Insumo.FARINHA_DE_OSSO, Insumo.CALCARIO, Insumo.TORTA_DE_MAMONA, Insumo.BOKASHI, Insumo.CINZA, Insumo.ADUBO_LIBERACAO_LENTA,
+    ),
+)
+
+/** "perlita (ou casca de pinus), farinha de osso": o que falta no substrato, no preparo. */
+fun faltaDoSubstrato(grupos: List<List<Insumo>>): String = grupos.joinToString(", ") { grupo ->
+    val nomes = grupo.map { nomeDoInsumo(it).replaceFirstChar { c -> c.lowercase() } }
+    nomes.first() + if (nomes.size > 1) " (ou ${nomes.drop(1).joinToString(" ou ")})" else ""
 }
 
 fun atraso(dias: Int): String = when (dias) {

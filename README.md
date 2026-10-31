@@ -85,7 +85,10 @@ simula o ciclo inteiro para garantir isso.
   sol ou mais · vaso de 5 L"). Dá para ficar só com as fáceis, só com o que
   está na época e escolher o tipo de planta. As respostas ficam guardadas.
 - **Para plantar** (no fim da tela Hoje): as plantas salvas para depois, com
-  o que ainda falta e a época. Quando a época de uma delas começa, o resumo
+  o que ainda falta e a época. A **lista de compras** junta o que falta de
+  todas: mudas, sementes, vasos e os insumos do substrato ("Perlita: para
+  manjericão e alecrim"), descontando a **despensa**, onde você marca o que já
+  tem em casa (terra vegetal, húmus, perlita, farinha de osso...). Quando a época de uma delas começa, o resumo
   da manhã avisa uma vez ("Começou a época: Girassol").
 - **Planta** (toque no nome dela na tela Hoje): a linha do tempo, com "Dia 16
   de 105", barra de progresso e a fase atual; o que vem nos próximos 7 dias;
@@ -229,3 +232,4 @@ desenvolvimento desta máquina. Medido no Galaxy Z Fold7, com 1000 plantas:
 - [x] **Etapa 6**: avisos do tempo (geada, calor, vento e chuva pela previsão da cidade e pelo lugar de cada vaso)
 - [x] **Etapa 7**: nova planta em etapas (resumo, preparo com o que juntar, "Para plantar" e aviso de começo da época)
 - [x] **Etapa 8**: "O que plantar", a descoberta pelo sol e pelo espaço que a pessoa tem
+- [x] **Etapa 9**: Minha despensa e lista de compras (insumos do substrato extraídos do catálogo)

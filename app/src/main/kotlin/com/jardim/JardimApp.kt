@@ -5,6 +5,7 @@ import com.jardim.avisos.Agendador
 import com.jardim.avisos.Avisos
 import com.jardim.avisos.Preferencias
 import com.jardim.dados.Catalogo
+import com.jardim.dados.Despensa
 import com.jardim.dados.JardimDatabase
 import com.jardim.dados.JardimRepositorio
 import com.jardim.dados.Miniaturas
@@ -27,6 +28,7 @@ class JardimApp : Application() {
     val previsoes by lazy { Previsoes(this, preferencias) }
     val avisos by lazy { Avisos(this) }
     val agendador by lazy { Agendador(this, preferencias) }
+    val despensa by lazy { Despensa(preferencias, repositorio, catalogo) }
 
     override fun onCreate() {
         super.onCreate()

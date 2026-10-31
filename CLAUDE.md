@@ -69,7 +69,7 @@ Depois da etapa 5 (2026-09-25):
 ## Nova planta em etapas e "Para plantar" (2026-09-28)
 
 - Busca → **resumo** (`ResumoTela`: descrição, luz, vaso, temperatura, época) com dois botões: "Já semeei/plantei" vai direto aos dados do plantio (`PlantarTela`: apelido, dia 1, local), como antes; "Vou semear/plantar" vai ao **preparo** (`PrepararTela`). O verbo segue a `forma_inicio`: só 13% do catálogo começa por semente.
-- O preparo é uma lista de caixas tirada dos campos que já existem (`itensDePreparo` no motor: início pela `forma_inicio`, vaso, substrato, drenagem só se `camada_drenagem`, lugar com luz). Extrair materiais mais finos do JSON (tutor, tela, adubo) ficou para depois, se a lista se mostrar útil.
+- O preparo é uma lista de caixas tirada dos campos que já existem (`itensDePreparo` no motor: início pela `forma_inicio`, vaso, substrato, drenagem só se `camada_drenagem`, lugar com luz). Os insumos do substrato vieram depois (Minha despensa, abaixo); tutor, tela e adubo de cobertura seguem fora.
 - Salvar é **explícito** ("Salvar para depois"), nunca efeito de marcar uma caixa (decisão do usuário). Depois de salva, cada toque no preparo grava na hora. A lixeira do preparo tira a planta da lista.
 - A planta salva fica na tabela `planejado`, fora de `plantio`, porque tudo o que lê `plantio` supõe um dia 1. Ao plantar, `plantarPlanejado` insere o plantio e apaga o planejamento na mesma transação. A cópia do JSON é feita só nessa hora, com o catálogo do dia.
 - "Para plantar" fica no fim da tela Hoje, com o que falta e a época ("Está na época", "A época começa em março").
@@ -84,6 +84,15 @@ Depois da etapa 5 (2026-09-25):
 - O índice ganhou `luminosidade`, `horas_sol_minimas`, `horas_sol_diarias_recomendadas` e `volume_minimo_litros`.
 - Sol, vaso, fáceis e época ficam no DataStore (`Preferencias.descoberta`), para a tela abrir já filtrada; as categorias não, porque são da procura do momento.
 - Ficaram para depois, se o filtro pegar: lugares salvos ("varanda: 4 h de sol") e o clima da cidade (precisaria de climatologia, e a Open-Meteo que o app usa só dá previsão).
+
+## Minha despensa e lista de compras (2026-10-30)
+
+- A despensa é "tem ou não tem", sem quantidade (controlar litros seria um poço de casos-limite), num conjunto de strings no DataStore (`Preferencias.despensa`). Fica em Configurações, no preparo ("Minha despensa") e na lista de compras.
+- `dados/insumos.py` extrai do `substrato_recomendado` as receitas (`Receita`: grupos de alternativas, "composto ou húmus") e grava `dados/insumos.json`, que a `gerarIndiceCatalogo` põe no índice (`ItemCatalogo.substrato`). É um parser, não o claude: os textos seguem o padrão da skill, ele roda de graça a cada revisão e `--conferir` mostra o que não entendeu. O CLI do claude não estava logado no Mac, e a proposta original (claude em lotes, ~US$ 2) foi trocada por isso. O índice só leva a receita se o texto for o mesmo de quando o script rodou; senão o build avisa. Revisão aplicada num substrato: rode `python3 dados/insumos.py`.
+- Vocabulário: 25 insumos (`Insumo` no motor, mesma ordem e nomes do script; `DespensaTest` confere). Negação ("nada de terra", "sem calcário"), "opcional" e explicação ("porque apodrece em terra pesada") ficam de fora; ", ou substrato pronto para cactos" é outra receita.
+- Regra no motor (`agenda/Despensa.kt`): `faltaNoSubstrato` escolhe a receita com menos grupos faltando e, no empate, a que usa mais o que já está em casa. Drenagem: argila expandida ou pedrisco.
+- Marcar um insumo tira "substrato" e "drenagem" das plantas de "Para plantar" que só esperavam por ele (`Despensa.mudar`); desmarcar não volta atrás. O preparo de uma planta ainda não salva já começa com essas caixas marcadas. Depois de salva, o preparo lê o que falta do banco, e não de um estado local que desfaria a despensa no próximo toque.
+- Lista de compras (botão em "Para plantar"): mudas, sementes e vasos que faltam, mais os insumos, juntando plantas (`listaDeCompras`, guloso: primeiro o insumo que resolve mais pedidos; no empate, o que o texto cita primeiro) e dizendo o que serve no lugar para todas ("Argila expandida, ou pedrisco ou brita"). "Comprei" num insumo põe na despensa; nos outros, tira o item daquela planta.
 
 ## Fotos da busca (2026-09-29)
 
