@@ -4,7 +4,7 @@
 #
 # O APK é assinado com a chave de debug do PC Windows, guardada no secret
 # DEBUG_KEYSTORE (base64): só ela instala por cima do que está no celular sem
-# apagar o banco. O AGP usa ~/.android/debug.keystore sozinho, se o arquivo existir.
+# apagar o banco. O build lê o caminho dela em JARDIM_KEYSTORE.
 name: release
 
 on:
@@ -55,8 +55,8 @@ jobs:
         env:
           DEBUG_KEYSTORE: ${{ secrets.DEBUG_KEYSTORE }}
         run: |
-          mkdir -p ~/.android
-          echo "$DEBUG_KEYSTORE" | base64 -d > ~/.android/debug.keystore
+          echo "$DEBUG_KEYSTORE" | base64 -d > "$RUNNER_TEMP/jardim.keystore"
+          echo "JARDIM_KEYSTORE=$RUNNER_TEMP/jardim.keystore" >> "$GITHUB_ENV"
 
       - name: Testes e build
         run: ./gradlew :motor:test :app:testDebugUnitTest assembleRelease --console=plain

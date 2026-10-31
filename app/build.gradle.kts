@@ -26,6 +26,14 @@ android {
         versionName = "0.3.0"
     }
 
+    signingConfigs {
+        getByName("debug") {
+            // No CI (release.yml), a chave do celular vem do secret DEBUG_KEYSTORE.
+            // O AGP do runner não usava a ~/.android/debug.keystore gravada lá.
+            System.getenv("JARDIM_KEYSTORE")?.let { storeFile = file(it) }
+        }
+    }
+
     buildTypes {
         release {
             // É o release que vai para o celular: medido no Fold, abre em 124 ms
