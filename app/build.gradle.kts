@@ -22,8 +22,8 @@ android {
         // Os textos do app estão em values/ (português). Sem o filtro, o APK leva as
         // traduções das bibliotecas (Compose, Material, AndroidX) em 86 idiomas.
         resourceConfigurations += listOf("pt", "pt-rBR")
-        versionCode = 3
-        versionName = "0.2.0"
+        versionCode = 4
+        versionName = "0.3.0"
     }
 
     buildTypes {
