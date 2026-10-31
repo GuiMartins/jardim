@@ -85,6 +85,15 @@ Depois da etapa 5 (2026-09-25):
 - Sol, vaso, fáceis e época ficam no DataStore (`Preferencias.descoberta`), para a tela abrir já filtrada; as categorias não, porque são da procura do momento.
 - Ficaram para depois, se o filtro pegar: lugares salvos ("varanda: 4 h de sol") e o clima da cidade (precisaria de climatologia, e a Open-Meteo que o app usa só dá previsão).
 
+## Atualização pelo GitHub (2026-10-30)
+
+- O repositório ficou **público** (decisão do usuário) para o app consultar as releases sem token. O histórico foi conferido antes: nenhum segredo; o e-mail dos commits fica público.
+- `Atualizador` consulta `/releases/latest` ao abrir o app e ao voltar para o Hoje, no máximo a cada 6 h (a linha "Versão" em Configurações força a consulta). Se a tag (`vX.Y.Z`, só números: `maisNova` no motor) for mais nova que o `versionName` instalado, o Hoje mostra um cartão com "Atualizar". A tela rola ao topo quando o cartão chega, porque a `LazyColumn` segura a rolagem no primeiro cartão e o aviso nascia escondido.
+- "Atualizar" baixa o primeiro `.apk` da release direto para uma sessão do `PackageInstaller`; a resposta chega no `InstalacaoReceiver`. Sem `canRequestPackageInstalls()`, o cartão pede "Liberar" (abre a tela do Android). Na primeira vez o Android pede confirmação (o instalador foi o adb); depois, com `USER_ACTION_NOT_REQUIRED` (Android 12+), pode instalar sem pergunta, se o Samsung deixar.
+- Sem atualização em segundo plano, sem toque: instalar fecha o app no meio do uso.
+- Só funciona se a release vier do PC (`./dev.sh release`), com a chave que está no celular, e com `versionCode` maior. Release de outra máquina dá "assinada em outro computador" no cartão.
+- Testado no emulador do Mac até o fim do fluxo, com um build 0.1.9 contra a v0.2.0: a instalação em si recusou (downgrade de versionCode, e a chave do Mac é outra), então o primeiro "Atualizar" de verdade será no Fold.
+
 ## Minha despensa e lista de compras (2026-10-30)
 
 - A despensa é "tem ou não tem", sem quantidade (controlar litros seria um poço de casos-limite), num conjunto de strings no DataStore (`Preferencias.despensa`). Fica em Configurações, no preparo ("Minha despensa") e na lista de compras.

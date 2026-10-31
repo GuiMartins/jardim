@@ -10,6 +10,9 @@
     <!-- Uma vez, para achar a cidade ("Usar minha localização"); nunca em segundo plano. -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+    <!-- O app se atualiza pelas releases do GitHub (Atualizador); a pessoa libera uma vez. -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
     <application
         android:name=".JardimApp"
         android:icon="@mipmap/ic_launcher"
@@ -29,6 +32,11 @@
         <!-- Botões "Feito" e "Não precisou" das notificações. -->
         <receiver
             android:name=".avisos.AcaoAvisoReceiver"
+            android:exported="false" />
+
+        <!-- Resposta do Android à instalação de uma versão nova. -->
+        <receiver
+            android:name=".atualizacao.InstalacaoReceiver"
             android:exported="false" />
     </application>
 </manifest>

@@ -42,6 +42,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.jardim.JardimApp
+import com.jardim.atualizacao.Atualizador
 import com.jardim.avisos.Agendador
 import com.jardim.avisos.Preferencias
 import com.jardim.motor.agenda.ModoAviso
@@ -54,7 +55,16 @@ import java.time.format.DateTimeFormatter
 class ConfiguracoesViewModel(
     private val preferencias: Preferencias,
     private val agendador: Agendador,
+    private val atualizador: Atualizador,
 ) : ViewModel() {
+
+    val versao: String = atualizador.versaoInstalada
+    val atualizacao = atualizador.disponivel.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
+
+    /** Consulta o GitHub agora, sem esperar as 6 h; a resposta aparece no Hoje. */
+    fun procurarAtualizacao(depois: (nova: String?) -> Unit) {
+        viewModelScope.launch { depois(atualizador.verificar(forcar = true)?.versao) }
+    }
 
     val horarios = preferencias.horarios.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
@@ -73,7 +83,7 @@ class ConfiguracoesViewModel(
         val Factory = viewModelFactory {
             initializer {
                 val app = this[APPLICATION_KEY] as JardimApp
-                ConfiguracoesViewModel(app.preferencias, app.agendador)
+                ConfiguracoesViewModel(app.preferencias, app.agendador, app.atualizador)
             }
         }
     }
@@ -91,6 +101,7 @@ fun ConfiguracoesTela(
 ) {
     val horarios by viewModel.horarios.collectAsStateWithLifecycle()
     val cidade by viewModel.cidade.collectAsStateWithLifecycle()
+    val atualizacao by viewModel.atualizacao.collectAsStateWithLifecycle()
     var editando by remember { mutableStateOf<ModoAviso?>(null) }
     val snackbar = remember { SnackbarHostState() }
     val escopo = rememberCoroutineScope()
@@ -150,6 +161,20 @@ fun ConfiguracoesTela(
                 headlineContent = { Text("Minha despensa") },
                 supportingContent = { Text("Terra, húmus, perlita e o que mais tiver em casa, para o preparo e a lista de compras") },
                 modifier = Modifier.clickable(onClick = aoAbrirDespensa),
+            )
+            HorizontalDivider()
+            ListItem(
+                headlineContent = { Text("Versão ${viewModel.versao}") },
+                supportingContent = {
+                    Text(atualizacao?.let { "A ${it.versao} está disponível: atualize pelo cartão na tela Hoje" } ?: "Toque para procurar uma versão nova")
+                },
+                modifier = Modifier.clickable {
+                    viewModel.procurarAtualizacao { nova ->
+                        escopo.launch {
+                            snackbar.showSnackbar(nova?.let { "A $it está disponível: o cartão está na tela Hoje." } ?: "Você já está na última versão.")
+                        }
+                    }
+                },
             )
         }
 

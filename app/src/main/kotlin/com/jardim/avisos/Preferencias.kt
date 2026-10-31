@@ -8,6 +8,7 @@ import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.jardim.motor.agenda.DiaDoTempo
 import com.jardim.motor.agenda.Insumo
+import com.jardim.motor.atualizacao.Atualizacao
 import com.jardim.motor.agenda.ModoAviso
 import com.jardim.motor.catalogo.FiltroDescoberta
 import com.jardim.motor.catalogo.Sol
@@ -95,6 +96,20 @@ class Preferencias(private val context: Context) {
         }
     }
 
+    /** A última release consultada no GitHub; null antes da primeira ou se ela não tinha APK. */
+    val atualizacao: Flow<Atualizacao?> = context.dataStore.data
+        .map { prefs -> prefs[ATUALIZACAO]?.let { Json.decodeFromString(Atualizacao.serializer(), it) } }
+        .distinctUntilChanged()
+
+    suspend fun atualizacaoConsultadaEm(): Instant? = context.dataStore.data.first()[ATUALIZACAO_EM]?.let(Instant::parse)
+
+    suspend fun guardarAtualizacao(atualizacao: Atualizacao?, em: Instant) {
+        context.dataStore.edit {
+            if (atualizacao == null) it.remove(ATUALIZACAO) else it[ATUALIZACAO] = Json.encodeToString(Atualizacao.serializer(), atualizacao)
+            it[ATUALIZACAO_EM] = em.toString()
+        }
+    }
+
     /** A tela de boas-vindas aparece uma vez: na primeira abertura, ou na primeira depois desta versão. */
     val boasVindasVista: Flow<Boolean> = context.dataStore.data.map { it[BOAS_VINDAS] ?: false }.distinctUntilChanged()
 
@@ -130,6 +145,8 @@ class Preferencias(private val context: Context) {
         val PREVISAO = stringPreferencesKey("previsao")
         val PREVISAO_EM = stringPreferencesKey("previsao_em")
         val DESPENSA = stringSetPreferencesKey("despensa")
+        val ATUALIZACAO = stringPreferencesKey("atualizacao")
+        val ATUALIZACAO_EM = stringPreferencesKey("atualizacao_em")
         val DESCOBERTA_SOL = stringPreferencesKey("descoberta_sol")
         val DESCOBERTA_VASO = stringPreferencesKey("descoberta_vaso")
         val DESCOBERTA_FACEIS = booleanPreferencesKey("descoberta_faceis")

@@ -1,6 +1,7 @@
 package com.jardim
 
 import android.app.Application
+import com.jardim.atualizacao.Atualizador
 import com.jardim.avisos.Agendador
 import com.jardim.avisos.Avisos
 import com.jardim.avisos.Preferencias
@@ -29,6 +30,7 @@ class JardimApp : Application() {
     val avisos by lazy { Avisos(this) }
     val agendador by lazy { Agendador(this, preferencias) }
     val despensa by lazy { Despensa(preferencias, repositorio, catalogo) }
+    val atualizador by lazy { Atualizador(this, preferencias) }
 
     override fun onCreate() {
         super.onCreate()
@@ -40,5 +42,6 @@ class JardimApp : Application() {
         // com 1000 plantas ele leva uma fração de segundo, e a busca abre na hora.
         escopo.launch(Dispatchers.IO) { catalogo.busca }
         escopo.launch { previsoes.atualizar() }
+        escopo.launch { atualizador.verificar() }
     }
 }

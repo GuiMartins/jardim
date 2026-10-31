@@ -10,7 +10,10 @@ import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.jardim.JardimApp
+import com.jardim.atualizacao.Atualizador
+import com.jardim.atualizacao.EstadoInstalacao
 import com.jardim.avisos.Avisos
+import com.jardim.motor.atualizacao.Atualizacao
 import com.jardim.dados.JardimRepositorio
 import com.jardim.dados.Planejado
 import com.jardim.dados.PlantioAtivo
@@ -66,7 +69,19 @@ class HojeViewModel(
     private val avisos: Avisos,
     private val previsoes: Previsoes,
     preferencias: Preferencias,
+    private val atualizador: Atualizador,
 ) : ViewModel() {
+
+    /** Versão nova no GitHub, mais nova que a instalada; null se não há. */
+    val atualizacao: StateFlow<Atualizacao?> = atualizador.disponivel.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
+    val instalacao: StateFlow<EstadoInstalacao> = atualizador.estado
+    val versaoInstalada: String = atualizador.versaoInstalada
+
+    fun atualizar(atualizacao: Atualizacao) {
+        viewModelScope.launch { atualizador.instalar(atualizacao) }
+    }
+
+    fun limparErroDaAtualizacao() = atualizador.limparErro()
 
     private val hoje = MutableStateFlow(LocalDate.now())
     val dataDeHoje: StateFlow<LocalDate> = hoje
@@ -99,6 +114,7 @@ class HojeViewModel(
         hoje.value = LocalDate.now()
         // O app pode ficar dias aberto em segundo plano: a previsão velha se renova aqui.
         viewModelScope.launch { previsoes.atualizar() }
+        viewModelScope.launch { atualizador.verificar() }
     }
 
     fun marcar(plantioId: Long, pendencia: Pendencia, status: StatusAcao) {
@@ -163,7 +179,7 @@ class HojeViewModel(
         val Factory = viewModelFactory {
             initializer {
                 val app = this[APPLICATION_KEY] as JardimApp
-                HojeViewModel(app.repositorio, app.avisos, app.previsoes, app.preferencias)
+                HojeViewModel(app.repositorio, app.avisos, app.previsoes, app.preferencias, app.atualizador)
             }
         }
     }
