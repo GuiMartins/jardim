@@ -4,8 +4,10 @@ import android.content.Context
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
+import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.jardim.motor.agenda.DiaDoTempo
+import com.jardim.motor.agenda.Insumo
 import com.jardim.motor.agenda.ModoAviso
 import com.jardim.motor.catalogo.FiltroDescoberta
 import com.jardim.motor.catalogo.Sol
@@ -81,6 +83,18 @@ class Preferencias(private val context: Context) {
         }
     }
 
+    /** O que a pessoa tem em casa para o substrato (Minha despensa). Só "tem ou não tem", sem quantidade. */
+    val despensa: Flow<Set<Insumo>> = context.dataStore.data
+        .map { prefs -> prefs[DESPENSA].orEmpty().mapNotNull { nome -> Insumo.entries.firstOrNull { it.name == nome } }.toSet() }
+        .distinctUntilChanged()
+
+    suspend fun mudarDespensa(insumo: Insumo, tem: Boolean) {
+        context.dataStore.edit { prefs ->
+            val atual = prefs[DESPENSA].orEmpty()
+            prefs[DESPENSA] = if (tem) atual + insumo.name else atual - insumo.name
+        }
+    }
+
     /** A tela de boas-vindas aparece uma vez: na primeira abertura, ou na primeira depois desta versão. */
     val boasVindasVista: Flow<Boolean> = context.dataStore.data.map { it[BOAS_VINDAS] ?: false }.distinctUntilChanged()
 
@@ -115,6 +129,7 @@ class Preferencias(private val context: Context) {
         val BOAS_VINDAS = booleanPreferencesKey("boas_vindas_vista")
         val PREVISAO = stringPreferencesKey("previsao")
         val PREVISAO_EM = stringPreferencesKey("previsao_em")
+        val DESPENSA = stringSetPreferencesKey("despensa")
         val DESCOBERTA_SOL = stringPreferencesKey("descoberta_sol")
         val DESCOBERTA_VASO = stringPreferencesKey("descoberta_vaso")
         val DESCOBERTA_FACEIS = booleanPreferencesKey("descoberta_faceis")

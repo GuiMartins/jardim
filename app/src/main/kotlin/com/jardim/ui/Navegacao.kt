@@ -23,6 +23,8 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.jardim.motor.agenda.Local
 import com.jardim.ui.configuracoes.ConfiguracoesTela
+import com.jardim.ui.despensa.ComprasTela
+import com.jardim.ui.despensa.DespensaTela
 import com.jardim.ui.hoje.HojeTela
 import com.jardim.ui.novaplanta.CatalogoTela
 import com.jardim.ui.novaplanta.DescobrirTela
@@ -52,6 +54,7 @@ fun JardimNavegacao() {
                         aoAdicionar = { nav.navigate("catalogo") },
                         aoAbrirPlanejado = { arquivo, id -> nav.navigate("preparar/$arquivo?planejado=$id") },
                         aoConfigurar = { nav.navigate("configuracoes") },
+                        aoAbrirCompras = { nav.navigate("compras") },
                         aoAbrirPlanta = { id -> nav.navigate("planta/$id") },
                     )
                 }
@@ -94,6 +97,7 @@ fun JardimNavegacao() {
                             nav.navigate("plantar/$arquivo?planejado=${planejado ?: -1}&local=${local?.name ?: ""}")
                         },
                         aoSair = { nav.popBackStack("hoje", inclusive = false) },
+                        aoAbrirDespensa = { nav.navigate("despensa") },
                     )
                 }
                 tela(
@@ -109,7 +113,17 @@ fun JardimNavegacao() {
                     )
                 }
                 tela("configuracoes") {
-                    ConfiguracoesTela(aoVoltar = { nav.popBackStack() }, aoEscolherCidade = { nav.navigate("cidade") })
+                    ConfiguracoesTela(
+                        aoVoltar = { nav.popBackStack() },
+                        aoEscolherCidade = { nav.navigate("cidade") },
+                        aoAbrirDespensa = { nav.navigate("despensa") },
+                    )
+                }
+                tela("despensa") {
+                    DespensaTela(aoVoltar = { nav.popBackStack() })
+                }
+                tela("compras") {
+                    ComprasTela(aoVoltar = { nav.popBackStack() }, aoAbrirDespensa = { nav.navigate("despensa") })
                 }
                 tela("cidade") {
                     CidadeTela(aoVoltar = { nav.popBackStack() })

@@ -31,6 +31,11 @@ class Catalogo(private val assets: AssetManager) {
 
     val busca: BuscaCatalogo by lazy { BuscaCatalogo(itens) }
 
+    private val porArquivo: Map<String, ItemCatalogo> by lazy { itens.associateBy { it.arquivo } }
+
+    /** A espécie no índice: o que a lista precisa, sem ler o JSON inteiro. */
+    fun item(arquivo: String): ItemCatalogo? = porArquivo[arquivo]
+
     private val especies = ConcurrentHashMap<String, Especie>()
 
     fun especie(arquivo: String): Especie? = especies[arquivo] ?: lerEspecie(arquivo)?.also { especies[arquivo] = it }

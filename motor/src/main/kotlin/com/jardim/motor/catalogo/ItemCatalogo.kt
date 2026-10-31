@@ -1,5 +1,6 @@
 package com.jardim.motor.catalogo
 
+import com.jardim.motor.agenda.Receita
 import com.jardim.motor.leitura.jsonJardim
 import com.jardim.motor.modelo.Dificuldade
 import com.jardim.motor.modelo.Luminosidade
@@ -34,6 +35,8 @@ data class ItemCatalogo(
     val horasSolMinimas: Double? = null,
     val horasSolDiariasRecomendadas: Double? = null,
     val volumeMinimoLitros: Double? = null,
+    /** As receitas de substrato de dados/insumos.json; null se a espécie não tem (ou o texto mudou). */
+    val substrato: List<Receita>? = null,
     /**
      * Miniatura da espécie no iNaturalist (240 px), de dados/fotos.json. O app
      * baixa quando a linha aparece; null = sem foto boa, a lista mostra o emoji.

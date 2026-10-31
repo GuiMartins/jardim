@@ -1,5 +1,6 @@
 package com.jardim.ui
 
+import com.jardim.motor.agenda.Insumo
 import com.jardim.motor.catalogo.ItemCatalogo
 import com.jardim.motor.modelo.Dificuldade
 import com.jardim.motor.modelo.Luminosidade
@@ -57,6 +58,19 @@ class FormatosTest {
             "BROMELIA", "SAMAMBAIA", "PALMEIRA", "ARBUSTO", "ARVORE", "TREPADEIRA", "FORRACAO", "AQUATICA",
         )
         categorias.forEach { assertNotEquals(emojiDaCategoria(null), emojiDaCategoria(it), it) }
+    }
+
+    @Test
+    fun `o que falta no substrato, com as alternativas`() {
+        assertEquals(
+            "perlita (ou casca de pinus), farinha de osso",
+            faltaDoSubstrato(listOf(listOf(Insumo.PERLITA, Insumo.CASCA_DE_PINUS), listOf(Insumo.FARINHA_DE_OSSO))),
+        )
+    }
+
+    @Test
+    fun `todo insumo está num grupo da despensa, uma vez só`() {
+        assertEquals(Insumo.entries.sorted(), GRUPOS_DA_DESPENSA.flatMap { it.second }.sorted())
     }
 
     @Test

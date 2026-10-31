@@ -86,6 +86,7 @@ private val hhmm = DateTimeFormatter.ofPattern("HH:mm")
 fun ConfiguracoesTela(
     aoVoltar: () -> Unit,
     aoEscolherCidade: () -> Unit,
+    aoAbrirDespensa: () -> Unit,
     viewModel: ConfiguracoesViewModel = viewModel(factory = ConfiguracoesViewModel.Factory),
 ) {
     val horarios by viewModel.horarios.collectAsStateWithLifecycle()
@@ -143,6 +144,12 @@ fun ConfiguracoesTela(
                 },
                 trailingContent = { Text(if (cidade == null) "Escolher" else "Trocar", color = MaterialTheme.colorScheme.primary) },
                 modifier = Modifier.clickable(onClick = aoEscolherCidade),
+            )
+            HorizontalDivider()
+            ListItem(
+                headlineContent = { Text("Minha despensa") },
+                supportingContent = { Text("Terra, húmus, perlita e o que mais tiver em casa, para o preparo e a lista de compras") },
+                modifier = Modifier.clickable(onClick = aoAbrirDespensa),
             )
         }
 

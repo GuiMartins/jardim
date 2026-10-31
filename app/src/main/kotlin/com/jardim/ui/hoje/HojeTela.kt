@@ -86,6 +86,7 @@ fun HojeTela(
     aoAdicionar: () -> Unit,
     aoAbrirPlanejado: (arquivo: String, planejadoId: Long) -> Unit,
     aoConfigurar: () -> Unit,
+    aoAbrirCompras: () -> Unit,
     aoAbrirPlanta: (plantioId: Long) -> Unit,
     viewModel: HojeViewModel = viewModel(factory = HojeViewModel.Factory),
 ) {
@@ -178,11 +179,10 @@ fun HojeTela(
                 // Embaixo das plantas: o Hoje é antes de tudo o que fazer hoje.
                 if (paraPlantar.isNotEmpty()) {
                     item(key = "para-plantar") {
-                        Text(
-                            "Para plantar",
-                            style = MaterialTheme.typography.titleMedium,
-                            modifier = Modifier.padding(top = 8.dp),
-                        )
+                        Row(Modifier.padding(top = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Text("Para plantar", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+                            TextButton(onClick = aoAbrirCompras) { Text("Lista de compras") }
+                        }
                     }
                     items(paraPlantar, key = { "planejado-${it.id}" }) { planejado ->
                         CartaoPlanejadoView(planejado, aoAbrir = { aoAbrirPlanejado(planejado.arquivo, planejado.id) })
