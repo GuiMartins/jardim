@@ -120,6 +120,9 @@ interface JardimDao {
     @Query("UPDATE plantio SET local = :local WHERE id = :id")
     suspend fun mudarLocal(id: Long, local: Local)
 
+    @Query("UPDATE plantio SET apelido = :apelido WHERE id = :id")
+    suspend fun renomear(id: Long, apelido: String)
+
     @Query("SELECT * FROM planejado ORDER BY planejadoEm, id")
     fun planejados(): Flow<List<PlanejadoEntity>>
 

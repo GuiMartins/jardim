@@ -83,6 +83,14 @@ class PlantaViewModel(
         viewModelScope.launch { repositorio.mudarLocal(plantioId, local) }
     }
 
+    /** Apelido vazio volta ao nome comum, como ao plantar. */
+    fun renomear(apelido: String) {
+        val estado = (tela.value as? TelaPlanta.Pronta)?.estado ?: return
+        val nome = apelido.trim().ifEmpty { estado.nomeComum }
+        if (nome == estado.apelido) return
+        viewModelScope.launch { repositorio.renomear(plantioId, nome) }
+    }
+
     private fun PlantioAtivo.estado(hoje: LocalDate, temCidade: Boolean): EstadoPlanta {
         val cronograma = cronograma()
         val dia = cronograma.diaDoCiclo(hoje)

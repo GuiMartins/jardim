@@ -33,6 +33,12 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -79,6 +85,7 @@ fun PlantaTela(
     LaunchedEffect(tela) { if (tela is TelaPlanta.Sumiu) aoVoltar() }
 
     val estado = (tela as? TelaPlanta.Pronta)?.estado
+    var renomeando by rememberSaveable { mutableStateOf(false) }
     Scaffold(
         topBar = {
             TopAppBar(
@@ -98,10 +105,21 @@ fun PlantaTela(
                 navigationIcon = {
                     IconButton(onClick = aoVoltar) { Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Voltar") }
                 },
+                actions = {
+                    if (estado != null) {
+                        IconButton(onClick = { renomeando = true }) { Icon(Icons.Filled.Edit, contentDescription = "Renomear") }
+                    }
+                },
             )
         },
     ) { padding ->
         if (estado == null) return@Scaffold
+        if (renomeando) {
+            Renomear(estado.apelido, aoSalvar = {
+                viewModel.renomear(it)
+                renomeando = false
+            }, aoCancelar = { renomeando = false })
+        }
         LazyColumn(
             modifier = Modifier.padding(padding),
             contentPadding = PaddingValues(bottom = 32.dp),
@@ -114,6 +132,27 @@ fun PlantaTela(
             historico(estado.historico)
         }
     }
+}
+
+@Composable
+private fun Renomear(atual: String, aoSalvar: (String) -> Unit, aoCancelar: () -> Unit) {
+    var apelido by rememberSaveable { mutableStateOf(atual) }
+    AlertDialog(
+        onDismissRequest = aoCancelar,
+        title = { Text("Renomear") },
+        text = {
+            OutlinedTextField(
+                value = apelido,
+                onValueChange = { apelido = it },
+                label = { Text("Apelido") },
+                singleLine = true,
+                keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Sentences, imeAction = ImeAction.Done),
+                keyboardActions = KeyboardActions(onDone = { aoSalvar(apelido) }),
+            )
+        },
+        confirmButton = { TextButton(onClick = { aoSalvar(apelido) }) { Text("Salvar") } },
+        dismissButton = { TextButton(onClick = aoCancelar) { Text("Cancelar") } },
+    )
 }
 
 @Composable

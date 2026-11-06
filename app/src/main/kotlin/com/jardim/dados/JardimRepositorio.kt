@@ -130,6 +130,8 @@ class JardimRepositorio(private val dao: JardimDao, previsao: Flow<List<DiaDoTem
 
     suspend fun mudarLocal(plantioId: Long, local: Local) = dao.mudarLocal(plantioId, local)
 
+    suspend fun renomear(plantioId: Long, apelido: String) = dao.renomear(plantioId, apelido)
+
     suspend fun registrar(plantioId: Long, pendencia: Pendencia, status: StatusAcao): Long =
         dao.inserirRegistro(
             RegistroAcaoEntity(
